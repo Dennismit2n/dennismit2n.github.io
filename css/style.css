@@ -13,6 +13,7 @@
   --border: #DFE3F2;
   --wifi: #0e7490;
   --shrink: #7c3aed;
+  --bigday: #d97706;
   --shadow: 0 10px 30px rgba(23, 26, 51, 0.10);
 }
 
@@ -30,6 +31,7 @@
     --border: #263056;
     --wifi: #22d3ee;
     --shrink: #a78bfa;
+    --bigday: #fbbf24;
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   }
 }
@@ -162,6 +164,7 @@ body {
 }
 .tool-wifi { --tool: var(--wifi); }
 .tool-shrink { --tool: var(--shrink); }
+.tool-bigday { --tool: var(--bigday); }
 
 .tool-card:hover,
 .tool-card:focus-visible {
