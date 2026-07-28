@@ -101,6 +101,25 @@ var I18N = {
     footerAnalytics: 'Conteggio anonimo delle visite (GoatCounter, senza cookie).',
     langLabel: 'Lingua'
   },
+  pt: {
+    _name: 'Português',
+    pageTitle: 'Dennis_mit_2n · Pequenas ferramentas no navegador',
+    heroTitle: 'Pequenas ferramentas que rodam no seu navegador',
+    heroSubtitle: 'Uma oficina de Dennis_mit_2n.',
+    heroPledge: 'Qualidade, segurança e privacidade em primeiro lugar — seus dados ficam no seu dispositivo!',
+    toolboxHeading: 'A caixa de ferramentas',
+    featuresLine: 'Grátis · sem cadastro · sem uploads',
+    moreLine: 'A oficina continua crescendo — mais ferramentas a caminho.',
+    openTool: 'Abrir',
+    wifiName: 'Cartão QR de Wi-Fi',
+    wifiDesc: 'Crie um código QR para o seu Wi-Fi — os convidados escaneiam e já estão conectados.',
+    shrinkDesc: 'Reduza fotos direto no navegador — para e-mail, candidaturas e classificados.',
+    bigdayDesc: 'Uma contagem regressiva bonita até férias, aniversários e muito mais — para compartilhar como link.',
+    footerSource: 'Código aberto no GitHub',
+    footerTranslate: 'Algumas traduções são automáticas — correções são bem-vindas!',
+    footerAnalytics: 'Contagem anônima de visitas (GoatCounter, sem cookies).',
+    langLabel: 'Idioma'
+  },
   tr: {
     _name: 'Türkçe',
     pageTitle: 'Dennis_mit_2n · Küçük tarayıcı araçları',
@@ -119,6 +138,25 @@ var I18N = {
     footerTranslate: 'Bazı çeviriler otomatik oluşturulmuştur; düzeltmelerinizi bekleriz!',
     footerAnalytics: 'Anonim ziyaret sayımı (GoatCounter, çerezsiz).',
     langLabel: 'Dil'
+  },
+  ru: {
+    _name: 'Русский',
+    pageTitle: 'Dennis_mit_2n · Маленькие браузерные инструменты',
+    heroTitle: 'Маленькие инструменты, работающие прямо в браузере',
+    heroSubtitle: 'Мастерская Dennis_mit_2n.',
+    heroPledge: 'Качество, безопасность и приватность прежде всего — ваши данные остаются на вашем устройстве!',
+    toolboxHeading: 'Ящик с инструментами',
+    featuresLine: 'Бесплатно · без регистрации · без загрузки на сервер',
+    moreLine: 'Мастерская растёт — новые инструменты уже в пути.',
+    openTool: 'Открыть',
+    wifiName: 'QR-карточка для Wi-Fi',
+    wifiDesc: 'Создайте QR-код для вашего Wi-Fi — гости сканируют и сразу в сети.',
+    shrinkDesc: 'Уменьшайте фото прямо в браузере — для почты, анкет и объявлений.',
+    bigdayDesc: 'Красивый обратный отсчёт до отпуска, дня рождения и не только — им можно поделиться ссылкой.',
+    footerSource: 'Открытый код на GitHub',
+    footerTranslate: 'Часть переводов сделана автоматически — будем рады исправлениям!',
+    footerAnalytics: 'Анонимный подсчёт посещений (GoatCounter, без файлов cookie).',
+    langLabel: 'Язык'
   },
   hi: {
     _name: 'हिन्दी',
@@ -176,6 +214,25 @@ var I18N = {
     footerTranslate: '一部の翻訳は機械翻訳です。修正歓迎！',
     footerAnalytics: '匿名の訪問カウント（GoatCounter、Cookieなし）。',
     langLabel: '言語'
+  },
+  ko: {
+    _name: '한국어',
+    pageTitle: 'Dennis_mit_2n · 작은 브라우저 도구들',
+    heroTitle: '브라우저에서 바로 돌아가는 작은 도구들',
+    heroSubtitle: 'Dennis_mit_2n의 작업실.',
+    heroPledge: '품질, 보안, 프라이버시가 최우선 — 데이터는 기기 밖으로 나가지 않아요!',
+    toolboxHeading: '도구 상자',
+    featuresLine: '무료 · 가입 없음 · 업로드 없음',
+    moreLine: '작업실은 계속 커지는 중 — 새로운 도구를 준비하고 있어요.',
+    openTool: '열기',
+    wifiName: 'Wi-Fi QR 카드',
+    wifiDesc: 'Wi-Fi용 QR 코드를 만드세요 — 손님은 스캔만 하면 바로 연결돼요.',
+    shrinkDesc: '브라우저에서 바로 사진 용량 줄이기 — 메일, 지원서, 중고 거래용.',
+    bigdayDesc: '휴가, 생일 등 소중한 날까지의 예쁜 카운트다운 — 링크로 공유해요.',
+    footerSource: 'GitHub 오픈 소스',
+    footerTranslate: '일부 번역은 기계 번역입니다. 수정 제안을 환영해요!',
+    footerAnalytics: '익명 방문 집계 (GoatCounter, 쿠키 없음).',
+    langLabel: '언어'
   }
 };
 

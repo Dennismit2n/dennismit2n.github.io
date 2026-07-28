@@ -21,7 +21,7 @@ Then open http://localhost:8615
 
 ## Translations
 
-The page speaks 9 languages (`js/i18n.js`). Some translations are machine-generated — corrections are very welcome!
+The page speaks 12 languages (`js/i18n.js`). Some translations are machine-generated — corrections are very welcome!
 
 ## License
 
