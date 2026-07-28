@@ -16,6 +16,7 @@
   --shrink: #7c3aed;
   --bigday: #d97706;
   --ram: #0369a1;
+  --rad: #e11d48;
   --shadow: 0 10px 30px rgba(23, 26, 51, 0.10);
 }
 
@@ -40,6 +41,7 @@
     --shrink: #a78bfa;
     --bigday: #fbbf24;
     --ram: #66e0ff;
+    --rad: #fb7185;
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   }
 }
@@ -60,6 +62,7 @@
   --shrink: #a78bfa;
   --bigday: #fbbf24;
   --ram: #66e0ff;
+  --rad: #fb7185;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
@@ -196,6 +199,7 @@ body {
 .tool-shrink { --tool: var(--shrink); }
 .tool-bigday { --tool: var(--bigday); }
 .tool-ram { --tool: var(--ram); }
+.tool-rad { --tool: var(--rad); }
 
 .tool-card:hover,
 .tool-card:focus-visible {
