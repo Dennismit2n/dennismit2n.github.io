@@ -6,8 +6,10 @@ Startseite für die kleinen Browser-Tools von Dennis_mit_2n — kostenlos, ohne 
 
 ## Tools
 
-- [WiFi QR Card](https://dennismit2n.github.io/wifi-qr/) — create a WiFi QR code card, guests scan and connect
+- [Real_RAM_cooler](https://github.com/Dennismit2n/Real_RAM_cooler) — an honest RAM tool for Windows (download, not a browser tool)
 - [shrinkling](https://dennismit2n.github.io/shrinkling/) — shrink photos right in your browser
+- [WiFi QR Card](https://dennismit2n.github.io/wifi-qr/) — create a WiFi QR code card, guests scan and connect
+- [bigday](https://dennismit2n.github.io/bigday/) — pretty shareable countdown page
 
 ## Development
 

@@ -1,5 +1,6 @@
 /* dennismit2n.github.io — landing page styles */
 :root {
+  color-scheme: light;
   --accent: #2439B2;
   --accent-strong: #1A2A8C;
   --accent-fill: #2439B2;
@@ -14,11 +15,17 @@
   --wifi: #0e7490;
   --shrink: #7c3aed;
   --bigday: #d97706;
+  --ram: #0369a1;
   --shadow: 0 10px 30px rgba(23, 26, 51, 0.10);
 }
 
+/* Dark theme comes in two doors with identical furniture:
+   1) system preference (unless the user forced light),
+   2) the theme dropdown forcing dark.
+   Keep both blocks in sync! */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
     --accent: #8FD3F4;
     --accent-strong: #B9E4F9;
     --accent-fill: #3B52D4;
@@ -32,8 +39,28 @@
     --wifi: #22d3ee;
     --shrink: #a78bfa;
     --bigday: #fbbf24;
+    --ram: #66e0ff;
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --accent: #8FD3F4;
+  --accent-strong: #B9E4F9;
+  --accent-fill: #3B52D4;
+  --accent-soft: #1A2450;
+  --lavender: #A29CCB;
+  --bg: #0D1226;
+  --panel: #141B36;
+  --text: #E6E9F7;
+  --text-soft: #A29CCB;
+  --border: #263056;
+  --wifi: #22d3ee;
+  --shrink: #a78bfa;
+  --bigday: #fbbf24;
+  --ram: #66e0ff;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 [hidden] { display: none !important; }
@@ -81,7 +108,10 @@ body {
 .brand-icon { width: 30px; height: 30px; display: block; }
 .brand-name { font-weight: 600; font-size: 0.95rem; letter-spacing: 0.01em; color: var(--text-soft); }
 
-#langSelect {
+.header-controls { display: flex; align-items: center; gap: 8px; }
+
+#langSelect,
+#themeSelect {
   font: inherit;
   font-size: 0.9rem;
   color: var(--text);
@@ -165,6 +195,7 @@ body {
 .tool-wifi { --tool: var(--wifi); }
 .tool-shrink { --tool: var(--shrink); }
 .tool-bigday { --tool: var(--bigday); }
+.tool-ram { --tool: var(--ram); }
 
 .tool-card:hover,
 .tool-card:focus-visible {

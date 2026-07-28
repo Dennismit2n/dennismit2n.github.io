@@ -23,7 +23,14 @@ var I18N = {
     footerSource: 'Quelloffen auf GitHub',
     footerTranslate: 'Übersetzungen teils maschinell erstellt – Korrekturen willkommen!',
     footerAnalytics: 'Anonyme Besucherzählung (GoatCounter, ohne Cookies).',
-    langLabel: 'Sprache'
+    langLabel: 'Sprache',
+    themeLabel: 'Darstellung',
+    themeSystem: 'System',
+    themeLight: 'Hell',
+    themeDark: 'Dunkel',
+    downloadTool: 'Download',
+    ramDesc: 'Ein ehrliches RAM-Tool für Windows – der Placebo-Button ist als solcher beschriftet.',
+    ramMeta: 'Windows 10/11 · quelloffen · kostenlos'
   },
   en: {
     _name: 'English',
@@ -42,7 +49,14 @@ var I18N = {
     footerSource: 'Open source on GitHub',
     footerTranslate: 'Some translations are machine-generated – corrections welcome!',
     footerAnalytics: 'Anonymous visit counting (GoatCounter, no cookies).',
-    langLabel: 'Language'
+    langLabel: 'Language',
+    themeLabel: 'Appearance',
+    themeSystem: 'System',
+    themeLight: 'Light',
+    themeDark: 'Dark',
+    downloadTool: 'Download',
+    ramDesc: 'An honest RAM tool for Windows – the placebo button is labeled as such.',
+    ramMeta: 'Windows 10/11 · open source · free'
   },
   es: {
     _name: 'Español',
@@ -61,7 +75,14 @@ var I18N = {
     footerSource: 'Código abierto en GitHub',
     footerTranslate: 'Algunas traducciones son automáticas. ¡Agradecemos correcciones!',
     footerAnalytics: 'Recuento anónimo de visitas (GoatCounter, sin cookies).',
-    langLabel: 'Idioma'
+    langLabel: 'Idioma',
+    themeLabel: 'Apariencia',
+    themeSystem: 'Sistema',
+    themeLight: 'Claro',
+    themeDark: 'Oscuro',
+    downloadTool: 'Descargar',
+    ramDesc: 'Una herramienta de RAM honesta para Windows: el botón placebo está etiquetado como tal.',
+    ramMeta: 'Windows 10/11 · código abierto · gratis'
   },
   fr: {
     _name: 'Français',
@@ -80,7 +101,14 @@ var I18N = {
     footerSource: 'Open source sur GitHub',
     footerTranslate: 'Certaines traductions sont automatiques – corrections bienvenues !',
     footerAnalytics: 'Comptage anonyme des visites (GoatCounter, sans cookies).',
-    langLabel: 'Langue'
+    langLabel: 'Langue',
+    themeLabel: 'Apparence',
+    themeSystem: 'Système',
+    themeLight: 'Clair',
+    themeDark: 'Sombre',
+    downloadTool: 'Télécharger',
+    ramDesc: 'Un outil RAM honnête pour Windows – le bouton placebo est étiqueté comme tel.',
+    ramMeta: 'Windows 10/11 · open source · gratuit'
   },
   it: {
     _name: 'Italiano',
@@ -99,7 +127,14 @@ var I18N = {
     footerSource: 'Open source su GitHub',
     footerTranslate: 'Alcune traduzioni sono automatiche: correzioni benvenute!',
     footerAnalytics: 'Conteggio anonimo delle visite (GoatCounter, senza cookie).',
-    langLabel: 'Lingua'
+    langLabel: 'Lingua',
+    themeLabel: 'Aspetto',
+    themeSystem: 'Sistema',
+    themeLight: 'Chiaro',
+    themeDark: 'Scuro',
+    downloadTool: 'Scarica',
+    ramDesc: 'Uno strumento RAM onesto per Windows: il pulsante placebo è etichettato come tale.',
+    ramMeta: 'Windows 10/11 · open source · gratis'
   },
   pt: {
     _name: 'Português',
@@ -118,7 +153,14 @@ var I18N = {
     footerSource: 'Código aberto no GitHub',
     footerTranslate: 'Algumas traduções são automáticas — correções são bem-vindas!',
     footerAnalytics: 'Contagem anônima de visitas (GoatCounter, sem cookies).',
-    langLabel: 'Idioma'
+    langLabel: 'Idioma',
+    themeLabel: 'Aparência',
+    themeSystem: 'Sistema',
+    themeLight: 'Claro',
+    themeDark: 'Escuro',
+    downloadTool: 'Baixar',
+    ramDesc: 'Uma ferramenta de RAM honesta para Windows — o botão placebo está identificado como tal.',
+    ramMeta: 'Windows 10/11 · código aberto · grátis'
   },
   tr: {
     _name: 'Türkçe',
@@ -137,7 +179,14 @@ var I18N = {
     footerSource: "GitHub'da açık kaynak",
     footerTranslate: 'Bazı çeviriler otomatik oluşturulmuştur; düzeltmelerinizi bekleriz!',
     footerAnalytics: 'Anonim ziyaret sayımı (GoatCounter, çerezsiz).',
-    langLabel: 'Dil'
+    langLabel: 'Dil',
+    themeLabel: 'Görünüm',
+    themeSystem: 'Sistem',
+    themeLight: 'Açık',
+    themeDark: 'Koyu',
+    downloadTool: 'İndir',
+    ramDesc: 'Windows için dürüst bir RAM aracı – plasebo düğmesinin üzerinde plasebo olduğu yazıyor.',
+    ramMeta: 'Windows 10/11 · açık kaynak · ücretsiz'
   },
   ru: {
     _name: 'Русский',
@@ -156,7 +205,14 @@ var I18N = {
     footerSource: 'Открытый код на GitHub',
     footerTranslate: 'Часть переводов сделана автоматически — будем рады исправлениям!',
     footerAnalytics: 'Анонимный подсчёт посещений (GoatCounter, без файлов cookie).',
-    langLabel: 'Язык'
+    langLabel: 'Язык',
+    themeLabel: 'Оформление',
+    themeSystem: 'Системная',
+    themeLight: 'Светлая',
+    themeDark: 'Тёмная',
+    downloadTool: 'Скачать',
+    ramDesc: 'Честный инструмент для RAM под Windows — кнопка-плацебо так и подписана.',
+    ramMeta: 'Windows 10/11 · открытый код · бесплатно'
   },
   hi: {
     _name: 'हिन्दी',
@@ -175,7 +231,14 @@ var I18N = {
     footerSource: 'GitHub पर ओपन सोर्स',
     footerTranslate: 'कुछ अनुवाद मशीन से किए गए हैं – सुधारों का स्वागत है!',
     footerAnalytics: 'गुमनाम विज़िट गणना (GoatCounter, बिना कुकीज़)।',
-    langLabel: 'भाषा'
+    langLabel: 'भाषा',
+    themeLabel: 'थीम',
+    themeSystem: 'सिस्टम',
+    themeLight: 'हल्की',
+    themeDark: 'गहरी',
+    downloadTool: 'डाउनलोड',
+    ramDesc: 'Windows के लिए एक ईमानदार RAM टूल – प्लेसीबो बटन पर साफ़ लिखा है कि वह प्लेसीबो है।',
+    ramMeta: 'Windows 10/11 · ओपन सोर्स · मुफ़्त'
   },
   zh: {
     _name: '中文',
@@ -194,7 +257,14 @@ var I18N = {
     footerSource: 'GitHub 开源项目',
     footerTranslate: '部分翻译由机器生成，欢迎指正！',
     footerAnalytics: '匿名访问统计（GoatCounter，无 Cookie）。',
-    langLabel: '语言'
+    langLabel: '语言',
+    themeLabel: '外观',
+    themeSystem: '跟随系统',
+    themeLight: '浅色',
+    themeDark: '深色',
+    downloadTool: '下载',
+    ramDesc: '一个诚实的 Windows 内存工具——安慰剂按钮如实标注。',
+    ramMeta: 'Windows 10/11 · 开源 · 免费'
   },
   ja: {
     _name: '日本語',
@@ -213,7 +283,14 @@ var I18N = {
     footerSource: 'GitHubでオープンソース公開中',
     footerTranslate: '一部の翻訳は機械翻訳です。修正歓迎！',
     footerAnalytics: '匿名の訪問カウント（GoatCounter、Cookieなし）。',
-    langLabel: '言語'
+    langLabel: '言語',
+    themeLabel: '外観',
+    themeSystem: 'システム',
+    themeLight: 'ライト',
+    themeDark: 'ダーク',
+    downloadTool: 'ダウンロード',
+    ramDesc: 'Windows向けの正直なRAMツール。プラセボボタンには正直にそう書いてあります。',
+    ramMeta: 'Windows 10/11 · オープンソース · 無料'
   },
   ko: {
     _name: '한국어',
@@ -232,7 +309,14 @@ var I18N = {
     footerSource: 'GitHub 오픈 소스',
     footerTranslate: '일부 번역은 기계 번역입니다. 수정 제안을 환영해요!',
     footerAnalytics: '익명 방문 집계 (GoatCounter, 쿠키 없음).',
-    langLabel: '언어'
+    langLabel: '언어',
+    themeLabel: '테마',
+    themeSystem: '시스템',
+    themeLight: '라이트',
+    themeDark: '다크',
+    downloadTool: '다운로드',
+    ramDesc: 'Windows용 정직한 RAM 도구 — 플라시보 버튼엔 정직하게 그렇게 적혀 있어요.',
+    ramMeta: 'Windows 10/11 · 오픈 소스 · 무료'
   }
 };
 

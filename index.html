@@ -17,6 +17,8 @@
   <link rel="icon" href="./icons/favicon-32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
   <link rel="stylesheet" href="./css/style.css">
+  <!-- Theme before first paint: stored choice wins, otherwise system decides via CSS. -->
+  <script>try{var t=localStorage.getItem('dennismit2n-home.theme');if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}</script>
   <!-- Analytics: GoatCounter (anonymous, cookieless — disclosed in the footer).
        count.js is vendored locally; the only external request is the count pixel. -->
   <script data-goatcounter="https://dennis-mit-2n.goatcounter.com/count" async src="./js/vendor/count.js"></script>
@@ -34,10 +36,16 @@
       </svg>
       <span class="brand-name">Dennis_mit_2n</span>
     </div>
-    <label class="lang-wrap">
-      <span class="visually-hidden" data-i18n="langLabel">Language</span>
-      <select id="langSelect" data-i18n-aria="langLabel"></select>
-    </label>
+    <div class="header-controls">
+      <label class="lang-wrap">
+        <span class="visually-hidden" data-i18n="themeLabel">Appearance</span>
+        <select id="themeSelect" data-i18n-aria="themeLabel"></select>
+      </label>
+      <label class="lang-wrap">
+        <span class="visually-hidden" data-i18n="langLabel">Language</span>
+        <select id="langSelect" data-i18n-aria="langLabel"></select>
+      </label>
+    </div>
   </header>
 
   <main>
@@ -54,14 +62,14 @@
     <section class="tools" aria-labelledby="toolboxHeading">
       <h2 id="toolboxHeading"><span class="tb-emoji" aria-hidden="true">🧰</span> <span data-i18n="toolboxHeading">The toolbox</span></h2>
       <div class="tool-grid">
-        <a class="tool-card tool-wifi" href="https://dennismit2n.github.io/wifi-qr/">
+        <a class="tool-card tool-ram" href="https://github.com/Dennismit2n/Real_RAM_cooler/releases/latest" rel="noopener">
           <span class="tool-head">
-            <img src="./assets/wifi-qr.svg" alt="" width="44" height="44">
-            <span class="tool-name" data-i18n="wifiName">WiFi QR Card</span>
+            <img src="./assets/ramcooler.svg" alt="" width="44" height="44">
+            <span class="tool-name">Real_RAM_cooler</span>
           </span>
-          <span class="tool-desc" data-i18n="wifiDesc">Create a QR code for your WiFi – guests scan and they're in.</span>
-          <span class="tool-meta" data-i18n="featuresLine">Free · no sign-up · no uploads</span>
-          <span class="tool-open"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></span>
+          <span class="tool-desc" data-i18n="ramDesc">An honest RAM tool for Windows – the placebo button is labeled as such.</span>
+          <span class="tool-meta" data-i18n="ramMeta">Windows 10/11 · open source · free</span>
+          <span class="tool-open"><span data-i18n="downloadTool">Download</span> <span class="arrow" aria-hidden="true">→</span></span>
         </a>
         <a class="tool-card tool-shrink" href="https://dennismit2n.github.io/shrinkling/">
           <span class="tool-head">
@@ -69,6 +77,15 @@
             <span class="tool-name">shrinkling</span>
           </span>
           <span class="tool-desc" data-i18n="shrinkDesc">Shrink photos right in your browser – for email, applications, classifieds.</span>
+          <span class="tool-meta" data-i18n="featuresLine">Free · no sign-up · no uploads</span>
+          <span class="tool-open"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></span>
+        </a>
+        <a class="tool-card tool-wifi" href="https://dennismit2n.github.io/wifi-qr/">
+          <span class="tool-head">
+            <img src="./assets/wifi-qr.svg" alt="" width="44" height="44">
+            <span class="tool-name" data-i18n="wifiName">WiFi QR Card</span>
+          </span>
+          <span class="tool-desc" data-i18n="wifiDesc">Create a QR code for your WiFi – guests scan and they're in.</span>
           <span class="tool-meta" data-i18n="featuresLine">Free · no sign-up · no uploads</span>
           <span class="tool-open"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></span>
         </a>
