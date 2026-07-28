@@ -55,4 +55,21 @@
   select.addEventListener('change', function () {
     i18n.apply(select.value);
   });
+
+  // ── GoatCounter: count tile clicks as events ──────────────────────
+  // Shows up in the dashboard as "kachel-ram", "kachel-shrink", … so we
+  // can see which tool actually gets picked up, not just page views.
+  var cards = document.querySelectorAll('.tool-card');
+  for (var c = 0; c < cards.length; c++) {
+    cards[c].addEventListener('click', function () {
+      if (!window.goatcounter || !window.goatcounter.count) { return; }
+      var tool = (this.className.match(/tool-(?!card)([a-z]+)/) || [])[1] || 'unbekannt';
+      var nameEl = this.querySelector('.tool-name');
+      window.goatcounter.count({
+        path: 'kachel-' + tool,
+        title: nameEl ? nameEl.textContent : tool,
+        event: true
+      });
+    });
+  }
 })();
