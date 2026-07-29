@@ -17,6 +17,7 @@
   --bigday: #d97706;
   --ram: #0369a1;
   --rad: #e11d48;
+  --collective: #15803d;
   --shadow: 0 10px 30px rgba(23, 26, 51, 0.10);
 }
 
@@ -42,6 +43,7 @@
     --bigday: #fbbf24;
     --ram: #66e0ff;
     --rad: #fb7185;
+    --collective: #4ade80;
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   }
 }
@@ -63,6 +65,7 @@
   --bigday: #fbbf24;
   --ram: #66e0ff;
   --rad: #fb7185;
+  --collective: #4ade80;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
@@ -200,6 +203,7 @@ body {
 .tool-bigday { --tool: var(--bigday); }
 .tool-ram { --tool: var(--ram); }
 .tool-rad { --tool: var(--rad); }
+.tool-collective { --tool: var(--collective); }
 
 .tool-card:hover,
 .tool-card:focus-visible {
