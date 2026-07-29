@@ -1,8 +1,8 @@
 # dennismit2n.github.io
 
-Landing page for the small browser tools by Dennis_mit_2n — free, no sign-up, no uploads. Your data stays on your device.
+Landing page for the small tools by Dennis_mit_2n — in your browser and for Windows, free, no sign-up, no uploads. Your data stays on your device.
 
-Startseite für die kleinen Browser-Tools von Dennis_mit_2n — kostenlos, ohne Anmeldung, ohne Uploads. Deine Daten bleiben auf deinem Gerät.
+Startseite für die kleinen Tools von Dennis_mit_2n — im Browser und für Windows, kostenlos, ohne Anmeldung, ohne Uploads. Deine Daten bleiben auf deinem Gerät.
 
 ## Tools
 
