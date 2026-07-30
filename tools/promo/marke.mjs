@@ -2,8 +2,8 @@
  * Einzige Quelle der Wahrheit für alle Werbebilder.
  *
  * Farben stammen 1:1 aus css/style.css der Startseite — die Dunkel-Variante,
- * weil alle Werbebilder auf dem dunklen Grund #0d1226 stehen (der fotografiert
- * sich auf Instagram besser als der helle, siehe LAUNCH.md von Collective-Calc).
+ * weil alle Werbebilder auf dem dunklen Grund #0d1226 stehen; der fotografiert
+ * sich auf Instagram besser als der helle.
  *
  * Die Icons sind dieselben SVGs, die auf der Startseite in den Kacheln stecken.
  * Nicht nachzeichnen, nicht "verbessern" — die Wiedererkennung ist der Zweck.
@@ -239,6 +239,7 @@ export const FORMATE = [
   { id: 'story2', datei: 'story-2-ablauf', b: 1080, h: 1920, art: 'story', karte: 1, zweck: 'Story/Reel, Karte 2 von 3 — wie es funktioniert' },
   { id: 'story3', datei: 'story-3-aufforderung', b: 1080, h: 1920, art: 'story', karte: 2, zweck: 'Story/Reel, Karte 3 von 3 — Link' },
   { id: 'twitch', datei: 'twitch-panel-320x300', b: 320, h: 300, art: 'panel', zweck: 'Twitch-Panel unter dem Stream' },
+  { id: 'twitchBanner', datei: 'twitch-banner-1200x480', b: 1200, h: 480, art: 'twitchBanner', zweck: 'Twitch-Profilbanner (Einstellungen → Kanal → Marke)' },
 ];
 
 /* Markenweite Bilder, unabhängig vom einzelnen Werkzeug. */
