@@ -32,7 +32,20 @@ var I18N = {
     themeDark: 'Dunkel',
     downloadTool: 'Download',
     ramDesc: 'Ein ehrliches RAM-Tool für Windows – der Placebo-Button ist als solcher beschriftet.',
-    ramMeta: 'Windows 10/11 · quelloffen · kostenlos'
+    ramMeta: 'Windows 10/11 · quelloffen · kostenlos',
+    werkstattTitle: 'Neuigkeiten & Anleitungen · Dennis_mit_2n',
+    werkstattHeading: 'Neuigkeiten & Anleitungen',
+    werkstattSub: 'Was sich zuletzt getan hat – und wie jedes Werkzeug funktioniert.',
+    navTools: 'Werkzeuge',
+    secGuide: 'Anleitung',
+    secNews: 'Neuigkeiten',
+    guidePurpose: 'Wofür',
+    guideSteps: 'In drei Schritten',
+    guideTrouble: 'Wenn etwas klemmt',
+    guideDocs: 'Technische Einzelheiten und Quelltext auf GitHub',
+    viewRelease: 'Release ansehen',
+    langNotice: 'Diese Texte gibt es bisher nur auf Deutsch und Englisch.',
+    backHome: 'Zurück zur Startseite'
   },
   en: {
     _name: 'English',
@@ -60,7 +73,20 @@ var I18N = {
     themeDark: 'Dark',
     downloadTool: 'Download',
     ramDesc: 'An honest RAM tool for Windows – the placebo button is labeled as such.',
-    ramMeta: 'Windows 10/11 · open source · free'
+    ramMeta: 'Windows 10/11 · open source · free',
+    werkstattTitle: 'News & guides · Dennis_mit_2n',
+    werkstattHeading: 'News & guides',
+    werkstattSub: 'What has changed lately – and how each tool works.',
+    navTools: 'Tools',
+    secGuide: 'Guide',
+    secNews: 'News',
+    guidePurpose: 'What it is for',
+    guideSteps: 'In three steps',
+    guideTrouble: 'If something goes wrong',
+    guideDocs: 'Technical details and source code on GitHub',
+    viewRelease: 'View release',
+    langNotice: 'These texts are only available in German and English so far.',
+    backHome: 'Back to the start page'
   },
   es: {
     _name: 'Español',
@@ -88,7 +114,20 @@ var I18N = {
     themeDark: 'Oscuro',
     downloadTool: 'Descargar',
     ramDesc: 'Una herramienta de RAM honesta para Windows: el botón placebo está etiquetado como tal.',
-    ramMeta: 'Windows 10/11 · código abierto · gratis'
+    ramMeta: 'Windows 10/11 · código abierto · gratis',
+    werkstattTitle: 'Novedades y guías · Dennis_mit_2n',
+    werkstattHeading: 'Novedades y guías',
+    werkstattSub: 'Qué ha cambiado últimamente y cómo funciona cada herramienta.',
+    navTools: 'Herramientas',
+    secGuide: 'Guía',
+    secNews: 'Novedades',
+    guidePurpose: 'Para qué sirve',
+    guideSteps: 'En tres pasos',
+    guideTrouble: 'Si algo falla',
+    guideDocs: 'Detalles técnicos y código fuente en GitHub',
+    viewRelease: 'Ver la versión',
+    langNotice: 'Por ahora estos textos solo están en alemán e inglés.',
+    backHome: 'Volver al inicio'
   },
   fr: {
     _name: 'Français',
@@ -116,7 +155,20 @@ var I18N = {
     themeDark: 'Sombre',
     downloadTool: 'Télécharger',
     ramDesc: 'Un outil RAM honnête pour Windows – le bouton placebo est étiqueté comme tel.',
-    ramMeta: 'Windows 10/11 · open source · gratuit'
+    ramMeta: 'Windows 10/11 · open source · gratuit',
+    werkstattTitle: 'Nouveautés et guides · Dennis_mit_2n',
+    werkstattHeading: 'Nouveautés et guides',
+    werkstattSub: 'Ce qui a changé récemment – et comment fonctionne chaque outil.',
+    navTools: 'Outils',
+    secGuide: 'Guide',
+    secNews: 'Nouveautés',
+    guidePurpose: 'À quoi ça sert',
+    guideSteps: 'En trois étapes',
+    guideTrouble: 'Si quelque chose coince',
+    guideDocs: 'Détails techniques et code source sur GitHub',
+    viewRelease: 'Voir la version',
+    langNotice: 'Ces textes ne sont pour l’instant disponibles qu’en allemand et en anglais.',
+    backHome: 'Retour à l’accueil'
   },
   it: {
     _name: 'Italiano',
@@ -144,7 +196,20 @@ var I18N = {
     themeDark: 'Scuro',
     downloadTool: 'Scarica',
     ramDesc: 'Uno strumento RAM onesto per Windows: il pulsante placebo è etichettato come tale.',
-    ramMeta: 'Windows 10/11 · open source · gratis'
+    ramMeta: 'Windows 10/11 · open source · gratis',
+    werkstattTitle: 'Novità e guide · Dennis_mit_2n',
+    werkstattHeading: 'Novità e guide',
+    werkstattSub: 'Cosa è cambiato di recente – e come funziona ogni strumento.',
+    navTools: 'Strumenti',
+    secGuide: 'Guida',
+    secNews: 'Novità',
+    guidePurpose: 'A cosa serve',
+    guideSteps: 'In tre passi',
+    guideTrouble: 'Se qualcosa non va',
+    guideDocs: 'Dettagli tecnici e codice sorgente su GitHub',
+    viewRelease: 'Vedi la versione',
+    langNotice: 'Per ora questi testi esistono solo in tedesco e inglese.',
+    backHome: 'Torna alla pagina iniziale'
   },
   pt: {
     _name: 'Português',
@@ -172,7 +237,20 @@ var I18N = {
     themeDark: 'Escuro',
     downloadTool: 'Baixar',
     ramDesc: 'Uma ferramenta de RAM honesta para Windows — o botão placebo está identificado como tal.',
-    ramMeta: 'Windows 10/11 · código aberto · grátis'
+    ramMeta: 'Windows 10/11 · código aberto · grátis',
+    werkstattTitle: 'Novidades e guias · Dennis_mit_2n',
+    werkstattHeading: 'Novidades e guias',
+    werkstattSub: 'O que mudou recentemente – e como funciona cada ferramenta.',
+    navTools: 'Ferramentas',
+    secGuide: 'Guia',
+    secNews: 'Novidades',
+    guidePurpose: 'Para que serve',
+    guideSteps: 'Em três passos',
+    guideTrouble: 'Se algo não funcionar',
+    guideDocs: 'Detalhes técnicos e código-fonte no GitHub',
+    viewRelease: 'Ver a versão',
+    langNotice: 'Por enquanto, estes textos só existem em alemão e inglês.',
+    backHome: 'Voltar ao início'
   },
   tr: {
     _name: 'Türkçe',
@@ -200,7 +278,20 @@ var I18N = {
     themeDark: 'Koyu',
     downloadTool: 'İndir',
     ramDesc: 'Windows için dürüst bir RAM aracı – plasebo düğmesinin üzerinde plasebo olduğu yazıyor.',
-    ramMeta: 'Windows 10/11 · açık kaynak · ücretsiz'
+    ramMeta: 'Windows 10/11 · açık kaynak · ücretsiz',
+    werkstattTitle: 'Yenilikler ve kılavuzlar · Dennis_mit_2n',
+    werkstattHeading: 'Yenilikler ve kılavuzlar',
+    werkstattSub: 'Son zamanlarda ne değişti – ve her araç nasıl çalışıyor.',
+    navTools: 'Araçlar',
+    secGuide: 'Kılavuz',
+    secNews: 'Yenilikler',
+    guidePurpose: 'Ne işe yarar',
+    guideSteps: 'Üç adımda',
+    guideTrouble: 'Bir şey takılırsa',
+    guideDocs: 'Teknik ayrıntılar ve kaynak kodu GitHub’da',
+    viewRelease: 'Sürümü görüntüle',
+    langNotice: 'Bu metinler şimdilik yalnızca Almanca ve İngilizce mevcut.',
+    backHome: 'Başlangıç sayfasına dön'
   },
   ru: {
     _name: 'Русский',
@@ -228,7 +319,20 @@ var I18N = {
     themeDark: 'Тёмная',
     downloadTool: 'Скачать',
     ramDesc: 'Честный инструмент для RAM под Windows — кнопка-плацебо так и подписана.',
-    ramMeta: 'Windows 10/11 · открытый код · бесплатно'
+    ramMeta: 'Windows 10/11 · открытый код · бесплатно',
+    werkstattTitle: 'Новости и руководства · Dennis_mit_2n',
+    werkstattHeading: 'Новости и руководства',
+    werkstattSub: 'Что изменилось за последнее время — и как работает каждый инструмент.',
+    navTools: 'Инструменты',
+    secGuide: 'Руководство',
+    secNews: 'Новости',
+    guidePurpose: 'Для чего это',
+    guideSteps: 'В три шага',
+    guideTrouble: 'Если что-то не работает',
+    guideDocs: 'Технические подробности и исходный код на GitHub',
+    viewRelease: 'Посмотреть выпуск',
+    langNotice: 'Пока эти тексты есть только на немецком и английском.',
+    backHome: 'Вернуться на главную'
   },
   hi: {
     _name: 'हिन्दी',
@@ -256,7 +360,20 @@ var I18N = {
     themeDark: 'गहरी',
     downloadTool: 'डाउनलोड',
     ramDesc: 'Windows के लिए एक ईमानदार RAM टूल – प्लेसीबो बटन पर साफ़ लिखा है कि वह प्लेसीबो है।',
-    ramMeta: 'Windows 10/11 · ओपन सोर्स · मुफ़्त'
+    ramMeta: 'Windows 10/11 · ओपन सोर्स · मुफ़्त',
+    werkstattTitle: 'नया क्या है और गाइड · Dennis_mit_2n',
+    werkstattHeading: 'नया क्या है और गाइड',
+    werkstattSub: 'हाल में क्या बदला – और हर औज़ार कैसे काम करता है।',
+    navTools: 'औज़ार',
+    secGuide: 'गाइड',
+    secNews: 'नया क्या है',
+    guidePurpose: 'किस काम के लिए',
+    guideSteps: 'तीन चरणों में',
+    guideTrouble: 'अगर कुछ अटक जाए',
+    guideDocs: 'तकनीकी जानकारी और सोर्स कोड GitHub पर',
+    viewRelease: 'रिलीज़ देखें',
+    langNotice: 'ये पाठ फ़िलहाल केवल जर्मन और अंग्रेज़ी में हैं।',
+    backHome: 'शुरुआती पेज पर लौटें'
   },
   zh: {
     _name: '中文',
@@ -284,7 +401,20 @@ var I18N = {
     themeDark: '深色',
     downloadTool: '下载',
     ramDesc: '一个诚实的 Windows 内存工具——安慰剂按钮如实标注。',
-    ramMeta: 'Windows 10/11 · 开源 · 免费'
+    ramMeta: 'Windows 10/11 · 开源 · 免费',
+    werkstattTitle: '更新与使用说明 · Dennis_mit_2n',
+    werkstattHeading: '更新与使用说明',
+    werkstattSub: '最近有哪些变化——以及每个工具怎么用。',
+    navTools: '工具',
+    secGuide: '使用说明',
+    secNews: '更新',
+    guidePurpose: '用来做什么',
+    guideSteps: '三步上手',
+    guideTrouble: '如果卡住了',
+    guideDocs: '技术细节和源代码在 GitHub',
+    viewRelease: '查看发布版本',
+    langNotice: '这些文字目前只有德语和英语。',
+    backHome: '返回首页'
   },
   ja: {
     _name: '日本語',
@@ -312,7 +442,20 @@ var I18N = {
     themeDark: 'ダーク',
     downloadTool: 'ダウンロード',
     ramDesc: 'Windows向けの正直なRAMツール。プラセボボタンには正直にそう書いてあります。',
-    ramMeta: 'Windows 10/11 · オープンソース · 無料'
+    ramMeta: 'Windows 10/11 · オープンソース · 無料',
+    werkstattTitle: '更新情報と使い方 · Dennis_mit_2n',
+    werkstattHeading: '更新情報と使い方',
+    werkstattSub: '最近変わったこと、そして各ツールの使い方。',
+    navTools: 'ツール',
+    secGuide: '使い方',
+    secNews: '更新情報',
+    guidePurpose: '何のためのもの',
+    guideSteps: '3ステップで',
+    guideTrouble: 'うまくいかないとき',
+    guideDocs: '技術的な詳細とソースコードは GitHub に',
+    viewRelease: 'リリースを見る',
+    langNotice: 'これらの文章は今のところドイツ語と英語のみです。',
+    backHome: 'トップページに戻る'
   },
   ko: {
     _name: '한국어',
@@ -340,13 +483,29 @@ var I18N = {
     themeDark: '다크',
     downloadTool: '다운로드',
     ramDesc: 'Windows용 정직한 RAM 도구 — 플라시보 버튼엔 정직하게 그렇게 적혀 있어요.',
-    ramMeta: 'Windows 10/11 · 오픈 소스 · 무료'
+    ramMeta: 'Windows 10/11 · 오픈 소스 · 무료',
+    werkstattTitle: '새 소식과 사용법 · Dennis_mit_2n',
+    werkstattHeading: '새 소식과 사용법',
+    werkstattSub: '최근에 무엇이 바뀌었는지 — 그리고 각 도구를 어떻게 쓰는지.',
+    navTools: '도구',
+    secGuide: '사용법',
+    secNews: '새 소식',
+    guidePurpose: '어디에 쓰나',
+    guideSteps: '세 단계로',
+    guideTrouble: '잘 안 될 때',
+    guideDocs: '기술적인 세부 사항과 소스 코드는 GitHub에',
+    viewRelease: '릴리스 보기',
+    langNotice: '이 글들은 아직 독일어와 영어로만 제공됩니다.',
+    backHome: '시작 페이지로 돌아가기'
   }
 };
 
 var i18n = (function () {
   var STORAGE_KEY = 'dennismit2n-home.lang';
   var current = 'en';
+  // Pages with more than static labels (werkstatt.html builds its news and
+  // guides itself) register here and redraw on every language change.
+  var listeners = [];
 
   function detect() {
     try {
@@ -370,7 +529,9 @@ var i18n = (function () {
     if (I18N[lang]) { current = lang; }
     try { localStorage.setItem(STORAGE_KEY, current); } catch (e) { /* ignore */ }
     document.documentElement.lang = current;
-    document.title = t('pageTitle');
+    // Each page names its own title key; without one it stays with the start
+    // page's.
+    document.title = t(document.documentElement.getAttribute('data-title-key') || 'pageTitle');
     var nodes = document.querySelectorAll('[data-i18n]');
     for (var i = 0; i < nodes.length; i++) {
       nodes[i].textContent = t(nodes[i].getAttribute('data-i18n'));
@@ -379,7 +540,10 @@ var i18n = (function () {
     for (var k = 0; k < ariaNodes.length; k++) {
       ariaNodes[k].setAttribute('aria-label', t(ariaNodes[k].getAttribute('data-i18n-aria')));
     }
+    for (var m = 0; m < listeners.length; m++) { listeners[m](current); }
   }
 
-  return { detect: detect, apply: apply, t: t, get lang() { return current; } };
+  function onApply(fn) { listeners.push(fn); }
+
+  return { detect: detect, apply: apply, t: t, onApply: onApply, get lang() { return current; } };
 })();

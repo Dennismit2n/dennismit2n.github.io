@@ -17,13 +17,21 @@ Startseite für die kleinen Tools von Dennis_mit_2n — im Browser und für Wind
 
 Same order as the tiles on the page. Five run in the browser; Real_RAM_cooler is a Windows download — which is why the headline says "on your own device" and not "in your browser".
 
-*Analytics:* the page uses [GoatCounter](https://www.goatcounter.com) for anonymous, cookieless visit counting (disclosed in the footer). The script is vendored locally in `js/vendor/count.js`, so no third-party script runs here and no CDN is contacted; the only external request is the count pixel. Beyond page views, **each tile click is counted as its own event** (`kachel-ram`, `kachel-shrink`, …) so it is visible which tool people actually open — without cookies, without an account, and without anything that identifies a visitor across visits.
+## News and guides
+
+`werkstatt.html` carries, for every tool, a short guide (what it is for, three steps, what to watch out for) and its dated release notes. Under each tile on the start page sits a line linking straight to the matching section, showing the date of the newest entry.
+
+Both come from hand-maintained data files, not from a feed: `js/news.js` and `js/guides.js`. **Only Real_RAM_cooler has real GitHub releases** — the five browser tools carry no tags, so their entries are written by hand and dated by the commit they describe. Guides are written for people who want to *use* the tool; the READMEs stay what they are, developer documents, and are linked from each section.
+
+The interface words exist in all 12 languages. The texts themselves are German and English; the other ten languages get the English version plus a notice in their own language saying so.
+
+*Analytics:* the page uses [GoatCounter](https://www.goatcounter.com) for anonymous, cookieless visit counting (disclosed in the footer). The script is vendored locally in `js/vendor/count.js`, so no third-party script runs here and no CDN is contacted; the only external request is the count pixel. Beyond page views, **each tile click is counted as its own event** (`kachel-ram`, `kachel-shrink`, …) so it is visible which tool people actually open. The links to the news and guides page are counted the same way (`werkstatt-ram-news`, `werkstatt-ram-anleitung`, `werkstatt-gesamt`, …) — without cookies, without an account, and without anything that identifies a visitor across visits.
 
 *Deliberately absent:* no service worker and no web manifest. The sister projects have both; this page does not, to avoid the cache-version trap on every deploy. So the page is not installable and does not work offline.
 
 ## Development
 
-No build step — plain HTML, CSS, and JavaScript. 19 files, no npm dependencies.
+No build step — plain HTML, CSS, and JavaScript. 24 files make up the site: two pages, one stylesheet, eight scripts (one of them GoatCounter's, vendored), ten images and three icons. No npm dependencies.
 
 ```
 node tools/dev-server.js
