@@ -153,7 +153,7 @@ export const TOOLS = [
     farbe: '#4ade80',
     claimDe: 'Wer schuldet wem was?',
     claimEn: 'Who owes whom?',
-    zusagen: ['Ohne Konto', 'ohne App', 'ohne Server'],
+    zusagen: ['Ohne Konto', 'ohne App', 'ohne eigenen Server'],
     url: 'dennismit2n.github.io/collective-calc',
     story: [
       { ober: 'Nach jedem Urlaub', gross: 'Wer schuldet wem was?', unter: 'Einer hat das Haus bezahlt, jemand anders ständig den Einkauf.' },
