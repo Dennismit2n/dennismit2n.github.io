@@ -19,7 +19,9 @@ Same order as the tiles on the page. Five run in the browser; Real_RAM_cooler is
 
 ## News and guides
 
-`werkstatt.html` carries, for every tool, a short guide (what it is for, three steps, what to watch out for) and its dated release notes. Under each tile on the start page sits a line linking straight to the matching section, showing the date of the newest entry.
+`werkstatt.html` carries, for every tool, a short guide (what it is for, three steps, what to watch out for) and its dated release notes. Each tile on the start page holds two mini tiles linking straight to the matching section, the news one showing the date of the newest entry.
+
+That is why a tile is a `<div>` rather than a link: `.tool-open` is stretched across the whole card via `::after`, so clicking anywhere still opens the tool, while the mini tiles stay clickable on top of it. A tile built from nested `<a>` elements would be invalid HTML.
 
 Both come from hand-maintained data files, not from a feed: `js/news.js` and `js/guides.js`. **Only Real_RAM_cooler has real GitHub releases** — the five browser tools carry no tags, so their entries are written by hand and dated by the commit they describe. Guides are written for people who want to *use* the tool; the READMEs stay what they are, developer documents, and are linked from each section.
 
