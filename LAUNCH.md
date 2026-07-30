@@ -577,7 +577,7 @@ Alle sechs auf einer Seite: **[dennismit2n.github.io](https://dennismit2n.github
 Fehlerberichte, Übersetzungskorrekturen und Kritik an der Rechnung sind mir alle drei willkommen. Die Issues stehen offen.
 ```
 
-(3 385 Zeichen)
+(3 331 Zeichen)
 
 ---
 
