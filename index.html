@@ -70,105 +70,90 @@
 
     <section class="tools" aria-labelledby="toolboxHeading">
       <h2 id="toolboxHeading"><span class="tb-emoji" aria-hidden="true">🧰</span> <span data-i18n="toolboxHeading">The toolbox</span></h2>
-      <!-- Every tile sits in a wrapper: the tile itself stays ONE <a>, and the
-           line below is its sibling. Links inside links would be invalid HTML,
-           and the click counter still hangs off .tool-card. -->
+      <!-- The tile is a <div>, not a link: .tool-open is stretched across the
+           whole card via ::after, so a click anywhere still opens the tool.
+           That is what lets the two mini tiles live INSIDE the card — a tile
+           built from nested <a> elements would be invalid HTML. The stretched
+           link borrows the tool name via aria-labelledby, otherwise five tiles
+           would all announce themselves as just "Open". -->
       <div class="tool-grid">
-        <div class="tool-cell">
-          <a class="tool-card tool-ram" href="https://github.com/Dennismit2n/Real_RAM_cooler/releases/latest" rel="noopener">
-            <span class="tool-head">
-              <img src="./assets/ramcooler.svg" alt="" width="44" height="44">
-              <span class="tool-name">Real_RAM_cooler</span>
-            </span>
-            <span class="tool-desc" data-i18n="ramDesc">An honest RAM tool for Windows – the placebo button is labeled as such.</span>
-            <span class="tool-meta" data-i18n="ramMeta">Windows 10/11 · open source · free</span>
-            <span class="tool-open"><span data-i18n="downloadTool">Download</span> <span class="arrow" aria-hidden="true">→</span></span>
-          </a>
-          <p class="tool-links" data-tool="ram">
-            <a href="./werkstatt.html#ram-neuigkeiten" data-count="werkstatt-ram-news"><span data-i18n="secNews">News</span> <span class="tool-links-date"></span></a>
-            <span class="sep" aria-hidden="true">·</span>
+        <div class="tool-card tool-ram">
+          <span class="tool-head">
+            <img src="./assets/ramcooler.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-ram">Real_RAM_cooler</span>
+          </span>
+          <span class="tool-desc" data-i18n="ramDesc">An honest RAM tool for Windows – the placebo button is labeled as such.</span>
+          <span class="tool-meta" data-i18n="ramMeta">Windows 10/11 · open source · free</span>
+          <a class="tool-open" id="open-ram" aria-labelledby="open-ram name-ram" href="https://github.com/Dennismit2n/Real_RAM_cooler/releases/latest" rel="noopener"><span data-i18n="downloadTool">Download</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="ram">
+            <a href="./werkstatt.html#ram-neuigkeiten" data-count="werkstatt-ram-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
             <a href="./werkstatt.html#ram-anleitung" data-count="werkstatt-ram-anleitung" data-i18n="secGuide">Guide</a>
-          </p>
+          </span>
         </div>
-        <div class="tool-cell">
-          <a class="tool-card tool-shrink" href="https://dennismit2n.github.io/shrinkling/">
-            <span class="tool-head">
-              <img src="./assets/shrinkling.svg" alt="" width="44" height="44">
-              <span class="tool-name">shrinkling</span>
-            </span>
-            <span class="tool-desc" data-i18n="shrinkDesc">Shrink photos right in your browser – for email, applications, classifieds.</span>
-            <span class="tool-meta" data-i18n="featuresLine">Free · no sign-up · no uploads</span>
-            <span class="tool-open"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></span>
-          </a>
-          <p class="tool-links" data-tool="shrink">
-            <a href="./werkstatt.html#shrink-neuigkeiten" data-count="werkstatt-shrink-news"><span data-i18n="secNews">News</span> <span class="tool-links-date"></span></a>
-            <span class="sep" aria-hidden="true">·</span>
+        <div class="tool-card tool-shrink">
+          <span class="tool-head">
+            <img src="./assets/shrinkling.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-shrink">shrinkling</span>
+          </span>
+          <span class="tool-desc" data-i18n="shrinkDesc">Shrink photos right in your browser – for email, applications, classifieds.</span>
+          <span class="tool-meta" data-i18n="featuresLine">Free · no sign-up · no uploads</span>
+          <a class="tool-open" id="open-shrink" aria-labelledby="open-shrink name-shrink" href="https://dennismit2n.github.io/shrinkling/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="shrink">
+            <a href="./werkstatt.html#shrink-neuigkeiten" data-count="werkstatt-shrink-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
             <a href="./werkstatt.html#shrink-anleitung" data-count="werkstatt-shrink-anleitung" data-i18n="secGuide">Guide</a>
-          </p>
+          </span>
         </div>
-        <div class="tool-cell">
-          <a class="tool-card tool-wifi" href="https://dennismit2n.github.io/wifi-qr/">
-            <span class="tool-head">
-              <img src="./assets/wifi-qr.svg" alt="" width="44" height="44">
-              <span class="tool-name" data-i18n="wifiName">WiFi QR Card</span>
-            </span>
-            <span class="tool-desc" data-i18n="wifiDesc">Create a QR code for your WiFi – guests scan and they're in.</span>
-            <span class="tool-meta" data-i18n="featuresLine">Free · no sign-up · no uploads</span>
-            <span class="tool-open"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></span>
-          </a>
-          <p class="tool-links" data-tool="wifi">
-            <a href="./werkstatt.html#wifi-neuigkeiten" data-count="werkstatt-wifi-news"><span data-i18n="secNews">News</span> <span class="tool-links-date"></span></a>
-            <span class="sep" aria-hidden="true">·</span>
+        <div class="tool-card tool-wifi">
+          <span class="tool-head">
+            <img src="./assets/wifi-qr.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-wifi" data-i18n="wifiName">WiFi QR Card</span>
+          </span>
+          <span class="tool-desc" data-i18n="wifiDesc">Create a QR code for your WiFi – guests scan and they're in.</span>
+          <span class="tool-meta" data-i18n="featuresLine">Free · no sign-up · no uploads</span>
+          <a class="tool-open" id="open-wifi" aria-labelledby="open-wifi name-wifi" href="https://dennismit2n.github.io/wifi-qr/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="wifi">
+            <a href="./werkstatt.html#wifi-neuigkeiten" data-count="werkstatt-wifi-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
             <a href="./werkstatt.html#wifi-anleitung" data-count="werkstatt-wifi-anleitung" data-i18n="secGuide">Guide</a>
-          </p>
+          </span>
         </div>
-        <div class="tool-cell">
-          <a class="tool-card tool-collective" href="https://dennismit2n.github.io/collective-calc/">
-            <span class="tool-head">
-              <img src="./assets/collective-calc.svg" alt="" width="44" height="44">
-              <span class="tool-name">Collective-Calc</span>
-            </span>
-            <span class="tool-desc" data-i18n="collectiveDesc">Who owes whom what? Split group expenses – no account, no app, shareable as a link.</span>
-            <span class="tool-meta" data-i18n="featuresLine">Free · no sign-up · no uploads</span>
-            <span class="tool-open"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></span>
-          </a>
-          <p class="tool-links" data-tool="collective">
-            <a href="./werkstatt.html#collective-neuigkeiten" data-count="werkstatt-collective-news"><span data-i18n="secNews">News</span> <span class="tool-links-date"></span></a>
-            <span class="sep" aria-hidden="true">·</span>
+        <div class="tool-card tool-collective">
+          <span class="tool-head">
+            <img src="./assets/collective-calc.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-collective">Collective-Calc</span>
+          </span>
+          <span class="tool-desc" data-i18n="collectiveDesc">Who owes whom what? Split group expenses – no account, no app, shareable as a link.</span>
+          <span class="tool-meta" data-i18n="featuresLine">Free · no sign-up · no uploads</span>
+          <a class="tool-open" id="open-collective" aria-labelledby="open-collective name-collective" href="https://dennismit2n.github.io/collective-calc/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="collective">
+            <a href="./werkstatt.html#collective-neuigkeiten" data-count="werkstatt-collective-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
             <a href="./werkstatt.html#collective-anleitung" data-count="werkstatt-collective-anleitung" data-i18n="secGuide">Guide</a>
-          </p>
+          </span>
         </div>
-        <div class="tool-cell">
-          <a class="tool-card tool-bigday" href="https://dennismit2n.github.io/bigday/">
-            <span class="tool-head">
-              <img src="./assets/bigday.svg" alt="" width="44" height="44">
-              <span class="tool-name">bigday</span>
-            </span>
-            <span class="tool-desc" data-i18n="bigdayDesc">A pretty countdown to vacation, birthday &amp; more – shareable as a link.</span>
-            <span class="tool-meta" data-i18n="featuresLine">Free · no sign-up · no uploads</span>
-            <span class="tool-open"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></span>
-          </a>
-          <p class="tool-links" data-tool="bigday">
-            <a href="./werkstatt.html#bigday-neuigkeiten" data-count="werkstatt-bigday-news"><span data-i18n="secNews">News</span> <span class="tool-links-date"></span></a>
-            <span class="sep" aria-hidden="true">·</span>
+        <div class="tool-card tool-bigday">
+          <span class="tool-head">
+            <img src="./assets/bigday.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-bigday">bigday</span>
+          </span>
+          <span class="tool-desc" data-i18n="bigdayDesc">A pretty countdown to vacation, birthday &amp; more – shareable as a link.</span>
+          <span class="tool-meta" data-i18n="featuresLine">Free · no sign-up · no uploads</span>
+          <a class="tool-open" id="open-bigday" aria-labelledby="open-bigday name-bigday" href="https://dennismit2n.github.io/bigday/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="bigday">
+            <a href="./werkstatt.html#bigday-neuigkeiten" data-count="werkstatt-bigday-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
             <a href="./werkstatt.html#bigday-anleitung" data-count="werkstatt-bigday-anleitung" data-i18n="secGuide">Guide</a>
-          </p>
+          </span>
         </div>
-        <div class="tool-cell">
-          <a class="tool-card tool-rad" href="https://dennismit2n.github.io/dreh-das-rad/">
-            <span class="tool-head">
-              <img src="./assets/dreh-das-rad.svg" alt="" width="44" height="44">
-              <span class="tool-name">Dreh das Rad</span>
-            </span>
-            <span class="tool-desc" data-i18n="radDesc">Options in, wheel spins, fate decides – shareable as a link.</span>
-            <span class="tool-meta" data-i18n="featuresLine">Free · no sign-up · no uploads</span>
-            <span class="tool-open"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></span>
-          </a>
-          <p class="tool-links" data-tool="rad">
-            <a href="./werkstatt.html#rad-neuigkeiten" data-count="werkstatt-rad-news"><span data-i18n="secNews">News</span> <span class="tool-links-date"></span></a>
-            <span class="sep" aria-hidden="true">·</span>
+        <div class="tool-card tool-rad">
+          <span class="tool-head">
+            <img src="./assets/dreh-das-rad.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-rad">Dreh das Rad</span>
+          </span>
+          <span class="tool-desc" data-i18n="radDesc">Options in, wheel spins, fate decides – shareable as a link.</span>
+          <span class="tool-meta" data-i18n="featuresLine">Free · no sign-up · no uploads</span>
+          <a class="tool-open" id="open-rad" aria-labelledby="open-rad name-rad" href="https://dennismit2n.github.io/dreh-das-rad/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="rad">
+            <a href="./werkstatt.html#rad-neuigkeiten" data-count="werkstatt-rad-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
             <a href="./werkstatt.html#rad-anleitung" data-count="werkstatt-rad-anleitung" data-i18n="secGuide">Guide</a>
-          </p>
+          </span>
         </div>
       </div>
       <p class="more-line">
