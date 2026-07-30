@@ -229,7 +229,49 @@ body {
 .tool-open .arrow { transition: transform 0.15s ease; }
 .tool-card:hover .arrow { transform: translateX(3px); }
 
-.more-line { text-align: center; color: var(--text-soft); font-size: 0.92rem; margin: 28px 0 0; }
+/* The wrapper carries the tile plus the line below it. The tile has to keep
+   filling the cell so neighbours in the same row stay the same height. */
+.tool-cell { display: flex; flex-direction: column; }
+.tool-cell > .tool-card { flex: 1; }
+
+.tool-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 7px;
+  margin: 9px 6px 0;
+  font-size: 0.85rem;
+  color: var(--text-soft);
+}
+.tool-links a {
+  color: var(--text-soft);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.tool-links a:hover,
+.tool-links a:focus-visible { color: var(--tool); border-bottom-color: var(--tool); }
+.tool-links-date { font-variant-numeric: tabular-nums; opacity: 0.85; }
+
+/* The line is a sibling of the tile, so it cannot inherit --tool from it. */
+.tool-links[data-tool="ram"] { --tool: var(--ram); }
+.tool-links[data-tool="shrink"] { --tool: var(--shrink); }
+.tool-links[data-tool="wifi"] { --tool: var(--wifi); }
+.tool-links[data-tool="collective"] { --tool: var(--collective); }
+.tool-links[data-tool="bigday"] { --tool: var(--bigday); }
+.tool-links[data-tool="rad"] { --tool: var(--rad); }
+
+.more-line {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+  color: var(--text-soft);
+  font-size: 0.92rem;
+  margin: 28px 0 0;
+}
+.more-line a { color: var(--accent); font-weight: 500; text-decoration: none; }
+.more-line a:hover { text-decoration: underline; }
 
 /* Footer */
 .site-footer {
@@ -262,4 +304,208 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .tool-card, .tool-open .arrow { transition: none; }
   .tool-card:hover { transform: none; }
+}
+
+/* ==================================================================
+   werkstatt.html — news and guides
+   Same brand as the start page, but the layout of the launch console:
+   navigation on the left, content on the right. Everything sits in one
+   document so anchors work without JavaScript.
+   ================================================================== */
+
+.page-wide { max-width: 1080px; }
+
+a.brand { text-decoration: none; color: inherit; }
+
+.wk-hero { text-align: center; padding: 44px 8px 26px; }
+.wk-hero h1 {
+  font-size: clamp(1.8rem, 4.6vw, 2.5rem);
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  margin: 0 0 12px;
+}
+
+.wk-lang-notice {
+  max-width: 640px;
+  margin: 0 auto 22px;
+  padding: 11px 16px;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 9px 9px 0;
+  background: var(--panel);
+  color: var(--text-soft);
+  font-size: 0.9rem;
+}
+
+.wk-frame {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 32px;
+  align-items: start;
+  margin-top: 8px;
+}
+
+/* Navigation */
+.wk-nav { position: sticky; top: 18px; }
+.wk-nav-title {
+  margin: 0 0 8px;
+  padding: 0 10px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+}
+.wk-nav-list { display: flex; flex-direction: column; gap: 2px; }
+.wk-nav-button {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 10px;
+  border-left: 3px solid transparent;
+  border-radius: 0 8px 8px 0;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.92rem;
+}
+.wk-nav-button:hover { background: var(--panel); }
+.wk-nav-button[aria-current="true"] {
+  background: var(--panel);
+  border-left-color: var(--tool, var(--accent));
+  font-weight: 600;
+}
+.wk-nav-dot {
+  width: 8px;
+  height: 8px;
+  flex: none;
+  border-radius: 50%;
+  background: var(--tool, var(--accent));
+}
+.wk-nav-back {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 0 10px;
+  color: var(--accent);
+  font-size: 0.88rem;
+  text-decoration: none;
+}
+.wk-nav-back:hover { text-decoration: underline; }
+
+/* Tool sections */
+.wk-content { min-width: 0; }
+.wk-tool {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  margin-bottom: 18px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  /* The sticky header of a browser must not swallow the heading when an
+     anchor is opened. */
+  scroll-margin-top: 18px;
+}
+.wk-tool-head {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  flex-wrap: wrap;
+  padding: 15px 20px;
+  border-bottom: 1px solid var(--border);
+}
+.wk-tool-head img { width: 40px; height: 40px; border-radius: 9px; display: block; }
+.wk-tool-name { margin: 0; font-size: 1.1rem; font-weight: 600; color: var(--tool, var(--accent)); }
+.wk-tool-cta {
+  margin-left: auto;
+  color: var(--tool, var(--accent));
+  font-weight: 600;
+  font-size: 0.92rem;
+  text-decoration: none;
+}
+.wk-tool-cta:hover { text-decoration: underline; }
+
+.wk-body { padding: 6px 20px 20px; }
+
+.wk-section {
+  margin: 20px 0 4px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+  font-size: 1.05rem;
+  font-weight: 700;
+  scroll-margin-top: 18px;
+}
+.wk-body > .wk-section:first-child { border-top: 0; padding-top: 8px; margin-top: 8px; }
+
+.wk-sub {
+  margin: 16px 0 6px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--tool, var(--accent));
+}
+
+.wk-text { margin: 0 0 10px; font-size: 0.95rem; }
+.wk-steps, .wk-pitfalls { margin: 0 0 10px; padding-left: 22px; font-size: 0.95rem; }
+.wk-steps li, .wk-pitfalls li { margin-bottom: 7px; }
+.wk-pitfalls { color: var(--text-soft); }
+
+.wk-docs { margin: 12px 0 0; font-size: 0.88rem; }
+.wk-external { color: var(--accent); text-decoration: none; }
+.wk-external:hover { text-decoration: underline; }
+.wk-arrow { display: inline-block; }
+
+/* News entries */
+.wk-news { list-style: none; margin: 12px 0 0; padding: 0; }
+.wk-news > li {
+  padding-left: 15px;
+  border-left: 2px solid var(--border);
+  margin-bottom: 16px;
+}
+.wk-news > li:last-child { margin-bottom: 0; }
+.wk-news-meta {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 0 0 4px;
+}
+.wk-news-date {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-soft);
+  font-variant-numeric: tabular-nums;
+}
+.wk-news-version {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--tool, var(--accent));
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 1px 8px;
+}
+
+/* Narrow screens: the sidebar becomes a scrollable row of chips above the
+   content. Sticky is dropped — a bar that follows you costs more room than
+   it gives on a phone. */
+@media (max-width: 720px) {
+  .wk-frame { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .wk-nav { position: static; }
+  .wk-nav-list {
+    flex-direction: row;
+    gap: 6px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+  .wk-nav-button {
+    flex: none;
+    border-left: 0;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--panel);
+    white-space: nowrap;
+  }
+  .wk-nav-button[aria-current="true"] { border-color: var(--tool, var(--accent)); }
+  .wk-nav-back { margin-top: 12px; padding: 0; }
+  .wk-body { padding: 6px 15px 16px; }
+  .wk-tool-head { padding: 13px 15px; }
 }
