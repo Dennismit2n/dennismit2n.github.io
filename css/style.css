@@ -18,6 +18,7 @@
   --ram: #0369a1;
   --rad: #e11d48;
   --collective: #15803d;
+  --zaehlwerk: #4d7c0f;
   --shadow: 0 10px 30px rgba(23, 26, 51, 0.10);
 }
 
@@ -44,6 +45,8 @@
     --ram: #66e0ff;
     --rad: #fb7185;
     --collective: #4ade80;
+  --zaehlwerk: #a3e635;
+    --zaehlwerk: #a3e635;
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   }
 }
@@ -205,6 +208,7 @@ body {
 .tool-ram { --tool: var(--ram); }
 .tool-rad { --tool: var(--rad); }
 .tool-collective { --tool: var(--collective); }
+.tool-zaehlwerk { --tool: var(--zaehlwerk); }
 
 .tool-card:hover {
   border-color: var(--tool);

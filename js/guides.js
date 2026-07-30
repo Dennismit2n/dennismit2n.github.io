@@ -236,5 +236,46 @@ var GUIDES = {
       de: 'https://github.com/Dennismit2n/dreh-das-rad/blob/main/README.de.md',
       en: 'https://github.com/Dennismit2n/dreh-das-rad/blob/main/README.md'
     }
+  },
+
+  zaehlwerk: {
+    purpose: {
+      de: 'Claude Code legt für jede Sitzung ein Protokoll auf der Festplatte an. Zählwerk liest diese Dateien und rechnet aus, wohin der Verbrauch geht: welcher Tag, welches Modell, welches Projekt, welche Uhrzeit. Gerechnet wird im Browser — die Protokolle werden nirgendwohin geschickt.',
+      en: 'Claude Code writes a log for every session onto your disk. Zählwerk reads those files and works out where your usage goes: which day, which model, which project, which hour. All computation happens in the browser — the logs are never sent anywhere.'
+    },
+    steps: {
+      de: [
+        'Auf die Fläche klicken und den Ordner auswählen: unter Windows %USERPROFILE%\.claude\projects, sonst ~/.claude/projects. Er ist versteckt — den Pfad einfach oben in die Adreßzeile des Auswahlfensters eintippen.',
+        'Kurz warten. Der Balken zeigt, wie viele Dateien schon gelesen sind; bei einigen hundert Megabyte dauert das ein paar Sekunden.',
+        'Oben stehen die vier Kennzahlen, darunter die Aufschlüsselungen. Jeder Bereich hat ein Fragezeichen, das erklärt, wie er zu lesen ist.'
+      ],
+      en: [
+        'Click the panel and pick the folder: on Windows %USERPROFILE%\.claude\projects, otherwise ~/.claude/projects. It is hidden — just type the path into the address bar of the file dialog.',
+        'Wait a moment. The bar shows how many files have been read; with a few hundred megabytes this takes a couple of seconds.',
+        'The four headline figures sit at the top, the breakdowns below. Every section has a question mark explaining how to read it.'
+      ]
+    },
+    pitfalls: {
+      de: [
+        'Es gibt KEINE Prozentanzeige und keinen Hinweis auf dein verbleibendes Kontingent. Wie viel dir noch zusteht, steht in diesen Dateien schlicht nicht drin — Zählwerk kann nur zählen, was verbraucht wurde.',
+        'Es gibt KEINE Kostenangabe. In den Protokollen stehen keine Preise, und im Abonnement kostet Claude Code ohnehin nichts zusätzlich. Ein Eurobetrag wäre erfunden.',
+        'Gezählt wird ausschließlich Claude Code. Was du auf claude.ai im Browser tust, taucht hier nicht auf — dafür gibt es auf der Festplatte keine Protokolle.',
+        'In den Protokollen steht jedes Wort jedes Gesprächs. Zählwerk liest davon nur die Abrechnungszeilen und zeigt nie Gesprächsinhalte an — wer das nachprüfen will, öffnet die Entwicklerwerkzeuge: außer der Seite selbst und dem Besucherzähler geht keine Anfrage hinaus.',
+        'Das Dateiformat ist von Anthropic nicht dokumentiert. Ändert es sich, zeigt Zählwerk zu wenig an oder gar nichts mehr. Dann hilft nur eine neue Fassung.',
+        'Die Ordnerauswahl braucht einen Browser, der ganze Ordner entgegennimmt — Chrome, Edge und Firefox können das, auf dem iPhone klappt es nicht.'
+      ],
+      en: [
+        'There is NO percentage display and no indication of your remaining allowance. How much you have left simply is not in these files — Zählwerk can only count what has been used.',
+        'There is NO cost figure. The logs contain no prices, and on a subscription Claude Code costs nothing extra anyway. Any euro amount would be invented.',
+        'Only Claude Code is counted. What you do on claude.ai in the browser does not appear here — there are no logs for it on your disk.',
+        'The logs contain every word of every conversation. Zählwerk reads only the accounting lines from them and never displays conversation content — to verify that, open the developer tools: apart from the page itself and the visitor counter, no request goes out.',
+        'The file format is not documented by Anthropic. If it changes, Zählwerk will show too little or nothing at all. Only a new version helps then.',
+        'Picking a folder requires a browser that accepts whole directories — Chrome, Edge and Firefox do; on an iPhone it does not work.'
+      ]
+    },
+    docs: {
+      de: 'https://github.com/Dennismit2n/zaehlwerk/blob/main/README.de.md',
+      en: 'https://github.com/Dennismit2n/zaehlwerk/blob/main/README.md'
+    }
   }
 };

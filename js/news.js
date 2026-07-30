@@ -131,5 +131,13 @@ var NEWS = {
       de: 'Erste Veröffentlichung. Optionen eintippen, Rad drehen, das Los entscheidet. Gezogen wird mit dem Zufallsgenerator des Browsers, bevor sich das Rad bewegt — die Animation zeigt das Ergebnis, sie erzeugt es nicht.',
       en: 'First release. Type in the options, spin the wheel, let chance decide. The winner is drawn with the browser’s random generator before the wheel moves — the animation shows the result, it does not create it.'
     }
+  ],
+
+  zaehlwerk: [
+    {
+      date: '2026-07-31',
+      de: 'Erste Veröffentlichung. Ordner auswählen, und Zählwerk rechnet aus, wohin der eigene Claude-Code-Verbrauch geht — nach Tag, Modell, Projekt, Wochentag und Uhrzeit. Gelesen wird ausschließlich im Browser; die Protokolle werden nicht hochgeladen.',
+      en: 'First release. Pick a folder and Zählwerk works out where your Claude Code usage goes — by day, model, project, weekday and hour. Everything is read inside the browser; the logs are never uploaded.'
+    }
   ]
 };

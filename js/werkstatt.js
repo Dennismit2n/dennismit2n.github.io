@@ -24,7 +24,9 @@
     { key: 'bigday', name: 'bigday', icon: './assets/bigday.svg',
       url: 'https://dennismit2n.github.io/bigday/', ctaKey: 'openTool' },
     { key: 'rad', name: 'Dreh das Rad', icon: './assets/dreh-das-rad.svg',
-      url: 'https://dennismit2n.github.io/dreh-das-rad/', ctaKey: 'openTool' }
+      url: 'https://dennismit2n.github.io/dreh-das-rad/', ctaKey: 'openTool' },
+    { key: 'zaehlwerk', name: 'Zählwerk', icon: './assets/zaehlwerk.svg',
+      url: 'https://dennismit2n.github.io/zaehlwerk/', ctaKey: 'openTool' }
   ];
 
   // Texts exist in German and English; every other language gets the English
