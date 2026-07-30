@@ -16,7 +16,7 @@
 
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { dirname, resolve, join } from 'node:path';
-import { mkdir, writeFile, stat, copyFile } from 'node:fs/promises';
+import { mkdir, writeFile, readFile, stat, copyFile } from 'node:fs/promises';
 import { MARKE, TOOLS, FORMATE, MARKENFORMATE, iconSvg, KISTE } from './marke.mjs';
 
 const hier = dirname(fileURLToPath(import.meta.url));
@@ -136,6 +136,29 @@ function panel(t, f) {
   </div>` + fuss;
 }
 
+/* Twitch-Profilbanner, 1200×480 je Werkzeug.
+ *
+ * Zwei Eigenheiten von Twitch bestimmen das Layout, nicht der Geschmack:
+ * schmale Fenster beschneiden das Banner an den Seiten, und je nach
+ * Twitch-Fassung sitzt das Profilbild unten links darüber. Deshalb steht
+ * alles mittig und die untere linke Ecke bleibt frei — was auch immer
+ * Twitch dort einblendet, verdeckt nichts. */
+function twitchBanner(t, f) {
+  return kopf(f.b, f.h) + `<div class="buehne" style="align-items:center;justify-content:center;padding:0 96px 52px">
+    <div class="schein" style="width:1100px;height:1100px;top:-520px;left:50%;transform:translateX(-50%);
+         background:radial-gradient(circle,${t.farbe}26,transparent 63%)"></div>
+    <div style="position:relative;display:flex;align-items:center;gap:46px">
+      <div style="width:160px;height:160px;flex:0 0 auto">${iconSvg(t.icon, 160)}</div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div style="font-size:72px;font-weight:800;letter-spacing:-.03em;line-height:1">${t.name}</div>
+        <div style="font-size:34px;font-weight:600;color:${t.farbe};line-height:1.2;letter-spacing:-.01em;white-space:pre-line">${t.claimDe}</div>
+        <div style="font-size:25px;color:${MARKE.weich};margin-top:6px">${t.url}</div>
+      </div>
+    </div>
+    ${balken(t.farbe, 'bottom:0;left:0;width:100%;height:9px;border-radius:0')}
+  </div>` + fuss;
+}
+
 function banner(f) {
   const hoch = f.h / f.b >= 0.45;
   const s = f.b / 1500;
@@ -213,7 +236,10 @@ for (const t of TOOLS) {
   if (nur && t.slug !== nur) continue;
   const ordner = join(ZIEL, t.slug);
   for (const f of FORMATE) {
-    const html = f.art === 'story' ? story(t, f) : f.art === 'panel' ? panel(t, f) : karte(t, f);
+    const html = f.art === 'story' ? story(t, f)
+      : f.art === 'panel' ? panel(t, f)
+        : f.art === 'twitchBanner' ? twitchBanner(t, f)
+          : karte(t, f);
     await schiess(html, f, ordner, f.datei);
     console.log(`${t.slug}/${f.datei}.png`.padEnd(48) + `${f.b}×${f.h}`);
   }
@@ -254,6 +280,21 @@ if (verteilen) {
   }
 }
 
-await writeFile(join(ZIEL, 'bilder-verzeichnis.json'), JSON.stringify(bericht, null, 2), 'utf8');
-const kb = bericht.reduce((s, b) => s + b.kb, 0);
-console.log(`\n${bericht.length} Bilder, zusammen ${(kb / 1024).toFixed(1)} MB (vor der Verkleinerung).`);
+/* Bei --nur enthält der Bericht nur dieses eine Werkzeug. Würde er das
+ * Verzeichnis einfach überschreiben, verschwänden die anderen fünf plus die
+ * Markenbilder daraus — und die Prüfliste meldete einen Bestand, den es gar
+ * nicht gibt. Also die alten Einträge behalten und nur die neu gerenderten
+ * ersetzen. */
+const verzeichnisPfad = join(ZIEL, 'bilder-verzeichnis.json');
+let gesamt = bericht;
+if (nur) {
+  try {
+    const alt = JSON.parse(await readFile(verzeichnisPfad, 'utf8'));
+    const neuePfade = new Set(bericht.map(b => b.datei));
+    gesamt = alt.filter(b => !neuePfade.has(b.datei)).concat(bericht);
+  } catch { /* noch kein Verzeichnis vorhanden — dann ist der Bericht alles */ }
+}
+gesamt.sort((a, b) => a.datei.localeCompare(b.datei, 'de'));
+await writeFile(verzeichnisPfad, JSON.stringify(gesamt, null, 2), 'utf8');
+const kb = gesamt.reduce((s, b) => s + b.kb, 0);
+console.log(`\n${bericht.length} Bilder gerendert; Verzeichnis führt ${gesamt.length}, zusammen ${(kb / 1024).toFixed(1)} MB.`);

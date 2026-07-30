@@ -105,7 +105,7 @@ export const TOOLS = [
       { ober: 'Was passiert', gross: 'Leert die Standby-Liste.', unter: 'Kein Zaubertrick, keine erfundene Zahl. Nur der eine Systemaufruf, den Windows dafür anbietet.' },
       { ober: 'Kostenlos & quelloffen', gross: 'Herunterladen', unter: 'github.com/Dennismit2n/Real_RAM_cooler' },
     ],
-    repo: 'Real_RAM_cooler v.1.1',
+    repo: 'Real_RAM_cooler v.1.2',
     repoBasis: 'C:/Projekte/CLAUDE',
     assetOrdner: 'assets',
     /* Windows-App ohne Webseite: og.png und instagram.png hätten dort keinen
