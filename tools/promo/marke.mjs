@@ -42,6 +42,11 @@ const ICONS = {
     <g transform="rotate(60 24 24)"><path d="M24 9.5V38.5"/><path d="M24 15.5l-4-4M24 15.5l4-4"/><path d="M24 32.5l-4 4M24 32.5l4 4"/></g>
     <g transform="rotate(120 24 24)"><path d="M24 9.5V38.5"/><path d="M24 15.5l-4-4M24 15.5l4-4"/><path d="M24 32.5l-4 4M24 32.5l4 4"/></g>
   </g>`,
+  zaehlwerk: `<rect x="2" y="2" width="44" height="44" rx="11" fill="#2f4a08"/>
+  <rect x="8" y="13" width="32" height="22" rx="4" fill="none" stroke="#a3e635" stroke-width="2.5"/>
+  <rect x="13" y="18" width="6" height="12" rx="1.5" fill="#a3e635"/>
+  <rect x="21" y="21" width="6" height="9" rx="1.5" fill="#a3e635" opacity=".7"/>
+  <rect x="29" y="24" width="6" height="6" rx="1.5" fill="#a3e635" opacity=".45"/>`,
   shrink: `<rect x="2" y="2" width="44" height="44" rx="11" fill="#7c3aed"/>
   <rect x="9" y="17" width="22" height="19" rx="3" fill="none" stroke="#fff" stroke-width="3"/>
   <circle cx="15.5" cy="23.5" r="2.2" fill="#fff"/>
@@ -216,6 +221,23 @@ export const TOOLS = [
       { ober: 'Kostenlos & quelloffen', gross: 'Werkzeugkiste öffnen', unter: 'dennismit2n.github.io' },
     ],
     repo: 'dennismit2n.github.io',
+    assetOrdner: 'assets',
+  },
+  {
+    slug: 'zaehlwerk',
+    name: 'Zählwerk',
+    icon: 'zaehlwerk',
+    farbe: '#a3e635',
+    claimDe: 'Wohin geht dein Claude-Code-Verbrauch?',
+    claimEn: 'Where does your Claude Code usage go?',
+    zusagen: ['Kostenlos', 'ohne Anmeldung', 'ohne Upload'],
+    url: 'dennismit2n.github.io/zaehlwerk',
+    story: [
+      { ober: 'Für Claude-Code-Nutzer', gross: 'Viel gearbeitet. Aber woran?', unter: 'Claude Code legt für jede Sitzung ein Protokoll an. Darin steht alles — nur liest es niemand.' },
+      { ober: 'So geht es', gross: 'Ordner auswählen, fertig.', unter: 'Aufgeschlüsselt nach Tag, Modell und Projekt. Gerechnet wird im Browser — deine Protokolle werden nicht hochgeladen.' },
+      { ober: 'Kostenlos & quelloffen', gross: 'Jetzt ansehen', unter: 'dennismit2n.github.io/zaehlwerk' },
+    ],
+    repo: 'zaehlwerk',
     assetOrdner: 'assets',
   },
 ];

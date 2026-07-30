@@ -5,7 +5,8 @@
       "name": "home",
       "runtimeExecutable": "node",
       "runtimeArgs": ["tools/dev-server.js"],
-      "port": 8615
+      "port": 8615,
+      "autoPort": true
     }
   ]
 }

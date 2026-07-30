@@ -1,0 +1,29 @@
+# ═══════════════════════════════════════════════════════════
+#  dennismit2n.github.io — .gitignore
+#  Regel: Was der Bildgenerator erzeugt, gehört nicht ins Repo.
+#  Die fertigen Bilder werden per --verteilen in die Ziel-Repos
+#  gelegt; der Zwischenstand unter tools/Bilder/ ist Ausgabe,
+#  keine Quelle, und lässt sich jederzeit neu rendern.
+# ═══════════════════════════════════════════════════════════
+
+# ── Ausgabe des Werbebild-Generators ──
+tools/Bilder/
+
+# ── Node ──
+node_modules/
+npm-debug.log*
+
+# ── Editoren / IDE ──
+.vscode/
+.idea/
+*.swp
+
+# ── Betriebssystem ──
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Logs & Temporäres ──
+*.log
+*.tmp
+*.bak
