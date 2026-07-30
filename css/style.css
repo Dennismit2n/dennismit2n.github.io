@@ -186,6 +186,7 @@ body {
 
 .tool-card {
   --tool: var(--accent);
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -205,11 +206,13 @@ body {
 .tool-rad { --tool: var(--rad); }
 .tool-collective { --tool: var(--collective); }
 
-.tool-card:hover,
-.tool-card:focus-visible {
+.tool-card:hover {
   border-color: var(--tool);
   transform: translateY(-2px);
 }
+/* The tile is no longer focusable itself — the border follows whatever inside
+   has the focus, be it the stretched link or one of the mini tiles. */
+.tool-card:focus-within { border-color: var(--tool); }
 
 .tool-head { display: flex; align-items: center; gap: 12px; }
 .tool-head img { width: 44px; height: 44px; border-radius: 10px; display: block; }
@@ -217,6 +220,8 @@ body {
 .tool-desc { font-size: 0.98rem; }
 .tool-meta { font-size: 0.85rem; color: var(--text-soft); }
 
+/* The stretched link: its ::after covers the whole tile, so a click anywhere
+   opens the tool even though the tile itself is only a <div>. */
 .tool-open {
   margin-top: auto;
   display: inline-flex;
@@ -225,40 +230,50 @@ body {
   color: var(--tool);
   font-weight: 600;
   font-size: 0.95rem;
+  text-decoration: none;
 }
+.tool-open::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+}
+/* Without this the focus ring would hug the word "Open" only. Drawing it on
+   the overlay instead puts it back around the whole tile, as before. */
+.tool-open:focus-visible { outline: none; }
+.tool-open:focus-visible::after { outline: 2px solid var(--accent); outline-offset: 2px; }
 .tool-open .arrow { transition: transform 0.15s ease; }
 .tool-card:hover .arrow { transform: translateX(3px); }
 
-/* The wrapper carries the tile plus the line below it. The tile has to keep
-   filling the cell so neighbours in the same row stay the same height. */
-.tool-cell { display: flex; flex-direction: column; }
-.tool-cell > .tool-card { flex: 1; }
-
-.tool-links {
+/* Two mini tiles inside the card. They have to sit ABOVE the stretched link,
+   otherwise the overlay swallows their clicks — hence position + z-index. */
+.tool-mini {
   display: flex;
   flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 2px;
+}
+.tool-mini a {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
   align-items: baseline;
-  gap: 7px;
-  margin: 9px 6px 0;
-  font-size: 0.85rem;
+  gap: 6px;
+  padding: 5px 10px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: var(--bg);
   color: var(--text-soft);
-}
-.tool-links a {
-  color: var(--text-soft);
+  font-size: 0.82rem;
   text-decoration: none;
-  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease, color 0.15s ease;
 }
-.tool-links a:hover,
-.tool-links a:focus-visible { color: var(--tool); border-bottom-color: var(--tool); }
-.tool-links-date { font-variant-numeric: tabular-nums; opacity: 0.85; }
-
-/* The line is a sibling of the tile, so it cannot inherit --tool from it. */
-.tool-links[data-tool="ram"] { --tool: var(--ram); }
-.tool-links[data-tool="shrink"] { --tool: var(--shrink); }
-.tool-links[data-tool="wifi"] { --tool: var(--wifi); }
-.tool-links[data-tool="collective"] { --tool: var(--collective); }
-.tool-links[data-tool="bigday"] { --tool: var(--bigday); }
-.tool-links[data-tool="rad"] { --tool: var(--rad); }
+.tool-mini a:hover,
+.tool-mini a:focus-visible {
+  border-color: var(--tool, var(--accent));
+  color: var(--tool, var(--accent));
+}
+.tool-mini-date { font-variant-numeric: tabular-nums; opacity: 0.85; }
 
 .more-line {
   display: flex;
@@ -302,7 +317,7 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .tool-card, .tool-open .arrow { transition: none; }
+  .tool-card, .tool-open .arrow, .tool-mini a { transition: none; }
   .tool-card:hover { transform: none; }
 }
 
