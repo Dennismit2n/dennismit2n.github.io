@@ -4,7 +4,15 @@ Stand 30.07.2026 · Live: dennismit2n.github.io · Repo: github.com/Dennismit2n/
 
 Das hier ist kein einzelnes Werkzeug, sondern die Marke: sechs kleine Werkzeuge und eine Haltung. Teil A sind die Beiträge zum Vorstellen, Teil B die Profiltexte, die einmal eingetragen werden und dann stehen bleiben. Alles zum Kopieren, ohne Nacharbeit. Zeichenzahlen sind selbst gezählt, Zeilenumbrüche zählen mit.
 
-**Vor dem ersten Beitrag bitte die README nachziehen:** `github.com/Dennismit2n/dennismit2n.github.io` listet nur vier Werkzeuge (Real_RAM_cooler, shrinkling, WiFi QR Card, bigday) — Collective-Calc und Dreh das Rad fehlen, und die Besucherzählung wird dort gar nicht erwähnt; auf der Seite selbst sind es sechs Kacheln.
+**README ist nachgezogen — nichts zu tun.** Die Datei `README.md` im Repo `Dennismit2n/dennismit2n.github.io` (lokal `C:\Users\danyr\source\repos\dennismit2n.github.io\README.md`) listete nur vier der sechs Werkzeuge und erwähnte die Besucherzählung gar nicht. Am 30.07.2026 berichtigt und gepusht:
+
+- Collective-Calc und Dreh das Rad in der Werkzeugliste ergänzt, in der Reihenfolge der Kacheln.
+- Absatz *Analytics* eingefügt: anonyme, cookiefreie Zählung per GoatCounter, Skript lokal in `js/vendor/count.js`, und — das fehlte überall — dass **auch jeder Kachelklick als eigenes Ereignis gezählt wird**.
+- Absatz *Deliberately absent* eingefügt: kein Service Worker, kein Manifest, also nicht installierbar und nicht offline.
+- Lizenzangabe präzisiert: MIT für alles außer `js/vendor/count.js`, das unter ISC steht.
+- Verweise auf `tools/promo/` und diese `LAUNCH.md` ergänzt.
+
+Damit deckt sich die README mit jedem Satz in diesem Kapitel. Wer hier später einen Text ändert, prüft beides gegeneinander.
 
 Zwei Grenzen gelten in jedem Text dieses Kapitels: Die Startseite hat **keinen** Service Worker und **kein** Web-Manifest — also nirgends „offline" und nirgends „installierbar". Und die Überschrift heißt „Kleine Tools, die auf deinem Gerät laufen" und nicht „im Browser", weil Real_RAM_cooler eine Windows-App ist.
 
