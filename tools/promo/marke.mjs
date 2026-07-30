@@ -240,6 +240,26 @@ export const TOOLS = [
     repo: 'zaehlwerk',
     assetOrdner: 'assets',
   },
+  {
+    slug: 'zaehlwerk-ticker',
+    name: 'Zählwerk Ticker',
+    icon: 'zaehlwerk',
+    farbe: '#a3e635',
+    claimDe: 'Der Verbrauch im Blick, während du arbeitest.',
+    claimEn: 'Usage in view while you work',
+    zusagen: ['Windows 10/11', 'quelloffen', 'kostenlos'],
+    url: 'github.com/Dennismit2n/zaehlwerk-ticker',
+    story: [
+      { ober: 'Für Claude-Code-Nutzer', gross: 'Wie viel ist im Fenster schon weg?', unter: 'Eine kleine schwebende Anzeige beantwortet genau diese eine Frage — ohne dass man etwas aufrufen muss.' },
+      { ober: 'So geht es', gross: 'Hinlegen, doppelklicken, fertig.', unter: 'Laufendes Fünf-Stunden-Fenster, Tagessumme, stärkste Modelle. Liest nur die Protokolle auf der eigenen Platte, ohne Netzzugriff.' },
+      { ober: 'Kostenlos & quelloffen', gross: 'Herunterladen', unter: 'github.com/Dennismit2n/zaehlwerk-ticker' },
+    ],
+    repo: 'zaehlwerk-ticker',
+    assetOrdner: 'assets',
+    /* Windows-App ohne Webseite: og.png und instagram.png haetten dort keinen
+     * Abnehmer. Nur die GitHub-Vorschau ist sinnvoll. */
+    hatSeite: false,
+  },
 ];
 
 export function iconSvg(schluessel, groesse) {
