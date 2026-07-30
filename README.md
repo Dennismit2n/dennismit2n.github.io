@@ -39,10 +39,6 @@ Then open http://localhost:8615
 
 The page speaks 12 languages (`js/i18n.js`). Some translations are machine-generated — corrections are very welcome!
 
-## Launch texts
-
-`LAUNCH.md` holds the ready-to-post texts for every platform plus the profile texts (bios, GitHub profile README, repository "About" lines and topics). Every claim in there was checked against the code — including a list of the things that would be **wrong** to claim.
-
 ## License
 
 [MIT](LICENSE) for everything in this repository, with one exception: `js/vendor/count.js` is GoatCounter's counter script and is released under the ISC license, as stated in its file header.
