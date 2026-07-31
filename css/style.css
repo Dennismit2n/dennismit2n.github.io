@@ -322,6 +322,11 @@ body {
 
 @media (max-width: 480px) {
   .hero { padding: 40px 4px 34px; }
+  /* Auf einem 375-px-Schirm waren Markenname und die beiden Auswahlfelder
+     zusammen zwei Pixel breiter als der Platz — die Seite liess sich dadurch
+     seitlich wischen. Etwas weniger Rand loest das, ohne am Kopf selbst zu
+     drehen. */
+  .page { padding-left: 14px; padding-right: 14px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
