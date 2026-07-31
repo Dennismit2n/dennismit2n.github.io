@@ -162,17 +162,33 @@ function twitchBanner(t, f) {
 function banner(f) {
   const hoch = f.h / f.b >= 0.45;
   const s = f.b / 1500;
-  /* Die sechs Werkzeuge in EINER Reihe. Umbruch auf zwei Reihen sah nach
-   * Versehen aus und ließ die Bannermitte leer. */
-  const reihe = TOOLS.filter(t => t.slug !== 'startseite')
-    .map(t => `<div style="width:${76 * s}px;height:${76 * s}px;flex:0 0 auto">${iconSvg(t.icon, 76 * s)}</div>`).join('');
+  /* Die Werkzeuge der Startseite in EINER Reihe. Umbruch auf zwei Reihen sah
+   * nach Versehen aus und ließ die Bannermitte leer.
+   *
+   * Der Zählwerk-Ticker fehlt hier bewusst: Er hat keine eigene Kachel (er
+   * gehört zu Zählwerk) und trägt dasselbe Icon — zweimal dieselbe Zeichnung
+   * nebeneinander liest sich als Fehler.
+   *
+   * Die Größe wird gerechnet, nicht gesetzt: Mit 76 px passten sechs Icons
+   * neben den Markenblock, acht liefen über die Bannerbreite hinaus. Die
+   * Reihe hält jetzt ihre Gesamtbreite und teilt sie auf, wie viele es auch
+   * werden — das nächste Werkzeug sprengt das Banner also nicht. */
+  const kacheln = TOOLS.filter(t => t.slug !== 'startseite' && t.slug !== 'zaehlwerk-ticker');
+  const reiheBreit = 560 * s;
+  const ikon = Math.min(76 * s, reiheBreit / (kacheln.length + 0.24 * (kacheln.length - 1)));
+  const reihe = kacheln
+    .map(t => `<div style="width:${ikon}px;height:${ikon}px;flex:0 0 auto">${iconSvg(t.icon, ikon)}</div>`).join('');
   const marke = `<div style="display:flex;flex-direction:column;${hoch ? 'align-items:center;text-align:center' : 'align-items:flex-start'};gap:${14 * s}px">
       <div style="display:flex;align-items:center;gap:${26 * s}px">
         <div style="width:${104 * s}px;height:${104 * s}px">${iconSvg('kiste', 104 * s)}</div>
         <div style="font-size:${64 * s}px;font-weight:800;letter-spacing:-.03em">${MARKE.name}</div>
       </div>
       <div style="font-size:${36 * s}px;color:${MARKE.eisblau};font-weight:600;letter-spacing:-.01em;white-space:nowrap">${MARKE.h1De}</div>
-      <div style="font-size:${26 * s}px;color:${MARKE.weich}">${MARKE.url} · kostenlos · quelloffen</div>
+      <!-- Seit fontART (31.07.2026) ist "kostenlos · quelloffen" keine Aussage
+           über die ganze Werkstatt mehr — sieben von acht sind beides, das
+           achte keins von beidem. Hier steht deshalb dieselbe Zusage wie auf
+           den Bildern der Startseite. -->
+      <div style="font-size:${26 * s}px;color:${MARKE.weich}">${MARKE.url} · ohne Anmeldung · ohne Uploads</div>
     </div>`;
   return kopf(f.b, f.h) + `<div class="buehne" style="${hoch
     ? `flex-direction:column;align-items:center;justify-content:center;gap:${76 * s}px;padding:${60 * s}px`
@@ -280,20 +296,21 @@ if (verteilen) {
   }
 }
 
-/* Bei --nur enthält der Bericht nur dieses eine Werkzeug. Würde er das
- * Verzeichnis einfach überschreiben, verschwänden die anderen fünf plus die
- * Markenbilder daraus — und die Prüfliste meldete einen Bestand, den es gar
- * nicht gibt. Also die alten Einträge behalten und nur die neu gerenderten
- * ersetzen. */
+/* Der Bericht enthält nur, was DIESER Lauf gerendert hat. Würde er das
+ * Verzeichnis einfach überschreiben, verschwände alles andere daraus — bei
+ * --nur die übrigen Werkzeuge, bei --ohne-rendern (also beim reinen Verteilen)
+ * sogar der komplette Bestand: Der Bericht ist dann leer, und die Datei wäre
+ * danach ein leeres Array. Genau das ist am 31.07.2026 passiert.
+ *
+ * Deshalb wird immer zusammengeführt statt überschrieben. Ein Vollrender
+ * ersetzt dabei ohnehin jeden Eintrag, verliert also nichts. */
 const verzeichnisPfad = join(ZIEL, 'bilder-verzeichnis.json');
 let gesamt = bericht;
-if (nur) {
-  try {
-    const alt = JSON.parse(await readFile(verzeichnisPfad, 'utf8'));
-    const neuePfade = new Set(bericht.map(b => b.datei));
-    gesamt = alt.filter(b => !neuePfade.has(b.datei)).concat(bericht);
-  } catch { /* noch kein Verzeichnis vorhanden — dann ist der Bericht alles */ }
-}
+try {
+  const alt = JSON.parse(await readFile(verzeichnisPfad, 'utf8'));
+  const neuePfade = new Set(bericht.map(b => b.datei));
+  gesamt = alt.filter(b => !neuePfade.has(b.datei)).concat(bericht);
+} catch { /* noch kein Verzeichnis vorhanden — dann ist der Bericht alles */ }
 gesamt.sort((a, b) => a.datei.localeCompare(b.datei, 'de'));
 await writeFile(verzeichnisPfad, JSON.stringify(gesamt, null, 2), 'utf8');
 const kb = gesamt.reduce((s, b) => s + b.kb, 0);
