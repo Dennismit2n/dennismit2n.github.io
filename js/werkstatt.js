@@ -1,9 +1,11 @@
 /*
  * dennismit2n.github.io — werkstatt.html
  *
- * Builds the page from news.js and guides.js. All six tools sit one below the
+ * Builds the page from news.js and guides.js. All tools sit one below the
  * other in the document (no switching), so anchors work natively and a shared
- * link lands exactly where it should.
+ * link lands exactly where it should. The demo of fontART links here by hand
+ * (werkstatt.html#fontart) — that anchor is this section's id, so it only
+ * exists as long as fontart stays in the list below.
  *
  * Rebuilt on every language change — date notation, text language and the
  * notice for the ten languages without their own texts all depend on it.
@@ -26,7 +28,9 @@
     { key: 'rad', name: 'Dreh das Rad', icon: './assets/dreh-das-rad.svg',
       url: 'https://dennismit2n.github.io/dreh-das-rad/', ctaKey: 'openTool' },
     { key: 'zaehlwerk', name: 'Zählwerk', icon: './assets/zaehlwerk.svg',
-      url: 'https://dennismit2n.github.io/zaehlwerk/', ctaKey: 'openTool' }
+      url: 'https://dennismit2n.github.io/zaehlwerk/', ctaKey: 'openTool' },
+    { key: 'fontart', name: 'fontART Designer', icon: './assets/fontart.svg',
+      url: 'https://github.com/Dennismit2n/fontART-demo/releases/latest', ctaKey: 'downloadTool' }
   ];
 
   // Texts exist in German and English; every other language gets the English
@@ -82,6 +86,16 @@
 
     target.appendChild(el('h4', 'wk-sub', i18n.t('guidePurpose')));
     target.appendChild(el('p', 'wk-text', guide.purpose[textLang]));
+
+    // Optional, and so far only fontART has it: the tool whose full version is
+    // meant to cost money needs room to say what the trial leaves out and why
+    // there is a price tag at all. Several paragraphs, hence an array.
+    if (guide.full) {
+      target.appendChild(el('h4', 'wk-sub', i18n.t('guideFull')));
+      for (var p = 0; p < guide.full[textLang].length; p++) {
+        target.appendChild(el('p', 'wk-text', guide.full[textLang][p]));
+      }
+    }
 
     target.appendChild(el('h4', 'wk-sub', i18n.t('guideSteps')));
     target.appendChild(list('ol', 'wk-steps', guide.steps[textLang]));
