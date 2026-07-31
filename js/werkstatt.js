@@ -30,7 +30,7 @@
     { key: 'zaehlwerk', name: 'Zählwerk', icon: './assets/zaehlwerk.svg',
       url: 'https://dennismit2n.github.io/zaehlwerk/', ctaKey: 'openTool' },
     { key: 'fontart', name: 'fontART Designer', icon: './assets/fontart.svg',
-      url: 'https://github.com/Dennismit2n/fontART-demo/releases/latest', ctaKey: 'downloadTool' }
+      url: 'https://dennismit2n.github.io/fontART-demo/', ctaKey: 'openTool' }
   ];
 
   // Texts exist in German and English; every other language gets the English

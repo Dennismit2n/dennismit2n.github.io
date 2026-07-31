@@ -149,6 +149,11 @@ var NEWS = {
   fontart: [
     {
       date: '2026-07-31',
+      de: 'Die Testversion läuft jetzt auch im Browser — am Handy mit dem Finger oder einem Stift, ohne Herunterladen und ohne Uhr. Gebaut aus derselben Quelle wie das Windows-Programm; der Export bleibt auf a–z beschränkt und heißt weiter „fontART DEMO“. Am iPhone bitte Safari benutzen. Eine Schriftdatei lässt sich am Handy nicht als Systemschrift einrichten — installiert wird sie am Rechner.',
+      en: 'The trial now runs in the browser as well — on a phone with a finger or a pen, without downloading anything and without a clock. Built from the same source as the Windows program; the export stays limited to a–z and is still called “fontART DEMO”. On an iPhone please use Safari. A font file cannot be set up as a system font on a phone — installing happens on a computer.'
+    },
+    {
+      date: '2026-07-31',
       version: 'v10.1.0',
       link: 'https://github.com/Dennismit2n/fontART-demo/releases/tag/v10.1.0',
       de: 'Erste Veröffentlichung der Testversion für Windows. Handschrift malen und als Schriftart ausgeben: 60 Minuten je Start, alle Werkzeuge offen, Speichern und Laden inbegriffen. Der Export liefert die Kleinbuchstaben a–z unter dem festen Namen „fontART DEMO“. Die Vollversion mit allen 333 Zeichen ist in Arbeit.',

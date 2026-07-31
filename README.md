@@ -15,9 +15,9 @@ Startseite für die kleinen Tools von Dennis_mit_2n — im Browser und für Wind
 - [bigday](https://dennismit2n.github.io/bigday/) — pretty shareable countdown page
 - [Dreh das Rad](https://dennismit2n.github.io/dreh-das-rad/) — a decision wheel: options in, fate decides
 - [Zählwerk](https://dennismit2n.github.io/zaehlwerk/) — where your Claude Code usage goes, by day, model and project
-- [fontART Designer](https://github.com/Dennismit2n/fontART-demo) — turn your handwriting into a real font (Windows download, trial version)
+- [fontART Designer](https://dennismit2n.github.io/fontART-demo/) — turn your handwriting into a real font (trial version: in the browser, or as a Windows download)
 
-Same order as the tiles on the page. Six run in the browser; Real_RAM_cooler and fontART are Windows downloads — which is why the headline says "on your own device" and not "in your browser".
+Same order as the tiles on the page. Real_RAM_cooler is a Windows download and fontART comes both ways — which is why the headline says "on your own device" and not "in your browser". fontART is also the only tile with three mini tiles instead of two: its main button opens the browser version, and "For Windows" leads to the release.
 
 **fontART is the odd one out**, and the tile says so rather than hiding it: it is the only tool here that is neither open source nor meant to stay free. What this repository links to is the free trial; the full version is being worked on, with no date and no price settled. The reasoning is spelled out in the guide on `werkstatt.html`, because a workshop whose footer says "open source on GitHub" owes an explanation for the one exception.
 
