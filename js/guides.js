@@ -11,6 +11,8 @@
  * they are the reason this page exists.
  *
  * Fields per tool: purpose, steps (exactly three), pitfalls, docs — each de/en.
+ * Optional: full (an array of paragraphs), so far only used by fontART, the one
+ * tool with a paid full version.
  */
 'use strict';
 
@@ -276,6 +278,59 @@ var GUIDES = {
     docs: {
       de: 'https://github.com/Dennismit2n/zaehlwerk/blob/main/README.de.md',
       en: 'https://github.com/Dennismit2n/zaehlwerk/blob/main/README.md'
+    }
+  },
+
+  fontart: {
+    purpose: {
+      de: 'Deine eigene Handschrift als richtige Schriftart: Du malst die Buchstaben mit Maus, Stift oder Finger, fontART rechnet sie in eine .ttf-Datei um — und die installierst du in Windows und schreibst damit in Word, LibreOffice oder Canva. Was hier zum Herunterladen steht, ist die kostenlose Testversion.',
+      en: 'Your own handwriting as a real typeface: you draw the letters with a mouse, a pen or your finger, fontART turns them into a .ttf file — and you install that in Windows to write with it in Word, LibreOffice or Canva. What you can download here is the free trial.'
+    },
+    full: {
+      de: [
+        'Die Testversion lässt dich alles ausprobieren: malen, Konstruktionslinien, Geist-Glyph zum Vergleichen, Kerning-Vorschläge, Tipptest, Speichern und Laden deiner Arbeit. Kein Werkzeug ist beschnitten — zu ist allein der Ausgang. Der Export gibt die Kleinbuchstaben a–z aus, immer unter dem Namen „fontART DEMO“, und die übrigen Ausgabewege (.woff, Musterblatt, Komplett-Paket, Fett und Kursiv, Übungsblatt, Video-Mitschnitt) sind in dieser Fassung gar nicht erst eingebaut. Dazu läuft eine Uhr: 60 Minuten je Start.',
+        'Die Vollversion zeichnet alle 333 Zeichen statt 26 — Groß- und Kleinbuchstaben, Zahlen, Umlaute, ß, Satzzeichen, dazu Griechisch, Kyrillisch und die japanischen Silbenschriften —, sie trägt den Namen, den du eintippst, und sie kennt die Ausgänge, die hier fehlen. Sie ist in Arbeit. Wann sie fertig ist und auf welchem Weg sie zu haben sein wird, steht noch nicht fest; sobald es feststeht, steht es hier.',
+        'Bleibt die Frage, warum ausgerechnet dieses eine Werkzeug Geld kosten soll, wo unten in der Fußzeile „Quelloffen auf GitHub“ steht. Ehrliche Antwort: Die anderen sieben tun jeweils eine Sache und waren an ein paar Abenden fertig. fontART baut echte TrueType-Dateien — Konturen, Seitenabstände, Kerning, Namenstabellen — und ist damit um ein Vielfaches größer als alles andere in dieser Werkstatt. Programme, die das können, kosten sämtlich Geld. Die Werkstatt bleibt kostenlos; dieses eine Werkzeug soll die Zeit tragen, die in ihr steckt.',
+        'Was die Testversion ausdrücklich nicht tut: nach deiner E-Mail-Adresse fragen. Kein Konto, keine Anmeldung, keine Wartefrist, kein Newsletter — herunterladen, malen, selbst sehen, ob dir das Ergebnis gefällt.'
+      ],
+      en: [
+        'The trial lets you try everything: drawing, construction lines, the ghost glyph for comparison, kerning suggestions, the typing test, saving and loading your work. No tool is cut down — only the exit is closed. The export produces the lowercase letters a–z, always under the name “fontART DEMO”, and the other ways out (.woff, specimen sheet, complete package, bold and italic, practice sheet, video capture) are simply not built into this version. On top of that a clock runs: 60 minutes per start.',
+        'The full version draws all 333 characters instead of 26 — upper and lower case, digits, umlauts, ß, punctuation, plus Greek, Cyrillic and the Japanese syllabaries — it carries the name you type in, and it has the exits that are missing here. It is being worked on. When it will be finished, and how it will be available, is not settled yet; as soon as it is, it will say so here.',
+        'That leaves the question why this one tool of all things should cost money, when the footer below says “open source on GitHub”. The honest answer: the other seven each do one thing and were finished in a few evenings. fontART builds real TrueType files — outlines, sidebearings, kerning, name tables — which makes it many times larger than anything else in this workshop. The programs that can do this all cost money. The workshop stays free; this one tool is meant to carry the time that went into it.',
+        'What the trial explicitly does not do: ask for your email address. No account, no sign-up, no waiting period, no newsletter — download it, draw, and see for yourself whether you like the result.'
+      ]
+    },
+    steps: {
+      de: [
+        'Die .exe aus den Releases laden und starten. Windows meldet „Unbekannter Herausgeber“, weil die Datei nicht signiert ist — über „Weitere Informationen“ und „Trotzdem ausführen“ geht es weiter. Installiert wird nichts; die Datei läuft, wie sie ist.',
+        'Ein Zeichen aus der Leiste wählen und die schwarze Fläche des Buchstabens malen, nicht die Linie. Fang mit n und o an — die beiden legen den Rhythmus deiner Schrift fest. Zittert die Hand, hilft der Regler „Stabilisator“.',
+        'Über „⬇ Export“ die .ttf erzeugen. In Windows Rechtsklick auf die Datei, „Für alle Benutzer installieren“ — danach steht deine Schrift in Word unter „fontART DEMO“.'
+      ],
+      en: [
+        'Download the .exe from the releases page and start it. Windows will say “unknown publisher” because the file is not signed — continue via “more info” and “run anyway”. Nothing gets installed; the file runs as it is.',
+        'Pick a character from the bar and paint the black shape of the letter, not the line. Start with n and o — those two set the rhythm of your typeface. If your hand shakes, the “stabiliser” slider helps.',
+        'Use “⬇ Export” to produce the .ttf. In Windows right-click the file and choose “install for all users” — after that your typeface shows up in Word as “fontART DEMO”.'
+      ]
+    },
+    pitfalls: {
+      de: [
+        'Die 60 Minuten laufen ab dem Start und lassen sich nicht anhalten — auch ein kleingeklapptes Fenster zählt weiter. Ist die Zeit um, kannst du nicht mehr malen und nicht mehr exportieren; speichern geht weiterhin. Danach fontART neu starten, die gespeicherte Datei laden und weitermachen.',
+        'Der Export gibt ausschließlich a–z aus. Großbuchstaben, Zahlen, Umlaute, ß und Satzzeichen kannst du malen, sie landen aber nicht in der Schriftdatei — Wörter mit ihnen erscheinen später in der Ersatzschrift des Programms.',
+        'Der Schriftname ist fest „fontART DEMO“. Was du ins Namensfeld tippst, wird beim Export übergangen. Zwei Demo-Schriften nebeneinander zu installieren, klappt deshalb nicht: Windows sieht zweimal denselben Namen.',
+        'Deine Arbeit liegt allein in der Datei, die du selbst über „💾 Speichern“ anlegst. Die Testversion merkt sich beim Schließen nichts von allein — vor Ablauf der Uhr also unbedingt speichern.',
+        'Nur Windows 10/11 in 64 Bit. Eine Fassung für Android, Mac oder Linux gibt es von der Testversion nicht, und einen Update-Prüfer auch nicht — neue Fassungen holst du dir selbst von der Releases-Seite.'
+      ],
+      en: [
+        'The 60 minutes run from the start and cannot be paused — a minimised window keeps counting too. Once the time is up you can no longer draw or export; saving still works. After that, restart fontART, load your saved file and carry on.',
+        'The export only produces a–z. You can draw capitals, digits, umlauts, ß and punctuation, but they do not end up in the font file — words containing them will later appear in the program’s fallback typeface.',
+        'The font name is fixed at “fontART DEMO”. Whatever you type into the name field is ignored on export. Installing two demo fonts side by side therefore does not work: Windows sees the same name twice.',
+        'Your work lives solely in the file you create yourself via “💾 save”. The trial remembers nothing on its own when it closes — so do save before the clock runs out.',
+        'Windows 10/11, 64-bit only. There is no Android, Mac or Linux build of the trial, and no update checker either — you fetch new versions from the releases page yourself.'
+      ]
+    },
+    docs: {
+      de: 'https://github.com/Dennismit2n/fontART-demo/blob/main/README.de.md',
+      en: 'https://github.com/Dennismit2n/fontART-demo/blob/main/README.md'
     }
   }
 };

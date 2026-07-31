@@ -144,5 +144,15 @@ var NEWS = {
       de: 'Erste Veröffentlichung. Ordner auswählen, und Zählwerk rechnet aus, wohin der eigene Claude-Code-Verbrauch geht — nach Tag, Modell, Projekt, Wochentag und Uhrzeit. Gelesen wird ausschließlich im Browser; die Protokolle werden nicht hochgeladen.',
       en: 'First release. Pick a folder and Zählwerk works out where your Claude Code usage goes — by day, model, project, weekday and hour. Everything is read inside the browser; the logs are never uploaded.'
     }
+  ],
+
+  fontart: [
+    {
+      date: '2026-07-31',
+      version: 'v10.1.0',
+      link: 'https://github.com/Dennismit2n/fontART-demo/releases/tag/v10.1.0',
+      de: 'Erste Veröffentlichung der Testversion für Windows. Handschrift malen und als Schriftart ausgeben: 60 Minuten je Start, alle Werkzeuge offen, Speichern und Laden inbegriffen. Der Export liefert die Kleinbuchstaben a–z unter dem festen Namen „fontART DEMO“. Die Vollversion mit allen 333 Zeichen ist in Arbeit.',
+      en: 'First release of the Windows trial. Draw your handwriting and turn it into a typeface: 60 minutes per start, every tool unlocked, saving and loading included. The export produces the lowercase letters a–z under the fixed name “fontART DEMO”. The full version with all 333 characters is being worked on.'
+    }
   ]
 };
