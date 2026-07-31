@@ -213,12 +213,17 @@ export const TOOLS = [
     farbe: '#8FD3F4',
     claimDe: 'Kleine Tools, die auf deinem Gerät laufen.',
     claimEn: 'Small tools that run on your own device',
-    zusagen: ['Kostenlos', 'quelloffen', 'deine Daten bleiben bei dir'],
+    /* Seit fontART (31.07.2026) darf hier NICHT mehr pauschal "Kostenlos"
+     * oder "quelloffen" stehen: sieben der acht Werkzeuge sind beides, das
+     * achte ist keins von beidem. Übrig bleibt, was ausnahmslos für alle
+     * gilt — und das ist ohnehin die stärkere Zusage. An den einzelnen
+     * Kacheln steht "kostenlos" weiter, dort stimmt es ja. */
+    zusagen: ['Ohne Anmeldung', 'ohne Uploads', 'deine Daten bleiben bei dir'],
     url: 'dennismit2n.github.io',
     story: [
-      { ober: 'Eine Werkstatt', gross: 'Sechs kleine Werkzeuge.', unter: 'Für Sachen, die im Alltag nerven.' },
-      { ober: 'Was sie gemeinsam haben', gross: 'Sie laufen auf deinem Gerät.', unter: 'Kein Konto, keine Anmeldung, keine Uploads. Fünf im Browser, eines für Windows.' },
-      { ober: 'Kostenlos & quelloffen', gross: 'Werkzeugkiste öffnen', unter: 'dennismit2n.github.io' },
+      { ober: 'Eine Werkstatt', gross: 'Acht kleine Werkzeuge.', unter: 'Für Sachen, die im Alltag nerven.' },
+      { ober: 'Was sie gemeinsam haben', gross: 'Sie laufen auf deinem Gerät.', unter: 'Kein Konto, keine Anmeldung, keine Uploads. Sechs im Browser, zwei für Windows.' },
+      { ober: 'Ohne Anmeldung, ohne Uploads', gross: 'Werkzeugkiste öffnen', unter: 'dennismit2n.github.io' },
     ],
     repo: 'dennismit2n.github.io',
     assetOrdner: 'assets',

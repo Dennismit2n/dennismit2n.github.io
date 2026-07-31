@@ -1,8 +1,8 @@
 # dennismit2n.github.io
 
-Landing page for the small tools by Dennis_mit_2n — in your browser and for Windows, free, no sign-up, no uploads. Your data stays on your device.
+Landing page for the small tools by Dennis_mit_2n — in your browser and for Windows, no sign-up, no uploads. Your data stays on your device. Most of them are free and open source; fontART is the exception.
 
-Startseite für die kleinen Tools von Dennis_mit_2n — im Browser und für Windows, kostenlos, ohne Anmeldung, ohne Uploads. Deine Daten bleiben auf deinem Gerät.
+Startseite für die kleinen Tools von Dennis_mit_2n — im Browser und für Windows, ohne Anmeldung, ohne Uploads. Deine Daten bleiben auf deinem Gerät. Die meisten kostenlos und quelloffen; fontART ist die Ausnahme.
 
 **➡️ [dennismit2n.github.io](https://dennismit2n.github.io/)**
 
