@@ -47,6 +47,16 @@ const ICONS = {
   <rect x="13" y="18" width="6" height="12" rx="1.5" fill="#a3e635"/>
   <rect x="21" y="21" width="6" height="9" rx="1.5" fill="#a3e635" opacity=".7"/>
   <rect x="29" y="24" width="6" height="6" rx="1.5" fill="#a3e635" opacity=".45"/>`,
+  /* Dieselbe Zeichnung wie assets/fontart.svg in der Kachel: ein Pinselstrich
+   * als gemalte Grundlinie, darüber ein „fA". Die Farben stammen aus dem
+   * Programm selbst (Icon-Grund #1c1530, gelbes fA #eac54f, pinker Strich
+   * #f776a8) und nicht aus der Kachelfarbe — drinnen sieht es so aus. */
+  fontart: `<rect x="2" y="2" width="44" height="44" rx="11" fill="#1c1530"/>
+  <path d="M9 35.5c4.5-3 9-3 13.5 0s9 3 13.5-1.5" fill="none" stroke="#f776a8" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M22 15h-2.6c-2 0-3.4 1.3-3.4 3.4V29" fill="none" stroke="#eac54f" stroke-width="3" stroke-linecap="round"/>
+  <path d="M13.5 20.5h7" fill="none" stroke="#eac54f" stroke-width="3" stroke-linecap="round"/>
+  <path d="M26 29l4.5-14L35 29" fill="none" stroke="#eac54f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M27.8 24.5h5.4" fill="none" stroke="#eac54f" stroke-width="3" stroke-linecap="round"/>`,
   shrink: `<rect x="2" y="2" width="44" height="44" rx="11" fill="#7c3aed"/>
   <rect x="9" y="17" width="22" height="19" rx="3" fill="none" stroke="#fff" stroke-width="3"/>
   <circle cx="15.5" cy="23.5" r="2.2" fill="#fff"/>
@@ -264,6 +274,33 @@ export const TOOLS = [
     /* Windows-App ohne Webseite: og.png und instagram.png haetten dort keinen
      * Abnehmer. Nur die GitHub-Vorschau ist sinnvoll. */
     hatSeite: false,
+  },
+  {
+    slug: 'fontart-demo',
+    name: 'fontART Designer',
+    icon: 'fontart',
+    farbe: '#e879f9',
+    claimDe: 'Deine Handschrift wird zur Schriftart.',
+    claimEn: 'Your handwriting becomes a font',
+    /* Der kommerzielle Sonderfall der Werkstatt. Hier darf NICHT die
+     * Zusagen-Zeile der anderen sieben stehen:
+     *   - "Kostenlos" ohne Zusatz wäre falsch — kostenlos ist die Testversion,
+     *     die Vollversion soll Geld kosten.
+     *   - "quelloffen" wäre falsch — im Repo liegen nur die READMEs und das
+     *     gebaute Bündel, kein Quelltext und keine eingeräumten Rechte.
+     * Was bleibt, ist wahr für beide Fassungen und steht wortgleich als
+     * fontartMeta an der Kachel der Startseite. */
+    zusagen: ['Im Browser & für Windows', 'Testversion', 'Vollversion in Arbeit'],
+    url: 'dennismit2n.github.io/fontART-demo',
+    story: [
+      { ober: 'Karten, Etiketten, Kochbuch', gross: 'Deine eigene Handschrift.', unter: 'Nicht als Bild, sondern als echte Schriftdatei — die in Word einfach in der Liste steht.' },
+      { ober: 'So geht es', gross: 'Buchstaben malen, Schrift herausbekommen.', unter: 'Mit Maus, Stift oder Finger. Am Handy wird gemalt und exportiert, installiert wird am Rechner.' },
+      { ober: 'Testversion kostenlos', gross: 'Ausprobieren', unter: 'dennismit2n.github.io/fontART-demo' },
+    ],
+    repo: 'fontART-demo',
+    /* Die Browser-Fassung liegt in der Wurzel des Repos — dort liegt auch die
+     * index.html, die auf og.png verweist. Deshalb kein Unterordner. */
+    assetOrdner: '',
   },
 ];
 

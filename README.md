@@ -47,7 +47,7 @@ Then open http://localhost:8615
 
 ## Preview and promo images
 
-`tools/promo/` renders the preview and promo images for **all** projects of the workshop from one shared template — 76 images in 12 formats (link preview, GitHub social preview, Instagram, story, LinkedIn, X, Twitch panel, avatars, banners). Colours come straight from `css/style.css`, the icons are the same SVGs as the tiles. Everything editable lives in `tools/promo/marke.mjs`; see `tools/promo/README.md`.
+`tools/promo/` renders the preview and promo images for **all** projects of the workshop from one shared template — 113 images: ten formats per tool (link preview, GitHub social preview, Instagram, LinkedIn, X, three story cards, Twitch panel, Twitch banner) plus thirteen brand images (avatars and profile banners). Colours come straight from `css/style.css`, the icons are the same SVGs as the tiles. Everything editable lives in `tools/promo/marke.mjs`; see `tools/promo/README.md`.
 
 ## Translations
 
