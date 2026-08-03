@@ -15,9 +15,10 @@ Startseite für die kleinen Tools von Dennis_mit_2n — im Browser und für Wind
 - [bigday](https://dennismit2n.github.io/bigday/) — pretty shareable countdown page
 - [Dreh das Rad](https://dennismit2n.github.io/dreh-das-rad/) — a decision wheel: options in, fate decides
 - [Zählwerk](https://dennismit2n.github.io/zaehlwerk/) — where your Claude Code usage goes, by day, model and project
+- [Besucher-Ticker](https://github.com/Dennismit2n/besucher-ticker) — your GoatCounter visitor numbers floating on the Windows desktop (download, not a browser tool)
 - [fontART Designer](https://dennismit2n.github.io/fontART-demo/) — turn your handwriting into a real font (trial version: in the browser, or as a Windows download)
 
-Same order as the tiles on the page. Real_RAM_cooler is a Windows download and fontART comes both ways — which is why the headline says "on your own device" and not "in your browser". fontART is also the only tile with three mini tiles instead of two: its main button opens the browser version, and "For Windows" leads to the release.
+Same order as the tiles on the page. Real_RAM_cooler and Besucher-Ticker are Windows downloads and fontART comes both ways — which is why the headline says "on your own device" and not "in your browser". fontART is also the only tile with three mini tiles instead of two: its main button opens the browser version, and "For Windows" leads to the release.
 
 **fontART is the odd one out**, and the tile says so rather than hiding it: it is the only tool here that is neither open source nor meant to stay free. What this repository links to is the free trial; the full version is being worked on, with no date and no price settled. The reasoning is spelled out in the guide on `werkstatt.html`, because a workshop whose footer says "open source on GitHub" owes an explanation for the one exception.
 
@@ -27,7 +28,7 @@ Same order as the tiles on the page. Real_RAM_cooler is a Windows download and f
 
 That is why a tile is a `<div>` rather than a link: `.tool-open` is stretched across the whole card via `::after`, so clicking anywhere still opens the tool, while the mini tiles stay clickable on top of it. A tile built from nested `<a>` elements would be invalid HTML.
 
-Both come from hand-maintained data files, not from a feed: `js/news.js` and `js/guides.js`. **Only Real_RAM_cooler and fontART have real GitHub releases** — the browser tools carry no tags, so their entries are written by hand and dated by the commit they describe. A guide may carry one optional extra section (`full`, an array of paragraphs); so far only fontART uses it, to say what the trial leaves out and why there is a price tag at all. Guides are written for people who want to *use* the tool; the READMEs stay what they are, developer documents, and are linked from each section.
+Both come from hand-maintained data files, not from a feed: `js/news.js` and `js/guides.js`. **Only Real_RAM_cooler, fontART and Besucher-Ticker have real GitHub releases** — the browser tools carry no tags, so their entries are written by hand and dated by the commit they describe. A guide may carry one optional extra section (`full`, an array of paragraphs); so far only fontART uses it, to say what the trial leaves out and why there is a price tag at all. Guides are written for people who want to *use* the tool; the READMEs stay what they are, developer documents, and are linked from each section.
 
 The interface words exist in all 12 languages. The texts themselves are German and English; the other ten languages get the English version plus a notice in their own language saying so.
 
@@ -37,7 +38,7 @@ The interface words exist in all 12 languages. The texts themselves are German a
 
 ## Development
 
-No build step — plain HTML, CSS, and JavaScript. 26 files make up the site: two pages, one stylesheet, eight scripts (one of them GoatCounter's, vendored), twelve images and three icons. No npm dependencies.
+No build step — plain HTML, CSS, and JavaScript. 27 files make up the site: two pages, one stylesheet, eight scripts (one of them GoatCounter's, vendored), thirteen images and three icons. No npm dependencies.
 
 ```
 node tools/dev-server.js

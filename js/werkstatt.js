@@ -29,6 +29,8 @@
       url: 'https://dennismit2n.github.io/dreh-das-rad/', ctaKey: 'openTool' },
     { key: 'zaehlwerk', name: 'Zählwerk', icon: './assets/zaehlwerk.svg',
       url: 'https://dennismit2n.github.io/zaehlwerk/', ctaKey: 'openTool' },
+    { key: 'ticker', name: 'Besucher-Ticker', icon: './assets/besucher-ticker.svg',
+      url: 'https://github.com/Dennismit2n/besucher-ticker/releases/latest', ctaKey: 'downloadTool' },
     { key: 'fontart', name: 'fontART Designer', icon: './assets/fontart.svg',
       url: 'https://dennismit2n.github.io/fontART-demo/', ctaKey: 'openTool' }
   ];

@@ -11,7 +11,8 @@
  * not of writing it down.
  *
  * Newest first per tool. Fields: date (ISO), de, en; optionally version and
- * link — only Real_RAM_cooler has real GitHub releases.
+ * link — Real_RAM_cooler, fontART and Besucher-Ticker have real GitHub
+ * releases; the browser tools carry no tags.
  */
 'use strict';
 
@@ -143,6 +144,16 @@ var NEWS = {
       date: '2026-07-31',
       de: 'Erste Veröffentlichung. Ordner auswählen, und Zählwerk rechnet aus, wohin der eigene Claude-Code-Verbrauch geht — nach Tag, Modell, Projekt, Wochentag und Uhrzeit. Gelesen wird ausschließlich im Browser; die Protokolle werden nicht hochgeladen.',
       en: 'First release. Pick a folder and Zählwerk works out where your Claude Code usage goes — by day, model, project, weekday and hour. Everything is read inside the browser; the logs are never uploaded.'
+    }
+  ],
+
+  ticker: [
+    {
+      date: '2026-08-03',
+      version: 'v1.0',
+      link: 'https://github.com/Dennismit2n/besucher-ticker/releases/tag/v1.0',
+      de: 'Erste Veröffentlichung. Ein schwebendes Fenster für Windows, das die Zahlen der eigenen GoatCounter-Seite live zeigt: Aufrufe im gewählten Zeitraum (heute, 7 Tage, 30 Tage, gesamt), Besucher je Seite als Balken, dazu Länder oder Verweise. Das API-Token bleibt verschlüsselt auf dem eigenen Rechner.',
+      en: 'First release. A floating window for Windows that shows the numbers of your own GoatCounter site live: pageviews for the chosen period (today, 7 days, 30 days, all time), visitors per page as bars, plus countries or referrers. The API token stays encrypted on your own machine.'
     }
   ],
 
