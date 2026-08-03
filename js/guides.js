@@ -281,6 +281,43 @@ var GUIDES = {
     }
   },
 
+  ticker: {
+    purpose: {
+      de: 'Für alle, die ihre eigene Webseite mit GoatCounter zählen lassen: Der Besucher-Ticker stellt die Zahlen des eigenen Kontos als kleines, immer sichtbares Fenster auf den Windows-Schreibtisch — Aufrufe im gewählten Zeitraum, Besucher je Seite als Balken, dazu Länder oder Verweise. Der Ticker zählt selbst nichts; er zeigt an, was GoatCounter schon weiß.',
+      en: 'For everyone whose own website counts with GoatCounter: the Besucher-Ticker puts the numbers of your account on the Windows desktop as a small, always visible window — pageviews for the chosen period, visitors per page as bars, plus countries or referrers. The ticker does not count anything itself; it displays what GoatCounter already knows.'
+    },
+    steps: {
+      de: [
+        'Die ZIP-Datei aus den Releases laden, entpacken und die Exe doppelklicken. Windows meldet „Unbekannter Herausgeber“, weil die Datei nicht signiert ist — über „Weitere Informationen“ geht es weiter.',
+        'Beim ersten Start die Adresse der eigenen GoatCounter-Seite eintippen und ein API-Token einfügen. Das Token legst du auf deiner GoatCounter-Seite an: Benutzername oben rechts → API → „Add new token“ — das Häkchen „Read statistics“ genügt.',
+        'Das Overlay mit der Maus dorthin ziehen, wo es nicht stört. Rechtsklick aufs Symbol im Infobereich der Taskleiste: Zeitraum, Zusatzblock, Themes, Einstellungen.'
+      ],
+      en: [
+        'Download the ZIP from the releases, unpack it and double-click the exe. Windows will say “unknown publisher” because the file is not signed — continue via “more info”.',
+        'On first start, type in the address of your own GoatCounter site and paste an API token. You create the token on your GoatCounter site: username in the top right → API → “Add new token” — ticking “Read statistics” is enough.',
+        'Drag the overlay wherever it does not get in the way. Right-click the tray icon for period, extra block, themes and settings.'
+      ]
+    },
+    pitfalls: {
+      de: [
+        'Ohne eigenes GoatCounter-Konto zeigt der Ticker nichts an — er ist ein Anzeigegerät für die eigenen Zahlen, kein Zählwerkzeug für fremde Seiten.',
+        'Die Summe der Balken ergibt nicht die große Zahl, und das ist richtig so: Oben stehen Aufrufe, die Balken zählen Besucher — zwei verschiedene Größen.',
+        'Das Token liegt in der config.json neben dem Programm — mit pywin32 verschlüsselt, gebunden an Benutzerkonto und Rechner. Exe und config.json müssen deshalb im selben Ordner bleiben.',
+        'Nur Windows, Oberfläche nur auf Deutsch. Einen Update-Prüfer gibt es nicht — neue Fassungen holst du dir selbst auf der Releases-Seite.'
+      ],
+      en: [
+        'Without your own GoatCounter account the ticker shows nothing — it is a display for your own numbers, not a counting tool for other people’s sites.',
+        'The bars do not add up to the big number, and that is correct: the top shows pageviews, the bars count visitors — two different quantities.',
+        'The token lives in config.json next to the program — encrypted with pywin32, bound to your user account and machine. The exe and config.json therefore have to stay in the same folder.',
+        'Windows only, interface in German only. There is no update checker — you fetch new versions from the releases page yourself.'
+      ]
+    },
+    docs: {
+      de: 'https://github.com/Dennismit2n/besucher-ticker/blob/main/README.de.md',
+      en: 'https://github.com/Dennismit2n/besucher-ticker/blob/main/README.md'
+    }
+  },
+
   fontart: {
     purpose: {
       de: 'Deine eigene Handschrift als richtige Schriftart: Du malst die Buchstaben mit Maus, Stift oder Finger, fontART rechnet sie in eine .ttf-Datei um — und die installierst du in Windows und schreibst damit in Word, LibreOffice oder Canva. Die kostenlose Testversion gibt es zweimal: als Seite, die im Browser läuft — auch am Handy —, und als Programm für Windows.',

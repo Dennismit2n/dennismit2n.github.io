@@ -20,6 +20,7 @@
   --collective: #15803d;
   --zaehlwerk: #4d7c0f;
   --fontart: #a21caf;
+  --ticker: #4338ca;
   --shadow: 0 10px 30px rgba(23, 26, 51, 0.10);
 }
 
@@ -48,6 +49,7 @@
     --collective: #4ade80;
     --zaehlwerk: #a3e635;
     --fontart: #e879f9;
+    --ticker: #818cf8;
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   }
 }
@@ -72,6 +74,7 @@
   --collective: #4ade80;
   --zaehlwerk: #a3e635;
   --fontart: #e879f9;
+  --ticker: #818cf8;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
@@ -213,6 +216,7 @@ body {
 .tool-collective { --tool: var(--collective); }
 .tool-zaehlwerk { --tool: var(--zaehlwerk); }
 .tool-fontart { --tool: var(--fontart); }
+.tool-ticker { --tool: var(--ticker); }
 
 .tool-card:hover {
   border-color: var(--tool);
