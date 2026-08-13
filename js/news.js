@@ -80,6 +80,14 @@ var NEWS = {
     }
   ],
 
+  prismatical: [
+    {
+      date: '2026-08-14',
+      de: 'Erste Veröffentlichung. Ein Passwort-Generator, bei dem die Farbe der ganzen Oberfläche die Stärke ist: Sie wandert live von Rot nach Violett, während du an den Reglern drehst. Fünf Arten von Geheimnis — Zufallspasswort, Passphrase aus Wortlisten, PIN, aussprechbar und ein zustandsloser Modus, der dasselbe Passwort immer wieder aus Merksatz, Domain und Login errechnet. Alles bleibt auf deinem Gerät; im Auslieferungszustand geht kein einziger Netzwerk-Aufruf hinaus.',
+      en: 'First release. A password generator where the colour of the whole interface is the strength: it travels live from red to violet as you move the sliders. Five kinds of secret — random password, passphrase from word lists, PIN, pronounceable, and a stateless mode that recomputes the same password from a master phrase, domain and login. Everything stays on your device; as shipped, not a single network request goes out.'
+    }
+  ],
+
   collective: [
     {
       date: '2026-07-30',

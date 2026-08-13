@@ -128,6 +128,45 @@ var GUIDES = {
     }
   },
 
+  prismatical: {
+    purpose: {
+      de: 'Neue Passwörter erzeugen und dabei sehen, was sie taugen. Die Akzentfarbe der Seite ist die Stärkeanzeige: Sie wandert von Rot über Gelb und Grün bis Violett, während du an Länge und Zeichenarten drehst. Daneben stehen immer die nackten Zahlen — Bits und geschätzte Knackzeit in vier Angriffslagen. Erzeugt wird auf deinem Gerät, mit dem Zufallsgenerator des Betriebssystems.',
+      en: 'Create new passwords and see what they are worth. The page’s accent colour is the strength meter: it travels from red through yellow and green to violet as you change length and character types. Next to it stand the bare numbers — bits and estimated crack time in four attack situations. Everything is generated on your device, using the operating system’s random generator.'
+    },
+    steps: {
+      de: [
+        'Oben die Art wählen: Passwort, Passphrase, PIN, Aussprechbar, Nutzername oder Deterministisch. Für die meisten Konten ist „Passwort“ mit der Voreinstellung von 20 Zeichen richtig; zum Auswendiglernen nimm die Passphrase.',
+        'Länge und Zeichenarten einstellen — oder oben ein Preset wählen, wenn die Webseite Regeln vorschreibt („höchstens 16 Zeichen“, „nur Buchstaben und Ziffern“). Bei jeder Änderung entsteht sofort ein neues Passwort.',
+        'Auf Kopieren tippen und im Passwortspeicher einfügen. Die Zwischenablage leert sich von selbst wieder — voreingestellt nach 30 Sekunden, sichtbar als Countdown.'
+      ],
+      en: [
+        'Pick the kind at the top: password, passphrase, PIN, pronounceable, username or deterministic. For most accounts “password” with the preset 20 characters is right; for something you have to memorise, take the passphrase.',
+        'Set length and character types — or pick a preset at the top when a website imposes rules (“at most 16 characters”, “letters and digits only”). Every change immediately produces a new password.',
+        'Tap copy and paste it into your password manager. The clipboard clears itself again — after 30 seconds by default, shown as a countdown.'
+      ]
+    },
+    pitfalls: {
+      de: [
+        'Prismatical merkt sich nichts. Es ist ein Generator, kein Passwortspeicher — was du hier erzeugst, musst du selbst irgendwo sicher ablegen.',
+        'Die automatisch geleerte Zwischenablage ist nur die halbe Miete: Windows merkt sich Kopiertes zusätzlich in seinem eigenen Verlauf (Win+V). Den kann eine Webseite nicht leeren.',
+        'Der Verlauf ist ausgeschaltet und muss zweimal ausdrücklich eingeschaltet werden, bevor überhaupt etwas gespeichert wird. Der QR-Code ist ungeschützt: Wer ihn sieht, kennt das Passwort.',
+        'Der deterministische Modus rechnet dasselbe Passwort immer wieder aus Merksatz, Domain und Login aus — dafür gibt es keine Wiederherstellung. Vergisst du den Merksatz, sind alle damit erzeugten Passwörter weg.',
+        'Der Leak-Abgleich mit Have I Been Pwned ist der einzige Teil, der überhaupt ins Netz geht, und er ist ausgeschaltet. Schaltest du ihn ein, verlassen nur die ersten fünf Zeichen einer Prüfsumme das Gerät — nie das Passwort.'
+      ],
+      en: [
+        'Prismatical remembers nothing. It is a generator, not a password manager — whatever you create here, you have to store somewhere safe yourself.',
+        'The self-clearing clipboard is only half the job: Windows additionally keeps what you copied in its own history (Win+V). A website cannot clear that.',
+        'The history is off and has to be switched on twice, explicitly, before anything is stored at all. The QR code is unprotected: whoever sees it knows the password.',
+        'The deterministic mode recomputes the same password from a master phrase, domain and login — and there is no recovery for it. Forget the phrase and every password made with it is gone.',
+        'The leak check against Have I Been Pwned is the only part that touches the internet at all, and it is switched off. If you turn it on, only the first five characters of a checksum leave the device — never the password.'
+      ]
+    },
+    docs: {
+      de: 'https://github.com/Dennismit2n/prismatical/blob/main/README.md',
+      en: 'https://github.com/Dennismit2n/prismatical/blob/main/README.md'
+    }
+  },
+
   collective: {
     purpose: {
       de: 'Wer schuldet wem was — nach Urlaub, Ferienhaus, Festival oder Restaurantabend. Die Abrechnung steckt komprimiert im Link; die anderen brauchen weder Konto noch App, um sie zu sehen.',
