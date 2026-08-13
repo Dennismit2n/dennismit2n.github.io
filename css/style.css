@@ -21,6 +21,13 @@
   --zaehlwerk: #4d7c0f;
   --fontart: #a21caf;
   --ticker: #4338ca;
+  /* Prismatical ist die erste Kachel OHNE eigene Vollton-Farbe: die Palette war
+     voll, und das Werkzeug selbst ist ein Farbspektrum. Deshalb trägt es einen
+     Regenbogen (--prisma-flow) plus einen Anker-Vollton für alles, was zwingend
+     eine einzelne Farbe braucht (Rahmen, Knopf). Alle Stopps sind rechnerisch
+     auf AA gegen --panel UND --bg geprüft (schlechtester Wert hell 6.9:1). */
+  --prisma: #7563e5;
+  --prisma-flow: linear-gradient(100deg, #d53c3d, #c85500, #858200, #009b95, #7563e5);
   --shadow: 0 10px 30px rgba(23, 26, 51, 0.10);
 }
 
@@ -50,6 +57,8 @@
     --zaehlwerk: #a3e635;
     --fontart: #e879f9;
     --ticker: #818cf8;
+    --prisma: #bfb9ff;
+    --prisma-flow: linear-gradient(100deg, #ff9e95, #ffae55, #cfd149, #00e8df, #bfb9ff);
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   }
 }
@@ -75,6 +84,8 @@
   --zaehlwerk: #a3e635;
   --fontart: #e879f9;
   --ticker: #818cf8;
+  --prisma: #bfb9ff;
+  --prisma-flow: linear-gradient(100deg, #ff9e95, #ffae55, #cfd149, #00e8df, #bfb9ff);
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
@@ -217,6 +228,31 @@ body {
 .tool-zaehlwerk { --tool: var(--zaehlwerk); }
 .tool-fontart { --tool: var(--fontart); }
 .tool-ticker { --tool: var(--ticker); }
+.tool-prismatical { --tool: var(--prisma); }
+
+/* Die bunte Kachel: schmaler Regenbogen an der Oberkante und der Werkzeugname
+   im Farbverlauf. Der Verlauf ist reine Dekoration — Beschreibung, Meta-Zeile
+   und Knopf bleiben in Volltönen, damit nichts nur über Farbe erzählt wird. */
+.tool-prismatical::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  border-radius: 16px 16px 0 0;
+  background: var(--prisma-flow);
+}
+/* Positive Abfrage, nicht negative: Wo background-clip fehlt, bleibt es beim
+   Anker-Vollton — ein `color: transparent` ohne Verlauf wäre unsichtbarer Text. */
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .tool-prismatical .tool-name {
+    background-image: var(--prisma-flow);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
 
 .tool-card:hover {
   border-color: var(--tool);

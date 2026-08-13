@@ -21,6 +21,8 @@
       url: 'https://dennismit2n.github.io/shrinkling/', ctaKey: 'openTool' },
     { key: 'wifi', nameKey: 'wifiName', icon: './assets/wifi-qr.svg',
       url: 'https://dennismit2n.github.io/wifi-qr/', ctaKey: 'openTool' },
+    { key: 'prismatical', name: 'Prismatical', icon: './assets/prismatical.svg',
+      url: 'https://dennismit2n.github.io/prismatical/', ctaKey: 'openTool' },
     { key: 'collective', name: 'Collective-Calc', icon: './assets/collective-calc.svg',
       url: 'https://dennismit2n.github.io/collective-calc/', ctaKey: 'openTool' },
     { key: 'bigday', name: 'bigday', icon: './assets/bigday.svg',

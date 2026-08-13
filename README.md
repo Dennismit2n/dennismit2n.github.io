@@ -11,6 +11,7 @@ Startseite für die kleinen Tools von Dennis_mit_2n — im Browser und für Wind
 - [Real_RAM_cooler](https://github.com/Dennismit2n/Real_RAM_cooler) — an honest RAM tool for Windows (download, not a browser tool)
 - [shrinkling](https://dennismit2n.github.io/shrinkling/) — shrink photos right in your browser
 - [WiFi QR Card](https://dennismit2n.github.io/wifi-qr/) — create a WiFi QR code card, guests scan and connect
+- [Prismatical](https://dennismit2n.github.io/prismatical/) — passwords and passphrases whose strength is the colour of the interface
 - [Collective-Calc](https://dennismit2n.github.io/collective-calc/) — split group expenses, no account, shareable as a link
 - [bigday](https://dennismit2n.github.io/bigday/) — pretty shareable countdown page
 - [Dreh das Rad](https://dennismit2n.github.io/dreh-das-rad/) — a decision wheel: options in, fate decides
