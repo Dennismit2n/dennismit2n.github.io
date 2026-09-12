@@ -36,7 +36,9 @@
     { key: 'ticker', name: 'Besucher-Ticker', icon: './assets/besucher-ticker.svg',
       url: 'https://github.com/Dennismit2n/besucher-ticker/releases/latest', ctaKey: 'downloadTool' },
     { key: 'fontart', name: 'fontART Designer', icon: './assets/fontart.svg',
-      url: 'https://dennismit2n.github.io/fontART-demo/', ctaKey: 'openTool' }
+      url: 'https://dennismit2n.github.io/fontART-demo/', ctaKey: 'openTool' },
+    { key: 'masterprompt', name: 'create-masterprompt', icon: './assets/masterprompt.svg',
+      url: 'https://github.com/Dennismit2n/create-masterprompt', ctaKey: 'openTool' }
   ];
 
   // Texts exist in German and English; every other language gets the English
