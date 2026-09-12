@@ -19,8 +19,9 @@ Startseite für die kleinen Tools von Dennis_mit_2n — im Browser und für Wind
 - [Zählwerk](https://dennismit2n.github.io/zaehlwerk/) — where your Claude Code usage goes, by day, model and project
 - [Besucher-Ticker](https://github.com/Dennismit2n/besucher-ticker) — your GoatCounter visitor numbers floating on the Windows desktop (download, not a browser tool)
 - [fontART Designer](https://dennismit2n.github.io/fontART-demo/) — turn your handwriting into a real font (trial version: in the browser, or as a Windows download)
+- [create-masterprompt](https://github.com/Dennismit2n/create-masterprompt) — turns a vague project idea into a context package a fresh AI chat can run from (a skill, not a program)
 
-Same order as the tiles on the page. Spectroton sits next to Prismatical because both work with colour spectra; its interface is German only, which the tile and its guide both say out loud. Real_RAM_cooler and Besucher-Ticker are Windows downloads and fontART comes both ways — which is why the headline says "on your own device" and not "in your browser". fontART is also the only tile with three mini tiles instead of two: its main button opens the browser version, and "For Windows" leads to the release.
+Same order as the tiles on the page. Spectroton sits next to Prismatical because both work with colour spectra; its interface is German only, which the tile and its guide both say out loud. Real_RAM_cooler and Besucher-Ticker are Windows downloads and fontART comes both ways — which is why the headline says "on your own device" and not "in your browser". fontART is also the only tile with three mini tiles instead of two: its main button opens the browser version, and "For Windows" leads to the release. create-masterprompt is the first entry that is neither a browser tool nor a Windows program: it is an Agent Skill that runs inside an AI chat, which is why its button leads to the repository and its meta line does not borrow the "no uploads" line of the others.
 
 **fontART is the odd one out**, and the tile says so rather than hiding it: it is the only tool here that is neither open source nor meant to stay free. What this repository links to is the free trial; the full version is being worked on, with no date and no price settled. The reasoning is spelled out in the guide on `werkstatt.html`, because a workshop whose footer says "open source on GitHub" owes an explanation for the one exception.
 
@@ -40,13 +41,19 @@ The interface words exist in all 12 languages. The texts themselves are German a
 
 ## Development
 
-No build step — plain HTML, CSS, and JavaScript. 29 files make up the site: two pages, one stylesheet, eight scripts (one of them GoatCounter's, vendored), fifteen images and three icons. No npm dependencies.
+No build step — plain HTML, CSS, and JavaScript. 30 files make up the site: two pages, one stylesheet, eight scripts (one of them GoatCounter's, vendored), sixteen images and three icons. No npm dependencies.
 
 ```
 node tools/dev-server.js
 ```
 
 Then open http://localhost:8615
+
+The stylesheet and every own script are pulled in with a `?v=<date>` suffix. GitHub Pages serves
+HTML and code with `max-age=600` and caches them independently, so without the suffix a freshly
+deployed `index.html` can meet a ten-minute-old `i18n.js` and render raw keys instead of text.
+**Bump the date in both HTML files whenever a deploy changes CSS or JS.** `js/vendor/count.js`
+deliberately has no suffix — it is third-party code and never changes.
 
 ## Preview and promo images
 
