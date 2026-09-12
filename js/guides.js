@@ -325,12 +325,12 @@ var GUIDES = {
     },
     steps: {
       de: [
-        'Auf die Fläche klicken und den Ordner auswählen: unter Windows %USERPROFILE%\.claude\projects, sonst ~/.claude/projects. Er ist versteckt — den Pfad einfach oben in die Adreßzeile des Auswahlfensters eintippen.',
+        'Auf die Fläche klicken und den Ordner auswählen: unter Windows %USERPROFILE%\\.claude\\projects, sonst ~/.claude/projects. Er ist versteckt — den Pfad einfach oben in die Adreßzeile des Auswahlfensters eintippen.',
         'Kurz warten. Der Balken zeigt, wie viele Dateien schon gelesen sind; bei einigen hundert Megabyte dauert das ein paar Sekunden.',
         'Oben stehen die vier Kennzahlen, darunter die Aufschlüsselungen. Jeder Bereich hat ein Fragezeichen, das erklärt, wie er zu lesen ist.'
       ],
       en: [
-        'Click the panel and pick the folder: on Windows %USERPROFILE%\.claude\projects, otherwise ~/.claude/projects. It is hidden — just type the path into the address bar of the file dialog.',
+        'Click the panel and pick the folder: on Windows %USERPROFILE%\\.claude\\projects, otherwise ~/.claude/projects. It is hidden — just type the path into the address bar of the file dialog.',
         'Wait a moment. The bar shows how many files have been read; with a few hundred megabytes this takes a couple of seconds.',
         'The four headline figures sit at the top, the breakdowns below. Every section has a question mark explaining how to read it.'
       ]
@@ -450,6 +450,45 @@ var GUIDES = {
     docs: {
       de: 'https://github.com/Dennismit2n/fontART-demo/blob/main/README.de.md',
       en: 'https://github.com/Dennismit2n/fontART-demo/blob/main/README.md'
+    }
+  },
+
+  masterprompt: {
+    purpose: {
+      de: 'Ein Chat verliert irgendwann den Faden: Das Kontextfenster läuft voll, oder man macht am nächsten Tag in einer neuen Sitzung weiter und die Hälfte der Entscheidungen ist weg. create-masterprompt setzt davor an. Es ist kein Programm, sondern ein Skill für KI-Chats: Er führt durch ein Größen-Gate und sechs Phasen — Recherche, Briefing, Entscheidungs-Interview, Plan, Bauen, Übergabe — und schreibt dabei drei Dateien. Das Briefing hält die dauerhaften Fakten des Vorhabens fest, das Entscheidungslog hält fest, was warum entschieden wurde, und die Übergabedatei sagt der nächsten Sitzung, wo es weitergeht.',
+      en: 'A chat loses the thread sooner or later: the context window fills up, or you continue the next day in a new session and half the decisions are gone. create-masterprompt starts before that happens. It is not a program but a skill for AI chats: it walks you through a size gate and six phases — research, briefing, decision interview, plan, build, handoff — and writes three files along the way. The briefing holds the durable facts of the project, the decision log records what was decided and why, and the handoff tells the next session where to pick up.'
+    },
+    steps: {
+      de: [
+        'Das Repo herunterladen und den Ordner create-masterprompt in den Skill-Ordner des Clients legen: unter Windows %USERPROFILE%\\.claude\\skills, sonst ~/.claude/skills. Der Ordnername muss genau so bleiben.',
+        'Einen frischen Chat öffnen und das Vorhaben beschreiben. Der Skill meldet sich von selbst, sobald es nach einem Projekt über mehrere Sitzungen klingt — sonst genügt die Bitte um einen Masterprompt.',
+        'Die drei Dateien am Ende aufheben. Beim nächsten Mal bekommt die frische Sitzung Briefing und Übergabedatei zu lesen und macht dort weiter, wo die letzte aufgehört hat.'
+      ],
+      en: [
+        'Download the repository and put the create-masterprompt folder into the skills folder of your client: on Windows %USERPROFILE%\\.claude\\skills, otherwise ~/.claude/skills. The folder name has to stay exactly that.',
+        'Open a fresh chat and describe what you are planning. The skill speaks up by itself as soon as it sounds like a project spanning several sessions — otherwise just ask for a master prompt.',
+        'Keep the three files. Next time, hand the fresh session the briefing and the handoff, and it carries on where the last one stopped.'
+      ]
+    },
+    pitfalls: {
+      de: [
+        'Es ist kein Programm und keine Webseite. Ohne einen Client, der den SKILL.md-Standard versteht — Claude Code, claude.ai und andere —, passiert gar nichts.',
+        'Der Ordnername muss create-masterprompt heißen und mit dem Feld name im Frontmatter übereinstimmen. Stimmen sie nicht überein, lädt der Skill stillschweigend nicht.',
+        'Für claude.ai nennt die README eine .skill-Datei auf der Releases-Seite. Releases gibt es bisher keine — bis dahin den Ordner selbst zippen.',
+        'Alle Texte, Vorlagen und Referenzdateien sind auf Englisch. Der Skill läuft mit deutschen Vorhaben, aber seine eigene Anleitung liest sich englisch.',
+        'Der Skill nimmt einem die Entscheidungen nicht ab, er stellt Fragen. Bei einer Kleinigkeit bremst das mehr, als es hilft — dafür steht das Größen-Gate ganz vorne, das genau diesen Fall abfangen soll.'
+      ],
+      en: [
+        'It is neither a program nor a website. Without a client that understands the SKILL.md standard — Claude Code, claude.ai and others — nothing happens at all.',
+        'The folder has to be called create-masterprompt and match the name field in the frontmatter. If they differ, the skill silently fails to load.',
+        'For claude.ai the README points at a .skill file on the releases page. There are no releases yet — until then, zip the folder yourself.',
+        'All texts, templates and reference files are in English. The skill works on projects in any language, but its own instructions read in English.',
+        'The skill does not make the decisions for you, it asks questions. On something small that slows you down more than it helps — which is what the size gate at the very front is there to catch.'
+      ]
+    },
+    docs: {
+      de: 'https://github.com/Dennismit2n/create-masterprompt/blob/main/README.md',
+      en: 'https://github.com/Dennismit2n/create-masterprompt/blob/main/README.md'
     }
   }
 };

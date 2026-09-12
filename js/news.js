@@ -90,6 +90,11 @@ var NEWS = {
 
   spectroton: [
     {
+      date: '2026-09-13',
+      de: 'Behoben: Wer die Darstellung von Hand auf Dunkel stellte, sah die Kachel weiter im hellen Türkis — für den erzwungenen Dunkelmodus fehlte die Farbe. Über die Systemeinstellung war sie immer richtig.',
+      en: 'Fixed: with the display switched to dark by hand, the tile kept its light teal — the colour was missing for the forced dark mode. Via the system setting it was always correct.'
+    },
+    {
       date: '2026-09-10',
       de: 'Erste Veröffentlichung. Du setzt eine Basisfarbe, Spectroton rechnet daraus elf abgestimmte Stufen und schreibt zu jeder den Kontrastwert — wahlweise nach WCAG 2.2 oder nach APCA. Dazu Akzentfarben nach Harmonie-Regeln, einzeln sperrbare Stufen, vier Erscheinungsbilder und Export als CSS, Tailwind, Tokens-Datei oder HEX-Liste. Fertige Paletten kannst du benannt im Gerät ablegen oder komplett als Link weitergeben.',
       en: 'First release. You set a base colour, Spectroton computes eleven matching shades from it and writes the contrast value next to each one — either WCAG 2.2 or APCA, whichever you pick. Plus accent colours by harmony rules, individually lockable shades, four appearances, and export as CSS, Tailwind, a tokens file or a plain HEX list. Finished palettes can be stored by name on your device or passed on complete as a link.'
@@ -152,6 +157,11 @@ var NEWS = {
 
   zaehlwerk: [
     {
+      date: '2026-09-13',
+      de: 'Behoben: Im ersten Schritt der Anleitung fehlten die Schrägstriche im Windows-Pfad — dort stand %USERPROFILE%.claudeprojects statt %USERPROFILE%\\.claude\\projects. Wer dem gefolgt ist, hat den Ordner nicht gefunden.',
+      en: 'Fixed: the first step of the guide had lost the backslashes in the Windows path — it read %USERPROFILE%.claudeprojects instead of %USERPROFILE%\\.claude\\projects. Anyone following it would not have found the folder.'
+    },
+    {
       date: '2026-07-31',
       de: 'Dazu gibt es jetzt den Zählwerk Ticker: eine kleine schwebende Anzeige für Windows mit dem laufenden Fünf-Stunden-Fenster, der Tagessumme und den stärksten Modellen — zum Mitschauen beim Arbeiten statt zum Nachschauen hinterher. Der Verweis darauf steht auf der Zählwerk-Seite; Quellcode und fertige Exe liegen auf GitHub.',
       en: 'There is now a Zählwerk Ticker to go with it: a small floating readout for Windows showing the current five-hour window, the daily total and the busiest models — to watch while working rather than to check afterwards. The link sits on the Zählwerk page; source code and a prebuilt exe are on GitHub.'
@@ -185,6 +195,14 @@ var NEWS = {
       link: 'https://github.com/Dennismit2n/fontART-demo/releases/tag/v10.1.0',
       de: 'Erste Veröffentlichung der Testversion für Windows. Handschrift malen und als Schriftart ausgeben: 60 Minuten je Start, alle Werkzeuge offen, Speichern und Laden inbegriffen. Der Export liefert die Kleinbuchstaben a–z unter dem festen Namen „fontART DEMO“. Die Vollversion mit allen 333 Zeichen ist in Arbeit.',
       en: 'First release of the Windows trial. Draw your handwriting and turn it into a typeface: 60 minutes per start, every tool unlocked, saving and loading included. The export produces the lowercase letters a–z under the fixed name “fontART DEMO”. The full version with all 333 characters is being worked on.'
+    }
+  ],
+
+  masterprompt: [
+    {
+      date: '2026-09-13',
+      de: 'Erste Veröffentlichung. Ein Größen-Gate vorweg, dann sechs Phasen von der Recherche bis zur Übergabe. Am Ende stehen drei Dateien — Briefing, Entscheidungslog und Übergabedatei —, mit denen eine frische Sitzung ohne Gesprächsverlauf weiterarbeitet. Quelloffen unter MIT.',
+      en: 'First release. A size gate first, then six phases from research to handoff. What comes out are three files — a briefing, a decision log and a handoff — that let a fresh session carry on with no conversation history. Open source under MIT.'
     }
   ]
 };
