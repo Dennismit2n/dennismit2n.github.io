@@ -12,6 +12,7 @@ Startseite für die kleinen Tools von Dennis_mit_2n — im Browser und für Wind
 - [shrinkling](https://dennismit2n.github.io/shrinkling/) — shrink photos right in your browser
 - [WiFi QR Card](https://dennismit2n.github.io/wifi-qr/) — create a WiFi QR code card, guests scan and connect
 - [Prismatical](https://dennismit2n.github.io/prismatical/) — passwords and passphrases whose strength is the colour of the interface
+- [Spectroton](https://dennismit2n.github.io/spectroton/) — one colour in, eleven matching shades out, contrast-checked (German interface)
 - [Collective-Calc](https://dennismit2n.github.io/collective-calc/) — split group expenses, no account, shareable as a link
 - [bigday](https://dennismit2n.github.io/bigday/) — pretty shareable countdown page
 - [Dreh das Rad](https://dennismit2n.github.io/dreh-das-rad/) — a decision wheel: options in, fate decides
@@ -19,7 +20,7 @@ Startseite für die kleinen Tools von Dennis_mit_2n — im Browser und für Wind
 - [Besucher-Ticker](https://github.com/Dennismit2n/besucher-ticker) — your GoatCounter visitor numbers floating on the Windows desktop (download, not a browser tool)
 - [fontART Designer](https://dennismit2n.github.io/fontART-demo/) — turn your handwriting into a real font (trial version: in the browser, or as a Windows download)
 
-Same order as the tiles on the page. Real_RAM_cooler and Besucher-Ticker are Windows downloads and fontART comes both ways — which is why the headline says "on your own device" and not "in your browser". fontART is also the only tile with three mini tiles instead of two: its main button opens the browser version, and "For Windows" leads to the release.
+Same order as the tiles on the page. Spectroton sits next to Prismatical because both work with colour spectra; its interface is German only, which the tile and its guide both say out loud. Real_RAM_cooler and Besucher-Ticker are Windows downloads and fontART comes both ways — which is why the headline says "on your own device" and not "in your browser". fontART is also the only tile with three mini tiles instead of two: its main button opens the browser version, and "For Windows" leads to the release.
 
 **fontART is the odd one out**, and the tile says so rather than hiding it: it is the only tool here that is neither open source nor meant to stay free. What this repository links to is the free trial; the full version is being worked on, with no date and no price settled. The reasoning is spelled out in the guide on `werkstatt.html`, because a workshop whose footer says "open source on GitHub" owes an explanation for the one exception.
 
@@ -39,7 +40,7 @@ The interface words exist in all 12 languages. The texts themselves are German a
 
 ## Development
 
-No build step — plain HTML, CSS, and JavaScript. 27 files make up the site: two pages, one stylesheet, eight scripts (one of them GoatCounter's, vendored), thirteen images and three icons. No npm dependencies.
+No build step — plain HTML, CSS, and JavaScript. 29 files make up the site: two pages, one stylesheet, eight scripts (one of them GoatCounter's, vendored), fifteen images and three icons. No npm dependencies.
 
 ```
 node tools/dev-server.js

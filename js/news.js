@@ -88,6 +88,14 @@ var NEWS = {
     }
   ],
 
+  spectroton: [
+    {
+      date: '2026-09-10',
+      de: 'Erste Veröffentlichung. Du setzt eine Basisfarbe, Spectroton rechnet daraus elf abgestimmte Stufen und schreibt zu jeder den Kontrastwert — wahlweise nach WCAG 2.2 oder nach APCA. Dazu Akzentfarben nach Harmonie-Regeln, einzeln sperrbare Stufen, vier Erscheinungsbilder und Export als CSS, Tailwind, Tokens-Datei oder HEX-Liste. Fertige Paletten kannst du benannt im Gerät ablegen oder komplett als Link weitergeben.',
+      en: 'First release. You set a base colour, Spectroton computes eleven matching shades from it and writes the contrast value next to each one — either WCAG 2.2 or APCA, whichever you pick. Plus accent colours by harmony rules, individually lockable shades, four appearances, and export as CSS, Tailwind, a tokens file or a plain HEX list. Finished palettes can be stored by name on your device or passed on complete as a link.'
+    }
+  ],
+
   collective: [
     {
       date: '2026-07-30',

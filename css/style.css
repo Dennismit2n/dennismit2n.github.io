@@ -28,6 +28,15 @@
      auf AA gegen --panel UND --bg geprüft (schlechtester Wert hell 6.9:1). */
   --prisma: #7563e5;
   --prisma-flow: linear-gradient(100deg, #d53c3d, #c85500, #858200, #009b95, #7563e5);
+  /* Spectroton ist die zweite Kachel ohne Vollton-Farbe — und die einzige, deren
+     Verlauf EINE Farbe in Stufen zeigt statt vieler Farbtöne: genau das, was das
+     Werkzeug tut (eine Farbe rein, elf Stufen raus). Der Farbton steht fest,
+     nur die Helligkeit wandert. Alle fünf Stopps sind auf AA gegen --panel UND
+     --bg gerechnet (schlechtester Wert 4.54:1 in beiden Darstellungen) — deshalb
+     beginnt die Rampe bei der hellsten noch lesbaren Stufe, nicht beim Pastellton.
+     Der Werkzeugname trägt den Verlauf, also ist das kein Schönheitsmaß. */
+  --spectro: #0f766e;
+  --spectro-flow: linear-gradient(100deg, #007d78, #006e69, #005f5b, #00504d, #00423f);
   --shadow: 0 10px 30px rgba(23, 26, 51, 0.10);
 }
 
@@ -59,6 +68,10 @@
     --ticker: #818cf8;
     --prisma: #bfb9ff;
     --prisma-flow: linear-gradient(100deg, #ff9e95, #ffae55, #cfd149, #00e8df, #bfb9ff);
+  --spectro: #2dd4bf;
+  --spectro-flow: linear-gradient(100deg, #8bfff8, #48e8e0, #13ccc5, #00b0a9, #00948e);
+    --spectro: #2dd4bf;
+    --spectro-flow: linear-gradient(100deg, #8bfff8, #48e8e0, #13ccc5, #00b0a9, #00948e);
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   }
 }
@@ -229,6 +242,7 @@ body {
 .tool-fontart { --tool: var(--fontart); }
 .tool-ticker { --tool: var(--ticker); }
 .tool-prismatical { --tool: var(--prisma); }
+.tool-spectroton { --tool: var(--spectro); }
 
 /* Die bunte Kachel: schmaler Regenbogen an der Oberkante und der Werkzeugname
    im Farbverlauf. Der Verlauf ist reine Dekoration — Beschreibung, Meta-Zeile
@@ -248,6 +262,28 @@ body {
 @supports (background-clip: text) or (-webkit-background-clip: text) {
   .tool-prismatical .tool-name {
     background-image: var(--prisma-flow);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+/* Dieselbe Mechanik für Spectroton, nur mit der Stufen-Rampe. Bewusst zwei
+   getrennte Regelsätze statt einer gemeinsamen Klasse: die beiden Kacheln
+   teilen sich das Muster, nicht die Farbe. */
+.tool-spectroton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  border-radius: 16px 16px 0 0;
+  background: var(--spectro-flow);
+}
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .tool-spectroton .tool-name {
+    background-image: var(--spectro-flow);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;

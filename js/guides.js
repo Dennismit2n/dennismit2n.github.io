@@ -167,6 +167,45 @@ var GUIDES = {
     }
   },
 
+  spectroton: {
+    purpose: {
+      de: 'Für eine Website oder App brauchst du selten eine Farbe, sondern eine ganze Treppe davon: hell für Flächen, mittig für Knöpfe, dunkel für Schrift. Spectroton rechnet diese elf Stufen aus einer einzigen Basisfarbe — gleichmäßig fürs Auge, nicht nur in den Zahlen — und schreibt zu jeder Stufe dazu, ob Text darauf noch lesbar ist.',
+      en: 'For a website or an app you rarely need one colour, you need a whole staircase of it: light for surfaces, mid for buttons, dark for type. Spectroton computes those eleven shades from a single base colour — evenly spaced for the eye, not just in the numbers — and notes for every shade whether text on it is still readable.'
+    },
+    steps: {
+      de: [
+        'Bei „Basisfarbe“ eine Farbe setzen: HEX-Wert eintippen, den Farbwähler benutzen oder unter „Farbname“ nach einem Namen suchen und aus den Treffern wählen. Die elf Stufen erscheinen sofort.',
+        'Unter „Feinjustage“ nachschärfen und bei Bedarf „Akzentfarben“ dazunehmen — die schlägt Spectroton nach Harmonie-Regeln vor und gibt jeder eine eigene Rampe. Über das Schloss an einer Stufe frierst du deren Wert ein, sodass er Reglern und einem Wechsel der Basisfarbe standhält.',
+        'Unter „Export“ das Format wählen — CSS, Tailwind, Tokens oder HEX — und kopieren oder als Datei speichern. Wer die Palette behalten will, legt sie unter „Bibliothek“ benannt ab; wer sie weitergeben will, kopiert bei „Teilen“ den Link, der die ganze Palette in sich trägt.'
+      ],
+      en: [
+        'Set a colour under „Basisfarbe“ (base colour): type a HEX value, use the colour picker, or search for a name under „Farbname“ and pick from the hits. The eleven shades appear at once.',
+        'Refine under „Feinjustage“ (fine tuning) and add „Akzentfarben“ (accent colours) if you want — Spectroton suggests them by harmony rules and gives each its own ramp. The padlock on a shade freezes its value, so it survives the sliders and a change of base colour.',
+        'Pick a format under „Export“ — CSS, Tailwind, Tokens or HEX — then copy it or save it as a file. To keep a palette, store it by name under „Bibliothek“ (library); to pass it on, copy the link under „Teilen“ (share), which carries the whole palette inside it.'
+      ]
+    },
+    pitfalls: {
+      de: [
+        'Die Oberfläche gibt es nur auf Deutsch. Unter den Werkzeugen hier ist das die Ausnahme.',
+        'Die Farbnamen kommen von api.color.pizza, einem fremden Dienst. Schon beim Öffnen fragt Spectroton dort nach dem Namen der aktuellen Farbe — dabei geht dieser Farbwert an den Dienst. Ohne Netz bleibt nur dieses eine Feld leer; alles andere rechnet weiter auf deinem Gerät.',
+        'Nach dem ersten Besuch läuft Spectroton auch ohne Internet — die Farbnamen-Suche ausgenommen.',
+        'Nicht jede Farbe lässt sich auf jedem Bildschirm zeigen. Statt hart abzuschneiden, weicht Spectroton auf den nächstmöglichen Ton aus und weist darauf hin, wenn eine Stufe Display-P3 braucht und auf einem sRGB-Schirm anders ankommt.',
+        'Der Kontrastwert ist eine Rechnung, kein Freibrief: WCAG 2.2 und APCA bewerten dieselbe Paarung unterschiedlich, besonders bei hellem Text auf dunklem Grund. Wo es darauf ankommt, beide Maße ansehen und am Ende am echten Bildschirm prüfen.'
+      ],
+      en: [
+        'The interface is in German only. Among the tools here that is the exception.',
+        'The colour names come from api.color.pizza, someone else’s service. Spectroton asks it for the name of the current colour as soon as the page opens — that colour value goes to the service. Without a connection only this one field stays empty; everything else keeps computing on your device.',
+        'After the first visit Spectroton also runs without an internet connection — except for the colour-name search.',
+        'Not every colour can be shown on every screen. Instead of clipping hard, Spectroton falls back to the nearest possible tone and points out when a shade needs Display-P3 and will land differently on an sRGB screen.',
+        'A contrast value is a calculation, not a permit: WCAG 2.2 and APCA judge the same pairing differently, especially for light text on a dark ground. Where it matters, look at both measures and check on a real screen in the end.'
+      ]
+    },
+    docs: {
+      de: 'https://github.com/Dennismit2n/spectroton/blob/main/README.md',
+      en: 'https://github.com/Dennismit2n/spectroton/blob/main/README.md'
+    }
+  },
+
   collective: {
     purpose: {
       de: 'Wer schuldet wem was — nach Urlaub, Ferienhaus, Festival oder Restaurantabend. Die Abrechnung steckt komprimiert im Link; die anderen brauchen weder Konto noch App, um sie zu sehen.',
