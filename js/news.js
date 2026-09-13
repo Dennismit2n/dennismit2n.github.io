@@ -11,8 +11,8 @@
  * not of writing it down.
  *
  * Newest first per tool. Fields: date (ISO), de, en; optionally version and
- * link — Real_RAM_cooler, fontART and Besucher-Ticker have real GitHub
- * releases; the browser tools carry no tags.
+ * link — Real_RAM_cooler, fontART, Besucher-Ticker and create-masterprompt
+ * have real GitHub releases; the browser tools carry no tags.
  */
 'use strict';
 
@@ -91,8 +91,8 @@ var NEWS = {
   spectroton: [
     {
       date: '2026-09-13',
-      de: 'Behoben: Wer die Darstellung von Hand auf Dunkel stellte, sah die Kachel weiter im hellen Türkis — für den erzwungenen Dunkelmodus fehlte die Farbe. Über die Systemeinstellung war sie immer richtig.',
-      en: 'Fixed: with the display switched to dark by hand, the tile kept its light teal — the colour was missing for the forced dark mode. Via the system setting it was always correct.'
+      de: 'Behoben: Wer die Darstellung von Hand auf Dunkel stellte, sah die Kachel weiter das Türkis des Hellmodus — ein dunkler Ton, der auf dunklem Grund kaum noch zu lesen war. Für den erzwungenen Dunkelmodus fehlte die Farbe. Über die Systemeinstellung war sie immer richtig.',
+      en: 'Fixed: with the display switched to dark by hand, the tile kept the teal meant for light mode — a dark shade that barely read against a dark background. The colour was missing for the forced dark mode. Via the system setting it was always correct.'
     },
     {
       date: '2026-09-10',
@@ -199,6 +199,13 @@ var NEWS = {
   ],
 
   masterprompt: [
+    {
+      date: '2026-09-13',
+      version: 'v1.5.0',
+      link: 'https://github.com/Dennismit2n/create-masterprompt/releases/tag/v1.5.0',
+      de: 'Es gibt den Skill jetzt auch auf Deutsch: SKILL.de.md ist die vollständige Übersetzung, dazu eine Übersichtstafel auf einer Seite. Der Skill selbst bleibt englisch — er antwortet ohnehin in der Sprache, in der man ihn anspricht. Wer kein Englisch liest, kann jetzt trotzdem beurteilen, was er tut, bevor er ihn installiert.',
+      en: 'The skill now comes in German as well: SKILL.de.md is the full translation, plus a one-page overview. The skill itself stays English — it answers in whatever language you write in anyway. Anyone who reads no English can now still judge what it does before installing it.'
+    },
     {
       date: '2026-09-13',
       de: 'Erste Veröffentlichung. Ein Größen-Gate vorweg, dann sechs Phasen von der Recherche bis zur Übergabe. Am Ende stehen drei Dateien — Briefing, Entscheidungslog und Übergabedatei —, mit denen eine frische Sitzung ohne Gesprächsverlauf weiterarbeitet. Quelloffen unter MIT.',

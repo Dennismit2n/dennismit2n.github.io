@@ -14,31 +14,34 @@
 
 (function () {
   // Same order as the tiles on the start page.
+  // Reihenfolge muss mit den Kacheln in index.html uebereinstimmen
+  // (Dennis' Ansage vom 13.09.2026). Die beiden Platzhalter-Kacheln stehen
+  // hier bewusst NICHT: sie haben weder Neuigkeiten noch Anleitung.
   var TOOLS = [
-    { key: 'ram', name: 'Real_RAM_cooler', icon: './assets/ramcooler.svg',
-      url: 'https://github.com/Dennismit2n/Real_RAM_cooler/releases/latest', ctaKey: 'downloadTool' },
-    { key: 'shrink', name: 'shrinkling', icon: './assets/shrinkling.svg',
-      url: 'https://dennismit2n.github.io/shrinkling/', ctaKey: 'openTool' },
-    { key: 'wifi', nameKey: 'wifiName', icon: './assets/wifi-qr.svg',
-      url: 'https://dennismit2n.github.io/wifi-qr/', ctaKey: 'openTool' },
-    { key: 'prismatical', name: 'Prismatical', icon: './assets/prismatical.svg',
-      url: 'https://dennismit2n.github.io/prismatical/', ctaKey: 'openTool' },
     { key: 'spectroton', name: 'Spectroton', icon: './assets/spectroton.svg',
       url: 'https://dennismit2n.github.io/spectroton/', ctaKey: 'openTool' },
-    { key: 'collective', name: 'Collective-Calc', icon: './assets/collective-calc.svg',
-      url: 'https://dennismit2n.github.io/collective-calc/', ctaKey: 'openTool' },
-    { key: 'bigday', name: 'bigday', icon: './assets/bigday.svg',
-      url: 'https://dennismit2n.github.io/bigday/', ctaKey: 'openTool' },
-    { key: 'rad', name: 'Dreh das Rad', icon: './assets/dreh-das-rad.svg',
-      url: 'https://dennismit2n.github.io/dreh-das-rad/', ctaKey: 'openTool' },
+    { key: 'masterprompt', name: 'create-masterprompt', icon: './assets/masterprompt.svg',
+      url: 'https://github.com/Dennismit2n/create-masterprompt', ctaKey: 'openTool' },
+    { key: 'wifi', nameKey: 'wifiName', icon: './assets/wifi-qr.svg',
+      url: 'https://dennismit2n.github.io/wifi-qr/', ctaKey: 'openTool' },
+    { key: 'ram', name: 'Real_RAM_cooler', icon: './assets/ramcooler.svg',
+      url: 'https://github.com/Dennismit2n/Real_RAM_cooler/releases/latest', ctaKey: 'downloadTool' },
+    { key: 'prismatical', name: 'Prismatical', icon: './assets/prismatical.svg',
+      url: 'https://dennismit2n.github.io/prismatical/', ctaKey: 'openTool' },
+    { key: 'shrink', name: 'shrinkling', icon: './assets/shrinkling.svg',
+      url: 'https://dennismit2n.github.io/shrinkling/', ctaKey: 'openTool' },
     { key: 'zaehlwerk', name: 'Zählwerk', icon: './assets/zaehlwerk.svg',
       url: 'https://dennismit2n.github.io/zaehlwerk/', ctaKey: 'openTool' },
     { key: 'ticker', name: 'Besucher-Ticker', icon: './assets/besucher-ticker.svg',
       url: 'https://github.com/Dennismit2n/besucher-ticker/releases/latest', ctaKey: 'downloadTool' },
     { key: 'fontart', name: 'fontART Designer', icon: './assets/fontart.svg',
       url: 'https://dennismit2n.github.io/fontART-demo/', ctaKey: 'openTool' },
-    { key: 'masterprompt', name: 'create-masterprompt', icon: './assets/masterprompt.svg',
-      url: 'https://github.com/Dennismit2n/create-masterprompt', ctaKey: 'openTool' }
+    { key: 'rad', name: 'Dreh das Rad', icon: './assets/dreh-das-rad.svg',
+      url: 'https://dennismit2n.github.io/dreh-das-rad/', ctaKey: 'openTool' },
+    { key: 'collective', name: 'Collective-Calc', icon: './assets/collective-calc.svg',
+      url: 'https://dennismit2n.github.io/collective-calc/', ctaKey: 'openTool' },
+    { key: 'bigday', name: 'bigday', icon: './assets/bigday.svg',
+      url: 'https://dennismit2n.github.io/bigday/', ctaKey: 'openTool' }
   ];
 
   // Texts exist in German and English; every other language gets the English

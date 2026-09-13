@@ -252,6 +252,94 @@ body {
 .tool-prismatical { --tool: var(--prisma); }
 .tool-spectroton { --tool: var(--spectro); }
 
+/* Platzhalter-Kacheln: angekuendigt, aber noch nichts dahinter. Gestrichelter
+   Rahmen und gedaempfte Farbe, damit sie auf einen Blick als "noch nichts"
+   lesbar sind, ohne wie ein Fehler auszusehen. Sie tragen bewusst KEIN
+   .tool-open und keine Mini-Kacheln — ein Knopf ins Leere waere schlimmer als
+   keiner — und deshalb auch keinen Hover-Effekt, der Klickbarkeit verspricht. */
+.tool-platzhalter {
+  --tool: var(--text-soft);
+  background: transparent;
+  border-style: dashed;
+  box-shadow: none;
+}
+.tool-platzhalter:hover { border-color: var(--border); transform: none; }
+.tool-platzhalter .tool-name { color: var(--text-soft); }
+.tool-platzhalter .tool-desc { color: var(--text-soft); }
+.platzhalter-icon {
+  width: 44px;
+  height: 44px;
+  flex: none;
+  border: 2px dashed var(--border);
+  border-radius: 11px;
+}
+
+/* Die Platzhalter-Kachel fuer das ungenannte Werkzeug traegt keinen Codenamen,
+   sondern ein Aussehen: dunkle Materie. Tiefer Raum mit ein paar Lichtpunkten
+   und einem Ring, der aussieht, als kruemme etwas Unsichtbares das Licht
+   dahinter. Sie bleibt in BEIDEN Darstellungen dunkel — das ist der Witz;
+   deshalb stehen hier feste Farben statt der Themenvariablen, und deshalb
+   traegt sie ihre eigene Textfarbe. */
+.tool-dunkle-materie {
+  --tool: #b9a7ff;
+  border-style: solid;
+  border-color: #2a2150;
+  background:
+    radial-gradient(58% 44% at 76% 24%, rgba(150,120,255,.20) 0%, transparent 62%),
+    radial-gradient(120% 96% at 26% 14%, #1a1440 0%, #0c0a22 52%, #050410 100%);
+  color: #d8d4f0;
+  overflow: hidden;
+}
+.tool-dunkle-materie .tool-name { color: #b9a7ff; }
+.tool-dunkle-materie .tool-desc { color: #b4aed4; }
+.tool-dunkle-materie .tool-meta { color: #8079a8; }
+/* Sternenfeld: einzelne Punkte als winzige Farbverlaeufe, kein Bild und kein
+   Skript. Bewusst wenige und ungleich verteilt — ein regelmaessiges Raster
+   saehe nach Tapete aus, nicht nach Himmel. */
+.tool-dunkle-materie::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  pointer-events: none;
+  background-image:
+    radial-gradient(1.6px 1.6px at 18% 26%, rgba(255,255,255,.75), transparent),
+    radial-gradient(1.2px 1.2px at 64% 12%, rgba(255,255,255,.55), transparent),
+    radial-gradient(1.8px 1.8px at 86% 62%, rgba(255,255,255,.65), transparent),
+    radial-gradient(1.1px 1.1px at 32% 78%, rgba(255,255,255,.45), transparent),
+    radial-gradient(1.4px 1.4px at 52% 48%, rgba(255,255,255,.35), transparent),
+    radial-gradient(1px 1px at 8% 58%, rgba(255,255,255,.40), transparent),
+    radial-gradient(1.3px 1.3px at 92% 30%, rgba(255,255,255,.50), transparent);
+}
+/* Das Icon ist der Linseneffekt: ein Ring um ein Nichts. Die Materie selbst
+   ist nicht zu sehen, nur was sie mit dem Licht dahinter macht. */
+.materie-icon {
+  width: 44px;
+  height: 44px;
+  flex: none;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 50%, #050410 0%, #050410 44%,
+              rgba(185,167,255,.85) 50%, rgba(150,120,255,.28) 58%, transparent 72%);
+  box-shadow: 0 0 14px rgba(150,120,255,.35);
+}
+
+/* Kleines Schild neben dem Werkzeugnamen fuer die Art des Eintrags. Bisher
+   nur create-masterprompt: es ist als einziges weder Webseite noch Programm,
+   und das soll man sehen, bevor man auf "Oeffnen" klickt. */
+.tool-art {
+  align-self: center;
+  margin-left: 8px;
+  padding: 2px 8px;
+  border: 1px solid var(--tool);
+  border-radius: 999px;
+  color: var(--tool);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
 /* Die bunte Kachel: schmaler Regenbogen an der Oberkante und der Werkzeugname
    im Farbverlauf. Der Verlauf ist reine Dekoration — Beschreibung, Meta-Zeile
    und Knopf bleiben in Volltönen, damit nichts nur über Farbe erzählt wird. */

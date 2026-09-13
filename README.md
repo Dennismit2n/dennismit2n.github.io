@@ -8,30 +8,30 @@ Startseite für die kleinen Tools von Dennis_mit_2n — im Browser und für Wind
 
 ## Tools
 
-- [Real_RAM_cooler](https://github.com/Dennismit2n/Real_RAM_cooler) — an honest RAM tool for Windows (download, not a browser tool)
-- [shrinkling](https://dennismit2n.github.io/shrinkling/) — shrink photos right in your browser
-- [WiFi QR Card](https://dennismit2n.github.io/wifi-qr/) — create a WiFi QR code card, guests scan and connect
-- [Prismatical](https://dennismit2n.github.io/prismatical/) — passwords and passphrases whose strength is the colour of the interface
 - [Spectroton](https://dennismit2n.github.io/spectroton/) — one colour in, eleven matching shades out, contrast-checked (German interface)
-- [Collective-Calc](https://dennismit2n.github.io/collective-calc/) — split group expenses, no account, shareable as a link
-- [bigday](https://dennismit2n.github.io/bigday/) — pretty shareable countdown page
-- [Dreh das Rad](https://dennismit2n.github.io/dreh-das-rad/) — a decision wheel: options in, fate decides
+- [create-masterprompt](https://github.com/Dennismit2n/create-masterprompt) — turns a vague project idea into a context package a fresh AI chat can run from (a skill, not a program)
+- [WiFi QR Card](https://dennismit2n.github.io/wifi-qr/) — create a WiFi QR code card, guests scan and connect
+- [Real_RAM_cooler](https://github.com/Dennismit2n/Real_RAM_cooler) — an honest RAM tool for Windows (download, not a browser tool)
+- [Prismatical](https://dennismit2n.github.io/prismatical/) — passwords and passphrases whose strength is the colour of the interface
+- [shrinkling](https://dennismit2n.github.io/shrinkling/) — shrink photos right in your browser
 - [Zählwerk](https://dennismit2n.github.io/zaehlwerk/) — where your Claude Code usage goes, by day, model and project
 - [Besucher-Ticker](https://github.com/Dennismit2n/besucher-ticker) — your GoatCounter visitor numbers floating on the Windows desktop (download, not a browser tool)
 - [fontART Designer](https://dennismit2n.github.io/fontART-demo/) — turn your handwriting into a real font (trial version: in the browser, or as a Windows download)
-- [create-masterprompt](https://github.com/Dennismit2n/create-masterprompt) — turns a vague project idea into a context package a fresh AI chat can run from (a skill, not a program)
+- [Dreh das Rad](https://dennismit2n.github.io/dreh-das-rad/) — a decision wheel: options in, fate decides
+- [Collective-Calc](https://dennismit2n.github.io/collective-calc/) — split group expenses, no account, shareable as a link
+- [bigday](https://dennismit2n.github.io/bigday/) — pretty shareable countdown page
 
-Same order as the tiles on the page. Spectroton sits next to Prismatical because both work with colour spectra; its interface is German only, which the tile and its guide both say out loud. Real_RAM_cooler and Besucher-Ticker are Windows downloads and fontART comes both ways — which is why the headline says "on your own device" and not "in your browser". fontART is also the only tile with three mini tiles instead of two: its main button opens the browser version, and "For Windows" leads to the release. create-masterprompt is the first entry that is neither a browser tool nor a Windows program: it is an Agent Skill that runs inside an AI chat, which is why its button leads to the repository and its meta line does not borrow the "no uploads" line of the others.
+Same order as the tiles on the page — hand-picked since 13 September 2026, no longer "newest last". Two further tiles sit at the end as placeholders, with no link and no mini tiles: there is nothing to open yet. Spectroton's interface is German only, which the tile and its guide both say out loud. Real_RAM_cooler and Besucher-Ticker are Windows downloads and fontART comes both ways — which is why the headline says "on your own device" and not "in your browser". fontART is also the only tile with three mini tiles instead of two: its main button opens the browser version, and "For Windows" leads to the release. create-masterprompt is the first entry that is neither a browser tool nor a Windows program: it is an Agent Skill that runs inside an AI chat, which is why its button leads to the repository and its meta line does not borrow the "no uploads" line of the others.
 
 **fontART is the odd one out**, and the tile says so rather than hiding it: it is the only tool here that is neither open source nor meant to stay free. What this repository links to is the free trial; the full version is being worked on, with no date and no price settled. The reasoning is spelled out in the guide on `werkstatt.html`, because a workshop whose footer says "open source on GitHub" owes an explanation for the one exception.
 
 ## News and guides
 
-`werkstatt.html` carries, for every tool, a short guide (what it is for, three steps, what to watch out for) and its dated release notes. Each tile on the start page holds two mini tiles linking straight to the matching section, the news one showing the date of the newest entry.
+`werkstatt.html` carries, for every tool, a short guide (what it is for, three steps, what to watch out for) and its dated release notes. Most tiles on the start page hold two mini tiles linking straight to the matching section, the news one showing the date of the newest entry; fontART has three, and the two placeholder tiles have none because there is nothing to link to yet.
 
 That is why a tile is a `<div>` rather than a link: `.tool-open` is stretched across the whole card via `::after`, so clicking anywhere still opens the tool, while the mini tiles stay clickable on top of it. A tile built from nested `<a>` elements would be invalid HTML.
 
-Both come from hand-maintained data files, not from a feed: `js/news.js` and `js/guides.js`. **Only Real_RAM_cooler, fontART and Besucher-Ticker have real GitHub releases** — the browser tools carry no tags, so their entries are written by hand and dated by the commit they describe. A guide may carry one optional extra section (`full`, an array of paragraphs); so far only fontART uses it, to say what the trial leaves out and why there is a price tag at all. Guides are written for people who want to *use* the tool; the READMEs stay what they are, developer documents, and are linked from each section.
+Both come from hand-maintained data files, not from a feed: `js/news.js` and `js/guides.js`. **Only Real_RAM_cooler, fontART, Besucher-Ticker and create-masterprompt have real GitHub releases** — the browser tools carry no tags, so their entries are written by hand and dated by the commit they describe. A guide may carry one optional extra section (`full`, an array of paragraphs); so far only fontART uses it, to say what the trial leaves out and why there is a price tag at all. Guides are written for people who want to *use* the tool; the READMEs stay what they are, developer documents, and are linked from each section.
 
 The interface words exist in all 12 languages. The texts themselves are German and English; the other ten languages get the English version plus a notice in their own language saying so.
 
@@ -52,12 +52,12 @@ Then open http://localhost:8615
 The stylesheet and every own script are pulled in with a `?v=<date>` suffix. GitHub Pages serves
 HTML and code with `max-age=600` and caches them independently, so without the suffix a freshly
 deployed `index.html` can meet a ten-minute-old `i18n.js` and render raw keys instead of text.
-**Bump the date in both HTML files whenever a deploy changes CSS or JS.** `js/vendor/count.js`
+**Bump the date in both HTML files whenever a deploy changes CSS or JS**, and append a letter for a second deploy on the same day (`…-13b`). `js/vendor/count.js`
 deliberately has no suffix — it is third-party code and never changes.
 
 ## Preview and promo images
 
-`tools/promo/` renders the preview and promo images for **all** projects of the workshop from one shared template — 113 images: ten formats per tool (link preview, GitHub social preview, Instagram, LinkedIn, X, three story cards, Twitch panel, Twitch banner) plus thirteen brand images (avatars and profile banners). Colours come straight from `css/style.css`, the icons are the same SVGs as the tiles. Everything editable lives in `tools/promo/marke.mjs`; see `tools/promo/README.md`.
+`tools/promo/` renders the preview and promo images for the workshop from one shared template — 113 images: ten formats per tool (link preview, GitHub social preview, Instagram, LinkedIn, X, three story cards, Twitch panel, Twitch banner) plus thirteen brand images (avatars and profile banners). It does not yet know Spectroton and create-masterprompt, so those two have no promo images. Colours come straight from `css/style.css`, the icons are the same SVGs as the tiles. Everything editable lives in `tools/promo/marke.mjs`; see `tools/promo/README.md`.
 
 ## Translations
 
