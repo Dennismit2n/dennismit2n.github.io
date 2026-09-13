@@ -34,7 +34,7 @@
        i18n.js treffen — dann stehen rohe Schluessel wie "masterpromptDesc" auf der
        Seite. BEI JEDEM DEPLOY, DER CSS ODER JS AENDERT, DAS DATUM HOCHSETZEN.
        js/vendor/count.js bleibt bewusst ohne: das ist Fremdcode und aendert sich nie. -->
-  <link rel="stylesheet" href="./css/style.css?v=2026-09-13">
+  <link rel="stylesheet" href="./css/style.css?v=2026-09-13b">
   <!-- Theme before first paint: stored choice wins, otherwise system decides via CSS. -->
   <script>try{var t=localStorage.getItem('dennismit2n-home.theme');if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}</script>
   <!-- Analytics: GoatCounter (anonymous, cookieless — disclosed in the footer).
@@ -83,33 +83,43 @@
            whole card via ::after, so a click anywhere still opens the tool.
            That is what lets the two mini tiles live INSIDE the card — a tile
            built from nested <a> elements would be invalid HTML. The stretched
-           link borrows the tool name via aria-labelledby, otherwise five tiles
-           would all announce themselves as just "Open". -->
+           link borrows the tool name via aria-labelledby, otherwise every tile
+           would announce itself as just "Open". The two placeholder tiles at the
+           end carry no link at all, so they need none of this. -->
       <div class="tool-grid">
-        <div class="tool-card tool-ram">
+        <!-- Reihenfolge nach Dennis' Ansage (13.09.2026). Die fruehere Regel
+             "neue Werkzeuge kommen ans Ende" gilt damit nicht mehr; die
+             Reihenfolge ist jetzt handverlesen. Sie muss mit der TOOLS-Liste
+             in js/werkstatt.js und der Liste in der README uebereinstimmen. -->
+        <div class="tool-card tool-spectroton">
           <span class="tool-head">
-            <img src="./assets/ramcooler.svg" alt="" width="44" height="44">
-            <span class="tool-name" id="name-ram">Real_RAM_cooler</span>
+            <img src="./assets/spectroton.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-spectroton">Spectroton</span>
           </span>
-          <span class="tool-desc" data-i18n="ramDesc">An honest RAM tool for Windows – the placebo button is labeled as such.</span>
-          <span class="tool-meta" data-i18n="ramMeta">Windows 10/11 · open source · free</span>
-          <a class="tool-open" id="open-ram" aria-labelledby="open-ram name-ram" href="https://github.com/Dennismit2n/Real_RAM_cooler/releases/latest" rel="noopener"><span data-i18n="downloadTool">Download</span> <span class="arrow" aria-hidden="true">→</span></a>
-          <span class="tool-mini" data-tool="ram">
-            <a href="./werkstatt.html#ram-neuigkeiten" data-count="werkstatt-ram-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#ram-anleitung" data-count="werkstatt-ram-anleitung" data-i18n="secGuide">Guide</a>
+          <span class="tool-desc" data-i18n="spectrotonDesc">One colour in, eleven matching shades out – checked for text contrast.</span>
+          <span class="tool-meta" data-i18n="spectrotonMeta">In your browser · German only · colour names come from api.color.pizza</span>
+          <a class="tool-open" id="open-spectroton" aria-labelledby="open-spectroton name-spectroton" href="https://dennismit2n.github.io/spectroton/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="spectroton">
+            <a href="./werkstatt.html#spectroton-neuigkeiten" data-count="werkstatt-spectroton-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#spectroton-anleitung" data-count="werkstatt-spectroton-anleitung" data-i18n="secGuide">Guide</a>
           </span>
         </div>
-        <div class="tool-card tool-shrink">
+        <!-- Der erste Eintrag, der kein Programm ist, sondern ein Skill fuer
+             KI-Chats: nichts zum Oeffnen im Browser, nichts zum Installieren
+             unter Windows. Deshalb zeigt der Knopf auf das Repo, und die
+             Meta-Zeile borgt sich nicht die "ohne Uploads"-Zeile der anderen. -->
+        <div class="tool-card tool-masterprompt">
           <span class="tool-head">
-            <img src="./assets/shrinkling.svg" alt="" width="44" height="44">
-            <span class="tool-name" id="name-shrink">shrinkling</span>
+            <img src="./assets/masterprompt.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-masterprompt">create-masterprompt</span>
+            <span class="tool-art" data-i18n="artSkill">Skill</span>
           </span>
-          <span class="tool-desc" data-i18n="shrinkDesc">Shrink photos right in your browser – for email, applications, classifieds.</span>
-          <span class="tool-meta" data-i18n="featuresLine">Free · no sign-up · no uploads</span>
-          <a class="tool-open" id="open-shrink" aria-labelledby="open-shrink name-shrink" href="https://dennismit2n.github.io/shrinkling/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
-          <span class="tool-mini" data-tool="shrink">
-            <a href="./werkstatt.html#shrink-neuigkeiten" data-count="werkstatt-shrink-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#shrink-anleitung" data-count="werkstatt-shrink-anleitung" data-i18n="secGuide">Guide</a>
+          <span class="tool-desc" data-i18n="masterpromptDesc">Six phases from a vague idea to a context package – a fresh chat carries on with no history.</span>
+          <span class="tool-meta" data-i18n="masterpromptMeta">For AI chats · open source (MIT) · free</span>
+          <a class="tool-open" id="open-masterprompt" aria-labelledby="open-masterprompt name-masterprompt" href="https://github.com/Dennismit2n/create-masterprompt" rel="noopener"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="masterprompt">
+            <a href="./werkstatt.html#masterprompt-neuigkeiten" data-count="werkstatt-masterprompt-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#masterprompt-anleitung" data-count="werkstatt-masterprompt-anleitung" data-i18n="secGuide">Guide</a>
           </span>
         </div>
         <div class="tool-card tool-wifi">
@@ -125,12 +135,25 @@
             <a href="./werkstatt.html#wifi-anleitung" data-count="werkstatt-wifi-anleitung" data-i18n="secGuide">Guide</a>
           </span>
         </div>
+        <div class="tool-card tool-ram">
+          <span class="tool-head">
+            <img src="./assets/ramcooler.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-ram">Real_RAM_cooler</span>
+          </span>
+          <span class="tool-desc" data-i18n="ramDesc">An honest RAM tool for Windows – the placebo button is labeled as such.</span>
+          <span class="tool-meta" data-i18n="ramMeta">Windows 10/11 · open source · free</span>
+          <a class="tool-open" id="open-ram" aria-labelledby="open-ram name-ram" href="https://github.com/Dennismit2n/Real_RAM_cooler/releases/latest" rel="noopener"><span data-i18n="downloadTool">Download</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="ram">
+            <a href="./werkstatt.html#ram-neuigkeiten" data-count="werkstatt-ram-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#ram-anleitung" data-count="werkstatt-ram-anleitung" data-i18n="secGuide">Guide</a>
+          </span>
+        </div>
         <div class="tool-card tool-prismatical">
           <span class="tool-head">
             <img src="./assets/prismatical.svg" alt="" width="44" height="44">
             <span class="tool-name" id="name-prismatical">Prismatical</span>
           </span>
-          <span class="tool-desc" data-i18n="prismaticalDesc">Passwords and passphrases with a live strength spectrum – the color shows how strong they are.</span>
+          <span class="tool-desc" data-i18n="prismaticalDesc">Passwords and passphrases with a live strength spectrum – the colour shows you how strong they are.</span>
           <span class="tool-meta" data-i18n="featuresLine">Free · no sign-up · no uploads</span>
           <a class="tool-open" id="open-prismatical" aria-labelledby="open-prismatical name-prismatical" href="https://dennismit2n.github.io/prismatical/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
           <span class="tool-mini" data-tool="prismatical">
@@ -138,61 +161,17 @@
             <a href="./werkstatt.html#prismatical-anleitung" data-count="werkstatt-prismatical-anleitung" data-i18n="secGuide">Guide</a>
           </span>
         </div>
-        <!-- Platz 5 nach Dennis' Ansage (12.09.2026): direkt neben Prismatical,
-             weil beide mit Farbspektren arbeiten. Vierte Ausnahme von der
-             "neue Werkzeuge kommen ans Ende"-Regel. Eigene Meta-Zeile statt
-             featuresLine, weil die Farbnamen einen fremden Dienst fragen —
-             das gehoert auf die Kachel, nicht nur in die Anleitung. -->
-        <div class="tool-card tool-spectroton">
+        <div class="tool-card tool-shrink">
           <span class="tool-head">
-            <img src="./assets/spectroton.svg" alt="" width="44" height="44">
-            <span class="tool-name" id="name-spectroton">Spectroton</span>
+            <img src="./assets/shrinkling.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-shrink">shrinkling</span>
           </span>
-          <span class="tool-desc" data-i18n="spectrotonDesc">One colour in, eleven matching shades out – contrast-checked for text.</span>
-          <span class="tool-meta" data-i18n="spectrotonMeta">In your browser · German only · colour names come from api.color.pizza</span>
-          <a class="tool-open" id="open-spectroton" aria-labelledby="open-spectroton name-spectroton" href="https://dennismit2n.github.io/spectroton/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
-          <span class="tool-mini" data-tool="spectroton">
-            <a href="./werkstatt.html#spectroton-neuigkeiten" data-count="werkstatt-spectroton-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#spectroton-anleitung" data-count="werkstatt-spectroton-anleitung" data-i18n="secGuide">Guide</a>
-          </span>
-        </div>
-        <div class="tool-card tool-collective">
-          <span class="tool-head">
-            <img src="./assets/collective-calc.svg" alt="" width="44" height="44">
-            <span class="tool-name" id="name-collective">Collective-Calc</span>
-          </span>
-          <span class="tool-desc" data-i18n="collectiveDesc">Who owes whom what? Split group expenses – no account, no app, shareable as a link.</span>
+          <span class="tool-desc" data-i18n="shrinkDesc">Shrink photos right in your browser – for email, applications, classifieds.</span>
           <span class="tool-meta" data-i18n="featuresLine">Free · no sign-up · no uploads</span>
-          <a class="tool-open" id="open-collective" aria-labelledby="open-collective name-collective" href="https://dennismit2n.github.io/collective-calc/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
-          <span class="tool-mini" data-tool="collective">
-            <a href="./werkstatt.html#collective-neuigkeiten" data-count="werkstatt-collective-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#collective-anleitung" data-count="werkstatt-collective-anleitung" data-i18n="secGuide">Guide</a>
-          </span>
-        </div>
-        <div class="tool-card tool-bigday">
-          <span class="tool-head">
-            <img src="./assets/bigday.svg" alt="" width="44" height="44">
-            <span class="tool-name" id="name-bigday">bigday</span>
-          </span>
-          <span class="tool-desc" data-i18n="bigdayDesc">A pretty countdown to vacation, birthday &amp; more – shareable as a link.</span>
-          <span class="tool-meta" data-i18n="featuresLine">Free · no sign-up · no uploads</span>
-          <a class="tool-open" id="open-bigday" aria-labelledby="open-bigday name-bigday" href="https://dennismit2n.github.io/bigday/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
-          <span class="tool-mini" data-tool="bigday">
-            <a href="./werkstatt.html#bigday-neuigkeiten" data-count="werkstatt-bigday-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#bigday-anleitung" data-count="werkstatt-bigday-anleitung" data-i18n="secGuide">Guide</a>
-          </span>
-        </div>
-        <div class="tool-card tool-rad">
-          <span class="tool-head">
-            <img src="./assets/dreh-das-rad.svg" alt="" width="44" height="44">
-            <span class="tool-name" id="name-rad">Dreh das Rad</span>
-          </span>
-          <span class="tool-desc" data-i18n="radDesc">Options in, wheel spins, fate decides – shareable as a link.</span>
-          <span class="tool-meta" data-i18n="featuresLine">Free · no sign-up · no uploads</span>
-          <a class="tool-open" id="open-rad" aria-labelledby="open-rad name-rad" href="https://dennismit2n.github.io/dreh-das-rad/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
-          <span class="tool-mini" data-tool="rad">
-            <a href="./werkstatt.html#rad-neuigkeiten" data-count="werkstatt-rad-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#rad-anleitung" data-count="werkstatt-rad-anleitung" data-i18n="secGuide">Guide</a>
+          <a class="tool-open" id="open-shrink" aria-labelledby="open-shrink name-shrink" href="https://dennismit2n.github.io/shrinkling/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="shrink">
+            <a href="./werkstatt.html#shrink-neuigkeiten" data-count="werkstatt-shrink-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#shrink-anleitung" data-count="werkstatt-shrink-anleitung" data-i18n="secGuide">Guide</a>
           </span>
         </div>
         <div class="tool-card tool-zaehlwerk">
@@ -200,7 +179,7 @@
             <img src="./assets/zaehlwerk.svg" alt="" width="44" height="44">
             <span class="tool-name" id="name-zaehlwerk">Zählwerk</span>
           </span>
-          <span class="tool-desc" data-i18n="zaehlwerkDesc">Shows where your Claude Code usage goes: per day, model and project.</span>
+          <span class="tool-desc" data-i18n="zaehlwerkDesc">Shows where your Claude Code usage goes: by day, model and project.</span>
           <span class="tool-meta" data-i18n="zaehlwerkMeta">For Claude Code users · in the browser · your logs stay with you</span>
           <a class="tool-open" id="open-zaehlwerk" aria-labelledby="open-zaehlwerk name-zaehlwerk" href="https://dennismit2n.github.io/zaehlwerk/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
           <span class="tool-mini" data-tool="zaehlwerk">
@@ -208,7 +187,6 @@
             <a href="./werkstatt.html#zaehlwerk-anleitung" data-count="werkstatt-zaehlwerk-anleitung" data-i18n="secGuide">Guide</a>
           </span>
         </div>
-        <!-- Position 8 by Dennis' call (2026-08-03) — fontART moved to 9. -->
         <div class="tool-card tool-ticker">
           <span class="tool-head">
             <img src="./assets/besucher-ticker.svg" alt="" width="44" height="44">
@@ -242,22 +220,64 @@
             <a href="https://github.com/Dennismit2n/fontART-demo/releases/latest" rel="noopener" data-count="fontart-windows" data-i18n="forWindows">For Windows</a>
           </span>
         </div>
-        <!-- Der erste Eintrag, der kein Programm ist, sondern ein Skill fuer
-             KI-Chats: nichts zum Oeffnen im Browser, nichts zum Installieren
-             unter Windows. Deshalb zeigt der Knopf auf das Repo, und die
-             Meta-Zeile borgt sich nicht die "ohne Uploads"-Zeile der anderen. -->
-        <div class="tool-card tool-masterprompt">
+        <div class="tool-card tool-rad">
           <span class="tool-head">
-            <img src="./assets/masterprompt.svg" alt="" width="44" height="44">
-            <span class="tool-name" id="name-masterprompt">create-masterprompt</span>
+            <img src="./assets/dreh-das-rad.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-rad">Dreh das Rad</span>
           </span>
-          <span class="tool-desc" data-i18n="masterpromptDesc">Six phases from a vague idea to a context package – a fresh chat carries on with no history.</span>
-          <span class="tool-meta" data-i18n="masterpromptMeta">For AI chats · open source (MIT) · free</span>
-          <a class="tool-open" id="open-masterprompt" aria-labelledby="open-masterprompt name-masterprompt" href="https://github.com/Dennismit2n/create-masterprompt" rel="noopener"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
-          <span class="tool-mini" data-tool="masterprompt">
-            <a href="./werkstatt.html#masterprompt-neuigkeiten" data-count="werkstatt-masterprompt-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#masterprompt-anleitung" data-count="werkstatt-masterprompt-anleitung" data-i18n="secGuide">Guide</a>
+          <span class="tool-desc" data-i18n="radDesc">Options in, wheel spins, fate decides – shareable as a link.</span>
+          <span class="tool-meta" data-i18n="featuresLine">Free · no sign-up · no uploads</span>
+          <a class="tool-open" id="open-rad" aria-labelledby="open-rad name-rad" href="https://dennismit2n.github.io/dreh-das-rad/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="rad">
+            <a href="./werkstatt.html#rad-neuigkeiten" data-count="werkstatt-rad-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#rad-anleitung" data-count="werkstatt-rad-anleitung" data-i18n="secGuide">Guide</a>
           </span>
+        </div>
+        <div class="tool-card tool-collective">
+          <span class="tool-head">
+            <img src="./assets/collective-calc.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-collective">Collective-Calc</span>
+          </span>
+          <span class="tool-desc" data-i18n="collectiveDesc">Who owes whom what? Split group expenses – no account, no app, shareable as a link.</span>
+          <span class="tool-meta" data-i18n="featuresLine">Free · no sign-up · no uploads</span>
+          <a class="tool-open" id="open-collective" aria-labelledby="open-collective name-collective" href="https://dennismit2n.github.io/collective-calc/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="collective">
+            <a href="./werkstatt.html#collective-neuigkeiten" data-count="werkstatt-collective-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#collective-anleitung" data-count="werkstatt-collective-anleitung" data-i18n="secGuide">Guide</a>
+          </span>
+        </div>
+        <div class="tool-card tool-bigday">
+          <span class="tool-head">
+            <img src="./assets/bigday.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-bigday">bigday</span>
+          </span>
+          <span class="tool-desc" data-i18n="bigdayDesc">A pretty countdown to vacation, birthday &amp; more – shareable as a link.</span>
+          <span class="tool-meta" data-i18n="featuresLine">Free · no sign-up · no uploads</span>
+          <a class="tool-open" id="open-bigday" aria-labelledby="open-bigday name-bigday" href="https://dennismit2n.github.io/bigday/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="bigday">
+            <a href="./werkstatt.html#bigday-neuigkeiten" data-count="werkstatt-bigday-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#bigday-anleitung" data-count="werkstatt-bigday-anleitung" data-i18n="secGuide">Guide</a>
+          </span>
+        </div>
+        <!-- Zwei Platzhalter auf Dennis' Ansage (13.09.2026). Bewusst OHNE
+             .tool-open und ohne Mini-Kacheln: es gibt nichts zu oeffnen, und ein
+             Knopf, der ins Leere fuehrt, ist schlimmer als keiner. Deshalb tragen
+             sie auch kein aria-labelledby — es gibt keinen Link zu benennen. -->
+        <div class="tool-card tool-platzhalter tool-dunkle-materie">
+          <span class="tool-head">
+            <span class="materie-icon" aria-hidden="true"></span>
+            <span class="tool-name" data-i18n="platzhalterOhneNamen">Still unnamed</span>
+          </span>
+          <span class="tool-desc" data-i18n="platzhalterDarkDesc">Something dark is taking shape. The name comes later.</span>
+          <span class="tool-meta" data-i18n="platzhalterBald">In the works</span>
+        </div>
+        <div class="tool-card tool-platzhalter">
+          <span class="tool-head">
+            <span class="platzhalter-icon" aria-hidden="true"></span>
+            <span class="tool-name" data-i18n="platzhalterBald">In the works</span>
+          </span>
+          <span class="tool-desc" data-i18n="platzhalterNeuDesc">Something special is taking shape here.</span>
+          <span class="tool-meta" data-i18n="platzhalterBaldMeta">No date, no promises</span>
         </div>
       </div>
       <p class="more-line">
@@ -281,10 +301,10 @@
   </footer>
 </div>
 
-<script src="./js/i18n.js?v=2026-09-13"></script>
-<script src="./js/news.js?v=2026-09-13"></script>
-<script src="./js/dates.js?v=2026-09-13"></script>
-<script src="./js/header.js?v=2026-09-13"></script>
-<script src="./js/main.js?v=2026-09-13"></script>
+<script src="./js/i18n.js?v=2026-09-13b"></script>
+<script src="./js/news.js?v=2026-09-13b"></script>
+<script src="./js/dates.js?v=2026-09-13b"></script>
+<script src="./js/header.js?v=2026-09-13b"></script>
+<script src="./js/main.js?v=2026-09-13b"></script>
 </body>
 </html>

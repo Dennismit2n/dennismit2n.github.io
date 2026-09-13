@@ -5,7 +5,7 @@
  * build notes). What stands here is what someone needs who wants to use the
  * tool. The pointer to the README sits underneath.
  *
- * RULE: claim nothing that werkstatt/fakten.json rules out — no "no tracking",
+ * RULE: claim nothing the tools do not actually hold up — no "no tracking",
  * no blanket "nothing leaves your device", no "offline" without the "after the
  * first visit" qualifier, no "encrypted". The pitfalls are not fine print,
  * they are the reason this page exists.
@@ -19,7 +19,7 @@
 var GUIDES = {
   ram: {
     purpose: {
-      de: 'Wenn Windows nach Stunden Spielzeit ruckelt, weil sich der Standby-Cache vollgelaufen hat: Real_RAM_cooler leert ihn über dieselbe Windows-Schnittstelle, die auch RAMMap und ISLC benutzen — und zeigt vorher und nachher, wie viel das gebracht hat.',
+      de: 'Wenn Windows nach Stunden Spielzeit ruckelt, weil der Standby-Cache vollgelaufen ist: Real_RAM_cooler leert ihn über dieselbe Windows-Schnittstelle, die auch RAMMap und ISLC benutzen — und zeigt vorher und nachher, wie viel das gebracht hat.',
       en: 'When Windows starts stuttering after hours of gaming because the standby cache has filled up: Real_RAM_cooler purges it through the same Windows interface that RAMMap and ISLC use — and shows before and after how much that freed.'
     },
     steps: {
@@ -37,7 +37,7 @@ var GUIDES = {
     pitfalls: {
       de: [
         'Der Placebo-Knopf daneben macht absichtlich nichts Messbares. Er ist da, um vorzuführen, was die meisten „RAM-Booster“ als Hauptfunktion verkaufen.',
-        'Mehr Bilder pro Sekunde gibt es nicht. Behoben wird ausschließlich Ruckeln, das vom vollgelaufenen Standby-Cache kommt — ein RAM-Aufrüsten ersetzt das Programm nicht.',
+        'Mehr Bilder pro Sekunde gibt es nicht. Behoben wird ausschließlich Ruckeln, das vom vollgelaufenen Standby-Cache kommt — das Programm ersetzt kein RAM-Aufrüsten.',
         'Zu häufiges Leeren kann mehr Ruckler erzeugen statt weniger, weil der geleerte Cache von der Platte nachgelesen werden muss. Deshalb wartet die Automatik zwischen zwei Durchgängen.',
         'Nur Windows 10/11 in 64 Bit. Einen Update-Prüfer gibt es nicht — neue Fassungen holst du dir selbst auf der Releases-Seite.'
       ],
@@ -169,7 +169,7 @@ var GUIDES = {
 
   spectroton: {
     purpose: {
-      de: 'Für eine Website oder App brauchst du selten eine Farbe, sondern eine ganze Treppe davon: hell für Flächen, mittig für Knöpfe, dunkel für Schrift. Spectroton rechnet diese elf Stufen aus einer einzigen Basisfarbe — gleichmäßig fürs Auge, nicht nur in den Zahlen — und schreibt zu jeder Stufe dazu, ob Text darauf noch lesbar ist.',
+      de: 'Für eine Website oder App brauchst du selten nur eine Farbe, sondern eine ganze Treppe davon: hell für Flächen, mittig für Knöpfe, dunkel für Schrift. Spectroton rechnet diese elf Stufen aus einer einzigen Basisfarbe — gleichmäßig fürs Auge, nicht nur in den Zahlen — und schreibt zu jeder Stufe dazu, ob Text darauf noch lesbar ist.',
       en: 'For a website or an app you rarely need one colour, you need a whole staircase of it: light for surfaces, mid for buttons, dark for type. Spectroton computes those eleven shades from a single base colour — evenly spaced for the eye, not just in the numbers — and notes for every shade whether text on it is still readable.'
     },
     steps: {
@@ -186,7 +186,7 @@ var GUIDES = {
     },
     pitfalls: {
       de: [
-        'Die Oberfläche gibt es nur auf Deutsch. Unter den Werkzeugen hier ist das die Ausnahme.',
+        'Die Oberfläche gibt es nur auf Deutsch — wie bei fontART Designer. Die übrigen Werkzeuge sprechen zwölf Sprachen.',
         'Die Farbnamen kommen von api.color.pizza, einem fremden Dienst. Schon beim Öffnen fragt Spectroton dort nach dem Namen der aktuellen Farbe — dabei geht dieser Farbwert an den Dienst. Ohne Netz bleibt nur dieses eine Feld leer; alles andere rechnet weiter auf deinem Gerät.',
         'Nach dem ersten Besuch läuft Spectroton auch ohne Internet — die Farbnamen-Suche ausgenommen.',
         'Nicht jede Farbe lässt sich auf jedem Bildschirm zeigen. Statt hart abzuschneiden, weicht Spectroton auf den nächstmöglichen Ton aus und weist darauf hin, wenn eine Stufe Display-P3 braucht und auf einem sRGB-Schirm anders ankommt.',
@@ -325,7 +325,7 @@ var GUIDES = {
     },
     steps: {
       de: [
-        'Auf die Fläche klicken und den Ordner auswählen: unter Windows %USERPROFILE%\\.claude\\projects, sonst ~/.claude/projects. Er ist versteckt — den Pfad einfach oben in die Adreßzeile des Auswahlfensters eintippen.',
+        'Auf die Fläche klicken und den Ordner auswählen: unter Windows %USERPROFILE%\\.claude\\projects, sonst ~/.claude/projects. Er ist versteckt — den Pfad einfach oben in die Adresszeile des Auswahlfensters eintippen.',
         'Kurz warten. Der Balken zeigt, wie viele Dateien schon gelesen sind; bei einigen hundert Megabyte dauert das ein paar Sekunden.',
         'Oben stehen die vier Kennzahlen, darunter die Aufschlüsselungen. Jeder Bereich hat ein Fragezeichen, das erklärt, wie er zu lesen ist.'
       ],
@@ -406,14 +406,14 @@ var GUIDES = {
         'Die Testversion lässt dich alles ausprobieren: malen, Konstruktionslinien, Geist-Glyph zum Vergleichen, Kerning-Vorschläge, Tipptest, Speichern und Laden deiner Arbeit. Kein Werkzeug ist beschnitten — zu ist allein der Ausgang. Der Export gibt die Kleinbuchstaben a–z aus, immer unter dem Namen „fontART DEMO“, und die übrigen Ausgabewege (.woff, Musterblatt, Komplett-Paket, Fett und Kursiv, Übungsblatt, Video-Mitschnitt) sind in dieser Fassung gar nicht erst eingebaut.',
         'Welche der beiden Fassungen? Im Browser bist du mit einem Klick am Malen, mit Finger oder Stift — am Berührbildschirm kommt das der Handschrift näher als jede Maus —, und dort läuft keine Uhr. Das Windows-Programm liegt näher an der Vollversion und läuft 60 Minuten je Start; dafür installierst du die fertige Schrift gleich und probierst sie in Word aus. Am Handy geht das nicht: Eine Schriftdatei lässt sich unter Android und iOS nicht als Systemschrift einrichten. Das Handy ist das bessere Malgerät, der Rechner das Installgerät — die .ttf schickst du dir einfach selbst.',
         'Die Vollversion zeichnet alle 333 Zeichen statt 26 — Groß- und Kleinbuchstaben, Zahlen, Umlaute, ß, Satzzeichen, dazu Griechisch, Kyrillisch und die japanischen Silbenschriften —, sie trägt den Namen, den du eintippst, und sie kennt die Ausgänge, die hier fehlen. Sie ist in Arbeit. Wann sie fertig ist und auf welchem Weg sie zu haben sein wird, steht noch nicht fest; sobald es feststeht, steht es hier.',
-        'Bleibt die Frage, warum ausgerechnet dieses eine Werkzeug Geld kosten soll, wo unten in der Fußzeile „Quelloffen auf GitHub“ steht. Ehrliche Antwort: Die anderen sieben tun jeweils eine Sache und waren an ein paar Abenden fertig. fontART baut echte TrueType-Dateien — Konturen, Seitenabstände, Kerning, Namenstabellen — und ist damit um ein Vielfaches größer als alles andere in dieser Werkstatt. Programme, die das können, kosten sämtlich Geld. Die Werkstatt bleibt kostenlos; dieses eine Werkzeug soll die Zeit tragen, die in ihr steckt.',
+        'Bleibt die Frage, warum ausgerechnet dieses eine Werkzeug Geld kosten soll, wo unten in der Fußzeile „Quelloffen auf GitHub“ steht. Ehrliche Antwort: Die anderen tun jeweils eine Sache und waren an ein paar Abenden fertig. fontART baut echte TrueType-Dateien — Konturen, Seitenabstände, Kerning, Namenstabellen — und ist damit um ein Vielfaches größer als alles andere in dieser Werkstatt. Programme, die das können, kosten sämtlich Geld. Die Werkstatt bleibt kostenlos; dieses eine Werkzeug soll die Zeit tragen, die in ihr steckt.',
         'Was die Testversion ausdrücklich nicht tut: nach deiner E-Mail-Adresse fragen. Kein Konto, keine Anmeldung, keine Wartefrist, kein Newsletter — herunterladen, malen, selbst sehen, ob dir das Ergebnis gefällt.'
       ],
       en: [
         'The trial lets you try everything: drawing, construction lines, the ghost glyph for comparison, kerning suggestions, the typing test, saving and loading your work. No tool is cut down — only the exit is closed. The export produces the lowercase letters a–z, always under the name “fontART DEMO”, and the other ways out (.woff, specimen sheet, complete package, bold and italic, practice sheet, video capture) are simply not built into this version.',
         'Which of the two? In the browser you are drawing one click later, with a finger or a pen — on a touchscreen that is closer to handwriting than any mouse — and no clock runs there. The Windows program sits closer to the full version and runs 60 minutes per start; in exchange you install the finished font right away and try it in Word. On a phone that last part cannot happen: a font file cannot be set up as a system font on Android or iOS. The phone is the better drawing device, the computer the better installing one — you simply send the .ttf to yourself.',
         'The full version draws all 333 characters instead of 26 — upper and lower case, digits, umlauts, ß, punctuation, plus Greek, Cyrillic and the Japanese syllabaries — it carries the name you type in, and it has the exits that are missing here. It is being worked on. When it will be finished, and how it will be available, is not settled yet; as soon as it is, it will say so here.',
-        'That leaves the question why this one tool of all things should cost money, when the footer below says “open source on GitHub”. The honest answer: the other seven each do one thing and were finished in a few evenings. fontART builds real TrueType files — outlines, sidebearings, kerning, name tables — which makes it many times larger than anything else in this workshop. The programs that can do this all cost money. The workshop stays free; this one tool is meant to carry the time that went into it.',
+        'That leaves the question why this one tool of all things should cost money, when the footer below says “open source on GitHub”. The honest answer: the others each do one thing and were finished in a few evenings. fontART builds real TrueType files — outlines, sidebearings, kerning, name tables — which makes it many times larger than anything else in this workshop. The programs that can do this all cost money. The workshop stays free; this one tool is meant to carry the time that went into it.',
         'What the trial explicitly does not do: ask for your email address. No account, no sign-up, no waiting period, no newsletter — download it, draw, and see for yourself whether you like the result.'
       ]
     },
@@ -474,15 +474,15 @@ var GUIDES = {
       de: [
         'Es ist kein Programm und keine Webseite. Ohne einen Client, der den SKILL.md-Standard versteht — Claude Code, claude.ai und andere —, passiert gar nichts.',
         'Der Ordnername muss create-masterprompt heißen und mit dem Feld name im Frontmatter übereinstimmen. Stimmen sie nicht überein, lädt der Skill stillschweigend nicht.',
-        'Für claude.ai nennt die README eine .skill-Datei auf der Releases-Seite. Releases gibt es bisher keine — bis dahin den Ordner selbst zippen.',
-        'Alle Texte, Vorlagen und Referenzdateien sind auf Englisch. Der Skill läuft mit deutschen Vorhaben, aber seine eigene Anleitung liest sich englisch.',
+        'Für claude.ai die Datei create-masterprompt.zip von der Releases-Seite hochladen. Das Archiv muss den Ordner create-masterprompt als Wurzel haben, nicht die losen Dateien — sonst lädt der Skill nicht.',
+        'Vorlagen und Referenzdateien sind auf Englisch. Die Anleitung selbst gibt es zusätzlich auf Deutsch (SKILL.de.md), dazu eine Übersicht auf einer Seite. Gelesen wird vom Programm aber immer die englische SKILL.md — bei Widerspruch gilt sie.',
         'Der Skill nimmt einem die Entscheidungen nicht ab, er stellt Fragen. Bei einer Kleinigkeit bremst das mehr, als es hilft — dafür steht das Größen-Gate ganz vorne, das genau diesen Fall abfangen soll.'
       ],
       en: [
         'It is neither a program nor a website. Without a client that understands the SKILL.md standard — Claude Code, claude.ai and others — nothing happens at all.',
         'The folder has to be called create-masterprompt and match the name field in the frontmatter. If they differ, the skill silently fails to load.',
-        'For claude.ai the README points at a .skill file on the releases page. There are no releases yet — until then, zip the folder yourself.',
-        'All texts, templates and reference files are in English. The skill works on projects in any language, but its own instructions read in English.',
+        'For claude.ai, upload create-masterprompt.zip from the releases page. The archive must have the create-masterprompt folder as its root, not the loose files — otherwise the skill will not load.',
+        'Templates and reference files are in English. The instructions themselves also come in German (SKILL.de.md), plus a one-page overview. The program always reads the English SKILL.md, which wins in case of conflict.',
         'The skill does not make the decisions for you, it asks questions. On something small that slows you down more than it helps — which is what the size gate at the very front is there to catch.'
       ]
     },
