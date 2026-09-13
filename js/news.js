@@ -201,6 +201,13 @@ var NEWS = {
   masterprompt: [
     {
       date: '2026-09-13',
+      version: 'v1.6.0',
+      link: 'https://github.com/Dennismit2n/create-masterprompt/releases/tag/v1.6.0',
+      de: 'Neue Mini-Kachel „Übersicht“ — sie öffnet die einseitige Zusammenfassung direkt aus GitHub, auf Deutsch oder Englisch, je nachdem welche Sprache oben eingestellt ist. Die zehn übrigen Sprachen bekommen wie überall auf dieser Seite die englische Fassung.',
+      en: 'New “Overview” mini tile — it opens the one-page summary straight from GitHub, in German or English depending on the language set above. The other ten languages get the English version, same as everywhere else on this page.'
+    },
+    {
+      date: '2026-09-13',
       version: 'v1.5.0',
       link: 'https://github.com/Dennismit2n/create-masterprompt/releases/tag/v1.5.0',
       de: 'Es gibt den Skill jetzt auch auf Deutsch: SKILL.de.md ist die vollständige Übersetzung, dazu eine Übersichtstafel auf einer Seite. Der Skill selbst bleibt englisch — er antwortet ohnehin in der Sprache, in der man ihn anspricht. Wer kein Englisch liest, kann jetzt trotzdem beurteilen, was er tut, bevor er ihn installiert.',

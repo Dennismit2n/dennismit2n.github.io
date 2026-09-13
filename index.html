@@ -34,7 +34,7 @@
        i18n.js treffen — dann stehen rohe Schluessel wie "masterpromptDesc" auf der
        Seite. BEI JEDEM DEPLOY, DER CSS ODER JS AENDERT, DAS DATUM HOCHSETZEN.
        js/vendor/count.js bleibt bewusst ohne: das ist Fremdcode und aendert sich nie. -->
-  <link rel="stylesheet" href="./css/style.css?v=2026-09-13c">
+  <link rel="stylesheet" href="./css/style.css?v=2026-09-13d">
   <!-- Theme before first paint: stored choice wins, otherwise system decides via CSS. -->
   <script>try{var t=localStorage.getItem('dennismit2n-home.theme');if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}</script>
   <!-- Analytics: GoatCounter (anonymous, cookieless — disclosed in the footer).
@@ -120,6 +120,13 @@
           <span class="tool-mini" data-tool="masterprompt">
             <a href="./werkstatt.html#masterprompt-neuigkeiten" data-count="werkstatt-masterprompt-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
             <a href="./werkstatt.html#masterprompt-anleitung" data-count="werkstatt-masterprompt-anleitung" data-i18n="secGuide">Guide</a>
+            <!-- Two links, one hidden by CSS depending on html[lang] — the overview
+                 image only exists in German and English, everything else falls back
+                 to English like the werkstatt guides do. No JS: document.documentElement.lang
+                 is set synchronously in i18n.js apply(), so the attribute selector reacts
+                 on every language switch by itself. -->
+            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/create-masterprompt/blob/main/docs/uebersicht-de.png" rel="noopener" data-count="masterprompt-overview" data-i18n="secOverview">Overview</a>
+            <a class="tool-mini-lang-only" data-lang-only="other" href="https://github.com/Dennismit2n/create-masterprompt/blob/main/docs/uebersicht-en.png" rel="noopener" data-count="masterprompt-overview" data-i18n="secOverview">Overview</a>
           </span>
         </div>
         <div class="tool-card tool-wifi">
@@ -301,10 +308,10 @@
   </footer>
 </div>
 
-<script src="./js/i18n.js?v=2026-09-13c"></script>
-<script src="./js/news.js?v=2026-09-13c"></script>
-<script src="./js/dates.js?v=2026-09-13c"></script>
-<script src="./js/header.js?v=2026-09-13c"></script>
-<script src="./js/main.js?v=2026-09-13c"></script>
+<script src="./js/i18n.js?v=2026-09-13d"></script>
+<script src="./js/news.js?v=2026-09-13d"></script>
+<script src="./js/dates.js?v=2026-09-13d"></script>
+<script src="./js/header.js?v=2026-09-13d"></script>
+<script src="./js/main.js?v=2026-09-13d"></script>
 </body>
 </html>
