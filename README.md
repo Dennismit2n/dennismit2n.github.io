@@ -1,8 +1,8 @@
 # dennismit2n.github.io
 
-Landing page for the small tools by Dennis_mit_2n — in your browser and for Windows, no sign-up, no uploads. Your data stays on your device. Most of them are free and open source; fontART is the exception.
+Landing page for the small tools by Dennis_mit_2n — no sign-up, no ads, free except fontART. Most of them run entirely on your device; where something leaves it, the tile says so. Most are open source; fontART is the exception.
 
-Startseite für die kleinen Tools von Dennis_mit_2n — im Browser und für Windows, ohne Anmeldung, ohne Uploads. Deine Daten bleiben auf deinem Gerät. Die meisten kostenlos und quelloffen; fontART ist die Ausnahme.
+Startseite für die kleinen Werkzeuge von Dennis_mit_2n — ohne Anmeldung, keine Anzeigen, kostenlos außer fontART. Die meisten rechnen komplett auf deinem Gerät; wo etwas es verlässt, steht es an der Kachel. Die meisten quelloffen; fontART ist die Ausnahme.
 
 **➡️ [dennismit2n.github.io](https://dennismit2n.github.io/)**
 
