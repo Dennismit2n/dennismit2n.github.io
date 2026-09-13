@@ -1,17 +1,54 @@
 /* dennismit2n.github.io — landing page styles */
+
+/* ==================================================================
+   Palette ggaallaaxxyy77 — die Markenebene
+   Quelle: colors.css (eine Primärfarbe + sieben Akzentfarben, je elf
+   Stufen 50–950). Hier stehen NUR die Stufen, die die Seite wirklich
+   benutzt, und zwar EINMAL: ein Farbwert ist in beiden Darstellungen
+   derselbe, nur seine Rolle wechselt. Die drei Themen-Blöcke weiter
+   unten verweisen darauf, statt Hex-Werte zu wiederholen — genau dort
+   sind schon zweimal Farben in einem Block vergessen worden
+   (--zaehlwerk am 31.07.2026, --spectro am 13.09.2026).
+
+   Warum ausgerechnet diese Stufen: gegen die echten Flächen dieser
+   Seite gerechnet fallen die Stufen 600 und 700 in BEIDEN Darstellungen
+   unter AA. Hell bleiben damit 800–950, dunkel 50–500. Die leuchtenden
+   Mittelstufen kann nur tragen, was Dekoration ist — der Familienbalken.
+   ================================================================== */
+:root {
+  --gx-primary-50:  #CDD0FF;  /* Pledge-Pille hell */
+  --gx-primary-200: #B4B5FF;  /* Pledge-Text dunkel — 7,40 auf der Pille */
+  --gx-primary-300: #A5A5FF;  /* Akzent dunkel — 7,78 Karte / 8,44 Grund */
+  --gx-primary-700: #6D54FB;  /* Familienbalken dunkel, Deko */
+  --gx-primary-800: #5F4FD4;  /* Familienbalken hell, Deko */
+  --gx-primary-900: #524AAB;  /* Akzent hell — 7,18 Karte / 6,51 Grund */
+  --gx-primary-950: #464480;  /* Pledge-Text hell — 5,86 auf der Pille */
+  --gx-violet-300:  #AFA1FF;  /* accent-2: Lavendel-Segment dunkel */
+  --gx-violet-500:  #967AFF;  /* accent-2: Lavendel-Segment hell */
+  --gx-sky-200:     #75C7FF;  /* accent-4: Eis-Segment, beide Darstellungen */
+}
+
 :root {
   color-scheme: light;
-  --accent: #2439B2;
-  --accent-strong: #1A2A8C;
-  --accent-fill: #2439B2;
-  --accent-soft: #E8ECF9;
-  --ice: #8FD3F4;
-  --lavender: #7872A8;
-  --bg: #F2F4FB;
+  --accent: var(--gx-primary-900);
+  --accent-strong: var(--gx-primary-950);
+  --accent-fill: var(--gx-primary-800);
+  --accent-soft: var(--gx-primary-50);
+  --ice: var(--gx-sky-200);
+  --lavender: var(--gx-violet-500);
+  /* Grundflächen: auf den Farbton der Palette (282,8°) ausgerichtet, aber
+     bewusst blass — nur eine Ahnung von Violett, kein Flieder. Im Hellen ist
+     die Helligkeit nicht frei wählbar: 0,32 Punkte tiefer als #F2F3F8 fallen
+     --zaehlwerk (4,51), Spectrotons Rampe (4,51) und --collective (4,53)
+     unter AA. Der Grund steht deshalb genau an dieser Kante — dunkler geht
+     nur, wenn Kachelfarben mitwandern, und die sind vergeben.
+     Schrift behält hier ihre heutige Sättigung, nur der Farbton wandert mit:
+     Farbe in der Schrift ist Lesbarkeit, nicht Schmuck. */
+  --bg: #F2F3F8;
   --panel: #ffffff;
-  --text: #171A33;
-  --text-soft: #5C5880;
-  --border: #DFE3F2;
+  --text: #1A1932;
+  --text-soft: #585981;
+  --border: #DFE0ED;
   --wifi: #0e7490;
   --shrink: #7c3aed;
   --bigday: #d97706;
@@ -24,7 +61,9 @@
   /* create-masterprompt ist der erste Eintrag, der kein Programm ist, sondern ein
      Skill fuer KI-Chats. Rostorange war der letzte Farbton, der weder neben
      --bigday (Bernstein) noch neben --rad (Rose) verrutscht. AA gegen --panel und
-     --bg ist gerechnet: hell 7.31:1 und 6.65:1, dunkel 8.20:1 und 7.48:1. */
+     --bg ist gerechnet: hell 7,31:1 und 6,59:1, dunkel 8,35:1 und 7,64:1.
+     (Drei dieser vier Zahlen sind am 13.09.2026 nachgezogen worden: die
+     Farbe blieb, aber der Grund wanderte auf die Palette ggaallaaxxyy77.) */
   --masterprompt: #9a3412;
   /* Prismatical ist die erste Kachel OHNE eigene Vollton-Farbe: die Palette war
      voll, und das Werkzeug selbst ist ein Farbspektrum. Deshalb trägt es einen
@@ -37,31 +76,47 @@
      Verlauf EINE Farbe in Stufen zeigt statt vieler Farbtöne: genau das, was das
      Werkzeug tut (eine Farbe rein, elf Stufen raus). Der Farbton steht fest,
      nur die Helligkeit wandert. Alle fünf Stopps sind auf AA gegen --panel UND
-     --bg gerechnet (schlechtester Wert 4.54:1 in beiden Darstellungen) — deshalb
+     --bg gerechnet (schlechtester Wert hell 4,51:1, dunkel 4,64:1) — deshalb
      beginnt die Rampe bei der hellsten noch lesbaren Stufe, nicht beim Pastellton.
      Der Werkzeugname trägt den Verlauf, also ist das kein Schönheitsmaß. */
   --spectro: #0f766e;
   --spectro-flow: linear-gradient(100deg, #007d78, #006e69, #005f5b, #00504d, #00423f);
-  --shadow: 0 10px 30px rgba(23, 26, 51, 0.10);
+  --shadow: 0 10px 30px rgba(26, 25, 50, 0.10);
 }
 
 /* Dark theme comes in two doors with identical furniture:
    1) system preference (unless the user forced light),
    2) the theme dropdown forcing dark.
-   Keep both blocks in sync! */
+   Keep both blocks in sync!
+   Die Werte ohne Palette-Stufe sind gerechnet, nicht gegriffen:
+   --bg #0F0F21, --panel #181831 und --border #2D2C4F liegen auf 282,8°,
+   eine Spur tiefer als die alten Marineblau-Werte und mit knapp der
+   Hälfte von deren Sättigung — eine violette Nacht, die sich nicht
+   vordrängt. Die Pille --accent-soft #291F67 sitzt so hoch, dass sie
+   sich vom Grund abhebt wie bisher (1,34 statt 1,25) und der Text
+   darauf 7,40 hält.
+   --text #E2E2F6 ist die einzige Schrift, die NICHT nur umgetönt wurde:
+   sie ist gegenüber dem alten #E6E9F7 etwas dunkler und etwas stärker
+   gesättigt (L 91,9 % statt 93,5 %, C 0,027 statt 0,019, H 285,9°) —
+   ein Hauch Lila-Blassblau statt Papierweiß. 13,55 gegen --panel.
+   Alle zwölf Kachelfarben und beide Verläufe wurden gegen diesen Grund
+   nachgerechnet — der schlechteste Wert im Dunkeln (Spectrotons Stopp
+   #00948e) steigt von 4,54 auf 4,64. Wer den Grund noch einmal anfasst,
+   rechnet die Zahlen in den Kachel-Kommentaren oben mit nach; sie stehen
+   dort als Prüfnachweis, nicht als Verzierung. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     color-scheme: dark;
-    --accent: #8FD3F4;
-    --accent-strong: #B9E4F9;
-    --accent-fill: #3B52D4;
-    --accent-soft: #1A2450;
-    --lavender: #A29CCB;
-    --bg: #0D1226;
-    --panel: #141B36;
-    --text: #E6E9F7;
-    --text-soft: #A29CCB;
-    --border: #263056;
+    --accent: var(--gx-primary-300);
+    --accent-strong: var(--gx-primary-200);
+    --accent-fill: var(--gx-primary-700);
+    --accent-soft: #291F67;
+    --lavender: var(--gx-violet-300);
+    --bg: #0F0F21;
+    --panel: #181831;
+    --text: #E2E2F6;
+    --text-soft: #9C9ECD;
+    --border: #2D2C4F;
     --wifi: #22d3ee;
     --shrink: #a78bfa;
     --bigday: #fbbf24;
@@ -82,16 +137,16 @@
 
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --accent: #8FD3F4;
-  --accent-strong: #B9E4F9;
-  --accent-fill: #3B52D4;
-  --accent-soft: #1A2450;
-  --lavender: #A29CCB;
-  --bg: #0D1226;
-  --panel: #141B36;
-  --text: #E6E9F7;
-  --text-soft: #A29CCB;
-  --border: #263056;
+  --accent: var(--gx-primary-300);
+  --accent-strong: var(--gx-primary-200);
+  --accent-fill: var(--gx-primary-700);
+  --accent-soft: #291F67;
+  --lavender: var(--gx-violet-300);
+  --bg: #0F0F21;
+  --panel: #181831;
+  --text: #E2E2F6;
+  --text-soft: #9C9ECD;
+  --border: #2D2C4F;
   --wifi: #22d3ee;
   --shrink: #a78bfa;
   --bigday: #fbbf24;

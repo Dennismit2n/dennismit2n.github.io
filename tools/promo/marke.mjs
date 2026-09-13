@@ -2,8 +2,11 @@
  * Einzige Quelle der Wahrheit für alle Werbebilder.
  *
  * Farben stammen 1:1 aus css/style.css der Startseite — die Dunkel-Variante,
- * weil alle Werbebilder auf dem dunklen Grund #0d1226 stehen; der fotografiert
- * sich auf Instagram besser als der helle.
+ * weil alle Werbebilder auf dem dunklen Grund stehen; der fotografiert sich auf
+ * Instagram besser als der helle. Seit dem Farbwechsel auf die Palette
+ * ggaallaaxxyy77 ist das ein violetter Grund (#110936) statt des alten
+ * Marineblaus. Wer hier etwas ändert, ändert es auch in style.css — und
+ * umgekehrt.
  *
  * Die Icons sind dieselben SVGs, die auf der Startseite in den Kacheln stecken.
  * Nicht nachzeichnen, nicht "verbessern" — die Wiedererkennung ist der Zweck.
@@ -11,15 +14,18 @@
 
 export const MARKE = {
   name: 'Dennis_mit_2n',
-  koenigsblau: '#2439B2',
-  koenigsblauTief: '#1A2A8C',
-  eisblau: '#8FD3F4',
-  lavendel: '#A29CCB',
-  grund: '#0D1226',
-  flaeche: '#141B36',
-  text: '#E6E9F7',
-  weich: '#A29CCB',
-  linie: '#263056',
+  koenigsblau: '#524AAB',
+  koenigsblauTief: '#464480',
+  eisblau: '#75C7FF',
+  lavendel: '#AFA1FF',
+  grund: '#0F0F21',
+  flaeche: '#181831',
+  text: '#E2E2F6',
+  weich: '#9C9ECD',
+  linie: '#2D2C4F',
+  /* --accent-fill der Dunkel-Variante: der helle Akzent verschwindet auf
+   * dem dunklen Grund fast, deshalb trägt der Balken eine Stufe mehr. */
+  fuellung: '#6D54FB',
   h1De: 'Kleine Tools, die auf deinem Gerät laufen',
   h1En: 'Small tools that run on your own device',
   untertitel: 'Eine Werkstatt von Dennis_mit_2n.',
@@ -91,8 +97,8 @@ const ICONS = {
   <path d="M24 27 L11.01 19.5 A15 15 0 0 1 24 12 Z" fill="#0b7f8a"/>
   <circle cx="24" cy="27" r="3.6" fill="#fdf1dd"/>
   <path d="M24 15.5 L19.6 5.5 L28.4 5.5 Z" fill="#fdf1dd"/>`,
-  kiste: `<rect x="2" y="2" width="44" height="44" rx="11" fill="#2439B2"/>` +
-    KISTE.replaceAll('COLOR', '#ffffff').replaceAll('BG', '#2439B2'),
+  kiste: `<rect x="2" y="2" width="44" height="44" rx="11" fill="${MARKE.koenigsblau}"/>` +
+    KISTE.replaceAll('COLOR', '#ffffff').replaceAll('BG', MARKE.koenigsblau),
 };
 
 /*
@@ -220,7 +226,7 @@ export const TOOLS = [
     slug: 'startseite',
     name: 'Dennis_mit_2n',
     icon: 'kiste',
-    farbe: '#8FD3F4',
+    farbe: MARKE.eisblau,
     claimDe: 'Kleine Tools, die auf deinem Gerät laufen.',
     claimEn: 'Small tools that run on your own device',
     /* Seit fontART (31.07.2026) darf hier NICHT mehr pauschal "Kostenlos"
