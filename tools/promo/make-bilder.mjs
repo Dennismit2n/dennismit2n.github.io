@@ -197,9 +197,9 @@ function banner(f) {
          background:radial-gradient(circle,${MARKE.eisblau}1f,transparent 64%)"></div>
     <div style="position:relative;flex:0 0 auto">${marke}</div>
     <div style="position:relative;display:flex;gap:${18 * s}px;flex:0 0 auto">${reihe}</div>
-    <!-- Königsblau in der Dunkel-Variante (#3B52D4, --accent-fill aus dem CSS);
-         das helle #2439B2 verschwindet auf dem dunklen Grund fast. -->
-    ${balken('#3B52D4', `bottom:0;left:0;width:100%;height:${9 * s}px;border-radius:0`)}
+    <!-- Der Markenton in der Dunkel-Variante (MARKE.fuellung, --accent-fill aus
+         dem CSS); der helle Akzent verschwindet auf dem dunklen Grund fast. -->
+    ${balken(MARKE.fuellung, `bottom:0;left:0;width:100%;height:${9 * s}px;border-radius:0`)}
   </div>` + fuss;
 }
 
