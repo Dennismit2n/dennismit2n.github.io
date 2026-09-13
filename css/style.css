@@ -455,6 +455,13 @@ body {
 }
 .tool-mini-date { font-variant-numeric: tabular-nums; opacity: 0.85; }
 
+/* Two links pointing at the same label but a different target — so far only
+   create-masterprompt's overview image, which exists in German and English
+   only. Pure CSS, no JS: document.documentElement.lang is set synchronously
+   in i18n.js apply(), so this reacts on every language switch by itself. */
+html:not([lang="de"]) [data-lang-only="de"] { display: none; }
+html[lang="de"] [data-lang-only="other"] { display: none; }
+
 .more-line {
   display: flex;
   flex-wrap: wrap;
