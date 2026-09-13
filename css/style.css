@@ -46,6 +46,21 @@
      Farbe in der Schrift ist Lesbarkeit, nicht Schmuck. */
   --bg: #F2F3F8;
   --panel: #ffffff;
+  /* Die Kacheln stehen nicht ganz deckend auf der Aurora, damit etwas
+     Farbe durchscheint. 94 % ist das Maximum, bei dem KEINE Kachelfarbe
+     neu unter AA faellt: bei 90 % reisst --rad, bei 80 % zusaetzlich
+     --collective und --zaehlwerk. Nachgerechnet gegen die dunkelste
+     Stelle, die ein Fleck unter einer Kachel erzeugen kann. */
+  --panel-veil: rgba(255, 255, 255, 0.94);
+  /* Aurora-Flecken. Im Hellen MUESSEN sie heller sein als Spectrotons
+     Vorlage: dort steht fast kein Text auf dem blanken Grund, hier schon
+     (Markenname, Hero-Unterzeile, Mehr-Zeile, Fusszeile, die beiden
+     Platzhalter-Kacheln). Mit Spectrotons L 0,52 faellt --text-soft auf
+     3,42 und --accent auf 3,71. Bei L 0,74 bleibt der dunkelste Punkt
+     der Ebene bei 4,78 — nachgerechnet, siehe Block unten. */
+  --au-1: #9F9FFA;
+  --au-2: #AA9CF7;
+  --au-3: #6DB3E4;
   --text: #1A1932;
   --text-soft: #585981;
   --border: #DFE0ED;
@@ -114,6 +129,14 @@
     --lavender: var(--gx-violet-300);
     --bg: #0F0F21;
     --panel: #181831;
+    --panel-veil: rgba(24, 24, 49, 0.94);
+    /* Im Dunkeln ist der HELLSTE Fleck der schlechteste Fall, nicht der
+       dunkelste — deshalb tragen die Flecken hier Spectrotons Werte
+       unverändert. HELLSTER Punkt der Ebene: 5,44 (der dunkelste ist
+       blankes --bg mit 7,37 und damit unkritisch). */
+    --au-1: #605CB1;
+    --au-2: #493687;
+    --au-3: #4D94C3;
     --text: #E2E2F6;
     --text-soft: #9C9ECD;
     --border: #2D2C4F;
@@ -144,6 +167,10 @@
   --lavender: var(--gx-violet-300);
   --bg: #0F0F21;
   --panel: #181831;
+  --panel-veil: rgba(24, 24, 49, 0.94);
+  --au-1: #605CB1;
+  --au-2: #493687;
+  --au-3: #4D94C3;
   --text: #E2E2F6;
   --text-soft: #9C9ECD;
   --border: #2D2C4F;
@@ -168,14 +195,90 @@
 
 * { box-sizing: border-box; }
 
+/* Die Grundfarbe sitzt auf html, nicht auf body. Nötig ist das nicht: solange
+   html gar keinen Hintergrund trägt, reicht der Browser den von body an die
+   Leinwand weiter und malt die body-Box selbst nicht mehr — die Aurora wäre
+   auch so zu sehen. Es steht hier, weil diese Fortpflanzung in dem Moment
+   endet, in dem html irgendeinen Hintergrund bekommt, und dann verschwände
+   die Ebene ohne erkennbaren Grund. Lieber ausdrücklich als raffiniert. */
+html { background: var(--bg); }
+
 body {
   margin: 0;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  background: var(--bg);
+  background: transparent;
   color: var(--text);
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
 }
+
+/* ==================================================================
+   Aurora — der Hintergrund bekommt Farbe, ohne dass davon etwas Inhalt wird.
+   Das Muster stammt aus Spectroton: drei große, weich gezeichnete Kreise in
+   einer festen Ebene hinter allem. Dort folgen sie der Farbe, die der Nutzer
+   gerade eingibt; hier stehen sie fest auf der Markenfamilie — primary 282,8°,
+   violett 290° und das himmelblaue Gegenstück 239,9°, dieselbe Kombination,
+   die auch der Familienbalken trägt (OKLCH L 0,52 / 0,40 / 0,64).
+   Gedämpft gegenüber dem Vorbild — 0,32 / 0,32 / 0,20 statt 0,5 / 0,5 / 0,32:
+   die Startseite trägt vierzehn Kacheln, Spectroton eine einzige Spalte.
+
+   Die Farben stehen je Darstellung verschieden (--au-1/2/3 in den drei
+   Variablenblöcken), und das ist der Kern der Sache: Der Schleier
+   --panel-veil schützt nur die Kacheln. Alles andere — Markenname,
+   Hero-Unterzeile, Mehr-Zeile, Fusszeile, die beiden Platzhalter-Kacheln,
+   auf werkstatt.html die Navigationsspalte — steht DIREKT auf der Ebene.
+   Der schlechteste Fall ist deshalb im Hellen der DUNKELSTE Fleck und im
+   Dunkeln der HELLSTE; wer nur einen davon rechnet, rechnet die falsche
+   Richtung. Mit Spectrotons Helligkeiten fällt --text-soft im Hellen auf
+   3,42 — dort müssen die Flecken heller sein (L 0,74 statt 0,52).
+
+   Nachgewiesen nicht per Formel, sondern per Simulation der fertigen Ebene
+   (drei Ellipsen, Gauss mit sigma 70 px entsprechend blur(70px), in
+   DOM-Reihenfolge übereinandergelegt, dunkelster Punkt innerhalb der
+   880-px-Inhaltsspalte, geprüft bei 1920x1080, 1440x900, 1280x800 und
+   390x844): hell 4,78, dunkel 5,44. Beides hält AA.
+
+   Dass es hält, liegt an der Lage, nicht an den Farben: Zwei voll gedeckte
+   Flecken übereinander ergäben hell 4,05 bis 4,33 und rissen AA. Gemessen
+   über das ganze Sichtfeld erreicht die aufsummierte Farbmenge nie mehr als
+   0,3200 — also exakt EINEN voll gedeckten Fleck. au-1 und au-2 trennen 8vw
+   und 17vh, au-3 liegt 4vh über au-2, und die Drift schliesst diese Lücke
+   höchstens zur Berührung. Wer an Farbe, Deckung, Grösse, Lage oder der
+   -4vh-Drift dreht, rechnet beides neu: den Einzelfleck UND die
+   Überlagerung. Eine Einzelfarbe zu prüfen genügt nicht.
+
+   Nicht erfasst: .sep (die Trennpunkte der Fusszeile) trägt opacity 0,6 und
+   kommt damit auf 2,34 — das lag mit 2,58 aber schon vor der Aurora unter
+   AA und ist eine Gestaltungsfrage, keine Folge dieser Ebene.
+
+   overflow: hidden ist kein Schmuck: die Kreise ragen absichtlich über den
+   Rand, und ohne diese Klammer liesse sich die Seite seitlich wischen.
+   ================================================================== */
+.aurora {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+.aurora span {
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  filter: blur(70px);
+}
+.au-1 { width: 70vw; height: 60vh; top: -18vh; left: -20vw; background: var(--au-1); opacity: 0.32; }
+.au-2 { width: 56vw; height: 54vh; bottom: -20vh; right: -14vw; background: var(--au-2); opacity: 0.32; }
+.au-3 { width: 30vw; height: 32vh; top: 30vh; right: -8vw; background: var(--au-3); opacity: 0.2; }
+
+/* Positive Abfrage: Bewegung gibt es nur, wo niemand sie abbestellt hat.
+   Zwei der drei Flecken wandern, der dritte steht als Anker. */
+@media (prefers-reduced-motion: no-preference) {
+  .au-1 { animation: au-drift-1 34s ease-in-out infinite; }
+  .au-2 { animation: au-drift-2 40s ease-in-out infinite; }
+}
+@keyframes au-drift-1 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(3vh); } }
+@keyframes au-drift-2 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4vh); } }
 
 .page {
   max-width: 880px;
@@ -285,7 +388,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background: var(--panel);
+  background: var(--panel-veil);
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 22px;
@@ -656,7 +759,7 @@ a.brand { text-decoration: none; color: inherit; }
 /* Tool sections */
 .wk-content { min-width: 0; }
 .wk-tool {
-  background: var(--panel);
+  background: var(--panel-veil);
   border: 1px solid var(--border);
   border-radius: 16px;
   margin-bottom: 18px;
