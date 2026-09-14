@@ -828,165 +828,165 @@ var GUIDES = {
         'Unter „Export“ das Format wählen — CSS, Tailwind, Tokens oder HEX — und kopieren oder als Datei speichern. Wer die Palette behalten will, legt sie unter „Bibliothek“ benannt ab; wer sie weitergeben will, kopiert bei „Teilen“ den Link, der die ganze Palette in sich trägt.'
       ],
       en: [
-        'Set a colour under „Basisfarbe“ (base colour): type a HEX value, use the colour picker, or search for a name under „Farbname“ and pick from the hits. The eleven shades appear at once.',
-        'Refine under „Feinjustage“ (fine tuning) and add „Akzentfarben“ (accent colours) if you want — Spectroton suggests them by harmony rules and gives each its own ramp. The padlock on a shade freezes its value, so it survives the sliders and a change of base colour.',
-        'Pick a format under „Export“ — CSS, Tailwind, Tokens or HEX — then copy it or save it as a file. To keep a palette, store it by name under „Bibliothek“ (library); to pass it on, copy the link under „Teilen“ (share), which carries the whole palette inside it.'
+        'Set a colour under “Base color”: type a HEX value, use the colour picker, or search for a name under “Color name” and pick from the hits. The eleven shades appear at once.',
+        'Refine under “Fine-tuning” and add “Accent colors” if you want — Spectroton suggests them by harmony rules and gives each its own ramp. The padlock on a shade freezes its value, so it survives the sliders and a change of base colour.',
+        'Pick a format under “Export” — CSS, Tailwind, Tokens or HEX — then copy it or save it as a file. To keep a palette, store it by name under “Library”; to pass it on, copy the link under “Share”, which carries the whole palette inside it.'
       ],
       es: [
-        'En «Basisfarbe» (color base) fija un color: escribe un valor HEX, usa el selector de color o busca un nombre en «Farbname» (nombre de color) y elige entre los resultados. Los once tonos aparecen enseguida.',
-        'Afina en «Feinjustage» (ajuste fino) y, si hace falta, añade «Akzentfarben» (colores de acento): Spectroton los propone según reglas de armonía y le da a cada uno su propia rampa. Con el candado de un tono congelas su valor, de modo que aguanta los controles y también un cambio del color base.',
-        'En «Export» elige el formato —CSS, Tailwind, Tokens o HEX— y cópialo o guárdalo como archivo. Quien quiera conservar la paleta la guarda con nombre en «Bibliothek» (biblioteca); quien quiera pasarla, copia en «Teilen» (compartir) el enlace que lleva dentro la paleta entera.'
+        'En «Color base» fija un color: escribe un valor HEX, usa el selector de color o busca un nombre en «Nombre del color» y elige entre los resultados. Los once tonos aparecen enseguida.',
+        'Afina en «Ajuste fino» y, si hace falta, añade «Colores de acento»: Spectroton los propone según reglas de armonía y le da a cada uno su propia rampa. Con el candado de un tono congelas su valor, de modo que aguanta los controles y también un cambio del color base.',
+        'En «Exportar» elige el formato —CSS, Tailwind, Tokens o HEX— y cópialo o guárdalo como archivo. Quien quiera conservar la paleta la guarda con nombre en «Biblioteca»; quien quiera pasarla, copia en «Compartir» el enlace que lleva dentro la paleta entera.'
       ],
       fr: [
-        'Sous « Basisfarbe » (couleur de base), poser une couleur : taper une valeur HEX, utiliser le sélecteur de couleur, ou chercher un nom sous « Farbname » (nom de couleur) et choisir parmi les résultats. Les onze nuances apparaissent aussitôt.',
-        'Affiner sous « Feinjustage » (réglage fin) et ajouter au besoin des « Akzentfarben » (couleurs d’accent) — Spectroton les propose selon des règles d’harmonie et donne à chacune sa propre gamme. Le cadenas sur une nuance en fige la valeur, de sorte qu’elle résiste aux curseurs et à un changement de couleur de base.',
-        'Sous « Export », choisir le format — CSS, Tailwind, Tokens ou HEX — puis copier ou enregistrer comme fichier. Pour garder la palette, la ranger sous un nom dans « Bibliothek » (bibliothèque) ; pour la transmettre, copier sous « Teilen » (partager) le lien qui porte en lui la palette entière.'
+        'Sous « Couleur de base », poser une couleur : taper une valeur HEX, utiliser le sélecteur de couleur, ou chercher un nom sous « Nom de couleur » et choisir parmi les résultats. Les onze nuances apparaissent aussitôt.',
+        'Affiner sous « Réglage fin » et ajouter au besoin des « Couleurs d’accent » — Spectroton les propose selon des règles d’harmonie et donne à chacune sa propre gamme. Le cadenas sur une nuance en fige la valeur, de sorte qu’elle résiste aux curseurs et à un changement de couleur de base.',
+        'Sous « Export », choisir le format — CSS, Tailwind, Tokens ou HEX — puis copier ou enregistrer comme fichier. Pour garder la palette, la ranger sous un nom dans « Bibliothèque » ; pour la transmettre, copier sous « Partager » le lien qui porte en lui la palette entière.'
       ],
       it: [
-        'Sotto «Basisfarbe» (colore di base) imposta un colore: digita un valore HEX, usa il selettore di colore oppure cerca un nome sotto «Farbname» (nome del colore) e scegli fra i risultati. Le undici tonalità compaiono subito.',
-        'Sotto «Feinjustage» (regolazione fine) affina e, se serve, aggiungi i colori d’accento («Akzentfarben»): Spectroton li propone secondo regole di armonia e dà a ciascuno una rampa propria. Con il lucchetto su una tonalità ne congeli il valore, così resiste ai cursori e a un cambio del colore di base.',
-        'Sotto «Export» scegli il formato — CSS, Tailwind, Tokens o HEX — e copialo o salvalo come file. Chi vuole tenere la palette la salva con un nome sotto «Bibliothek» (libreria); chi vuole passarla ad altri copia il link sotto «Teilen» (condividi), che porta dentro di sé l’intera palette.'
+        'Sotto «Colore base» imposta un colore: digita un valore HEX, usa il selettore di colore oppure cerca un nome sotto «Nome del colore» e scegli fra i risultati. Le undici tonalità compaiono subito.',
+        'Sotto «Regolazione fine» affina e, se serve, aggiungi i «Colori d’accento»: Spectroton li propone secondo regole di armonia e dà a ciascuno una rampa propria. Con il lucchetto su una tonalità ne congeli il valore, così resiste ai cursori e a un cambio del colore di base.',
+        'Sotto «Esportazione» scegli il formato — CSS, Tailwind, Tokens o HEX — e copialo o salvalo come file. Chi vuole tenere la palette la salva con un nome sotto «Libreria»; chi vuole passarla ad altri copia il link sotto «Condividi», che porta dentro di sé l’intera palette.'
       ],
       nl: [
-        'Zet bij “Basisfarbe” (basiskleur) een kleur: typ een HEX-waarde in, gebruik de kleurkiezer of zoek onder “Farbname” (kleurnaam) naar een naam en kies uit de treffers. De elf tinten verschijnen meteen.',
-        'Schaaf onder “Feinjustage” (fijnafstelling) bij en neem zo nodig “Akzentfarben” (accentkleuren) erbij — die stelt Spectroton volgens harmonieregels voor en geeft elke accentkleur een eigen reeks. Met het slotje bij een tint bevries je de waarde ervan, zodat die bestand is tegen de schuifregelaars en tegen een wisseling van de basiskleur.',
-        'Kies onder “Export” het formaat — CSS, Tailwind, Tokens of HEX — en kopieer het of sla het als bestand op. Wie het palet wil bewaren, legt het met een naam weg onder “Bibliothek” (bibliotheek); wie het wil doorgeven, kopieert bij “Teilen” (delen) de link, die het hele palet in zich draagt.'
+        'Zet bij “Basiskleur” een kleur: typ een HEX-waarde in, gebruik de kleurkiezer of zoek onder “Kleurnaam” naar een naam en kies uit de treffers. De elf tinten verschijnen meteen.',
+        'Schaaf onder “Fijnafstelling” bij en neem zo nodig “Accentkleuren” erbij — die stelt Spectroton volgens harmonieregels voor en geeft elke accentkleur een eigen reeks. Met het slotje bij een tint bevries je de waarde ervan, zodat die bestand is tegen de schuifregelaars en tegen een wisseling van de basiskleur.',
+        'Kies onder “Export” het formaat — CSS, Tailwind, Tokens of HEX — en kopieer het of sla het als bestand op. Wie het palet wil bewaren, legt het met een naam weg onder “Bibliotheek”; wie het wil doorgeven, kopieert bij “Delen” de link, die het hele palet in zich draagt.'
       ],
       pl: [
-        'Przy „Basisfarbe” (kolor bazowy) ustawić kolor: wpisać wartość HEX, użyć próbnika kolorów albo poszukać nazwy pod „Farbname” (nazwa koloru) i wybrać z trafień. Jedenaście stopni pojawia się natychmiast.',
-        'Pod „Feinjustage” (dostrajanie) doszlifować i w razie potrzeby dobrać „Akzentfarben” (kolory akcentowe) — te Spectroton proponuje według reguł harmonii i daje każdemu własną rampę. Kłódką przy stopniu zamrażasz jego wartość, tak że nie zmieniają jej ani suwaki, ani zmiana koloru bazowego.',
-        'Pod „Export” wybrać format — CSS, Tailwind, Tokens albo HEX — i skopiować albo zapisać jako plik. Kto chce zachować paletę, zapisuje ją pod nazwą w „Bibliothek” (bibliotece); kto chce ją przekazać dalej, kopiuje przy „Teilen” (udostępnianie) link, który niesie w sobie całą paletę.'
+        'Przy „Kolor bazowy” ustawić kolor: wpisać wartość HEX, użyć próbnika kolorów albo poszukać nazwy pod „Nazwa koloru” i wybrać z trafień. Jedenaście stopni pojawia się natychmiast.',
+        'Pod „Dostrajanie” doszlifować i w razie potrzeby dobrać „Kolory akcentowe” — te Spectroton proponuje według reguł harmonii i daje każdemu własną rampę. Kłódką przy stopniu zamrażasz jego wartość, tak że nie zmieniają jej ani suwaki, ani zmiana koloru bazowego.',
+        'Pod „Eksport” wybrać format — CSS, Tailwind, Tokens albo HEX — i skopiować albo zapisać jako plik. Kto chce zachować paletę, zapisuje ją pod nazwą w „Biblioteka”; kto chce ją przekazać dalej, kopiuje przy „Udostępnij” link, który niesie w sobie całą paletę.'
       ],
       pt: [
-        'Em «Basisfarbe» (cor base), definir uma cor: escrever um valor HEX, usar o seletor de cores ou procurar um nome em «Farbname» (nome da cor) e escolher entre os resultados. Os onze tons aparecem de imediato.',
-        'Afinar em «Feinjustage» (ajuste fino) e, se for preciso, acrescentar «Akzentfarben» (cores de destaque) — o Spectroton propõe-nas por regras de harmonia e dá a cada uma a sua própria rampa. Com o cadeado de um tom congela o valor dele, de maneira que resiste aos cursores e a uma troca da cor base.',
-        'Em «Export» (exportação), escolher o formato — CSS, Tailwind, Tokens ou HEX — e copiar ou guardar como ficheiro. Quem quiser ficar com a paleta, guarda-a com um nome em «Bibliothek» (biblioteca); quem a quiser passar a outros, copia em «Teilen» (partilhar) o link, que leva a paleta inteira dentro de si.'
+        'Em «Cor base», definir uma cor: escrever um valor HEX, usar o seletor de cores ou procurar um nome em «Nome da cor» e escolher entre os resultados. Os onze tons aparecem de imediato.',
+        'Afinar em «Ajuste fino» e, se for preciso, acrescentar «Cores de destaque» — o Spectroton propõe-nas por regras de harmonia e dá a cada uma a sua própria rampa. Com o cadeado de um tom congela o valor dele, de maneira que resiste aos cursores e a uma troca da cor base.',
+        'Em «Exportar», escolher o formato — CSS, Tailwind, Tokens ou HEX — e copiar ou guardar como ficheiro. Quem quiser ficar com a paleta, guarda-a com um nome em «Biblioteca»; quem a quiser passar a outros, copia em «Partilhar» o link, que leva a paleta inteira dentro de si.'
       ],
       tr: [
-        '“Basisfarbe” (temel renk) altında bir renk belirleyin: HEX değerini yazın, renk seçiciyi kullanın ya da “Farbname” (renk adı) altında bir ad arayıp sonuçlardan seçin. On bir ton hemen belirir.',
-        '“Feinjustage” (ince ayar) altında keskinleştirin ve isterseniz “Akzentfarben” (vurgu renkleri) ekleyin — bunları Spectroton harmoni kurallarına göre önerir ve her birine kendi rampasını verir. Bir tonun yanındaki kilitle o tonun değerini dondurursunuz; böylece sürgülere ve temel rengin değişmesine dayanır.',
-        '“Export” altında biçimi seçin — CSS, Tailwind, Tokens veya HEX — sonra kopyalayın ya da dosya olarak kaydedin. Paleti saklamak isteyen onu “Bibliothek” (kitaplık) altında adlandırarak koyar; devretmek isteyen “Teilen” (paylaş) altında, paletin tamamını içinde taşıyan bağlantıyı kopyalar.'
+        '“Ana renk” altında bir renk belirleyin: HEX değerini yazın, renk seçiciyi kullanın ya da “Renk adı” altında bir ad arayıp sonuçlardan seçin. On bir ton hemen belirir.',
+        '“İnce ayar” altında keskinleştirin ve isterseniz “Vurgu renkleri” ekleyin — bunları Spectroton harmoni kurallarına göre önerir ve her birine kendi rampasını verir. Bir tonun yanındaki kilitle o tonun değerini dondurursunuz; böylece sürgülere ve temel rengin değişmesine dayanır.',
+        '“Dışa aktarma” altında biçimi seçin — CSS, Tailwind, Tokens veya HEX — sonra kopyalayın ya da dosya olarak kaydedin. Paleti saklamak isteyen onu “Kitaplık” altında adlandırarak koyar; devretmek isteyen “Paylaş” altında, paletin tamamını içinde taşıyan bağlantıyı kopyalar.'
       ],
       ru: [
-        'В поле «Basisfarbe» (базовый цвет) задайте цвет: впишите значение HEX, воспользуйтесь палитрой или поищите название в разделе «Farbname» (название цвета) и выберите из найденных вариантов. Одиннадцать ступеней появляются сразу.',
-        'В разделе «Feinjustage» (тонкая настройка) подправьте результат и при необходимости добавьте «Akzentfarben» (акцентные цвета) — их Spectroton предлагает по правилам гармонии и каждому даёт собственную шкалу оттенков. Замком у ступени вы замораживаете её значение, так что оно не меняется ни от ползунков, ни при смене базового цвета.',
-        'В разделе «Export» выберите формат — CSS, Tailwind, Tokens или HEX — и скопируйте его или сохраните в файл. Кто хочет оставить палитру себе, сохраняет её под именем в разделе «Bibliothek» (библиотека); кто хочет её передать, копирует в разделе «Teilen» (поделиться) ссылку, которая несёт в себе всю палитру.'
+        'В поле «Базовый цвет» задайте цвет: впишите значение HEX, воспользуйтесь палитрой или поищите название в разделе «Название цвета» и выберите из найденных вариантов. Одиннадцать ступеней появляются сразу.',
+        'В разделе «Тонкая настройка» подправьте результат и при необходимости добавьте «Акцентные цвета» — их Spectroton предлагает по правилам гармонии и каждому даёт собственную шкалу оттенков. Замком у ступени вы замораживаете её значение, так что оно не меняется ни от ползунков, ни при смене базового цвета.',
+        'В разделе «Экспорт» выберите формат — CSS, Tailwind, Tokens или HEX — и скопируйте его или сохраните в файл. Кто хочет оставить палитру себе, сохраняет её под именем в разделе «Библиотека»; кто хочет её передать, копирует в разделе «Поделиться» ссылку, которая несёт в себе всю палитру.'
       ],
       hi: [
-        '“Basisfarbe” (आधार रंग) के पास एक रंग तय करें: HEX मान टाइप करें, रंग चुनने वाला औज़ार इस्तेमाल करें, या “Farbname” (रंग का नाम) के नीचे कोई नाम खोजें और नतीजों में से चुनें। ग्यारह सीढ़ियाँ तुरंत दिख जाती हैं।',
-        '“Feinjustage” (महीन समायोजन) के नीचे और पैना करें और ज़रूरत हो तो “Akzentfarben” (एक्सेंट रंग) जोड़ लें — इन्हें Spectroton सामंजस्य नियमों के अनुसार सुझाता है और हर एक को उसकी अपनी रैंप देता है। किसी सीढ़ी पर लगे ताले से आप उसका मान जमा देते हैं, ताकि वह स्लाइडरों और आधार रंग बदलने, दोनों के आगे टिका रहे।',
-        '“Export” (निर्यात) के नीचे फ़ॉर्मैट चुनें — CSS, Tailwind, टोकन या HEX — और उसे कॉपी करें या फ़ाइल के रूप में सहेजें। जो पैलेट रखना चाहे, वह उसे “Bibliothek” (लाइब्रेरी) के नीचे नाम देकर रख देता है; जो उसे आगे देना चाहे, वह “Teilen” (साझा करना) के पास वह लिंक कॉपी करता है जो पूरी पैलेट अपने भीतर लिए रहता है।'
+        '“आधार रंग” के पास एक रंग तय करें: HEX मान टाइप करें, रंग चुनने वाला औज़ार इस्तेमाल करें, या “रंग का नाम” के नीचे कोई नाम खोजें और नतीजों में से चुनें। ग्यारह सीढ़ियाँ तुरंत दिख जाती हैं।',
+        '“बारीक समायोजन” के नीचे और पैना करें और ज़रूरत हो तो “एक्सेंट रंग” जोड़ लें — इन्हें Spectroton सामंजस्य नियमों के अनुसार सुझाता है और हर एक को उसकी अपनी रैंप देता है। किसी सीढ़ी पर लगे ताले से आप उसका मान जमा देते हैं, ताकि वह स्लाइडरों और आधार रंग बदलने, दोनों के आगे टिका रहे।',
+        '“निर्यात” के नीचे फ़ॉर्मैट चुनें — CSS, Tailwind, टोकन या HEX — और उसे कॉपी करें या फ़ाइल के रूप में सहेजें। जो पैलेट रखना चाहे, वह उसे “संग्रह” के नीचे नाम देकर रख देता है; जो उसे आगे देना चाहे, वह “साझा करें” के पास वह लिंक कॉपी करता है जो पूरी पैलेट अपने भीतर लिए रहता है।'
       ],
       zh: [
-        '在“Basisfarbe”（基准色）处设定一个颜色：输入 HEX 值、使用取色器，或者在“Farbname”（颜色名称）下搜一个名字并从结果里挑一个。十一级色阶会立刻出现。',
-        '在“Feinjustage”（微调）下再修一修，需要的话加上“Akzentfarben”（强调色）——它们由 Spectroton 按和谐规则给出建议，并且每一个都有自己的色阶。通过某一级上的锁把它的数值冻住，这样它就扛得住滑块和基准色的更换。',
-        '在“Export”（导出）下选择格式——CSS、Tailwind、Tokens 或 HEX——然后复制，或者保存为文件。想留着这套调色板，就在“Bibliothek”（库）下命名存起来；想传给别人，就在“Teilen”（分享）处复制那条链接，整套调色板都装在它里面。'
+        '在“基色”处设定一个颜色：输入 HEX 值、使用取色器，或者在“颜色名称”下搜一个名字并从结果里挑一个。十一级色阶会立刻出现。',
+        '在“微调”下再修一修，需要的话加上“强调色”——它们由 Spectroton 按和谐规则给出建议，并且每一个都有自己的色阶。通过某一级上的锁把它的数值冻住，这样它就扛得住滑块和基准色的更换。',
+        '在“导出”下选择格式——CSS、Tailwind、Tokens 或 HEX——然后复制，或者保存为文件。想留着这套调色板，就在“库”下命名存起来；想传给别人，就在“分享”处复制那条链接，整套调色板都装在它里面。'
       ],
       ja: [
-        '「Basisfarbe」（基本色）で色を決めます: HEX 値を打ち込むか、カラーピッカーを使うか、「Farbname」（色名）で名前を検索して候補から選びます。11段階はすぐに現れます。',
-        '「Feinjustage」（微調整）で詰め、必要なら「Akzentfarben」（アクセントカラー）を加えます — これは Spectroton が調和の規則にしたがって提案し、それぞれに専用のランプを与えます。段階に付いた錠前でその値を凍らせると、スライダーを動かしても基本色を変えても保たれます。',
-        '「Export」（書き出し）で形式を選び — CSS、Tailwind、Tokens、HEX — コピーするか、ファイルとして保存します。パレットを取っておきたいなら「Bibliothek」（ライブラリ）に名前を付けて置きます。人に渡したいなら「Teilen」（共有）でリンクをコピーします。そのリンクがパレットまるごとを抱えています。'
+        '「ベースカラー」で色を決めます: HEX 値を打ち込むか、カラーピッカーを使うか、「色の名前」で名前を検索して候補から選びます。11段階はすぐに現れます。',
+        '「微調整」で詰め、必要なら「アクセントカラー」を加えます — これは Spectroton が調和の規則にしたがって提案し、それぞれに専用のランプを与えます。段階に付いた錠前でその値を凍らせると、スライダーを動かしても基本色を変えても保たれます。',
+        '「書き出し」で形式を選び — CSS、Tailwind、Tokens、HEX — コピーするか、ファイルとして保存します。パレットを取っておきたいなら「ライブラリ」に名前を付けて置きます。人に渡したいなら「共有」でリンクをコピーします。そのリンクがパレットまるごとを抱えています。'
       ],
       ko: [
-        '“Basisfarbe”(기준 색)에서 색을 정합니다: HEX 값을 입력하거나, 색 선택기를 쓰거나, “Farbname”(색 이름)에서 이름으로 검색해 결과 중에서 고릅니다. 열한 단계가 곧바로 나타납니다.',
-        '“Feinjustage”(미세 조정)에서 다듬고, 필요하면 “Akzentfarben”(강조색)을 더합니다 — Spectroton이 조화 규칙에 따라 제안하고 각각에 고유한 램프를 줍니다. 어떤 단계의 자물쇠를 누르면 그 값이 고정되어, 슬라이더를 움직이거나 기준 색을 바꿔도 그대로 버팁니다.',
-        '“Export”에서 형식을 고르고 — CSS, Tailwind, Tokens, HEX — 복사하거나 파일로 저장합니다. 팔레트를 간직하려면 “Bibliothek”(라이브러리)에 이름을 붙여 넣어 두고, 남에게 건네려면 “Teilen”(공유)에서 팔레트 전체를 담고 있는 링크를 복사합니다.'
+        '“기본 색”에서 색을 정합니다: HEX 값을 입력하거나, 색 선택기를 쓰거나, “색 이름”에서 이름으로 검색해 결과 중에서 고릅니다. 열한 단계가 곧바로 나타납니다.',
+        '“미세 조정”에서 다듬고, 필요하면 “강조 색”을 더합니다 — Spectroton이 조화 규칙에 따라 제안하고 각각에 고유한 램프를 줍니다. 어떤 단계의 자물쇠를 누르면 그 값이 고정되어, 슬라이더를 움직이거나 기준 색을 바꿔도 그대로 버팁니다.',
+        '“내보내기”에서 형식을 고르고 — CSS, Tailwind, Tokens, HEX — 복사하거나 파일로 저장합니다. 팔레트를 간직하려면 “보관함”에 이름을 붙여 넣어 두고, 남에게 건네려면 “공유”에서 팔레트 전체를 담고 있는 링크를 복사합니다.'
       ]
     },
     pitfalls: {
       de: [
-        'Die Oberfläche gibt es nur auf Deutsch — wie bei fontART Designer und beim Besucher-Ticker.',
+        'Die Oberfläche spricht dieselben vierzehn Sprachen wie die übrigen Web-Werkzeuge — teils maschinell übersetzt, Korrekturen willkommen.',
         'Die Farbnamen kommen von api.color.pizza, einem fremden Dienst. Schon beim Öffnen fragt Spectroton dort nach dem Namen der aktuellen Farbe — dabei geht dieser Farbwert an den Dienst. Ohne Netz bleibt nur dieses eine Feld leer; alles andere rechnet weiter auf deinem Gerät.',
         'Nach dem ersten Besuch läuft Spectroton auch ohne Internet — die Farbnamen-Suche ausgenommen.',
         'Nicht jede Farbe lässt sich auf jedem Bildschirm zeigen. Statt hart abzuschneiden, weicht Spectroton auf den nächstmöglichen Ton aus und weist darauf hin, wenn eine Stufe Display-P3 braucht und auf einem sRGB-Schirm anders ankommt.',
         'Der Kontrastwert ist eine Rechnung, kein Freibrief: WCAG 2.2 und APCA bewerten dieselbe Paarung unterschiedlich, besonders bei hellem Text auf dunklem Grund. Wo es darauf ankommt, beide Maße ansehen und am Ende am echten Bildschirm prüfen.'
       ],
       en: [
-        'The interface is in German only — the same goes for fontART Designer and the Besucher-Ticker.',
+        'The interface speaks the same fourteen languages as the other web tools — some of it machine-translated, corrections welcome.',
         'The colour names come from api.color.pizza, someone else’s service. Spectroton asks it for the name of the current colour as soon as the page opens — that colour value goes to the service. Without a connection only this one field stays empty; everything else keeps computing on your device.',
         'After the first visit Spectroton also runs without an internet connection — except for the colour-name search.',
         'Not every colour can be shown on every screen. Instead of clipping hard, Spectroton falls back to the nearest possible tone and points out when a shade needs Display-P3 and will land differently on an sRGB screen.',
         'A contrast value is a calculation, not a permit: WCAG 2.2 and APCA judge the same pairing differently, especially for light text on a dark ground. Where it matters, look at both measures and check on a real screen in the end.'
       ],
       es: [
-        'La interfaz solo existe en alemán, igual que en fontART Designer y en el Besucher-Ticker.',
+        'La interfaz habla las mismas catorce lenguas que las demás herramientas web, en parte traducidas automáticamente; las correcciones son bienvenidas.',
         'Los nombres de color vienen de api.color.pizza, un servicio ajeno. Nada más abrir la página, Spectroton le pregunta el nombre del color actual, y con ello ese valor de color llega al servicio. Sin red solo se queda vacío ese único campo; todo lo demás sigue calculándose en tu dispositivo.',
         'Después de la primera visita, Spectroton funciona también sin internet, salvo la búsqueda de nombres de color.',
         'No todos los colores se pueden mostrar en todas las pantallas. En lugar de recortar bruscamente, Spectroton recurre al tono más cercano posible y avisa cuando un tono necesita Display-P3 y se ve distinto en una pantalla sRGB.',
         'El valor de contraste es un cálculo, no un salvoconducto: WCAG 2.2 y APCA juzgan la misma combinación de forma distinta, sobre todo con texto claro sobre fondo oscuro. Donde importe, mira las dos medidas y comprueba al final en una pantalla de verdad.'
       ],
       fr: [
-        'L’interface n’existe qu’en allemand — comme pour fontART Designer et pour le Besucher-Ticker.',
+        'L’interface parle les mêmes quatorze langues que les autres outils web — en partie traduites par machine ; les corrections sont les bienvenues.',
         'Les noms de couleurs viennent d’api.color.pizza, un service tiers. Dès l’ouverture, Spectroton lui demande le nom de la couleur actuelle — ce faisant, cette valeur de couleur est transmise au service. Sans réseau, seul ce champ-là reste vide ; tout le reste continue de se calculer sur votre appareil.',
         'Après la première visite, Spectroton fonctionne aussi sans Internet — la recherche de noms de couleurs exceptée.',
         'Toutes les couleurs ne peuvent pas être montrées sur tous les écrans. Plutôt que de couper net, Spectroton se rabat sur le ton le plus proche possible et signale quand une nuance a besoin de Display-P3 et s’affichera différemment sur un écran sRGB.',
         'La valeur de contraste est un calcul, pas un blanc-seing : WCAG 2.2 et APCA évaluent différemment la même paire, surtout pour du texte clair sur fond sombre. Là où cela compte, regardez les deux mesures et vérifiez à la fin sur un vrai écran.'
       ],
       it: [
-        'L’interfaccia esiste solo in tedesco, come per fontART Designer e per il Besucher-Ticker.',
+        'L’interfaccia parla le stesse quattordici lingue degli altri strumenti web, in parte tradotte automaticamente; le correzioni sono benvenute.',
         'I nomi dei colori arrivano da api.color.pizza, un servizio altrui. Già all’apertura Spectroton gli chiede il nome del colore corrente: così questo valore di colore va al servizio. Senza rete resta vuoto solo questo unico campo; tutto il resto continua a calcolare sul tuo dispositivo.',
         'Dopo la prima visita Spectroton funziona anche senza internet, eccetto la ricerca dei nomi dei colori.',
         'Non tutti i colori si possono mostrare su qualsiasi schermo. Invece di tagliare di netto, Spectroton ripiega sul tono più vicino possibile e segnala quando una tonalità ha bisogno di Display-P3 e su uno schermo sRGB appare diversa.',
         'Il valore di contrasto è un calcolo, non un lasciapassare: WCAG 2.2 e APCA valutano la stessa coppia in modo diverso, soprattutto con testo chiaro su fondo scuro. Dove la cosa conta, guarda entrambe le misure e alla fine verifica su uno schermo reale.'
       ],
       nl: [
-        'De interface is er alleen in het Duits — net als bij fontART Designer en bij de Besucher-Ticker.',
+        'De interface spreekt dezelfde veertien talen als de overige webgereedschappen, deels machinaal vertaald — verbeteringen zijn welkom.',
         'De kleurnamen komen van api.color.pizza, een dienst van iemand anders. Al bij het openen vraagt Spectroton daar naar de naam van de huidige kleur — daarbij gaat die kleurwaarde naar die dienst. Zonder verbinding blijft alleen dit ene veld leeg; al het andere blijft op je eigen apparaat rekenen.',
         'Na het eerste bezoek draait Spectroton ook zonder internet — het zoeken van kleurnamen uitgezonderd.',
         'Niet elke kleur is op elk scherm te tonen. In plaats van hard af te kappen wijkt Spectroton uit naar de dichtstbijzijnde mogelijke tint en geeft aan wanneer een tint Display-P3 nodig heeft en op een sRGB-scherm anders overkomt.',
         'De contrastwaarde is een berekening, geen vrijbrief: WCAG 2.2 en APCA beoordelen hetzelfde paar verschillend, vooral bij lichte tekst op een donkere ondergrond. Waar het erop aankomt, bekijk je beide maten en controleer je het uiteindelijk op een echt scherm.'
       ],
       pl: [
-        'Interfejs jest tylko po niemiecku — tak jak przy fontART Designer i przy Besucher-Ticker.',
+        'Interfejs mówi tymi samymi czternastoma językami co pozostałe narzędzia sieciowe, po części w tłumaczeniu maszynowym — poprawki mile widziane.',
         'Nazwy kolorów pochodzą z api.color.pizza, zewnętrznej usługi. Już przy otwarciu Spectroton pyta ją o nazwę bieżącego koloru — przy tym ta wartość koloru trafia do tej usługi. Bez sieci puste zostaje tylko to jedno pole; cała reszta liczy dalej na twoim urządzeniu.',
         'Po pierwszej wizycie Spectroton działa też bez internetu — z wyjątkiem wyszukiwania nazw kolorów.',
         'Nie każdy kolor da się pokazać na każdym ekranie. Zamiast twardo obcinać, Spectroton przechodzi na najbliższy możliwy odcień i zwraca uwagę, gdy stopień potrzebuje Display-P3 i na ekranie sRGB wypadnie inaczej.',
         'Wartość kontrastu to rachunek, nie glejt: WCAG 2.2 i APCA oceniają tę samą parę różnie, zwłaszcza przy jasnym tekście na ciemnym tle. Tam, gdzie to ważne, popatrzeć na obie miary i na koniec sprawdzić na prawdziwym ekranie.'
       ],
       pt: [
-        'A interface só existe em alemão — tal como no fontART Designer e no Besucher-Ticker.',
+        'A interface fala as mesmas catorze línguas que as restantes ferramentas web, em parte por tradução automática — correções são bem-vindas.',
         'Os nomes das cores vêm da api.color.pizza, um serviço alheio. Logo ao abrir, o Spectroton pergunta a esse serviço o nome da cor atual — e, nisso, esse valor de cor vai para o serviço. Sem rede, fica vazio só este campo; tudo o resto continua a ser calculado no seu dispositivo.',
         'Depois da primeira visita, o Spectroton funciona também sem Internet — com exceção da procura de nomes de cores.',
         'Nem toda a cor se consegue mostrar em todos os ecrãs. Em vez de cortar à bruta, o Spectroton recua para o tom mais próximo possível e avisa quando um tom precisa de Display-P3 e vai sair diferente num ecrã sRGB.',
         'O valor de contraste é uma conta, não um salvo-conduto: a WCAG 2.2 e a APCA avaliam o mesmo par de maneira diferente, sobretudo com texto claro sobre fundo escuro. Onde isso for importante, olhe para as duas medidas e verifique no fim num ecrã a sério.'
       ],
       tr: [
-        'Arayüz yalnızca Almancadır — fontART Designer’da ve Besucher-Ticker’da olduğu gibi.',
+        'Arayüz, diğer web araçlarıyla aynı on dört dili konuşur; bir bölümü makine çevirisidir, düzeltmeler memnuniyetle karşılanır.',
         'Renk adları, başka birinin hizmeti olan api.color.pizza’dan gelir. Spectroton daha sayfa açılır açılmaz oraya geçerli rengin adını sorar — bu sırada bu renk değeri hizmete gider. Ağ bağlantısı yokken yalnızca bu tek alan boş kalır; geri kalan her şey cihazınızda hesaplanmayı sürdürür.',
         'İlk ziyaretten sonra Spectroton internet olmadan da çalışır — renk adı araması bunun dışındadır.',
         'Her renk her ekranda gösterilemez. Spectroton sert biçimde kırpmak yerine en yakın olası tona kayar ve bir tonun Display-P3 gerektirdiğini, bir sRGB ekranda farklı görüneceğini belirtir.',
         'Kontrast değeri bir hesaptır, izin belgesi değil: WCAG 2.2 ile APCA aynı eşleşmeyi farklı değerlendirir, özellikle koyu zemin üzerindeki açık metinde. Önemli olduğu yerde iki ölçüye de bakın ve sonunda gerçek ekranda kontrol edin.'
       ],
       ru: [
-        'Интерфейс есть только на немецком — как у fontART Designer и у Besucher-Ticker.',
+        'Интерфейс говорит на тех же четырнадцати языках, что и остальные веб-инструменты; часть переводов машинная, поправки приветствуются.',
         'Названия цветов приходят с api.color.pizza, стороннего сервиса. Уже при открытии Spectroton спрашивает там название текущего цвета — при этом значение цвета уходит к сервису. Без сети пустым остаётся только это одно поле; всё остальное продолжает считаться на вашем устройстве.',
         'После первого посещения Spectroton работает и без интернета — за исключением поиска названий цветов.',
         'Не всякий цвет можно показать на любом экране. Вместо резкого отсечения Spectroton переходит к ближайшему возможному оттенку и указывает, когда ступени нужен Display-P3 и на sRGB-экране она выглядит иначе.',
         'Значение контраста — это расчёт, а не индульгенция: WCAG 2.2 и APCA оценивают одну и ту же пару по-разному, особенно при светлом тексте на тёмном фоне. Где это важно, смотрите оба показателя и в конце проверяйте на настоящем экране.'
       ],
       hi: [
-        'इंटरफ़ेस केवल जर्मन में है — fontART Designer और Besucher-Ticker की तरह।',
+        'इंटरफ़ेस बाक़ी वेब औज़ारों जैसी उन्हीं चौदह भाषाओं में उपलब्ध है; इनमें से कुछ मशीनी अनुवाद हैं, सुधारों का स्वागत है।',
         'रंगों के नाम api.color.pizza से आते हैं, जो किसी और की सेवा है। पेज खुलते ही Spectroton वहाँ मौजूदा रंग का नाम पूछ लेता है — इसमें यह रंग मान उस सेवा तक जाता है। इंटरनेट के बिना केवल यही एक फ़ील्ड खाली रहता है; बाक़ी सबकी गणना आपके डिवाइस पर ही होती रहती है।',
         'पहली बार आने के बाद Spectroton बिना इंटरनेट के भी चलता है — रंगों के नाम की खोज को छोड़कर।',
         'हर रंग हर स्क्रीन पर दिखाया नहीं जा सकता। कठोरता से काट देने के बजाय Spectroton निकटतम संभव शेड पर चला जाता है और बता देता है कि कब किसी सीढ़ी को Display-P3 चाहिए और वह sRGB स्क्रीन पर अलग दिखेगी।',
         'कंट्रास्ट मान एक गणना है, छूट का परवाना नहीं: WCAG 2.2 और APCA एक ही जोड़ी को अलग-अलग आँकते हैं, ख़ासकर गहरी पृष्ठभूमि पर हल्के पाठ के मामले में। जहाँ यह मायने रखता हो, वहाँ दोनों पैमाने देखें और अंत में असली स्क्रीन पर जाँचें।'
       ],
       zh: [
-        '界面只有德语——和 fontART Designer、Besucher-Ticker 一样。',
+        '界面和其余的网页工具一样，说同样的十四种语言，其中一部分是机器翻译的——欢迎指正。',
         '颜色名称来自 api.color.pizza，一个别人的服务。页面一打开，Spectroton 就会向它询问当前颜色的名字——这个颜色值因此会发给该服务。没有网络时只有这一个字段是空的；其余一切照旧在你的设备上计算。',
         '第一次访问之后，Spectroton 没有互联网也能运行——颜色名称搜索除外。',
         '不是每种颜色都能在每块屏幕上显示出来。Spectroton 不会硬生生截断，而是退到最接近的色调，并在某一级需要 Display-P3、在 sRGB 屏幕上会呈现得不一样时给出提示。',
         '对比度数值是一次计算，不是通行证：WCAG 2.2 和 APCA 对同一组搭配的评判并不相同，尤其是深色背景上的浅色文字。要紧的地方就两个标准都看一眼，最后再到真实屏幕上确认。'
       ],
       ja: [
-        '画面はドイツ語だけです — fontART Designer と Besucher-Ticker も同じです。',
+        '画面はほかのウェブ道具と同じ十四の言語で表示されます。一部は機械による翻訳です — 直していただけるとありがたいです。',
         '色名は api.color.pizza という他社のサービスから来ています。ページを開いた時点で、Spectroton は現在の色の名前をそこに尋ねます — そのとき、この色の値がサービスに渡ります。ネットにつながっていないと、この欄だけが空のままになります。それ以外はすべて端末の中で計算され続けます。',
         '最初の訪問のあとは、Spectroton はインターネットなしでも動きます — 色名の検索だけは別です。',
         'どの色もどの画面で出せるわけではありません。Spectroton は乱暴に切り捨てるのではなく、出せるいちばん近い色に寄せ、ある段階が Display-P3 を必要としていて sRGB の画面では違って見えることを知らせます。',
         'コントラスト値は計算であって、お墨付きではありません: WCAG 2.2 と APCA は同じ組み合わせを違うふうに評価します。とくに暗い背景に明るい文字の場合はそうです。大事なところでは両方の尺度を見て、最後は実際の画面で確かめてください。'
       ],
       ko: [
-        '화면은 독일어로만 제공됩니다 — fontART Designer와 Besucher-Ticker도 마찬가지입니다.',
+        '화면은 나머지 웹 도구와 똑같이 열네 개 언어로 나옵니다. 그 가운데 일부는 기계 번역이며, 고쳐 주시면 고맙겠습니다.',
         '색 이름은 외부 서비스인 api.color.pizza에서 옵니다. Spectroton은 페이지를 열자마자 현재 색의 이름을 그곳에 묻습니다 — 그때 이 색 값이 그 서비스로 갑니다. 네트워크가 없으면 이 칸 하나만 비어 있고, 나머지는 모두 기기에서 계속 계산됩니다.',
         '첫 방문 뒤에는 Spectroton도 인터넷 없이 돌아갑니다 — 색 이름 검색은 예외입니다.',
         '모든 색을 모든 화면에서 보여 줄 수 있는 것은 아닙니다. Spectroton은 딱 잘라 버리는 대신 가장 가까운 색조로 비켜 가고, 어떤 단계가 Display-P3를 필요로 해서 sRGB 화면에서는 다르게 보인다는 점을 알려 줍니다.',

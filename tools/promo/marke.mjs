@@ -247,16 +247,18 @@ export const TOOLS = [
      * derselbe Ton wie die mittlere Stufe im Icon. */
     farbe: '#2dd4bf',
     claimDe: 'Eine Farbe rein, elf Stufen raus.',
-    /* Der einzige claimEn der Datei mit Vorbehalt, mit Absicht: die englische
-     * Zeile steht auf allen fuenf Karten, die deutschen Zusagen daneben liest
-     * ein englischer Besucher nicht. Ohne den Zusatz bekaeme er das volle
-     * Nutzenversprechen und keine einzige Einschraenkung. */
-    claimEn: 'One colour in, eleven matching shades out — German only for now',
+    /* Der Vorbehalt "German only for now" stand hier bis zum 14.09.2026 —
+     * seither spricht Spectroton dieselben vierzehn Sprachen wie die uebrigen
+     * Web-Werkzeuge, und die Einschraenkung waere unwahr. */
+    claimEn: 'One colour in, eleven matching shades out',
     /* Statt "ohne Upload": der Hex-Wert der Basisfarbe geht bei jeder Aenderung
-     * an api.color.pizza, die uebliche Zeile waere hier schlicht falsch. An
-     * ihre Stelle tritt die Sprache — "vorerst nur", weil weitere geplant sind.
-     * Der externe Aufruf steht dort, wo ein ganzer Satz Platz hat: Story 2. */
-    zusagen: ['Kostenlos', 'ohne Anmeldung', '(vorerst nur) auf Deutsch'],
+     * an api.color.pizza, die uebliche Zeile waere hier schlicht falsch. Der
+     * externe Aufruf steht dort, wo ein ganzer Satz Platz hat: Story 2.
+     * An dritter Stelle stand bis zum 14.09.2026 die Sprache ("vorerst nur auf
+     * Deutsch"); seit der Umstellung auf vierzehn Sprachen ist das erledigt.
+     * Jetzt "quelloffen" — MIT, wie im Repo nachzulesen, und ein Wort ohne
+     * Zahl, das nicht still veraltet. */
+    zusagen: ['Kostenlos', 'ohne Anmeldung', 'quelloffen'],
     url: 'dennismit2n.github.io/spectroton',
     story: [
       { ober: 'Website, Shop, Präsentation', gross: 'Eine Farbe reicht nie.', unter: 'Eine hellere für Flächen, eine dunklere für Rahmen — und eine, auf der Text noch lesbar bleibt.' },

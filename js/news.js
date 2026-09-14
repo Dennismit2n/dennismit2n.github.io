@@ -274,6 +274,23 @@ var NEWS = {
 
   spectroton: [
     {
+      date: '2026-09-14',
+      de: 'Die Oberfläche spricht jetzt vierzehn Sprachen statt nur Deutsch — dieselben wie die übrigen Web-Werkzeuge. Teils maschinell übersetzt, Korrekturen willkommen.',
+      en: 'The interface now speaks fourteen languages instead of German only — the same ones as the other web tools. Some of it machine-translated, corrections welcome.',
+      es: 'La interfaz ahora habla catorce idiomas en lugar de solo alemán — los mismos que en las demás herramientas web. En parte traducida automáticamente; las correcciones son bienvenidas.',
+      fr: 'L’interface parle désormais quatorze langues au lieu du seul allemand — les mêmes que les autres outils web. En partie traduite par machine ; les corrections sont les bienvenues.',
+      it: 'L’interfaccia ora parla quattordici lingue invece del solo tedesco — le stesse degli altri strumenti web. In parte tradotta automaticamente; le correzioni sono benvenute.',
+      nl: 'De interface spreekt nu veertien talen in plaats van alleen Duits — dezelfde als de overige webgereedschappen. Deels machinaal vertaald, verbeteringen zijn welkom.',
+      pl: 'Interfejs mówi teraz czternastoma językami zamiast samego niemieckiego — tymi samymi co pozostałe narzędzia sieciowe. Po części w tłumaczeniu maszynowym, poprawki mile widziane.',
+      pt: 'A interface fala agora catorze línguas em vez de só alemão — as mesmas que as restantes ferramentas web. Em parte por tradução automática, correções são bem-vindas.',
+      tr: 'Arayüz artık yalnızca Almanca değil, on dört dil konuşuyor — diğer web araçlarıyla aynı diller. Bir bölümü makine çevirisi, düzeltmeler memnuniyetle karşılanır.',
+      ru: 'Интерфейс теперь говорит на четырнадцати языках, а не только по-немецки — на тех же, что и остальные веб-инструменты. Часть переводов машинная, поправки приветствуются.',
+      hi: 'इंटरफ़ेस अब सिर्फ़ जर्मन नहीं, चौदह भाषाएँ बोलता है — वही जो बाकी वेब-औज़ारों में हैं। कुछ हिस्सा मशीनी अनुवाद है, सुधार सुझाने का स्वागत है।',
+      zh: '界面现在支持十四种语言，不再只有德语——与其他网页工具相同。其中部分为机器翻译，欢迎指正。',
+      ja: '画面の表示がドイツ語だけでなく、十四の言語に対応しました — ほかのウェブ道具と同じ言語です。一部は機械翻訳です。修正のご指摘を歓迎します。',
+      ko: '인터페이스가 이제 독일어뿐 아니라 열네 개 언어로 표시됩니다 — 다른 웹 도구들과 같은 언어입니다. 일부는 기계 번역이며, 수정 제안을 환영합니다.'
+    },
+    {
       date: '2026-09-13',
       de: 'Behoben: Wer die Darstellung von Hand auf Dunkel stellte, sah die Kachel weiter das Türkis des Hellmodus — ein dunkler Ton, der auf dunklem Grund kaum noch zu lesen war. Für den erzwungenen Dunkelmodus fehlte die Farbe. Über die Systemeinstellung war sie immer richtig.',
       en: 'Fixed: with the display switched to dark by hand, the tile kept the teal meant for light mode — a dark shade that barely read against a dark background. The colour was missing for the forced dark mode. Via the system setting it was always correct.',

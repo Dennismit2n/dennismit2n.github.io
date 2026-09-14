@@ -82,9 +82,13 @@ const zeile = (zusagen, gr) => zusagen
 
 function karte(t, f) {
   const s = SKALA[f.id] ?? 1;
-  const zeilen = t.claimDe.split('\n').length;
+  /* Seit 14.09.2026 steht Englisch oben: die Link-Vorschau reist weiter als
+   * die Seite selbst, und Englisch erreicht mehr Leute als Deutsch. Die Seite
+   * dahinter spricht ohnehin vierzehn Sprachen. Deutsch bleibt als zweite
+   * Zeile stehen, nur kleiner und in Grau. */
+  const zeilen = t.claimEn.split('\n').length;
   /* Bei zwei Zeilen Claim muss der Name etwas nachgeben, sonst wird es eng. */
-  /* Die Namenslaenge muss mit rein, nicht nur der claimDe-Umbruch:
+  /* Die Namenslaenge muss mit rein, nicht nur der claimEn-Umbruch:
    * 'create-masterprompt' (19 Zeichen) bricht bei 86*1.16 auf
    * instagram-1080 sonst zweizeilig um. 'fontART Designer' hat genau 16. */
   const nameGr = (zeilen > 1 || t.name.length > 16 ? 74 : 86) * s;
@@ -96,8 +100,8 @@ function karte(t, f) {
     <div style="position:relative;display:flex;flex-direction:column;align-items:center;max-width:${f.b - 120 * s}px">
       <div style="width:${132 * s}px;height:${132 * s}px;margin-bottom:${40 * s}px">${iconSvg(t.icon, 132 * s)}</div>
       <div style="font-size:${nameGr}px;font-weight:800;letter-spacing:-.03em;line-height:1">${t.name}</div>
-      <div style="font-size:${42 * s}px;font-weight:600;color:${t.farbe};margin-top:${24 * s}px;line-height:1.14;white-space:pre-line;letter-spacing:-.01em">${t.claimDe}</div>
-      <div style="font-size:${27 * s}px;color:${MARKE.weich};margin-top:${12 * s}px">${t.claimEn}</div>
+      <div style="font-size:${42 * s}px;font-weight:600;color:${t.farbe};margin-top:${24 * s}px;line-height:1.14;white-space:pre-line;letter-spacing:-.01em">${t.claimEn}</div>
+      <div style="font-size:${27 * s}px;color:${MARKE.weich};margin-top:${12 * s}px">${t.claimDe}</div>
       <div style="margin-top:${42 * s}px">${zeile(t.zusagen, 25 * s)}</div>
     </div>
     ${balken(t.farbe, `bottom:${50 * s}px;left:50%;transform:translateX(-50%);width:${260 * s}px;height:${7 * s}px`)}
