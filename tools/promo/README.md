@@ -7,7 +7,7 @@ einer gemeinsamen Vorlage — nicht nur die der Startseite.
 node make-bilder.mjs
 ```
 
-Legt 113 Bilder unter `Bilder/` ab (Zielordner steht oben im Skript): zehn Formate je
+Legt 153 Bilder unter `Bilder/` ab (Zielordner steht oben im Skript): zehn Formate je
 Werkzeug plus dreizehn Markenbilder.
 
 ```bash
@@ -26,8 +26,8 @@ Formate (Story, LinkedIn, X, Twitch-Panel, Banner, Profilbilder) bleiben bewusst
 der Repos: sie werden von keiner Seite abgerufen, und ein Projekt, das mit Schlankheit
 wirbt, trägt keine Story-Bilder mit sich herum.
 
-Real_RAM_cooler und der Zählwerk Ticker bekommen nur `github-social.png` — beide haben
-keine Webseite, `og.png` hätte dort niemanden, der sie abruft. fontART bekommt seine drei
+Real_RAM_cooler, create-masterprompt, der Zählwerk Ticker und der Besucher-Ticker
+bekommen nur `github-social.png` — keines davon hat eine Webseite, `og.png` hätte dort niemanden, der sie abruft. fontART bekommt seine drei
 Bilder in die Wurzel des Repos, weil dort auch die ausgelieferte `index.html` liegt.
 
 ## Alles Änderbare steht in `marke.mjs`
@@ -37,7 +37,7 @@ und die Formatliste. Wer ein Bild ändern will, ändert dort — nicht im Render
 
 ## Warum als Vorlage und nicht als fertige Grafik
 
-Ändert sich ein Claim, läuft das hier einmal neu, statt dass jemand 113 Bilder nachzieht.
+Ändert sich ein Claim, läuft das hier einmal neu, statt dass jemand 153 Bilder nachzieht.
 Genau der Grund, aus dem `assets/promo.png` der Startseite beim Wechsel der Überschrift
 einmal falsch stehen blieb: der alte Claim war ins Bild eingebrannt.
 
@@ -45,7 +45,7 @@ einmal falsch stehen blieb: der alte Claim war ins Bild eingebrannt.
 
 `collective-calc/tools/promo.html` (versioniert) und `wifi-qr/tools/promo.html`
 (unversioniert) sind die Vorläufer — dort ist der dunkle Familien-Entwurf entstanden, den
-dieser Generator für alle sieben Auftritte fortführt.
+dieser Generator für alle vierzehn Auftritte fortführt.
 
 **Sie erzeugen dieselben zwei Bilder wie dieser Ordner.** Wer eine der alten Vorlagen
 ändert und danach `make-bilder.mjs` laufen lässt, verliert die Änderung wieder. Damit es
