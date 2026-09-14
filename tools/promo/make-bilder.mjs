@@ -84,7 +84,10 @@ function karte(t, f) {
   const s = SKALA[f.id] ?? 1;
   const zeilen = t.claimDe.split('\n').length;
   /* Bei zwei Zeilen Claim muss der Name etwas nachgeben, sonst wird es eng. */
-  const nameGr = (zeilen > 1 ? 74 : 86) * s;
+  /* Die Namenslaenge muss mit rein, nicht nur der claimDe-Umbruch:
+   * 'create-masterprompt' (19 Zeichen) bricht bei 86*1.16 auf
+   * instagram-1080 sonst zweizeilig um. 'fontART Designer' hat genau 16. */
+  const nameGr = (zeilen > 1 || t.name.length > 16 ? 74 : 86) * s;
   /* Das untere Polster hält den Inhalt vom Farbbalken weg — sonst klebt die
    * Zusagen-Zeile am Balken. */
   return kopf(f.b, f.h) + `<div class="buehne" style="align-items:center;justify-content:center;text-align:center;padding-bottom:${52 * s}px">
@@ -116,7 +119,7 @@ function story(t, f) {
     <div style="position:relative;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center">
       <div style="font-size:34px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:${t.farbe}">${k.ober}</div>
       <div style="font-size:${letzte ? 104 : 92}px;font-weight:800;line-height:1.1;letter-spacing:-.025em;margin-top:38px;text-wrap:balance">${k.gross}</div>
-      <div style="font-size:${letzte ? 40 : 44}px;line-height:1.42;color:${letzte ? t.farbe : MARKE.weich};margin-top:38px;max-width:840px;text-wrap:pretty;${letzte ? 'font-weight:600;word-break:break-word' : ''}">${k.unter}</div>
+      <div style="font-size:${letzte ? 40 : 44}px;line-height:1.42;color:${letzte ? t.farbe : MARKE.weich};margin-top:38px;max-width:${letzte ? 900 : 840}px;text-wrap:pretty;${letzte ? 'font-weight:600;word-break:break-word' : ''}">${k.unter}</div>
     </div>
     <div style="position:relative;display:flex;flex-direction:column;align-items:center;gap:40px;flex:0 0 auto">
       <div style="font-size:32px;color:${MARKE.weich}">${MARKE.url}</div>
@@ -185,10 +188,12 @@ function banner(f) {
       </div>
       <div style="font-size:${36 * s}px;color:${MARKE.eisblau};font-weight:600;letter-spacing:-.01em;white-space:nowrap">${MARKE.h1De}</div>
       <!-- Seit fontART (31.07.2026) ist "kostenlos · quelloffen" keine Aussage
-           über die ganze Werkstatt mehr — sieben von acht sind beides, das
-           achte keins von beidem. Hier steht deshalb dieselbe Zusage wie auf
-           den Bildern der Startseite. -->
-      <div style="font-size:${26 * s}px;color:${MARKE.weich}">${MARKE.url} · ohne Anmeldung · ohne Uploads</div>
+           über die ganze Werkstatt mehr, und seit create-masterprompt
+           (13.09.2026) auch "ohne Uploads" nicht: für claude.ai lädt man eine
+           Zip hoch, und fakten.json verbietet dem Skill ausdrücklich "läuft
+           auf deinem Gerät". Dieselbe Operation wie damals: eingedampft auf
+           das, was ausnahmslos für alle zwölf gilt. -->
+      <div style="font-size:${26 * s}px;color:${MARKE.weich}">${MARKE.url} · ohne Anmeldung</div>
     </div>`;
   return kopf(f.b, f.h) + `<div class="buehne" style="${hoch
     ? `flex-direction:column;align-items:center;justify-content:center;gap:${76 * s}px;padding:${60 * s}px`
