@@ -21,7 +21,7 @@ Startseite für die kleinen Werkzeuge von Dennis_mit_2n — ohne Anmeldung, kein
 - [Collective-Calc](https://dennismit2n.github.io/collective-calc/) — split group expenses, no account, shareable as a link
 - [bigday](https://dennismit2n.github.io/bigday/) — pretty shareable countdown page
 
-Same order as the tiles on the page — hand-picked since 13 September 2026, no longer "newest last". Two further tiles sit at the end as placeholders, with no link and no mini tiles: there is nothing to open yet. Spectroton's interface is German only, which the tile and its guide both say out loud. Real_RAM_cooler and Besucher-Ticker are Windows downloads and fontART comes both ways — which is why the headline says "on your own device" and not "in your browser". fontART has three mini tiles instead of two: its main button opens the browser version, and "For Windows" leads to the release. create-masterprompt has three as well, its third one opening the one-page overview from `docs/` — in German or English, whichever the page is currently set to. create-masterprompt is the first entry that is neither a browser tool nor a Windows program: it is an Agent Skill that runs inside an AI chat, which is why its button leads to the repository and its meta line does not borrow the "no uploads" line of the others.
+Same order as the tiles on the page — hand-picked since 13 September 2026, no longer "newest last". Two further tiles sit at the end as placeholders, with no link and no mini tiles: there is nothing to open yet. Spectroton's interface is German only, which the tile and its guide both say out loud. Real_RAM_cooler and Besucher-Ticker are Windows downloads and fontART comes both ways — which is why neither the headline nor the tiles promise a browser tool. fontART has three mini tiles instead of two: its main button opens the browser version, and "For Windows" leads to the release. create-masterprompt has three as well, its third one opening the one-page overview from `docs/` — in German or English, whichever the page is currently set to. create-masterprompt is the first entry that is neither a browser tool nor a Windows program: it is an Agent Skill that runs inside an AI chat, which is why its button leads to the repository and its meta line does not borrow the "no uploads" line of the others.
 
 **fontART is the odd one out**, and the tile says so rather than hiding it: it is the only tool here that is neither open source nor meant to stay free. What this repository links to is the free trial; the full version is being worked on, with no date and no price settled. The reasoning is spelled out in the guide on `werkstatt.html`, because a workshop whose footer says "open source on GitHub" owes an explanation for the one exception.
 
@@ -33,7 +33,7 @@ That is why a tile is a `<div>` rather than a link: `.tool-open` is stretched ac
 
 Both come from hand-maintained data files, not from a feed: `js/news.js` and `js/guides.js`. **Only Real_RAM_cooler, fontART, Besucher-Ticker and create-masterprompt have real GitHub releases** — the browser tools carry no tags, so their entries are written by hand and dated by the commit they describe. A guide may carry one optional extra section (`full`, an array of paragraphs); so far only fontART uses it, to say what the trial leaves out and why there is a price tag at all. Guides are written for people who want to *use* the tool; the READMEs stay what they are, developer documents, and are linked from each section.
 
-The interface words exist in all 12 languages. The texts themselves are German and English; the other ten languages get the English version plus a notice in their own language saying so.
+The interface words exist in all 14 languages, and since 14 September 2026 so do the texts. Until then news and guides were German and English only, and every other language got the English version plus a notice saying so; that fallback and its notice are gone.
 
 *Analytics:* the page uses [GoatCounter](https://www.goatcounter.com) for anonymous, cookieless visit counting (disclosed in the footer). The script is vendored locally in `js/vendor/count.js`, so no third-party script runs here and no CDN is contacted; the only external request is the count pixel. Beyond page views, **each tile click is counted as its own event** (`kachel-ram`, `kachel-shrink`, …) so it is visible which tool people actually open. The links to the news and guides page are counted the same way (`werkstatt-ram-news`, `werkstatt-ram-anleitung`, `werkstatt-gesamt`, …) — without cookies, without an account, and without anything that identifies a visitor across visits.
 
@@ -61,7 +61,7 @@ deliberately has no suffix — it is third-party code and never changes.
 
 ## Translations
 
-The page speaks 12 languages (`js/i18n.js`). Some translations are machine-generated — corrections are very welcome!
+The page speaks 14 languages (`js/i18n.js`), and so do the news and guides (`js/news.js`, `js/guides.js`). Some translations are machine-generated — corrections are very welcome!
 
 ## License
 
