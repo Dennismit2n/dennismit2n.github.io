@@ -8,7 +8,7 @@ Startseite für die kleinen Werkzeuge von Dennis_mit_2n — ohne Anmeldung, kein
 
 ## Tools
 
-- [Spectroton](https://dennismit2n.github.io/spectroton/) — one colour in, eleven matching shades out, contrast-checked (German interface)
+- [Spectroton](https://dennismit2n.github.io/spectroton/) — one colour in, eleven matching shades out, contrast-checked
 - [create-masterprompt](https://github.com/Dennismit2n/create-masterprompt) — turns a vague project idea into a context package a fresh AI chat can run from (a skill, not a program)
 - [WiFi QR Card](https://dennismit2n.github.io/wifi-qr/) — create a WiFi QR code card, guests scan and connect
 - [Real_RAM_cooler](https://github.com/Dennismit2n/Real_RAM_cooler) — an honest RAM tool for Windows (download, not a browser tool)
@@ -21,7 +21,7 @@ Startseite für die kleinen Werkzeuge von Dennis_mit_2n — ohne Anmeldung, kein
 - [Collective-Calc](https://dennismit2n.github.io/collective-calc/) — split group expenses, no account, shareable as a link
 - [bigday](https://dennismit2n.github.io/bigday/) — pretty shareable countdown page
 
-Same order as the tiles on the page — hand-picked since 13 September 2026, no longer "newest last". Two further tiles sit at the end as placeholders, with no link and no mini tiles: there is nothing to open yet. Spectroton's interface is German only, which the tile and its guide both say out loud. Real_RAM_cooler and Besucher-Ticker are Windows downloads and fontART comes both ways — which is why neither the headline nor the tiles promise a browser tool. fontART has three mini tiles instead of two: its main button opens the browser version, and "For Windows" leads to the release. create-masterprompt has three as well, its third one opening the one-page overview from `docs/` — in German or English, whichever the page is currently set to. create-masterprompt is the first entry that is neither a browser tool nor a Windows program: it is an Agent Skill that runs inside an AI chat, which is why its button leads to the repository and its meta line does not borrow the "no uploads" line of the others.
+Same order as the tiles on the page — hand-picked since 13 September 2026, no longer "newest last". Two further tiles sit at the end as placeholders, with no link and no mini tiles: there is nothing to open yet. Real_RAM_cooler and Besucher-Ticker are Windows downloads and fontART comes both ways — which is why neither the headline nor the tiles promise a browser tool. fontART has three mini tiles instead of two: its main button opens the browser version, and "For Windows" leads to the release. create-masterprompt has three as well, its third one opening the one-page overview from `docs/` — in German or English, whichever the page is currently set to. create-masterprompt is the first entry that is neither a browser tool nor a Windows program: it is an Agent Skill that runs inside an AI chat, which is why its button leads to the repository and its meta line does not borrow the "no uploads" line of the others.
 
 **fontART is the odd one out**, and the tile says so rather than hiding it: it is the only tool here that is neither open source nor meant to stay free. What this repository links to is the free trial; the full version is being worked on, with no date and no price settled. The reasoning is spelled out in the guide on `werkstatt.html`, because a workshop whose footer says "open source on GitHub" owes an explanation for the one exception.
 
