@@ -895,98 +895,98 @@ var GUIDES = {
     },
     pitfalls: {
       de: [
-        'Die Oberfläche gibt es nur auf Deutsch — wie bei fontART Designer. Die übrigen Werkzeuge sprechen vierzehn Sprachen.',
+        'Die Oberfläche gibt es nur auf Deutsch — wie bei fontART Designer und beim Besucher-Ticker.',
         'Die Farbnamen kommen von api.color.pizza, einem fremden Dienst. Schon beim Öffnen fragt Spectroton dort nach dem Namen der aktuellen Farbe — dabei geht dieser Farbwert an den Dienst. Ohne Netz bleibt nur dieses eine Feld leer; alles andere rechnet weiter auf deinem Gerät.',
         'Nach dem ersten Besuch läuft Spectroton auch ohne Internet — die Farbnamen-Suche ausgenommen.',
         'Nicht jede Farbe lässt sich auf jedem Bildschirm zeigen. Statt hart abzuschneiden, weicht Spectroton auf den nächstmöglichen Ton aus und weist darauf hin, wenn eine Stufe Display-P3 braucht und auf einem sRGB-Schirm anders ankommt.',
         'Der Kontrastwert ist eine Rechnung, kein Freibrief: WCAG 2.2 und APCA bewerten dieselbe Paarung unterschiedlich, besonders bei hellem Text auf dunklem Grund. Wo es darauf ankommt, beide Maße ansehen und am Ende am echten Bildschirm prüfen.'
       ],
       en: [
-        'The interface is in German only — the same goes for fontART Designer. The other tools speak fourteen languages.',
+        'The interface is in German only — the same goes for fontART Designer and the Besucher-Ticker.',
         'The colour names come from api.color.pizza, someone else’s service. Spectroton asks it for the name of the current colour as soon as the page opens — that colour value goes to the service. Without a connection only this one field stays empty; everything else keeps computing on your device.',
         'After the first visit Spectroton also runs without an internet connection — except for the colour-name search.',
         'Not every colour can be shown on every screen. Instead of clipping hard, Spectroton falls back to the nearest possible tone and points out when a shade needs Display-P3 and will land differently on an sRGB screen.',
         'A contrast value is a calculation, not a permit: WCAG 2.2 and APCA judge the same pairing differently, especially for light text on a dark ground. Where it matters, look at both measures and check on a real screen in the end.'
       ],
       es: [
-        'La interfaz solo existe en alemán, igual que en fontART Designer. Las demás herramientas hablan catorce idiomas.',
+        'La interfaz solo existe en alemán, igual que en fontART Designer y en el Besucher-Ticker.',
         'Los nombres de color vienen de api.color.pizza, un servicio ajeno. Nada más abrir la página, Spectroton le pregunta el nombre del color actual, y con ello ese valor de color llega al servicio. Sin red solo se queda vacío ese único campo; todo lo demás sigue calculándose en tu dispositivo.',
         'Después de la primera visita, Spectroton funciona también sin internet, salvo la búsqueda de nombres de color.',
         'No todos los colores se pueden mostrar en todas las pantallas. En lugar de recortar bruscamente, Spectroton recurre al tono más cercano posible y avisa cuando un tono necesita Display-P3 y se ve distinto en una pantalla sRGB.',
         'El valor de contraste es un cálculo, no un salvoconducto: WCAG 2.2 y APCA juzgan la misma combinación de forma distinta, sobre todo con texto claro sobre fondo oscuro. Donde importe, mira las dos medidas y comprueba al final en una pantalla de verdad.'
       ],
       fr: [
-        'L’interface n’existe qu’en allemand — comme pour fontART Designer. Les autres outils parlent quatorze langues.',
+        'L’interface n’existe qu’en allemand — comme pour fontART Designer et pour le Besucher-Ticker.',
         'Les noms de couleurs viennent d’api.color.pizza, un service tiers. Dès l’ouverture, Spectroton lui demande le nom de la couleur actuelle — ce faisant, cette valeur de couleur est transmise au service. Sans réseau, seul ce champ-là reste vide ; tout le reste continue de se calculer sur votre appareil.',
         'Après la première visite, Spectroton fonctionne aussi sans Internet — la recherche de noms de couleurs exceptée.',
         'Toutes les couleurs ne peuvent pas être montrées sur tous les écrans. Plutôt que de couper net, Spectroton se rabat sur le ton le plus proche possible et signale quand une nuance a besoin de Display-P3 et s’affichera différemment sur un écran sRGB.',
         'La valeur de contraste est un calcul, pas un blanc-seing : WCAG 2.2 et APCA évaluent différemment la même paire, surtout pour du texte clair sur fond sombre. Là où cela compte, regardez les deux mesures et vérifiez à la fin sur un vrai écran.'
       ],
       it: [
-        'L’interfaccia esiste solo in tedesco, come per fontART Designer. Gli altri strumenti parlano quattordici lingue.',
+        'L’interfaccia esiste solo in tedesco, come per fontART Designer e per il Besucher-Ticker.',
         'I nomi dei colori arrivano da api.color.pizza, un servizio altrui. Già all’apertura Spectroton gli chiede il nome del colore corrente: così questo valore di colore va al servizio. Senza rete resta vuoto solo questo unico campo; tutto il resto continua a calcolare sul tuo dispositivo.',
         'Dopo la prima visita Spectroton funziona anche senza internet, eccetto la ricerca dei nomi dei colori.',
         'Non tutti i colori si possono mostrare su qualsiasi schermo. Invece di tagliare di netto, Spectroton ripiega sul tono più vicino possibile e segnala quando una tonalità ha bisogno di Display-P3 e su uno schermo sRGB appare diversa.',
         'Il valore di contrasto è un calcolo, non un lasciapassare: WCAG 2.2 e APCA valutano la stessa coppia in modo diverso, soprattutto con testo chiaro su fondo scuro. Dove la cosa conta, guarda entrambe le misure e alla fine verifica su uno schermo reale.'
       ],
       nl: [
-        'De interface is er alleen in het Duits — net als bij fontART Designer. De overige tools spreken veertien talen.',
+        'De interface is er alleen in het Duits — net als bij fontART Designer en bij de Besucher-Ticker.',
         'De kleurnamen komen van api.color.pizza, een dienst van iemand anders. Al bij het openen vraagt Spectroton daar naar de naam van de huidige kleur — daarbij gaat die kleurwaarde naar die dienst. Zonder verbinding blijft alleen dit ene veld leeg; al het andere blijft op je eigen apparaat rekenen.',
         'Na het eerste bezoek draait Spectroton ook zonder internet — het zoeken van kleurnamen uitgezonderd.',
         'Niet elke kleur is op elk scherm te tonen. In plaats van hard af te kappen wijkt Spectroton uit naar de dichtstbijzijnde mogelijke tint en geeft aan wanneer een tint Display-P3 nodig heeft en op een sRGB-scherm anders overkomt.',
         'De contrastwaarde is een berekening, geen vrijbrief: WCAG 2.2 en APCA beoordelen hetzelfde paar verschillend, vooral bij lichte tekst op een donkere ondergrond. Waar het erop aankomt, bekijk je beide maten en controleer je het uiteindelijk op een echt scherm.'
       ],
       pl: [
-        'Interfejs jest tylko po niemiecku — tak jak przy fontART Designer. Pozostałe narzędzia mówią czternastoma językami.',
+        'Interfejs jest tylko po niemiecku — tak jak przy fontART Designer i przy Besucher-Ticker.',
         'Nazwy kolorów pochodzą z api.color.pizza, zewnętrznej usługi. Już przy otwarciu Spectroton pyta ją o nazwę bieżącego koloru — przy tym ta wartość koloru trafia do tej usługi. Bez sieci puste zostaje tylko to jedno pole; cała reszta liczy dalej na twoim urządzeniu.',
         'Po pierwszej wizycie Spectroton działa też bez internetu — z wyjątkiem wyszukiwania nazw kolorów.',
         'Nie każdy kolor da się pokazać na każdym ekranie. Zamiast twardo obcinać, Spectroton przechodzi na najbliższy możliwy odcień i zwraca uwagę, gdy stopień potrzebuje Display-P3 i na ekranie sRGB wypadnie inaczej.',
         'Wartość kontrastu to rachunek, nie glejt: WCAG 2.2 i APCA oceniają tę samą parę różnie, zwłaszcza przy jasnym tekście na ciemnym tle. Tam, gdzie to ważne, popatrzeć na obie miary i na koniec sprawdzić na prawdziwym ekranie.'
       ],
       pt: [
-        'A interface só existe em alemão — tal como no fontART Designer. As restantes ferramentas falam catorze idiomas.',
+        'A interface só existe em alemão — tal como no fontART Designer e no Besucher-Ticker.',
         'Os nomes das cores vêm da api.color.pizza, um serviço alheio. Logo ao abrir, o Spectroton pergunta a esse serviço o nome da cor atual — e, nisso, esse valor de cor vai para o serviço. Sem rede, fica vazio só este campo; tudo o resto continua a ser calculado no seu dispositivo.',
         'Depois da primeira visita, o Spectroton funciona também sem Internet — com exceção da procura de nomes de cores.',
         'Nem toda a cor se consegue mostrar em todos os ecrãs. Em vez de cortar à bruta, o Spectroton recua para o tom mais próximo possível e avisa quando um tom precisa de Display-P3 e vai sair diferente num ecrã sRGB.',
         'O valor de contraste é uma conta, não um salvo-conduto: a WCAG 2.2 e a APCA avaliam o mesmo par de maneira diferente, sobretudo com texto claro sobre fundo escuro. Onde isso for importante, olhe para as duas medidas e verifique no fim num ecrã a sério.'
       ],
       tr: [
-        'Arayüz yalnızca Almancadır — fontART Designer’da olduğu gibi. Diğer araçlar on dört dil konuşur.',
+        'Arayüz yalnızca Almancadır — fontART Designer’da ve Besucher-Ticker’da olduğu gibi.',
         'Renk adları, başka birinin hizmeti olan api.color.pizza’dan gelir. Spectroton daha sayfa açılır açılmaz oraya geçerli rengin adını sorar — bu sırada bu renk değeri hizmete gider. Ağ bağlantısı yokken yalnızca bu tek alan boş kalır; geri kalan her şey cihazınızda hesaplanmayı sürdürür.',
         'İlk ziyaretten sonra Spectroton internet olmadan da çalışır — renk adı araması bunun dışındadır.',
         'Her renk her ekranda gösterilemez. Spectroton sert biçimde kırpmak yerine en yakın olası tona kayar ve bir tonun Display-P3 gerektirdiğini, bir sRGB ekranda farklı görüneceğini belirtir.',
         'Kontrast değeri bir hesaptır, izin belgesi değil: WCAG 2.2 ile APCA aynı eşleşmeyi farklı değerlendirir, özellikle koyu zemin üzerindeki açık metinde. Önemli olduğu yerde iki ölçüye de bakın ve sonunda gerçek ekranda kontrol edin.'
       ],
       ru: [
-        'Интерфейс есть только на немецком — как у fontART Designer. Остальные инструменты говорят на четырнадцати языках.',
+        'Интерфейс есть только на немецком — как у fontART Designer и у Besucher-Ticker.',
         'Названия цветов приходят с api.color.pizza, стороннего сервиса. Уже при открытии Spectroton спрашивает там название текущего цвета — при этом значение цвета уходит к сервису. Без сети пустым остаётся только это одно поле; всё остальное продолжает считаться на вашем устройстве.',
         'После первого посещения Spectroton работает и без интернета — за исключением поиска названий цветов.',
         'Не всякий цвет можно показать на любом экране. Вместо резкого отсечения Spectroton переходит к ближайшему возможному оттенку и указывает, когда ступени нужен Display-P3 и на sRGB-экране она выглядит иначе.',
         'Значение контраста — это расчёт, а не индульгенция: WCAG 2.2 и APCA оценивают одну и ту же пару по-разному, особенно при светлом тексте на тёмном фоне. Где это важно, смотрите оба показателя и в конце проверяйте на настоящем экране.'
       ],
       hi: [
-        'इंटरफ़ेस केवल जर्मन में है — fontART Designer की तरह। बाक़ी औज़ार चौदह भाषाएँ बोलते हैं।',
+        'इंटरफ़ेस केवल जर्मन में है — fontART Designer और Besucher-Ticker की तरह।',
         'रंगों के नाम api.color.pizza से आते हैं, जो किसी और की सेवा है। पेज खुलते ही Spectroton वहाँ मौजूदा रंग का नाम पूछ लेता है — इसमें यह रंग मान उस सेवा तक जाता है। इंटरनेट के बिना केवल यही एक फ़ील्ड खाली रहता है; बाक़ी सबकी गणना आपके डिवाइस पर ही होती रहती है।',
         'पहली बार आने के बाद Spectroton बिना इंटरनेट के भी चलता है — रंगों के नाम की खोज को छोड़कर।',
         'हर रंग हर स्क्रीन पर दिखाया नहीं जा सकता। कठोरता से काट देने के बजाय Spectroton निकटतम संभव शेड पर चला जाता है और बता देता है कि कब किसी सीढ़ी को Display-P3 चाहिए और वह sRGB स्क्रीन पर अलग दिखेगी।',
         'कंट्रास्ट मान एक गणना है, छूट का परवाना नहीं: WCAG 2.2 और APCA एक ही जोड़ी को अलग-अलग आँकते हैं, ख़ासकर गहरी पृष्ठभूमि पर हल्के पाठ के मामले में। जहाँ यह मायने रखता हो, वहाँ दोनों पैमाने देखें और अंत में असली स्क्रीन पर जाँचें।'
       ],
       zh: [
-        '界面只有德语——和 fontART Designer 一样。其余的工具都会十四种语言。',
+        '界面只有德语——和 fontART Designer、Besucher-Ticker 一样。',
         '颜色名称来自 api.color.pizza，一个别人的服务。页面一打开，Spectroton 就会向它询问当前颜色的名字——这个颜色值因此会发给该服务。没有网络时只有这一个字段是空的；其余一切照旧在你的设备上计算。',
         '第一次访问之后，Spectroton 没有互联网也能运行——颜色名称搜索除外。',
         '不是每种颜色都能在每块屏幕上显示出来。Spectroton 不会硬生生截断，而是退到最接近的色调，并在某一级需要 Display-P3、在 sRGB 屏幕上会呈现得不一样时给出提示。',
         '对比度数值是一次计算，不是通行证：WCAG 2.2 和 APCA 对同一组搭配的评判并不相同，尤其是深色背景上的浅色文字。要紧的地方就两个标准都看一眼，最后再到真实屏幕上确认。'
       ],
       ja: [
-        '画面はドイツ語だけです — fontART Designer と同じです。ほかの道具は14言語を話します。',
+        '画面はドイツ語だけです — fontART Designer と Besucher-Ticker も同じです。',
         '色名は api.color.pizza という他社のサービスから来ています。ページを開いた時点で、Spectroton は現在の色の名前をそこに尋ねます — そのとき、この色の値がサービスに渡ります。ネットにつながっていないと、この欄だけが空のままになります。それ以外はすべて端末の中で計算され続けます。',
         '最初の訪問のあとは、Spectroton はインターネットなしでも動きます — 色名の検索だけは別です。',
         'どの色もどの画面で出せるわけではありません。Spectroton は乱暴に切り捨てるのではなく、出せるいちばん近い色に寄せ、ある段階が Display-P3 を必要としていて sRGB の画面では違って見えることを知らせます。',
         'コントラスト値は計算であって、お墨付きではありません: WCAG 2.2 と APCA は同じ組み合わせを違うふうに評価します。とくに暗い背景に明るい文字の場合はそうです。大事なところでは両方の尺度を見て、最後は実際の画面で確かめてください。'
       ],
       ko: [
-        '화면은 독일어로만 제공됩니다 — fontART Designer와 마찬가지입니다. 나머지 도구들은 열네 개 언어를 씁니다.',
+        '화면은 독일어로만 제공됩니다 — fontART Designer와 Besucher-Ticker도 마찬가지입니다.',
         '색 이름은 외부 서비스인 api.color.pizza에서 옵니다. Spectroton은 페이지를 열자마자 현재 색의 이름을 그곳에 묻습니다 — 그때 이 색 값이 그 서비스로 갑니다. 네트워크가 없으면 이 칸 하나만 비어 있고, 나머지는 모두 기기에서 계속 계산됩니다.',
         '첫 방문 뒤에는 Spectroton도 인터넷 없이 돌아갑니다 — 색 이름 검색은 예외입니다.',
         '모든 색을 모든 화면에서 보여 줄 수 있는 것은 아닙니다. Spectroton은 딱 잘라 버리는 대신 가장 가까운 색조로 비켜 가고, 어떤 단계가 Display-P3를 필요로 해서 sRGB 화면에서는 다르게 보인다는 점을 알려 줍니다.',
