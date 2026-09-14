@@ -7,8 +7,9 @@
  * (werkstatt.html#fontart) — that anchor is this section's id, so it only
  * exists as long as fontart stays in the list below.
  *
- * Rebuilt on every language change — date notation, text language and the
- * notice for the ten languages without their own texts all depend on it.
+ * Rebuilt on every language change — date notation and text language both
+ * depend on it. Since 14.09.2026 every offered language has its own texts,
+ * so there is no longer a fallback to English and no notice about one.
  */
 'use strict';
 
@@ -44,13 +45,8 @@
       url: 'https://dennismit2n.github.io/bigday/', ctaKey: 'openTool' }
   ];
 
-  // Texts exist in German and English; every other language gets the English
-  // version plus a notice in its own language.
-  var TEXT_LANGS = { de: true, en: true };
-
   var navList = document.getElementById('wkNavList');
   var content = document.getElementById('wkContent');
-  var notice = document.getElementById('wkLangNotice');
 
   function el(tag, className, text) {
     var node = document.createElement(tag);
@@ -87,7 +83,7 @@
     return link;
   }
 
-  function buildGuide(tool, textLang, target) {
+  function buildGuide(tool, lang, target) {
     var guide = GUIDES[tool.key];
     if (!guide) { return; }
 
@@ -96,31 +92,31 @@
     target.appendChild(heading);
 
     target.appendChild(el('h4', 'wk-sub', i18n.t('guidePurpose')));
-    target.appendChild(el('p', 'wk-text', guide.purpose[textLang]));
+    target.appendChild(el('p', 'wk-text', guide.purpose[lang]));
 
     // Optional, and so far only fontART has it: the tool whose full version is
     // meant to cost money needs room to say what the trial leaves out and why
     // there is a price tag at all. Several paragraphs, hence an array.
     if (guide.full) {
       target.appendChild(el('h4', 'wk-sub', i18n.t('guideFull')));
-      for (var p = 0; p < guide.full[textLang].length; p++) {
-        target.appendChild(el('p', 'wk-text', guide.full[textLang][p]));
+      for (var p = 0; p < guide.full[lang].length; p++) {
+        target.appendChild(el('p', 'wk-text', guide.full[lang][p]));
       }
     }
 
     target.appendChild(el('h4', 'wk-sub', i18n.t('guideSteps')));
-    target.appendChild(list('ol', 'wk-steps', guide.steps[textLang]));
+    target.appendChild(list('ol', 'wk-steps', guide.steps[lang]));
 
     target.appendChild(el('h4', 'wk-sub', i18n.t('guideTrouble')));
-    target.appendChild(list('ul', 'wk-pitfalls', guide.pitfalls[textLang]));
+    target.appendChild(list('ul', 'wk-pitfalls', guide.pitfalls[lang]));
 
     var docs = el('p', 'wk-docs');
-    docs.appendChild(externalLink(i18n.t('guideDocs'), guide.docs[textLang],
+    docs.appendChild(externalLink(i18n.t('guideDocs'), guide.docs[lang],
       'werkstatt-' + tool.key + '-readme'));
     target.appendChild(docs);
   }
 
-  function buildNews(tool, textLang, lang, target) {
+  function buildNews(tool, lang, target) {
     var entries = NEWS[tool.key] || [];
 
     var heading = el('h3', 'wk-section', i18n.t('secNews'));
@@ -141,7 +137,7 @@
       }
       item.appendChild(meta);
 
-      item.appendChild(el('p', 'wk-text', entry[textLang]));
+      item.appendChild(el('p', 'wk-text', entry[lang]));
 
       if (entry.link) {
         var release = el('p', 'wk-docs');
@@ -155,9 +151,6 @@
   }
 
   function build(lang) {
-    var textLang = TEXT_LANGS[lang] ? lang : 'en';
-    notice.hidden = !!TEXT_LANGS[lang];
-
     navList.textContent = '';
     content.textContent = '';
 
@@ -194,8 +187,8 @@
       section.appendChild(head);
 
       var body = el('div', 'wk-body');
-      buildGuide(tool, textLang, body);
-      buildNews(tool, textLang, lang, body);
+      buildGuide(tool, lang, body);
+      buildNews(tool, lang, body);
       section.appendChild(body);
 
       content.appendChild(section);

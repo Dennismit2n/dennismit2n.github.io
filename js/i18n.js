@@ -64,7 +64,6 @@ var I18N = {
     guideTrouble: 'Wenn etwas klemmt',
     guideDocs: 'Technische Einzelheiten und Quelltext auf GitHub',
     viewRelease: 'Release ansehen',
-    langNotice: 'Diese Texte gibt es bisher nur auf Deutsch und Englisch.',
     backHome: 'Zurück zur Startseite'
   },
   en: {
@@ -125,7 +124,6 @@ var I18N = {
     guideTrouble: 'If something goes wrong',
     guideDocs: 'Technical details and source code on GitHub',
     viewRelease: 'View release',
-    langNotice: 'These texts are only available in German and English so far.',
     backHome: 'Back to the start page'
   },
   es: {
@@ -186,7 +184,6 @@ var I18N = {
     guideTrouble: 'Si algo falla',
     guideDocs: 'Detalles técnicos y código fuente en GitHub',
     viewRelease: 'Ver la versión',
-    langNotice: 'Por ahora estos textos solo están en alemán e inglés.',
     backHome: 'Volver al inicio'
   },
   fr: {
@@ -247,7 +244,6 @@ var I18N = {
     guideTrouble: 'Si quelque chose coince',
     guideDocs: 'Détails techniques et code source sur GitHub',
     viewRelease: 'Voir la version',
-    langNotice: 'Ces textes ne sont pour l’instant disponibles qu’en allemand et en anglais.',
     backHome: 'Retour à l’accueil'
   },
   it: {
@@ -308,7 +304,6 @@ var I18N = {
     guideTrouble: 'Se qualcosa non va',
     guideDocs: 'Dettagli tecnici e codice sorgente su GitHub',
     viewRelease: 'Vedi la versione',
-    langNotice: 'Per ora questi testi esistono solo in tedesco e inglese.',
     backHome: 'Torna alla pagina iniziale'
   },
   nl: {
@@ -369,7 +364,6 @@ var I18N = {
     guideTrouble: 'Als er iets hapert',
     guideDocs: 'Technische details en broncode op GitHub',
     viewRelease: 'Release bekijken',
-    langNotice: 'Deze teksten zijn er voorlopig alleen in het Duits en het Engels.',
     backHome: 'Terug naar de startpagina'
   },
   pl: {
@@ -430,7 +424,6 @@ var I18N = {
     guideTrouble: 'Gdy coś się zacina',
     guideDocs: 'Szczegóły techniczne i kod źródłowy na GitHubie',
     viewRelease: 'Zobacz wydanie',
-    langNotice: 'Te teksty są na razie dostępne tylko po niemiecku i angielsku.',
     backHome: 'Powrót na stronę główną'
   },
   pt: {
@@ -491,7 +484,6 @@ var I18N = {
     guideTrouble: 'Se algo não funcionar',
     guideDocs: 'Detalhes técnicos e código-fonte no GitHub',
     viewRelease: 'Ver a versão',
-    langNotice: 'Por enquanto, estes textos só existem em alemão e inglês.',
     backHome: 'Voltar ao início'
   },
   tr: {
@@ -552,7 +544,6 @@ var I18N = {
     guideTrouble: 'Bir şey takılırsa',
     guideDocs: 'Teknik ayrıntılar ve kaynak kodu GitHub’da',
     viewRelease: 'Sürümü görüntüle',
-    langNotice: 'Bu metinler şimdilik yalnızca Almanca ve İngilizce mevcut.',
     backHome: 'Başlangıç sayfasına dön'
   },
   ru: {
@@ -613,7 +604,6 @@ var I18N = {
     guideTrouble: 'Если что-то не работает',
     guideDocs: 'Технические подробности и исходный код на GitHub',
     viewRelease: 'Посмотреть выпуск',
-    langNotice: 'Пока эти тексты есть только на немецком и английском.',
     backHome: 'Вернуться на главную'
   },
   hi: {
@@ -674,7 +664,6 @@ var I18N = {
     guideTrouble: 'अगर कुछ अटक जाए',
     guideDocs: 'तकनीकी जानकारी और सोर्स कोड GitHub पर',
     viewRelease: 'रिलीज़ देखें',
-    langNotice: 'ये पाठ फ़िलहाल केवल जर्मन और अंग्रेज़ी में हैं।',
     backHome: 'शुरुआती पेज पर लौटें'
   },
   zh: {
@@ -735,7 +724,6 @@ var I18N = {
     guideTrouble: '如果卡住了',
     guideDocs: '技术细节和源代码在 GitHub',
     viewRelease: '查看发布版本',
-    langNotice: '这些文字目前只有德语和英语。',
     backHome: '返回首页'
   },
   ja: {
@@ -796,7 +784,6 @@ var I18N = {
     guideTrouble: 'うまくいかないとき',
     guideDocs: '技術的な詳細とソースコードは GitHub に',
     viewRelease: 'リリースを見る',
-    langNotice: 'これらの文章は今のところドイツ語と英語のみです。',
     backHome: 'トップページに戻る'
   },
   ko: {
@@ -857,7 +844,6 @@ var I18N = {
     guideTrouble: '잘 안 될 때',
     guideDocs: '기술적인 세부 사항과 소스 코드는 GitHub에',
     viewRelease: '릴리스 보기',
-    langNotice: '이 글들은 아직 독일어와 영어로만 제공됩니다.',
     backHome: '시작 페이지로 돌아가기'
   }
 };

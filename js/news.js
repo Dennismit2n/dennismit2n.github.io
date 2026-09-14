@@ -10,8 +10,9 @@
  * be backed by a real commit or release, and the date is that of the change —
  * not of writing it down.
  *
- * Newest first per tool. Fields: date (ISO), de, en; optionally version and
- * link — Real_RAM_cooler, fontART, Besucher-Ticker and create-masterprompt
+ * Newest first per tool. Fields: date (ISO) and one per language — de en es fr
+ * it nl pl pt tr ru hi zh ja ko, same order as in i18n.js; optionally version
+ * and link — Real_RAM_cooler, fontART, Besucher-Ticker and create-masterprompt
  * have real GitHub releases; the browser tools carry no tags.
  */
 'use strict';
@@ -23,68 +24,251 @@ var NEWS = {
       version: 'v1.2',
       link: 'https://github.com/Dennismit2n/Real_RAM_cooler/releases/tag/v1.2',
       de: 'Die App spricht jetzt Deutsch und Englisch. Sie startet in der Sprache von Windows und lässt sich in den Einstellungen umstellen; der Wechsel greift nach einem Neustart der App. Auch der Installer führt durch beide Sprachen. Behoben: Das Häkchen „Jetzt starten“ am Ende des Setups schlug fehl.',
-      en: 'The app now speaks German and English. It starts in your Windows language and can be switched in the settings; the change takes effect after you restart the app. The installer is bilingual too. Fixed: the “launch now” checkbox at the end of setup used to fail.'
+      en: 'The app now speaks German and English. It starts in your Windows language and can be switched in the settings; the change takes effect after you restart the app. The installer is bilingual too. Fixed: the “launch now” checkbox at the end of setup used to fail.',
+      es: 'La aplicación ahora habla alemán e inglés. Arranca en el idioma de Windows y se puede cambiar en los ajustes; el cambio surte efecto tras reiniciar la aplicación. El instalador también guía en ambos idiomas. Corregido: la casilla «Iniciar ahora» al final de la instalación fallaba.',
+      fr: 'L’application parle désormais allemand et anglais. Elle démarre dans la langue de Windows, et la langue se change dans les paramètres ; le changement prend effet après un redémarrage de l’application. Le programme d’installation est lui aussi bilingue. Corrigé : la case « Démarrer maintenant » à la fin de l’installation échouait.',
+      it: 'L’app ora parla tedesco e inglese. Parte nella lingua di Windows e la puoi cambiare nelle impostazioni; il cambio ha effetto dopo un riavvio dell’app. Anche l’installer guida in entrambe le lingue. Risolto: la casella «Avvia ora» alla fine dell’installazione non funzionava.',
+      nl: 'De app spreekt nu Duits en Engels. Hij start in de taal van Windows en je kunt hem in de instellingen omzetten; de wisseling werkt pas nadat je de app opnieuw start. Ook het installatieprogramma leidt je door beide talen. Opgelost: het vinkje “Nu starten” aan het eind van de setup mislukte.',
+      pl: 'Aplikacja mówi teraz po niemiecku i angielsku. Uruchamia się w języku systemu Windows i daje się przestawić w ustawieniach; zmiana działa po ponownym uruchomieniu aplikacji. Instalator również jest dostępny w obu językach. Naprawione: pole wyboru „Uruchom teraz” na końcu instalacji nie działało.',
+      pt: 'A aplicação fala agora alemão e inglês. Arranca no idioma do Windows e pode ser mudada nas definições; a mudança só faz efeito depois de reiniciar a aplicação. Também o instalador está disponível nos dois idiomas. Corrigido: a opção «Iniciar agora» no fim da instalação falhava.',
+      tr: 'Uygulama artık Almanca ve İngilizce konuşuyor. Windows’un dilinde açılıyor ve ayarlardan değiştirilebiliyor; değişiklik, uygulama yeniden başlatıldıktan sonra geçerli oluyor. Kurulum sihirbazı da her iki dilde ilerliyor. Düzeltildi: Kurulumun sonundaki “Şimdi başlat” onay kutusu çalışmıyordu.',
+      ru: 'Программа теперь говорит по-немецки и по-английски. Она запускается на языке Windows, а переключить язык можно в настройках; смена вступает в силу после перезапуска программы. Установщик тоже доступен на обоих языках. Исправлено: галочка «Запустить сейчас» в конце установки не срабатывала.',
+      hi: 'ऐप अब जर्मन और अंग्रेज़ी बोलती है। यह Windows की भाषा में शुरू होती है और सेटिंग्स में बदली जा सकती है; बदलाव ऐप को दोबारा शुरू करने के बाद लागू होता है। इंस्टॉलर भी दोनों भाषाओं में चलता है। ठीक किया गया: सेटअप के अंत में “अभी शुरू करें” का चेकबॉक्स काम नहीं करता था।',
+      zh: '应用现在支持德语和英语。它按 Windows 的语言启动，也可以在设置里切换；切换在应用重启之后生效。安装程序本身也提供这两种语言。已修复：安装结束时的“立即启动”勾选项此前无法工作。',
+      ja: 'アプリがドイツ語と英語を話すようになりました。起動時は Windows の言語に合わせ、設定で切り替えられます。切り替えはアプリを再起動すると反映されます。インストーラーも両方の言語で進められます。修正: セットアップの最後にある「今すぐ起動」のチェックが失敗していました。',
+      ko: '이제 앱이 독일어와 영어를 지원합니다. Windows의 언어로 시작하며 설정에서 바꿀 수 있습니다. 변경은 앱을 다시 시작한 뒤에 적용됩니다. 설치 프로그램도 두 언어로 안내합니다. 수정: 설치 마지막에 있는 “지금 시작” 체크 상자가 작동하지 않던 문제를 고쳤습니다.'
     },
     {
       date: '2026-07-28',
       version: 'v1.1',
       link: 'https://github.com/Dennismit2n/Real_RAM_cooler/releases/tag/v1.1',
       de: 'Erste Veröffentlichung. Installer für Windows 10/11 mit dem dreifarbigen RAM-Balken, der Top-12-Liste der Speicherfresser und dem Placebo-Knopf, der ehrlich beschriftet ist.',
-      en: 'First release. An installer for Windows 10/11 with the three-colour RAM bar, the top-12 list of memory hogs, and the placebo button that honestly says what it is.'
+      en: 'First release. An installer for Windows 10/11 with the three-colour RAM bar, the top-12 list of memory hogs, and the placebo button that honestly says what it is.',
+      es: 'Primera publicación. Instalador para Windows 10/11 con la barra de RAM de tres colores, la lista de los doce mayores devoradores de memoria y el botón placebo, que está etiquetado con honestidad.',
+      fr: 'Première publication. Programme d’installation pour Windows 10/11, avec la barre de RAM tricolore, le classement des douze plus gros dévoreurs de mémoire et le bouton placebo, honnêtement étiqueté.',
+      it: 'Prima pubblicazione. Installer per Windows 10/11 con la barra della RAM a tre colori, la classifica dei dodici maggiori divoratori di memoria e il pulsante placebo, etichettato onestamente.',
+      nl: 'Eerste release. Installatieprogramma voor Windows 10/11 met de driekleurige RAM-balk, de top 12 van geheugenvreters en de placeboknop, die eerlijk gelabeld is.',
+      pl: 'Pierwsze wydanie. Instalator dla Windows 10/11 z trójkolorowym paskiem RAM, listą dwunastu największych pożeraczy pamięci i przyciskiem placebo, który jest uczciwie opisany.',
+      pt: 'Primeira publicação. Instalador para Windows 10/11 com a barra de RAM de três cores, a lista dos 12 maiores consumidores de memória e o botão placebo, que está identificado com honestidade.',
+      tr: 'İlk yayın. Windows 10/11 için kurulum dosyası: üç renkli RAM çubuğu, en çok bellek tüketen ilk 12’nin listesi ve üzerinde ne olduğu dürüstçe yazan plasebo düğmesiyle.',
+      ru: 'Первый выпуск. Установщик для Windows 10/11 с трёхцветной полосой оперативной памяти, списком из двенадцати главных пожирателей памяти и кнопкой-плацебо, которая честно подписана.',
+      hi: 'पहला रिलीज़। Windows 10/11 के लिए इंस्टॉलर — तीन रंगों वाली RAM पट्टी, सबसे ज़्यादा मेमोरी खाने वाले 12 प्रोग्रामों की सूची, और वह प्लेसीबो बटन जिस पर ईमानदारी से लिखा है कि वह क्या है।',
+      zh: '首个版本。面向 Windows 10/11 的安装程序，带三色内存占用条、吃内存最多的前 12 名列表，以及那个老实标明自己是什么的安慰剂按钮。',
+      ja: '最初の公開です。Windows 10/11 向けのインストーラーで、3色の RAM バー、メモリを食っているプロセスの上位12件、そして正直にそう書いてあるプラセボボタンが入っています。',
+      ko: '첫 공개. Windows 10/11용 설치 프로그램으로, 세 가지 색의 RAM 막대, 메모리를 가장 많이 쓰는 상위 12개 목록, 그리고 정직하게 이름 붙인 플라시보 버튼이 들어 있습니다.'
     }
   ],
 
   shrink: [
     {
+      date: '2026-09-14',
+      de: 'Niederländisch und Polnisch sind dazugekommen — jetzt vierzehn Sprachen.',
+      en: 'Dutch and Polish were added — fourteen languages now.',
+      es: 'Se han añadido el neerlandés y el polaco: ahora son catorce idiomas.',
+      fr: 'Le néerlandais et le polonais sont arrivés — quatorze langues désormais.',
+      it: 'Sono stati aggiunti l’olandese e il polacco: ora sono quattordici lingue.',
+      nl: 'Nederlands en Pools zijn erbij gekomen — nu veertien talen.',
+      pl: 'Doszły niderlandzki i polski — teraz czternaście języków.',
+      pt: 'Juntaram-se o neerlandês e o polaco — agora são catorze idiomas.',
+      tr: 'Felemenkçe ve Lehçe eklendi — artık on dört dil.',
+      ru: 'Добавились нидерландский и польский — теперь четырнадцать языков.',
+      hi: 'डच और पोलिश जुड़ गई हैं — अब चौदह भाषाएँ।',
+      zh: '新增了荷兰语和波兰语——现在是十四种语言。',
+      ja: 'オランダ語とポーランド語が加わりました — これで14言語です。',
+      ko: '네덜란드어와 폴란드어가 추가되었습니다 — 이제 열네 개 언어입니다.'
+    },
+    {
       date: '2026-07-28',
       de: 'Darstellung wählbar: System, Hell oder Dunkel. Die Wahl wird gemerkt und greift, bevor die Seite zum ersten Mal gezeichnet wird — kein weißes Aufblitzen mehr.',
-      en: 'Appearance is now a choice: system, light or dark. The choice is remembered and applied before the page is first drawn — no more white flash.'
+      en: 'Appearance is now a choice: system, light or dark. The choice is remembered and applied before the page is first drawn — no more white flash.',
+      es: 'Apariencia a elegir: sistema, claro u oscuro. La elección se recuerda y se aplica antes de que la página se dibuje por primera vez: se acabó el parpadeo en blanco.',
+      fr: 'Apparence au choix : système, clair ou sombre. Le choix est mémorisé et s’applique avant le premier affichage de la page — plus de flash blanc.',
+      it: 'Aspetto a scelta: sistema, chiaro o scuro. La scelta viene ricordata e applicata prima che la pagina sia disegnata la prima volta: niente più flash bianco.',
+      nl: 'Weergave naar keuze: systeem, licht of donker. De keuze wordt onthouden en werkt al voordat de pagina voor het eerst wordt opgebouwd — geen witte flits meer.',
+      pl: 'Wygląd do wyboru: systemowy, jasny lub ciemny. Wybór zostaje zapamiętany i działa, zanim strona zostanie narysowana po raz pierwszy — koniec z białym mignięciem.',
+      pt: 'Aparência à escolha: Sistema, Claro ou Escuro. A escolha fica guardada e é aplicada antes de a página ser desenhada pela primeira vez — acabou o clarão branco.',
+      tr: 'Görünüm artık seçilebiliyor: Sistem, Açık veya Koyu. Seçim hatırlanıyor ve sayfa ilk kez çizilmeden önce uygulanıyor — beyaz parlama yok.',
+      ru: 'Оформление на выбор: системное, светлое или тёмное. Выбор запоминается и применяется ещё до того, как страница отрисуется в первый раз, — белых вспышек больше нет.',
+      hi: 'अब थीम चुनी जा सकती है: सिस्टम, हल्की या गहरी। चुनाव याद रखा जाता है और पेज के पहली बार बनने से पहले ही लागू हो जाता है — अब सफ़ेद चमक नहीं दिखती।',
+      zh: '外观可选：跟随系统、浅色或深色。选择会被记住，并在页面第一次绘制之前就生效——不再有白色闪屏。',
+      ja: '外観を選べるようになりました: システム、ライト、ダーク。選んだ設定は記憶され、ページが最初に描画される前に適用されます — 白い画面がちらつくことはもうありません。',
+      ko: '테마를 고를 수 있습니다: 시스템, 라이트, 다크. 선택은 기억되며 페이지가 처음 그려지기 전에 적용됩니다 — 흰 화면이 번쩍이는 일이 더는 없습니다.'
     },
     {
       date: '2026-07-28',
       de: 'Portugiesisch, Russisch und Koreanisch sind dazugekommen. Damit sind es zwölf Sprachen — Fehlermeldungen und Zahlenformate wechseln mit.',
-      en: 'Portuguese, Russian and Korean were added. That makes twelve languages — error messages and number formats switch along with them.'
+      en: 'Portuguese, Russian and Korean were added. That makes twelve languages — error messages and number formats switch along with them.',
+      es: 'Se han añadido el portugués, el ruso y el coreano. Con eso son doce idiomas: los mensajes de error y los formatos numéricos cambian con ellos.',
+      fr: 'Le portugais, le russe et le coréen sont arrivés. Cela fait douze langues — les messages d’erreur et les formats de nombres suivent.',
+      it: 'Sono stati aggiunti il portoghese, il russo e il coreano. Fanno dodici lingue in tutto: con loro cambiano anche i messaggi di errore e i formati dei numeri.',
+      nl: 'Portugees, Russisch en Koreaans zijn erbij gekomen. Daarmee zijn het twaalf talen — foutmeldingen en getalnotaties wisselen mee.',
+      pl: 'Doszły portugalski, rosyjski i koreański. Razem daje to dwanaście języków — komunikaty o błędach i formaty liczb przełączają się razem z nimi.',
+      pt: 'Juntaram-se o português, o russo e o coreano. Ficam assim doze idiomas — as mensagens de erro e os formatos numéricos mudam com eles.',
+      tr: 'Portekizce, Rusça ve Korece eklendi. Böylece on iki dil oldu — hata iletileri ve sayı biçimleri de birlikte değişiyor.',
+      ru: 'Добавились португальский, русский и корейский. Теперь двенадцать языков — сообщения об ошибках и форматы чисел переключаются вместе с ними.',
+      hi: 'पुर्तगाली, रूसी और कोरियाई जुड़ गई हैं। इससे कुल बारह भाषाएँ हो गईं — त्रुटि संदेश और संख्याओं के प्रारूप भी साथ बदलते हैं।',
+      zh: '新增了葡萄牙语、俄语和韩语。这样一共十二种语言——错误提示和数字格式也跟着一起切换。',
+      ja: 'ポルトガル語、ロシア語、韓国語が加わりました。これで12言語です — エラーメッセージと数値の書式も一緒に切り替わります。',
+      ko: '포르투갈어, 러시아어, 한국어가 추가되었습니다. 이로써 열두 개 언어가 되었습니다 — 오류 메시지와 숫자 형식도 함께 바뀝니다.'
     },
     {
       date: '2026-07-26',
       de: 'Neuer Knopf „Aus Zwischenablage einfügen“: Ein Bildschirmfoto landet ohne Umweg über eine Datei in der App. Der Knopf erscheint nur, wo der Browser das Lesen der Zwischenablage zulässt; Strg+V funktioniert überall.',
-      en: 'New “paste from clipboard” button: a screenshot goes straight into the app without saving a file first. The button only appears where the browser allows reading the clipboard; Ctrl+V works everywhere.'
+      en: 'New “paste from clipboard” button: a screenshot goes straight into the app without saving a file first. The button only appears where the browser allows reading the clipboard; Ctrl+V works everywhere.',
+      es: 'Nuevo botón «Pegar desde el portapapeles»: una captura de pantalla llega a la aplicación sin dar el rodeo de guardarla como archivo. El botón solo aparece donde el navegador permite leer el portapapeles; Ctrl+V funciona en todas partes.',
+      fr: 'Nouveau bouton « Coller depuis le presse-papiers » : une capture d’écran arrive dans l’application sans passer par un fichier. Le bouton n’apparaît que là où le navigateur autorise la lecture du presse-papiers ; Ctrl+V fonctionne partout.',
+      it: 'Nuovo pulsante «Incolla dagli appunti»: uno screenshot finisce nell’app senza passare da un file. Il pulsante compare solo dove il browser consente la lettura degli appunti; Ctrl+V funziona ovunque.',
+      nl: 'Nieuwe knop “Plakken uit klembord”: een schermafbeelding komt zonder omweg via een bestand in de app terecht. De knop verschijnt alleen waar de browser het lezen van het klembord toestaat; Ctrl+V werkt overal.',
+      pl: 'Nowy przycisk „Wklej ze schowka”: zrzut ekranu trafia do aplikacji bez okrężnej drogi przez plik. Przycisk pojawia się tylko tam, gdzie przeglądarka pozwala odczytać schowek; Ctrl+V działa wszędzie.',
+      pt: 'Novo botão «Colar da área de transferência»: uma captura de ecrã entra na aplicação sem ter de passar por um ficheiro. O botão só aparece onde o navegador permite ler a área de transferência; Ctrl+V funciona em todo o lado.',
+      tr: 'Yeni düğme “Panodan yapıştır”: Ekran görüntüsü, önce dosya olarak kaydedilmeden doğrudan uygulamaya giriyor. Düğme yalnızca tarayıcının panoyu okumaya izin verdiği yerlerde görünüyor; Ctrl+V her yerde çalışıyor.',
+      ru: 'Новая кнопка «Вставить из буфера обмена»: снимок экрана попадает в приложение напрямую, без промежуточного файла. Кнопка появляется только там, где браузер разрешает читать буфер обмена; Ctrl+V работает везде.',
+      hi: 'नया बटन “क्लिपबोर्ड से चिपकाएँ”: स्क्रीनशॉट पहले किसी फ़ाइल में सहेजे बिना सीधे ऐप में आ जाता है। यह बटन केवल वहीं दिखता है जहाँ ब्राउज़र क्लिपबोर्ड पढ़ने देता है; Ctrl+V हर जगह काम करता है।',
+      zh: '新增“从剪贴板粘贴”按钮：截图不必先存成文件就能进入应用。这个按钮只在浏览器允许读取剪贴板的地方出现；Ctrl+V 在哪里都能用。',
+      ja: '新しいボタン「クリップボードから貼り付け」: スクリーンショットをファイルに保存する手間なしに、そのままアプリに取り込めます。このボタンは、ブラウザーがクリップボードの読み取りを許している場合にだけ現れます。Ctrl+V はどこでも使えます。',
+      ko: '새 버튼 “클립보드에서 붙여넣기”: 스크린샷이 파일을 거치지 않고 바로 앱으로 들어갑니다. 이 버튼은 브라우저가 클립보드 읽기를 허용하는 곳에서만 나타나며, Ctrl+V는 어디서나 작동합니다.'
     },
     {
       date: '2026-07-26',
       de: 'Erste Veröffentlichung. Fotos im Browser verkleinern, mit vier Voreinstellungen für E-Mail, Bewerbung, Kleinanzeigen und Web.',
-      en: 'First release. Shrink photos in your browser, with four presets for email, job applications, classifieds and web.'
+      en: 'First release. Shrink photos in your browser, with four presets for email, job applications, classifieds and web.',
+      es: 'Primera publicación. Reducir fotos en el navegador, con cuatro ajustes predefinidos para correo, solicitudes de empleo, anuncios clasificados y web.',
+      fr: 'Première publication. Réduire ses photos dans le navigateur, avec quatre préréglages pour l’e-mail, les candidatures, les petites annonces et le web.',
+      it: 'Prima pubblicazione. Rimpicciolire le foto nel browser, con quattro preimpostazioni per e-mail, candidatura, annunci e web.',
+      nl: 'Eerste release. Foto’s verkleinen in de browser, met vier voorinstellingen voor e-mail, sollicitatie, kleine advertenties en web.',
+      pl: 'Pierwsze wydanie. Zmniejszanie zdjęć w przeglądarce, z czterema ustawieniami wstępnymi: e-mail, podanie o pracę, ogłoszenia i web.',
+      pt: 'Primeira publicação. Reduzir fotografias no navegador, com quatro predefinições para e-mail, candidaturas, classificados e web.',
+      tr: 'İlk yayın. Fotoğrafları tarayıcıda küçültün; e-posta, iş başvurusu, ilan ve web için dört hazır ayarla.',
+      ru: 'Первый выпуск. Уменьшение фотографий в браузере, с четырьмя предустановками — для почты, анкет, объявлений и веба.',
+      hi: 'पहला रिलीज़। ब्राउज़र में फ़ोटो छोटी करें, ईमेल, आवेदन, ख़रीद-बिक्री विज्ञापन और वेब के लिए चार तैयार सेटिंग्स के साथ।',
+      zh: '首个版本。在浏览器里缩小照片，带四个预设：邮件、求职申请、二手交易和网页。',
+      ja: '最初の公開です。ブラウザーの中で写真を小さくします。メール、応募・申請、フリマアプリ、ウェブ向けの4つのプリセット付きです。',
+      ko: '첫 공개. 브라우저에서 사진 용량을 줄입니다. 메일, 지원서, 중고 거래, 웹용 프리셋 네 가지가 있습니다.'
     }
   ],
 
   wifi: [
     {
+      date: '2026-09-14',
+      de: 'Niederländisch und Polnisch sind dazugekommen — jetzt vierzehn Sprachen.',
+      en: 'Dutch and Polish were added — fourteen languages now.',
+      es: 'Se han añadido el neerlandés y el polaco: ahora son catorce idiomas.',
+      fr: 'Le néerlandais et le polonais sont arrivés — quatorze langues désormais.',
+      it: 'Sono stati aggiunti l’olandese e il polacco: ora sono quattordici lingue.',
+      nl: 'Nederlands en Pools zijn erbij gekomen — nu veertien talen.',
+      pl: 'Doszły niderlandzki i polski — teraz czternaście języków.',
+      pt: 'Juntaram-se o neerlandês e o polaco — agora são catorze idiomas.',
+      tr: 'Felemenkçe ve Lehçe eklendi — artık on dört dil.',
+      ru: 'Добавились нидерландский и польский — теперь четырнадцать языков.',
+      hi: 'डच और पोलिश जुड़ गई हैं — अब चौदह भाषाएँ।',
+      zh: '新增了荷兰语和波兰语——现在是十四种语言。',
+      ja: 'オランダ語とポーランド語が加わりました — これで14言語です。',
+      ko: '네덜란드어와 폴란드어가 추가되었습니다 — 이제 열네 개 언어입니다.'
+    },
+    {
       date: '2026-07-28',
       de: 'Darstellung wählbar: System, Hell oder Dunkel. Die Wahl wird gemerkt und greift schon vor dem ersten Bildaufbau.',
-      en: 'Appearance is now a choice: system, light or dark. The choice is remembered and applied before the page is first drawn.'
+      en: 'Appearance is now a choice: system, light or dark. The choice is remembered and applied before the page is first drawn.',
+      es: 'Apariencia a elegir: sistema, claro u oscuro. La elección se recuerda y se aplica ya antes del primer dibujado de la página.',
+      fr: 'Apparence au choix : système, clair ou sombre. Le choix est mémorisé et s’applique dès avant le premier affichage.',
+      it: 'Aspetto a scelta: sistema, chiaro o scuro. La scelta viene ricordata e viene applicata già prima della prima visualizzazione.',
+      nl: 'Weergave naar keuze: systeem, licht of donker. De keuze wordt onthouden en werkt al voordat het beeld voor het eerst wordt opgebouwd.',
+      pl: 'Wygląd do wyboru: systemowy, jasny lub ciemny. Wybór zostaje zapamiętany i działa już przed pierwszym narysowaniem obrazu.',
+      pt: 'Aparência à escolha: Sistema, Claro ou Escuro. A escolha fica guardada e é aplicada ainda antes da primeira imagem no ecrã.',
+      tr: 'Görünüm artık seçilebiliyor: Sistem, Açık veya Koyu. Seçim hatırlanıyor ve daha ilk çizimden önce uygulanıyor.',
+      ru: 'Оформление на выбор: системное, светлое или тёмное. Выбор запоминается и применяется ещё до первой отрисовки страницы.',
+      hi: 'अब थीम चुनी जा सकती है: सिस्टम, हल्की या गहरी। चुनाव याद रखा जाता है और पेज के पहली बार बनने से पहले ही लागू हो जाता है।',
+      zh: '外观可选：跟随系统、浅色或深色。选择会被记住，并在第一次绘制画面之前就生效。',
+      ja: '外観を選べるようになりました: システム、ライト、ダーク。選んだ設定は記憶され、最初の描画より前に適用されます。',
+      ko: '테마를 고를 수 있습니다: 시스템, 라이트, 다크. 선택은 기억되며 화면이 처음 그려지기 전에 이미 적용됩니다.'
     },
     {
       date: '2026-07-28',
       de: 'Portugiesisch, Russisch und Koreanisch sind dazugekommen — jetzt zwölf Sprachen.',
-      en: 'Portuguese, Russian and Korean were added — twelve languages now.'
+      en: 'Portuguese, Russian and Korean were added — twelve languages now.',
+      es: 'Se han añadido el portugués, el ruso y el coreano: ahora son doce idiomas.',
+      fr: 'Le portugais, le russe et le coréen sont arrivés — douze langues désormais.',
+      it: 'Sono stati aggiunti il portoghese, il russo e il coreano: ora sono dodici lingue.',
+      nl: 'Portugees, Russisch en Koreaans zijn erbij gekomen — nu twaalf talen.',
+      pl: 'Doszły portugalski, rosyjski i koreański — teraz dwanaście języków.',
+      pt: 'Juntaram-se o português, o russo e o coreano — agora são doze idiomas.',
+      tr: 'Portekizce, Rusça ve Korece eklendi — artık on iki dil.',
+      ru: 'Добавились португальский, русский и корейский — теперь двенадцать языков.',
+      hi: 'पुर्तगाली, रूसी और कोरियाई जुड़ गई हैं — अब बारह भाषाएँ।',
+      zh: '新增了葡萄牙语、俄语和韩语——现在是十二种语言。',
+      ja: 'ポルトガル語、ロシア語、韓国語が加わりました — これで12言語です。',
+      ko: '포르투갈어, 러시아어, 한국어가 추가되었습니다 — 이제 열두 개 언어입니다.'
     },
     {
       date: '2026-07-28',
       de: 'Aktualisierungen kommen schneller an: Die gespeicherte Fassung wird beim nächsten Besuch im Hintergrund erneuert, statt bis zum nächsten harten Neuladen alt zu bleiben.',
-      en: 'Updates arrive sooner: the stored copy is refreshed in the background on your next visit instead of staying stale until a hard reload.'
+      en: 'Updates arrive sooner: the stored copy is refreshed in the background on your next visit instead of staying stale until a hard reload.',
+      es: 'Las actualizaciones llegan antes: la versión guardada se renueva en segundo plano en la siguiente visita, en lugar de quedarse anticuada hasta la próxima recarga forzada.',
+      fr: 'Les mises à jour arrivent plus vite : la version enregistrée est renouvelée en arrière-plan lors de la visite suivante, au lieu de rester périmée jusqu’au prochain rechargement forcé.',
+      it: 'Gli aggiornamenti arrivano prima: la copia salvata viene rinnovata in secondo piano alla visita successiva, invece di restare vecchia fino al ricaricamento forzato.',
+      nl: 'Updates komen sneller aan: de opgeslagen versie wordt bij je volgende bezoek op de achtergrond ververst, in plaats van oud te blijven tot je de pagina hard vernieuwt.',
+      pl: 'Aktualizacje docierają szybciej: zapisana wersja odświeża się w tle przy następnej wizycie, zamiast pozostawać nieaktualną aż do twardego przeładowania.',
+      pt: 'As atualizações chegam mais depressa: a versão guardada é renovada em segundo plano na visita seguinte, em vez de ficar velha até ao próximo recarregamento forçado.',
+      tr: 'Güncellemeler daha çabuk ulaşıyor: Kayıtlı sürüm, bir sonraki ziyarette arka planda yenileniyor; tarayıcıyı zorla yenileyene kadar eski kalmıyor.',
+      ru: 'Обновления приходят быстрее: сохранённая копия обновляется в фоне при следующем посещении, а не остаётся устаревшей до принудительной перезагрузки страницы.',
+      hi: 'अपडेट जल्दी पहुँचते हैं: सहेजी हुई प्रति अगली बार आने पर पृष्ठभूमि में ताज़ा कर दी जाती है, बजाय इसके कि वह अगले हार्ड रीलोड तक पुरानी पड़ी रहे।',
+      zh: '更新来得更快：已保存的版本会在你下次访问时于后台刷新，而不是一直旧到下一次强制重新加载为止。',
+      ja: '更新が届くのが早くなりました: 保存された版は次の訪問時にバックグラウンドで更新されます。強制的に再読み込みするまで古いままということはなくなりました。',
+      ko: '업데이트가 더 빨리 도착합니다: 저장된 사본이 다음 방문 때 백그라운드에서 새로 고쳐집니다. 강제로 새로 고칠 때까지 옛 상태로 남아 있지 않습니다.'
     },
     {
       date: '2026-07-26',
       de: 'Erste Veröffentlichung. QR-Code fürs WLAN, dazu zwei Druckvorlagen: ein Kärtchen und ein faltbarer Tischaufsteller.',
-      en: 'First release. A QR code for your WiFi, plus two print layouts: a small card and a foldable table tent.'
+      en: 'First release. A QR code for your WiFi, plus two print layouts: a small card and a foldable table tent.',
+      es: 'Primera publicación. Un código QR para tu WiFi y, además, dos plantillas de impresión: una tarjetita y un expositor de mesa plegable.',
+      fr: 'Première publication. Un code QR pour le Wi-Fi, plus deux modèles à imprimer : une petite carte et un chevalet de table pliable.',
+      it: 'Prima pubblicazione. Codice QR per il Wi-Fi, più due modelli di stampa: una tesserina e un espositore da tavolo pieghevole.',
+      nl: 'Eerste release. QR-code voor je wifi, plus twee afdruksjablonen: een kaartje en een opvouwbare tafelstandaard.',
+      pl: 'Pierwsze wydanie. Kod QR do Wi-Fi, a do tego dwa szablony do druku: karteczka i składany stojak na stół.',
+      pt: 'Primeira publicação. Um código QR para o Wi-Fi e ainda dois modelos para imprimir: um cartãozinho e um cavalete de mesa dobrável.',
+      tr: 'İlk yayın. Wi-Fi için QR kodu, yanında iki baskı şablonu: küçük bir kart ve katlanabilir bir masa kartı.',
+      ru: 'Первый выпуск. QR-код для Wi-Fi и к нему два макета для печати: карточка и настольная табличка.',
+      hi: 'पहला रिलीज़। वाई-फ़ाई के लिए QR कोड, साथ में दो प्रिंट लेआउट: एक छोटा कार्ड और एक मोड़कर खड़ा किया जाने वाला टेबल स्टैंड।',
+      zh: '首个版本。WiFi 二维码，另加两种打印版式：一张小卡片和一个可折叠的桌牌。',
+      ja: '最初の公開です。Wi-Fi 用の QR コードと、2種類の印刷レイアウト — 小さなカードと、折って立てる卓上カードです。',
+      ko: '첫 공개. Wi-Fi용 QR 코드와 인쇄 서식 두 가지 — 작은 카드와 접어 세우는 탁상 표지판.'
     }
   ],
 
   prismatical: [
     {
+      date: '2026-09-14',
+      de: 'Hindi und Koreanisch sind dazugekommen — jetzt vierzehn Sprachen, dieselben wie überall in der Werkstatt.',
+      en: 'Hindi and Korean were added — fourteen languages now, the same set as everywhere else in the workshop.',
+      es: 'Se han añadido el hindi y el coreano: ahora son catorce idiomas, los mismos que en todo el taller.',
+      fr: 'L’hindi et le coréen sont arrivés — quatorze langues désormais, les mêmes que partout dans l’atelier.',
+      it: 'Sono stati aggiunti l’hindi e il coreano: ora sono quattordici lingue, le stesse di tutta l’officina.',
+      nl: 'Hindi en Koreaans zijn erbij gekomen — nu veertien talen, dezelfde als overal in de werkplaats.',
+      pl: 'Doszły hindi i koreański — teraz czternaście języków, ten sam zestaw co wszędzie indziej w tym warsztacie.',
+      pt: 'Juntaram-se o hindi e o coreano — agora são catorze idiomas, os mesmos que no resto da oficina.',
+      tr: 'Hintçe ve Korece eklendi — artık on dört dil, atölyedeki diğer araçlarla aynı.',
+      ru: 'Добавились хинди и корейский — теперь четырнадцать языков, те же, что и везде в мастерской.',
+      hi: 'हिन्दी और कोरियाई जुड़ गई हैं — अब चौदह भाषाएँ, वही जो इस वर्कशॉप में हर जगह हैं।',
+      zh: '新增了印地语和韩语——现在是十四种语言，和工坊里其他地方的一样。',
+      ja: 'ヒンディー語と韓国語が加わりました — これで14言語、工房のほかの道具と同じ顔ぶれです。',
+      ko: '힌디어와 한국어가 추가되었습니다 — 이제 열네 개 언어로, 작업실의 다른 곳과 같은 구성입니다.'
+    },
+    {
       date: '2026-08-14',
       de: 'Erste Veröffentlichung. Ein Passwort-Generator, bei dem die Farbe der ganzen Oberfläche die Stärke ist: Sie wandert live von Rot nach Violett, während du an den Reglern drehst. Fünf Arten von Geheimnis — Zufallspasswort, Passphrase aus Wortlisten, PIN, aussprechbar und ein zustandsloser Modus, der dasselbe Passwort immer wieder aus Merksatz, Domain und Login errechnet. Alles bleibt auf deinem Gerät; im Auslieferungszustand geht kein einziger Netzwerk-Aufruf hinaus.',
-      en: 'First release. A password generator where the colour of the whole interface is the strength: it travels live from red to violet as you move the sliders. Five kinds of secret — random password, passphrase from word lists, PIN, pronounceable, and a stateless mode that recomputes the same password from a master phrase, domain and login. Everything stays on your device; as shipped, not a single network request goes out.'
+      en: 'First release. A password generator where the colour of the whole interface is the strength: it travels live from red to violet as you move the sliders. Five kinds of secret — random password, passphrase from word lists, PIN, pronounceable, and a stateless mode that recomputes the same password from a master phrase, domain and login. Everything stays on your device; as shipped, not a single network request goes out.',
+      es: 'Primera publicación. Un generador de contraseñas en el que el color de toda la interfaz es la fuerza: va en vivo del rojo al violeta mientras mueves los controles. Cinco tipos de secreto: contraseña aleatoria, frase de contraseña a partir de listas de palabras, PIN, pronunciable y un modo sin estado que vuelve a calcular una y otra vez la misma contraseña a partir de una frase maestra, el dominio y el usuario. Todo se queda en tu dispositivo; tal como viene de fábrica no sale ni una sola petición de red.',
+      fr: 'Première publication. Un générateur de mots de passe où la couleur de toute l’interface est la robustesse : elle va en direct du rouge au violet pendant que vous manipulez les curseurs. Cinq sortes de secret — mot de passe aléatoire, phrase secrète tirée de listes de mots, code PIN, prononçable, et un mode sans état qui recalcule toujours le même mot de passe à partir d’une phrase maîtresse, d’un domaine et d’un identifiant. Tout reste sur votre appareil ; dans sa configuration d’origine, pas un seul appel réseau ne sort.',
+      it: 'Prima pubblicazione. Un generatore di password in cui il colore di tutta l’interfaccia è la robustezza: si sposta in tempo reale dal rosso al violetto mentre muovi i cursori. Cinque tipi di segreto: password casuale, passphrase da liste di parole, PIN, pronunciabile e una modalità senza stato, che ricalcola sempre la stessa password da frase chiave, dominio e login. Tutto resta sul tuo dispositivo; nella configurazione di fabbrica non esce nemmeno una richiesta di rete.',
+      nl: 'Eerste release. Een wachtwoordgenerator waarbij de kleur van de hele interface de sterkte is: die loopt live van rood naar violet terwijl je aan de schuifregelaars draait. Vijf soorten geheim — willekeurig wachtwoord, wachtwoordzin uit woordenlijsten, pincode, uitspreekbaar en een toestandloze modus die hetzelfde wachtwoord steeds opnieuw berekent uit geheugenzin, domein en login. Alles blijft op je apparaat; in de standaardinstelling gaat er geen enkel netwerkverzoek naar buiten.',
+      pl: 'Pierwsze wydanie. Generator haseł, w którym siłą jest kolor całego interfejsu: wędruje on na żywo od czerwieni do fioletu, gdy przesuwasz suwaki. Pięć rodzajów sekretu — losowe hasło, fraza hasłowa z list słów, PIN, wymawialne oraz tryb bezstanowy, który raz po raz wylicza to samo hasło z frazy nadrzędnej, domeny i loginu. Wszystko zostaje na twoim urządzeniu; w stanie fabrycznym nie wychodzi na zewnątrz ani jedno zapytanie sieciowe.',
+      pt: 'Primeira publicação. Um gerador de palavras-passe em que a cor de toda a interface é a força: ela percorre ao vivo do vermelho até ao violeta enquanto você mexe nos cursores. Cinco tipos de segredo — palavra-passe aleatória, frase secreta a partir de listas de palavras, PIN, pronunciável e um modo sem estado que volta sempre a calcular a mesma palavra-passe a partir de uma senha mestra, do domínio e do login. Tudo fica no seu dispositivo; tal como é entregue, não sai um único pedido de rede.',
+      tr: 'İlk yayın. Arayüzün tamamının rengi, parolanın gücü olan bir parola üreteci: Sürgüleri oynattıkça renk kırmızıdan mora doğru canlı olarak ilerliyor. Beş tür sır — rastgele parola, kelime listelerinden parola ifadesi, PIN, telaffuz edilebilir parola ve aynı parolayı her seferinde akılda kalan bir cümleden, alan adından ve kullanıcı adından yeniden hesaplayan durumsuz bir kip. Her şey cihazınızda kalıyor; teslim edildiği hâliyle tek bir ağ isteği bile dışarı çıkmıyor.',
+      ru: 'Первый выпуск. Генератор паролей, в котором надёжность показывает цвет всего интерфейса: он в реальном времени переходит от красного к фиолетовому, пока вы двигаете ползунки. Пять видов секрета — случайный пароль, парольная фраза из списков слов, PIN-код, произносимый вариант и режим без хранения состояния, который снова и снова вычисляет тот же пароль из мастер-фразы, домена и логина. Всё остаётся на вашем устройстве; при настройках по умолчанию наружу не уходит ни один сетевой запрос.',
+      hi: 'पहला रिलीज़। एक पासवर्ड जनरेटर, जिसमें पूरे इंटरफ़ेस का रंग ही मज़बूती है: जैसे-जैसे आप स्लाइडर घुमाते हैं, वह लाइव लाल से बैंगनी की ओर बढ़ता जाता है। पाँच तरह के गुप्त शब्द — यादृच्छिक पासवर्ड, शब्द-सूचियों से बना पासफ़्रेज़, PIN, बोलने योग्य, और एक स्टेटलेस मोड जो एक मूल वाक्य, डोमेन और लॉगिन से हर बार वही पासवर्ड दोबारा बना देता है। सब कुछ आपके डिवाइस पर ही रहता है; जैसा यह आपको मिलता है, उस पूर्व-निर्धारित हालत में एक भी नेटवर्क अनुरोध बाहर नहीं जाता।',
+      zh: '首个版本。一个密码生成器，整个界面的颜色就是强度：当你拨动滑块时，它会实时地从红色走到紫色。五类口令——随机密码、来自词表的密码短语、PIN、可发音密码，以及一种无状态模式，它每次都从记忆句、域名和登录名重新算出同一个密码。一切都留在你的设备上；在默认设置下不会发出任何一个网络请求。',
+      ja: '最初の公開です。画面全体の色がそのまま強度を表すパスワード生成ツールです。スライダーを動かすと、色が赤から紫へリアルタイムで移っていきます。秘密の種類は5つ — ランダムなパスワード、単語リストから作るパスフレーズ、PIN、発音しやすいもの、そして合言葉・ドメイン・ログイン名から同じパスワードを何度でも計算し直すステートレスモードです。すべては端末の中にとどまります。初期状態のままなら、ネットワークへの呼び出しはひとつも外に出ません。',
+      ko: '첫 공개. 화면 전체의 색이 곧 강도인 비밀번호 생성기입니다: 슬라이더를 움직이면 색이 빨강에서 보라까지 실시간으로 이동합니다. 비밀의 종류는 다섯 가지 — 무작위 비밀번호, 단어 목록으로 만드는 패스프레이즈, PIN, 발음 가능한 비밀번호, 그리고 암기 문구와 도메인과 로그인으로 같은 비밀번호를 몇 번이든 다시 계산해 내는 무상태 방식입니다. 모든 것은 기기 안에 남습니다. 출고 상태에서는 네트워크 요청이 단 하나도 밖으로 나가지 않습니다.'
     }
   ],
 
@@ -92,84 +276,320 @@ var NEWS = {
     {
       date: '2026-09-13',
       de: 'Behoben: Wer die Darstellung von Hand auf Dunkel stellte, sah die Kachel weiter das Türkis des Hellmodus — ein dunkler Ton, der auf dunklem Grund kaum noch zu lesen war. Für den erzwungenen Dunkelmodus fehlte die Farbe. Über die Systemeinstellung war sie immer richtig.',
-      en: 'Fixed: with the display switched to dark by hand, the tile kept the teal meant for light mode — a dark shade that barely read against a dark background. The colour was missing for the forced dark mode. Via the system setting it was always correct.'
+      en: 'Fixed: with the display switched to dark by hand, the tile kept the teal meant for light mode — a dark shade that barely read against a dark background. The colour was missing for the forced dark mode. Via the system setting it was always correct.',
+      es: 'Corregido: quien cambiaba a mano la apariencia a oscuro seguía viendo en la tarjeta el turquesa del modo claro, un tono oscuro que sobre fondo oscuro apenas se leía. Para el modo oscuro forzado faltaba el color. A través del ajuste del sistema siempre fue correcto.',
+      fr: 'Corrigé : si vous régliez l’apparence sur sombre à la main, la vignette gardait le turquoise du mode clair — un ton foncé qui ne se lisait presque plus sur fond sombre. La couleur manquait pour le mode sombre forcé. Via le réglage du système, elle était toujours juste.',
+      it: 'Risolto: chi impostava a mano l’aspetto su scuro vedeva la scheda conservare il turchese della modalità chiara, una tonalità scura che su fondo scuro era ormai a malapena leggibile. Per la modalità scura forzata il colore mancava. Tramite l’impostazione di sistema era sempre giusto.',
+      nl: 'Opgelost: wie de weergave met de hand op donker zette, zag dat de tegel het turquoise van de lichte modus behield — een donkere tint die op een donkere ondergrond nauwelijks nog te lezen was. Voor de afgedwongen donkere modus ontbrak de kleur. Via de systeeminstelling klopte hij altijd.',
+      pl: 'Naprawione: kto przestawił wygląd ręcznie na ciemny, nadal widział na kafelku turkus trybu jasnego — ciemny odcień, który na ciemnym tle był ledwie czytelny. Dla wymuszonego trybu ciemnego brakowało koloru. Przy ustawieniu systemowym kolor był zawsze prawidłowy.',
+      pt: 'Corrigido: quem punha a aparência em Escuro à mão continuava a ver no cartão o turquesa do modo Claro — um tom escuro que sobre fundo escuro quase não se lia. Para o modo escuro forçado faltava a cor. Através da definição do sistema esteve sempre certa.',
+      tr: 'Düzeltildi: Görünümü elle Koyu’ya alanlar, kartta açık kipin turkuazını görmeyi sürdürüyordu — koyu zeminde neredeyse okunamayan koyu bir ton. Elle zorla açılan koyu kip için renk tanımlı değildi. Sistem ayarı üzerinden ise her zaman doğruydu.',
+      ru: 'Исправлено: у тех, кто вручную переключал оформление на тёмное, плитка по-прежнему показывала бирюзовый цвет светлого режима — тёмный оттенок, который на тёмном фоне почти не читался. Для принудительного тёмного режима цвета не хватало. Через системную настройку он всегда был правильным.',
+      hi: 'ठीक किया गया: जिसने थीम खुद गहरी पर सेट की, उसे कार्ड पर हल्के मोड वाला फ़िरोज़ी रंग ही दिखता रहा — एक गहरा शेड, जो गहरी पृष्ठभूमि पर मुश्किल से पढ़ा जाता था। ज़बरदस्ती लगाए गए गहरे मोड के लिए रंग था ही नहीं। सिस्टम सेटिंग के रास्ते वह हमेशा सही था।',
+      zh: '已修复：把外观手动设成深色的人，看到的卡片仍是浅色模式的青绿色——那是一种深色调，在深色背景上几乎看不清。强制深色模式缺了这个颜色。通过系统设置切换时它一直是对的。',
+      ja: '修正: 外観を手動でダークにすると、カードはライトモード用のターコイズのままでした — 暗い色合いなので、暗い背景ではほとんど読めませんでした。手動で指定したダークモード用の色が用意されていなかったのです。システム設定で切り替えた場合は、いつも正しく表示されていました。',
+      ko: '수정: 테마를 손으로 다크로 바꾼 분에게는 타일이 계속 라이트 모드의 청록색으로 보였습니다 — 어두운 바탕에서는 거의 읽을 수 없는 어두운 색조였습니다. 강제 다크 모드에 해당하는 색이 빠져 있었습니다. 시스템 설정을 통해서는 언제나 올바르게 나왔습니다.'
     },
     {
       date: '2026-09-10',
       de: 'Erste Veröffentlichung. Du setzt eine Basisfarbe, Spectroton rechnet daraus elf abgestimmte Stufen und schreibt zu jeder den Kontrastwert — wahlweise nach WCAG 2.2 oder nach APCA. Dazu Akzentfarben nach Harmonie-Regeln, einzeln sperrbare Stufen, vier Erscheinungsbilder und Export als CSS, Tailwind, Tokens-Datei oder HEX-Liste. Fertige Paletten kannst du benannt im Gerät ablegen oder komplett als Link weitergeben.',
-      en: 'First release. You set a base colour, Spectroton computes eleven matching shades from it and writes the contrast value next to each one — either WCAG 2.2 or APCA, whichever you pick. Plus accent colours by harmony rules, individually lockable shades, four appearances, and export as CSS, Tailwind, a tokens file or a plain HEX list. Finished palettes can be stored by name on your device or passed on complete as a link.'
+      en: 'First release. You set a base colour, Spectroton computes eleven matching shades from it and writes the contrast value next to each one — either WCAG 2.2 or APCA, whichever you pick. Plus accent colours by harmony rules, individually lockable shades, four appearances, and export as CSS, Tailwind, a tokens file or a plain HEX list. Finished palettes can be stored by name on your device or passed on complete as a link.',
+      es: 'Primera publicación. Tú fijas un color base, Spectroton calcula a partir de él once tonos armonizados y escribe junto a cada uno el valor de contraste, a elegir según WCAG 2.2 o según APCA. Además, colores de acento según reglas de armonía, tonos bloqueables uno a uno, cuatro apariencias y exportación como CSS, Tailwind, archivo de tokens o lista HEX. Las paletas terminadas puedes guardarlas con nombre en el dispositivo o pasarlas enteras como enlace.',
+      fr: 'Première publication. Vous posez une couleur de base, Spectroton en calcule onze nuances accordées et inscrit à côté de chacune la valeur de contraste — au choix selon WCAG 2.2 ou selon APCA. S’y ajoutent des couleurs d’accent selon des règles d’harmonie, des nuances verrouillables une à une, quatre apparences et l’export en CSS, Tailwind, fichier de tokens ou liste HEX. Les palettes terminées, vous pouvez les ranger sous un nom sur votre appareil ou les transmettre entières sous forme de lien.',
+      it: 'Prima pubblicazione. Tu imposti un colore di base, Spectroton ne calcola undici tonalità coordinate e accanto a ciascuna scrive il valore di contrasto: a scelta secondo WCAG 2.2 oppure secondo APCA. In più colori d’accento secondo regole di armonia, tonalità bloccabili singolarmente, quattro aspetti ed esportazione come CSS, Tailwind, file di token o elenco HEX. Le palette finite puoi salvarle con un nome sul dispositivo oppure passarle intere come link.',
+      nl: 'Eerste release. Jij kiest een basiskleur, Spectroton berekent daaruit elf op elkaar afgestemde tinten en schrijft bij elke tint de contrastwaarde — naar keuze volgens WCAG 2.2 of volgens APCA. Daarbij accentkleuren volgens harmonieregels, afzonderlijk vergrendelbare tinten, vier verschijningsvormen en export als CSS, Tailwind, tokensbestand of HEX-lijst. Voltooide paletten kun je met een naam op je apparaat bewaren of compleet als link doorgeven.',
+      pl: 'Pierwsze wydanie. Ty ustawiasz kolor bazowy, Spectroton wylicza z niego jedenaście dopasowanych stopni i przy każdym zapisuje wartość kontrastu — do wyboru według WCAG 2.2 albo według APCA. Do tego kolory akcentowe według reguł harmonii, stopnie blokowane pojedynczo, cztery wyglądy oraz eksport jako CSS, Tailwind, plik tokenów albo lista HEX. Gotowe palety możesz zapisać pod nazwą na urządzeniu albo przekazać dalej w całości jako link.',
+      pt: 'Primeira publicação. Você define uma cor base, o Spectroton calcula a partir dela onze tons harmonizados e escreve junto de cada um o valor de contraste — à escolha, segundo a WCAG 2.2 ou segundo a APCA. Além disso, cores de destaque por regras de harmonia, tons que se podem bloquear individualmente, quatro aparências e exportação como CSS, Tailwind, ficheiro de tokens ou lista HEX. As paletas prontas pode guardá-las com um nome no dispositivo ou passá-las inteiras como link.',
+      tr: 'İlk yayın. Bir temel renk belirliyorsunuz, Spectroton bundan on bir uyumlu ton hesaplıyor ve her birinin yanına kontrast değerini yazıyor — dilerseniz WCAG 2.2’ye, dilerseniz APCA’ya göre. Ayrıca harmoni kurallarına göre vurgu renkleri, tek tek kilitlenebilen tonlar, dört görünüm ve CSS, Tailwind, token dosyası ya da düz HEX listesi olarak dışa aktarma. Hazır paletleri cihazınızda adlandırarak saklayabilir ya da bağlantı olarak eksiksiz devredebilirsiniz.',
+      ru: 'Первый выпуск. Вы задаёте базовый цвет, Spectroton рассчитывает из него одиннадцать согласованных ступеней и указывает рядом с каждой значение контраста — на выбор по WCAG 2.2 или по APCA. Плюс акцентные цвета по правилам гармонии, ступени, которые можно фиксировать по отдельности, четыре варианта оформления и экспорт в CSS, Tailwind, файл токенов или список HEX. Готовые палитры можно сохранить под именем на устройстве или передать целиком ссылкой.',
+      hi: 'पहला रिलीज़। आप एक आधार रंग तय करते हैं, Spectroton उससे ग्यारह मेल खाते शेड निकालता है और हर एक के साथ कंट्रास्ट मान लिख देता है — आपकी पसंद के अनुसार WCAG 2.2 या APCA के हिसाब से। साथ में सामंजस्य नियमों के अनुसार एक्सेंट रंग, अलग-अलग ताला लगाए जा सकने वाले शेड, चार रूप, और CSS, Tailwind, टोकन फ़ाइल या सादी HEX सूची के रूप में निर्यात। तैयार पैलेट आप नाम देकर अपने डिवाइस पर रख सकते हैं या पूरी की पूरी लिंक के रूप में आगे दे सकते हैं।',
+      zh: '首个版本。你设定一个基准色，Spectroton 由此算出十一级配套色阶，并在每一级旁写上对比度数值——按 WCAG 2.2 或按 APCA，任你选择。另有按和谐规则生成的强调色、可单独锁定的色阶、四种外观，以及导出为 CSS、Tailwind、tokens 文件或 HEX 列表。做好的调色板可以命名后存在设备上，也可以作为一条链接完整地传给别人。',
+      ja: '最初の公開です。基本色をひとつ決めると、Spectroton がそこから調和した11段階を計算し、それぞれにコントラスト値を書き添えます — WCAG 2.2 か APCA か、好きなほうで。さらに、調和の規則によるアクセントカラー、段階ごとに個別にロックできる仕組み、4つの外観、そして CSS・Tailwind・トークンファイル・HEX 一覧としての書き出しもあります。できあがったパレットは名前を付けて端末に置いておくことも、まるごとリンクとして渡すこともできます。',
+      ko: '첫 공개. 기준 색을 하나 정하면 Spectroton이 거기서 어울리는 열한 단계를 계산하고 각 단계마다 대비 값을 적어 줍니다 — WCAG 2.2 또는 APCA 중에서 고를 수 있습니다. 여기에 조화 규칙에 따른 강조색, 단계별로 잠글 수 있는 잠금, 네 가지 외관, 그리고 CSS, Tailwind, 토큰 파일, HEX 목록으로 내보내기가 더해집니다. 완성한 팔레트는 이름을 붙여 기기에 보관하거나 링크 하나로 통째로 건넬 수 있습니다.'
     }
   ],
 
   collective: [
     {
+      date: '2026-09-14',
+      de: 'Niederländisch und Polnisch sind dazugekommen — jetzt vierzehn Sprachen.',
+      en: 'Dutch and Polish were added — fourteen languages now.',
+      es: 'Se han añadido el neerlandés y el polaco: ahora son catorce idiomas.',
+      fr: 'Le néerlandais et le polonais sont arrivés — quatorze langues désormais.',
+      it: 'Sono stati aggiunti l’olandese e il polacco: ora sono quattordici lingue.',
+      nl: 'Nederlands en Pools zijn erbij gekomen — nu veertien talen.',
+      pl: 'Doszły niderlandzki i polski — teraz czternaście języków.',
+      pt: 'Juntaram-se o neerlandês e o polaco — agora são catorze idiomas.',
+      tr: 'Felemenkçe ve Lehçe eklendi — artık on dört dil.',
+      ru: 'Добавились нидерландский и польский — теперь четырнадцать языков.',
+      hi: 'डच और पोलिश जुड़ गई हैं — अब चौदह भाषाएँ।',
+      zh: '新增了荷兰语和波兰语——现在是十四种语言。',
+      ja: 'オランダ語とポーランド語が加わりました — これで14言語です。',
+      ko: '네덜란드어와 폴란드어가 추가되었습니다 — 이제 열네 개 언어입니다.'
+    },
+    {
       date: '2026-07-30',
       de: 'Eine Formulierung berichtigt: Es heißt jetzt durchgängig „ohne eigenen Server“ statt „ohne Server“. Die Abrechnung geht an keinen Server — die Seite selbst wird aber von GitHub ausgeliefert, und das soll dastehen.',
-      en: 'A wording fix: it now consistently says “no server of our own” instead of “no server”. Your ledger never goes to a server — but the page itself is delivered by GitHub, and that belongs in the sentence.'
+      en: 'A wording fix: it now consistently says “no server of our own” instead of “no server”. Your ledger never goes to a server — but the page itself is delivered by GitHub, and that belongs in the sentence.',
+      es: 'Una formulación corregida: ahora dice en todas partes «sin servidor propio» en lugar de «sin servidor». La cuenta no va a ningún servidor, pero la página misma la entrega GitHub, y eso tiene que constar.',
+      fr: 'Une formulation rectifiée : on lit maintenant partout « sans serveur à nous » au lieu de « sans serveur ». Le décompte ne part vers aucun serveur — mais la page elle-même est livrée par GitHub, et cela doit être écrit.',
+      it: 'Corretta una formulazione: ora si dice ovunque «senza un server nostro» invece di «senza server». Il conteggio non va a nessun server, ma la pagina stessa viene servita da GitHub, e questo deve essere scritto.',
+      nl: 'Een formulering rechtgezet: er staat nu overal “zonder eigen server” in plaats van “zonder server”. De afrekening gaat naar geen enkele server — maar de pagina zelf wordt door GitHub geleverd, en dat hoort erbij te staan.',
+      pl: 'Poprawione sformułowanie: teraz wszędzie jest mowa o „bez własnego serwera” zamiast o „bez serwera”. Rozliczenie nie trafia na żaden serwer — samą stronę dostarcza jednak GitHub i to ma być napisane.',
+      pt: 'Uma formulação corrigida: passa a dizer-se sempre «sem servidor próprio» em vez de «sem servidor». As contas não vão para servidor nenhum — mas a própria página é entregue pelo GitHub, e isso deve estar escrito.',
+      tr: 'Bir ifade düzeltildi: Artık her yerde “sunucu yok” yerine “kendi sunucumuz yok” yazıyor. Hesap hiçbir sunucuya gitmiyor — ama sayfanın kendisi GitHub tarafından sunuluyor ve bunun orada yazması gerekiyor.',
+      ru: 'Исправлена формулировка: теперь везде написано «без собственного сервера» вместо «без сервера». Расчёт не уходит ни на какой сервер — но саму страницу отдаёт GitHub, и это должно быть сказано.',
+      hi: 'एक शब्दावली सुधारी गई: अब हर जगह “अपना कोई सर्वर नहीं” लिखा है, न कि “कोई सर्वर नहीं”। आपका हिसाब किसी सर्वर तक नहीं जाता — लेकिन पेज खुद GitHub से आता है, और यह बात वाक्य में होनी चाहिए।',
+      zh: '改正了一处措辞：现在通篇写的是“没有自己的服务器”，而不是“没有服务器”。账目不会发给任何服务器——但页面本身是由 GitHub 提供的，这一点应当写出来。',
+      ja: '言い回しをひとつ訂正しました: 「サーバーなし」ではなく「自前のサーバーなし」で統一しました。精算の中身はどのサーバーにも行きません — ただしページ自体は GitHub から配信されています。そのことは書いてあるべきです。',
+      ko: '표현을 하나 바로잡았습니다: 이제 “서버 없이”가 아니라 “자체 서버 없이”라고 일관되게 적습니다. 정산 내용은 어떤 서버로도 가지 않습니다 — 다만 페이지 자체는 GitHub가 전달하며, 그 사실이 문장에 들어가야 합니다.'
     },
     {
       date: '2026-07-29',
       de: 'Erste Veröffentlichung. Gruppenausgaben aufteilen — vier Aufteilungsarten (gleich, Anteile, Prozent, genaue Beträge), Rückzahlungen und Fremdwährungen mit selbst eingetragenem Kurs.',
-      en: 'First release. Split group expenses — four split modes (evenly, shares, percentages, exact amounts), repayments, and foreign currencies with a rate you enter yourself.'
+      en: 'First release. Split group expenses — four split modes (evenly, shares, percentages, exact amounts), repayments, and foreign currencies with a rate you enter yourself.',
+      es: 'Primera publicación. Repartir gastos de grupo: cuatro formas de reparto (a partes iguales, por participaciones, en porcentaje, con importes exactos), devoluciones y divisas extranjeras con un cambio que introduces tú.',
+      fr: 'Première publication. Partager les dépenses d’un groupe — quatre modes de répartition (à parts égales, par quotes-parts, en pourcentage, montants exacts), remboursements et devises étrangères avec un taux que vous saisissez vous-même.',
+      it: 'Prima pubblicazione. Dividere le spese di gruppo: quattro modi di divisione (in parti uguali, per quote, in percentuale, importi esatti), rimborsi e valute estere con un cambio inserito da te.',
+      nl: 'Eerste release. Groepsuitgaven verdelen — vier manieren van verdelen (gelijk, aandelen, procenten, exacte bedragen), terugbetalingen en vreemde valuta met een koers die je zelf invult.',
+      pl: 'Pierwsze wydanie. Dzielenie wydatków grupowych — cztery sposoby podziału (po równo, udziały, procenty, dokładne kwoty), spłaty i obce waluty z kursem wpisanym samodzielnie.',
+      pt: 'Primeira publicação. Dividir despesas de grupo — quatro formas de divisão (partes iguais, quotas, percentagem, valores exatos), reembolsos e moedas estrangeiras com uma taxa introduzida por si.',
+      tr: 'İlk yayın. Grup harcamalarını paylaştırın — dört paylaştırma türü (eşit, paylara göre, yüzdeyle, tam tutarlarla), geri ödemeler ve kurunu kendiniz girdiğiniz yabancı para birimleri.',
+      ru: 'Первый выпуск. Разделение общих расходов — четыре способа деления (поровну, по долям, в процентах, точными суммами), возвраты и иностранные валюты с курсом, который вы вводите сами.',
+      hi: 'पहला रिलीज़। समूह के खर्च बाँटें — बाँटने के चार तरीके (बराबर, हिस्सों से, प्रतिशत में, सटीक रकम), वापसी भुगतान, और विदेशी मुद्राएँ उस दर के साथ जो आप खुद दर्ज करते हैं।',
+      zh: '首个版本。分摊团体开销——四种分摊方式（平均、份额、百分比、精确金额）、还款，以及汇率由你自己填写的外币。',
+      ja: '最初の公開です。グループの支出を分担します — 4つの分け方（全員で等分、取り分、パーセント、金額を個別に）、返済の記録、そして自分で入力したレートでの外貨に対応します。',
+      ko: '첫 공개. 여럿이 쓴 돈을 나눕니다 — 나누는 방식 네 가지(균등, 비율, 퍼센트, 정확한 금액), 되갚기, 그리고 직접 적어 넣는 환율로 외화 처리.'
     },
     {
       date: '2026-07-29',
       de: 'Der Ausgleich sucht möglichst wenige Überweisungen. Und der Cent, der sich nicht aufteilen lässt, wird namentlich ausgewiesen, statt still bei irgendwem zu landen.',
-      en: 'The settle-up looks for as few transfers as possible. And the cent that will not divide is called out by name instead of quietly landing on somebody.'
+      en: 'The settle-up looks for as few transfers as possible. And the cent that will not divide is called out by name instead of quietly landing on somebody.',
+      es: 'El ajuste de cuentas busca el menor número posible de transferencias. Y el céntimo que no se puede repartir se indica con nombre, en lugar de acabar calladamente en el bolsillo de cualquiera.',
+      fr: 'L’équilibrage des comptes cherche le moins de virements possible. Et le centime qui ne tombe pas juste est désigné nommément, au lieu d’atterrir discrètement chez quelqu’un.',
+      it: 'Il pareggio dei conti cerca il minor numero possibile di bonifici. E il centesimo che non si può dividere viene indicato con tanto di nome, invece di finire in silenzio addosso a qualcuno.',
+      nl: 'De verrekening zoekt naar zo min mogelijk overboekingen. En de cent die niet te verdelen is, wordt bij naam genoemd in plaats van stilletjes bij iemand te belanden.',
+      pl: 'Wyrównanie szuka jak najmniejszej liczby przelewów. A grosz, którego nie da się podzielić, zostaje przypisany imiennie, zamiast po cichu wylądować u kogoś.',
+      pt: 'O acerto de contas procura o menor número possível de transferências. E o cêntimo que não se deixa dividir é indicado nominalmente, em vez de ir parar discretamente à conta de alguém.',
+      tr: 'Denkleştirme, olabildiğince az havale arıyor. Ve bölünemeyen o tek kuruşun kimde kaldığı, sessizce birinin üzerinde kalmak yerine adıyla belirtiliyor.',
+      ru: 'Итоговый расчёт ищет как можно меньше переводов. А цент, который не делится, указывается поимённо, вместо того чтобы тихо достаться кому-нибудь.',
+      hi: 'हिसाब बराबर करने में जितने कम हो सकें उतने कम ट्रांसफ़र खोजे जाते हैं। और जो सेंट बँट नहीं सकता, उसे चुपचाप किसी के सिर मढ़ने के बजाय नाम लेकर दिखाया जाता है।',
+      zh: '结算会寻找尽可能少的转账次数。而那除不尽的一分钱会明明白白写出落在谁头上，而不是悄悄记到某个人账上。',
+      ja: '精算はできるだけ少ない送金回数を探します。そして、割り切れなかった1セントは、誰かのところに黙って紛れ込むのではなく、名前を挙げて示されます。',
+      ko: '정산은 송금 횟수를 되도록 줄이는 방법을 찾습니다. 그리고 나누어떨어지지 않는 1센트는 누군가에게 조용히 얹히는 대신 이름과 함께 드러납니다.'
     },
     {
       date: '2026-07-29',
       de: 'Zwölf Sprachen, Hell und Dunkel, und nach dem ersten Besuch läuft die Seite auch ohne Netz.',
-      en: 'Twelve languages, light and dark, and after the first visit the page works without a connection.'
+      en: 'Twelve languages, light and dark, and after the first visit the page works without a connection.',
+      es: 'Doce idiomas, claro y oscuro, y, después de la primera visita, la página funciona también sin red.',
+      fr: 'Douze langues, clair et sombre, et après la première visite la page fonctionne aussi sans réseau.',
+      it: 'Dodici lingue, chiaro e scuro, e dopo la prima visita la pagina funziona anche senza rete.',
+      nl: 'Twaalf talen, licht en donker, en na het eerste bezoek werkt de pagina ook zonder verbinding.',
+      pl: 'Dwanaście języków, jasny i ciemny, a po pierwszej wizycie strona działa też bez sieci.',
+      pt: 'Doze idiomas, claro e escuro, e, depois da primeira visita, a página também funciona sem rede.',
+      tr: 'On iki dil, Açık ve Koyu görünüm, ve ilk ziyaretten sonra sayfa ağ bağlantısı olmadan da çalışıyor.',
+      ru: 'Двенадцать языков, светлое и тёмное оформление, а после первого посещения страница работает и без сети.',
+      hi: 'बारह भाषाएँ, हल्की और गहरी थीम, और पहली बार आने के बाद पेज बिना इंटरनेट के भी चलता है।',
+      zh: '十二种语言，浅色和深色，并且在第一次访问之后，页面没有网络也能运行。',
+      ja: '12言語、ライトとダーク。そして最初の訪問のあとは、ネットにつながっていなくてもページが動きます。',
+      ko: '열두 개 언어, 라이트와 다크, 그리고 첫 방문 뒤에는 네트워크 없이도 페이지가 돌아갑니다.'
     }
   ],
 
   bigday: [
     {
+      date: '2026-09-14',
+      de: 'Niederländisch und Polnisch sind dazugekommen — jetzt vierzehn Sprachen.',
+      en: 'Dutch and Polish were added — fourteen languages now.',
+      es: 'Se han añadido el neerlandés y el polaco: ahora son catorce idiomas.',
+      fr: 'Le néerlandais et le polonais sont arrivés — quatorze langues désormais.',
+      it: 'Sono stati aggiunti l’olandese e il polacco: ora sono quattordici lingue.',
+      nl: 'Nederlands en Pools zijn erbij gekomen — nu veertien talen.',
+      pl: 'Doszły niderlandzki i polski — teraz czternaście języków.',
+      pt: 'Juntaram-se o neerlandês e o polaco — agora são catorze idiomas.',
+      tr: 'Felemenkçe ve Lehçe eklendi — artık on dört dil.',
+      ru: 'Добавились нидерландский и польский — теперь четырнадцать языков.',
+      hi: 'डच और पोलिश जुड़ गई हैं — अब चौदह भाषाएँ।',
+      zh: '新增了荷兰语和波兰语——现在是十四种语言。',
+      ja: 'オランダ語とポーランド語が加わりました — これで14言語です。',
+      ko: '네덜란드어와 폴란드어가 추가되었습니다 — 이제 열네 개 언어입니다.'
+    },
+    {
       date: '2026-07-28',
       de: 'Tage werden als Kalendertage gezählt: Ein Tag mit Zeitumstellung zählt trotzdem als ein Tag, die Anzeige entspricht also den Nächten bis zum Ziel. Dazu ein vollständiger Durchgang zur Barrierefreiheit.',
-      en: 'Days are counted as calendar days: a day with a clock change still counts as one day, so the number matches the nights until the date. Plus a full accessibility pass.'
+      en: 'Days are counted as calendar days: a day with a clock change still counts as one day, so the number matches the nights until the date. Plus a full accessibility pass.',
+      es: 'Los días se cuentan como días de calendario: un día con cambio de hora sigue contando como un día, así que lo que se ve corresponde a las noches que faltan hasta la fecha. Además, una revisión completa de accesibilidad.',
+      fr: 'Les jours sont comptés en jours calendaires : un jour avec changement d’heure compte malgré tout pour un jour, l’affichage correspond donc aux nuits qui restent jusqu’à la date. S’y ajoute un passage complet sur l’accessibilité.',
+      it: 'I giorni vengono contati come giorni di calendario: un giorno con il cambio dell’ora conta comunque come un giorno, quindi l’indicazione corrisponde alle notti che mancano alla data. In più una revisione completa dell’accessibilità.',
+      nl: 'Dagen worden als kalenderdagen geteld: een dag waarop de klok wordt verzet telt toch als één dag, de weergave komt dus overeen met het aantal nachten tot het doel. Daarbij een volledige ronde voor toegankelijkheid.',
+      pl: 'Dni liczone są jako dni kalendarzowe: dzień ze zmianą czasu i tak liczy się jako jeden dzień, wskazanie odpowiada więc liczbie nocy do celu. Do tego pełny przegląd pod kątem dostępności.',
+      pt: 'Os dias são contados como dias de calendário: um dia com mudança da hora conta na mesma como um dia, ou seja, o número corresponde às noites que faltam até à data. Além disso, uma revisão completa de acessibilidade.',
+      tr: 'Günler takvim günü olarak sayılıyor: Saatin değiştiği bir gün yine bir gün sayılıyor, yani gösterilen sayı hedefe kalan gece sayısına denk düşüyor. Ayrıca erişilebilirlik için baştan sona eksiksiz bir gözden geçirme yapıldı.',
+      ru: 'Дни считаются как календарные: день с переводом часов всё равно считается одним днём, так что число соответствует количеству ночей до нужной даты. Плюс полная проверка доступности.',
+      hi: 'दिन कैलेंडर दिनों के रूप में गिने जाते हैं: जिस दिन घड़ी बदलती है, वह भी एक ही दिन गिना जाता है, इसलिए संख्या लक्ष्य तक की रातों से मेल खाती है। साथ में सुगम्यता की एक पूरी जाँच।',
+      zh: '天数按日历天计算：遇上夏令时切换的那一天仍然算一天，所以显示的数字对应的就是到目标日期还有多少个夜晚。另外还做了一轮完整的无障碍检查。',
+      ja: '日数は暦の日で数えます: 時刻の切り替えがある日も1日として数えるので、表示はその日までの夜の数と一致します。あわせて、アクセシビリティの全面的な見直しを行いました。',
+      ko: '날짜는 달력 기준으로 셉니다: 시간이 바뀌는 날도 하루로 세므로, 표시되는 숫자는 목표일까지의 밤 수와 일치합니다. 여기에 접근성 전면 점검을 더했습니다.'
     },
     {
       date: '2026-07-28',
       de: 'Portugiesisch, Russisch und Koreanisch sind dazugekommen — jetzt zwölf Sprachen.',
-      en: 'Portuguese, Russian and Korean were added — twelve languages now.'
+      en: 'Portuguese, Russian and Korean were added — twelve languages now.',
+      es: 'Se han añadido el portugués, el ruso y el coreano: ahora son doce idiomas.',
+      fr: 'Le portugais, le russe et le coréen sont arrivés — douze langues désormais.',
+      it: 'Sono stati aggiunti il portoghese, il russo e il coreano: ora sono dodici lingue.',
+      nl: 'Portugees, Russisch en Koreaans zijn erbij gekomen — nu twaalf talen.',
+      pl: 'Doszły portugalski, rosyjski i koreański — teraz dwanaście języków.',
+      pt: 'Juntaram-se o português, o russo e o coreano — agora são doze idiomas.',
+      tr: 'Portekizce, Rusça ve Korece eklendi — artık on iki dil.',
+      ru: 'Добавились португальский, русский и корейский — теперь двенадцать языков.',
+      hi: 'पुर्तगाली, रूसी और कोरियाई जुड़ गई हैं — अब बारह भाषाएँ।',
+      zh: '新增了葡萄牙语、俄语和韩语——现在是十二种语言。',
+      ja: 'ポルトガル語、ロシア語、韓国語が加わりました — これで12言語です。',
+      ko: '포르투갈어, 러시아어, 한국어가 추가되었습니다 — 이제 열두 개 언어입니다.'
     },
     {
       date: '2026-07-27',
       de: 'Erste Veröffentlichung. Countdown mit neun Stimmungen, der vollständig im Link steckt und sich ohne Konto teilen lässt.',
-      en: 'First release. A countdown in nine moods that lives entirely inside the link and can be shared without an account.'
+      en: 'First release. A countdown in nine moods that lives entirely inside the link and can be shared without an account.',
+      es: 'Primera publicación. Una cuenta atrás con nueve ambientes, que va entera dentro del enlace y se comparte sin cuenta.',
+      fr: 'Première publication. Un compte à rebours en neuf ambiances, entièrement contenu dans le lien et partageable sans compte.',
+      it: 'Prima pubblicazione. Conto alla rovescia con nove atmosfere, contenuto interamente nel link e condivisibile senza account.',
+      nl: 'Eerste release. Aftelklok met negen sferen, die volledig in de link zit en zonder account te delen is.',
+      pl: 'Pierwsze wydanie. Odliczanie w dziewięciu nastrojach, które w całości tkwi w linku i daje się udostępnić bez konta.',
+      pt: 'Primeira publicação. Uma contagem decrescente com nove ambientes, que cabe inteira dentro do link e se partilha sem conta.',
+      tr: 'İlk yayın. Dokuz ruh hâliyle bir geri sayım: tamamen bağlantının içinde duruyor ve hesap açmadan paylaşılabiliyor.',
+      ru: 'Первый выпуск. Обратный отсчёт с девятью настроениями, который целиком помещается в ссылку и передаётся без аккаунта.',
+      hi: 'पहला रिलीज़। नौ मिज़ाजों वाली उलटी गिनती, जो पूरी तरह लिंक के भीतर रहती है और बिना खाते के साझा की जा सकती है।',
+      zh: '首个版本。带九种氛围的倒计时，完整地藏在链接里，无需账号即可分享。',
+      ja: '最初の公開です。9つの雰囲気から選べるカウントダウンで、中身はすべてリンクの中に入っていて、アカウントなしで共有できます。',
+      ko: '첫 공개. 아홉 가지 분위기의 카운트다운으로, 내용이 전부 링크 안에 들어 있어 계정 없이 공유할 수 있습니다.'
     }
   ],
 
   rad: [
     {
+      date: '2026-09-14',
+      de: 'Niederländisch und Polnisch sind dazugekommen — jetzt vierzehn Sprachen.',
+      en: 'Dutch and Polish were added — fourteen languages now.',
+      es: 'Se han añadido el neerlandés y el polaco: ahora son catorce idiomas.',
+      fr: 'Le néerlandais et le polonais sont arrivés — quatorze langues désormais.',
+      it: 'Sono stati aggiunti l’olandese e il polacco: ora sono quattordici lingue.',
+      nl: 'Nederlands en Pools zijn erbij gekomen — nu veertien talen.',
+      pl: 'Doszły niderlandzki i polski — teraz czternaście języków.',
+      pt: 'Juntaram-se o neerlandês e o polaco — agora são catorze idiomas.',
+      tr: 'Felemenkçe ve Lehçe eklendi — artık on dört dil.',
+      ru: 'Добавились нидерландский и польский — теперь четырнадцать языков.',
+      hi: 'डच और पोलिश जुड़ गई हैं — अब चौदह भाषाएँ।',
+      zh: '新增了荷兰语和波兰语——现在是十四种语言。',
+      ja: 'オランダ語とポーランド語が加わりました — これで14言語です。',
+      ko: '네덜란드어와 폴란드어가 추가되었습니다 — 이제 열네 개 언어입니다.'
+    },
+    {
       date: '2026-07-28',
       de: 'Zweite Fassung: Die letzten Drehs stehen jetzt unter dem Rad, es gibt einen Knopf zum Mischen und Vollbild für den Partytisch — dort, wo der Browser Vollbild beherrscht. Die Ergebniskarte sitzt nicht mehr auf dem Rad, sondern daneben.',
-      en: 'Second version: recent spins are listed below the wheel, there is a shuffle button, and full screen for the party table — wherever the browser supports it. The result card sits beside the wheel now instead of on top of it.'
+      en: 'Second version: recent spins are listed below the wheel, there is a shuffle button, and full screen for the party table — wherever the browser supports it. The result card sits beside the wheel now instead of on top of it.',
+      es: 'Segunda versión: los últimos giros aparecen ahora debajo de la ruleta, hay un botón para mezclar y pantalla completa para la mesa de la fiesta, allí donde el navegador la admita. La tarjeta con el resultado ya no está encima de la ruleta, sino al lado.',
+      fr: 'Deuxième version : les derniers tours figurent maintenant sous la roue, il y a un bouton pour mélanger et le plein écran pour les soirées — là où le navigateur le prend en charge. La carte de résultat ne se pose plus sur la roue, mais à côté.',
+      it: 'Seconda versione: gli ultimi giri ora stanno sotto la ruota, c’è un pulsante per mescolare e lo schermo intero per il tavolo della festa, là dove il browser sa fare lo schermo intero. La scheda del risultato non sta più sopra la ruota, ma accanto.',
+      nl: 'Tweede versie: de laatste draaibeurten staan nu onder het rad, er is een knop om te schudden en volledig scherm voor de feesttafel — daar waar de browser volledig scherm aankan. De resultaatkaart zit niet meer op het rad, maar ernaast.',
+      pl: 'Druga wersja: ostatnie losowania znajdują się teraz pod kołem, jest przycisk do mieszania i pełny ekran na stół imprezowy — tam, gdzie przeglądarka obsługuje pełny ekran. Karta z wynikiem nie siedzi już na kole, lecz obok niego.',
+      pt: 'Segunda versão: as últimas rodadas ficam agora por baixo da roda, há um botão para baralhar e ecrã inteiro para a mesa da festa — onde o navegador o suportar. O cartão do resultado já não fica em cima da roda, mas ao lado dela.',
+      tr: 'İkinci sürüm: Son dönüşler artık çarkın altında duruyor, bir karıştırma düğmesi ve parti masası için tam ekran var — tarayıcının tam ekranı desteklediği yerlerde. Sonuç kartı artık çarkın üstünde değil, yanında oturuyor.',
+      ru: 'Вторая версия: последние вращения теперь показаны под колесом, появились кнопка перемешивания и полный экран для праздничного стола — там, где браузер умеет полный экран. Карточка с результатом теперь расположена не на колесе, а рядом с ним.',
+      hi: 'दूसरा संस्करण: पिछले घुमाव अब पहिए के नीचे दिखते हैं, विकल्पों का क्रम बदलने (शफ़ल) का एक बटन है, और पार्टी की मेज़ के लिए पूरी स्क्रीन — वहाँ, जहाँ ब्राउज़र पूरी स्क्रीन का समर्थन करता है। नतीजे का कार्ड अब पहिए के ऊपर नहीं, उसके बग़ल में बैठता है।',
+      zh: '第二版：最近几次转动现在列在转盘下面，多了一个打乱顺序的按钮，还有给聚会桌准备的全屏——在浏览器支持全屏的地方。结果卡片不再压在转盘上，而是放在它旁边。',
+      ja: '第2版です: 最近のスピンがルーレットの下に並ぶようになり、シャッフルのボタンと、パーティーの席で使える全画面表示が加わりました — ブラウザーが全画面表示に対応している場所にかぎります。結果のカードはルーレットの上ではなく、その隣に置かれるようになりました。',
+      ko: '두 번째 판: 최근 스핀 목록이 이제 룰렛 아래에 놓이고, 섞기 버튼이 생겼으며, 파티 테이블을 위한 전체 화면도 있습니다 — 브라우저가 전체 화면을 지원하는 곳에 한해서입니다. 결과 카드는 더 이상 룰렛 위에 겹쳐지지 않고 그 옆에 자리합니다.'
     },
     {
       date: '2026-07-28',
       de: 'Erste Veröffentlichung. Optionen eintippen, Rad drehen, das Los entscheidet. Gezogen wird mit dem Zufallsgenerator des Browsers, bevor sich das Rad bewegt — die Animation zeigt das Ergebnis, sie erzeugt es nicht.',
-      en: 'First release. Type in the options, spin the wheel, let chance decide. The winner is drawn with the browser’s random generator before the wheel moves — the animation shows the result, it does not create it.'
+      en: 'First release. Type in the options, spin the wheel, let chance decide. The winner is drawn with the browser’s random generator before the wheel moves — the animation shows the result, it does not create it.',
+      es: 'Primera publicación. Escribe las opciones, gira la ruleta, decide el azar. El sorteo se hace con el generador aleatorio del navegador antes de que la ruleta se mueva: la animación muestra el resultado, no lo genera.',
+      fr: 'Première publication. Taper les options, tourner la roue, le sort décide. Le tirage se fait avec le générateur aléatoire du navigateur avant que la roue ne bouge — l’animation montre le résultat, elle ne le produit pas.',
+      it: 'Prima pubblicazione. Scrivi le opzioni, gira la ruota, decide la sorte. L’estrazione avviene con il generatore casuale del browser prima che la ruota si muova: l’animazione mostra il risultato, non lo produce.',
+      nl: 'Eerste release. Opties intypen, rad draaien, het lot beslist. Er wordt getrokken met de toevalsgenerator van de browser, voordat het rad in beweging komt — de animatie laat de uitkomst zien, ze maakt hem niet.',
+      pl: 'Pierwsze wydanie. Wpisujesz opcje, kręcisz kołem, decyduje los. Losowania dokonuje generator losowy przeglądarki, zanim koło się poruszy — animacja pokazuje wynik, nie tworzy go.',
+      pt: 'Primeira publicação. Escrever as opções, girar a roda, a sorte decide. O sorteio é feito com o gerador de números aleatórios do navegador antes de a roda se mexer — a animação mostra o resultado, não o cria.',
+      tr: 'İlk yayın. Seçenekleri yazın, çarkı çevirin, kararı kura versin. Kazanan, çark daha hareket etmeden tarayıcının rastgele sayı üreteciyle çekilir — animasyon sonucu gösterir, onu üretmez.',
+      ru: 'Первый выпуск. Впишите варианты, крутите колесо, решает жребий. Победителя определяет генератор случайных чисел браузера ещё до того, как колесо тронется, — анимация показывает результат, а не создаёт его.',
+      hi: 'पहला रिलीज़। विकल्प टाइप करें, पहिया घुमाएँ, किस्मत तय करे। विजेता ब्राउज़र के यादृच्छिक जनरेटर से निकाला जाता है, पहिए के हिलने से पहले ही — एनीमेशन नतीजा दिखाता है, बनाता नहीं।',
+      zh: '首个版本。输入选项，转动转盘，让运气决定。结果是在转盘开始转动之前就用浏览器的随机数生成器抽出来的——动画只是展示结果，并不产生结果。',
+      ja: '最初の公開です。選択肢を入力して、ルーレットを回して、くじに決めてもらいます。当たりはルーレットが動き出す前にブラウザーの乱数生成器で引かれています — アニメーションは結果を見せるだけで、結果を作ってはいません。',
+      ko: '첫 공개. 선택지를 입력하고 룰렛을 돌리면 운이 결정합니다. 당첨은 룰렛이 움직이기 전에 브라우저의 난수 생성기로 뽑습니다 — 애니메이션은 결과를 보여 줄 뿐, 만들어 내지 않습니다.'
     }
   ],
 
   zaehlwerk: [
     {
+      date: '2026-09-14',
+      de: 'Niederländisch und Polnisch sind dazugekommen — jetzt vierzehn Sprachen. Polnisch bekommt dabei eigene Mehrzahlformen, weil es vier davon kennt statt zwei.',
+      en: 'Dutch and Polish were added — fourteen languages now. Polish gets its own plural forms, because it has four of them rather than two.',
+      es: 'Se han añadido el neerlandés y el polaco: ahora son catorce idiomas. El polaco recibe además sus propias formas de plural, porque tiene cuatro en vez de dos.',
+      fr: 'Le néerlandais et le polonais sont arrivés — quatorze langues désormais. Le polonais reçoit ses propres formes de pluriel, car il en compte quatre au lieu de deux.',
+      it: 'Sono stati aggiunti l’olandese e il polacco: ora sono quattordici lingue. Il polacco riceve forme di plurale proprie, perché ne conosce quattro invece di due.',
+      nl: 'Nederlands en Pools zijn erbij gekomen — nu veertien talen. Pools krijgt daarbij eigen meervoudsvormen, omdat het er vier kent in plaats van twee.',
+      pl: 'Doszły niderlandzki i polski — teraz czternaście języków. Polski dostaje przy tym własne formy liczby mnogiej, bo ma ich cztery zamiast dwóch.',
+      pt: 'Juntaram-se o neerlandês e o polaco — agora são catorze idiomas. O polaco recebe formas de plural próprias, porque tem quatro em vez de duas.',
+      tr: 'Felemenkçe ve Lehçe eklendi — artık on dört dil. Lehçe ayrıca kendine özgü çoğul biçimler alıyor, çünkü bu dilde iki değil dört tane var.',
+      ru: 'Добавились нидерландский и польский — теперь четырнадцать языков. Польский при этом получает собственные формы множественного числа, потому что их у него четыре, а не две.',
+      hi: 'डच और पोलिश जुड़ गई हैं — अब चौदह भाषाएँ। इसमें पोलिश को अपने ख़ुद के बहुवचन रूप मिले हैं, क्योंकि उसमें दो के बजाय चार होते हैं।',
+      zh: '新增了荷兰语和波兰语——现在是十四种语言。波兰语还配上了自己的复数形式，因为它有四种，而不是两种。',
+      ja: 'オランダ語とポーランド語が加わりました — これで14言語です。ポーランド語には専用の複数形を用意しました。複数形を2つではなく4つ持つ言語だからです。',
+      ko: '네덜란드어와 폴란드어가 추가되었습니다 — 이제 열네 개 언어입니다. 그중 폴란드어에는 고유한 복수형이 들어갑니다 — 폴란드어는 복수형이 둘이 아니라 넷이기 때문입니다.'
+    },
+    {
       date: '2026-09-13',
       de: 'Behoben: Im ersten Schritt der Anleitung fehlten die Schrägstriche im Windows-Pfad — dort stand %USERPROFILE%.claudeprojects statt %USERPROFILE%\\.claude\\projects. Wer dem gefolgt ist, hat den Ordner nicht gefunden.',
-      en: 'Fixed: the first step of the guide had lost the backslashes in the Windows path — it read %USERPROFILE%.claudeprojects instead of %USERPROFILE%\\.claude\\projects. Anyone following it would not have found the folder.'
+      en: 'Fixed: the first step of the guide had lost the backslashes in the Windows path — it read %USERPROFILE%.claudeprojects instead of %USERPROFILE%\\.claude\\projects. Anyone following it would not have found the folder.',
+      es: 'Corregido: en el primer paso de la guía faltaban las barras de la ruta de Windows; allí ponía %USERPROFILE%.claudeprojects en lugar de %USERPROFILE%\\.claude\\projects. Quien la siguió no encontró la carpeta.',
+      fr: 'Corrigé : à la première étape du guide, les barres obliques inverses manquaient dans le chemin Windows — on y lisait %USERPROFILE%.claudeprojects au lieu de %USERPROFILE%\\.claude\\projects. Ceux qui l’ont suivi n’ont pas trouvé le dossier.',
+      it: 'Risolto: nel primo passo della guida mancavano le barre rovesciate nel percorso di Windows: c’era scritto %USERPROFILE%.claudeprojects invece di %USERPROFILE%\\.claude\\projects. Chi l’ha seguito non ha trovato la cartella.',
+      nl: 'Opgelost: in de eerste stap van de handleiding ontbraken de schuine strepen in het Windows-pad — daar stond %USERPROFILE%.claudeprojects in plaats van %USERPROFILE%\\.claude\\projects. Wie dat volgde, vond de map niet.',
+      pl: 'Naprawione: w pierwszym kroku poradnika brakowało ukośników odwrotnych w ścieżce Windows — było tam %USERPROFILE%.claudeprojects zamiast %USERPROFILE%\\.claude\\projects. Kto się tym kierował, nie znalazł tego folderu.',
+      pt: 'Corrigido: no primeiro passo do guia faltavam as barras invertidas no caminho do Windows — estava lá %USERPROFILE%.claudeprojects em vez de %USERPROFILE%\\.claude\\projects. Quem seguiu isso não encontrou a pasta.',
+      tr: 'Düzeltildi: Kılavuzun ilk adımında Windows yolundaki ters eğik çizgiler kaybolmuştu — orada %USERPROFILE%\\.claude\\projects yerine %USERPROFILE%.claudeprojects yazıyordu. Buna uyanlar klasörü bulamamıştır.',
+      ru: 'Исправлено: в первом шаге руководства в пути Windows пропали обратные косые черты — там стояло %USERPROFILE%.claudeprojects вместо %USERPROFILE%\\.claude\\projects. Кто следовал этому, папку не нашёл.',
+      hi: 'ठीक किया गया: गाइड के पहले चरण में Windows पथ के बैकस्लैश ग़ायब थे — वहाँ %USERPROFILE%\\.claude\\projects के बजाय %USERPROFILE%.claudeprojects लिखा था। जिसने उसका पालन किया, उसे फ़ोल्डर मिला ही नहीं।',
+      zh: '已修复：使用说明的第一步里，Windows 路径少了反斜杠——那里写的是 %USERPROFILE%.claudeprojects，而不是 %USERPROFILE%\\.claude\\projects。照着做的人根本找不到那个文件夹。',
+      ja: '修正: 使い方の最初のステップで、Windows のパスからバックスラッシュが抜けていました — %USERPROFILE%\\.claude\\projects とあるべきところが %USERPROFILE%.claudeprojects になっていました。そのとおりにした方は、フォルダーを見つけられませんでした。',
+      ko: '수정: 사용법 첫 단계의 Windows 경로에서 역슬래시가 빠져 있었습니다 — %USERPROFILE%\\.claude\\projects 대신 %USERPROFILE%.claudeprojects라고 적혀 있었습니다. 그대로 따라 한 분은 폴더를 찾지 못했을 것입니다.'
     },
     {
       date: '2026-07-31',
       de: 'Dazu gibt es jetzt den Zählwerk Ticker: eine kleine schwebende Anzeige für Windows mit dem laufenden Fünf-Stunden-Fenster, der Tagessumme und den stärksten Modellen — zum Mitschauen beim Arbeiten statt zum Nachschauen hinterher. Der Verweis darauf steht auf der Zählwerk-Seite; Quellcode und fertige Exe liegen auf GitHub.',
-      en: 'There is now a Zählwerk Ticker to go with it: a small floating readout for Windows showing the current five-hour window, the daily total and the busiest models — to watch while working rather than to check afterwards. The link sits on the Zählwerk page; source code and a prebuilt exe are on GitHub.'
+      en: 'There is now a Zählwerk Ticker to go with it: a small floating readout for Windows showing the current five-hour window, the daily total and the busiest models — to watch while working rather than to check afterwards. The link sits on the Zählwerk page; source code and a prebuilt exe are on GitHub.',
+      es: 'Ahora hay además el Zählwerk Ticker: un pequeño indicador flotante para Windows con el periodo de cinco horas en curso, el total del día y los modelos más usados, para mirarlo mientras trabajas en vez de consultarlo después. El enlace está en la página de Zählwerk; el código fuente y el exe ya compilado están en GitHub.',
+      fr: 'Il existe maintenant le Zählwerk Ticker qui va avec : un petit affichage flottant pour Windows avec la fenêtre de cinq heures en cours, le total du jour et les modèles les plus sollicités — à regarder pendant le travail plutôt qu’à consulter après coup. Le lien se trouve sur la page de Zählwerk ; le code source et un exécutable tout prêt sont sur GitHub.',
+      it: 'Ora c’è anche lo Zählwerk Ticker: un piccolo indicatore fluttuante per Windows con la finestra di cinque ore in corso, il totale del giorno e i modelli più usati, da guardare mentre lavori invece che da controllare dopo. Il rimando si trova sulla pagina di Zählwerk; codice sorgente ed eseguibile pronto sono su GitHub.',
+      nl: 'Daarbij is er nu de Zählwerk Ticker: een kleine zwevende weergave voor Windows met het lopende venster van vijf uur, het dagtotaal en de zwaarste modellen — om tijdens het werken mee te kijken in plaats van achteraf na te kijken. De verwijzing ernaartoe staat op de Zählwerk-pagina; broncode en kant-en-klare exe staan op GitHub.',
+      pl: 'Do tego jest teraz Zählwerk Ticker: mały pływający wskaźnik dla Windows z bieżącym pięciogodzinnym oknem, sumą dzienną i najmocniej obciążonymi modelami — do podglądania przy pracy zamiast sprawdzania po fakcie. Odnośnik do niego znajduje się na stronie Zählwerk; kod źródłowy i gotowy plik exe są na GitHubie.',
+      pt: 'Passa a haver também o Zählwerk Ticker: um pequeno mostrador flutuante para Windows com a janela de cinco horas em curso, o total do dia e os modelos mais usados — para ir vendo enquanto trabalha, em vez de ir consultar depois. A ligação para ele está na página do Zählwerk; o código-fonte e um executável pronto estão no GitHub.',
+      tr: 'Buna eşlik eden bir de Zählwerk Ticker var: Windows için küçük, havada duran bir gösterge; içinde bulunduğunuz beş saatlik pencereyi, günün toplamını ve en yoğun modelleri gösteriyor — sonradan bakmak yerine çalışırken izlemek için. Bağlantısı Zählwerk sayfasında duruyor; kaynak kodu ve hazır exe dosyası GitHub’da.',
+      ru: 'В дополнение к нему появился Zählwerk Ticker: небольшое плавающее окно для Windows: текущее пятичасовое окно, сумма за день и самые нагруженные модели — чтобы поглядывать во время работы, а не проверять потом. Ссылка на него есть на странице Zählwerk; исходный код и готовый exe лежат на GitHub.',
+      hi: 'अब इसके साथ Zählwerk Ticker भी है: Windows के लिए एक छोटी तैरती हुई पट्टी, जिसमें चल रही पाँच घंटे की विंडो, दिन का कुल जोड़ और सबसे व्यस्त मॉडल दिखते हैं — बाद में देखने के बजाय काम करते हुए साथ-साथ देखने के लिए। इसका लिंक Zählwerk पेज पर है; सोर्स कोड और तैयार exe GitHub पर हैं।',
+      zh: '现在还配上了 Zählwerk Ticker：一个面向 Windows 的悬浮小窗，展示正在进行的五小时窗口、当日总量和用得最多的模型——用来边工作边看，而不是事后再查。指向它的链接就在 Zählwerk 页面上；源代码和现成的 exe 放在 GitHub 上。',
+      ja: 'あわせて Zählwerk Ticker ができました: Windows 用の小さな浮かぶ表示で、進行中の5時間ウィンドウ、その日の合計、そしていちばん使われているモデルを映します — あとから調べるのではなく、作業しながら眺めるためのものです。そこへのリンクは Zählwerk のページにあります。ソースコードとビルド済みの exe は GitHub にあります。',
+      ko: '여기에 Zählwerk Ticker가 더해졌습니다: 진행 중인 5시간 구간, 그날의 합계, 가장 많이 쓴 모델을 보여 주는, 화면에 떠 있는 Windows용 작은 창입니다 — 나중에 확인하는 대신 일하면서 함께 보라고 만들었습니다. 그리로 가는 링크는 Zählwerk 페이지에 있고, 소스 코드와 완성된 exe 파일은 GitHub에 있습니다.'
     },
     {
       date: '2026-07-31',
       de: 'Erste Veröffentlichung. Ordner auswählen, und Zählwerk rechnet aus, wohin der eigene Claude-Code-Verbrauch geht — nach Tag, Modell, Projekt, Wochentag und Uhrzeit. Gelesen wird ausschließlich im Browser; die Protokolle werden nicht hochgeladen.',
-      en: 'First release. Pick a folder and Zählwerk works out where your Claude Code usage goes — by day, model, project, weekday and hour. Everything is read inside the browser; the logs are never uploaded.'
+      en: 'First release. Pick a folder and Zählwerk works out where your Claude Code usage goes — by day, model, project, weekday and hour. Everything is read inside the browser; the logs are never uploaded.',
+      es: 'Primera publicación. Eliges la carpeta y Zählwerk calcula a dónde va tu propio consumo de Claude Code: por día, modelo, proyecto, día de la semana y hora. La lectura ocurre exclusivamente en el navegador; los registros no se suben.',
+      fr: 'Première publication. Choisissez un dossier, et Zählwerk calcule où passe votre consommation de Claude Code — par jour, modèle, projet, jour de la semaine et heure. La lecture se fait exclusivement dans le navigateur ; les journaux ne sont pas téléversés.',
+      it: 'Prima pubblicazione. Scegli la cartella e Zählwerk calcola dove va il tuo consumo di Claude Code: per giorno, modello, progetto, giorno della settimana e ora. La lettura avviene esclusivamente nel browser; i registri non vengono caricati.',
+      nl: 'Eerste release. Map kiezen, en Zählwerk rekent uit waar je eigen verbruik van Claude Code naartoe gaat — per dag, model, project, weekdag en uur. Er wordt uitsluitend in de browser gelezen; de logbestanden worden niet geüpload.',
+      pl: 'Pierwsze wydanie. Wybierasz folder, a Zählwerk wylicza, dokąd idzie twoje własne zużycie Claude Code — według dnia, modelu, projektu, dnia tygodnia i godziny. Czytanie odbywa się wyłącznie w przeglądarce; logi nie są nigdzie wgrywane.',
+      pt: 'Primeira publicação. Escolher a pasta e o Zählwerk calcula para onde vai o seu consumo do Claude Code — por dia, modelo, projeto, dia da semana e hora. A leitura acontece exclusivamente no navegador; os registos não são carregados para lado nenhum.',
+      tr: 'İlk yayın. Klasörü seçin, Zählwerk kendi Claude Code tüketiminizin nereye gittiğini hesaplasın — güne, modele, projeye, haftanın gününe ve saate göre. Okuma yalnızca tarayıcıda yapılır; kayıtlar hiçbir yere gönderilmez.',
+      ru: 'Первый выпуск. Выберите папку, и Zählwerk рассчитает, куда уходит ваш расход Claude Code, — по дням, моделям, проектам, дням недели и часам. Чтение идёт исключительно в браузере; журналы никуда не загружаются.',
+      hi: 'पहला रिलीज़। फ़ोल्डर चुनें, और Zählwerk हिसाब लगा देता है कि आपकी अपनी Claude Code खपत कहाँ जाती है — दिन, मॉडल, प्रोजेक्ट, सप्ताह के दिन और घंटे के अनुसार। पढ़ा केवल ब्राउज़र में ही जाता है; लॉग अपलोड नहीं किए जाते।',
+      zh: '首个版本。选择文件夹，Zählwerk 就算出你自己的 Claude Code 用量都花在哪里——按天、按模型、按项目、按星期几和按钟点。读取完全在浏览器里进行；日志不会被上传。',
+      ja: '最初の公開です。フォルダーを選ぶと、Zählwerk が自分の Claude Code の使用量がどこに行っているかを計算します — 日別、モデル別、プロジェクト別、曜日別、時刻別に。読み取りはブラウザーの中だけで行われ、ログはアップロードされません。',
+      ko: '첫 공개. 폴더를 고르면 Zählwerk이 내 Claude Code 사용량이 어디로 가는지 계산합니다 — 날짜별, 모델별, 프로젝트별, 요일별, 시간대별로. 읽기는 오직 브라우저 안에서만 이루어지며, 기록은 업로드되지 않습니다.'
     }
   ],
 
@@ -179,7 +599,19 @@ var NEWS = {
       version: 'v1.0',
       link: 'https://github.com/Dennismit2n/besucher-ticker/releases/tag/v1.0',
       de: 'Erste Veröffentlichung. Ein schwebendes Fenster für Windows, das die Zahlen der eigenen GoatCounter-Seite live zeigt: Aufrufe im gewählten Zeitraum (heute, 7 Tage, 30 Tage, gesamt), Besucher je Seite als Balken, dazu Länder oder Verweise. Das API-Token bleibt verschlüsselt auf dem eigenen Rechner.',
-      en: 'First release. A floating window for Windows that shows the numbers of your own GoatCounter site live: pageviews for the chosen period (today, 7 days, 30 days, all time), visitors per page as bars, plus countries or referrers. The API token stays encrypted on your own machine.'
+      en: 'First release. A floating window for Windows that shows the numbers of your own GoatCounter site live: pageviews for the chosen period (today, 7 days, 30 days, all time), visitors per page as bars, plus countries or referrers. The API token stays encrypted on your own machine.',
+      es: 'Primera publicación. Una ventana flotante para Windows que muestra en vivo las cifras de tu propia página de GoatCounter: páginas vistas en el periodo elegido (hoy, 7 días, 30 días, total), visitantes por página en forma de barras, además de países o referencias. El token de la API se queda cifrado en tu propio ordenador.',
+      fr: 'Première publication. Une fenêtre flottante pour Windows qui montre en direct les chiffres de votre propre page GoatCounter : pages vues sur la période choisie (aujourd’hui, 7 jours, 30 jours, total), visiteurs par page sous forme de barres, plus les pays ou les référents. Le jeton d’API reste chiffré sur votre propre ordinateur.',
+      it: 'Prima pubblicazione. Una finestra fluttuante per Windows che mostra in tempo reale i numeri della tua pagina GoatCounter: visualizzazioni nel periodo scelto (oggi, 7 giorni, 30 giorni, sempre), visitatori per pagina come barre, più paesi o referrer. Il token API resta cifrato sul tuo computer.',
+      nl: 'Eerste release. Een zwevend venster voor Windows dat de cijfers van je eigen GoatCounter-pagina live laat zien: paginaweergaven in de gekozen periode (vandaag, 7 dagen, 30 dagen, totaal), bezoekers per pagina als balken, plus landen of verwijzers. Het API-token blijft versleuteld op je eigen computer.',
+      pl: 'Pierwsze wydanie. Pływające okno dla Windows, które pokazuje na żywo liczby z twojej własnej strony w GoatCounter: wyświetlenia w wybranym okresie (dziś, 7 dni, 30 dni, łącznie), odwiedzający dla każdej strony w formie słupków, do tego kraje albo źródła wejść. Token API pozostaje zaszyfrowany na twoim komputerze.',
+      pt: 'Primeira publicação. Uma janela flutuante para Windows que mostra ao vivo os números da sua própria página no GoatCounter: visualizações no período escolhido (hoje, 7 dias, 30 dias, desde sempre), visitantes por página em barras, e ainda países ou referências. O token da API fica cifrado no seu próprio computador.',
+      tr: 'İlk yayın. Kendi GoatCounter sayfanızın sayılarını canlı gösteren, Windows için havada duran bir pencere: seçilen dönemdeki görüntülenmeler (bugün, 7 gün, 30 gün, tümü), sayfa başına ziyaretçiler çubuk olarak, ayrıca ülkeler veya yönlendirenler. API belirteci şifrelenmiş hâlde kendi bilgisayarınızda kalır.',
+      ru: 'Первый выпуск. Плавающее окно для Windows, которое в реальном времени показывает цифры вашей собственной страницы GoatCounter: просмотры за выбранный период (сегодня, 7 дней, 30 дней, всё время), посетители по страницам в виде столбиков, плюс страны или источники переходов. Токен API остаётся зашифрованным на вашем собственном компьютере.',
+      hi: 'पहला रिलीज़। Windows के लिए एक तैरती हुई विंडो, जो आपकी अपनी GoatCounter साइट के आँकड़े लाइव दिखाती है: चुनी हुई अवधि (आज, 7 दिन, 30 दिन, कुल) के पेजव्यू, प्रति पेज विज़िटर बार के रूप में, साथ में देश या रेफ़रर। API टोकन एन्क्रिप्टेड रूप में आपके अपने कंप्यूटर पर ही रहता है।',
+      zh: '首个版本。一个面向 Windows 的悬浮窗口，实时显示你自己 GoatCounter 站点的数字：所选时间段（今天、7 天、30 天、全部）的浏览量、按页面的访客柱条，以及国家或来源。API 令牌加密后留在你自己的电脑上。',
+      ja: '最初の公開です。自分の GoatCounter サイトの数字をライブで映す、Windows 用の浮かぶウィンドウです: 選んだ期間（今日、7日、30日、全期間）のページビュー、ページごとの訪問者数をバーで、さらに国または参照元も。API トークンは暗号化されたまま自分のパソコンの中に残ります。',
+      ko: '첫 공개. 자기 GoatCounter 사이트의 숫자를 실시간으로 보여 주는, 화면에 떠 있는 Windows용 창입니다: 선택한 기간(오늘, 7일, 30일, 전체)의 조회수, 페이지별 방문자를 막대로, 여기에 국가 또는 유입 경로. API 토큰은 암호화된 채 자기 컴퓨터에 남습니다.'
     }
   ],
 
@@ -187,14 +619,38 @@ var NEWS = {
     {
       date: '2026-07-31',
       de: 'Die Testversion läuft jetzt auch im Browser — am Handy mit dem Finger oder einem Stift, ohne Herunterladen und ohne Uhr. Gebaut aus derselben Quelle wie das Windows-Programm; der Export bleibt auf a–z beschränkt und heißt weiter „fontART DEMO“. Am iPhone bitte Safari benutzen. Eine Schriftdatei lässt sich am Handy nicht als Systemschrift einrichten — installiert wird sie am Rechner.',
-      en: 'The trial now runs in the browser as well — on a phone with a finger or a pen, without downloading anything and without a clock. Built from the same source as the Windows program; the export stays limited to a–z and is still called “fontART DEMO”. On an iPhone please use Safari. A font file cannot be set up as a system font on a phone — installing happens on a computer.'
+      en: 'The trial now runs in the browser as well — on a phone with a finger or a pen, without downloading anything and without a clock. Built from the same source as the Windows program; the export stays limited to a–z and is still called “fontART DEMO”. On an iPhone please use Safari. A font file cannot be set up as a system font on a phone — installing happens on a computer.',
+      es: 'La versión de prueba funciona ahora también en el navegador: en el móvil con el dedo o con un lápiz, sin descargar nada y sin reloj. Está construida a partir del mismo código fuente que el programa de Windows; la exportación sigue limitada a las letras a–z y sigue llamándose «fontART DEMO». En el iPhone, usa Safari, por favor. Un archivo de fuente no se puede instalar como fuente del sistema en el móvil: eso se hace en el ordenador.',
+      fr: 'La version d’essai tourne désormais aussi dans le navigateur — sur téléphone au doigt ou au stylet, sans téléchargement et sans chronomètre. Construite à partir de la même source que le programme Windows ; l’export reste limité à a–z et s’appelle toujours « fontART DEMO ». Sur iPhone, utilisez Safari. Un fichier de police ne peut pas être installé comme police système sur un téléphone — l’installation se fait sur l’ordinateur.',
+      it: 'La versione di prova ora gira anche nel browser: sul telefono con il dito o con un pennino, senza scaricare niente e senza timer. Costruita dalla stessa sorgente del programma per Windows; l’esportazione resta limitata ad a–z e si chiama sempre «fontART DEMO». Su iPhone usa Safari. Un file di carattere sul telefono non si può impostare come carattere di sistema: si installa sul computer.',
+      nl: 'De proefversie draait nu ook in de browser — op de telefoon met je vinger of een stylus, zonder downloaden en zonder klok. Gebouwd uit dezelfde bron als het Windows-programma; de export blijft beperkt tot a–z en heet nog steeds “fontART DEMO”. Gebruik op de iPhone alsjeblieft Safari. Een lettertypebestand kun je op een telefoon niet als systeemlettertype instellen — installeren doe je op de computer.',
+      pl: 'Wersja próbna działa teraz także w przeglądarce — na telefonie palcem albo rysikiem, bez pobierania i bez zegara. Zbudowana z tego samego źródła co program dla Windows; eksport pozostaje ograniczony do a–z i dalej nazywa się „fontART DEMO”. Na iPhonie używaj Safari. Pliku z krojem pisma nie da się na telefonie ustawić jako czcionki systemowej — instaluje się go na komputerze.',
+      pt: 'A versão de teste corre agora também no navegador — no telemóvel com o dedo ou com uma caneta, sem transferir nada e sem relógio. Construída a partir do mesmo código-fonte que o programa para Windows; a exportação continua limitada a a–z e continua a chamar-se «fontART DEMO». No iPhone use o Safari, por favor. Um ficheiro de fonte não se consegue instalar como fonte do sistema no telemóvel — a instalação faz-se no computador.',
+      tr: 'Deneme sürümü artık tarayıcıda da çalışıyor — telefonda parmakla ya da kalemle, hiçbir şey indirmeden ve saat işlemeden. Windows programıyla aynı kaynaktan derlendi; dışa aktarma a–z ile sınırlı kalıyor ve adı yine “fontART DEMO”. iPhone’da lütfen Safari kullanın. Bir yazı tipi dosyası telefonda sistem yazı tipi olarak kurulamaz — kurulum bilgisayarda yapılır.',
+      ru: 'Пробная версия теперь работает и в браузере — на телефоне пальцем или стилусом, без скачивания и без ограничения по времени. Собрана из того же исходника, что и программа для Windows; экспорт по-прежнему ограничен a–z и называется «fontART DEMO». На iPhone пользуйтесь, пожалуйста, Safari. Файл шрифта нельзя установить на телефоне как системный шрифт — устанавливают его на компьютере.',
+      hi: 'परीक्षण संस्करण अब ब्राउज़र में भी चलता है — फ़ोन पर उँगली या स्टाइलस से, बिना कुछ डाउनलोड किए और बिना घड़ी के। इसे Windows प्रोग्राम वाले उसी सोर्स से बनाया गया है; निर्यात a–z तक ही सीमित रहता है और उसका नाम आगे भी “fontART DEMO” ही है। iPhone पर कृपया Safari इस्तेमाल करें। फ़ोन पर किसी फ़ॉन्ट फ़ाइल को सिस्टम फ़ॉन्ट के रूप में नहीं लगाया जा सकता — इंस्टॉल कंप्यूटर पर ही होता है।',
+      zh: '试用版现在也能在浏览器里运行——在手机上用手指或触控笔，不用下载，也没有计时。它和 Windows 程序出自同一份源代码；导出仍然只限 a–z，名称仍然叫“fontART DEMO”。在 iPhone 上请使用 Safari。字体文件没法在手机上设为系统字体——安装要在电脑上进行。',
+      ja: '体験版がブラウザーでも動くようになりました — スマートフォンなら指やペンで、ダウンロードなし、時間制限なしで使えます。Windows 版と同じソースから作られています。書き出しは a–z に限られたままで、名前も「fontART DEMO」のままです。iPhone では Safari をお使いください。フォントファイルはスマートフォンではシステムフォントとして設定できません — インストールはパソコンで行います。',
+      ko: '체험판이 이제 브라우저에서도 돌아갑니다 — 휴대폰에서 손가락이나 펜으로, 내려받기도 시계도 없이. Windows 프로그램과 같은 소스로 만들었으며, 내보내기는 a–z로 제한된 채이고 이름도 여전히 “fontART DEMO”입니다. iPhone에서는 Safari를 써 주세요. 휴대폰에서는 글꼴 파일을 시스템 글꼴로 설치할 수 없습니다 — 설치는 컴퓨터에서 합니다.'
     },
     {
       date: '2026-07-31',
       version: 'v10.1.0',
       link: 'https://github.com/Dennismit2n/fontART-demo/releases/tag/v10.1.0',
       de: 'Erste Veröffentlichung der Testversion für Windows. Handschrift malen und als Schriftart ausgeben: 60 Minuten je Start, alle Werkzeuge offen, Speichern und Laden inbegriffen. Der Export liefert die Kleinbuchstaben a–z unter dem festen Namen „fontART DEMO“. Die Vollversion mit allen 333 Zeichen ist in Arbeit.',
-      en: 'First release of the Windows trial. Draw your handwriting and turn it into a typeface: 60 minutes per start, every tool unlocked, saving and loading included. The export produces the lowercase letters a–z under the fixed name “fontART DEMO”. The full version with all 333 characters is being worked on.'
+      en: 'First release of the Windows trial. Draw your handwriting and turn it into a typeface: 60 minutes per start, every tool unlocked, saving and loading included. The export produces the lowercase letters a–z under the fixed name “fontART DEMO”. The full version with all 333 characters is being worked on.',
+      es: 'Primera publicación de la versión de prueba para Windows. Dibujar tu letra y convertirla en una fuente: 60 minutos por arranque, todas las herramientas desbloqueadas, guardar y cargar incluidos. La exportación entrega las minúsculas a–z bajo el nombre fijo «fontART DEMO». La versión completa con los 333 caracteres está en preparación.',
+      fr: 'Première publication de la version d’essai pour Windows. Dessiner son écriture et en faire une police : 60 minutes par démarrage, tous les outils débloqués, enregistrement et chargement compris. L’export livre les minuscules a–z sous le nom fixe « fontART DEMO ». La version complète avec les 333 caractères est en préparation.',
+      it: 'Prima pubblicazione della versione di prova per Windows. Disegnare la propria scrittura a mano e farne un carattere tipografico: 60 minuti a ogni avvio, tutti gli strumenti aperti, salvataggio e caricamento inclusi. L’esportazione dà le lettere minuscole a–z sotto il nome fisso «fontART DEMO». La versione completa con tutti i 333 caratteri è in lavorazione.',
+      nl: 'Eerste release van de proefversie voor Windows. Handschrift tekenen en als lettertype uitvoeren: 60 minuten per start, alle gereedschappen open, opslaan en laden inbegrepen. De export levert de kleine letters a–z onder de vaste naam “fontART DEMO”. De volledige versie met alle 333 tekens is in de maak.',
+      pl: 'Pierwsze wydanie wersji próbnej dla Windows. Malujesz swoje pismo odręczne i eksportujesz je jako krój pisma: 60 minut na każde uruchomienie, wszystkie narzędzia otwarte, zapisywanie i wczytywanie w komplecie. Eksport daje małe litery a–z pod stałą nazwą „fontART DEMO”. Pełna wersja ze wszystkimi 333 znakami jest w przygotowaniu.',
+      pt: 'Primeira publicação da versão de teste para Windows. Desenhar a sua letra e obtê-la como fonte: 60 minutos por arranque, todas as ferramentas abertas, guardar e carregar incluídos. A exportação entrega as minúsculas a–z com o nome fixo «fontART DEMO». A versão completa com todos os 333 caracteres está em preparação.',
+      tr: 'Windows için deneme sürümünün ilk yayını. El yazınızı çizin ve yazı tipi olarak dışa aktarın: her başlatmada 60 dakika, bütün araçlar açık, kaydetme ve yükleme dâhil. Dışa aktarma, sabit “fontART DEMO” adı altında a–z küçük harflerini verir. Bütün 333 karakteri içeren tam sürüm hazırlanıyor.',
+      ru: 'Первый выпуск пробной версии для Windows. Рисуйте свой почерк и превращайте его в шрифт: 60 минут за один запуск, все инструменты открыты, сохранение и загрузка включены. Экспорт выдаёт строчные буквы a–z под неизменным именем «fontART DEMO». Полная версия со всеми 333 символами в работе.',
+      hi: 'Windows के लिए परीक्षण संस्करण का पहला रिलीज़। अपनी लिखावट बनाइए और उसे फ़ॉन्ट के रूप में निकालिए: हर बार शुरू करने पर 60 मिनट, सारे औज़ार खुले, सहेजना और लोड करना शामिल। निर्यात छोटे अक्षर a–z देता है, तय नाम “fontART DEMO” के नीचे। सभी 333 वर्णों वाला पूर्ण संस्करण तैयार हो रहा है।',
+      zh: '面向 Windows 的试用版首次发布。画出你的手写体并导出为字体：每次启动 60 分钟，所有工具都开放，包含保存和载入。导出给出的是小写字母 a–z，用的是固定名称“fontART DEMO”。包含全部 333 个字符的完整版正在制作中。',
+      ja: 'Windows 用体験版の最初の公開です。手書きの文字を描いてフォントとして書き出します: 1回の起動につき60分、すべての道具が使え、保存と読み込みも含まれます。書き出されるのは小文字 a–z で、名前は「fontART DEMO」に固定されています。333文字すべてが入る製品版は制作中です。',
+      ko: 'Windows용 체험판의 첫 공개. 손글씨를 그려 글꼴로 내보냅니다: 실행할 때마다 60분, 모든 도구가 열려 있고, 저장과 불러오기도 포함됩니다. 내보내기는 소문자 a–z를 “fontART DEMO”라는 고정된 이름으로 내놓습니다. 333자를 모두 담은 정식판은 작업 중입니다.'
     }
   ],
 
@@ -203,20 +659,56 @@ var NEWS = {
       date: '2026-09-13',
       version: 'v1.6.0',
       link: 'https://github.com/Dennismit2n/create-masterprompt/releases/tag/v1.6.0',
-      de: 'Neue Mini-Kachel „Übersicht“ — sie öffnet die einseitige Zusammenfassung direkt aus GitHub, auf Deutsch oder Englisch, je nachdem welche Sprache oben eingestellt ist. Die zehn übrigen Sprachen bekommen wie überall auf dieser Seite die englische Fassung.',
-      en: 'New “Overview” mini tile — it opens the one-page summary straight from GitHub, in German or English depending on the language set above. The other ten languages get the English version, same as everywhere else on this page.'
+      de: 'Neue Mini-Kachel „Übersicht“ — sie öffnet die einseitige Zusammenfassung direkt aus GitHub, auf Deutsch oder Englisch, je nachdem welche Sprache oben eingestellt ist. In allen anderen Sprachen erscheint die englische Fassung.',
+      en: 'New “Overview” mini tile — it opens the one-page summary straight from GitHub, in German or English depending on the language set above. In every other language the English version appears.',
+      es: 'Nueva minitarjeta «Resumen»: abre el resumen de una sola página directamente desde GitHub, en alemán o en inglés, según el idioma que esté seleccionado arriba. En todos los demás idiomas aparece la versión inglesa.',
+      fr: 'Nouvelle mini-vignette « Aperçu » — elle ouvre le résumé en une page directement depuis GitHub, en allemand ou en anglais, selon la langue réglée en haut. Dans toutes les autres langues, c’est la version anglaise qui apparaît.',
+      it: 'Nuova mini-scheda «Panoramica»: apre la sintesi in una pagina direttamente da GitHub, in tedesco o in inglese, a seconda della lingua impostata in alto. In tutte le altre lingue compare la versione inglese.',
+      nl: 'Nieuwe minitegel “Overzicht” — die opent de samenvatting van één pagina rechtstreeks vanuit GitHub, in het Duits of het Engels, afhankelijk van de taal die hierboven is ingesteld. In alle andere talen verschijnt de Engelse versie.',
+      pl: 'Nowy mini-kafelek „Przegląd” — otwiera jednostronicowe podsumowanie prosto z GitHuba, po niemiecku albo po angielsku, zależnie od tego, jaki język jest ustawiony powyżej. We wszystkich pozostałych językach pojawia się wersja angielska.',
+      pt: 'Novo mini-cartão «Visão geral» — abre o resumo de uma página diretamente do GitHub, em alemão ou em inglês, consoante o idioma escolhido em cima. Em todos os outros idiomas aparece a versão inglesa.',
+      tr: 'Yeni mini kart “Genel bakış” — tek sayfalık özeti doğrudan GitHub’dan açıyor; yukarıda hangi dil seçiliyse Almanca ya da İngilizce olarak. Diğer bütün dillerde İngilizce sürüm görünüyor.',
+      ru: 'Новая мини-плитка «Обзор» — она открывает одностраничную сводку прямо с GitHub, на немецком или английском, смотря какой язык выбран наверху. Все остальные языки получают английскую версию.',
+      hi: 'नया मिनी-कार्ड “अवलोकन” — यह एक पेज का सारांश सीधे GitHub से खोलता है, जर्मन या अंग्रेज़ी में, इसके अनुसार कि ऊपर कौन-सी भाषा चुनी गई है। बाक़ी सभी भाषाओं में अंग्रेज़ी संस्करण दिखता है।',
+      zh: '新增迷你卡片“概览”——它直接从 GitHub 打开那份一页纸的摘要，按上方设定的语言显示德语或英语。其余语言得到的都是英语版本。',
+      ja: '新しいミニカード「概要」が加わりました — GitHub にある1ページの要約を直接開きます。上で選んだ言語に応じて、ドイツ語か英語で表示されます。それ以外の言語では英語版が表示されます。',
+      ko: '새 미니 타일 “개요” — 위에서 고른 언어에 따라 독일어 또는 영어로 된 한 쪽짜리 요약을 GitHub에서 바로 엽니다. 그 밖의 모든 언어에서는 영어판이 나옵니다.'
     },
     {
       date: '2026-09-13',
       version: 'v1.5.0',
       link: 'https://github.com/Dennismit2n/create-masterprompt/releases/tag/v1.5.0',
       de: 'Es gibt den Skill jetzt auch auf Deutsch: SKILL.de.md ist die vollständige Übersetzung, dazu eine Übersichtstafel auf einer Seite. Der Skill selbst bleibt englisch — er antwortet ohnehin in der Sprache, in der man ihn anspricht. Wer kein Englisch liest, kann jetzt trotzdem beurteilen, was er tut, bevor er ihn installiert.',
-      en: 'The skill now comes in German as well: SKILL.de.md is the full translation, plus a one-page overview. The skill itself stays English — it answers in whatever language you write in anyway. Anyone who reads no English can now still judge what it does before installing it.'
+      en: 'The skill now comes in German as well: SKILL.de.md is the full translation, plus a one-page overview. The skill itself stays English — it answers in whatever language you write in anyway. Anyone who reads no English can now still judge what it does before installing it.',
+      es: 'El skill existe ahora también en alemán: SKILL.de.md es la traducción completa, y además hay una tabla de resumen en una sola página. El skill en sí sigue estando en inglés: al fin y al cabo responde en el idioma en el que se le habla. Quien no lee inglés puede ahora juzgar igualmente lo que hace antes de instalarlo.',
+      fr: 'Le skill existe maintenant aussi en allemand : SKILL.de.md en est la traduction complète, accompagnée d’un tableau de synthèse sur une page. Le skill lui-même reste anglais — de toute façon, il répond dans la langue dans laquelle on s’adresse à lui. Qui ne lit pas l’anglais peut désormais tout de même juger ce qu’il fait avant de l’installer.',
+      it: 'Ora lo skill c’è anche in tedesco: SKILL.de.md è la traduzione completa, più un prospetto di una pagina. Lo skill stesso resta inglese: risponde in ogni caso nella lingua in cui gli si parla. Chi non legge l’inglese può comunque valutare che cosa fa, prima di installarlo.',
+      nl: 'De skill is er nu ook in het Duits: SKILL.de.md is de volledige vertaling, plus een overzichtsblad van één pagina. De skill zelf blijft Engels — hij antwoordt toch in de taal waarin je hem aanspreekt. Wie geen Engels leest, kan nu toch beoordelen wat hij doet voordat hij hem installeert.',
+      pl: 'Skill jest teraz dostępny także po niemiecku: SKILL.de.md to pełne tłumaczenie, a do tego zestawienie na jednej stronie. Sam skill pozostaje angielski — i tak odpowiada w tym języku, w którym się go zagadnie. Kto nie czyta po angielsku, może teraz mimo to ocenić, co on robi, zanim go zainstaluje.',
+      pt: 'O skill existe agora também em alemão: o SKILL.de.md é a tradução completa, com um quadro de resumo numa página. O skill em si continua em inglês — de qualquer maneira, responde no idioma em que se fala com ele. Quem não lê inglês pode agora, ainda assim, avaliar o que ele faz antes de o instalar.',
+      tr: 'Skill artık Almanca olarak da var: SKILL.de.md tam çeviridir, yanında tek sayfalık bir genel bakış tablosu. Skill’in kendisi İngilizce kalıyor — zaten kendisine hangi dilde seslenirseniz o dilde yanıt veriyor. İngilizce okumayanlar da artık kurmadan önce ne yaptığını değerlendirebiliyor.',
+      ru: 'Skill теперь есть и на немецком: SKILL.de.md — это полный перевод, к нему обзорная таблица на одной странице. Сам Skill остаётся английским — он и так отвечает на том языке, на котором к нему обращаются. Кто не читает по-английски, теперь всё равно может оценить, что он делает, ещё до установки.',
+      hi: 'Skill अब जर्मन में भी है: SKILL.de.md पूरा अनुवाद है, साथ में एक पेज का अवलोकन-पत्रक। Skill खुद अंग्रेज़ी में ही रहता है — वह वैसे भी उसी भाषा में जवाब देता है जिसमें आप उससे बात करते हैं। जो अंग्रेज़ी नहीं पढ़ते, वे अब भी इंस्टॉल करने से पहले परख सकते हैं कि वह करता क्या है।',
+      zh: '这个 Skill 现在也有德语版了：SKILL.de.md 是完整的译文，另附一页纸的概览表。Skill 本身仍然是英语的——反正你用哪种语言跟它说话，它就用哪种语言回答。不读英语的人现在也能在安装之前判断它到底做什么。',
+      ja: 'Skill のドイツ語版もできました: SKILL.de.md が完全な翻訳で、あわせて1ページの一覧表も付いています。Skill そのものは英語のままです — どのみち話しかけた言語で返してきます。英語を読まない方でも、インストールする前にそれが何をするのか判断できるようになりました。',
+      ko: '이제 이 Skill은 독일어로도 있습니다: SKILL.de.md가 완역본이고, 여기에 한 쪽짜리 개요표가 딸려 있습니다. Skill 자체는 영어로 남습니다 — 어차피 말을 건 언어로 대답하기 때문입니다. 영어를 읽지 않는 사람도 이제 설치하기 전에 그것이 무엇을 하는지 판단할 수 있습니다.'
     },
     {
       date: '2026-09-13',
       de: 'Erste Veröffentlichung. Ein Größen-Gate vorweg, dann sechs Phasen von der Recherche bis zur Übergabe. Am Ende stehen drei Dateien — Briefing, Entscheidungslog und Übergabedatei —, mit denen eine frische Sitzung ohne Gesprächsverlauf weiterarbeitet. Quelloffen unter MIT.',
-      en: 'First release. A size gate first, then six phases from research to handoff. What comes out are three files — a briefing, a decision log and a handoff — that let a fresh session carry on with no conversation history. Open source under MIT.'
+      en: 'First release. A size gate first, then six phases from research to handoff. What comes out are three files — a briefing, a decision log and a handoff — that let a fresh session carry on with no conversation history. Open source under MIT.',
+      es: 'Primera publicación. Primero un control de tamaño y después seis fases, de la investigación a la entrega. Al final quedan tres archivos —el briefing, el registro de decisiones y el archivo de entrega— con los que una sesión nueva sigue trabajando sin historial de conversación. Código abierto bajo licencia MIT.',
+      fr: 'Première publication. D’abord un filtre de taille, puis six phases, de la recherche à la passation. À la fin, il y a trois fichiers — briefing, journal des décisions et fichier de passation — avec lesquels une session toute fraîche continue de travailler sans historique de conversation. Open source sous licence MIT.',
+      it: 'Prima pubblicazione. Prima un controllo di dimensione, poi sei fasi dalla ricerca alla consegna. Alla fine restano tre file — briefing, registro delle decisioni e file di consegna — con i quali una sessione nuova prosegue senza cronologia della conversazione. Open source con licenza MIT.',
+      nl: 'Eerste release. Vooraf een omvangstoets, daarna zes fasen van onderzoek tot overdracht. Aan het eind staan er drie bestanden — briefing, beslissingslogboek en overdrachtsbestand — waarmee een nieuwe sessie zonder gespreksgeschiedenis verder werkt. Open source onder MIT.',
+      pl: 'Pierwsze wydanie. Najpierw bramka rozmiaru, potem sześć faz od researchu po przekazanie. Na końcu powstają trzy pliki — briefing, dziennik decyzji i plik przekazania — z którymi nowa sesja pracuje dalej bez historii rozmowy. Otwarty kod na licencji MIT.',
+      pt: 'Primeira publicação. Primeiro uma triagem de dimensão, depois seis fases, da pesquisa até à entrega. No fim ficam três ficheiros — briefing, registo de decisões e ficheiro de entrega — com os quais uma sessão nova continua a trabalhar sem histórico de conversa. Código aberto sob licença MIT.',
+      tr: 'İlk yayın. Önce bir büyüklük kapısı, ardından araştırmadan devir teslime altı aşama. Sonunda üç dosya kalır — brifing, karar günlüğü ve devir dosyası — ve bunlarla yepyeni bir oturum, sohbet geçmişi olmadan çalışmayı sürdürür. MIT lisansıyla açık kaynak.',
+      ru: 'Первый выпуск. Сначала проверка размера, затем шесть этапов от исследования до передачи. В конце получаются три файла — бриф, журнал решений и файл передачи, — с которыми новая сессия работает дальше без истории разговора. Открытый код под лицензией MIT.',
+      hi: 'पहला रिलीज़। सबसे पहले एक आकार-जाँच, फिर शोध से लेकर सौंपने तक छह चरण। अंत में तीन फ़ाइलें निकलती हैं — ब्रीफ़िंग, निर्णय-लॉग और सौंपने वाली फ़ाइल —, जिनके सहारे एक नया सत्र बिना पिछली बातचीत के काम आगे बढ़ाता है। MIT के तहत ओपन सोर्स।',
+      zh: '首个版本。先是一道规模闸门，然后是从调研到交接的六个阶段。最后产出三个文件——简报、决策日志和交接文件——有了它们，一个没有聊天记录的新会话也能接着做下去。以 MIT 协议开源。',
+      ja: '最初の公開です。まず規模のゲートがあり、それから調査から引き継ぎまでの6つの段階が続きます。最後に残るのは3つのファイル — ブリーフィング、決定ログ、引き継ぎファイル — で、これがあれば会話の履歴がない新しいセッションでも作業を続けられます。MIT ライセンスのオープンソースです。',
+      ko: '첫 공개. 맨 앞에 규모 게이트가 있고, 그다음 조사부터 인수인계까지 여섯 단계가 이어집니다. 끝에 남는 것은 브리핑, 결정 기록, 인수인계 파일 이렇게 세 개이며, 이것으로 대화 기록이 없는 새 세션도 이어서 작업합니다. MIT 라이선스의 오픈 소스입니다.'
     }
   ]
 };

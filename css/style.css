@@ -690,18 +690,6 @@ a.brand { text-decoration: none; color: inherit; }
   margin: 0 0 12px;
 }
 
-.wk-lang-notice {
-  max-width: 640px;
-  margin: 0 auto 22px;
-  padding: 11px 16px;
-  border: 1px solid var(--border);
-  border-left: 3px solid var(--accent);
-  border-radius: 0 9px 9px 0;
-  background: var(--panel);
-  color: var(--text-soft);
-  font-size: 0.9rem;
-}
-
 .wk-frame {
   display: grid;
   grid-template-columns: 220px minmax(0, 1fr);
