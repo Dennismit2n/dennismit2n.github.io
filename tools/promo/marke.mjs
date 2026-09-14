@@ -1,11 +1,19 @@
 /*
  * Einzige Quelle der Wahrheit für alle Werbebilder.
  *
+ * DIESE DATEI LIEGT ZWEIMAL — in werkstatt/ des Launchkits und in tools/promo/
+ * des Startseiten-Repos — und muss an beiden Stellen Byte für Byte gleich sein.
+ * Der Ausgabeordner ergibt sich von selbst aus dem Ablageort, weil
+ * make-bilder.mjs nach ../Bilder schreibt. Bis zum 14.09.2026 waren die beiden
+ * Fassungen anderthalb Monate auseinandergelaufen: die eine trug die Werkzeuge
+ * und die geprüften Zusagen, die andere die neuen Farben — und ausgeliefert
+ * wurde die mit den alten. Wer hier etwas ändert, kopiert es sofort hinüber.
+ *
  * Farben stammen 1:1 aus css/style.css der Startseite — die Dunkel-Variante,
  * weil alle Werbebilder auf dem dunklen Grund stehen; der fotografiert sich auf
  * Instagram besser als der helle. Seit dem Farbwechsel auf die Palette
- * ggaallaaxxyy77 ist das ein violetter Grund (#110936) statt des alten
- * Marineblaus. Wer hier etwas ändert, ändert es auch in style.css — und
+ * ggaallaaxxyy77 ist das der violette Grund #0F0F21 statt des alten
+ * Marineblaus #0D1226. Wer hier etwas ändert, ändert es auch in style.css — und
  * umgekehrt.
  *
  * Die Icons sind dieselben SVGs, die auf der Startseite in den Kacheln stecken.
@@ -26,8 +34,8 @@ export const MARKE = {
   /* --accent-fill der Dunkel-Variante: der helle Akzent verschwindet auf
    * dem dunklen Grund fast, deshalb trägt der Balken eine Stufe mehr. */
   fuellung: '#6D54FB',
-  h1De: 'Kleine Tools, die auf deinem Gerät laufen',
-  h1En: 'Small tools that run on your own device',
+  h1De: 'Kleine Werkzeuge, die nichts von dir wollen',
+  h1En: 'Small tools that want nothing from you',
   untertitel: 'Eine Werkstatt von Dennis_mit_2n.',
   url: 'dennismit2n.github.io',
 };
@@ -63,6 +71,48 @@ const ICONS = {
   <path d="M13.5 20.5h7" fill="none" stroke="#eac54f" stroke-width="3" stroke-linecap="round"/>
   <path d="M26 29l4.5-14L35 29" fill="none" stroke="#eac54f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
   <path d="M27.8 24.5h5.4" fill="none" stroke="#eac54f" stroke-width="3" stroke-linecap="round"/>`,
+  /* Prismatical: Prisma-Dreieck mit aufgefaechertem Spektrum — dieselben
+     Farbstopps wie die Staerke-Anzeige der App. Einziges Icon der Werkstatt
+     mit mehr als zwei Farben, und genau das ist der Punkt. */
+  prismatical: `<rect x="2" y="2" width="44" height="44" rx="11" fill="#1c1b1f"/>
+  <path d="M6 24h11" stroke="#f2efe9" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M24 10 13 36h22z" fill="none" stroke="#f2efe9" stroke-width="2.6" stroke-linejoin="round"/>
+  <g stroke-width="2.6" stroke-linecap="round">
+    <path d="M30 21 43 13" stroke="#e5484d"/>
+    <path d="M31 24 44 19" stroke="#f76b15"/>
+    <path d="M32 27 45 26" stroke="#e2c541"/>
+    <path d="M31 30 44 34" stroke="#6fbf3b"/>
+    <path d="M30 33 43 41" stroke="#7a5cff"/>
+  </g>`,
+  /* Besucher-Ticker: schwarzes Rundquadrat, drei blaue Saeulen, pinker Punkt —
+     wie das Overlay selbst und sein Symbol im Infobereich der Taskleiste. */
+  /* Dieselbe Zeichnung wie assets/spectroton.svg in der Kachel: EINE Farbe in
+   * Stufen von hell nach dunkel statt vieler Farbtoene — genau das, was das
+   * Werkzeug tut. Fuenf statt elf Balken, weil elf bei 44 px nur noch
+   * Streifen waeren. */
+  spectro: `<rect x="2" y="2" width="44" height="44" rx="11" fill="#0c1c1b"/>
+  <rect x="10" y="10.4" width="28" height="4.4" rx="2" fill="#d9fbf4"/>
+  <rect x="10" y="16.1" width="28" height="4.4" rx="2" fill="#7fe8dc"/>
+  <rect x="10" y="21.8" width="28" height="4.4" rx="2" fill="#2dd4bf"/>
+  <rect x="10" y="27.5" width="28" height="4.4" rx="2" fill="#14a89c"/>
+  <rect x="10" y="33.2" width="28" height="4.4" rx="2" fill="#0b7068"/>`,
+  /* Dieselbe Zeichnung wie assets/masterprompt.svg in der Kachel: oben die
+   * verstreuten Punkte der noch vagen Idee, darunter der Knick, der sie
+   * zusammenfuehrt, unten das fertige Kontext-Paket als geordnete Zeilen.
+   * Der tiefe Rostton ist der Icon-Grund der Kachel, nicht die Akzentfarbe. */
+  masterprompt: `<rect x="2" y="2" width="44" height="44" rx="11" fill="#7c2d12"/>
+  <circle cx="14" cy="11" r="2.2" fill="#fb923c" opacity=".55"/>
+  <circle cx="24" cy="8.5" r="2.2" fill="#fb923c" opacity=".85"/>
+  <circle cx="34" cy="11.5" r="2.2" fill="#fb923c" opacity=".55"/>
+  <path d="M17 17l7 6 7-6" fill="none" stroke="#fb923c" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="12" y="27.5" width="24" height="3.4" rx="1.7" fill="#fb923c"/>
+  <rect x="12" y="33" width="24" height="3.4" rx="1.7" fill="#fb923c" opacity=".75"/>
+  <rect x="12" y="38.5" width="16" height="3.4" rx="1.7" fill="#fb923c" opacity=".5"/>`,
+  ticker: `<rect x="2" y="2" width="44" height="44" rx="11" fill="#101321"/>
+  <rect x="9" y="14" width="8" height="24" rx="1.5" fill="#2f6bff"/>
+  <rect x="20" y="21" width="8" height="17" rx="1.5" fill="#38bdf8"/>
+  <rect x="31" y="28" width="8" height="10" rx="1.5" fill="#2f6bff" opacity=".8"/>
+  <circle cx="36.5" cy="13.5" r="4.5" fill="#ff2d95"/>`,
   shrink: `<rect x="2" y="2" width="44" height="44" rx="11" fill="#7c3aed"/>
   <rect x="9" y="17" width="22" height="19" rx="3" fill="none" stroke="#fff" stroke-width="3"/>
   <circle cx="15.5" cy="23.5" r="2.2" fill="#fff"/>
@@ -168,6 +218,120 @@ export const TOOLS = [
     assetOrdner: 'assets',
   },
   {
+    slug: 'prismatical',
+    name: 'Prismatical',
+    icon: 'prismatical',
+    /* Die App hat keine feste Akzentfarbe, sie ist das Spektrum. Fuer die
+     * Bilder braucht es trotzdem einen Vollton: der violette Endpunkt der
+     * Staerke-Skala, derselbe Anker wie auf der Startseiten-Kachel. */
+    farbe: '#bfb9ff',
+    claimDe: 'Passwörter, deren Stärke man sieht.',
+    claimEn: 'Passwords whose strength you can see',
+    zusagen: ['Kostenlos', 'ohne Anmeldung', 'ohne Upload'],
+    url: 'dennismit2n.github.io/prismatical',
+    story: [
+      { ober: '„Sommer2024!"', gross: 'Kennst du.', unter: 'Man denkt sich bei jeder Anmeldung ein neues aus — und nimmt am Ende doch wieder eine Variante vom alten.' },
+      { ober: 'So geht es', gross: 'Regler ziehen, Farbe wandert.', unter: 'Die ganze Oberfläche färbt sich nach der Stärke: rot ist schwach, violett ist stark. Du siehst beim Schieben, was Länge wirklich bringt.' },
+      { ober: 'Kostenlos & quelloffen', gross: 'Jetzt ausprobieren', unter: 'dennismit2n.github.io/prismatical' },
+    ],
+    repo: 'prismatical',
+    assetOrdner: 'public',
+  },
+  {
+    slug: 'spectroton',
+    name: 'Spectroton',
+    icon: 'spectro',
+    /* Die App selbst hat kein Farbschema — ihre Farbe kommt einzig aus der
+     * eingegebenen Basisfarbe. Die Kachel hat neben dem Verlauf --spectro-flow
+     * aber sehr wohl einen Anker-Vollton, und fuers Bild braucht es genau den:
+     * derselbe Ton wie die mittlere Stufe im Icon. */
+    farbe: '#2dd4bf',
+    claimDe: 'Eine Farbe rein, elf Stufen raus.',
+    /* Der einzige claimEn der Datei mit Vorbehalt, mit Absicht: die englische
+     * Zeile steht auf allen fuenf Karten, die deutschen Zusagen daneben liest
+     * ein englischer Besucher nicht. Ohne den Zusatz bekaeme er das volle
+     * Nutzenversprechen und keine einzige Einschraenkung. */
+    claimEn: 'One colour in, eleven matching shades out — German only for now',
+    /* Statt "ohne Upload": der Hex-Wert der Basisfarbe geht bei jeder Aenderung
+     * an api.color.pizza, die uebliche Zeile waere hier schlicht falsch. An
+     * ihre Stelle tritt die Sprache — "vorerst nur", weil weitere geplant sind.
+     * Der externe Aufruf steht dort, wo ein ganzer Satz Platz hat: Story 2. */
+    zusagen: ['Kostenlos', 'ohne Anmeldung', '(vorerst nur) auf Deutsch'],
+    url: 'dennismit2n.github.io/spectroton',
+    story: [
+      { ober: 'Website, Shop, Präsentation', gross: 'Eine Farbe reicht nie.', unter: 'Eine hellere für Flächen, eine dunklere für Rahmen — und eine, auf der Text noch lesbar bleibt.' },
+      { ober: 'So geht es', gross: 'Farbe eingeben, elf Stufen ablesen.', unter: 'Neben jeder Stufe steht ihr Kontrastwert — du siehst sofort, ob Text darauf noch trägt. Gerechnet wird im Browser, nur der Farbname kommt von api.color.pizza.' },
+      { ober: 'Kostenlos & quelloffen', gross: 'Palette bauen', unter: 'dennismit2n.github.io/spectroton' },
+    ],
+    repo: 'spectroton',
+    /* Die Bilder liegen in der Wurzel wie bei fontART-demo, nicht in assets/.
+     * Das Repo ist seit 13.09.2026 geklont — vorher haette --verteilen den
+     * Ordner stillschweigend selbst angelegt und Erfolg gemeldet. */
+    assetOrdner: '',
+    /* hatSeite bleibt ungesetzt, die Seite gibt es. Sie hat aber noch kein
+     * og:image im Quelltext — og.png geht also mit, DAMIT index.html darauf
+     * zeigen kann, nicht weil es schon jemand abruft. Nachzutragen sind
+     * og:image, og:image:width und og:image:alt; genau die drei prueft
+     * pruefliste.py, und seit das Repo lokal liegt, meldet sie sonst FEHLER. */
+  },
+  {
+    slug: 'create-masterprompt',
+    /* 19 Zeichen — der laengste name der Datei. Auf instagram-1080 bricht er
+     * ohne Gegenmassnahme zweizeilig um ('create-' / 'masterprompt', liest
+     * sich wie eine verunglueckte Silbentrennung); die Notbremse in karte()
+     * haengt an claimDe-Umbruechen, nicht an der Namenslaenge. Deshalb dort
+     * zusaetzlich t.name.length > 16. Der Name selbst bleibt: so heisst das
+     * Repo und so heisst die Kachel. */
+    name: 'create-masterprompt',
+    icon: 'masterprompt',
+    farbe: '#fb923c',
+    claimDe: 'Der nächste Chat fängt nicht bei null an.',
+    /* Englisch ebenfalls verneint statt 'starts where the last one stopped':
+     * beide Zeilen stehen auf demselben Bild uebereinander, und die staerkere
+     * englische Fassung wuerde mehr behaupten als die deutsche darueber. */
+    claimEn: 'The next chat does not start from zero',
+    /* Weder Browser-Werkzeug noch Programm, deshalb passt keine der beiden
+     * eingespielten Zeilen: 'ohne Upload' waere falsch (fuer claude.ai laedt
+     * man eine Zip hoch), 'Windows 10/11' auch. Uebrig bleibt die Zeile der
+     * Kachel, ohne den Klammerzusatz. */
+    zusagen: ['Für KI-Chats', 'quelloffen', 'kostenlos'],
+    url: 'github.com/Dennismit2n/create-masterprompt',
+    /* Texte/create-masterprompt.md sagt Instagram, Story und Reel ausdruecklich
+     * ab ('lohnt hier nicht'): es gibt kein ehrliches Bildmotiv, solange der
+     * Screenshot des Ausloesemoments fehlt. Die drei Karten stehen hier nur,
+     * weil story() fuer jeden Eintrag auf t.story[f.karte] zugreift — das Feld
+     * ist strukturell Pflicht. Sie werden nicht gepostet; wer sie spaeter im
+     * Bilderkatalog findet, darf daraus NICHT schliessen, die Absage sei
+     * zurueckgenommen. */
+    story: [
+      { ober: 'Für Claude Code & claude.ai', gross: 'Sitzung vier widerspricht Sitzung zwei.', unter: 'Weil die Entscheidung aus Sitzung zwei nur im Chatverlauf stand — und den liest niemand zurück.' },
+      /* 'sechs Phasen' steht hier bewusst NICHT: fakten.json verlangt fuer jede
+       * Nennung den Zusatz, dass Phase 0 ein Gate ist und S/M gar nicht alle
+       * sechs durchlaufen — auf einer Werbekarte landet so ein Zusatz
+       * zwangslaeufig als letzter Halbsatz und faellt beim Umbruch zuerst weg.
+       * Ohne die Zahl entfaellt die Pflicht ganz. */
+      { ober: 'So geht es', gross: 'Idee eintippen, Fragen beantworten.', unter: 'Heraus kommen drei Dateien: Briefing, Entscheidungslog und Übergabe — die Übergabe geschrieben, bevor das Kontextlimit kommt, nicht danach.' },
+      { ober: 'Kostenlos & quelloffen', gross: 'Herunterladen', unter: 'github.com/Dennismit2n/create-masterprompt' },
+    ],
+    repo: 'create-masterprompt',
+    /* Liegt als einziges Werkzeug nicht unter source/repos, sondern beim
+     * uebrigen Skill-Kram — derselbe Pfad, den pruefliste.py als Konstante
+     * MASTERPROMPT schon kennt. Der Apostroph zwingt zu doppelten
+     * Anfuehrungszeichen. */
+    repoBasis: "C:/Users/danyr/Claud_ins.Projects/CLAUDE/meine_Skill's",
+    /* NICHT 'docs': docs/ steckt in jedem `git clone --depth 1`, und genau so
+     * installiert man diesen Skill. Ein Werbebild laege damit bei jedem Nutzer
+     * im Skill-Ordner und risse zwei belegte Zahlen um. Deshalb promo/ daneben
+     * (Vorbild: sozialOrdner 'promo' bei Collective-Calc), nicht versioniert,
+     * sondern von Hand in den Repo-Einstellungen als Social Preview
+     * hochgeladen. 'promo/' gehoert dafuer in die .gitignore des Skills. */
+    assetOrdner: 'promo',
+    /* Weder Webseite noch Programm: es gibt keine Seite, die og.png einbinden
+     * koennte, und keinen Beitrag, der instagram.png braeuchte. Nur die
+     * GitHub-Vorschau hat einen Abnehmer. */
+    hatSeite: false,
+  },
+  {
     slug: 'collective-calc',
     name: 'Collective-Calc',
     icon: 'collective',
@@ -227,19 +391,41 @@ export const TOOLS = [
     name: 'Dennis_mit_2n',
     icon: 'kiste',
     farbe: MARKE.eisblau,
-    claimDe: 'Kleine Tools, die auf deinem Gerät laufen.',
-    claimEn: 'Small tools that run on your own device',
-    /* Seit fontART (31.07.2026) darf hier NICHT mehr pauschal "Kostenlos"
-     * oder "quelloffen" stehen: sieben der acht Werkzeuge sind beides, das
-     * achte ist keins von beidem. Übrig bleibt, was ausnahmslos für alle
-     * gilt — und das ist ohnehin die stärkere Zusage. An den einzelnen
-     * Kacheln steht "kostenlos" weiter, dort stimmt es ja. */
-    zusagen: ['Ohne Anmeldung', 'ohne Uploads', 'deine Daten bleiben bei dir'],
+    claimDe: 'Kleine Werkzeuge, die nichts von dir wollen.',
+    claimEn: 'Small tools that want nothing from you',
+    /* Diese drei Zeilen sind am 13.09.2026 einzeln gegen alle zwölf Werkzeuge
+     * geprüft worden, nachdem reihenweise Kandidaten durchgefallen sind.
+     * Was hier NICHT stehen darf und warum:
+     *   "kostenlos"/"quelloffen"  — fontART ist beides nicht (seit 31.07.2026).
+     *   "ohne Uploads"/"deine Daten bleiben bei dir" — für claude.ai lädt man
+     *     eine Zip hoch, und fakten.json verbietet dem Skill ausdrücklich
+     *     "läuft auf deinem Gerät" (seit 13.09.2026).
+     *   "ohne Werbung" — fontART blendet zehn ausgegraute Knöpfe mit
+     *     "nur in der Vollversion"-Tooltips ein und stempelt "fontART DEMO"
+     *     als Schriftnamen in jede exportierte Schrift. Ein Mouseover genügt
+     *     als Gegenbeweis. Deshalb "keine Anzeigen": kein Werbenetz,
+     *     kein Affiliate-Link, kein Sponsorenhinweis, kein einziges <iframe>
+     *     in allen zwölf Repos — das hält. ("keine fremde Werbung" wäre
+     *     ebenso wahr, ergibt aber 64 Zeichen und bricht auf
+     *     instagram-1080 um — gerendert nachgesehen, nicht gerechnet.)
+     *   "ohne Tracker" — GoatCounter läuft auf mehreren; fakten.json verbietet
+     *     "Kein Tracking" dort wörtlich.
+     *   "ohne Cookies" — Collective-Calc lädt count.js live von gc.zgo.at,
+     *     fontARTs Windows-Fassung ist Electron.
+     *   "ohne Abo" — Zählwerk braucht ein Claude-Code-Abo, und fontARTs
+     *     Bezahlmodell steht laut fakten.json bewusst nicht fest.
+     *   "offline nutzbar" — Zählwerk hat keinen Service Worker, der
+     *     Besucher-Ticker IST ein Live-Abruf.
+     * "ohne Konto" stand hier bis 13.09. und war nur "Ohne Anmeldung" zweimal.
+     * Platz 3 nennt fontART beim Namen, statt die Aussage zu verwässern:
+     * "kostenlos ausprobieren" würde nahelegen, dass die anderen elf später
+     * etwas kosten — und das ist ausdrücklich nicht der Fall (Dennis, 13.09.). */
+    zusagen: ['Ohne Anmeldung', 'keine Anzeigen', 'kostenlos, außer fontART'],
     url: 'dennismit2n.github.io',
     story: [
-      { ober: 'Eine Werkstatt', gross: 'Acht kleine Werkzeuge.', unter: 'Für Sachen, die im Alltag nerven.' },
-      { ober: 'Was sie gemeinsam haben', gross: 'Sie laufen auf deinem Gerät.', unter: 'Kein Konto, keine Anmeldung, keine Uploads. Sechs im Browser, zwei für Windows.' },
-      { ober: 'Ohne Anmeldung, ohne Uploads', gross: 'Werkzeugkiste öffnen', unter: 'dennismit2n.github.io' },
+      { ober: 'Eine Werkstatt', gross: 'Zwölf kleine Werkzeuge.', unter: 'Für Sachen, die im Alltag nerven.' },
+      { ober: 'Was sie gemeinsam haben', gross: 'Sie wollen nichts von dir.', unter: 'Kein Konto, keine Anmeldung, keine fremde Werbung. Die meisten laufen im Browser, zwei sind Windows-Programme, eines ist ein Skill für KI-Chats.' },
+      { ober: 'Ohne Anmeldung, ohne fremde Werbung', gross: 'Werkzeugkiste öffnen', unter: 'dennismit2n.github.io' },
     ],
     repo: 'dennismit2n.github.io',
     assetOrdner: 'assets',
@@ -279,6 +465,26 @@ export const TOOLS = [
     assetOrdner: 'assets',
     /* Windows-App ohne Webseite: og.png und instagram.png haetten dort keinen
      * Abnehmer. Nur die GitHub-Vorschau ist sinnvoll. */
+    hatSeite: false,
+  },
+  {
+    slug: 'besucher-ticker',
+    name: 'Besucher-Ticker',
+    icon: 'ticker',
+    farbe: '#818cf8',
+    claimDe: 'Deine Besucherzahlen, immer im Blick.',
+    claimEn: 'Your visitor numbers, always in view',
+    zusagen: ['Windows 10/11', 'quelloffen', 'kostenlos'],
+    url: 'github.com/Dennismit2n/besucher-ticker',
+    story: [
+      { ober: 'Für GoatCounter-Nutzer', gross: 'Wie viele waren heute da?', unter: 'Eine kleine schwebende Anzeige beantwortet genau diese Frage — ohne dass man eine Seite aufrufen muss.' },
+      { ober: 'So geht es', gross: 'Adresse und Token eintragen, fertig.', unter: 'Aufrufe im gewählten Zeitraum, Besucher je Seite als Balken, dazu Länder oder Verweise. Das Token bleibt verschlüsselt auf dem eigenen Rechner.' },
+      { ober: 'Kostenlos & quelloffen', gross: 'Herunterladen', unter: 'github.com/Dennismit2n/besucher-ticker' },
+    ],
+    repo: 'besucher-ticker',
+    assetOrdner: 'assets',
+    /* Windows-App ohne eigene Webseite — wie der Zaehlwerk Ticker. Nur die
+     * GitHub-Vorschau hat einen Abnehmer. */
     hatSeite: false,
   },
   {
