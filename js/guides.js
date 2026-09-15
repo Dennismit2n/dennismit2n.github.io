@@ -2126,72 +2126,72 @@ var GUIDES = {
       de: [
         'Die Seite öffnen — oder für Windows die .exe aus den Releases laden und starten. Dort meldet Windows „Unbekannter Herausgeber“, weil die Datei nicht signiert ist; über „Weitere Informationen“ und „Trotzdem ausführen“ geht es weiter. Installiert wird in keinem der beiden Fälle etwas.',
         'Ein Zeichen aus der Leiste wählen und die schwarze Fläche des Buchstabens malen, nicht die Linie. Fang mit n und o an — die beiden legen den Rhythmus deiner Schrift fest. Zittert die Hand, hilft der Regler „Stabilisator“.',
-        'Über „⬇ Export“ die .ttf erzeugen. In Windows Rechtsklick auf die Datei, „Für alle Benutzer installieren“ — danach steht deine Schrift in Word unter „fontART DEMO“.'
+        'Über „⬇ Schrift exportieren…“ die .ttf erzeugen. In Windows Rechtsklick auf die Datei, „Für alle Benutzer installieren“ — danach steht deine Schrift in Word unter „fontART DEMO“.'
       ],
       en: [
         'Open the page — or, for Windows, download the .exe from the releases page and start it. There Windows will say “unknown publisher” because the file is not signed; continue via “more info” and “run anyway”. Either way, nothing gets installed.',
         'Pick a character from the bar and paint the black shape of the letter, not the line. Start with n and o — those two set the rhythm of your typeface. If your hand shakes, the “stabiliser” slider helps.',
-        'Use “⬇ Export” to produce the .ttf. In Windows right-click the file and choose “install for all users” — after that your typeface shows up in Word as “fontART DEMO”.'
+        'Use “⬇ Export font…” to produce the .ttf. In Windows right-click the file and choose “install for all users” — after that your typeface shows up in Word as “fontART DEMO”.'
       ],
       es: [
         'Abre la página o, para Windows, descarga el .exe desde las versiones y ejecútalo. Allí Windows avisa de «Editor desconocido» porque el archivo no está firmado; se continúa con «Más información» y «Ejecutar de todas formas». En ninguno de los dos casos se instala nada.',
         'Elige un carácter de la barra y pinta la superficie negra de la letra, no la línea. Empieza con la n y la o: esas dos fijan el ritmo de tu letra. Si te tiembla la mano, ayuda el control «Stabilisator» (estabilizador).',
-        'Con «⬇ Export» generas el .ttf. En Windows, clic derecho en el archivo, «Instalar para todos los usuarios»; después tu letra aparece en Word como «fontART DEMO».'
+        'Con «⬇ Exportar la fuente…» generas el .ttf. En Windows, clic derecho en el archivo, «Instalar para todos los usuarios»; después tu letra aparece en Word como «fontART DEMO».'
       ],
       fr: [
         'Ouvrir la page — ou, pour Windows, télécharger le .exe depuis les releases et le lancer. Là, Windows signale « Éditeur inconnu », parce que le fichier n’est pas signé ; on continue via « Informations complémentaires » et « Exécuter quand même ». Dans les deux cas, rien n’est installé.',
         'Choisir un caractère dans la barre et peindre la surface noire de la lettre, pas le trait. Commencez par le n et le o — ces deux-là fixent le rythme de votre écriture. Si la main tremble, le curseur « Stabilisator » (stabilisateur) aide.',
-        'Avec « ⬇ Export », produire le .ttf. Dans Windows, clic droit sur le fichier, « Installer pour tous les utilisateurs » — ensuite votre police figure dans Word sous « fontART DEMO ».'
+        'Avec « ⬇ Exporter la police… », produire le .ttf. Dans Windows, clic droit sur le fichier, « Installer pour tous les utilisateurs » — ensuite votre police figure dans Word sous « fontART DEMO ».'
       ],
       it: [
         'Apri la pagina — oppure, per Windows, scarica il file .exe dalle release e avvialo. Lì Windows segnala «Editore sconosciuto» perché il file non è firmato; prosegui con «Ulteriori informazioni» ed «Esegui comunque». In nessuno dei due casi viene installato qualcosa.',
         'Scegli un carattere dalla barra e disegna la superficie nera della lettera, non la linea. Comincia con n e o: sono quelle due a fissare il ritmo della tua scrittura. Se la mano trema, ti aiuta il cursore «Stabilisator» (stabilizzatore).',
-        'Con «⬇ Export» genera il .ttf. In Windows fai clic destro sul file e scegli «Installa per tutti gli utenti»: dopodiché il tuo carattere compare in Word sotto «fontART DEMO».'
+        'Con «⬇ Esporta il font…» genera il .ttf. In Windows fai clic destro sul file e scegli «Installa per tutti gli utenti»: dopodiché il tuo carattere compare in Word sotto «fontART DEMO».'
       ],
       nl: [
         'Open de pagina — of download voor Windows de .exe van de releases-pagina en start hem. Daar meldt Windows “Onbekende uitgever”, omdat het bestand niet ondertekend is; via “Meer informatie” en “Toch uitvoeren” ga je verder. In beide gevallen wordt er niets geïnstalleerd.',
         'Kies een teken uit de balk en teken het zwarte vlak van de letter, niet de lijn. Begin met n en o — die twee leggen het ritme van je lettertype vast. Trilt je hand, dan helpt de schuifregelaar “Stabilisator”.',
-        'Maak via “⬇ Export” de .ttf. Klik in Windows met rechts op het bestand, “Voor alle gebruikers installeren” — daarna staat je lettertype in Word onder “fontART DEMO”.'
+        'Maak via “⬇ Lettertype exporteren…” de .ttf. Klik in Windows met rechts op het bestand, “Voor alle gebruikers installeren” — daarna staat je lettertype in Word onder “fontART DEMO”.'
       ],
       pl: [
         'Otworzyć stronę — albo dla Windows pobrać plik .exe ze strony wydań i uruchomić go. Tam Windows zgłosi „Nieznany wydawca”, bo plik nie jest podpisany; dalej prowadzą „Więcej informacji” i „Uruchom mimo to”. W żadnym z tych dwóch przypadków nic się nie instaluje.',
         'Wybrać znak z paska i malować czarną powierzchnię litery, nie linię. Zacznij od n i o — te dwie ustalają rytm twojego pisma. Gdy drży ręka, pomaga suwak „Stabilisator” (stabilizator).',
-        'Przez „⬇ Export” utworzyć plik .ttf. W Windows prawy przycisk myszy na pliku, „Zainstaluj dla wszystkich użytkowników” — potem twoje pismo pojawi się w Wordzie pod „fontART DEMO”.'
+        'Przez „⬇ Eksportuj czcionkę…” utworzyć plik .ttf. W Windows prawy przycisk myszy na pliku, „Zainstaluj dla wszystkich użytkowników” — potem twoje pismo pojawi się w Wordzie pod „fontART DEMO”.'
       ],
       pt: [
         'Abrir a página — ou, para Windows, transferir o .exe da página de versões e iniciá-lo. Aí o Windows avisa «Editor desconhecido», porque o ficheiro não está assinado; continua-se através de «Mais informações» e «Executar mesmo assim». Em nenhum dos dois casos se instala seja o que for.',
         'Escolher um caractere da barra e pintar a mancha preta da letra, não a linha. Comece pelo n e pelo o — são esses dois que fixam o ritmo da sua letra. Se a mão tremer, ajuda o cursor «Stabilisator» (estabilizador).',
-        'Com «⬇ Export» criar o .ttf. No Windows, clicar com o botão direito no ficheiro e escolher «Instalar para todos os utilizadores» — depois disso a sua letra fica no Word com o nome «fontART DEMO».'
+        'Com «⬇ Exportar fonte…» criar o .ttf. No Windows, clicar com o botão direito no ficheiro e escolher «Instalar para todos os utilizadores» — depois disso a sua letra fica no Word com o nome «fontART DEMO».'
       ],
       tr: [
         'Sayfayı açın — ya da Windows için .exe dosyasını sürümler sayfasından indirip başlatın. Orada Windows, dosya imzalı olmadığı için “Bilinmeyen yayımcı” uyarısı verir; “Daha fazla bilgi” ve “Yine de çalıştır” üzerinden devam edilir. İki durumda da hiçbir şey kurulmaz.',
         'Çubuktan bir karakter seçin ve harfin çizgisini değil, siyah yüzeyini boyayın. n ve o ile başlayın — yazınızın ritmini bu ikisi belirler. Eliniz titriyorsa “Stabilisator” (sabitleyici) sürgüsü yardımcı olur.',
-        '“⬇ Export” ile .ttf dosyasını üretin. Windows’ta dosyaya sağ tıklayıp “Tüm kullanıcılar için yükle” seçeneğini kullanın — ardından yazınız Word’de “fontART DEMO” adıyla görünür.'
+        '“⬇ Yazı tipini dışa aktar…” ile .ttf dosyasını üretin. Windows’ta dosyaya sağ tıklayıp “Tüm kullanıcılar için yükle” seçeneğini kullanın — ardından yazınız Word’de “fontART DEMO” adıyla görünür.'
       ],
       ru: [
         'Откройте страницу — или для Windows скачайте .exe со страницы выпусков и запустите. Там Windows сообщит «Неизвестный издатель», потому что файл не подписан; продолжить можно через «Подробнее» и «Выполнить в любом случае». Ни в том, ни в другом случае ничего не устанавливается.',
         'Выберите символ на панели и нарисуйте сплошную чёрную форму буквы, а не линию. Начните с n и o — эти две задают ритм вашего шрифта. Дрожит рука — поможет ползунок «Stabilisator» (стабилизатор).',
-        'Через «⬇ Export» создайте .ttf. В Windows правый щелчок по файлу, «Установить для всех пользователей» — после этого ваш шрифт появится в Word под именем «fontART DEMO».'
+        'Через «⬇ Экспорт шрифта…» создайте .ttf. В Windows правый щелчок по файлу, «Установить для всех пользователей» — после этого ваш шрифт появится в Word под именем «fontART DEMO».'
       ],
       hi: [
         'पेज खोलें — या Windows के लिए रिलीज़ पेज से .exe डाउनलोड करके शुरू करें। वहाँ Windows “अज्ञात प्रकाशक” की चेतावनी देता है, क्योंकि फ़ाइल पर हस्ताक्षर नहीं हैं; “अधिक जानकारी” और “फिर भी चलाएँ” से आगे बढ़ा जा सकता है। दोनों में से किसी भी हाल में कुछ इंस्टॉल नहीं होता।',
         'पट्टी से एक वर्ण चुनें और अक्षर की काली सतह बनाएँ, रेखा नहीं। n और o से शुरू करें — यही दोनों आपकी लिखावट की लय तय करते हैं। हाथ काँपता हो, तो “Stabilisator” (स्टेबिलाइज़र) स्लाइडर मदद करता है।',
-        '“⬇ Export” से .ttf बनाएँ। Windows में फ़ाइल पर दायाँ क्लिक करके “सभी उपयोगकर्ताओं के लिए इंस्टॉल करें” चुनें — उसके बाद आपकी लिखावट Word में “fontART DEMO” के नाम से दिखती है।'
+        '“⬇ फ़ॉन्ट एक्सपोर्ट करें…” से .ttf बनाएँ। Windows में फ़ाइल पर दायाँ क्लिक करके “सभी उपयोगकर्ताओं के लिए इंस्टॉल करें” चुनें — उसके बाद आपकी लिखावट Word में “fontART DEMO” के नाम से दिखती है।'
       ],
       zh: [
         '打开这个页面——或者对 Windows 来说，从发布页下载 .exe 并启动它。那时 Windows 会提示“未知发布者”，因为这个文件没有签名；通过“更多信息”和“仍要运行”继续。两种情况下都不会安装任何东西。',
         '从字符条里选一个字符，画出字母的黑色形状，而不是那条线。先从 n 和 o 开始——这两个定下了你这套字的节奏。手抖的话，“稳定器”滑块能帮上忙。',
-        '通过“⬇ Export”生成 .ttf。在 Windows 里右键点击这个文件，选“为所有用户安装”——之后你的字体就会在 Word 里以“fontART DEMO”出现。'
+        '通过“⬇ 导出字体…”生成 .ttf。在 Windows 里右键点击这个文件，选“为所有用户安装”——之后你的字体就会在 Word 里以“fontART DEMO”出现。'
       ],
       ja: [
         'ページを開きます — Windows 版なら、リリースページから .exe をダウンロードして起動します。そこでは、ファイルに署名がないため Windows が「不明な発行元」と表示します。「詳細情報」と「実行」から先に進めます。どちらの場合もインストールは行われません。',
         '並んだ文字からひとつ選び、線ではなく文字の黒い面を描きます。まず n と o から始めてください — この2つがあなたの書体のリズムを決めます。手が震えるなら「Stabilisator」（手ぶれ補正）のスライダーが助けになります。',
-        '「⬇ Export」で .ttf を作ります。Windows ではファイルを右クリックして「すべてのユーザーに対してインストール」を選びます — そのあと、あなたの書体が Word に「fontART DEMO」として並びます。'
+        '「⬇ フォントを書き出す…」で .ttf を作ります。Windows ではファイルを右クリックして「すべてのユーザーに対してインストール」を選びます — そのあと、あなたの書体が Word に「fontART DEMO」として並びます。'
       ],
       ko: [
         '페이지를 엽니다 — 아니면 Windows용으로 릴리스에서 .exe를 내려받아 실행합니다. 그때 파일에 서명이 없어서 Windows가 “알 수 없는 게시자”라고 알립니다. “추가 정보”와 “실행”을 거쳐 계속 진행하면 됩니다. 어느 쪽이든 설치되는 것은 없습니다.',
         '막대에서 글자를 하나 고르고 글자의 검은 면을 칠합니다. 선이 아니라 면입니다. n과 o부터 시작합니다 — 그 둘이 글씨의 리듬을 정합니다. 손이 떨린다면 “Stabilisator”(안정기) 슬라이더가 도와줍니다.',
-        '“⬇ Export”로 .ttf를 만듭니다. Windows에서 파일을 오른쪽 클릭하고 “모든 사용자용으로 설치”를 고릅니다 — 그다음부터 Word에 내 글꼴이 “fontART DEMO”로 나타납니다.'
+        '“⬇ 글꼴 내보내기…”로 .ttf를 만듭니다. Windows에서 파일을 오른쪽 클릭하고 “모든 사용자용으로 설치”를 고릅니다 — 그다음부터 Word에 내 글꼴이 “fontART DEMO”로 나타납니다.'
       ]
     },
     pitfalls: {
@@ -2208,7 +2208,7 @@ var GUIDES = {
         'On an iPhone, please use Safari. Inside the built-in browsers of Instagram, Facebook or WhatsApp, downloading the finished font fails — it simply never arrives. If you opened such a link, tap “open in Safari” and start there.',
         'The export only produces a–z. You can draw capitals, digits, umlauts, ß and punctuation, but they do not end up in the font file — words containing them will later appear in the program’s fallback typeface.',
         'The font name is fixed at “fontART DEMO”. Whatever you type into the name field is ignored on export. Installing two demo fonts side by side therefore does not work: Windows sees the same name twice.',
-        'Your work lives solely in the file you create yourself via “💾 save”. The trial remembers nothing on its own when it closes — so do save before the clock runs out.',
+        'Your work lives solely in the file you create yourself via “💾 Save”. The trial remembers nothing on its own when it closes — so do save before the clock runs out.',
         'The program is Windows 10/11, 64-bit only — on a Mac or on Linux you use the page in your browser. Neither version has an update checker: you fetch new builds of the .exe from the releases page yourself, while the page is simply current the next time you open it.'
       ],
       es: [
@@ -2216,7 +2216,7 @@ var GUIDES = {
         'En el iPhone, usa Safari, por favor. En los navegadores integrados de Instagram, Facebook o WhatsApp falla la descarga de la fuente terminada: sencillamente no llega. Quien abra un enlace así, que toque «Abrir en Safari» y empiece allí.',
         'La exportación entrega exclusivamente la a–z. Las mayúsculas, las cifras, las diéresis, la ß y los signos de puntuación los puedes dibujar, pero no acaban en el archivo de fuente: las palabras que los lleven aparecerán después en la tipografía de reemplazo del programa.',
         'El nombre de la fuente es fijo, «fontART DEMO». Lo que escribas en el campo del nombre se pasa por alto al exportar. Por eso no funciona instalar dos fuentes de demostración a la vez: Windows ve dos veces el mismo nombre.',
-        'Tu trabajo está únicamente en el archivo que creas tú mismo con «💾 Speichern» (guardar). La versión de prueba no recuerda nada por sí sola al cerrarse: así que guarda sin falta antes de que se acabe el tiempo.',
+        'Tu trabajo está únicamente en el archivo que creas tú mismo con «💾 Guardar». La versión de prueba no recuerda nada por sí sola al cerrarse: así que guarda sin falta antes de que se acabe el tiempo.',
         'El programa existe solo para Windows 10/11 de 64 bits; para Mac y Linux usas la página en el navegador. Ninguna de las dos versiones tiene comprobador de actualizaciones: las versiones nuevas del .exe las buscas tú mismo en la página de versiones, y la página está al día por sí sola la próxima vez que la abras.'
       ],
       fr: [
@@ -2224,7 +2224,7 @@ var GUIDES = {
         'Sur iPhone, utilisez Safari. Dans les navigateurs intégrés d’Instagram, de Facebook ou de WhatsApp, le téléchargement de la police terminée échoue — elle n’arrive tout simplement pas. Si vous avez ouvert un tel lien, touchez « Ouvrir dans Safari » et commencez là.',
         'L’export ne produit que a–z. Vous pouvez dessiner les majuscules, les chiffres, les trémas, le ß et les signes de ponctuation, mais ils n’atterrissent pas dans le fichier de police — les mots qui en contiennent apparaîtront plus tard dans la police de remplacement du programme.',
         'Le nom de la police est fixé à « fontART DEMO ». Ce que vous tapez dans le champ du nom est ignoré à l’export. Installer deux polices de démonstration côte à côte ne marche donc pas : Windows voit deux fois le même nom.',
-        'Votre travail se trouve uniquement dans le fichier que vous créez vous-même via « 💾 Speichern » (enregistrer). La version d’essai ne retient rien d’elle-même à la fermeture — enregistrez donc impérativement avant la fin du chronomètre.',
+        'Votre travail se trouve uniquement dans le fichier que vous créez vous-même via « 💾 Enregistrer ». La version d’essai ne retient rien d’elle-même à la fermeture — enregistrez donc impérativement avant la fin du chronomètre.',
         'Le programme n’existe que pour Windows 10/11 en 64 bits — pour Mac et Linux, vous prenez la page dans le navigateur. Ni l’une ni l’autre version n’a de vérificateur de mises à jour : les nouvelles versions du .exe, vous allez les chercher vous-même sur la page des releases, tandis que la page est à jour d’elle-même à la prochaine visite.'
       ],
       it: [
@@ -2232,7 +2232,7 @@ var GUIDES = {
         'Su iPhone usa Safari. Nei browser incorporati di Instagram, Facebook o WhatsApp lo scaricamento del carattere finito fallisce: semplicemente non arriva. Chi apre un link del genere tocca «Apri in Safari» e comincia lì.',
         'L’esportazione dà esclusivamente a–z. Maiuscole, cifre, dieresi, ß e segni di punteggiatura li puoi disegnare, ma non finiscono nel file del carattere: le parole che li contengono compariranno poi nel carattere sostitutivo del programma.',
         'Il nome del carattere è fisso, «fontART DEMO». Quello che digiti nel campo del nome viene ignorato all’esportazione. Installare due caratteri demo contemporaneamente perciò non funziona: Windows vede due volte lo stesso nome.',
-        'Il tuo lavoro si trova soltanto nel file che crei tu stesso con «💾 Speichern» (salva). La versione di prova non ricorda nulla da sola alla chiusura: salva assolutamente prima che scada il tempo.',
+        'Il tuo lavoro si trova soltanto nel file che crei tu stesso con «💾 Salva». La versione di prova non ricorda nulla da sola alla chiusura: salva assolutamente prima che scada il tempo.',
         'Il programma esiste solo per Windows 10/11 a 64 bit: per Mac e Linux prendi la pagina nel browser. Nessuna delle due versioni ha un controllo degli aggiornamenti: le versioni nuove del file .exe te le prendi da solo dalla pagina delle release, mentre la pagina si aggiorna da sola alla visita successiva.'
       ],
       nl: [
@@ -2248,7 +2248,7 @@ var GUIDES = {
         'Na iPhonie używaj Safari. We wbudowanych przeglądarkach Instagrama, Facebooka albo WhatsAppa pobranie gotowego kroju nie udaje się — po prostu nie dochodzi. Kto otworzy taki link, stuka w „Otwórz w Safari” i zaczyna tam.',
         'Eksport tworzy wyłącznie a–z. Wielkie litery, cyfry, umlauty, ß i znaki interpunkcyjne możesz malować, ale nie trafiają one do pliku z krojem — słowa z nimi pojawią się później w zastępczym kroju programu.',
         'Nazwa kroju jest na stałe „fontART DEMO”. To, co wpiszesz w pole nazwy, zostaje przy eksporcie pominięte. Zainstalowanie dwóch krojów demo obok siebie dlatego się nie uda: Windows widzi dwa razy tę samą nazwę.',
-        'Twoja praca jest wyłącznie w pliku, który sam tworzysz przez „💾 Speichern” (zapisz). Wersja próbna przy zamykaniu nie zapamiętuje sama z siebie niczego — koniecznie więc zapisz, zanim skończy się czas.',
+        'Twoja praca jest wyłącznie w pliku, który sam tworzysz przez „💾 Zapisz”. Wersja próbna przy zamykaniu nie zapamiętuje sama z siebie niczego — koniecznie więc zapisz, zanim skończy się czas.',
         'Program jest tylko dla Windows 10/11 w wersji 64-bitowej — na Maca i Linuksa bierzesz stronę w przeglądarce. Sprawdzania aktualizacji nie ma ani jedna, ani druga wersja: nowe wersje pliku .exe pobierasz sobie sam ze strony wydań, a strona przy następnym wywołaniu jest aktualna sama z siebie.'
       ],
       pt: [
@@ -2256,7 +2256,7 @@ var GUIDES = {
         'No iPhone, use o Safari, por favor. Nos navegadores integrados do Instagram, do Facebook ou do WhatsApp, a transferência da fonte acabada falha — ela pura e simplesmente não chega. Quem abrir um link desses toca em «Abrir no Safari» e começa por ali.',
         'A exportação entrega exclusivamente a–z. Maiúsculas, algarismos, tremas, ß e sinais de pontuação pode desenhá-los, mas não vão parar ao ficheiro da fonte — as palavras que os levem aparecem depois na fonte de substituição do programa.',
         'O nome da fonte é fixo, «fontART DEMO». O que escrever no campo do nome é ignorado na exportação. Instalar duas fontes de demonstração lado a lado não resulta, por isso: o Windows vê duas vezes o mesmo nome.',
-        'O seu trabalho fica apenas no ficheiro que você mesmo criar com «💾 Speichern» (guardar). A versão de teste não guarda nada por si própria ao fechar — antes de o relógio acabar, guarde sem falta.',
+        'O seu trabalho fica apenas no ficheiro que você mesmo criar com «💾 Salvar». A versão de teste não guarda nada por si própria ao fechar — antes de o relógio acabar, guarde sem falta.',
         'O programa só existe para Windows 10/11 em 64 bits — para Mac e Linux usa-se a página no navegador. Nenhuma das duas versões tem verificador de atualizações: as versões novas do .exe vai buscá-las você mesmo à página de versões, e a página está atualizada por si própria da próxima vez que a abrir.'
       ],
       tr: [
@@ -2264,7 +2264,7 @@ var GUIDES = {
         'iPhone’da lütfen Safari kullanın. Instagram, Facebook veya WhatsApp’ın yerleşik tarayıcılarında bitmiş yazı tipinin indirilmesi başarısız olur — dosya düpedüz ulaşmaz. Böyle bir bağlantı açan kişi “Safari’de aç” seçeneğine dokunup oradan başlar.',
         'Dışa aktarma yalnızca a–z verir. Büyük harfleri, rakamları, umlautlu harfleri (ä, ö, ü), ß’yi ve noktalama işaretlerini çizebilirsiniz, ama bunlar yazı tipi dosyasına girmez — onları içeren kelimeler sonradan programın yedek yazı tipiyle görünür.',
         'Yazı tipi adı sabittir: “fontART DEMO”. Ad alanına yazdığınız, dışa aktarmada göz ardı edilir. Bu yüzden iki demo yazı tipini yan yana kurmak işe yaramaz: Windows aynı adı iki kez görür.',
-        'Çalışmanız yalnızca, “💾 Speichern” (kaydet) ile kendiniz oluşturduğunuz dosyada durur. Deneme sürümü kapanırken kendiliğinden hiçbir şey hatırlamaz — yani saat dolmadan mutlaka kaydedin.',
+        'Çalışmanız yalnızca, “💾 Kaydet” ile kendiniz oluşturduğunuz dosyada durur. Deneme sürümü kapanırken kendiliğinden hiçbir şey hatırlamaz — yani saat dolmadan mutlaka kaydedin.',
         'Program yalnızca 64 bit Windows 10/11 için vardır — Mac ve Linux’ta tarayıcıdaki sayfayı kullanırsınız. Güncelleme denetleyicisi iki sürümde de yoktur: .exe dosyasının yeni sürümlerini sürümler sayfasından kendiniz alırsınız, sayfa ise bir sonraki açılışta kendiliğinden günceldir.'
       ],
       ru: [
@@ -2272,7 +2272,7 @@ var GUIDES = {
         'На iPhone пользуйтесь, пожалуйста, Safari. Во встроенных браузерах Instagram, Facebook или WhatsApp скачивание готового шрифта не срабатывает — файл просто не доходит. Кто открыл такую ссылку, нажимает «Открыть в Safari» и начинает там.',
         'Экспорт выдаёт исключительно a–z. Прописные буквы, цифры, умлауты, ß и знаки препинания рисовать можно, но в файл шрифта они не попадают — слова с ними позже появятся в запасном шрифте программы.',
         'Имя шрифта жёстко задано: «fontART DEMO». То, что вы впишете в поле имени, при экспорте не учитывается. Поэтому установить два демо-шрифта рядом не получится: Windows видит одно и то же имя дважды.',
-        'Ваша работа лежит только в том файле, который вы сами создаёте через «💾 Speichern» (сохранить). Пробная версия при закрытии сама ничего не запоминает — так что до истечения времени обязательно сохраняйте.',
+        'Ваша работа лежит только в том файле, который вы сами создаёте через «💾 Сохранить». Пробная версия при закрытии сама ничего не запоминает — так что до истечения времени обязательно сохраняйте.',
         'Программа есть только для 64-разрядных Windows 10/11 — для Mac и Linux берите страницу в браузере. Проверки обновлений нет ни у той, ни у другой версии: новые версии .exe вы забираете сами со страницы выпусков, а страница обновляется сама при следующем открытии.'
       ],
       hi: [
@@ -2280,7 +2280,7 @@ var GUIDES = {
         'iPhone पर कृपया Safari इस्तेमाल करें। Instagram, Facebook या WhatsApp के भीतर बने ब्राउज़रों में तैयार फ़ॉन्ट का डाउनलोड विफल हो जाता है — वह आता ही नहीं। जो ऐसा लिंक खोले, वह “Safari में खोलें” पर टैप करके वहीं से शुरू करे।',
         'निर्यात केवल a–z देता है। बड़े अक्षर, अंक, उमलाउट, ß और विराम चिह्न आप बना तो सकते हैं, पर वे फ़ॉन्ट फ़ाइल में नहीं पहुँचते — उनसे बने शब्द बाद में प्रोग्राम के विकल्प फ़ॉन्ट में दिखते हैं।',
         'फ़ॉन्ट का नाम पक्का “fontART DEMO” ही रहता है। नाम वाले खाने में आप जो टाइप करते हैं, उसे निर्यात के समय अनदेखा कर दिया जाता है। इसलिए दो डेमो फ़ॉन्ट साथ-साथ इंस्टॉल करना नहीं चलता: Windows को दो बार वही नाम दिखता है।',
-        'आपका काम केवल उसी फ़ाइल में रहता है जो आप खुद “💾 Speichern” (सहेजें) से बनाते हैं। परीक्षण संस्करण बंद होते समय अपने-आप कुछ याद नहीं रखता — इसलिए घड़ी पूरी होने से पहले सहेजना ज़रूरी है।',
+        'आपका काम केवल उसी फ़ाइल में रहता है जो आप खुद “💾 सहेजें” से बनाते हैं। परीक्षण संस्करण बंद होते समय अपने-आप कुछ याद नहीं रखता — इसलिए घड़ी पूरी होने से पहले सहेजना ज़रूरी है।',
         'प्रोग्राम केवल Windows 10/11, 64 बिट के लिए है — Mac और Linux के लिए आप ब्राउज़र वाला पेज लें। अपडेट जाँचने वाला हिस्सा न एक संस्करण में है, न दूसरे में: .exe के नए संस्करण आपको खुद रिलीज़ पेज से लेने होते हैं, जबकि पेज अगली बार खोलने पर अपने-आप ताज़ा रहता है।'
       ],
       zh: [
@@ -2296,7 +2296,7 @@ var GUIDES = {
         'iPhone では Safari をお使いください。Instagram、Facebook、WhatsApp の内蔵ブラウザーでは、できあがったフォントのダウンロードに失敗します — 単に届きません。そういうリンクを開いてしまった場合は、「Safari で開く」をタップして、そこから始めてください。',
         '書き出されるのは a–z だけです。大文字、数字、ウムラウト、ß、句読点も描けますが、フォントファイルには入りません — それらを含む単語は、あとでプログラムの代替書体で表示されます。',
         'フォント名は「fontART DEMO」に固定されています。名前の欄に打ち込んだものは、書き出しのときに無視されます。そのため、デモのフォントを2つ並べてインストールすることはできません: Windows には同じ名前が2回見えるからです。',
-        'あなたの作業は、自分で「💾 Speichern」（保存）から作ったファイルの中にだけあります。体験版は閉じるときに何ひとつ勝手には覚えません — 時間切れになる前に必ず保存してください。',
+        'あなたの作業は、自分で「💾 保存」から作ったファイルの中にだけあります。体験版は閉じるときに何ひとつ勝手には覚えません — 時間切れになる前に必ず保存してください。',
         'プログラムは Windows 10/11 の64ビット版だけです — Mac や Linux ではブラウザーのページを使ってください。更新チェッカーはどちらの版にもありません: .exe の新しい版はリリースページから自分で取ってきてください。ページのほうは、次に開けばひとりでに最新になっています。'
       ],
       ko: [
@@ -2304,7 +2304,7 @@ var GUIDES = {
         'iPhone에서는 Safari를 써 주세요. Instagram, Facebook, WhatsApp의 내장 브라우저에서는 완성된 글꼴 내려받기가 실패합니다 — 파일이 아예 도착하지 않습니다. 그런 링크를 열었다면 “Safari에서 열기”를 누르고 거기서 시작합니다.',
         '내보내기는 오직 a–z만 내놓습니다. 대문자, 숫자, 움라우트, ß, 문장 부호는 그릴 수는 있지만 글꼴 파일에 담기지 않습니다 — 그것이 들어간 낱말은 나중에 프로그램의 대체 글꼴로 나타납니다.',
         '글꼴 이름은 “fontART DEMO”로 고정되어 있습니다. 이름 칸에 무엇을 입력하든 내보낼 때 무시됩니다. 그래서 데모 글꼴 두 개를 나란히 설치하는 것은 되지 않습니다: Windows에는 같은 이름이 두 번 보이기 때문입니다.',
-        '작업물은 오직 “💾 Speichern”(저장)으로 직접 만든 파일에만 들어 있습니다. 체험판은 닫힐 때 스스로 아무것도 기억하지 않습니다 — 그러니 시계가 다 되기 전에 꼭 저장하세요.',
+        '작업물은 오직 “💾 저장”으로 직접 만든 파일에만 들어 있습니다. 체험판은 닫힐 때 스스로 아무것도 기억하지 않습니다 — 그러니 시계가 다 되기 전에 꼭 저장하세요.',
         '프로그램은 Windows 10/11 64비트용으로만 있습니다 — Mac과 Linux에서는 브라우저의 페이지를 쓰면 됩니다. 업데이트 검사기는 어느 쪽에도 없습니다: .exe의 새 판은 릴리스 페이지에서 직접 가져와야 하고, 페이지는 다음에 열 때 저절로 최신 상태입니다.'
       ]
     },
