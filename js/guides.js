@@ -2420,98 +2420,98 @@ var GUIDES = {
         'Es ist kein Programm und keine Webseite. Ohne einen Client, der den SKILL.md-Standard versteht — Claude Code, claude.ai und andere —, passiert gar nichts.',
         'Der Ordnername muss create-masterprompt heißen und mit dem Feld name im Frontmatter übereinstimmen. Stimmen sie nicht überein, lädt der Skill stillschweigend nicht.',
         'Für claude.ai die Datei create-masterprompt.zip von der Releases-Seite hochladen. Das Archiv muss den Ordner create-masterprompt als Wurzel haben, nicht die losen Dateien — sonst lädt der Skill nicht.',
-        'Vorlagen und Referenzdateien sind auf Englisch. Die Anleitung selbst gibt es zusätzlich auf Deutsch (SKILL.de.md), dazu eine Übersicht auf einer Seite. Gelesen wird vom Programm aber immer die englische SKILL.md — bei Widerspruch gilt sie.',
+        'Vorlagen und Referenzdateien sind auf Englisch. Die Anleitung selbst gibt es zusätzlich in dreizehn weiteren Sprachen, von SKILL.de.md bis SKILL.ko.md, dazu je Sprache eine Übersicht auf einer Seite. Gelesen wird vom Programm aber immer die englische SKILL.md — bei Widerspruch gilt sie.',
         'Der Skill nimmt einem die Entscheidungen nicht ab, er stellt Fragen. Bei einer Kleinigkeit bremst das mehr, als es hilft — dafür steht das Größen-Gate ganz vorne, das genau diesen Fall abfangen soll.'
       ],
       en: [
         'It is neither a program nor a website. Without a client that understands the SKILL.md standard — Claude Code, claude.ai and others — nothing happens at all.',
         'The folder has to be called create-masterprompt and match the name field in the frontmatter. If they differ, the skill silently fails to load.',
         'For claude.ai, upload create-masterprompt.zip from the releases page. The archive must have the create-masterprompt folder as its root, not the loose files — otherwise the skill will not load.',
-        'Templates and reference files are in English. The instructions themselves also come in German (SKILL.de.md), plus a one-page overview. The program always reads the English SKILL.md, which wins in case of conflict.',
+        'Templates and reference files are in English. The instructions themselves also come in thirteen other languages, from SKILL.de.md to SKILL.ko.md, plus a one-page overview per language. The program always reads the English SKILL.md, which wins in case of conflict.',
         'The skill does not make the decisions for you, it asks questions. On something small that slows you down more than it helps — which is what the size gate at the very front is there to catch.'
       ],
       es: [
         'No es un programa ni una página web. Sin un cliente que entienda el estándar SKILL.md —Claude Code, claude.ai y otros— no pasa absolutamente nada.',
         'La carpeta tiene que llamarse create-masterprompt y coincidir con el campo name del frontmatter. Si no coinciden, el skill no se carga y no dice nada.',
         'Para claude.ai, sube el archivo create-masterprompt.zip desde la página de versiones. El archivo comprimido tiene que tener la carpeta create-masterprompt como raíz, no los archivos sueltos; si no, el skill no se carga.',
-        'Las plantillas y los archivos de referencia están en inglés. La guía en sí existe además en alemán (SKILL.de.md), junto con un resumen de una página. Pero el programa lee siempre el SKILL.md inglés: en caso de contradicción, prevalece ese.',
+        'Las plantillas y los archivos de referencia están en inglés. La guía en sí existe además en otros trece idiomas, de SKILL.de.md a SKILL.ko.md, junto con un resumen de una página por idioma. Pero el programa lee siempre el SKILL.md inglés: en caso de contradicción, prevalece ese.',
         'El skill no decide por ti, hace preguntas. Si el encargo es una nimiedad, eso frena más de lo que ayuda; para eso está el control de tamaño justo al principio, que debe atajar exactamente ese caso.'
       ],
       fr: [
         'Ce n’est ni un programme ni un site web. Sans un client qui comprend le standard SKILL.md — Claude Code, claude.ai et d’autres —, il ne se passe rien du tout.',
         'Le dossier doit s’appeler create-masterprompt et correspondre au champ name dans le frontmatter. S’ils ne correspondent pas, le skill ne se charge pas — et ce, sans le moindre message.',
         'Pour claude.ai, récupérer create-masterprompt.zip sur la page des releases et le téléverser. L’archive doit avoir le dossier create-masterprompt pour racine, et non les fichiers en vrac — sinon le skill ne se charge pas.',
-        'Les gabarits et les fichiers de référence sont en anglais. Le guide lui-même existe en plus en allemand (SKILL.de.md), avec un aperçu sur une page. Mais le programme lit toujours le SKILL.md anglais — en cas de contradiction, c’est lui qui fait foi.',
+        'Les gabarits et les fichiers de référence sont en anglais. Le guide lui-même existe en plus dans treize autres langues, de SKILL.de.md à SKILL.ko.md, avec un aperçu sur une page par langue. Mais le programme lit toujours le SKILL.md anglais — en cas de contradiction, c’est lui qui fait foi.',
         'Le skill ne prend pas les décisions à votre place, il pose des questions. Pour une broutille, cela freine plus que cela n’aide — c’est justement pour ce cas que le filtre de taille se trouve tout au début.'
       ],
       it: [
         'Non è un programma e non è un sito web. Senza un client che capisca lo standard SKILL.md — Claude Code, claude.ai e altri — non succede proprio niente.',
         'La cartella deve chiamarsi create-masterprompt e coincidere con il campo name nel frontmatter. Se non coincidono, lo skill non si carica e non lo dice.',
         'Per claude.ai carica il file create-masterprompt.zip dalla pagina delle release. L’archivio deve avere come radice la cartella create-masterprompt, non i singoli file, altrimenti lo skill non si carica.',
-        'Modelli e file di riferimento sono in inglese. Le istruzioni stesse ci sono anche in tedesco (SKILL.de.md), insieme a una panoramica di una pagina. Il programma però legge sempre la SKILL.md inglese: in caso di contraddizione vale quella.',
+        'Modelli e file di riferimento sono in inglese. Le istruzioni stesse ci sono anche in altre tredici lingue, da SKILL.de.md a SKILL.ko.md, insieme a una panoramica di una pagina per ogni lingua. Il programma però legge sempre la SKILL.md inglese: in caso di contraddizione vale quella.',
         'Lo skill non decide al posto tuo, fa domande. Su una piccolezza questo frena più di quanto aiuti: per questo all’inizio c’è il controllo di dimensione, che deve intercettare proprio questo caso.'
       ],
       nl: [
         'Het is geen programma en geen website. Zonder een client die de SKILL.md-standaard begrijpt — Claude Code, claude.ai en andere — gebeurt er helemaal niets.',
         'De map moet create-masterprompt heten en overeenkomen met het veld name in de frontmatter. Komen ze niet overeen, dan laadt de skill stilzwijgend niet.',
         'Voor claude.ai upload je het bestand create-masterprompt.zip van de releases-pagina. Het archief moet de map create-masterprompt als wortel hebben, niet de losse bestanden — anders laadt de skill niet.',
-        'Sjablonen en referentiebestanden zijn in het Engels. De handleiding zelf is er daarnaast in het Duits (SKILL.de.md), plus een overzicht van één pagina. Het programma leest echter altijd de Engelse SKILL.md — bij tegenspraak geldt die.',
+        'Sjablonen en referentiebestanden zijn in het Engels. De handleiding zelf is er daarnaast in dertien andere talen, van SKILL.de.md tot SKILL.ko.md, plus per taal een overzicht van één pagina. Het programma leest echter altijd de Engelse SKILL.md — bij tegenspraak geldt die.',
         'De skill neemt je de beslissingen niet uit handen, hij stelt vragen. Bij een kleinigheid remt dat meer dan het helpt — daarvoor staat de omvangstoets helemaal vooraan, die precies dat geval moet opvangen.'
       ],
       pl: [
         'To nie jest program ani strona internetowa. Bez klienta, który rozumie standard SKILL.md — Claude Code, claude.ai i inne —, nie dzieje się w ogóle nic.',
         'Folder musi się nazywać create-masterprompt i zgadzać się z polem name we frontmatterze. Jeśli się nie zgadzają, skill po cichu się nie wczytuje.',
         'Dla claude.ai wgrać plik create-masterprompt.zip ze strony wydań. Archiwum musi mieć folder create-masterprompt jako korzeń, a nie luźne pliki — inaczej skill się nie wczyta.',
-        'Szablony i pliki referencyjne są po angielsku. Sama instrukcja jest dostępna dodatkowo po niemiecku (SKILL.de.md), do tego zestawienie na jednej stronie. Program czyta jednak zawsze angielski plik SKILL.md — w razie sprzeczności to on obowiązuje.',
+        'Szablony i pliki referencyjne są po angielsku. Sama instrukcja jest dostępna dodatkowo w trzynastu innych językach, od SKILL.de.md do SKILL.ko.md, do tego zestawienie na jednej stronie dla każdego języka. Program czyta jednak zawsze angielski plik SKILL.md — w razie sprzeczności to on obowiązuje.',
         'Skill nie podejmuje decyzji za ciebie — on zadaje pytania. Przy drobiazgu hamuje to bardziej, niż pomaga — po to na samym początku jest bramka rozmiaru, która ma wyłapać właśnie ten przypadek.'
       ],
       pt: [
         'Não é um programa nem um site. Sem um cliente que perceba a norma SKILL.md — Claude Code, claude.ai e outros —, não acontece nada de nada.',
         'A pasta tem de se chamar create-masterprompt e coincidir com o campo name no frontmatter. Se não coincidirem, o skill não carrega e não diz nada.',
         'Para o claude.ai, carregar o ficheiro create-masterprompt.zip da página de versões. O arquivo tem de ter a pasta create-masterprompt como raiz, e não os ficheiros soltos — senão o skill não carrega.',
-        'Os modelos e os ficheiros de referência estão em inglês. As próprias instruções existem também em alemão (SKILL.de.md), mais uma visão geral numa página. O programa, porém, lê sempre o SKILL.md inglês — em caso de contradição, é ele que vale.',
+        'Os modelos e os ficheiros de referência estão em inglês. As próprias instruções existem também em treze outras línguas, de SKILL.de.md a SKILL.ko.md, mais uma visão geral numa página por língua. O programa, porém, lê sempre o SKILL.md inglês — em caso de contradição, é ele que vale.',
         'O skill não lhe tira as decisões das mãos, faz perguntas. Numa coisa pequena isso trava mais do que ajuda — é para isso que está logo à frente a triagem de dimensão, que deve apanhar exatamente esse caso.'
       ],
       tr: [
         'O ne bir programdır ne de bir web sitesi. SKILL.md standardını anlayan bir istemci olmadan — Claude Code, claude.ai ve diğerleri — hiçbir şey olmaz.',
         'Klasörün adı create-masterprompt olmalı ve ön bilgideki name alanıyla örtüşmelidir. Örtüşmezlerse Skill sessizce yüklenmez.',
         'claude.ai için: sürümler sayfasındaki create-masterprompt.zip dosyasını claude.ai’ye yükleyin. Arşivin kökünde dosyalar tek tek değil, create-masterprompt klasörü bulunmalıdır — yoksa Skill yüklenmez.',
-        'Şablonlar ve başvuru dosyaları İngilizcedir. Kılavuzun kendisi ayrıca Almanca da vardır (SKILL.de.md), yanında tek sayfalık bir genel bakış. Ama program her zaman İngilizce SKILL.md dosyasını okur — çelişki durumunda o geçerlidir.',
+        'Şablonlar ve başvuru dosyaları İngilizcedir. Kılavuzun kendisi ayrıca on üç başka dilde de vardır, SKILL.de.md dosyasından SKILL.ko.md dosyasına kadar, yanında her dil için tek sayfalık bir genel bakış. Ama program her zaman İngilizce SKILL.md dosyasını okur — çelişki durumunda o geçerlidir.',
         'Skill kararları sizin yerinize vermez, sorular sorar. Küçük bir işte bu, yardım etmekten çok yavaşlatır — tam da bu durumu yakalamak için en başta büyüklük kapısı durur.'
       ],
       ru: [
         'Это не программа и не веб-страница. Без клиента, который понимает стандарт SKILL.md — Claude Code, claude.ai и другие, — не происходит вообще ничего.',
         'Папка должна называться create-masterprompt и совпадать с полем name во фронтматтере. Если они не совпадают, Skill молча не загружается.',
         'Для claude.ai скачайте файл create-masterprompt.zip со страницы выпусков и загрузите его в claude.ai. В архиве корнем должна быть папка create-masterprompt, а не россыпь файлов, — иначе Skill не загрузится.',
-        'Шаблоны и справочные файлы на английском. Само руководство есть дополнительно на немецком (SKILL.de.md), к нему обзор на одной странице. Но программа всегда читает английский SKILL.md — при противоречии действует он.',
+        'Шаблоны и справочные файлы на английском. Само руководство есть дополнительно на тринадцати других языках, от SKILL.de.md до SKILL.ko.md, к нему обзор на одной странице для каждого языка. Но программа всегда читает английский SKILL.md — при противоречии действует он.',
         'Skill не принимает решения за вас, он задаёт вопросы. Для мелкой задачи это скорее мешает, чем помогает, — для этого в самом начале и стоит проверка размера, которая как раз и должна отсекать такие случаи.'
       ],
       hi: [
         'यह न कोई प्रोग्राम है, न कोई वेबसाइट। ऐसे क्लाइंट के बिना जो SKILL.md मानक समझता हो — Claude Code, claude.ai और दूसरे —, कुछ भी नहीं होता।',
         'फ़ोल्डर का नाम create-masterprompt होना चाहिए और फ़्रंटमैटर के name फ़ील्ड से मेल खाना चाहिए। दोनों मेल न खाएँ, तो Skill चुपचाप लोड नहीं होता।',
         'claude.ai के लिए रिलीज़ पेज से create-masterprompt.zip फ़ाइल अपलोड करें। उस आर्काइव की जड़ में create-masterprompt फ़ोल्डर होना चाहिए, खुली फ़ाइलें नहीं — वरना Skill लोड नहीं होगा।',
-        'टेम्पलेट और संदर्भ फ़ाइलें अंग्रेज़ी में हैं। निर्देश खुद जर्मन में भी मिलते हैं (SKILL.de.md), साथ में एक पेज का अवलोकन। पर प्रोग्राम हमेशा अंग्रेज़ी वाली SKILL.md ही पढ़ता है — विरोध होने पर वही मान्य है।',
+        'टेम्पलेट और संदर्भ फ़ाइलें अंग्रेज़ी में हैं। निर्देश खुद तेरह अन्य भाषाओं में भी मिलते हैं, SKILL.de.md से SKILL.ko.md तक, साथ में हर भाषा के लिए एक पेज का अवलोकन। पर प्रोग्राम हमेशा अंग्रेज़ी वाली SKILL.md ही पढ़ता है — विरोध होने पर वही मान्य है।',
         'Skill आपके फ़ैसले आपसे नहीं लेता, वह सवाल पूछता है। किसी छोटी-सी बात पर यह मदद से ज़्यादा रोकता है — इसीलिए सबसे आगे वह आकार-जाँच खड़ी है, जो ठीक ऐसे ही मामले पकड़ने के लिए है।'
       ],
       zh: [
         '它不是程序，也不是网站。没有一个理解 SKILL.md 标准的客户端——Claude Code、claude.ai 等等——就什么都不会发生。',
         '文件夹必须叫 create-masterprompt，并且要和 frontmatter 里的 name 字段一致。两者对不上时，这个 Skill 会悄无声息地加载不上。',
         '用 claude.ai 的话，从发布页上传 create-masterprompt.zip 这个文件。压缩包的根必须是 create-masterprompt 文件夹，而不是那些散着的文件——否则 Skill 加载不了。',
-        '模板和参考文件是英语的。使用说明本身另外还有德语版（SKILL.de.md），外加一页纸的概览。但程序读的始终是英语的 SKILL.md——有出入时以它为准。',
+        '模板和参考文件是英语的。使用说明本身另外还有十三种其他语言的版本（从 SKILL.de.md 到 SKILL.ko.md），外加每种语言各一页纸的概览。但程序读的始终是英语的 SKILL.md——有出入时以它为准。',
         '这个 Skill 不会替你做决定，它会提问。碰上小事情，这反而帮倒忙——所以最前面才立着那道规模闸门，它正是用来拦住这种情况的。'
       ],
       ja: [
         'プログラムでもウェブサイトでもありません。SKILL.md の規格を理解するクライアント — Claude Code、claude.ai など — がなければ、何も起きません。',
         'フォルダー名は create-masterprompt でなければならず、フロントマターの name の項目と一致している必要があります。食い違っていると、Skill は黙って読み込まれません。',
         'claude.ai の場合は、リリースページから create-masterprompt.zip をアップロードします。ZIP のルートには、ばらのファイルではなく create-masterprompt フォルダーが入っていなければなりません — そうでないと Skill は読み込まれません。',
-        'テンプレートと参照用のファイルは英語です。説明そのものはドイツ語版（SKILL.de.md）もあり、あわせて1ページの概要も付いています。ただしプログラムが読むのはいつも英語の SKILL.md で、食い違った場合はそちらが有効です。',
+        'テンプレートと参照用のファイルは英語です。説明そのものはほかに13の言語版（SKILL.de.md から SKILL.ko.md まで）もあり、あわせて言語ごとに1ページの概要も付いています。ただしプログラムが読むのはいつも英語の SKILL.md で、食い違った場合はそちらが有効です。',
         'Skill は決定を代わりにしてはくれません。質問をします。ちょっとしたことでは、助けになるよりも足かせになります — そのための規模のゲートがいちばん前に置かれていて、まさにこの場合を受け止めることになっています。'
       ],
       ko: [
         '프로그램도 웹사이트도 아닙니다. SKILL.md 규격을 이해하는 클라이언트 — Claude Code, claude.ai 등 — 가 없으면 아무 일도 일어나지 않습니다.',
         '폴더 이름은 create-masterprompt여야 하고 프런트매터의 name 항목과 일치해야 합니다. 서로 다르면 Skill은 말없이 로드되지 않습니다.',
         'claude.ai에서는 릴리스 페이지의 create-masterprompt.zip을 올립니다. 압축 파일은 낱개 파일이 아니라 create-masterprompt 폴더를 뿌리로 담고 있어야 합니다 — 그렇지 않으면 Skill이 로드되지 않습니다.',
-        '템플릿과 참고 파일은 영어입니다. 사용 설명 자체는 독일어로도 있고(SKILL.de.md), 한 쪽짜리 개요도 딸려 있습니다. 다만 프로그램이 읽는 것은 언제나 영어 SKILL.md이며, 내용이 어긋나면 그쪽이 기준입니다.',
+        '템플릿과 참고 파일은 영어입니다. 사용 설명 자체는 다른 열세 개 언어로도 있고(SKILL.de.md부터 SKILL.ko.md까지), 언어마다 한 쪽짜리 개요도 딸려 있습니다. 다만 프로그램이 읽는 것은 언제나 영어 SKILL.md이며, 내용이 어긋나면 그쪽이 기준입니다.',
         'Skill은 결정을 대신해 주지 않고 질문을 던집니다. 사소한 일에서는 도움보다 방해가 되는데, 바로 그 경우를 걸러 내라고 맨 앞에 규모 게이트가 서 있습니다.'
       ]
     },
