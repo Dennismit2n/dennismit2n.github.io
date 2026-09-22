@@ -14,6 +14,16 @@
  * one entry per language: de en es fr it nl pl pt tr ru hi zh ja ko, same order
  * as in i18n.js. Optional: full (an array of paragraphs), so far only used by
  * fontART, the one tool with a paid full version.
+ *
+ * Optional since 22.09.2026: shots — screenshots shown under "What it looks
+ * like", right after purpose. Each one is either { file, w, h, alt } for one
+ * picture in every language, or { files: { de: [file, w, h], … }, alt } for one
+ * per language (English is the fallback). An animation adds still: the last
+ * frame, shown instead to whoever asked for reduced motion. The files live in
+ * assets/anleitung/ as copies; w and h must be the file's own pixels: they set
+ * the aspect ratio, and w also caps the width so no picture is shown larger
+ * than its file. alt describes the picture in the reader's language, even
+ * where the interface in the picture speaks another one.
  */
 'use strict';
 
@@ -35,6 +45,30 @@ var GUIDES = {
       ja: '何時間もゲームを続けたあと、スタンバイキャッシュがいっぱいになって Windows がカクつくとき: Real_RAM_cooler は、RAMMap や ISLC も使っているのと同じ Windows のインターフェースを通してそれを空にし、前と後でどれだけ空いたかを示します。',
       ko: '몇 시간 게임을 하고 나면 대기 캐시가 가득 차서 Windows가 끊기는 일이 있습니다. 그럴 때 Real_RAM_cooler는 RAMMap과 ISLC도 쓰는 바로 그 Windows 인터페이스를 통해 캐시를 비우고, 그것으로 얼마나 확보되었는지 전후를 보여 줍니다.'
     },
+    shots: [
+      {
+        files: {
+          de: ['ram-de.webp', 612, 802],
+          en: ['ram-en.webp', 611, 806]
+        },
+        alt: {
+          de: 'Das Fenster von Real_RAM_cooler: ein Balken, der zeigt, wie viel Arbeitsspeicher in Benutzung, im Standby und wirklich frei ist, darunter der Knopf zum Bereinigen fürs Gaming, ein Placebo-Knopf und die zwölf größten Speicherfresser mit den Spalten Berührt und Besitzt.',
+          en: 'The Real_RAM_cooler window: a bar showing how much memory is in use, on standby and truly free, and below it the button that cleans up for gaming, a placebo button and the twelve biggest memory hogs with the columns Touches and Owns.',
+          es: 'La ventana de Real_RAM_cooler: una barra que divide la memoria en ocupada, en espera y realmente libre; debajo, el botón que limpia la memoria para jugar, un botón placebo y los doce mayores devoradores de memoria, con las columnas «Touches» y «Owns».',
+          fr: 'La fenêtre de Real_RAM_cooler : une barre qui sépare la mémoire utilisée, en veille et réellement libre ; en dessous, le bouton qui fait le ménage pour le jeu, un bouton placebo et les douze processus les plus gourmands en mémoire, avec les colonnes « Touches » et « Owns ».',
+          it: 'La finestra di Real_RAM_cooler: una barra che divide la memoria in occupata, in standby e davvero libera; sotto, il pulsante che fa pulizia per giocare, un pulsante placebo e i dodici processi più affamati di memoria, con le colonne «Touches» e «Owns».',
+          nl: 'Het venster van Real_RAM_cooler: een balk die het werkgeheugen opsplitst in bezet, standby en echt vrij, daaronder de knop die het geheugen opruimt voor het gamen, een placeboknop en de twaalf grootste geheugenvreters met de kolommen Touches en Owns.',
+          pl: 'Okno Real_RAM_cooler: pasek dzielący pamięć RAM na zajętą, standby i naprawdę wolną, pod nim przycisk czyszczący pamięć przed grą, przycisk placebo oraz lista dwunastu największych pożeraczy pamięci z kolumnami Touches i Owns.',
+          pt: 'A janela do Real_RAM_cooler: uma barra que divide a memória em ocupada, standby e realmente livre; por baixo, o botão que limpa a memória para jogar, um botão placebo e os doze maiores devoradores de memória, com as colunas Touches e Owns.',
+          tr: 'Real_RAM_cooler penceresi: belleği kullanımda, beklemede (standby) ve gerçekten boş diye bölen bir çubuk; altında oyun için belleği temizleyen düğme, bir plasebo düğmesi ve Touches ile Owns sütunlarıyla en çok bellek yiyen on iki süreç.',
+          ru: 'Окно Real_RAM_cooler: полоса, которая показывает, сколько памяти занято, сколько лежит в кэше ожидания (standby) и сколько действительно свободно; под ней кнопка очистки памяти для игр, кнопка-плацебо и список двенадцати самых прожорливых процессов со столбцами Touches и Owns.',
+          hi: 'Real_RAM_cooler की विंडो: एक पट्टी, जो मेमोरी को इस्तेमाल हो रहे, स्टैंडबाय और सचमुच खाली हिस्सों में बाँटती है, उसके नीचे गेमिंग के लिए मेमोरी साफ़ करने वाला बटन, एक प्लेसीबो बटन और Touches व Owns कॉलम के साथ सबसे ज़्यादा मेमोरी खाने वाले बारह प्रोसेस।',
+          zh: 'Real_RAM_cooler 的窗口：一根把内存分为已用、待机和真正空闲三段的横条；下面是为玩游戏清理内存的按钮、一个安慰剂按钮，以及占用内存最多的十二个进程，带有“Touches”和“Owns”两列。',
+          ja: 'Real_RAM_cooler のウィンドウ: メモリを使用中・スタンバイ・本当の空きに分けて示すバー。その下に、ゲーム向けにメモリを片付けるボタン、プラセボボタン、そしてメモリを食っている上位12のプロセスが「Touches」と「Owns」の列付きで並びます。',
+          ko: 'Real_RAM_cooler 창: 메모리를 사용 중, 대기, 정말로 비어 있는 부분으로 나눠 보여 주는 막대, 그 아래에 게임을 위해 메모리를 정리하는 버튼과 플라시보 버튼, 그리고 “Touches”와 “Owns” 열이 있는, 메모리를 가장 많이 잡아먹는 프로세스 열두 개.'
+        }
+      }
+    ],
     steps: {
       de: [
         'Den Installer aus den Releases laden und ausführen. Windows meldet „Unbekannter Herausgeber“, weil die Datei nicht signiert ist — über „Weitere Informationen“ geht es weiter.',
@@ -228,6 +262,27 @@ var GUIDES = {
       ja: 'アップロード欄やメールに収まるように写真を小さくします — どこにもアップロードせずに。どの画像もブラウザーの中で計算し直されます。そのとき GPS の位置情報、カメラの機種、撮影日時は必然的に落ちます。',
       ko: '사진을 작게 만들어 업로드 칸이나 메일에 들어가게 합니다 — 어디에도 올리지 않고서 말입니다. 모든 이미지는 브라우저 안에서 다시 인코딩되며, 그 과정에서 GPS 위치, 카메라 모델, 촬영 시각은 필연적으로 사라집니다.'
     },
+    shots: [
+      {
+        file: 'shrink-de.webp', w: 1600, h: 1408,
+        alt: {
+          de: 'shrinkling: die Fläche zum Hineinziehen, Auswählen oder Einfügen von Bildern, darunter die vier Zielgrößen für E-Mail, Bewerbungsportale, Kleinanzeigen und das Web.',
+          en: 'shrinkling: the area for dropping, choosing or pasting images, and below it the four target sizes for email, job portals, classifieds and the web.',
+          es: 'shrinkling: la zona para arrastrar, elegir o pegar imágenes y, debajo, los cuatro tamaños objetivo para correo, portales de empleo, anuncios y la web.',
+          fr: 'shrinkling : la zone où déposer, choisir ou coller des images et, en dessous, les quatre tailles cibles pour l’e-mail, les portails de candidature, les petites annonces et le web.',
+          it: 'shrinkling: l’area in cui trascinare, scegliere o incollare le immagini e, sotto, le quattro dimensioni obiettivo per e-mail, portali per le candidature, annunci e web.',
+          nl: 'shrinkling: het vlak voor het slepen, kiezen of plakken van afbeeldingen, en daaronder de vier doelgroottes voor e-mail, sollicitatieportalen, kleine advertenties en het web.',
+          pl: 'shrinkling: pole do przeciągania, wybierania lub wklejania zdjęć, a pod nim cztery rozmiary docelowe dla e-maila, portali rekrutacyjnych, ogłoszeń i stron internetowych.',
+          pt: 'shrinkling: a área para arrastar, escolher ou colar imagens e, por baixo, os quatro tamanhos-alvo para e-mail, portais de emprego, classificados e a web.',
+          tr: 'shrinkling: görselleri sürükleyip bırakmak, seçmek ya da yapıştırmak için alan; altında e-posta, başvuru portalları, ilan siteleri ve web için dört hedef boyut.',
+          ru: 'shrinkling: поле для перетаскивания, выбора или вставки изображений, а под ним четыре целевых размера: для почты, откликов на вакансии, объявлений и веба.',
+          hi: 'shrinkling: छवियाँ खींचकर छोड़ने, चुनने या पेस्ट करने की जगह, और उसके नीचे ईमेल, आवेदन पोर्टलों, पुराना सामान बेचने की साइटों और वेब के लिए चार लक्षित आकार।',
+          zh: 'shrinkling：用来拖入、选择或粘贴图片的区域，下面是四种目标大小，分别用于邮件、求职申请网站、二手交易和网页。',
+          ja: 'shrinkling: 画像をドロップ、選択、貼り付けできる枠と、その下のメール・応募サイト・フリマ・ウェブ向けの4つの目標サイズ。',
+          ko: 'shrinkling: 이미지를 끌어다 놓거나 고르거나 붙여 넣는 영역, 그 아래에 이메일, 채용 사이트, 중고 거래, 웹용 목표 크기 네 가지.'
+        }
+      }
+    ],
     steps: {
       de: [
         'Bilder auf die Fläche ziehen, über die Dateiauswahl öffnen oder mit Strg+V einfügen.',
@@ -421,6 +476,27 @@ var GUIDES = {
       ja: 'ゲストがカメラでスキャンするだけで、すぐ Wi-Fi につながる QR コードです — パスワードを打ち込む必要はありません。ネットワーク名とパスワードはブラウザーの中にとどまり、どのサーバーにも送られません。',
       ko: '손님이 카메라로 스캔하면 곧바로 Wi-Fi에 들어오는 QR 코드입니다 — 비밀번호를 받아 적을 필요가 없습니다. 네트워크 이름과 비밀번호는 그동안 브라우저 안에 머무르며 어떤 서버로도 전송되지 않습니다.'
     },
+    shots: [
+      {
+        file: 'wifi-en.webp', w: 1600, h: 1198,
+        alt: {
+          de: 'WLAN-QR-Karte: links Netzwerkname, Verschlüsselung und Passwort, rechts die fertige Karte mit QR-Code, Netzwerkname und Passwort, darunter Teilen, PNG herunterladen, QR-Code als SVG, Kopieren und Drucken.',
+          en: 'WiFi QR Card: network name, security and password on the left, the finished card with QR code, network name and password on the right, and below it share, download PNG, QR code as SVG, copy and print.',
+          es: 'Tarjeta QR WiFi: a la izquierda, el nombre de la red, la seguridad y la contraseña; a la derecha, la tarjeta terminada con el código QR, el nombre de la red y la contraseña y, debajo, compartir, descargar como PNG, el código QR en SVG, copiar e imprimir.',
+          fr: 'Carte QR Wi-Fi : à gauche, le nom du réseau, la sécurité et le mot de passe ; à droite, la carte terminée avec le code QR, le nom du réseau et le mot de passe et, en dessous, partager, télécharger en PNG, le code QR en SVG, copier et imprimer.',
+          it: 'Tessera QR Wi-Fi: a sinistra nome della rete, sicurezza e password; a destra la tessera finita con codice QR, nome della rete e password e, sotto, condivisione, download in PNG, codice QR in SVG, copia e stampa.',
+          nl: 'Wifi-QR-kaart: links netwerknaam, beveiliging en wachtwoord, rechts de kant-en-klare kaart met QR-code, netwerknaam en wachtwoord, en daaronder delen, PNG downloaden, QR-code als SVG, kopiëren en afdrukken.',
+          pl: 'Karta QR Wi-Fi: po lewej nazwa sieci, zabezpieczenie i hasło, po prawej gotowa karta z kodem QR, nazwą sieci i hasłem, a pod nią udostępnianie, pobieranie PNG, kod QR jako SVG, kopiowanie i drukowanie.',
+          pt: 'Cartão QR de Wi-Fi: à esquerda, o nome da rede, a segurança e a palavra-passe; à direita, o cartão pronto com código QR, nome da rede e palavra-passe e, por baixo, partilhar, transferir PNG, código QR em SVG, copiar e imprimir.',
+          tr: 'Wi-Fi QR Kartı: solda ağ adı, güvenlik ve şifre; sağda QR kodu, ağ adı ve şifreyle hazır kart; altında paylaşma, PNG indirme, QR kodu SVG olarak alma, kopyalama ve yazdırma düğmeleri.',
+          ru: 'QR-карточка для Wi-Fi: слева имя сети, защита и пароль, справа готовая карточка с QR-кодом, именем сети и паролем, а под ней кнопки: поделиться, скачать PNG, QR-код в SVG, скопировать и распечатать.',
+          hi: 'वाई-फ़ाई QR कार्ड: बाईं ओर नेटवर्क का नाम, सुरक्षा और पासवर्ड, दाईं ओर QR कोड, नेटवर्क के नाम और पासवर्ड वाला तैयार कार्ड, और उसके नीचे साझा करने, PNG डाउनलोड करने, QR कोड को SVG में लेने, कॉपी करने और प्रिंट करने के बटन।',
+          zh: 'WiFi 二维码卡片：左边是网络名称、加密方式和密码，右边是做好的卡片，上面有二维码、网络名称和密码；下面是分享、下载 PNG、以 SVG 格式下载二维码、复制和打印。',
+          ja: 'Wi-Fi QRカード: 左にネットワーク名、セキュリティ、パスワード、右に QR コード、ネットワーク名、パスワードの入った完成したカード、その下に共有、PNG のダウンロード、QR コードの SVG 保存、コピー、印刷。',
+          ko: 'Wi-Fi QR 카드: 왼쪽에는 네트워크 이름, 보안 방식, 비밀번호, 오른쪽에는 QR 코드와 네트워크 이름, 비밀번호가 담긴 완성된 카드, 그 아래에는 공유, PNG 다운로드, QR 코드 SVG 다운로드, 복사, 인쇄.'
+        }
+      }
+    ],
     steps: {
       de: [
         'Netzwerknamen und Passwort eintragen und die Sicherheitsart wählen — in aller Regel WPA/WPA2/WPA3.',
@@ -614,6 +690,27 @@ var GUIDES = {
       ja: '新しいパスワードを作りながら、それがどれくらいのものなのかを目で見ます。ページのアクセントカラーがそのまま強度の表示です: 長さや文字種を動かすと、色が赤から黄色、緑を通って紫へと移っていきます。その横にはいつも生の数字も並びます — ビット数と、4つの攻撃状況での推定解読時間です。生成は端末の中で、OS の乱数生成器を使って行われます。',
       ko: '새 비밀번호를 만들면서 그것이 얼마나 쓸 만한지 함께 봅니다. 페이지의 강조색이 곧 강도 표시입니다: 길이와 문자 종류를 바꾸면 색이 빨강에서 노랑과 초록을 거쳐 보라까지 이동합니다. 그 옆에는 언제나 있는 그대로의 숫자가 놓입니다 — 비트 수와 네 가지 공격 상황에서의 예상 해독 시간입니다. 생성은 운영 체제의 난수 생성기를 써서 기기 안에서 이루어집니다.'
     },
+    shots: [
+      {
+        file: 'prismatical-en.webp', w: 1174, h: 1438,
+        alt: {
+          de: 'Prismatical im Theme Cyber: oben ein erzeugtes Passwort mit der höchsten Stärkestufe und 116 Bit Entropie, darunter die sechs Arten vom Passwort bis zum deterministischen Modus, Länge, Zeichenklassen und Regeln.',
+          en: 'Prismatical in the Cyber theme: a generated password at the highest strength level with 116 bits of entropy at the top, below it the six kinds from password to deterministic mode, length, character classes and rules.',
+          es: 'Prismatical con el tema Cyber: arriba, una contraseña generada con el nivel de fortaleza más alto y 116 bits de entropía; debajo, los seis modos, de contraseña a determinista, la longitud, las clases de caracteres y las reglas.',
+          fr: 'Prismatical avec le thème Cyber : en haut, un mot de passe généré au plus haut niveau de force, avec 116 bits d’entropie ; en dessous, les six modes, du mot de passe au mode déterministe, la longueur, les classes de caractères et les règles.',
+          it: 'Prismatical con il tema Cyber: in alto una password generata al livello di robustezza più alto, con 116 bit di entropia; sotto, le sei modalità, dalla password a quella deterministica, la lunghezza, le classi di caratteri e le regole.',
+          nl: 'Prismatical met het thema Cyber: bovenaan een gegenereerd wachtwoord met het hoogste sterkteniveau en 116 bits entropie, daaronder de zes soorten, van wachtwoord tot deterministische modus, en lengte, tekenklassen en regels.',
+          pl: 'Prismatical w motywie Cyber: na górze wygenerowane hasło o najwyższym poziomie siły i entropii 116 bitów, pod nim sześć trybów, od hasła po deterministyczny, a także długość, klasy znaków i reguły.',
+          pt: 'O Prismatical no tema Cyber: em cima, uma palavra-passe gerada com o nível de força mais alto e 116 bits de entropia; por baixo, os seis tipos, da palavra-passe ao modo determinístico, e ainda o comprimento, as classes de caracteres e as regras.',
+          tr: 'Cyber temasında Prismatical: üstte en yüksek güç seviyesinde, 116 bit entropili oluşturulmuş bir parola; altında parolayla başlayıp deterministik modla biten altı tür, uzunluk, karakter sınıfları ve kurallar.',
+          ru: 'Prismatical в теме Cyber: вверху сгенерированный пароль с наивысшим уровнем надёжности и 116 битами энтропии, ниже шесть режимов, от пароля до детерминированного, а также длина, классы символов и правила.',
+          hi: 'Cyber थीम में Prismatical: ऊपर मज़बूती के सबसे ऊँचे स्तर और 116 बिट एंट्रॉपी वाला एक बनाया गया पासवर्ड, उसके नीचे पासवर्ड से लेकर नियतात्मक तक छह मोड, लंबाई, वर्ण श्रेणियाँ और नियम।',
+          zh: '主题为 Cyber 的 Prismatical：上方是一个生成的密码，处于最高强度等级，熵为 116 比特；下面是从密码到确定性模式的六种类型，以及长度、字符类别和规则。',
+          ja: 'Cyber テーマの Prismatical: 上には強度が最高レベルでエントロピー116ビットの生成済みパスワード、その下にパスワードから決定論的モードまでの6種類、長さ、文字種、ルール。',
+          ko: 'Cyber 테마의 Prismatical: 위에는 강도가 가장 높은 단계이고 엔트로피가 116비트인 생성된 비밀번호, 그 아래에는 비밀번호부터 결정론적 생성까지 여섯 가지 모드, 길이, 문자 종류, 규칙.'
+        }
+      }
+    ],
     steps: {
       de: [
         'Oben die Art wählen: Passwort, Passphrase, PIN, Aussprechbar, Nutzername oder Deterministisch. Für die meisten Konten ist „Passwort“ mit der Voreinstellung von 20 Zeichen richtig; zum Auswendiglernen nimm die Passphrase.',
@@ -821,6 +918,84 @@ var GUIDES = {
       ja: 'ウェブサイトやアプリに必要なのは、たいてい色ひとつではなく、その階段まるごとです: 面には明るい色、ボタンには中間、文字には暗い色。Spectroton はこの11段階をひとつの基本色から計算します — 数字の上だけでなく、見た目にも均等になるように — そして各段階について、その上の文字がまだ読めるかどうかを書き添えます。',
       ko: '웹사이트나 앱에는 색 하나가 아니라 색의 계단 전체가 필요할 때가 많습니다: 면에는 밝은 색, 버튼에는 중간 색, 글자에는 어두운 색. Spectroton은 그 열한 단계를 기준 색 하나에서 계산합니다 — 숫자상으로만이 아니라 눈으로 보기에 고르게 — 그리고 각 단계마다 그 위의 글자가 아직 읽을 만한지 함께 적어 줍니다.'
     },
+    shots: [
+      {
+        file: 'spectroton-uebersicht-en.webp', w: 1600, h: 1092,
+        alt: {
+          de: 'Spectroton: die Basisfarbe als Farbfeld und HEX-Wert mit ihrer OKLCH-Angabe, darunter sieben Akzentfarben mit den vier Harmonie-Knöpfen und die Suche nach Farbnamen.',
+          en: 'Spectroton: the base colour as a swatch and hex value with its OKLCH reading, below it seven accent colours with the four harmony buttons, and the search for colour names.',
+          es: 'Spectroton: el color base como muestra y como valor HEX, con su equivalente en OKLCH; debajo, siete colores de acento con los cuatro botones de armonía y la búsqueda por nombre de color.',
+          fr: 'Spectroton : la couleur de base en échantillon et en valeur HEX, avec son équivalent OKLCH ; en dessous, sept couleurs d’accent avec les quatre boutons d’harmonie, et la recherche par nom de couleur.',
+          it: 'Spectroton: il colore base come campione e come valore HEX, con il suo equivalente OKLCH; sotto, sette colori d’accento con i quattro pulsanti di armonia e la ricerca per nome del colore.',
+          nl: 'Spectroton: de basiskleur als kleurvlak en HEX-waarde met de bijbehorende OKLCH-waarden, daaronder zeven accentkleuren met de vier harmonieknoppen en het zoeken op kleurnaam.',
+          pl: 'Spectroton: kolor bazowy jako próbka i wartość HEX wraz z zapisem OKLCH, pod nim siedem kolorów akcentowych z czterema przyciskami harmonii oraz wyszukiwanie nazw kolorów.',
+          pt: 'Spectroton: a cor base como amostra e valor HEX, com a respetiva notação OKLCH; por baixo, sete cores de destaque com os quatro botões de harmonia e a procura de nomes de cores.',
+          tr: 'Spectroton: renk örneği, HEX değeri ve OKLCH değeriyle ana renk; altında dört harmoni düğmesiyle yedi vurgu rengi ve renk adına göre arama.',
+          ru: 'Spectroton: базовый цвет в виде образца и значения HEX вместе с записью в OKLCH, ниже семь акцентных цветов с четырьмя кнопками гармонии и поиск по названиям цветов.',
+          hi: 'Spectroton: आधार रंग एक रंग-नमूने और HEX मान के रूप में, साथ में उसका OKLCH मान; उसके नीचे चार सामंजस्य बटनों के साथ सात एक्सेंट रंग और रंगों के नाम की खोज।',
+          zh: 'Spectroton：基色显示为色块和 HEX 值，并附有它的 OKLCH 数值；下面是七个强调色和四个色彩和谐按钮，再往下是按颜色名称搜索。',
+          ja: 'Spectroton: 色見本と HEX 値で示したベースカラーとその OKLCH 値、その下に7つのアクセントカラーと配色の調和を選ぶ4つのボタン、そして色の名前での検索。',
+          ko: 'Spectroton: 색 견본과 HEX 값으로 나타낸 기본 색과 그 OKLCH 값, 그 아래에 강조 색 일곱 개와 배색 조화 버튼 네 개, 그리고 색 이름 검색.'
+        }
+      },
+      {
+        file: 'spectroton-rampe-en.webp', w: 1588, h: 1439,
+        alt: {
+          de: 'Die elf Stufen einer gelben Akzentfarbe von 50 bis 950, jede mit HEX-Wert, Kontrast gegen Weiß und gegen Schwarz und einem Schloss zum Sperren; an den meisten Stufen zeigt ein kleines Schild, dass die Buntheit für den Farbraum zurückgenommen wurde.',
+          en: 'The eleven steps of a yellow accent colour from 50 to 950, each with its hex value, contrast against white and against black, and a lock; on most steps a small tag shows that the chroma had to be reduced to fit the gamut.',
+          es: 'Los once pasos de un color de acento amarillo, de 50 a 950, cada uno con su valor HEX, el contraste con el blanco y con el negro y un candado; en la mayoría de los pasos, una pequeña etiqueta indica que hubo que reducir la saturación para que cupiera en el espacio de color.',
+          fr: 'Les onze paliers d’une couleur d’accent jaune, de 50 à 950, chacun avec sa valeur HEX, le contraste avec le blanc et avec le noir, et un cadenas ; sur la plupart des paliers, une petite étiquette signale que la saturation a dû être réduite pour tenir dans l’espace colorimétrique.',
+          it: 'Gli undici gradini di un colore d’accento giallo, da 50 a 950, ciascuno con il valore HEX, il contrasto con il bianco e con il nero e un lucchetto; sulla maggior parte dei gradini una piccola etichetta indica che la saturazione è stata ridotta per rientrare nello spazio colore.',
+          nl: 'De elf stappen van een gele accentkleur van 50 tot 950, elk met HEX-waarde, contrast met wit en met zwart en een slotje; bij de meeste stappen geeft een klein label aan dat de verzadiging moest worden verlaagd om binnen de kleurruimte te passen.',
+          pl: 'Jedenaście stopni żółtego koloru akcentowego od 50 do 950, każdy z wartością HEX, kontrastem względem bieli i czerni oraz kłódką; przy większości stopni mała etykieta pokazuje, że nasycenie trzeba było zmniejszyć, aby kolor zmieścił się w przestrzeni barw.',
+          pt: 'Os onze níveis de uma cor de destaque amarela, de 50 a 950, cada um com o valor HEX, o contraste com o branco e com o preto e um cadeado; na maioria dos níveis, uma pequena etiqueta indica que a intensidade da cor teve de ser reduzida para caber no espaço de cor.',
+          tr: 'Sarı bir vurgu renginin 50’den 950’ye on bir adımı; her birinde HEX değeri, beyaza ve siyaha karşı kontrast ve bir kilit; adımların çoğunda küçük bir etiket, renk yoğunluğunun renk gamına sığması için azaltıldığını gösterir.',
+          ru: 'Одиннадцать ступеней жёлтого акцентного цвета от 50 до 950, у каждой значение HEX, контраст с белым и с чёрным и замок; на большинстве ступеней маленькая метка показывает, что насыщенность пришлось снизить, чтобы цвет уместился в цветовой охват.',
+          hi: 'एक पीले एक्सेंट रंग की 50 से 950 तक ग्यारह सीढ़ियाँ, हर एक पर HEX मान, सफ़ेद और काले के मुक़ाबले कंट्रास्ट और एक ताला; ज़्यादातर सीढ़ियों पर एक छोटा लेबल बताता है कि गैमट में समाने के लिए संतृप्ति घटानी पड़ी।',
+          zh: '一个黄色强调色从 50 到 950 的十一级，每一级都有 HEX 值、对白色和对黑色的对比度，以及一把锁；大多数级别上有个小标签，表示彩度为了落进色域而被调低了。',
+          ja: '黄色のアクセントカラーの 50 から 950 までの11段階で、各段に HEX 値、白と黒それぞれに対するコントラスト、鍵が付いています。ほとんどの段には、色域に収めるために鮮やかさを抑えたことを示す小さなラベルがあります。',
+          ko: '노란 강조 색의 50부터 950까지 열한 단계로, 단계마다 HEX 값, 흰색과 검정 각각에 대한 대비, 자물쇠가 있습니다. 대부분의 단계에는 색역에 맞추느라 채도를 낮췄음을 알리는 작은 표시가 붙어 있습니다.'
+        }
+      },
+      {
+        file: 'spectroton-feinjustage-en.webp', w: 1600, h: 1264,
+        alt: {
+          de: 'Die Feinjustage mit vier Reglern: hellste Stufe, dunkelste Stufe, Buntheit und Farbdrift über die Rampe.',
+          en: 'Fine-tuning with four sliders: lightest step, darkest step, chroma and hue drift across the ramp.',
+          es: 'El ajuste fino con cuatro deslizadores: paso más claro, paso más oscuro, saturación y deriva del tono a lo largo de la rampa.',
+          fr: 'Le réglage fin avec quatre curseurs : palier le plus clair, palier le plus sombre, saturation et dérive de teinte sur la rampe.',
+          it: 'La regolazione fine con quattro cursori: gradino più chiaro, gradino più scuro, saturazione e deriva di tonalità lungo la scala.',
+          nl: 'De fijnafstelling met vier schuifregelaars: lichtste stap, donkerste stap, verzadiging en kleurdrift over de schaal.',
+          pl: 'Dostrajanie z czterema suwakami: najjaśniejszy stopień, najciemniejszy stopień, nasycenie i dryf barwy w skali.',
+          pt: 'O ajuste fino com quatro cursores: nível mais claro, nível mais escuro, intensidade da cor e deriva da cor ao longo da rampa.',
+          tr: 'Dört kaydırıcılı ince ayar: en açık adım, en koyu adım, renk yoğunluğu ve rampa boyunca renk kayması.',
+          ru: 'Тонкая настройка с четырьмя ползунками: самая светлая ступень, самая тёмная ступень, насыщенность и сдвиг оттенка по шкале.',
+          hi: 'चार स्लाइडरों वाला बारीक समायोजन: सबसे उजली सीढ़ी, सबसे गहरी सीढ़ी, संतृप्ति और पूरी शृंखला में रंगत का बदलाव।',
+          zh: '微调，共四个滑块：最亮的一级、最暗的一级、彩度，以及色相沿色阶的漂移。',
+          ja: '4つのスライダーによる微調整: いちばん明るい段、いちばん暗い段、鮮やかさ、ランプ全体の色相のずれ。',
+          ko: '슬라이더 네 개로 하는 미세 조정: 가장 밝은 단계, 가장 어두운 단계, 채도, 단계에 따른 색상 이동.'
+        }
+      },
+      {
+        file: 'spectroton-export-en.webp', w: 1600, h: 1231,
+        alt: {
+          de: 'Der Export: Name und Dateiname, die vier Formate CSS, Tailwind, Tokens und HEX, eine Vorschau der fertigen Liste und darunter Speichern, Kopieren, Teilen und Link kopieren.',
+          en: 'Export: name and file name, the four formats CSS, Tailwind, Tokens and HEX, a preview of the finished list, and below it save, copy, share and copy link.',
+          es: 'La exportación: nombre y archivo, los cuatro formatos CSS, Tailwind, Tokens y HEX, una vista previa de la lista final y, debajo, guardar el archivo, copiar, compartir y copiar el enlace.',
+          fr: 'L’export : nom et nom de fichier, les quatre formats CSS, Tailwind, Tokens et HEX, un aperçu de la liste finale et, en dessous, enregistrer le fichier, copier, partager et copier le lien.',
+          it: 'L’esportazione: nome e nome del file, i quattro formati CSS, Tailwind, Tokens e HEX, un’anteprima dell’elenco finale e, sotto, i pulsanti per salvare il file, copiare, condividere e copiare il link.',
+          nl: 'De export: naam en bestandsnaam, de vier formaten CSS, Tailwind, Tokens en HEX, een voorvertoning van de kant-en-klare lijst en daaronder opslaan, kopiëren, delen en link kopiëren.',
+          pl: 'Eksport: nazwa i nazwa pliku, cztery formaty CSS, Tailwind, Tokens i HEX, podgląd gotowej listy, a pod nim zapisywanie, kopiowanie, udostępnianie i kopiowanie linku.',
+          pt: 'A exportação: nome e nome do ficheiro, os quatro formatos CSS, Tailwind, Tokens e HEX, uma pré-visualização da lista pronta e, por baixo, guardar, copiar, partilhar e copiar a ligação.',
+          tr: 'Dışa aktarma: ad ve dosya adı, CSS, Tailwind, Tokens ve HEX olmak üzere dört biçim, hazır listenin önizlemesi, altında da kaydetme, kopyalama, paylaşma ve bağlantı kopyalama düğmeleri.',
+          ru: 'Экспорт: имя и имя файла, четыре формата CSS, Tailwind, Tokens и HEX, предпросмотр готового списка, а под ним кнопки: сохранить файл, копировать, поделиться и копировать ссылку.',
+          hi: 'निर्यात: नाम और फ़ाइल का नाम, चार फ़ॉर्मैट CSS, Tailwind, Tokens और HEX, तैयार सूची का पूर्वावलोकन, और उसके नीचे फ़ाइल सहेजने, कॉपी करने, साझा करने और लिंक कॉपी करने के बटन।',
+          zh: '导出：名称和文件名，CSS、Tailwind、Tokens 和 HEX 四种格式，最终列表的预览，下面是保存文件、复制、分享和复制链接。',
+          ja: '書き出し: 名前とファイル名、CSS・Tailwind・Tokens・HEX の4つの形式、できあがった一覧のプレビュー、その下にファイルの保存、コピー、共有、リンクのコピー。',
+          ko: '내보내기: 이름과 파일 이름, CSS, Tailwind, Tokens, HEX 네 가지 형식, 완성된 목록 미리 보기, 그 아래에 파일 저장, 복사, 공유, 링크 복사.'
+        }
+      }
+    ],
     steps: {
       de: [
         'Bei „Basisfarbe“ eine Farbe setzen: HEX-Wert eintippen, den Farbwähler benutzen oder unter „Farbname“ nach einem Namen suchen und aus den Treffern wählen. Die elf Stufen erscheinen sofort.',
@@ -1028,6 +1203,27 @@ var GUIDES = {
       ja: '誰が誰にいくら払うのか — 旅行、貸別荘、フェス、外食の夜のあとで。精算の中身は圧縮されてリンクの中に入っています。ほかの人はそれを見るのに、アカウントもアプリも必要ありません。',
       ko: '누가 누구에게 얼마를 빚졌는지 — 여행, 별장, 축제, 저녁 식사가 끝난 뒤에. 정산 내용은 압축되어 링크 안에 들어 있고, 다른 사람들은 그것을 보려고 계정도 앱도 필요하지 않습니다.'
     },
+    shots: [
+      {
+        file: 'collective-en.webp', w: 1577, h: 1438,
+        alt: {
+          de: 'Collective-Calc mit einer eingetragenen Ausgabe: oben die Personen der Runde, darunter die Liste der Ausgaben, unten die Eingabezeile, die „1234,50“ als 1.234,50 € liest.',
+          en: 'Collective-Calc with one expense entered: the people in the group at the top, the list of expenses below, and at the bottom the input line, which reads “1234,50” as €1,234.50.',
+          es: 'Collective-Calc con un gasto anotado: arriba, las personas del grupo; debajo, la lista de gastos; abajo del todo, la línea de entrada, que interpreta «1234,50» como 1234,50 €.',
+          fr: 'Collective-Calc avec une dépense saisie : en haut, les personnes du groupe ; en dessous, la liste des dépenses ; tout en bas, la ligne de saisie, qui interprète « 1234,50 » comme 1 234,50 €.',
+          it: 'Collective-Calc con una spesa inserita: in alto le persone del gruppo, sotto l’elenco delle spese e in fondo la riga di inserimento, che interpreta «1234,50» come 1234,50 €.',
+          nl: 'Collective-Calc met één ingevoerde uitgave: bovenaan de mensen in de groep, daaronder de lijst met uitgaven en onderaan de invoerregel, die “1234,50” leest als € 1.234,50.',
+          pl: 'Collective-Calc z jednym wpisanym wydatkiem: na górze osoby z grupy, pod nimi lista wydatków, a na dole wiersz do wpisywania kwot, który odczytuje „1234,50” jako 1234,50 €.',
+          pt: 'O Collective-Calc com uma despesa lançada: no topo, as pessoas do grupo; a seguir, a lista de despesas; em baixo, a linha para lançar despesas, que lê «1234,50» como 1234,50 €.',
+          tr: 'Bir harcama girilmiş Collective-Calc: üstte gruptaki kişiler, altında harcama listesi, en altta da “1234,50” yazısını €1.234,50 olarak okuyan giriş satırı.',
+          ru: 'Collective-Calc с одним внесённым расходом: вверху участники, ниже список расходов, а в самом низу строка ввода, которая понимает «1234,50» как 1 234,50 €.',
+          hi: 'एक दर्ज खर्च के साथ Collective-Calc: ऊपर समूह के लोग, उसके नीचे खर्चों की सूची, और सबसे नीचे इनपुट पंक्ति, जो “1234,50” को €1,234.50 के रूप में पढ़ती है।',
+          zh: '已录入一笔支出的 Collective-Calc：上方是参加的成员，下面是支出列表，最底部是输入栏，它把“1234,50”识别为 €1,234.50。',
+          ja: '支出を1件入力した Collective-Calc: 上に参加者、その下に支出の一覧、いちばん下には「1234,50」を €1,234.50 と読み取った入力欄。',
+          ko: '지출 한 건을 입력한 Collective-Calc: 위에는 함께하는 사람들, 그 아래에는 지출 목록, 맨 아래에는 “1234,50”을 €1,234.50으로 읽는 입력 줄.'
+        }
+      }
+    ],
     steps: {
       de: [
         'Namen anlegen und Ausgaben eintragen: Betrag, Zweck, wer bezahlt hat und wie geteilt wird — zu gleichen Teilen, nach Anteilen, in Prozent oder mit genauen Beträgen.',
@@ -1222,6 +1418,27 @@ var GUIDES = {
       ja: '休暇、誕生日、記念日までのカウントダウンを、リンクとして送ります。タイトルと日付はリンクそのものの中にあります — それらが置かれうるデータベースは存在しません。',
       ko: '휴가, 생일, 기념일까지의 카운트다운을 링크로 보냅니다. 제목과 날짜는 링크 자체에 들어 있습니다 — 그것들이 놓일 데이터베이스가 아예 없습니다.'
     },
+    shots: [
+      {
+        file: 'bigday-en.webp', w: 1147, h: 1435,
+        alt: {
+          de: 'bigday in der Stimmung Neon: oben der laufende Zähler in Jahren, Tagen, Stunden, Minuten und Sekunden, darunter das Formular mit Titel, Datum, Uhrzeit, den neun Stimmungen und dem Link zum Teilen.',
+          en: 'bigday in the Neon mood: the live counter in years, days, hours, minutes and seconds at the top, below it the form with title, date, time, the nine moods and the link to share.',
+          es: 'bigday con el ambiente Neón: arriba, el contador en marcha en años, días, horas, minutos y segundos; debajo, el formulario con título, fecha, hora, los nueve ambientes y el enlace para compartir.',
+          fr: 'bigday dans l’ambiance Néon : en haut, le compteur en direct, en ans, jours, heures, minutes et secondes ; en dessous, le formulaire avec titre, date, heure, les neuf ambiances et le lien à partager.',
+          it: 'bigday nell’atmosfera Neon: in alto il contatore in tempo reale in anni, giorni, ore, minuti e secondi; sotto, il modulo con titolo, data, ora, le nove atmosfere e il link da condividere.',
+          nl: 'bigday in de sfeer Neon: bovenaan de lopende teller in jaren, dagen, uren, minuten en seconden, daaronder het formulier met titel, datum, tijd, de negen sferen en de link om te delen.',
+          pl: 'bigday w nastroju Neon: na górze licznik na żywo w latach, dniach, godzinach, minutach i sekundach, pod nim formularz z tytułem, datą, godziną, dziewięcioma nastrojami i linkiem do udostępnienia.',
+          pt: 'O bigday no clima Neon: em cima, o contador em tempo real em anos, dias, horas, minutos e segundos; por baixo, o formulário com título, data, hora, os nove climas e o link para partilhar.',
+          tr: 'Neon tarzında bigday: üstte yıl, gün, saat, dakika ve saniye cinsinden canlı sayaç; altında başlık, tarih, saat, dokuz tarz ve paylaşma bağlantısıyla form.',
+          ru: 'bigday в настроении «Неон»: вверху живой счётчик в годах, днях, часах, минутах и секундах, ниже форма с названием, датой, временем, девятью настроениями и ссылкой, чтобы поделиться.',
+          hi: 'नियॉन अंदाज़ में bigday: ऊपर सालों, दिनों, घंटों, मिनटों और सेकंडों में चलता काउंटर, उसके नीचे शीर्षक, तारीख़, समय, नौ अंदाज़ों और साझा करने के लिंक वाला फ़ॉर्म।',
+          zh: '氛围为霓虹的 bigday：上方是按年、天、小时、分钟和秒实时跳动的计数器，下面是表单，含标题、日期、时间、九种氛围和分享链接。',
+          ja: '雰囲気をネオンにした bigday: 上には年・日・時間・分・秒で刻々と進むカウンター、その下にタイトル、日付、時刻、9つの雰囲気、シェア用のリンクを備えたフォーム。',
+          ko: '네온 분위기의 bigday: 위에는 년, 일, 시간, 분, 초 단위로 실시간 흘러가는 카운터, 그 아래에는 제목, 날짜, 시간, 아홉 가지 분위기, 공유 링크가 있는 입력 양식.'
+        }
+      }
+    ],
     steps: {
       de: [
         'Titel und Datum eintragen, dazu wahlweise eine Uhrzeit und das Häkchen „jährlich wiederholen“.',
@@ -1415,6 +1632,46 @@ var GUIDES = {
       ja: '誰も決めたがらないときに: 選択肢を入力して、ルーレットを回して、おしまいです。当たりはルーレットが動き出す前にブラウザーの乱数生成器で引かれています — アニメーションは結果を見せるだけで、結果を作ってはいません。',
       ko: '아무도 결정하려 들지 않을 때: 선택지를 입력하고, 룰렛을 돌리면 끝입니다. 당첨은 룰렛이 움직이기도 전에 브라우저의 난수 생성기로 뽑습니다 — 애니메이션은 결과를 보여 줄 뿐, 만들어 내지 않습니다.'
     },
+    shots: [
+      {
+        file: 'rad-de.webp', w: 1584, h: 1439,
+        alt: {
+          de: 'Dreh das Rad mit sechs Optionen in der Farbwelt Neon: links das Rad mit Zeiger und dem Knopf zum Drehen, rechts Frage, Optionen, Schnellstart-Vorlagen und Farbwelten, darunter der Link zum Teilen.',
+          en: 'Dreh das Rad with six options in the Neon colours: the wheel with its pointer and the spin button on the left; question, options, quick-start presets and colour sets on the right, with the share link underneath.',
+          es: 'Dreh das Rad con seis opciones y los colores Neón: a la izquierda, la ruleta con su puntero y el botón para girarla; a la derecha, la pregunta, las opciones, las plantillas de inicio rápido y la elección de colores, y debajo el enlace para compartir.',
+          fr: 'Dreh das Rad avec six options dans les couleurs Néon : à gauche, la roue avec son pointeur et le bouton pour la faire tourner ; à droite, la question, les options, les modèles de démarrage rapide et le choix des couleurs, avec en dessous le lien de partage.',
+          it: 'Dreh das Rad con sei opzioni nei colori Neon: a sinistra la ruota con l’indicatore e il pulsante per farla girare; a destra domanda, opzioni, modelli di avvio rapido e scelta dei colori, e sotto il link da condividere.',
+          nl: 'Dreh das Rad met zes opties in de Neon-kleuren: links het rad met de wijzer en de knop om het te laten draaien, rechts vraag, opties, snelstart-sjablonen en kleurensets, met daaronder de link om te delen.',
+          pl: 'Dreh das Rad z sześcioma opcjami w kolorach Neon: po lewej koło ze wskaźnikiem i przyciskiem do kręcenia, po prawej pytanie, opcje, szablony szybkiego startu i zestawy kolorów, a pod spodem link do udostępnienia.',
+          pt: 'Dreh das Rad com seis opções nas cores Neon: à esquerda, a roda com o ponteiro e o botão para a girar; à direita, a pergunta, as opções, os modelos de início rápido e os conjuntos de cores, com o link de partilha por baixo.',
+          tr: 'Neon renklerinde, altı seçenekli Dreh das Rad: solda ibresi ve çevirme düğmesiyle çark; sağda soru, seçenekler, hızlı başlangıç şablonları ve renkler, altında da paylaşma bağlantısı.',
+          ru: 'Dreh das Rad с шестью вариантами в цветах «Неон»: слева колесо с указателем и кнопкой вращения, справа вопрос, варианты, шаблоны быстрого старта и цвета, а под ними ссылка, чтобы поделиться колесом.',
+          hi: 'नियॉन रंगों में छह विकल्पों वाला Dreh das Rad: बाईं ओर सूचक और घुमाने के बटन के साथ पहिया; दाईं ओर सवाल, विकल्प, तुरंत शुरू करने के लिए तैयार सेट और रंग, और उनके नीचे साझा करने का लिंक।',
+          zh: '有六个选项、配色为霓虹的 Dreh das Rad：左边是带指针的转盘和转动按钮；右边是问题、选项、快速开始预设和配色，下面是分享链接。',
+          ja: '配色をネオンにし、選択肢を6つ入れた Dreh das Rad: 左に針の付いたルーレットと回すボタン、右に質問、選択肢、すぐに始められるプリセット、配色の選択、その下に共有用のリンク。',
+          ko: '색상을 네온으로 하고 선택지 여섯 개를 넣은 Dreh das Rad: 왼쪽에는 바늘이 달린 룰렛과 돌리기 버튼, 오른쪽에는 질문, 선택지, 빠른 시작 프리셋, 색상 선택, 그 아래에 공유 링크.'
+        }
+      },
+      {
+        file: 'rad-dreh.webp', w: 360, h: 360, still: 'rad-dreh-still.webp',
+        alt: {
+          de: 'Ein Dreh am Rad mit sechs Essens-Optionen, der bei Pizza stehen bleibt: die Lampen am Rand gehen an und Konfetti fällt.',
+          en: 'A spin of the wheel with six food options that stops on pizza: the lights around the rim come on and confetti falls.',
+          es: 'Un giro de la ruleta con seis opciones de comida: se detiene en la pizza, se encienden las luces del borde y cae confeti.',
+          fr: 'La roue tourne avec six options de repas et s’arrête sur la pizza : les lumières du pourtour s’allument et des confettis tombent.',
+          it: 'Un giro di ruota con sei opzioni di cibo: si ferma sulla pizza, le luci lungo il bordo si accendono e cadono i coriandoli.',
+          nl: 'Het rad met zes etensopties draait en blijft op pizza staan: de lampjes rond de rand gaan aan en er valt confetti.',
+          pl: 'Koło z sześcioma opcjami jedzenia kręci się i zatrzymuje na pizzy: na obrzeżu zapalają się światełka i sypie się konfetti.',
+          pt: 'A roda com seis opções de comida a girar até parar na pizza: acendem-se as luzes à volta do aro e caem confetes.',
+          tr: 'Altı yemek seçenekli çark dönüyor ve pizzada duruyor: kenardaki ışıklar yanıyor, konfeti yağıyor.',
+          ru: 'Колесо с шестью вариантами еды крутится и останавливается на пицце: загораются огоньки по ободу и падает конфетти.',
+          hi: 'खाने के छह विकल्पों वाला पहिया घूमकर पिज़्ज़ा पर रुकता है: किनारे की बत्तियाँ जल उठती हैं और कंफ़ेटी गिरती है।',
+          zh: '写着六种食物的转盘转了一次，停在披萨上：边缘的一圈灯亮了起来，五彩纸屑纷纷飘落。',
+          ja: '食べ物の選択肢6つでルーレットを回すと、ピザで止まります: 縁のライトが灯り、紙吹雪が舞い落ちます。',
+          ko: '음식 선택지 여섯 개로 룰렛을 돌리자 피자에서 멈춥니다: 가장자리의 전구가 켜지고 색종이 조각이 흩날립니다.'
+        }
+      }
+    ],
     steps: {
       de: [
         'Die Frage eintragen und die Optionen zeilenweise darunter. „Papa kocht x3“ belegt drei Felder statt einem.',
@@ -1608,6 +1865,46 @@ var GUIDES = {
       ja: 'Claude Code はセッションごとにログをハードディスクに置きます。Zählwerk はそのファイルを読んで、使用量がどこに行っているかを計算します: どの日、どのモデル、どのプロジェクト、どの時刻か。計算はブラウザーの中で行われます — ログはどこにも送られません。',
       ko: 'Claude Code는 세션마다 하드디스크에 기록을 남깁니다. Zählwerk은 그 파일들을 읽어 사용량이 어디로 가는지 계산합니다: 어느 날, 어느 모델, 어느 프로젝트, 몇 시. 계산은 브라우저 안에서 이루어집니다 — 기록은 어디로도 보내지지 않습니다.'
     },
+    shots: [
+      {
+        file: 'zaehlwerk-de.webp', w: 1430, h: 1304,
+        alt: {
+          de: 'Zählwerk vor dem ersten Einlesen: die Fläche, auf die man den Ordner zieht oder über die man ihn auswählt, darunter, wo dieser Ordner unter Windows und unter macOS oder Linux liegt, und der Hinweis auf den Zählwerk Ticker.',
+          en: 'Zählwerk before the first import: the area you drag the folder onto or click to pick it, below it where that folder lives on Windows and on macOS or Linux, and the pointer to Zählwerk Ticker.',
+          es: 'Zählwerk antes de la primera lectura: la zona a la que arrastras la carpeta o en la que haces clic para elegirla; debajo, dónde está esa carpeta en Windows y en macOS o Linux, y la referencia a Zählwerk Ticker.',
+          fr: 'Zählwerk avant la première lecture : la zone sur laquelle vous déposez le dossier ou cliquez pour le choisir ; en dessous, l’emplacement de ce dossier sous Windows et sous macOS ou Linux, et le renvoi vers Zählwerk Ticker.',
+          it: 'Zählwerk prima di leggere i registri: l’area su cui trascini la cartella o fai clic per sceglierla; sotto, dove si trova quella cartella su Windows e su macOS o Linux, e il rimando a Zählwerk Ticker.',
+          nl: 'Zählwerk vóór het eerste inlezen: het vlak waar je de map naartoe sleept of waarop je klikt om hem te kiezen, daaronder waar die map staat onder Windows en onder macOS of Linux, en de verwijzing naar de Zählwerk Ticker.',
+          pl: 'Zählwerk przed pierwszym wczytaniem: pole, na które przeciągasz folder albo klikasz, żeby go wybrać, pod nim informacja, gdzie ten folder znajduje się w Windows oraz w macOS lub Linuksie, i odnośnik do programu Zählwerk Ticker.',
+          pt: 'O Zählwerk antes da primeira leitura: a área para onde se arrasta a pasta ou onde se clica para a escolher; por baixo, onde fica essa pasta no Windows e no macOS ou Linux, e a referência ao Zählwerk Ticker.',
+          tr: 'Zählwerk, kayıtlar ilk kez okunmadan önce: klasörü sürükleyip bırakacağınız ya da tıklayıp seçeceğiniz alan, altında bu klasörün Windows’ta ve macOS ya da Linux’ta nerede olduğu, bir de Zählwerk Ticker’a yönlendirme.',
+          ru: 'Zählwerk до первого чтения журналов: поле, на которое перетаскивают папку или нажимают, чтобы её выбрать, ниже — где эта папка находится в Windows и в macOS или Linux, и указание на Zählwerk Ticker.',
+          hi: 'पहली बार लॉग पढ़ने से पहले Zählwerk: वह जगह जहाँ फ़ोल्डर खींचकर छोड़ें या क्लिक करके चुनें, नीचे यह कि Windows पर और macOS या Linux पर वह फ़ोल्डर कहाँ है, और Zählwerk Ticker की ओर इशारा।',
+          zh: '首次读取之前的 Zählwerk：把文件夹拖进来或点击选择的区域，下面是这个文件夹在 Windows 以及 macOS 或 Linux 上的位置，还有关于 Zählwerk Ticker 的提示。',
+          ja: '最初の読み込み前の Zählwerk: フォルダーをドロップするかクリックして選ぶ枠、その下に Windows と macOS または Linux でのフォルダーの場所、そして Zählwerk Ticker への案内。',
+          ko: '처음 불러오기 전의 Zählwerk: 폴더를 끌어다 놓거나 클릭해서 고르는 영역, 그 아래에 Windows와 macOS 또는 Linux에서 그 폴더가 있는 곳, 그리고 Zählwerk Ticker 안내.'
+        }
+      },
+      {
+        file: 'zaehlwerk-ticker-de.webp', w: 448, h: 424,
+        alt: {
+          de: 'Der Zählwerk Ticker, die schwebende Anzeige für Windows: der laufende Fünf-Stunden-Block mit der Zeit bis zu seinem Ende, die Tagessumme mit der Zahl der Antworten und der Verbrauch je Modell.',
+          en: 'Zählwerk Ticker, the floating readout for Windows: the current five-hour block with the time until it ends, today’s total with the number of replies, and usage per model.',
+          es: 'Zählwerk Ticker, el indicador flotante para Windows: el bloque de cinco horas en curso con el tiempo que falta para que termine, el total del día con el número de respuestas y el consumo por modelo.',
+          fr: 'Zählwerk Ticker, l’affichage flottant pour Windows : le bloc de cinq heures en cours avec le temps restant avant sa fin, le total du jour avec le nombre de réponses, et la consommation par modèle.',
+          it: 'Zählwerk Ticker, il riquadro flottante per Windows: il blocco di cinque ore in corso con il tempo che manca alla fine, il totale del giorno con il numero di risposte e il consumo per modello.',
+          nl: 'De Zählwerk Ticker, de zwevende uitlezing voor Windows: het lopende blok van vijf uur met de tijd tot het afloopt, het dagtotaal met het aantal antwoorden en het verbruik per model.',
+          pl: 'Zählwerk Ticker, pływające okienko dla Windows: bieżący blok pięciogodzinny z czasem do jego końca, dzienna suma z liczbą odpowiedzi i zużycie według modelu.',
+          pt: 'O Zählwerk Ticker, o mostrador flutuante para Windows: o bloco de cinco horas em curso com o tempo até terminar, o total do dia com o número de respostas e o consumo por modelo.',
+          tr: 'Zählwerk Ticker, Windows için yüzen gösterge: o anki beş saatlik blok ve bitmesine kalan süre, yanıt sayısıyla günlük toplam ve model başına tüketim.',
+          ru: 'Zählwerk Ticker, плавающее окошко для Windows: текущий пятичасовой блок со временем до его конца, итог за сегодня с числом ответов и расход по моделям.',
+          hi: 'Zählwerk Ticker, Windows के लिए तैरता हुआ पैनल: चालू पाँच घंटे का ब्लॉक और उसके ख़त्म होने तक बचा समय, उत्तरों की संख्या के साथ आज का जोड़, और हर मॉडल की खपत।',
+          zh: 'Zählwerk Ticker，Windows 上的悬浮小窗：当前的五小时区块及其结束前的剩余时间，当日合计和回复次数，以及各模型的用量。',
+          ja: 'Zählwerk Ticker、Windows 用の浮動表示: 進行中の5時間ブロックと終わるまでの残り時間、今日の合計と応答の数、そしてモデルごとの使用量。',
+          ko: 'Zählwerk Ticker, Windows용 떠 있는 표시창: 진행 중인 다섯 시간 블록과 끝날 때까지 남은 시간, 오늘 합계와 응답 수, 그리고 모델별 사용량.'
+        }
+      }
+    ],
     steps: {
       de: [
         'Auf die Fläche klicken und den Ordner auswählen: unter Windows %USERPROFILE%\\.claude\\projects, sonst ~/.claude/projects. Er ist versteckt — den Pfad einfach oben in die Adresszeile des Auswahlfensters eintippen.',
@@ -2343,6 +2640,42 @@ var GUIDES = {
       ja: 'チャットはいつか筋を見失います: コンテキストウィンドウがいっぱいになるか、翌日に新しいセッションで続けようとして、決めたことの半分が消えているか。create-masterprompt はその手前から始めます。これはプログラムではなく、AI チャットのための Skill です: 規模のゲートと6つの段階 — 調査、ブリーフィング、決定のためのインタビュー、計画、制作、引き継ぎ — を案内しながら、3つのファイルを書きます。ブリーフィングは計画の変わらない事実をとどめ、決定ログは何がなぜ決まったかを記録し、引き継ぎファイルは次のセッションにどこから続ければよいかを伝えます。',
       ko: '채팅은 언젠가 맥락을 놓칩니다: 컨텍스트 창이 가득 차거나, 다음 날 새 세션에서 이어 가려는데 결정의 절반이 사라져 있습니다. create-masterprompt는 그 앞에서 손을 씁니다. 프로그램이 아니라 AI 채팅용 Skill입니다: 규모 게이트와 여섯 단계 — 조사, 브리핑, 결정 인터뷰, 계획, 제작, 인수인계 — 를 거치도록 이끌면서 세 개의 파일을 씁니다. 브리핑은 프로젝트의 변하지 않는 사실을 붙들고, 결정 기록은 무엇을 왜 결정했는지 남기며, 인수인계 파일은 다음 세션에 어디서부터 이어 가면 되는지 알려 줍니다.'
     },
+    shots: [
+      {
+        files: {
+          de: ['masterprompt-de.webp', 1650, 1817],
+          en: ['masterprompt-en.webp', 1650, 1778],
+          es: ['masterprompt-es.webp', 1650, 1844],
+          fr: ['masterprompt-fr.webp', 1650, 1778],
+          it: ['masterprompt-it.webp', 1650, 1811],
+          nl: ['masterprompt-nl.webp', 1650, 1746],
+          pl: ['masterprompt-pl.webp', 1650, 1820],
+          pt: ['masterprompt-pt.webp', 1650, 1850],
+          tr: ['masterprompt-tr.webp', 1650, 1749],
+          ru: ['masterprompt-ru.webp', 1650, 1815],
+          hi: ['masterprompt-hi.webp', 1650, 1671],
+          zh: ['masterprompt-zh.webp', 1650, 1671],
+          ja: ['masterprompt-ja.webp', 1650, 1785],
+          ko: ['masterprompt-ko.webp', 1650, 1718]
+        },
+        alt: {
+          de: 'Übersicht auf einer Seite: was ein Masterprompt ist, die drei Dateien BRIEFING.md, DECISIONS.md und HANDOFF_vNN.md, der Ablauf vom Größen-Gate über sechs Phasen bis zur Übergabe und die Einrichtung in Claude Code und claude.ai.',
+          en: 'One-page overview: what a master prompt is, the three files BRIEFING.md, DECISIONS.md and HANDOFF_vNN.md, the process from the size gate through six phases to the handoff, and setup in Claude Code and claude.ai.',
+          es: 'Vista general en una página: qué es un prompt maestro, los tres archivos BRIEFING.md, DECISIONS.md y HANDOFF_vNN.md, el proceso desde el filtro de tamaño, a lo largo de seis fases, hasta el handoff, y la instalación en Claude Code y claude.ai.',
+          fr: 'Aperçu sur une page : ce qu’est un masterprompt, les trois fichiers BRIEFING.md, DECISIONS.md et HANDOFF_vNN.md, le déroulement, du tri par taille à la passation en passant par six phases, et l’installation dans Claude Code et sur claude.ai.',
+          it: 'Panoramica in una pagina: che cos’è un master prompt, i tre file BRIEFING.md, DECISIONS.md e HANDOFF_vNN.md, il percorso dal gate di dimensione attraverso sei fasi fino all’handoff e l’installazione in Claude Code e su claude.ai.',
+          nl: 'Overzicht op één pagina: wat een masterprompt is, de drie bestanden BRIEFING.md, DECISIONS.md en HANDOFF_vNN.md, het verloop van de omvangscheck via zes fasen tot de handoff, en het installeren in Claude Code en claude.ai.',
+          pl: 'Przegląd na jednej stronie: czym jest masterprompt, trzy pliki BRIEFING.md, DECISIONS.md i HANDOFF_vNN.md, przebieg od bramki rozmiaru przez sześć faz aż po handoff oraz instalacja w Claude Code i claude.ai.',
+          pt: 'Visão geral numa página: o que é um master prompt, os três ficheiros BRIEFING.md, DECISIONS.md e HANDOFF_vNN.md, o processo desde a triagem de tamanho, passando por seis fases, até ao handoff, e a instalação no Claude Code e no claude.ai.',
+          tr: 'Tek sayfalık genel bakış: masterprompt’un ne olduğu, üç dosya BRIEFING.md, DECISIONS.md ve HANDOFF_vNN.md, boyut kapısından altı aşama boyunca devir teslime kadar akış ve Claude Code ile claude.ai’de kurulum.',
+          ru: 'Обзор на одной странице: что такое мастер-промпт, три файла BRIEFING.md, DECISIONS.md и HANDOFF_vNN.md, путь от гейта по размеру через шесть фаз до передачи и установка в Claude Code и claude.ai.',
+          hi: 'एक पेज का अवलोकन: मास्टर प्रॉम्प्ट क्या है, तीन फ़ाइलें BRIEFING.md, DECISIONS.md और HANDOFF_vNN.md, साइज़-गेट से छह चरणों के रास्ते हैंडऑफ़ तक का क्रम, और Claude Code तथा claude.ai में इंस्टॉल करने का तरीक़ा।',
+          zh: '单页概览：Masterprompt 是什么；BRIEFING.md、DECISIONS.md 和 HANDOFF_vNN.md 三个文件；从规模分级经过六个阶段直到交接的运行流程；以及在 Claude Code 和 claude.ai 中的安装。',
+          ja: '1ページの概要: マスタープロンプトとは何か、BRIEFING.md・DECISIONS.md・HANDOFF_vNN.md の3つのファイル、サイズゲートから6つのフェーズを経てハンドオフに至る進め方、そして Claude Code と claude.ai でのインストール。',
+          ko: '한 장짜리 개요: 마스터 프롬프트란 무엇인지, BRIEFING.md, DECISIONS.md, HANDOFF_vNN.md 세 파일, 크기 게이트에서 여섯 단계를 거쳐 핸드오프까지 이어지는 진행 방식, 그리고 Claude Code와 claude.ai에서의 설치.'
+        }
+      }
+    ],
     steps: {
       de: [
         'Das Repo herunterladen und den Ordner create-masterprompt in den Skill-Ordner des Clients legen: unter Windows %USERPROFILE%\\.claude\\skills, sonst ~/.claude/skills. Der Ordnername muss genau so bleiben.',

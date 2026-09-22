@@ -83,6 +83,69 @@
     return link;
   }
 
+  // ── Screenshots under "What it looks like" ─────────────────────────
+  // A justified row: every picture grows in proportion to its aspect ratio,
+  // so the pictures sharing a row end up the same height. max-width caps that
+  // height at SHOT_MAX_H and never enlarges a picture past its own file width.
+  // The files are copies in assets/anleitung/, not links into the tool repos:
+  // the page must not depend on paths in other repositories, and the local dev
+  // server has to show them without network.
+  var SHOT_ROW_H = 220;
+  var SHOT_MAX_H = 380;
+
+  function shots(tool, list, lang) {
+    var wrap = el('div', 'wk-shots');
+    for (var i = 0; i < list.length; i++) {
+      var shot = list[i];
+      // One file for all languages, or one per language with English as fallback.
+      var file = shot.files ? (shot.files[lang] || shot.files.en) : [shot.file, shot.w, shot.h];
+      var src = './assets/anleitung/' + file[0];
+      var ratio = file[1] / file[2];
+
+      var img = el('img');
+      img.src = src;
+      img.alt = shot.alt[lang];
+      img.width = file[1];
+      img.height = file[2];
+      img.loading = 'lazy';
+      img.decoding = 'async';
+
+      var figure = el('figure', 'wk-shot');
+      // x100: if the grow factors of a row add up to less than 1 (a lone
+      // portrait picture), flexbox hands out only that fraction of the free
+      // space, and the picture would stop short of the column on a phone.
+      figure.style.flex = (ratio * 100) + ' 1 ' + Math.round(ratio * SHOT_ROW_H) + 'px';
+      figure.style.maxWidth = Math.round(Math.min(ratio * SHOT_MAX_H, file[1])) + 'px';
+
+      var frame;
+      if (shot.still) {
+        // An animation: the file itself plays once and stops on its last frame
+        // (under the five seconds of WCAG 2.2.2). Whoever asked for reduced
+        // motion gets that last frame straight away. No full-size link — the file
+        // is only 360 px wide, wide screens show it at nearly that size, and the
+        // link would only replay it.
+        frame = el('span', 'wk-shot-frame');
+        var picture = el('picture');
+        var still = el('source');
+        still.media = '(prefers-reduced-motion: reduce)';
+        still.srcset = './assets/anleitung/' + shot.still;
+        picture.appendChild(still);
+        picture.appendChild(img);
+        frame.appendChild(picture);
+      } else {
+        frame = el('a', 'wk-shot-frame');
+        frame.href = src;
+        frame.setAttribute('data-count', 'werkstatt-' + tool.key + '-bild');
+        frame.appendChild(img);
+        // Read after the alt text, so the link says where it leads.
+        frame.appendChild(el('span', 'visually-hidden', ' ' + i18n.t('guideShotFull')));
+      }
+      figure.appendChild(frame);
+      wrap.appendChild(figure);
+    }
+    return wrap;
+  }
+
   function buildGuide(tool, lang, target) {
     var guide = GUIDES[tool.key];
     if (!guide) { return; }
@@ -93,6 +156,12 @@
 
     target.appendChild(el('h4', 'wk-sub', i18n.t('guidePurpose')));
     target.appendChild(el('p', 'wk-text', guide.purpose[lang]));
+
+    // Optional: not every tool has pictures yet.
+    if (guide.shots) {
+      target.appendChild(el('h4', 'wk-sub', i18n.t('guideLook')));
+      target.appendChild(shots(tool, guide.shots, lang));
+    }
 
     // Optional, and so far only fontART has it: the tool whose full version is
     // meant to cost money needs room to say what the trial leaves out and why
