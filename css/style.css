@@ -301,18 +301,25 @@ body {
 }
 
 /* Header */
+/* Der Kopf darf umbrechen. Ein Auswahlfeld ist so breit wie sein längster
+   Eintrag, und der wechselt mit der Sprache (Russisch „Системная“ macht das
+   Feld 25 px breiter als im Deutschen) — eine Rechnung „passt schon“ hält
+   keine neue Übersetzung aus. Reicht die Zeile nicht, rutschen die Felder
+   in eine zweite Zeile statt über den Rand, rechtsbündig dank
+   margin-left: auto. */
 .site-header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 12px;
+  gap: 10px 12px;
 }
 
 .brand { display: flex; align-items: center; gap: 10px; }
 .brand-icon { width: 30px; height: 30px; display: block; }
 .brand-name { font-weight: 600; font-size: 0.95rem; letter-spacing: 0.01em; color: var(--text-soft); }
 
-.header-controls { display: flex; align-items: center; gap: 8px; }
+.header-controls { display: flex; align-items: center; gap: 8px; margin-left: auto; }
 
 #langSelect,
 #themeSelect {
@@ -685,11 +692,20 @@ html[lang="ko"] [data-lang-only="en"] { display: none; }
 
 @media (max-width: 480px) {
   .hero { padding: 40px 4px 34px; }
-  /* Auf einem 375-px-Schirm waren Markenname und die beiden Auswahlfelder
-     zusammen zwei Pixel breiter als der Platz — die Seite liess sich dadurch
-     seitlich wischen. Etwas weniger Rand loest das, ohne am Kopf selbst zu
-     drehen. */
+  /* Schmalerer Rand am Telefon, 14 statt 20 px. */
   .page { padding-left: 14px; padding-right: 14px; }
+  /* Am Telefon stehen die beiden Auswahlfelder immer in einer eigenen Zeile
+     unter der Marke und teilen sie sich hälftig. Vorher ragten sie bei 320 px
+     in jeder Sprache bis zu 84 px über den Rand, bei 375 px in zwölf von
+     vierzehn — die Seite liess sich seitlich wischen (WCAG 1.4.10 verlangt
+     320 px ohne). Immer statt nur bei Bedarf, damit der Kopf nicht je nach
+     Sprache mal ein-, mal zweizeilig ist. Die Felder werden dabei breiter,
+     nie schmaler; min-width: 0 sorgt dafür, dass ein künftiges überlanges
+     Wort im Feld gekappt wird statt die Seite zu verbreitern. */
+  .header-controls { flex: 1 1 100%; }
+  .header-controls .lang-wrap { flex: 1 1 0; min-width: 0; }
+  #langSelect,
+  #themeSelect { width: 100%; min-width: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
