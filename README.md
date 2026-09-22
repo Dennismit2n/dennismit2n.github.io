@@ -41,7 +41,7 @@ The interface words exist in all 14 languages, and since 14 September 2026 so do
 
 ## Development
 
-No build step — plain HTML, CSS, and JavaScript. 60 files make up the site: two pages, one stylesheet, eight scripts (one of them GoatCounter's, vendored), sixteen images, three icons and thirty screenshots for the guides in `assets/anleitung/`. No npm dependencies.
+No build step — plain HTML, CSS, and JavaScript. 60 files make up the site: two pages, one stylesheet, eight scripts (one of them GoatCounter’s, vendored), sixteen images, three icons and thirty screenshots for the guides in `assets/anleitung/`. No npm dependencies.
 
 ```
 node tools/dev-server.js
@@ -65,4 +65,4 @@ The page speaks 14 languages (`js/i18n.js`), and so do the news and guides (`js/
 
 ## License
 
-[MIT](LICENSE) for everything in this repository, with one exception: `js/vendor/count.js` is GoatCounter's counter script and is released under the ISC license, as stated in its file header.
+[MIT](LICENSE) for everything in this repository, with one exception: `js/vendor/count.js` is GoatCounter’s counter script and is released under the ISC license, as stated in its file header.
