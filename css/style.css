@@ -613,12 +613,38 @@ body {
 }
 .tool-mini-date { font-variant-numeric: tabular-nums; opacity: 0.85; }
 
-/* Two links pointing at the same label but a different target — so far only
-   create-masterprompt's overview image, which exists in German and English
-   only. Pure CSS, no JS: document.documentElement.lang is set synchronously
-   in i18n.js apply(), so this reacts on every language switch by itself. */
+/* Fourteen links pointing at the same label but a different target — so far
+   only create-masterprompt's overview image, which exists in every language
+   this page speaks. Each link shows only under its own html[lang]; English is
+   the fallback and hides only while one of the other thirteen is active. Pure
+   CSS, no JS: document.documentElement.lang is set synchronously in i18n.js
+   apply(), so this reacts on every language switch by itself. */
 html:not([lang="de"]) [data-lang-only="de"] { display: none; }
-html[lang="de"] [data-lang-only="other"] { display: none; }
+html:not([lang="es"]) [data-lang-only="es"] { display: none; }
+html:not([lang="fr"]) [data-lang-only="fr"] { display: none; }
+html:not([lang="it"]) [data-lang-only="it"] { display: none; }
+html:not([lang="nl"]) [data-lang-only="nl"] { display: none; }
+html:not([lang="pl"]) [data-lang-only="pl"] { display: none; }
+html:not([lang="pt"]) [data-lang-only="pt"] { display: none; }
+html:not([lang="tr"]) [data-lang-only="tr"] { display: none; }
+html:not([lang="ru"]) [data-lang-only="ru"] { display: none; }
+html:not([lang="hi"]) [data-lang-only="hi"] { display: none; }
+html:not([lang="zh"]) [data-lang-only="zh"] { display: none; }
+html:not([lang="ja"]) [data-lang-only="ja"] { display: none; }
+html:not([lang="ko"]) [data-lang-only="ko"] { display: none; }
+html[lang="de"] [data-lang-only="en"],
+html[lang="es"] [data-lang-only="en"],
+html[lang="fr"] [data-lang-only="en"],
+html[lang="it"] [data-lang-only="en"],
+html[lang="nl"] [data-lang-only="en"],
+html[lang="pl"] [data-lang-only="en"],
+html[lang="pt"] [data-lang-only="en"],
+html[lang="tr"] [data-lang-only="en"],
+html[lang="ru"] [data-lang-only="en"],
+html[lang="hi"] [data-lang-only="en"],
+html[lang="zh"] [data-lang-only="en"],
+html[lang="ja"] [data-lang-only="en"],
+html[lang="ko"] [data-lang-only="en"] { display: none; }
 
 .more-line {
   display: flex;

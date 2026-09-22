@@ -691,6 +691,23 @@ var NEWS = {
   masterprompt: [
     {
       date: '2026-09-22',
+      de: 'Die Mini-Kachel „Übersicht“ öffnet die einseitige Zusammenfassung jetzt in der Sprache, die oben eingestellt ist — in allen vierzehn, nicht mehr nur auf Deutsch oder Englisch.',
+      en: 'The “Overview” mini tile now opens the one-page summary in the language set above — in all fourteen, no longer just in German or English.',
+      es: 'La minitarjeta «Resumen» abre ahora el resumen de una sola página en el idioma que esté seleccionado arriba: en los catorce idiomas, y ya no solo en alemán o en inglés.',
+      fr: 'La mini-vignette « Aperçu » ouvre désormais le résumé en une page dans la langue réglée en haut — dans les quatorze langues, et non plus seulement en allemand ou en anglais.',
+      it: 'La mini-scheda «Panoramica» ora apre la sintesi in una pagina nella lingua impostata in alto — in tutte e quattordici, non più solo in tedesco o in inglese.',
+      nl: 'De minitegel “Overzicht” opent de samenvatting van één pagina nu in de taal die hierboven is ingesteld — in alle veertien, niet meer alleen in het Duits of het Engels.',
+      pl: 'Mini-kafelek „Przegląd” otwiera teraz jednostronicowe podsumowanie w języku ustawionym powyżej — we wszystkich czternastu, już nie tylko po niemiecku albo po angielsku.',
+      pt: 'O mini-cartão «Visão geral» abre agora o resumo de uma página no idioma escolhido em cima — em todos os catorze, e já não só em alemão ou em inglês.',
+      tr: '“Genel bakış” mini kartı tek sayfalık özeti şimdi yukarıda seçili olan dilde açıyor — on dört dilin hepsinde, artık yalnızca Almanca ya da İngilizce değil.',
+      ru: 'Мини-плитка «Обзор» теперь открывает одностраничную сводку на выбранном наверху языке — на всех четырнадцати, уже не только на немецком или английском.',
+      hi: 'मिनी-कार्ड “अवलोकन” अब एक पेज का सारांश उसी भाषा में खोलता है जो ऊपर चुनी गई है — सभी चौदह भाषाओं में, अब सिर्फ़ जर्मन या अंग्रेज़ी में ही नहीं।',
+      zh: '迷你卡片“概览”现在会用上方设定的语言打开那份一页纸的摘要——全部十四种语言都可以，不再只有德语或英语。',
+      ja: 'ミニカード「概要」が、1ページの要約を上で選んだ言語で開くようになりました — ドイツ語か英語だけだったのが、これで14言語すべてです。',
+      ko: '미니 타일 “개요”가 이제 한 쪽짜리 요약을 위에서 고른 언어로 엽니다 — 더는 독일어나 영어만이 아니라 열네 개 언어 모두에서 열립니다.'
+    },
+    {
+      date: '2026-09-22',
       version: 'v1.7.0',
       link: 'https://github.com/Dennismit2n/create-masterprompt/releases/tag/v1.7.0',
       de: 'Der Skill lässt sich jetzt in vierzehn Sprachen lesen: Zu Englisch und Deutsch sind Spanisch, Französisch, Italienisch, Niederländisch, Polnisch, Portugiesisch, Türkisch, Russisch, Hindi, Chinesisch, Japanisch und Koreanisch dazugekommen — dieselben vierzehn wie diese Seite. Jede Fassung ist aus dem englischen Original übersetzt und Abschnitt für Abschnitt gegengeprüft, dazu gibt es je Sprache eine Übersichtstafel auf einer Seite. Der Skill selbst bleibt englisch und antwortet ohnehin in der Sprache, in der man ihn anspricht; die Übersetzungen sind zum Lesen da, nicht zum Installieren.',
