@@ -844,6 +844,21 @@ a.brand { text-decoration: none; color: inherit; }
 .wk-steps li, .wk-pitfalls li { margin-bottom: 7px; }
 .wk-pitfalls { color: var(--text-soft); }
 
+/* Screenshots under "What it looks like". Width, height and row share come from
+   werkstatt.js (flex and max-width per picture, from its aspect ratio). */
+.wk-shots { display: flex; flex-wrap: wrap; gap: 12px; margin: 2px 0 14px; }
+.wk-shot { margin: 0; min-width: 0; }
+.wk-shot-frame {
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg);
+}
+.wk-shot-frame img { display: block; width: 100%; height: auto; }
+a.wk-shot-frame:hover { border-color: var(--tool, var(--accent)); }
+a.wk-shot-frame:focus-visible { outline-color: var(--tool, var(--accent)); }
+
 .wk-docs { margin: 12px 0 0; font-size: 0.88rem; }
 .wk-external { color: var(--accent); text-decoration: none; }
 .wk-external:hover { text-decoration: underline; }

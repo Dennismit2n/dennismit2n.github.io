@@ -63,6 +63,8 @@ var I18N = {
     guideSteps: 'In drei Schritten',
     guideTrouble: 'Wenn etwas klemmt',
     guideDocs: 'Technische Einzelheiten und Quelltext auf GitHub',
+    guideLook: 'So sieht es aus',
+    guideShotFull: 'Bild in voller Größe öffnen',
     viewRelease: 'Release ansehen',
     backHome: 'Zurück zur Startseite'
   },
@@ -123,6 +125,8 @@ var I18N = {
     guideSteps: 'In three steps',
     guideTrouble: 'If something goes wrong',
     guideDocs: 'Technical details and source code on GitHub',
+    guideLook: 'What it looks like',
+    guideShotFull: 'open the image at full size',
     viewRelease: 'View release',
     backHome: 'Back to the start page'
   },
@@ -183,6 +187,8 @@ var I18N = {
     guideSteps: 'En tres pasos',
     guideTrouble: 'Si algo falla',
     guideDocs: 'Detalles técnicos y código fuente en GitHub',
+    guideLook: 'Así se ve',
+    guideShotFull: 'abrir la imagen a tamaño completo',
     viewRelease: 'Ver la versión',
     backHome: 'Volver al inicio'
   },
@@ -243,6 +249,8 @@ var I18N = {
     guideSteps: 'En trois étapes',
     guideTrouble: 'Si quelque chose coince',
     guideDocs: 'Détails techniques et code source sur GitHub',
+    guideLook: 'À quoi ça ressemble',
+    guideShotFull: 'ouvrir l’image en taille réelle',
     viewRelease: 'Voir la version',
     backHome: 'Retour à l’accueil'
   },
@@ -303,6 +311,8 @@ var I18N = {
     guideSteps: 'In tre passi',
     guideTrouble: 'Se qualcosa non va',
     guideDocs: 'Dettagli tecnici e codice sorgente su GitHub',
+    guideLook: 'Come si presenta',
+    guideShotFull: 'apri l’immagine a grandezza naturale',
     viewRelease: 'Vedi la versione',
     backHome: 'Torna alla pagina iniziale'
   },
@@ -363,6 +373,8 @@ var I18N = {
     guideSteps: 'In drie stappen',
     guideTrouble: 'Als er iets hapert',
     guideDocs: 'Technische details en broncode op GitHub',
+    guideLook: 'Zo ziet het eruit',
+    guideShotFull: 'afbeelding op ware grootte openen',
     viewRelease: 'Release bekijken',
     backHome: 'Terug naar de startpagina'
   },
@@ -423,6 +435,8 @@ var I18N = {
     guideSteps: 'W trzech krokach',
     guideTrouble: 'Gdy coś się zacina',
     guideDocs: 'Szczegóły techniczne i kod źródłowy na GitHubie',
+    guideLook: 'Jak to wygląda',
+    guideShotFull: 'otwórz obraz w pełnym rozmiarze',
     viewRelease: 'Zobacz wydanie',
     backHome: 'Powrót na stronę główną'
   },
@@ -483,6 +497,8 @@ var I18N = {
     guideSteps: 'Em três passos',
     guideTrouble: 'Se algo não funcionar',
     guideDocs: 'Detalhes técnicos e código-fonte no GitHub',
+    guideLook: 'Como se apresenta',
+    guideShotFull: 'abrir a imagem em tamanho real',
     viewRelease: 'Ver a versão',
     backHome: 'Voltar ao início'
   },
@@ -543,6 +559,8 @@ var I18N = {
     guideSteps: 'Üç adımda',
     guideTrouble: 'Bir şey takılırsa',
     guideDocs: 'Teknik ayrıntılar ve kaynak kodu GitHub’da',
+    guideLook: 'Nasıl görünür',
+    guideShotFull: 'görseli tam boyutta açın',
     viewRelease: 'Sürümü görüntüle',
     backHome: 'Başlangıç sayfasına dön'
   },
@@ -603,6 +621,8 @@ var I18N = {
     guideSteps: 'В три шага',
     guideTrouble: 'Если что-то не работает',
     guideDocs: 'Технические подробности и исходный код на GitHub',
+    guideLook: 'Как это выглядит',
+    guideShotFull: 'открыть изображение в полном размере',
     viewRelease: 'Посмотреть выпуск',
     backHome: 'Вернуться на главную'
   },
@@ -663,6 +683,8 @@ var I18N = {
     guideSteps: 'तीन चरणों में',
     guideTrouble: 'अगर कुछ अटक जाए',
     guideDocs: 'तकनीकी जानकारी और सोर्स कोड GitHub पर',
+    guideLook: 'कैसा दिखता है',
+    guideShotFull: 'तस्वीर को पूरे आकार में खोलें',
     viewRelease: 'रिलीज़ देखें',
     backHome: 'शुरुआती पेज पर लौटें'
   },
@@ -723,6 +745,8 @@ var I18N = {
     guideSteps: '三步上手',
     guideTrouble: '如果卡住了',
     guideDocs: '技术细节和源代码在 GitHub',
+    guideLook: '长什么样',
+    guideShotFull: '查看原尺寸图片',
     viewRelease: '查看发布版本',
     backHome: '返回首页'
   },
@@ -783,6 +807,8 @@ var I18N = {
     guideSteps: '3ステップで',
     guideTrouble: 'うまくいかないとき',
     guideDocs: '技術的な詳細とソースコードは GitHub に',
+    guideLook: 'こんな見た目',
+    guideShotFull: '画像を原寸大で開く',
     viewRelease: 'リリースを見る',
     backHome: 'トップページに戻る'
   },
@@ -843,6 +869,8 @@ var I18N = {
     guideSteps: '세 단계로',
     guideTrouble: '잘 안 될 때',
     guideDocs: '기술적인 세부 사항과 소스 코드는 GitHub에',
+    guideLook: '어떻게 생겼나',
+    guideShotFull: '원본 크기로 이미지 열기',
     viewRelease: '릴리스 보기',
     backHome: '시작 페이지로 돌아가기'
   }
