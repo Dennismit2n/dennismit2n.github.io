@@ -344,13 +344,19 @@ body {
 
 .hero-sub { margin: 0 0 20px; color: var(--text-soft); font-size: 1.08rem; }
 
+/* Radius = halbe Höhe des zweizeiligen Schilds (zwei Zeilen à 1.55em plus
+   2 × 10 px Innenabstand). Zweizeilig ist es am Desktop in jeder Sprache und
+   sieht dort aus wie eine Pille. Vorher stand hier 999px: das kappt der
+   Browser auf die halbe Höhe, am Telefon mit drei bis sieben Zeilen wurden
+   die Enden so zu Halbkreisen über die ganze Höhe — ein Oval, aus dessen
+   Rundung bei 320 px in fünf Sprachen Text herausragte. */
 .pledge {
   display: inline-flex;
   align-items: center;
   gap: 9px;
   background: var(--accent-soft);
   color: var(--accent-strong);
-  border-radius: 999px;
+  border-radius: calc(1.55em + 10px);
   padding: 10px 18px;
   font-size: 0.95rem;
   font-weight: 500;
@@ -706,6 +712,11 @@ html[lang="ko"] [data-lang-only="en"] { display: none; }
   .header-controls .lang-wrap { flex: 1 1 0; min-width: 0; }
   #langSelect,
   #themeSelect { width: 100%; min-width: 0; }
+  /* Hier hat das Versprechens-Schild in jeder Sprache drei bis sieben
+     Zeilen; mittig daneben hinge das Schloss verloren am Rand. Es sitzt
+     deshalb auf Höhe der ersten Zeile (Zeilenhöhe 1.55em, Icon 18 px). */
+  .pledge { align-items: flex-start; }
+  .pledge svg { margin-top: calc((1.55em - 18px) / 2); }
 }
 
 @media (prefers-reduced-motion: reduce) {
