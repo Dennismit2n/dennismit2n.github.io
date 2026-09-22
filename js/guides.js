@@ -73,72 +73,72 @@ var GUIDES = {
       de: [
         'Den Installer aus den Releases laden und ausführen. Windows meldet „Unbekannter Herausgeber“, weil die Datei nicht signiert ist — über „Weitere Informationen“ geht es weiter.',
         'Die App starten und die Rückfrage von Windows bestätigen. Ohne Administratorrechte zeigt die App nur an; leeren kann sie dann nichts.',
-        'Auf „Standby-Liste leeren“ klicken. Darunter steht anschließend, wie viele Megabyte tatsächlich frei geworden sind.'
+        'Auf „Fürs Gaming bereinigen“ klicken. Darüber steht anschließend, wie viele Megabyte tatsächlich frei geworden sind.'
       ],
       en: [
         'Download the installer from the releases page and run it. Windows will say “unknown publisher” because the file is not signed — continue via “more info”.',
         'Start the app and confirm the Windows prompt. Without administrator rights the app only displays values; it cannot purge anything.',
-        'Click “purge standby list”. Underneath you will then see how many megabytes were actually freed.'
+        'Click “Clean up for gaming”. Above it you will then see how many megabytes were actually freed.'
       ],
       es: [
         'Descarga el instalador desde las versiones y ejecútalo. Windows avisa de «Editor desconocido» porque el archivo no está firmado; se continúa con «Más información».',
         'Inicia la aplicación y confirma el aviso de Windows. Sin permisos de administrador la aplicación solo muestra datos: no puede vaciar nada.',
-        'Haz clic en el botón para vaciar la lista en espera («purge standby list»). Justo debajo aparece después cuántos megabytes se han liberado realmente.'
+        'Haz clic en el botón para limpiar la memoria antes de jugar («Clean up for gaming»). Justo encima aparece después cuántos megabytes se han liberado realmente.'
       ],
       fr: [
         'Télécharger le programme d’installation depuis les releases et l’exécuter. Windows signale « Éditeur inconnu », parce que le fichier n’est pas signé — on continue via « Informations complémentaires ».',
         'Démarrer l’application et confirmer la demande de Windows. Sans droits d’administrateur, l’application se contente d’afficher les valeurs ; elle ne peut alors rien vider.',
-        'Cliquer sur « Standby-Liste leeren » / « purge standby list » (vider la liste standby). En dessous s’affiche ensuite le nombre de mégaoctets réellement libérés.'
+        'Cliquer sur « Clean up for gaming » / « Fürs Gaming bereinigen » (faire le ménage pour le jeu). Au-dessus s’affiche ensuite le nombre de mégaoctets réellement libérés.'
       ],
       it: [
         'Scarica l’installer dalla pagina delle release ed eseguilo. Windows segnala «Editore sconosciuto» perché il file non è firmato: prosegui con «Ulteriori informazioni».',
         'Avvia l’app e conferma la richiesta di Windows. Senza diritti di amministratore l’app si limita a mostrare i valori: non può svuotare nulla.',
-        'Fai clic su «Svuota la lista standby». Sotto compare poi quanti megabyte sono stati effettivamente liberati.'
+        'Fai clic su «Clean up for gaming». Sopra compare poi quanti megabyte sono stati effettivamente liberati.'
       ],
       nl: [
         'Download het installatieprogramma van de releases-pagina en voer het uit. Windows meldt “Onbekende uitgever”, omdat het bestand niet ondertekend is — via “Meer informatie” ga je verder.',
         'Start de app en bevestig de vraag van Windows. Zonder beheerdersrechten laat de app alleen waarden zien, maar hij kan dan niets legen.',
-        'Klik op “Standby-Liste leeren” — in de Engelse versie “purge standby list”. Daaronder staat daarna hoeveel megabyte er werkelijk is vrijgekomen.'
+        'Klik op “Clean up for gaming” — in de Duitse versie “Fürs Gaming bereinigen”. Daarboven staat daarna hoeveel megabyte er werkelijk is vrijgekomen.'
       ],
       pl: [
         'Pobrać instalator ze strony wydań i uruchomić go. Windows zgłosi „Nieznany wydawca”, bo plik nie jest podpisany — dalej prowadzi „Więcej informacji”.',
         'Uruchomić aplikację i potwierdzić pytanie Windows. Bez uprawnień administratora aplikacja tylko pokazuje wartości; opróżnić nie może wtedy niczego.',
-        'Kliknąć „purge standby list” (opróżnij listę standby). Poniżej pojawi się potem, ile megabajtów rzeczywiście się zwolniło.'
+        'Kliknąć „Clean up for gaming” (wyczyść pamięć przed grą). Powyżej pojawi się potem, ile megabajtów rzeczywiście się zwolniło.'
       ],
       pt: [
         'Transferir o instalador da página de versões e executá-lo. O Windows avisa «Editor desconhecido», porque o ficheiro não está assinado — continua-se através de «Mais informações».',
         'Iniciar a aplicação e confirmar a pergunta do Windows. Sem direitos de administrador, a aplicação limita-se a mostrar valores; não consegue esvaziar nada.',
-        'Clicar em «Standby-Liste leeren» — na versão inglesa, «Purge standby list»; a aplicação só fala alemão e inglês. Por baixo fica depois escrito quantos megabytes ficaram realmente livres.'
+        'Clicar em «Clean up for gaming» — na versão alemã, «Fürs Gaming bereinigen»; a aplicação só fala alemão e inglês. Por cima fica depois escrito quantos megabytes ficaram realmente livres.'
       ],
       tr: [
         'Kurulum dosyasını sürümler sayfasından indirin ve çalıştırın. Dosya imzalı olmadığı için Windows “Bilinmeyen yayımcı” uyarısı verir — “Daha fazla bilgi” üzerinden devam edilir.',
         'Uygulamayı başlatın ve Windows’un sorduğu onayı verin. Yönetici hakları olmadan uygulama yalnızca değerleri gösterir; hiçbir şeyi boşaltamaz.',
-        '“Bekleme listesini boşalt” düğmesine tıklayın. Hemen altında, kaç megabaytın gerçekten boşaldığı yazar.'
+        '“Clean up for gaming” düğmesine tıklayın. Hemen üstünde, kaç megabaytın gerçekten boşaldığı yazar.'
       ],
       ru: [
         'Скачайте установщик со страницы выпусков и запустите его. Windows сообщит «Неизвестный издатель», потому что файл не подписан, — продолжить можно через «Подробнее».',
         'Запустите приложение и подтвердите запрос Windows. Без прав администратора приложение только показывает значения; очистить оно тогда ничего не может.',
-        'Нажмите «Purge standby list» (в немецкой версии — «Standby-Liste leeren»). Под кнопкой затем написано, сколько мегабайт на самом деле освободилось.'
+        'Нажмите «Clean up for gaming» (в немецкой версии — «Fürs Gaming bereinigen»). Над кнопкой затем написано, сколько мегабайт на самом деле освободилось.'
       ],
       hi: [
         'रिलीज़ पेज से इंस्टॉलर डाउनलोड करके चलाएँ। Windows “अज्ञात प्रकाशक” की चेतावनी देता है, क्योंकि फ़ाइल पर हस्ताक्षर नहीं हैं — “अधिक जानकारी” से आगे बढ़ा जा सकता है।',
         'ऐप शुरू करें और Windows का सवाल स्वीकार करें। प्रशासक अधिकारों के बिना ऐप सिर्फ़ आँकड़े दिखाती है; तब वह कुछ भी खाली नहीं कर सकती।',
-        '“स्टैंडबाय सूची खाली करें” पर क्लिक करें। उसके नीचे फिर लिखा आता है कि सचमुच कितने मेगाबाइट खाली हुए।'
+        '“Clean up for gaming” पर क्लिक करें। उसके ऊपर फिर लिखा आता है कि सचमुच कितने मेगाबाइट खाली हुए।'
       ],
       zh: [
         '从发布页下载安装程序并运行。Windows 会提示“未知发布者”，因为这个文件没有签名——通过“更多信息”继续。',
         '启动应用并确认 Windows 的提示。没有管理员权限时，应用只能显示数值，什么也清不了。',
-        '点击“清空待机列表”。下面随后会写出实际释放了多少兆字节。'
+        '点击“Clean up for gaming”。按钮上方随后会写出实际释放了多少兆字节。'
       ],
       ja: [
         'リリースページからインストーラーをダウンロードして実行します。ファイルに署名がないため、Windows は「不明な発行元」と表示します — 「詳細情報」から先に進めます。',
         'アプリを起動して、Windows の確認に応じます。管理者権限がないと、アプリは表示するだけで、空にすることはできません。',
-        '「Standby-Liste leeren」（スタンバイリストを解放）をクリックします — このアプリはドイツ語と英語しか話さないので、表示言語によっては英語の同じボタンが出ます。そのすぐ下に、実際に何メガバイト空いたかが表示されます。'
+        '「Clean up for gaming」（ゲーム向けにメモリを片付ける）をクリックします — このアプリはドイツ語と英語しか話さないので、表示言語によってはドイツ語の同じボタン「Fürs Gaming bereinigen」が出ます。そのすぐ上に、実際に何メガバイト空いたかが表示されます。'
       ],
       ko: [
         '릴리스 페이지에서 설치 프로그램을 내려받아 실행합니다. 파일에 서명이 없어서 Windows가 “알 수 없는 게시자”라고 알립니다 — “추가 정보”를 거쳐 계속 진행하면 됩니다.',
         '앱을 실행하고 Windows의 확인 창을 승인합니다. 관리자 권한이 없으면 앱은 값을 보여 주기만 하고 아무것도 비우지 못합니다.',
-        '“대기 목록 비우기”를 누릅니다. 그 아래에 실제로 몇 메가바이트가 비워졌는지 표시됩니다.'
+        '“Clean up for gaming”을 누릅니다. 그 위에 실제로 몇 메가바이트가 비워졌는지 표시됩니다.'
       ]
     },
     pitfalls: {
