@@ -883,6 +883,10 @@ var i18n = (function () {
   // guides itself) register here and redraw on every language change.
   var listeners = [];
 
+  // index.html repeats this choice in a small script in <head>, with its own
+  // copy of the language codes: it has to know before the first paint whether
+  // the English raw build will be translated (.i18n-wartet). A new language or
+  // detection rule belongs there too — otherwise the old layout jump returns.
   function detect() {
     try {
       var saved = localStorage.getItem(STORAGE_KEY);
