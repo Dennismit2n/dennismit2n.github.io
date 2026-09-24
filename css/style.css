@@ -203,9 +203,17 @@
    die Ebene ohne erkennbaren Grund. Lieber ausdrücklich als raffiniert. */
 html { background: var(--bg); }
 
+/* Zwei Schriften, zwei Rollen: Lesen und Bedienen in der Systemschrift,
+   Namen und Überschriften in Fraunces (Block „Überschriftenschrift“ am
+   Ende dieser Datei). */
+:root {
+  --font-text: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-schild: "Fraunces Werkstatt", "Fraunces Ersatz", var(--font-text);
+}
+
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--font-text);
   background: transparent;
   color: var(--text);
   line-height: 1.55;
@@ -335,8 +343,12 @@ body {
 /* Hero */
 .hero { text-align: center; padding: 54px 8px 42px; }
 
+/* min(…, 13vw): Bei großer Browserschrift (24 px) auf 320 px ragte das
+   längste Wort sonst über den Rand — „herramientas“ in Fraunces, das
+   russische „инструменты,“ schon immer. Bei normaler Schrift greift die
+   Grenze nie (30 px Schriftgröße gegen 41 px Grenze). */
 .hero h1 {
-  font-size: clamp(1.9rem, 5vw, 2.7rem);
+  font-size: min(clamp(1.9rem, 5vw, 2.7rem), 13vw);
   line-height: 1.15;
   letter-spacing: -0.015em;
   margin: 0 0 14px;
@@ -384,9 +396,11 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 1.35rem;
+  /* „De gereedschapskist“ und „Ящик с инструментами“ passen bei 24 px
+     Browserschrift nicht in 320 px: erst die Grenze (bei normaler Schrift
+     wirkungslos), anywhere nur noch als letzte Rettung gegen Überlauf. */
+  font-size: min(1.35rem, 8.5vw);
   margin: 22px 0 18px;
-  /* „De gereedschapskist“ passt bei 24 px Browserschrift nicht in 320 px */
   overflow-wrap: anywhere;
 }
 .tb-emoji { font-size: 1.5rem; line-height: 1; }
@@ -588,10 +602,11 @@ body {
 
 /* Kleines Schild neben dem Werkzeugnamen fuer die Art des Eintrags. Bisher
    nur create-masterprompt: es ist als einziges weder Webseite noch Programm,
-   und das soll man sehen, bevor man auf "Oeffnen" klickt. */
+   und das soll man sehen, bevor man auf "Oeffnen" klickt. Abstand nur über
+   den gap von .tool-head: ein eigener margin-left rückte das Schild ein,
+   sobald es am Telefon in die nächste Zeile rutscht. */
 .tool-art {
   align-self: center;
-  margin-left: 8px;
   padding: 2px 7px;
   border: 1px solid var(--tool);
   border-radius: 3px;
@@ -638,9 +653,25 @@ body {
    has the focus, be it the stretched link or one of the mini tiles. */
 .tool-card:focus-within { border-color: var(--tool); }
 
-.tool-head { display: flex; align-items: center; gap: 12px; }
+/* Wird es eng, rutscht erst das SKILL-Schild in die nächste Zeile, dann
+   der Name unter das Symbol — aber kein Name bricht mitten im Wort. Der
+   Name misst sich beim Zeilenbau an seinem längsten Wort (min-content)
+   und wächst danach höchstens auf seine volle Länge (max-content), damit
+   das Schild am Desktop direkt hinter ihm steht und nicht am Kachelrand.
+   break-word statt des anywhere der Kachel: nur ein Wort, das allein
+   keine Zeile findet, wird noch geteilt. Nötig seit Fraunces: sie läuft
+   breiter als die Systemschrift, und bei 320 px stand sonst ein einzelnes
+   „t“ von „create-masterprompt“ in einer dritten Zeile. */
+.tool-head { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
 .tool-head img { width: 44px; height: 44px; border-radius: 10px; display: block; }
-.tool-name { font-size: 1.15rem; font-weight: 600; color: var(--tool); }
+.tool-name {
+  flex: 1 1 min-content;
+  max-width: max-content;
+  overflow-wrap: break-word;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--tool);
+}
 .tool-desc { font-size: 0.98rem; }
 .tool-meta { font-size: 0.85rem; color: var(--text-soft); }
 
@@ -812,8 +843,9 @@ html[lang="ko"] [data-lang-only="en"] { display: none; }
 a.brand { text-decoration: none; color: inherit; }
 
 .wk-hero { text-align: center; padding: 44px 8px 26px; }
+/* Grenze aus demselben Grund wie bei .hero h1: „handleidingen“ (nl). */
 .wk-hero h1 {
-  font-size: clamp(1.8rem, 4.6vw, 2.5rem);
+  font-size: min(clamp(1.8rem, 4.6vw, 2.5rem), 12.5vw);
   line-height: 1.15;
   letter-spacing: -0.015em;
   margin: 0 0 12px;
@@ -1018,4 +1050,122 @@ a.wk-shot-frame:focus-visible { outline-color: var(--tool, var(--accent)); }
   .wk-nav-back { margin-top: 12px; padding: 0; }
   .wk-body { padding: 6px 15px 16px; }
   .wk-tool-head { padding: 13px 15px; }
+}
+
+/* ==================================================================
+   Überschriftenschrift: Fraunces (SIL Open Font License 1.1, The
+   Fraunces Project Authors; Lizenztext liegt neben den Dateien in
+   assets/fonts/fraunces/OFL.txt). Von Dennis am 24.09.2026 aus sechs
+   Entwürfen gewählt, weil sie als einzige der Seite eine eigene Stimme
+   gibt: eine warme, leicht altmodische Antiqua — die Werkstatt als
+   Hobelbank, nicht als Start-up.
+
+   Regel: NAMEN UND ÜBERSCHRIFTEN in Fraunces, alles zum Lesen und
+   Bedienen bleibt in der Systemschrift (--font-text).
+
+   Selbst gehostet, kein Abruf bei fremden Diensten. Nur die Stärke-Achse
+   (wght): latin 36 KB, latin-ext 33 KB (lädt nur, wo Polnisch, Türkisch
+   o. Ä. es braucht). Die Fassung mit optischer Größe wog fast doppelt so
+   viel und sah im Vergleich kaum anders aus. Fraunces hat kein
+   Kyrillisch, kein Devanagari, keine CJK-Zeichen — siehe Sprachweiche unten.
+   ================================================================== */
+@font-face {
+  font-family: "Fraunces Werkstatt";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("../assets/fonts/fraunces/fraunces-latin-ext-wght-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Fraunces Werkstatt";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("../assets/fonts/fraunces/fraunces-latin-wght-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* Platzhalter, solange Fraunces lädt: Georgia, auf Fraunces getrimmt,
+   damit beim Tausch möglichst keine Zeile umspringt. Zwei Stärken, weil
+   die Werkzeugliste auf werkstatt.html normal (400) läuft und mit nur
+   Georgia Bold beim Laden kurz fett dastand. Gemessen: Fraunces 560/600
+   ist rund 0,93-mal so breit wie Georgia Bold, Fraunces 400 rund
+   1,06-mal so breit wie Georgia. Die Höhen sind Fraunces' eigene (0,978
+   über, 0,255 unter der Grundlinie), geteilt durch size-adjust. Nur
+   Lateinschrift, damit Kyrillisch nie in Georgia landet. Wo Georgia
+   fehlt (Android, Linux), greift direkt die Systemschrift. Kostet keinen
+   Download. */
+@font-face {
+  font-family: "Fraunces Ersatz";
+  font-style: normal;
+  font-weight: 500 900;
+  src: local("Georgia Bold"), local("Georgia-Bold");
+  size-adjust: 93%;
+  ascent-override: 105.2%;
+  descent-override: 27.4%;
+  line-gap-override: 0%;
+  unicode-range: U+0000-02FF, U+1E00-1EFF, U+2000-206F, U+20AC, U+2122;
+}
+@font-face {
+  font-family: "Fraunces Ersatz";
+  font-style: normal;
+  font-weight: 100 499;
+  src: local("Georgia");
+  size-adjust: 106.3%;
+  ascent-override: 92%;
+  descent-override: 24%;
+  line-gap-override: 0%;
+  unicode-range: U+0000-02FF, U+1E00-1EFF, U+2000-206F, U+20AC, U+2122;
+}
+
+/* Überschriften. 560 statt 700: helle Schrift strahlt auf dem dunklen
+   Grund ohnehin breiter; 560 ist kräftig, aber ruhiger. Dünne Schnitte
+   unter 400 würden auf Dunkel flirren — darum keine. */
+.hero h1,
+.wk-hero h1,
+.tools h2,
+.wk-section {
+  font-family: var(--font-schild);
+  font-weight: 560;
+}
+.hero h1,
+.wk-hero h1 {
+  letter-spacing: -0.01em;
+  /* Zwei gleich lange Zeilen statt „… von dir / wollen“ */
+  text-wrap: balance;
+}
+/* Fraunces hat kleinere Kleinbuchstaben als Segoe UI; 1.05 → 1.1rem
+   gleicht das bei „Anleitung“/„Neuigkeiten“ aus. */
+.wk-section { font-size: 1.1rem; }
+
+/* Namen: Marke und Werkzeugnamen stehen in allen vierzehn Sprachen in
+   Lateinschrift — so trägt die Schrift auch auf der russischen oder
+   japanischen Seite etwas bei, wie ein Firmenschild in einer fremden
+   Stadt. Auf werkstatt.html auch in der Navigationsleiste, damit jedes
+   Werkzeug überall dieselbe Namensschrift trägt. */
+.brand-name,
+.tool-name,
+.wk-tool-name,
+.wk-nav-button {
+  font-family: var(--font-schild);
+  letter-spacing: 0;
+}
+.brand-name { font-size: 1.02rem; }
+
+/* Sprachweiche: Russisch, Hindi, Chinesisch, Japanisch und Koreanisch
+   haben in Fraunces keine Buchstaben. Ohne Weiche käme ein Flickenteppich
+   heraus (Komma und Leerzeichen in Fraunces zwischen Systemschrift), also
+   behalten die Überschriften dort Schrift, Stärke und Größe wie vor
+   Fraunces. Nur text-wrap: balance gilt bewusst in allen Sprachen — es
+   trennt auch ja/ko besser als vorher („ツ|ール“, „작|은“). Ebenso übersetzte
+   Werkzeugnamen („QR-карточка для Wi-Fi“): auf der Startseite erkennbar an
+   data-i18n, auf werkstatt.html setzt werkstatt.js data-name-uebersetzt. */
+:is(.hero h1, .wk-hero h1, .tools h2, .wk-section):is(:lang(ru), :lang(hi), :lang(zh), :lang(ja), :lang(ko)) {
+  font-family: var(--font-text);
+  font-weight: 700;
+}
+:is(.hero, .wk-hero) h1:is(:lang(ru), :lang(hi), :lang(zh), :lang(ja), :lang(ko)) { letter-spacing: -0.015em; }
+.wk-body .wk-section:is(:lang(ru), :lang(hi), :lang(zh), :lang(ja), :lang(ko)) { font-size: 1.05rem; }
+:is(.tool-name[data-i18n], [data-name-uebersetzt]):is(:lang(ru), :lang(hi), :lang(zh), :lang(ja), :lang(ko)) {
+  font-family: var(--font-text);
 }
