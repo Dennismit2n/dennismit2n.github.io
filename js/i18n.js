@@ -883,6 +883,13 @@ var i18n = (function () {
   // guides itself) register here and redraw on every language change.
   var listeners = [];
 
+  // Own keys only: a plain I18N[code] also finds what every object inherits,
+  // so a stored "constructor" or "toString" counted as a language and left
+  // the page in the English raw build with an empty language dropdown.
+  function known(code) {
+    return Object.prototype.hasOwnProperty.call(I18N, code);
+  }
+
   // index.html repeats this choice in a small script in <head>, with its own
   // copy of the language codes: it has to know before the first paint whether
   // the English raw build will be translated (.i18n-wartet). A new language or
@@ -890,12 +897,12 @@ var i18n = (function () {
   function detect() {
     try {
       var saved = localStorage.getItem(STORAGE_KEY);
-      if (saved && I18N[saved]) { return saved; }
+      if (saved && known(saved)) { return saved; }
     } catch (e) { /* storage may be unavailable */ }
     var candidates = navigator.languages || [navigator.language || 'en'];
     for (var i = 0; i < candidates.length; i++) {
       var code = String(candidates[i]).toLowerCase().split('-')[0];
-      if (I18N[code]) { return code; }
+      if (known(code)) { return code; }
     }
     return 'en';
   }
@@ -906,7 +913,7 @@ var i18n = (function () {
   }
 
   function apply(lang) {
-    if (I18N[lang]) { current = lang; }
+    if (known(lang)) { current = lang; }
     try { localStorage.setItem(STORAGE_KEY, current); } catch (e) { /* ignore */ }
     document.documentElement.lang = current;
     // Each page names its own title key; without one it stays with the start
