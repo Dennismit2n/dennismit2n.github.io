@@ -39,9 +39,11 @@ The interface words exist in all 14 languages, and since 14 September 2026 so do
 
 *Deliberately absent:* no service worker and no web manifest. The sister projects have both; this page does not, to avoid the cache-version trap on every deploy. So the page is not installable and does not work offline.
 
+*Typeface:* names and headings are set in [Fraunces](https://github.com/undercasetype/Fraunces) (SIL Open Font License 1.1) — including the brand and the tool list in the navigation of `werkstatt.html`; running text, buttons and form controls stay in the system font. The font is self-hosted in `assets/fonts/fraunces/` next to its licence, so no font service is contacted. Only the weight axis ships: 36 KB for Latin, plus 33 KB where Polish, Turkish and the like need it. Fraunces has no Cyrillic, Devanagari or CJK letters, so Russian, Hindi, Chinese, Japanese and Korean headings — and translated tool names — stay in the system font.
+
 ## Development
 
-No build step — plain HTML, CSS, and JavaScript. 60 files make up the site: two pages, one stylesheet, eight scripts (one of them GoatCounter’s, vendored), sixteen images, three icons and thirty screenshots for the guides in `assets/anleitung/`. No npm dependencies.
+No build step — plain HTML, CSS, and JavaScript. 63 files make up the site: two pages, one stylesheet, eight scripts (one of them GoatCounter’s, vendored), sixteen images, three icons, thirty screenshots for the guides in `assets/anleitung/`, and two font files with their licence in `assets/fonts/fraunces/`. No npm dependencies.
 
 ```
 node tools/dev-server.js
@@ -65,4 +67,4 @@ The page speaks 14 languages (`js/i18n.js`), and so do the news and guides (`js/
 
 ## License
 
-[MIT](LICENSE) for everything in this repository, with one exception: `js/vendor/count.js` is GoatCounter’s counter script and is released under the ISC license, as stated in its file header.
+[MIT](LICENSE) for everything in this repository, with two exceptions: `js/vendor/count.js` is GoatCounter’s counter script and is released under the ISC license, as stated in its file header; and the font files in `assets/fonts/fraunces/` are Fraunces by The Fraunces Project Authors, licensed under the SIL Open Font License 1.1 (see `OFL.txt` there).

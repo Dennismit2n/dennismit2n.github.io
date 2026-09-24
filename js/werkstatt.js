@@ -233,6 +233,10 @@
       navLink.appendChild(dot);
       navLink.appendChild(document.createTextNode(toolName(tool)));
       navList.appendChild(navLink);
+      // Translated names are not pure Latin in every language; style.css
+      // keeps them out of the heading font where it has no letters for them.
+      var translated = !!tool.nameKey;
+      if (translated) { navLink.setAttribute('data-name-uebersetzt', ''); }
 
       var section = el('section', 'wk-tool tool-' + tool.key);
       section.id = tool.key;
@@ -244,7 +248,9 @@
       icon.width = 40;
       icon.height = 40;
       head.appendChild(icon);
-      head.appendChild(el('h2', 'wk-tool-name', toolName(tool)));
+      var nameEl = el('h2', 'wk-tool-name', toolName(tool));
+      if (translated) { nameEl.setAttribute('data-name-uebersetzt', ''); }
+      head.appendChild(nameEl);
 
       var cta = el('a', 'wk-tool-cta', i18n.t(tool.ctaKey));
       cta.href = tool.url;
