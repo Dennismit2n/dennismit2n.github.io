@@ -328,7 +328,7 @@ body {
   color: var(--text);
   background: var(--panel);
   border: 1px solid var(--border);
-  border-radius: 9px;
+  border-radius: 6px;
   padding: 7px 10px;
 }
 
@@ -386,6 +386,8 @@ body {
   gap: 10px;
   font-size: 1.35rem;
   margin: 22px 0 18px;
+  /* „De gereedschapskist“ passt bei 24 px Browserschrift nicht in 320 px */
+  overflow-wrap: anywhere;
 }
 .tb-emoji { font-size: 1.5rem; line-height: 1; }
 
@@ -393,6 +395,24 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   gap: 18px;
+}
+
+/* Kachelform: EIN Radius für Kachel, Farbkappe, Fokusrahmen und Sternenfeld
+   (vorher stand 16px an vier Stellen einzeln). Gilt auch für die Abschnitte
+   auf werkstatt.html, damit beide Seiten dieselbe Kachel zeigen.
+   8 px statt 16: straff wie gefräst statt bauchig. Knöpfe und Schilder sind
+   eine Stufe weniger rund (Auswahlfelder 6, Knöpfe 5, Schilder 3) statt
+   Pillen. Die Werkzeug-Symbole bringen ihre Rundung im SVG selbst mit
+   (rx 11 von 48) und bleiben, was sie sind: die Icons der Werkzeuge.
+   --tool-flow ist die Füllung der Kappe: ein Vollton aus --tool, nur die
+   zwei Farbwerkzeuge setzen weiter unten ihren Verlauf ein.
+   --cap: so weit läuft die Farbe an den Seiten herab, bevor sie ausklingt. */
+.tool-card,
+.wk-tool {
+  --card-r: 8px;
+  --bar-h: 4px;
+  --cap: 40px;
+  --tool-flow: linear-gradient(var(--tool, var(--accent)), var(--tool, var(--accent)));
 }
 
 .tool-card {
@@ -403,12 +423,16 @@ body {
   gap: 10px;
   background: var(--panel-veil);
   border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: var(--card-r);
   padding: 22px;
   color: var(--text);
   text-decoration: none;
   box-shadow: var(--shadow);
   transition: border-color 0.15s ease, transform 0.15s ease;
+  /* Bei großer Browserschrift (24 px) und 320 px Breite schoben
+     „Real_RAM_cooler“ und das SKILL-Schild die Seite seitlich auf. Lieber
+     mitten im Wort umbrechen als die ganze Seite wischbar machen. */
+  overflow-wrap: anywhere;
 }
 .tool-wifi { --tool: var(--wifi); }
 .tool-shrink { --tool: var(--shrink); }
@@ -420,8 +444,52 @@ body {
 .tool-fontart { --tool: var(--fontart); }
 .tool-ticker { --tool: var(--ticker); }
 .tool-masterprompt { --tool: var(--masterprompt); }
-.tool-prismatical { --tool: var(--prisma); }
-.tool-spectroton { --tool: var(--spectro); }
+.tool-prismatical { --tool: var(--prisma); --tool-flow: var(--prisma-flow); }
+.tool-spectroton { --tool: var(--spectro); --tool-flow: var(--spectro-flow); }
+
+/* Die Farbkappe an der Oberkante, für jede Kachel in ihrer Farbe.
+   Sie ist KEIN eigenes Kästchen mit eigener Rundung, sondern eine Ebene
+   genau so groß wie die Kachel samt Rahmen (inset: -1px, weil absolute
+   Kinder an der Innenkante des Rahmens ansetzen) und mit derselben Rundung.
+   Vorher: ein 4 px hohes Kästchen mit 16 px Rundung — der Browser kappt
+   Radien, die höher sind als das Kästchen, anteilig auf 4 px. Der Balken
+   ragte dadurch über die gerundete Ecke hinaus wie ein Sims.
+   Grundstufe (Browser ohne mask-composite): nur der oberste Streifen der
+   Ebene wird gemalt, den Rest schneidet der Browser an derselben Kontur
+   ab wie die Kachel — ein gerader Balken, der der Ecke aufs Pixel folgt. */
+.tool-card::before,
+.wk-tool::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: var(--tool-flow) top / 100% var(--bar-h) no-repeat;
+  pointer-events: none;
+}
+/* Kappe: Die Ebene bekommt einen eigenen Rahmen, oben --bar-h, seitlich
+   1 px — genau über dem echten Kachelrahmen. Die Maske lässt nur diesen
+   Ring stehen (Rand-Box minus Innen-Box) und blendet ihn nach unten aus.
+   Der Browser rundet die Innen-Box mit Außenradius minus Randbreite je
+   Achse (hier 7 × 4 px, elliptisch, gleicher Mittelpunkt wie die
+   Außenkante). Die Kappe hat also keine eigene Ecke, sie IST die Ecke: Sie
+   wird von --bar-h oben stetig zur 1-px-Haarlinie an der Seite dünner und
+   klingt dort im Rahmen aus.
+   Der Verlauf ist nur --cap hoch gemalt, nicht über die ganze Kachel: sonst
+   endet Prismaticals Regenbogen oben rechts bei Blau statt bei Violett.
+   Voll deckend bis unter die Ecke (--card-r + --bar-h), dann Ausklang. */
+@supports (mask-composite: exclude) {
+  .tool-card::before,
+  .wk-tool::before {
+    border: 1px solid transparent;
+    border-top-width: var(--bar-h);
+    background: var(--tool-flow) border-box top / 100% var(--cap) no-repeat;
+    mask:
+      linear-gradient(#000 calc(var(--card-r) + var(--bar-h)), transparent var(--cap)) border-box,
+      linear-gradient(#000 0 0) padding-box,
+      linear-gradient(#000 0 0) border-box;
+    mask-composite: intersect, exclude;
+  }
+}
 
 /* Platzhalter-Kacheln: angekuendigt, aber noch nichts dahinter. Gestrichelter
    Rahmen und gedaempfte Farbe, damit sie auf einen Blick als "noch nichts"
@@ -435,6 +503,9 @@ body {
   box-shadow: none;
 }
 .tool-platzhalter:hover { border-color: var(--border); transform: none; }
+/* Der leere Platzhalter hat keine Farbe, also auch keine Kappe. Die dunkle
+   Materie hat eine, malt sie aber im eigenen Rahmen (siehe unten). */
+.tool-platzhalter::before { content: none; }
 .tool-platzhalter .tool-name { color: var(--text-soft); }
 .tool-platzhalter .tool-desc { color: var(--text-soft); }
 .platzhalter-icon {
@@ -451,15 +522,26 @@ body {
    dahinter. Sie bleibt in BEIDEN Darstellungen dunkel — das ist der Witz;
    deshalb stehen hier feste Farben statt der Themenvariablen, und deshalb
    traegt sie ihre eigene Textfarbe. */
-.tool-dunkle-materie {
+/* Die Kappe steckt hier IM Rahmen statt als Ebene darüber: Rahmen
+   durchsichtig und oben --bar-h stark, darunter ein Verlauf vom Lila in
+   die alte Rahmenfarbe, die Innenfläche nur bis zur Rahmen-Innenkante.
+   Grund: Kappe und Kachel sind sonst zwei getrennt geglättete Kanten.
+   Bei Skalierung 125 %, 150 % oder am Telefon (2,75) treffen die sich nicht
+   ganz, und die dunkle Kachel blitzte im hellen Thema als graue Haarlinie
+   außen an der Kappe hervor. Bei den übrigen Kacheln passiert dasselbe,
+   ist dort aber unsichtbar, weil Rahmen und Grund fast gleich hell sind. */
+.tool-dunkle-materie,
+.tool-dunkle-materie:hover {
   --tool: #b9a7ff;
-  border-style: solid;
-  border-color: #2a2150;
+  border: 1px solid transparent;
+  border-top-width: var(--bar-h);
+  /* 22 px Innenabstand wie jede Kachel, minus den dickeren Oberrand */
+  padding-top: calc(22px + 1px - var(--bar-h));
   background:
-    radial-gradient(58% 44% at 76% 24%, rgba(150,120,255,.20) 0%, transparent 62%),
-    radial-gradient(120% 96% at 26% 14%, #1a1440 0%, #0c0a22 52%, #050410 100%);
+    radial-gradient(58% 44% at 76% 24%, rgba(150,120,255,.20) 0%, transparent 62%) padding-box,
+    radial-gradient(120% 96% at 26% 14%, #1a1440 0%, #0c0a22 52%, #050410 100%) padding-box,
+    linear-gradient(var(--tool) calc(var(--card-r) + var(--bar-h)), #2a2150 var(--cap)) border-box;
   color: #d8d4f0;
-  overflow: hidden;
 }
 .tool-dunkle-materie .tool-name { color: #b9a7ff; }
 .tool-dunkle-materie .tool-desc { color: #b4aed4; }
@@ -471,7 +553,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  border-radius: 16px;
+  border-radius: inherit;
   pointer-events: none;
   background-image:
     radial-gradient(1.6px 1.6px at 18% 26%, rgba(255,255,255,.75), transparent),
@@ -500,9 +582,9 @@ body {
 .tool-art {
   align-self: center;
   margin-left: 8px;
-  padding: 2px 8px;
+  padding: 2px 7px;
   border: 1px solid var(--tool);
-  border-radius: 999px;
+  border-radius: 3px;
   color: var(--tool);
   font-size: 11px;
   font-weight: 600;
@@ -511,20 +593,11 @@ body {
   white-space: nowrap;
 }
 
-/* Die bunte Kachel: schmaler Regenbogen an der Oberkante und der Werkzeugname
-   im Farbverlauf. Der Verlauf ist reine Dekoration — Beschreibung, Meta-Zeile
-   und Knopf bleiben in Volltönen, damit nichts nur über Farbe erzählt wird. */
-.tool-prismatical::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  border-radius: 16px 16px 0 0;
-  background: var(--prisma-flow);
-}
-/* Positive Abfrage, nicht negative: Wo background-clip fehlt, bleibt es beim
+/* Die bunte Kachel: Regenbogen im Farbbalken (siehe --tool-flow oben) und der
+   Werkzeugname im Farbverlauf. Der Verlauf ist reine Dekoration — Beschreibung,
+   Meta-Zeile und Knopf bleiben in Volltönen, damit nichts nur über Farbe
+   erzählt wird.
+   Positive Abfrage, nicht negative: Wo background-clip fehlt, bleibt es beim
    Anker-Vollton — ein `color: transparent` ohne Verlauf wäre unsichtbarer Text. */
 @supports (background-clip: text) or (-webkit-background-clip: text) {
   .tool-prismatical .tool-name {
@@ -538,16 +611,6 @@ body {
 /* Dieselbe Mechanik für Spectroton, nur mit der Stufen-Rampe. Bewusst zwei
    getrennte Regelsätze statt einer gemeinsamen Klasse: die beiden Kacheln
    teilen sich das Muster, nicht die Farbe. */
-.tool-spectroton::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  border-radius: 16px 16px 0 0;
-  background: var(--spectro-flow);
-}
 @supports (background-clip: text) or (-webkit-background-clip: text) {
   .tool-spectroton .tool-name {
     background-image: var(--spectro-flow);
@@ -583,11 +646,14 @@ body {
   font-size: 0.95rem;
   text-decoration: none;
 }
+/* Die Klickfläche sitzt 1 px innerhalb des Rahmens, also einen Pixel
+   weniger rund — dann läuft der Fokusring (2 px Abstand) im selben Bogen
+   um die Kachel wie ihre Außenkante. */
 .tool-open::after {
   content: '';
   position: absolute;
   inset: 0;
-  border-radius: 16px;
+  border-radius: calc(var(--card-r) - 1px);
 }
 /* Without this the focus ring would hug the word "Open" only. Drawing it on
    the overlay instead puts it back around the whole tile, as before. */
@@ -612,7 +678,7 @@ body {
   gap: 6px;
   padding: 5px 10px;
   border: 1px solid var(--border);
-  border-radius: 9px;
+  border-radius: 5px;
   background: var(--bg);
   color: var(--text-soft);
   font-size: 0.82rem;
@@ -769,7 +835,7 @@ a.brand { text-decoration: none; color: inherit; }
   gap: 9px;
   padding: 8px 10px;
   border-left: 3px solid transparent;
-  border-radius: 0 8px 8px 0;
+  border-radius: 0 5px 5px 0;
   color: var(--text);
   text-decoration: none;
   font-size: 0.92rem;
@@ -799,12 +865,20 @@ a.brand { text-decoration: none; color: inherit; }
 
 /* Tool sections */
 .wk-content { min-width: 0; }
+/* Kein overflow: hidden mehr — es schnitt die Farbkappe an der Innenkante
+   des Rahmens ab. Was vorher darunter verschwand, bricht jetzt um statt
+   abgeschnitten zu werden (overflow-wrap in .wk-body): ein langer Pfad wie
+   %USERPROFILE%\.claude\projects ragte bei großer Browserschrift über den
+   Rahmen. Geprüft 320–1280 px, vierzehn Sprachen, Schrift 16 bis 24 px.
+   position: relative hält die Kappe in ihrem Abschnitt; vorher fehlte es,
+   und die Balken von Prismatical und Spectroton landeten über der
+   Navigationsspalte. */
 .wk-tool {
+  position: relative;
   background: var(--panel-veil);
   border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: var(--card-r);
   margin-bottom: 18px;
-  overflow: hidden;
   box-shadow: var(--shadow);
   /* The sticky header of a browser must not swallow the heading when an
      anchor is opened. */
@@ -829,7 +903,7 @@ a.brand { text-decoration: none; color: inherit; }
 }
 .wk-tool-cta:hover { text-decoration: underline; }
 
-.wk-body { padding: 6px 20px 20px; }
+.wk-body { padding: 6px 20px 20px; overflow-wrap: anywhere; }
 
 .wk-section {
   margin: 20px 0 4px;
@@ -863,7 +937,7 @@ a.brand { text-decoration: none; color: inherit; }
   display: block;
   overflow: hidden;
   border: 1px solid var(--border);
-  border-radius: 10px;
+  border-radius: 5px;
   background: var(--bg);
 }
 .wk-shot-frame img { display: block; width: 100%; height: auto; }
@@ -901,8 +975,8 @@ a.wk-shot-frame:focus-visible { outline-color: var(--tool, var(--accent)); }
   font-weight: 600;
   color: var(--tool, var(--accent));
   border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 1px 8px;
+  border-radius: 3px;
+  padding: 1px 7px;
 }
 
 /* Narrow screens: the sidebar becomes a scrollable row of chips above the
@@ -911,17 +985,22 @@ a.wk-shot-frame:focus-visible { outline-color: var(--tool, var(--accent)); }
 @media (max-width: 720px) {
   .wk-frame { grid-template-columns: minmax(0, 1fr); gap: 18px; }
   .wk-nav { position: static; }
+  /* Die Leiste scrollt und schneidet deshalb an ihrer Innenkante ab — auch
+     den Fokusring (2 px Ring + 2 px Abstand), dem oben und am ersten Chip
+     links die Kante fehlte. 4 px Polster rundum geben ihm Platz, der
+     negative Rand hält die Chips an ihrer bisherigen Stelle. */
   .wk-nav-list {
     flex-direction: row;
     gap: 6px;
     overflow-x: auto;
-    padding-bottom: 4px;
+    padding: 4px;
+    margin: -4px -4px 0;
   }
   .wk-nav-button {
     flex: none;
     border-left: 0;
     border: 1px solid var(--border);
-    border-radius: 999px;
+    border-radius: 5px;
     background: var(--panel);
     white-space: nowrap;
   }
