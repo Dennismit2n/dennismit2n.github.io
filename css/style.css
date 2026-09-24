@@ -859,6 +859,16 @@ a.brand { text-decoration: none; color: inherit; }
   margin-top: 8px;
 }
 
+/* Bis werkstatt.js den Rahmen zum ersten Mal gefüllt hat, bleiben er und die
+   Fußzeile unsichtbar — visibility, nicht display: none, damit das Gerüst
+   seinen Platz behält. Sonst steht die Fußzeile bei langsamer Verbindung
+   Sekunden lang unter dem leeren Rahmen und springt dann aus dem Bild
+   (Layout-Verschiebung 0,70 am Telefon bei Fast 3G, gemessen 24.09.2026).
+   Die Klasse setzt ein Skript im Kopf von werkstatt.html, ohne JavaScript
+   bleibt also alles sichtbar. */
+.wk-im-bau .wk-frame,
+.wk-im-bau .site-footer { visibility: hidden; }
+
 /* Navigation */
 .wk-nav { position: sticky; top: 18px; }
 .wk-nav-title {

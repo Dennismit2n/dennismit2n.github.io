@@ -270,6 +270,9 @@
     }
 
     updateCurrent();
+    // Frame and footer stayed hidden until now so the footer does not show
+    // up under the empty frame and then jump away (.wk-im-bau in style.css).
+    document.documentElement.classList.remove('wk-im-bau');
   }
 
   // ── Which entry the sidebar marks ──────────────────────────────────
