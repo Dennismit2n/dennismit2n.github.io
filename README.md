@@ -1,8 +1,8 @@
 # dennismit2n.github.io
 
-Landing page for the small tools by Dennis_mit_2n — no sign-up, no ads, free except fontART. Most of them run entirely on your device; where something leaves it, the tile says so. Most are open source; fontART is the exception.
+Landing page for the small tools by Dennis_mit_2n — no sign-up, no ads, free except fontART. Most of them run entirely on your device; where something leaves it, the tile says so. Only visits and clicks are counted — anonymously, and never what you enter. Most are open source; fontART is the exception.
 
-Startseite für die kleinen Werkzeuge von Dennis_mit_2n — ohne Anmeldung, keine Anzeigen, kostenlos außer fontART. Die meisten rechnen komplett auf deinem Gerät; wo etwas es verlässt, steht es an der Kachel. Die meisten quelloffen; fontART ist die Ausnahme.
+Startseite für die kleinen Werkzeuge von Dennis_mit_2n — ohne Anmeldung, keine Anzeigen, kostenlos außer fontART. Die meisten rechnen komplett auf deinem Gerät; wo etwas es verlässt, steht es an der Kachel. Gezählt werden nur Aufrufe und Klicks, anonym und ohne deine Eingaben. Die meisten quelloffen; fontART ist die Ausnahme.
 
 **➡️ [dennismit2n.github.io](https://dennismit2n.github.io/)**
 
