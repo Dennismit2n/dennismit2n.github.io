@@ -503,9 +503,19 @@ body {
   box-shadow: none;
 }
 .tool-platzhalter:hover { border-color: var(--border); transform: none; }
-/* Der leere Platzhalter hat keine Farbe, also auch keine Kappe. Die dunkle
-   Materie hat eine, malt sie aber im eigenen Rahmen (siehe unten). */
-.tool-platzhalter::before { content: none; }
+/* Der leere Platzhalter hat keine eigene Farbe: Seine Kappe ist gestrichelt
+   wie sein Rahmen und grau, als gerader Streifen ohne Ausklang (eine
+   gestrichelte Haarlinie an den Seiten läge quer zu den Strichen des
+   Rahmens). Grau aus --text-soft bei halber Deckkraft, nicht --border: in der
+   Rahmenfarbe verschwand sie im Dunkeln fast ganz. Die dunkle Materie malt
+   ihre Kappe im eigenen Rahmen (siehe unten) und braucht die Ebene nicht. */
+.tool-platzhalter::before {
+  border: 0;
+  mask: none;
+  background: repeating-linear-gradient(90deg, var(--text-soft) 0 12px, transparent 12px 20px) top / 100% var(--bar-h) no-repeat;
+  opacity: 0.5;
+}
+.tool-dunkle-materie::before { content: none; }
 .tool-platzhalter .tool-name { color: var(--text-soft); }
 .tool-platzhalter .tool-desc { color: var(--text-soft); }
 .platzhalter-icon {
