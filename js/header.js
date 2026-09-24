@@ -13,6 +13,22 @@
 var Header = (function () {
   var THEME_KEY = 'dennismit2n-home.theme';
 
+  function storedTheme() {
+    try {
+      var saved = localStorage.getItem(THEME_KEY);
+      if (saved === 'light' || saved === 'dark') { return saved; }
+    } catch (e) { /* storage may be unavailable */ }
+    return 'system';
+  }
+
+  function showTheme(value) {
+    if (value === 'light' || value === 'dark') {
+      document.documentElement.setAttribute('data-theme', value);
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+    }
+  }
+
   function initTheme() {
     // The inline snippet in <head> already applied a stored choice before the
     // first paint; all that is left here is building the dropdown.
@@ -31,20 +47,11 @@ var Header = (function () {
       themeSelect.appendChild(themeOpt);
     }
 
-    var storedTheme = 'system';
-    try {
-      var savedTheme = localStorage.getItem(THEME_KEY);
-      if (savedTheme === 'light' || savedTheme === 'dark') { storedTheme = savedTheme; }
-    } catch (e) { /* storage may be unavailable */ }
-    themeSelect.value = storedTheme;
+    themeSelect.value = storedTheme();
 
     themeSelect.addEventListener('change', function () {
       var value = themeSelect.value;
-      if (value === 'light' || value === 'dark') {
-        document.documentElement.setAttribute('data-theme', value);
-      } else {
-        document.documentElement.removeAttribute('data-theme');
-      }
+      showTheme(value);
       try { localStorage.setItem(THEME_KEY, value); } catch (err) { /* ignore */ }
     });
   }
@@ -67,6 +74,30 @@ var Header = (function () {
 
     select.addEventListener('change', function () {
       i18n.apply(select.value);
+    });
+  }
+
+  // Coming back to a page. Both dropdowns carry autocomplete="off" in the
+  // HTML: without it Chrome refilled them after the back button with the
+  // values of the earlier visit, while the page already showed the stored
+  // language and appearance. From the back/forward cache, though, the page
+  // returns exactly as it was left — even if both were changed on the other
+  // page meanwhile — so take the stored choice again. That also rights the
+  // dropdowns should a browser reset them on the way back, as the HTML spec
+  // asks for fields with autocomplete="off".
+  function initReturn() {
+    window.addEventListener('pageshow', function (event) {
+      if (!event.persisted) { return; }
+      var theme = storedTheme();
+      showTheme(theme);
+      var themeSelect = document.getElementById('themeSelect');
+      if (themeSelect) { themeSelect.value = theme; }
+
+      var select = document.getElementById('langSelect');
+      if (!select) { return; }
+      var lang = i18n.detect();
+      select.value = lang;
+      if (lang !== i18n.lang) { i18n.apply(lang); }
     });
   }
 
@@ -97,6 +128,7 @@ var Header = (function () {
     initTheme();
     initCounting();
     initLang();
+    initReturn();
   }
 
   return { init: init, count: count };

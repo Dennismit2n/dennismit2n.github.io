@@ -58,14 +58,15 @@
       </svg>
       <span class="brand-name">Dennis_mit_2n</span>
     </a>
+    <!-- autocomplete="off" an beiden Feldern: warum, steht in js/header.js (initReturn). -->
     <div class="header-controls">
       <label class="lang-wrap">
         <span class="visually-hidden" data-i18n="themeLabel">Appearance</span>
-        <select id="themeSelect" data-i18n-aria="themeLabel"></select>
+        <select id="themeSelect" data-i18n-aria="themeLabel" autocomplete="off"></select>
       </label>
       <label class="lang-wrap">
         <span class="visually-hidden" data-i18n="langLabel">Language</span>
-        <select id="langSelect" data-i18n-aria="langLabel"></select>
+        <select id="langSelect" data-i18n-aria="langLabel" autocomplete="off"></select>
       </label>
     </div>
   </header>
@@ -97,15 +98,15 @@
     <span class="sep">·</span>
     <span data-i18n="footerTranslate">Some translations are machine-generated – corrections welcome!</span>
     <span class="sep">·</span>
-    <span data-i18n="footerAnalytics">Anonymous visit counting (GoatCounter, no cookies).</span>
+    <span data-i18n="footerAnalytics">Anonymous visit counting (GoatCounter, no cookies, never what you enter).</span>
   </footer>
 </div>
 
-<script src="./js/i18n.js?v=2026-09-24b"></script>
+<script src="./js/i18n.js?v=2026-09-25"></script>
 <script src="./js/news.js?v=2026-09-23"></script>
 <script src="./js/guides.js?v=2026-09-22c"></script>
 <script src="./js/dates.js?v=2026-09-14"></script>
-<script src="./js/header.js?v=2026-09-14"></script>
+<script src="./js/header.js?v=2026-09-25"></script>
 <script src="./js/werkstatt.js?v=2026-09-24b"></script>
 </body>
 </html>
