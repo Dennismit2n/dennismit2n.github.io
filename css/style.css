@@ -803,6 +803,18 @@ html[lang="ko"] [data-lang-only="en"] { display: none; }
 .site-footer a:hover { text-decoration: underline; }
 .sep { opacity: 0.6; }
 
+/* Startseite, nur wer nicht Englisch bekommt: bis i18n.js zum ersten Mal
+   übersetzt hat, bleiben Inhalt, Fußzeile und die noch leeren Auswahlfelder
+   unsichtbar — visibility, nicht display: none, damit das Gerüst seinen
+   Platz behält. Der Rohbau ist Englisch, die Übersetzungen sind länger: der
+   Kopf wuchs, Schild und Kacheln rückten bis zu 59 px nach unten
+   (Layout-Verschiebung bis 0,065 bei Fast 3G, gemessen 24.09.2026). Die
+   Klasse setzt ein Skript im Kopf von index.html, ohne JavaScript bleibt
+   also alles sichtbar; main.js nimmt sie ab, das load-Ereignis spätestens. */
+.i18n-wartet main,
+.i18n-wartet .site-footer,
+.i18n-wartet .header-controls { visibility: hidden; }
+
 @media (max-width: 480px) {
   .hero { padding: 40px 4px 34px; }
   /* Schmalerer Rand am Telefon, 14 statt 20 px. */
