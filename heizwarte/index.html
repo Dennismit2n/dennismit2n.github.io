@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+</head>
+<body>
+<title>Heizwarte Bürg</title>
+<meta name="description" content="Werbefreies Wetter- und Heiz-Dashboard für Winnenden-Bürg">
+<meta name="theme-color" content="#111821">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: eine Spalte wie ein Thermostat-Display – Lage oben, Ampel, drei Tage, 72-h-Kurve, Heizfahrplan, Lüften.
+   Bewusst nur dunkel (Wunsch von Dennis), Farben folgen der Außentemperatur. */
+:root{
+  color-scheme:dark;
+  --bg:oklch(17% 0.018 252);
+  --surface:oklch(21.5% 0.02 252);
+  --line:oklch(31% 0.022 252);
+  --fg:oklch(95% 0.008 250);
+  --muted:oklch(72% 0.02 250);
+  --faint:oklch(55% 0.02 250);
+  --t:oklch(85% 0.05 210);             /* aktuelle Temperaturfarbe, per JS gesetzt */
+  --ok:oklch(76% 0.15 152);
+  --warn:oklch(85% 0.16 92);
+  --alarm:oklch(73% 0.17 55);
+  --crit:oklch(66% 0.21 25);
+  --display:"Bricolage Grotesque","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"Cascadia Mono",Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{background:var(--bg);color:var(--fg);font:16px/1.5 var(--body);-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding-inline:16px;padding-block:18px 48px;display:flex;flex-direction:column;gap:22px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;font-weight:700}
+h2{font-size:1.05rem;letter-spacing:.01em}
+.label{font:500 .72rem/1.2 var(--mono);text-transform:uppercase;letter-spacing:.09em;color:var(--faint)}
+.num{font-variant-numeric:tabular-nums}
+button,select,input{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--t);outline-offset:2px;border-radius:4px}
+
+/* Kopf */
+header{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap}
+header h1{font-size:1.35rem;font-weight:800;letter-spacing:-.01em}
+.place{color:var(--muted);font-size:.9rem}
+.stamp{display:flex;align-items:center;gap:8px;font:400 .78rem var(--mono);color:var(--muted)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--faint)}
+.dot.live{background:var(--ok);box-shadow:0 0 0 4px color-mix(in oklch,var(--ok) 25%,transparent)}
+.dot.stale{background:var(--warn)}
+
+/* Jetzt + Ampel */
+.now{position:relative;display:grid;grid-template-columns:auto 1fr;gap:6px 22px;align-items:center;padding:22px 20px;border-radius:20px;
+  background:radial-gradient(120% 140% at 0% 0%,color-mix(in oklch,var(--t) 26%,transparent),transparent 62%),var(--surface);overflow:hidden}
+.big{font:800 clamp(4.2rem,17vw,6.4rem)/.9 var(--display);letter-spacing:-.04em;color:var(--t);font-variant-numeric:tabular-nums}
+.big sup{font-size:.36em;font-weight:500;vertical-align:.95em;letter-spacing:0;margin-left:2px;color:var(--muted)}
+.nowmeta{display:flex;flex-direction:column;gap:4px;min-width:0}
+.nowmeta .cond{font:600 1.15rem/1.2 var(--display)}
+.nowmeta .sub{color:var(--muted);font-size:.92rem}
+@media (max-width:420px){.now{grid-template-columns:1fr}}
+
+.verdict{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;padding:18px;border-radius:18px;border:1px solid var(--line);
+  border-left:6px solid var(--lv,var(--ok));background:color-mix(in oklch,var(--lv,var(--ok)) 9%,var(--bg))}
+.lamp{display:flex;flex-direction:column;gap:5px;padding:7px;border-radius:12px;background:oklch(12% 0.01 252)}
+.lamp i{width:14px;height:14px;border-radius:50%;background:oklch(28% 0.01 252)}
+.lamp i.on{background:var(--c);box-shadow:0 0 12px var(--c)}
+.verdict h2{font-size:1.25rem;margin-bottom:4px}
+.verdict p{margin:0;color:var(--fg)}
+.verdict .why{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:500 .74rem var(--mono);padding:3px 8px;border-radius:99px;background:oklch(26% 0.02 252);color:var(--muted);white-space:nowrap}
+.alertbox{padding:14px 16px;border-radius:14px;background:color-mix(in oklch,var(--crit) 16%,var(--bg));border:1px solid color-mix(in oklch,var(--crit) 50%,transparent)}
+.alertbox strong{font-family:var(--display)}
+
+/* Drei Tage */
+.days{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+@media (max-width:560px){.days{grid-template-columns:1fr}}
+.day{padding:14px 14px 12px;border-radius:16px;background:var(--surface);display:flex;flex-direction:column;gap:10px;min-width:0}
+.dayhead{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.dayhead h3{font-size:1.05rem}
+.dayhead span{font:400 .78rem var(--mono);color:var(--faint)}
+.dayrow{display:flex;align-items:center;gap:10px}
+.dayrow svg{flex:none}
+.cond2{color:var(--muted);font-size:.9rem;line-height:1.25}
+.range{display:grid;grid-template-columns:3.2em 1fr 3.2em;align-items:center;gap:8px;font:600 1.05rem var(--display);font-variant-numeric:tabular-nums}
+.range .lo{text-align:right;color:var(--muted)}
+.track{position:relative;height:8px;border-radius:99px;background:oklch(27% 0.015 252)}
+.track b{position:absolute;top:0;bottom:0;border-radius:99px}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:6px 10px;font-size:.84rem}
+.facts div{display:flex;flex-direction:column}
+.facts .v{font:500 .9rem var(--mono);color:var(--fg)}
+.facts .k{color:var(--faint);font-size:.74rem}
+.delta-down{color:oklch(78% 0.11 240)} .delta-up{color:oklch(80% 0.13 60)}
+
+/* Diagramm */
+.panel{padding:16px;border-radius:18px;background:var(--surface);display:flex;flex-direction:column;gap:12px}
+.panelhead{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:.78rem;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{display:inline-block;width:16px;height:3px;border-radius:2px}
+.chartbox{position:relative;overflow:hidden;touch-action:pan-y}
+.chartbox svg{display:block;width:100%;height:auto}
+.tip{position:absolute;top:6px;pointer-events:none;padding:8px 10px;border-radius:10px;background:oklch(12% 0.012 252 / .94);border:1px solid var(--line);
+  font-size:.8rem;line-height:1.35;min-width:150px;transform:translateX(-50%)}
+.tip b{font:700 1.1rem var(--display)}
+.tip .k{color:var(--faint)}
+svg text{font-family:var(--mono);font-size:11px;fill:var(--faint)}
+
+/* Fahrplan & Lüften */
+.plan{display:flex;flex-direction:column;gap:0}
+.plan li{list-style:none;display:grid;grid-template-columns:5.8em 1fr;gap:12px;padding:12px 0;border-top:1px solid var(--line)}
+.plan li:first-child{border-top:0}
+.plan .when{font:600 .95rem var(--display);font-variant-numeric:tabular-nums}
+.plan .when small{display:block;font:400 .74rem var(--mono);color:var(--faint)}
+.plan .what{min-width:0}
+.plan .what strong{font-family:var(--display)}
+.plan .what p{margin:2px 0 0;color:var(--muted);font-size:.9rem}
+ul.plan{margin:0;padding:0}
+.air{display:flex;flex-wrap:wrap;gap:8px}
+.slot{padding:8px 12px;border-radius:12px;border:1px solid var(--line);font-size:.88rem}
+.slot b{font-family:var(--display)}
+.slot.best{border-color:color-mix(in oklch,var(--ok) 60%,transparent);background:color-mix(in oklch,var(--ok) 10%,transparent)}
+
+/* Einstellungen */
+details{border-radius:16px;background:var(--surface);padding:4px 16px}
+summary{cursor:pointer;padding:12px 0;font:600 1rem var(--display)}
+.settings{display:grid;gap:14px;padding-bottom:16px}
+.settings label{display:grid;gap:4px;font-size:.9rem}
+.settings .row{display:flex;align-items:center;gap:10px}
+.settings input[type=range]{flex:1;accent-color:var(--t)}
+.settings output{font:500 .9rem var(--mono);min-width:3.5em;text-align:right}
+footer{color:var(--faint);font-size:.8rem;display:flex;flex-direction:column;gap:6px}
+footer a{color:var(--muted)}
+.scale{height:10px;border-radius:99px}
+.scalelbl{display:flex;justify-content:space-between;font:400 .7rem var(--mono);color:var(--faint);margin-top:3px}
+@media (prefers-reduced-motion:no-preference){.now,.verdict,.day,.panel{animation:rise .5s ease both}.day:nth-child(2){animation-delay:.05s}.day:nth-child(3){animation-delay:.1s}
+@keyframes rise{from{transform:translateY(6px)}to{transform:none}}}
+</style>
+
+<div class="wrap" id="app">
+  <header>
+    <div>
+      <h1>Heizwarte Bürg</h1>
+      <div class="place">Winnenden-Bürg · 414 m</div>
+    </div>
+    <div class="stamp"><span class="dot" id="dot"></span><span id="stamp">lädt …</span></div>
+  </header>
+
+  <section class="now" id="now" aria-live="polite"></section>
+  <section class="verdict" id="verdict"></section>
+  <div id="alerts"></div>
+
+  <section aria-labelledby="h-days">
+    <h2 id="h-days" class="label" style="margin-bottom:10px">Heute und die nächsten zwei Tage</h2>
+    <div class="days" id="days"></div>
+  </section>
+
+  <section class="panel" aria-labelledby="h-chart">
+    <div class="panelhead">
+      <h2 id="h-chart">Temperaturverlauf, 72 Stunden</h2>
+      <div class="legend">
+        <span><i id="lg-icon" style="background:linear-gradient(90deg,oklch(72% 0.11 245),oklch(88% 0.08 90),oklch(76% 0.16 58))"></i>DWD ICON</span>
+        <span><i style="background:repeating-linear-gradient(90deg,var(--muted) 0 4px,transparent 4px 7px)"></i>DWD MOSMIX</span>
+        <span><i style="background:oklch(62% 0.09 240);height:8px;width:8px"></i>Regen-Wahrsch.</span>
+      </div>
+    </div>
+    <div class="chartbox" id="chartbox">
+      <svg id="chart" viewBox="0 0 720 280" role="img" aria-label="Temperaturkurve für heute und die nächsten zwei Tage"></svg>
+      <div class="tip" id="tip" hidden></div>
+    </div>
+    <div>
+      <div class="scale" id="scale"></div>
+      <div class="scalelbl"><span>−10°</span><span>0°</span><span>10°</span><span>18°</span><span>25°</span><span>32°</span></div>
+    </div>
+  </section>
+
+  <section class="panel" aria-labelledby="h-plan">
+    <h2 id="h-plan">Heizfahrplan Fußbodenheizung</h2>
+    <ul class="plan" id="plan"></ul>
+  </section>
+
+  <section class="panel" aria-labelledby="h-air">
+    <div class="panelhead"><h2 id="h-air">Lüften gegen Schimmel</h2><span class="label">Stoßlüften 5–10 min</span></div>
+    <div class="air" id="air"></div>
+    <div class="cond2" id="airnote"></div>
+  </section>
+
+  <details>
+    <summary>Einstellungen für deine Wohnung</summary>
+    <div class="settings">
+      <label for="lead-min">Kürzeste Aufheizzeit (kleiner Temperatursprung)
+        <span class="row"><input type="range" id="lead-min" min="1" max="6" step="0.5" value="3"><output id="o-lead-min">3 h</output></span></label>
+      <label for="lead-max">Längste Aufheizzeit (großer Temperatursturz)
+        <span class="row"><input type="range" id="lead-max" min="3" max="10" step="0.5" value="6"><output id="o-lead-max">6 h</output></span></label>
+      <label for="comfort">Gewünschte Raumtemperatur
+        <span class="row"><input type="range" id="comfort" min="17" max="23" step="0.5" value="20"><output id="o-comfort">20 °C</output></span></label>
+      <div class="cond2">Die Werte bleiben nur in diesem Browser gespeichert. Vergleiche nach zwei, drei Wochen mit einem Thermometer in der Wohnung und passe sie an.</div>
+    </div>
+  </details>
+
+  <footer>
+    <div>Wetterdaten: <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo.com</a> (CC BY 4.0) mit Modell DWD ICON; Vergleichsprognose und Warnungen: Deutscher Wetterdienst über <a href="https://brightsky.dev/" target="_blank" rel="noopener">Bright Sky</a>.</div>
+    <div>Gradtagzahl nach VDI 3807: 20 °C minus Tagesmittel, nur an Heiztagen (Tagesmittel unter 15 °C). Die Heiz-Ampel ist eine eigene Faustregel, keine Norm.</div>
+    <div id="srcinfo"></div>
+  </footer>
+</div>
+
+<script id="wx-data" type="application/json">{"fetched":"2026-10-09T10:45+02:00","om":{"latitude":48.88,"longitude":9.440001,"generationtime_ms":4.114389419555664,"utc_offset_seconds":7200,"timezone":"Europe/Berlin","timezone_abbreviation":"GMT+2","elevation":414.0,"current_units":{"time":"iso8601","interval":"seconds","temperature_2m":"°C","apparent_temperature":"°C","relative_humidity_2m":"%","wind_speed_10m":"km/h","weather_code":"wmo code","is_day":""},"current":{"time":"2026-10-09T10:45","interval":900,"temperature_2m":8.6,"apparent_temperature":6.8,"relative_humidity_2m":89,"wind_speed_10m":6.6,"weather_code":3,"is_day":1},"hourly_units":{"time":"iso8601","temperature_2m":"°C","apparent_temperature":"°C","relative_humidity_2m":"%","dew_point_2m":"°C","wind_speed_10m":"km/h","wind_gusts_10m":"km/h","precipitation_probability":"%","precipitation":"mm","shortwave_radiation":"W/m²","weather_code":"wmo code","cloud_cover":"%","is_day":""},"hourly":{"time":["2026-10-08T00:00","2026-10-08T01:00","2026-10-08T02:00","2026-10-08T03:00","2026-10-08T04:00","2026-10-08T05:00","2026-10-08T06:00","2026-10-08T07:00","2026-10-08T08:00","2026-10-08T09:00","2026-10-08T10:00","2026-10-08T11:00","2026-10-08T12:00","2026-10-08T13:00","2026-10-08T14:00","2026-10-08T15:00","2026-10-08T16:00","2026-10-08T17:00","2026-10-08T18:00","2026-10-08T19:00","2026-10-08T20:00","2026-10-08T21:00","2026-10-08T22:00","2026-10-08T23:00","2026-10-09T00:00","2026-10-09T01:00","2026-10-09T02:00","2026-10-09T03:00","2026-10-09T04:00","2026-10-09T05:00","2026-10-09T06:00","2026-10-09T07:00","2026-10-09T08:00","2026-10-09T09:00","2026-10-09T10:00","2026-10-09T11:00","2026-10-09T12:00","2026-10-09T13:00","2026-10-09T14:00","2026-10-09T15:00","2026-10-09T16:00","2026-10-09T17:00","2026-10-09T18:00","2026-10-09T19:00","2026-10-09T20:00","2026-10-09T21:00","2026-10-09T22:00","2026-10-09T23:00","2026-10-10T00:00","2026-10-10T01:00","2026-10-10T02:00","2026-10-10T03:00","2026-10-10T04:00","2026-10-10T05:00","2026-10-10T06:00","2026-10-10T07:00","2026-10-10T08:00","2026-10-10T09:00","2026-10-10T10:00","2026-10-10T11:00","2026-10-10T12:00","2026-10-10T13:00","2026-10-10T14:00","2026-10-10T15:00","2026-10-10T16:00","2026-10-10T17:00","2026-10-10T18:00","2026-10-10T19:00","2026-10-10T20:00","2026-10-10T21:00","2026-10-10T22:00","2026-10-10T23:00","2026-10-11T00:00","2026-10-11T01:00","2026-10-11T02:00","2026-10-11T03:00","2026-10-11T04:00","2026-10-11T05:00","2026-10-11T06:00","2026-10-11T07:00","2026-10-11T08:00","2026-10-11T09:00","2026-10-11T10:00","2026-10-11T11:00","2026-10-11T12:00","2026-10-11T13:00","2026-10-11T14:00","2026-10-11T15:00","2026-10-11T16:00","2026-10-11T17:00","2026-10-11T18:00","2026-10-11T19:00","2026-10-11T20:00","2026-10-11T21:00","2026-10-11T22:00","2026-10-11T23:00","2026-10-12T00:00","2026-10-12T01:00","2026-10-12T02:00","2026-10-12T03:00","2026-10-12T04:00","2026-10-12T05:00","2026-10-12T06:00","2026-10-12T07:00","2026-10-12T08:00","2026-10-12T09:00","2026-10-12T10:00","2026-10-12T11:00","2026-10-12T12:00","2026-10-12T13:00","2026-10-12T14:00","2026-10-12T15:00","2026-10-12T16:00","2026-10-12T17:00","2026-10-12T18:00","2026-10-12T19:00","2026-10-12T20:00","2026-10-12T21:00","2026-10-12T22:00","2026-10-12T23:00"],"temperature_2m":[15.6,15.3,15.1,14.6,14.2,13.1,13.9,14.1,13.5,15.2,16.3,15.4,15.2,13.4,12.2,12.5,12.6,12.5,11.8,11.4,10.7,9.8,9.0,8.4,8.0,7.4,6.4,5.9,5.5,5.1,4.7,3.4,2.9,4.8,7.7,8.9,9.8,10.3,11.0,11.1,10.8,10.5,10.0,9.6,9.2,9.1,9.2,9.2,9.3,9.7,9.9,10.2,10.2,10.1,10.2,10.3,10.5,10.7,10.8,11.4,12.3,13.0,13.9,14.2,14.2,12.8,12.2,11.0,10.0,9.5,9.1,9.2,9.1,8.8,9.1,8.5,8.5,8.6,8.6,8.6,8.6,9.4,10.1,10.1,10.1,11.3,11.9,12.3,12.5,12.3,11.7,10.3,9.4,8.7,8.4,8.3,8.4,8.0,7.7,7.3,6.8,6.5,5.8,5.5,5.1,6.6,9.0,11.0,12.2,13.1,13.6,14.0,14.0,13.5,12.2,10.4,8.8,7.5,6.4,5.5],"apparent_temperature":[15.6,15.7,15.4,14.7,14.3,12.9,13.9,14.0,13.4,15.0,15.3,14.1,13.5,10.8,9.9,10.4,10.6,10.5,9.5,9.3,8.9,7.9,7.0,6.3,6.5,6.0,4.8,4.2,3.6,3.2,2.7,1.0,0.4,2.9,6.2,7.0,8.2,8.4,9.3,9.2,8.2,8.2,8.0,7.6,6.7,6.4,6.7,6.9,6.8,6.9,7.3,7.7,7.7,7.7,8.0,8.7,9.4,9.8,9.8,9.0,9.5,10.2,11.1,11.0,11.1,10.5,10.8,9.2,8.2,7.7,7.1,7.0,6.8,6.5,6.6,6.0,6.1,6.2,6.2,6.4,6.5,7.0,7.6,7.3,7.3,7.6,7.9,8.6,8.7,8.8,8.6,8.3,7.8,7.2,6.9,6.7,6.9,6.5,6.2,5.8,5.2,4.8,4.0,3.7,3.2,5.2,8.0,9.9,10.9,11.4,11.7,11.9,11.8,11.3,10.2,8.8,7.2,5.8,4.4,3.3],"relative_humidity_2m":[85,90,91,90,89,94,91,92,94,86,76,85,87,88,95,92,89,93,90,89,91,89,90,86,94,96,95,92,91,92,93,99,100,100,94,88,84,83,83,80,77,83,88,91,89,87,86,86,83,81,83,84,88,92,93,94,94,94,95,90,80,75,70,64,62,77,81,76,85,84,83,83,79,82,82,85,84,84,83,83,83,78,75,79,82,72,66,63,60,61,63,72,78,81,82,83,83,85,86,89,90,89,92,93,95,92,86,80,73,65,59,55,53,54,61,72,81,85,88,90],"dew_point_2m":[13.0,13.7,13.6,12.9,12.4,12.1,12.5,12.8,12.5,12.8,12.1,12.8,13.0,11.5,11.4,11.2,10.8,11.3,10.2,9.6,9.3,8.0,7.4,6.2,7.0,6.8,5.6,4.7,4.1,3.9,3.7,3.3,2.9,4.8,6.8,7.0,7.2,7.5,8.2,7.8,6.9,7.7,8.1,8.2,7.5,7.1,6.9,7.0,6.6,6.6,7.1,7.6,8.3,8.9,9.1,9.4,9.6,9.7,10.0,9.8,8.9,8.7,8.5,7.5,7.0,8.8,9.0,6.9,7.5,6.9,6.3,6.4,5.6,5.9,6.1,6.1,6.0,6.0,5.8,5.8,5.8,5.7,5.9,6.6,7.2,6.5,5.8,5.5,5.0,5.0,4.9,5.5,5.7,5.6,5.5,5.6,5.6,5.7,5.5,5.6,5.2,4.8,4.6,4.5,4.3,5.4,6.8,7.7,7.5,6.6,5.8,5.1,4.5,4.3,4.9,5.6,5.7,5.2,4.5,4.0],"wind_speed_10m":[6.0,5.1,5.8,5.1,4.3,5.4,5.2,6.5,5.7,6.9,10.9,14.4,17.8,20.7,18.7,16.9,15.2,16.1,15.9,13.4,11.0,9.2,8.7,7.9,4.7,3.8,3.2,2.6,3.4,3.1,3.2,5.4,5.7,4.3,4.3,7.1,6.3,7.9,8.4,9.4,12.2,11.0,10.0,10.3,13.0,13.3,11.5,10.2,11.5,13.0,12.5,12.9,14.2,14.1,12.8,10.0,7.1,5.5,7.3,16.3,17.1,17.1,16.2,17.3,16.2,13.6,8.1,7.0,7.4,7.1,7.1,8.2,8.7,9.0,10.2,10.2,9.6,9.6,9.3,7.7,7.2,8.7,10.5,13.7,14.6,19.1,20.3,18.0,17.8,15.6,12.6,6.5,3.3,2.8,2.9,2.9,2.5,2.9,2.7,3.1,2.8,2.8,3.3,3.3,3.7,1.8,1.1,3.2,4.4,5.4,5.6,5.8,6.0,5.8,4.7,3.6,3.4,4.0,4.7,5.2],"wind_gusts_10m":[26.3,13.3,10.8,11.5,9.7,10.4,11.5,12.6,13.3,14.8,20.9,28.1,32.4,44.3,42.5,40.0,38.5,39.6,34.9,31.3,27.4,23.8,19.1,17.6,16.6,10.1,7.2,5.4,5.8,5.8,4.0,7.2,10.1,10.1,11.2,16.2,16.2,17.6,18.4,22.3,24.8,24.8,22.0,20.5,26.6,27.4,26.3,24.1,24.1,27.0,28.1,28.1,29.9,30.6,27.4,27.0,20.9,15.1,15.8,32.4,36.4,36.7,35.3,37.1,34.9,33.1,26.3,17.3,14.8,15.8,15.5,17.3,20.2,19.1,21.2,22.0,22.0,22.0,20.4,17.5,13.6,14.8,20.2,27.0,30.2,36.4,39.2,36.7,32.8,32.8,27.7,22.7,11.5,5.4,4.3,5.0,4.3,4.7,4.3,5.8,5.4,4.0,6.1,5.4,7.2,7.2,6.8,6.8,8.3,10.1,11.5,11.9,11.9,11.2,9.4,6.5,5.0,5.4,6.8,7.9],"precipitation_probability":[13,23,20,24,27,33,43,55,65,73,79,83,86,86,83,73,59,48,45,45,43,37,30,23,17,12,8,5,3,2,1,0,0,0,0,0,0,0,3,10,21,33,45,56,63,67,68,67,66,64,63,62,60,58,56,55,55,57,60,64,67,70,70,67,62,56,49,44,40,39,39,40,42,43,43,43,43,45,46,48,51,53,55,57,58,58,58,57,55,52,49,46,42,39,35,32,29,27,25,24,23,23,23,24,24,25,25,25,26,25,25,24,23,22,20,18,17,15,13,11],"precipitation":[3.8,0.1,0.0,0.0,0.0,0.0,0.0,0.1,0.0,0.0,0.0,0.1,0.9,0.3,3.1,0.4,0.0,0.0,0.1,0.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.3,0.1,0.1,0.6,1.1,0.3,0.0,0.0,0.0,0.0,0.0,0.0,0.8,2.2,1.2,1.7,0.4,0.6,0.9,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.5,0.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.1,0.2,0.1,0.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"shortwave_radiation":[0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,3.0,31.0,50.3,86.3,37.5,50.5,39.5,77.5,54.5,46.0,13.3,2.5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5.0,71.0,177.3,310.3,339.8,241.3,163.5,101.5,119.8,73.0,26.8,4.5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.5,5.5,11.3,63.5,266.3,350.5,373.8,409.8,336.5,169.5,72.0,12.5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.2,0.0,0.0,3.0,41.0,110.0,107.0,117.0,309.0,382.0,347.0,255.0,211.0,100.0,13.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,3.0,78.0,212.0,327.0,422.0,474.0,482.0,437.0,369.0,265.0,136.0,11.0,0.0,0.0,0.0,0.0],"weather_code":[63,61,3,3,3,3,3,80,61,3,3,61,61,61,63,61,3,61,61,61,3,2,0,2,2,1,1,0,0,1,1,45,45,3,3,3,3,3,3,3,61,61,61,61,61,61,3,3,3,3,3,3,61,61,61,61,61,61,61,3,2,3,2,2,3,3,3,1,1,1,1,2,0,2,2,2,3,3,2,3,3,3,3,61,61,3,3,3,3,3,3,2,2,2,3,80,2,2,80,2,2,2,2,2,1,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0],"cloud_cover":[100,100,64,100,100,89,100,100,100,100,100,100,100,100,100,100,100,100,100,100,79,73,11,48,77,38,0,0,0,72,0,63,100,94,92,96,100,96,100,100,100,100,100,100,100,100,100,100,100,100,99,99,100,100,100,100,100,100,100,96,76,100,68,16,98,86,91,34,52,10,8,62,5,70,73,74,99,100,75,89,99,85,92,100,100,100,100,100,100,100,100,68,69,68,79,90,84,77,82,62,56,55,58,62,53,53,54,54,53,51,50,39,28,17,11,6,0,1,3,4],"is_day":[0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0]},"daily_units":{"time":"iso8601","temperature_2m_max":"°C","temperature_2m_min":"°C","sunshine_duration":"s","sunrise":"iso8601","sunset":"iso8601","weather_code":"wmo code","precipitation_sum":"mm","wind_gusts_10m_max":"km/h"},"daily":{"time":["2026-10-08","2026-10-09","2026-10-10","2026-10-11","2026-10-12"],"temperature_2m_max":[16.3,11.1,14.2,12.5,14.0],"temperature_2m_min":[8.4,2.9,9.1,8.3,5.1],"sunshine_duration":[0.0,10496.51,22492.67,19350.25,37143.68],"sunrise":["2026-10-08T07:31","2026-10-09T07:33","2026-10-10T07:34","2026-10-11T07:36","2026-10-12T07:37"],"sunset":["2026-10-08T18:46","2026-10-09T18:44","2026-10-10T18:42","2026-10-11T18:40","2026-10-12T18:38"],"weather_code":[80,61,61,80,80],"precipitation_sum":[9.1,2.5,7.8,0.9,0.4],"wind_gusts_10m_max":[44.3,27.4,37.1,39.2,11.9]}},"mos":[["2026-10-08T00:00",14.0],["2026-10-08T01:00",13.8],["2026-10-08T02:00",13.8],["2026-10-08T03:00",13.4],["2026-10-08T04:00",12.7],["2026-10-08T05:00",13.4],["2026-10-08T06:00",12.9],["2026-10-08T07:00",13.1],["2026-10-08T08:00",12.8],["2026-10-08T09:00",14.0],["2026-10-08T10:00",15.5],["2026-10-08T11:00",15.4],["2026-10-08T12:00",14.2],["2026-10-08T13:00",13.4],["2026-10-08T14:00",11.8],["2026-10-08T15:00",11.6],["2026-10-08T16:00",11.7],["2026-10-08T17:00",11.4],["2026-10-08T18:00",11.1],["2026-10-08T19:00",10.7],["2026-10-08T20:00",10.2],["2026-10-08T21:00",9.5],["2026-10-08T22:00",8.2],["2026-10-08T23:00",7.7],["2026-10-09T00:00",6.9],["2026-10-09T01:00",6.9],["2026-10-09T02:00",6.7],["2026-10-09T03:00",4.2],["2026-10-09T04:00",3.6],["2026-10-09T05:00",2.7],["2026-10-09T06:00",2.3],["2026-10-09T07:00",1.7],["2026-10-09T08:00",1.4],["2026-10-09T09:00",2.8],["2026-10-09T10:00",7.7],["2026-10-09T11:00",10.1],["2026-10-09T12:00",11.3],["2026-10-09T13:00",12.0],["2026-10-09T14:00",12.4],["2026-10-09T15:00",12.3],["2026-10-09T16:00",12.1],["2026-10-09T17:00",11.9],["2026-10-09T18:00",11.3],["2026-10-09T19:00",11.0],["2026-10-09T20:00",10.8],["2026-10-09T21:00",10.8],["2026-10-09T22:00",10.6],["2026-10-09T23:00",10.7],["2026-10-10T00:00",10.6],["2026-10-10T01:00",10.7],["2026-10-10T02:00",10.8],["2026-10-10T03:00",11.0],["2026-10-10T04:00",10.9],["2026-10-10T05:00",11.0],["2026-10-10T06:00",11.0],["2026-10-10T07:00",11.2],["2026-10-10T08:00",11.1],["2026-10-10T09:00",11.3],["2026-10-10T10:00",11.5],["2026-10-10T11:00",12.1],["2026-10-10T12:00",12.8],["2026-10-10T13:00",13.3],["2026-10-10T14:00",14.2],["2026-10-10T15:00",14.4],["2026-10-10T16:00",14.8],["2026-10-10T17:00",14.7],["2026-10-10T18:00",14.0],["2026-10-10T19:00",12.8],["2026-10-10T20:00",11.9],["2026-10-10T21:00",11.1],["2026-10-10T22:00",10.5],["2026-10-10T23:00",10.4],["2026-10-11T00:00",9.8],["2026-10-11T01:00",9.6],["2026-10-11T02:00",9.5],["2026-10-11T03:00",9.3],["2026-10-11T04:00",9.2],["2026-10-11T05:00",9.4],["2026-10-11T06:00",9.3],["2026-10-11T07:00",9.4],["2026-10-11T08:00",9.5],["2026-10-11T09:00",9.8],["2026-10-11T10:00",10.1],["2026-10-11T11:00",10.6],["2026-10-11T12:00",11.4],["2026-10-11T13:00",12.0],["2026-10-11T14:00",12.4],["2026-10-11T15:00",12.5],["2026-10-11T16:00",12.5],["2026-10-11T17:00",12.6],["2026-10-11T18:00",12.0],["2026-10-11T19:00",11.4],["2026-10-11T20:00",10.7],["2026-10-11T21:00",10.1],["2026-10-11T22:00",9.5],["2026-10-11T23:00",9.0],["2026-10-12T00:00",8.7],["2026-10-12T01:00",8.3],["2026-10-12T02:00",7.8],["2026-10-12T03:00",7.5],["2026-10-12T04:00",7.3],["2026-10-12T05:00",6.8],["2026-10-12T06:00",6.6],["2026-10-12T07:00",6.6],["2026-10-12T08:00",7.1],["2026-10-12T09:00",8.0],["2026-10-12T10:00",9.8],["2026-10-12T11:00",11.2],["2026-10-12T12:00",12.5],["2026-10-12T13:00",14.0],["2026-10-12T14:00",15.0],["2026-10-12T15:00",15.5],["2026-10-12T16:00",15.5],["2026-10-12T17:00",14.9],["2026-10-12T18:00",14.0],["2026-10-12T19:00",12.9],["2026-10-12T20:00",11.2],["2026-10-12T21:00",10.6],["2026-10-12T22:00",9.6],["2026-10-12T23:00",9.2],["2026-10-13T00:00",8.5]],"alerts":[]}</script>
+<script>
+(() => {
+"use strict";
+const LAT = 48.8813, LON = 9.4412, ELEV = 414;
+const $ = id => document.getElementById(id);
+const store = { get(k, d) { try { const v = localStorage.getItem("hw:" + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
+                set(k, v) { try { localStorage.setItem("hw:" + k, JSON.stringify(v)); } catch {} } };
+
+/* ---------- Farbskala (OKLCH, feste °C-Anker) ---------- */
+const ANCH = [[-10,55,.14,275],[0,72,.11,245],[10,85,.05,210],[18,88,.08,90],[25,76,.16,58],[32,63,.20,28]];
+function tcol(t, a) {
+  let i = 0; if (t <= ANCH[0][0]) i = 0; else if (t >= ANCH[ANCH.length-1][0]) i = ANCH.length - 2;
+  else while (t > ANCH[i+1][0]) i++;
+  const A = ANCH[i], B = ANCH[i+1]; let f = (t - A[0]) / (B[0] - A[0]); f = Math.max(0, Math.min(1, f));
+  const L = A[1] + (B[1]-A[1])*f, C = A[2] + (B[2]-A[2])*f, H = A[3] + (B[3]-A[3])*f;
+  return `oklch(${L.toFixed(1)}% ${C.toFixed(3)} ${H.toFixed(1)}${a != null ? " / " + a : ""})`;
+}
+$("scale").style.background = "linear-gradient(90deg," + Array.from({length: 22}, (_, k) => tcol(-10 + k*2)).join(",") + ")";
+
+/* ---------- Hilfen ---------- */
+const DOW = ["So","Mo","Di","Mi","Do","Fr","Sa"];
+const DOWL = ["Sonntag","Montag","Dienstag","Mittwoch","Donnerstag","Freitag","Samstag"];
+const fmt = (n, d = 1) => (n < 0 ? "−" : "") + Math.abs(n).toFixed(d).replace(".", ",");
+const deg = (n, d = 0) => fmt(n, d) + "°";
+const hh = d => String(d.getHours()).padStart(2, "0") + ":00";
+const parse = s => { const [a, b] = s.split("T"); const [y, m, d] = a.split("-").map(Number); const [H, M] = (b || "00:00").split(":").map(Number); return new Date(y, m-1, d, H, M); };
+const dayKey = d => d.getFullYear() + "-" + String(d.getMonth()+1).padStart(2,"0") + "-" + String(d.getDate()).padStart(2,"0");
+function nowBerlin() {
+  const p = new Intl.DateTimeFormat("de-DE", {timeZone:"Europe/Berlin", year:"numeric", month:"2-digit", day:"2-digit", hour:"2-digit", minute:"2-digit", hour12:false})
+    .formatToParts(new Date()).reduce((o, x) => (o[x.type] = x.value, o), {});
+  return new Date(+p.year, +p.month - 1, +p.day, +p.hour % 24, +p.minute);
+}
+const WMO = {0:"Klar",1:"Überwiegend klar",2:"Teils bewölkt",3:"Bedeckt",45:"Nebel",48:"Reifnebel",51:"Leichter Niesel",53:"Niesel",55:"Starker Niesel",56:"Gefrierender Niesel",57:"Gefrierender Niesel",
+  61:"Leichter Regen",63:"Regen",65:"Starker Regen",66:"Gefrierender Regen",67:"Gefrierender Regen",71:"Leichter Schneefall",73:"Schneefall",75:"Starker Schneefall",77:"Schneegriesel",
+  80:"Regenschauer",81:"Kräftige Schauer",82:"Heftige Schauer",85:"Schneeschauer",86:"Starke Schneeschauer",95:"Gewitter",96:"Gewitter mit Hagel",99:"Gewitter mit Hagel"};
+function icon(code, day = true, size = 30) {
+  const s = size, c = "currentColor";
+  const sun = `<circle cx="12" cy="12" r="4.2" fill="oklch(86% 0.15 85)"/><g stroke="oklch(86% 0.15 85)" stroke-width="1.6" stroke-linecap="round">${[0,45,90,135,180,225,270,315].map(a=>{const r=a*Math.PI/180;return `<line x1="${12+7*Math.cos(r)}" y1="${12+7*Math.sin(r)}" x2="${12+9.2*Math.cos(r)}" y2="${12+9.2*Math.sin(r)}"/>`}).join("")}</g>`;
+  const moon = `<path d="M15.5 4.5a7.5 7.5 0 1 0 4 12.8 6 6 0 0 1-4-12.8z" fill="oklch(85% 0.05 250)"/>`;
+  const cloud = (f = "oklch(78% 0.02 250)") => `<path d="M7 19h10.5a4 4 0 0 0 .4-8 5.5 5.5 0 0 0-10.6 1.4A3.4 3.4 0 0 0 7 19z" fill="${f}"/>`;
+  let g;
+  if (code <= 1) g = day ? sun : moon;
+  else if (code === 2) g = `<g transform="translate(-3 -4) scale(.8)">${day ? sun : moon}</g>` + cloud();
+  else if (code === 3) g = cloud("oklch(66% 0.02 250)");
+  else if (code === 45 || code === 48) g = `<g stroke="oklch(72% 0.02 250)" stroke-width="2" stroke-linecap="round"><line x1="4" y1="9" x2="20" y2="9"/><line x1="3" y1="13" x2="18" y2="13"/><line x1="6" y1="17" x2="21" y2="17"/></g>`;
+  else if ((code >= 71 && code <= 77) || code === 85 || code === 86) g = `<g transform="translate(0 -3)">${cloud()}</g><g fill="oklch(92% 0.03 230)"><circle cx="8" cy="21" r="1.3"/><circle cx="12.5" cy="22.5" r="1.3"/><circle cx="17" cy="21" r="1.3"/></g>`;
+  else if (code >= 95) g = `<g transform="translate(0 -3)">${cloud("oklch(60% 0.02 250)")}</g><path d="M12.5 15l-3 5h3l-1.5 4 4.5-6h-3l1.5-3z" fill="oklch(86% 0.16 92)"/>`;
+  else g = `<g transform="translate(0 -3)">${cloud()}</g><g stroke="oklch(72% 0.11 240)" stroke-width="1.7" stroke-linecap="round"><line x1="8" y1="19" x2="7" y2="22.5"/><line x1="12.5" y1="19" x2="11.5" y2="22.5"/><line x1="17" y1="19" x2="16" y2="22.5"/></g>`;
+  return `<svg width="${s}" height="${s}" viewBox="0 0 24 25" aria-hidden="true" style="color:${c}">${g}</svg>`;
+}
+
+/* ---------- Daten ---------- */
+let DATA = null, SOURCE = "snapshot";
+try { const raw = JSON.parse($("wx-data").textContent || "{}"); if (raw && raw.om) DATA = raw; } catch {}
+try { if (!DATA) { const c = store.get("cache", null); if (c && c.om) { DATA = c; SOURCE = "cache"; } } } catch {}
+
+const OM_URL = `https://api.open-meteo.com/v1/forecast?latitude=${LAT}&longitude=${LON}&elevation=${ELEV}&timezone=Europe%2FBerlin&past_days=1&forecast_days=4&models=icon_seamless`
+ + "&current=temperature_2m,apparent_temperature,relative_humidity_2m,wind_speed_10m,weather_code,is_day"
+ + "&hourly=temperature_2m,apparent_temperature,relative_humidity_2m,dew_point_2m,wind_speed_10m,wind_gusts_10m,precipitation_probability,precipitation,shortwave_radiation,weather_code,cloud_cover,is_day"
+ + "&daily=temperature_2m_max,temperature_2m_min,sunshine_duration,sunrise,sunset,weather_code,precipitation_sum,wind_gusts_10m_max";
+
+async function fetchJSON(url, ms = 8000) {
+  const ac = new AbortController(); const t = setTimeout(() => ac.abort(), ms);
+  try { const r = await fetch(url, {signal: ac.signal, cache: "no-store"}); if (!r.ok) throw new Error(r.status); return await r.json(); }
+  finally { clearTimeout(t); }
+}
+async function tryLive() {
+  try {
+    const om = await fetchJSON(OM_URL);
+    if (!om || !om.hourly) return;
+    const n = nowBerlin(), s = new Date(n); s.setDate(s.getDate() - 1); const e = new Date(n); e.setDate(e.getDate() + 4);
+    let mos = DATA ? DATA.mos : [], alerts = DATA ? DATA.alerts : null;
+    try {
+      const bs = await fetchJSON(`https://api.brightsky.dev/weather?lat=${LAT}&lon=${LON}&date=${dayKey(s)}&last_date=${dayKey(e)}&tz=Europe/Berlin`);
+      mos = (bs.weather || []).filter(w => w.temperature != null).map(w => [w.timestamp.slice(0, 16), w.temperature]);
+    } catch {}
+    try {
+      const al = await fetchJSON(`https://api.brightsky.dev/alerts?lat=${LAT}&lon=${LON}&tz=Europe/Berlin`);
+      alerts = (al.alerts || []).map(a => ({event_de: a.event_de, headline_de: a.headline_de, description_de: a.description_de, severity: a.severity, onset: a.onset, expires: a.expires}));
+    } catch {}
+    const n2 = nowBerlin();
+    DATA = {fetched: dayKey(n2) + "T" + String(n2.getHours()).padStart(2,"0") + ":" + String(n2.getMinutes()).padStart(2,"0"), om, mos, alerts};
+    SOURCE = "live"; store.set("cache", DATA); render();
+  } catch { /* Im Claude-Artefakt blockiert der Browser Live-Abrufe: dann bleibt der 10:10-Schnappschuss. */ }
+}
+
+/* ---------- Auswertung ---------- */
+function model() {
+  const h = DATA.om.hourly, N = h.time.length, hours = [];
+  for (let i = 0; i < N; i++) hours.push({ t: parse(h.time[i]), temp: h.temperature_2m[i], app: h.apparent_temperature[i], rh: h.relative_humidity_2m[i],
+    dew: h.dew_point_2m[i], wind: h.wind_speed_10m[i], gust: h.wind_gusts_10m[i], pp: h.precipitation_probability[i], pr: h.precipitation[i],
+    sw: h.shortwave_radiation[i], code: h.weather_code[i], cc: h.cloud_cover[i], day: h.is_day[i] === 1 });
+  const mos = new Map((DATA.mos || []).map(([ts, v]) => [ts, v]));
+  hours.forEach(o => { const k = dayKey(o.t) + "T" + String(o.t.getHours()).padStart(2,"0") + ":00"; o.mos = mos.has(k) ? mos.get(k) : null; });
+  const d = DATA.om.daily, days = d.time.map((ts, i) => {
+    const hs = hours.filter(o => dayKey(o.t) === ts);
+    const mean = hs.reduce((a, o) => a + o.temp, 0) / Math.max(1, hs.length);
+    return { key: ts, date: parse(ts), max: d.temperature_2m_max[i], min: d.temperature_2m_min[i], mean, sun: d.sunshine_duration[i] / 3600,
+      code: d.weather_code[i], rain: d.precipitation_sum[i], gust: d.wind_gusts_10m_max[i], gt: mean < 15 ? 20 - mean : 0,
+      wind: hs.length ? Math.max(...hs.map(o => o.wind)) : 0, sunrise: parse(d.sunrise[i]), sunset: parse(d.sunset[i]) };
+  });
+  return { hours, days };
+}
+// Nacht = 18:00 Tag d bis 09:00 Tag d+1
+function night(hours, date) {
+  const a = new Date(date); a.setHours(18, 0, 0, 0); const b = new Date(date); b.setDate(b.getDate() + 1); b.setHours(9, 0, 0, 0);
+  const hs = hours.filter(o => o.t >= a && o.t <= b);
+  if (hs.length < 10) return null;
+  let lo = hs[0]; hs.forEach(o => { if (o.temp < lo.temp) lo = o; });
+  const windy = Math.max(...hs.map(o => o.wind)), gust = Math.max(...hs.map(o => o.gust)), mosLo = hs.some(o => o.mos != null) ? Math.min(...hs.filter(o => o.mos != null).map(o => o.mos)) : null;
+  return { from: a, to: b, min: lo.temp, at: lo.t, wind: windy, gust, mosMin: mosLo, hs };
+}
+function settings() {
+  return { leadMin: +store.get("leadMin", 3), leadMax: +store.get("leadMax", 6), comfort: +store.get("comfort", 20) };
+}
+function assess(M, now) {
+  const S = settings(), today = M.days.findIndex(d => d.key === dayKey(now));
+  const D = M.days.slice(today, today + 3), prev = M.days[today - 1];
+  const nights = [0, 1, 2].map(k => night(M.hours, D[k] ? D[k].date : null)).filter(Boolean);
+  const reasons = []; let level = 0;
+  const minN = Math.min(...nights.slice(0, 2).map(n => n.min));
+  const meanDeltas = [prev ? D[0].mean - prev.mean : 0, D[1] ? D[1].mean - D[0].mean : 0, D[2] ? D[2].mean - D[1].mean : 0];
+  const drop48 = Math.min(meanDeltas[1], D[2] ? D[2].mean - D[0].mean : 0);
+  const gtRise = Math.max(D[1] ? D[1].gt - D[0].gt : 0, D[2] ? D[2].gt - D[1].gt : 0);
+  const coldWindy = nights.slice(0, 2).some(n => n.min < 8 && n.wind > 20) && D.slice(0, 2).some(d => d.sun < 2);
+  if (minN < 5) { level = Math.max(level, 1); reasons.push(`Nacht bis ${deg(minN, 1)}`); }
+  if (drop48 <= -4) { level = Math.max(level, 1); reasons.push(`Tagesmittel ${fmt(drop48)} K in 48 h`); }
+  if (coldWindy) { level = Math.max(level, 1); reasons.push("kalt, windig, wenig Sonne"); }
+  if (minN <= 0) { level = Math.max(level, 2); reasons.push("Frostnacht"); }
+  if (drop48 <= -6) level = Math.max(level, 2);
+  if (gtRise >= 5) { level = Math.max(level, 2); reasons.push(`Gradtagzahl +${fmt(gtRise)} Kd`); }
+  if (minN <= -5) level = 3;
+  const al = (DATA.alerts || []).filter(a => /frost|sturm|orkan|glätte|glatteis|kälte|schnee|wind/i.test(a.event_de || ""));
+  if (al.length) { level = Math.max(level, al.some(a => /severe|extreme/.test(a.severity || "")) ? 3 : 2); reasons.push("DWD-Warnung aktiv"); }
+  if (!reasons.length) reasons.push(`Nächte über ${deg(Math.floor(minN))}`, "keine großen Sprünge");
+
+  // Heizfahrplan: pro Nacht Abkühlungsbeginn und Startzeit der Fußbodenheizung
+  const plan = nights.map((n, k) => {
+    const dayH = M.hours.filter(o => dayKey(o.t) === dayKey(n.from) && o.t.getHours() >= 10 && o.t.getHours() <= 18);
+    const peak = dayH.length ? dayH.reduce((a, o) => o.temp > a.temp ? o : a) : n.hs[0];
+    const mid = n.min + (peak.temp - n.min) * 0.5;
+    const onset = M.hours.find(o => o.t > peak.t && o.temp <= mid) || n.hs[0];
+    const swing = peak.temp - n.min;
+    const need = S.comfort - n.min;                     // wie weit draußen unter Wunsch-Raumtemperatur
+    let lead = S.leadMin + Math.max(0, (need - 12)) / 12 * (S.leadMax - S.leadMin);
+    if (n.gust > 40) lead += 0.5;
+    lead = Math.min(S.leadMax, Math.max(S.leadMin, lead));
+    const start = new Date(onset.t.getTime() - lead * 3600e3); start.setMinutes(0);
+    const prevN = k === 0 ? night(M.hours, new Date(n.from.getTime() - 864e5)) : nights[k - 1];
+    const dN = prevN ? n.min - prevN.min : 0;
+    const strength = n.min <= 0 ? "Durchheizen, keine Nachtabsenkung" : n.min < 5 ? "Heizung eine Stufe höher" : n.min < 9 ? "Normal heizen" : "Sparsam heizen reicht";
+    return { n, onset: onset.t, start, lead, swing, dN, strength };
+  });
+  return { level, reasons, D, prev, nights, plan, al, S };
+}
+function airSlots(M, now, S) {
+  const indoorDew = (() => { const T = S.comfort, RH = 55, a = 17.62, b = 243.12, g = Math.log(RH/100) + a*T/(b+T); return b*g/(a-g); })();
+  const end = new Date(now); end.setHours(23, 59);
+  const hs = M.hours.filter(o => o.t >= new Date(now.getTime() - 3600e3) && o.t <= end && o.t.getHours() >= 7 && o.t.getHours() <= 22);
+  const scored = hs.map(o => ({ o, score: (indoorDew - o.dew) + (o.pp < 30 ? 2 : -3) + (o.temp > 0 ? 1 : -1) + (o.wind < 25 ? 1 : 0) }))
+                   .filter(x => x.o.dew < indoorDew - 2).sort((a, b) => b.score - a.score);
+  return { indoorDew, slots: scored.slice(0, 4).sort((a, b) => a.o.t - b.o.t) };
+}
+
+/* ---------- Darstellung ---------- */
+function render() {
+  if (!DATA) { $("now").innerHTML = `<div class="nowmeta"><div class="cond">Noch keine Daten</div><div class="sub">Die nächste Aktualisierung kommt um 10:10 Uhr.</div></div>`; return; }
+  const now = nowBerlin(), M = model(), A = assess(M, now);
+  const cur = DATA.om.current || {}, curT = cur.temperature_2m ?? M.hours.find(o => o.t.getHours() === now.getHours() && dayKey(o.t) === dayKey(now))?.temp ?? 0;
+  document.documentElement.style.setProperty("--t", tcol(curT));
+
+  const f = parse(DATA.fetched.slice(0, 16)), ageH = (now - f) / 3600e3;
+  $("dot").className = "dot " + (SOURCE === "live" ? "live" : ageH > 26 ? "stale" : "");
+  $("stamp").textContent = (SOURCE === "live" ? "Live · " : "Stand ") + DOW[f.getDay()] + " " + String(f.getDate()).padStart(2,"0") + "." + String(f.getMonth()+1).padStart(2,"0") + ". " + String(f.getHours()).padStart(2,"0") + ":" + String(f.getMinutes()).padStart(2,"0") + (ageH > 26 ? " · veraltet" : "");
+
+  const tonight = A.nights[0];
+  $("now").innerHTML = `<div class="big num">${fmt(curT, 0).replace("−","−")}<sup>°C</sup></div>
+    <div class="nowmeta"><div class="dayrow">${icon(cur.weather_code ?? 3, cur.is_day !== 0, 34)}<span class="cond">${WMO[cur.weather_code] || "–"}</span></div>
+    <div class="sub num">Gefühlt ${deg(cur.apparent_temperature ?? curT)} · Wind ${Math.round(cur.wind_speed_10m ?? 0)} km/h · Luftfeuchte ${cur.relative_humidity_2m ?? "–"} %</div>
+    ${tonight ? `<div class="sub num">Kommende Nacht bis <b style="color:${tcol(tonight.min)}">${deg(tonight.min, 1)}</b> gegen ${hh(tonight.at)} Uhr</div>` : ""}</div>`;
+
+  const LV = [["Ruhig","var(--ok)"],["Vorwarnung","var(--warn)"],["Heiz-Alarm","var(--alarm)"],["Frost / Sturm","var(--crit)"]];
+  const p0 = A.plan.find(p => p.n.to > now) || A.plan[0];
+  const startTxt = p0 ? (p0.start <= now ? "jetzt" : (dayKey(p0.start) === dayKey(now) ? "heute ab " : DOWL[p0.start.getDay()] + " ab ") + hh(p0.start) + " Uhr") : "";
+  const head = ["Heizung im Normalbetrieb lassen", "Heizung " + startTxt + " höher stellen", "Heizung " + startTxt + " deutlich hochdrehen", "Heizung " + startTxt + " durchlaufen lassen"][A.level];
+  const body = A.level === 0 ? "Keine großen Temperatursprünge in Sicht. Die Fußbodenheizung kommt ohne Vorlauf hinterher."
+    : `Abkühlung setzt gegen ${p0 ? hh(p0.onset) : "–"} Uhr ein. Bei ${fmt(p0 ? p0.lead : 3, 1)} h Aufheizzeit unter den Fliesen musst du vorher starten.`;
+  const v = $("verdict"); v.style.setProperty("--lv", LV[A.level][1]);
+  v.innerHTML = `<div class="lamp" aria-hidden="true">${[3,2,1,0].map(i => `<i class="${i === A.level ? "on" : ""}" style="--c:${LV[i][1]}"></i>`).join("")}</div>
+    <div><div class="label" style="color:${LV[A.level][1]}">${LV[A.level][0]}</div><h2>${head}</h2><p>${body}</p>
+    <div class="why">${A.reasons.map(r => `<span class="chip">${r}</span>`).join("")}</div></div>`;
+
+  $("alerts").innerHTML = (DATA.alerts || []).map(a => `<div class="alertbox"><strong>${a.headline_de || a.event_de}</strong>
+    <div class="cond2">${a.onset ? "ab " + new Date(a.onset).toLocaleString("de-DE",{weekday:"short",hour:"2-digit",minute:"2-digit"}) : ""} ${a.expires ? "bis " + new Date(a.expires).toLocaleString("de-DE",{weekday:"short",hour:"2-digit",minute:"2-digit"}) : ""}</div></div>`).join("")
+    + (DATA.alerts === null ? `<div class="cond2">DWD-Warnungen waren beim letzten Abruf nicht erreichbar.</div>` : "");
+
+  // Tageskarten mit gemeinsamer Skala
+  const lo = Math.min(...A.D.map(d => d.min)) - 1, hi = Math.max(...A.D.map(d => d.max)) + 1, pct = t => (t - lo) / (hi - lo) * 100;
+  $("days").innerHTML = A.D.map((d, i) => {
+    const ref = i === 0 ? A.prev : A.D[i - 1], dm = ref ? d.mean - ref.mean : 0;
+    const name = i === 0 ? "Heute" : i === 1 ? "Morgen" : DOWL[d.date.getDay()];
+    return `<article class="day"><div class="dayhead"><h3>${name}</h3><span>${DOW[d.date.getDay()]} ${d.date.getDate()}.${d.date.getMonth()+1}.</span></div>
+      <div class="dayrow">${icon(d.code, true, 32)}<span class="cond2">${WMO[d.code] || ""}${d.rain >= 0.2 ? ", " + fmt(d.rain) + " mm" : ""}</span></div>
+      <div class="range"><span class="lo" style="color:${tcol(d.min)}">${deg(d.min)}</span>
+        <span class="track"><b style="left:${pct(d.min)}%;right:${100 - pct(d.max)}%;background:linear-gradient(90deg,${tcol(d.min)},${tcol(d.max)})"></b></span>
+        <span style="color:${tcol(d.max)}">${deg(d.max)}</span></div>
+      <div class="facts num">
+        <div><span class="v ${dm <= -1 ? "delta-down" : dm >= 1 ? "delta-up" : ""}">${dm >= 0 ? "+" : ""}${fmt(dm)} K</span><span class="k">Mittel ggü. Vortag</span></div>
+        <div><span class="v">${fmt(d.gt)} Kd</span><span class="k">Gradtagzahl</span></div>
+        <div><span class="v">${fmt(d.sun)} h</span><span class="k">Sonne</span></div>
+        <div><span class="v">${Math.round(d.gust)} km/h</span><span class="k">Böen max.</span></div>
+      </div></article>`;
+  }).join("");
+
+  drawChart(M, A, now);
+
+  $("plan").innerHTML = A.plan.map((p, k) => {
+    const n = p.n, mosTxt = n.mosMin != null ? ` MOSMIX sagt ${deg(n.mosMin, 1)}${Math.abs(n.mosMin - n.min) > 2 ? ", die Modelle sind sich uneinig, lieber vorsichtig heizen" : ""}.` : "";
+    const label = k === 0 && dayKey(n.from) === dayKey(now) ? "Heute Nacht" : DOWL[n.from.getDay()] + " Nacht";
+    const past = p.start <= now && n.to > now;
+    return `<li><div class="when">${past ? "jetzt" : hh(p.start)}<small>${n.min >= 9 ? "optional" : past ? "Start fällig" : DOW[p.start.getDay()] + ", Start"}</small></div>
+      <div class="what"><strong>${label}: tiefster Wert ${deg(n.min, 1)} gegen ${hh(n.at)} Uhr</strong>
+      <p>${p.strength}. Abkühlung ab etwa ${hh(p.onset)} Uhr, ${fmt(p.lead, 1)} h Vorlauf${n.gust > 40 ? " (Böen bis " + Math.round(n.gust) + " km/h ziehen durchs Dach, deshalb etwas früher)" : ""}.
+      ${p.dN ? (p.dN < 0 ? fmt(-p.dN) + " K kälter" : fmt(p.dN) + " K milder") + " als die Nacht davor." : ""}${mosTxt}</p></div></li>`;
+  }).join("");
+
+  const air = airSlots(M, now, A.S);
+  $("air").innerHTML = air.slots.length ? air.slots.map((x, i) => `<span class="slot ${i === air.slots.reduce((bi, y, j, arr) => y.score > arr[bi].score ? j : bi, 0) ? "best" : ""}"><b>${hh(x.o.t)}</b> · ${deg(x.o.temp)} · Taupunkt ${deg(x.o.dew)}</span>`).join("")
+    : `<span class="slot">Heute kein gutes Fenster mehr. Kurz querlüften reicht.</span>`;
+  $("airnote").textContent = `Draußen ist die Luft trockener als drinnen, wenn ihr Taupunkt unter etwa ${deg(air.indoorDew)} liegt (Raum ${fmt(A.S.comfort)} °C bei 55 % Luftfeuchte). Dann trägt jedes Lüften Feuchtigkeit hinaus.`;
+
+  $("srcinfo").textContent = SOURCE === "live" ? "Diese Ansicht wurde gerade live geladen." : "Diese Ansicht zeigt den täglichen Schnappschuss von 10:10 Uhr.";
+}
+
+function drawChart(M, A, now) {
+  const W = Math.round(Math.min(720, Math.max(320, $("chartbox").clientWidth || 720))), H = W < 520 ? 250 : 280, L = 30, R = 8, T = 16, B = 40, PB = 34;   // PB = Höhe Regenbalken
+  $("chart").setAttribute("viewBox", `0 0 ${W} ${H}`);
+  const start = new Date(A.D[0].date); const end = new Date(start); end.setDate(end.getDate() + 3);
+  const hs = M.hours.filter(o => o.t >= start && o.t < end);
+  if (!hs.length) return;
+  const temps = hs.flatMap(o => o.mos != null ? [o.temp, o.mos] : [o.temp]);
+  const tmin = Math.floor(Math.min(...temps) / 2) * 2 - 1, tmax = Math.ceil(Math.max(...temps) / 2) * 2 + 1;
+  const x = t => L + (t - start) / (end - start) * (W - L - R), y = v => T + (tmax - v) / (tmax - tmin) * (H - T - B);
+  const step = (tmax - tmin) > 14 ? 4 : 2;
+  let s = `<defs><linearGradient id="tg" gradientUnits="userSpaceOnUse" x1="0" y1="${y(tmax)}" x2="0" y2="${y(tmin)}">`;
+  for (let k = 0; k <= 12; k++) { const v = tmax - (tmax - tmin) * k / 12; s += `<stop offset="${k/12}" stop-color="${tcol(v)}"/>`; }
+  s += `</linearGradient><linearGradient id="tf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="white" stop-opacity=".28"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient>
+    <mask id="fm"><rect x="0" y="0" width="${W}" height="${H}" fill="url(#tf)"/></mask></defs>`;
+  // Nachtbänder
+  let run = null;
+  hs.forEach((o, i) => { if (!o.day && run === null) run = o.t; if ((o.day || i === hs.length - 1) && run !== null) { const e2 = o.day ? o.t : end; s += `<rect x="${x(run)}" y="${T}" width="${x(e2) - x(run)}" height="${H - T - B}" fill="oklch(12% 0.02 260 / .55)"/>`; run = null; } });
+  // Gitter
+  for (let v = Math.ceil(tmin / step) * step; v <= tmax; v += step) s += `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" stroke="oklch(31% 0.022 252)" stroke-width="${v === 0 ? 1.4 : .7}" ${v === 0 ? "" : 'stroke-dasharray="2 4"'}/><text x="${L - 6}" y="${y(v) + 4}" text-anchor="end">${fmt(v,0)}°</text>`;
+  // Regenbalken
+  hs.forEach(o => { if (o.pp > 0) { const bh = o.pp / 100 * PB; s += `<rect x="${x(o.t) + 1}" y="${H - B - bh}" width="${(W - L - R) / hs.length - 2}" height="${bh}" fill="oklch(62% 0.09 240 / ${0.25 + o.pp / 200})" rx="1"/>`; } });
+  // Tageslinien und Beschriftung
+  for (let k = 0; k < 3; k++) { const d0 = new Date(start); d0.setDate(d0.getDate() + k);
+    if (k) s += `<line x1="${x(d0)}" x2="${x(d0)}" y1="${T}" y2="${H - B + 6}" stroke="oklch(40% 0.02 252)"/>`;
+    const d1 = new Date(d0); d1.setHours(12); s += `<text x="${x(d1)}" y="${H - 12}" text-anchor="middle" style="fill:var(--muted);font-size:12px">${k === 0 ? "Heute" : k === 1 ? "Morgen" : DOWL[d0.getDay()]}</text>`;
+    (W < 520 ? [12] : [6, 18]).forEach(hr => { const d2 = new Date(d0); d2.setHours(hr); s += `<text x="${x(d2)}" y="${H - B + 14}" text-anchor="middle">${hr}</text>`; }); }
+  // Kurven
+  const path = key => hs.filter(o => o[key] != null).map((o, i) => (i ? "L" : "M") + x(o.t).toFixed(1) + " " + y(o[key]).toFixed(1)).join("");
+  const line = path("temp"), last = hs[hs.length - 1];
+  s += `<path d="${line} L${x(last.t)} ${H - B} L${x(hs[0].t)} ${H - B} Z" fill="url(#tg)" mask="url(#fm)"/>`;
+  if (hs.some(o => o.mos != null)) s += `<path d="${path("mos")}" fill="none" stroke="oklch(72% 0.02 250)" stroke-width="1.4" stroke-dasharray="4 3"/>`;
+  s += `<path d="${line}" fill="none" stroke="url(#tg)" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>`;
+  // Nachttiefs markieren
+  A.nights.forEach(n => { if (n.at >= start && n.at < end) s += `<circle cx="${x(n.at)}" cy="${y(n.min)}" r="4.5" fill="${tcol(n.min)}" stroke="var(--bg)" stroke-width="2"/><text x="${x(n.at)}" y="${y(n.min) + 18}" text-anchor="middle" style="fill:${tcol(n.min)};font-weight:500">${fmt(n.min,1)}°</text>`; });
+  // Jetzt
+  if (now >= start && now < end) s += `<line x1="${x(now)}" x2="${x(now)}" y1="${T - 4}" y2="${H - B}" stroke="var(--fg)" stroke-width="1.2"/><text x="${x(now)}" y="${T - 5}" text-anchor="middle" style="fill:var(--fg);font-size:10px">jetzt</text>`;
+  s += `<line id="cur" x1="0" x2="0" y1="${T}" y2="${H - B}" stroke="var(--fg)" stroke-width="1" opacity="0"/><circle id="curdot" r="5" opacity="0" stroke="var(--bg)" stroke-width="2"/>`;
+  s += `<rect id="hit" x="${L}" y="0" width="${W - L - R}" height="${H}" fill="transparent"/>`;
+  const svg = $("chart"); svg.innerHTML = s;
+
+  const tip = $("tip"), box = $("chartbox");
+  function show(ev) {
+    const r = svg.getBoundingClientRect(), px = (ev.clientX - r.left) / r.width * W;
+    const t = new Date(start.getTime() + (px - L) / (W - L - R) * (end - start));
+    let o = hs[0]; hs.forEach(q => { if (Math.abs(q.t - t) < Math.abs(o.t - t)) o = q; });
+    const cx = x(o.t), cy = y(o.temp);
+    svg.querySelector("#cur").setAttribute("x1", cx); svg.querySelector("#cur").setAttribute("x2", cx); svg.querySelector("#cur").setAttribute("opacity", ".5");
+    const cd = svg.querySelector("#curdot"); cd.setAttribute("cx", cx); cd.setAttribute("cy", cy); cd.setAttribute("fill", tcol(o.temp)); cd.setAttribute("opacity", "1");
+    tip.hidden = false;
+    tip.innerHTML = `<div class="k">${DOW[o.t.getDay()]} ${hh(o.t)} Uhr · ${WMO[o.code] || ""}</div><b style="color:${tcol(o.temp)}">${deg(o.temp, 1)}</b> <span class="k">gefühlt ${deg(o.app)}</span>
+      <div class="num">Wind ${Math.round(o.wind)} km/h, Böen ${Math.round(o.gust)}<br>Regen ${o.pp} %${o.pr ? ", " + fmt(o.pr) + " mm" : ""} · Feuchte ${o.rh} %<br>Taupunkt ${deg(o.dew, 1)}${o.mos != null ? " · MOSMIX " + deg(o.mos, 1) : ""}</div>`;
+    const bx = cx / W * r.width, tw = tip.offsetWidth;
+    tip.style.left = Math.min(r.width - tw / 2 - 4, Math.max(tw / 2 + 4, bx)) + "px";
+  }
+  function hide() { tip.hidden = true; svg.querySelector("#cur")?.setAttribute("opacity", "0"); svg.querySelector("#curdot")?.setAttribute("opacity", "0"); }
+  box.onpointermove = show; box.onpointerdown = show; box.onpointerleave = hide;
+}
+
+/* ---------- Einstellungen ---------- */
+[["lead-min","leadMin"," h",3],["lead-max","leadMax"," h",6],["comfort","comfort"," °C",20]].forEach(([id, key, unit, def]) => {
+  const el = $(id), out = $("o-" + id); el.value = store.get(key, def); out.textContent = fmt(+el.value, el.step.includes(".") ? (+el.value % 1 ? 1 : 0) : 0) + unit;
+  el.addEventListener("input", () => {
+    if (id === "lead-min" && +el.value > +$("lead-max").value) { $("lead-max").value = el.value; store.set("leadMax", +el.value); $("o-lead-max").textContent = fmt(+el.value, +el.value % 1 ? 1 : 0) + " h"; }
+    if (id === "lead-max" && +el.value < +$("lead-min").value) { $("lead-min").value = el.value; store.set("leadMin", +el.value); $("o-lead-min").textContent = fmt(+el.value, +el.value % 1 ? 1 : 0) + " h"; }
+    store.set(key, +el.value); out.textContent = fmt(+el.value, +el.value % 1 ? 1 : 0) + unit; render();
+  });
+});
+
+render();
+tryLive();
+let rz; addEventListener("resize", () => { clearTimeout(rz); rz = setTimeout(render, 150); });
+if ("serviceWorker" in navigator && location.protocol === "https:" && !/claude/.test(location.hostname)) {
+  navigator.serviceWorker.register("sw.js").catch(() => {});
+}
+document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible" && SOURCE !== "snapshot") tryLive(); });
+})();
+</script>
+
+</body>
+</html>
