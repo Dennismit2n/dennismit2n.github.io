@@ -68,3 +68,4 @@ The page speaks 14 languages (`js/i18n.js`), and so do the news and guides (`js/
 ## License
 
 [MIT](LICENSE) for everything in this repository, with two exceptions: `js/vendor/count.js` is GoatCounter’s counter script and is released under the ISC license, as stated in its file header; and the font files in `assets/fonts/fraunces/` are Fraunces by The Fraunces Project Authors, licensed under the SIL Open Font License 1.1 (see `OFL.txt` there).
+
