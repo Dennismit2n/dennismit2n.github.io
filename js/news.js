@@ -814,5 +814,24 @@ var NEWS = {
       ja: '最初の公開です。まず規模のゲートがあり、それから調査から引き継ぎまでの6つの段階が続きます。最後に残るのは3つのファイル — ブリーフィング、決定ログ、引き継ぎファイル — で、これがあれば会話の履歴がない新しいセッションでも作業を続けられます。MIT ライセンスのオープンソースです。',
       ko: '첫 공개. 맨 앞에 규모 게이트가 있고, 그다음 조사부터 인수인계까지 여섯 단계가 이어집니다. 끝에 남는 것은 브리핑, 결정 기록, 인수인계 파일 이렇게 세 개이며, 이것으로 대화 기록이 없는 새 세션도 이어서 작업합니다. MIT 라이선스의 오픈 소스입니다.'
     }
+  ],
+  heizwarte: [
+    {
+      date: '2026-10-13',
+      de: 'Erste Veröffentlichung. Wetter für heute und die nächsten zwei Tage, dazu eine Heiz-Ampel, die dir sagt, wann du die träge Heizung hochstellen musst – für Heizkörper, Fußbodenheizung, Wärmepumpe und Nachtspeicher, für bis zu fünf Orte. Die App spricht vorerst nur Deutsch, weitere Sprachen folgen.',
+      en: 'First release. Weather for today and the next two days, plus a heating traffic light that tells you when to turn up your slow heating – for radiators, underfloor heating, heat pumps and night storage heaters, for up to five places. The app speaks German only for now; more languages will follow.',
+      es: 'Primera publicación. El tiempo para hoy y los dos próximos días, y un semáforo de calefacción que te dice cuándo subir tu calefacción lenta: para radiadores, suelo radiante, bomba de calor y acumuladores nocturnos, para hasta cinco lugares. Por ahora la app solo habla alemán; seguirán más idiomas.',
+      fr: 'Première publication. La météo du jour et des deux jours suivants, plus un feu de chauffage qui te dit quand monter ton chauffage lent – pour radiateurs, plancher chauffant, pompe à chaleur et radiateurs à accumulation, pour jusqu’à cinq lieux. Pour l’instant, l’appli ne parle qu’allemand ; d’autres langues suivront.',
+      it: 'Prima pubblicazione. Il meteo per oggi e i prossimi due giorni, più un semaforo del riscaldamento che ti dice quando alzare il tuo riscaldamento lento: per termosifoni, riscaldamento a pavimento, pompa di calore e stufe ad accumulo, per un massimo di cinque luoghi. Per ora l’app parla solo tedesco; altre lingue seguiranno.',
+      nl: 'Eerste release. Het weer voor vandaag en de komende twee dagen, plus een verwarmingsstoplicht dat je zegt wanneer je je trage verwarming hoger moet zetten – voor radiatoren, vloerverwarming, warmtepomp en nachtaccumulatoren, voor maximaal vijf plaatsen. De app spreekt voorlopig alleen Duits; meer talen volgen.',
+      pl: 'Pierwsze wydanie. Pogoda na dziś i dwa kolejne dni, a do tego sygnalizator ogrzewania, który mówi ci, kiedy podkręcić powolne ogrzewanie – dla grzejników, ogrzewania podłogowego, pompy ciepła i pieców akumulacyjnych, dla maksymalnie pięciu miejsc. Na razie aplikacja mówi tylko po niemiecku; kolejne języki wkrótce.',
+      pt: 'Primeira publicação. O tempo para hoje e os próximos dois dias, mais um semáforo de aquecimento que te diz quando subir o teu aquecimento lento – para radiadores, piso radiante, bomba de calor e acumuladores noturnos, para até cinco locais. Por enquanto a app só fala alemão; seguir-se-ão mais idiomas.',
+      tr: 'İlk yayın. Bugün ve sonraki iki gün için hava durumu, ayrıca yavaş ısınan kaloriferini ne zaman açman gerektiğini söyleyen bir ısıtma trafik ışığı – radyatör, yerden ısıtma, ısı pompası ve gece depolamalı sobalar için, en fazla beş yer için. Uygulama şimdilik yalnızca Almanca konuşuyor; başka diller gelecek.',
+      ru: 'Первый выпуск. Погода на сегодня и два следующих дня и светофор отопления, который подскажет, когда прибавить медленное отопление, — для радиаторов, тёплого пола, теплового насоса и аккумуляционных печей, до пяти мест. Пока приложение говорит только по-немецки; другие языки появятся позже.',
+      hi: 'पहला रिलीज़। आज और अगले दो दिनों का मौसम, साथ में एक हीटिंग ट्रैफ़िक लाइट जो बताती है कि धीमी हीटिंग कब बढ़ानी है – रेडिएटर, फ़र्श हीटिंग, हीट पंप और नाइट स्टोरेज हीटर के लिए, पाँच जगहों तक। ऐप अभी सिर्फ़ जर्मन बोलता है; और भाषाएँ आएँगी।',
+      zh: '首个版本。今天和接下来两天的天气，外加一盏供暖信号灯，告诉你何时该调高升温缓慢的暖气——适用于暖气片、地暖、热泵和夜间蓄热式电暖器，最多五个地点。应用暂时只有德语，更多语言随后推出。',
+      ja: '最初の公開です。今日と続く2日間の天気に加えて、温まるのが遅い暖房をいつ強めるべきかを教える暖房信号があります。ラジエーター、床暖房、ヒートポンプ、蓄熱暖房機に対応し、最大5か所まで使えます。アプリは当面ドイツ語のみで、ほかの言語は今後追加します。',
+      ko: '첫 공개. 오늘과 앞으로 이틀의 날씨, 그리고 느린 난방을 언제 올려야 하는지 알려 주는 난방 신호등이 있습니다. 라디에이터, 바닥 난방, 히트 펌프, 심야 축열 난방기에 맞춰, 최대 다섯 곳까지 쓸 수 있습니다. 앱은 당분간 독일어만 지원하며, 다른 언어는 나중에 추가됩니다.'
+    }
   ]
 };

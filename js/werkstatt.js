@@ -42,7 +42,9 @@
     { key: 'collective', name: 'Collective-Calc', icon: './assets/collective-calc.svg',
       url: 'https://dennismit2n.github.io/collective-calc/', ctaKey: 'openTool' },
     { key: 'bigday', name: 'bigday', icon: './assets/bigday.svg',
-      url: 'https://dennismit2n.github.io/bigday/', ctaKey: 'openTool' }
+      url: 'https://dennismit2n.github.io/bigday/', ctaKey: 'openTool' },
+    { key: 'heizwarte', name: 'Heizwarte', icon: './assets/heizwarte.svg',
+      url: 'https://dennismit2n.github.io/heizwarte/', ctaKey: 'openTool' }
   ];
 
   var navList = document.getElementById('wkNavList');
