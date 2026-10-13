@@ -96,6 +96,10 @@
      Der Werkzeugname trägt den Verlauf, also ist das kein Schönheitsmaß. */
   --spectro: #0f766e;
   --spectro-flow: linear-gradient(100deg, #007d78, #006e69, #005f5b, #00504d, #00423f);
+  /* Heizwarte: Anker Eisblau (Knopf, Rahmen, README-Kachel), Verlauf kalt → warm auf Kappe und Name.
+     Alle Stopps einzeln ≥ 4,5:1 gegen --panel und --bg (BAUPLAN Heizwarte Abschnitt 11). */
+  --heizwarte: #0b6b93;
+  --heizwarte-flow: linear-gradient(100deg, #0b6b93, #2e7d32, #854d0e, #c2410c, #b91c1c);
   --shadow: 0 10px 30px rgba(26, 25, 50, 0.10);
 }
 
@@ -114,7 +118,7 @@
    sie ist gegenüber dem alten #E6E9F7 etwas dunkler und etwas stärker
    gesättigt (L 91,9 % statt 93,5 %, C 0,027 statt 0,019, H 285,9°) —
    ein Hauch Lila-Blassblau statt Papierweiß. 13,55 gegen --panel.
-   Alle zwölf Kachelfarben und beide Verläufe wurden gegen diesen Grund
+   Alle dreizehn Kachelfarben und beide Verläufe wurden gegen diesen Grund
    nachgerechnet — der schlechteste Wert im Dunkeln (Spectrotons Stopp
    #00948e) steigt von 4,54 auf 4,64. Wer den Grund noch einmal anfasst,
    rechnet die Zahlen in den Kachel-Kommentaren oben mit nach; sie stehen
@@ -154,6 +158,8 @@
     --prisma-flow: linear-gradient(100deg, #ff9e95, #ffae55, #cfd149, #00e8df, #bfb9ff);
     --spectro: #2dd4bf;
     --spectro-flow: linear-gradient(100deg, #8bfff8, #48e8e0, #13ccc5, #00b0a9, #00948e);
+    --heizwarte: #7dd3fc;
+    --heizwarte-flow: linear-gradient(100deg, #7dd3fc, #86efac, #fde047, #fdba74, #f87171);
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   }
 }
@@ -188,6 +194,8 @@
   --prisma-flow: linear-gradient(100deg, #ff9e95, #ffae55, #cfd149, #00e8df, #bfb9ff);
   --spectro: #2dd4bf;
   --spectro-flow: linear-gradient(100deg, #8bfff8, #48e8e0, #13ccc5, #00b0a9, #00948e);
+  --heizwarte: #7dd3fc;
+  --heizwarte-flow: linear-gradient(100deg, #7dd3fc, #86efac, #fde047, #fdba74, #f87171);
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
@@ -228,7 +236,7 @@ body {
    violett 290° und das himmelblaue Gegenstück 239,9°, dieselbe Kombination,
    die auch der Familienbalken trägt (OKLCH L 0,52 / 0,40 / 0,64).
    Gedämpft gegenüber dem Vorbild — 0,32 / 0,32 / 0,20 statt 0,5 / 0,5 / 0,32:
-   die Startseite trägt vierzehn Kacheln, Spectroton eine einzige Spalte.
+   die Startseite trägt fünfzehn Kacheln, Spectroton eine einzige Spalte.
 
    Die Farben stehen je Darstellung verschieden (--au-1/2/3 in den drei
    Variablenblöcken), und das ist der Kern der Sache: Der Schleier
@@ -460,6 +468,7 @@ body {
 .tool-masterprompt { --tool: var(--masterprompt); }
 .tool-prismatical { --tool: var(--prisma); --tool-flow: var(--prisma-flow); }
 .tool-spectroton { --tool: var(--spectro); --tool-flow: var(--spectro-flow); }
+.tool-heizwarte { --tool: var(--heizwarte); --tool-flow: var(--heizwarte-flow); }
 
 /* Die Farbkappe an der Oberkante, für jede Kachel in ihrer Farbe.
    Sie ist KEIN eigenes Kästchen mit eigener Rundung, sondern eine Ebene
@@ -639,6 +648,16 @@ body {
 @supports (background-clip: text) or (-webkit-background-clip: text) {
   .tool-spectroton .tool-name {
     background-image: var(--spectro-flow);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+/* Heizwarte: derselbe Verlauf-Name, kalt → warm. */
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .tool-heizwarte .tool-name {
+    background-image: var(--heizwarte-flow);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
