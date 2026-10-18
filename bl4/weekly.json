@@ -1,0 +1,256 @@
+{
+ "black_market": {
+  "area": "Grindstone of the Worthy",
+  "how": "Schnellreise zum The Low Rise Safehouse und durch die linke Tür raus. Gleite zur Straße, folge ihr geradeaus und geh durch das Gebäude: Der Automat steht oben am Berg hinter dem Gebäude, nahe der Kante.",
+  "note": "Das Angebot ist bei jedem anders: 2 Legendaries in je 4 Varianten, ein Kauf pro Besuch, danach 30 Minuten Wartezeit.",
+  "place": "Mountaintop",
+  "region": "Carcadia Burn"
+ },
+ "encore": {
+  "boss": "Core Observer",
+  "loot": [
+   "Bully",
+   "Divided Focus",
+   "Defibrillator"
+  ],
+  "note": "Wochen-Herausforderung am Big-Encore-Automaten von Moxxi vor der Arena (roter Boss-Marker auf der Karte, freigeschaltet nach der Story ab UVH-Rang 1): kostet Eridium, der Boss hat doppelte HP. Seine Dedicated Legendaries (Bully, Divided Focus, Defibrillator) fallen dann mit festen 30 % statt 9 % (Pearlescent 1,18 %, Phosphene 1,5 %), unabhängig vom UVH. Gearbox spricht von einer härteren Variante mit „noch lohnenderem“ Loot-Pool; zusätzliche Items sind bisher nicht dokumentiert. Quellen: MentalMars, Lootlemon.",
+  "where": "Order Bunker „Blacklime Bunker“, The Howl (The Fadefields). Schnellreise zur Rootdown Estates Fast Travel Station, dann nach Nordosten zum Bunkereingang und durch die Gänge bis zur Arena."
+ },
+ "reset_utc": "2026-10-22T16:00:00Z",
+ "shift": [
+  {
+   "a": "2026-09-29",
+   "c": "CSKJJ-63XZ6-BSKHK-SBBJJ-RRB9F",
+   "k": "keys",
+   "n": "MentalMars nennt 5",
+   "r": "2 Golden Keys",
+   "x": ""
+  },
+  {
+   "a": "2026-09-27",
+   "c": "WZ53T-6SC9F-B95ZW-H3T33-W3JS6",
+   "k": "keys",
+   "r": "2 Golden Keys",
+   "x": ""
+  },
+  {
+   "a": "2026-07-29",
+   "c": "BZR3T-TXHZB-KXTJ5-3JTJ3-CZ5WH",
+   "k": "keys",
+   "n": "Ablaufdatum unklar",
+   "r": "3 Golden Keys",
+   "x": ""
+  },
+  {
+   "a": "2026-03-29",
+   "c": "THX3B-H9FCW-CRBT5-BBJ3T-SXT65",
+   "k": "keys",
+   "n": "Credits der Story Packs",
+   "r": "1 Golden Key",
+   "x": "never"
+  },
+  {
+   "a": "",
+   "c": "T9RJB-BFKRR-3RBTW-B33TB-KCZB9",
+   "k": "keys",
+   "n": "Abspann des Hauptspiels",
+   "r": "1 Golden Key",
+   "x": "never"
+  },
+  {
+   "a": "2025-10-30",
+   "c": "J9RTT-KWCK3-CFBB5-BTBT3-FKRB6",
+   "k": "old",
+   "r": "1 Golden Key",
+   "x": ""
+  },
+  {
+   "a": "2025-10-30",
+   "c": "BHRB3-XCWCJ-WFJTK-JTJJT-FCWF9",
+   "k": "old",
+   "r": "1 Golden Key",
+   "x": ""
+  },
+  {
+   "a": "2025-10-30",
+   "c": "3SRB3-95CC3-K6TB5-BTJTB-66ZHW",
+   "k": "old",
+   "r": "1 Golden Key",
+   "x": ""
+  },
+  {
+   "a": "2025-10-02",
+   "c": "TZFT3-K9Z33-5FT3W-BJ33T-WZ5X5",
+   "k": "old",
+   "r": "1 Golden Key",
+   "x": ""
+  },
+  {
+   "a": "",
+   "c": "3SX3J-3XZ55-CR33C-JBBJT-XH395",
+   "k": "cosm",
+   "r": "Loveless-Skin „Mint Chipset“",
+   "x": "2030-12-31"
+  },
+  {
+   "a": "",
+   "c": "3ZRT3-K59KK-W6BJ5-B3TJ3-9WT99",
+   "k": "cosm",
+   "r": "C4SH-Skin „Like Vermillion Bucks“",
+   "x": "2030-12-31"
+  },
+  {
+   "a": "",
+   "c": "J963B-S66WK-56J3K-JJT3T-BF9T5",
+   "k": "cosm",
+   "r": "Vault-Hunter-Skin „Luck of the Kairish“",
+   "x": "2030-12-31"
+  },
+  {
+   "a": "",
+   "c": "BH633-66F5C-WFBB5-33TJB-CBSR9",
+   "k": "cosm",
+   "r": "Vault-Hunter-Skin „You're So Vein“",
+   "x": "2030-12-31"
+  },
+  {
+   "a": "",
+   "c": "THFB3-R9XKK-CFBJW-T33BB-9R3CC",
+   "k": "cosm",
+   "r": "Halloween-Kosmetik „Gourd Your Loins“ und „Hex Appeal“",
+   "x": "2030-12-31"
+  },
+  {
+   "a": "",
+   "c": "39FJB-CT5S3-5FTTW-BBB3J-F3HKZ",
+   "k": "cosm",
+   "r": "Vault-Hunter-Skin „Hype Squad“",
+   "x": "2030-12-31"
+  },
+  {
+   "a": "",
+   "c": "3HX3J-RJWSJ-CFBBC-3BJ3B-RWZ36",
+   "k": "cosm",
+   "r": "Vault-Hunter-Skin „A Winter Borderland“",
+   "x": "2030-12-31"
+  },
+  {
+   "a": "",
+   "c": "BZ6J3-3JKHB-CX3B5-TTJTT-HJBZW",
+   "k": "cosm",
+   "r": "Vault-Hunter-Skin „The World on His Shoulders“",
+   "x": "2030-12-31"
+  },
+  {
+   "a": "",
+   "c": "3ZXJB-HZBHT-KX3BK-BBTT3-BHHXJ",
+   "k": "cosm",
+   "n": "laut Mobalytics nur mit PS Plus",
+   "r": "Vault-Hunter-Skin „Children of the Vex“",
+   "x": "2030-12-31"
+  },
+  {
+   "a": "",
+   "c": "J9XTB-SJWS3-WRTTC-BJTJJ-TH6TX",
+   "k": "cosm",
+   "n": "laut TheBaseDotaku und Mobalytics nur mit PS Plus",
+   "r": "ECHO-4-Skin „A Winter Borderland“",
+   "x": "2030-12-31"
+  },
+  {
+   "a": "",
+   "c": "3S6BB-ZXT93-KRT3W-BT3T3-JW6TZ",
+   "k": "cosm",
+   "r": "Halloween-Kosmetik (Horrors of Kairos)",
+   "x": "2030-12-31"
+  },
+  {
+   "a": "",
+   "c": "J96JT-BCXKT-C6JJ5-JTJBB-BZTXJ",
+   "k": "cosm",
+   "r": "Harlowe-Skin „Maliwannabee“",
+   "x": "2030-12-31"
+  },
+  {
+   "a": "",
+   "c": "BZ6JJ-CB6CT-WXJJW-3TT3B-56FZ5",
+   "k": "cosm",
+   "r": "Vex-Skin „Mass Market Appeal“",
+   "x": "2030-12-31"
+  },
+  {
+   "a": "",
+   "c": "JZ6BJ-SBR5J-WF3BK-BT3BB-TX9HB",
+   "k": "cosm",
+   "r": "Amon-Skin „Cult Classic“",
+   "x": "2030-12-31"
+  },
+  {
+   "a": "",
+   "c": "TZXT3-XJXCB-CXBJW-BTTJT-9SK6B",
+   "k": "cosm",
+   "r": "Rafa-Skin „Savings Savior“",
+   "x": "2030-12-31"
+  },
+  {
+   "a": "",
+   "c": "JS63J-JSCWJ-CFTBW-3TJ3J-WJS5R",
+   "k": "cosm",
+   "r": "„Break Free“-Paket: Skins und der Legendary-Schild Firebreak (ab Level 25)",
+   "x": "2030-12-31"
+  }
+ ],
+ "sources": [
+  [
+   "Gearbox: Weekly Update 15.10.2026",
+   "https://support.borderlands.com/hc/en-us/articles/56412778253331-Borderlands-4-Weekly-Update-October-15-2026"
+  ],
+  [
+   "MentalMars: Black Market",
+   "https://mentalmars.com/borderlands-4/loot/black-market/"
+  ],
+  [
+   "TheBaseDotaku: Black Market",
+   "https://thebasedotaku.com/guides/borderlands-4-maurices-black-market-vending-machine-location-for-this-week/"
+  ],
+  [
+   "MentalMars: Moxxi's Encore",
+   "https://mentalmars.com/borderlands-4/gameplay/moxxis-encore/"
+  ],
+  [
+   "MentalMars: Core Observer",
+   "https://mentalmars.com/borderlands-4/bosses/core-observer/"
+  ],
+  [
+   "Lootlemon: Core Observer",
+   "https://www.lootlemon.com/loot-source/core-observer"
+  ],
+  [
+   "Lootlemon: Symmetry",
+   "https://www.lootlemon.com/weapon/symmetry-bl4"
+  ],
+  [
+   "MentalMars: SHiFT-Codes",
+   "https://mentalmars.com/game-news/borderlands-4-shift-codes/"
+  ],
+  [
+   "GamesRadar: SHiFT-Codes",
+   "https://www.gamesradar.com/games/borderlands/borderlands-4-shift-codes-golden-keys/"
+  ]
+ ],
+ "updated": "2026-10-15T19:12:25Z",
+ "v": 1,
+ "week_end": "2026-10-22",
+ "week_start": "2026-10-15",
+ "wildcard": {
+  "mission": "Rising Action",
+  "mods": [
+   "Centripetal",
+   "Sulfur Hexafluoride",
+   "Wealthy"
+  ],
+  "note": "Die Belohnung ist garantiert, und du kannst die Mission die ganze Woche wiederholen, bis der Roll passt. Start: ECHO-Menü → Karte → Wildcard-Symbol unten links gedrückt halten.",
+  "reward": "Symmetry",
+  "reward_info": "Order-Sniper, Legendary"
+ }
+}
