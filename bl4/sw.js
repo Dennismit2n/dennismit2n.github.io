@@ -1,7 +1,7 @@
 /* BL4 Vault-Handbuch: Service Worker
    Seite, Manifest und Daten: zuerst Netz (bei jedem Start frisch), offline aus dem Cache.
    Bilder: sofort aus dem Cache, im Hintergrund aktualisiert. Neue Version = neue Datei, wird sofort aktiv. */
-const VERSION = "2026-10-18T12:38:30Z";
+const VERSION = "2026-10-18T12:45:59Z";
 const CORE = "bl4-core-" + VERSION;
 const IMG = "bl4-img";
 const FONT = "bl4-font";
