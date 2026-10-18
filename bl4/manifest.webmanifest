@@ -1,0 +1,107 @@
+{
+ "id": "/bl4/",
+ "name": "BL4 Vault-Handbuch",
+ "short_name": "Vault-Handbuch",
+ "description": "Borderlands-4-Handbuch: Meta-Builds, alle Legendaries und Pearls mit Fundort und Drop-Chance, Firmware, Raids, Farm-Planer und Wochen-Update.",
+ "lang": "de",
+ "dir": "ltr",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "display_override": [
+  "standalone",
+  "minimal-ui"
+ ],
+ "orientation": "any",
+ "background_color": "#efe2bf",
+ "theme_color": "#ffd400",
+ "categories": [
+  "games",
+  "entertainment",
+  "reference"
+ ],
+ "icons": [
+  {
+   "src": "icons/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icons/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icons/maskable-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "maskable"
+  },
+  {
+   "src": "icons/maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ],
+ "shortcuts": [
+  {
+   "name": "Diese Woche",
+   "url": "./#woche",
+   "icons": [
+    {
+     "src": "icons/icon-192.png",
+     "sizes": "192x192"
+    }
+   ]
+  },
+  {
+   "name": "Loot-Datenbank",
+   "url": "./#loot",
+   "icons": [
+    {
+     "src": "icons/icon-192.png",
+     "sizes": "192x192"
+    }
+   ]
+  },
+  {
+   "name": "Firmware",
+   "url": "./#firmware",
+   "icons": [
+    {
+     "src": "icons/icon-192.png",
+     "sizes": "192x192"
+    }
+   ]
+  },
+  {
+   "name": "Raid-Guides",
+   "url": "./#raids",
+   "icons": [
+    {
+     "src": "icons/icon-192.png",
+     "sizes": "192x192"
+    }
+   ]
+  }
+ ],
+ "screenshots": [
+  {
+   "src": "icons/shot-narrow.webp",
+   "sizes": "780x1688",
+   "type": "image/webp",
+   "form_factor": "narrow",
+   "label": "Item-Karte mit Fundort-Karte"
+  },
+  {
+   "src": "icons/shot-wide.webp",
+   "sizes": "2360x1640",
+   "type": "image/webp",
+   "form_factor": "wide",
+   "label": "Handbuch im Querformat"
+  }
+ ]
+}
