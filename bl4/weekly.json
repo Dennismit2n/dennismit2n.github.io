@@ -1,23 +1,46 @@
 {
- "black_market": {
-  "area": "Grindstone of the Worthy",
-  "how": "Schnellreise zum The Low Rise Safehouse und durch die linke Tür raus. Gleite zur Straße, folge ihr geradeaus und geh durch das Gebäude: Der Automat steht oben am Berg hinter dem Gebäude, nahe der Kante.",
-  "note": "Das Angebot ist bei jedem anders: 2 Legendaries in je 4 Varianten, ein Kauf pro Besuch, danach 30 Minuten Wartezeit.",
-  "place": "Mountaintop",
-  "region": "Carcadia Burn"
- },
+ "v": 1,
+ "week_start": "2026-10-22",
+ "week_end": "2026-10-29",
+ "reset_utc": "2026-10-29T16:00:00Z",
+ "updated": "2026-10-22T20:35:04Z",
  "encore": {
-  "boss": "Core Observer",
+  "boss": "Driller Hole",
+  "where": "Queen's Cradle, Tonnage Peel (Carcadia Burn). Schnellreise zum Lowrise Safehouse, folge der Straße zur Anlage und fahr mit dem Aufzug direkt hinunter in die Boss-Arena.",
   "loot": [
-   "Bully",
-   "Divided Focus",
-   "Defibrillator"
+   "Katagawa's Revenge",
+   "Fuse",
+   "G.M.R."
   ],
-  "note": "Wochen-Herausforderung am Big-Encore-Automaten von Moxxi vor der Arena (roter Boss-Marker auf der Karte, freigeschaltet nach der Story ab UVH-Rang 1): kostet Eridium, der Boss hat doppelte HP. Seine Dedicated Legendaries (Bully, Divided Focus, Defibrillator) fallen dann mit festen 30 % statt 9 % (Pearlescent 1,18 %, Phosphene 1,5 %), unabhängig vom UVH. Gearbox spricht von einer härteren Variante mit „noch lohnenderem“ Loot-Pool; zusätzliche Items sind bisher nicht dokumentiert. Quellen: MentalMars, Lootlemon.",
-  "where": "Order Bunker „Blacklime Bunker“, The Howl (The Fadefields). Schnellreise zur Rootdown Estates Fast Travel Station, dann nach Nordosten zum Bunkereingang und durch die Gänge bis zur Arena."
+  "note": "Wochen-Herausforderung am Big-Encore-Automaten von Moxxi vor der Arena (roter Boss-Marker auf der Karte, freigeschaltet nach der Story ab UVH-Rang 1): kostet Eridium, der Boss hat doppelte HP. Seine Dedicated Legendaries (Katagawa's Revenge, Fuse, G.M.R.) fallen dann mit festen 30 % statt 9 % (Pearlescent 1,18 %, Phosphene 1,5 %), unabhängig vom UVH. Gearbox spricht von einer härteren Variante mit „noch lohnenderem“ Loot-Pool; zusätzliche Items sind bisher nicht dokumentiert. Quellen: MentalMars, Lootlemon."
  },
- "reset_utc": "2026-10-22T16:00:00Z",
+ "wildcard": {
+  "mission": "Old Lads",
+  "mods": [
+   "Vampiric",
+   "Armored",
+   "Strong"
+  ],
+  "reward": "Golden God",
+  "reward_info": "Ripper-Shotgun, Legendary",
+  "note": "Die Belohnung ist garantiert, und du kannst die Mission die ganze Woche wiederholen, bis der Roll passt. Start: ECHO-Menü → Karte → Wildcard-Symbol unten links gedrückt halten."
+ },
+ "black_market": {
+  "place": "Siedlung westlich von Rattlehead Crest",
+  "area": "Idolator's Noose",
+  "region": "Fadefields",
+  "how": "Schnellreise zum Someday Rise Safehouse und durch die rechte Tür raus. Geh nach Süden zur Siedlung westlich von Rattlehead Crest: Der Automat steht im großen Gebäude am Ufer (MentalMars: oberstes Stockwerk, TheBaseDotaku: erstes Stockwerk).",
+  "note": "Das Angebot ist bei jedem anders: 2 Legendaries in je 4 Varianten, ein Kauf pro Besuch, danach 30 Minuten Wartezeit."
+ },
  "shift": [
+  {
+   "a": "2026-10-21",
+   "c": "JZRJ3-BWJ3C-K6JJ5-T3BJJ-CFR59",
+   "k": "keys",
+   "r": "3 Golden Keys",
+   "x": "2026-10-27",
+   "n": "läuft am 27.10. ab"
+  },
   {
    "a": "2026-09-29",
    "c": "CSKJJ-63XZ6-BSKHK-SBBJJ-RRB9F",
@@ -202,8 +225,12 @@
  ],
  "sources": [
   [
-   "Gearbox: Weekly Update 15.10.2026",
-   "https://support.borderlands.com/hc/en-us/articles/56412778253331-Borderlands-4-Weekly-Update-October-15-2026"
+   "Gearbox: Version 1.11 (22.10.2026)",
+   "https://support.borderlands.com/hc/en-us/articles/56652595228051-Borderlands-4-Version-1-11-October-22-2026"
+  ],
+  [
+   "2K: Update Notes",
+   "https://borderlands.2k.com/borderlands-4/update-notes/"
   ],
   [
    "MentalMars: Black Market",
@@ -218,16 +245,16 @@
    "https://mentalmars.com/borderlands-4/gameplay/moxxis-encore/"
   ],
   [
-   "MentalMars: Core Observer",
-   "https://mentalmars.com/borderlands-4/bosses/core-observer/"
+   "MentalMars: Driller Hole",
+   "https://mentalmars.com/borderlands-4/bosses/driller-hole/"
   ],
   [
-   "Lootlemon: Core Observer",
-   "https://www.lootlemon.com/loot-source/core-observer"
+   "Lootlemon: Driller Hole",
+   "https://www.lootlemon.com/loot-source/driller-hole"
   ],
   [
-   "Lootlemon: Symmetry",
-   "https://www.lootlemon.com/weapon/symmetry-bl4"
+   "Lootlemon: Golden God",
+   "https://www.lootlemon.com/weapon/golden-god-bl4"
   ],
   [
    "MentalMars: SHiFT-Codes",
@@ -236,21 +263,14 @@
   [
    "GamesRadar: SHiFT-Codes",
    "https://www.gamesradar.com/games/borderlands/borderlands-4-shift-codes-golden-keys/"
-  ]
- ],
- "updated": "2026-10-15T19:12:25Z",
- "v": 1,
- "week_end": "2026-10-22",
- "week_start": "2026-10-15",
- "wildcard": {
-  "mission": "Rising Action",
-  "mods": [
-   "Centripetal",
-   "Sulfur Hexafluoride",
-   "Wealthy"
   ],
-  "note": "Die Belohnung ist garantiert, und du kannst die Mission die ganze Woche wiederholen, bis der Roll passt. Start: ECHO-Menü → Karte → Wildcard-Symbol unten links gedrückt halten.",
-  "reward": "Symmetry",
-  "reward_info": "Order-Sniper, Legendary"
- }
+  [
+   "TheBaseDotaku: SHiFT-Codes",
+   "https://thebasedotaku.com/codes/borderlands-4/"
+  ],
+  [
+   "OzBargain: SHiFT-Code",
+   "https://www.ozbargain.com.au/node/979886"
+  ]
+ ]
 }
