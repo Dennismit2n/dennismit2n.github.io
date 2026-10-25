@@ -1,0 +1,740 @@
+<div class="app" id="app">
+  <aside class="rail">
+    <div class="badge" aria-hidden="true">
+      <svg viewBox="0 0 64 64">
+        <circle class="b-ring" cx="32" cy="32" r="30"/>
+        <path class="b-hex" d="M32 7 53.6 19.5v25L32 57 10.4 44.5v-25z"/>
+        <path class="b-in" d="M32 13 48.5 22.5v19L32 51 15.5 41.5v-19z"/>
+        <path class="b-star" d="m32 19.5 3.6 8.2 8.9.8-6.7 5.9 2 8.7L32 38.6l-7.8 4.5 2-8.7-6.7-5.9 8.9-.8z"/>
+        <circle class="b-dot" cx="55" cy="50" r="3.5"/>
+      </svg>
+      <span class="badge-label">Waffen</span>
+      <span class="badge-num" id="badgeNum">33</span>
+    </div>
+    <nav class="nav" aria-label="Bereiche">
+      <a href="#arsenal" data-nav="arsenal"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="solid" d="M1 9.5h3l1 1h8V9h5v1.2h4.5v1.6H18v.7h-3.2l-.6 3h-2l.6-3h-2.2L9.5 16H6.9l.9-3.5H4.6L3.6 14H1z"/></svg><span>Arsenal</span></a>
+      <a href="#meta" data-nav="meta"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 6l6 6-6 6M12.5 6l6 6-6 6"/></svg><span>Meta</span></a>
+      <a href="#ttk" data-nav="ttk"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M12 2.5V6M18.5 6.5 20 5"/></svg><span>TTK</span></a>
+      <a href="#klassen" data-nav="klassen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16l-1 12H5z"/><path d="M9 8V5.5a3 3 0 0 1 6 0V8M9.5 13h5"/></svg><span>Klassen</span></a>
+      <a href="#intel" data-nav="intel"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/><path d="m9.4 12 1.9 1.9 3.4-3.7"/></svg><span>Intel</span></a>
+    </nav>
+  </aside>
+
+  <header class="topbar">
+    <div class="status" id="status" aria-label="Status">
+      <span>Datenstand: <b id="stStand">—</b></span>
+      <span class="opt" id="stPatch">Patch: <b>—</b></span>
+      <span id="stNet"><span class="dot"></span><b>Online</b></span>
+      <span class="opt" id="stVer">Daten: <b>—</b></span>
+      <span id="stClock"><b>--:--</b></span>
+    </div>
+    <div class="title-row">
+      <button type="button" class="back" id="backBtn" hidden aria-label="Zurück">‹</button>
+      <h1 id="viewTitle">Arsenal</h1>
+      <span class="ghost" id="viewGhost" aria-hidden="true">무기고</span>
+    </div>
+  </header>
+
+  <main class="main" id="main">
+    <div class="state"><b>Lade Waffendaten …</b><p>Einen Moment, die Rüstkammer wird aufgeschlossen.</p></div>
+  </main>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden>
+  <span id="toastMsg"></span>
+  <button type="button" id="toastAct" hidden></button>
+  <button type="button" class="x" id="toastClose" aria-label="Hinweis schließen">×</button>
+</div>
+
+<script>
+(() => {
+'use strict';
+
+const DATA_URL = 'daten/waffen.json';
+const APP_URL = 'https://dennismit2n.github.io/mw4/';
+const IS_PWA = document.documentElement.dataset.pwa === '1';
+const BUILD = (document.querySelector('meta[name="mw4-build"]') || {}).content || '';
+const VIEWS = {
+  arsenal: { title: 'Arsenal', ghost: '무기고' },
+  meta: { title: 'Meta-Bericht', ghost: '메타' },
+  ttk: { title: 'TTK-Analyse', ghost: '교전' },
+  klassen: { title: 'Klasseneditor', ghost: '장비' },
+  intel: { title: 'Intel', ghost: '정보' }
+};
+const RANGES = ['0–10 m', '10–40 m', '40–80 m', '80–120 m'];
+const PIPS = { S: 5, A: 4, B: 3, C: 2 };
+const KONF = { hoch: 'Konfidenz hoch', mittel: 'Konfidenz mittel', niedrig: 'Konfidenz niedrig', luecke: 'Datenlücke' };
+
+const LS = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) { /* Speicher gesperrt – App läuft trotzdem */ } }
+};
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const num = (v, d = 0) => v == null ? '—' : new Intl.NumberFormat('de-DE', { minimumFractionDigits: d, maximumFractionDigits: d }).format(v);
+const pad = i => String(i).padStart(2, '0');
+const dateDE = iso => { const [y, m, d] = iso.split('-'); return `${d}.${m}.${y}`; };
+const midnight = () => { const t = new Date(); return new Date(t.getFullYear(), t.getMonth(), t.getDate()); };
+const daysUntil = iso => { const [y, m, d] = iso.split('-').map(Number); return Math.round((new Date(y, m - 1, d) - midnight()) / 86400000); };
+const fmtBuild = b => { const d = new Date(b); return isNaN(d) ? '' : d.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' }) + ', ' + d.toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' }) + ' Uhr'; };
+const desktop = window.matchMedia('(min-width: 900px)');
+const isDesktop = () => desktop.matches;
+
+const S = {
+  data: null, byId: new Map(), klassen: new Map(), topSet: new Set(),
+  view: 'arsenal', weapon: 'han-86', loadout: null, open: false,
+  filter: LS.get('mw4.filter', 'alle'), q: '',
+  metaMode: LS.get('mw4.metaMode', 'core'),
+  ttkMode: LS.get('mw4.ttkMode', 'core'), ttkRange: LS.get('mw4.ttkRange', 0), ttkKlasse: LS.get('mw4.ttkKlasse', 'alle'),
+  buildTab: {}, mounted: null, shownDetail: null, lastHash: null,
+  reg: null, installEvt: null, lastCheck: Date.now()
+};
+const main = $('#main');
+
+/* ---------- Bausteine ---------- */
+const tierLabel = t => t === 'B' ? 'B/C' : t;
+const CHIP = { ar: 'Sturmgewehre', smg: 'MPs', sg: 'Schrotflinten', lmg: 'LMGs', dmr: 'DMR', sniper: 'Scharfschützen', pistole: 'Pistolen', werfer: 'Werfer', nahkampf: 'Nahkampf' };
+const chipName = id => CHIP[id] || (S.klassen.get(id) || {}).name || id;
+function pips(tier, apex) {
+  let h = '<span class="pips"' + (tier ? ` title="Tier ${tierLabel(tier)} im Core-Modus"` : '') + '>';
+  if (tier) for (let i = 0; i < 5; i++) h += `<i class="${i < (PIPS[tier] || 0) ? '' : 'off'}"></i>`;
+  if (apex) h += '<b title="Apex-Aufsatz verfügbar"></b>';
+  return h + '</span>';
+}
+const konf = k => `<span class="k k-${esc(k)}">${esc(KONF[k] || k)}</span>`;
+const gapBox = t => `<div class="gapbox">${t}</div>`;
+const klasse = w => S.klassen.get(w.klasse);
+const patchLabel = () => `${S.data.info.patch.name} (${dateDE(S.data.info.patch.live)})`;
+const hcMs = w => w.hcModell && w.rpm ? Math.round(60000 / w.rpm + ((w.werte && w.werte.openBolt) || 0)) : null;
+const getLvl = id => Math.max(0, parseInt(LS.get('mw4.lvl.' + id, 0), 10) || 0);
+const sourceLinks = list => list.map(q => `<a href="${esc(q.url)}" target="_blank" rel="noopener">${esc(q.titel)}</a>`).join('');
+function niceScale(max) {
+  const step = max > 400 ? 200 : max > 200 ? 100 : 50;
+  const top = Math.max(step, Math.ceil(max / step) * step);
+  const ticks = []; for (let t = 0; t <= top; t += step) ticks.push(t);
+  return { top, ticks, n: ticks.length - 1 };
+}
+const ticksHtml = (sc, unit) => `<div class="ticks">${sc.ticks.map(t => `<span style="left:${t / sc.top * 100}%">${t}${t === sc.top ? ' ' + unit : ''}</span>`).join('')}</div>`;
+
+/* ---------- Navigation ---------- */
+function go(hash, push) {
+  try {
+    if (push) history.pushState({ rk: 1 }, '', '#' + hash);
+    else history.replaceState(history.state, '', '#' + hash);
+  } catch (e) { location.hash = hash; return; }
+  route();
+}
+function back() {
+  if (history.state && history.state.rk) { history.back(); return; }
+  go(S.view === 'klassen' ? 'klassen' : 'arsenal', false);
+}
+function openWeapon(id, fromList) {
+  if (!S.byId.has(id)) return;
+  go('w-' + id, !(fromList && isDesktop()));
+}
+function openLoadout(id, fromList) { go('k-' + id, !(fromList && isDesktop())); }
+
+function route() {
+  if (!S.data) return;
+  const h = decodeURIComponent(location.hash.replace(/^#/, ''));
+  S.lastHash = location.hash;
+  let view = 'arsenal', open = false;
+  if (h.startsWith('w-') && S.byId.has(h.slice(2))) { S.weapon = h.slice(2); open = true; }
+  else if (h.startsWith('k-') && (h.slice(2) === 'katalog' || S.data.loadouts.some(l => l.id === h.slice(2)))) { view = 'klassen'; S.loadout = h.slice(2); open = true; }
+  else if (VIEWS[h]) view = h;
+  S.view = view; S.open = open;
+  render();
+}
+
+/* ---------- Rendern ---------- */
+function render() {
+  $$('[data-nav]').forEach(a => a.setAttribute('aria-current', a.dataset.nav === S.view ? 'page' : 'false'));
+  $('#viewTitle').textContent = VIEWS[S.view].title;
+  $('#viewGhost').textContent = VIEWS[S.view].ghost;
+  $('#backBtn').hidden = !(S.open && !isDesktop());
+  if (S.mounted !== S.view) {
+    S.mounted = S.view; S.shownDetail = null;
+    ({ arsenal: mountArsenal, meta: renderMeta, ttk: renderTtk, klassen: mountKlassen, intel: renderIntel })[S.view]();
+  }
+  if (S.view === 'arsenal') updateArsenal();
+  if (S.view === 'klassen') updateKlassen();
+}
+function rerenderPage(fn) {
+  const p = $('#page'); const top = p ? p.scrollTop : 0;
+  fn();
+  const np = $('#page'); if (np) np.scrollTop = top;
+}
+
+/* ===== Arsenal ===== */
+function mountArsenal() {
+  const chips = [{ id: 'alle', name: 'Alle' }].concat(S.data.waffenklassen.map(k => ({ id: k.id, name: chipName(k.id) })));
+  main.innerHTML = `
+    <div class="split" id="split">
+      <section class="pane list-pane" aria-label="Waffenliste">
+        <div class="tools">
+          <label class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>
+            <span class="sr">Waffe suchen</span>
+            <input id="search" type="search" placeholder="Waffe, Apex oder Klasse suchen" autocomplete="off" value="${esc(S.q)}"></label>
+          <div class="chips" role="group" aria-label="Waffenklasse">${chips.map(c => `<button type="button" class="chip-btn" data-filter="${c.id}" aria-pressed="${S.filter === c.id}">${esc(c.name)}</button>`).join('')}</div>
+        </div>
+        <div id="rows"></div>
+      </section>
+      <section class="pane detail-pane" id="detail" aria-label="Waffendetails"></section>
+    </div>`;
+  renderRows();
+}
+function matches(w, q) {
+  if (!q) return true;
+  const k = klasse(w);
+  const hay = [w.name.de, w.name.en, k.name, k.einzahl, k.en, w.apex && w.apex.name.de, w.apex && w.apex.name.en].join(' ').toLowerCase();
+  return q.split(/\s+/).every(t => hay.includes(t));
+}
+function renderRows() {
+  const q = S.q.trim().toLowerCase();
+  const list = S.data.waffen.filter(w => (S.filter === 'alle' || w.klasse === S.filter) && matches(w, q));
+  let h = '', i = 0, last = null;
+  for (const w of list) {
+    const k = klasse(w);
+    if (k.id !== last) {
+      last = k.id;
+      h += `<div class="group">${esc(k.name)} · ${S.data.waffen.filter(x => x.klasse === k.id && list.includes(x)).length}</div>`;
+    }
+    i++;
+    const sub = [k.einzahl, w.rpm ? num(w.rpm) + ' RPM' : null, w.ttk && w.ttk.core && w.ttk.core[0] ? 'TTK ' + w.ttk.core[0] + ' ms' : null].filter(Boolean).map(x => x.replace(/ /g, '\u00a0')).join(' · ');
+    h += `<button type="button" class="row" data-weapon="${w.id}" data-from="list" aria-current="${w.id === S.weapon}">
+      <span class="num">${pad(i)}</span>
+      <span class="nm">${esc(w.name.de)}${S.topSet.has(w.id) ? '<span class="star" aria-label="Top-Pick">★</span>' : ''}<small>${esc(sub)}</small></span>
+      <span class="side">${pips(w.tier, !!w.apex)}${w.tier ? `<span class="tier-txt">Tier ${tierLabel(w.tier)}</span>` : ''}</span>
+    </button>`;
+  }
+  $('#rows').innerHTML = h || `<p class="empty">Keine Waffe gefunden für „${esc(S.q)}“.</p>`;
+}
+function updateArsenal() {
+  $$('#rows .row').forEach(r => r.setAttribute('aria-current', String(r.dataset.weapon === S.weapon)));
+  $('#split').classList.toggle('is-open', S.open);
+  if (S.shownDetail !== S.weapon) {
+    const d = $('#detail');
+    d.innerHTML = weaponHtml(S.byId.get(S.weapon));
+    d.scrollTop = 0; S.shownDetail = S.weapon;
+    const row = $(`#rows .row[data-weapon="${S.weapon}"]`);
+    if (row && isDesktop()) row.scrollIntoView({ block: 'nearest' });
+  }
+}
+function refreshDetail() {
+  const d = $('#detail'); if (!d) return;
+  const top = d.scrollTop; d.innerHTML = weaponHtml(S.byId.get(S.weapon)); d.scrollTop = top;
+}
+
+function cell(label, val, unit, sub, cls) {
+  const has = val != null && val !== '';
+  return `<div class="stat ${has ? '' : 'gap'} ${cls || ''}"><dt>${label}</dt><dd>${has ? val : '—'}${has && unit ? `<small>${unit}</small>` : ''}</dd>${sub ? `<span class="sub">${sub}</span>` : (has ? '' : '<span class="sub">keine Messung</span>')}</div>`;
+}
+function statsHtml(w) {
+  const v = w.werte || {}, f = w.freischaltung;
+  const minor = w.klasse === 'werfer' || w.klasse === 'nahkampf';
+  const cells = [];
+  if (w.rpm != null) cells.push(cell('Kadenz', num(w.rpm), 'RPM', w.feuerart));
+  if (w.magazin != null) cells.push(cell('Magazin', `${w.magazin} / ${w.reserve}`, '', 'Magazin / Reserve'));
+  cells.push(cell('Freischaltung', 'Lvl ' + f.level, '', f.alt != null ? `Widerspruch: Tabelle ${f.level}, Karte ${f.alt}` : 'Spielerlevel', f.alt != null ? 'warn' : ''));
+  cells.push(cell('Max.-Level', w.maxLevel, '', w.apex ? 'Waffenlevel · Apex' : 'Waffenlevel'));
+  if (!minor) {
+    cells.push(cell('ZV-Zeit', v.zv, 'ms', v.zvBuild ? `mit Meta-Build ${v.zvBuild} ms` : null));
+    cells.push(cell('Sprint → Feuer', v.stf, 'ms', v.stfBuild ? `mit Meta-Build ${v.stfBuild} ms` : null));
+    cells.push(cell('Nachladen', v.nachladen ? num(v.nachladen / 1000, 2) : null, 's'));
+    const gv = v.geschoss != null ? v.geschoss : v.geschossBuild;
+    cells.push(cell('Geschossgeschw.', gv, 'm/s', v.geschoss != null ? (v.geschossBuild ? `mit Build ${v.geschossBuild} m/s` : null) : (v.geschossBuild ? 'mit Meta-Build' : null)));
+    const bw = v.bewegung != null ? v.bewegung : v.bewegungBuild;
+    if (bw != null) cells.push(cell('Bewegung', num(bw, 2), 'm/s', v.bewegung != null ? null : 'mit Meta-Build'));
+    if (v.sprint != null) cells.push(cell('Sprinttempo', num(v.sprint, 2), 'm/s'));
+    if (v.rueckH != null) cells.push(cell('Rückstoß', `${num(v.rueckH, 1)} / ${num(v.rueckV, 1)}`, '', 'horizontal / vertikal'));
+    if (v.kopf != null) cells.push(cell('Kopf-Multiplikator', '×' + num(v.kopf, 1), ''));
+    if (v.openBolt != null) cells.push(cell('Open Bolt', v.openBolt, 'ms', 'Verzögerung vor Schuss 1'));
+    if (w.ttk && w.ttk.abfall) cells.push(cell('Schadensabfall', esc(w.ttk.abfall), '', 'ab diesen Distanzen'));
+  }
+  const src = minor
+    ? `<div class="src">Quelle: offizieller Launch-Blog ${konf('hoch')}</div>`
+    : `<div class="src">Name, Kadenz, Magazin, Freischaltung: offizieller Launch-Blog ${konf('hoch')}</div>
+       <div class="src">Handling: ${esc(v.quelle || '—')} · ${esc(patchLabel())} ${konf(v.konfidenz || 'luecke')}</div>`;
+  return `<section class="block"><h3>Werte</h3><dl class="stats">${cells.join('')}</dl>${src}</section>`;
+}
+function ttkHtml(w) {
+  if (w.klasse === 'werfer' || w.klasse === 'nahkampf') return '';
+  const t = w.ttk; let body = '';
+  if (t && t.core && t.core.some(x => x != null)) {
+    const sc = { top: 800, ticks: [0, 200, 400, 600, 800], n: 4 };
+    body += '<div class="bars">' + t.core.map((x, i) => `<div class="bar-row"><span>${RANGES[i]}</span><span class="track" style="--n:4">${x == null ? '' : `<span class="fill" style="width:${Math.min(100, x / sc.top * 100)}%"></span>`}</span><span class="val ${x == null ? 'dim' : ''}">${x == null ? '—' : x + ' ms'}</span></div>`).join('') + '</div>';
+    body += `<div class="axis"><span></span>${ticksHtml(sc, 'ms')}<span></span></div>`;
+  } else {
+    body += gapBox('Für diese Waffe gibt es noch keine Distanz-TTK. Sieh dir die Hinweise unten an.');
+  }
+  const kv = [];
+  if (t && t.kopfZuerst15) kv.push(['Kopf zuerst, 15 m', 'Basiswaffe ohne Aufsätze', t.kopfZuerst15 + ' ms']);
+  const hc = hcMs(w);
+  if (hc) kv.push(['Hardcore (geschätzt)', `2 Treffer angenommen${w.werte && w.werte.openBolt ? ', inkl. Open Bolt' : ''}`, '≈ ' + hc + ' ms']);
+  const g = S.data.gesamtTtk.werte.find(x => x.id === w.id);
+  if (g) kv.push(['Gesamt-TTK' + (g.label ? ' – ' + g.label : ''), S.data.gesamtTtk.erklaerung, g.ms + ' ms']);
+  const kvHtml = kv.length ? `<dl class="kv">${kv.map(([a, b, c]) => `<dt>${esc(a)}<small>${esc(b)}</small></dt><dd>${c}</dd>`).join('')}</dl>` : '';
+  const src = t ? `<div class="src">${esc(t.quelle)} ${konf(t.konfidenz)}${hc ? ' · Hardcore: ' + konf('niedrig') : ''}</div>` : (hc ? `<div class="src">Hardcore-Schätzung ${konf('niedrig')}</div>` : '');
+  return `<section class="block"><h3>Time to Kill · Standard</h3>${body}${kvHtml}${src}</section>`;
+}
+function buildsHtml(w) {
+  if (w.klasse === 'werfer' || w.klasse === 'nahkampf') return '';
+  if (!w.builds.length) return `<section class="block"><h3>Meta-Builds</h3>${gapBox('Noch kein verifizierter Launch-Build. Wird nach dem ersten Waffen-Tuning ergänzt.')}</section>`;
+  const idx = Math.min(S.buildTab[w.id] || 0, w.builds.length - 1);
+  const b = w.builds[idx];
+  const tabs = w.builds.map((x, i) => `<button type="button" data-build="${i}" aria-pressed="${i === idx}">${esc(x.modus)}${x.titel !== x.modus ? ' · ' + esc(x.titel) : ''}</button>`).join('');
+  const parts = b.teile.length
+    ? `<div class="parts">${b.teile.map(p => `<div class="part ${p.slot === 'Apex' ? 'is-apex' : ''}"><span class="slot">${esc(p.slot)}</span><span class="pn">${esc(p.name)}${p.effekt ? `<em>${esc(p.effekt)}</em>` : ''}</span><span class="wl">${p.wl != null ? 'WL ' + p.wl : ''}</span></div>`).join('')}</div>`
+    : '<div style="margin-top:12px">' + gapBox(esc(b.hinweis || 'Aufsätze nicht öffentlich.')) + '</div>';
+  const note = b.teile.length && b.hinweis ? `<p class="build-note">${esc(b.hinweis)}</p>` : '';
+  return `<section class="block"><h3>Meta-Builds <span class="tier-txt">${w.builds.length} ${w.builds.length === 1 ? 'Build' : 'Builds'}</span></h3>
+    <div class="seg" role="group" aria-label="Build wählen">${tabs}</div>${parts}${note}
+    <div class="src">${sourceLinks(b.quellen)} · ${esc(patchLabel())} ${konf(b.konfidenz)}${b.vollstaendig ? '' : ' <span class="k k-luecke">unvollständig</span>'}</div>
+    <p class="hint" style="margin-top:8px">WL = Waffenlevel, auf dem der Aufsatz freigeschaltet wird.</p></section>`;
+}
+function apexHtml(w) {
+  if (!w.apex) return '';
+  const a = w.apex;
+  return `<section class="block"><h3>Apex-Aufsatz</h3>
+    <div class="apex-head"><span class="diamond" aria-hidden="true"></span><div>
+      <div class="apex-name">${esc(a.name.de)}</div>
+      ${a.name.en !== a.name.de ? `<div class="apex-en">Englisch: ${esc(a.name.en)}</div>` : ''}
+      <p style="margin:8px 0 0">${esc(a.effekt)}.</p>
+      ${a.extra ? `<p style="margin:6px 0 0;color:var(--lime-2)">${esc(a.extra)}</p>` : ''}
+      <div class="tags">${a.blockt.length ? a.blockt.map(s => `<span class="tag">blockt ${esc(s)}</span>`).join('') : '<span class="tag">blockt keine Slots laut Quelle</span>'}<span class="tag">frei ab Waffenlevel ${w.maxLevel}</span></div>
+    </div></div></section>`;
+}
+function lvlHtml(w) {
+  const lvl = Math.min(getLvl(w.id), w.maxLevel), rest = w.maxLevel - lvl;
+  const goal = w.apex ? 'zum Apex-Aufsatz' : 'zum Max.-Level';
+  const txt = rest <= 0 ? (w.apex ? '<b>Apex freigeschaltet</b> – Waffen-Prestige ist jetzt möglich.' : '<b>Max.-Level erreicht</b> – Waffen-Prestige ist jetzt möglich.') : `Noch <b>${rest}</b> ${rest === 1 ? 'Level' : 'Level'} ${goal}.`;
+  return `<section class="block"><h3>Mein Waffenlevel</h3>
+    <div class="lvl">
+      <div class="stepper"><button type="button" data-lvl="-1" aria-label="Level senken">−</button>
+        <input id="lvlInput" type="number" inputmode="numeric" min="0" max="${w.maxLevel}" value="${lvl}" aria-label="Aktuelles Waffenlevel">
+        <button type="button" data-lvl="1" aria-label="Level erhöhen">+</button></div>
+      <span class="lvl-bar" aria-hidden="true"><i style="width:${lvl / w.maxLevel * 100}%"></i></span>
+      <p class="lvl-txt" id="lvlTxt">${txt}</p>
+    </div><p class="hint" style="margin-top:8px">Wird nur auf diesem Gerät gespeichert.</p></section>`;
+}
+function weaponHtml(w) {
+  const k = klasse(w);
+  const slot = w.klasse === 'nahkampf' ? 'Nahkampf' : (w.klasse === 'pistole' || w.klasse === 'werfer') ? 'Sekundär' : 'Primär';
+  const lvl = Math.min(getLvl(w.id), w.maxLevel);
+  const notes = w.hinweise.length ? `<ul class="notes">${w.hinweise.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : '';
+  const beta = w.beta.length ? `<p class="label" style="margin:16px 0 8px">Beta-Historie · veraltet</p><ul class="notes old">${w.beta.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : '';
+  return `<article class="card">
+    <header class="wd-head">
+      <div class="wd-top"><span class="label">${slot}</span>${pips(w.tier, !!w.apex)}</div>
+      <div class="wd-class">${esc(k.einzahl)} – ${esc(w.name.de)}</div>
+      <h2 class="wd-name">${esc(w.name.de)}${S.topSet.has(w.id) ? '<span class="star" title="Top-Pick im Core-Meta">★</span>' : ''}</h2>
+      ${w.name.en !== w.name.de ? `<div class="wd-en">Englisch: ${esc(w.name.en)}</div>` : ''}
+      <div class="wd-meta">
+        ${w.tier ? `<span>Tier <b>${tierLabel(w.tier)}</b> · Core</span>` : ''}
+        ${w.tierAbweichung ? `<span class="flag">≠ ${esc(w.tierAbweichung)}</span>` : ''}
+        ${w.nutzung != null ? `<span><b>${num(w.nutzung, 1)} %</b> Nutzung</span>` : ''}
+        <span class="lvlmini" id="lvlMini"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="9"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span>${lvl} / ${w.maxLevel}</span><span class="minibar"><i style="width:${lvl / w.maxLevel * 100}%"></i></span></span>
+      </div>
+    </header>
+    <div class="wd-body">
+      ${statsHtml(w)}
+      ${ttkHtml(w)}
+      ${buildsHtml(w)}
+      ${apexHtml(w)}
+      ${lvlHtml(w)}
+      ${notes || beta ? `<section class="block"><h3>Hinweise</h3>${notes}${beta}</section>` : ''}
+      ${w.quellen.length ? `<section class="block"><h3>Quellen</h3><div class="links">${sourceLinks(w.quellen)}</div></section>` : ''}
+    </div>
+  </article>`;
+}
+function setLvl(v) {
+  const w = S.byId.get(S.weapon); if (!w) return;
+  const lvl = Math.max(0, Math.min(w.maxLevel, parseInt(v, 10) || 0));
+  LS.set('mw4.lvl.' + w.id, lvl);
+  const inp = $('#lvlInput'); if (inp && String(inp.value) !== String(lvl) && document.activeElement !== inp) inp.value = lvl;
+  const rest = w.maxLevel - lvl, pct = lvl / w.maxLevel * 100;
+  $$('.lvl-bar i, #lvlMini .minibar i').forEach(i => { i.style.width = pct + '%'; });
+  const mini = $('#lvlMini span'); if (mini) mini.textContent = `${lvl} / ${w.maxLevel}`;
+  const goal = w.apex ? 'zum Apex-Aufsatz' : 'zum Max.-Level';
+  $('#lvlTxt').innerHTML = rest <= 0 ? (w.apex ? '<b>Apex freigeschaltet</b> – Waffen-Prestige ist jetzt möglich.' : '<b>Max.-Level erreicht</b> – Waffen-Prestige ist jetzt möglich.') : `Noch <b>${rest}</b> Level ${goal}.`;
+}
+
+/* ===== Meta ===== */
+function pickCard(id, i) {
+  const w = S.byId.get(id), k = klasse(w), t = w.ttk && w.ttk.core ? w.ttk.core[0] : null;
+  const stat = t ? `TTK 0–10 m: ${t} ms` : (id === 'kg7-vulcan' ? 'One-Shot-Reichweite unbegrenzt' : (w.rpm ? num(w.rpm) + ' RPM' : ''));
+  return `<button type="button" class="pick" data-weapon="${id}"><span class="rk">${pad(i + 1)} · ${esc(k.einzahl)}</span><span class="pn">${esc(w.name.de)}</span>${pips(w.tier, !!w.apex)}<span class="ps">${stat}</span>${w.nutzung != null ? `<span class="pc">${num(w.nutzung, 1)} % Nutzung</span>` : ''}</button>`;
+}
+function barChart(rows, unit, opts = {}) {
+  if (!rows.length) return gapBox('Für diese Auswahl gibt es keine Messwerte.');
+  const sc = niceScale(Math.max(...rows.map(r => r.v)));
+  const fmt = opts.fmt || (v => num(v));
+  return `<div class="chart">${rows.map((r, i) => `<button type="button" class="crow ${i < (opts.top || 0) ? 'top' : ''}" data-weapon="${r.id}">
+      <span class="cn">${esc(r.name)}<small>${esc(r.sub || '')}</small></span>
+      <span class="track" style="--n:${sc.n}"><span class="fill" style="width:${r.v / sc.top * 100}%"></span></span>
+      <span class="val">${opts.prefix || ''}${fmt(r.v)} ${unit}</span></button>`).join('')}
+    <div class="caxis"><span></span>${ticksHtml(sc, unit)}<span></span></div></div>`;
+}
+function renderMeta() {
+  const MB = S.data.metaBericht, m = S.metaMode;
+  const modes = [['core', 'Core 6v6'], ['hardcore', 'Hardcore'], ['dmz', 'DMZ'], ['warzone', 'Warzone']];
+  let body = '';
+  if (m === 'core') {
+    const nu = S.data.nutzung;
+    const usage = nu.werte.map(x => { const w = S.byId.get(x.id); return { id: x.id, name: w.name.de, sub: klasse(w).einzahl, v: x.prozent }; });
+    const groups = S.data.waffenklassen.filter(k => k.id !== 'werfer' && k.id !== 'nahkampf');
+    const diffs = S.data.waffen.filter(w => w.tierAbweichung);
+    const tierRows = groups.map(k => {
+      const ws = S.data.waffen.filter(w => w.klasse === k.id);
+      const col = t => ws.filter(w => w.tier === t).map(w => `<button type="button" class="wchip" data-weapon="${w.id}">${esc(w.name.de)}${w.tierAbweichung ? '<sup>≠</sup>' : ''}</button>`).join('') || '<span class="dim">—</span>';
+      return `<div class="tier-row"><div class="cls">${esc(k.name)}</div><div class="tc" data-t="S">${col('S')}</div><div class="tc" data-t="A">${col('A')}</div><div class="tc" data-t="B/C">${col('B')}</div></div>`;
+    }).join('');
+    body = `
+      <section class="section"><h2>Top-Picks</h2><p class="lead">${esc(MB.core.text)}</p>
+        <div class="picks">${MB.core.top.map(pickCard).join('')}</div><p class="foot">Quelle: ${esc(MB.core.quelle)} · ${esc(patchLabel())}</p></section>
+      <section class="section"><h2>Nutzungsrate</h2>${barChart(usage, '%', { fmt: v => num(v, 1), top: 1 })}
+        <p class="foot">${esc(nu.quelle)}, Stand ${dateDE(nu.stand)}. ${esc(nu.hinweis)}</p></section>
+      <section class="section"><h2>Tierliste nach Klasse</h2>
+        <div class="tiers"><div class="tier-row tier-head"><div>Klasse</div><div>S</div><div>A</div><div>B/C</div></div>${tierRows}</div>
+        <p class="foot">Quellen: CODMunity und Mobalytics (Launch-Daten). Bei Pistolen heißt A „brauchbar“. ≠ = Quellen uneinig: ${diffs.map(w => `${esc(w.name.de)} (${esc(w.tierAbweichung)})`).join(' · ')}.</p></section>`;
+  } else if (m === 'hardcore') {
+    const H = MB.hardcore, T = S.data.info.texte.hardcore;
+    const item = (x, withRole) => { const w = S.byId.get(x.id), hc = hcMs(w); return `<button type="button" class="hc-item" data-weapon="${x.id}"><span><span class="t">${esc(w.name.de)}</span>${withRole ? ` <span class="r">${esc(x.rolle)}</span>` : ''}</span><span class="ms">${hc ? '≈ ' + hc + ' ms' : ''}</span><span class="g">${esc(x.grund)}</span></button>`; };
+    body = `
+      <div class="callout"><b>Achtung:</b> ${esc(T[0])}</div>
+      <section class="section"><h2>Empfehlungen</h2><div class="hc-list">${H.picks.map(x => item(x, true)).join('')}</div>
+        <p class="foot">${esc(T[1])}</p></section>
+      <section class="section"><h2>One-Shot-Kandidaten</h2><div class="hc-list">${H.oneShot.map(x => item(x, false)).join('')}</div>
+        <p class="foot">Im Schießstand prüfen: Dummies auf 10, 25, 50 und 100 m, die TTK wird angezeigt.</p></section>
+      <section class="section"><h2>Worauf es in Hardcore ankommt</h2><div class="tags">${H.prioritaeten.map(p => `<span class="tag">${esc(p)}</span>`).join('')}</div>
+        <p class="lead">In Hardcore schrumpfen die TTK-Unterschiede auf ein paar Dutzend Millisekunden. Wer zuerst zielt und trifft, gewinnt – deshalb zählen Handling und Lautlosigkeit mehr als reine Kadenz. ${esc(T[2])}</p>
+        <div class="btns"><button type="button" class="btn alt" data-goto-ttk="hc">Hardcore-TTK-Rangliste</button></div></section>`;
+  } else if (m === 'dmz') {
+    const D = MB.dmz;
+    const dmzBuilds = S.data.waffen.filter(w => w.builds.some(b => b.modus === 'DMZ'));
+    body = `
+      <div class="callout"><b>Eigenes Tuning:</b> ${esc(D.hinweis)}</div>
+      <section class="section"><h2>Top-Picks DMZ</h2><div class="picks">${D.top.map(pickCard).join('')}</div><p class="foot">Quelle: ${esc(D.quelle)}</p></section>
+      <section class="section"><h2>Waffen mit DMZ-Build</h2><div>${dmzBuilds.map(w => `<button type="button" class="wchip" data-weapon="${w.id}" data-open-build="DMZ">${esc(w.name.de)}</button>`).join('')}</div></section>`;
+  } else {
+    const W = MB.warzone, d = daysUntil(W.start);
+    body = `
+      <div class="count-card"><span class="count">${d > 0 ? d : 0}</span><span class="count-txt"><span class="label">${d > 0 ? (d === 1 ? 'Tag bis' : 'Tage bis') : 'Seit'}</span><b>Season 1 + Warzone</b><span class="sc-sub">${dateDE(W.start)}</span></span></div>
+      <section class="section"><h2>Stand</h2><p class="lead">${esc(W.text)}</p>
+        <p class="lead">Sobald Season 1 live ist, kommen hier die Warzone-Builds rein. Die App holt sich die neuen Daten beim nächsten Start von selbst.</p></section>`;
+  }
+  main.innerHTML = `<div class="page" id="page"><div class="page-inner">
+    <div class="seg" role="group" aria-label="Spielmodus">${modes.map(([id, l]) => `<button type="button" data-meta-mode="${id}" aria-pressed="${m === id}">${l}</button>`).join('')}</div>
+    ${body}</div></div>`;
+}
+
+/* ===== TTK ===== */
+function renderTtk() {
+  const mode = S.ttkMode;
+  const modes = [['core', 'Standard'], ['hc', 'Hardcore ≈'], ['gesamt', 'Gesamt-TTK'], ['kopf', 'Kopf zuerst']];
+  let rows = [];
+  if (mode === 'core') rows = S.data.waffen.filter(w => w.ttk && w.ttk.core && w.ttk.core[S.ttkRange] != null).map(w => ({ w, v: w.ttk.core[S.ttkRange] }));
+  else if (mode === 'hc') rows = S.data.waffen.filter(w => hcMs(w)).map(w => ({ w, v: hcMs(w) }));
+  else if (mode === 'gesamt') rows = S.data.gesamtTtk.werte.map(x => ({ w: S.byId.get(x.id), v: x.ms, label: x.label }));
+  else rows = S.data.waffen.filter(w => w.ttk && w.ttk.kopfZuerst15).map(w => ({ w, v: w.ttk.kopfZuerst15 }));
+  const avail = [...new Set(rows.map(r => r.w.klasse))];
+  const kl = avail.includes(S.ttkKlasse) ? S.ttkKlasse : 'alle';
+  rows = rows.filter(r => kl === 'alle' || r.w.klasse === kl).sort((a, b) => a.v - b.v)
+    .map(r => ({ id: r.w.id, name: r.label || r.w.name.de, v: r.v, sub: klasse(r.w).einzahl + (mode === 'hc' && r.w.werte.openBolt ? ` · inkl. ${r.w.werte.openBolt} ms Open Bolt` : '') + (mode !== 'hc' && r.w.rpm ? ' · ' + num(r.w.rpm) + ' RPM' : '') }));
+  const foot = {
+    core: `Quelle: CODMunity, Launch-Daten vom 23.10.2026, Meta-Loadouts, über die Distanz gemittelt ${konf('mittel')}<br>Unterschiede unter etwa 20 ms spürt kaum jemand – ZV-Zeit und Sprint→Feuer entscheiden mehr Gefechte.`,
+    hc: `${esc(S.data.info.texte.hardcore[0])}<br>${esc(S.data.info.texte.hardcore[1])} ${konf('niedrig')}`,
+    gesamt: `Quelle: ${esc(S.data.gesamtTtk.quelle)} – ${esc(S.data.gesamtTtk.erklaerung)} ${konf('mittel')}<br>Zeigt, warum MPs das erste Gefecht direkt aus dem Sprint gewinnen.`,
+    kopf: `Quelle: CODMunity, 22.10.2026 – Basiswaffen ohne Aufsätze, erster Treffer am Kopf, 15 m. Nur Sturmgewehre gemessen ${konf('mittel')}`
+  }[mode];
+  const klChips = [['alle', 'Alle']].concat(avail.map(id => [id, chipName(id)]));
+  main.innerHTML = `<div class="page" id="page"><div class="page-inner">
+    <div class="controls">
+      <div><span class="ctl-label">Messung</span><div class="seg" role="group" aria-label="Messung">${modes.map(([id, l]) => `<button type="button" data-ttk-mode="${id}" aria-pressed="${mode === id}">${l}</button>`).join('')}</div></div>
+      ${mode === 'core' ? `<div><span class="ctl-label">Distanz</span><div class="seg" role="group" aria-label="Distanz">${RANGES.map((r, i) => `<button type="button" data-ttk-range="${i}" aria-pressed="${S.ttkRange === i}">${r}</button>`).join('')}</div></div>` : ''}
+      ${avail.length > 1 ? `<div><span class="ctl-label">Klasse</span><div class="chips" role="group" aria-label="Klasse">${klChips.map(([id, l]) => `<button type="button" class="chip-btn" data-ttk-klasse="${id}" aria-pressed="${kl === id}">${esc(l)}</button>`).join('')}</div></div>` : ''}
+    </div>
+    <section class="section"><h2>${mode === 'core' ? 'Standard · ' + RANGES[S.ttkRange] : modes.find(x => x[0] === mode)[1]} · schnellste zuerst</h2>
+      ${barChart(rows, 'ms', { top: 3, prefix: mode === 'hc' ? '≈ ' : '' })}
+      <p class="foot">${foot}</p></section>
+  </div></div>`;
+}
+
+/* ===== Klassen ===== */
+function mountKlassen() {
+  if (!S.loadout) S.loadout = S.data.loadouts[0].id;
+  const items = S.data.loadouts.map((l, i) => {
+    const p = S.byId.get(l.primaer.waffe);
+    return `<button type="button" class="row" data-loadout="${l.id}" data-from="list" aria-current="${l.id === S.loadout}"><span class="num">${pad(i + 1)}</span><span class="nm">${esc(l.name)}${i === 0 ? '<span class="star" aria-label="Empfehlung">★</span>' : ''}<small>${esc(p.name.de)} · ${esc(l.rolle)}</small></span><span class="side">${pips(p.tier, !!p.apex)}</span></button>`;
+  }).join('');
+  const n = S.data.loadouts.length + 1;
+  main.innerHTML = `<div class="split" id="split">
+    <section class="pane list-pane" aria-label="Klassen">
+      <div class="group">Empfohlene Klassen · ${S.data.loadouts.length}</div>${items}
+      <div class="group">Nachschlagen</div>
+      <button type="button" class="row" data-loadout="katalog" data-from="list" aria-current="${S.loadout === 'katalog'}"><span class="num">${pad(n)}</span><span class="nm">Katalog<small>Extras, Ausrüstung, Abschussserien</small></span><span class="side"></span></button>
+    </section>
+    <section class="pane detail-pane" id="detail" aria-label="Klassendetails"></section></div>`;
+}
+function updateKlassen() {
+  $$('.list-pane .row').forEach(r => r.setAttribute('aria-current', String(r.dataset.loadout === S.loadout)));
+  $('#split').classList.toggle('is-open', S.open);
+  if (S.shownDetail !== S.loadout) {
+    const d = $('#detail');
+    d.innerHTML = S.loadout === 'katalog' ? katalogHtml() : loadoutHtml(S.data.loadouts.find(l => l.id === S.loadout));
+    d.scrollTop = 0; S.shownDetail = S.loadout;
+  }
+}
+const eqById = id => { for (const g of Object.values(S.data.ausruestung)) { const e = g.find(x => x.id === id); if (e) return e; } return null; };
+const extraById = id => S.data.extras.find(x => x.id === id);
+const serieById = id => S.data.abschussserien.find(x => x.id === id);
+function weaponSlot(label, w, build) {
+  const k = klasse(w);
+  return `<button type="button" class="slotcard" data-weapon="${w.id}"${build ? ` data-open-build="${esc(build)}"` : ''}>
+    <span class="sc-top"><span class="label">${label}</span>${pips(w.tier, !!w.apex)}</span>
+    <span class="sc-class">${esc(k.einzahl)} – ${esc(w.name.de)}</span>
+    <span class="sc-name">${build ? 'Build: ' + esc(build) : esc(w.name.de)}</span></button>`;
+}
+function eqCard(label, e) {
+  return `<div class="slotcard"><span class="label">${label}</span><span class="eq-name">${esc(e.de)}</span><span class="sc-sub">${esc(e.en)} · ab Lvl ${e.level}</span></div>`;
+}
+function loadoutHtml(L) {
+  const p = S.byId.get(L.primaer.waffe), s = S.byId.get(L.sekundaer.waffe), m = S.byId.get(L.nahkampf);
+  const ex = L.extras.map(extraById), se = L.serien.map(serieById);
+  return `<div class="lo">
+    <div class="slotcard"><span class="label">Rolle</span><span class="sc-name">${esc(L.rolle)}</span></div>
+    ${weaponSlot('Primär', p, L.primaer.build)}
+    ${weaponSlot('Sekundär', s)}
+    ${weaponSlot('Nahkampf', m)}
+    <div class="lo-grid">
+      <div class="lo-col">${eqCard('Taktik', eqById(L.taktik))}${eqCard('Tödlich', eqById(L.toedlich))}${eqCard('Feldaufrüstung', eqById(L.feld))}</div>
+      <div class="slotcard"><span class="label">Abschussserien</span>${se.map(x => `<div class="streak"><span>${esc(x.de)}</span><span class="cost" title="Abschüsse">⌖ ${x.kosten}</span></div>`).join('')}</div>
+    </div>
+    <div class="trio">${ex.map((e, i) => `<div class="slotcard"><span class="label">Extra ${i + 1}</span><span class="eq-name">${esc(e.de)}</span><span class="sc-sub">${esc(e.en)} · ab Lvl ${e.level}</span>${e.notiz ? `<span class="sc-sub" style="color:var(--lime-2)">${esc(e.notiz)}</span>` : ''}</div>`).join('')}</div>
+    <div class="slotcard"><span class="label">Warum so</span><ul class="notes">${L.gruende.map(g => `<li>${esc(g)}</li>`).join('')}</ul></div>
+    <p class="hint">Empfehlung aus der Community-Meta (Launch-Stand ${dateDE(S.data.info.patch.live)}) – keine offizielle Vorgabe. Tipp: Primärwaffe antippen öffnet den passenden Build.</p>
+  </div>`;
+}
+function katalogHtml() {
+  const EM = S.data.extrasMeta;
+  const mark = id => (EM.codmunityTop.includes(id) ? '<span class="meta-mark" title="CODMunity Top-Tier">★</span>' : '') + (EM.wzstatsMeta.includes(id) ? '<span class="meta-mark" title="WZStats Meta">◆</span>' : '');
+  const li = (e, extra) => `<li><span class="cn">${esc(e.de)}${extra || ''}<small>${esc(e.en)}</small></span><span class="cl">Lvl ${e.level}</span>${e.notiz ? `<span class="note">${esc(e.notiz)}</span>` : ''}</li>`;
+  const extras = [1, 2, 3].map(s => `<div class="card cat"><h4>Extra ${s}</h4><ul>${S.data.extras.filter(e => e.slot === s).map(e => li(e, mark(e.id))).join('')}</ul></div>`).join('');
+  const A = S.data.ausruestung;
+  const eq = [['Taktik', A.taktisch], ['Tödlich', A.toedlich], ['Feldaufrüstung', A.feld]].map(([t, l]) => `<div class="card cat"><h4>${t}</h4><ul>${l.map(e => li(e)).join('')}</ul></div>`).join('');
+  const costs = [...new Set(S.data.abschussserien.map(x => x.kosten))].sort((a, b) => a - b);
+  const streaks = costs.map(c => `<div class="card cat"><h4>⌖ ${c} Abschüsse</h4><ul>${S.data.abschussserien.filter(x => x.kosten === c).map(x => `<li><span class="cn">${esc(x.de)}<small>${esc(x.en)}</small></span><span class="cl"></span>${x.notiz ? `<span class="note">${esc(x.notiz)}</span>` : ''}</li>`).join('')}</ul></div>`).join('');
+  return `<div class="page-inner">
+    <section class="section"><h2>Extras</h2><p class="lead">Pro Slot ein Extra. ★ = Top-Tier bei CODMunity, ◆ = Meta bei WZStats.</p><div class="cat-grid">${extras}</div></section>
+    <section class="section"><h2>Ausrüstung</h2><div class="cat-grid">${eq}</div></section>
+    <section class="section"><h2>Abschussserien</h2><p class="lead">${esc(S.data.serienHinweis)}</p><div class="cat-grid">${streaks}</div></section>
+  </div>`;
+}
+
+/* ===== Intel ===== */
+function renderIntel() {
+  const I = S.data.info, T = I.texte;
+  const conflicts = S.data.waffen.filter(w => w.freischaltung.alt != null);
+  const termine = I.termine.map(t => {
+    const d = daysUntil(t.datum);
+    const c = d > 1 ? `in ${d} Tagen` : d === 1 ? 'morgen' : d === 0 ? 'heute' : 'erledigt';
+    return `<div class="termin"><span class="d">${dateDE(t.datum)}</span><span class="t">${esc(t.text)}${t.notiz ? `<small>${esc(t.notiz)}</small>` : ''}</span><span class="c">${c}</span></div>`;
+  }).join('');
+  const chronik = I.chronik.slice().reverse().map(c => `<div class="tl-item"><div class="tl-top"><span class="tl-date">${esc(c.datum)}</span><span class="k ${c.status === 'aktuell' ? 'k-hoch' : 'k-luecke'}">${esc(c.status)}</span></div><span class="tl-title">${esc(c.titel)}</span><ul>${c.punkte.map(p => `<li>${esc(p)}</li>`).join('')}</ul></div>`).join('');
+  const stale = daysUntil(I.gueltigBis) < 0;
+  main.innerHTML = `<div class="page" id="page"><div class="intel">
+    <section class="card"><h3>Datenstand</h3>
+      <dl class="facts"><dt>Daten</dt><dd>${esc(I.datenVersion)}</dd><dt>Stand</dt><dd>${dateDE(I.datenstand)}</dd>${BUILD ? `<dt>App</dt><dd>${esc(fmtBuild(BUILD))}</dd>` : ''}<dt>Patch</dt><dd>${esc(patchLabel())}</dd><dt>Waffen</dt><dd>${S.data.waffen.length}</dd></dl>
+      <div class="callout"><b>${stale ? 'Bitte prüfen:' : 'Hinweis:'}</b> ${esc(I.warnung)}</div>
+      <div class="btns"><button type="button" class="btn" id="checkUpdate">Nach Updates suchen</button>${S.installEvt ? '<button type="button" class="btn alt" id="installBtn">App installieren</button>' : ''}${IS_PWA ? '' : `<a class="btn alt" href="${APP_URL}" target="_blank" rel="noopener">Zur installierbaren App</a>`}</div>
+      <p class="hint" id="updHint">${installHint()}</p>
+      <ul>${I.aenderungen.map(a => `<li><b>${esc(a.version)}</b> · ${esc(a.text)}</li>`).join('')}</ul>
+    </section>
+    <section class="card"><h3>Nächste Termine</h3><div>${termine}</div></section>
+    <section class="card"><h3>Apex-Aufsätze</h3><ul>${T.apex.map(x => `<li>${esc(x)}</li>`).join('')}</ul></section>
+    <section class="card"><h3>Visier vorne oder hinten?</h3><ul>${T.visier.map(x => `<li>${esc(x)}</li>`).join('')}</ul></section>
+    <section class="card"><h3>Patch-Chronik</h3><div class="tl">${chronik}</div></section>
+    <section class="card"><h3>Waffen-Prestige</h3><ul>${T.prestige.map(x => `<li>${esc(x)}</li>`).join('')}</ul></section>
+    <section class="card"><h3>Freischalt-Widersprüche</h3><p>Der offizielle DE-Blog nennt in Tabelle und Waffenkarte unterschiedliche Level. Im Spiel unter „Fortschritt“ prüfen.</p>
+      <div class="tbl-wrap"><table class="tbl"><thead><tr><th>Waffe</th><th>Tabelle</th><th>Karte</th></tr></thead><tbody>${conflicts.map(w => `<tr><td>${esc(w.name.de)}</td><td class="m">Lvl ${w.freischaltung.level}</td><td class="m">Lvl ${w.freischaltung.alt}</td></tr>`).join('')}</tbody></table></div></section>
+    <section class="card"><h3>Bekannte Lücken</h3><ul>${T.luecken.map(x => `<li>${esc(x)}</li>`).join('')}</ul></section>
+    <section class="card"><h3>Glossar Deutsch ↔ Englisch</h3><div class="tbl-wrap"><table class="tbl"><thead><tr><th>Im Spiel (DE)</th><th>Englisch</th><th>Hinweis</th></tr></thead><tbody>${S.data.glossar.map(g => `<tr><td>${esc(g.de)}</td><td class="m">${esc(g.en)}</td><td>${esc(g.notiz || '')}</td></tr>`).join('')}</tbody></table></div></section>
+    <section class="card"><h3>Release &amp; PC</h3><dl class="facts">${I.release.map(r => `<dt>${dateDE(r.datum)}</dt><dd>${esc(r.text)}</dd>`).join('')}</dl><p>${esc(T.pc[0])}</p></section>
+    <section class="card"><h3>Quellen</h3><p class="hint">Keine dieser Seiten bietet eine öffentliche Schnittstelle (API) – CODMunity schreibt selbst, dass Activision keine bereitstellt. Die Daten werden deshalb von Hand gepflegt und versioniert.</p>
+      <ul>${I.quellen.map(q => `<li><a href="${esc(q.url)}" target="_blank" rel="noopener">${esc(q.titel)}</a></li>`).join('')}</ul></section>
+  </div></div>`;
+}
+function installHint() {
+  if (window.matchMedia('(display-mode: standalone)').matches) return 'Läuft als installierte App. Neue Daten holt sie sich beim Start von selbst.';
+  if (!IS_PWA) return 'Das hier ist die Vorschau. Installieren und offline nutzen geht in der App-Version unter ' + APP_URL.replace('https://', '') + '.';
+  if (!S.reg) return 'Der Offline-Speicher startet gerade – kurz neu laden, falls „App installieren“ fehlt.';
+  if (/iPhone|iPad/.test(navigator.userAgent)) return 'Installieren auf dem iPhone: Teilen → „Zum Home-Bildschirm“.';
+  return S.installEvt ? 'Ein Tipp auf „App installieren“ legt die Rüstkammer auf deinen Startbildschirm.' : 'Installieren über das Browser-Menü → „App installieren“ bzw. „Zum Startbildschirm hinzufügen“.';
+}
+
+/* ---------- Ereignisse ---------- */
+document.addEventListener('click', e => {
+  const t = e.target.closest('button, a[data-nav]');
+  if (!t) return;
+  if (t.dataset.nav) { e.preventDefault(); go(t.dataset.nav, false); return; }
+  if (t.dataset.weapon) {
+    if (t.dataset.openBuild) {
+      const w = S.byId.get(t.dataset.weapon), i = w.builds.findIndex(b => b.titel === t.dataset.openBuild || b.modus === t.dataset.openBuild);
+      if (i >= 0) { S.buildTab[w.id] = i; if (S.shownDetail === w.id) S.shownDetail = null; }
+    }
+    openWeapon(t.dataset.weapon, t.dataset.from === 'list'); return;
+  }
+  if (t.dataset.loadout) { openLoadout(t.dataset.loadout, t.dataset.from === 'list'); return; }
+  if (t.dataset.filter) {
+    S.filter = t.dataset.filter; LS.set('mw4.filter', S.filter);
+    $$('[data-filter]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.filter === S.filter)));
+    renderRows(); $('.list-pane').scrollTop = 0; return;
+  }
+  if (t.dataset.build) { S.buildTab[S.weapon] = +t.dataset.build; refreshDetail(); return; }
+  if (t.dataset.lvl) { setLvl(getLvl(S.weapon) + +t.dataset.lvl); const i = $('#lvlInput'); if (i) i.value = getLvl(S.weapon); return; }
+  if (t.dataset.metaMode) { S.metaMode = t.dataset.metaMode; LS.set('mw4.metaMode', S.metaMode); rerenderPage(renderMeta); return; }
+  if (t.dataset.ttkMode) { S.ttkMode = t.dataset.ttkMode; LS.set('mw4.ttkMode', S.ttkMode); rerenderPage(renderTtk); return; }
+  if (t.dataset.ttkRange) { S.ttkRange = +t.dataset.ttkRange; LS.set('mw4.ttkRange', S.ttkRange); rerenderPage(renderTtk); return; }
+  if (t.dataset.ttkKlasse) { S.ttkKlasse = t.dataset.ttkKlasse; LS.set('mw4.ttkKlasse', S.ttkKlasse); rerenderPage(renderTtk); return; }
+  if (t.dataset.gotoTtk) { S.ttkMode = t.dataset.gotoTtk; LS.set('mw4.ttkMode', S.ttkMode); go('ttk', false); return; }
+  if (t.id === 'backBtn') { back(); return; }
+  if (t.id === 'retryBtn') { location.reload(); return; }
+  if (t.id === 'checkUpdate') { checkUpdates(true); return; }
+  if (t.id === 'installBtn' || t.id === 'stInstall') { doInstall(); return; }
+});
+document.addEventListener('input', e => {
+  if (e.target.id === 'search') { S.q = e.target.value; renderRows(); }
+  if (e.target.id === 'lvlInput' && e.target.value !== '') setLvl(e.target.value);
+});
+document.addEventListener('change', e => { if (e.target.id === 'lvlInput') { setLvl(e.target.value); e.target.value = getLvl(S.weapon); } });
+document.addEventListener('keydown', e => {
+  if (e.key === '/' && S.view === 'arsenal' && document.activeElement && document.activeElement.tagName !== 'INPUT') { const s = $('#search'); if (s) { e.preventDefault(); s.focus(); } }
+  if (e.key === 'Escape' && S.open && !isDesktop()) back();
+});
+window.addEventListener('popstate', route);
+window.addEventListener('hashchange', () => { if (location.hash !== S.lastHash) route(); });
+desktop.addEventListener('change', () => { if (S.data) render(); });
+
+/* ---------- Status, Uhr, Toast ---------- */
+function tickClock() { const d = new Date(); $('#stClock b').textContent = `${pad(d.getHours())}:${pad(d.getMinutes())}`; }
+function netStatus() {
+  const on = navigator.onLine !== false, el = $('#stNet');
+  el.classList.toggle('is-offline', !on); el.querySelector('b').textContent = on ? 'Online' : 'Offline';
+}
+function paintStatus() {
+  const I = S.data.info;
+  $('#stStand').textContent = dateDE(I.datenstand);
+  $('#stVer b').textContent = I.datenVersion;
+  const p = $('#stPatch'); const stale = daysUntil(I.gueltigBis) < 0;
+  p.innerHTML = stale ? 'Tuning angekündigt: <b>Werte prüfen</b>' : `Patch: <b>${esc(I.patch.name)}</b>`;
+  p.classList.toggle('warn', stale); p.classList.toggle('opt', !stale);
+  $('#badgeNum').textContent = S.data.waffen.length;
+}
+let toastTimer = null;
+function toast(msg, actLabel, act) {
+  const t = $('#toast'), a = $('#toastAct');
+  $('#toastMsg').textContent = msg;
+  a.hidden = !actLabel; a.textContent = actLabel || ''; a.onclick = act ? () => { hideToast(); act(); } : null;
+  t.hidden = false; clearTimeout(toastTimer);
+  if (!actLabel) toastTimer = setTimeout(hideToast, 5200);
+}
+function hideToast() { $('#toast').hidden = true; }
+$('#toastClose').addEventListener('click', hideToast);
+
+/* ---------- Daten & Selbst-Update ---------- */
+async function fetchData(fresh) {
+  const r = await fetch(DATA_URL + (fresh ? '?t=' + Date.now() : ''), { cache: fresh ? 'no-store' : 'no-cache' });
+  if (!r.ok) throw new Error('HTTP ' + r.status);
+  return r.json();
+}
+function applyData(d) {
+  S.data = d;
+  S.byId = new Map(d.waffen.map(w => [w.id, w]));
+  S.klassen = new Map(d.waffenklassen.map(k => [k.id, k]));
+  S.topSet = new Set(d.metaBericht.core.top);
+  if (!S.byId.has(S.weapon)) S.weapon = d.waffen[0].id;
+  if (S.filter !== 'alle' && !S.klassen.has(S.filter)) S.filter = 'alle';
+  paintStatus();
+}
+function announceVersion() {
+  const v = S.data.info.datenVersion, a = S.data.info.aenderungen[0];
+  const lastV = LS.get('mw4.seenVersion', null), lastB = LS.get('mw4.build', null);
+  const dataNews = lastV && lastV !== v && a ? ` Neue Daten: ${a.text}` : '';
+  if (BUILD && lastB && lastB !== BUILD) setTimeout(() => toast(`Aktualisiert auf den Stand vom ${fmtBuild(BUILD)}.${dataNews}`), 600);
+  else if (dataNews) setTimeout(() => toast(dataNews.trim()), 600);
+  if (BUILD) LS.set('mw4.build', BUILD);
+  LS.set('mw4.seenVersion', v);
+}
+const offerReload = build => toast(`Neuer Stand vom ${fmtBuild(build)} ist da.`, 'Neu laden', () => location.reload());
+async function checkUpdates(manual) {
+  S.lastCheck = Date.now();
+  const hint = () => { const h = $('#updHint'); if (h) h.textContent = installHint(); };
+  if (manual) { const h = $('#updHint'); if (h) h.textContent = 'Suche nach Updates …'; }
+  try {
+    if (S.reg) S.reg.update().catch(() => {});
+    if (IS_PWA && BUILD) {
+      const r = await fetch('version.json', { cache: 'no-store' });
+      const v = r.ok ? await r.json() : null;
+      if (v && v.build && v.build !== BUILD) { offerReload(v.build); hint(); return; }
+    } else {
+      const d = await fetchData(true);
+      if (d.info.datenVersion !== S.data.info.datenVersion) { applyData(d); S.mounted = null; route(); announceVersion(); hint(); return; }
+    }
+    if (manual) toast(`Du hast schon den neuesten Stand (Daten ${S.data.info.datenVersion}).`);
+  } catch (e) {
+    if (manual) toast('Gerade offline. Die App prüft beim nächsten Start wieder.');
+  }
+  hint();
+}
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState !== 'visible' || !S.data) return;
+  if (IS_PWA || Date.now() - S.lastCheck > 30 * 60 * 1000) checkUpdates(false);
+});
+
+function registerSW() {
+  if (!IS_PWA || !window.isSecureContext) return;
+  let sw;
+  try { sw = navigator.serviceWorker; } catch (e) { return; }
+  if (!sw) return;
+  sw.register('sw.js', { updateViaCache: 'none' }).then(reg => {
+    S.reg = reg;
+    reg.update().catch(() => {});
+    if (S.view === 'intel') { const h = $('#updHint'); if (h) h.textContent = installHint(); }
+  }).catch(() => {});
+  /* Neue Version, während die App offen war: anbieten statt hart neu zu laden */
+  sw.addEventListener('message', e => {
+    const d = e.data || {};
+    if (d.type === 'mw4-updated' && d.version && BUILD && d.version !== BUILD) offerReload(d.version);
+  });
+}
+window.addEventListener('beforeinstallprompt', e => {
+  e.preventDefault(); S.installEvt = e;
+  if (!$('#stInstall')) $('#status').insertAdjacentHTML('beforeend', '<button type="button" id="stInstall">Installieren</button>');
+  if (S.view === 'intel') rerenderPage(renderIntel);
+});
+window.addEventListener('appinstalled', () => { S.installEvt = null; const b = $('#stInstall'); if (b) b.remove(); toast('Rüstkammer installiert.'); });
+async function doInstall() {
+  if (!S.installEvt) return;
+  S.installEvt.prompt();
+  try { await S.installEvt.userChoice; } catch (e) { /* abgebrochen */ }
+  S.installEvt = null; const b = $('#stInstall'); if (b) b.remove();
+  if (S.view === 'intel') rerenderPage(renderIntel);
+}
+
+async function boot() {
+  tickClock(); setInterval(tickClock, 15000);
+  netStatus(); window.addEventListener('online', netStatus); window.addEventListener('offline', netStatus);
+  registerSW();
+  try {
+    applyData(await fetchData(false));
+  } catch (e) {
+    main.innerHTML = `<div class="state"><b>Daten nicht erreichbar</b><p>Die Waffendaten konnten nicht geladen werden (${esc(e.message)}).<br>Prüf die Verbindung und versuch es noch mal.</p><div class="btns" style="justify-content:center"><button type="button" class="btn" id="retryBtn">Erneut versuchen</button></div></div>`;
+    return;
+  }
+  route();
+  announceVersion();
+}
+boot();
+})();
+</script>
