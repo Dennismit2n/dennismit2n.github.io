@@ -45,7 +45,7 @@ The interface words exist in all 14 languages, and since 14 September 2026 so do
 
 ## Development
 
-No build step — plain HTML, CSS, and JavaScript. 66 files make up the site: two pages, one stylesheet, eight scripts (one of them GoatCounter’s, vendored), eighteen images, three icons, thirty-one screenshots for the guides in `assets/anleitung/`, and two font files with their licence in `assets/fonts/fraunces/`. No npm dependencies.
+No build step — plain HTML, CSS, and JavaScript. 67 files make up the site: two pages, one stylesheet, eight scripts (one of them GoatCounter’s, vendored), eighteen images, three icons, thirty-two screenshots for the guides in `assets/anleitung/`, and two font files with their licence in `assets/fonts/fraunces/`. No npm dependencies.
 
 ```
 node tools/dev-server.js

@@ -837,6 +837,25 @@ var NEWS = {
   fadenkreuz: [
     {
       date: '2026-10-26',
+      version: 'v1.1.0',
+      link: 'https://github.com/Dennismit2n/fadenkreuz/releases/tag/v1.1.0',
+      de: 'Der Editor spricht jetzt auch Englisch. Er folgt der Sprache deines Browsers, oben in der Kopfleiste schaltet DE | EN um, und die Wahl bleibt gespeichert. Über die alte Fassung drüber installieren behält Fadenkreuz, Presets und Einstellungen.',
+      en: 'The editor now speaks English too. It follows your browser’s language, DE | EN in the top bar switches it, and the choice is remembered. Installing over the old version keeps your crosshair, presets and settings.',
+      es: 'El editor ahora también habla inglés. Sigue el idioma de tu navegador, DE | EN en la barra superior lo cambia y la elección se guarda. Instalar encima de la versión anterior conserva tu mira, tus preajustes y tus ajustes.',
+      fr: 'L’éditeur parle désormais aussi anglais. Il suit la langue de votre navigateur, DE | EN dans la barre du haut permet de changer, et le choix est mémorisé. Installer par-dessus l’ancienne version conserve votre réticule, vos préréglages et vos réglages.',
+      it: 'Ora l’editor parla anche inglese. Segue la lingua del tuo browser, DE | EN nella barra in alto la cambia e la scelta viene ricordata. Installare sopra la versione precedente conserva il tuo mirino, i preset e le impostazioni.',
+      nl: 'De editor spreekt nu ook Engels. Hij volgt de taal van je browser, DE | EN in de bovenbalk schakelt om, en je keuze wordt onthouden. Over de oude versie heen installeren behoudt je vizier, presets en instellingen.',
+      pl: 'Edytor mówi teraz także po angielsku. Dopasowuje się do języka przeglądarki, przełącznik DE | EN na górnym pasku zmienia język, a wybór zostaje zapamiętany. Instalacja na starszą wersję zachowuje celownik, presety i ustawienia.',
+      pt: 'O editor agora também fala inglês. Segue o idioma do seu navegador, DE | EN na barra superior muda-o e a escolha fica guardada. Instalar por cima da versão anterior mantém a sua mira, as predefinições e as definições.',
+      tr: 'Düzenleyici artık İngilizce de konuşuyor. Tarayıcınızın dilini izler, üst çubuktaki DE | EN dili değiştirir ve seçiminiz hatırlanır. Eski sürümün üzerine kurmak nişangâhınızı, ön ayarlarınızı ve ayarlarınızı korur.',
+      ru: 'Редактор теперь говорит и по-английски. Он следует языку вашего браузера, переключатель DE | EN в верхней панели меняет язык, а выбор запоминается. Установка поверх старой версии сохраняет ваш прицел, пресеты и настройки.',
+      hi: 'एडिटर अब अंग्रेज़ी भी बोलता है। यह आपके ब्राउज़र की भाषा अपनाता है, ऊपर की पट्टी में DE | EN से भाषा बदलती है, और आपकी पसंद याद रहती है। पुराने संस्करण के ऊपर इंस्टॉल करने पर आपका क्रॉसहेयर, प्रीसेट और सेटिंग्स बनी रहती हैं।',
+      zh: '编辑器现在也支持英语了。它会跟随浏览器的语言，顶部栏的 DE | EN 可以切换，选择会被记住。直接覆盖安装旧版本，你的准星、预设和设置都会保留。',
+      ja: 'エディターが英語にも対応しました。ブラウザーの言語に合わせて表示され、上部バーの DE | EN で切り替えられ、選んだ言語は記憶されます。旧バージョンに上書きインストールしても、照準、プリセット、設定はそのまま残ります。',
+      ko: '이제 에디터가 영어도 지원합니다. 브라우저 언어를 따라가고, 위쪽 막대의 DE | EN으로 바꿀 수 있으며, 선택은 기억됩니다. 예전 버전 위에 덮어 설치해도 조준선, 프리셋, 설정은 그대로 남습니다.'
+    },
+    {
+      date: '2026-10-26',
       version: 'v1.0.0',
       link: 'https://github.com/Dennismit2n/fadenkreuz/releases/tag/v1.0.0',
       de: 'Erste Veröffentlichung. Ein Fadenkreuz exakt in der Mitte des Hauptbildschirms, das über dem Spiel liegt und Klicks durchlässt – mit rund 1 MB Arbeitsspeicher. Im Editor zeichnest du es selbst: mit Vorlagen wie „Oval weiß“, weichem Rand und eigenen Presets. Overlay und Editor lassen sich getrennt installieren; Strg+Alt+F10 zeigt das Kreuz nur im gewählten Spiel.',
