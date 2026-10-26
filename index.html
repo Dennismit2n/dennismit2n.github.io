@@ -37,7 +37,7 @@
   <!-- Die Überschriftenschrift wird auf jeder Seite und in jeder Sprache gebraucht
        (mindestens für den Markennamen), also früh anstoßen statt erst nach der CSS. -->
   <link rel="preload" href="./assets/fonts/fraunces/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="./css/style.css?v=2026-10-13">
+  <link rel="stylesheet" href="./css/style.css?v=2026-10-26">
   <!-- Theme before first paint: stored choice wins, otherwise system decides via CSS. -->
   <script>try{var t=localStorage.getItem('dennismit2n-home.theme');if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}</script>
   <!-- Wer nicht Englisch bekommt, sieht Inhalt, Fußzeile und Auswahlfelder erst
@@ -306,6 +306,21 @@
             <a href="./werkstatt.html#heizwarte-neuigkeiten" data-count="werkstatt-heizwarte-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
           </span>
         </div>
+        <!-- Neongrün, Schwarz, Weiß: die Kachel bleibt in beiden Darstellungen
+             schwarz (siehe .tool-card.tool-fadenkreuz in style.css). -->
+        <div class="tool-card tool-fadenkreuz">
+          <span class="tool-head">
+            <img src="./assets/fadenkreuz.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-fadenkreuz">Fadenkreuz</span>
+          </span>
+          <span class="tool-desc" data-i18n="fadenkreuzDesc">Your own crosshair in the exact centre of the screen – drawn by you, click-through, over your game.</span>
+          <span class="tool-meta" data-i18n="fadenkreuzMeta">Windows 10/11 · about 1 MB of RAM · free</span>
+          <a class="tool-open" id="open-fadenkreuz" aria-labelledby="open-fadenkreuz name-fadenkreuz" href="https://github.com/Dennismit2n/fadenkreuz/releases/latest" rel="noopener"><span data-i18n="downloadTool">Download</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="fadenkreuz">
+            <a href="./werkstatt.html#fadenkreuz-neuigkeiten" data-count="werkstatt-fadenkreuz-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#fadenkreuz-anleitung" data-count="werkstatt-fadenkreuz-anleitung" data-i18n="secGuide">Guide</a>
+          </span>
+        </div>
         <!-- Zwei Platzhalter auf Dennis' Ansage (13.09.2026). Bewusst OHNE
              .tool-open und ohne Mini-Kacheln: es gibt nichts zu oeffnen, und ein
              Knopf, der ins Leere fuehrt, ist schlimmer als keiner. Deshalb tragen
@@ -360,9 +375,9 @@
      Als eigenes Skript-Tag hielt es das Übersetzen noch eine halbe Sekunde
      auf; main.js holt es deshalb erst danach. data-news trägt die Adresse
      samt ?v=-Stempel. -->
-<script src="./js/i18n.js?v=2026-10-13" fetchpriority="high"></script>
+<script src="./js/i18n.js?v=2026-10-26" fetchpriority="high"></script>
 <script src="./js/dates.js?v=2026-09-14" fetchpriority="high"></script>
 <script src="./js/header.js?v=2026-09-25" fetchpriority="high"></script>
-<script src="./js/main.js?v=2026-09-24" fetchpriority="high" data-news="./js/news.js?v=2026-10-13"></script>
+<script src="./js/main.js?v=2026-09-24" fetchpriority="high" data-news="./js/news.js?v=2026-10-26"></script>
 </body>
 </html>
