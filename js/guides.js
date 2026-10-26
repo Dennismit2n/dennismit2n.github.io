@@ -2885,7 +2885,10 @@ var GUIDES = {
     },
     shots: [
       {
-        file: 'fadenkreuz-de.webp', w: 1360, h: 1250,
+        files: {
+          de: ['fadenkreuz-de.webp', 1360, 1250],
+          en: ['fadenkreuz-en.webp', 1360, 1250]
+        },
         alt: {
           de: 'Der Fadenkreuz-Editor: links ein kariertes Zeichenfeld mit einem grünen Kreuz samt dünnem schwarzem Rand, rechts Farbe, Umrandung, eigene Fadenkreuze, Vorlagen und eine Vorschau vor einer Spielszene.',
           en: 'The Fadenkreuz editor: on the left a chequered drawing grid with a green cross and a thin black outline, on the right colour, outline, your own crosshairs, templates and a preview against a game scene.',
@@ -2913,67 +2916,67 @@ var GUIDES = {
       en: [
         'Download the setup from the releases and run it. Windows will say “unknown publisher” because the file is not signed — continue via “more info”. “Install for me only” needs no admin rights; crosshair and editor can be chosen separately.',
         'Start “Fadenkreuz”: a green cross appears in the middle of the screen. Ctrl+Alt+F9 hides and shows it, Ctrl+Alt+F12 quits it — just like clicking the shortcut a second time.',
-        'Draw in the “Fadenkreuz-Editor”, choose “Speichern unter …” (save as) once and save as fadenkreuz.bmp in Documents\\Fadenkreuz. With “live” switched on, the crosshair picks up every change within a second.'
+        'Draw in the “Fadenkreuz-Editor”, choose “Save as …” once and save as fadenkreuz.bmp in Documents\\Fadenkreuz. With “live” switched on, the crosshair picks up every change within a second.'
       ],
       es: [
         'Descarga el instalador desde las versiones y ejecútalo. Windows avisa de «Editor desconocido» porque el archivo no está firmado; se continúa con «Más información». «Install for me only» (instalar solo para mí) no necesita permisos de administrador; la mira y el editor se pueden elegir por separado.',
         'Inicia «Fadenkreuz»: en el centro de la pantalla aparece una cruz verde. Ctrl+Alt+F9 la oculta y la vuelve a mostrar, Ctrl+Alt+F12 la cierra, igual que un segundo clic en el acceso directo.',
-        'Dibuja en el «Fadenkreuz-Editor», elige una vez «Speichern unter …» (guardar como) y guarda como fadenkreuz.bmp en Documentos\\Fadenkreuz. Con «live» activado, la mira recoge cada cambio en un segundo como mucho.'
+        'Dibuja en el «Fadenkreuz-Editor», elige una vez «Save as …» (guardar como) y guarda como fadenkreuz.bmp en Documentos\\Fadenkreuz. Con «live» activado, la mira recoge cada cambio en un segundo como mucho.'
       ],
       fr: [
         'Télécharger l’installateur depuis les releases et le lancer. Windows signale « Éditeur inconnu », parce que le fichier n’est pas signé — on continue via « Informations complémentaires ». « Install for me only » (installer pour moi seulement) ne demande pas de droits d’administrateur ; le réticule et l’éditeur se choisissent séparément.',
         'Lancer « Fadenkreuz » : une croix verte apparaît au centre de l’écran. Ctrl+Alt+F9 la masque et la réaffiche, Ctrl+Alt+F12 la ferme — exactement comme un second clic sur le raccourci.',
-        'Dessiner dans le « Fadenkreuz-Editor », choisir une fois « Speichern unter … » (enregistrer sous) et enregistrer sous le nom fadenkreuz.bmp dans Documents\\Fadenkreuz. Avec « live » activé, le réticule reprend chaque modification en une seconde au plus.'
+        'Dessiner dans le « Fadenkreuz-Editor », choisir une fois « Save as … » (enregistrer sous) et enregistrer sous le nom fadenkreuz.bmp dans Documents\\Fadenkreuz. Avec « live » activé, le réticule reprend chaque modification en une seconde au plus.'
       ],
       it: [
         'Scarica il programma di installazione dalle release ed eseguilo. Windows segnala «Editore sconosciuto» perché il file non è firmato: prosegui con «Ulteriori informazioni». «Install for me only» (installa solo per me) non richiede diritti di amministratore; mirino ed editor si scelgono separatamente.',
         'Avvia «Fadenkreuz»: al centro dello schermo compare una croce verde. Ctrl+Alt+F9 la nasconde e la rimostra, Ctrl+Alt+F12 la chiude — proprio come un secondo clic sul collegamento.',
-        'Disegna nel «Fadenkreuz-Editor», scegli una volta «Speichern unter …» (salva con nome) e salva come fadenkreuz.bmp in Documenti\\Fadenkreuz. Con «live» attivo, il mirino recepisce ogni modifica entro un secondo.'
+        'Disegna nel «Fadenkreuz-Editor», scegli una volta «Save as …» (salva con nome) e salva come fadenkreuz.bmp in Documenti\\Fadenkreuz. Con «live» attivo, il mirino recepisce ogni modifica entro un secondo.'
       ],
       nl: [
         'Download de installatie van de releases en voer hem uit. Windows meldt “Onbekende uitgever”, omdat het bestand niet ondertekend is — via “Meer informatie” ga je verder. “Install for me only” (alleen voor mij installeren) vraagt geen beheerdersrechten; vizier en editor kun je los kiezen.',
         'Start “Fadenkreuz”: midden op het scherm verschijnt een groen kruis. Ctrl+Alt+F9 verbergt en toont het, Ctrl+Alt+F12 sluit het af — net als een tweede klik op de snelkoppeling.',
-        'Teken in de “Fadenkreuz-Editor”, kies één keer “Speichern unter …” (opslaan als) en sla op als fadenkreuz.bmp in Documenten\\Fadenkreuz. Met “live” aan neemt het vizier elke wijziging binnen een seconde over.'
+        'Teken in de “Fadenkreuz-Editor”, kies één keer “Save as …” (opslaan als) en sla op als fadenkreuz.bmp in Documenten\\Fadenkreuz. Met “live” aan neemt het vizier elke wijziging binnen een seconde over.'
       ],
       pl: [
         'Pobrać instalator ze strony wydań i go uruchomić. Windows zgłosi „Nieznany wydawca”, bo plik nie jest podpisany — dalej prowadzi „Więcej informacji”. „Install for me only” (instalacja tylko dla mnie) nie wymaga uprawnień administratora; celownik i edytor można wybrać osobno.',
         'Uruchomić „Fadenkreuz”: na środku ekranu pojawi się zielony krzyż. Ctrl+Alt+F9 ukrywa go i pokazuje z powrotem, Ctrl+Alt+F12 go zamyka — tak samo jak drugie kliknięcie skrótu.',
-        'Narysować celownik w „Fadenkreuz-Editor”, raz wybrać „Speichern unter …” (zapisz jako) i zapisać jako fadenkreuz.bmp w folderze Dokumenty\\Fadenkreuz. Z włączonym „live” celownik przejmuje każdą zmianę najpóźniej po sekundzie.'
+        'Narysować celownik w „Fadenkreuz-Editor”, raz wybrać „Save as …” (zapisz jako) i zapisać jako fadenkreuz.bmp w folderze Dokumenty\\Fadenkreuz. Z włączonym „live” celownik przejmuje każdą zmianę najpóźniej po sekundzie.'
       ],
       pt: [
         'Transferir o instalador da página de versões e executá-lo. O Windows avisa «Editor desconhecido», porque o ficheiro não está assinado — continua-se através de «Mais informações». «Install for me only» (instalar só para mim) não precisa de direitos de administrador; a mira e o editor escolhem-se em separado.',
         'Iniciar o «Fadenkreuz»: no centro do ecrã aparece uma cruz verde. Ctrl+Alt+F9 esconde-a e volta a mostrá-la, Ctrl+Alt+F12 fecha-a — tal como um segundo clique no atalho.',
-        'Desenhar no «Fadenkreuz-Editor», escolher uma vez «Speichern unter …» (guardar como) e guardar como fadenkreuz.bmp em Documentos\\Fadenkreuz. Com «live» ligado, a mira assume cada alteração no máximo um segundo depois.'
+        'Desenhar no «Fadenkreuz-Editor», escolher uma vez «Save as …» (guardar como) e guardar como fadenkreuz.bmp em Documentos\\Fadenkreuz. Com «live» ligado, a mira assume cada alteração no máximo um segundo depois.'
       ],
       tr: [
         'Kurulum dosyasını sürümler sayfasından indirip çalıştırın. Dosya imzalı olmadığı için Windows “Bilinmeyen yayımcı” uyarısı verir — “Daha fazla bilgi” üzerinden devam edilir. “Install for me only” (yalnızca benim için kur) yönetici hakları gerektirmez; nişangâh ve düzenleyici ayrı ayrı seçilebilir.',
         'Fadenkreuz’u başlatın: ekranın ortasında yeşil bir artı belirir. Ctrl+Alt+F9 onu gizler ve yeniden gösterir, Ctrl+Alt+F12 kapatır — tıpkı kısayola ikinci kez tıklamak gibi.',
-        '“Fadenkreuz-Editor” içinde çizin, bir kez “Speichern unter …” (farklı kaydet) seçeneğini seçin ve dosyayı Belgeler\\Fadenkreuz klasörüne fadenkreuz.bmp adıyla kaydedin. “live” açıkken nişangâh her değişikliği en geç bir saniye içinde alır.'
+        '“Fadenkreuz-Editor” içinde çizin, bir kez “Save as …” (farklı kaydet) seçeneğini seçin ve dosyayı Belgeler\\Fadenkreuz klasörüne fadenkreuz.bmp adıyla kaydedin. “live” açıkken nişangâh her değişikliği en geç bir saniye içinde alır.'
       ],
       ru: [
         'Скачайте установщик со страницы релизов и запустите его. Windows сообщит «Неизвестный издатель», потому что файл не подписан, — продолжите через «Подробнее». Вариант «Install for me only» (установить только для меня) не требует прав администратора; прицел и редактор можно выбрать по отдельности.',
         'Запустите «Fadenkreuz»: в центре экрана появится зелёный крест. Ctrl+Alt+F9 скрывает и снова показывает его, Ctrl+Alt+F12 закрывает — так же, как повторный щелчок по ярлыку.',
-        'Нарисуйте прицел в «Fadenkreuz-Editor», один раз выберите «Speichern unter …» (сохранить как) и сохраните файл как fadenkreuz.bmp в папке Документы\\Fadenkreuz. Если включено «live», прицел подхватывает каждое изменение не позже чем через секунду.'
+        'Нарисуйте прицел в «Fadenkreuz-Editor», один раз выберите «Save as …» (сохранить как) и сохраните файл как fadenkreuz.bmp в папке Документы\\Fadenkreuz. Если включено «live», прицел подхватывает каждое изменение не позже чем через секунду.'
       ],
       hi: [
         'Releases से सेटअप डाउनलोड करके चलाएँ। फ़ाइल साइन की हुई नहीं है, इसलिए Windows “अज्ञात प्रकाशक” बताएगा — “अधिक जानकारी” से आगे बढ़ें। “Install for me only” (सिर्फ़ मेरे लिए इंस्टॉल करें) के लिए एडमिन अधिकार नहीं चाहिए; क्रॉसहेयर और एडिटर अलग-अलग चुने जा सकते हैं।',
         '“Fadenkreuz” शुरू करें: स्क्रीन के बीच में एक हरा क्रॉस दिखेगा। Ctrl+Alt+F9 उसे छिपाता और फिर दिखाता है, Ctrl+Alt+F12 उसे बंद करता है — ठीक शॉर्टकट पर दूसरी बार क्लिक करने की तरह।',
-        '“Fadenkreuz-Editor” में बनाएँ, एक बार “Speichern unter …” (इस रूप में सहेजें) चुनें और Documents\\Fadenkreuz में fadenkreuz.bmp नाम से सहेजें। “live” चालू होने पर क्रॉसहेयर हर बदलाव ज़्यादा से ज़्यादा एक सेकंड में अपना लेता है।'
+        '“Fadenkreuz-Editor” में बनाएँ, एक बार “Save as …” (इस रूप में सहेजें) चुनें और Documents\\Fadenkreuz में fadenkreuz.bmp नाम से सहेजें। “live” चालू होने पर क्रॉसहेयर हर बदलाव ज़्यादा से ज़्यादा एक सेकंड में अपना लेता है।'
       ],
       zh: [
         '从发布页下载安装程序并运行。因为文件没有签名，Windows 会提示“未知发布者”——点“更多信息”即可继续。选择“Install for me only”（仅为我安装）不需要管理员权限；准星和编辑器可以分开选择。',
         '启动“Fadenkreuz”：屏幕中央会出现一个绿色十字。Ctrl+Alt+F9 可隐藏或重新显示，Ctrl+Alt+F12 将其关闭——和再点一次快捷方式效果相同。',
-        '在“Fadenkreuz-Editor”里绘制，点一次“Speichern unter …”（另存为），把文件以 fadenkreuz.bmp 保存到“文档\\Fadenkreuz”。打开“live”后，准星最多一秒就会采用每次改动。'
+        '在“Fadenkreuz-Editor”里绘制，点一次“Save as …”（另存为），把文件以 fadenkreuz.bmp 保存到“文档\\Fadenkreuz”。打开“live”后，准星最多一秒就会采用每次改动。'
       ],
       ja: [
         'リリースページからセットアップをダウンロードして実行します。ファイルに署名がないため Windows は「不明な発行元」と表示します — 「詳細情報」から先へ進めます。「Install for me only」（自分だけにインストール）なら管理者権限は不要で、照準とエディターは別々に選べます。',
         '「Fadenkreuz」を起動すると、画面の中央に緑の十字が現れます。Ctrl+Alt+F9 で隠したり再表示したりでき、Ctrl+Alt+F12 で終了します — ショートカットをもう一度クリックしても同じです。',
-        '「Fadenkreuz-Editor」で描き、一度だけ「Speichern unter …」（名前を付けて保存）を選んで、ドキュメント\\Fadenkreuz に fadenkreuz.bmp として保存します。「live」をオンにすると、照準は変更を遅くとも1秒以内に反映します。'
+        '「Fadenkreuz-Editor」で描き、一度だけ「Save as …」（名前を付けて保存）を選んで、ドキュメント\\Fadenkreuz に fadenkreuz.bmp として保存します。「live」をオンにすると、照準は変更を遅くとも1秒以内に反映します。'
       ],
       ko: [
         '릴리스 페이지에서 설치 프로그램을 내려받아 실행합니다. 파일에 서명이 없어서 Windows가 “알 수 없는 게시자”라고 알립니다 — “추가 정보”를 눌러 계속하면 됩니다. “Install for me only”(나만 설치)는 관리자 권한이 필요 없고, 조준선과 에디터는 따로 고를 수 있습니다.',
         '“Fadenkreuz”를 실행하면 화면 가운데에 녹색 십자가 나타납니다. Ctrl+Alt+F9로 숨기거나 다시 보이게 하고, Ctrl+Alt+F12로 끕니다 — 바로 가기를 한 번 더 클릭해도 같습니다.',
-        '“Fadenkreuz-Editor”에서 그린 다음, “Speichern unter …”(다른 이름으로 저장)를 한 번 골라 문서\\Fadenkreuz에 fadenkreuz.bmp로 저장합니다. “live”를 켜 두면 조준선이 바뀐 내용을 늦어도 1초 안에 반영합니다.'
+        '“Fadenkreuz-Editor”에서 그린 다음, “Save as …”(다른 이름으로 저장)를 한 번 골라 문서\\Fadenkreuz에 fadenkreuz.bmp로 저장합니다. “live”를 켜 두면 조준선이 바뀐 내용을 늦어도 1초 안에 반영합니다.'
       ]
     },
     pitfalls: {
@@ -2982,98 +2985,98 @@ var GUIDES = {
         'Strg+Alt+F10 im Spiel heißt: Ab jetzt erscheint das Kreuz nur noch, solange dieses Spiel vorne ist. Fehlt es in einem anderen Spiel, steht das nur noch nicht auf der Liste — dort ebenfalls Strg+Alt+F10 drücken; eine leere Dokumente\\Fadenkreuz\\programme.txt heißt: immer sichtbar.',
         'Über Startmenü, Taskleiste und manchen Overlays liegt das Kreuz nur mit „Installation für alle Benutzer“ und der Aufgabe „Über allem anzeigen“. Dafür legt das Setup ein Zertifikat an, das nur auf diesem PC gilt, und löscht den privaten Schlüssel gleich wieder.',
         'Fadenkreuz fasst das Spiel nicht an, es ist ein eigenes Fenster. Trotzdem mögen einige Wettkampf-Spiele keine Overlays — vor Ranglisten-Spielen prüfen.',
-        'Nur der Hauptbildschirm. Editor und Setup sprechen Deutsch (das Setup auch Englisch). Edge und Chrome speichern direkt in die Datei, Firefox kann sie nur herunterladen.'
+        'Nur der Hauptbildschirm. Editor und Setup sprechen Deutsch und Englisch. Edge und Chrome speichern direkt in die Datei, Firefox kann sie nur herunterladen.'
       ],
       en: [
         'Games in exclusive fullscreen draw over every overlay. Switch the game to “borderless window” or “windowed fullscreen”.',
         'Ctrl+Alt+F10 inside a game means: from now on the crosshair only appears while that game is in front. If it is missing in another game, that game is just not on the list yet — press Ctrl+Alt+F10 there too; an empty Documents\\Fadenkreuz\\programme.txt means: always visible.',
         'The crosshair only sits above the Start menu, the taskbar and some overlays with “Install for all users” and the task “Show on top of everything”. For that, the setup creates a certificate that is only valid on this PC and deletes its private key right away.',
         'Fadenkreuz does not touch the game — it is a window of its own. Still, a few competitive games dislike overlays; check before playing ranked.',
-        'Main screen only. Editor and setup speak German (the setup also English). Edge and Chrome save straight into the file; Firefox can only download it.'
+        'Main screen only. Editor and setup speak English and German. Edge and Chrome save straight into the file; Firefox can only download it.'
       ],
       es: [
         'Los juegos en pantalla completa exclusiva tapan cualquier superposición. Pon el juego en «ventana sin bordes» o «pantalla completa en ventana».',
         'Ctrl+Alt+F10 dentro de un juego significa: a partir de ahora la mira solo aparece mientras ese juego esté delante. Si falta en otro juego, es que ese juego aún no está en la lista: pulsa también allí Ctrl+Alt+F10; un Documentos\\Fadenkreuz\\programme.txt vacío significa: siempre visible.',
         'La mira solo queda por encima del menú Inicio, la barra de tareas y algunas superposiciones con «Install for all users» y la tarea «Show on top of everything». Para ello, el instalador crea un certificado válido solo en este PC y borra enseguida su clave privada.',
         'Fadenkreuz no toca el juego: es una ventana propia. Aun así, algunos juegos competitivos no se llevan bien con las superposiciones; compruébalo antes de jugar partidas clasificatorias.',
-        'Solo la pantalla principal. El editor y el instalador están en alemán (el instalador también en inglés). Edge y Chrome guardan directamente en el archivo; Firefox solo puede descargarlo.'
+        'Solo la pantalla principal. El editor y el instalador están en inglés y en alemán. Edge y Chrome guardan directamente en el archivo; Firefox solo puede descargarlo.'
       ],
       fr: [
         'Les jeux en plein écran exclusif recouvrent toute surcouche. Passez le jeu en « fenêtre sans bordure » ou en « plein écran fenêtré ».',
         'Ctrl+Alt+F10 dans un jeu signifie : désormais, le réticule n’apparaît que tant que ce jeu est au premier plan. S’il manque dans un autre jeu, c’est simplement que celui-ci n’est pas encore sur la liste — appuyez aussi sur Ctrl+Alt+F10 là-bas ; un fichier Documents\\Fadenkreuz\\programme.txt vide signifie : toujours visible.',
         'Le réticule ne passe au-dessus du menu Démarrer, de la barre des tâches et de certaines surcouches qu’avec « Install for all users » et la tâche « Show on top of everything ». L’installateur crée pour cela un certificat valable uniquement sur ce PC et supprime aussitôt sa clé privée.',
         'Fadenkreuz ne touche pas au jeu : c’est une fenêtre à part. Certains jeux compétitifs n’aiment pourtant pas les surcouches ; vérifiez avant de jouer en classé.',
-        'Écran principal uniquement. L’éditeur et l’installateur sont en allemand (l’installateur aussi en anglais). Edge et Chrome enregistrent directement dans le fichier ; Firefox ne peut que le télécharger.'
+        'Écran principal uniquement. L’éditeur et l’installateur sont en anglais et en allemand. Edge et Chrome enregistrent directement dans le fichier ; Firefox ne peut que le télécharger.'
       ],
       it: [
         'I giochi a schermo intero esclusivo coprono qualsiasi overlay. Imposta il gioco su «finestra senza bordi» o «schermo intero in finestra».',
         'Ctrl+Alt+F10 dentro un gioco significa: da ora il mirino compare solo mentre quel gioco è in primo piano. Se manca in un altro gioco, quel gioco non è ancora nell’elenco: premi Ctrl+Alt+F10 anche lì; un Documenti\\Fadenkreuz\\programme.txt vuoto significa: sempre visibile.',
         'Il mirino sta sopra il menu Start, la barra delle applicazioni e alcuni overlay solo con «Install for all users» e l’attività «Show on top of everything». Per questo il programma di installazione crea un certificato valido solo su questo PC e ne cancella subito la chiave privata.',
         'Fadenkreuz non tocca il gioco: è una finestra a sé. Alcuni giochi competitivi però non amano gli overlay; controlla prima di giocare partite classificate.',
-        'Solo lo schermo principale. Editor e programma di installazione sono in tedesco (il programma di installazione anche in inglese). Edge e Chrome salvano direttamente nel file; Firefox può solo scaricarlo.'
+        'Solo lo schermo principale. Editor e programma di installazione sono in inglese e in tedesco. Edge e Chrome salvano direttamente nel file; Firefox può solo scaricarlo.'
       ],
       nl: [
         'Games in exclusief volledig scherm tekenen over elke overlay heen. Zet de game op ‘randloos venster’ of ‘volledig scherm in venster’.',
         'Ctrl+Alt+F10 in een game betekent: vanaf nu verschijnt het vizier alleen zolang die game op de voorgrond staat. Ontbreekt het in een andere game, dan staat die game nog niet op de lijst — druk daar ook op Ctrl+Alt+F10; een lege Documenten\\Fadenkreuz\\programme.txt betekent: altijd zichtbaar.',
         'Het vizier ligt alleen boven het Startmenu, de taakbalk en sommige overlays met “Install for all users” en de taak “Show on top of everything”. Daarvoor maakt de installatie een certificaat aan dat alleen op deze pc geldt, en wist de privésleutel meteen weer.',
         'Fadenkreuz raakt de game niet aan — het is een eigen venster. Toch houden sommige competitieve games niet van overlays; controleer dat vóór je ranked speelt.',
-        'Alleen het hoofdscherm. Editor en installatie zijn Duitstalig (de installatie ook Engels). Edge en Chrome slaan direct op in het bestand; Firefox kan het alleen downloaden.'
+        'Alleen het hoofdscherm. Editor en installatie zijn er in het Engels en het Duits. Edge en Chrome slaan direct op in het bestand; Firefox kan het alleen downloaden.'
       ],
       pl: [
         'Gry w trybie wyłącznego pełnego ekranu zasłaniają każdą nakładkę. Przełącz grę na „okno bez ramki” lub „pełny ekran w oknie”.',
         'Ctrl+Alt+F10 w grze oznacza: od teraz celownik pojawia się tylko wtedy, gdy ta gra jest na pierwszym planie. Jeśli brakuje go w innej grze, tej gry po prostu nie ma jeszcze na liście — naciśnij tam też Ctrl+Alt+F10; pusty plik Dokumenty\\Fadenkreuz\\programme.txt oznacza: zawsze widoczny.',
         'Nad menu Start, paskiem zadań i niektórymi nakładkami celownik leży tylko przy „Install for all users” i zadaniu „Show on top of everything”. Instalator tworzy wtedy certyfikat ważny tylko na tym komputerze i od razu usuwa jego klucz prywatny.',
         'Fadenkreuz nie dotyka gry — to osobne okno. Mimo to niektóre gry rywalizacyjne nie lubią nakładek; sprawdź to przed grą rankingową.',
-        'Tylko główny ekran. Edytor i instalator są po niemiecku (instalator także po angielsku). Edge i Chrome zapisują prosto do pliku; Firefox może go tylko pobrać.'
+        'Tylko główny ekran. Edytor i instalator są po angielsku i po niemiecku. Edge i Chrome zapisują prosto do pliku; Firefox może go tylko pobrać.'
       ],
       pt: [
         'Os jogos em ecrã inteiro exclusivo tapam qualquer sobreposição. Ponha o jogo em «janela sem limites» ou «ecrã inteiro em janela».',
         'Ctrl+Alt+F10 dentro de um jogo significa: a partir daí, a mira só aparece enquanto esse jogo estiver à frente. Se faltar noutro jogo, é só porque esse jogo ainda não está na lista — carregue também aí em Ctrl+Alt+F10; um Documentos\\Fadenkreuz\\programme.txt vazio significa: sempre visível.',
         'A mira só fica por cima do menu Iniciar, da barra de tarefas e de algumas sobreposições com «Install for all users» e a tarefa «Show on top of everything». Para isso, o instalador cria um certificado válido só neste PC e apaga logo a sua chave privada.',
         'O Fadenkreuz não mexe no jogo — é uma janela própria. Ainda assim, alguns jogos competitivos não gostam de sobreposições; verifique antes de jogar partidas classificadas.',
-        'Só o ecrã principal. O editor e o instalador estão em alemão (o instalador também em inglês). O Edge e o Chrome guardam diretamente no ficheiro; o Firefox só o consegue transferir.'
+        'Só o ecrã principal. O editor e o instalador estão em inglês e em alemão. O Edge e o Chrome guardam diretamente no ficheiro; o Firefox só o consegue transferir.'
       ],
       tr: [
         'Özel tam ekran modundaki oyunlar her katmanın üzerini kapatır. Oyunu “kenarlıksız pencere” ya da “pencereli tam ekran” moduna alın.',
         'Oyun içinde Ctrl+Alt+F10 şu anlama gelir: Artık nişangâh yalnızca o oyun öndeyken görünür. Başka bir oyunda görünmüyorsa, o oyun henüz listede değildir — orada da Ctrl+Alt+F10’a basın; boş bir Belgeler\\Fadenkreuz\\programme.txt dosyası “her zaman görünür” demektir.',
         'Nişangâh Başlat menüsünün, görev çubuğunun ve bazı katmanların üstünde yalnızca “Install for all users” ve “Show on top of everything” görevi seçildiğinde durur. Bunun için kurulum, yalnızca bu bilgisayarda geçerli bir sertifika oluşturur ve özel anahtarını hemen siler.',
         'Fadenkreuz oyuna dokunmaz — kendi başına bir penceredir. Yine de bazı rekabetçi oyunlar katmanları sevmez; dereceli oyunlardan önce kontrol edin.',
-        'Yalnızca ana ekran. Düzenleyici ve kurulum Almancadır (kurulum İngilizce de). Edge ve Chrome doğrudan dosyaya kaydeder; Firefox dosyayı yalnızca indirebilir.'
+        'Yalnızca ana ekran. Düzenleyici ve kurulum İngilizce ve Almancadır. Edge ve Chrome doğrudan dosyaya kaydeder; Firefox dosyayı yalnızca indirebilir.'
       ],
       ru: [
         'Игры в эксклюзивном полноэкранном режиме перекрывают любой оверлей. Переключите игру в режим «окно без рамки» или «полноэкранный в окне».',
         'Ctrl+Alt+F10 в игре означает: теперь прицел появляется только тогда, когда эта игра на переднем плане. Если его нет в другой игре, значит, её просто ещё нет в списке, — нажмите Ctrl+Alt+F10 и там; пустой файл Документы\\Fadenkreuz\\programme.txt означает: виден всегда.',
         'Над меню «Пуск», панелью задач и некоторыми оверлеями прицел лежит только с вариантом «Install for all users» и задачей «Show on top of everything». Для этого установщик создаёт сертификат, действующий только на этом ПК, и сразу удаляет его закрытый ключ.',
         'Fadenkreuz не трогает игру — это отдельное окно. И всё же некоторые соревновательные игры не любят оверлеи; проверьте это перед рейтинговыми матчами.',
-        'Только основной экран. Редактор и установщик на немецком (установщик ещё и на английском). Edge и Chrome сохраняют прямо в файл; Firefox может его только скачать.'
+        'Только основной экран. Редактор и установщик — на английском и немецком. Edge и Chrome сохраняют прямо в файл; Firefox может его только скачать.'
       ],
       hi: [
         'एक्सक्लूसिव फ़ुलस्क्रीन वाले गेम हर ओवरले को ढक देते हैं। गेम को “बॉर्डरलेस विंडो” या “विंडो वाला फ़ुलस्क्रीन” पर रखें।',
         'गेम के अंदर Ctrl+Alt+F10 का मतलब है: अब से क्रॉसहेयर सिर्फ़ तभी दिखेगा, जब वही गेम सबसे आगे हो। अगर किसी दूसरे गेम में वह नहीं दिखता, तो वह गेम अभी सूची में नहीं है — वहाँ भी Ctrl+Alt+F10 दबाएँ; खाली Documents\\Fadenkreuz\\programme.txt का मतलब है: हमेशा दिखेगा।',
         'स्टार्ट मेन्यू, टास्कबार और कुछ ओवरले के ऊपर क्रॉसहेयर तभी रहता है, जब आप “Install for all users” और “Show on top of everything” कार्य चुनें। इसके लिए सेटअप एक ऐसा प्रमाणपत्र बनाता है जो सिर्फ़ इसी पीसी पर मान्य है, और उसकी निजी कुंजी तुरंत मिटा देता है।',
         'Fadenkreuz गेम को छूता नहीं — यह एक अलग विंडो है। फिर भी कुछ प्रतियोगी गेम ओवरले पसंद नहीं करते; रैंक्ड मैच से पहले जाँच लें।',
-        'सिर्फ़ मुख्य स्क्रीन। एडिटर और सेटअप जर्मन में हैं (सेटअप अंग्रेज़ी में भी)। Edge और Chrome सीधे फ़ाइल में सहेजते हैं; Firefox उसे सिर्फ़ डाउनलोड कर सकता है।'
+        'सिर्फ़ मुख्य स्क्रीन। एडिटर और सेटअप अंग्रेज़ी और जर्मन में हैं। Edge और Chrome सीधे फ़ाइल में सहेजते हैं; Firefox उसे सिर्फ़ डाउनलोड कर सकता है।'
       ],
       zh: [
         '独占全屏模式下的游戏会盖住所有覆盖层。请把游戏改成“无边框窗口”或“窗口化全屏”。',
         '在游戏里按 Ctrl+Alt+F10 的意思是：从现在起，只有这个游戏在最前面时才显示准星。如果在另一个游戏里看不到它，只是因为那个游戏还不在列表里——在那里也按一下 Ctrl+Alt+F10；“文档\\Fadenkreuz\\programme.txt”为空则表示：始终显示。',
         '只有选择“Install for all users”并勾选“Show on top of everything”时，准星才会位于开始菜单、任务栏和部分覆盖层之上。为此，安装程序会创建一个只在这台电脑上有效的证书，并立即删除其私钥。',
         'Fadenkreuz 不会碰游戏——它是一个独立的窗口。尽管如此，有些竞技游戏不喜欢覆盖层；打排位赛之前请先确认。',
-        '仅支持主屏幕。编辑器和安装程序是德语的（安装程序也有英语）。Edge 和 Chrome 能直接保存到文件；Firefox 只能下载。'
+        '仅支持主屏幕。编辑器和安装程序都有英语和德语。Edge 和 Chrome 能直接保存到文件；Firefox 只能下载。'
       ],
       ja: [
         '排他的フルスクリーンのゲームは、どんなオーバーレイも上から覆い隠します。ゲームを「ボーダーレスウィンドウ」か「ウィンドウ化フルスクリーン」にしてください。',
         'ゲーム内で Ctrl+Alt+F10 を押すと、それ以降はそのゲームが前面にあるときだけ照準が表示されます。別のゲームで照準が出ないのは、そのゲームがまだリストにないだけです — そこでも Ctrl+Alt+F10 を押してください。ドキュメント\\Fadenkreuz\\programme.txt が空なら、常に表示されます。',
         '照準がスタートメニュー、タスクバー、一部のオーバーレイより上に来るのは、「Install for all users」と「Show on top of everything」を選んだときだけです。そのためにセットアップは、この PC でだけ有効な証明書を作り、秘密鍵をすぐに削除します。',
         'Fadenkreuz はゲームに手を触れません — 独立したウィンドウです。それでも、オーバーレイを嫌う対戦ゲームもあります。ランクマッチの前に確認してください。',
-        'メイン画面のみです。エディターとセットアップはドイツ語です（セットアップは英語にも対応）。Edge と Chrome はファイルに直接保存できますが、Firefox はダウンロードしかできません。'
+        'メイン画面のみです。エディターとセットアップは英語とドイツ語に対応しています。Edge と Chrome はファイルに直接保存できますが、Firefox はダウンロードしかできません。'
       ],
       ko: [
         '독점 전체 화면 모드의 게임은 모든 오버레이를 덮어 버립니다. 게임을 “테두리 없는 창” 또는 “창 모드 전체 화면”으로 바꾸세요.',
         '게임 안에서 Ctrl+Alt+F10을 누르면, 그때부터 조준선은 그 게임이 맨 앞에 있을 때만 나타납니다. 다른 게임에서 보이지 않는다면 그 게임이 아직 목록에 없을 뿐입니다 — 거기서도 Ctrl+Alt+F10을 누르세요. 문서\\Fadenkreuz\\programme.txt가 비어 있으면 항상 보입니다.',
         '조준선이 시작 메뉴, 작업 표시줄, 일부 오버레이보다 위에 오려면 “Install for all users”와 “Show on top of everything” 작업을 골라야 합니다. 이를 위해 설치 프로그램은 이 PC에서만 유효한 인증서를 만들고, 개인 키는 곧바로 지웁니다.',
         'Fadenkreuz는 게임을 건드리지 않습니다 — 별도의 창일 뿐입니다. 그래도 일부 경쟁 게임은 오버레이를 싫어하니 랭크 게임 전에 확인하세요.',
-        '메인 화면만 지원합니다. 에디터와 설치 프로그램은 독일어입니다(설치 프로그램은 영어도 지원). Edge와 Chrome은 파일에 바로 저장하지만, Firefox는 내려받기만 할 수 있습니다.'
+        '메인 화면만 지원합니다. 에디터와 설치 프로그램은 영어와 독일어를 지원합니다. Edge와 Chrome은 파일에 바로 저장하지만, Firefox는 내려받기만 할 수 있습니다.'
       ]
     },
     docs: {
