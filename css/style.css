@@ -100,6 +100,14 @@
      Alle Stopps einzeln ≥ 4,5:1 gegen --panel und --bg (BAUPLAN Heizwarte Abschnitt 11). */
   --heizwarte: #0b6b93;
   --heizwarte-flow: linear-gradient(100deg, #0b6b93, #2e7d32, #854d0e, #c2410c, #b91c1c);
+  /* Fadenkreuz: Neongrün, Schwarz, Weiß (Dennis' Vorgabe, 26.10.2026). Die
+     KACHEL ist in beiden Darstellungen schwarz und trägt feste Farben (siehe
+     .tool-card.tool-fadenkreuz). Diese Variablen gelten nur für den Abschnitt
+     auf werkstatt.html, der auf dem Seitengrund steht: Neongrün hätte dort im
+     Hellen 1,20:1, also Schrift fast schwarz (18,45:1 gegen --panel, 16,65:1
+     gegen --bg) und Neongrün nur in der Kappe, die Schmuck ist. */
+  --fadenkreuz: #101512;
+  --fadenkreuz-flow: linear-gradient(#33ff88, #33ff88);
   --shadow: 0 10px 30px rgba(26, 25, 50, 0.10);
 }
 
@@ -160,6 +168,9 @@
     --spectro-flow: linear-gradient(100deg, #8bfff8, #48e8e0, #13ccc5, #00b0a9, #00948e);
     --heizwarte: #7dd3fc;
     --heizwarte-flow: linear-gradient(100deg, #7dd3fc, #86efac, #fde047, #fdba74, #f87171);
+    /* Neongrün: 13,02:1 gegen --panel, 14,23:1 gegen --bg */
+    --fadenkreuz: #33ff88;
+    --fadenkreuz-flow: linear-gradient(#33ff88, #33ff88);
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   }
 }
@@ -196,6 +207,8 @@
   --spectro-flow: linear-gradient(100deg, #8bfff8, #48e8e0, #13ccc5, #00b0a9, #00948e);
   --heizwarte: #7dd3fc;
   --heizwarte-flow: linear-gradient(100deg, #7dd3fc, #86efac, #fde047, #fdba74, #f87171);
+  --fadenkreuz: #33ff88;
+  --fadenkreuz-flow: linear-gradient(#33ff88, #33ff88);
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
@@ -469,6 +482,7 @@ body {
 .tool-prismatical { --tool: var(--prisma); --tool-flow: var(--prisma-flow); }
 .tool-spectroton { --tool: var(--spectro); --tool-flow: var(--spectro-flow); }
 .tool-heizwarte { --tool: var(--heizwarte); --tool-flow: var(--heizwarte-flow); }
+.tool-fadenkreuz { --tool: var(--fadenkreuz); --tool-flow: var(--fadenkreuz-flow); }
 
 /* Die Farbkappe an der Oberkante, für jede Kachel in ihrer Farbe.
    Sie ist KEIN eigenes Kästchen mit eigener Rundung, sondern eine Ebene
@@ -671,6 +685,35 @@ body {
 /* The tile is no longer focusable itself — the border follows whatever inside
    has the focus, be it the stretched link or one of the mini tiles. */
 .tool-card:focus-within { border-color: var(--tool); }
+
+/* Fadenkreuz: Neongrün, Schwarz, Weiß. Wie die dunkle Materie bleibt die
+   Kachel in BEIDEN Darstellungen schwarz – Neongrün auf hellem Grund läge
+   bei 1,20:1. Deshalb feste Farben statt Themenvariablen und eigene
+   Textfarben, gemessen gegen den Kachelgrund #0d100e: Name 14,40:1, Text
+   17,58:1, Meta 8,28:1, Mini-Kacheln 11,03:1 (Überfahren 13,64:1).
+   Die Kappe steckt wie bei der dunklen Materie IM Rahmen statt als Ebene
+   darüber: eine schwarze Kachel ließe im hellen Thema bei 125/150 % sonst
+   eine graue Haarlinie neben der Kappe blitzen. Beim Überfahren und mit
+   Fokus wird der ganze Rahmen neongrün wie bei jeder Kachel. */
+.tool-card.tool-fadenkreuz {
+  --tool: #33ff88;
+  border: 1px solid transparent;
+  border-top-width: var(--bar-h);
+  padding-top: calc(22px + 1px - var(--bar-h));
+  background:
+    radial-gradient(70% 55% at 88% 10%, rgba(51, 255, 136, .10) 0%, transparent 65%) padding-box,
+    linear-gradient(#0d100e, #080a09) padding-box,
+    linear-gradient(var(--tool) calc(var(--card-r) + var(--bar-h)), #1f2b24 var(--cap)) border-box;
+  color: #f3f6f4;
+}
+.tool-card.tool-fadenkreuz::before { content: none; }
+.tool-card.tool-fadenkreuz:hover,
+.tool-card.tool-fadenkreuz:focus-within { border-color: var(--tool); }
+.tool-fadenkreuz .tool-desc { color: #f3f6f4; }
+.tool-fadenkreuz .tool-meta { color: #a3ada7; }
+.tool-card.tool-fadenkreuz .tool-mini a { background: #121714; border-color: #26322b; color: #c3ccc6; }
+.tool-card.tool-fadenkreuz .tool-mini a:hover,
+.tool-card.tool-fadenkreuz .tool-mini a:focus-visible { border-color: var(--tool); color: var(--tool); }
 
 /* Wird es eng, rutscht erst das SKILL-Schild in die nächste Zeile, dann
    der Name unter das Symbol — aber kein Name bricht mitten im Wort. Der

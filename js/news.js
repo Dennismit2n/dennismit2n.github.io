@@ -12,8 +12,8 @@
  *
  * Newest first per tool. Fields: date (ISO) and one per language — de en es fr
  * it nl pl pt tr ru hi zh ja ko, same order as in i18n.js; optionally version
- * and link — Real_RAM_cooler, fontART, Besucher-Ticker and create-masterprompt
- * have real GitHub releases; the browser tools carry no tags.
+ * and link — Real_RAM_cooler, fontART, Besucher-Ticker, create-masterprompt
+ * and Fadenkreuz have real GitHub releases; the browser tools carry no tags.
  */
 'use strict';
 
@@ -832,6 +832,27 @@ var NEWS = {
       zh: '首个版本。今天和接下来两天的天气，外加一盏供暖信号灯，告诉你何时该调高升温缓慢的暖气——适用于暖气片、地暖、热泵和夜间蓄热式电暖器，最多五个地点。应用暂时只有德语，更多语言随后推出。',
       ja: '最初の公開です。今日と続く2日間の天気に加えて、温まるのが遅い暖房をいつ強めるべきかを教える暖房信号があります。ラジエーター、床暖房、ヒートポンプ、蓄熱暖房機に対応し、最大5か所まで使えます。アプリは当面ドイツ語のみで、ほかの言語は今後追加します。',
       ko: '첫 공개. 오늘과 앞으로 이틀의 날씨, 그리고 느린 난방을 언제 올려야 하는지 알려 주는 난방 신호등이 있습니다. 라디에이터, 바닥 난방, 히트 펌프, 심야 축열 난방기에 맞춰, 최대 다섯 곳까지 쓸 수 있습니다. 앱은 당분간 독일어만 지원하며, 다른 언어는 나중에 추가됩니다.'
+    }
+  ],
+  fadenkreuz: [
+    {
+      date: '2026-10-26',
+      version: 'v1.0.0',
+      link: 'https://github.com/Dennismit2n/fadenkreuz/releases/tag/v1.0.0',
+      de: 'Erste Veröffentlichung. Ein Fadenkreuz exakt in der Mitte des Hauptbildschirms, das über dem Spiel liegt und Klicks durchlässt – mit rund 1 MB Arbeitsspeicher. Im Editor zeichnest du es selbst: mit Vorlagen wie „Oval weiß“, weichem Rand und eigenen Presets. Overlay und Editor lassen sich getrennt installieren; Strg+Alt+F10 zeigt das Kreuz nur im gewählten Spiel.',
+      en: 'First release. A crosshair in the exact centre of the main screen that sits on top of your game and lets clicks through – on about 1 MB of RAM. You draw it yourself in the editor: with templates such as “Oval weiß”, a soft outline and your own presets. Overlay and editor can be installed separately; Ctrl+Alt+F10 shows the crosshair only in the chosen game. The editor speaks German.',
+      es: 'Primera publicación. Una mira justo en el centro de la pantalla principal, por encima de tu juego y sin bloquear los clics, con alrededor de 1 MB de RAM. La dibujas tú mismo en el editor: con plantillas como «Oval weiß», un borde suave y tus propios preajustes. La superposición y el editor se instalan por separado; Ctrl+Alt+F10 muestra la mira solo en el juego elegido. El editor está en alemán.',
+      fr: 'Première publication. Un réticule pile au centre de l’écran principal, posé au-dessus de votre jeu et transparent aux clics – avec environ 1 Mo de mémoire vive. Vous le dessinez vous-même dans l’éditeur : avec des modèles comme « Oval weiß », un contour adouci et vos propres préréglages. La surcouche et l’éditeur s’installent séparément ; Ctrl+Alt+F10 n’affiche le réticule que dans le jeu choisi. L’éditeur est en allemand.',
+      it: 'Prima pubblicazione. Un mirino esattamente al centro dello schermo principale, sopra il tuo gioco e trasparente ai clic, con circa 1 MB di RAM. Lo disegni tu nell’editor: con modelli come «Oval weiß», un bordo morbido e preset tuoi. Overlay ed editor si installano separatamente; Ctrl+Alt+F10 mostra il mirino solo nel gioco scelto. L’editor è in tedesco.',
+      nl: 'Eerste release. Een vizier precies in het midden van het hoofdscherm, dat boven je game ligt en klikken doorlaat – met ongeveer 1 MB werkgeheugen. Je tekent het zelf in de editor: met sjablonen zoals ‘Oval weiß’, een zachte rand en je eigen presets. Overlay en editor zijn los te installeren; Ctrl+Alt+F10 toont het vizier alleen in de gekozen game. De editor is Duitstalig.',
+      pl: 'Pierwsze wydanie. Celownik dokładnie na środku głównego ekranu, który leży nad grą i przepuszcza kliknięcia – przy około 1 MB pamięci RAM. Rysujesz go sam w edytorze: z szablonami takimi jak „Oval weiß”, miękką obwódką i własnymi presetami. Nakładkę i edytor instaluje się osobno; Ctrl+Alt+F10 pokazuje celownik tylko w wybranej grze. Edytor jest po niemiecku.',
+      pt: 'Primeira publicação. Uma mira exatamente no centro do ecrã principal, por cima do seu jogo e sem bloquear os cliques – com cerca de 1 MB de RAM. É você quem a desenha no editor: com modelos como «Oval weiß», um contorno suave e predefinições próprias. A sobreposição e o editor instalam-se em separado; Ctrl+Alt+F10 mostra a mira só no jogo escolhido. O editor está em alemão.',
+      tr: 'İlk yayın. Ana ekranın tam ortasında, oyununuzun üstünde duran ve tıklamaları geçiren bir nişangâh – yaklaşık 1 MB RAM ile. Onu düzenleyicide kendiniz çizersiniz: “Oval weiß” gibi şablonlar, yumuşak bir kenarlık ve kendi ön ayarlarınızla. Katman ve düzenleyici ayrı ayrı kurulabilir; Ctrl+Alt+F10 nişangâhı yalnızca seçilen oyunda gösterir. Düzenleyicinin dili Almancadır.',
+      ru: 'Первый выпуск. Прицел точно в центре основного экрана: он лежит поверх игры и пропускает щелчки — примерно 1 МБ оперативной памяти. Рисуете его вы сами в редакторе: с шаблонами вроде «Oval weiß», мягкой обводкой и собственными пресетами. Оверлей и редактор устанавливаются по отдельности; Ctrl+Alt+F10 показывает прицел только в выбранной игре. Редактор на немецком языке.',
+      hi: 'पहला रिलीज़। मुख्य स्क्रीन के ठीक बीच में एक क्रॉसहेयर, जो आपके गेम के ऊपर रहता है और क्लिक को आर-पार जाने देता है – लगभग 1 MB RAM में। इसे आप एडिटर में खुद बनाते हैं: “Oval weiß” जैसे टेम्पलेट, नरम किनारे और अपने प्रीसेट के साथ। ओवरले और एडिटर अलग-अलग इंस्टॉल होते हैं; Ctrl+Alt+F10 क्रॉसहेयर को सिर्फ़ चुने हुए गेम में दिखाता है। एडिटर जर्मन में है।',
+      zh: '首个版本。一个正好位于主屏幕中心的准星，叠在游戏上方，点击可直接穿透——只占约 1 MB 内存。你在编辑器里亲手画它：有“Oval weiß”等模板、柔和的描边，还能保存自己的预设。准星和编辑器可分别安装；按 Ctrl+Alt+F10 可让准星只在选定的游戏里出现。编辑器为德语界面。',
+      ja: '最初の公開です。メイン画面のちょうど中央に置く照準で、ゲームの上に重なり、クリックはそのまま通します。使うメモリは約 1 MB です。照準はエディターで自分で描けます。「Oval weiß」などのテンプレート、やわらかい縁取り、自分のプリセットも使えます。照準とエディターは別々にインストールでき、Ctrl+Alt+F10 で選んだゲームの中だけに表示できます。エディターはドイツ語です。',
+      ko: '첫 공개. 메인 화면 정중앙에 놓이는 조준선으로, 게임 위에 겹쳐 있으면서 클릭은 그대로 통과시킵니다. 메모리는 약 1 MB만 씁니다. 조준선은 에디터에서 직접 그립니다. “Oval weiß” 같은 템플릿, 부드러운 테두리, 나만의 프리셋도 쓸 수 있습니다. 오버레이와 에디터는 따로 설치할 수 있고, Ctrl+Alt+F10으로 고른 게임에서만 조준선이 보이게 할 수 있습니다. 에디터는 독일어입니다.'
     }
   ]
 };

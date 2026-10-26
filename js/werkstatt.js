@@ -44,7 +44,9 @@
     { key: 'bigday', name: 'bigday', icon: './assets/bigday.svg',
       url: 'https://dennismit2n.github.io/bigday/', ctaKey: 'openTool' },
     { key: 'heizwarte', name: 'Heizwarte', icon: './assets/heizwarte.svg',
-      url: 'https://dennismit2n.github.io/heizwarte/', ctaKey: 'openTool' }
+      url: 'https://dennismit2n.github.io/heizwarte/', ctaKey: 'openTool' },
+    { key: 'fadenkreuz', name: 'Fadenkreuz', icon: './assets/fadenkreuz.svg',
+      url: 'https://github.com/Dennismit2n/fadenkreuz/releases/latest', ctaKey: 'downloadTool' }
   ];
 
   var navList = document.getElementById('wkNavList');
