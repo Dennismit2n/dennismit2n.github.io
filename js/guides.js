@@ -2905,6 +2905,28 @@ var GUIDES = {
           ja: 'Fadenkreuz のエディター: 左は市松模様の描画グリッドで、細い黒の縁取りがある緑の十字が描かれています。右には色、縁取り、自分の照準、テンプレート、ゲーム風の背景でのプレビューがあります。',
           ko: 'Fadenkreuz 에디터: 왼쪽에는 가는 검은 테두리가 있는 녹색 십자가 그려진 체크무늬 그리기 격자가 있고, 오른쪽에는 색, 테두리, 나만의 조준선, 템플릿, 게임 장면 위의 미리보기가 있습니다.'
         }
+      },
+      {
+        // Neben dem Editor: die Mitte von vier Bildschirmen in voller Höhe (2×2), damit
+        // man sieht, wie klein das Kreuz im Spiel wirklich ist. Das Format 0,85 : 1 füllt
+        // bei voller Spaltenbreite genau die Lücke neben dem Editor-Bild (gleiche Höhe 380).
+        file: 'fadenkreuz-klein.webp', w: 1234, h: 1456,
+        alt: {
+          de: 'Die Mitte von vier Bildschirmen in voller Höhe, jeweils mit dem Fadenkreuz in der Mitte, auf grauem, lila, weißem und schwarzem Grund: so klein kann das Kreuz im Spiel wirken.',
+          en: 'The middle of four screens at full height, each with the crosshair in the centre, on a grey, purple, white and black background: this is how small it can look in a game.',
+          es: 'El centro de cuatro pantallas a toda altura, cada una con la mira en el medio, sobre fondo gris, morado, blanco y negro: así de pequeña puede verse en un juego.',
+          fr: 'Le centre de quatre écrans sur toute leur hauteur, chacun avec le réticule au milieu, sur fond gris, violet, blanc et noir : voici à quel point il peut paraître petit en jeu.',
+          it: 'La parte centrale di quattro schermi a tutta altezza, ciascuno con il mirino al centro, su sfondo grigio, viola, bianco e nero: ecco quanto può sembrare piccolo in gioco.',
+          nl: 'Het midden van vier schermen over de volle hoogte, elk met het vizier in het midden, op een grijze, paarse, witte en zwarte achtergrond: zo klein kan het in een game lijken.',
+          pl: 'Środek czterech ekranów na całej wysokości, na każdym celownik pośrodku, na szarym, fioletowym, białym i czarnym tle: tak mały może wyglądać w grze.',
+          pt: 'O centro de quatro ecrãs em toda a altura, cada um com a mira ao meio, sobre fundo cinzento, roxo, branco e preto: é assim que pode parecer pequena num jogo.',
+          tr: 'Dört ekranın tam yükseklikteki orta kısmı, her birinin ortasında nişangâh; gri, mor, beyaz ve siyah zemin üzerinde: nişangâh oyunda bu kadar küçük görünebilir.',
+          ru: 'Середина четырёх экранов во всю высоту, на каждом прицел по центру — на сером, фиолетовом, белом и чёрном фоне: вот насколько маленьким он может выглядеть в игре.',
+          hi: 'चार स्क्रीन का बीच वाला हिस्सा, पूरी ऊँचाई में, हर एक के बीच में क्रॉसहेयर — स्लेटी, बैंगनी, सफ़ेद और काली पृष्ठभूमि पर: गेम में यह इतना छोटा दिख सकता है।',
+          zh: '四个屏幕的中间部分（完整高度），每个正中央都有准星，背景分别为灰色、紫色、白色和黑色：准星在游戏里可以这么小。',
+          ja: '4つの画面の中央部分（高さはそのまま）。それぞれ真ん中に照準があり、背景はグレー、紫、白、黒です。ゲーム中の照準はこれほど小さく見えることがあります。',
+          ko: '네 화면의 가운데 부분을 높이 그대로 담았고, 각각 정중앙에 조준선이 있습니다. 배경은 회색, 보라색, 흰색, 검은색입니다. 게임에서 조준선은 이만큼 작게 보일 수 있습니다.'
+        }
       }
     ],
     steps: {
