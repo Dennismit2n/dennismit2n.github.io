@@ -3163,72 +3163,72 @@ var GUIDES = {
       de: [
         'Pocketsum öffnen und oben einen der fünf Rechner wählen. Sprache und Darstellung stehen ganz oben; Zahlen schreibst du so, wie man sie in deiner Sprache schreibt – auf Deutsch ist „5.000“ fünftausend.',
         'Werte eintragen, Pocketsum rechnet sofort mit. Ein roter Rahmen heißt: Diese Eingabe versteht Pocketsum nicht. Beim Trade-Rechner zuerst ein Gebühren-Beispiel wählen und dann die Preisliste deines Anbieters eintragen.',
-        '„Ergebnis kopieren“ legt eine Zusammenfassung in die Zwischenablage, „Zurücksetzen“ holt die Startwerte dieses Rechners zurück; sonst bleiben deine Eingaben gespeichert. Nach dem ersten Besuch läuft Pocketsum auch ohne Netz, und ganz unten gibt es die App als eine Datei zum Herunterladen.'
+        '„Ergebnis kopieren“ legt eine Zusammenfassung in die Zwischenablage, „Zurücksetzen“ holt die Startwerte dieses Rechners zurück; sonst bleiben deine Eingaben gespeichert. Nach dem ersten Besuch läuft Pocketsum auch ohne Netz, und ganz unten gibt es die App als eine Datei zum Herunterladen. Zeigt dein Browser oben den Knopf „Installieren“, richtet ein Tipp darauf Pocketsum als App ein.'
       ],
       en: [
         'Open Pocketsum and pick one of the five calculators at the top. Language and appearance sit right at the top; write numbers the way your language writes them – in English, “5,000” is five thousand.',
         'Enter your values and the result updates instantly. A red outline means Pocketsum cannot read that input. In the trading calculator, pick a sample fee model first, then enter your provider’s price list.',
-        '“Copy result” puts a summary on the clipboard, “Reset” brings back that calculator’s starting values; otherwise your entries stay saved. After the first visit Pocketsum also works without a connection, and at the very bottom you can download the whole app as a single file.'
+        '“Copy result” puts a summary on the clipboard, “Reset” brings back that calculator’s starting values; otherwise your entries stay saved. After the first visit Pocketsum also works without a connection, and at the very bottom you can download the whole app as a single file. If your browser shows the “Install” button at the top, one tap sets Pocketsum up as an app.'
       ],
       es: [
         'Abre Pocketsum y elige arriba una de las cinco calculadoras. El idioma y la apariencia están arriba del todo; escribe los números como se escriben en tu idioma: en español, «5.000» son cinco mil.',
         'Introduce los valores y el resultado se calcula al instante. Un marco rojo significa que Pocketsum no entiende esa entrada. En la calculadora de operaciones, elige primero un modelo de comisiones de ejemplo y luego introduce las tarifas de tu proveedor.',
-        '«Copiar resultado» copia un resumen al portapapeles y «Restablecer» recupera los valores iniciales de esa calculadora; si no, tus datos quedan guardados. Tras la primera visita Pocketsum funciona también sin conexión, y abajo del todo puedes descargar la app entera como un solo archivo.'
+        '«Copiar resultado» copia un resumen al portapapeles y «Restablecer» recupera los valores iniciales de esa calculadora; si no, tus datos quedan guardados. Tras la primera visita Pocketsum funciona también sin conexión, y abajo del todo puedes descargar la app entera como un solo archivo. Si tu navegador muestra arriba el botón «Instalar», con un toque Pocketsum se instala como app.'
       ],
       fr: [
         'Ouvrir Pocketsum et choisir en haut l’une des cinq calculatrices. La langue et l’apparence se trouvent tout en haut ; écrivez les nombres comme on les écrit dans votre langue – en français, « 5 000 » fait cinq mille.',
         'Saisir les valeurs : le résultat se calcule aussitôt. Un cadre rouge signifie que Pocketsum ne comprend pas cette saisie. Dans la calculatrice de frais, choisir d’abord un modèle de frais d’exemple, puis saisir la grille tarifaire de votre fournisseur.',
-        '« Copier le résultat » place un résumé dans le presse-papiers, « Réinitialiser » rétablit les valeurs de départ de cette calculatrice ; sinon, vos saisies restent enregistrées. Après la première visite, Pocketsum fonctionne aussi sans connexion, et tout en bas l’application entière se télécharge en un seul fichier.'
+        '« Copier le résultat » place un résumé dans le presse-papiers, « Réinitialiser » rétablit les valeurs de départ de cette calculatrice ; sinon, vos saisies restent enregistrées. Après la première visite, Pocketsum fonctionne aussi sans connexion, et tout en bas l’application entière se télécharge en un seul fichier. Si votre navigateur affiche en haut le bouton « Installer », un appui installe Pocketsum comme application.'
       ],
       it: [
         'Apri Pocketsum e scegli in alto una delle cinque calcolatrici. Lingua e aspetto sono proprio in cima; scrivi i numeri come si scrivono nella tua lingua: in italiano «5.000» sono cinquemila.',
         'Inserisci i valori e il risultato si aggiorna subito. Un bordo rosso vuol dire che Pocketsum non capisce quell’inserimento. Nella calcolatrice delle operazioni scegli prima un modello di commissioni di esempio, poi inserisci il listino del tuo fornitore.',
-        '«Copia risultato» mette un riepilogo negli appunti, «Reimposta» riporta i valori iniziali di quella calcolatrice; altrimenti i tuoi dati restano salvati. Dopo la prima visita Pocketsum funziona anche senza connessione, e in fondo alla pagina puoi scaricare l’intera app come un unico file.'
+        '«Copia risultato» mette un riepilogo negli appunti, «Reimposta» riporta i valori iniziali di quella calcolatrice; altrimenti i tuoi dati restano salvati. Dopo la prima visita Pocketsum funziona anche senza connessione, e in fondo alla pagina puoi scaricare l’intera app come un unico file. Se il browser mostra in alto il pulsante «Installa», con un tocco Pocketsum si installa come app.'
       ],
       nl: [
         'Open Pocketsum en kies bovenaan een van de vijf rekenhulpjes. Taal en weergave staan helemaal bovenaan; schrijf getallen zoals jouw taal ze schrijft – in het Nederlands is ‘5.000’ vijfduizend.',
         'Vul de waarden in, het resultaat rekent meteen mee. Een rode rand betekent dat Pocketsum die invoer niet begrijpt. Kies in de transactiecalculator eerst een voorbeeld-kostenmodel en vul daarna de prijslijst van je aanbieder in.',
-        '‘Resultaat kopiëren’ zet een samenvatting op het klembord, ‘Herstellen’ haalt de startwaarden van dat rekenhulpje terug; verder blijft wat je invult bewaard. Na het eerste bezoek werkt Pocketsum ook zonder verbinding, en helemaal onderaan kun je de hele app als één bestand downloaden.'
+        '‘Resultaat kopiëren’ zet een samenvatting op het klembord, ‘Herstellen’ haalt de startwaarden van dat rekenhulpje terug; verder blijft wat je invult bewaard. Na het eerste bezoek werkt Pocketsum ook zonder verbinding, en helemaal onderaan kun je de hele app als één bestand downloaden. Toont je browser bovenaan de knop ‘Installeren’, dan installeer je Pocketsum met één tik als app.'
       ],
       pl: [
         'Otwórz Pocketsum i wybierz u góry jeden z pięciu kalkulatorów. Język i wygląd są na samej górze; liczby zapisuj tak, jak zapisuje się je w twoim języku – po polsku „5000” to pięć tysięcy.',
         'Wpisz wartości, a wynik przelicza się od razu. Czerwona ramka oznacza, że Pocketsum nie rozumie tego wpisu. W kalkulatorze transakcji wybierz najpierw przykładowy model opłat, a potem wpisz cennik swojego dostawcy.',
-        '„Kopiuj wynik” kopiuje podsumowanie do schowka, „Resetuj” przywraca wartości początkowe tego kalkulatora; poza tym twoje wpisy zostają zapisane. Po pierwszej wizycie Pocketsum działa też bez internetu, a na samym dole można pobrać całą aplikację jako jeden plik.'
+        '„Kopiuj wynik” kopiuje podsumowanie do schowka, „Resetuj” przywraca wartości początkowe tego kalkulatora; poza tym twoje wpisy zostają zapisane. Po pierwszej wizycie Pocketsum działa też bez internetu, a na samym dole można pobrać całą aplikację jako jeden plik. Jeśli przeglądarka pokazuje u góry przycisk „Zainstaluj”, jedno dotknięcie instaluje Pocketsum jako aplikację.'
       ],
       pt: [
         'Abra o Pocketsum e escolha em cima uma das cinco calculadoras. O idioma e o aspeto estão mesmo no topo; escreva os números como se escrevem no seu idioma – em português, «5000» são cinco mil.',
         'Introduza os valores e o resultado é calculado de imediato. Uma moldura vermelha significa que o Pocketsum não percebe esse valor. Na calculadora de operações, escolha primeiro um modelo de comissões de exemplo e depois introduza o preçário do seu fornecedor.',
-        '«Copiar resultado» copia um resumo para a área de transferência, «Repor» volta aos valores iniciais dessa calculadora; de resto, os seus dados ficam guardados. Depois da primeira visita o Pocketsum também funciona sem ligação, e no fundo da página pode descarregar a app inteira como um único ficheiro.'
+        '«Copiar resultado» copia um resumo para a área de transferência, «Repor» volta aos valores iniciais dessa calculadora; de resto, os seus dados ficam guardados. Depois da primeira visita o Pocketsum também funciona sem ligação, e no fundo da página pode descarregar a app inteira como um único ficheiro. Se o navegador mostrar no topo o botão «Instalar», um toque instala o Pocketsum como app.'
       ],
       tr: [
         'Pocketsum’u açın ve üstten beş hesap makinesinden birini seçin. Dil ve görünüm en üstte; sayıları dilinizde nasıl yazılıyorsa öyle yazın – Türkçede “5.000” beş bindir.',
         'Değerleri girin, sonuç anında hesaplanır. Kırmızı çerçeve, Pocketsum’un o girdiyi anlamadığı anlamına gelir. İşlem hesaplayıcısında önce örnek bir ücret modeli seçin, sonra sağlayıcınızın fiyat listesini girin.',
-        '“Sonucu kopyala” bir özeti panoya alır, “Sıfırla” o hesap makinesinin başlangıç değerlerini geri getirir; bunun dışında girdikleriniz kayıtlı kalır. İlk ziyaretten sonra Pocketsum bağlantı olmadan da çalışır ve sayfanın en altında uygulamanın tamamını tek bir dosya olarak indirebilirsiniz.'
+        '“Sonucu kopyala” bir özeti panoya alır, “Sıfırla” o hesap makinesinin başlangıç değerlerini geri getirir; bunun dışında girdikleriniz kayıtlı kalır. İlk ziyaretten sonra Pocketsum bağlantı olmadan da çalışır ve sayfanın en altında uygulamanın tamamını tek bir dosya olarak indirebilirsiniz. Tarayıcınız üstte “Yükle” düğmesini gösteriyorsa, tek dokunuşla Pocketsum uygulama olarak kurulur.'
       ],
       ru: [
         'Откройте Pocketsum и выберите вверху один из пяти калькуляторов. Язык и оформление — в самом верху; пишите числа так, как их пишут на вашем языке: по-русски «5 000» — это пять тысяч.',
         'Введите значения — результат пересчитывается сразу. Красная рамка означает, что Pocketsum не понимает этот ввод. В калькуляторе сделок сначала выберите примерную модель комиссий, а затем введите тарифы своего провайдера.',
-        '«Скопировать результат» кладёт сводку в буфер обмена, «Сбросить» возвращает начальные значения этого калькулятора; в остальном введённое сохраняется. После первого посещения Pocketsum работает и без интернета, а в самом низу можно скачать всё приложение одним файлом.'
+        '«Скопировать результат» кладёт сводку в буфер обмена, «Сбросить» возвращает начальные значения этого калькулятора; в остальном введённое сохраняется. После первого посещения Pocketsum работает и без интернета, а в самом низу можно скачать всё приложение одним файлом. Если браузер показывает вверху кнопку «Установить», одно касание установит Pocketsum как приложение.'
       ],
       hi: [
         'Pocketsum खोलें और ऊपर पाँच में से कोई एक कैलकुलेटर चुनें। भाषा और रूप सबसे ऊपर हैं; संख्याएँ वैसे लिखें जैसे आपकी भाषा में लिखी जाती हैं – हिन्दी में “5,000” पाँच हज़ार है।',
         'मान भरें, नतीजा तुरंत बदलता है। लाल किनारे का मतलब है कि Pocketsum वह प्रविष्टि नहीं समझता। ट्रेड कैलकुलेटर में पहले कोई उदाहरण शुल्क मॉडल चुनें, फिर अपने प्रदाता की रेट लिस्ट भरें।',
-        '“नतीजा कॉपी करें” एक सारांश क्लिपबोर्ड में रखता है, “रीसेट करें” इस कैलकुलेटर के शुरुआती मान वापस लाता है; वरना आपकी प्रविष्टियाँ सहेजी रहती हैं। पहली विज़िट के बाद Pocketsum बिना इंटरनेट के भी चलता है, और सबसे नीचे पूरी ऐप एक फ़ाइल के रूप में डाउनलोड की जा सकती है।'
+        '“नतीजा कॉपी करें” एक सारांश क्लिपबोर्ड में रखता है, “रीसेट करें” इस कैलकुलेटर के शुरुआती मान वापस लाता है; वरना आपकी प्रविष्टियाँ सहेजी रहती हैं। पहली विज़िट के बाद Pocketsum बिना इंटरनेट के भी चलता है, और सबसे नीचे पूरी ऐप एक फ़ाइल के रूप में डाउनलोड की जा सकती है। अगर ब्राउज़र ऊपर “इंस्टॉल करें” बटन दिखाता है, तो एक टैप से Pocketsum ऐप की तरह इंस्टॉल हो जाता है।'
       ],
       zh: [
         '打开 Pocketsum，在顶部选择五个计算器之一。语言和外观在最上方；数字按你的语言习惯书写——中文里“5,000”就是五千。',
         '填入数值，结果会立刻更新。红框表示 Pocketsum 看不懂这个输入。在交易计算器里，先选一个示例收费模式，再填入你的服务商价目表。',
-        '“复制结果”会把摘要放进剪贴板，“重置”恢复该计算器的初始值；不重置的话，你的输入会一直保留。首次访问后，Pocketsum 无需联网也能使用，页面最底部还可以把整个应用下载为单个文件。'
+        '“复制结果”会把摘要放进剪贴板，“重置”恢复该计算器的初始值；不重置的话，你的输入会一直保留。首次访问后，Pocketsum 无需联网也能使用，页面最底部还可以把整个应用下载为单个文件。如果浏览器在顶部显示“安装”按钮，点一下即可把 Pocketsum 安装为应用。'
       ],
       ja: [
         'Pocketsum を開き、上で5つの計算機のどれかを選びます。言語と表示はいちばん上にあります。数字はあなたの言語の書き方で入力します。日本語なら「5,000」は五千です。',
         '値を入れると結果がすぐに計算されます。赤い枠は、Pocketsum がその入力を読み取れないという意味です。取引の計算では、まず手数料のサンプルを選び、それから利用先の料金表を入れてください。',
-        '「結果をコピー」で要約がクリップボードに入り、「リセット」でその計算機の初期値に戻ります。リセットしない限り、入力した内容は保存されたままです。一度アクセスすればオフラインでも動き、ページのいちばん下からアプリ全体を1つのファイルとしてダウンロードできます。'
+        '「結果をコピー」で要約がクリップボードに入り、「リセット」でその計算機の初期値に戻ります。リセットしない限り、入力した内容は保存されたままです。一度アクセスすればオフラインでも動き、ページのいちばん下からアプリ全体を1つのファイルとしてダウンロードできます。ブラウザーが上部に「インストール」ボタンを表示していれば、タップするだけで Pocketsum をアプリとしてインストールできます。'
       ],
       ko: [
         'Pocketsum을 열고 위에서 계산기 다섯 개 중 하나를 고릅니다. 언어와 화면 모드는 맨 위에 있습니다. 숫자는 사용하는 언어의 표기대로 쓰면 됩니다. 한국어라면 ‘5,000’은 오천입니다.',
         '값을 넣으면 결과가 바로 계산됩니다. 빨간 테두리는 Pocketsum이 그 입력을 이해하지 못한다는 뜻입니다. 거래 계산기에서는 먼저 예시 수수료 모델을 고르고, 그다음 이용하는 곳의 요금표를 넣으세요.',
-        '‘결과 복사’는 요약을 클립보드에 넣고, ‘초기화’는 그 계산기의 처음 값으로 되돌립니다. 초기화하지 않으면 입력한 내용은 저장된 채로 남습니다. 처음 한 번 방문한 뒤에는 인터넷 없이도 작동하며, 맨 아래에서 앱 전체를 파일 하나로 내려받을 수 있습니다.'
+        '‘결과 복사’는 요약을 클립보드에 넣고, ‘초기화’는 그 계산기의 처음 값으로 되돌립니다. 초기화하지 않으면 입력한 내용은 저장된 채로 남습니다. 처음 한 번 방문한 뒤에는 인터넷 없이도 작동하며, 맨 아래에서 앱 전체를 파일 하나로 내려받을 수 있습니다. 브라우저가 위쪽에 ‘설치’ 버튼을 보여 주면 한 번 눌러 Pocketsum을 앱으로 설치할 수 있습니다.'
       ]
     },
     pitfalls: {
