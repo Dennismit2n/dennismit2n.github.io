@@ -37,7 +37,7 @@
   <!-- Die Überschriftenschrift wird auf jeder Seite und in jeder Sprache gebraucht
        (mindestens für den Markennamen), also früh anstoßen statt erst nach der CSS. -->
   <link rel="preload" href="./assets/fonts/fraunces/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="./css/style.css?v=2026-10-26">
+  <link rel="stylesheet" href="./css/style.css?v=2026-10-29">
   <!-- Theme before first paint: stored choice wins, otherwise system decides via CSS. -->
   <script>try{var t=localStorage.getItem('dennismit2n-home.theme');if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}</script>
   <!-- Wer nicht Englisch bekommt, sieht Inhalt, Fußzeile und Auswahlfelder erst
@@ -321,6 +321,21 @@
             <a href="./werkstatt.html#fadenkreuz-anleitung" data-count="werkstatt-fadenkreuz-anleitung" data-i18n="secGuide">Guide</a>
           </span>
         </div>
+        <!-- Pocketsum: neutrale Kachel, die Kappe trägt die fünf Farben der Rechner
+             (siehe --pocketsum-flow in style.css). -->
+        <div class="tool-card tool-pocketsum">
+          <span class="tool-head">
+            <img src="./assets/pocketsum.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-pocketsum">Pocketsum</span>
+          </span>
+          <span class="tool-desc" data-i18n="pocketsumDesc">Five small calculators in one file: VAT, tips, fuel prices, dividends and trading costs.</span>
+          <span class="tool-meta" data-i18n="pocketsumMeta">Free · no sign-up · offline after the first visit</span>
+          <a class="tool-open" id="open-pocketsum" aria-labelledby="open-pocketsum name-pocketsum" href="https://dennismit2n.github.io/pocketsum/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="pocketsum">
+            <a href="./werkstatt.html#pocketsum-neuigkeiten" data-count="werkstatt-pocketsum-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#pocketsum-anleitung" data-count="werkstatt-pocketsum-anleitung" data-i18n="secGuide">Guide</a>
+          </span>
+        </div>
         <!-- Zwei Platzhalter auf Dennis' Ansage (13.09.2026). Bewusst OHNE
              .tool-open und ohne Mini-Kacheln: es gibt nichts zu oeffnen, und ein
              Knopf, der ins Leere fuehrt, ist schlimmer als keiner. Deshalb tragen
@@ -375,9 +390,9 @@
      Als eigenes Skript-Tag hielt es das Übersetzen noch eine halbe Sekunde
      auf; main.js holt es deshalb erst danach. data-news trägt die Adresse
      samt ?v=-Stempel. -->
-<script src="./js/i18n.js?v=2026-10-26" fetchpriority="high"></script>
+<script src="./js/i18n.js?v=2026-10-29" fetchpriority="high"></script>
 <script src="./js/dates.js?v=2026-09-14" fetchpriority="high"></script>
 <script src="./js/header.js?v=2026-09-25" fetchpriority="high"></script>
-<script src="./js/main.js?v=2026-09-24" fetchpriority="high" data-news="./js/news.js?v=2026-10-26b"></script>
+<script src="./js/main.js?v=2026-09-24" fetchpriority="high" data-news="./js/news.js?v=2026-10-29"></script>
 </body>
 </html>

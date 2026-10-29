@@ -108,6 +108,15 @@
      gegen --bg) und Neongrün nur in der Kappe, die Schmuck ist. */
   --fadenkreuz: #101512;
   --fadenkreuz-flow: linear-gradient(#33ff88, #33ff88);
+  /* Pocketsum: fünf Rechner, fünf Farben – die Kappe trägt die Farben der fünf Reiter
+     der App (MwSt, Trinkgeld, Sprit, Dividende, Trade) als harte Stufen, kein Verlauf.
+     Name, Rahmen und Knopf bleiben neutral in der Schriftfarbe, damit die Kachel weder
+     mit Prismaticals Violett noch mit dem Akzent der Seite verwechselt wird.
+     Die Kappe ist Schmuck, keine Schrift; die Stufen sind trotzdem die Akzentfarben der
+     App, gegen --panel gerechnet hell 5,02 bis 7,18:1, dunkel 7,77 bis 11,44:1.
+     Name und Knopf: hell 17,09:1, dunkel 13,55:1. */
+  --pocketsum: #1A1932;
+  --pocketsum-flow: linear-gradient(90deg, #524AAB 0 20%, #B45309 20% 40%, #0369A1 40% 60%, #15803D 60% 80%, #BE123C 80%);
   --shadow: 0 10px 30px rgba(26, 25, 50, 0.10);
 }
 
@@ -171,6 +180,8 @@
     /* Neongrün: 13,02:1 gegen --panel, 14,23:1 gegen --bg */
     --fadenkreuz: #33ff88;
     --fadenkreuz-flow: linear-gradient(#33ff88, #33ff88);
+    --pocketsum: #E2E2F6;
+    --pocketsum-flow: linear-gradient(90deg, #A5A5FF 0 20%, #FFC97A 20% 40%, #75C7FF 40% 60%, #7EE0A0 60% 80%, #FF9FB5 80%);
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   }
 }
@@ -209,6 +220,8 @@
   --heizwarte-flow: linear-gradient(100deg, #7dd3fc, #86efac, #fde047, #fdba74, #f87171);
   --fadenkreuz: #33ff88;
   --fadenkreuz-flow: linear-gradient(#33ff88, #33ff88);
+  --pocketsum: #E2E2F6;
+  --pocketsum-flow: linear-gradient(90deg, #A5A5FF 0 20%, #FFC97A 20% 40%, #75C7FF 40% 60%, #7EE0A0 60% 80%, #FF9FB5 80%);
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
@@ -483,6 +496,7 @@ body {
 .tool-spectroton { --tool: var(--spectro); --tool-flow: var(--spectro-flow); }
 .tool-heizwarte { --tool: var(--heizwarte); --tool-flow: var(--heizwarte-flow); }
 .tool-fadenkreuz { --tool: var(--fadenkreuz); --tool-flow: var(--fadenkreuz-flow); }
+.tool-pocketsum { --tool: var(--pocketsum); --tool-flow: var(--pocketsum-flow); }
 
 /* Die Farbkappe an der Oberkante, für jede Kachel in ihrer Farbe.
    Sie ist KEIN eigenes Kästchen mit eigener Rundung, sondern eine Ebene

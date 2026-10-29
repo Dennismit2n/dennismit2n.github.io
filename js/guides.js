@@ -3117,5 +3117,235 @@ var GUIDES = {
       ja: 'https://github.com/Dennismit2n/fadenkreuz/blob/main/README.md',
       ko: 'https://github.com/Dennismit2n/fadenkreuz/blob/main/README.md'
     }
+  },
+  pocketsum: {
+    purpose: {
+      de: 'Für die kleinen Rechnungen zwischendurch: Was kostet das netto? Wie viel Trinkgeld, und was zahlt jeder? Was macht der neue Spritpreis im Monat aus? Was bleibt von der Dividende nach Steuern? Und was kostet es wirklich, 250 € in Bitcoin zu stecken? Fünf Rechner in einer Datei, die auf deinem Gerät rechnet und deine Eingaben nirgendwohin schickt.',
+      en: 'For the small sums in between: what is that net of VAT? How much tip, and what does everyone pay? What does the new fuel price add up to each month? What is left of a dividend after tax? And what does it really cost to put €250 into Bitcoin? Five calculators in one file that works on your device and never sends what you enter anywhere.',
+      es: 'Para las pequeñas cuentas del día a día: ¿cuánto es sin IVA? ¿Cuánta propina, y cuánto paga cada uno? ¿Qué supone el nuevo precio del combustible al mes? ¿Qué queda de un dividendo después de impuestos? ¿Y cuánto cuesta de verdad meter 250 € en Bitcoin? Cinco calculadoras en un archivo que calcula en tu dispositivo y no envía a ningún sitio lo que introduces.',
+      fr: 'Pour les petits calculs du quotidien : combien cela fait-il hors taxes ? Quel pourboire, et combien paie chacun ? Que représente le nouveau prix du carburant par mois ? Que reste-t-il d’un dividende après impôts ? Et que coûte vraiment un placement de 250 € en Bitcoin ? Cinq calculatrices dans un seul fichier qui calcule sur votre appareil et n’envoie nulle part ce que vous saisissez.',
+      it: 'Per i piccoli conti di tutti i giorni: quanto fa senza IVA? Quanta mancia, e quanto paga ognuno? Quanto pesa al mese il nuovo prezzo del carburante? Cosa resta di un dividendo dopo le tasse? E quanto costa davvero mettere 250 € in Bitcoin? Cinque calcolatrici in un solo file che calcola sul tuo dispositivo e non invia da nessuna parte ciò che inserisci.',
+      nl: 'Voor de kleine sommetjes tussendoor: wat is dat zonder btw? Hoeveel fooi, en wat betaalt ieder? Wat scheelt de nieuwe brandstofprijs per maand? Wat blijft er van een dividend over na belasting? En wat kost het echt om € 250 in bitcoin te steken? Vijf rekenhulpjes in één bestand dat op je apparaat rekent en wat je invult nergens naartoe stuurt.',
+      pl: 'Do drobnych obliczeń na co dzień: ile to netto? Jaki napiwek i ile płaci każdy? Ile miesięcznie kosztuje nowa cena paliwa? Co zostaje z dywidendy po podatkach? I ile naprawdę kosztuje włożenie 250 € w bitcoina? Pięć kalkulatorów w jednym pliku, który liczy na twoim urządzeniu i nigdzie nie wysyła tego, co wpisujesz.',
+      pt: 'Para as pequenas contas do dia a dia: quanto é sem IVA? Quanta gorjeta, e quanto paga cada um? Quanto pesa por mês o novo preço do combustível? O que sobra de um dividendo depois dos impostos? E quanto custa realmente pôr 250 € em Bitcoin? Cinco calculadoras num só ficheiro que calcula no seu dispositivo e não envia para lado nenhum o que introduz.',
+      tr: 'Aradaki küçük hesaplar için: Bu KDV’siz ne kadar? Ne kadar bahşiş, kim ne öder? Yeni yakıt fiyatı ayda ne kadar tutar? Vergiden sonra temettüden ne kalır? Ve 250 €’yu Bitcoin’e yatırmak gerçekte kaça mal olur? Cihazınızda hesaplayan ve girdiklerinizi hiçbir yere göndermeyen tek bir dosyada beş hesap makinesi.',
+      ru: 'Для маленьких расчётов между делом: сколько это без НДС? Сколько оставить чаевых и сколько платит каждый? Во что обходится новая цена топлива за месяц? Что остаётся от дивиденда после налогов? И сколько на самом деле стоит вложить 250 € в биткоин? Пять калькуляторов в одном файле, который считает на вашем устройстве и никуда не отправляет то, что вы вводите.',
+      hi: 'बीच-बीच की छोटी गणनाओं के लिए: VAT के बिना यह कितना है? कितनी टिप, और हर कोई कितना दे? नई ईंधन कीमत से हर माह कितना फ़र्क पड़ता है? कर के बाद लाभांश में से कितना बचता है? और Bitcoin में 250 € लगाना असल में कितना पड़ता है? एक फ़ाइल में पाँच कैलकुलेटर, जो आपके डिवाइस पर गणना करते हैं और आप जो भरते हैं उसे कहीं नहीं भेजते।',
+      zh: '用于日常的小计算：不含税是多少？给多少小费，每人付多少？新油价每月要多花多少？股息扣税后还剩多少？把 250 欧元投进比特币，实际要花多少成本？一个文件里的五个计算器，在你的设备上计算，不会把你输入的内容发送到任何地方。',
+      ja: 'ちょっとした計算のために：税抜きだといくら？ チップはいくらで、1人いくら払う？ 新しい燃料価格で毎月いくら変わる？ 税引き後に配当はいくら残る？ そして 250 ユーロをビットコインに入れると実際いくらかかる？ あなたの端末の中で計算し、入力した内容をどこにも送らない、1つのファイルに入った5つの計算機です。',
+      ko: '틈틈이 하는 작은 계산을 위해: 부가세 빼면 얼마일까? 팁은 얼마이고 각자 얼마를 낼까? 새 연료 가격이면 한 달에 얼마가 더 들까? 세금 떼고 배당은 얼마가 남을까? 그리고 250 €를 비트코인에 넣으면 실제로 비용이 얼마나 들까? 기기 안에서 계산하고 입력한 내용을 어디로도 보내지 않는, 파일 하나에 담긴 계산기 다섯 개입니다.'
+    },
+    shots: [
+      {
+        files: {
+          de: ['pocketsum-de.webp', 1440, 874],
+          en: ['pocketsum-en.webp', 1440, 874]
+        },
+        alt: {
+          de: 'Drei Handy-Ansichten von Pocketsum: Trade-Kosten für 250 Euro in Bitcoin mit Gebühr, Aufschlag, erhaltener Stückzahl, effektivem Kurs und dem nötigen Kursanstieg bis zur Gewinnschwelle; Dividende mit Netto pro Jahr und Monat und der Zahl der Aktien für ein Wunsch-Netto; Spritpreis mit dem Anstieg in Prozent, den Mehrkosten pro Monat und einer Tabelle für Tankfüllung, 100 km, Monat und Jahr.',
+          en: 'Three phone screens of Pocketsum: trading costs for 250 euros in Bitcoin with fee, markup, units received, effective price and the rise needed to break even; dividends with net per year and month and the number of shares for a desired net income; fuel price with the increase in percent, the extra cost per month and a table for a full tank, 100 km, a month and a year.',
+          es: 'Tres pantallas de móvil de Pocketsum: costes de comprar 250 euros en Bitcoin con comisión, recargo, unidades recibidas, precio efectivo y la subida necesaria para no perder; dividendos con el neto al año y al mes y el número de acciones para un neto deseado; precio del combustible con la subida en porcentaje, el gasto extra al mes y una tabla para depósito lleno, 100 km, mes y año.',
+          fr: 'Trois écrans de téléphone de Pocketsum : frais d’un achat de 250 euros en Bitcoin avec commission, majoration, unités reçues, cours effectif et la hausse nécessaire pour rentrer dans ses frais ; dividendes avec le net par an et par mois et le nombre d’actions pour un net souhaité ; prix du carburant avec la hausse en pour cent, le surcoût par mois et un tableau pour un plein, 100 km, un mois et une année.',
+          it: 'Tre schermate di telefono di Pocketsum: costi di un acquisto di 250 euro in Bitcoin con commissione, ricarico, unità ricevute, prezzo effettivo e l’aumento necessario per andare in pari; dividendi con il netto all’anno e al mese e il numero di azioni per un netto desiderato; prezzo del carburante con l’aumento in percentuale, il costo in più al mese e una tabella per pieno, 100 km, mese e anno.',
+          nl: 'Drie telefoonschermen van Pocketsum: kosten van 250 euro in bitcoin met provisie, opslag, ontvangen stuks, effectieve koers en de stijging die nodig is om quitte te spelen; dividend met netto per jaar en per maand en het aantal aandelen voor een gewenst netto; brandstofprijs met de stijging in procent, de extra kosten per maand en een tabel voor een volle tank, 100 km, een maand en een jaar.',
+          pl: 'Trzy ekrany telefonu z Pocketsum: koszty zakupu bitcoina za 250 euro z prowizją, narzutem, liczbą otrzymanych jednostek, kursem efektywnym i wzrostem potrzebnym do wyjścia na zero; dywidendy z kwotą netto rocznie i miesięcznie oraz liczbą akcji dla wymarzonego netto; cena paliwa ze wzrostem w procentach, dodatkowym kosztem na miesiąc i tabelą dla pełnego baku, 100 km, miesiąca i roku.',
+          pt: 'Três ecrãs de telemóvel do Pocketsum: custos de comprar 250 euros em Bitcoin com comissão, acréscimo, unidades recebidas, cotação efetiva e a subida necessária para empatar; dividendos com o líquido por ano e por mês e o número de ações para um líquido desejado; preço do combustível com a subida em percentagem, o custo a mais por mês e uma tabela para depósito cheio, 100 km, mês e ano.',
+          tr: 'Pocketsum’dan üç telefon ekranı: komisyon, ek fiyat, alınan adet, efektif fiyat ve başa baş için gereken artışla 250 euroluk Bitcoin alımının maliyeti; yıllık ve aylık net temettü ile istenen net için gereken hisse sayısı; yüzde olarak artış, aylık ek maliyet ve dolu depo, 100 km, ay ve yıl için bir tabloyla yakıt fiyatı.',
+          ru: 'Три экрана телефона с Pocketsum: расходы на покупку биткоина на 250 евро с комиссией, наценкой, полученным количеством, фактической ценой и ростом, нужным для выхода в ноль; дивиденды с суммой нетто за год и в месяц и числом акций для желаемого дохода; цена топлива с ростом в процентах, дополнительными расходами в месяц и таблицей для полного бака, 100 км, месяца и года.',
+          hi: 'Pocketsum की तीन फ़ोन स्क्रीन: Bitcoin में 250 यूरो लगाने की लागत, शुल्क, अतिरिक्त, मिली यूनिट, असल भाव और ब्रेक-ईवन तक ज़रूरी बढ़ोतरी के साथ; प्रति वर्ष और प्रति माह नेट लाभांश और चाही गई नेट आय के लिए शेयरों की संख्या; ईंधन की कीमत, प्रतिशत में बढ़ोतरी, हर माह का अतिरिक्त ख़र्च और पूरी टंकी, 100 किमी, माह और वर्ष की तालिका के साथ।',
+          zh: 'Pocketsum 的三个手机画面：用 250 欧元买比特币的成本，含手续费、加价、得到的份数、实际价格和回本所需的涨幅；股息，含每年和每月的税后金额，以及达到目标税后收入所需的股数；油价，含上涨百分比、每月多花的钱，以及加满一箱、100 公里、每月和每年的对比表。',
+          ja: 'Pocketsum のスマートフォン画面3枚: 250 ユーロ分のビットコイン購入にかかるコスト（手数料、上乗せ、受け取る量、実質価格、損益ゼロに必要な値上がり）、配当（年間と月あたりの手取り、目標の手取りに必要な株数）、燃料価格（値上がり率、月あたりの増加額、満タン・100 km・月・年の比較表）。',
+          ko: 'Pocketsum 휴대폰 화면 세 개: 비트코인 250유로어치 매수 비용(수수료, 가산, 받는 수량, 실제 단가, 본전까지 필요한 상승), 배당(연간·월간 세후 금액과 원하는 세후 금액에 필요한 주식 수), 연료 가격(인상률, 월 추가 비용, 가득 주유·100 km·월·연 비교표).'
+        }
+      }
+    ],
+    steps: {
+      de: [
+        'Pocketsum öffnen und oben einen der fünf Rechner wählen. Sprache und Darstellung stehen ganz oben; Zahlen schreibst du so, wie man sie in deiner Sprache schreibt – auf Deutsch ist „5.000“ fünftausend.',
+        'Werte eintragen, Pocketsum rechnet sofort mit. Ein roter Rahmen heißt: Diese Eingabe versteht Pocketsum nicht. Beim Trade-Rechner zuerst ein Gebühren-Beispiel wählen und dann die Preisliste deines Anbieters eintragen.',
+        '„Ergebnis kopieren“ legt eine Zusammenfassung in die Zwischenablage, „Zurücksetzen“ holt die Startwerte dieses Rechners zurück; sonst bleiben deine Eingaben gespeichert. Nach dem ersten Besuch läuft Pocketsum auch ohne Netz, und ganz unten gibt es die App als eine Datei zum Herunterladen.'
+      ],
+      en: [
+        'Open Pocketsum and pick one of the five calculators at the top. Language and appearance sit right at the top; write numbers the way your language writes them – in English, “5,000” is five thousand.',
+        'Enter your values and the result updates instantly. A red outline means Pocketsum cannot read that input. In the trading calculator, pick a sample fee model first, then enter your provider’s price list.',
+        '“Copy result” puts a summary on the clipboard, “Reset” brings back that calculator’s starting values; otherwise your entries stay saved. After the first visit Pocketsum also works without a connection, and at the very bottom you can download the whole app as a single file.'
+      ],
+      es: [
+        'Abre Pocketsum y elige arriba una de las cinco calculadoras. El idioma y la apariencia están arriba del todo; escribe los números como se escriben en tu idioma: en español, «5.000» son cinco mil.',
+        'Introduce los valores y el resultado se calcula al instante. Un marco rojo significa que Pocketsum no entiende esa entrada. En la calculadora de operaciones, elige primero un modelo de comisiones de ejemplo y luego introduce las tarifas de tu proveedor.',
+        '«Copiar resultado» copia un resumen al portapapeles y «Restablecer» recupera los valores iniciales de esa calculadora; si no, tus datos quedan guardados. Tras la primera visita Pocketsum funciona también sin conexión, y abajo del todo puedes descargar la app entera como un solo archivo.'
+      ],
+      fr: [
+        'Ouvrir Pocketsum et choisir en haut l’une des cinq calculatrices. La langue et l’apparence se trouvent tout en haut ; écrivez les nombres comme on les écrit dans votre langue – en français, « 5 000 » fait cinq mille.',
+        'Saisir les valeurs : le résultat se calcule aussitôt. Un cadre rouge signifie que Pocketsum ne comprend pas cette saisie. Dans la calculatrice de frais, choisir d’abord un modèle de frais d’exemple, puis saisir la grille tarifaire de votre fournisseur.',
+        '« Copier le résultat » place un résumé dans le presse-papiers, « Réinitialiser » rétablit les valeurs de départ de cette calculatrice ; sinon, vos saisies restent enregistrées. Après la première visite, Pocketsum fonctionne aussi sans connexion, et tout en bas l’application entière se télécharge en un seul fichier.'
+      ],
+      it: [
+        'Apri Pocketsum e scegli in alto una delle cinque calcolatrici. Lingua e aspetto sono proprio in cima; scrivi i numeri come si scrivono nella tua lingua: in italiano «5.000» sono cinquemila.',
+        'Inserisci i valori e il risultato si aggiorna subito. Un bordo rosso vuol dire che Pocketsum non capisce quell’inserimento. Nella calcolatrice delle operazioni scegli prima un modello di commissioni di esempio, poi inserisci il listino del tuo fornitore.',
+        '«Copia risultato» mette un riepilogo negli appunti, «Reimposta» riporta i valori iniziali di quella calcolatrice; altrimenti i tuoi dati restano salvati. Dopo la prima visita Pocketsum funziona anche senza connessione, e in fondo alla pagina puoi scaricare l’intera app come un unico file.'
+      ],
+      nl: [
+        'Open Pocketsum en kies bovenaan een van de vijf rekenhulpjes. Taal en weergave staan helemaal bovenaan; schrijf getallen zoals jouw taal ze schrijft – in het Nederlands is ‘5.000’ vijfduizend.',
+        'Vul de waarden in, het resultaat rekent meteen mee. Een rode rand betekent dat Pocketsum die invoer niet begrijpt. Kies in de transactiecalculator eerst een voorbeeld-kostenmodel en vul daarna de prijslijst van je aanbieder in.',
+        '‘Resultaat kopiëren’ zet een samenvatting op het klembord, ‘Herstellen’ haalt de startwaarden van dat rekenhulpje terug; verder blijft wat je invult bewaard. Na het eerste bezoek werkt Pocketsum ook zonder verbinding, en helemaal onderaan kun je de hele app als één bestand downloaden.'
+      ],
+      pl: [
+        'Otwórz Pocketsum i wybierz u góry jeden z pięciu kalkulatorów. Język i wygląd są na samej górze; liczby zapisuj tak, jak zapisuje się je w twoim języku – po polsku „5000” to pięć tysięcy.',
+        'Wpisz wartości, a wynik przelicza się od razu. Czerwona ramka oznacza, że Pocketsum nie rozumie tego wpisu. W kalkulatorze transakcji wybierz najpierw przykładowy model opłat, a potem wpisz cennik swojego dostawcy.',
+        '„Kopiuj wynik” kopiuje podsumowanie do schowka, „Resetuj” przywraca wartości początkowe tego kalkulatora; poza tym twoje wpisy zostają zapisane. Po pierwszej wizycie Pocketsum działa też bez internetu, a na samym dole można pobrać całą aplikację jako jeden plik.'
+      ],
+      pt: [
+        'Abra o Pocketsum e escolha em cima uma das cinco calculadoras. O idioma e o aspeto estão mesmo no topo; escreva os números como se escrevem no seu idioma – em português, «5000» são cinco mil.',
+        'Introduza os valores e o resultado é calculado de imediato. Uma moldura vermelha significa que o Pocketsum não percebe esse valor. Na calculadora de operações, escolha primeiro um modelo de comissões de exemplo e depois introduza o preçário do seu fornecedor.',
+        '«Copiar resultado» copia um resumo para a área de transferência, «Repor» volta aos valores iniciais dessa calculadora; de resto, os seus dados ficam guardados. Depois da primeira visita o Pocketsum também funciona sem ligação, e no fundo da página pode descarregar a app inteira como um único ficheiro.'
+      ],
+      tr: [
+        'Pocketsum’u açın ve üstten beş hesap makinesinden birini seçin. Dil ve görünüm en üstte; sayıları dilinizde nasıl yazılıyorsa öyle yazın – Türkçede “5.000” beş bindir.',
+        'Değerleri girin, sonuç anında hesaplanır. Kırmızı çerçeve, Pocketsum’un o girdiyi anlamadığı anlamına gelir. İşlem hesaplayıcısında önce örnek bir ücret modeli seçin, sonra sağlayıcınızın fiyat listesini girin.',
+        '“Sonucu kopyala” bir özeti panoya alır, “Sıfırla” o hesap makinesinin başlangıç değerlerini geri getirir; bunun dışında girdikleriniz kayıtlı kalır. İlk ziyaretten sonra Pocketsum bağlantı olmadan da çalışır ve sayfanın en altında uygulamanın tamamını tek bir dosya olarak indirebilirsiniz.'
+      ],
+      ru: [
+        'Откройте Pocketsum и выберите вверху один из пяти калькуляторов. Язык и оформление — в самом верху; пишите числа так, как их пишут на вашем языке: по-русски «5 000» — это пять тысяч.',
+        'Введите значения — результат пересчитывается сразу. Красная рамка означает, что Pocketsum не понимает этот ввод. В калькуляторе сделок сначала выберите примерную модель комиссий, а затем введите тарифы своего провайдера.',
+        '«Скопировать результат» кладёт сводку в буфер обмена, «Сбросить» возвращает начальные значения этого калькулятора; в остальном введённое сохраняется. После первого посещения Pocketsum работает и без интернета, а в самом низу можно скачать всё приложение одним файлом.'
+      ],
+      hi: [
+        'Pocketsum खोलें और ऊपर पाँच में से कोई एक कैलकुलेटर चुनें। भाषा और रूप सबसे ऊपर हैं; संख्याएँ वैसे लिखें जैसे आपकी भाषा में लिखी जाती हैं – हिन्दी में “5,000” पाँच हज़ार है।',
+        'मान भरें, नतीजा तुरंत बदलता है। लाल किनारे का मतलब है कि Pocketsum वह प्रविष्टि नहीं समझता। ट्रेड कैलकुलेटर में पहले कोई उदाहरण शुल्क मॉडल चुनें, फिर अपने प्रदाता की रेट लिस्ट भरें।',
+        '“नतीजा कॉपी करें” एक सारांश क्लिपबोर्ड में रखता है, “रीसेट करें” इस कैलकुलेटर के शुरुआती मान वापस लाता है; वरना आपकी प्रविष्टियाँ सहेजी रहती हैं। पहली विज़िट के बाद Pocketsum बिना इंटरनेट के भी चलता है, और सबसे नीचे पूरी ऐप एक फ़ाइल के रूप में डाउनलोड की जा सकती है।'
+      ],
+      zh: [
+        '打开 Pocketsum，在顶部选择五个计算器之一。语言和外观在最上方；数字按你的语言习惯书写——中文里“5,000”就是五千。',
+        '填入数值，结果会立刻更新。红框表示 Pocketsum 看不懂这个输入。在交易计算器里，先选一个示例收费模式，再填入你的服务商价目表。',
+        '“复制结果”会把摘要放进剪贴板，“重置”恢复该计算器的初始值；不重置的话，你的输入会一直保留。首次访问后，Pocketsum 无需联网也能使用，页面最底部还可以把整个应用下载为单个文件。'
+      ],
+      ja: [
+        'Pocketsum を開き、上で5つの計算機のどれかを選びます。言語と表示はいちばん上にあります。数字はあなたの言語の書き方で入力します。日本語なら「5,000」は五千です。',
+        '値を入れると結果がすぐに計算されます。赤い枠は、Pocketsum がその入力を読み取れないという意味です。取引の計算では、まず手数料のサンプルを選び、それから利用先の料金表を入れてください。',
+        '「結果をコピー」で要約がクリップボードに入り、「リセット」でその計算機の初期値に戻ります。リセットしない限り、入力した内容は保存されたままです。一度アクセスすればオフラインでも動き、ページのいちばん下からアプリ全体を1つのファイルとしてダウンロードできます。'
+      ],
+      ko: [
+        'Pocketsum을 열고 위에서 계산기 다섯 개 중 하나를 고릅니다. 언어와 화면 모드는 맨 위에 있습니다. 숫자는 사용하는 언어의 표기대로 쓰면 됩니다. 한국어라면 ‘5,000’은 오천입니다.',
+        '값을 넣으면 결과가 바로 계산됩니다. 빨간 테두리는 Pocketsum이 그 입력을 이해하지 못한다는 뜻입니다. 거래 계산기에서는 먼저 예시 수수료 모델을 고르고, 그다음 이용하는 곳의 요금표를 넣으세요.',
+        '‘결과 복사’는 요약을 클립보드에 넣고, ‘초기화’는 그 계산기의 처음 값으로 되돌립니다. 초기화하지 않으면 입력한 내용은 저장된 채로 남습니다. 처음 한 번 방문한 뒤에는 인터넷 없이도 작동하며, 맨 아래에서 앱 전체를 파일 하나로 내려받을 수 있습니다.'
+      ]
+    },
+    pitfalls: {
+      de: [
+        'Der Dividendenrechner folgt dem deutschen Steuerrecht in vereinfachter Form: keine Günstigerprüfung, keine Verlustverrechnung, keine Vorabpauschale bei Fonds. Wer nicht in Deutschland steuerpflichtig ist, nimmt den Haken bei „Steuern nach deutschem Recht abziehen“ heraus.',
+        'Die Gebühren-Beispiele sind Musterfälle, keine Preislisten echter Anbieter. Was dein Anbieter nimmt, steht in seinem Preisverzeichnis – bei Krypto-Apps steckt ein Teil oft im Kurs statt in der Gebühr.',
+        '„Aufschlag je Kauf oder Verkauf“ zählt beim Kauf und beim Verkauf je einmal. Nennt dein Anbieter einen Geld-Brief-Spread, trag nur die Hälfte ein.',
+        '19 % und 7 % sind die deutschen Mehrwertsteuersätze. Für andere Länder den eigenen Satz wählen.',
+        'Die Eingaben liegen nur im Browser dieses Geräts. Wer die Browserdaten löscht, löscht sie mit, und ein anderes Gerät sieht sie nicht.'
+      ],
+      en: [
+        'The dividend calculator follows German tax law in a simplified form: no lower-rate check against your personal income tax, no offsetting of losses, no advance lump sum (Vorabpauschale) on funds. If you are not taxed in Germany, untick “Deduct taxes under German law”.',
+        'The fee examples are generic models, not price lists of real providers. What your provider charges is in its price list – with crypto apps, part of the cost is often hidden in the price rather than in the fee.',
+        '“Markup per buy or sell” counts once when buying and once when selling. If your provider quotes a bid-ask spread, enter only half of it.',
+        '19% and 7% are the German VAT rates. For other countries, choose your own rate.',
+        'Your entries live only in this device’s browser. Clearing the browser data clears them too, and another device does not see them.'
+      ],
+      es: [
+        'La calculadora de dividendos sigue la ley fiscal alemana de forma simplificada: sin comparación con el tipo personal (Günstigerprüfung), sin compensación de pérdidas y sin el pago anticipado a tanto alzado (Vorabpauschale) de los fondos. Si no tributas en Alemania, desmarca «Descontar impuestos según la ley alemana».',
+        'Las comisiones de ejemplo son modelos orientativos, no tarifas de proveedores reales. Lo que cobra tu proveedor está en su lista de precios; en las apps de cripto, parte del coste suele ir en el precio en lugar de en la comisión.',
+        '«Recargo por compra o venta» cuenta una vez al comprar y otra al vender. Si tu proveedor indica un diferencial de compraventa, introduce solo la mitad.',
+        'El 19 % y el 7 % son los tipos de IVA de Alemania. Para otros países, elige tu propio tipo.',
+        'Tus datos solo están en el navegador de este dispositivo. Si borras los datos del navegador, también se borran, y otro dispositivo no los ve.'
+      ],
+      fr: [
+        'La calculatrice de dividendes suit le droit fiscal allemand de façon simplifiée : pas de comparaison avec le barème personnel (Günstigerprüfung), pas d’imputation des pertes, pas de forfait anticipé (Vorabpauschale) sur les fonds. Si vous n’êtes pas imposable en Allemagne, décochez « Déduire les impôts selon le droit allemand ».',
+        'Les frais d’exemple sont des cas types, pas les grilles tarifaires de vrais fournisseurs. Ce que prend votre fournisseur figure dans sa grille tarifaire – dans les applis crypto, une partie du coût se cache souvent dans le cours plutôt que dans les frais.',
+        '« Majoration par achat ou vente » compte une fois à l’achat et une fois à la vente. Si votre fournisseur indique un écart achat-vente, n’en saisissez que la moitié.',
+        '19 % et 7 % sont les taux de TVA allemands. Pour d’autres pays, choisissez votre propre taux.',
+        'Vos saisies ne se trouvent que dans le navigateur de cet appareil. Effacer les données du navigateur les efface aussi, et un autre appareil ne les voit pas.'
+      ],
+      it: [
+        'La calcolatrice dei dividendi segue il fisco tedesco in forma semplificata: niente confronto con l’aliquota personale (Günstigerprüfung), niente compensazione delle perdite, niente imposta anticipata forfettaria (Vorabpauschale) sui fondi. Se non paghi le tasse in Germania, togli la spunta da «Detrai le tasse secondo la legge tedesca».',
+        'Le commissioni di esempio sono tipologie, non listini di fornitori reali. Quanto chiede il tuo fornitore sta nel suo listino; nelle app di cripto una parte del costo spesso è nascosta nel prezzo invece che nella commissione.',
+        '«Ricarico per acquisto o vendita» conta una volta all’acquisto e una alla vendita. Se il tuo fornitore indica uno spread denaro-lettera, inseriscine solo la metà.',
+        '19% e 7% sono le aliquote IVA tedesche. Per altri paesi scegli la tua aliquota.',
+        'I tuoi dati stanno solo nel browser di questo dispositivo. Se cancelli i dati del browser, cancelli anche questi, e un altro dispositivo non li vede.'
+      ],
+      nl: [
+        'De dividendcalculator volgt het Duitse belastingrecht in vereenvoudigde vorm: geen vergelijking met je persoonlijke tarief (Günstigerprüfung), geen verliesverrekening, geen voorschotheffing (Vorabpauschale) op fondsen. Ben je niet in Duitsland belastingplichtig, haal dan het vinkje bij ‘Belasting volgens Duits recht aftrekken’ weg.',
+        'De voorbeeldkosten zijn typen, geen prijslijsten van echte aanbieders. Wat jouw aanbieder rekent, staat in diens prijslijst – bij crypto-apps zit een deel vaak in de koers in plaats van in de kosten.',
+        '‘Opslag per aan- of verkoop’ telt één keer bij aankoop en één keer bij verkoop. Noemt je aanbieder een bied-laatspread, vul dan alleen de helft in.',
+        '19% en 7% zijn de Duitse btw-tarieven. Kies voor andere landen je eigen tarief.',
+        'Wat je invult staat alleen in de browser van dit apparaat. Wie de browsergegevens wist, wist het mee, en een ander apparaat ziet het niet.'
+      ],
+      pl: [
+        'Kalkulator dywidend stosuje niemieckie prawo podatkowe w uproszczeniu: bez porównania z osobistą stawką (Günstigerprüfung), bez rozliczania strat, bez zaliczkowego ryczałtu (Vorabpauschale) od funduszy. Jeśli nie płacisz podatków w Niemczech, odznacz „Odlicz podatki według prawa niemieckiego”.',
+        'Przykładowe opłaty to typy, a nie cenniki prawdziwych dostawców. Ile bierze twój dostawca, znajdziesz w jego cenniku – w aplikacjach kryptowalutowych część kosztu często kryje się w kursie, a nie w opłacie.',
+        '„Narzut na kupno lub sprzedaż” liczy się raz przy kupnie i raz przy sprzedaży. Jeśli dostawca podaje spread kupna-sprzedaży, wpisz tylko połowę.',
+        '19% i 7% to niemieckie stawki VAT. Dla innych krajów wybierz własną stawkę.',
+        'Twoje wpisy są tylko w przeglądarce tego urządzenia. Usunięcie danych przeglądarki usuwa także wpisy, a inne urządzenie ich nie widzi.'
+      ],
+      pt: [
+        'A calculadora de dividendos segue a lei fiscal alemã de forma simplificada: sem comparação com a taxa pessoal (Günstigerprüfung), sem compensação de perdas e sem o pagamento antecipado fixo (Vorabpauschale) dos fundos. Se não paga impostos na Alemanha, desmarque «Descontar impostos segundo a lei alemã».',
+        'As comissões de exemplo são casos-tipo, não preçários de fornecedores reais. O que o seu fornecedor cobra está no preçário dele – nas apps de cripto, parte do custo está muitas vezes na cotação e não na comissão.',
+        '«Acréscimo por compra ou venda» conta uma vez na compra e outra na venda. Se o seu fornecedor indicar um spread de compra e venda, introduza só metade.',
+        '19% e 7% são as taxas de IVA alemãs. Para outros países, escolha a sua própria taxa.',
+        'Os seus dados ficam só no navegador deste dispositivo. Quem apaga os dados do navegador apaga-os também, e outro dispositivo não os vê.'
+      ],
+      tr: [
+        'Temettü hesaplayıcısı Alman vergi hukukunu basitleştirilmiş biçimde uygular: kişisel orana göre karşılaştırma (Günstigerprüfung) yok, zarar mahsubu yok, fonlar için peşin götürü vergi (Vorabpauschale) yok. Almanya’da vergi mükellefi değilseniz “Vergileri Alman hukukuna göre düş” işaretini kaldırın.',
+        'Örnek ücretler birer türdür, gerçek sağlayıcıların fiyat listeleri değildir. Sağlayıcınızın ne aldığı kendi fiyat listesinde yazar – kripto uygulamalarında maliyetin bir kısmı çoğu zaman ücrette değil fiyatın içindedir.',
+        '“Alış veya satış başına ek fiyat” alışta bir kez, satışta bir kez sayılır. Sağlayıcınız bir alış-satış farkı belirtiyorsa yalnızca yarısını girin.',
+        '%19 ve %7 Almanya’daki KDV oranlarıdır. Başka ülkeler için kendi oranınızı seçin.',
+        'Girdikleriniz yalnızca bu cihazın tarayıcısında durur. Tarayıcı verilerini silen onları da siler ve başka bir cihaz onları görmez.'
+      ],
+      ru: [
+        'Калькулятор дивидендов упрощённо следует немецкому налоговому праву: без сравнения с личной ставкой (Günstigerprüfung), без зачёта убытков, без авансового паушального налога (Vorabpauschale) для фондов. Если вы не платите налоги в Германии, снимите флажок «Вычесть налоги по немецкому праву».',
+        'Примеры комиссий — это типы, а не тарифы настоящих провайдеров. Сколько берёт ваш провайдер, написано в его тарифах; в криптоприложениях часть расходов часто спрятана в цене, а не в комиссии.',
+        '«Наценка на покупку или продажу» учитывается один раз при покупке и один раз при продаже. Если провайдер указывает спред между покупкой и продажей, введите только половину.',
+        '19 % и 7 % — немецкие ставки НДС. Для других стран выберите свою ставку.',
+        'Введённое хранится только в браузере этого устройства. Кто удаляет данные браузера, удаляет и его, а на другом устройстве его не видно.'
+      ],
+      hi: [
+        'लाभांश कैलकुलेटर जर्मन कर क़ानून को सरल रूप में अपनाता है: निजी दर से तुलना (Günstigerprüfung) नहीं, घाटे का समायोजन नहीं, और फ़ंड के लिए अग्रिम एकमुश्त कर (Vorabpauschale) नहीं। अगर आप जर्मनी में कर नहीं भरते, तो “जर्मन क़ानून के अनुसार कर घटाएँ” का निशान हटा दें।',
+        'उदाहरण वाले शुल्क सिर्फ़ प्रकार हैं, असली प्रदाताओं की रेट लिस्ट नहीं। आपका प्रदाता कितना लेता है, यह उसकी रेट लिस्ट में लिखा है – क्रिप्टो ऐप में लागत का एक हिस्सा अक्सर शुल्क में नहीं, भाव में छिपा होता है।',
+        '“हर ख़रीद या बिक्री पर अतिरिक्त” एक बार ख़रीद पर और एक बार बिक्री पर गिना जाता है। अगर आपका प्रदाता बिड-आस्क स्प्रेड बताता है, तो सिर्फ़ उसका आधा भरें।',
+        '19% और 7% जर्मनी की VAT दरें हैं। दूसरे देशों के लिए अपनी दर चुनें।',
+        'आपकी प्रविष्टियाँ सिर्फ़ इसी डिवाइस के ब्राउज़र में रहती हैं। ब्राउज़र का डेटा मिटाने पर ये भी मिट जाती हैं, और दूसरे डिवाइस पर ये नहीं दिखतीं।'
+      ],
+      zh: [
+        '股息计算器以简化方式遵循德国税法：不做与个人税率的比较（Günstigerprüfung），不做亏损抵扣，也不计基金的预缴定额税（Vorabpauschale）。如果你不在德国纳税，请取消勾选“按德国法律扣税”。',
+        '示例费用只是类型，不是真实服务商的价目表。你的服务商收多少钱，请看它的价目表——在加密货币应用里，部分成本常常藏在价格里，而不在手续费里。',
+        '“每次买入或卖出的加价”在买入时算一次，卖出时再算一次。如果服务商给出的是买卖价差，请只填一半。',
+        '19% 和 7% 是德国的增值税税率。其他国家请选择自定义税率。',
+        '你的输入只保存在这台设备的浏览器里。清除浏览器数据会一并清除它们，换一台设备也看不到。'
+      ],
+      ja: [
+        '配当の計算はドイツの税法を簡略化して使っています。個人の税率との比較（Günstigerprüfung）、損失の通算、ファンドの前払い一括課税（Vorabpauschale）は含みません。ドイツで納税していない場合は「ドイツの法律に従って税金を差し引く」のチェックを外してください。',
+        '手数料の例は型であって、実在する業者の料金表ではありません。利用先が実際にいくら取るかは、その料金表に書いてあります。暗号資産アプリでは、コストの一部が手数料ではなく価格に含まれていることがよくあります。',
+        '「売買ごとの上乗せ」は、購入時と売却時にそれぞれ1回ずつかかります。利用先が売値と買値の差（スプレッド）を示している場合は、その半分だけを入れてください。',
+        '19% と 7% はドイツの付加価値税率です。ほかの国では「その他」を選んで税率を入れてください。',
+        '入力した内容はこの端末のブラウザーの中にだけあります。ブラウザーのデータを消すと一緒に消え、別の端末からは見えません。'
+      ],
+      ko: [
+        '배당 계산기는 독일 세법을 단순화해서 따릅니다. 개인 세율과의 비교(Günstigerprüfung), 손실 상계, 펀드의 선납 정액세(Vorabpauschale)는 계산하지 않습니다. 독일에서 세금을 내지 않는다면 ‘독일 법에 따라 세금 공제’ 체크를 해제하세요.',
+        '수수료 예시는 유형일 뿐, 실제 회사의 요금표가 아닙니다. 이용하는 곳이 얼마를 받는지는 그곳의 요금표에 나와 있습니다. 암호화폐 앱에서는 비용 일부가 수수료가 아니라 가격에 숨어 있는 경우가 많습니다.',
+        '‘매수 또는 매도마다 붙는 가산액’은 매수할 때 한 번, 매도할 때 한 번 계산됩니다. 이용하는 곳이 매수·매도 호가 차이(스프레드)를 알려 준다면 절반만 넣으세요.',
+        '19%와 7%는 독일의 부가가치세율입니다. 다른 나라는 ‘직접 입력’을 골라 세율을 넣으세요.',
+        '입력한 내용은 이 기기의 브라우저에만 있습니다. 브라우저 데이터를 지우면 함께 지워지고, 다른 기기에서는 보이지 않습니다.'
+      ]
+    },
+    docs: {
+      de: 'https://github.com/Dennismit2n/pocketsum/blob/main/README.de.md',
+      en: 'https://github.com/Dennismit2n/pocketsum/blob/main/README.md',
+      es: 'https://github.com/Dennismit2n/pocketsum/blob/main/README.md',
+      fr: 'https://github.com/Dennismit2n/pocketsum/blob/main/README.md',
+      it: 'https://github.com/Dennismit2n/pocketsum/blob/main/README.md',
+      nl: 'https://github.com/Dennismit2n/pocketsum/blob/main/README.md',
+      pl: 'https://github.com/Dennismit2n/pocketsum/blob/main/README.md',
+      pt: 'https://github.com/Dennismit2n/pocketsum/blob/main/README.md',
+      tr: 'https://github.com/Dennismit2n/pocketsum/blob/main/README.md',
+      ru: 'https://github.com/Dennismit2n/pocketsum/blob/main/README.md',
+      hi: 'https://github.com/Dennismit2n/pocketsum/blob/main/README.md',
+      zh: 'https://github.com/Dennismit2n/pocketsum/blob/main/README.md',
+      ja: 'https://github.com/Dennismit2n/pocketsum/blob/main/README.md',
+      ko: 'https://github.com/Dennismit2n/pocketsum/blob/main/README.md'
+    }
   }
 };

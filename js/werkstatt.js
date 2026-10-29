@@ -46,7 +46,9 @@
     { key: 'heizwarte', name: 'Heizwarte', icon: './assets/heizwarte.svg',
       url: 'https://dennismit2n.github.io/heizwarte/', ctaKey: 'openTool' },
     { key: 'fadenkreuz', name: 'Fadenkreuz', icon: './assets/fadenkreuz.svg',
-      url: 'https://github.com/Dennismit2n/fadenkreuz/releases/latest', ctaKey: 'downloadTool' }
+      url: 'https://github.com/Dennismit2n/fadenkreuz/releases/latest', ctaKey: 'downloadTool' },
+    { key: 'pocketsum', name: 'Pocketsum', icon: './assets/pocketsum.svg',
+      url: 'https://dennismit2n.github.io/pocketsum/', ctaKey: 'openTool' }
   ];
 
   var navList = document.getElementById('wkNavList');

@@ -22,6 +22,7 @@ Startseite für die kleinen Werkzeuge von Dennis_mit_2n — ohne Anmeldung, kein
 - [bigday](https://dennismit2n.github.io/bigday/) — pretty shareable countdown page
 - [Heizwarte](https://dennismit2n.github.io/heizwarte/) — weather with a heating traffic light: when to turn up slow heating (app in German for now)
 - [Fadenkreuz](https://github.com/Dennismit2n/fadenkreuz) — your own crosshair in the exact centre of the screen, drawn in a small editor, on about 1 MB of RAM (Windows download, not a browser tool)
+- [Pocketsum](https://dennismit2n.github.io/pocketsum/) — five small calculators in one file: VAT, tips, fuel prices, dividends and trading costs, offline after the first visit
 
 Same order as the tiles on the page — hand-picked since 13 September 2026, no longer "newest last". Two further tiles sit at the end as placeholders, with no link and no mini tiles: there is nothing to open yet. Real_RAM_cooler, Besucher-Ticker and Fadenkreuz are Windows downloads and fontART comes both ways — which is why neither the headline nor the tiles promise a browser tool. Fadenkreuz’s tile stays black in both themes, like the dark placeholder: its neon green would be unreadable on the light page (1.20:1), so the tile carries fixed colours, and only its section on `werkstatt.html` follows the theme. fontART has three mini tiles instead of two: its main button opens the browser version, and "For Windows" leads to the release. create-masterprompt has three as well, its third one opening the one-page overview from `docs/` — in whichever of the fourteen languages the page is currently set to. create-masterprompt is the first entry that is neither a browser tool nor a Windows program: it is an Agent Skill that runs inside an AI chat, which is why its button leads to the repository and its meta line does not borrow the "no uploads" line of the others.
 
@@ -45,7 +46,7 @@ The interface words exist in all 14 languages, and since 14 September 2026 so do
 
 ## Development
 
-No build step — plain HTML, CSS, and JavaScript. 67 files make up the site: two pages, one stylesheet, eight scripts (one of them GoatCounter’s, vendored), eighteen images, three icons, thirty-two screenshots for the guides in `assets/anleitung/`, and two font files with their licence in `assets/fonts/fraunces/`. No npm dependencies.
+No build step — plain HTML, CSS, and JavaScript. 71 files make up the site: two pages, one stylesheet, eight scripts (one of them GoatCounter’s, vendored), nineteen images, three icons, thirty-five screenshots for the guides in `assets/anleitung/`, and two font files with their licence in `assets/fonts/fraunces/`. No npm dependencies.
 
 ```
 node tools/dev-server.js
