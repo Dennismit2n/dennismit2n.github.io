@@ -71,8 +71,7 @@
       <!-- Aufbau wie die Kacheln der Startseite (siehe Kommentar dort). Reihenfolge nach
            Dennis' Liste vom 30.10.2026. Fadenkreuz ist hierher umgezogen und steht nicht
            mehr auf der Startseite; Real_RAM_cooler steht auf BEIDEN Seiten. Craftionary,
-           BL4 und MW4 haben (noch) keine Neuigkeiten und Anleitungen auf werkstatt.html,
-           deshalb keine Mini-Kacheln. Die Klassennamen tragen keine Ziffern: main.js
+           BL4 und MW4 haben seit dem 30.10.2026 Neuigkeiten und Anleitungen auf werkstatt.html. Die Klassennamen tragen keine Ziffern: main.js
            zählt Klicks als "kachel-<name>" und liest dafür nur Buchstaben. -->
       <div class="tool-grid">
         <div class="tool-card tool-craftionary">
@@ -83,24 +82,36 @@
           <span class="tool-desc" data-i18n="craftionaryDesc">All Minecraft recipes, where to find items and ores, ready /give commands, plus a banner and pot workshop.</span>
           <span class="tool-meta" data-i18n="craftionaryMeta">Minecraft Java 26.3 · English and German · offline after the first visit</span>
           <a class="tool-open" id="open-craftionary" aria-labelledby="open-craftionary name-craftionary" href="https://dennismit2n.github.io/craftionary/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="craftionary">
+            <a href="./werkstatt.html#craftionary-neuigkeiten" data-count="werkstatt-craftionary-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#craftionary-anleitung" data-count="werkstatt-craftionary-anleitung" data-i18n="secGuide">Guide</a>
+          </span>
         </div>
         <div class="tool-card tool-vault">
           <span class="tool-head">
-            <img src="./bl4/icons/icon-192.png" alt="" width="44" height="44">
+            <img src="./assets/bl4.svg" alt="" width="44" height="44">
             <span class="tool-name" id="name-vault">BL4 Vault-Handbuch</span>
           </span>
           <span class="tool-desc" data-i18n="vaultDesc">Borderlands 4 handbook: meta builds, legendaries and pearls with location and drop chance, raids and a farm planner.</span>
           <span class="tool-meta" data-i18n="gameAppMeta">In your browser · app in German · offline after the first visit</span>
           <a class="tool-open" id="open-vault" aria-labelledby="open-vault name-vault" href="./bl4/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="vault">
+            <a href="./werkstatt.html#vault-neuigkeiten" data-count="werkstatt-vault-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#vault-anleitung" data-count="werkstatt-vault-anleitung" data-i18n="secGuide">Guide</a>
+          </span>
         </div>
         <div class="tool-card tool-ruestkammer">
           <span class="tool-head">
-            <img src="./mw4/icons/icon-192.png" alt="" width="44" height="44">
+            <img src="./assets/mw4.svg" alt="" width="44" height="44">
             <span class="tool-name" id="name-ruestkammer">MW4 Rüstkammer</span>
           </span>
           <span class="tool-desc" data-i18n="ruestkammerDesc">Call of Duty: Modern Warfare 4 – meta builds, attachments, time to kill and a class editor.</span>
           <span class="tool-meta" data-i18n="gameAppMeta">In your browser · app in German · offline after the first visit</span>
           <a class="tool-open" id="open-ruestkammer" aria-labelledby="open-ruestkammer name-ruestkammer" href="./mw4/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="ruestkammer">
+            <a href="./werkstatt.html#ruestkammer-neuigkeiten" data-count="werkstatt-ruestkammer-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#ruestkammer-anleitung" data-count="werkstatt-ruestkammer-anleitung" data-i18n="secGuide">Guide</a>
+          </span>
         </div>
         <!-- Neongrün, Schwarz, Weiß: die Kachel bleibt in beiden Darstellungen
              schwarz (siehe .tool-card.tool-fadenkreuz in style.css). -->
@@ -161,9 +172,9 @@
 
 <!-- Wie in index.html: main.js übersetzt, füllt die Daten der Mini-Kacheln aus news.js
      und zählt Kachelklicks. -->
-<script src="./js/i18n.js?v=2026-10-30" fetchpriority="high"></script>
+<script src="./js/i18n.js?v=2026-10-30b" fetchpriority="high"></script>
 <script src="./js/dates.js?v=2026-09-14" fetchpriority="high"></script>
 <script src="./js/header.js?v=2026-09-25" fetchpriority="high"></script>
-<script src="./js/main.js?v=2026-09-24" fetchpriority="high" data-news="./js/news.js?v=2026-10-30c"></script>
+<script src="./js/main.js?v=2026-09-24" fetchpriority="high" data-news="./js/news.js?v=2026-10-30d"></script>
 </body>
 </html>

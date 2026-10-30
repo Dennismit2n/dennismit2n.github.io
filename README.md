@@ -39,7 +39,7 @@ Since 30 October 2026 everything to do with games lives on its own page, `gaming
 - [Real_RAM_cooler](https://github.com/Dennismit2n/Real_RAM_cooler) — also on the start page; its “Clean up for gaming” button is why it belongs here too
 - a placeholder for the game guides still to come, with no link
 
-Fadenkreuz’s tile stays black in both themes, like the dark placeholder: its neon green would be unreadable on the light page (1.20:1), so the tile carries fixed colours, and only its section on `werkstatt.html` follows the theme. Fadenkreuz keeps its news and guide on `werkstatt.html`, in the place of the Gaming tile in the order; Craftionary, BL4 and MW4 have none yet, so their tiles carry no mini tiles. The two app icons of BL4 and MW4 are the square PNGs from their own folders; `.tool-head img` rounds them like every tile icon. Tile clicks count as `kachel-craftionary`, `kachel-vault`, `kachel-ruestkammer` and `kachel-gaming` — the class names carry no digits because `main.js` only reads letters.
+Fadenkreuz’s tile stays black in both themes, like the dark placeholder: its neon green would be unreadable on the light page (1.20:1), so the tile carries fixed colours, and only its section on `werkstatt.html` follows the theme. Fadenkreuz keeps its news and guide on `werkstatt.html`, in the place of the Gaming tile in the order, and since 30 October 2026 Craftionary, BL4 and MW4 follow right behind it, each with news, a guide and three phone screenshots. Their tiles and guides say what matters most for apps like these: they run in the browser on phones (Android and iOS) and on desktop, and an install button sets them up as an app (on an iPhone it is Safari’s Share and “Add to Home Screen”). The icons of BL4 and MW4 (`assets/bl4.svg`, `assets/mw4.svg`) are SVG redrawings of the apps’ own icons, so the profile README can embed them like every other tile icon. BL4 and MW4 load their fonts from Google Fonts, which shows Google the visitor’s IP address; their guides say so. Tile clicks count as `kachel-craftionary`, `kachel-vault`, `kachel-ruestkammer` and `kachel-gaming` — the class names carry no digits because `main.js` only reads letters.
 
 ## News and guides
 
@@ -59,7 +59,7 @@ The interface words exist in all 14 languages, and since 14 September 2026 so do
 
 ## Development
 
-No build step — plain HTML, CSS, and JavaScript. 74 files make up the site: three pages, one stylesheet, eight scripts (one of them GoatCounter’s, vendored), twenty-one images, three icons, thirty-five screenshots for the guides in `assets/anleitung/`, and two font files with their licence in `assets/fonts/fraunces/`. No npm dependencies.
+No build step — plain HTML, CSS, and JavaScript. 80 files make up the site (not counting the apps in `bl4/` and `mw4/`): three pages, one stylesheet, eight scripts (one of them GoatCounter’s, vendored), twenty-three images, three icons, thirty-nine screenshots for the guides in `assets/anleitung/`, and two font files with their licence in `assets/fonts/fraunces/`. No npm dependencies.
 
 ```
 node tools/dev-server.js
