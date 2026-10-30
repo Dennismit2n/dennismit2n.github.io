@@ -3465,99 +3465,85 @@ var GUIDES = {
         'Die App ist auf Deutsch. Item-Namen bleiben wie im deutschen Spiel meist englisch; die Suche findet auch die wenigen übersetzten.',
         'Builds und Ranglisten sind Einschätzungen aus der Community mit Quellenangabe, nicht offiziell – ein Patch kann sie verschieben.',
         'Bis zum Update am Donnerstagabend zeigt „Diese Woche“ manchmal noch die Vorwoche; das steht dann ausdrücklich dabei.',
-        'Dein UVH-Rang und was du abgehakt hast, liegen nur in diesem Browser.',
-        'Die Schriften kommen von Google Fonts: Beim Laden sieht Google deine IP-Adresse.'
+        'Dein UVH-Rang und was du abgehakt hast, liegen nur in diesem Browser.'
       ],
       en: [
         'The app is in German. Item names mostly stay English, as in the German game, and the search also finds the few translated ones.',
         'Builds and rankings are community assessments with their sources named, not official – a patch can shift them.',
         'Until the Thursday evening update, “Diese Woche” sometimes still shows last week; it then says so.',
-        'Your UVH rank and what you ticked off live only in this browser.',
-        'The fonts come from Google Fonts: when they load, Google sees your IP address.'
+        'Your UVH rank and what you ticked off live only in this browser.'
       ],
       es: [
         'La app está en alemán. Los nombres de objetos siguen casi siempre en inglés, como en el juego en alemán, y la búsqueda encuentra también los pocos traducidos.',
         'Los builds y rankings son valoraciones de la comunidad con sus fuentes, no oficiales: un parche puede cambiarlos.',
         'Hasta la actualización del jueves por la noche, «Diese Woche» a veces aún muestra la semana anterior; entonces lo indica.',
-        'Tu rango UVH y lo que has marcado solo se guardan en este navegador.',
-        'Las fuentes vienen de Google Fonts: al cargarlas, Google ve tu dirección IP.'
+        'Tu rango UVH y lo que has marcado solo se guardan en este navegador.'
       ],
       fr: [
         'L’application est en allemand. Les noms d’objets restent le plus souvent en anglais, comme dans le jeu allemand, et la recherche trouve aussi les rares traduits.',
         'Les builds et classements sont des avis de la communauté avec leurs sources, pas officiels – un patch peut les faire bouger.',
         'Jusqu’à la mise à jour du jeudi soir, « Diese Woche » affiche parfois encore la semaine précédente ; c’est alors indiqué.',
-        'Votre rang UVH et ce que vous avez coché restent uniquement dans ce navigateur.',
-        'Les polices viennent de Google Fonts : à leur chargement, Google voit votre adresse IP.'
+        'Votre rang UVH et ce que vous avez coché restent uniquement dans ce navigateur.'
       ],
       it: [
         'L’app è in tedesco. I nomi degli oggetti restano quasi sempre in inglese, come nel gioco tedesco, e la ricerca trova anche i pochi tradotti.',
         'Build e classifiche sono valutazioni della community con le fonti indicate, non ufficiali: una patch può spostarle.',
         'Fino all’aggiornamento del giovedì sera, «Diese Woche» a volte mostra ancora la settimana precedente; in quel caso lo dice.',
-        'Il tuo rango UVH e ciò che hai spuntato restano solo in questo browser.',
-        'I caratteri arrivano da Google Fonts: quando si caricano, Google vede il tuo indirizzo IP.'
+        'Il tuo rango UVH e ciò che hai spuntato restano solo in questo browser.'
       ],
       nl: [
         'De app is in het Duits. Itemnamen blijven meestal Engels, net als in het Duitse spel, en de zoekfunctie vindt ook de paar vertaalde.',
         'Builds en ranglijsten zijn inschattingen uit de community met bronvermelding, niet officieel – een patch kan ze verschuiven.',
         'Tot de update op donderdagavond toont ‘Diese Woche’ soms nog de vorige week; dat staat er dan bij.',
-        'Je UVH-rang en wat je hebt afgevinkt staan alleen in deze browser.',
-        'De lettertypen komen van Google Fonts: bij het laden ziet Google je IP-adres.'
+        'Je UVH-rang en wat je hebt afgevinkt staan alleen in deze browser.'
       ],
       pl: [
         'Aplikacja jest po niemiecku. Nazwy przedmiotów zostają zwykle po angielsku, jak w niemieckiej wersji gry, a wyszukiwarka znajduje też te nieliczne przetłumaczone.',
         'Buildy i rankingi to oceny społeczności z podanymi źródłami, nie oficjalne – patch może je zmienić.',
         'Do czwartkowej aktualizacji wieczorem „Diese Woche” czasem pokazuje jeszcze poprzedni tydzień; wtedy jest to zaznaczone.',
-        'Twoja ranga UVH i to, co odhaczono, są zapisane tylko w tej przeglądarce.',
-        'Czcionki pochodzą z Google Fonts: przy ich wczytywaniu Google widzi twój adres IP.'
+        'Twoja ranga UVH i to, co odhaczono, są zapisane tylko w tej przeglądarce.'
       ],
       pt: [
         'A app está em alemão. Os nomes dos itens ficam quase sempre em inglês, como no jogo em alemão, e a pesquisa também encontra os poucos traduzidos.',
         'Builds e rankings são avaliações da comunidade com fontes indicadas, não oficiais – um patch pode mudá-los.',
         'Até à atualização de quinta à noite, «Diese Woche» às vezes ainda mostra a semana anterior; nesse caso isso é indicado.',
-        'O seu rank UVH e o que marcou ficam só neste navegador.',
-        'As fontes vêm do Google Fonts: ao carregá-las, a Google vê o seu endereço IP.'
+        'O seu rank UVH e o que marcou ficam só neste navegador.'
       ],
       tr: [
         'Uygulama Almancadır. Eşya adları, Almanca oyunda olduğu gibi çoğunlukla İngilizce kalır; arama az sayıdaki çevrilmiş adları da bulur.',
         'Buildler ve sıralamalar kaynakları belirtilmiş topluluk değerlendirmeleridir, resmî değildir – bir yama onları değiştirebilir.',
         'Perşembe akşamı güncellemesine kadar “Diese Woche” bazen hâlâ önceki haftayı gösterir; o zaman bu açıkça yazar.',
-        'UVH rütbeniz ve işaretledikleriniz yalnızca bu tarayıcıda durur.',
-        'Yazı tipleri Google Fonts’tan gelir: Yüklenirken Google IP adresinizi görür.'
+        'UVH rütbeniz ve işaretledikleriniz yalnızca bu tarayıcıda durur.'
       ],
       ru: [
         'Приложение на немецком. Названия предметов, как и в немецкой версии игры, в основном остаются английскими; поиск находит и немногие переведённые.',
         'Билды и рейтинги – оценки сообщества с указанием источников, не официальные: патч может их сдвинуть.',
         'До обновления в четверг вечером «Diese Woche» иногда ещё показывает прошлую неделю; тогда это прямо указано.',
-        'Ваш ранг UVH и отмеченные предметы хранятся только в этом браузере.',
-        'Шрифты загружаются из Google Fonts: при этом Google видит ваш IP-адрес.'
+        'Ваш ранг UVH и отмеченные предметы хранятся только в этом браузере.'
       ],
       hi: [
         'ऐप जर्मन में है। आइटम के नाम, जर्मन गेम की तरह, ज़्यादातर अंग्रेज़ी में ही रहते हैं; खोज कुछ अनूदित नाम भी ढूँढ लेती है।',
         'बिल्ड और रैंकिंग स्रोतों के साथ कम्युनिटी के आकलन हैं, आधिकारिक नहीं – कोई पैच इन्हें बदल सकता है।',
         'गुरुवार शाम के अपडेट तक “Diese Woche” कभी-कभी पिछला हफ़्ता दिखाता है; तब यह साफ़ लिखा रहता है।',
-        'आपकी UVH रैंक और जिन पर निशान लगाया, वे सिर्फ़ इसी ब्राउज़र में रहते हैं।',
-        'फ़ॉन्ट Google Fonts से आते हैं: लोड होते समय Google आपका IP पता देखता है।'
+        'आपकी UVH रैंक और जिन पर निशान लगाया, वे सिर्फ़ इसी ब्राउज़र में रहते हैं।'
       ],
       zh: [
         '应用只有德语。物品名称和德语版游戏一样大多保留英文；搜索也能找到少数已翻译的名称。',
         '配装和排名是标明来源的社区评估，并非官方——补丁可能改变它们。',
         '在周四晚上更新之前，“Diese Woche”有时仍显示上一周；这时会明确注明。',
-        '你的 UVH 等级和勾选记录只保存在这个浏览器里。',
-        '字体来自 Google Fonts：加载时 Google 会看到你的 IP 地址。'
+        '你的 UVH 等级和勾选记录只保存在这个浏览器里。'
       ],
       ja: [
         'アプリはドイツ語です。アイテム名はドイツ語版のゲームと同じくほとんど英語のままですが、検索は数少ない翻訳名も見つけます。',
         'ビルドとランキングは出典を示したコミュニティの評価で、公式ではありません。パッチで変わることがあります。',
         '木曜夜の更新までは「Diese Woche」がまだ先週の内容のことがあり、その場合ははっきり表示されます。',
-        'UVH ランクとチェックした内容は、このブラウザーの中にだけ保存されます。',
-        'フォントは Google Fonts から読み込まれます。その際、Google にあなたの IP アドレスが伝わります。'
+        'UVH ランクとチェックした内容は、このブラウザーの中にだけ保存されます。'
       ],
       ko: [
         '앱은 독일어입니다. 아이템 이름은 독일어판 게임처럼 대부분 영어로 남아 있고, 검색은 몇 안 되는 번역된 이름도 찾습니다.',
         '빌드와 순위는 출처를 밝힌 커뮤니티 평가일 뿐 공식이 아닙니다. 패치로 바뀔 수 있습니다.',
         '목요일 저녁 업데이트 전까지 ‘Diese Woche’는 가끔 지난주 내용을 보여 주며, 그때는 분명히 표시됩니다.',
-        'UVH 등급과 표시한 항목은 이 브라우저에만 저장됩니다.',
-        '글꼴은 Google Fonts에서 불러옵니다. 이때 Google이 IP 주소를 보게 됩니다.'
+        'UVH 등급과 표시한 항목은 이 브라우저에만 저장됩니다.'
       ]
     },
     docs: {
@@ -3694,99 +3680,85 @@ var GUIDES = {
         'Die App ist auf Deutsch.',
         'Die Hardcore-Werte (≈) sind geschätzt, nicht gemessen.',
         'Nach einem Tuning-Patch können Werte veralten. Oben stehen der Datenstand und, wenn angekündigt, ein Tuning-Hinweis.',
-        'Dein Waffenlevel und deine Einstellungen liegen nur in diesem Browser.',
-        'Die Schriften kommen von Google Fonts: Beim Laden sieht Google deine IP-Adresse.'
+        'Dein Waffenlevel und deine Einstellungen liegen nur in diesem Browser.'
       ],
       en: [
         'The app is in German.',
         'Hardcore values (≈) are estimates, not measurements.',
         'A tuning patch can make values outdated. The data date sits at the top, together with a notice when tuning has been announced.',
-        'Your weapon level and settings live only in this browser.',
-        'The fonts come from Google Fonts: when they load, Google sees your IP address.'
+        'Your weapon level and settings live only in this browser.'
       ],
       es: [
         'La app está en alemán.',
         'Los valores de Hardcore (≈) son estimaciones, no mediciones.',
         'Tras un parche de ajustes, los valores pueden quedar desfasados. Arriba están la fecha de los datos y, si se ha anunciado, un aviso de ajustes.',
-        'Tu nivel de arma y tus ajustes solo se guardan en este navegador.',
-        'Las fuentes vienen de Google Fonts: al cargarlas, Google ve tu dirección IP.'
+        'Tu nivel de arma y tus ajustes solo se guardan en este navegador.'
       ],
       fr: [
         'L’application est en allemand.',
         'Les valeurs Hardcore (≈) sont des estimations, pas des mesures.',
         'Après un patch d’équilibrage, des valeurs peuvent être dépassées. En haut figurent la date des données et, s’il est annoncé, un avertissement d’équilibrage.',
-        'Votre niveau d’arme et vos réglages restent uniquement dans ce navigateur.',
-        'Les polices viennent de Google Fonts : à leur chargement, Google voit votre adresse IP.'
+        'Votre niveau d’arme et vos réglages restent uniquement dans ce navigateur.'
       ],
       it: [
         'L’app è in tedesco.',
         'I valori Hardcore (≈) sono stime, non misurazioni.',
         'Dopo una patch di bilanciamento i valori possono essere superati. In alto ci sono la data dei dati e, se annunciato, un avviso di bilanciamento.',
-        'Il tuo livello arma e le tue impostazioni restano solo in questo browser.',
-        'I caratteri arrivano da Google Fonts: quando si caricano, Google vede il tuo indirizzo IP.'
+        'Il tuo livello arma e le tue impostazioni restano solo in questo browser.'
       ],
       nl: [
         'De app is in het Duits.',
         'Hardcore-waarden (≈) zijn schattingen, geen metingen.',
         'Na een tuningpatch kunnen waarden verouderd zijn. Bovenaan staan de datum van de gegevens en, als het is aangekondigd, een tuningmelding.',
-        'Je wapenlevel en instellingen staan alleen in deze browser.',
-        'De lettertypen komen van Google Fonts: bij het laden ziet Google je IP-adres.'
+        'Je wapenlevel en instellingen staan alleen in deze browser.'
       ],
       pl: [
         'Aplikacja jest po niemiecku.',
         'Wartości Hardcore (≈) są szacunkami, nie pomiarami.',
         'Po patchu balansującym wartości mogą się zdezaktualizować. U góry jest data danych i – jeśli zapowiedziano – informacja o zmianach balansu.',
-        'Twój poziom broni i ustawienia są zapisane tylko w tej przeglądarce.',
-        'Czcionki pochodzą z Google Fonts: przy ich wczytywaniu Google widzi twój adres IP.'
+        'Twój poziom broni i ustawienia są zapisane tylko w tej przeglądarce.'
       ],
       pt: [
         'A app está em alemão.',
         'Os valores de Hardcore (≈) são estimativas, não medições.',
         'Depois de um patch de ajuste, os valores podem ficar desatualizados. No topo estão a data dos dados e, se anunciado, um aviso de ajuste.',
-        'O seu nível de arma e as definições ficam só neste navegador.',
-        'As fontes vêm do Google Fonts: ao carregá-las, a Google vê o seu endereço IP.'
+        'O seu nível de arma e as definições ficam só neste navegador.'
       ],
       tr: [
         'Uygulama Almancadır.',
         'Hardcore değerleri (≈) tahmindir, ölçüm değildir.',
         'Bir ayar yamasından sonra değerler eskiyebilir. Üstte veri tarihi ve duyurulduysa bir ayar uyarısı yer alır.',
-        'Silah seviyeniz ve ayarlarınız yalnızca bu tarayıcıda durur.',
-        'Yazı tipleri Google Fonts’tan gelir: Yüklenirken Google IP adresinizi görür.'
+        'Silah seviyeniz ve ayarlarınız yalnızca bu tarayıcıda durur.'
       ],
       ru: [
         'Приложение на немецком.',
         'Значения для Hardcore (≈) – оценки, а не замеры.',
         'После патча с балансировкой значения могут устареть. Вверху указаны дата данных и, если объявлено, предупреждение о балансировке.',
-        'Ваш уровень оружия и настройки хранятся только в этом браузере.',
-        'Шрифты загружаются из Google Fonts: при этом Google видит ваш IP-адрес.'
+        'Ваш уровень оружия и настройки хранятся только в этом браузере.'
       ],
       hi: [
         'ऐप जर्मन में है।',
         'Hardcore मान (≈) अनुमान हैं, माप नहीं।',
         'ट्यूनिंग पैच के बाद मान पुराने पड़ सकते हैं। ऊपर डेटा की तारीख़ और, घोषणा होने पर, ट्यूनिंग की सूचना रहती है।',
-        'आपका हथियार लेवल और सेटिंग्स सिर्फ़ इसी ब्राउज़र में रहती हैं।',
-        'फ़ॉन्ट Google Fonts से आते हैं: लोड होते समय Google आपका IP पता देखता है।'
+        'आपका हथियार लेवल और सेटिंग्स सिर्फ़ इसी ब्राउज़र में रहती हैं।'
       ],
       zh: [
         '应用只有德语。',
         'Hardcore 数值（≈）是估算，不是实测。',
         '平衡调整补丁之后，数值可能过时。顶部有数据日期，宣布调整时还会有提示。',
-        '你的武器等级和设置只保存在这个浏览器里。',
-        '字体来自 Google Fonts：加载时 Google 会看到你的 IP 地址。'
+        '你的武器等级和设置只保存在这个浏览器里。'
       ],
       ja: [
         'アプリはドイツ語です。',
         'Hardcore の値（≈）は推定で、実測ではありません。',
         '調整パッチの後は値が古くなることがあります。上部にデータの日付と、予告があれば調整の注意が表示されます。',
-        '武器レベルと設定は、このブラウザーの中にだけ保存されます。',
-        'フォントは Google Fonts から読み込まれます。その際、Google にあなたの IP アドレスが伝わります。'
+        '武器レベルと設定は、このブラウザーの中にだけ保存されます。'
       ],
       ko: [
         '앱은 독일어입니다.',
         'Hardcore 수치(≈)는 측정값이 아니라 추정치입니다.',
         '밸런스 패치 뒤에는 수치가 낡을 수 있습니다. 위쪽에 데이터 날짜와, 예고가 있으면 밸런스 안내가 표시됩니다.',
-        '무기 레벨과 설정은 이 브라우저에만 저장됩니다.',
-        '글꼴은 Google Fonts에서 불러옵니다. 이때 Google이 IP 주소를 보게 됩니다.'
+        '무기 레벨과 설정은 이 브라우저에만 저장됩니다.'
       ]
     },
     docs: {

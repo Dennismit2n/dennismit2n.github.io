@@ -10,6 +10,8 @@ Ablauf:
   2. head.html + body.html werden zu mw4/index.html (data-pwa="1", Build-Stempel im <meta>)
   3. sw.template.js wird zu mw4/sw.js (VERSION = Build-Stempel)
   4. Manifest, Icons und version.json {build, page, daten}
+  5. Schriften aus tools/mw4/fonts/ nach mw4/fonts/ (SIL OFL, Lizenztexte daneben; seit 30.10.2026
+     statt Google Fonts, damit beim Öffnen keine Anfrage an Google geht)
 
 Der Build-Stempel ändert sich nur, wenn sich Seite, Daten, Worker oder Manifest wirklich
 geändert haben. Sonst würde jede installierte App ohne Grund „Neuer Stand“ melden.
@@ -156,10 +158,17 @@ page_tpl = "<!doctype html>\n<html lang=\"de\" data-pwa=\"1\">\n<head>\n" + pwa_
 
 core_files = ["./", "manifest.webmanifest", "version.json", "daten/waffen.json",
               "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png", "icons/favicon-32.png"]
-sw_tpl = (HERE / "sw.template.js").read_text(encoding="utf-8").replace("__CORE_FILES__", json.dumps(core_files))
+# Schriften: alle Dateien mitkopieren, nur die lateinischen lädt der Worker beim Installieren vorab
+# (latin-ext holt der Browser nur, wenn ein Zeichen daraus vorkommt).
+FONTS_SRC = HERE / "fonts"
+font_paths = sorted(FONTS_SRC.iterdir())
+font_files = [f"fonts/{p.name}" for p in font_paths if p.name.endswith("-latin.woff2")]
+font_bytes = b"".join(p.name.encode() + p.read_bytes() for p in font_paths)
+sw_tpl = ((HERE / "sw.template.js").read_text(encoding="utf-8")
+          .replace("__CORE_FILES__", json.dumps(core_files)).replace("__FONT_FILES__", json.dumps(font_files)))
 
 # Build-Stempel nur erneuern, wenn sich etwas geändert hat
-inhalt = sha(page_tpl.encode() + b"\0" + daten_bytes + b"\0" + sw_tpl.encode() + b"\0" + manifest_bytes)[:12]
+inhalt = sha(page_tpl.encode() + b"\0" + daten_bytes + b"\0" + sw_tpl.encode() + b"\0" + manifest_bytes + b"\0" + font_bytes)[:12]
 old = {}
 if (APP / "version.json").exists():
     try:
@@ -180,7 +189,7 @@ changed = [name for name, path, data in [
     ("sw.js", APP / "sw.js", sw),
     ("manifest.webmanifest", APP / "manifest.webmanifest", manifest_bytes),
     ("version.json", APP / "version.json", json.dumps(version, ensure_ascii=False, indent=1).encode("utf-8")),
-] if write_if_changed(path, data)]
+] + [(f"fonts/{p.name}", APP / "fonts" / p.name, p.read_bytes()) for p in font_paths] if write_if_changed(path, data)]
 
 if "--vorschau" in ARGV:
     target = pathlib.Path(ARGV[ARGV.index("--vorschau") + 1])
