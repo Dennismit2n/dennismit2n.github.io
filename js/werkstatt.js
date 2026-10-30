@@ -16,47 +16,48 @@
 (function () {
   // Same order as the tiles on the start page.
   // Reihenfolge muss mit den Kacheln in index.html uebereinstimmen
-  // (Dennis' Ansage vom 13.09.2026). Die beiden Platzhalter-Kacheln stehen
+  // (Dennis' Liste vom 30.10.2026). Die beiden Platzhalter-Kacheln stehen
   // hier bewusst NICHT: sie haben weder Neuigkeiten noch Anleitung.
   var TOOLS = [
-    { key: 'spectroton', name: 'Spectroton', icon: './assets/spectroton.svg',
-      url: 'https://dennismit2n.github.io/spectroton/', ctaKey: 'openTool' },
     { key: 'masterprompt', name: 'create-masterprompt', icon: './assets/masterprompt.svg',
       url: 'https://github.com/Dennismit2n/create-masterprompt', ctaKey: 'openTool' },
-    { key: 'wifi', nameKey: 'wifiName', icon: './assets/wifi-qr.svg',
-      url: 'https://dennismit2n.github.io/wifi-qr/', ctaKey: 'openTool' },
     { key: 'ram', name: 'Real_RAM_cooler', icon: './assets/ramcooler.svg',
       url: 'https://github.com/Dennismit2n/Real_RAM_cooler/releases/latest', ctaKey: 'downloadTool' },
+    { key: 'fontart', name: 'fontART Designer', icon: './assets/fontart.svg',
+      url: 'https://dennismit2n.github.io/fontART-demo/', ctaKey: 'openTool' },
     { key: 'prismatical', name: 'Prismatical', icon: './assets/prismatical.svg',
       url: 'https://dennismit2n.github.io/prismatical/', ctaKey: 'openTool' },
+    { key: 'spectroton', name: 'Spectroton', icon: './assets/spectroton.svg',
+      url: 'https://dennismit2n.github.io/spectroton/', ctaKey: 'openTool' },
     { key: 'shrink', name: 'shrinkling', icon: './assets/shrinkling.svg',
       url: 'https://dennismit2n.github.io/shrinkling/', ctaKey: 'openTool' },
+    { key: 'wifi', nameKey: 'wifiName', icon: './assets/wifi-qr.svg',
+      url: 'https://dennismit2n.github.io/wifi-qr/', ctaKey: 'openTool' },
+    { key: 'heizwarte', name: 'Heizwarte', icon: './assets/heizwarte.svg',
+      url: 'https://dennismit2n.github.io/heizwarte/', ctaKey: 'openTool' },
+    { key: 'pocketsum', name: 'Pocketsum', icon: './assets/pocketsum.svg',
+      url: 'https://dennismit2n.github.io/pocketsum/', ctaKey: 'openTool' },
     { key: 'zaehlwerk', name: 'Zählwerk', icon: './assets/zaehlwerk.svg',
       url: 'https://dennismit2n.github.io/zaehlwerk/', ctaKey: 'openTool' },
     { key: 'ticker', name: 'Besucher-Ticker', icon: './assets/besucher-ticker.svg',
       url: 'https://github.com/Dennismit2n/besucher-ticker/releases/latest', ctaKey: 'downloadTool' },
-    { key: 'fontart', name: 'fontART Designer', icon: './assets/fontart.svg',
-      url: 'https://dennismit2n.github.io/fontART-demo/', ctaKey: 'openTool' },
-    { key: 'rad', name: 'Dreh das Rad', icon: './assets/dreh-das-rad.svg',
-      url: 'https://dennismit2n.github.io/dreh-das-rad/', ctaKey: 'openTool' },
     { key: 'collective', name: 'Collective-Calc', icon: './assets/collective-calc.svg',
       url: 'https://dennismit2n.github.io/collective-calc/', ctaKey: 'openTool' },
-    { key: 'bigday', name: 'bigday', icon: './assets/bigday.svg',
-      url: 'https://dennismit2n.github.io/bigday/', ctaKey: 'openTool' },
-    { key: 'heizwarte', name: 'Heizwarte', icon: './assets/heizwarte.svg',
-      url: 'https://dennismit2n.github.io/heizwarte/', ctaKey: 'openTool' },
-    { key: 'fadenkreuz', name: 'Fadenkreuz', icon: './assets/fadenkreuz.svg',
-      url: 'https://github.com/Dennismit2n/fadenkreuz/releases/latest', ctaKey: 'downloadTool' },
-    // Die drei Spiele-Werkzeuge der Gaming-Seite (gaming.html) stehen hinter Fadenkreuz,
-    // das dort ebenfalls zu Hause ist. BL4 und MW4 liegen in diesem Repo (bl4/, mw4/).
+    { key: 'rad', name: 'Dreh das Rad', icon: './assets/dreh-das-rad.svg',
+      url: 'https://dennismit2n.github.io/dreh-das-rad/', ctaKey: 'openTool' },
+    // Platz der Gaming-Kachel: die drei Spiele-Werkzeuge, die nur auf gaming.html
+    // stehen. BL4 und MW4 liegen in diesem Repo (bl4/, mw4/). Fadenkreuz steht
+    // wie auf der Startseite hinter bigday (Dennis' Liste vom 30.10.2026).
     { key: 'craftionary', name: 'Craftionary', icon: './assets/craftionary.svg',
       url: 'https://dennismit2n.github.io/craftionary/', ctaKey: 'openTool' },
     { key: 'vault', name: 'BL4 Vault-Handbuch', icon: './assets/bl4.svg',
       url: 'https://dennismit2n.github.io/bl4/', ctaKey: 'openTool' },
     { key: 'ruestkammer', name: 'MW4 Rüstkammer', icon: './assets/mw4.svg',
       url: 'https://dennismit2n.github.io/mw4/', ctaKey: 'openTool' },
-    { key: 'pocketsum', name: 'Pocketsum', icon: './assets/pocketsum.svg',
-      url: 'https://dennismit2n.github.io/pocketsum/', ctaKey: 'openTool' }
+    { key: 'bigday', name: 'bigday', icon: './assets/bigday.svg',
+      url: 'https://dennismit2n.github.io/bigday/', ctaKey: 'openTool' },
+    { key: 'fadenkreuz', name: 'Fadenkreuz', icon: './assets/fadenkreuz.svg',
+      url: 'https://github.com/Dennismit2n/fadenkreuz/releases/latest', ctaKey: 'downloadTool' }
   ];
 
   var navList = document.getElementById('wkNavList');

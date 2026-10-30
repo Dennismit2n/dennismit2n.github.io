@@ -33,218 +33,224 @@
   --accent: var(--gx-primary-900);
   --accent-strong: var(--gx-primary-950);
   --accent-fill: var(--gx-primary-800);
-  --accent-soft: var(--gx-primary-50);
+  --accent-soft: #CBCDF9;
   --ice: var(--gx-sky-200);
   --lavender: var(--gx-violet-500);
-  /* Grundflächen: auf den Farbton der Palette (282,8°) ausgerichtet, aber
-     bewusst blass — nur eine Ahnung von Violett, kein Flieder. Im Hellen ist
-     die Helligkeit nicht frei wählbar: 0,32 Punkte tiefer als #F2F3F8 fallen
-     --zaehlwerk (4,51), Spectrotons Rampe (4,51) und --collective (4,53)
-     unter AA. Der Grund steht deshalb genau an dieser Kante — dunkler geht
-     nur, wenn Kachelfarben mitwandern, und die sind vergeben.
-     Schrift behält hier ihre heutige Sättigung, nur der Farbton wandert mit:
-     Farbe in der Schrift ist Lesbarkeit, nicht Schmuck. */
-  --bg: #F2F3F8;
-  --panel: #ffffff;
-  /* Die Kacheln stehen nicht ganz deckend auf der Aurora, damit etwas
-     Farbe durchscheint. 94 % ist das Maximum, bei dem KEINE Kachelfarbe
-     neu unter AA faellt: bei 90 % reisst --rad, bei 80 % zusaetzlich
-     --collective und --zaehlwerk. Nachgerechnet gegen die dunkelste
-     Stelle, die ein Fleck unter einer Kachel erzeugen kann. */
-  --panel-veil: rgba(255, 255, 255, 0.94);
-  /* Aurora-Flecken. Im Hellen MUESSEN sie heller sein als Spectrotons
-     Vorlage: dort steht fast kein Text auf dem blanken Grund, hier schon
-     (Markenname, Hero-Unterzeile, Mehr-Zeile, Fusszeile, die beiden
-     Platzhalter-Kacheln). Mit Spectrotons L 0,52 faellt --text-soft auf
-     3,42 und --accent auf 3,71. Bei L 0,74 bleibt der dunkelste Punkt
-     der Ebene bei 4,78 — nachgerechnet, siehe Block unten. */
-  --au-1: #9F9FFA;
-  --au-2: #AA9CF7;
-  --au-3: #6DB3E4;
+  /* Heller Modus „gedämpft“ (Dennis, 30.10.2026: „weiß zu hell, möchte das auch
+     dunkler“). Grund, Kachel und Rahmen liegen weiter auf dem Farbton der Palette
+     (283°), aber deutlich tiefer als vorher (#F2F3F8 / #FFFFFF): Grund OKLCH
+     L 0,893, Kachel L 0,927. Möglich wurde das nur, weil alle Kachelfarben unten
+     mitgewandert sind — die alten fielen gegen diesen Grund bis auf 2,36:1. */
+  --bg: #DADBE6;
+  --panel: #E5E6EF;
+  /* Die Kacheln lassen 12 % der Aurora durch (vorher 6 %): auch ihr Grund soll
+     leuchten. Alle Farben darauf sind gegen diesen Schleier über dem dunkelsten
+     Aurora-Punkt gerechnet, nicht gegen die blanke Kachel. */
+  --panel-veil: rgba(229, 230, 239, 0.88);
+  /* Aurora hell: viel Farbe, kaum Helligkeitsverlust (L 0,845–0,87 auf einem Grund
+     von 0,893). -a ist die Deckkraft. Prüfnachweis im Aurora-Block. */
+  --au-1: #C4C6FF; --au-1-a: 0.55;
+  --au-2: #DAC0FB; --au-2-a: 0.5;
+  --au-3: #A8DCFC; --au-3-a: 0.5;
+  --au-4: #EEC5E9; --au-4-a: 0.35;
+  /* Konstruktionsraster wie im Bauplan der Profil-README (Linien in primary-900) */
+  --raster-fein: rgba(82, 74, 171, 0.045);
+  --raster-grob: rgba(82, 74, 171, 0.09);
+  /* Verlauf des Claims wie im README-Banner (Lila → Eisblau → Violett). Hell jeder
+     Stopp auf 4,6:1 gegen den dunkelsten Aurora-Punkt gerechnet. */
+  --claim-1: #5249AA;
+  --claim-2: #005C89;
+  --claim-3: #6F34BC;
+  /* Leuchtkraft: Anteil der Kachelfarbe im Schein um Symbol, Kappe und Rahmen */
+  --glow: 38%;
+  --glow-hover: 60%;
+  --haze: 0.10;
+  --name-glow: 0px;
   --text: #1A1932;
-  --text-soft: #585981;
-  --border: #DFE0ED;
-  --wifi: #0e7490;
-  --shrink: #7c3aed;
-  --bigday: #d97706;
-  --ram: #0369a1;
-  --rad: #e11d48;
-  --collective: #15803d;
-  --zaehlwerk: #4d7c0f;
-  --fontart: #a21caf;
-  --ticker: #4338ca;
-  /* create-masterprompt ist der erste Eintrag, der kein Programm ist, sondern ein
-     Skill fuer KI-Chats. Rostorange war der letzte Farbton, der weder neben
-     --bigday (Bernstein) noch neben --rad (Rose) verrutscht. AA gegen --panel und
-     --bg ist gerechnet: hell 7,31:1 und 6,59:1, dunkel 8,35:1 und 7,64:1.
-     (Drei dieser vier Zahlen sind am 13.09.2026 nachgezogen worden: die
-     Farbe blieb, aber der Grund wanderte auf die Palette ggaallaaxxyy77.) */
-  --masterprompt: #9a3412;
-  /* Prismatical ist die erste Kachel OHNE eigene Vollton-Farbe: die Palette war
-     voll, und das Werkzeug selbst ist ein Farbspektrum. Deshalb trägt es einen
-     Regenbogen (--prisma-flow) plus einen Anker-Vollton für alles, was zwingend
-     eine einzelne Farbe braucht (Rahmen, Knopf). Alle Stopps sind rechnerisch
-     auf AA gegen --panel UND --bg geprüft (schlechtester Wert hell 6.9:1). */
-  --prisma: #7563e5;
-  --prisma-flow: linear-gradient(100deg, #d53c3d, #c85500, #858200, #009b95, #7563e5);
-  /* Spectroton ist die zweite Kachel ohne Vollton-Farbe — und die einzige, deren
-     Verlauf EINE Farbe in Stufen zeigt statt vieler Farbtöne: genau das, was das
-     Werkzeug tut (eine Farbe rein, elf Stufen raus). Der Farbton steht fest,
-     nur die Helligkeit wandert. Alle fünf Stopps sind auf AA gegen --panel UND
-     --bg gerechnet (schlechtester Wert hell 4,51:1, dunkel 4,64:1) — deshalb
-     beginnt die Rampe bei der hellsten noch lesbaren Stufe, nicht beim Pastellton.
-     Der Werkzeugname trägt den Verlauf, also ist das kein Schönheitsmaß. */
-  --spectro: #0f766e;
-  --spectro-flow: linear-gradient(100deg, #007d78, #006e69, #005f5b, #00504d, #00423f);
-  /* Heizwarte: Anker Eisblau (Knopf, Rahmen, README-Kachel), Verlauf kalt → warm auf Kappe und Name.
-     Alle Stopps einzeln ≥ 4,5:1 gegen --panel und --bg (BAUPLAN Heizwarte Abschnitt 11). */
-  --heizwarte: #0b6b93;
-  --heizwarte-flow: linear-gradient(100deg, #0b6b93, #2e7d32, #854d0e, #c2410c, #b91c1c);
-  /* Fadenkreuz: Neongrün, Schwarz, Weiß (Dennis' Vorgabe, 26.10.2026). Die
-     KACHEL ist in beiden Darstellungen schwarz und trägt feste Farben (siehe
-     .tool-card.tool-fadenkreuz). Diese Variablen gelten nur für den Abschnitt
-     auf werkstatt.html, der auf dem Seitengrund steht: Neongrün hätte dort im
-     Hellen 1,20:1, also Schrift fast schwarz (18,45:1 gegen --panel, 16,65:1
-     gegen --bg) und Neongrün nur in der Kappe, die Schmuck ist. */
+  --text-soft: #535479;
+  --border: #C3C4D8;
+  /* Kachelfarben, Neufassung 30.10.2026 (Dennis: „die Farben allgemein mehr Glow,
+     und die, die sich ähnlich sind, jeweils die Nuancen anpassen“). Die Farbtöne
+     sind auseinandergezogen: RAM-cooler wandert von Eisblau zu Azur (passt jetzt
+     zum Blau seines Symbols), Collective-Calc zu Smaragd, Zählwerk Richtung
+     Gelbgrün, shrinkling zu Purpur, fontART zu Magenta, der Besucher-Ticker zu
+     Elektro-Indigo. Kleinster Abstand zweier Kachelfarben im Dunkeln (OKLab):
+     vorher 0,036 (RAM-cooler ~ Heizwarte), jetzt 0,071.
+     Hell ist jede Farbe die hellste ihres Farbtons, die gegen --bg UND gegen den
+     Kachelschleier über dem dunkelsten Aurora-Punkt (#E2E3F0) 4,6:1 hält; das gilt
+     auch für jeden Verlaufsstopp (schlechtester Wert 4,57). Damit sind auch die
+     alten Ausreißer erledigt (Prismaticals Regenbogen 3,1, bigday 2,9, Rad 4,3).
+     Dunkel hält jede Farbe gegen --panel, --bg und den Schleier über dem hellsten
+     Aurora-Punkt (#181F3F) mindestens 5,8:1, jeder Verlaufsstopp 4,6:1.
+     Methode: OKLCH bei festem Farbton, Chroma per Bisektion in den Gamut geklemmt,
+     Helligkeit per Bisektion auf das Kontrastziel. Wer den Grund oder die Aurora
+     verschiebt, rechnet diese Werte neu — sie sind Prüfnachweis, keine Verzierung.
+     Prismatical, Spectroton, Heizwarte und Pocketsum tragen dazu ihren Verlauf
+     (Name und Kappe), der Vollton daneben ist nur Anker für Rahmen und Knopf.
+     Fadenkreuz bleibt in beiden Darstellungen schwarz (siehe .tool-card.tool-fadenkreuz);
+     --fadenkreuz gilt nur für seinen Abschnitt auf werkstatt.html. Die Kappe von
+     Gaming ist Schmuck, keine Schrift, und folgt Dennis' Farben (--gm-1 bis 4). */
+  --wifi: #006A79;
+  --shrink: #8724DC;
+  --bigday: #845600;
+  --ram: #0061AF;
+  --rad: #C10037;
+  --collective: #006E43;
+  --zaehlwerk: #4C6900;
+  --fontart: #AA0DA5;
+  --ticker: #4648E5;
+  --masterprompt: #A73D00;
+  --prisma: #6349C9;
+  --prisma-flow: linear-gradient(100deg, #C2001F, #A14300, #656200, #006B67, #6145D5);
+  --spectro: #006C64;
+  --spectro-flow: linear-gradient(100deg, #006B67, #005D59, #004F4C, #00423F, #003533);
+  --heizwarte: #03678E;
+  --heizwarte-flow: linear-gradient(100deg, #00678E, #007015, #8F5000, #AE3600, #C30010);
   --fadenkreuz: #101512;
   --fadenkreuz-flow: linear-gradient(#33ff88, #33ff88);
-  /* Pocketsum: fünf Rechner, fünf Farben – die Kappe trägt die Farben der fünf Reiter
-     der App (MwSt, Trinkgeld, Sprit, Dividende, Trade) als harte Stufen, kein Verlauf,
-     und der Werkzeugname trägt dieselben Stufen (Dennis' Wahl vom 29.10.2026, Variante C).
-     Rahmen und Knopf bleiben neutral in der Schriftfarbe, damit die Kachel weder mit
-     Prismaticals Violett noch mit dem Akzent der Seite verwechselt wird.
-     Die Kappe ist Schmuck, keine Schrift; die Stufen sind trotzdem die Akzentfarben der
-     App, gegen --panel gerechnet hell 5,02 bis 7,18:1, dunkel 7,77 bis 11,44:1.
-     Name und Knopf: hell 17,09:1, dunkel 13,55:1. */
   --pocketsum: #1A1932;
-  --pocketsum-flow: linear-gradient(90deg, #524AAB 0 20%, #B45309 20% 40%, #0369A1 40% 60%, #15803D 60% 80%, #BE123C 80%);
-  /* Gaming (Kachel auf der Startseite, Dennis' Wahl vom 30.10.2026): Name, Rahmen und
-     Knopf in Graphit (hell 9,42:1, dunkel 6,75:1 gegen --panel und --bg), die Kappe als
-     Verlauf Magenta → Kirschrot → Neonblau → Neongrün. Die Kappe ist Schmuck, keine Schrift.
-     Die Kacheln auf gaming.html tragen die Farbe ihrer App, je ≥ 4,5:1 gegen --panel und
-     --bg: Craftionary Patina (hell 5,32), BL4 Vault-Gelb (5,64), MW4 Rüstkammer-Orange (5,34). */
+  --pocketsum-flow: linear-gradient(90deg, #5A4FC0 0 20%, #9D4600 20% 40%, #00659B 40% 60%, #006F31 60% 80%, #C1003A 80%);
   --gaming: #3f3f46;
-  --gaming-flow: linear-gradient(90deg, #d4148a, #c8102e, #1570ef, #00b35a);
-  --craftionary: #25705f;
-  --vault: #7a5c00;
-  --ruestkammer: #a8460b;
-  --shadow: 0 10px 30px rgba(26, 25, 50, 0.10);
+  --gm-1: #d4148a;
+  --gm-2: #c8102e;
+  --gm-3: #1570ef;
+  --gm-4: #00b35a;
+  --gaming-flow: linear-gradient(90deg, var(--gm-1), var(--gm-2), var(--gm-3), var(--gm-4));
+  --craftionary: #086D57;
+  --vault: #765C00;
+  --ruestkammer: #9A4900;
+  --shadow: 0 10px 30px rgba(26, 25, 50, 0.14);
 }
 
 /* Dark theme comes in two doors with identical furniture:
    1) system preference (unless the user forced light),
    2) the theme dropdown forcing dark.
-   Keep both blocks in sync!
-   Die Werte ohne Palette-Stufe sind gerechnet, nicht gegriffen:
-   --bg #0F0F21, --panel #181831 und --border #2D2C4F liegen auf 282,8°,
-   eine Spur tiefer als die alten Marineblau-Werte und mit knapp der
-   Hälfte von deren Sättigung — eine violette Nacht, die sich nicht
-   vordrängt. Die Pille --accent-soft #291F67 sitzt so hoch, dass sie
-   sich vom Grund abhebt wie bisher (1,34 statt 1,25) und der Text
-   darauf 7,40 hält.
-   --text #E2E2F6 ist die einzige Schrift, die NICHT nur umgetönt wurde:
-   sie ist gegenüber dem alten #E6E9F7 etwas dunkler und etwas stärker
-   gesättigt (L 91,9 % statt 93,5 %, C 0,027 statt 0,019, H 285,9°) —
-   ein Hauch Lila-Blassblau statt Papierweiß. 13,55 gegen --panel.
-   Alle dreizehn Kachelfarben und beide Verläufe wurden gegen diesen Grund
-   nachgerechnet — der schlechteste Wert im Dunkeln (Spectrotons Stopp
-   #00948e) steigt von 4,54 auf 4,64. Wer den Grund noch einmal anfasst,
-   rechnet die Zahlen in den Kachel-Kommentaren oben mit nach; sie stehen
-   dort als Prüfnachweis, nicht als Verzierung. */
+   Keep both blocks in sync! (Seit 30.10.2026 stehen sie Zeile für Zeile gleich,
+   damit ein Vergleich per Auge reicht.)
+   --bg #0F0F21, --panel #181831 und --border #2D2C4F liegen auf 282,8°: eine
+   violette Nacht, die sich nicht vordrängt. --text #E2E2F6 ist ein Hauch
+   Lila-Blassblau statt Papierweiß.
+   Neu am 30.10.2026: Die Aurora leuchtet kräftiger, deshalb mussten die zwei
+   Schriften heller werden, die frei auf ihr stehen: --text-soft #9C9ECD → #B7B9DC
+   und --accent primary-300 → primary-200 (#B4B5FF). Beide halten 4,6:1 gegen den
+   hellsten Punkt, den zwei übereinanderliegende Wolken erzeugen (#1A4796); die
+   alten Werte kamen dort auf 3,44 und 3,96. Die Kacheln lassen 14 % Aurora durch
+   (vorher 6 %). */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     color-scheme: dark;
-    --accent: var(--gx-primary-300);
+    --accent: var(--gx-primary-200);
     --accent-strong: var(--gx-primary-200);
     --accent-fill: var(--gx-primary-700);
     --accent-soft: #291F67;
     --lavender: var(--gx-violet-300);
     --bg: #0F0F21;
     --panel: #181831;
-    --panel-veil: rgba(24, 24, 49, 0.94);
-    /* Im Dunkeln ist der HELLSTE Fleck der schlechteste Fall, nicht der
-       dunkelste — deshalb tragen die Flecken hier Spectrotons Werte
-       unverändert. HELLSTER Punkt der Ebene: 5,44 (der dunkelste ist
-       blankes --bg mit 7,37 und damit unkritisch). */
-    --au-1: #605CB1;
-    --au-2: #493687;
-    --au-3: #4D94C3;
+    --panel-veil: rgba(24, 24, 49, 0.86);
+    --au-1: #4B3CAB; --au-1-a: 0.7;
+    --au-2: #502684; --au-2-a: 0.75;
+    --au-3: #015BA6; --au-3-a: 0.55;
+    --au-4: #781B7E; --au-4-a: 0.4;
+    --raster-fein: rgba(165, 165, 255, 0.05);
+    --raster-grob: rgba(165, 165, 255, 0.1);
+    --claim-1: #A5A5FF;
+    --claim-2: #75C7FF;
+    --claim-3: #AFA1FF;
+    --glow: 62%;
+    --glow-hover: 85%;
+    --haze: 0.17;
+    --name-glow: 16px;
     --text: #E2E2F6;
-    --text-soft: #9C9ECD;
+    --text-soft: #B7B9DC;
     --border: #2D2C4F;
-    --wifi: #22d3ee;
-    --shrink: #a78bfa;
-    --bigday: #fbbf24;
-    --ram: #66e0ff;
-    --rad: #fb7185;
-    --collective: #4ade80;
-    --zaehlwerk: #a3e635;
-    --fontart: #e879f9;
-    --ticker: #818cf8;
-    --masterprompt: #fb923c;
-    --prisma: #bfb9ff;
+    --wifi: #23E3FA;
+    --shrink: #C28DFF;
+    --bigday: #FFC334;
+    --ram: #6CB2FF;
+    --rad: #FF7886;
+    --collective: #00E698;
+    --zaehlwerk: #BEE800;
+    --fontart: #F96EF0;
+    --ticker: #7D95FF;
+    --masterprompt: #FF8F4B;
+    --prisma: #CCC6FF;
     --prisma-flow: linear-gradient(100deg, #ff9e95, #ffae55, #cfd149, #00e8df, #bfb9ff);
-    --spectro: #2dd4bf;
-    --spectro-flow: linear-gradient(100deg, #8bfff8, #48e8e0, #13ccc5, #00b0a9, #00948e);
-    --heizwarte: #7dd3fc;
+    --spectro: #01DFC8;
+    --spectro-flow: linear-gradient(100deg, #8bfff8, #48e8e0, #13ccc5, #00b0a9, #129993);
+    --heizwarte: #A7E3FF;
     --heizwarte-flow: linear-gradient(100deg, #7dd3fc, #86efac, #fde047, #fdba74, #f87171);
-    /* Neongrün: 13,02:1 gegen --panel, 14,23:1 gegen --bg */
     --fadenkreuz: #33ff88;
     --fadenkreuz-flow: linear-gradient(#33ff88, #33ff88);
     --pocketsum: #E2E2F6;
     --pocketsum-flow: linear-gradient(90deg, #A5A5FF 0 20%, #FFC97A 20% 40%, #75C7FF 40% 60%, #7EE0A0 60% 80%, #FF9FB5 80%);
-    /* Gaming und gaming.html, dunkel: Graphit 6,75:1, Patina 7,88, Gelb 12,09, Orange 7,62 */
     --gaming: #a1a1aa;
-    --gaming-flow: linear-gradient(90deg, #ff2bd6, #ff3b5c, #2f8bff, #33ff88);
-    --craftionary: #5cc0a8;
-    --vault: #ffd400;
-    --ruestkammer: #ff8f3d;
+    --gm-1: #ff2bd6;
+    --gm-2: #ff3b5c;
+    --gm-3: #2f8bff;
+    --gm-4: #33ff88;
+    --gaming-flow: linear-gradient(90deg, var(--gm-1), var(--gm-2), var(--gm-3), var(--gm-4));
+    --craftionary: #63CEAF;
+    --vault: #FDD711;
+    --ruestkammer: #FF9948;
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   }
 }
 
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --accent: var(--gx-primary-300);
+  --accent: var(--gx-primary-200);
   --accent-strong: var(--gx-primary-200);
   --accent-fill: var(--gx-primary-700);
   --accent-soft: #291F67;
   --lavender: var(--gx-violet-300);
   --bg: #0F0F21;
   --panel: #181831;
-  --panel-veil: rgba(24, 24, 49, 0.94);
-  --au-1: #605CB1;
-  --au-2: #493687;
-  --au-3: #4D94C3;
+  --panel-veil: rgba(24, 24, 49, 0.86);
+  --au-1: #4B3CAB; --au-1-a: 0.7;
+  --au-2: #502684; --au-2-a: 0.75;
+  --au-3: #015BA6; --au-3-a: 0.55;
+  --au-4: #781B7E; --au-4-a: 0.4;
+  --raster-fein: rgba(165, 165, 255, 0.05);
+  --raster-grob: rgba(165, 165, 255, 0.1);
+  --claim-1: #A5A5FF;
+  --claim-2: #75C7FF;
+  --claim-3: #AFA1FF;
+  --glow: 62%;
+  --glow-hover: 85%;
+  --haze: 0.17;
+  --name-glow: 16px;
   --text: #E2E2F6;
-  --text-soft: #9C9ECD;
+  --text-soft: #B7B9DC;
   --border: #2D2C4F;
-  --wifi: #22d3ee;
-  --shrink: #a78bfa;
-  --bigday: #fbbf24;
-  --ram: #66e0ff;
-  --rad: #fb7185;
-  --collective: #4ade80;
-  --zaehlwerk: #a3e635;
-  --fontart: #e879f9;
-  --ticker: #818cf8;
-  --masterprompt: #fb923c;
-  --prisma: #bfb9ff;
+  --wifi: #23E3FA;
+  --shrink: #C28DFF;
+  --bigday: #FFC334;
+  --ram: #6CB2FF;
+  --rad: #FF7886;
+  --collective: #00E698;
+  --zaehlwerk: #BEE800;
+  --fontart: #F96EF0;
+  --ticker: #7D95FF;
+  --masterprompt: #FF8F4B;
+  --prisma: #CCC6FF;
   --prisma-flow: linear-gradient(100deg, #ff9e95, #ffae55, #cfd149, #00e8df, #bfb9ff);
-  --spectro: #2dd4bf;
-  --spectro-flow: linear-gradient(100deg, #8bfff8, #48e8e0, #13ccc5, #00b0a9, #00948e);
-  --heizwarte: #7dd3fc;
+  --spectro: #01DFC8;
+  --spectro-flow: linear-gradient(100deg, #8bfff8, #48e8e0, #13ccc5, #00b0a9, #129993);
+  --heizwarte: #A7E3FF;
   --heizwarte-flow: linear-gradient(100deg, #7dd3fc, #86efac, #fde047, #fdba74, #f87171);
   --fadenkreuz: #33ff88;
   --fadenkreuz-flow: linear-gradient(#33ff88, #33ff88);
   --pocketsum: #E2E2F6;
   --pocketsum-flow: linear-gradient(90deg, #A5A5FF 0 20%, #FFC97A 20% 40%, #75C7FF 40% 60%, #7EE0A0 60% 80%, #FF9FB5 80%);
-  /* Gaming und gaming.html, dunkel: Graphit 6,75:1, Patina 7,88, Gelb 12,09, Orange 7,62 */
   --gaming: #a1a1aa;
-  --gaming-flow: linear-gradient(90deg, #ff2bd6, #ff3b5c, #2f8bff, #33ff88);
-  --craftionary: #5cc0a8;
-  --vault: #ffd400;
-  --ruestkammer: #ff8f3d;
+  --gm-1: #ff2bd6;
+  --gm-2: #ff3b5c;
+  --gm-3: #2f8bff;
+  --gm-4: #33ff88;
+  --gaming-flow: linear-gradient(90deg, var(--gm-1), var(--gm-2), var(--gm-3), var(--gm-4));
+  --craftionary: #63CEAF;
+  --vault: #FDD711;
+  --ruestkammer: #FF9948;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
@@ -278,46 +284,28 @@ body {
 }
 
 /* ==================================================================
-   Aurora — der Hintergrund bekommt Farbe, ohne dass davon etwas Inhalt wird.
-   Das Muster stammt aus Spectroton: drei große, weich gezeichnete Kreise in
-   einer festen Ebene hinter allem. Dort folgen sie der Farbe, die der Nutzer
-   gerade eingibt; hier stehen sie fest auf der Markenfamilie — primary 282,8°,
-   violett 290° und das himmelblaue Gegenstück 239,9°, dieselbe Kombination,
-   die auch der Familienbalken trägt (OKLCH L 0,52 / 0,40 / 0,64).
-   Gedämpft gegenüber dem Vorbild — 0,32 / 0,32 / 0,20 statt 0,5 / 0,5 / 0,32:
-   die Startseite trägt fünfzehn Kacheln, Spectroton eine einzige Spalte.
+   Aurora + Bauplan, Neufassung 30.10.2026 (Dennis: „noch mehr glowy, es soll
+   irgendwie verstrahlt wirken, Bewegung wäre auch nice, so wie die Banner auf
+   der Profil-README“). Vier weich gezeichnete Farbwolken wandern langsam über
+   den Grund, darüber liegt still das Konstruktionsraster der Werkstattzeichnung
+   aus der README.
 
-   Die Farben stehen je Darstellung verschieden (--au-1/2/3 in den drei
-   Variablenblöcken), und das ist der Kern der Sache: Der Schleier
-   --panel-veil schützt nur die Kacheln. Alles andere — Markenname,
-   Hero-Unterzeile, Mehr-Zeile, Fusszeile, die beiden Platzhalter-Kacheln,
-   auf werkstatt.html die Navigationsspalte — steht DIREKT auf der Ebene.
-   Der schlechteste Fall ist deshalb im Hellen der DUNKELSTE Fleck und im
-   Dunkeln der HELLSTE; wer nur einen davon rechnet, rechnet die falsche
-   Richtung. Mit Spectrotons Helligkeiten fällt --text-soft im Hellen auf
-   3,42 — dort müssen die Flecken heller sein (L 0,74 statt 0,52).
+   Leuchten ohne Lesbarkeitsverlust: Die Wolken tragen viel Farbe, aber wenig
+   Helligkeit (dunkel OKLCH L 0,38–0,47 bei Chroma bis 0,17, hell L 0,845–0,87
+   auf einem Grund von 0,893). Freistehende Schrift (Markenname,
+   Hero-Unterzeile, Mehr-Zeile, Fußzeile, Platzhalter-Kacheln, Navigation auf
+   werkstatt.html) ist gegen den UNGÜNSTIGSTEN Fall gerechnet: zwei beliebige
+   Wolken voll deckend übereinander. Hell ist das der dunkelste Punkt #CEC9F8:
+   --text-soft 4,59, --accent 4,57, --text 10,88. Dunkel ist es der hellste
+   Punkt #1A4796: --text-soft 4,61, --accent 4,61, --text 6,90.
+   Weil der Nachweis jede Überlagerung abdeckt, dürfen die Wolken frei wandern
+   (die alte Ebene durfte das nicht, ihr Nachweis hing an der Lage). Wer Farbe
+   oder Deckkraft ändert, rechnet beide Fälle neu: Einzelwolke UND Paar.
 
-   Nachgewiesen nicht per Formel, sondern per Simulation der fertigen Ebene
-   (drei Ellipsen, Gauss mit sigma 70 px entsprechend blur(70px), in
-   DOM-Reihenfolge übereinandergelegt, dunkelster Punkt innerhalb der
-   880-px-Inhaltsspalte, geprüft bei 1920x1080, 1440x900, 1280x800 und
-   390x844): hell 4,78, dunkel 5,44. Beides hält AA.
-
-   Dass es hält, liegt an der Lage, nicht an den Farben: Zwei voll gedeckte
-   Flecken übereinander ergäben hell 4,05 bis 4,33 und rissen AA. Gemessen
-   über das ganze Sichtfeld erreicht die aufsummierte Farbmenge nie mehr als
-   0,3200 — also exakt EINEN voll gedeckten Fleck. au-1 und au-2 trennen 8vw
-   und 17vh, au-3 liegt 4vh über au-2, und die Drift schliesst diese Lücke
-   höchstens zur Berührung. Wer an Farbe, Deckung, Grösse, Lage oder der
-   -4vh-Drift dreht, rechnet beides neu: den Einzelfleck UND die
-   Überlagerung. Eine Einzelfarbe zu prüfen genügt nicht.
-
-   Nicht erfasst: .sep (die Trennpunkte der Fusszeile) trägt opacity 0,6 und
-   kommt damit auf 2,34 — das lag mit 2,58 aber schon vor der Aurora unter
-   AA und ist eine Gestaltungsfrage, keine Folge dieser Ebene.
-
-   overflow: hidden ist kein Schmuck: die Kreise ragen absichtlich über den
-   Rand, und ohne diese Klammer liesse sich die Seite seitlich wischen.
+   Die vierte Wolke ist .aurora::before, das Raster .aurora::after — so
+   brauchen die drei Seiten kein neues Markup.
+   overflow: hidden ist kein Schmuck: die Wolken ragen absichtlich über den
+   Rand, ohne die Klammer ließe sich die Seite seitlich wischen.
    ================================================================== */
 .aurora {
   position: fixed;
@@ -326,27 +314,56 @@ body {
   overflow: hidden;
   pointer-events: none;
 }
-.aurora span {
+.aurora span,
+.aurora::before {
   position: absolute;
   display: block;
   border-radius: 50%;
   filter: blur(70px);
 }
-.au-1 { width: 70vw; height: 60vh; top: -18vh; left: -20vw; background: var(--au-1); opacity: 0.32; }
-.au-2 { width: 56vw; height: 54vh; bottom: -20vh; right: -14vw; background: var(--au-2); opacity: 0.32; }
-.au-3 { width: 30vw; height: 32vh; top: 30vh; right: -8vw; background: var(--au-3); opacity: 0.2; }
-
-/* Positive Abfrage: Bewegung gibt es nur, wo niemand sie abbestellt hat.
-   Zwei der drei Flecken wandern, der dritte steht als Anker. */
-@media (prefers-reduced-motion: no-preference) {
-  .au-1 { animation: au-drift-1 34s ease-in-out infinite; }
-  .au-2 { animation: au-drift-2 40s ease-in-out infinite; }
+.aurora::before { content: ''; }
+.au-1 { width: 64vw; height: 62vh; top: -18vh; left: -16vw; background: var(--au-1); opacity: var(--au-1-a); }
+.au-2 { width: 60vw; height: 62vh; bottom: -20vh; right: -14vw; background: var(--au-2); opacity: var(--au-2-a); }
+.au-3 { width: 40vw; height: 44vh; top: 8vh; right: -8vw; background: var(--au-3); opacity: var(--au-3-a); }
+.aurora::before { width: 38vw; height: 42vh; bottom: -4vh; left: -10vw; background: var(--au-4); opacity: var(--au-4-a); }
+/* Konstruktionsraster: fein alle 24 px, grob alle 120 px, wie im Bauplan der
+   Profil-README. Es steht still und läuft nach unten aus. */
+.aurora::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--raster-grob) 1px, transparent 1px),
+    linear-gradient(90deg, var(--raster-grob) 1px, transparent 1px),
+    linear-gradient(var(--raster-fein) 1px, transparent 1px),
+    linear-gradient(90deg, var(--raster-fein) 1px, transparent 1px);
+  background-size: 120px 120px, 120px 120px, 24px 24px, 24px 24px;
+  -webkit-mask-image: linear-gradient(#000 45%, transparent 100%);
+  mask-image: linear-gradient(#000 45%, transparent 100%);
 }
-@keyframes au-drift-1 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(3vh); } }
-@keyframes au-drift-2 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4vh); } }
 
+/* Positive Abfrage: Bewegung gibt es nur, wo niemand sie abbestellt hat. Die
+   Wolken wandern auf eigenen Bahnen mit eigener Dauer, damit sich das Bild nie
+   sichtbar wiederholt. Nur transform wird bewegt: das übernimmt die Grafikkarte,
+   die Unschärfe wird dabei nicht neu gerechnet. */
+@media (prefers-reduced-motion: no-preference) {
+  .au-1 { animation: au-wandern-1 34s ease-in-out infinite alternate; }
+  .au-2 { animation: au-wandern-2 41s ease-in-out infinite alternate; }
+  .au-3 { animation: au-wandern-3 29s ease-in-out infinite alternate; }
+  .aurora::before { animation: au-wandern-4 47s ease-in-out infinite alternate; }
+  .aurora span,
+  .aurora::before { will-change: transform; }
+}
+@keyframes au-wandern-1 { 0% { transform: translate(0, 0) scale(1); } 50% { transform: translate(16vw, 10vh) scale(1.12); } 100% { transform: translate(6vw, 24vh) scale(0.94); } }
+@keyframes au-wandern-2 { 0% { transform: translate(0, 0) scale(1); } 50% { transform: translate(-18vw, -12vh) scale(1.08); } 100% { transform: translate(-6vw, -26vh) scale(0.95); } }
+@keyframes au-wandern-3 { 0% { transform: translate(0, 0) scale(1); } 50% { transform: translate(-24vw, 20vh) scale(1.15); } 100% { transform: translate(-40vw, 6vh) scale(1); } }
+@keyframes au-wandern-4 { 0% { transform: translate(0, 0) scale(1); } 50% { transform: translate(22vw, -20vh) scale(1.1); } 100% { transform: translate(38vw, -8vh) scale(0.92); } }
+
+/* 1680 statt 880 px (Dennis, 30.10.2026): die Kacheln sollen sich nach der
+   Fensterbreite richten, statt immer in zwei Spalten zu stehen. Kopf und Hero
+   bleiben schmal (.hero), nur das Kachelraster nutzt die volle Breite. */
 .page {
-  max-width: 880px;
+  max-width: 1680px;
   min-height: 100dvh;
   margin: 0 auto;
   padding: 20px 20px 36px;
@@ -398,7 +415,7 @@ body {
 }
 
 /* Hero */
-.hero { text-align: center; padding: 54px 8px 42px; }
+.hero { max-width: 920px; margin: 0 auto; text-align: center; padding: 54px 8px 42px; }
 
 /* min(…, 13vw): Bei großer Browserschrift (24 px) auf 320 px ragte das
    längste Wort sonst über den Rand — „herramientas“ in Fraunces, das
@@ -409,6 +426,17 @@ body {
   line-height: 1.15;
   letter-spacing: -0.015em;
   margin: 0 0 14px;
+}
+/* Der Claim im Verlauf des README-Banners (Lila → Eisblau → Violett). Positive
+   Abfrage wie bei den Verlaufsnamen: ohne background-clip bleibt er einfarbig. */
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .hero h1,
+  .wk-hero h1 {
+    background-image: linear-gradient(100deg, var(--claim-1), var(--claim-2) 55%, var(--claim-3));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
 }
 
 .hero-sub { margin: 0 0 20px; color: var(--text-soft); font-size: 1.08rem; }
@@ -442,6 +470,7 @@ body {
   margin: 30px auto 0;
   border-radius: 999px;
   overflow: hidden;
+  box-shadow: 0 0 18px -3px var(--ice);
 }
 .family-bar span { display: block; height: 100%; }
 .fb-royal { flex: 3; background: var(--accent-fill); }
@@ -466,12 +495,18 @@ a.brand { text-decoration: none; color: inherit; }
   margin: 22px 0 18px;
   overflow-wrap: anywhere;
 }
-.tb-emoji { font-size: 1.5rem; line-height: 1; }
+/* Gezeichnetes Symbol statt Emoji (Dennis, 30.10.2026): die flache Werkzeugkiste
+   aus dem Titelbild der Profil-README, auf gaming.html ein Gamepad, beide im
+   Verlauf ihrer Seite. Emoji in Überschriften lesen sich als KI-Muster. */
+.tb-icon { width: 40px; height: 30px; flex: none; overflow: visible; }
 
+/* So viele Spalten, wie in die Breite passen: am Telefon eine, auf dem Tablet
+   zwei, am Laptop drei bis vier, auf breiten Bildschirmen fünf (bei 1680 px
+   Seitenbreite). min(100%, …) verhindert Überlauf unter 320 px. */
 .tool-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 20px;
 }
 
 /* Kachelform: EIN Radius für Kachel, Farbkappe, Fokusrahmen und Sternenfeld
@@ -505,7 +540,8 @@ a.brand { text-decoration: none; color: inherit; }
   color: var(--text);
   text-decoration: none;
   box-shadow: var(--shadow);
-  transition: border-color 0.15s ease, transform 0.15s ease;
+  transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.2s ease;
+  isolation: isolate;
   /* Bei großer Browserschrift (24 px) und 320 px Breite schoben
      „Real_RAM_cooler“ und das SKILL-Schild die Seite seitlich auf. Lieber
      mitten im Wort umbrechen als die ganze Seite wischbar machen. */
@@ -530,6 +566,47 @@ a.brand { text-decoration: none; color: inherit; }
 .tool-craftionary { --tool: var(--craftionary); }
 .tool-vault { --tool: var(--vault); }
 .tool-ruestkammer { --tool: var(--ruestkammer); }
+
+/* Leuchten (30.10.2026, Dennis: „mehr Glow“). Drei Schichten, alle in der Farbe
+   der Kachel: ein Schein von der Kappe in die Kachel hinein (::after, hinter dem
+   Inhalt, isolation hält ihn in der Kachel), ein Schein um die Oberkante und die
+   leuchtenden Symbole. Mit Verlauf (Prismatical, Spectroton, Heizwarte,
+   Pocketsum, Gaming) scheint der Verlauf selbst. Die Platzhalter leuchten
+   nicht: dort ist noch nichts, das leuchten könnte. --haze, --glow und
+   --glow-hover stehen je Darstellung in den Farbblöcken (dunkel kräftiger). */
+.tool-card:not(.tool-platzhalter)::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: var(--tool-flow);
+  opacity: var(--haze);
+  -webkit-mask-image: radial-gradient(130% 80% at 50% 0%, #000, transparent 72%);
+  mask-image: radial-gradient(130% 80% at 50% 0%, #000, transparent 72%);
+  /* Weichzeichnen, bevor die Maske greift: sonst zeichnet Pocketsums Kappe
+     mit ihren harten Stufen sichtbare Streifen in die Kachel. */
+  filter: blur(12px);
+  pointer-events: none;
+}
+@supports (color: color-mix(in srgb, red 50%, transparent)) {
+  .tool-card:not(.tool-platzhalter) {
+    box-shadow: var(--shadow), 0 -10px 30px -16px color-mix(in srgb, var(--tool) var(--glow), transparent);
+  }
+  .tool-card:not(.tool-platzhalter):hover,
+  .tool-card:not(.tool-platzhalter):focus-within {
+    box-shadow: var(--shadow), 0 0 36px -10px color-mix(in srgb, var(--tool) var(--glow-hover), transparent);
+  }
+  .tool-head img {
+    filter: drop-shadow(0 0 10px color-mix(in srgb, var(--tool) var(--glow), transparent));
+  }
+  /* Namen glühen nur im Dunkeln (--name-glow ist hell 0). Verlaufsnamen nicht:
+     ihr Schatten läge über dem Verlauf und machte ihn trüb (siehe unten). */
+  .tool-name {
+    text-shadow: 0 0 var(--name-glow) color-mix(in srgb, var(--tool) 55%, transparent);
+  }
+  .tb-icon { filter: drop-shadow(0 0 8px color-mix(in srgb, var(--claim-2) var(--glow), transparent)); }
+}
 
 /* Die Farbkappe an der Oberkante, für jede Kachel in ihrer Farbe.
    Sie ist KEIN eigenes Kästchen mit eigener Rundung, sondern eine Ebene
@@ -696,6 +773,7 @@ a.brand { text-decoration: none; color: inherit; }
    Anker-Vollton — ein `color: transparent` ohne Verlauf wäre unsichtbarer Text. */
 @supports (background-clip: text) or (-webkit-background-clip: text) {
   .tool-prismatical .tool-name {
+    text-shadow: none;
     background-image: var(--prisma-flow);
     -webkit-background-clip: text;
     background-clip: text;
@@ -708,6 +786,7 @@ a.brand { text-decoration: none; color: inherit; }
    teilen sich das Muster, nicht die Farbe. */
 @supports (background-clip: text) or (-webkit-background-clip: text) {
   .tool-spectroton .tool-name {
+    text-shadow: none;
     background-image: var(--spectro-flow);
     -webkit-background-clip: text;
     background-clip: text;
@@ -718,6 +797,7 @@ a.brand { text-decoration: none; color: inherit; }
 /* Heizwarte: derselbe Verlauf-Name, kalt → warm. */
 @supports (background-clip: text) or (-webkit-background-clip: text) {
   .tool-heizwarte .tool-name {
+    text-shadow: none;
     background-image: var(--heizwarte-flow);
     -webkit-background-clip: text;
     background-clip: text;
@@ -729,6 +809,7 @@ a.brand { text-decoration: none; color: inherit; }
    gegen --panel AA (hell 5,02 bis 7,18:1, dunkel 7,77 bis 11,44:1). */
 @supports (background-clip: text) or (-webkit-background-clip: text) {
   .tool-pocketsum .tool-name {
+    text-shadow: none;
     background-image: var(--pocketsum-flow);
     -webkit-background-clip: text;
     background-clip: text;
@@ -775,9 +856,12 @@ a.brand { text-decoration: none; color: inherit; }
 
 /* Wird es eng, rutscht erst das SKILL-Schild in die nächste Zeile, dann
    der Name unter das Symbol — aber kein Name bricht mitten im Wort. Der
-   Name misst sich beim Zeilenbau an seinem längsten Wort (min-content)
-   und wächst danach höchstens auf seine volle Länge (max-content), damit
-   das Schild am Desktop direkt hinter ihm steht und nicht am Kachelrand.
+   Name misst sich beim Zeilenbau an seiner vollen Länge (max-content):
+   Seit die Kacheln in fünf Spalten stehen (30.10.2026), maß er sich
+   vorher am längsten Wort und brach „create-masterprompt“ am Bindestrich,
+   obwohl das Schild in die nächste Zeile gepasst hätte. Findet der Name
+   neben dem Symbol keinen Platz, steht er allein in seiner Zeile und darf
+   dort schrumpfen und umbrechen.
    break-word statt des anywhere der Kachel: nur ein Wort, das allein
    keine Zeile findet, wird noch geteilt. Nötig seit Fraunces: sie läuft
    breiter als die Systemschrift, und bei 320 px stand sonst ein einzelnes
@@ -785,7 +869,7 @@ a.brand { text-decoration: none; color: inherit; }
 .tool-head { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
 .tool-head img { width: 44px; height: 44px; border-radius: 10px; display: block; }
 .tool-name {
-  flex: 1 1 min-content;
+  flex: 0 1 max-content;
   max-width: max-content;
   overflow-wrap: break-word;
   font-size: 1.15rem;
