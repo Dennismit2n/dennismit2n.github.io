@@ -37,7 +37,7 @@
   <!-- Die Überschriftenschrift wird auf jeder Seite und in jeder Sprache gebraucht
        (mindestens für den Markennamen), also früh anstoßen statt erst nach der CSS. -->
   <link rel="preload" href="./assets/fonts/fraunces/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="./css/style.css?v=2026-10-30">
+  <link rel="stylesheet" href="./css/style.css?v=2026-10-30b">
   <!-- Theme before first paint: stored choice wins, otherwise system decides via CSS. -->
   <script>try{var t=localStorage.getItem('dennismit2n-home.theme');if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}</script>
   <!-- Wer nicht Englisch bekommt, sieht Inhalt, Fußzeile und Auswahlfelder erst
@@ -94,7 +94,10 @@
     </section>
 
     <section class="tools" aria-labelledby="toolboxHeading">
-      <h2 id="toolboxHeading"><span class="tb-emoji" aria-hidden="true">🧰</span> <span data-i18n="toolboxHeading">The toolbox</span></h2>
+      <!-- Die flache Werkzeugkiste aus dem Titelbild der Profil-README statt eines
+           Emojis (Dennis, 30.10.2026). Die Verlaufsfarben kommen aus style.css
+           (--claim-1 bis 3), also folgt das Symbol der Darstellung. -->
+      <h2 id="toolboxHeading"><svg class="tb-icon" viewBox="2 5 84 63" aria-hidden="true"><defs><linearGradient id="tbVerlauf" gradientUnits="userSpaceOnUse" x1="8" y1="11" x2="80" y2="62"><stop offset="0" style="stop-color: var(--claim-1)"/><stop offset="0.55" style="stop-color: var(--claim-2)"/><stop offset="1" style="stop-color: var(--claim-3)"/></linearGradient></defs><g fill="none" stroke="url(#tbVerlauf)" stroke-linecap="round" stroke-linejoin="round"><path d="M28 20V14Q28 11 31 11H57Q60 11 60 14V20M34 20V16H54V20" stroke-width="4.6"/><rect x="8" y="20" width="72" height="42" rx="8" stroke-width="5"/><path d="M8 33H80" stroke-width="4.2"/><path d="M18 29v8M70 29v8" stroke-width="6.4"/></g></svg> <span data-i18n="toolboxHeading">The toolbox</span></h2>
       <!-- The tile is a <div>, not a link: .tool-open is stretched across the
            whole card via ::after, so a click anywhere still opens the tool.
            That is what lets the two mini tiles live INSIDE the card — a tile
@@ -103,23 +106,10 @@
            would announce itself as just "Open". The two placeholder tiles at the
            end carry no link at all, so they need none of this. -->
       <div class="tool-grid">
-        <!-- Reihenfolge nach Dennis' Ansage (13.09.2026). Die fruehere Regel
-             "neue Werkzeuge kommen ans Ende" gilt damit nicht mehr; die
-             Reihenfolge ist jetzt handverlesen. Sie muss mit der TOOLS-Liste
-             in js/werkstatt.js und der Liste in der README uebereinstimmen. -->
-        <div class="tool-card tool-spectroton">
-          <span class="tool-head">
-            <img src="./assets/spectroton.svg" alt="" width="44" height="44">
-            <span class="tool-name" id="name-spectroton">Spectroton</span>
-          </span>
-          <span class="tool-desc" data-i18n="spectrotonDesc">One colour in, eleven matching shades out – checked for text contrast.</span>
-          <span class="tool-meta" data-i18n="spectrotonMeta">In your browser · open source · colour names come from api.color.pizza</span>
-          <a class="tool-open" id="open-spectroton" aria-labelledby="open-spectroton name-spectroton" href="https://dennismit2n.github.io/spectroton/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
-          <span class="tool-mini" data-tool="spectroton">
-            <a href="./werkstatt.html#spectroton-neuigkeiten" data-count="werkstatt-spectroton-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#spectroton-anleitung" data-count="werkstatt-spectroton-anleitung" data-i18n="secGuide">Guide</a>
-          </span>
-        </div>
+        <!-- Reihenfolge nach Dennis' Liste vom 30.10.2026 (18 Kacheln, wieder
+             handverlesen). Sie muss mit der TOOLS-Liste in js/werkstatt.js und der
+             Liste in der README uebereinstimmen; die drei Werkzeuge, die nur auf
+             gaming.html stehen, haben in TOOLS den Platz der Gaming-Kachel. -->
         <!-- Der erste Eintrag, der kein Programm ist, sondern ein Skill fuer
              KI-Chats: nichts zum Oeffnen im Browser, nichts zum Installieren
              unter Windows. Deshalb zeigt der Knopf auf das Repo, und die
@@ -157,19 +147,6 @@
             <a class="tool-mini-lang-only" data-lang-only="ko" href="https://github.com/Dennismit2n/create-masterprompt/blob/main/docs/uebersicht-ko.png" rel="noopener" data-count="masterprompt-overview" data-i18n="secOverview">Overview</a>
           </span>
         </div>
-        <div class="tool-card tool-wifi">
-          <span class="tool-head">
-            <img src="./assets/wifi-qr.svg" alt="" width="44" height="44">
-            <span class="tool-name" id="name-wifi" data-i18n="wifiName">WiFi QR Card</span>
-          </span>
-          <span class="tool-desc" data-i18n="wifiDesc">Create a QR code for your WiFi – guests scan and they’re in.</span>
-          <span class="tool-meta" data-i18n="featuresLine">Free · no sign-up · no uploads</span>
-          <a class="tool-open" id="open-wifi" aria-labelledby="open-wifi name-wifi" href="https://dennismit2n.github.io/wifi-qr/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
-          <span class="tool-mini" data-tool="wifi">
-            <a href="./werkstatt.html#wifi-neuigkeiten" data-count="werkstatt-wifi-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#wifi-anleitung" data-count="werkstatt-wifi-anleitung" data-i18n="secGuide">Guide</a>
-          </span>
-        </div>
         <div class="tool-card tool-ram">
           <span class="tool-head">
             <img src="./assets/ramcooler.svg" alt="" width="44" height="44">
@@ -181,6 +158,26 @@
           <span class="tool-mini" data-tool="ram">
             <a href="./werkstatt.html#ram-neuigkeiten" data-count="werkstatt-ram-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
             <a href="./werkstatt.html#ram-anleitung" data-count="werkstatt-ram-anleitung" data-i18n="secGuide">Guide</a>
+          </span>
+        </div>
+        <!-- The odd one out: the only tool whose full version is meant to cost
+             money one day. The meta line says so instead of borrowing the
+             "free · no sign-up" line of the others.
+             It is also the only tile with THREE mini tiles: the trial exists
+             twice — as a page and as a Windows program — and the main button
+             leads to the page, because one click beats a 71 MB download. -->
+        <div class="tool-card tool-fontart">
+          <span class="tool-head">
+            <img src="./assets/fontart.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-fontart">fontART Designer</span>
+          </span>
+          <span class="tool-desc" data-i18n="fontartDesc">Turn your handwriting into a real font for Word &amp; co. – draw it, export it, install it.</span>
+          <span class="tool-meta" data-i18n="fontartMeta">In your browser and for Windows · free trial · full version in the works</span>
+          <a class="tool-open" id="open-fontart" aria-labelledby="open-fontart name-fontart" href="https://dennismit2n.github.io/fontART-demo/" rel="noopener"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="fontart">
+            <a href="./werkstatt.html#fontart-neuigkeiten" data-count="werkstatt-fontart-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#fontart-anleitung" data-count="werkstatt-fontart-anleitung" data-i18n="secGuide">Guide</a>
+            <a href="https://github.com/Dennismit2n/fontART-demo/releases/latest" rel="noopener" data-count="fontart-windows" data-i18n="forWindows">For Windows</a>
           </span>
         </div>
         <div class="tool-card tool-prismatical">
@@ -196,6 +193,19 @@
             <a href="./werkstatt.html#prismatical-anleitung" data-count="werkstatt-prismatical-anleitung" data-i18n="secGuide">Guide</a>
           </span>
         </div>
+        <div class="tool-card tool-spectroton">
+          <span class="tool-head">
+            <img src="./assets/spectroton.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-spectroton">Spectroton</span>
+          </span>
+          <span class="tool-desc" data-i18n="spectrotonDesc">One colour in, eleven matching shades out – checked for text contrast.</span>
+          <span class="tool-meta" data-i18n="spectrotonMeta">In your browser · open source · colour names come from api.color.pizza</span>
+          <a class="tool-open" id="open-spectroton" aria-labelledby="open-spectroton name-spectroton" href="https://dennismit2n.github.io/spectroton/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="spectroton">
+            <a href="./werkstatt.html#spectroton-neuigkeiten" data-count="werkstatt-spectroton-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#spectroton-anleitung" data-count="werkstatt-spectroton-anleitung" data-i18n="secGuide">Guide</a>
+          </span>
+        </div>
         <div class="tool-card tool-shrink">
           <span class="tool-head">
             <img src="./assets/shrinkling.svg" alt="" width="44" height="44">
@@ -207,6 +217,46 @@
           <span class="tool-mini" data-tool="shrink">
             <a href="./werkstatt.html#shrink-neuigkeiten" data-count="werkstatt-shrink-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
             <a href="./werkstatt.html#shrink-anleitung" data-count="werkstatt-shrink-anleitung" data-i18n="secGuide">Guide</a>
+          </span>
+        </div>
+        <div class="tool-card tool-wifi">
+          <span class="tool-head">
+            <img src="./assets/wifi-qr.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-wifi" data-i18n="wifiName">WiFi QR Card</span>
+          </span>
+          <span class="tool-desc" data-i18n="wifiDesc">Create a QR code for your WiFi – guests scan and they’re in.</span>
+          <span class="tool-meta" data-i18n="featuresLine">Free · no sign-up · no uploads</span>
+          <a class="tool-open" id="open-wifi" aria-labelledby="open-wifi name-wifi" href="https://dennismit2n.github.io/wifi-qr/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="wifi">
+            <a href="./werkstatt.html#wifi-neuigkeiten" data-count="werkstatt-wifi-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#wifi-anleitung" data-count="werkstatt-wifi-anleitung" data-i18n="secGuide">Guide</a>
+          </span>
+        </div>
+        <div class="tool-card tool-heizwarte">
+          <span class="tool-head">
+            <img src="./assets/heizwarte.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-heizwarte">Heizwarte</span>
+          </span>
+          <span class="tool-desc" data-i18n="heizwarteDesc">Weather with a heating traffic light: tells you when to turn up your slow heating – for up to five places.</span>
+          <span class="tool-meta" data-i18n="heizwarteMeta">In your browser · no account · app in German for now · weather from Open-Meteo &amp; DWD</span>
+          <a class="tool-open" id="open-heizwarte" aria-labelledby="open-heizwarte name-heizwarte" href="https://dennismit2n.github.io/heizwarte/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="heizwarte">
+            <a href="./werkstatt.html#heizwarte-neuigkeiten" data-count="werkstatt-heizwarte-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+          </span>
+        </div>
+        <!-- Pocketsum: neutrale Kachel, die Kappe trägt die fünf Farben der Rechner
+             (siehe --pocketsum-flow in style.css). -->
+        <div class="tool-card tool-pocketsum">
+          <span class="tool-head">
+            <img src="./assets/pocketsum.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-pocketsum">Pocketsum</span>
+          </span>
+          <span class="tool-desc" data-i18n="pocketsumDesc">Five small calculators in one file: VAT, tips, fuel prices, dividends and trading costs.</span>
+          <span class="tool-meta" data-i18n="pocketsumMeta">Free · no sign-up · offline after the first visit</span>
+          <a class="tool-open" id="open-pocketsum" aria-labelledby="open-pocketsum name-pocketsum" href="https://dennismit2n.github.io/pocketsum/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="pocketsum">
+            <a href="./werkstatt.html#pocketsum-neuigkeiten" data-count="werkstatt-pocketsum-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#pocketsum-anleitung" data-count="werkstatt-pocketsum-anleitung" data-i18n="secGuide">Guide</a>
           </span>
         </div>
         <div class="tool-card tool-zaehlwerk">
@@ -235,24 +285,17 @@
             <a href="./werkstatt.html#ticker-anleitung" data-count="werkstatt-ticker-anleitung" data-i18n="secGuide">Guide</a>
           </span>
         </div>
-        <!-- The odd one out: the only tool whose full version is meant to cost
-             money one day. The meta line says so instead of borrowing the
-             "free · no sign-up" line of the others.
-             It is also the only tile with THREE mini tiles: the trial exists
-             twice — as a page and as a Windows program — and the main button
-             leads to the page, because one click beats a 71 MB download. -->
-        <div class="tool-card tool-fontart">
+        <div class="tool-card tool-collective">
           <span class="tool-head">
-            <img src="./assets/fontart.svg" alt="" width="44" height="44">
-            <span class="tool-name" id="name-fontart">fontART Designer</span>
+            <img src="./assets/collective-calc.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-collective">Collective-Calc</span>
           </span>
-          <span class="tool-desc" data-i18n="fontartDesc">Turn your handwriting into a real font for Word &amp; co. – draw it, export it, install it.</span>
-          <span class="tool-meta" data-i18n="fontartMeta">In your browser and for Windows · free trial · full version in the works</span>
-          <a class="tool-open" id="open-fontart" aria-labelledby="open-fontart name-fontart" href="https://dennismit2n.github.io/fontART-demo/" rel="noopener"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
-          <span class="tool-mini" data-tool="fontart">
-            <a href="./werkstatt.html#fontart-neuigkeiten" data-count="werkstatt-fontart-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#fontart-anleitung" data-count="werkstatt-fontart-anleitung" data-i18n="secGuide">Guide</a>
-            <a href="https://github.com/Dennismit2n/fontART-demo/releases/latest" rel="noopener" data-count="fontart-windows" data-i18n="forWindows">For Windows</a>
+          <span class="tool-desc" data-i18n="collectiveDesc">Who owes whom what? Split group expenses – no account, no app, shareable as a link.</span>
+          <span class="tool-meta" data-i18n="featuresLine">Free · no sign-up · no uploads</span>
+          <a class="tool-open" id="open-collective" aria-labelledby="open-collective name-collective" href="https://dennismit2n.github.io/collective-calc/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="collective">
+            <a href="./werkstatt.html#collective-neuigkeiten" data-count="werkstatt-collective-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#collective-anleitung" data-count="werkstatt-collective-anleitung" data-i18n="secGuide">Guide</a>
           </span>
         </div>
         <div class="tool-card tool-rad">
@@ -268,18 +311,17 @@
             <a href="./werkstatt.html#rad-anleitung" data-count="werkstatt-rad-anleitung" data-i18n="secGuide">Guide</a>
           </span>
         </div>
-        <div class="tool-card tool-collective">
+        <!-- Gaming: führt auf die eigene Seite gaming.html (Dennis' Wunsch vom
+             30.10.2026, Gaming getrennt von den übrigen Werkzeugen). Keine
+             Mini-Kacheln: es ist eine Sammlung, kein einzelnes Werkzeug. -->
+        <div class="tool-card tool-gaming">
           <span class="tool-head">
-            <img src="./assets/collective-calc.svg" alt="" width="44" height="44">
-            <span class="tool-name" id="name-collective">Collective-Calc</span>
+            <img src="./assets/gaming.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-gaming">Gaming</span>
           </span>
-          <span class="tool-desc" data-i18n="collectiveDesc">Who owes whom what? Split group expenses – no account, no app, shareable as a link.</span>
-          <span class="tool-meta" data-i18n="featuresLine">Free · no sign-up · no uploads</span>
-          <a class="tool-open" id="open-collective" aria-labelledby="open-collective name-collective" href="https://dennismit2n.github.io/collective-calc/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
-          <span class="tool-mini" data-tool="collective">
-            <a href="./werkstatt.html#collective-neuigkeiten" data-count="werkstatt-collective-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#collective-anleitung" data-count="werkstatt-collective-anleitung" data-i18n="secGuide">Guide</a>
-          </span>
+          <span class="tool-desc" data-i18n="gamingDesc">Game guides, handbooks and tools for playing – Minecraft, Borderlands 4, Modern Warfare 4 and more.</span>
+          <span class="tool-meta" data-i18n="gamingMeta">Its own page · guides and tools · more to come</span>
+          <a class="tool-open" id="open-gaming" aria-labelledby="open-gaming name-gaming" href="./gaming.html"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
         </div>
         <div class="tool-card tool-bigday">
           <span class="tool-head">
@@ -294,44 +336,20 @@
             <a href="./werkstatt.html#bigday-anleitung" data-count="werkstatt-bigday-anleitung" data-i18n="secGuide">Guide</a>
           </span>
         </div>
-        <div class="tool-card tool-heizwarte">
+        <!-- Fadenkreuz steht seit dem 30.10.2026 abends wieder AUCH hier (Platz 16),
+             zusaetzlich zu gaming.html. Neongruen, Schwarz, Weiss: die Kachel bleibt
+             in beiden Darstellungen schwarz (siehe .tool-card.tool-fadenkreuz in style.css). -->
+        <div class="tool-card tool-fadenkreuz">
           <span class="tool-head">
-            <img src="./assets/heizwarte.svg" alt="" width="44" height="44">
-            <span class="tool-name" id="name-heizwarte">Heizwarte</span>
+            <img src="./assets/fadenkreuz.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-fadenkreuz">Fadenkreuz</span>
           </span>
-          <span class="tool-desc" data-i18n="heizwarteDesc">Weather with a heating traffic light: tells you when to turn up your slow heating – for up to five places.</span>
-          <span class="tool-meta" data-i18n="heizwarteMeta">In your browser · no account · app in German for now · weather from Open-Meteo &amp; DWD</span>
-          <a class="tool-open" id="open-heizwarte" aria-labelledby="open-heizwarte name-heizwarte" href="https://dennismit2n.github.io/heizwarte/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
-          <span class="tool-mini" data-tool="heizwarte">
-            <a href="./werkstatt.html#heizwarte-neuigkeiten" data-count="werkstatt-heizwarte-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-          </span>
-        </div>
-        <!-- Gaming: führt auf die eigene Seite gaming.html (Dennis' Wunsch vom
-             30.10.2026, Gaming getrennt von den übrigen Werkzeugen). Steht an dem
-             Platz, den vorher Fadenkreuz hatte — Fadenkreuz ist dorthin umgezogen.
-             Keine Mini-Kacheln: es ist eine Sammlung, kein einzelnes Werkzeug. -->
-        <div class="tool-card tool-gaming">
-          <span class="tool-head">
-            <img src="./assets/gaming.svg" alt="" width="44" height="44">
-            <span class="tool-name" id="name-gaming">Gaming</span>
-          </span>
-          <span class="tool-desc" data-i18n="gamingDesc">Game guides, handbooks and tools for playing – Minecraft, Borderlands 4, Modern Warfare 4 and more.</span>
-          <span class="tool-meta" data-i18n="gamingMeta">Its own page · guides and tools · more to come</span>
-          <a class="tool-open" id="open-gaming" aria-labelledby="open-gaming name-gaming" href="./gaming.html"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
-        </div>
-        <!-- Pocketsum: neutrale Kachel, die Kappe trägt die fünf Farben der Rechner
-             (siehe --pocketsum-flow in style.css). -->
-        <div class="tool-card tool-pocketsum">
-          <span class="tool-head">
-            <img src="./assets/pocketsum.svg" alt="" width="44" height="44">
-            <span class="tool-name" id="name-pocketsum">Pocketsum</span>
-          </span>
-          <span class="tool-desc" data-i18n="pocketsumDesc">Five small calculators in one file: VAT, tips, fuel prices, dividends and trading costs.</span>
-          <span class="tool-meta" data-i18n="pocketsumMeta">Free · no sign-up · offline after the first visit</span>
-          <a class="tool-open" id="open-pocketsum" aria-labelledby="open-pocketsum name-pocketsum" href="https://dennismit2n.github.io/pocketsum/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
-          <span class="tool-mini" data-tool="pocketsum">
-            <a href="./werkstatt.html#pocketsum-neuigkeiten" data-count="werkstatt-pocketsum-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#pocketsum-anleitung" data-count="werkstatt-pocketsum-anleitung" data-i18n="secGuide">Guide</a>
+          <span class="tool-desc" data-i18n="fadenkreuzDesc">Your own crosshair in the exact centre of the screen – drawn by you, click-through, over your game.</span>
+          <span class="tool-meta" data-i18n="fadenkreuzMeta">Windows 10/11 · about 1 MB of RAM · free</span>
+          <a class="tool-open" id="open-fadenkreuz" aria-labelledby="open-fadenkreuz name-fadenkreuz" href="https://github.com/Dennismit2n/fadenkreuz/releases/latest" rel="noopener"><span data-i18n="downloadTool">Download</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="fadenkreuz">
+            <a href="./werkstatt.html#fadenkreuz-neuigkeiten" data-count="werkstatt-fadenkreuz-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#fadenkreuz-anleitung" data-count="werkstatt-fadenkreuz-anleitung" data-i18n="secGuide">Guide</a>
           </span>
         </div>
         <!-- Zwei Platzhalter auf Dennis' Ansage (13.09.2026). Bewusst OHNE

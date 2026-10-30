@@ -25,7 +25,7 @@
   <!-- ?v=<datum> wie in index.html und werkstatt.html: bei jedem Deploy, der CSS
        oder JS ändert, in ALLEN DREI Seiten hochsetzen. -->
   <link rel="preload" href="./assets/fonts/fraunces/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="./css/style.css?v=2026-10-30">
+  <link rel="stylesheet" href="./css/style.css?v=2026-10-30b">
   <script>try{var t=localStorage.getItem('dennismit2n-home.theme');if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}</script>
   <!-- Dasselbe Kopf-Skript wie in index.html (.i18n-wartet), samt eigener Kopie
        der Sprachcodes — die Liste muss zu I18N in i18n.js passen. -->
@@ -67,10 +67,11 @@
     </section>
 
     <section class="tools" aria-labelledby="gamingHeading">
-      <h2 id="gamingHeading"><span class="tb-emoji" aria-hidden="true">🎮</span> <span data-i18n="gamingHeading">Guides and tools</span></h2>
+      <!-- Gezeichnetes Gamepad statt Emoji, im Verlauf der Gaming-Kachel (--gm-1 bis 4). -->
+      <h2 id="gamingHeading"><svg class="tb-icon" viewBox="0 3 88 56" aria-hidden="true"><defs><linearGradient id="tbVerlauf" gradientUnits="userSpaceOnUse" x1="4" y1="9" x2="84" y2="52"><stop offset="0" style="stop-color: var(--gm-1)"/><stop offset="0.35" style="stop-color: var(--gm-2)"/><stop offset="0.7" style="stop-color: var(--gm-3)"/><stop offset="1" style="stop-color: var(--gm-4)"/></linearGradient></defs><g fill="none" stroke="url(#tbVerlauf)" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><path d="M27 9H61C72 9 78 16 81 27L84 40C86 50 76 55 69 48L61 40H27L19 48C12 55 2 50 4 40L7 27C10 16 16 9 27 9Z"/><path d="M25 21V35M18 28H32"/></g><g fill="url(#tbVerlauf)"><circle cx="62" cy="24" r="3.6"/><circle cx="70" cy="32" r="3.6"/></g></svg> <span data-i18n="gamingHeading">Guides and tools</span></h2>
       <!-- Aufbau wie die Kacheln der Startseite (siehe Kommentar dort). Reihenfolge nach
-           Dennis' Liste vom 30.10.2026. Fadenkreuz ist hierher umgezogen und steht nicht
-           mehr auf der Startseite; Real_RAM_cooler steht auf BEIDEN Seiten. Craftionary,
+           Dennis' Liste vom 30.10.2026. Fadenkreuz und Real_RAM_cooler stehen auf BEIDEN
+           Seiten (Fadenkreuz seit dem 30.10. abends wieder, auf Dennis' Wunsch). Craftionary,
            BL4 und MW4 haben seit dem 30.10.2026 Neuigkeiten und Anleitungen auf werkstatt.html. Die Klassennamen tragen keine Ziffern: main.js
            zählt Klicks als "kachel-<name>" und liest dafür nur Buchstaben. -->
       <div class="tool-grid">
