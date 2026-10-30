@@ -21,12 +21,25 @@ Startseite für die kleinen Werkzeuge von Dennis_mit_2n — ohne Anmeldung, kein
 - [Collective-Calc](https://dennismit2n.github.io/collective-calc/) — split group expenses, no account, shareable as a link
 - [bigday](https://dennismit2n.github.io/bigday/) — pretty shareable countdown page
 - [Heizwarte](https://dennismit2n.github.io/heizwarte/) — weather with a heating traffic light: when to turn up slow heating (app in German for now)
-- [Fadenkreuz](https://github.com/Dennismit2n/fadenkreuz) — your own crosshair in the exact centre of the screen, drawn in a small editor, on about 1 MB of RAM (Windows download, not a browser tool)
+- [Gaming](https://dennismit2n.github.io/gaming.html) — its own page for game guides, handbooks and gaming tools (see below)
 - [Pocketsum](https://dennismit2n.github.io/pocketsum/) — five small calculators in one file: VAT, tips, fuel prices, dividends and trading costs, offline after the first visit
 
-Same order as the tiles on the page — hand-picked since 13 September 2026, no longer "newest last". Two further tiles sit at the end as placeholders, with no link and no mini tiles: there is nothing to open yet. Real_RAM_cooler, Besucher-Ticker and Fadenkreuz are Windows downloads and fontART comes both ways — which is why neither the headline nor the tiles promise a browser tool. Fadenkreuz’s tile stays black in both themes, like the dark placeholder: its neon green would be unreadable on the light page (1.20:1), so the tile carries fixed colours, and only its section on `werkstatt.html` follows the theme. fontART has three mini tiles instead of two: its main button opens the browser version, and "For Windows" leads to the release. create-masterprompt has three as well, its third one opening the one-page overview from `docs/` — in whichever of the fourteen languages the page is currently set to. create-masterprompt is the first entry that is neither a browser tool nor a Windows program: it is an Agent Skill that runs inside an AI chat, which is why its button leads to the repository and its meta line does not borrow the "no uploads" line of the others.
+Same order as the tiles on the page — hand-picked since 13 September 2026, no longer "newest last". Two further tiles sit at the end as placeholders, with no link and no mini tiles: there is nothing to open yet. Real_RAM_cooler and Besucher-Ticker are Windows downloads and fontART comes both ways — which is why neither the headline nor the tiles promise a browser tool. fontART has three mini tiles instead of two: its main button opens the browser version, and "For Windows" leads to the release. create-masterprompt has three as well, its third one opening the one-page overview from `docs/` — in whichever of the fourteen languages the page is currently set to. create-masterprompt is the first entry that is neither a browser tool nor a Windows program: it is an Agent Skill that runs inside an AI chat, which is why its button leads to the repository and its meta line does not borrow the "no uploads" line of the others.
 
 **fontART is the odd one out**, and the tile says so rather than hiding it: it is the only tool here that is neither open source nor meant to stay free. What this repository links to is the free trial; the full version is being worked on, with no date and no price settled. The reasoning is spelled out in the guide on `werkstatt.html`, because a workshop whose footer says "open source on GitHub" owes an explanation for the one exception.
+
+## Gaming page
+
+Since 30 October 2026 everything to do with games lives on its own page, `gaming.html`, so it stays apart from the other tools. On the start page it is one tile, “Gaming”, in the spot Fadenkreuz used to hold: name, border and button in graphite, the cap a gradient from magenta through cherry red and neon blue to neon green. It has no mini tiles, because it is a collection, not a single tool.
+
+- [Craftionary](https://dennismit2n.github.io/craftionary/) — every Minecraft recipe, where to find items and ores, ready `/give` commands and a banner and pot workshop (English and German)
+- [BL4 Vault-Handbuch](https://dennismit2n.github.io/bl4/) — Borderlands 4 handbook, lives in `bl4/` of this repository (app in German)
+- [MW4 Rüstkammer](https://dennismit2n.github.io/mw4/) — Call of Duty: Modern Warfare 4 builds and time to kill, lives in `mw4/` of this repository (app in German)
+- [Fadenkreuz](https://github.com/Dennismit2n/fadenkreuz) — your own crosshair in the exact centre of the screen, drawn in a small editor, on about 1 MB of RAM (Windows download, not a browser tool). It moved here from the start page.
+- [Real_RAM_cooler](https://github.com/Dennismit2n/Real_RAM_cooler) — also on the start page; its “Clean up for gaming” button is why it belongs here too
+- a placeholder for the game guides still to come, with no link
+
+Fadenkreuz’s tile stays black in both themes, like the dark placeholder: its neon green would be unreadable on the light page (1.20:1), so the tile carries fixed colours, and only its section on `werkstatt.html` follows the theme. Fadenkreuz keeps its news and guide on `werkstatt.html`, in the place of the Gaming tile in the order; Craftionary, BL4 and MW4 have none yet, so their tiles carry no mini tiles. The two app icons of BL4 and MW4 are the square PNGs from their own folders; `.tool-head img` rounds them like every tile icon. Tile clicks count as `kachel-craftionary`, `kachel-vault`, `kachel-ruestkammer` and `kachel-gaming` — the class names carry no digits because `main.js` only reads letters.
 
 ## News and guides
 
@@ -46,7 +59,7 @@ The interface words exist in all 14 languages, and since 14 September 2026 so do
 
 ## Development
 
-No build step — plain HTML, CSS, and JavaScript. 71 files make up the site: two pages, one stylesheet, eight scripts (one of them GoatCounter’s, vendored), nineteen images, three icons, thirty-five screenshots for the guides in `assets/anleitung/`, and two font files with their licence in `assets/fonts/fraunces/`. No npm dependencies.
+No build step — plain HTML, CSS, and JavaScript. 74 files make up the site: three pages, one stylesheet, eight scripts (one of them GoatCounter’s, vendored), twenty-one images, three icons, thirty-five screenshots for the guides in `assets/anleitung/`, and two font files with their licence in `assets/fonts/fraunces/`. No npm dependencies.
 
 ```
 node tools/dev-server.js
