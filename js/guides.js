@@ -2427,22 +2427,22 @@ var GUIDES = {
       ],
       en: [
         'Open the page, or for Windows download the .exe from the releases page and start it. There Windows will say “unknown publisher” because the file is not signed. Continue via “more info” and “run anyway”. Either way, nothing gets installed.',
-        'Pick a character from the bar and paint the black shape of the letter, not the line. Start with n and o, since those two set the rhythm of your typeface. If your hand shakes, the “stabiliser” slider helps.',
+        'Pick a character from the bar and paint the black shape of the letter, not the line. Start with n and o, since those two set the rhythm of your typeface. If your hand shakes, the “Stabilizer” slider helps.',
         'Use “⬇ Export font…” to produce the .ttf. In Windows right-click the file and choose “install for all users”. After that your typeface shows up in Word as “fontART DEMO”.'
       ],
       es: [
         'Abre la página o, para Windows, descarga el .exe desde las versiones y ejecútalo. Allí Windows avisa de «Editor desconocido» porque el archivo no está firmado. Se continúa con «Más información» y «Ejecutar de todas formas». En ninguno de los dos casos se instala nada.',
-        'Elige un carácter de la barra y pinta la superficie negra de la letra, no la línea. Empieza con la n y la o: esas dos fijan el ritmo de tu letra. Si te tiembla la mano, ayuda el control «Stabilisator» (estabilizador).',
+        'Elige un carácter de la barra y pinta la superficie negra de la letra, no la línea. Empieza con la n y la o: esas dos fijan el ritmo de tu letra. Si te tiembla la mano, ayuda el control «Estabilizador».',
         'Con «⬇ Exportar la fuente…» generas el .ttf. En Windows, clic derecho en el archivo, «Instalar para todos los usuarios». Después tu letra aparece en Word como «fontART DEMO».'
       ],
       fr: [
         'Ouvrir la page ou, pour Windows, télécharger le .exe depuis les releases et le lancer. Là, Windows signale « Éditeur inconnu », parce que le fichier n’est pas signé. On continue via « Informations complémentaires » et « Exécuter quand même ». Dans les deux cas, rien n’est installé.',
-        'Choisir un caractère dans la barre et peindre la surface noire de la lettre, pas le trait. Commencez par le n et le o, ces deux-là fixent le rythme de votre écriture. Si la main tremble, le curseur « Stabilisator » (stabilisateur) aide.',
+        'Choisir un caractère dans la barre et peindre la surface noire de la lettre, pas le trait. Commencez par le n et le o, ces deux-là fixent le rythme de votre écriture. Si la main tremble, le curseur « Stabilisateur » aide.',
         'Avec « ⬇ Exporter la police… », produire le .ttf. Dans Windows, clic droit sur le fichier, « Installer pour tous les utilisateurs ». Ensuite votre police figure dans Word sous « fontART DEMO ».'
       ],
       it: [
         'Apri la pagina oppure, per Windows, scarica il file .exe dalle release e avvialo. Lì Windows segnala «Editore sconosciuto» perché il file non è firmato. Prosegui con «Ulteriori informazioni» ed «Esegui comunque». In nessuno dei due casi viene installato qualcosa.',
-        'Scegli un carattere dalla barra e disegna la superficie nera della lettera, non la linea. Comincia con n e o: sono quelle due a fissare il ritmo della tua scrittura. Se la mano trema, ti aiuta il cursore «Stabilisator» (stabilizzatore).',
+        'Scegli un carattere dalla barra e disegna la superficie nera della lettera, non la linea. Comincia con n e o: sono quelle due a fissare il ritmo della tua scrittura. Se la mano trema, ti aiuta il cursore «Stabilizzatore».',
         'Con «⬇ Esporta il font…» genera il .ttf. In Windows fai clic destro sul file e scegli «Installa per tutti gli utenti»: dopodiché il tuo carattere compare in Word sotto «fontART DEMO».'
       ],
       nl: [
@@ -2452,42 +2452,42 @@ var GUIDES = {
       ],
       pl: [
         'Otworzyć stronę albo dla Windows pobrać plik .exe ze strony wydań i uruchomić go. Tam Windows zgłosi „Nieznany wydawca”, bo plik nie jest podpisany. Dalej prowadzą „Więcej informacji” i „Uruchom mimo to”. W żadnym z tych dwóch przypadków nic się nie instaluje.',
-        'Wybrać znak z paska i malować czarną powierzchnię litery, nie linię. Zacznij od n i o, te dwie ustalają rytm twojego pisma. Gdy drży ręka, pomaga suwak „Stabilisator” (stabilizator).',
+        'Wybrać znak z paska i malować czarną powierzchnię litery, nie linię. Zacznij od n i o, te dwie ustalają rytm twojego pisma. Gdy drży ręka, pomaga suwak „Stabilizator”.',
         'Przez „⬇ Eksportuj czcionkę…” utworzyć plik .ttf. W Windows prawy przycisk myszy na pliku, „Zainstaluj dla wszystkich użytkowników”. Potem twoje pismo pojawi się w Wordzie pod „fontART DEMO”.'
       ],
       pt: [
         'Abrir a página ou, para Windows, baixar o .exe da página de versões e iniciar. Aí o Windows avisa «Editor desconhecido», porque o arquivo não está assinado. Para continuar, use «Mais informações» e «Executar assim mesmo». Em nenhum dos dois casos algo é instalado.',
-        'Escolher um caractere na barra e pintar a mancha preta da letra, não a linha. Comece pelo n e pelo o, são esses dois que definem o ritmo da sua letra. Se a mão tremer, o controle «Stabilisator» (estabilizador) ajuda.',
+        'Escolher um caractere na barra e pintar a mancha preta da letra, não a linha. Comece pelo n e pelo o, são esses dois que definem o ritmo da sua letra. Se a mão tremer, o controle «Estabilizador» ajuda.',
         'Com «⬇ Exportar fonte…», criar o .ttf. No Windows, clicar com o botão direito no arquivo e escolher «Instalar para todos os usuários». Depois disso a sua letra aparece no Word com o nome «fontART DEMO».'
       ],
       tr: [
         'Sayfayı açın ya da Windows için .exe dosyasını sürümler sayfasından indirip başlatın. Orada Windows, dosya imzalı olmadığı için “Bilinmeyen yayımcı” uyarısı verir. “Daha fazla bilgi” ve “Yine de çalıştır” üzerinden devam edilir. İki durumda da hiçbir şey kurulmaz.',
-        'Çubuktan bir karakter seçin ve harfin çizgisini değil, siyah yüzeyini boyayın. n ve o ile başlayın, yazınızın ritmini bu ikisi belirler. Eliniz titriyorsa “Stabilisator” (sabitleyici) sürgüsü yardımcı olur.',
+        'Çubuktan bir karakter seçin ve harfin çizgisini değil, siyah yüzeyini boyayın. n ve o ile başlayın, yazınızın ritmini bu ikisi belirler. Eliniz titriyorsa “Sabitleyici” sürgüsü yardımcı olur.',
         '“⬇ Yazı tipini dışa aktar…” ile .ttf dosyasını üretin. Windows’ta dosyaya sağ tıklayıp “Tüm kullanıcılar için yükle” seçeneğini kullanın. Ardından yazınız Word’de “fontART DEMO” adıyla görünür.'
       ],
       ru: [
         'Откройте страницу или для Windows скачайте .exe со страницы выпусков и запустите. Там Windows сообщит «Неизвестный издатель», потому что файл не подписан. Продолжить можно через «Подробнее» и «Выполнить в любом случае». Ни в том, ни в другом случае ничего не устанавливается.',
-        'Выберите символ на панели и нарисуйте сплошную чёрную форму буквы, а не линию. Начните с n и o, эти две задают ритм вашего шрифта. Если дрожит рука, поможет ползунок «Stabilisator» (стабилизатор).',
+        'Выберите символ на панели и нарисуйте сплошную чёрную форму буквы, а не линию. Начните с n и o, эти две задают ритм вашего шрифта. Если дрожит рука, поможет ползунок «Стабилизатор».',
         'Через «⬇ Экспорт шрифта…» создайте .ttf. В Windows правый щелчок по файлу, «Установить для всех пользователей». После этого ваш шрифт появится в Word под именем «fontART DEMO».'
       ],
       hi: [
         'पेज खोलें या Windows के लिए रिलीज़ पेज से .exe डाउनलोड करके शुरू करें। वहाँ Windows “अज्ञात प्रकाशक” की चेतावनी देता है, क्योंकि फ़ाइल पर हस्ताक्षर नहीं हैं। “अधिक जानकारी” और “फिर भी चलाएँ” से आगे बढ़ा जा सकता है। दोनों में से किसी भी हाल में कुछ इंस्टॉल नहीं होता।',
-        'पट्टी से एक वर्ण चुनें और अक्षर की काली सतह बनाएँ, रेखा नहीं। n और o से शुरू करें, यही दोनों आपकी लिखावट की लय तय करते हैं। हाथ काँपता हो, तो “Stabilisator” (स्टेबिलाइज़र) स्लाइडर मदद करता है।',
+        'पट्टी से एक वर्ण चुनें और अक्षर की काली सतह बनाएँ, रेखा नहीं। n और o से शुरू करें, यही दोनों आपकी लिखावट की लय तय करते हैं। हाथ काँपता हो, तो “स्थिरता” स्लाइडर मदद करता है।',
         '“⬇ फ़ॉन्ट एक्सपोर्ट करें…” से .ttf बनाएँ। Windows में फ़ाइल पर दायाँ क्लिक करके “सभी उपयोगकर्ताओं के लिए इंस्टॉल करें” चुनें। उसके बाद आपकी लिखावट Word में “fontART DEMO” के नाम से दिखती है।'
       ],
       zh: [
         '打开这个页面，或者对 Windows 来说，从发布页下载 .exe 并启动它。那时 Windows 会提示“未知发布者”，因为这个文件没有签名。通过“更多信息”和“仍要运行”继续。两种情况下都不会安装任何东西。',
-        '从字符条里选一个字符，画出字母的黑色形状，而不是那条线。先从 n 和 o 开始，这两个定下了你这套字的节奏。手抖的话，“稳定器”滑块能帮上忙。',
+        '从字符条里选一个字符，画出字母的黑色形状，而不是那条线。先从 n 和 o 开始，这两个定下了你这套字的节奏。手抖的话，“防抖”滑块能帮上忙。',
         '通过“⬇ 导出字体…”生成 .ttf。在 Windows 里右键点击这个文件，选“为所有用户安装”。之后你的字体就会在 Word 里以“fontART DEMO”出现。'
       ],
       ja: [
         'ページを開くか、Windows 版なら、リリースページから .exe をダウンロードして起動します。そこでは、ファイルに署名がないため Windows が「不明な発行元」と表示します。「詳細情報」と「実行」から先に進めます。どちらの場合もインストールは行われません。',
-        '並んだ文字からひとつ選び、線ではなく文字の黒い面を描きます。まず n と o から始めてください。この2つがあなたの書体のリズムを決めます。手が震えるなら「Stabilisator」（手ぶれ補正）のスライダーが助けになります。',
+        '並んだ文字からひとつ選び、線ではなく文字の黒い面を描きます。まず n と o から始めてください。この2つがあなたの書体のリズムを決めます。手が震えるなら「手ぶれ補正」のスライダーが助けになります。',
         '「⬇ フォントを書き出す…」で .ttf を作ります。Windows ではファイルを右クリックして「すべてのユーザーに対してインストール」を選びます。そのあと、あなたの書体が Word に「fontART DEMO」として並びます。'
       ],
       ko: [
         '페이지를 열거나, Windows용으로 릴리스에서 .exe를 내려받아 실행합니다. 그때 파일에 서명이 없어서 Windows가 “알 수 없는 게시자”라고 알립니다. “추가 정보”와 “실행”을 거쳐 계속 진행하면 됩니다. 어느 쪽이든 설치되는 것은 없습니다.',
-        '막대에서 글자를 하나 고르고 글자의 검은 면을 칠합니다. 선이 아니라 면입니다. n과 o부터 시작합니다. 그 둘이 글씨의 리듬을 정합니다. 손이 떨린다면 “Stabilisator”(안정기) 슬라이더가 도와줍니다.',
+        '막대에서 글자를 하나 고르고 글자의 검은 면을 칠합니다. 선이 아니라 면입니다. n과 o부터 시작합니다. 그 둘이 글씨의 리듬을 정합니다. 손이 떨린다면 “손떨림 보정” 슬라이더가 도와줍니다.',
         '“⬇ 글꼴 내보내기…”로 .ttf를 만듭니다. Windows에서 파일을 오른쪽 클릭하고 “모든 사용자용으로 설치”를 고릅니다. 그다음부터 Word에 내 글꼴이 “fontART DEMO”로 나타납니다.'
       ]
     },
