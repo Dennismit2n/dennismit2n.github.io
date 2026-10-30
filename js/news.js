@@ -465,6 +465,23 @@ var NEWS = {
   collective: [
     {
       date: '2026-10-30',
+      de: 'Längere Beschriftungen wie „Zuletzt benutzt“ ragen nicht mehr in die Knöpfe daneben, sie brechen jetzt in zwei Zeilen um. Betroffen waren elf der vierzehn Sprachen. Auf Niederländisch passt außerdem die Ergebnis-Tabelle jetzt aufs Handy.',
+      en: 'Longer labels such as “Recently used” no longer run into the buttons next to them. They now wrap onto two lines. Eleven of the fourteen languages were affected. In Dutch, the result table now also fits on a phone.',
+      es: 'Las etiquetas largas como «Usado hace poco» ya no se meten en los botones de al lado: ahora ocupan dos líneas. Afectaba a once de los catorce idiomas. En neerlandés, además, la tabla de resultados ya cabe en el móvil.',
+      fr: 'Les libellés longs comme « Utilisé récemment » ne débordent plus sur les boutons voisins : ils passent maintenant sur deux lignes. Onze des quatorze langues étaient concernées. En néerlandais, le tableau des résultats tient aussi désormais sur un téléphone.',
+      it: 'Le etichette lunghe come «Usato di recente» non finiscono più sopra i pulsanti accanto: ora vanno su due righe. Riguardava undici delle quattordici lingue. In olandese, inoltre, la tabella dei risultati ora sta anche sul telefono.',
+      nl: 'Lange labels zoals ‘Onlangs gebruikt’ lopen niet meer over de knoppen ernaast, ze gaan nu door op een tweede regel. Het ging om elf van de veertien talen. In het Nederlands past de resultatentabel nu ook op een telefoon.',
+      pl: 'Dłuższe etykiety, takie jak „Ostatnio używane”, nie nachodzą już na przyciski obok, tylko łamią się na dwa wiersze. Dotyczyło to jedenastu z czternastu języków. W wersji niderlandzkiej tabela wyników mieści się teraz także na telefonie.',
+      pt: 'Rótulos longos como «Esteve presente» não invadem mais os botões ao lado, agora quebram em duas linhas. Isso afetava onze dos quatorze idiomas. Em neerlandês, a tabela de resultados agora também cabe no celular.',
+      tr: '“Son kullanılanlar” gibi uzun etiketler artık yanındaki düğmelerin üzerine taşmıyor, iki satıra bölünüyor. On dört dilin on birinde bu sorun vardı. Felemenkçede sonuç tablosu da artık telefona sığıyor.',
+      ru: 'Длинные подписи в строке ввода больше не наезжают на кнопки рядом, а переносятся на вторую строку. Это касалось одиннадцати из четырнадцати языков. В нидерландской версии таблица результатов теперь тоже помещается на экране телефона.',
+      hi: '“हाल में इस्तेमाल किए” जैसे लंबे लेबल अब पास के बटनों पर नहीं चढ़ते, बल्कि दो पंक्तियों में बँट जाते हैं। यह समस्या चौदह में से ग्यारह भाषाओं में थी। डच में नतीजों की तालिका भी अब फ़ोन पर पूरी आती है।',
+      zh: '输入栏里较长的标签不再压到旁边的按钮上，而是分成两行显示。十四种语言中有十一种受到影响。荷兰语版的结果表格现在在手机上也能完整显示。',
+      ja: '「最近使ったもの」のような長いラベルが隣のボタンに重ならなくなり、2行に折り返すようになりました。14言語のうち11言語で起きていた問題です。オランダ語では、結果の表もスマートフォンの画面に収まるようになりました。',
+      ko: '입력 줄의 긴 레이블이 이제 옆 버튼과 겹치지 않고 두 줄로 나뉩니다. 열네 개 언어 중 열한 개 언어에서 생기던 문제입니다. 네덜란드어에서는 결과 표도 이제 휴대폰 화면에 들어갑니다.'
+    },
+    {
+      date: '2026-10-30',
       de: 'Die portugiesische Oberfläche spricht jetzt durchgehend brasilianisches Portugiesisch, mit „você“ als Anrede. Vorher mischten sich Wörter aus dem europäischen Portugiesisch darunter, etwa „Partilhar“ und „ficheiro“.',
       en: 'The Portuguese interface now speaks Brazilian Portuguese throughout, with “você” as the form of address. Before, words from European Portuguese were mixed in, such as “Partilhar” and “ficheiro”.',
       es: 'La interfaz en portugués habla ahora portugués de Brasil de principio a fin, con «você» como tratamiento. Antes se colaban palabras del portugués europeo, como «Partilhar» y «ficheiro».',
