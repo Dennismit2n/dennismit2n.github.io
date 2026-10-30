@@ -47,6 +47,14 @@
       url: 'https://dennismit2n.github.io/heizwarte/', ctaKey: 'openTool' },
     { key: 'fadenkreuz', name: 'Fadenkreuz', icon: './assets/fadenkreuz.svg',
       url: 'https://github.com/Dennismit2n/fadenkreuz/releases/latest', ctaKey: 'downloadTool' },
+    // Die drei Spiele-Werkzeuge der Gaming-Seite (gaming.html) stehen hinter Fadenkreuz,
+    // das dort ebenfalls zu Hause ist. BL4 und MW4 liegen in diesem Repo (bl4/, mw4/).
+    { key: 'craftionary', name: 'Craftionary', icon: './assets/craftionary.svg',
+      url: 'https://dennismit2n.github.io/craftionary/', ctaKey: 'openTool' },
+    { key: 'vault', name: 'BL4 Vault-Handbuch', icon: './assets/bl4.svg',
+      url: 'https://dennismit2n.github.io/bl4/', ctaKey: 'openTool' },
+    { key: 'ruestkammer', name: 'MW4 Rüstkammer', icon: './assets/mw4.svg',
+      url: 'https://dennismit2n.github.io/mw4/', ctaKey: 'openTool' },
     { key: 'pocketsum', name: 'Pocketsum', icon: './assets/pocketsum.svg',
       url: 'https://dennismit2n.github.io/pocketsum/', ctaKey: 'openTool' }
   ];

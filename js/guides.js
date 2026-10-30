@@ -3118,6 +3118,694 @@ var GUIDES = {
       ko: 'https://github.com/Dennismit2n/fadenkreuz/blob/main/README.md'
     }
   },
+  craftionary: {
+    purpose: {
+      de: 'Jedes Rezept aus Minecraft Java 26.3 so, wie es im Spiel aussieht – in der Werkbank, im Ofen, im Braustand oder wo es sonst entsteht. Dazu, wo du etwas findest (Erz-Höhen, Truhen, Kreaturen, Handel), fertige /give-Befehle und eine Werkstatt für Banner, Schilde und Krüge. Craftionary läuft im Browser auf dem Handy (Android und iOS) und am Desktop und lässt sich mit dem Knopf „Installieren“ als App einrichten.',
+      en: 'Every recipe in Minecraft Java 26.3 the way the game shows it – at the crafting table, in the furnace, at the brewing stand or wherever it is made. Plus where to find things (ore heights, chests, mobs, trading), ready /give commands and a workshop for banners, shields and pots. Craftionary runs in the browser on your phone (Android and iOS) and on desktop, and the “Install” button sets it up as an app.',
+      es: 'Cada receta de Minecraft Java 26.3 tal como la muestra el juego: en la mesa de crafteo, el horno, el soporte para pociones o donde se fabrique. Además, dónde encontrar cada cosa (alturas de minerales, cofres, criaturas, comercio), comandos /give listos y un taller de estandartes, escudos y vasijas. Craftionary funciona en el navegador del móvil (Android e iOS) y del ordenador, y el botón «Install» lo instala como app.',
+      fr: 'Chaque recette de Minecraft Java 26.3 telle que le jeu l’affiche – à l’établi, au four, à l’alambic ou là où elle se fabrique. En plus : où trouver les objets (hauteurs des minerais, coffres, créatures, commerce), des commandes /give prêtes et un atelier pour bannières, boucliers et pots. Craftionary fonctionne dans le navigateur du téléphone (Android et iOS) et de l’ordinateur, et le bouton « Install » l’installe comme application.',
+      it: 'Ogni ricetta di Minecraft Java 26.3 come la mostra il gioco: al banco da lavoro, nella fornace, nel banco di distillazione o dove viene creata. In più: dove trovare le cose (altezze dei minerali, bauli, creature, commercio), comandi /give pronti e un laboratorio per stendardi, scudi e vasi. Craftionary funziona nel browser del telefono (Android e iOS) e del computer, e il pulsante «Install» lo installa come app.',
+      nl: 'Elk recept uit Minecraft Java 26.3 zoals het spel het laat zien – aan de werkbank, in de oven, in de brouwstandaard of waar het ook gemaakt wordt. Daarbij: waar je iets vindt (ertshoogtes, kisten, wezens, handel), kant-en-klare /give-commando’s en een werkplaats voor banieren, schilden en potten. Craftionary draait in de browser op je telefoon (Android en iOS) en op de computer, en de knop ‘Install’ installeert het als app.',
+      pl: 'Każda receptura z Minecraft Java 26.3 tak, jak pokazuje ją gra – przy stole rzemieślniczym, w piecu, w statywie alchemicznym albo tam, gdzie powstaje. Do tego: gdzie co znaleźć (wysokości rud, skrzynie, stworzenia, handel), gotowe komendy /give i warsztat sztandarów, tarcz i naczyń. Craftionary działa w przeglądarce na telefonie (Android i iOS) i na komputerze, a przycisk „Install” instaluje go jako aplikację.',
+      pt: 'Cada receita do Minecraft Java 26.3 tal como o jogo a mostra – na bancada de trabalho, na fornalha, no suporte de poções ou onde for feita. Além disso: onde encontrar cada coisa (alturas dos minérios, baús, criaturas, comércio), comandos /give prontos e uma oficina de estandartes, escudos e vasos. O Craftionary funciona no navegador do telemóvel (Android e iOS) e do computador, e o botão «Install» instala-o como app.',
+      tr: 'Minecraft Java 26.3’teki her tarif, oyunda göründüğü gibi – çalışma masasında, fırında, simya standında ya da nerede yapılıyorsa orada. Ayrıca bir şeyi nerede bulacağınız (maden yükseklikleri, sandıklar, yaratıklar, ticaret), hazır /give komutları ve sancak, kalkan ve çömlekler için bir atölye. Craftionary telefonda (Android ve iOS) ve bilgisayarda tarayıcıda çalışır; “Install” düğmesi onu uygulama olarak kurar.',
+      ru: 'Каждый рецепт Minecraft Java 26.3 в том виде, в каком его показывает игра, – на верстаке, в печи, в варочной стойке или там, где он создаётся. Кроме того: где что найти (высоты руд, сундуки, существа, торговля), готовые команды /give и мастерская флагов, щитов и горшков. Craftionary работает в браузере на телефоне (Android и iOS) и на компьютере, а кнопка «Install» устанавливает его как приложение.',
+      hi: 'Minecraft Java 26.3 की हर रेसिपी वैसी ही, जैसी गेम में दिखती है – क्राफ़्टिंग टेबल, भट्टी, ब्रूइंग स्टैंड या जहाँ भी वह बनती है। साथ में: कौन-सी चीज़ कहाँ मिलती है (अयस्कों की ऊँचाई, संदूक, जीव, व्यापार), तैयार /give कमांड और बैनर, ढाल व मटकों की वर्कशॉप। Craftionary फ़ोन (Android और iOS) और डेस्कटॉप के ब्राउज़र में चलता है, और “Install” बटन से ऐप की तरह इंस्टॉल होता है।',
+      zh: 'Minecraft Java 26.3 的每个配方，都按游戏里的样子显示——在工作台、熔炉、酿造台或任何制作它的地方。此外还有：东西在哪里找（矿石高度、箱子、生物、交易）、现成的 /give 命令，以及旗帜、盾牌和陶罐的工坊。Craftionary 可在手机（Android 和 iOS）和电脑的浏览器中运行，点“Install”按钮即可安装为应用。',
+      ja: 'Minecraft Java 26.3 のすべてのレシピを、ゲームと同じ見た目で表示します。作業台でも、かまどでも、醸造台でも、作られる場所のとおりに。さらに、どこで手に入るか（鉱石の高さ、チェスト、モブ、取引）、すぐ使える /give コマンド、旗・盾・飾り壺の工房もあります。Craftionary はスマートフォン（Android と iOS）とパソコンのブラウザーで動き、「Install」ボタンでアプリとしてインストールできます。',
+      ko: 'Minecraft Java 26.3의 모든 조합법을 게임에 나오는 모습 그대로 보여 줍니다. 제작대든 화로든 양조기든 만드는 곳 그대로요. 그리고 어디서 구하는지(광석 높이, 상자, 몹, 거래), 바로 쓰는 /give 명령어, 현수막·방패·항아리 공방도 있습니다. Craftionary는 휴대폰(Android와 iOS)과 데스크톱 브라우저에서 돌아가고, ‘Install’ 버튼으로 앱처럼 설치할 수 있습니다.'
+    },
+    shots: [
+      {
+        files: {
+          de: ['craftionary-de.webp', 1446, 848],
+          en: ['craftionary-en.webp', 1446, 848]
+        },
+        alt: {
+          de: 'Drei Handy-Ansichten von Craftionary im Dunkelmodus: das Rezept für das Leuchtfeuer im Werkbank-Fenster mit fünf Glas, einem Netherstern und drei Obsidian; die Fundorte von Diamant als Höhenkurve mit der besten Höhe Y −59; die Muster-Werkstatt mit einem türkisen Banner und Schild samt Creeper-Gesicht, Rand und Farbverlauf.',
+          en: 'Three phone screens of Craftionary in dark mode: the beacon recipe in the crafting table window with five glass, one nether star and three obsidian; where to find diamonds as a height curve with the best level at Y −59; the pattern workshop with a cyan banner and shield showing a creeper face, a border and a gradient.',
+          es: 'Tres pantallas de móvil de Craftionary en modo oscuro: la receta del faro en la ventana de la mesa de crafteo con cinco cristales, una estrella del Nether y tres de obsidiana; dónde encontrar diamantes como curva de alturas con la mejor altura en Y −59; el taller de diseños con un estandarte y un escudo cian con cara de creeper, borde y degradado.',
+          fr: 'Trois écrans de téléphone de Craftionary en mode sombre : la recette de la balise dans la fenêtre de l’établi avec cinq verres, une étoile du Nether et trois obsidiennes ; où trouver les diamants sous forme de courbe des hauteurs avec la meilleure hauteur en Y −59 ; l’atelier de motifs avec une bannière et un bouclier cyan portant une tête de creeper, une bordure et un dégradé.',
+          it: 'Tre schermate di telefono di Craftionary in modalità scura: la ricetta del faro nella finestra del banco da lavoro con cinque vetri, una stella del Nether e tre ossidiane; dove trovare i diamanti come curva delle altezze con l’altezza migliore a Y −59; il laboratorio di motivi con uno stendardo e uno scudo ciano con faccia di creeper, bordo e sfumatura.',
+          nl: 'Drie telefoonschermen van Craftionary in donkere modus: het recept voor het baken in het werkbankvenster met vijf glas, één Nether-ster en drie obsidiaan; waar je diamanten vindt als hoogtecurve met de beste hoogte op Y −59; de patroonwerkplaats met een cyaan banier en schild met creepergezicht, rand en kleurverloop.',
+          pl: 'Trzy ekrany telefonu z Craftionary w trybie ciemnym: receptura latarni w oknie stołu rzemieślniczego z pięcioma szkłami, jedną gwiazdą Netheru i trzema obsydianami; gdzie znaleźć diamenty jako krzywa wysokości z najlepszą wysokością Y −59; warsztat wzorów z cyjanowym sztandarem i tarczą z twarzą creepera, obramowaniem i gradientem.',
+          pt: 'Três ecrãs de telemóvel do Craftionary em modo escuro: a receita do sinalizador na janela da bancada de trabalho com cinco vidros, uma estrela do Nether e três obsidianas; onde encontrar diamantes como curva de alturas com a melhor altura em Y −59; a oficina de padrões com um estandarte e um escudo ciano com cara de creeper, borda e degradê.',
+          tr: 'Craftionary’den koyu modda üç telefon ekranı: beş cam, bir Nether yıldızı ve üç obsidyenle çalışma masası penceresinde fener tarifi; en iyi yükseklik Y −59 olan yükseklik eğrisi olarak elmasların bulunduğu yerler; creeper yüzü, kenarlık ve renk geçişli camgöbeği bir sancak ve kalkanla desen atölyesi.',
+          ru: 'Три экрана телефона с Craftionary в тёмной теме: рецепт маяка в окне верстака с пятью стёклами, звездой Незера и тремя обсидианами; где искать алмазы – кривая высот с лучшей высотой Y −59; мастерская узоров с бирюзовым флагом и щитом с лицом крипера, каймой и градиентом.',
+          hi: 'डार्क मोड में Craftionary की तीन फ़ोन स्क्रीन: क्राफ़्टिंग टेबल की विंडो में बीकन की रेसिपी, पाँच ग्लास, एक नेदर स्टार और तीन ऑब्सीडियन के साथ; हीरे कहाँ मिलते हैं, ऊँचाई के कर्व के रूप में, सबसे अच्छी ऊँचाई Y −59; पैटर्न वर्कशॉप, जिसमें क्रीपर के चेहरे, किनारी और ग्रेडिएंट वाला सियान बैनर और ढाल है।',
+          zh: 'Craftionary 深色模式下的三个手机画面：工作台窗口里的信标配方，需要五块玻璃、一颗下界之星和三块黑曜石；钻石的分布高度曲线，最佳高度为 Y −59；图案工坊里一面青色旗帜和盾牌，带苦力怕脸、边框和渐变。',
+          ja: 'ダークモードの Craftionary のスマートフォン画面3枚：作業台の画面に表示したビーコンのレシピ（ガラス5個、ネザースター1個、黒曜石3個）、最適な高さ Y −59 を示したダイヤモンドの高さの曲線、クリーパーの顔と縁取りとグラデーションの入ったシアンの旗と盾を作る模様の工房。',
+          ko: '어두운 모드의 Craftionary 휴대폰 화면 세 개: 제작대 창에 표시된 신호기 조합법(유리 다섯 개, 네더의 별 하나, 흑요석 세 개), 최적 높이 Y −59가 표시된 다이아몬드 높이 곡선, 크리퍼 얼굴과 테두리와 그라데이션이 들어간 청록색 현수막과 방패가 있는 무늬 공방.'
+        }
+      }
+    ],
+    steps: {
+      de: [
+        'Oben suchen, auf Deutsch oder Englisch – die Suche verträgt Tippfehler und Mengen („16 Fackeln“). Oder darunter eine der neun Stationen antippen und im Rezeptbuch blättern.',
+        'Auf der Item-Seite zeigt „Herstellen“ das Rezept im Spielfenster samt Menge, Brennstoff und Resten, „Verwendet in“ alles, wofür du es brauchst, und „Fundorte“, wo es vorkommt – bei Erzen mit Höhenkurve und bester Y-Höhe. Darüber stehen die /give-Befehle zum Kopieren.',
+        'Für die Optik wie im Spiel in den Einstellungen einmal „Von Mojang laden“ (rund 41 MB); danach läuft Craftionary auch ohne Netz. Zeigt der Browser oben den Knopf „Installieren“, richtet ein Tipp die App ein; auf dem iPhone geht das in Safari über Teilen und „Zum Home-Bildschirm“.'
+      ],
+      en: [
+        'Search at the top, in English or German – the search copes with typos and amounts (“16 torches”). Or tap one of the nine stations below it and browse its recipe book.',
+        'On an item page, “How to make” shows the recipe in the game window with amount, fuel and leftovers, “Used in” everything it is needed for, and “Where to find” where it turns up – for ores with a height curve and the best Y level. The /give commands to copy sit above.',
+        'For the in-game look, tap “Load from Mojang” once in the settings (about 41 MB); after that Craftionary also works offline. If your browser shows the “Install” button at the top, one tap sets up the app; on an iPhone, use Share and “Add to Home Screen” in Safari.'
+      ],
+      es: [
+        'Busca arriba, en inglés o alemán: la búsqueda tolera erratas y cantidades («16 torches»). O toca debajo una de las nueve estaciones y hojea su libro de recetas.',
+        'En la página de un objeto, «How to make» muestra la receta en la ventana del juego con cantidad, combustible y sobrantes, «Used in» todo para lo que sirve y «Where to find» dónde aparece; en los minerales, con curva de alturas y la mejor altura Y. Encima están los comandos /give para copiar.',
+        'Para el aspecto del juego, pulsa una vez «Load from Mojang» en los ajustes (unos 41 MB); después Craftionary funciona también sin conexión. Si el navegador muestra arriba el botón «Install», un toque instala la app; en el iPhone, usa Compartir y «Añadir a pantalla de inicio» en Safari.'
+      ],
+      fr: [
+        'Cherchez en haut, en anglais ou en allemand – la recherche tolère les fautes de frappe et les quantités (« 16 torches »). Ou touchez l’un des neuf postes juste en dessous et feuilletez son livre de recettes.',
+        'Sur la page d’un objet, « How to make » montre la recette dans la fenêtre du jeu avec quantité, combustible et restes, « Used in » tout ce à quoi il sert, et « Where to find » où il se trouve – pour les minerais avec une courbe des hauteurs et la meilleure hauteur Y. Les commandes /give à copier se trouvent au-dessus.',
+        'Pour l’aspect du jeu, appuyez une fois sur « Load from Mojang » dans les réglages (environ 41 Mo) ; ensuite Craftionary fonctionne aussi hors ligne. Si votre navigateur affiche en haut le bouton « Install », un appui installe l’application ; sur iPhone, passez par Partager et « Sur l’écran d’accueil » dans Safari.'
+      ],
+      it: [
+        'Cerca in alto, in inglese o tedesco: la ricerca tollera errori di battitura e quantità («16 torches»). Oppure tocca qui sotto una delle nove postazioni e sfoglia il suo libro delle ricette.',
+        'Nella pagina di un oggetto, «How to make» mostra la ricetta nella finestra del gioco con quantità, combustibile e avanzi, «Used in» tutto ciò per cui serve e «Where to find» dove si trova; per i minerali con curva delle altezze e l’altezza Y migliore. Sopra ci sono i comandi /give da copiare.',
+        'Per l’aspetto del gioco, tocca una volta «Load from Mojang» nelle impostazioni (circa 41 MB); poi Craftionary funziona anche offline. Se il browser mostra in alto il pulsante «Install», un tocco installa l’app; su iPhone usa Condividi e «Aggiungi alla schermata Home» in Safari.'
+      ],
+      nl: [
+        'Zoek bovenaan, in het Engels of Duits – de zoekfunctie kan tegen typfouten en aantallen (‘16 torches’). Of tik eronder op een van de negen werkstations en blader door het receptenboek.',
+        'Op een itempagina toont ‘How to make’ het recept in het spelvenster met aantal, brandstof en restjes, ‘Used in’ alles waarvoor je het nodig hebt en ‘Where to find’ waar het voorkomt – bij ertsen met een hoogtecurve en de beste Y-hoogte. Daarboven staan de /give-commando’s om te kopiëren.',
+        'Voor het uiterlijk van het spel tik je in de instellingen één keer op ‘Load from Mojang’ (ongeveer 41 MB); daarna werkt Craftionary ook offline. Toont je browser bovenaan de knop ‘Install’, dan installeer je de app met één tik; op een iPhone gaat dat in Safari via Deel en ‘Zet op beginscherm’.'
+      ],
+      pl: [
+        'Szukaj u góry, po angielsku lub niemiecku – wyszukiwarka radzi sobie z literówkami i ilościami („16 torches”). Albo dotknij pod spodem jednego z dziewięciu stanowisk i przeglądaj jego księgę receptur.',
+        'Na stronie przedmiotu „How to make” pokazuje recepturę w oknie gry z ilością, paliwem i resztkami, „Used in” wszystko, do czego jest potrzebny, a „Where to find”, gdzie występuje – przy rudach z krzywą wysokości i najlepszą wysokością Y. Nad tym są komendy /give do skopiowania.',
+        'Dla wyglądu jak w grze dotknij raz w ustawieniach „Load from Mojang” (ok. 41 MB); potem Craftionary działa też offline. Jeśli przeglądarka pokazuje u góry przycisk „Install”, jedno dotknięcie instaluje aplikację; na iPhonie użyj w Safari Udostępnij i „Do ekranu początkowego”.'
+      ],
+      pt: [
+        'Pesquise no topo, em inglês ou alemão – a pesquisa aguenta erros de escrita e quantidades («16 torches»). Ou toque logo abaixo numa das nove estações e folheie o seu livro de receitas.',
+        'Na página de um item, «How to make» mostra a receita na janela do jogo com quantidade, combustível e sobras, «Used in» tudo para que serve e «Where to find» onde aparece – nos minérios com curva de alturas e a melhor altura Y. Por cima estão os comandos /give para copiar.',
+        'Para o aspeto do jogo, toque uma vez em «Load from Mojang» nas definições (cerca de 41 MB); depois o Craftionary também funciona offline. Se o navegador mostrar no topo o botão «Install», um toque instala a app; no iPhone, use Partilhar e «Adicionar ao ecrã principal» no Safari.'
+      ],
+      tr: [
+        'Üstte İngilizce ya da Almanca arayın – arama yazım hatalarını ve miktarları kaldırır (“16 torches”). Ya da hemen altındaki dokuz istasyondan birine dokunup tarif kitabına göz atın.',
+        'Bir eşya sayfasında “How to make” tarifi oyun penceresinde miktar, yakıt ve artanlarla gösterir, “Used in” neye yaradığını, “Where to find” ise nerede bulunduğunu – madenlerde yükseklik eğrisi ve en iyi Y yüksekliğiyle. Kopyalanacak /give komutları bunun üstündedir.',
+        'Oyundaki görünüm için ayarlarda bir kez “Load from Mojang”a dokunun (yaklaşık 41 MB); sonra Craftionary çevrimdışı da çalışır. Tarayıcınız üstte “Install” düğmesini gösteriyorsa tek dokunuşla uygulama kurulur; iPhone’da Safari’de Paylaş ve “Ana Ekrana Ekle”yi kullanın.'
+      ],
+      ru: [
+        'Ищите вверху на английском или немецком – поиск прощает опечатки и понимает количества («16 torches»). Или коснитесь под ним одной из девяти станций и листайте её книгу рецептов.',
+        'На странице предмета «How to make» показывает рецепт в окне игры с количеством, топливом и остатками, «Used in» – всё, для чего он нужен, а «Where to find» – где он встречается; у руд с кривой высот и лучшей высотой Y. Над этим – команды /give для копирования.',
+        'Для вида как в игре один раз нажмите в настройках «Load from Mojang» (около 41 МБ); после этого Craftionary работает и офлайн. Если браузер показывает вверху кнопку «Install», одно касание установит приложение; на iPhone используйте в Safari «Поделиться» и «На экран „Домой“».'
+      ],
+      hi: [
+        'ऊपर अंग्रेज़ी या जर्मन में खोजें – खोज टाइपो और मात्राएँ समझती है (“16 torches”)। या उसके नीचे नौ स्टेशनों में से किसी पर टैप करके उसकी रेसिपी बुक देखें।',
+        'आइटम पेज पर “How to make” रेसिपी को गेम की विंडो में मात्रा, ईंधन और बचे सामान के साथ दिखाता है, “Used in” वह सब जिसमें यह लगता है, और “Where to find” कि यह कहाँ मिलता है – अयस्कों के लिए ऊँचाई कर्व और सबसे अच्छी Y ऊँचाई के साथ। ऊपर कॉपी करने के लिए /give कमांड हैं।',
+        'गेम जैसे रूप के लिए सेटिंग्स में एक बार “Load from Mojang” दबाएँ (लगभग 41 MB); उसके बाद Craftionary ऑफ़लाइन भी चलता है। अगर ब्राउज़र ऊपर “Install” बटन दिखाता है, तो एक टैप से ऐप इंस्टॉल हो जाता है; iPhone पर Safari में शेयर और “होम स्क्रीन में जोड़ें” इस्तेमाल करें।'
+      ],
+      zh: [
+        '在顶部用英语或德语搜索——搜索能容忍错别字，也认得数量（“16 torches”）。也可以点下方九个工作站之一，翻看它的配方书。',
+        '在物品页上，“How to make”在游戏窗口里显示配方及数量、燃料和剩余，“Used in”列出它的所有用途，“Where to find”显示在哪里出现——矿石还有高度曲线和最佳 Y 高度。上方是可复制的 /give 命令。',
+        '想要游戏里的外观，在设置里点一次“Load from Mojang”（约 41 MB）；之后 Craftionary 也能离线使用。如果浏览器在顶部显示“Install”按钮，点一下即可安装应用；在 iPhone 上，请用 Safari 的“分享”和“添加到主屏幕”。'
+      ],
+      ja: [
+        '上の検索欄に英語かドイツ語で入力します。打ち間違いや数量（「16 torches」）にも対応します。または、その下の9つの作業場所のどれかをタップしてレシピブックを見ます。',
+        'アイテムのページでは「How to make」がレシピをゲーム画面のとおりに数量・燃料・余りつきで、「Used in」が使い道を、「Where to find」が入手場所を表示します。鉱石なら高さの曲線と最適な Y 座標も。その上にコピーできる /give コマンドがあります。',
+        'ゲームと同じ見た目にするには、設定で一度「Load from Mojang」（約 41 MB）を押します。その後はオフラインでも使えます。ブラウザーが上部に「Install」ボタンを表示していれば、タップでアプリをインストールできます。iPhone では Safari の共有から「ホーム画面に追加」を使います。'
+      ],
+      ko: [
+        '위에서 영어나 독일어로 검색합니다. 오타와 수량(‘16 torches’)도 알아듣습니다. 또는 그 아래 아홉 작업대 중 하나를 눌러 조합법 책을 넘겨 보세요.',
+        '아이템 페이지에서 ‘How to make’는 조합법을 게임 창 그대로 수량, 연료, 남는 양과 함께 보여 주고, ‘Used in’은 쓰이는 곳을, ‘Where to find’는 나오는 곳을 보여 줍니다. 광석이면 높이 곡선과 최적 Y 높이까지요. 그 위에 복사할 /give 명령어가 있습니다.',
+        '게임 같은 모습을 원하면 설정에서 ‘Load from Mojang’을 한 번 누르세요(약 41 MB). 그 뒤로는 오프라인에서도 작동합니다. 브라우저가 위쪽에 ‘Install’ 버튼을 보여 주면 한 번 눌러 앱을 설치하고, iPhone에서는 Safari의 공유 → ‘홈 화면에 추가’를 쓰면 됩니다.'
+      ]
+    },
+    pitfalls: {
+      de: [
+        'Craftionary kennt Minecraft Java 26.3. Bedrock und ältere Versionen haben zum Teil andere Rezepte.',
+        'Die /give-Befehle brauchen eingeschaltete Cheats. Was länger als 256 Zeichen ist, passt nicht in den Chat – dann einen Befehlsblock nehmen.',
+        'Die Chancen unter „Fundorte“ sind ohne Glück, Plünderung und Behutsamkeit gerechnet. Strukturnamen haben im Spiel keine offizielle Übersetzung.',
+        'Craftionary bringt keine Minecraft-Grafiken mit: Ohne geladene Texturen stehen in den Feldern Buchstaben mit Legende. Wer die Texturen vor der Muster-Werkstatt geladen hat, lädt sie für deren Vorschau einmal neu.',
+        'Die App gibt es auf Deutsch und Englisch.'
+      ],
+      en: [
+        'Craftionary covers Minecraft Java 26.3. Bedrock and older versions sometimes have different recipes.',
+        'The /give commands need cheats switched on. Anything longer than 256 characters does not fit into chat – use a command block instead.',
+        'The chances under “Where to find” leave out Fortune, Looting and Silk Touch. Structure names have no official translation in the game.',
+        'Craftionary ships no Minecraft artwork: without loaded textures the slots show letters with a key. If you loaded the textures before the pattern workshop existed, load them once more for its preview.',
+        'The app speaks English and German.'
+      ],
+      es: [
+        'Craftionary cubre Minecraft Java 26.3. Bedrock y las versiones antiguas tienen a veces otras recetas.',
+        'Los comandos /give necesitan los trucos activados. Lo que pase de 256 caracteres no cabe en el chat: entonces usa un bloque de comandos.',
+        'Las probabilidades de «Where to find» no incluyen Fortuna, Botín ni Toque de seda. Los nombres de las estructuras no tienen traducción oficial en el juego.',
+        'Craftionary no trae gráficos de Minecraft: sin texturas cargadas, las casillas muestran letras con una leyenda. Si cargaste las texturas antes de que existiera el taller de diseños, vuelve a cargarlas una vez para su vista previa.',
+        'La app está en inglés y alemán.'
+      ],
+      fr: [
+        'Craftionary couvre Minecraft Java 26.3. Bedrock et les anciennes versions ont parfois d’autres recettes.',
+        'Les commandes /give demandent les commandes de triche activées. Au-delà de 256 caractères, cela ne tient pas dans le chat – utilisez alors un bloc de commande.',
+        'Les probabilités de « Where to find » ne tiennent pas compte de Fortune, Butin ni Toucher de soie. Les noms des structures n’ont pas de traduction officielle dans le jeu.',
+        'Craftionary ne fournit aucun graphisme de Minecraft : sans textures chargées, les cases affichent des lettres avec une légende. Si vous avez chargé les textures avant l’atelier de motifs, rechargez-les une fois pour son aperçu.',
+        'L’application existe en anglais et en allemand.'
+      ],
+      it: [
+        'Craftionary copre Minecraft Java 26.3. Bedrock e le versioni più vecchie hanno a volte ricette diverse.',
+        'I comandi /give richiedono i trucchi attivi. Ciò che supera i 256 caratteri non entra nella chat: in quel caso usa un blocco comandi.',
+        'Le probabilità sotto «Where to find» non tengono conto di Fortuna, Saccheggio e Tocco di velluto. I nomi delle strutture non hanno una traduzione ufficiale nel gioco.',
+        'Craftionary non include grafica di Minecraft: senza texture caricate gli slot mostrano lettere con una legenda. Se hai caricato le texture prima che esistesse il laboratorio di motivi, ricaricale una volta per la sua anteprima.',
+        'L’app è in inglese e tedesco.'
+      ],
+      nl: [
+        'Craftionary kent Minecraft Java 26.3. Bedrock en oudere versies hebben soms andere recepten.',
+        'De /give-commando’s werken alleen met cheats aan. Wat langer is dan 256 tekens past niet in de chat – gebruik dan een opdrachtblok.',
+        'De kansen onder ‘Where to find’ zijn berekend zonder Fortuin, Plundering en Zijdezachte aanraking. Namen van bouwwerken hebben in het spel geen officiële vertaling.',
+        'Craftionary levert geen Minecraft-afbeeldingen mee: zonder geladen texturen tonen de vakjes letters met een legenda. Heb je de texturen geladen vóór de patroonwerkplaats bestond, laad ze dan voor het voorbeeld nog één keer.',
+        'De app is er in het Engels en Duits.'
+      ],
+      pl: [
+        'Craftionary obejmuje Minecraft Java 26.3. Bedrock i starsze wersje mają czasem inne receptury.',
+        'Komendy /give wymagają włączonych kodów. Co ma ponad 256 znaków, nie zmieści się na czacie – wtedy użyj bloku poleceń.',
+        'Szanse w „Where to find” są liczone bez Szczęścia, Grabieży i Jedwabnego dotyku. Nazwy struktur nie mają w grze oficjalnego tłumaczenia.',
+        'Craftionary nie zawiera grafik z Minecrafta: bez wczytanych tekstur pola pokazują litery z legendą. Jeśli wczytano tekstury przed powstaniem warsztatu wzorów, wczytaj je raz jeszcze dla jego podglądu.',
+        'Aplikacja jest po angielsku i niemiecku.'
+      ],
+      pt: [
+        'O Craftionary cobre o Minecraft Java 26.3. A Bedrock e as versões antigas têm por vezes receitas diferentes.',
+        'Os comandos /give precisam de cheats ligados. O que passar de 256 caracteres não cabe no chat – nesse caso use um bloco de comando.',
+        'As probabilidades em «Where to find» não contam Fortuna, Saque nem Toque Suave. Os nomes das estruturas não têm tradução oficial no jogo.',
+        'O Craftionary não traz gráficos do Minecraft: sem texturas carregadas, os espaços mostram letras com legenda. Se carregou as texturas antes de existir a oficina de padrões, carregue-as mais uma vez para a pré-visualização.',
+        'A app existe em inglês e alemão.'
+      ],
+      tr: [
+        'Craftionary Minecraft Java 26.3’ü kapsar. Bedrock ve eski sürümlerde bazı tarifler farklıdır.',
+        '/give komutları için hileler açık olmalıdır. 256 karakterden uzun olan sohbete sığmaz – o zaman bir komut bloğu kullanın.',
+        '“Where to find” altındaki şanslar Servet, Yağma ve İpeksi Dokunuş olmadan hesaplanır. Yapı adlarının oyunda resmî çevirisi yoktur.',
+        'Craftionary Minecraft grafikleri içermez: Dokular yüklenmeden kutularda açıklamalı harfler görünür. Dokuları desen atölyesinden önce yüklediyseniz önizleme için bir kez yeniden yükleyin.',
+        'Uygulama İngilizce ve Almanca’dır.'
+      ],
+      ru: [
+        'Craftionary охватывает Minecraft Java 26.3. В Bedrock и старых версиях некоторые рецепты отличаются.',
+        'Для команд /give нужны включённые читы. То, что длиннее 256 символов, не помещается в чат – тогда используйте командный блок.',
+        'Шансы во «Where to find» посчитаны без Удачи, Добычи и Шёлкового касания. У названий построек в игре нет официального перевода.',
+        'Craftionary не содержит графики Minecraft: без загруженных текстур в ячейках видны буквы с легендой. Если текстуры загружены до появления мастерской узоров, загрузите их ещё раз для её превью.',
+        'Приложение на английском и немецком.'
+      ],
+      hi: [
+        'Craftionary Minecraft Java 26.3 पर आधारित है। Bedrock और पुराने वर्ज़न में कुछ रेसिपी अलग होती हैं।',
+        '/give कमांड के लिए चीट्स चालू होने चाहिए। 256 अक्षरों से लंबा कमांड चैट में नहीं आता – तब कमांड ब्लॉक इस्तेमाल करें।',
+        '“Where to find” के मौके Fortune, Looting और Silk Touch के बिना गिने गए हैं। संरचनाओं के नामों का गेम में कोई आधिकारिक अनुवाद नहीं है।',
+        'Craftionary के साथ Minecraft के ग्राफ़िक्स नहीं आते: टेक्सचर लोड किए बिना खानों में लेजेंड के साथ अक्षर दिखते हैं। अगर आपने पैटर्न वर्कशॉप से पहले टेक्सचर लोड किए थे, तो उसके प्रीव्यू के लिए उन्हें एक बार फिर लोड करें।',
+        'ऐप अंग्रेज़ी और जर्मन में है।'
+      ],
+      zh: [
+        'Craftionary 对应 Minecraft Java 26.3。基岩版和旧版本的部分配方不同。',
+        '/give 命令需要开启作弊。超过 256 个字符的命令放不进聊天栏——这时请用命令方块。',
+        '“Where to find”里的概率未计入时运、抢夺和精准采集。结构名称在游戏中没有官方译名。',
+        'Craftionary 不附带 Minecraft 图像：未加载材质时，格子里显示字母和图例。如果在图案工坊出现之前加载过材质，请再加载一次以显示它的预览。',
+        '应用只有英语和德语。'
+      ],
+      ja: [
+        'Craftionary は Minecraft Java 26.3 に対応しています。統合版や古いバージョンでは一部のレシピが違います。',
+        '/give コマンドにはチートの有効化が必要です。256 文字を超えるとチャットに入らないので、その場合はコマンドブロックを使います。',
+        '「Where to find」の確率は幸運、ドロップ増加、シルクタッチなしで計算しています。構造物の名前にはゲーム内の公式な訳がありません。',
+        'Craftionary には Minecraft の画像は含まれていません。テクスチャを読み込まないと、マスには凡例つきの文字が表示されます。模様の工房ができる前にテクスチャを読み込んだ場合は、プレビューのために一度読み込み直してください。',
+        'アプリは英語とドイツ語です。'
+      ],
+      ko: [
+        'Craftionary는 Minecraft Java 26.3 기준입니다. 베드락과 이전 버전은 일부 조합법이 다릅니다.',
+        '/give 명령어는 치트가 켜져 있어야 합니다. 256자를 넘으면 채팅에 들어가지 않으니 명령 블록을 쓰세요.',
+        '‘Where to find’의 확률은 행운, 약탈, 섬세한 손길 없이 계산했습니다. 구조물 이름은 게임에 공식 번역이 없습니다.',
+        'Craftionary에는 Minecraft 그래픽이 들어 있지 않습니다. 텍스처를 불러오지 않으면 칸에 범례와 함께 글자가 표시됩니다. 무늬 공방이 생기기 전에 텍스처를 불러왔다면 미리 보기를 위해 한 번 더 불러오세요.',
+        '앱은 영어와 독일어로 되어 있습니다.'
+      ]
+    },
+    docs: {
+      de: 'https://github.com/Dennismit2n/craftionary/blob/main/README.md',
+      en: 'https://github.com/Dennismit2n/craftionary/blob/main/README.md',
+      es: 'https://github.com/Dennismit2n/craftionary/blob/main/README.md',
+      fr: 'https://github.com/Dennismit2n/craftionary/blob/main/README.md',
+      it: 'https://github.com/Dennismit2n/craftionary/blob/main/README.md',
+      nl: 'https://github.com/Dennismit2n/craftionary/blob/main/README.md',
+      pl: 'https://github.com/Dennismit2n/craftionary/blob/main/README.md',
+      pt: 'https://github.com/Dennismit2n/craftionary/blob/main/README.md',
+      tr: 'https://github.com/Dennismit2n/craftionary/blob/main/README.md',
+      ru: 'https://github.com/Dennismit2n/craftionary/blob/main/README.md',
+      hi: 'https://github.com/Dennismit2n/craftionary/blob/main/README.md',
+      zh: 'https://github.com/Dennismit2n/craftionary/blob/main/README.md',
+      ja: 'https://github.com/Dennismit2n/craftionary/blob/main/README.md',
+      ko: 'https://github.com/Dennismit2n/craftionary/blob/main/README.md'
+    }
+  },
+  vault: {
+    purpose: {
+      de: 'Das Handbuch für Borderlands 4 nach der Kampagne: Meta-Builds für alle sechs Vault Hunter, alle Legendaries und Pearls mit Fundort und Drop-Chance, Raid-Guides, Firmware, ein Farm-Planer und jede Woche das Neueste. Das Vault-Handbuch läuft im Browser auf dem Handy (Android und iOS) und am Desktop und lässt sich als App installieren.',
+      en: 'The handbook for Borderlands 4 after the campaign: meta builds for all six Vault Hunters, every legendary and Pearl with location and drop chance, raid guides, firmware, a farm planner and the latest news every week. The Vault-Handbuch runs in the browser on your phone (Android and iOS) and on desktop, and installs as an app.',
+      es: 'El manual de Borderlands 4 tras la campaña: builds meta para los seis Vault Hunters, todos los legendarios y Pearls con ubicación y probabilidad de botín, guías de raids, firmware, un planificador de farmeo y cada semana lo último. El Vault-Handbuch funciona en el navegador del móvil (Android e iOS) y del ordenador, y se instala como app.',
+      fr: 'Le manuel de Borderlands 4 après la campagne : builds méta pour les six Vault Hunters, tous les légendaires et Pearls avec lieu et taux de drop, guides de raids, firmware, un planificateur de farm et chaque semaine les dernières infos. Le Vault-Handbuch fonctionne dans le navigateur du téléphone (Android et iOS) et de l’ordinateur, et s’installe comme application.',
+      it: 'Il manuale di Borderlands 4 dopo la campagna: build meta per tutti e sei i Vault Hunter, tutti i leggendari e le Pearls con luogo e probabilità di drop, guide ai raid, firmware, un pianificatore di farm e ogni settimana le ultime novità. Il Vault-Handbuch funziona nel browser del telefono (Android e iOS) e del computer, e si installa come app.',
+      nl: 'Het handboek voor Borderlands 4 na de campagne: metabuilds voor alle zes Vault Hunters, alle legendaries en Pearls met vindplaats en dropkans, raidguides, firmware, een farmplanner en elke week het nieuwste. Het Vault-Handbuch draait in de browser op je telefoon (Android en iOS) en op de computer, en installeert als app.',
+      pl: 'Podręcznik do Borderlands 4 po kampanii: buildy meta dla wszystkich sześciu Vault Hunterów, wszystkie legendarne przedmioty i Pearls z miejscem i szansą dropu, poradniki do raidów, firmware, planer farmienia i co tydzień najnowsze informacje. Vault-Handbuch działa w przeglądarce na telefonie (Android i iOS) i na komputerze i instaluje się jako aplikacja.',
+      pt: 'O manual de Borderlands 4 depois da campanha: builds meta para os seis Vault Hunters, todos os lendários e Pearls com local e chance de drop, guias de raids, firmware, um planejador de farm e todas as semanas as novidades. O Vault-Handbuch funciona no navegador do telemóvel (Android e iOS) e do computador, e instala-se como app.',
+      tr: 'Kampanyadan sonrası için Borderlands 4 el kitabı: altı Vault Hunter’ın tümü için meta buildler, konum ve düşme şansıyla tüm efsaneviler ve Pearls, raid rehberleri, firmware, bir farm planlayıcı ve her hafta en yeni bilgiler. Vault-Handbuch telefonda (Android ve iOS) ve bilgisayarda tarayıcıda çalışır ve uygulama olarak kurulabilir.',
+      ru: 'Справочник по Borderlands 4 после кампании: мета-билды для всех шести Vault Hunter, все легендарки и Pearls с местом и шансом дропа, гайды по рейдам, прошивки, планировщик фарма и каждую неделю свежие новости. Vault-Handbuch работает в браузере на телефоне (Android и iOS) и на компьютере и устанавливается как приложение.',
+      hi: 'कैंपेन के बाद के लिए Borderlands 4 की हैंडबुक: सभी छह Vault Hunter के मेटा बिल्ड, जगह और ड्रॉप चांस के साथ सारे लेजेंडरी और Pearls, रेड गाइड, फ़र्मवेयर, फ़ार्म प्लानर और हर हफ़्ते ताज़ा जानकारी। Vault-Handbuch फ़ोन (Android और iOS) और डेस्कटॉप के ब्राउज़र में चलता है और ऐप की तरह इंस्टॉल होता है।',
+      zh: '通关剧情后的 Borderlands 4 手册：全部六位秘藏猎人的 Meta 配装、所有传奇与 Pearls 的掉落地点和概率、团本攻略、固件、刷宝规划，每周还有最新资讯。Vault-Handbuch 可在手机（Android 和 iOS）和电脑的浏览器中运行，也能安装为应用。',
+      ja: 'キャンペーン後の Borderlands 4 ハンドブック。6人すべての Vault Hunter のメタビルド、すべてのレジェンダリーと Pearls の入手場所とドロップ率、レイドガイド、ファームウェア、周回計画、そして毎週の最新情報。Vault-Handbuch はスマートフォン（Android と iOS）とパソコンのブラウザーで動き、アプリとしてインストールできます。',
+      ko: '캠페인 이후를 위한 Borderlands 4 핸드북: 여섯 Vault Hunter 모두의 메타 빌드, 위치와 드롭 확률이 담긴 모든 전설과 Pearls, 레이드 가이드, 펌웨어, 파밍 플래너, 그리고 매주 새 소식. Vault-Handbuch는 휴대폰(Android와 iOS)과 데스크톱 브라우저에서 돌아가고 앱으로 설치할 수 있습니다.'
+    },
+    shots: [
+      {
+        file: 'vault-de.webp',
+        w: 1446,
+        h: 848,
+        alt: {
+          de: 'Drei Handy-Ansichten des BL4 Vault-Handbuchs: der Fahrplan mit dem erledigten Schritt „UVH 5 freischalten“ und den Wildcard-Missionen dafür; ein Build für C4SH mit Spielstil und Action Skill; die eigene Sammlung als Kacheln nach Waffen, Schilden, Klassenmods und weiteren Gruppen.',
+          en: 'Three phone screens of the BL4 Vault-Handbuch: the roadmap with the finished step “unlock UVH 5” and the Wildcard Missions it takes; a build for C4SH with play style and action skill; your own collection as tiles by weapons, shields, class mods and other groups.',
+          es: 'Tres pantallas de móvil del BL4 Vault-Handbuch: la hoja de ruta con el paso completado «desbloquear UVH 5» y las Wildcard Missions necesarias; un build para C4SH con estilo de juego y habilidad de acción; tu colección en mosaicos por armas, escudos, mods de clase y otros grupos.',
+          fr: 'Trois écrans de téléphone du BL4 Vault-Handbuch : la feuille de route avec l’étape terminée « débloquer UVH 5 » et les Wildcard Missions nécessaires ; un build pour C4SH avec style de jeu et compétence d’action ; votre collection en tuiles par armes, boucliers, mods de classe et autres groupes.',
+          it: 'Tre schermate di telefono del BL4 Vault-Handbuch: la tabella di marcia con il passo completato «sbloccare UVH 5» e le Wildcard Mission necessarie; una build per C4SH con stile di gioco e abilità d’azione; la tua collezione in riquadri per armi, scudi, mod di classe e altri gruppi.',
+          nl: 'Drie telefoonschermen van het BL4 Vault-Handbuch: het routeplan met de voltooide stap ‘UVH 5 vrijspelen’ en de Wildcard Missions die daarvoor nodig zijn; een build voor C4SH met speelstijl en action skill; je eigen collectie als tegels per wapens, schilden, class mods en andere groepen.',
+          pl: 'Trzy ekrany telefonu z BL4 Vault-Handbuch: plan z ukończonym krokiem „odblokuj UVH 5” i potrzebnymi Wildcard Missions; build dla C4SH ze stylem gry i umiejętnością akcji; własna kolekcja w kafelkach według broni, tarcz, modów klas i innych grup.',
+          pt: 'Três ecrãs de telemóvel do BL4 Vault-Handbuch: o plano com o passo concluído «desbloquear UVH 5» e as Wildcard Missions necessárias; um build para C4SH com estilo de jogo e habilidade de ação; a sua coleção em mosaicos por armas, escudos, mods de classe e outros grupos.',
+          tr: 'BL4 Vault-Handbuch’tan üç telefon ekranı: tamamlanmış “UVH 5’i aç” adımı ve bunun için gereken Wildcard Mission’larla yol planı; oynanış tarzı ve aksiyon yeteneğiyle C4SH için bir build; silahlar, kalkanlar, sınıf modları ve diğer gruplara göre kutucuklar hâlinde kendi koleksiyonunuz.',
+          ru: 'Три экрана телефона с BL4 Vault-Handbuch: маршрут с выполненным шагом «открыть UVH 5» и нужными для этого Wildcard Missions; билд для C4SH со стилем игры и активным навыком; ваша коллекция в плитках по оружию, щитам, классовым модам и другим группам.',
+          hi: 'BL4 Vault-Handbuch की तीन फ़ोन स्क्रीन: पूरा हो चुके चरण “UVH 5 अनलॉक करें” और उसके लिए ज़रूरी Wildcard Missions वाला रोडमैप; खेलने के अंदाज़ और एक्शन स्किल के साथ C4SH का एक बिल्ड; हथियार, ढाल, क्लास मॉड और दूसरे समूहों की टाइलों में आपका अपना कलेक्शन।',
+          zh: 'BL4 Vault-Handbuch 的三个手机画面：路线图，显示已完成的“解锁 UVH 5”及所需的 Wildcard Mission；C4SH 的一套配装，含玩法风格和主动技能；按武器、护盾、职业模组等分组的个人收藏方块。',
+          ja: 'BL4 Vault-Handbuch のスマートフォン画面3枚：完了した「UVH 5 の解放」とそのための Wildcard Mission を示したロードマップ、プレイスタイルとアクションスキルつきの C4SH のビルド、武器・シールド・クラスMODなどのグループ別タイルで表示した自分のコレクション。',
+          ko: 'BL4 Vault-Handbuch 휴대폰 화면 세 개: 완료된 ‘UVH 5 해금’ 단계와 필요한 Wildcard Mission이 있는 로드맵, 플레이 스타일과 액션 스킬이 담긴 C4SH 빌드, 무기·실드·클래스 모드 등 그룹별 타일로 보이는 내 수집 현황.'
+        }
+      }
+    ],
+    steps: {
+      de: [
+        'Oben deinen UVH-Rang einstellen. Dann rechnet das Handbuch die Drop-Chancen passend aus, und „Dein Fahrplan“ hebt hervor, was als Nächstes dran ist.',
+        'Über „Menü“ zu Klassen & Builds, Waffen, Firmware, Loot-Datenbank oder Farming springen – oder oben nach Item, Boss oder Skill suchen. In der Loot-Datenbank hakst du mit „Hab ich“ ab, was du schon hast.',
+        '„Diese Woche“ zeigt Big-Encore-Boss, Wildcard Mission, Maurice’s Black Market und aktive SHiFT-Codes zum Kopieren; das Update läuft donnerstagabends. Unten im Menü steht der Knopf „App installieren“, auf dem iPhone der Weg über Teilen und „Zum Home-Bildschirm“. Nach dem ersten Besuch geht das Handbuch auch offline.'
+      ],
+      en: [
+        'Set your UVH rank at the top. The handbook then works out the drop chances for it, and “Dein Fahrplan” (your roadmap) highlights what comes next.',
+        'Use “Menü” (menu) to jump to classes and builds, weapons, firmware, the loot database or farming – or search for an item, boss or skill at the top. In the loot database, “Hab ich” (got it) ticks off what you already own.',
+        '“Diese Woche” (this week) shows the Big Encore boss, the Wildcard Mission, Maurice’s Black Market and active SHiFT codes to copy; it updates on Thursday evenings. At the bottom of the menu sits the “App installieren” (install app) button, on an iPhone the way via Share and “Add to Home Screen”. After the first visit the handbook also works offline.'
+      ],
+      es: [
+        'Elige arriba tu rango UVH. El manual calcula entonces las probabilidades de botín para él, y «Dein Fahrplan» (tu hoja de ruta) resalta lo siguiente que toca.',
+        'Con «Menü» (menú) salta a clases y builds, armas, firmware, la base de datos de botín o el farmeo, o busca arriba un objeto, jefe o habilidad. En la base de datos de botín, «Hab ich» (lo tengo) marca lo que ya tienes.',
+        '«Diese Woche» (esta semana) muestra el jefe de Big Encore, la Wildcard Mission, Maurice’s Black Market y los códigos SHiFT activos para copiar; se actualiza los jueves por la noche. Abajo en el menú está el botón «App installieren» (instalar app); en el iPhone, el camino por Compartir y «Añadir a pantalla de inicio». Tras la primera visita, el manual funciona también sin conexión.'
+      ],
+      fr: [
+        'Réglez en haut votre rang UVH. Le manuel calcule alors les taux de drop correspondants, et « Dein Fahrplan » (votre feuille de route) met en avant l’étape suivante.',
+        'Avec « Menü » (menu), allez aux classes et builds, aux armes, au firmware, à la base de butin ou au farm – ou cherchez en haut un objet, un boss ou une compétence. Dans la base de butin, « Hab ich » (je l’ai) coche ce que vous possédez déjà.',
+        '« Diese Woche » (cette semaine) montre le boss du Big Encore, la Wildcard Mission, Maurice’s Black Market et les codes SHiFT actifs à copier ; la mise à jour se fait le jeudi soir. En bas du menu se trouve le bouton « App installieren » (installer l’application), sur iPhone le chemin par Partager et « Sur l’écran d’accueil ». Après la première visite, le manuel fonctionne aussi hors ligne.'
+      ],
+      it: [
+        'Imposta in alto il tuo rango UVH. Il manuale calcola allora le probabilità di drop adatte, e «Dein Fahrplan» (la tua tabella di marcia) evidenzia il prossimo passo.',
+        'Con «Menü» (menu) passa a classi e build, armi, firmware, database del loot o farm, oppure cerca in alto un oggetto, un boss o un’abilità. Nel database del loot, «Hab ich» (ce l’ho) spunta ciò che possiedi già.',
+        '«Diese Woche» (questa settimana) mostra il boss del Big Encore, la Wildcard Mission, Maurice’s Black Market e i codici SHiFT attivi da copiare; si aggiorna il giovedì sera. In fondo al menu c’è il pulsante «App installieren» (installa app), su iPhone la via con Condividi e «Aggiungi alla schermata Home». Dopo la prima visita il manuale funziona anche offline.'
+      ],
+      nl: [
+        'Stel bovenaan je UVH-rang in. Het handboek rekent dan de dropkansen daarvoor uit, en ‘Dein Fahrplan’ (je routeplan) laat zien wat er nu aan de beurt is.',
+        'Ga via ‘Menü’ (menu) naar klassen en builds, wapens, firmware, de lootdatabase of farmen – of zoek bovenaan een item, baas of skill. In de lootdatabase vink je met ‘Hab ich’ (heb ik) af wat je al hebt.',
+        '‘Diese Woche’ (deze week) toont de Big Encore-baas, de Wildcard Mission, Maurice’s Black Market en actieve SHiFT-codes om te kopiëren; de update komt op donderdagavond. Onderaan in het menu staat de knop ‘App installieren’ (app installeren), op een iPhone de weg via Deel en ‘Zet op beginscherm’. Na het eerste bezoek werkt het handboek ook offline.'
+      ],
+      pl: [
+        'Ustaw u góry swoją rangę UVH. Podręcznik przelicza wtedy szanse dropu, a „Dein Fahrplan” (twój plan) wyróżnia, co teraz jest do zrobienia.',
+        'Przez „Menü” (menu) przejdź do klas i buildów, broni, firmware’u, bazy lootu albo farmienia – albo szukaj u góry przedmiotu, bossa lub umiejętności. W bazie lootu „Hab ich” (mam) odhacza to, co już masz.',
+        '„Diese Woche” (w tym tygodniu) pokazuje bossa Big Encore, Wildcard Mission, Maurice’s Black Market i aktywne kody SHiFT do skopiowania; aktualizacja przychodzi w czwartki wieczorem. Na dole menu jest przycisk „App installieren” (zainstaluj aplikację), na iPhonie droga przez Udostępnij i „Do ekranu początkowego”. Po pierwszej wizycie podręcznik działa też offline.'
+      ],
+      pt: [
+        'Defina no topo o seu rank UVH. O manual calcula então as chances de drop para ele, e «Dein Fahrplan» (o seu plano) destaca o próximo passo.',
+        'Com «Menü» (menu) salte para classes e builds, armas, firmware, a base de dados de loot ou o farm – ou pesquise no topo um item, chefe ou habilidade. Na base de dados de loot, «Hab ich» (já tenho) marca o que já tem.',
+        '«Diese Woche» (esta semana) mostra o chefe do Big Encore, a Wildcard Mission, Maurice’s Black Market e os códigos SHiFT ativos para copiar; a atualização chega às quintas à noite. No fundo do menu está o botão «App installieren» (instalar app), no iPhone o caminho por Partilhar e «Adicionar ao ecrã principal». Depois da primeira visita, o manual também funciona offline.'
+      ],
+      tr: [
+        'Üstte UVH rütbenizi seçin. El kitabı düşme şanslarını buna göre hesaplar ve “Dein Fahrplan” (yol planınız) sıradakini öne çıkarır.',
+        '“Menü” ile sınıflar ve buildler, silahlar, firmware, ganimet veritabanı ya da farm bölümüne gidin – veya üstte eşya, boss ya da yetenek arayın. Ganimet veritabanında “Hab ich” (bende var) zaten sahip olduklarınızı işaretler.',
+        '“Diese Woche” (bu hafta) Big Encore boss’unu, Wildcard Mission’ı, Maurice’s Black Market’i ve kopyalanacak etkin SHiFT kodlarını gösterir; güncelleme perşembe akşamları gelir. Menünün altında “App installieren” (uygulamayı yükle) düğmesi, iPhone’da ise Paylaş ve “Ana Ekrana Ekle” yolu durur. İlk ziyaretten sonra el kitabı çevrimdışı da çalışır.'
+      ],
+      ru: [
+        'Выберите вверху свой ранг UVH. Справочник пересчитает под него шансы дропа, а «Dein Fahrplan» (ваш маршрут) выделит следующий шаг.',
+        'Через «Menü» (меню) переходите к классам и билдам, оружию, прошивкам, базе лута или фарму – или ищите вверху предмет, босса или навык. В базе лута «Hab ich» (есть) отмечает то, что у вас уже есть.',
+        '«Diese Woche» (на этой неделе) показывает босса Big Encore, Wildcard Mission, Maurice’s Black Market и действующие SHiFT-коды для копирования; обновление выходит по четвергам вечером. Внизу меню есть кнопка «App installieren» (установить приложение), на iPhone – путь через «Поделиться» и «На экран „Домой“». После первого посещения справочник работает и офлайн.'
+      ],
+      hi: [
+        'ऊपर अपनी UVH रैंक चुनें। हैंडबुक उसके हिसाब से ड्रॉप चांस निकालती है, और “Dein Fahrplan” (आपका रोडमैप) अगला कदम उभारकर दिखाता है।',
+        '“Menü” (मेन्यू) से क्लास और बिल्ड, हथियार, फ़र्मवेयर, लूट डेटाबेस या फ़ार्मिंग पर जाएँ – या ऊपर कोई आइटम, बॉस या स्किल खोजें। लूट डेटाबेस में “Hab ich” (मेरे पास है) से जो आपके पास है, उस पर निशान लगाएँ।',
+        '“Diese Woche” (इस हफ़्ते) Big Encore बॉस, Wildcard Mission, Maurice’s Black Market और कॉपी करने लायक सक्रिय SHiFT कोड दिखाता है; अपडेट गुरुवार शाम आता है। मेन्यू में नीचे “App installieren” (ऐप इंस्टॉल करें) बटन है, iPhone पर शेयर और “होम स्क्रीन में जोड़ें” का रास्ता। पहली विज़िट के बाद हैंडबुक ऑफ़लाइन भी चलती है।'
+      ],
+      zh: [
+        '在顶部设定你的 UVH 等级。手册会据此算出掉落概率，“Dein Fahrplan”（你的路线图）会突出显示下一步。',
+        '通过“Menü”（菜单）跳到职业与配装、武器、固件、战利品数据库或刷宝，或在顶部搜索物品、首领或技能。在战利品数据库里，用“Hab ich”（已拥有）勾掉已有的东西。',
+        '“Diese Woche”（本周）显示 Big Encore 首领、Wildcard Mission、Maurice’s Black Market 和可复制的有效 SHiFT 兑换码；每周四晚上更新。菜单底部有“App installieren”（安装应用）按钮，iPhone 上则是“分享”→“添加到主屏幕”。首次访问后，手册也能离线使用。'
+      ],
+      ja: [
+        '上部で自分の UVH ランクを設定します。するとそのランクに合わせてドロップ率が計算され、「Dein Fahrplan」（あなたのロードマップ）が次にやることを強調します。',
+        '「Menü」（メニュー）からクラスとビルド、武器、ファームウェア、ルートデータベース、周回へ移動するか、上部でアイテム・ボス・スキルを検索します。ルートデータベースでは「Hab ich」（持っている）で入手済みにチェックを付けられます。',
+        '「Diese Woche」（今週）は Big Encore のボス、Wildcard Mission、Maurice’s Black Market、コピーできる有効な SHiFT コードを表示し、毎週木曜の夜に更新されます。メニューの下に「App installieren」（アプリをインストール）ボタンがあり、iPhone では共有から「ホーム画面に追加」を使います。初回アクセス後はオフラインでも使えます。'
+      ],
+      ko: [
+        '위에서 자신의 UVH 등급을 고르세요. 그러면 그에 맞춰 드롭 확률이 계산되고, ‘Dein Fahrplan’(로드맵)이 다음에 할 일을 강조합니다.',
+        '‘Menü’(메뉴)로 클래스와 빌드, 무기, 펌웨어, 전리품 데이터베이스, 파밍으로 이동하거나 위에서 아이템, 보스, 스킬을 검색하세요. 전리품 데이터베이스에서는 ‘Hab ich’(가지고 있음)로 이미 가진 것을 표시합니다.',
+        '‘Diese Woche’(이번 주)는 Big Encore 보스, Wildcard Mission, Maurice’s Black Market, 복사할 수 있는 유효한 SHiFT 코드를 보여 주며 매주 목요일 저녁에 업데이트됩니다. 메뉴 아래에 ‘App installieren’(앱 설치) 버튼이 있고, iPhone에서는 공유 → ‘홈 화면에 추가’를 씁니다. 첫 방문 후에는 오프라인에서도 작동합니다.'
+      ]
+    },
+    pitfalls: {
+      de: [
+        'Die App ist auf Deutsch. Item-Namen bleiben wie im deutschen Spiel meist englisch; die Suche findet auch die wenigen übersetzten.',
+        'Builds und Ranglisten sind Einschätzungen aus der Community mit Quellenangabe, nicht offiziell – ein Patch kann sie verschieben.',
+        'Bis zum Update am Donnerstagabend zeigt „Diese Woche“ manchmal noch die Vorwoche; das steht dann ausdrücklich dabei.',
+        'Dein UVH-Rang und was du abgehakt hast, liegen nur in diesem Browser.',
+        'Die Schriften kommen von Google Fonts: Beim Laden sieht Google deine IP-Adresse.'
+      ],
+      en: [
+        'The app is in German. Item names mostly stay English, as in the German game, and the search also finds the few translated ones.',
+        'Builds and rankings are community assessments with their sources named, not official – a patch can shift them.',
+        'Until the Thursday evening update, “Diese Woche” sometimes still shows last week; it then says so.',
+        'Your UVH rank and what you ticked off live only in this browser.',
+        'The fonts come from Google Fonts: when they load, Google sees your IP address.'
+      ],
+      es: [
+        'La app está en alemán. Los nombres de objetos siguen casi siempre en inglés, como en el juego en alemán, y la búsqueda encuentra también los pocos traducidos.',
+        'Los builds y rankings son valoraciones de la comunidad con sus fuentes, no oficiales: un parche puede cambiarlos.',
+        'Hasta la actualización del jueves por la noche, «Diese Woche» a veces aún muestra la semana anterior; entonces lo indica.',
+        'Tu rango UVH y lo que has marcado solo se guardan en este navegador.',
+        'Las fuentes vienen de Google Fonts: al cargarlas, Google ve tu dirección IP.'
+      ],
+      fr: [
+        'L’application est en allemand. Les noms d’objets restent le plus souvent en anglais, comme dans le jeu allemand, et la recherche trouve aussi les rares traduits.',
+        'Les builds et classements sont des avis de la communauté avec leurs sources, pas officiels – un patch peut les faire bouger.',
+        'Jusqu’à la mise à jour du jeudi soir, « Diese Woche » affiche parfois encore la semaine précédente ; c’est alors indiqué.',
+        'Votre rang UVH et ce que vous avez coché restent uniquement dans ce navigateur.',
+        'Les polices viennent de Google Fonts : à leur chargement, Google voit votre adresse IP.'
+      ],
+      it: [
+        'L’app è in tedesco. I nomi degli oggetti restano quasi sempre in inglese, come nel gioco tedesco, e la ricerca trova anche i pochi tradotti.',
+        'Build e classifiche sono valutazioni della community con le fonti indicate, non ufficiali: una patch può spostarle.',
+        'Fino all’aggiornamento del giovedì sera, «Diese Woche» a volte mostra ancora la settimana precedente; in quel caso lo dice.',
+        'Il tuo rango UVH e ciò che hai spuntato restano solo in questo browser.',
+        'I caratteri arrivano da Google Fonts: quando si caricano, Google vede il tuo indirizzo IP.'
+      ],
+      nl: [
+        'De app is in het Duits. Itemnamen blijven meestal Engels, net als in het Duitse spel, en de zoekfunctie vindt ook de paar vertaalde.',
+        'Builds en ranglijsten zijn inschattingen uit de community met bronvermelding, niet officieel – een patch kan ze verschuiven.',
+        'Tot de update op donderdagavond toont ‘Diese Woche’ soms nog de vorige week; dat staat er dan bij.',
+        'Je UVH-rang en wat je hebt afgevinkt staan alleen in deze browser.',
+        'De lettertypen komen van Google Fonts: bij het laden ziet Google je IP-adres.'
+      ],
+      pl: [
+        'Aplikacja jest po niemiecku. Nazwy przedmiotów zostają zwykle po angielsku, jak w niemieckiej wersji gry, a wyszukiwarka znajduje też te nieliczne przetłumaczone.',
+        'Buildy i rankingi to oceny społeczności z podanymi źródłami, nie oficjalne – patch może je zmienić.',
+        'Do czwartkowej aktualizacji wieczorem „Diese Woche” czasem pokazuje jeszcze poprzedni tydzień; wtedy jest to zaznaczone.',
+        'Twoja ranga UVH i to, co odhaczono, są zapisane tylko w tej przeglądarce.',
+        'Czcionki pochodzą z Google Fonts: przy ich wczytywaniu Google widzi twój adres IP.'
+      ],
+      pt: [
+        'A app está em alemão. Os nomes dos itens ficam quase sempre em inglês, como no jogo em alemão, e a pesquisa também encontra os poucos traduzidos.',
+        'Builds e rankings são avaliações da comunidade com fontes indicadas, não oficiais – um patch pode mudá-los.',
+        'Até à atualização de quinta à noite, «Diese Woche» às vezes ainda mostra a semana anterior; nesse caso isso é indicado.',
+        'O seu rank UVH e o que marcou ficam só neste navegador.',
+        'As fontes vêm do Google Fonts: ao carregá-las, a Google vê o seu endereço IP.'
+      ],
+      tr: [
+        'Uygulama Almancadır. Eşya adları, Almanca oyunda olduğu gibi çoğunlukla İngilizce kalır; arama az sayıdaki çevrilmiş adları da bulur.',
+        'Buildler ve sıralamalar kaynakları belirtilmiş topluluk değerlendirmeleridir, resmî değildir – bir yama onları değiştirebilir.',
+        'Perşembe akşamı güncellemesine kadar “Diese Woche” bazen hâlâ önceki haftayı gösterir; o zaman bu açıkça yazar.',
+        'UVH rütbeniz ve işaretledikleriniz yalnızca bu tarayıcıda durur.',
+        'Yazı tipleri Google Fonts’tan gelir: Yüklenirken Google IP adresinizi görür.'
+      ],
+      ru: [
+        'Приложение на немецком. Названия предметов, как и в немецкой версии игры, в основном остаются английскими; поиск находит и немногие переведённые.',
+        'Билды и рейтинги – оценки сообщества с указанием источников, не официальные: патч может их сдвинуть.',
+        'До обновления в четверг вечером «Diese Woche» иногда ещё показывает прошлую неделю; тогда это прямо указано.',
+        'Ваш ранг UVH и отмеченные предметы хранятся только в этом браузере.',
+        'Шрифты загружаются из Google Fonts: при этом Google видит ваш IP-адрес.'
+      ],
+      hi: [
+        'ऐप जर्मन में है। आइटम के नाम, जर्मन गेम की तरह, ज़्यादातर अंग्रेज़ी में ही रहते हैं; खोज कुछ अनूदित नाम भी ढूँढ लेती है।',
+        'बिल्ड और रैंकिंग स्रोतों के साथ कम्युनिटी के आकलन हैं, आधिकारिक नहीं – कोई पैच इन्हें बदल सकता है।',
+        'गुरुवार शाम के अपडेट तक “Diese Woche” कभी-कभी पिछला हफ़्ता दिखाता है; तब यह साफ़ लिखा रहता है।',
+        'आपकी UVH रैंक और जिन पर निशान लगाया, वे सिर्फ़ इसी ब्राउज़र में रहते हैं।',
+        'फ़ॉन्ट Google Fonts से आते हैं: लोड होते समय Google आपका IP पता देखता है।'
+      ],
+      zh: [
+        '应用只有德语。物品名称和德语版游戏一样大多保留英文；搜索也能找到少数已翻译的名称。',
+        '配装和排名是标明来源的社区评估，并非官方——补丁可能改变它们。',
+        '在周四晚上更新之前，“Diese Woche”有时仍显示上一周；这时会明确注明。',
+        '你的 UVH 等级和勾选记录只保存在这个浏览器里。',
+        '字体来自 Google Fonts：加载时 Google 会看到你的 IP 地址。'
+      ],
+      ja: [
+        'アプリはドイツ語です。アイテム名はドイツ語版のゲームと同じくほとんど英語のままですが、検索は数少ない翻訳名も見つけます。',
+        'ビルドとランキングは出典を示したコミュニティの評価で、公式ではありません。パッチで変わることがあります。',
+        '木曜夜の更新までは「Diese Woche」がまだ先週の内容のことがあり、その場合ははっきり表示されます。',
+        'UVH ランクとチェックした内容は、このブラウザーの中にだけ保存されます。',
+        'フォントは Google Fonts から読み込まれます。その際、Google にあなたの IP アドレスが伝わります。'
+      ],
+      ko: [
+        '앱은 독일어입니다. 아이템 이름은 독일어판 게임처럼 대부분 영어로 남아 있고, 검색은 몇 안 되는 번역된 이름도 찾습니다.',
+        '빌드와 순위는 출처를 밝힌 커뮤니티 평가일 뿐 공식이 아닙니다. 패치로 바뀔 수 있습니다.',
+        '목요일 저녁 업데이트 전까지 ‘Diese Woche’는 가끔 지난주 내용을 보여 주며, 그때는 분명히 표시됩니다.',
+        'UVH 등급과 표시한 항목은 이 브라우저에만 저장됩니다.',
+        '글꼴은 Google Fonts에서 불러옵니다. 이때 Google이 IP 주소를 보게 됩니다.'
+      ]
+    },
+    docs: {
+      de: 'https://github.com/Dennismit2n/dennismit2n.github.io/tree/main/bl4',
+      en: 'https://github.com/Dennismit2n/dennismit2n.github.io/tree/main/bl4',
+      es: 'https://github.com/Dennismit2n/dennismit2n.github.io/tree/main/bl4',
+      fr: 'https://github.com/Dennismit2n/dennismit2n.github.io/tree/main/bl4',
+      it: 'https://github.com/Dennismit2n/dennismit2n.github.io/tree/main/bl4',
+      nl: 'https://github.com/Dennismit2n/dennismit2n.github.io/tree/main/bl4',
+      pl: 'https://github.com/Dennismit2n/dennismit2n.github.io/tree/main/bl4',
+      pt: 'https://github.com/Dennismit2n/dennismit2n.github.io/tree/main/bl4',
+      tr: 'https://github.com/Dennismit2n/dennismit2n.github.io/tree/main/bl4',
+      ru: 'https://github.com/Dennismit2n/dennismit2n.github.io/tree/main/bl4',
+      hi: 'https://github.com/Dennismit2n/dennismit2n.github.io/tree/main/bl4',
+      zh: 'https://github.com/Dennismit2n/dennismit2n.github.io/tree/main/bl4',
+      ja: 'https://github.com/Dennismit2n/dennismit2n.github.io/tree/main/bl4',
+      ko: 'https://github.com/Dennismit2n/dennismit2n.github.io/tree/main/bl4'
+    }
+  },
+  ruestkammer: {
+    purpose: {
+      de: 'Das Nachschlagewerk zu Call of Duty: Modern Warfare 4: alle Waffen mit Werten, Meta-Builds, Apex-Aufsatz und Time to Kill, dazu Tierlisten, empfohlene Klassen und die Patch-Chronik. Die Rüstkammer läuft im Browser auf dem Handy (Android und iOS) und am Desktop und lässt sich als App installieren.',
+      en: 'The reference for Call of Duty: Modern Warfare 4: every weapon with stats, meta builds, Apex attachment and time to kill, plus tier lists, recommended classes and the patch history. The Rüstkammer runs in the browser on your phone (Android and iOS) and on desktop, and installs as an app.',
+      es: 'La referencia de Call of Duty: Modern Warfare 4: todas las armas con estadísticas, builds meta, accesorio Apex y time to kill, además de listas de niveles, clases recomendadas y el historial de parches. La Rüstkammer funciona en el navegador del móvil (Android e iOS) y del ordenador, y se instala como app.',
+      fr: 'La référence de Call of Duty: Modern Warfare 4 : toutes les armes avec statistiques, builds méta, accessoire Apex et time to kill, plus tier lists, classes recommandées et historique des patchs. La Rüstkammer fonctionne dans le navigateur du téléphone (Android et iOS) et de l’ordinateur, et s’installe comme application.',
+      it: 'Il riferimento per Call of Duty: Modern Warfare 4: tutte le armi con statistiche, build meta, accessorio Apex e time to kill, più tier list, classi consigliate e cronologia delle patch. La Rüstkammer funziona nel browser del telefono (Android e iOS) e del computer, e si installa come app.',
+      nl: 'Het naslagwerk voor Call of Duty: Modern Warfare 4: alle wapens met statistieken, metabuilds, Apex-attachment en time to kill, plus tierlijsten, aanbevolen klassen en de patchgeschiedenis. De Rüstkammer draait in de browser op je telefoon (Android en iOS) en op de computer, en installeert als app.',
+      pl: 'Kompendium do Call of Duty: Modern Warfare 4: wszystkie bronie ze statystykami, buildami meta, dodatkiem Apex i time to kill, do tego tier listy, polecane klasy i historia patchy. Rüstkammer działa w przeglądarce na telefonie (Android i iOS) i na komputerze i instaluje się jako aplikacja.',
+      pt: 'A referência de Call of Duty: Modern Warfare 4: todas as armas com estatísticas, builds meta, acessório Apex e time to kill, mais tier lists, classes recomendadas e o histórico de patches. A Rüstkammer funciona no navegador do telemóvel (Android e iOS) e do computador, e instala-se como app.',
+      tr: 'Call of Duty: Modern Warfare 4 başvuru kaynağı: istatistikleri, meta buildleri, Apex eklentisi ve time to kill değeriyle tüm silahlar; ayrıca tier listeleri, önerilen sınıflar ve yama geçmişi. Rüstkammer telefonda (Android ve iOS) ve bilgisayarda tarayıcıda çalışır ve uygulama olarak kurulabilir.',
+      ru: 'Справочник по Call of Duty: Modern Warfare 4: всё оружие с характеристиками, мета-сборками, модулем Apex и time to kill, а также тир-листы, рекомендуемые классы и история патчей. Rüstkammer работает в браузере на телефоне (Android и iOS) и на компьютере и устанавливается как приложение.',
+      hi: 'Call of Duty: Modern Warfare 4 की संदर्भ पुस्तिका: हर हथियार उसके आँकड़ों, मेटा बिल्ड, Apex अटैचमेंट और time to kill के साथ, साथ में टियर लिस्ट, सुझाई गई क्लास और पैच इतिहास। Rüstkammer फ़ोन (Android और iOS) और डेस्कटॉप के ब्राउज़र में चलता है और ऐप की तरह इंस्टॉल होता है।',
+      zh: 'Call of Duty: Modern Warfare 4 资料库：所有武器的数值、Meta 配装、Apex 配件和击杀时间，另有梯队榜、推荐配装和补丁记录。Rüstkammer 可在手机（Android 和 iOS）和电脑的浏览器中运行，也能安装为应用。',
+      ja: 'Call of Duty: Modern Warfare 4 のリファレンス。全武器のステータス、メタビルド、Apex アタッチメント、キルタイムに加え、ティアリスト、おすすめクラス、パッチ履歴。Rüstkammer はスマートフォン（Android と iOS）とパソコンのブラウザーで動き、アプリとしてインストールできます。',
+      ko: 'Call of Duty: Modern Warfare 4 참고서: 모든 무기의 능력치, 메타 빌드, Apex 부착물, 킬 타임과 함께 티어 리스트, 추천 클래스, 패치 기록. Rüstkammer는 휴대폰(Android와 iOS)과 데스크톱 브라우저에서 돌아가고 앱으로 설치할 수 있습니다.'
+    },
+    shots: [
+      {
+        file: 'ruestkammer-de.webp',
+        w: 1446,
+        h: 848,
+        alt: {
+          de: 'Drei Handy-Ansichten der MW4 Rüstkammer: das Arsenal mit Suche, Filtern nach Waffenart und den Sturmgewehren samt Kadenz, Time to Kill und Tier; die Han 86 mit Tier, Nutzung und Werten wie Kadenz, Magazin und Freischaltung; die TTK-Analyse mit Messung, Distanz und Klasse und der schnellsten Waffe zuerst.',
+          en: 'Three phone screens of the MW4 Rüstkammer: the Arsenal with search, filters by weapon type and the assault rifles with fire rate, time to kill and tier; the Han 86 with tier, usage and stats such as fire rate, magazine and unlock; the TTK analysis with measurement, range and class and the fastest weapon first.',
+          es: 'Tres pantallas de móvil de la MW4 Rüstkammer: el Arsenal con búsqueda, filtros por tipo de arma y los fusiles de asalto con cadencia, time to kill y nivel; la Han 86 con nivel, uso y estadísticas como cadencia, cargador y desbloqueo; el análisis de TTK con medición, distancia y clase, y el arma más rápida primero.',
+          fr: 'Trois écrans de téléphone de la MW4 Rüstkammer : l’Arsenal avec recherche, filtres par type d’arme et les fusils d’assaut avec cadence, time to kill et tier ; la Han 86 avec tier, taux d’utilisation et statistiques comme la cadence, le chargeur et le déblocage ; l’analyse du TTK avec mesure, distance et classe, l’arme la plus rapide en tête.',
+          it: 'Tre schermate di telefono della MW4 Rüstkammer: l’Arsenal con ricerca, filtri per tipo di arma e i fucili d’assalto con cadenza, time to kill e tier; la Han 86 con tier, utilizzo e statistiche come cadenza, caricatore e sblocco; l’analisi del TTK con misurazione, distanza e classe e l’arma più veloce in cima.',
+          nl: 'Drie telefoonschermen van de MW4 Rüstkammer: het Arsenal met zoeken, filters op wapentype en de aanvalsgeweren met vuursnelheid, time to kill en tier; de Han 86 met tier, gebruik en statistieken zoals vuursnelheid, magazijn en ontgrendeling; de TTK-analyse met meting, afstand en klasse en het snelste wapen bovenaan.',
+          pl: 'Trzy ekrany telefonu z MW4 Rüstkammer: Arsenal z wyszukiwaniem, filtrami według rodzaju broni i karabinami szturmowymi z szybkostrzelnością, time to kill i tierem; Han 86 z tierem, popularnością i statystykami jak szybkostrzelność, magazynek i odblokowanie; analiza TTK z pomiarem, dystansem i klasą, najszybsza broń na górze.',
+          pt: 'Três ecrãs de telemóvel da MW4 Rüstkammer: o Arsenal com pesquisa, filtros por tipo de arma e as espingardas de assalto com cadência, time to kill e tier; a Han 86 com tier, utilização e estatísticas como cadência, carregador e desbloqueio; a análise de TTK com medição, distância e classe, e a arma mais rápida primeiro.',
+          tr: 'MW4 Rüstkammer’dan üç telefon ekranı: arama, silah türü filtreleri ve atış hızı, time to kill ve tier ile saldırı tüfekleriyle Arsenal; tier, kullanım oranı ve atış hızı, şarjör, kilit açma gibi değerlerle Han 86; ölçüm, mesafe ve sınıfla, en hızlı silah önde olacak şekilde TTK analizi.',
+          ru: 'Три экрана телефона с MW4 Rüstkammer: Arsenal с поиском, фильтрами по типу оружия и штурмовыми винтовками со скорострельностью, time to kill и тиром; Han 86 с тиром, популярностью и характеристиками вроде скорострельности, магазина и разблокировки; анализ TTK по замеру, дистанции и классу, самое быстрое оружие сверху.',
+          hi: 'MW4 Rüstkammer की तीन फ़ोन स्क्रीन: खोज, हथियार के प्रकार के फ़िल्टर और फ़ायर रेट, time to kill व टियर के साथ असॉल्ट राइफ़लों वाला Arsenal; टियर, इस्तेमाल और फ़ायर रेट, मैगज़ीन व अनलॉक जैसे आँकड़ों के साथ Han 86; माप, दूरी और क्लास के साथ TTK विश्लेषण, सबसे तेज़ हथियार सबसे ऊपर।',
+          zh: 'MW4 Rüstkammer 的三个手机画面：Arsenal，带搜索、武器类型筛选，以及列出射速、击杀时间和梯队的突击步枪；Han 86，显示梯队、使用率以及射速、弹匣、解锁等数值；TTK 分析，可按测量方式、距离和类别查看，最快的武器排在最前。',
+          ja: 'MW4 Rüstkammer のスマートフォン画面3枚：検索と武器種フィルター、連射速度・キルタイム・ティアつきのアサルトライフルが並ぶ Arsenal、ティア・使用率と連射速度・マガジン・解除条件などのステータスを示した Han 86、測定方法・距離・クラスで並べ替え、最速の武器が先頭に来る TTK 分析。',
+          ko: 'MW4 Rüstkammer 휴대폰 화면 세 개: 검색, 무기 종류 필터, 연사 속도·킬 타임·티어가 표시된 돌격소총이 있는 Arsenal, 티어·사용률과 연사 속도·탄창·해금 같은 능력치가 있는 Han 86, 측정 방식·거리·클래스별로 가장 빠른 무기부터 보여 주는 TTK 분석.'
+        }
+      }
+    ],
+    steps: {
+      de: [
+        'Unten zwischen Arsenal, Meta, TTK, Klassen und Intel wechseln. Im Arsenal nach Waffe, Apex oder Klasse suchen oder nach Waffenart filtern.',
+        'Eine Waffe antippen: Werte, Time to Kill, Meta-Builds und Apex-Aufsatz; unter „Mein Waffenlevel“ trägst du deinen Stand ein. Unter TTK vergleichst du nach Messung, Distanz und Klasse.',
+        'Unter Intel stehen Datenstand und Patches, „Nach Updates suchen“ und – wo der Browser es anbietet – der Knopf „App installieren“; auf dem iPhone geht das in Safari über Teilen und „Zum Home-Bildschirm“. Nach dem ersten Besuch läuft die Rüstkammer auch offline.'
+      ],
+      en: [
+        'Switch between Arsenal, Meta, TTK, Klassen (classes) and Intel at the bottom. In the Arsenal, search for a weapon, Apex or class, or filter by weapon type.',
+        'Tap a weapon: stats, time to kill, meta builds and the Apex attachment; under “Mein Waffenlevel” (my weapon level) you enter your progress. Under TTK you compare by measurement, range and class.',
+        'Intel holds the data date and patches, “Nach Updates suchen” (check for updates) and, where your browser offers it, the “App installieren” (install app) button; on an iPhone, use Share and “Add to Home Screen” in Safari. After the first visit the Rüstkammer also works offline.'
+      ],
+      es: [
+        'Cambia abajo entre Arsenal, Meta, TTK, Klassen (clases) e Intel. En el Arsenal, busca un arma, un Apex o una clase, o filtra por tipo de arma.',
+        'Toca un arma: estadísticas, time to kill, builds meta y accesorio Apex; en «Mein Waffenlevel» (mi nivel de arma) anotas tu progreso. En TTK comparas por medición, distancia y clase.',
+        'En Intel están la fecha de los datos y los parches, «Nach Updates suchen» (buscar actualizaciones) y, donde el navegador lo ofrece, el botón «App installieren» (instalar app); en el iPhone, usa Compartir y «Añadir a pantalla de inicio» en Safari. Tras la primera visita, la Rüstkammer funciona también sin conexión.'
+      ],
+      fr: [
+        'En bas, passez d’Arsenal à Meta, TTK, Klassen (classes) et Intel. Dans l’Arsenal, cherchez une arme, un Apex ou une classe, ou filtrez par type d’arme.',
+        'Touchez une arme : statistiques, time to kill, builds méta et accessoire Apex ; sous « Mein Waffenlevel » (mon niveau d’arme), vous notez votre progression. Sous TTK, vous comparez selon la mesure, la distance et la classe.',
+        'Intel regroupe la date des données et les patchs, « Nach Updates suchen » (rechercher des mises à jour) et, là où le navigateur le propose, le bouton « App installieren » (installer l’application) ; sur iPhone, passez par Partager et « Sur l’écran d’accueil » dans Safari. Après la première visite, la Rüstkammer fonctionne aussi hors ligne.'
+      ],
+      it: [
+        'In basso passa tra Arsenal, Meta, TTK, Klassen (classi) e Intel. Nell’Arsenal cerca un’arma, un Apex o una classe, oppure filtra per tipo di arma.',
+        'Tocca un’arma: statistiche, time to kill, build meta e accessorio Apex; in «Mein Waffenlevel» (il mio livello arma) inserisci i tuoi progressi. In TTK confronti per misurazione, distanza e classe.',
+        'In Intel ci sono la data dei dati e le patch, «Nach Updates suchen» (cerca aggiornamenti) e, dove il browser lo offre, il pulsante «App installieren» (installa app); su iPhone usa Condividi e «Aggiungi alla schermata Home» in Safari. Dopo la prima visita la Rüstkammer funziona anche offline.'
+      ],
+      nl: [
+        'Wissel onderaan tussen Arsenal, Meta, TTK, Klassen (klassen) en Intel. Zoek in het Arsenal naar een wapen, Apex of klasse, of filter op wapentype.',
+        'Tik op een wapen: statistieken, time to kill, metabuilds en de Apex-attachment; onder ‘Mein Waffenlevel’ (mijn wapenlevel) vul je je voortgang in. Onder TTK vergelijk je op meting, afstand en klasse.',
+        'Intel bevat de datum van de gegevens en de patches, ‘Nach Updates suchen’ (naar updates zoeken) en, waar je browser het aanbiedt, de knop ‘App installieren’ (app installeren); op een iPhone gebruik je in Safari Deel en ‘Zet op beginscherm’. Na het eerste bezoek werkt de Rüstkammer ook offline.'
+      ],
+      pl: [
+        'Na dole przełączaj między Arsenal, Meta, TTK, Klassen (klasy) i Intel. W Arsenalu szukaj broni, Apexu lub klasy albo filtruj według rodzaju broni.',
+        'Dotknij broni: statystyki, time to kill, buildy meta i dodatek Apex; w „Mein Waffenlevel” (mój poziom broni) wpisujesz swój postęp. W TTK porównujesz według pomiaru, dystansu i klasy.',
+        'W Intel są data danych i patche, „Nach Updates suchen” (sprawdź aktualizacje) oraz – tam, gdzie przeglądarka to oferuje – przycisk „App installieren” (zainstaluj aplikację); na iPhonie użyj w Safari Udostępnij i „Do ekranu początkowego”. Po pierwszej wizycie Rüstkammer działa też offline.'
+      ],
+      pt: [
+        'Em baixo, alterne entre Arsenal, Meta, TTK, Klassen (classes) e Intel. No Arsenal, pesquise uma arma, um Apex ou uma classe, ou filtre por tipo de arma.',
+        'Toque numa arma: estatísticas, time to kill, builds meta e acessório Apex; em «Mein Waffenlevel» (o meu nível da arma) regista o seu progresso. Em TTK compara por medição, distância e classe.',
+        'Em Intel estão a data dos dados e os patches, «Nach Updates suchen» (procurar atualizações) e, onde o navegador o oferece, o botão «App installieren» (instalar app); no iPhone, use Partilhar e «Adicionar ao ecrã principal» no Safari. Depois da primeira visita, a Rüstkammer também funciona offline.'
+      ],
+      tr: [
+        'Altta Arsenal, Meta, TTK, Klassen (sınıflar) ve Intel arasında geçiş yapın. Arsenal’de silah, Apex ya da sınıf arayın veya silah türüne göre filtreleyin.',
+        'Bir silaha dokunun: istatistikler, time to kill, meta buildler ve Apex eklentisi; “Mein Waffenlevel” (silah seviyem) altında ilerlemenizi girersiniz. TTK’da ölçüm, mesafe ve sınıfa göre karşılaştırırsınız.',
+        'Intel’de veri tarihi ve yamalar, “Nach Updates suchen” (güncellemeleri ara) ve tarayıcının sunduğu yerde “App installieren” (uygulamayı yükle) düğmesi bulunur; iPhone’da Safari’de Paylaş ve “Ana Ekrana Ekle”yi kullanın. İlk ziyaretten sonra Rüstkammer çevrimdışı da çalışır.'
+      ],
+      ru: [
+        'Внизу переключайтесь между Arsenal, Meta, TTK, Klassen (классы) и Intel. В Arsenal ищите оружие, Apex или класс либо фильтруйте по типу оружия.',
+        'Коснитесь оружия: характеристики, time to kill, мета-сборки и модуль Apex; в «Mein Waffenlevel» (мой уровень оружия) вы отмечаете свой прогресс. В TTK сравнивайте по замеру, дистанции и классу.',
+        'В Intel – дата данных и патчи, «Nach Updates suchen» (проверить обновления) и, где браузер это предлагает, кнопка «App installieren» (установить приложение); на iPhone используйте в Safari «Поделиться» и «На экран „Домой“». После первого посещения Rüstkammer работает и офлайн.'
+      ],
+      hi: [
+        'नीचे Arsenal, Meta, TTK, Klassen (क्लास) और Intel के बीच बदलें। Arsenal में कोई हथियार, Apex या क्लास खोजें, या हथियार के प्रकार से छाँटें।',
+        'किसी हथियार पर टैप करें: आँकड़े, time to kill, मेटा बिल्ड और Apex अटैचमेंट; “Mein Waffenlevel” (मेरा हथियार लेवल) में आप अपनी प्रगति भरते हैं। TTK में माप, दूरी और क्लास के हिसाब से तुलना करें।',
+        'Intel में डेटा की तारीख़ और पैच, “Nach Updates suchen” (अपडेट खोजें) और – जहाँ ब्राउज़र यह देता है – “App installieren” (ऐप इंस्टॉल करें) बटन है; iPhone पर Safari में शेयर और “होम स्क्रीन में जोड़ें” इस्तेमाल करें। पहली विज़िट के बाद Rüstkammer ऑफ़लाइन भी चलता है।'
+      ],
+      zh: [
+        '在底部切换 Arsenal、Meta、TTK、Klassen（配装）和 Intel。在 Arsenal 里可搜索武器、Apex 或配装，或按武器类型筛选。',
+        '点一把武器：数值、击杀时间、Meta 配装和 Apex 配件；在“Mein Waffenlevel”（我的武器等级）里记录你的进度。在 TTK 里按测量方式、距离和类别比较。',
+        'Intel 里有数据日期和补丁、“Nach Updates suchen”（检查更新），以及在浏览器支持时出现的“App installieren”（安装应用）按钮；在 iPhone 上请用 Safari 的“分享”和“添加到主屏幕”。首次访问后，Rüstkammer 也能离线使用。'
+      ],
+      ja: [
+        '下部で Arsenal、Meta、TTK、Klassen（クラス）、Intel を切り替えます。Arsenal では武器・Apex・クラスで検索するか、武器種で絞り込みます。',
+        '武器をタップすると、ステータス、キルタイム、メタビルド、Apex アタッチメントが表示されます。「Mein Waffenlevel」（武器レベル）に自分の進み具合を入力できます。TTK では測定方法・距離・クラスで比較します。',
+        'Intel にはデータの日付とパッチ、「Nach Updates suchen」（更新を確認）、そしてブラウザーが対応していれば「App installieren」（アプリをインストール）ボタンがあります。iPhone では Safari の共有から「ホーム画面に追加」を使います。初回アクセス後はオフラインでも使えます。'
+      ],
+      ko: [
+        '아래에서 Arsenal, Meta, TTK, Klassen(클래스), Intel 사이를 오갑니다. Arsenal에서는 무기, Apex, 클래스로 검색하거나 무기 종류로 거릅니다.',
+        '무기를 누르면 능력치, 킬 타임, 메타 빌드, Apex 부착물이 나옵니다. ‘Mein Waffenlevel’(내 무기 레벨)에 진행 상황을 넣으세요. TTK에서는 측정 방식, 거리, 클래스별로 비교합니다.',
+        'Intel에는 데이터 날짜와 패치, ‘Nach Updates suchen’(업데이트 확인), 그리고 브라우저가 지원하면 ‘App installieren’(앱 설치) 버튼이 있습니다. iPhone에서는 Safari의 공유 → ‘홈 화면에 추가’를 쓰세요. 첫 방문 후에는 오프라인에서도 작동합니다.'
+      ]
+    },
+    pitfalls: {
+      de: [
+        'Die App ist auf Deutsch.',
+        'Die Hardcore-Werte (≈) sind geschätzt, nicht gemessen.',
+        'Nach einem Tuning-Patch können Werte veralten. Oben stehen der Datenstand und, wenn angekündigt, ein Tuning-Hinweis.',
+        'Dein Waffenlevel und deine Einstellungen liegen nur in diesem Browser.',
+        'Die Schriften kommen von Google Fonts: Beim Laden sieht Google deine IP-Adresse.'
+      ],
+      en: [
+        'The app is in German.',
+        'Hardcore values (≈) are estimates, not measurements.',
+        'A tuning patch can make values outdated. The data date sits at the top, together with a notice when tuning has been announced.',
+        'Your weapon level and settings live only in this browser.',
+        'The fonts come from Google Fonts: when they load, Google sees your IP address.'
+      ],
+      es: [
+        'La app está en alemán.',
+        'Los valores de Hardcore (≈) son estimaciones, no mediciones.',
+        'Tras un parche de ajustes, los valores pueden quedar desfasados. Arriba están la fecha de los datos y, si se ha anunciado, un aviso de ajustes.',
+        'Tu nivel de arma y tus ajustes solo se guardan en este navegador.',
+        'Las fuentes vienen de Google Fonts: al cargarlas, Google ve tu dirección IP.'
+      ],
+      fr: [
+        'L’application est en allemand.',
+        'Les valeurs Hardcore (≈) sont des estimations, pas des mesures.',
+        'Après un patch d’équilibrage, des valeurs peuvent être dépassées. En haut figurent la date des données et, s’il est annoncé, un avertissement d’équilibrage.',
+        'Votre niveau d’arme et vos réglages restent uniquement dans ce navigateur.',
+        'Les polices viennent de Google Fonts : à leur chargement, Google voit votre adresse IP.'
+      ],
+      it: [
+        'L’app è in tedesco.',
+        'I valori Hardcore (≈) sono stime, non misurazioni.',
+        'Dopo una patch di bilanciamento i valori possono essere superati. In alto ci sono la data dei dati e, se annunciato, un avviso di bilanciamento.',
+        'Il tuo livello arma e le tue impostazioni restano solo in questo browser.',
+        'I caratteri arrivano da Google Fonts: quando si caricano, Google vede il tuo indirizzo IP.'
+      ],
+      nl: [
+        'De app is in het Duits.',
+        'Hardcore-waarden (≈) zijn schattingen, geen metingen.',
+        'Na een tuningpatch kunnen waarden verouderd zijn. Bovenaan staan de datum van de gegevens en, als het is aangekondigd, een tuningmelding.',
+        'Je wapenlevel en instellingen staan alleen in deze browser.',
+        'De lettertypen komen van Google Fonts: bij het laden ziet Google je IP-adres.'
+      ],
+      pl: [
+        'Aplikacja jest po niemiecku.',
+        'Wartości Hardcore (≈) są szacunkami, nie pomiarami.',
+        'Po patchu balansującym wartości mogą się zdezaktualizować. U góry jest data danych i – jeśli zapowiedziano – informacja o zmianach balansu.',
+        'Twój poziom broni i ustawienia są zapisane tylko w tej przeglądarce.',
+        'Czcionki pochodzą z Google Fonts: przy ich wczytywaniu Google widzi twój adres IP.'
+      ],
+      pt: [
+        'A app está em alemão.',
+        'Os valores de Hardcore (≈) são estimativas, não medições.',
+        'Depois de um patch de ajuste, os valores podem ficar desatualizados. No topo estão a data dos dados e, se anunciado, um aviso de ajuste.',
+        'O seu nível de arma e as definições ficam só neste navegador.',
+        'As fontes vêm do Google Fonts: ao carregá-las, a Google vê o seu endereço IP.'
+      ],
+      tr: [
+        'Uygulama Almancadır.',
+        'Hardcore değerleri (≈) tahmindir, ölçüm değildir.',
+        'Bir ayar yamasından sonra değerler eskiyebilir. Üstte veri tarihi ve duyurulduysa bir ayar uyarısı yer alır.',
+        'Silah seviyeniz ve ayarlarınız yalnızca bu tarayıcıda durur.',
+        'Yazı tipleri Google Fonts’tan gelir: Yüklenirken Google IP adresinizi görür.'
+      ],
+      ru: [
+        'Приложение на немецком.',
+        'Значения для Hardcore (≈) – оценки, а не замеры.',
+        'После патча с балансировкой значения могут устареть. Вверху указаны дата данных и, если объявлено, предупреждение о балансировке.',
+        'Ваш уровень оружия и настройки хранятся только в этом браузере.',
+        'Шрифты загружаются из Google Fonts: при этом Google видит ваш IP-адрес.'
+      ],
+      hi: [
+        'ऐप जर्मन में है।',
+        'Hardcore मान (≈) अनुमान हैं, माप नहीं।',
+        'ट्यूनिंग पैच के बाद मान पुराने पड़ सकते हैं। ऊपर डेटा की तारीख़ और, घोषणा होने पर, ट्यूनिंग की सूचना रहती है।',
+        'आपका हथियार लेवल और सेटिंग्स सिर्फ़ इसी ब्राउज़र में रहती हैं।',
+        'फ़ॉन्ट Google Fonts से आते हैं: लोड होते समय Google आपका IP पता देखता है।'
+      ],
+      zh: [
+        '应用只有德语。',
+        'Hardcore 数值（≈）是估算，不是实测。',
+        '平衡调整补丁之后，数值可能过时。顶部有数据日期，宣布调整时还会有提示。',
+        '你的武器等级和设置只保存在这个浏览器里。',
+        '字体来自 Google Fonts：加载时 Google 会看到你的 IP 地址。'
+      ],
+      ja: [
+        'アプリはドイツ語です。',
+        'Hardcore の値（≈）は推定で、実測ではありません。',
+        '調整パッチの後は値が古くなることがあります。上部にデータの日付と、予告があれば調整の注意が表示されます。',
+        '武器レベルと設定は、このブラウザーの中にだけ保存されます。',
+        'フォントは Google Fonts から読み込まれます。その際、Google にあなたの IP アドレスが伝わります。'
+      ],
+      ko: [
+        '앱은 독일어입니다.',
+        'Hardcore 수치(≈)는 측정값이 아니라 추정치입니다.',
+        '밸런스 패치 뒤에는 수치가 낡을 수 있습니다. 위쪽에 데이터 날짜와, 예고가 있으면 밸런스 안내가 표시됩니다.',
+        '무기 레벨과 설정은 이 브라우저에만 저장됩니다.',
+        '글꼴은 Google Fonts에서 불러옵니다. 이때 Google이 IP 주소를 보게 됩니다.'
+      ]
+    },
+    docs: {
+      de: 'https://github.com/Dennismit2n/dennismit2n.github.io/tree/main/tools/mw4',
+      en: 'https://github.com/Dennismit2n/dennismit2n.github.io/tree/main/tools/mw4',
+      es: 'https://github.com/Dennismit2n/dennismit2n.github.io/tree/main/tools/mw4',
+      fr: 'https://github.com/Dennismit2n/dennismit2n.github.io/tree/main/tools/mw4',
+      it: 'https://github.com/Dennismit2n/dennismit2n.github.io/tree/main/tools/mw4',
+      nl: 'https://github.com/Dennismit2n/dennismit2n.github.io/tree/main/tools/mw4',
+      pl: 'https://github.com/Dennismit2n/dennismit2n.github.io/tree/main/tools/mw4',
+      pt: 'https://github.com/Dennismit2n/dennismit2n.github.io/tree/main/tools/mw4',
+      tr: 'https://github.com/Dennismit2n/dennismit2n.github.io/tree/main/tools/mw4',
+      ru: 'https://github.com/Dennismit2n/dennismit2n.github.io/tree/main/tools/mw4',
+      hi: 'https://github.com/Dennismit2n/dennismit2n.github.io/tree/main/tools/mw4',
+      zh: 'https://github.com/Dennismit2n/dennismit2n.github.io/tree/main/tools/mw4',
+      ja: 'https://github.com/Dennismit2n/dennismit2n.github.io/tree/main/tools/mw4',
+      ko: 'https://github.com/Dennismit2n/dennismit2n.github.io/tree/main/tools/mw4'
+    }
+  },
   pocketsum: {
     purpose: {
       de: 'Für die kleinen Rechnungen zwischendurch: Was kostet das netto? Wie viel Trinkgeld, und was zahlt jeder? Was macht der neue Spritpreis im Monat aus? Was bleibt von der Dividende nach Steuern? Und was kostet es wirklich, 250 € in Bitcoin zu stecken? Fünf Rechner in einer Datei, die auf deinem Gerät rechnet und deine Eingaben nirgendwohin schickt.',
