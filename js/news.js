@@ -61,6 +61,23 @@ var NEWS = {
 
   shrink: [
     {
+      date: '2026-10-30',
+      de: 'Neuer Knopf „Installieren“ oben in der Kopfzeile: Ein Tipp darauf richtet das Werkzeug als App ein, auf dem Handy wie am PC. Er erscheint, sobald dein Browser die Installation anbietet (etwa Chrome, Edge oder Samsung Internet), und fehlt in der installierten App.',
+      en: 'New “Install” button in the header: one tap sets the tool up as an app, on your phone or your computer. It appears as soon as your browser offers installation (Chrome, Edge or Samsung Internet, for example) and is gone in the installed app.',
+      es: 'Nuevo botón «Instalar» en la cabecera: con un toque, la herramienta se instala como app, en el móvil o en el ordenador. Aparece en cuanto tu navegador ofrece la instalación (por ejemplo, Chrome, Edge o Samsung Internet) y ya no está en la app instalada.',
+      fr: 'Nouveau bouton « Installer » dans l’en-tête : un appui installe l’outil comme application, sur le téléphone comme sur l’ordinateur. Il apparaît dès que votre navigateur propose l’installation (par exemple Chrome, Edge ou Samsung Internet) et n’est plus là dans l’application installée.',
+      it: 'Nuovo pulsante «Installa» nell’intestazione: con un tocco lo strumento si installa come app, sul telefono o sul computer. Compare appena il browser offre l’installazione (ad esempio Chrome, Edge o Samsung Internet) e non c’è più nell’app installata.',
+      nl: 'Nieuwe knop ‘Installeren’ in de kopregel: met één tik installeer je het hulpmiddel als app, op je telefoon of op je computer. De knop verschijnt zodra je browser de installatie aanbiedt (bijvoorbeeld Chrome, Edge of Samsung Internet) en ontbreekt in de geïnstalleerde app.',
+      pl: 'Nowy przycisk „Zainstaluj” w nagłówku: jedno dotknięcie instaluje narzędzie jako aplikację, na telefonie lub na komputerze. Pojawia się, gdy przeglądarka proponuje instalację (np. Chrome, Edge lub Samsung Internet), a w zainstalowanej aplikacji go nie ma.',
+      pt: 'Novo botão «Instalar» no cabeçalho: um toque instala a ferramenta como app, no telemóvel ou no computador. Aparece assim que o navegador oferece a instalação (por exemplo, Chrome, Edge ou Samsung Internet) e não aparece na app instalada.',
+      tr: 'Başlıkta yeni “Yükle” düğmesi: tek dokunuşla araç telefonda ya da bilgisayarda uygulama olarak kurulur. Düğme, tarayıcınız kurulumu önerdiği anda görünür (örneğin Chrome, Edge veya Samsung Internet) ve kurulu uygulamada yer almaz.',
+      ru: 'Новая кнопка «Установить» в шапке: одно касание — и инструмент установлен как приложение, на телефоне или на компьютере. Кнопка появляется, как только браузер предлагает установку (например, Chrome, Edge или Samsung Internet), а в установленном приложении её нет.',
+      hi: 'हेडर में नया “इंस्टॉल करें” बटन: एक टैप से यह टूल फ़ोन या कंप्यूटर पर ऐप की तरह इंस्टॉल हो जाता है। बटन तब दिखता है जब ब्राउज़र इंस्टॉल करने की सुविधा देता है (जैसे Chrome, Edge या Samsung Internet), और इंस्टॉल किए गए ऐप में यह नहीं दिखता।',
+      zh: '页眉新增“安装”按钮：点一下就能把这个工具安装为应用，手机和电脑都行。浏览器提供安装时（例如 Chrome、Edge 或 Samsung Internet）按钮才会出现，在已安装的应用里则不显示。',
+      ja: 'ヘッダーに「インストール」ボタンが加わりました。タップするとこのツールをアプリとしてインストールでき、スマートフォンでもパソコンでも使えます。ボタンはブラウザーがインストールを提案したとき（Chrome、Edge、Samsung Internet など）に現れ、インストール済みのアプリには表示されません。',
+      ko: '헤더에 새 ‘설치’ 버튼: 한 번 누르면 이 도구가 휴대폰이나 컴퓨터에 앱으로 설치됩니다. 버튼은 브라우저가 설치를 제안할 때(예: Chrome, Edge, Samsung Internet) 나타나며, 설치된 앱에서는 보이지 않습니다.'
+    },
+    {
       date: '2026-09-14',
       de: 'Niederländisch und Polnisch sind dazugekommen — jetzt vierzehn Sprachen.',
       en: 'Dutch and Polish were added — fourteen languages now.',
@@ -148,6 +165,23 @@ var NEWS = {
   ],
 
   wifi: [
+    {
+      date: '2026-10-30',
+      de: 'Neuer Knopf „Installieren“ oben in der Kopfzeile: Ein Tipp darauf richtet das Werkzeug als App ein, auf dem Handy wie am PC. Er erscheint, sobald dein Browser die Installation anbietet (etwa Chrome, Edge oder Samsung Internet), und fehlt in der installierten App.',
+      en: 'New “Install” button in the header: one tap sets the tool up as an app, on your phone or your computer. It appears as soon as your browser offers installation (Chrome, Edge or Samsung Internet, for example) and is gone in the installed app.',
+      es: 'Nuevo botón «Instalar» en la cabecera: con un toque, la herramienta se instala como app, en el móvil o en el ordenador. Aparece en cuanto tu navegador ofrece la instalación (por ejemplo, Chrome, Edge o Samsung Internet) y ya no está en la app instalada.',
+      fr: 'Nouveau bouton « Installer » dans l’en-tête : un appui installe l’outil comme application, sur le téléphone comme sur l’ordinateur. Il apparaît dès que votre navigateur propose l’installation (par exemple Chrome, Edge ou Samsung Internet) et n’est plus là dans l’application installée.',
+      it: 'Nuovo pulsante «Installa» nell’intestazione: con un tocco lo strumento si installa come app, sul telefono o sul computer. Compare appena il browser offre l’installazione (ad esempio Chrome, Edge o Samsung Internet) e non c’è più nell’app installata.',
+      nl: 'Nieuwe knop ‘Installeren’ in de kopregel: met één tik installeer je het hulpmiddel als app, op je telefoon of op je computer. De knop verschijnt zodra je browser de installatie aanbiedt (bijvoorbeeld Chrome, Edge of Samsung Internet) en ontbreekt in de geïnstalleerde app.',
+      pl: 'Nowy przycisk „Zainstaluj” w nagłówku: jedno dotknięcie instaluje narzędzie jako aplikację, na telefonie lub na komputerze. Pojawia się, gdy przeglądarka proponuje instalację (np. Chrome, Edge lub Samsung Internet), a w zainstalowanej aplikacji go nie ma.',
+      pt: 'Novo botão «Instalar» no cabeçalho: um toque instala a ferramenta como app, no telemóvel ou no computador. Aparece assim que o navegador oferece a instalação (por exemplo, Chrome, Edge ou Samsung Internet) e não aparece na app instalada.',
+      tr: 'Başlıkta yeni “Yükle” düğmesi: tek dokunuşla araç telefonda ya da bilgisayarda uygulama olarak kurulur. Düğme, tarayıcınız kurulumu önerdiği anda görünür (örneğin Chrome, Edge veya Samsung Internet) ve kurulu uygulamada yer almaz.',
+      ru: 'Новая кнопка «Установить» в шапке: одно касание — и инструмент установлен как приложение, на телефоне или на компьютере. Кнопка появляется, как только браузер предлагает установку (например, Chrome, Edge или Samsung Internet), а в установленном приложении её нет.',
+      hi: 'हेडर में नया “इंस्टॉल करें” बटन: एक टैप से यह टूल फ़ोन या कंप्यूटर पर ऐप की तरह इंस्टॉल हो जाता है। बटन तब दिखता है जब ब्राउज़र इंस्टॉल करने की सुविधा देता है (जैसे Chrome, Edge या Samsung Internet), और इंस्टॉल किए गए ऐप में यह नहीं दिखता।',
+      zh: '页眉新增“安装”按钮：点一下就能把这个工具安装为应用，手机和电脑都行。浏览器提供安装时（例如 Chrome、Edge 或 Samsung Internet）按钮才会出现，在已安装的应用里则不显示。',
+      ja: 'ヘッダーに「インストール」ボタンが加わりました。タップするとこのツールをアプリとしてインストールでき、スマートフォンでもパソコンでも使えます。ボタンはブラウザーがインストールを提案したとき（Chrome、Edge、Samsung Internet など）に現れ、インストール済みのアプリには表示されません。',
+      ko: '헤더에 새 ‘설치’ 버튼: 한 번 누르면 이 도구가 휴대폰이나 컴퓨터에 앱으로 설치됩니다. 버튼은 브라우저가 설치를 제안할 때(예: Chrome, Edge, Samsung Internet) 나타나며, 설치된 앱에서는 보이지 않습니다.'
+    },
     {
       date: '2026-09-14',
       de: 'Niederländisch und Polnisch sind dazugekommen — jetzt vierzehn Sprachen.',
@@ -237,6 +271,23 @@ var NEWS = {
 
   prismatical: [
     {
+      date: '2026-10-30',
+      de: 'Neuer Knopf „Installieren“ oben in der Kopfzeile: Ein Tipp darauf richtet das Werkzeug als App ein, auf dem Handy wie am PC. Er erscheint, sobald dein Browser die Installation anbietet (etwa Chrome, Edge oder Samsung Internet), und fehlt in der installierten App.',
+      en: 'New “Install” button in the header: one tap sets the tool up as an app, on your phone or your computer. It appears as soon as your browser offers installation (Chrome, Edge or Samsung Internet, for example) and is gone in the installed app.',
+      es: 'Nuevo botón «Instalar» en la cabecera: con un toque, la herramienta se instala como app, en el móvil o en el ordenador. Aparece en cuanto tu navegador ofrece la instalación (por ejemplo, Chrome, Edge o Samsung Internet) y ya no está en la app instalada.',
+      fr: 'Nouveau bouton « Installer » dans l’en-tête : un appui installe l’outil comme application, sur le téléphone comme sur l’ordinateur. Il apparaît dès que votre navigateur propose l’installation (par exemple Chrome, Edge ou Samsung Internet) et n’est plus là dans l’application installée.',
+      it: 'Nuovo pulsante «Installa» nell’intestazione: con un tocco lo strumento si installa come app, sul telefono o sul computer. Compare appena il browser offre l’installazione (ad esempio Chrome, Edge o Samsung Internet) e non c’è più nell’app installata.',
+      nl: 'Nieuwe knop ‘Installeren’ in de kopregel: met één tik installeer je het hulpmiddel als app, op je telefoon of op je computer. De knop verschijnt zodra je browser de installatie aanbiedt (bijvoorbeeld Chrome, Edge of Samsung Internet) en ontbreekt in de geïnstalleerde app.',
+      pl: 'Nowy przycisk „Zainstaluj” w nagłówku: jedno dotknięcie instaluje narzędzie jako aplikację, na telefonie lub na komputerze. Pojawia się, gdy przeglądarka proponuje instalację (np. Chrome, Edge lub Samsung Internet), a w zainstalowanej aplikacji go nie ma.',
+      pt: 'Novo botão «Instalar» no cabeçalho: um toque instala a ferramenta como app, no telemóvel ou no computador. Aparece assim que o navegador oferece a instalação (por exemplo, Chrome, Edge ou Samsung Internet) e não aparece na app instalada.',
+      tr: 'Başlıkta yeni “Yükle” düğmesi: tek dokunuşla araç telefonda ya da bilgisayarda uygulama olarak kurulur. Düğme, tarayıcınız kurulumu önerdiği anda görünür (örneğin Chrome, Edge veya Samsung Internet) ve kurulu uygulamada yer almaz.',
+      ru: 'Новая кнопка «Установить» в шапке: одно касание — и инструмент установлен как приложение, на телефоне или на компьютере. Кнопка появляется, как только браузер предлагает установку (например, Chrome, Edge или Samsung Internet), а в установленном приложении её нет.',
+      hi: 'हेडर में नया “इंस्टॉल करें” बटन: एक टैप से यह टूल फ़ोन या कंप्यूटर पर ऐप की तरह इंस्टॉल हो जाता है। बटन तब दिखता है जब ब्राउज़र इंस्टॉल करने की सुविधा देता है (जैसे Chrome, Edge या Samsung Internet), और इंस्टॉल किए गए ऐप में यह नहीं दिखता।',
+      zh: '页眉新增“安装”按钮：点一下就能把这个工具安装为应用，手机和电脑都行。浏览器提供安装时（例如 Chrome、Edge 或 Samsung Internet）按钮才会出现，在已安装的应用里则不显示。',
+      ja: 'ヘッダーに「インストール」ボタンが加わりました。タップするとこのツールをアプリとしてインストールでき、スマートフォンでもパソコンでも使えます。ボタンはブラウザーがインストールを提案したとき（Chrome、Edge、Samsung Internet など）に現れ、インストール済みのアプリには表示されません。',
+      ko: '헤더에 새 ‘설치’ 버튼: 한 번 누르면 이 도구가 휴대폰이나 컴퓨터에 앱으로 설치됩니다. 버튼은 브라우저가 설치를 제안할 때(예: Chrome, Edge, Samsung Internet) 나타나며, 설치된 앱에서는 보이지 않습니다.'
+    },
+    {
       date: '2026-09-14',
       de: 'Hindi und Koreanisch sind dazugekommen — jetzt vierzehn Sprachen. Vorher konnte Prismatical zwar Niederländisch und Polnisch, aber weder Hindi noch Koreanisch.',
       en: 'Hindi and Korean were added — fourteen languages now. Before this, Prismatical spoke Dutch and Polish but neither Hindi nor Korean.',
@@ -273,6 +324,23 @@ var NEWS = {
   ],
 
   spectroton: [
+    {
+      date: '2026-10-30',
+      de: 'Neuer Knopf „Installieren“ oben in der Kopfzeile: Ein Tipp darauf richtet das Werkzeug als App ein, auf dem Handy wie am PC. Er erscheint, sobald dein Browser die Installation anbietet (etwa Chrome, Edge oder Samsung Internet), und fehlt in der installierten App.',
+      en: 'New “Install” button in the header: one tap sets the tool up as an app, on your phone or your computer. It appears as soon as your browser offers installation (Chrome, Edge or Samsung Internet, for example) and is gone in the installed app.',
+      es: 'Nuevo botón «Instalar» en la cabecera: con un toque, la herramienta se instala como app, en el móvil o en el ordenador. Aparece en cuanto tu navegador ofrece la instalación (por ejemplo, Chrome, Edge o Samsung Internet) y ya no está en la app instalada.',
+      fr: 'Nouveau bouton « Installer » dans l’en-tête : un appui installe l’outil comme application, sur le téléphone comme sur l’ordinateur. Il apparaît dès que votre navigateur propose l’installation (par exemple Chrome, Edge ou Samsung Internet) et n’est plus là dans l’application installée.',
+      it: 'Nuovo pulsante «Installa» nell’intestazione: con un tocco lo strumento si installa come app, sul telefono o sul computer. Compare appena il browser offre l’installazione (ad esempio Chrome, Edge o Samsung Internet) e non c’è più nell’app installata.',
+      nl: 'Nieuwe knop ‘Installeren’ in de kopregel: met één tik installeer je het hulpmiddel als app, op je telefoon of op je computer. De knop verschijnt zodra je browser de installatie aanbiedt (bijvoorbeeld Chrome, Edge of Samsung Internet) en ontbreekt in de geïnstalleerde app.',
+      pl: 'Nowy przycisk „Zainstaluj” w nagłówku: jedno dotknięcie instaluje narzędzie jako aplikację, na telefonie lub na komputerze. Pojawia się, gdy przeglądarka proponuje instalację (np. Chrome, Edge lub Samsung Internet), a w zainstalowanej aplikacji go nie ma.',
+      pt: 'Novo botão «Instalar» no cabeçalho: um toque instala a ferramenta como app, no telemóvel ou no computador. Aparece assim que o navegador oferece a instalação (por exemplo, Chrome, Edge ou Samsung Internet) e não aparece na app instalada.',
+      tr: 'Başlıkta yeni “Yükle” düğmesi: tek dokunuşla araç telefonda ya da bilgisayarda uygulama olarak kurulur. Düğme, tarayıcınız kurulumu önerdiği anda görünür (örneğin Chrome, Edge veya Samsung Internet) ve kurulu uygulamada yer almaz.',
+      ru: 'Новая кнопка «Установить» в шапке: одно касание — и инструмент установлен как приложение, на телефоне или на компьютере. Кнопка появляется, как только браузер предлагает установку (например, Chrome, Edge или Samsung Internet), а в установленном приложении её нет.',
+      hi: 'हेडर में नया “इंस्टॉल करें” बटन: एक टैप से यह टूल फ़ोन या कंप्यूटर पर ऐप की तरह इंस्टॉल हो जाता है। बटन तब दिखता है जब ब्राउज़र इंस्टॉल करने की सुविधा देता है (जैसे Chrome, Edge या Samsung Internet), और इंस्टॉल किए गए ऐप में यह नहीं दिखता।',
+      zh: '页眉新增“安装”按钮：点一下就能把这个工具安装为应用，手机和电脑都行。浏览器提供安装时（例如 Chrome、Edge 或 Samsung Internet）按钮才会出现，在已安装的应用里则不显示。',
+      ja: 'ヘッダーに「インストール」ボタンが加わりました。タップするとこのツールをアプリとしてインストールでき、スマートフォンでもパソコンでも使えます。ボタンはブラウザーがインストールを提案したとき（Chrome、Edge、Samsung Internet など）に現れ、インストール済みのアプリには表示されません。',
+      ko: '헤더에 새 ‘설치’ 버튼: 한 번 누르면 이 도구가 휴대폰이나 컴퓨터에 앱으로 설치됩니다. 버튼은 브라우저가 설치를 제안할 때(예: Chrome, Edge, Samsung Internet) 나타나며, 설치된 앱에서는 보이지 않습니다.'
+    },
     {
       date: '2026-09-23',
       de: 'Spectroton zählt jetzt Besuche anonym mit GoatCounter, ohne Cookies — wie die übrigen Werkzeuge der Werkstatt; der Footer sagt es offen. Das Zählskript wird mit dem Werkzeug ausgeliefert statt von einem fremden Dienst nachgeladen, und die Farben eines geteilten Links stehen im Anker der Adresse, der nie mitgesendet wird.',
@@ -362,6 +430,23 @@ var NEWS = {
 
   collective: [
     {
+      date: '2026-10-30',
+      de: 'Neuer Knopf „Installieren“ oben in der Kopfzeile: Ein Tipp darauf richtet das Werkzeug als App ein, auf dem Handy wie am PC. Er erscheint, sobald dein Browser die Installation anbietet (etwa Chrome, Edge oder Samsung Internet), und fehlt in der installierten App.',
+      en: 'New “Install” button in the header: one tap sets the tool up as an app, on your phone or your computer. It appears as soon as your browser offers installation (Chrome, Edge or Samsung Internet, for example) and is gone in the installed app.',
+      es: 'Nuevo botón «Instalar» en la cabecera: con un toque, la herramienta se instala como app, en el móvil o en el ordenador. Aparece en cuanto tu navegador ofrece la instalación (por ejemplo, Chrome, Edge o Samsung Internet) y ya no está en la app instalada.',
+      fr: 'Nouveau bouton « Installer » dans l’en-tête : un appui installe l’outil comme application, sur le téléphone comme sur l’ordinateur. Il apparaît dès que votre navigateur propose l’installation (par exemple Chrome, Edge ou Samsung Internet) et n’est plus là dans l’application installée.',
+      it: 'Nuovo pulsante «Installa» nell’intestazione: con un tocco lo strumento si installa come app, sul telefono o sul computer. Compare appena il browser offre l’installazione (ad esempio Chrome, Edge o Samsung Internet) e non c’è più nell’app installata.',
+      nl: 'Nieuwe knop ‘Installeren’ in de kopregel: met één tik installeer je het hulpmiddel als app, op je telefoon of op je computer. De knop verschijnt zodra je browser de installatie aanbiedt (bijvoorbeeld Chrome, Edge of Samsung Internet) en ontbreekt in de geïnstalleerde app.',
+      pl: 'Nowy przycisk „Zainstaluj” w nagłówku: jedno dotknięcie instaluje narzędzie jako aplikację, na telefonie lub na komputerze. Pojawia się, gdy przeglądarka proponuje instalację (np. Chrome, Edge lub Samsung Internet), a w zainstalowanej aplikacji go nie ma.',
+      pt: 'Novo botão «Instalar» no cabeçalho: um toque instala a ferramenta como app, no telemóvel ou no computador. Aparece assim que o navegador oferece a instalação (por exemplo, Chrome, Edge ou Samsung Internet) e não aparece na app instalada.',
+      tr: 'Başlıkta yeni “Yükle” düğmesi: tek dokunuşla araç telefonda ya da bilgisayarda uygulama olarak kurulur. Düğme, tarayıcınız kurulumu önerdiği anda görünür (örneğin Chrome, Edge veya Samsung Internet) ve kurulu uygulamada yer almaz.',
+      ru: 'Новая кнопка «Установить» в шапке: одно касание — и инструмент установлен как приложение, на телефоне или на компьютере. Кнопка появляется, как только браузер предлагает установку (например, Chrome, Edge или Samsung Internet), а в установленном приложении её нет.',
+      hi: 'हेडर में नया “इंस्टॉल करें” बटन: एक टैप से यह टूल फ़ोन या कंप्यूटर पर ऐप की तरह इंस्टॉल हो जाता है। बटन तब दिखता है जब ब्राउज़र इंस्टॉल करने की सुविधा देता है (जैसे Chrome, Edge या Samsung Internet), और इंस्टॉल किए गए ऐप में यह नहीं दिखता।',
+      zh: '页眉新增“安装”按钮：点一下就能把这个工具安装为应用，手机和电脑都行。浏览器提供安装时（例如 Chrome、Edge 或 Samsung Internet）按钮才会出现，在已安装的应用里则不显示。',
+      ja: 'ヘッダーに「インストール」ボタンが加わりました。タップするとこのツールをアプリとしてインストールでき、スマートフォンでもパソコンでも使えます。ボタンはブラウザーがインストールを提案したとき（Chrome、Edge、Samsung Internet など）に現れ、インストール済みのアプリには表示されません。',
+      ko: '헤더에 새 ‘설치’ 버튼: 한 번 누르면 이 도구가 휴대폰이나 컴퓨터에 앱으로 설치됩니다. 버튼은 브라우저가 설치를 제안할 때(예: Chrome, Edge, Samsung Internet) 나타나며, 설치된 앱에서는 보이지 않습니다.'
+    },
+    {
       date: '2026-09-14',
       de: 'Niederländisch und Polnisch sind dazugekommen — jetzt vierzehn Sprachen.',
       en: 'Dutch and Polish were added — fourteen languages now.',
@@ -450,6 +535,23 @@ var NEWS = {
 
   bigday: [
     {
+      date: '2026-10-30',
+      de: 'Neuer Knopf „Installieren“ oben in der Kopfzeile: Ein Tipp darauf richtet das Werkzeug als App ein, auf dem Handy wie am PC. Er erscheint, sobald dein Browser die Installation anbietet (etwa Chrome, Edge oder Samsung Internet), und fehlt in der installierten App.',
+      en: 'New “Install” button in the header: one tap sets the tool up as an app, on your phone or your computer. It appears as soon as your browser offers installation (Chrome, Edge or Samsung Internet, for example) and is gone in the installed app.',
+      es: 'Nuevo botón «Instalar» en la cabecera: con un toque, la herramienta se instala como app, en el móvil o en el ordenador. Aparece en cuanto tu navegador ofrece la instalación (por ejemplo, Chrome, Edge o Samsung Internet) y ya no está en la app instalada.',
+      fr: 'Nouveau bouton « Installer » dans l’en-tête : un appui installe l’outil comme application, sur le téléphone comme sur l’ordinateur. Il apparaît dès que votre navigateur propose l’installation (par exemple Chrome, Edge ou Samsung Internet) et n’est plus là dans l’application installée.',
+      it: 'Nuovo pulsante «Installa» nell’intestazione: con un tocco lo strumento si installa come app, sul telefono o sul computer. Compare appena il browser offre l’installazione (ad esempio Chrome, Edge o Samsung Internet) e non c’è più nell’app installata.',
+      nl: 'Nieuwe knop ‘Installeren’ in de kopregel: met één tik installeer je het hulpmiddel als app, op je telefoon of op je computer. De knop verschijnt zodra je browser de installatie aanbiedt (bijvoorbeeld Chrome, Edge of Samsung Internet) en ontbreekt in de geïnstalleerde app.',
+      pl: 'Nowy przycisk „Zainstaluj” w nagłówku: jedno dotknięcie instaluje narzędzie jako aplikację, na telefonie lub na komputerze. Pojawia się, gdy przeglądarka proponuje instalację (np. Chrome, Edge lub Samsung Internet), a w zainstalowanej aplikacji go nie ma.',
+      pt: 'Novo botão «Instalar» no cabeçalho: um toque instala a ferramenta como app, no telemóvel ou no computador. Aparece assim que o navegador oferece a instalação (por exemplo, Chrome, Edge ou Samsung Internet) e não aparece na app instalada.',
+      tr: 'Başlıkta yeni “Yükle” düğmesi: tek dokunuşla araç telefonda ya da bilgisayarda uygulama olarak kurulur. Düğme, tarayıcınız kurulumu önerdiği anda görünür (örneğin Chrome, Edge veya Samsung Internet) ve kurulu uygulamada yer almaz.',
+      ru: 'Новая кнопка «Установить» в шапке: одно касание — и инструмент установлен как приложение, на телефоне или на компьютере. Кнопка появляется, как только браузер предлагает установку (например, Chrome, Edge или Samsung Internet), а в установленном приложении её нет.',
+      hi: 'हेडर में नया “इंस्टॉल करें” बटन: एक टैप से यह टूल फ़ोन या कंप्यूटर पर ऐप की तरह इंस्टॉल हो जाता है। बटन तब दिखता है जब ब्राउज़र इंस्टॉल करने की सुविधा देता है (जैसे Chrome, Edge या Samsung Internet), और इंस्टॉल किए गए ऐप में यह नहीं दिखता।',
+      zh: '页眉新增“安装”按钮：点一下就能把这个工具安装为应用，手机和电脑都行。浏览器提供安装时（例如 Chrome、Edge 或 Samsung Internet）按钮才会出现，在已安装的应用里则不显示。',
+      ja: 'ヘッダーに「インストール」ボタンが加わりました。タップするとこのツールをアプリとしてインストールでき、スマートフォンでもパソコンでも使えます。ボタンはブラウザーがインストールを提案したとき（Chrome、Edge、Samsung Internet など）に現れ、インストール済みのアプリには表示されません。',
+      ko: '헤더에 새 ‘설치’ 버튼: 한 번 누르면 이 도구가 휴대폰이나 컴퓨터에 앱으로 설치됩니다. 버튼은 브라우저가 설치를 제안할 때(예: Chrome, Edge, Samsung Internet) 나타나며, 설치된 앱에서는 보이지 않습니다.'
+    },
+    {
       date: '2026-09-14',
       de: 'Niederländisch und Polnisch sind dazugekommen — jetzt vierzehn Sprachen.',
       en: 'Dutch and Polish were added — fourteen languages now.',
@@ -520,6 +622,23 @@ var NEWS = {
   ],
 
   rad: [
+    {
+      date: '2026-10-30',
+      de: 'Neuer Knopf „Installieren“ oben in der Kopfzeile: Ein Tipp darauf richtet das Werkzeug als App ein, auf dem Handy wie am PC. Er erscheint, sobald dein Browser die Installation anbietet (etwa Chrome, Edge oder Samsung Internet), und fehlt in der installierten App.',
+      en: 'New “Install” button in the header: one tap sets the tool up as an app, on your phone or your computer. It appears as soon as your browser offers installation (Chrome, Edge or Samsung Internet, for example) and is gone in the installed app.',
+      es: 'Nuevo botón «Instalar» en la cabecera: con un toque, la herramienta se instala como app, en el móvil o en el ordenador. Aparece en cuanto tu navegador ofrece la instalación (por ejemplo, Chrome, Edge o Samsung Internet) y ya no está en la app instalada.',
+      fr: 'Nouveau bouton « Installer » dans l’en-tête : un appui installe l’outil comme application, sur le téléphone comme sur l’ordinateur. Il apparaît dès que votre navigateur propose l’installation (par exemple Chrome, Edge ou Samsung Internet) et n’est plus là dans l’application installée.',
+      it: 'Nuovo pulsante «Installa» nell’intestazione: con un tocco lo strumento si installa come app, sul telefono o sul computer. Compare appena il browser offre l’installazione (ad esempio Chrome, Edge o Samsung Internet) e non c’è più nell’app installata.',
+      nl: 'Nieuwe knop ‘Installeren’ in de kopregel: met één tik installeer je het hulpmiddel als app, op je telefoon of op je computer. De knop verschijnt zodra je browser de installatie aanbiedt (bijvoorbeeld Chrome, Edge of Samsung Internet) en ontbreekt in de geïnstalleerde app.',
+      pl: 'Nowy przycisk „Zainstaluj” w nagłówku: jedno dotknięcie instaluje narzędzie jako aplikację, na telefonie lub na komputerze. Pojawia się, gdy przeglądarka proponuje instalację (np. Chrome, Edge lub Samsung Internet), a w zainstalowanej aplikacji go nie ma.',
+      pt: 'Novo botão «Instalar» no cabeçalho: um toque instala a ferramenta como app, no telemóvel ou no computador. Aparece assim que o navegador oferece a instalação (por exemplo, Chrome, Edge ou Samsung Internet) e não aparece na app instalada.',
+      tr: 'Başlıkta yeni “Yükle” düğmesi: tek dokunuşla araç telefonda ya da bilgisayarda uygulama olarak kurulur. Düğme, tarayıcınız kurulumu önerdiği anda görünür (örneğin Chrome, Edge veya Samsung Internet) ve kurulu uygulamada yer almaz.',
+      ru: 'Новая кнопка «Установить» в шапке: одно касание — и инструмент установлен как приложение, на телефоне или на компьютере. Кнопка появляется, как только браузер предлагает установку (например, Chrome, Edge или Samsung Internet), а в установленном приложении её нет.',
+      hi: 'हेडर में नया “इंस्टॉल करें” बटन: एक टैप से यह टूल फ़ोन या कंप्यूटर पर ऐप की तरह इंस्टॉल हो जाता है। बटन तब दिखता है जब ब्राउज़र इंस्टॉल करने की सुविधा देता है (जैसे Chrome, Edge या Samsung Internet), और इंस्टॉल किए गए ऐप में यह नहीं दिखता।',
+      zh: '页眉新增“安装”按钮：点一下就能把这个工具安装为应用，手机和电脑都行。浏览器提供安装时（例如 Chrome、Edge 或 Samsung Internet）按钮才会出现，在已安装的应用里则不显示。',
+      ja: 'ヘッダーに「インストール」ボタンが加わりました。タップするとこのツールをアプリとしてインストールでき、スマートフォンでもパソコンでも使えます。ボタンはブラウザーがインストールを提案したとき（Chrome、Edge、Samsung Internet など）に現れ、インストール済みのアプリには表示されません。',
+      ko: '헤더에 새 ‘설치’ 버튼: 한 번 누르면 이 도구가 휴대폰이나 컴퓨터에 앱으로 설치됩니다. 버튼은 브라우저가 설치를 제안할 때(예: Chrome, Edge, Samsung Internet) 나타나며, 설치된 앱에서는 보이지 않습니다.'
+    },
     {
       date: '2026-09-14',
       de: 'Niederländisch und Polnisch sind dazugekommen — jetzt vierzehn Sprachen.',
@@ -667,6 +786,23 @@ var NEWS = {
   ],
 
   fontart: [
+    {
+      date: '2026-10-30',
+      de: 'Neuer Knopf „Installieren“ oben in der Kopfzeile: Ein Tipp darauf richtet das Werkzeug als App ein, auf dem Handy wie am PC. Er erscheint, sobald dein Browser die Installation anbietet (etwa Chrome, Edge oder Samsung Internet), und fehlt in der installierten App.',
+      en: 'New “Install” button in the header: one tap sets the tool up as an app, on your phone or your computer. It appears as soon as your browser offers installation (Chrome, Edge or Samsung Internet, for example) and is gone in the installed app.',
+      es: 'Nuevo botón «Instalar» en la cabecera: con un toque, la herramienta se instala como app, en el móvil o en el ordenador. Aparece en cuanto tu navegador ofrece la instalación (por ejemplo, Chrome, Edge o Samsung Internet) y ya no está en la app instalada.',
+      fr: 'Nouveau bouton « Installer » dans l’en-tête : un appui installe l’outil comme application, sur le téléphone comme sur l’ordinateur. Il apparaît dès que votre navigateur propose l’installation (par exemple Chrome, Edge ou Samsung Internet) et n’est plus là dans l’application installée.',
+      it: 'Nuovo pulsante «Installa» nell’intestazione: con un tocco lo strumento si installa come app, sul telefono o sul computer. Compare appena il browser offre l’installazione (ad esempio Chrome, Edge o Samsung Internet) e non c’è più nell’app installata.',
+      nl: 'Nieuwe knop ‘Installeren’ in de kopregel: met één tik installeer je het hulpmiddel als app, op je telefoon of op je computer. De knop verschijnt zodra je browser de installatie aanbiedt (bijvoorbeeld Chrome, Edge of Samsung Internet) en ontbreekt in de geïnstalleerde app.',
+      pl: 'Nowy przycisk „Zainstaluj” w nagłówku: jedno dotknięcie instaluje narzędzie jako aplikację, na telefonie lub na komputerze. Pojawia się, gdy przeglądarka proponuje instalację (np. Chrome, Edge lub Samsung Internet), a w zainstalowanej aplikacji go nie ma.',
+      pt: 'Novo botão «Instalar» no cabeçalho: um toque instala a ferramenta como app, no telemóvel ou no computador. Aparece assim que o navegador oferece a instalação (por exemplo, Chrome, Edge ou Samsung Internet) e não aparece na app instalada.',
+      tr: 'Başlıkta yeni “Yükle” düğmesi: tek dokunuşla araç telefonda ya da bilgisayarda uygulama olarak kurulur. Düğme, tarayıcınız kurulumu önerdiği anda görünür (örneğin Chrome, Edge veya Samsung Internet) ve kurulu uygulamada yer almaz.',
+      ru: 'Новая кнопка «Установить» в шапке: одно касание — и инструмент установлен как приложение, на телефоне или на компьютере. Кнопка появляется, как только браузер предлагает установку (например, Chrome, Edge или Samsung Internet), а в установленном приложении её нет.',
+      hi: 'हेडर में नया “इंस्टॉल करें” बटन: एक टैप से यह टूल फ़ोन या कंप्यूटर पर ऐप की तरह इंस्टॉल हो जाता है। बटन तब दिखता है जब ब्राउज़र इंस्टॉल करने की सुविधा देता है (जैसे Chrome, Edge या Samsung Internet), और इंस्टॉल किए गए ऐप में यह नहीं दिखता।',
+      zh: '页眉新增“安装”按钮：点一下就能把这个工具安装为应用，手机和电脑都行。浏览器提供安装时（例如 Chrome、Edge 或 Samsung Internet）按钮才会出现，在已安装的应用里则不显示。',
+      ja: 'ヘッダーに「インストール」ボタンが加わりました。タップするとこのツールをアプリとしてインストールでき、スマートフォンでもパソコンでも使えます。ボタンはブラウザーがインストールを提案したとき（Chrome、Edge、Samsung Internet など）に現れ、インストール済みのアプリには表示されません。',
+      ko: '헤더에 새 ‘설치’ 버튼: 한 번 누르면 이 도구가 휴대폰이나 컴퓨터에 앱으로 설치됩니다. 버튼은 브라우저가 설치를 제안할 때(예: Chrome, Edge, Samsung Internet) 나타나며, 설치된 앱에서는 보이지 않습니다.'
+    },
     {
       date: '2026-09-15',
       de: 'Die Oberfläche spricht jetzt vierzehn Sprachen statt nur Deutsch — in der Browser-Fassung wie im Windows-Programm, beide aus derselben Quelle gebaut. Die Sprache wird automatisch erkannt und lässt sich oben umstellen; die Anleitung ist dabei nach Themen geordnet statt nach Versionsnummern, sodass niemand mehr raten muss, unter welcher Nummer eine Funktion erklärt wird. Teils maschinell übersetzt, Korrekturen willkommen.',
@@ -835,6 +971,23 @@ var NEWS = {
     }
   ],
   heizwarte: [
+    {
+      date: '2026-10-30',
+      de: 'Neuer Knopf „Installieren“ oben in der Kopfzeile: Ein Tipp darauf richtet das Werkzeug als App ein, auf dem Handy wie am PC. Er erscheint, sobald dein Browser die Installation anbietet (etwa Chrome, Edge oder Samsung Internet), und fehlt in der installierten App.',
+      en: 'New “Installieren” button in the header: one tap sets the tool up as an app, on your phone or your computer. It appears as soon as your browser offers installation (Chrome, Edge or Samsung Internet, for example) and is gone in the installed app.',
+      es: 'Nuevo botón «Installieren» en la cabecera: con un toque, la herramienta se instala como app, en el móvil o en el ordenador. Aparece en cuanto tu navegador ofrece la instalación (por ejemplo, Chrome, Edge o Samsung Internet) y ya no está en la app instalada.',
+      fr: 'Nouveau bouton « Installieren » dans l’en-tête : un appui installe l’outil comme application, sur le téléphone comme sur l’ordinateur. Il apparaît dès que votre navigateur propose l’installation (par exemple Chrome, Edge ou Samsung Internet) et n’est plus là dans l’application installée.',
+      it: 'Nuovo pulsante «Installieren» nell’intestazione: con un tocco lo strumento si installa come app, sul telefono o sul computer. Compare appena il browser offre l’installazione (ad esempio Chrome, Edge o Samsung Internet) e non c’è più nell’app installata.',
+      nl: 'Nieuwe knop ‘Installieren’ in de kopregel: met één tik installeer je het hulpmiddel als app, op je telefoon of op je computer. De knop verschijnt zodra je browser de installatie aanbiedt (bijvoorbeeld Chrome, Edge of Samsung Internet) en ontbreekt in de geïnstalleerde app.',
+      pl: 'Nowy przycisk „Installieren” w nagłówku: jedno dotknięcie instaluje narzędzie jako aplikację, na telefonie lub na komputerze. Pojawia się, gdy przeglądarka proponuje instalację (np. Chrome, Edge lub Samsung Internet), a w zainstalowanej aplikacji go nie ma.',
+      pt: 'Novo botão «Installieren» no cabeçalho: um toque instala a ferramenta como app, no telemóvel ou no computador. Aparece assim que o navegador oferece a instalação (por exemplo, Chrome, Edge ou Samsung Internet) e não aparece na app instalada.',
+      tr: 'Başlıkta yeni “Installieren” düğmesi: tek dokunuşla araç telefonda ya da bilgisayarda uygulama olarak kurulur. Düğme, tarayıcınız kurulumu önerdiği anda görünür (örneğin Chrome, Edge veya Samsung Internet) ve kurulu uygulamada yer almaz.',
+      ru: 'Новая кнопка «Installieren» в шапке: одно касание — и инструмент установлен как приложение, на телефоне или на компьютере. Кнопка появляется, как только браузер предлагает установку (например, Chrome, Edge или Samsung Internet), а в установленном приложении её нет.',
+      hi: 'हेडर में नया “Installieren” बटन: एक टैप से यह टूल फ़ोन या कंप्यूटर पर ऐप की तरह इंस्टॉल हो जाता है। बटन तब दिखता है जब ब्राउज़र इंस्टॉल करने की सुविधा देता है (जैसे Chrome, Edge या Samsung Internet), और इंस्टॉल किए गए ऐप में यह नहीं दिखता।',
+      zh: '页眉新增“Installieren”按钮：点一下就能把这个工具安装为应用，手机和电脑都行。浏览器提供安装时（例如 Chrome、Edge 或 Samsung Internet）按钮才会出现，在已安装的应用里则不显示。',
+      ja: 'ヘッダーに「Installieren」ボタンが加わりました。タップするとこのツールをアプリとしてインストールでき、スマートフォンでもパソコンでも使えます。ボタンはブラウザーがインストールを提案したとき（Chrome、Edge、Samsung Internet など）に現れ、インストール済みのアプリには表示されません。',
+      ko: '헤더에 새 ‘Installieren’ 버튼: 한 번 누르면 이 도구가 휴대폰이나 컴퓨터에 앱으로 설치됩니다. 버튼은 브라우저가 설치를 제안할 때(예: Chrome, Edge, Samsung Internet) 나타나며, 설치된 앱에서는 보이지 않습니다.'
+    },
     {
       date: '2026-10-13',
       de: 'Erste Veröffentlichung. Wetter für heute und die nächsten zwei Tage, dazu eine Heiz-Ampel, die dir sagt, wann du die träge Heizung hochstellen musst – für Heizkörper, Fußbodenheizung, Wärmepumpe und Nachtspeicher, für bis zu fünf Orte. Die App spricht vorerst nur Deutsch, weitere Sprachen folgen.',
