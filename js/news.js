@@ -167,6 +167,23 @@ var NEWS = {
   wifi: [
     {
       date: '2026-10-30',
+      de: 'Auf sehr schmalen Handys (320 px) passt die Seite jetzt in jeder Sprache in die Breite, nichts ragt mehr über den Rand.',
+      en: 'On very narrow phones (320 px) the page now fits the width in every language; nothing sticks out over the edge any more.',
+      es: 'En móviles muy estrechos (320 px), la página ya cabe a lo ancho en todos los idiomas; nada sobresale del borde.',
+      fr: 'Sur les téléphones très étroits (320 px), la page tient désormais en largeur dans toutes les langues : plus rien ne dépasse du bord.',
+      it: 'Sui telefoni molto stretti (320 px) la pagina ora sta in larghezza in ogni lingua: niente sporge più dal bordo.',
+      nl: 'Op heel smalle telefoons (320 px) past de pagina nu in elke taal in de breedte; niets steekt meer over de rand.',
+      pl: 'Na bardzo wąskich telefonach (320 px) strona mieści się teraz na szerokość w każdym języku; nic już nie wystaje poza krawędź.',
+      pt: 'Em telemóveis muito estreitos (320 px), a página cabe agora na largura em todos os idiomas; nada sai da margem.',
+      tr: 'Çok dar telefonlarda (320 px) sayfa artık her dilde genişliğe sığıyor; hiçbir şey kenardan taşmıyor.',
+      ru: 'На очень узких телефонах (320 px) страница теперь помещается по ширине на любом языке — ничего не выходит за край.',
+      hi: 'बहुत संकरे फ़ोन (320 px) पर पेज अब हर भाषा में चौड़ाई में समा जाता है; कुछ भी किनारे से बाहर नहीं निकलता।',
+      zh: '在很窄的手机（320 px）上，页面现在在每种语言下都能完整显示在宽度内，不再有内容超出边缘。',
+      ja: 'とても幅の狭いスマートフォン（320 px）でも、どの言語でもページが横幅に収まり、端からはみ出さなくなりました。',
+      ko: '아주 좁은 휴대폰(320 px)에서도 이제 모든 언어에서 페이지가 너비 안에 들어가며, 가장자리 밖으로 삐져나오는 부분이 없습니다.'
+    },
+    {
+      date: '2026-10-30',
       de: 'Neuer Knopf „Installieren“ oben in der Kopfzeile: Ein Tipp darauf richtet das Werkzeug als App ein, auf dem Handy wie am PC. Er erscheint, sobald dein Browser die Installation anbietet (etwa Chrome, Edge oder Samsung Internet), und fehlt in der installierten App.',
       en: 'New “Install” button in the header: one tap sets the tool up as an app, on your phone or your computer. It appears as soon as your browser offers installation (Chrome, Edge or Samsung Internet, for example) and is gone in the installed app.',
       es: 'Nuevo botón «Instalar» en la cabecera: con un toque, la herramienta se instala como app, en el móvil o en el ordenador. Aparece en cuanto tu navegador ofrece la instalación (por ejemplo, Chrome, Edge o Samsung Internet) y ya no está en la app instalada.',
@@ -622,6 +639,23 @@ var NEWS = {
   ],
 
   rad: [
+    {
+      date: '2026-10-30',
+      de: 'Auf sehr schmalen Handys (320 px) passt die Seite jetzt in jeder Sprache in die Breite, nichts ragt mehr über den Rand.',
+      en: 'On very narrow phones (320 px) the page now fits the width in every language; nothing sticks out over the edge any more.',
+      es: 'En móviles muy estrechos (320 px), la página ya cabe a lo ancho en todos los idiomas; nada sobresale del borde.',
+      fr: 'Sur les téléphones très étroits (320 px), la page tient désormais en largeur dans toutes les langues : plus rien ne dépasse du bord.',
+      it: 'Sui telefoni molto stretti (320 px) la pagina ora sta in larghezza in ogni lingua: niente sporge più dal bordo.',
+      nl: 'Op heel smalle telefoons (320 px) past de pagina nu in elke taal in de breedte; niets steekt meer over de rand.',
+      pl: 'Na bardzo wąskich telefonach (320 px) strona mieści się teraz na szerokość w każdym języku; nic już nie wystaje poza krawędź.',
+      pt: 'Em telemóveis muito estreitos (320 px), a página cabe agora na largura em todos os idiomas; nada sai da margem.',
+      tr: 'Çok dar telefonlarda (320 px) sayfa artık her dilde genişliğe sığıyor; hiçbir şey kenardan taşmıyor.',
+      ru: 'На очень узких телефонах (320 px) страница теперь помещается по ширине на любом языке — ничего не выходит за край.',
+      hi: 'बहुत संकरे फ़ोन (320 px) पर पेज अब हर भाषा में चौड़ाई में समा जाता है; कुछ भी किनारे से बाहर नहीं निकलता।',
+      zh: '在很窄的手机（320 px）上，页面现在在每种语言下都能完整显示在宽度内，不再有内容超出边缘。',
+      ja: 'とても幅の狭いスマートフォン（320 px）でも、どの言語でもページが横幅に収まり、端からはみ出さなくなりました。',
+      ko: '아주 좁은 휴대폰(320 px)에서도 이제 모든 언어에서 페이지가 너비 안에 들어가며, 가장자리 밖으로 삐져나오는 부분이 없습니다.'
+    },
     {
       date: '2026-10-30',
       de: 'Neuer Knopf „Installieren“ oben in der Kopfzeile: Ein Tipp darauf richtet das Werkzeug als App ein, auf dem Handy wie am PC. Er erscheint, sobald dein Browser die Installation anbietet (etwa Chrome, Edge oder Samsung Internet), und fehlt in der installierten App.',
