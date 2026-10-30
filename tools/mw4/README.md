@@ -12,6 +12,7 @@ Inhalt: alle 33 Waffen aus Call of Duty: Modern Warfare 4 mit deutschen und engl
 | `head.html` | Styles der Oberfläche |
 | `body.html` | Markup und App-Logik |
 | `sw.template.js` | Vorlage für den Service Worker |
+| `fonts/` | Schriften (Barlow, Barlow Condensed, Share Tech Mono; SIL OFL, Lizenztexte daneben). `build.py` kopiert sie nach `mw4/fonts/`, der Worker lädt die lateinischen beim Installieren vorab. Kein Google Fonts mehr. |
 | `build.py` | Baut alles nach `mw4/` |
 | `screenshots.py` | Optional: rendert die Bilder fürs Install-Fenster |
 

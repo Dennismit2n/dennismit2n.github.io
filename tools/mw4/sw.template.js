@@ -4,14 +4,18 @@
 const VERSION = "__BUILD__";
 const CORE = "mw4-core-" + VERSION;
 const IMG = "mw4-img";
-const FONT = "mw4-font";
+/* Schriften liegen seit dem 30.10.2026 in fonts/ (vorher Google Fonts, Cache "mw4-font") */
+const FONT = "mw4-schrift";
 const SCOPE = self.registration.scope;
 const CORE_FILES = __CORE_FILES__;
+const FONT_FILES = __FONT_FILES__;
 
 self.addEventListener("install", event => {
   event.waitUntil(
     caches.open(CORE)
       .then(c => c.addAll(CORE_FILES.map(u => new Request(new URL(u, SCOPE), {cache: "reload"}))))
+      .then(() => caches.open(FONT))
+      .then(c => c.addAll(FONT_FILES.map(u => new URL(u, SCOPE).href)))
       .then(() => self.skipWaiting())
   );
 });
@@ -19,7 +23,7 @@ self.addEventListener("install", event => {
 self.addEventListener("activate", event => {
   event.waitUntil((async () => {
     const keys = await caches.keys();
-    await Promise.all(keys.filter(k => k.startsWith("mw4-core-") && k !== CORE).map(k => caches.delete(k)));
+    await Promise.all(keys.filter(k => (k.startsWith("mw4-core-") && k !== CORE) || k === "mw4-font").map(k => caches.delete(k)));
     if (self.registration.navigationPreload) { try { await self.registration.navigationPreload.disable(); } catch (e) {} }
     await self.clients.claim();
     const cs = await self.clients.matchAll({type: "window"});
@@ -77,9 +81,8 @@ self.addEventListener("fetch", event => {
       event.respondWith(networkFirst(event));
     } else if (/\.(webp|png|jpe?g|avif|svg|ico)$/.test(url.pathname)) {
       event.respondWith(staleWhileRevalidate(event, IMG));
+    } else if (/\.woff2$/.test(url.pathname)) {
+      event.respondWith(cacheFirst(event, FONT));
     }
-    return;
   }
-  if (url.hostname === "fonts.gstatic.com") event.respondWith(cacheFirst(event, FONT));
-  else if (url.hostname === "fonts.googleapis.com") event.respondWith(staleWhileRevalidate(event, FONT));
 });

@@ -1169,6 +1169,23 @@ var NEWS = {
   ],
   vault: [
     {
+      date: '2026-10-30',
+      de: 'Die Schriften kommen jetzt aus der App selbst statt von Google Fonts: Beim Öffnen geht keine Anfrage mehr an Google, und offline sieht alles genauso aus.',
+      en: 'The fonts now come from the app itself instead of Google Fonts: opening it no longer sends a request to Google, and offline everything looks exactly the same.',
+      es: 'Las fuentes vienen ahora de la propia app en lugar de Google Fonts: al abrirla ya no se envía ninguna petición a Google, y sin conexión todo se ve exactamente igual.',
+      fr: 'Les polices viennent désormais de l’application elle-même et non plus de Google Fonts : à l’ouverture, plus aucune requête ne part vers Google, et hors ligne tout s’affiche exactement pareil.',
+      it: 'I caratteri ora arrivano dall’app stessa invece che da Google Fonts: aprendola non parte più alcuna richiesta verso Google, e offline tutto appare esattamente uguale.',
+      nl: 'De lettertypen komen nu uit de app zelf in plaats van van Google Fonts: bij het openen gaat er geen verzoek meer naar Google, en offline ziet alles er precies hetzelfde uit.',
+      pl: 'Czcionki pochodzą teraz z samej aplikacji, a nie z Google Fonts: przy otwieraniu nie idzie już żadne zapytanie do Google, a offline wszystko wygląda dokładnie tak samo.',
+      pt: 'As fontes vêm agora da própria app em vez do Google Fonts: ao abri-la já não segue nenhum pedido para a Google, e offline tudo fica exatamente igual.',
+      tr: 'Yazı tipleri artık Google Fonts yerine uygulamanın kendisinden geliyor: Açarken Google’a hiçbir istek gitmiyor ve çevrimdışıyken her şey aynen görünüyor.',
+      ru: 'Шрифты теперь берутся из самого приложения, а не из Google Fonts: при открытии в Google больше не уходит ни одного запроса, а офлайн всё выглядит точно так же.',
+      hi: 'फ़ॉन्ट अब Google Fonts के बजाय ऐप के अंदर से ही आते हैं: खोलने पर Google को कोई अनुरोध नहीं जाता, और ऑफ़लाइन भी सब कुछ बिल्कुल वैसा ही दिखता है।',
+      zh: '字体现在来自应用本身，不再从 Google Fonts 加载：打开时不再向 Google 发出任何请求，离线时显示也完全一样。',
+      ja: 'フォントは Google Fonts ではなくアプリ自体から読み込むようになりました。開いても Google へのリクエストは一切なく、オフラインでも見た目はまったく同じです。',
+      ko: '이제 글꼴을 Google Fonts가 아니라 앱 자체에서 불러옵니다. 열 때 Google로 가는 요청이 없고, 오프라인에서도 똑같이 보입니다.'
+    },
+    {
       date: '2026-10-22',
       de: 'Wochen-Update zu Version 1.11: Big-Encore-Boss, Wildcard Mission, Maurice’s Black Market und SHiFT-Codes der neuen Woche.',
       en: 'Weekly update for version 1.11: Big Encore boss, Wildcard Mission, Maurice’s Black Market and SHiFT codes of the new week.',
@@ -1221,6 +1238,23 @@ var NEWS = {
     }
   ],
   ruestkammer: [
+    {
+      date: '2026-10-30',
+      de: 'Die Schriften kommen jetzt aus der App selbst statt von Google Fonts: Beim Öffnen geht keine Anfrage mehr an Google, und offline sieht alles genauso aus.',
+      en: 'The fonts now come from the app itself instead of Google Fonts: opening it no longer sends a request to Google, and offline everything looks exactly the same.',
+      es: 'Las fuentes vienen ahora de la propia app en lugar de Google Fonts: al abrirla ya no se envía ninguna petición a Google, y sin conexión todo se ve exactamente igual.',
+      fr: 'Les polices viennent désormais de l’application elle-même et non plus de Google Fonts : à l’ouverture, plus aucune requête ne part vers Google, et hors ligne tout s’affiche exactement pareil.',
+      it: 'I caratteri ora arrivano dall’app stessa invece che da Google Fonts: aprendola non parte più alcuna richiesta verso Google, e offline tutto appare esattamente uguale.',
+      nl: 'De lettertypen komen nu uit de app zelf in plaats van van Google Fonts: bij het openen gaat er geen verzoek meer naar Google, en offline ziet alles er precies hetzelfde uit.',
+      pl: 'Czcionki pochodzą teraz z samej aplikacji, a nie z Google Fonts: przy otwieraniu nie idzie już żadne zapytanie do Google, a offline wszystko wygląda dokładnie tak samo.',
+      pt: 'As fontes vêm agora da própria app em vez do Google Fonts: ao abri-la já não segue nenhum pedido para a Google, e offline tudo fica exatamente igual.',
+      tr: 'Yazı tipleri artık Google Fonts yerine uygulamanın kendisinden geliyor: Açarken Google’a hiçbir istek gitmiyor ve çevrimdışıyken her şey aynen görünüyor.',
+      ru: 'Шрифты теперь берутся из самого приложения, а не из Google Fonts: при открытии в Google больше не уходит ни одного запроса, а офлайн всё выглядит точно так же.',
+      hi: 'फ़ॉन्ट अब Google Fonts के बजाय ऐप के अंदर से ही आते हैं: खोलने पर Google को कोई अनुरोध नहीं जाता, और ऑफ़लाइन भी सब कुछ बिल्कुल वैसा ही दिखता है।',
+      zh: '字体现在来自应用本身，不再从 Google Fonts 加载：打开时不再向 Google 发出任何请求，离线时显示也完全一样。',
+      ja: 'フォントは Google Fonts ではなくアプリ自体から読み込むようになりました。開いても Google へのリクエストは一切なく、オフラインでも見た目はまったく同じです。',
+      ko: '이제 글꼴을 Google Fonts가 아니라 앱 자체에서 불러옵니다. 열 때 Google로 가는 요청이 없고, 오프라인에서도 똑같이 보입니다.'
+    },
     {
       date: '2026-10-25',
       de: 'Erste Veröffentlichung als installierbare App: alle Waffen mit Meta-Builds, Apex, Zielvisier-Zeit und Time to Kill, Tierlisten, empfohlene Klassen und Patch-Chronik. Datenstand: Launch-Tuning vom 23.10.2026.',

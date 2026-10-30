@@ -1,17 +1,21 @@
 /* MW4 Rüstkammer: Service Worker (wird von tools/mw4/build.py erzeugt – hier nicht von Hand ändern)
    Seite, Manifest und Daten: zuerst Netz (bei jedem Start frisch), offline aus dem Cache.
    Bilder: sofort aus dem Cache, im Hintergrund aktualisiert. Neue Version = neue Datei, wird sofort aktiv. */
-const VERSION = "2026-10-25T15:04:55Z";
+const VERSION = "2026-10-30T15:52:46Z";
 const CORE = "mw4-core-" + VERSION;
 const IMG = "mw4-img";
-const FONT = "mw4-font";
+/* Schriften liegen seit dem 30.10.2026 in fonts/ (vorher Google Fonts, Cache "mw4-font") */
+const FONT = "mw4-schrift";
 const SCOPE = self.registration.scope;
 const CORE_FILES = ["./", "manifest.webmanifest", "version.json", "daten/waffen.json", "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png", "icons/favicon-32.png"];
+const FONT_FILES = ["fonts/barlow-400-latin.woff2", "fonts/barlow-500-latin.woff2", "fonts/barlow-600-latin.woff2", "fonts/barlow-condensed-500-latin.woff2", "fonts/barlow-condensed-600-latin.woff2", "fonts/barlow-condensed-700-latin.woff2", "fonts/barlow-condensed-800-latin.woff2", "fonts/share-tech-mono-400-latin.woff2"];
 
 self.addEventListener("install", event => {
   event.waitUntil(
     caches.open(CORE)
       .then(c => c.addAll(CORE_FILES.map(u => new Request(new URL(u, SCOPE), {cache: "reload"}))))
+      .then(() => caches.open(FONT))
+      .then(c => c.addAll(FONT_FILES.map(u => new URL(u, SCOPE).href)))
       .then(() => self.skipWaiting())
   );
 });
@@ -19,7 +23,7 @@ self.addEventListener("install", event => {
 self.addEventListener("activate", event => {
   event.waitUntil((async () => {
     const keys = await caches.keys();
-    await Promise.all(keys.filter(k => k.startsWith("mw4-core-") && k !== CORE).map(k => caches.delete(k)));
+    await Promise.all(keys.filter(k => (k.startsWith("mw4-core-") && k !== CORE) || k === "mw4-font").map(k => caches.delete(k)));
     if (self.registration.navigationPreload) { try { await self.registration.navigationPreload.disable(); } catch (e) {} }
     await self.clients.claim();
     const cs = await self.clients.matchAll({type: "window"});
@@ -77,9 +81,8 @@ self.addEventListener("fetch", event => {
       event.respondWith(networkFirst(event));
     } else if (/\.(webp|png|jpe?g|avif|svg|ico)$/.test(url.pathname)) {
       event.respondWith(staleWhileRevalidate(event, IMG));
+    } else if (/\.woff2$/.test(url.pathname)) {
+      event.respondWith(cacheFirst(event, FONT));
     }
-    return;
   }
-  if (url.hostname === "fonts.gstatic.com") event.respondWith(cacheFirst(event, FONT));
-  else if (url.hostname === "fonts.googleapis.com") event.respondWith(staleWhileRevalidate(event, FONT));
 });
