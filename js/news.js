@@ -343,6 +343,23 @@ var NEWS = {
   spectroton: [
     {
       date: '2026-10-30',
+      de: 'Die portugiesische Oberfläche spricht jetzt durchgehend brasilianisches Portugiesisch, mit „você“ als Anrede. Vorher mischten sich Wörter aus dem europäischen Portugiesisch darunter, etwa „Partilhar“ und „ecrã“.',
+      en: 'The Portuguese interface now speaks Brazilian Portuguese throughout, with “você” as the form of address. Before, words from European Portuguese were mixed in, such as “Partilhar” and “ecrã”.',
+      es: 'La interfaz en portugués habla ahora portugués de Brasil de principio a fin, con «você» como tratamiento. Antes se colaban palabras del portugués europeo, como «Partilhar» y «ecrã».',
+      fr: 'L’interface portugaise parle désormais partout le portugais du Brésil, avec « você » comme forme d’adresse. Avant, des mots du portugais européen s’y glissaient, comme « Partilhar » et « ecrã ».',
+      it: 'L’interfaccia in portoghese ora parla portoghese brasiliano dall’inizio alla fine e si rivolge a chi la usa con «você». Prima vi si mescolavano parole del portoghese europeo, come «Partilhar» e «ecrã».',
+      nl: 'De Portugese interface spreekt nu overal Braziliaans-Portugees, met ‘você’ als aanspreekvorm. Eerder zaten er woorden uit het Europees-Portugees tussen, zoals ‘Partilhar’ en ‘ecrã’.',
+      pl: 'Portugalski interfejs używa teraz w całości brazylijskiej odmiany portugalskiego i zwraca się przez „você”. Wcześniej wkradały się do niego słowa z portugalskiego europejskiego, takie jak „Partilhar” i „ecrã”.',
+      pt: 'A interface em português agora fala português do Brasil do começo ao fim, com «você» como tratamento. Antes apareciam palavras do português europeu, como «Partilhar» e «ecrã».',
+      tr: 'Portekizce arayüz artık baştan sona Brezilya Portekizcesi konuşuyor ve hitap için “você” kullanıyor. Önceden araya “Partilhar” ve “ecrã” gibi Avrupa Portekizcesi sözcükleri karışıyordu.',
+      ru: 'Португальский интерфейс теперь целиком на бразильском португальском, с обращением «você». Раньше туда попадали слова из европейского португальского, например «Partilhar» и «ecrã».',
+      hi: 'पुर्तगाली इंटरफ़ेस अब पूरी तरह ब्राज़ीली पुर्तगाली में है और संबोधन के लिए “você” इस्तेमाल करता है। पहले इसमें यूरोपीय पुर्तगाली के शब्द मिल जाते थे, जैसे “Partilhar” और “ecrã”।',
+      zh: '葡萄牙语界面现在全部使用巴西葡萄牙语，称呼用“você”。之前里面混着一些欧洲葡萄牙语的词，比如“Partilhar”和“ecrã”。',
+      ja: 'ポルトガル語の画面は全体をブラジルのポルトガル語にそろえ、呼びかけも「você」にしました。以前は「Partilhar」や「ecrã」のようなヨーロッパのポルトガル語の単語が混ざっていました。',
+      ko: '포르투갈어 화면이 이제 모두 브라질 포르투갈어로 바뀌었고, 호칭은 ‘você’를 씁니다. 전에는 ‘Partilhar’, ‘ecrã’ 같은 유럽 포르투갈어 단어가 섞여 있었습니다.'
+    },
+    {
+      date: '2026-10-30',
       de: 'Neuer Knopf „Installieren“ oben in der Kopfzeile: Ein Tipp darauf richtet das Werkzeug als App ein, auf dem Handy wie am PC. Er erscheint, sobald dein Browser die Installation anbietet (etwa Chrome, Edge oder Samsung Internet), und fehlt in der installierten App.',
       en: 'New “Install” button in the header: one tap sets the tool up as an app, on your phone or your computer. It appears as soon as your browser offers installation (Chrome, Edge or Samsung Internet, for example) and is gone in the installed app.',
       es: 'Nuevo botón «Instalar» en la cabecera: con un toque, la herramienta se instala como app, en el móvil o en el ordenador. Aparece en cuanto tu navegador ofrece la instalación (por ejemplo, Chrome, Edge o Samsung Internet) y ya no está en la app instalada.',
@@ -446,6 +463,23 @@ var NEWS = {
   ],
 
   collective: [
+    {
+      date: '2026-10-30',
+      de: 'Die portugiesische Oberfläche spricht jetzt durchgehend brasilianisches Portugiesisch, mit „você“ als Anrede. Vorher mischten sich Wörter aus dem europäischen Portugiesisch darunter, etwa „Partilhar“ und „ficheiro“.',
+      en: 'The Portuguese interface now speaks Brazilian Portuguese throughout, with “você” as the form of address. Before, words from European Portuguese were mixed in, such as “Partilhar” and “ficheiro”.',
+      es: 'La interfaz en portugués habla ahora portugués de Brasil de principio a fin, con «você» como tratamiento. Antes se colaban palabras del portugués europeo, como «Partilhar» y «ficheiro».',
+      fr: 'L’interface portugaise parle désormais partout le portugais du Brésil, avec « você » comme forme d’adresse. Avant, des mots du portugais européen s’y glissaient, comme « Partilhar » et « ficheiro ».',
+      it: 'L’interfaccia in portoghese ora parla portoghese brasiliano dall’inizio alla fine e si rivolge a chi la usa con «você». Prima vi si mescolavano parole del portoghese europeo, come «Partilhar» e «ficheiro».',
+      nl: 'De Portugese interface spreekt nu overal Braziliaans-Portugees, met ‘você’ als aanspreekvorm. Eerder zaten er woorden uit het Europees-Portugees tussen, zoals ‘Partilhar’ en ‘ficheiro’.',
+      pl: 'Portugalski interfejs używa teraz w całości brazylijskiej odmiany portugalskiego i zwraca się przez „você”. Wcześniej wkradały się do niego słowa z portugalskiego europejskiego, takie jak „Partilhar” i „ficheiro”.',
+      pt: 'A interface em português agora fala português do Brasil do começo ao fim, com «você» como tratamento. Antes apareciam palavras do português europeu, como «Partilhar» e «ficheiro».',
+      tr: 'Portekizce arayüz artık baştan sona Brezilya Portekizcesi konuşuyor ve hitap için “você” kullanıyor. Önceden araya “Partilhar” ve “ficheiro” gibi Avrupa Portekizcesi sözcükleri karışıyordu.',
+      ru: 'Португальский интерфейс теперь целиком на бразильском португальском, с обращением «você». Раньше туда попадали слова из европейского португальского, например «Partilhar» и «ficheiro».',
+      hi: 'पुर्तगाली इंटरफ़ेस अब पूरी तरह ब्राज़ीली पुर्तगाली में है और संबोधन के लिए “você” इस्तेमाल करता है। पहले इसमें यूरोपीय पुर्तगाली के शब्द मिल जाते थे, जैसे “Partilhar” और “ficheiro”।',
+      zh: '葡萄牙语界面现在全部使用巴西葡萄牙语，称呼用“você”。之前里面混着一些欧洲葡萄牙语的词，比如“Partilhar”和“ficheiro”。',
+      ja: 'ポルトガル語の画面は全体をブラジルのポルトガル語にそろえ、呼びかけも「você」にしました。以前は「Partilhar」や「ficheiro」のようなヨーロッパのポルトガル語の単語が混ざっていました。',
+      ko: '포르투갈어 화면이 이제 모두 브라질 포르투갈어로 바뀌었고, 호칭은 ‘você’를 씁니다. 전에는 ‘Partilhar’, ‘ficheiro’ 같은 유럽 포르투갈어 단어가 섞여 있었습니다.'
+    },
     {
       date: '2026-10-30',
       de: 'Neuer Knopf „Installieren“ oben in der Kopfzeile: Ein Tipp darauf richtet das Werkzeug als App ein, auf dem Handy wie am PC. Er erscheint, sobald dein Browser die Installation anbietet (etwa Chrome, Edge oder Samsung Internet), und fehlt in der installierten App.',
@@ -727,6 +761,23 @@ var NEWS = {
   ],
 
   zaehlwerk: [
+    {
+      date: '2026-10-30',
+      de: 'Die portugiesische Oberfläche spricht jetzt durchgehend brasilianisches Portugiesisch, mit „você“ als Anrede. Vorher mischten sich Wörter aus dem europäischen Portugiesisch darunter, etwa „ficheiros“ und „registos“.',
+      en: 'The Portuguese interface now speaks Brazilian Portuguese throughout, with “você” as the form of address. Before, words from European Portuguese were mixed in, such as “ficheiros” and “registos”.',
+      es: 'La interfaz en portugués habla ahora portugués de Brasil de principio a fin, con «você» como tratamiento. Antes se colaban palabras del portugués europeo, como «ficheiros» y «registos».',
+      fr: 'L’interface portugaise parle désormais partout le portugais du Brésil, avec « você » comme forme d’adresse. Avant, des mots du portugais européen s’y glissaient, comme « ficheiros » et « registos ».',
+      it: 'L’interfaccia in portoghese ora parla portoghese brasiliano dall’inizio alla fine e si rivolge a chi la usa con «você». Prima vi si mescolavano parole del portoghese europeo, come «ficheiros» e «registos».',
+      nl: 'De Portugese interface spreekt nu overal Braziliaans-Portugees, met ‘você’ als aanspreekvorm. Eerder zaten er woorden uit het Europees-Portugees tussen, zoals ‘ficheiros’ en ‘registos’.',
+      pl: 'Portugalski interfejs używa teraz w całości brazylijskiej odmiany portugalskiego i zwraca się przez „você”. Wcześniej wkradały się do niego słowa z portugalskiego europejskiego, takie jak „ficheiros” i „registos”.',
+      pt: 'A interface em português agora fala português do Brasil do começo ao fim, com «você» como tratamento. Antes apareciam palavras do português europeu, como «ficheiros» e «registos».',
+      tr: 'Portekizce arayüz artık baştan sona Brezilya Portekizcesi konuşuyor ve hitap için “você” kullanıyor. Önceden araya “ficheiros” ve “registos” gibi Avrupa Portekizcesi sözcükleri karışıyordu.',
+      ru: 'Португальский интерфейс теперь целиком на бразильском португальском, с обращением «você». Раньше туда попадали слова из европейского португальского, например «ficheiros» и «registos».',
+      hi: 'पुर्तगाली इंटरफ़ेस अब पूरी तरह ब्राज़ीली पुर्तगाली में है और संबोधन के लिए “você” इस्तेमाल करता है। पहले इसमें यूरोपीय पुर्तगाली के शब्द मिल जाते थे, जैसे “ficheiros” और “registos”।',
+      zh: '葡萄牙语界面现在全部使用巴西葡萄牙语，称呼用“você”。之前里面混着一些欧洲葡萄牙语的词，比如“ficheiros”和“registos”。',
+      ja: 'ポルトガル語の画面は全体をブラジルのポルトガル語にそろえ、呼びかけも「você」にしました。以前は「ficheiros」や「registos」のようなヨーロッパのポルトガル語の単語が混ざっていました。',
+      ko: '포르투갈어 화면이 이제 모두 브라질 포르투갈어로 바뀌었고, 호칭은 ‘você’를 씁니다. 전에는 ‘ficheiros’, ‘registos’ 같은 유럽 포르투갈어 단어가 섞여 있었습니다.'
+    },
     {
       date: '2026-09-14',
       de: 'Niederländisch und Polnisch sind dazugekommen, jetzt sind es vierzehn Sprachen. Polnisch bekommt dabei eigene Mehrzahlformen, weil es vier davon kennt statt zwei.',
@@ -1274,6 +1325,23 @@ var NEWS = {
     }
   ],
   pocketsum: [
+    {
+      date: '2026-10-30',
+      de: 'Die portugiesische Oberfläche spricht jetzt durchgehend brasilianisches Portugiesisch, mit „você“ als Anrede. Vorher mischten sich Wörter aus dem europäischen Portugiesisch darunter, etwa „Repor“ und „ficheiro“. Beträge stehen dort jetzt auch in brasilianischer Schreibweise, also „€ 1.234,56“ statt „1234,56 €“.',
+      en: 'The Portuguese interface now speaks Brazilian Portuguese throughout, with “você” as the form of address. Before, words from European Portuguese were mixed in, such as “Repor” and “ficheiro”. Amounts there now use Brazilian notation too, so “€ 1.234,56” instead of “1234,56 €”.',
+      es: 'La interfaz en portugués habla ahora portugués de Brasil de principio a fin, con «você» como tratamiento. Antes se colaban palabras del portugués europeo, como «Repor» y «ficheiro». Los importes siguen ahora también la escritura brasileña: «€ 1.234,56» en vez de «1234,56 €».',
+      fr: 'L’interface portugaise parle désormais partout le portugais du Brésil, avec « você » comme forme d’adresse. Avant, des mots du portugais européen s’y glissaient, comme « Repor » et « ficheiro ». Les montants y suivent aussi la notation brésilienne : « € 1.234,56 » au lieu de « 1234,56 € ».',
+      it: 'L’interfaccia in portoghese ora parla portoghese brasiliano dall’inizio alla fine e si rivolge a chi la usa con «você». Prima vi si mescolavano parole del portoghese europeo, come «Repor» e «ficheiro». Anche gli importi seguono ora la notazione brasiliana: «€ 1.234,56» invece di «1234,56 €».',
+      nl: 'De Portugese interface spreekt nu overal Braziliaans-Portugees, met ‘você’ als aanspreekvorm. Eerder zaten er woorden uit het Europees-Portugees tussen, zoals ‘Repor’ en ‘ficheiro’. Bedragen staan daar nu ook in de Braziliaanse notatie, dus ‘€ 1.234,56’ in plaats van ‘1234,56 €’.',
+      pl: 'Portugalski interfejs używa teraz w całości brazylijskiej odmiany portugalskiego i zwraca się przez „você”. Wcześniej wkradały się do niego słowa z portugalskiego europejskiego, takie jak „Repor” i „ficheiro”. Kwoty mają tam teraz też zapis brazylijski, czyli „€ 1.234,56” zamiast „1234,56 €”.',
+      pt: 'A interface em português agora fala português do Brasil do começo ao fim, com «você» como tratamento. Antes apareciam palavras do português europeu, como «Repor» e «ficheiro». Os valores também seguem agora a escrita brasileira: «€ 1.234,56» em vez de «1234,56 €».',
+      tr: 'Portekizce arayüz artık baştan sona Brezilya Portekizcesi konuşuyor ve hitap için “você” kullanıyor. Önceden araya “Repor” ve “ficheiro” gibi Avrupa Portekizcesi sözcükleri karışıyordu. Tutarlar da artık Brezilya yazımıyla gösteriliyor: “1234,56 €” yerine “€ 1.234,56”.',
+      ru: 'Португальский интерфейс теперь целиком на бразильском португальском, с обращением «você». Раньше туда попадали слова из европейского португальского, например «Repor» и «ficheiro». Суммы там теперь тоже записываются по-бразильски: «€ 1.234,56» вместо «1234,56 €».',
+      hi: 'पुर्तगाली इंटरफ़ेस अब पूरी तरह ब्राज़ीली पुर्तगाली में है और संबोधन के लिए “você” इस्तेमाल करता है। पहले इसमें यूरोपीय पुर्तगाली के शब्द मिल जाते थे, जैसे “Repor” और “ficheiro”। रकमें भी अब वहाँ ब्राज़ीली तरीके से लिखी जाती हैं, यानी “1234,56 €” की जगह “€ 1.234,56”।',
+      zh: '葡萄牙语界面现在全部使用巴西葡萄牙语，称呼用“você”。之前里面混着一些欧洲葡萄牙语的词，比如“Repor”和“ficheiro”。金额现在也按巴西的写法显示：“€ 1.234,56”，而不是“1234,56 €”。',
+      ja: 'ポルトガル語の画面は全体をブラジルのポルトガル語にそろえ、呼びかけも「você」にしました。以前は「Repor」や「ficheiro」のようなヨーロッパのポルトガル語の単語が混ざっていました。金額もブラジル式の表記になり、「1234,56 €」ではなく「€ 1.234,56」と表示されます。',
+      ko: '포르투갈어 화면이 이제 모두 브라질 포르투갈어로 바뀌었고, 호칭은 ‘você’를 씁니다. 전에는 ‘Repor’, ‘ficheiro’ 같은 유럽 포르투갈어 단어가 섞여 있었습니다. 금액도 이제 브라질식 표기로 나옵니다. ‘1234,56 €’ 대신 ‘€ 1.234,56’입니다.'
+    },
     {
       date: '2026-10-29',
       de: 'Neuer Knopf „Installieren“ oben neben Sprache und Darstellung: Ein Tipp darauf richtet Pocketsum als App ein, auf dem Handy wie am PC. Der Knopf erscheint, sobald dein Browser die Installation anbietet (etwa Chrome, Edge oder Samsung Internet), und fehlt in der installierten App.',

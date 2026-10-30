@@ -1035,7 +1035,7 @@ var GUIDES = {
       pt: [
         'Em «Cor base», definir uma cor: digitar um valor HEX, usar o seletor de cores ou buscar um nome em «Nome da cor» e escolher entre os resultados. Os onze tons aparecem na hora.',
         'Refinar em «Ajuste fino» e, se precisar, acrescentar «Cores de destaque». O Spectroton sugere essas cores por regras de harmonia e dá a cada uma a sua própria rampa. Com o cadeado de um tom você congela o valor dele, de forma que ele resiste aos controles e a uma troca da cor base.',
-        'Em «Exportar», escolher o formato (CSS, Tailwind, Tokens ou HEX) e copiar ou salvar como arquivo. Quem quiser ficar com a paleta salva com um nome em «Biblioteca». Quem quiser passar a paleta para outras pessoas copia em «Partilhar» o link, que leva a paleta inteira dentro dele.'
+        'Em «Exportar», escolher o formato (CSS, Tailwind, Tokens ou HEX) e copiar ou salvar como arquivo. Quem quiser ficar com a paleta salva com um nome em «Biblioteca». Quem quiser passar a paleta para outras pessoas copia em «Compartilhar» o link, que leva a paleta inteira dentro dele.'
       ],
       tr: [
         '“Ana renk” altında bir renk belirleyin: HEX değerini yazın, renk seçiciyi kullanın ya da “Renk adı” altında bir ad arayıp sonuçlardan seçin. On bir ton hemen belirir.',
@@ -1263,7 +1263,7 @@ var GUIDES = {
       pt: [
         'Criar os nomes e registrar as despesas: valor, motivo, quem pagou e como se divide (em partes iguais, por cotas, em porcentagem ou com valores exatos).',
         'O resultado mostra os saldos e as transferências sugeridas. O que já foi pago você registra depois como reembolso. Isso altera os saldos, mas não conta para as despesas totais.',
-        '«Partilhar o resultado» envia o resumo para ser visto, «Entregar as contas» envia o evento inteiro para alguém continuar calculando.'
+        '«Compartilhar o resultado» envia o resumo para ser visto, «Entregar as contas» envia o evento inteiro para alguém continuar calculando.'
       ],
       tr: [
         'Adları ekleyin ve harcamaları girin: tutar, amaç, kimin ödediği ve nasıl paylaşılacağı (eşit olarak, paylara göre, yüzdeyle ya da tam tutarlarla).',
@@ -3809,7 +3809,7 @@ var GUIDES = {
           it: 'Tre schermate di telefono di Pocketsum: costi di un acquisto di 250 euro in Bitcoin con commissione, ricarico, unità ricevute, prezzo effettivo e l’aumento necessario per andare in pari; dividendi con il netto all’anno e al mese e il numero di azioni per un netto desiderato; prezzo del carburante con l’aumento in percentuale, il costo in più al mese e una tabella per pieno, 100 km, mese e anno.',
           nl: 'Drie telefoonschermen van Pocketsum: kosten van 250 euro in bitcoin met provisie, opslag, ontvangen stuks, effectieve koers en de stijging die nodig is om quitte te spelen; dividend met netto per jaar en per maand en het aantal aandelen voor een gewenst netto; brandstofprijs met de stijging in procent, de extra kosten per maand en een tabel voor een volle tank, 100 km, een maand en een jaar.',
           pl: 'Trzy ekrany telefonu z Pocketsum: koszty zakupu bitcoina za 250 euro z prowizją, narzutem, liczbą otrzymanych jednostek, kursem efektywnym i wzrostem potrzebnym do wyjścia na zero; dywidendy z kwotą netto rocznie i miesięcznie oraz liczbą akcji dla wymarzonego netto; cena paliwa ze wzrostem w procentach, dodatkowym kosztem na miesiąc i tabelą dla pełnego baku, 100 km, miesiąca i roku.',
-          pt: 'Três telas de celular do Pocketsum: custos de comprar 250 euros em Bitcoin com comissão, acréscimo, unidades recebidas, cotação efetiva e a alta necessária para empatar; dividendos com o líquido por ano e por mês e o número de ações para um líquido desejado; preço do combustível com o aumento em porcentagem, o custo a mais por mês e uma tabela para tanque cheio, 100 km, mês e ano.',
+          pt: 'Três telas de celular do Pocketsum: custos de comprar 250 euros em Bitcoin com taxa, acréscimo, unidades recebidas, cotação efetiva e a alta necessária para empatar; dividendos com o líquido por ano e por mês e o número de ações para um líquido desejado; preço do combustível com o aumento em porcentagem, o custo a mais por mês e uma tabela para tanque cheio, 100 km, mês e ano.',
           tr: 'Pocketsum’dan üç telefon ekranı: komisyon, ek fiyat, alınan adet, efektif fiyat ve başa baş için gereken artışla 250 euroluk Bitcoin alımının maliyeti; yıllık ve aylık net temettü ile istenen net için gereken hisse sayısı; yüzde olarak artış, aylık ek maliyet ve dolu depo, 100 km, ay ve yıl için bir tabloyla yakıt fiyatı.',
           ru: 'Три экрана телефона с Pocketsum: расходы на покупку биткоина на 250 евро с комиссией, наценкой, полученным количеством, фактической ценой и ростом, нужным для выхода в ноль; дивиденды с суммой нетто за год и в месяц и числом акций для желаемого дохода; цена топлива с ростом в процентах, дополнительными расходами в месяц и таблицей для полного бака, 100 км, месяца и года.',
           hi: 'Pocketsum की तीन फ़ोन स्क्रीन: Bitcoin में 250 यूरो लगाने की लागत, शुल्क, अतिरिक्त, मिली यूनिट, असल भाव और ब्रेक-ईवन तक ज़रूरी बढ़ोतरी के साथ; प्रति वर्ष और प्रति माह नेट लाभांश और चाही गई नेट आय के लिए शेयरों की संख्या; ईंधन की कीमत, प्रतिशत में बढ़ोतरी, हर माह का अतिरिक्त ख़र्च और पूरी टंकी, 100 किमी, माह और वर्ष की तालिका के साथ।',
@@ -3856,9 +3856,9 @@ var GUIDES = {
         '„Kopiuj wynik” kopiuje podsumowanie do schowka, „Resetuj” przywraca wartości początkowe tego kalkulatora. Poza tym twoje wpisy zostają zapisane. Po pierwszej wizycie Pocketsum działa też bez internetu, a na samym dole można pobrać całą aplikację jako jeden plik. Jeśli przeglądarka pokazuje u góry przycisk „Zainstaluj”, jedno dotknięcie instaluje Pocketsum jako aplikację.'
       ],
       pt: [
-        'Abra o Pocketsum e escolha em cima uma das cinco calculadoras. O idioma e a aparência ficam bem no topo. Escreva os números como se escreve no seu idioma: em português, «5000» são cinco mil.',
-        'Digite os valores e o resultado é calculado na hora. Uma borda vermelha significa que o Pocketsum não entende esse valor. Na calculadora de operações, escolha primeiro um modelo de comissões de exemplo e depois digite a tabela de preços do seu fornecedor.',
-        '«Copiar resultado» copia um resumo para a área de transferência, «Repor» volta aos valores iniciais dessa calculadora. Fora isso, os seus dados ficam salvos. Depois da primeira visita o Pocketsum também funciona sem internet, e no fim da página você pode baixar o app inteiro como um único arquivo. Se o navegador mostrar no topo o botão «Instalar», um toque instala o Pocketsum como app.'
+        'Abra o Pocketsum e escolha em cima uma das cinco calculadoras. O idioma e a aparência ficam bem no topo. Escreva os números como se escreve no seu idioma: em português, «5.000» são cinco mil.',
+        'Digite os valores e o resultado é calculado na hora. Uma borda vermelha significa que o Pocketsum não entende esse valor. Na calculadora de operações, escolha primeiro um exemplo de taxas e depois digite a tabela de preços da sua corretora.',
+        '«Copiar resultado» copia um resumo para a área de transferência, «Redefinir» volta aos valores iniciais dessa calculadora. Fora isso, os seus dados ficam salvos. Depois da primeira visita o Pocketsum também funciona sem internet, e no fim da página você pode baixar o app inteiro como um único arquivo. Se o navegador mostrar no topo o botão «Instalar», um toque instala o Pocketsum como app.'
       ],
       tr: [
         'Pocketsum’u açın ve üstten beş hesap makinesinden birini seçin. Dil ve görünüm en üstte. Sayıları dilinizde nasıl yazılıyorsa öyle yazın: Türkçede “5.000” beş bindir.',
@@ -3943,8 +3943,8 @@ var GUIDES = {
       ],
       pt: [
         'A calculadora de dividendos segue a lei tributária alemã de forma simplificada: sem comparação com a alíquota pessoal (Günstigerprüfung), sem compensação de perdas e sem o pagamento antecipado fixo (Vorabpauschale) dos fundos. Se você não paga impostos na Alemanha, desmarque «Descontar impostos segundo a lei alemã».',
-        'As comissões de exemplo são casos genéricos, não tabelas de preços de fornecedores reais. O que o seu fornecedor cobra está na tabela de preços dele. Nos apps de cripto, parte do custo muitas vezes está na cotação e não na comissão.',
-        '«Acréscimo por compra ou venda» conta uma vez na compra e outra na venda. Se o seu fornecedor informar um spread de compra e venda, digite só a metade.',
+        'As taxas de exemplo são casos genéricos, não tabelas de preços de corretoras reais. O que a sua corretora cobra está na tabela de preços dela. Nos apps de cripto, parte do custo muitas vezes está na cotação e não na taxa.',
+        '«Acréscimo por compra ou venda» conta uma vez na compra e outra na venda. Se a sua corretora informar um spread de compra e venda, digite só a metade.',
         '19% e 7% são as alíquotas de IVA alemãs. Para outros países, escolha a sua própria alíquota.',
         'Os seus dados ficam só no navegador deste dispositivo. Quem apaga os dados do navegador apaga esses dados junto, e outro dispositivo não vê nada.'
       ],
