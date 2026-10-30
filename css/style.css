@@ -118,6 +118,16 @@
      Name und Knopf: hell 17,09:1, dunkel 13,55:1. */
   --pocketsum: #1A1932;
   --pocketsum-flow: linear-gradient(90deg, #524AAB 0 20%, #B45309 20% 40%, #0369A1 40% 60%, #15803D 60% 80%, #BE123C 80%);
+  /* Gaming (Kachel auf der Startseite, Dennis' Wahl vom 30.10.2026): Name, Rahmen und
+     Knopf in Graphit (hell 9,42:1, dunkel 6,75:1 gegen --panel und --bg), die Kappe als
+     Verlauf Magenta → Kirschrot → Neonblau → Neongrün. Die Kappe ist Schmuck, keine Schrift.
+     Die Kacheln auf gaming.html tragen die Farbe ihrer App, je ≥ 4,5:1 gegen --panel und
+     --bg: Craftionary Patina (hell 5,32), BL4 Vault-Gelb (5,64), MW4 Rüstkammer-Orange (5,34). */
+  --gaming: #3f3f46;
+  --gaming-flow: linear-gradient(90deg, #d4148a, #c8102e, #1570ef, #00b35a);
+  --craftionary: #25705f;
+  --vault: #7a5c00;
+  --ruestkammer: #a8460b;
   --shadow: 0 10px 30px rgba(26, 25, 50, 0.10);
 }
 
@@ -183,6 +193,12 @@
     --fadenkreuz-flow: linear-gradient(#33ff88, #33ff88);
     --pocketsum: #E2E2F6;
     --pocketsum-flow: linear-gradient(90deg, #A5A5FF 0 20%, #FFC97A 20% 40%, #75C7FF 40% 60%, #7EE0A0 60% 80%, #FF9FB5 80%);
+    /* Gaming und gaming.html, dunkel: Graphit 6,75:1, Patina 7,88, Gelb 12,09, Orange 7,62 */
+    --gaming: #a1a1aa;
+    --gaming-flow: linear-gradient(90deg, #ff2bd6, #ff3b5c, #2f8bff, #33ff88);
+    --craftionary: #5cc0a8;
+    --vault: #ffd400;
+    --ruestkammer: #ff8f3d;
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   }
 }
@@ -223,6 +239,12 @@
   --fadenkreuz-flow: linear-gradient(#33ff88, #33ff88);
   --pocketsum: #E2E2F6;
   --pocketsum-flow: linear-gradient(90deg, #A5A5FF 0 20%, #FFC97A 20% 40%, #75C7FF 40% 60%, #7EE0A0 60% 80%, #FF9FB5 80%);
+  /* Gaming und gaming.html, dunkel: Graphit 6,75:1, Patina 7,88, Gelb 12,09, Orange 7,62 */
+  --gaming: #a1a1aa;
+  --gaming-flow: linear-gradient(90deg, #ff2bd6, #ff3b5c, #2f8bff, #33ff88);
+  --craftionary: #5cc0a8;
+  --vault: #ffd400;
+  --ruestkammer: #ff8f3d;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
@@ -425,6 +447,12 @@ body {
 .fb-royal { flex: 3; background: var(--accent-fill); }
 .fb-ice { flex: 1.6; background: var(--ice); }
 .fb-lav { flex: 1; background: var(--lavender); }
+/* gaming.html: statt der drei Markenfarben der Verlauf der Gaming-Kachel */
+.gaming-bar { background: var(--gaming-flow); }
+a.brand { text-decoration: none; color: inherit; }
+.hero-back { margin: 0; }
+.hero-back a { color: var(--accent); font-weight: 500; text-decoration: none; }
+.hero-back a:hover { text-decoration: underline; }
 
 /* Toolbox */
 .tools h2 {
@@ -498,6 +526,10 @@ body {
 .tool-heizwarte { --tool: var(--heizwarte); --tool-flow: var(--heizwarte-flow); }
 .tool-fadenkreuz { --tool: var(--fadenkreuz); --tool-flow: var(--fadenkreuz-flow); }
 .tool-pocketsum { --tool: var(--pocketsum); --tool-flow: var(--pocketsum-flow); }
+.tool-gaming { --tool: var(--gaming); --tool-flow: var(--gaming-flow); }
+.tool-craftionary { --tool: var(--craftionary); }
+.tool-vault { --tool: var(--vault); }
+.tool-ruestkammer { --tool: var(--ruestkammer); }
 
 /* Die Farbkappe an der Oberkante, für jede Kachel in ihrer Farbe.
    Sie ist KEIN eigenes Kästchen mit eigener Rundung, sondern eine Ebene

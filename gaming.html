@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" data-title-key="gamingPageTitle">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gaming · Dennis_mit_2n</title>
+  <meta name="description" content="Game guides, handbooks and tools by Dennis_mit_2n – Minecraft, Borderlands 4, Modern Warfare 4 and more. / Game-Guides, Handbücher und Werkzeuge rund ums Spielen.">
+  <link rel="canonical" href="https://dennismit2n.github.io/gaming.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Dennis_mit_2n">
+  <meta property="og:title" content="Gaming — Dennis_mit_2n">
+  <meta property="og:description" content="Game guides, handbooks and tools by Dennis_mit_2n – Minecraft, Borderlands 4, Modern Warfare 4 and more.">
+  <meta property="og:url" content="https://dennismit2n.github.io/gaming.html">
+  <meta property="og:image" content="https://dennismit2n.github.io/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Dennis_mit_2n — kleine Werkzeuge, die nichts von dir wollen / Small tools that want nothing from you. Ohne Anmeldung, keine Anzeigen, kostenlos außer fontART.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#524AAB">
+  <link rel="icon" href="./icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="./icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+  <!-- ?v=<datum> wie in index.html und werkstatt.html: bei jedem Deploy, der CSS
+       oder JS ändert, in ALLEN DREI Seiten hochsetzen. -->
+  <link rel="preload" href="./assets/fonts/fraunces/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./css/style.css?v=2026-10-30">
+  <script>try{var t=localStorage.getItem('dennismit2n-home.theme');if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}</script>
+  <!-- Dasselbe Kopf-Skript wie in index.html (.i18n-wartet), samt eigener Kopie
+       der Sprachcodes — die Liste muss zu I18N in i18n.js passen. -->
+  <script>(function(){var c=' de en es fr it nl pl pt tr ru hi zh ja ko ',l='';try{l=localStorage.getItem('dennismit2n-home.lang')||'';}catch(e){}if(!l||c.indexOf(' '+l+' ')<0){l='en';var n=navigator.languages||[navigator.language||'en'];for(var i=0;i<n.length;i++){var k=String(n[i]).toLowerCase().split('-')[0];if(k&&c.indexOf(' '+k+' ')>=0){l=k;break;}}}if(l!=='en'){var h=document.documentElement,f=function(){h.classList.remove('i18n-wartet');};h.classList.add('i18n-wartet');addEventListener('load',f);setTimeout(f,3000);}})();</script>
+  <script data-goatcounter="https://dennis-mit-2n.goatcounter.com/count" async src="./js/vendor/count.js"></script>
+</head>
+<body>
+<div class="aurora" aria-hidden="true"><span class="au-1"></span><span class="au-2"></span><span class="au-3"></span></div>
+<div class="page">
+  <header class="site-header">
+    <a class="brand" href="./">
+      <svg class="brand-icon" viewBox="0 0 48 48" aria-hidden="true">
+        <rect x="2" y="2" width="44" height="44" rx="11" fill="#524AAB"/>
+        <path d="M16 21v-3a8 8 0 0 1 16 0v3" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"/>
+        <rect x="8" y="21" width="32" height="15" rx="3" fill="none" stroke="#fff" stroke-width="3"/>
+        <path d="M9.5 28h29" stroke="#fff" stroke-width="2.6"/>
+        <rect x="21" y="25.5" width="6" height="5" rx="1.4" fill="#fff"/>
+      </svg>
+      <span class="brand-name">Dennis_mit_2n</span>
+    </a>
+    <div class="header-controls">
+      <label class="lang-wrap">
+        <span class="visually-hidden" data-i18n="themeLabel">Appearance</span>
+        <select id="themeSelect" data-i18n-aria="themeLabel" autocomplete="off"></select>
+      </label>
+      <label class="lang-wrap">
+        <span class="visually-hidden" data-i18n="langLabel">Language</span>
+        <select id="langSelect" data-i18n-aria="langLabel" autocomplete="off"></select>
+      </label>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Gaming</h1>
+      <p class="hero-sub" data-i18n="gamingSub">Guides, handbooks and tools for playing – kept apart from the other tools.</p>
+      <p class="hero-back"><a href="./" data-i18n="backHome">Back to the start page</a></p>
+      <div class="family-bar gaming-bar" aria-hidden="true"></div>
+    </section>
+
+    <section class="tools" aria-labelledby="gamingHeading">
+      <h2 id="gamingHeading"><span class="tb-emoji" aria-hidden="true">🎮</span> <span data-i18n="gamingHeading">Guides and tools</span></h2>
+      <!-- Aufbau wie die Kacheln der Startseite (siehe Kommentar dort). Reihenfolge nach
+           Dennis' Liste vom 30.10.2026. Fadenkreuz ist hierher umgezogen und steht nicht
+           mehr auf der Startseite; Real_RAM_cooler steht auf BEIDEN Seiten. Craftionary,
+           BL4 und MW4 haben (noch) keine Neuigkeiten und Anleitungen auf werkstatt.html,
+           deshalb keine Mini-Kacheln. Die Klassennamen tragen keine Ziffern: main.js
+           zählt Klicks als "kachel-<name>" und liest dafür nur Buchstaben. -->
+      <div class="tool-grid">
+        <div class="tool-card tool-craftionary">
+          <span class="tool-head">
+            <img src="./assets/craftionary.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-craftionary">Craftionary</span>
+          </span>
+          <span class="tool-desc" data-i18n="craftionaryDesc">All Minecraft recipes, where to find items and ores, ready /give commands, plus a banner and pot workshop.</span>
+          <span class="tool-meta" data-i18n="craftionaryMeta">Minecraft Java 26.3 · English and German · offline after the first visit</span>
+          <a class="tool-open" id="open-craftionary" aria-labelledby="open-craftionary name-craftionary" href="https://dennismit2n.github.io/craftionary/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+        <div class="tool-card tool-vault">
+          <span class="tool-head">
+            <img src="./bl4/icons/icon-192.png" alt="" width="44" height="44">
+            <span class="tool-name" id="name-vault">BL4 Vault-Handbuch</span>
+          </span>
+          <span class="tool-desc" data-i18n="vaultDesc">Borderlands 4 handbook: meta builds, legendaries and pearls with location and drop chance, raids and a farm planner.</span>
+          <span class="tool-meta" data-i18n="gameAppMeta">In your browser · app in German · offline after the first visit</span>
+          <a class="tool-open" id="open-vault" aria-labelledby="open-vault name-vault" href="./bl4/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+        <div class="tool-card tool-ruestkammer">
+          <span class="tool-head">
+            <img src="./mw4/icons/icon-192.png" alt="" width="44" height="44">
+            <span class="tool-name" id="name-ruestkammer">MW4 Rüstkammer</span>
+          </span>
+          <span class="tool-desc" data-i18n="ruestkammerDesc">Call of Duty: Modern Warfare 4 – meta builds, attachments, time to kill and a class editor.</span>
+          <span class="tool-meta" data-i18n="gameAppMeta">In your browser · app in German · offline after the first visit</span>
+          <a class="tool-open" id="open-ruestkammer" aria-labelledby="open-ruestkammer name-ruestkammer" href="./mw4/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+        <!-- Neongrün, Schwarz, Weiß: die Kachel bleibt in beiden Darstellungen
+             schwarz (siehe .tool-card.tool-fadenkreuz in style.css). -->
+        <div class="tool-card tool-fadenkreuz">
+          <span class="tool-head">
+            <img src="./assets/fadenkreuz.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-fadenkreuz">Fadenkreuz</span>
+          </span>
+          <span class="tool-desc" data-i18n="fadenkreuzDesc">Your own crosshair in the exact centre of the screen – drawn by you, click-through, over your game.</span>
+          <span class="tool-meta" data-i18n="fadenkreuzMeta">Windows 10/11 · about 1 MB of RAM · free</span>
+          <a class="tool-open" id="open-fadenkreuz" aria-labelledby="open-fadenkreuz name-fadenkreuz" href="https://github.com/Dennismit2n/fadenkreuz/releases/latest" rel="noopener"><span data-i18n="downloadTool">Download</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="fadenkreuz">
+            <a href="./werkstatt.html#fadenkreuz-neuigkeiten" data-count="werkstatt-fadenkreuz-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#fadenkreuz-anleitung" data-count="werkstatt-fadenkreuz-anleitung" data-i18n="secGuide">Guide</a>
+          </span>
+        </div>
+        <div class="tool-card tool-ram">
+          <span class="tool-head">
+            <img src="./assets/ramcooler.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-ram">Real_RAM_cooler</span>
+          </span>
+          <span class="tool-desc" data-i18n="ramDesc">An honest RAM tool for Windows – the placebo button is labeled as such.</span>
+          <span class="tool-meta" data-i18n="ramMeta">Windows 10/11 · open source · free</span>
+          <a class="tool-open" id="open-ram" aria-labelledby="open-ram name-ram" href="https://github.com/Dennismit2n/Real_RAM_cooler/releases/latest" rel="noopener"><span data-i18n="downloadTool">Download</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="ram">
+            <a href="./werkstatt.html#ram-neuigkeiten" data-count="werkstatt-ram-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#ram-anleitung" data-count="werkstatt-ram-anleitung" data-i18n="secGuide">Guide</a>
+          </span>
+        </div>
+        <!-- Platzhalter wie auf der Startseite: nichts zu öffnen, also kein Knopf. -->
+        <div class="tool-card tool-platzhalter">
+          <span class="tool-head">
+            <span class="platzhalter-icon" aria-hidden="true"></span>
+            <span class="tool-name" data-i18n="gamingSoonName">More guides to come</span>
+          </span>
+          <span class="tool-desc" data-i18n="gamingSoonDesc">More game guides and handbooks will land here – on request, too, if the game grabs me as well.</span>
+          <span class="tool-meta" data-i18n="platzhalterBaldMeta">No date, no promises</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a href="https://github.com/Dennismit2n" rel="noopener">
+      <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.42 7.42 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z" fill="currentColor"/></svg>
+      <span data-i18n="footerSource">Open source on GitHub</span>
+    </a>
+    <span class="sep">·</span>
+    <a href="./werkstatt.html" data-count="werkstatt-gesamt" data-i18n="werkstattHeading">News &amp; guides</a>
+    <span class="sep">·</span>
+    <span data-i18n="footerTranslate">Some translations are machine-generated – corrections welcome!</span>
+    <span class="sep">·</span>
+    <span data-i18n="footerAnalytics">Anonymous visit counting (GoatCounter, no cookies, never what you enter).</span>
+    <span class="sep">·</span>
+    <span class="footer-copyright">© 2026 Dennis_mit_2n</span>
+  </footer>
+</div>
+
+<!-- Wie in index.html: main.js übersetzt, füllt die Daten der Mini-Kacheln aus news.js
+     und zählt Kachelklicks. -->
+<script src="./js/i18n.js?v=2026-10-30" fetchpriority="high"></script>
+<script src="./js/dates.js?v=2026-09-14" fetchpriority="high"></script>
+<script src="./js/header.js?v=2026-09-25" fetchpriority="high"></script>
+<script src="./js/main.js?v=2026-09-24" fetchpriority="high" data-news="./js/news.js?v=2026-10-30c"></script>
+</body>
+</html>
