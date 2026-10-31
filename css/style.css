@@ -66,6 +66,9 @@
   --glow-hover: 60%;
   --haze: 0.10;
   --name-glow: 0px;
+  /* Datum auf den Mini-Kacheln: Mit 0,85 Deckkraft kam es im Hellen auf
+     3,89:1, 0,93 hält 4,57 auf --bg. Im Dunkeln bleibt es bei 0,85. */
+  --date-alpha: 0.93;
   --text: #1A1932;
   --text-soft: #535479;
   --border: #C3C4D8;
@@ -160,6 +163,7 @@
     --glow-hover: 85%;
     --haze: 0.17;
     --name-glow: 16px;
+    --date-alpha: 0.85;
     --text: #E2E2F6;
     --text-soft: #B7B9DC;
     --border: #2D2C4F;
@@ -219,6 +223,7 @@
   --glow-hover: 85%;
   --haze: 0.17;
   --name-glow: 16px;
+  --date-alpha: 0.85;
   --text: #E2E2F6;
   --text-soft: #B7B9DC;
   --border: #2D2C4F;
@@ -978,7 +983,7 @@ a.brand { text-decoration: none; color: inherit; }
   border-color: var(--tool, var(--accent));
   color: var(--tool, var(--accent));
 }
-.tool-mini-date { font-variant-numeric: tabular-nums; opacity: 0.85; }
+.tool-mini-date { font-variant-numeric: tabular-nums; opacity: var(--date-alpha); }
 
 /* Fourteen links pointing at the same label but a different target — so far
    only create-masterprompt's overview image, which exists in every language
