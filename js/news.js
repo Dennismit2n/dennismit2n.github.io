@@ -1094,6 +1094,23 @@ var NEWS = {
   fontart: [
     {
       date: '2026-10-31',
+      de: 'In der Browser-Fassung ist die Nebenschrift (Gruppennamen, Beschriftungen, Hinweise) jetzt gut lesbar, egal welche Farbwelt und welchen Stil du nimmst. Bei 57 der 126 Varianten war sie zu blass und ist nur so weit heller oder dunkler geworden, wie es dafür braucht.',
+      en: 'In the browser version, the secondary text (group names, labels, hints) is now easy to read, whichever colour world and style you pick. In 57 of the 126 variants it was too faint and is now only as much lighter or darker as it needs to be.',
+      es: 'En la versión para navegador, el texto secundario (nombres de grupo, etiquetas, indicaciones) ahora se lee bien, sea cual sea el mundo de color y el estilo que elijas. En 57 de las 126 variantes era demasiado pálido y se ha aclarado u oscurecido solo lo necesario.',
+      fr: 'Dans la version navigateur, le texte secondaire (noms de groupe, libellés, indications) se lit maintenant bien, quels que soient l’univers de couleurs et le style choisis. Dans 57 des 126 variantes, il était trop pâle et n’a été éclairci ou assombri que juste ce qu’il faut.',
+      it: 'Nella versione per browser il testo secondario (nomi dei gruppi, etichette, indicazioni) ora si legge bene in qualunque atmosfera di colore e stile tu scelga. In 57 delle 126 varianti era troppo tenue ed è stato schiarito o scurito solo quanto serve.',
+      nl: 'In de browserversie is de secundaire tekst (groepsnamen, labels, aanwijzingen) nu goed leesbaar, welke kleurwereld en stijl je ook kiest. In 57 van de 126 varianten was hij te flets en is hij alleen zo veel lichter of donkerder geworden als nodig.',
+      pl: 'W wersji przeglądarkowej tekst pomocniczy (nazwy grup, etykiety, wskazówki) jest teraz czytelny bez względu na to, jaki świat barw i jaką odsłonę wybierzesz. W 57 ze 126 wariantów był zbyt blady i został rozjaśniony lub przyciemniony tylko tyle, ile trzeba.',
+      pt: 'Na versão para navegador, o texto secundário (nomes dos grupos, rótulos, dicas) agora fica fácil de ler em qualquer mundo de cor e estilo que você escolher. Em 57 das 126 variantes ele estava fraco demais e foi clareado ou escurecido só o necessário.',
+      tr: 'Tarayıcı sürümünde ikincil yazılar (grup adları, etiketler, ipuçları) artık hangi renk dünyasını ve stili seçerseniz seçin rahatça okunuyor. 126 varyantın 57’sinde fazla soluktu, yalnızca gerektiği kadar açıldı ya da koyulaştırıldı.',
+      ru: 'В браузерной версии второстепенный текст (названия групп, подписи, подсказки) теперь хорошо читается, какой бы цветовой мир и стиль вы ни выбрали. В 57 из 126 вариантов он был слишком бледным и стал светлее или темнее ровно настолько, насколько нужно.',
+      hi: 'ब्राउज़र वाले संस्करण में सहायक लिखावट (समूहों के नाम, लेबल, संकेत) अब आसानी से पढ़ी जा सकती है, चाहे आप कोई भी रंग-दुनिया और अंदाज़ चुनें। 126 में से 57 रूपों में वह बहुत फीकी थी, अब उसे सिर्फ़ उतना ही हल्का या गहरा किया गया है जितना ज़रूरी था।',
+      zh: '在浏览器版本中，次要文字（分组名称、标签、提示）现在无论你选哪种配色和风格都清晰易读。126 种组合中有 57 种原来太淡，现在只做了必要的调亮或调暗。',
+      ja: 'ブラウザー版では、補助テキスト（グループ名、ラベル、ヒント）がどの配色とスタイルを選んでも読みやすくなりました。126通りのうち57通りで薄すぎたため、必要な分だけ明るく、または暗くしています。',
+      ko: '브라우저 버전에서는 보조 글자(그룹 이름, 라벨, 안내)가 이제 어떤 색 테마와 스타일을 골라도 잘 읽힙니다. 126가지 중 57가지에서 너무 흐렸던 글자를 필요한 만큼만 밝게 또는 어둡게 바꿨습니다.'
+    },
+    {
+      date: '2026-10-31',
       de: 'Das ✕ zum Schließen ist in den Fenstern jetzt ein kleiner Knopf statt eines breiten Balkens, und am Handy sind die Gruppennamen in der Zeichenwahl besser zu lesen.',
       en: 'The ✕ that closes a window is now a small button instead of a wide bar, and on phones the group names in the character picker are easier to read.',
       es: 'La ✕ para cerrar las ventanas ahora es un botón pequeño en lugar de una barra ancha, y en el móvil los nombres de grupo de la selección de caracteres se leen mejor.',
