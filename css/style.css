@@ -361,8 +361,8 @@ body {
 
 /* 1680 statt 880 px (Dennis, 30.10.2026): die Kacheln sollen sich nach der
    Fensterbreite richten, statt immer in zwei Spalten zu stehen. Kopf und Hero
-   bleiben schmal (.hero), das Kachelraster nutzt die Breite, mit einem freien
-   Kachelplatz links und rechts (seit 31.10.2026, siehe .tools). */
+   bleiben schmal (.hero), das Kachelraster nutzt die Breite, mit einem halben
+   freien Kachelplatz links und rechts (seit 31.10.2026, siehe .tools). */
 .page {
   max-width: 1680px;
   min-height: 100dvh;
@@ -501,16 +501,18 @@ a.brand { text-decoration: none; color: inherit; }
    Verlauf ihrer Seite. Emoji in Überschriften lesen sich als KI-Muster. */
 .tb-icon { width: 40px; height: 30px; flex: none; overflow: visible; }
 
-/* Links und rechts bleibt ein Kachelplatz frei (Dennis, 31.10.2026: die
-   Kacheln standen zu nah am Rand). Das Raster rechnet mit k gleich breiten
-   Plätzen, der erste und der letzte bleiben leer. Ein Platz samt Lücke ist
-   (Breite + Lücke) / k breit, genau so viel Rand bekommen Überschrift, Raster
-   und Mehr-Zeile. Jeder Platz bleibt mindestens 280 px breit, k richtet sich
-   nach der Breite des Abschnitts:
-     ab 1480 px   5 Plätze, 3 Kachelspalten (die Seite endet bei 1680 px)
-     ab 1180 px   4 Plätze, 2 Kachelspalten
+/* Links und rechts bleibt ein halber Kachelplatz frei (Dennis, 31.10.2026:
+   die Kacheln standen zu nah am Rand, ein ganzer Platz war zu viel). Bei n
+   Kachelspalten rechnet das Raster mit n + 1 gleich breiten Plätzen und teilt
+   einen davon auf beide Ränder auf. Ein Platz samt Lücke ist
+   (Breite + Lücke) / (n + 1) breit, jeder Rand die Hälfte davon, und den
+   bekommen Überschrift, Raster und Mehr-Zeile. Jeder Platz bleibt mindestens
+   280 px breit, n richtet sich nach der Breite des Abschnitts:
+     ab 1480 px   4 Kachelspalten (die Seite endet bei 1680 px)
+     ab 1180 px   3 Kachelspalten
+     ab  880 px   2 Kachelspalten
      ab  580 px   2 Kachelspalten zu 280 px in der Mitte, der Rand wächst mit
-                  und trifft bei 1180 px genau den Kachelplatz, ohne Sprung
+                  und trifft bei 880 px genau den halben Platz, ohne Sprung
      darunter     eine Spalte, Rand ist nur der Seitenabstand
    Gilt für die Startseite und gaming.html, beide bauen den Abschnitt .tools.
    min(100%, …) verhindert Überlauf unter 320 px. */
@@ -526,12 +528,16 @@ a.brand { text-decoration: none; color: inherit; }
   .tools > * { --kachelrand: calc((100cqi - 580px) / 2); }
   .tool-grid { grid-template-columns: repeat(2, 1fr); }
 }
+@container (min-width: 880px) {
+  .tools > * { --kachelrand: calc((100cqi + 20px) / 6); }
+}
 @container (min-width: 1180px) {
-  .tools > * { --kachelrand: calc((100cqi + 20px) / 4); }
+  .tools > * { --kachelrand: calc((100cqi + 20px) / 8); }
+  .tool-grid { grid-template-columns: repeat(3, 1fr); }
 }
 @container (min-width: 1480px) {
-  .tools > * { --kachelrand: calc((100cqi + 20px) / 5); }
-  .tool-grid { grid-template-columns: repeat(3, 1fr); }
+  .tools > * { --kachelrand: calc((100cqi + 20px) / 10); }
+  .tool-grid { grid-template-columns: repeat(4, 1fr); }
 }
 
 /* Kachelform: EIN Radius für Kachel, Farbkappe, Fokusrahmen und Sternenfeld
