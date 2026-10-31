@@ -6,11 +6,15 @@
 <meta name="description" content="Borderlands-4-Handbuch: Meta-Builds, alle Legendaries und Pearls mit Fundort und Drop-Chance, Firmware, Raids, Farm-Planer und Wochen-Update.">
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#ffd400">
-<meta name="bl4-build" content="2026-10-30T15:52:16Z">
+<meta name="bl4-build" content="2026-10-31T17:34:17Z">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Vault-Handbuch">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
+<!-- Darstellung vor dem ersten Bild: seit 31.10.2026 zuerst die gemeinsame Wahl aller Werkzeuge der Werkstatt
+     (werkstatt.darstellung, roher Text), sonst bl4.theme. data-vision trägt Hoher Kontrast, Farbenblind und
+     Umkehr; dieselbe Auflösung steht im Skript unter „Darstellung“. -->
+<script>(function(){var v=null,r=document.documentElement,m=window.matchMedia,t=null,s=null;try{v=localStorage.getItem('werkstatt.darstellung')||localStorage.getItem('bl4.theme');}catch(e){}var d=!!(m&&m('(prefers-color-scheme: dark)').matches),k=!!(m&&m('(prefers-contrast: more)').matches);if(v==='light'||v==='dark'){t=v;}else if(v==='hc-dark'||v==='hc-light'){t=v.slice(3);s='contrast';}else if(v==='cvd-dark'||v==='cvd-light'){t=v.slice(4);s='cvd';}else if(v==='invert'){s='invert';}else if(v&&/dark/.test(v)){t='dark';}else if(v&&/light/.test(v)){t='light';}else if(k){t=d?'dark':'light';s='contrast';}if(t){r.setAttribute('data-theme',t);}if(s){r.setAttribute('data-vision',s);}})();</script>
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
@@ -699,12 +703,48 @@ details.more .codes{margin-top:10px}
   html{scroll-behavior:auto}
   *{transition:none!important}
 }
+
+/* ---------- Sehhilfen der Werkstatt (31.10.2026) ----------
+   Hoher Kontrast, Farbenblind, Umgekehrte Farben. Eine Wahl für alle Werkzeuge (werkstatt.darstellung,
+   siehe Skript „Darstellung“). Die Farbblöcke oben bleiben, wie sie sind. */
+.tb-sel{max-width:min(46vw,15em); text-overflow:ellipsis}
+.theme-btn select{max-width:64%; padding:2px 6px; background:var(--panel); color:var(--ink); border:2px solid var(--line); border-radius:2px; font-family:var(--f-label); font-weight:700; letter-spacing:.02em}
+/* Hoher Kontrast dunkel: Schwarz, Schrift #E0E0E0 (15,91:1), helle Ränder statt schwarzer Tusche, ohne Punkte und Versatz-Schatten */
+:root[data-vision="contrast"][data-theme="dark"]{
+  --bg:#000; --dots:transparent; --panel:#000; --panel-2:#121212; --chip:#1c1c1c;
+  --ink:#e0e0e0; --muted:#c4c4c4; --line:#a0a0a0; --shadow:transparent; --soft-shadow:transparent;
+  --bad:#ff7769;
+  color-scheme:dark;
+}
+/* Hoher Kontrast hell: Weiß, Schrift Schwarz, Farben auf 7:1 nachgedunkelt */
+:root[data-vision="contrast"][data-theme="light"]{
+  --bg:#fff; --dots:transparent; --panel:#fff; --panel-2:#efefef; --chip:#e6e6e6;
+  --ink:#000; --muted:#2b2b2b; --line:#000; --shadow:transparent; --soft-shadow:transparent;
+  --link:#873400; --good:#005b18; --warn:#6f4500; --bad:#9b1816; --info:#024c9c;
+  --legend:#7e3c00; --on-legend:#fff;
+}
+/* Farbenblind: Erledigt und Nachteil in Blau und Orange (Okabe-Ito) statt Grün und Rot; der Haken steht ohnehin dabei */
+:root[data-vision="cvd"][data-theme="light"]{ --good:#0067a2; --bad:#974100; }
+:root[data-vision="cvd"][data-theme="dark"]{ --good:#56b4e9; --bad:#e8743a; }
+/* Umgekehrte Farben wie der Farbfilter von Windows, Bilder bleiben echt */
+:root[data-vision="invert"]{filter:invert(1)}
+:root[data-vision="invert"] :is(img:not([src*=".svg"]), video, [data-echt]):not([data-echt] *){filter:invert(1)}
+/* Kontrast nach dem Umdrehen: Feuer-Schild etwas heller; im dunklen System Legendär und Nachteil heller ansetzen,
+   damit sie umgedreht 4,5:1 halten */
+:root[data-vision="invert"] .el-fire{background:#ff8e51}
+:root[data-vision="invert"] :is(.chip.r-L, .fw-t li:nth-child(2) .tn){background:#ff9339}
+@media (prefers-color-scheme: dark){
+  :root[data-vision="invert"]:not([data-theme]){ --legend:#ffa350; --bad:#ff9389; }
+}
+@media print{
+  :root[data-vision="invert"], :root[data-vision="invert"] :is(img:not([src*=".svg"]), video, [data-echt]):not([data-echt] *){filter:none}
+}
 </style>
 
 <div class="topbar" role="banner">
   <button class="tb-btn" id="menuBtn" aria-controls="side" aria-expanded="false"><span class="burger" aria-hidden="true"></span>Menü</button>
   <span class="brand">Vault-Handbuch</span>
-  <button class="tb-btn" id="themeBtn2" aria-label="Farbschema wechseln">Auto</button>
+  <select class="tb-btn tb-sel" id="themeSel2" aria-label="Darstellung"><option value="system">System</option><option value="light">Hell</option><option value="dark">Dunkel</option><option value="hc-dark">Hoher Kontrast dunkel</option><option value="hc-light">Hoher Kontrast hell</option><option value="cvd-dark">Farbenblind dunkel</option><option value="cvd-light">Farbenblind hell</option><option value="invert">Umgekehrte Farben</option></select>
 </div>
 <div class="scrim" id="scrim" hidden></div>
 
@@ -736,7 +776,7 @@ details.more .codes{margin-top:10px}
     </nav>
     <div class="side-foot">
       <div class="appbox" id="appBox"></div>
-      <button class="theme-btn" id="themeBtn" aria-label="Farbschema wechseln">Farbschema <b id="themeLbl">Auto</b></button>
+      <label class="theme-btn" for="themeSel">Darstellung <select id="themeSel"><option value="system">System</option><option value="light">Hell</option><option value="dark">Dunkel</option><option value="hc-dark">Hoher Kontrast dunkel</option><option value="hc-light">Hoher Kontrast hell</option><option value="cvd-dark">Farbenblind dunkel</option><option value="cvd-light">Farbenblind hell</option><option value="invert">Umgekehrte Farben</option></select></label>
       <p class="muted" style="font-size:.82rem">Stand: 18. Oktober 2026 · Version 1.10 · Merkliste, Sammlung und Checkliste speichert nur dein Gerät.</p>
     </div>
   </aside>
@@ -2966,17 +3006,35 @@ if (IS_PWA){
   }
 }
 
-/* ================= Theme ================= */
-const THEMES = ["auto","light","dark"], TLBL = {auto:"Auto", light:"Hell", dark:"Dunkel"};
-function applyTheme(){
-  if (S.theme === "auto") document.documentElement.removeAttribute("data-theme");
-  else document.documentElement.setAttribute("data-theme", S.theme);
-  $("#themeLbl").textContent = TLBL[S.theme];
-  $("#themeBtn2").textContent = TLBL[S.theme];
+/* ================= Darstellung ================= */
+/* Sehhilfen der Werkstatt (31.10.2026): acht Darstellungen, eine Wahl für alle Werkzeuge auf
+   dennismit2n.github.io (werkstatt.darstellung, roher Text). bl4.theme bleibt Rückfall ("auto" = System).
+   data-theme trägt hell/dunkel, data-vision Hoher Kontrast (contrast), Farbenblind (cvd) und Umkehr (invert). */
+const DARST_KEY = "werkstatt.darstellung";
+const DARST = ["system","light","dark","hc-dark","hc-light","cvd-dark","cvd-light","invert"];
+function mq(q){ return !!(window.matchMedia && matchMedia(q).matches); }
+function storedTheme(){
+  let v = null;
+  try { v = localStorage.getItem(DARST_KEY); } catch(e){}
+  if (!v) v = S.theme === "auto" ? "system" : String(S.theme || "system");
+  if (DARST.includes(v)) return v;
+  return /dark/.test(v) ? "dark" : /light/.test(v) ? "light" : "system";
 }
-function cycleTheme(){
-  S.theme = THEMES[(THEMES.indexOf(S.theme) + 1) % 3];
-  store.set("bl4.theme", S.theme); applyTheme();
+function applyTheme(v = storedTheme()){
+  const r = document.documentElement;
+  let t = null, s = null;
+  if (v === "light" || v === "dark") t = v;
+  else if (v === "hc-dark" || v === "hc-light"){ t = v.slice(3); s = "contrast"; }
+  else if (v === "cvd-dark" || v === "cvd-light"){ t = v.slice(4); s = "cvd"; }
+  else if (v === "invert") s = "invert";
+  else if (mq("(prefers-contrast: more)")){ t = mq("(prefers-color-scheme: dark)") ? "dark" : "light"; s = "contrast"; }
+  if (t) r.setAttribute("data-theme", t); else r.removeAttribute("data-theme");
+  if (s) r.setAttribute("data-vision", s); else r.removeAttribute("data-vision");
+  $("#themeSel").value = v; $("#themeSel2").value = v;
+}
+function setTheme(v){
+  try { localStorage.setItem(DARST_KEY, v); } catch(e){ /* gesperrt: gilt bis zum Neuladen */ }
+  applyTheme(v);
 }
 
 /* ================= Events ================= */
@@ -3095,8 +3153,12 @@ $("#menuBtn").addEventListener("click", () => setNav(!document.body.classList.co
 $("#menuBtn2").addEventListener("click", () => setNav(!document.body.classList.contains("nav-open")));
 $("#wideBtn").addEventListener("click", () => { S.wide = !S.wide; store.set("bl4.wide", S.wide); applyWide(); });
 $("#scrim").addEventListener("click", () => setNav(false));
-$("#themeBtn").addEventListener("click", cycleTheme);
-$("#themeBtn2").addEventListener("click", cycleTheme);
+$("#themeSel").addEventListener("change", e => setTheme(e.target.value));
+$("#themeSel2").addEventListener("change", e => setTheme(e.target.value));
+/* „System“ folgt dem Gerät live, auch bei „Kontrast erhöhen“; eine Wahl in einem anderen Werkzeug gilt sofort */
+["(prefers-color-scheme: dark)", "(prefers-contrast: more)"].forEach(q => { if (window.matchMedia) matchMedia(q).addEventListener("change", () => applyTheme()); });
+window.addEventListener("storage", e => { if (e.key === DARST_KEY) applyTheme(); });
+window.addEventListener("pageshow", e => { if (e.persisted) applyTheme(); });
 $("#uvh").addEventListener("change", e => {
   S.uvh = Number(e.target.value); store.set("bl4.uvh", S.uvh);
   renderStatus(); renderSteps(); renderWeapons(); renderGear(); renderDb(); renderPlan(); renderRaids(); renderHits();
