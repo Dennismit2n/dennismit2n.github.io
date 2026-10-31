@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#0e1215">
 <meta name="color-scheme" content="dark">
-<meta name="mw4-build" content="2026-10-31T17:37:32Z">
+<meta name="mw4-build" content="2026-10-31T18:11:21Z">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Rüstkammer">
@@ -52,6 +52,8 @@
   --panel:#192025; --panel-solid:#171d21; --panel-3:#252e35; --panel-a:rgba(24,31,36,.9);
   --line:rgba(214,226,218,.10); --line-2:rgba(214,226,218,.22);
   --text:#e7ebe4; --muted:#95a29b; --dim:#66746d; --sand:#e4d9bd;
+  /* Nebenschrift unter den Werten: --dim kam auf --panel-solid nur auf 3,47:1, gleicher Farbton bis 4,51 aufgehellt */
+  --sub:#78877f;
   --lime:#c8e03c; --lime-2:#dbec84; --lime-ink:#141a06;
   --gold:#f1b72c; --orange:#f07d24; --steel:#a9bfcc;
   --track:rgba(214,226,218,.08); --grid:rgba(214,226,218,.07); --hover:rgba(200,224,60,.07);
@@ -176,7 +178,7 @@ a{color:var(--steel);text-underline-offset:3px}
 .stat dt{font:400 11px/1.25 var(--f-mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
 .stat dd{margin:6px 0 0;font:700 26px/1 var(--f-display);font-variant-numeric:tabular-nums}
 .stat dd small{font:500 13px var(--f-body);color:var(--muted);margin-left:4px}
-.stat .sub{display:block;font:400 11px/1.35 var(--f-mono);color:var(--dim);margin-top:5px}
+.stat .sub{display:block;font:400 11px/1.35 var(--f-mono);color:var(--sub);margin-top:5px}
 .stat.gap dd{color:var(--dim)}
 .stat.warn .sub{color:var(--orange)}
 
@@ -371,7 +373,8 @@ button.slotcard:hover{border-color:var(--lime)}
   .status .opt{display:none}
   .split{grid-template-columns:minmax(0,1fr);position:relative}
   .list-pane{padding-right:0}
-  .detail-pane{position:absolute;inset:0;background:var(--bg);visibility:hidden;opacity:0;transform:translateX(18px);
+  /* Zugeklappt nur 16 px versetzt, so breit ist der Rand der App: mit 18 px ragte die Ansicht bei 320 px 2 px über die Seite */
+  .detail-pane{position:absolute;inset:0;background:var(--bg);visibility:hidden;opacity:0;transform:translateX(16px);
     transition:opacity .18s ease,transform .18s ease,visibility 0s linear .18s}
   .split.is-open .detail-pane{visibility:visible;opacity:1;transform:none;transition:opacity .18s ease,transform .18s ease}
   .split.is-open .list-pane{visibility:hidden}
@@ -402,7 +405,7 @@ button.slotcard:hover{border-color:var(--lime)}
 :root[data-vision="contrast"][data-hc="dark"]{
   --bg:#000; --bg-2:#000; --glow:#000; --panel:#000; --panel-solid:#000; --panel-3:#121212; --panel-a:#000;
   --line:#a0a0a0; --line-2:#c4c4c4;
-  --text:#e0e0e0; --muted:#c4c4c4; --dim:#adadad;
+  --text:#e0e0e0; --muted:#c4c4c4; --dim:#adadad; --sub:var(--dim);
   --lime-ink:#000; --orange:#f5822b;
   --track:#2b2b2b; --grid:#333; --hover:#1a1a1a; --pip-off:#555; --hatch:transparent;
   --orange-line:#f5822b; --orange-bg:#000; --nav-bg:#000; --shadow:transparent;
@@ -413,7 +416,7 @@ button.slotcard:hover{border-color:var(--lime)}
   color-scheme:light;
   --bg:#fff; --bg-2:#fff; --glow:#fff; --panel:#fff; --panel-solid:#fff; --panel-3:#efefef; --panel-a:#fff;
   --line:#585757; --line-2:#3a3a3a;
-  --text:#000; --muted:#2b2b2b; --dim:#4a4a4a; --sand:#574d35;
+  --text:#000; --muted:#2b2b2b; --dim:#4a4a4a; --sub:var(--dim); --sand:#574d35;
   --lime:#495300; --lime-2:#4b5300; --lime-ink:#fff; --gold:#654a00; --orange:#7f3b00; --steel:#3e515c;
   --track:#d6d6d6; --grid:#ccc; --hover:#f2f2f2; --pip-off:#b0b0b0; --ghost:#d6d6d6; --hatch:transparent;
   --orange-line:#7f3b00; --orange-bg:#fff; --nav-bg:#fff; --shadow:transparent;
@@ -427,7 +430,7 @@ html[data-vision="contrast"] body{background-image:none}
 /* Umgekehrte Farben wie der Farbfilter von Windows, Bilder bleiben echt */
 :root[data-vision="invert"]{filter:invert(1)}
 /* Kontrast nach dem Umdrehen: Nebenschrift und Orange heller ansetzen, damit sie umgedreht 4,5:1 halten */
-:root[data-vision="invert"]{--dim:#919f98; --orange:#ff994e}
+:root[data-vision="invert"]{--dim:#919f98; --sub:var(--dim); --orange:#ff994e}
 :root[data-vision="invert"] :is(img:not([src*=".svg"]), video, [data-echt]):not([data-echt] *){filter:invert(1)}
 @media print{
   :root[data-vision="invert"], :root[data-vision="invert"] :is(img:not([src*=".svg"]), video, [data-echt]):not([data-echt] *){filter:none}
