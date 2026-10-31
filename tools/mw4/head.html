@@ -1,6 +1,10 @@
 <title>MW4 Rüstkammer</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Meta-Builds, Aufsätze, Apex und Time to Kill für Call of Duty: Modern Warfare 4 – offline nutzbar.">
+<!-- Sehhilfen der Werkstatt (31.10.2026) vor dem ersten Bild: Hoher Kontrast, Farbenblind und Umkehr aus der
+     gemeinsamen Wahl aller Werkzeuge (werkstatt.darstellung, roher Text). Die Rüstkammer hat bewusst nur ein
+     dunkles Thema; Hell, Dunkel und System zeigen deshalb dieses. Dieselbe Auflösung steht in body.html (Darstellung). -->
+<script>(function(){var v=null,r=document.documentElement,m=window.matchMedia;try{v=localStorage.getItem('werkstatt.darstellung');}catch(e){}var d=!!(m&&m('(prefers-color-scheme: dark)').matches),k=!!(m&&m('(prefers-contrast: more)').matches);if(v==='hc-dark'||v==='hc-light'){r.setAttribute('data-vision','contrast');r.setAttribute('data-hc',v.slice(3));}else if(v==='cvd-dark'||v==='cvd-light'){r.setAttribute('data-vision','cvd');}else if(v==='invert'){r.setAttribute('data-vision','invert');}else if(k&&(!v||v==='system')){r.setAttribute('data-vision','contrast');r.setAttribute('data-hc',d?'dark':'light');}})();</script>
 <!-- Schriften aus dem eigenen Ordner (fonts/, SIL Open Font License, Lizenztexte daneben):
      kein Abruf bei Google Fonts, also keine IP-Adresse an Google. Teilmengen wie bei Google. -->
 <style>
@@ -371,4 +375,43 @@ button.slotcard:hover{border-color:var(--lime)}
   .lvlmini{margin-left:0}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+
+/* ===== Sehhilfen der Werkstatt (31.10.2026) =====
+   Hoher Kontrast (data-vision="contrast", data-hc dunkel/hell), Farbenblind (cvd), Umgekehrte Farben (invert).
+   Eine Wahl für alle Werkzeuge (werkstatt.darstellung), Feld „Darstellung“ unter Intel. */
+.sel{justify-self:start;max-width:100%;font:600 15px/1.2 var(--f-body);color:var(--text);background:var(--panel-solid);border:1px solid var(--line-2);padding:9px 12px}
+/* Hoher Kontrast dunkel: Schwarz, Schrift #E0E0E0 (15,91:1), Linien und Flächen deckend statt durchscheinend */
+:root[data-vision="contrast"][data-hc="dark"]{
+  --bg:#000; --bg-2:#000; --glow:#000; --panel:#000; --panel-solid:#000; --panel-3:#121212; --panel-a:#000;
+  --line:#a0a0a0; --line-2:#c4c4c4;
+  --text:#e0e0e0; --muted:#c4c4c4; --dim:#adadad;
+  --lime-ink:#000; --orange:#f5822b;
+  --track:#2b2b2b; --grid:#333; --hover:#1a1a1a; --pip-off:#555; --hatch:transparent;
+  --orange-line:#f5822b; --orange-bg:#000; --nav-bg:#000; --shadow:transparent;
+  --band:linear-gradient(#2a3308,#2a3308);
+}
+/* Hoher Kontrast hell: Weiß, Schrift Schwarz, Lindgrün, Gold, Orange und Stahl auf 7:1 nachgedunkelt */
+:root[data-vision="contrast"][data-hc="light"]{
+  color-scheme:light;
+  --bg:#fff; --bg-2:#fff; --glow:#fff; --panel:#fff; --panel-solid:#fff; --panel-3:#efefef; --panel-a:#fff;
+  --line:#585757; --line-2:#3a3a3a;
+  --text:#000; --muted:#2b2b2b; --dim:#4a4a4a; --sand:#574d35;
+  --lime:#495300; --lime-2:#4b5300; --lime-ink:#fff; --gold:#654a00; --orange:#7f3b00; --steel:#3e515c;
+  --track:#d6d6d6; --grid:#ccc; --hover:#f2f2f2; --pip-off:#b0b0b0; --ghost:#d6d6d6; --hatch:transparent;
+  --orange-line:#7f3b00; --orange-bg:#fff; --nav-bg:#fff; --shadow:transparent;
+  --band:linear-gradient(#e9f2c4,#e9f2c4);
+}
+html[data-vision="contrast"] body{background-image:none}
+/* Farbenblind: Konfidenz „hoch“ und „niedrig“ in Himmelblau und Orange (Okabe-Ito) statt Lindgrün und Orange;
+   das Wort steht ohnehin dabei */
+:root[data-vision="cvd"] .k-hoch{color:#56b4e9}
+:root[data-vision="cvd"] .k-niedrig{color:#e8743a}
+/* Umgekehrte Farben wie der Farbfilter von Windows, Bilder bleiben echt */
+:root[data-vision="invert"]{filter:invert(1)}
+/* Kontrast nach dem Umdrehen: Nebenschrift und Orange heller ansetzen, damit sie umgedreht 4,5:1 halten */
+:root[data-vision="invert"]{--dim:#919f98; --orange:#ff994e}
+:root[data-vision="invert"] :is(img:not([src*=".svg"]), video, [data-echt]):not([data-echt] *){filter:invert(1)}
+@media print{
+  :root[data-vision="invert"], :root[data-vision="invert"] :is(img:not([src*=".svg"]), video, [data-echt]):not([data-echt] *){filter:none}
+}
 </style>

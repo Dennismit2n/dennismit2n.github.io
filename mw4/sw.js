@@ -1,7 +1,7 @@
 /* MW4 Rüstkammer: Service Worker (wird von tools/mw4/build.py erzeugt – hier nicht von Hand ändern)
    Seite, Manifest und Daten: zuerst Netz (bei jedem Start frisch), offline aus dem Cache.
    Bilder: sofort aus dem Cache, im Hintergrund aktualisiert. Neue Version = neue Datei, wird sofort aktiv. */
-const VERSION = "2026-10-30T15:52:46Z";
+const VERSION = "2026-10-31T17:37:32Z";
 const CORE = "mw4-core-" + VERSION;
 const IMG = "mw4-img";
 /* Schriften liegen seit dem 30.10.2026 in fonts/ (vorher Google Fonts, Cache "mw4-font") */
