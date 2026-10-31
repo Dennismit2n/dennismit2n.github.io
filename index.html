@@ -37,9 +37,12 @@
   <!-- Die Überschriftenschrift wird auf jeder Seite und in jeder Sprache gebraucht
        (mindestens für den Markennamen), also früh anstoßen statt erst nach der CSS. -->
   <link rel="preload" href="./assets/fonts/fraunces/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="./css/style.css?v=2026-10-31b">
-  <!-- Theme before first paint: stored choice wins, otherwise system decides via CSS. -->
-  <script>try{var t=localStorage.getItem('dennismit2n-home.theme');if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}</script>
+  <link rel="stylesheet" href="./css/style.css?v=2026-10-31c">
+  <!-- Darstellung vor dem ersten Bild: die gemeinsame Wahl aller Werkzeuge
+       (werkstatt.darstellung, sonst der alte Schlüssel), sonst entscheidet das
+       System per CSS. data-vision trägt Hoher Kontrast, Farbenblind und Umkehr;
+       dieselbe Auflösung steht in js/header.js (showTheme). -->
+  <script>(function(){var v=null,r=document.documentElement,m=window.matchMedia,t=null,s=null;try{v=localStorage.getItem('werkstatt.darstellung')||localStorage.getItem('dennismit2n-home.theme');}catch(e){}var d=!!(m&&m('(prefers-color-scheme: dark)').matches),k=!!(m&&m('(prefers-contrast: more)').matches);if(v==='light'||v==='dark'){t=v;}else if(v==='hc-dark'||v==='hc-light'){t=v.slice(3);s='contrast';}else if(v==='cvd-dark'||v==='cvd-light'){t=v.slice(4);s='cvd';}else if(v==='invert'){s='invert';}else if(v&&/dark/.test(v)){t='dark';}else if(v&&/light/.test(v)){t='light';}else if(k){t=d?'dark':'light';s='contrast';}if(t){r.setAttribute('data-theme',t);}if(s){r.setAttribute('data-vision',s);}})();</script>
   <!-- Wer nicht Englisch bekommt, sieht Inhalt, Fußzeile und Auswahlfelder erst
        übersetzt (.i18n-wartet in style.css): der Rohbau ist Englisch, und die
        längeren Übersetzungen schoben die Kacheln sonst nach unten. Dieselbe Wahl
@@ -422,9 +425,9 @@
      Als eigenes Skript-Tag hielt es das Übersetzen noch eine halbe Sekunde
      auf; main.js holt es deshalb erst danach. data-news trägt die Adresse
      samt ?v=-Stempel. -->
-<script src="./js/i18n.js?v=2026-10-31" fetchpriority="high"></script>
+<script src="./js/i18n.js?v=2026-10-31b" fetchpriority="high"></script>
 <script src="./js/dates.js?v=2026-09-14" fetchpriority="high"></script>
-<script src="./js/header.js?v=2026-09-25" fetchpriority="high"></script>
+<script src="./js/header.js?v=2026-10-31" fetchpriority="high"></script>
 <script src="./js/main.js?v=2026-09-24" fetchpriority="high" data-news="./js/news.js?v=2026-10-30h"></script>
 </body>
 </html>

@@ -11,22 +11,56 @@
 'use strict';
 
 var Header = (function () {
-  var THEME_KEY = 'dennismit2n-home.theme';
+  // One choice for the whole workshop (31.10.2026): every tool lives on the
+  // same origin, so they all read and write this key. The old key of this
+  // site is only read as a fallback, so a choice made before still counts.
+  // The inline snippet in the <head> of each page does the same resolving
+  // before the first paint — keep both in step.
+  var THEME_KEY = 'werkstatt.darstellung';
+  var OLD_THEME_KEY = 'dennismit2n-home.theme';
+  var THEMES = ['system', 'light', 'dark', 'hc-dark', 'hc-light', 'cvd-dark', 'cvd-light', 'invert'];
+
+  // Values from other tools that this page does not know (Spectroton has
+  // its own "soft-dark") count as their nearest family.
+  function normalise(value) {
+    if (THEMES.indexOf(value) >= 0) { return value; }
+    if (/dark/.test(value || '')) { return 'dark'; }
+    if (/light/.test(value || '')) { return 'light'; }
+    return 'system';
+  }
 
   function storedTheme() {
     try {
-      var saved = localStorage.getItem(THEME_KEY);
-      if (saved === 'light' || saved === 'dark') { return saved; }
+      return normalise(localStorage.getItem(THEME_KEY) || localStorage.getItem(OLD_THEME_KEY));
     } catch (e) { /* storage may be unavailable */ }
     return 'system';
   }
 
+  function media(query) {
+    return !!(window.matchMedia && window.matchMedia(query).matches);
+  }
+
+  // data-theme carries light/dark as before, data-vision the three aids.
+  // High contrast and colour-blind always come with a fixed data-theme, also
+  // when "System" follows the device's "increase contrast".
   function showTheme(value) {
+    var theme = null;
+    var vision = null;
     if (value === 'light' || value === 'dark') {
-      document.documentElement.setAttribute('data-theme', value);
-    } else {
-      document.documentElement.removeAttribute('data-theme');
+      theme = value;
+    } else if (value === 'hc-dark' || value === 'hc-light') {
+      theme = value.slice(3); vision = 'contrast';
+    } else if (value === 'cvd-dark' || value === 'cvd-light') {
+      theme = value.slice(4); vision = 'cvd';
+    } else if (value === 'invert') {
+      vision = 'invert';
+    } else if (media('(prefers-contrast: more)')) {
+      theme = media('(prefers-color-scheme: dark)') ? 'dark' : 'light';
+      vision = 'contrast';
     }
+    var root = document.documentElement;
+    if (theme) { root.setAttribute('data-theme', theme); } else { root.removeAttribute('data-theme'); }
+    if (vision) { root.setAttribute('data-vision', vision); } else { root.removeAttribute('data-vision'); }
   }
 
   function initTheme() {
@@ -38,7 +72,12 @@ var Header = (function () {
     var themeOptions = [
       { value: 'system', i18n: 'themeSystem' },
       { value: 'light', i18n: 'themeLight' },
-      { value: 'dark', i18n: 'themeDark' }
+      { value: 'dark', i18n: 'themeDark' },
+      { value: 'hc-dark', i18n: 'themeHcDark' },
+      { value: 'hc-light', i18n: 'themeHcLight' },
+      { value: 'cvd-dark', i18n: 'themeCvdDark' },
+      { value: 'cvd-light', i18n: 'themeCvdLight' },
+      { value: 'invert', i18n: 'themeInvert' }
     ];
     for (var t = 0; t < themeOptions.length; t++) {
       var themeOpt = document.createElement('option');
@@ -53,6 +92,25 @@ var Header = (function () {
       var value = themeSelect.value;
       showTheme(value);
       try { localStorage.setItem(THEME_KEY, value); } catch (err) { /* ignore */ }
+    });
+
+    // "System" follows the device live, also for "increase contrast".
+    if (window.matchMedia) {
+      var follow = function () { if (storedTheme() === 'system') { showTheme('system'); } };
+      var queries = ['(prefers-color-scheme: dark)', '(prefers-contrast: more)'];
+      for (var q = 0; q < queries.length; q++) {
+        var list = window.matchMedia(queries[q]);
+        if (list.addEventListener) { list.addEventListener('change', follow); }
+        else if (list.addListener) { list.addListener(follow); }
+      }
+    }
+
+    // A choice made in another tab of the workshop (any tool) shows here too.
+    window.addEventListener('storage', function (event) {
+      if (event.key !== THEME_KEY) { return; }
+      var value = storedTheme();
+      showTheme(value);
+      themeSelect.value = value;
     });
   }
 
