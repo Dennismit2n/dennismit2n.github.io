@@ -359,12 +359,13 @@ body {
 @keyframes au-wandern-3 { 0% { transform: translate(0, 0) scale(1); } 50% { transform: translate(-24vw, 20vh) scale(1.15); } 100% { transform: translate(-40vw, 6vh) scale(1); } }
 @keyframes au-wandern-4 { 0% { transform: translate(0, 0) scale(1); } 50% { transform: translate(22vw, -20vh) scale(1.1); } 100% { transform: translate(38vw, -8vh) scale(0.92); } }
 
-/* 1680 statt 880 px (Dennis, 30.10.2026): die Kacheln sollen sich nach der
-   Fensterbreite richten, statt immer in zwei Spalten zu stehen. Kopf und Hero
-   bleiben schmal (.hero), das Kachelraster nutzt die Breite, mit einem halben
-   freien Kachelplatz links und rechts (seit 31.10.2026, siehe .tools). */
+/* Keine Obergrenze (Dennis, 31.10.2026, vorher 1680 px): Wer mit Strg und
+   Minus verkleinert, macht die Seite in CSS-Pixeln breiter, und dann sollen
+   Kachelspalten dazukommen, statt dass vier Spalten in der Mitte schrumpfen.
+   Kopf und Hero bleiben schmal (.hero), das Kachelraster nutzt die Breite,
+   mit einem halben freien Kachelplatz links und rechts (siehe .tools).
+   werkstatt.html deckelt weiter über .page-wide. */
 .page {
-  max-width: 1680px;
   min-height: 100dvh;
   margin: 0 auto;
   padding: 20px 20px 36px;
@@ -508,7 +509,9 @@ a.brand { text-decoration: none; color: inherit; }
    (Breite + Lücke) / (n + 1) breit, jeder Rand die Hälfte davon, und den
    bekommen Überschrift, Raster und Mehr-Zeile. Jeder Platz bleibt mindestens
    280 px breit, n richtet sich nach der Breite des Abschnitts:
-     ab 1480 px   4 Kachelspalten (die Seite endet bei 1680 px)
+     ab 1780 px   5 Kachelspalten, alle 300 px eine mehr, bis 12 Spalten
+                  ab 3880 px (so breit wird es nur beim Verkleinern)
+     ab 1480 px   4 Kachelspalten
      ab 1180 px   3 Kachelspalten
      ab  880 px   2 Kachelspalten
      ab  580 px   2 Kachelspalten zu 280 px in der Mitte, der Rand wächst mit
@@ -539,6 +542,15 @@ a.brand { text-decoration: none; color: inherit; }
   .tools > * { --kachelrand: calc((100cqi + 20px) / 10); }
   .tool-grid { grid-template-columns: repeat(4, 1fr); }
 }
+/* n Spalten ab 300 · (n + 1) − 20 px, Rand (Breite + Lücke) / (2 · (n + 1)) */
+@container (min-width: 1780px) { .tools > * { --kachelrand: calc((100cqi + 20px) / 12); } .tool-grid { grid-template-columns: repeat(5, 1fr); } }
+@container (min-width: 2080px) { .tools > * { --kachelrand: calc((100cqi + 20px) / 14); } .tool-grid { grid-template-columns: repeat(6, 1fr); } }
+@container (min-width: 2380px) { .tools > * { --kachelrand: calc((100cqi + 20px) / 16); } .tool-grid { grid-template-columns: repeat(7, 1fr); } }
+@container (min-width: 2680px) { .tools > * { --kachelrand: calc((100cqi + 20px) / 18); } .tool-grid { grid-template-columns: repeat(8, 1fr); } }
+@container (min-width: 2980px) { .tools > * { --kachelrand: calc((100cqi + 20px) / 20); } .tool-grid { grid-template-columns: repeat(9, 1fr); } }
+@container (min-width: 3280px) { .tools > * { --kachelrand: calc((100cqi + 20px) / 22); } .tool-grid { grid-template-columns: repeat(10, 1fr); } }
+@container (min-width: 3580px) { .tools > * { --kachelrand: calc((100cqi + 20px) / 24); } .tool-grid { grid-template-columns: repeat(11, 1fr); } }
+@container (min-width: 3880px) { .tools > * { --kachelrand: calc((100cqi + 20px) / 26); } .tool-grid { grid-template-columns: repeat(12, 1fr); } }
 
 /* Kachelform: EIN Radius für Kachel, Farbkappe, Fokusrahmen und Sternenfeld
    (vorher stand 16px an vier Stellen einzeln). Gilt auch für die Abschnitte
