@@ -3169,18 +3169,18 @@ var GUIDES = {
     purpose: {
       de: 'Jedes Rezept aus Minecraft Java 26.3 so, wie es im Spiel aussieht: in der Werkbank, im Ofen, im Braustand oder wo es sonst entsteht. Dazu, wo du etwas findest (Erz-Höhen, Truhen, Kreaturen, Handel), fertige /give-Befehle und eine Werkstatt für Banner, Schilde und Krüge. Craftionary läuft im Browser auf dem Handy (Android und iOS) und am Desktop und lässt sich mit dem Knopf „Installieren“ als App einrichten.',
       en: 'Every recipe in Minecraft Java 26.3 the way the game shows it: at the crafting table, in the furnace, at the brewing stand or wherever it is made. Plus where to find things (ore heights, chests, mobs, trading), ready /give commands and a workshop for banners, shields and pots. Craftionary runs in the browser on your phone (Android and iOS) and on desktop, and the “Install” button sets it up as an app.',
-      es: 'Cada receta de Minecraft Java 26.3 tal como la muestra el juego: en la mesa de crafteo, el horno, el soporte para pociones o donde se fabrique. Además, dónde encontrar cada cosa (alturas de minerales, cofres, criaturas, comercio), comandos /give listos y un taller de estandartes, escudos y vasijas. Craftionary funciona en el navegador del móvil (Android e iOS) y del ordenador, y el botón «Install» lo instala como app.',
-      fr: 'Chaque recette de Minecraft Java 26.3 telle que le jeu l’affiche : à l’établi, au four, à l’alambic ou là où elle se fabrique. En plus : où trouver les objets (hauteurs des minerais, coffres, créatures, commerce), des commandes /give prêtes et un atelier pour bannières, boucliers et pots. Craftionary fonctionne dans le navigateur du téléphone (Android et iOS) et de l’ordinateur, et le bouton « Install » l’installe comme application.',
-      it: 'Ogni ricetta di Minecraft Java 26.3 come la mostra il gioco: al banco da lavoro, nella fornace, nel banco di distillazione o dove viene creata. In più: dove trovare le cose (altezze dei minerali, bauli, creature, commercio), comandi /give pronti e un laboratorio per stendardi, scudi e vasi. Craftionary funziona nel browser del telefono (Android e iOS) e del computer, e il pulsante «Install» lo installa come app.',
-      nl: 'Elk recept uit Minecraft Java 26.3 zoals het spel het laat zien: aan de werkbank, in de oven, in de brouwstandaard of waar het ook gemaakt wordt. Daarbij: waar je iets vindt (ertshoogtes, kisten, wezens, handel), kant-en-klare /give-commando’s en een werkplaats voor banieren, schilden en potten. Craftionary draait in de browser op je telefoon (Android en iOS) en op de computer, en de knop ‘Install’ installeert het als app.',
-      pl: 'Każda receptura z Minecraft Java 26.3 tak, jak pokazuje ją gra: przy stole rzemieślniczym, w piecu, w statywie alchemicznym albo tam, gdzie powstaje. Do tego: gdzie co znaleźć (wysokości rud, skrzynie, stworzenia, handel), gotowe komendy /give i warsztat sztandarów, tarcz i naczyń. Craftionary działa w przeglądarce na telefonie (Android i iOS) i na komputerze, a przycisk „Install” instaluje go jako aplikację.',
-      pt: 'Cada receita do Minecraft Java 26.3 do jeito que o jogo mostra: na bancada de trabalho, na fornalha, no suporte de poções ou onde for feita. Além disso: onde encontrar cada coisa (alturas dos minérios, baús, criaturas, comércio), comandos /give prontos e uma oficina de estandartes, escudos e vasos. O Craftionary funciona no navegador do celular (Android e iOS) e do computador, e o botão «Install» instala o Craftionary como app.',
-      tr: 'Minecraft Java 26.3’teki her tarif, oyunda göründüğü gibi: çalışma masasında, fırında, simya standında ya da nerede yapılıyorsa orada. Ayrıca bir şeyi nerede bulacağınız (maden yükseklikleri, sandıklar, yaratıklar, ticaret), hazır /give komutları ve sancak, kalkan ve çömlekler için bir atölye. Craftionary telefonda (Android ve iOS) ve bilgisayarda tarayıcıda çalışır, “Install” düğmesi de onu uygulama olarak kurar.',
-      ru: 'Каждый рецепт Minecraft Java 26.3 в том виде, в каком его показывает игра: на верстаке, в печи, в варочной стойке или там, где он создаётся. Кроме того: где что найти (высоты руд, сундуки, существа, торговля), готовые команды /give и мастерская флагов, щитов и горшков. Craftionary работает в браузере на телефоне (Android и iOS) и на компьютере, а кнопка «Install» устанавливает его как приложение.',
-      hi: 'Minecraft Java 26.3 की हर रेसिपी वैसी ही, जैसी गेम में दिखती है: क्राफ़्टिंग टेबल, भट्टी, ब्रूइंग स्टैंड या जहाँ भी वह बनती है। साथ में: कौन-सी चीज़ कहाँ मिलती है (अयस्कों की ऊँचाई, संदूक, जीव, व्यापार), तैयार /give कमांड और बैनर, ढाल व मटकों की वर्कशॉप। Craftionary फ़ोन (Android और iOS) और डेस्कटॉप के ब्राउज़र में चलता है, और “Install” बटन से ऐप की तरह इंस्टॉल होता है।',
-      zh: 'Minecraft Java 26.3 的每个配方，都按游戏里的样子显示：在工作台、熔炉、酿造台或任何制作它的地方。此外还有：东西在哪里找（矿石高度、箱子、生物、交易）、现成的 /give 命令，以及旗帜、盾牌和陶罐的工坊。Craftionary 可在手机（Android 和 iOS）和电脑的浏览器中运行，点“Install”按钮即可安装为应用。',
-      ja: 'Minecraft Java 26.3 のすべてのレシピを、ゲームと同じ見た目で表示します。作業台でも、かまどでも、醸造台でも、作られる場所のとおりに。さらに、どこで手に入るか（鉱石の高さ、チェスト、モブ、取引）、すぐ使える /give コマンド、旗・盾・飾り壺の工房もあります。Craftionary はスマートフォン（Android と iOS）とパソコンのブラウザーで動き、「Install」ボタンでアプリとしてインストールできます。',
-      ko: 'Minecraft Java 26.3의 모든 조합법을 게임에 나오는 모습 그대로 보여 줍니다. 제작대든 화로든 양조기든 만드는 곳 그대로요. 그리고 어디서 구하는지(광석 높이, 상자, 몹, 거래), 바로 쓰는 /give 명령어, 현수막·방패·항아리 공방도 있습니다. Craftionary는 휴대폰(Android와 iOS)과 데스크톱 브라우저에서 돌아가고, ‘Install’ 버튼으로 앱처럼 설치할 수 있습니다.'
+      es: 'Cada receta de Minecraft Java 26.3 tal como la muestra el juego: en la mesa de trabajo, el horno, el soporte para pociones o donde se fabrique. Además, dónde encontrar cada cosa (alturas de minerales, cofres, criaturas, comercio), comandos /give listos y un taller de estandartes, escudos y vasijas. Craftionary funciona en el navegador del móvil (Android e iOS) y del ordenador, y el botón «Instalar» lo instala como app.',
+      fr: 'Chaque recette de Minecraft Java 26.3 telle que le jeu l’affiche : à l’établi, au fourneau, à l’alambic ou là où elle se fabrique. En plus : où trouver les objets (hauteurs des minerais, coffres, créatures, commerce), des commandes /give prêtes et un atelier pour bannières, boucliers et vases. Craftionary fonctionne dans le navigateur du téléphone (Android et iOS) et de l’ordinateur, et le bouton « Installer » l’installe comme application.',
+      it: 'Ogni ricetta di Minecraft Java 26.3 come la mostra il gioco: al banco da fabbricazione, nella fornace, nell’alambicco o dove viene creata. In più: dove trovare le cose (altezze dei minerali, bauli, creature, commercio), comandi /give pronti e un laboratorio per stendardi, scudi e vasi. Craftionary funziona nel browser del telefono (Android e iOS) e del computer, e il pulsante «Installa» lo installa come app.',
+      nl: 'Elk recept uit Minecraft Java 26.3 zoals het spel het laat zien: aan de werkbank, in de oven, in de brouwstandaard of waar het ook gemaakt wordt. Daarbij: waar je iets vindt (ertshoogtes, kisten, wezens, handel), kant-en-klare /give-commando’s en een werkplaats voor banieren, schilden en potten. Craftionary draait in de browser op je telefoon (Android en iOS) en op de computer, en de knop ‘Installeren’ installeert het als app.',
+      pl: 'Każda receptura z Minecraft Java 26.3 tak, jak pokazuje ją gra: przy stole rzemieślniczym, w piecu, w statywie alchemicznym albo tam, gdzie powstaje. Do tego: gdzie co znaleźć (wysokości rud, skrzynie, stworzenia, handel), gotowe komendy /give i pracownia sztandarów, tarcz i garnców. Craftionary działa w przeglądarce na telefonie (Android i iOS) i na komputerze, a przycisk „Zainstaluj” instaluje go jako aplikację.',
+      pt: 'Cada receita do Minecraft Java 26.3 do jeito que o jogo mostra: na bancada de trabalho, na fornalha, no suporte de poções ou onde for feita. Além disso: onde encontrar cada coisa (alturas dos minérios, baús, criaturas, comércio), comandos /give prontos e uma oficina de estandartes, escudos e vasos. O Craftionary funciona no navegador do celular (Android e iOS) e do computador, e o botão «Instalar» instala o Craftionary como app.',
+      tr: 'Minecraft Java 26.3’teki her tarif, oyunda göründüğü gibi: çalışma masasında, ocakta, iksir tezgâhında ya da nerede yapılıyorsa orada. Ayrıca bir şeyi nerede bulacağınız (maden yükseklikleri, sandıklar, canlılar, ticaret), hazır /give komutları ve sancak, kalkan ve çömlekler için bir atölye. Craftionary telefonda (Android ve iOS) ve bilgisayarda tarayıcıda çalışır, “Yükle” düğmesi de onu uygulama olarak kurar.',
+      ru: 'Каждый рецепт Minecraft Java 26.3 в том виде, в каком его показывает игра: на верстаке, в печи, в зельеварке или там, где он создаётся. Кроме того: где что найти (высоты руд, сундуки, мобы, торговля), готовые команды /give и мастерская флагов, щитов и ваз. Craftionary работает в браузере на телефоне (Android и iOS) и на компьютере, а кнопка «Установить» устанавливает его как приложение.',
+      hi: 'Minecraft Java 26.3 की हर रेसिपी वैसी ही, जैसी गेम में दिखती है: क्राफ्टिंग तालिका, भट्ठी, ब्रूइंग स्टैंड या जहाँ भी वह बनती है। साथ में: कौन-सी चीज़ कहाँ मिलती है (अयस्कों की ऊँचाई, बक्से, जीव, व्यापार), तैयार /give कमांड और झंडे, ढाल व बर्तनों की कार्यशाला। Craftionary फ़ोन (Android और iOS) और डेस्कटॉप के ब्राउज़र में चलता है, और “इंस्टॉल करें” बटन से ऐप की तरह इंस्टॉल होता है।',
+      zh: 'Minecraft Java 26.3 的每个配方，都按游戏里的样子显示：在工作台、熔炉、酿造台或任何制作它的地方。此外还有：东西在哪里找（矿石高度、箱子、生物、交易）、现成的 /give 命令，以及旗帜、盾牌和陶罐的工坊。Craftionary 可在手机（Android 和 iOS）和电脑的浏览器中运行，点“安装”按钮即可安装为应用。',
+      ja: 'Minecraft Java 26.3 のすべてのレシピを、ゲームと同じ見た目で表示します。作業台でも、かまどでも、醸造台でも、作られる場所のとおりに。さらに、どこで手に入るか（鉱石の高さ、チェスト、Mob、取引）、すぐ使える /give コマンド、旗・盾・飾り壺の工房もあります。Craftionary はスマートフォン（Android と iOS）とパソコンのブラウザーで動き、「インストール」ボタンでアプリとしてインストールできます。',
+      ko: 'Minecraft Java 26.3의 모든 레시피를 게임에 나오는 모습 그대로 보여 줍니다. 제작대든 화로든 양조기든 만드는 곳 그대로요. 그리고 어디서 얻는지(광석 높이, 상자, 몹, 거래), 바로 쓰는 /give 명령어, 현수막·방패·도자기 공방도 있습니다. Craftionary는 휴대폰(Android와 iOS)과 데스크톱 브라우저에서 돌아가고, ‘설치’ 버튼으로 앱처럼 설치할 수 있습니다.'
     },
     shots: [
       {
@@ -3208,74 +3208,74 @@ var GUIDES = {
     ],
     steps: {
       de: [
-        'Oben suchen, auf Deutsch oder Englisch. Die Suche verträgt Tippfehler und Mengen („16 Fackeln“). Oder darunter eine der neun Stationen antippen und im Rezeptbuch blättern.',
+        'Oben suchen, auf Deutsch, Englisch oder in der eingestellten Sprache. Die Suche verträgt Tippfehler und Mengen („16 Fackeln“). Oder darunter eine der neun Stationen antippen und im Rezeptbuch blättern.',
         'Auf der Item-Seite zeigt „Herstellen“ das Rezept im Spielfenster samt Menge, Brennstoff und Resten, „Verwendet in“ alles, wofür du es brauchst, und „Fundorte“, wo es vorkommt (bei Erzen mit Höhenkurve und bester Y-Höhe). Darüber stehen die /give-Befehle zum Kopieren.',
         'Für die Optik wie im Spiel in den Einstellungen einmal „Von Mojang laden“ (rund 41 MB), danach läuft Craftionary auch ohne Netz. Zeigt der Browser oben den Knopf „Installieren“, richtet ein Tipp die App ein. Auf dem iPhone geht das in Safari über Teilen und „Zum Home-Bildschirm“.'
       ],
       en: [
-        'Search at the top, in English or German. The search copes with typos and amounts (“16 torches”). Or tap one of the nine stations below it and browse its recipe book.',
+        'Search at the top, in English, German or the language you picked. The search copes with typos and amounts (“16 torches”). Or tap one of the nine stations below it and browse its recipe book.',
         'On an item page, “How to make” shows the recipe in the game window with amount, fuel and leftovers, “Used in” everything it is needed for, and “Where to find” where it turns up (for ores with a height curve and the best Y level). The /give commands to copy sit above.',
         'For the in-game look, tap “Load from Mojang” once in the settings (about 41 MB). After that Craftionary also works offline. If your browser shows the “Install” button at the top, one tap sets up the app. On an iPhone, use Share and “Add to Home Screen” in Safari.'
       ],
       es: [
-        'Busca arriba, en inglés o alemán: la búsqueda tolera erratas y cantidades («16 torches»). O toca debajo una de las nueve estaciones y hojea su libro de recetas.',
-        'En la página de un objeto, «How to make» muestra la receta en la ventana del juego con cantidad, combustible y sobrantes, «Used in» todo para lo que sirve y «Where to find» dónde aparece (en los minerales, con curva de alturas y la mejor altura Y). Encima están los comandos /give para copiar.',
-        'Para el aspecto del juego, pulsa una vez «Load from Mojang» en los ajustes (unos 41 MB). Después Craftionary funciona también sin conexión. Si el navegador muestra arriba el botón «Install», un toque instala la app. En el iPhone, usa Compartir y «Añadir a pantalla de inicio» en Safari.'
+        'Busca arriba, en español, inglés o alemán: la búsqueda tolera erratas y cantidades («16 antorchas»). O toca debajo una de las nueve estaciones y hojea su libro de recetas.',
+        'En la página de un objeto, «Fabricar» muestra la receta en la ventana del juego con cantidad, combustible y sobrantes, «Se usa en» todo para lo que sirve y «Dónde encontrarlo» dónde aparece (en los minerales, con curva de alturas y la mejor altura Y). Encima están los comandos /give para copiar.',
+        'Para el aspecto del juego, pulsa una vez «Cargar desde Mojang» en los ajustes (unos 41 MB). Después Craftionary funciona también sin conexión. Si el navegador muestra arriba el botón «Instalar», un toque instala la app. En el iPhone, usa Compartir y «Añadir a pantalla de inicio» en Safari.'
       ],
       fr: [
-        'Cherchez en haut, en anglais ou en allemand. La recherche tolère les fautes de frappe et les quantités (« 16 torches »). Ou touchez l’un des neuf postes juste en dessous et feuilletez son livre de recettes.',
-        'Sur la page d’un objet, « How to make » montre la recette dans la fenêtre du jeu avec quantité, combustible et restes, « Used in » tout ce à quoi il sert, et « Where to find » où il se trouve (pour les minerais avec une courbe des hauteurs et la meilleure hauteur Y). Les commandes /give à copier se trouvent au-dessus.',
-        'Pour l’aspect du jeu, appuyez une fois sur « Load from Mojang » dans les réglages (environ 41 Mo). Ensuite Craftionary fonctionne aussi hors ligne. Si votre navigateur affiche en haut le bouton « Install », un appui installe l’application. Sur iPhone, passez par Partager et « Sur l’écran d’accueil » dans Safari.'
+        'Cherchez en haut, en français, en anglais ou en allemand. La recherche tolère les fautes de frappe et les quantités (« 16 torches »). Ou touchez l’une des neuf stations juste en dessous et feuilletez son livre de recettes.',
+        'Sur la page d’un objet, « Fabriquer » montre la recette dans la fenêtre du jeu avec quantité, combustible et restes, « Utilisé dans » tout ce à quoi il sert, et « Où le trouver » où il se trouve (pour les minerais avec une courbe des hauteurs et la meilleure hauteur Y). Les commandes /give à copier se trouvent au-dessus.',
+        'Pour l’aspect du jeu, appuyez une fois sur « Charger depuis Mojang » dans les réglages (environ 41 Mo). Ensuite Craftionary fonctionne aussi hors ligne. Si votre navigateur affiche en haut le bouton « Installer », un appui installe l’application. Sur iPhone, passez par Partager et « Sur l’écran d’accueil » dans Safari.'
       ],
       it: [
-        'Cerca in alto, in inglese o tedesco: la ricerca tollera errori di battitura e quantità («16 torches»). Oppure tocca qui sotto una delle nove postazioni e sfoglia il suo libro delle ricette.',
-        'Nella pagina di un oggetto, «How to make» mostra la ricetta nella finestra del gioco con quantità, combustibile e avanzi, «Used in» tutto ciò per cui serve e «Where to find» dove si trova (per i minerali con curva delle altezze e l’altezza Y migliore). Sopra ci sono i comandi /give da copiare.',
-        'Per l’aspetto del gioco, tocca una volta «Load from Mojang» nelle impostazioni (circa 41 MB). Poi Craftionary funziona anche offline. Se il browser mostra in alto il pulsante «Install», un tocco installa l’app. Su iPhone usa Condividi e «Aggiungi alla schermata Home» in Safari.'
+        'Cerca in alto, in italiano, inglese o tedesco: la ricerca tollera errori di battitura e quantità («16 torce»). Oppure tocca qui sotto una delle nove postazioni e sfoglia il suo ricettario.',
+        'Nella pagina di un oggetto, «Fabbricare» mostra la ricetta nella finestra del gioco con quantità, combustibile e avanzi, «Usato in» tutto ciò per cui serve e «Dove trovarlo» dove si trova (per i minerali con curva delle altezze e l’altezza Y migliore). Sopra ci sono i comandi /give da copiare.',
+        'Per l’aspetto del gioco, tocca una volta «Carica da Mojang» nelle impostazioni (circa 41 MB). Poi Craftionary funziona anche offline. Se il browser mostra in alto il pulsante «Installa», un tocco installa l’app. Su iPhone usa Condividi e «Aggiungi alla schermata Home» in Safari.'
       ],
       nl: [
-        'Zoek bovenaan, in het Engels of Duits. De zoekfunctie kan tegen typfouten en aantallen (‘16 torches’). Of tik eronder op een van de negen werkstations en blader door het receptenboek.',
-        'Op een itempagina toont ‘How to make’ het recept in het spelvenster met aantal, brandstof en restjes, ‘Used in’ alles waarvoor je het nodig hebt en ‘Where to find’ waar het voorkomt (bij ertsen met een hoogtecurve en de beste Y-hoogte). Daarboven staan de /give-commando’s om te kopiëren.',
-        'Voor het uiterlijk van het spel tik je in de instellingen één keer op ‘Load from Mojang’ (ongeveer 41 MB). Daarna werkt Craftionary ook offline. Toont je browser bovenaan de knop ‘Install’, dan installeer je de app met één tik. Op een iPhone gaat dat in Safari via Deel en ‘Zet op beginscherm’.'
+        'Zoek bovenaan, in het Nederlands, Engels of Duits. De zoekfunctie kan tegen typfouten en aantallen (‘16 fakkels’). Of tik eronder op een van de negen werkplekken en blader door het receptenboek.',
+        'Op een itempagina toont ‘Maken’ het recept in het spelvenster met aantal, brandstof en restjes, ‘Gebruikt in’ alles waarvoor je het nodig hebt en ‘Vindplaatsen’ waar het voorkomt (bij ertsen met een hoogtecurve en de beste Y-hoogte). Daarboven staan de /give-commando’s om te kopiëren.',
+        'Voor het uiterlijk van het spel tik je in de instellingen één keer op ‘Laden van Mojang’ (ongeveer 41 MB). Daarna werkt Craftionary ook offline. Toont je browser bovenaan de knop ‘Installeren’, dan installeer je de app met één tik. Op een iPhone gaat dat in Safari via Deel en ‘Zet op beginscherm’.'
       ],
       pl: [
-        'Szukaj u góry, po angielsku lub niemiecku. Wyszukiwarka radzi sobie z literówkami i ilościami („16 torches”). Albo dotknij pod spodem jednego z dziewięciu stanowisk i przeglądaj jego księgę receptur.',
-        'Na stronie przedmiotu „How to make” pokazuje recepturę w oknie gry z ilością, paliwem i resztkami, „Used in” wszystko, do czego jest potrzebny, a „Where to find”, gdzie występuje (przy rudach z krzywą wysokości i najlepszą wysokością Y). Nad tym są komendy /give do skopiowania.',
-        'Dla wyglądu jak w grze dotknij raz w ustawieniach „Load from Mojang” (ok. 41 MB). Potem Craftionary działa też offline. Jeśli przeglądarka pokazuje u góry przycisk „Install”, jedno dotknięcie instaluje aplikację. Na iPhonie użyj w Safari Udostępnij i „Do ekranu początkowego”.'
+        'Szukaj u góry, po polsku, angielsku lub niemiecku. Wyszukiwarka radzi sobie z literówkami i ilościami („16 pochodni”). Albo dotknij pod spodem jednego z dziewięciu stanowisk i przeglądaj jego księgę receptur.',
+        'Na stronie przedmiotu „Wytwarzanie” pokazuje recepturę w oknie gry z ilością, paliwem i resztkami, „Używane w” wszystko, do czego jest potrzebny, a „Gdzie znaleźć”, gdzie występuje (przy rudach z krzywą wysokości i najlepszą wysokością Y). Nad tym są komendy /give do skopiowania.',
+        'Dla wyglądu jak w grze dotknij raz w ustawieniach „Pobierz od Mojang” (ok. 41 MB). Potem Craftionary działa też offline. Jeśli przeglądarka pokazuje u góry przycisk „Zainstaluj”, jedno dotknięcie instaluje aplikację. Na iPhonie użyj w Safari Udostępnij i „Do ekranu początkowego”.'
       ],
       pt: [
-        'Pesquise no topo, em inglês ou alemão. A pesquisa aguenta erros de digitação e quantidades («16 torches»). Ou toque logo abaixo numa das nove estações e folheie o livro de receitas dela.',
-        'Na página de um item, «How to make» mostra a receita na janela do jogo com quantidade, combustível e sobras, «Used in» tudo para que ele serve e «Where to find» onde ele aparece (nos minérios com curva de alturas e a melhor altura Y). Em cima ficam os comandos /give para copiar.',
-        'Para o visual do jogo, toque uma vez em «Load from Mojang» nas configurações (cerca de 41 MB). Depois disso o Craftionary também funciona offline. Se o navegador mostrar no topo o botão «Install», um toque instala o app. No iPhone, use Compartilhar e «Adicionar à Tela de Início» no Safari.'
+        'Pesquise no topo, em português, inglês ou alemão. A pesquisa aguenta erros de digitação e quantidades («16 tochas»). Ou toque logo abaixo numa das nove estações e folheie o livro de receitas dela.',
+        'Na página de um item, «Fabricar» mostra a receita na janela do jogo com quantidade, combustível e sobras, «Usado em» tudo para que ele serve e «Onde encontrar» onde ele aparece (nos minérios com curva de alturas e a melhor altura Y). Em cima ficam os comandos /give para copiar.',
+        'Para o visual do jogo, toque uma vez em «Carregar da Mojang» nas configurações (cerca de 41 MB). Depois disso o Craftionary também funciona offline. Se o navegador mostrar no topo o botão «Instalar», um toque instala o app. No iPhone, use Compartilhar e «Adicionar à Tela de Início» no Safari.'
       ],
       tr: [
-        'Üstte İngilizce ya da Almanca arayın. Arama yazım hatalarını ve miktarları kaldırır (“16 torches”). Ya da hemen altındaki dokuz istasyondan birine dokunup tarif kitabına göz atın.',
-        'Bir eşya sayfasında “How to make” tarifi oyun penceresinde miktar, yakıt ve artanlarla gösterir, “Used in” neye yaradığını, “Where to find” ise nerede bulunduğunu (madenlerde yükseklik eğrisi ve en iyi Y yüksekliğiyle). Kopyalanacak /give komutları bunun üstündedir.',
-        'Oyundaki görünüm için ayarlarda bir kez “Load from Mojang”a dokunun (yaklaşık 41 MB). Sonra Craftionary çevrimdışı da çalışır. Tarayıcınız üstte “Install” düğmesini gösteriyorsa tek dokunuşla uygulama kurulur. iPhone’da Safari’de Paylaş ve “Ana Ekrana Ekle”yi kullanın.'
+        'Üstte Türkçe, İngilizce ya da Almanca arayın. Arama yazım hatalarını ve miktarları kaldırır (“16 meşale”). Ya da hemen altındaki dokuz istasyondan birine dokunup tarif kitabına göz atın.',
+        'Bir eşya sayfasında “Üretim” tarifi oyun penceresinde miktar, yakıt ve artanlarla gösterir, “Kullanıldığı yerler” neye yaradığını, “Nerede bulunur” ise nerede bulunduğunu (madenlerde yükseklik eğrisi ve en iyi Y yüksekliğiyle). Kopyalanacak /give komutları bunun üstündedir.',
+        'Oyundaki görünüm için ayarlarda bir kez “Mojang’dan yükle”ye dokunun (yaklaşık 41 MB). Sonra Craftionary çevrimdışı da çalışır. Tarayıcınız üstte “Yükle” düğmesini gösteriyorsa tek dokunuşla uygulama kurulur. iPhone’da Safari’de Paylaş ve “Ana Ekrana Ekle”yi kullanın.'
       ],
       ru: [
-        'Ищите вверху на английском или немецком. Поиск прощает опечатки и понимает количества («16 torches»). Или коснитесь под ним одной из девяти станций и листайте её книгу рецептов.',
-        'На странице предмета «How to make» показывает рецепт в окне игры с количеством, топливом и остатками, «Used in» показывает всё, для чего он нужен, а «Where to find» показывает, где он встречается (у руд с кривой высот и лучшей высотой Y). Над этим находятся команды /give для копирования.',
-        'Для вида как в игре один раз нажмите в настройках «Load from Mojang» (около 41 МБ). После этого Craftionary работает и офлайн. Если браузер показывает вверху кнопку «Install», одно касание установит приложение. На iPhone используйте в Safari «Поделиться» и «На экран „Домой“».'
+        'Ищите вверху по-русски, по-английски или по-немецки. Поиск прощает опечатки и понимает количества («16 факелов»). Или коснитесь под ним одной из девяти станций и листайте её книгу рецептов.',
+        'На странице предмета «Создание» показывает рецепт в окне игры с количеством, топливом и остатками, «Используется в» показывает всё, для чего он нужен, а «Где найти» показывает, где он встречается (у руд с кривой высот и лучшей высотой Y). Над этим находятся команды /give для копирования.',
+        'Для вида как в игре один раз нажмите в настройках «Загрузить с Mojang» (около 41 МБ). После этого Craftionary работает и офлайн. Если браузер показывает вверху кнопку «Установить», одно касание установит приложение. На iPhone используйте в Safari «Поделиться» и «На экран „Домой“».'
       ],
       hi: [
-        'ऊपर अंग्रेज़ी या जर्मन में खोजें। खोज टाइपो और मात्राएँ समझती है (“16 torches”)। या उसके नीचे नौ स्टेशनों में से किसी पर टैप करके उसकी रेसिपी बुक देखें।',
-        'आइटम पेज पर “How to make” रेसिपी को गेम की विंडो में मात्रा, ईंधन और बचे सामान के साथ दिखाता है, “Used in” वह सब जिसमें यह लगता है, और “Where to find” कि यह कहाँ मिलता है (अयस्कों के लिए ऊँचाई कर्व और सबसे अच्छी Y ऊँचाई के साथ)। ऊपर कॉपी करने के लिए /give कमांड हैं।',
-        'गेम जैसे रूप के लिए सेटिंग्स में एक बार “Load from Mojang” दबाएँ (लगभग 41 MB)। उसके बाद Craftionary ऑफ़लाइन भी चलता है। अगर ब्राउज़र ऊपर “Install” बटन दिखाता है, तो एक टैप से ऐप इंस्टॉल हो जाता है। iPhone पर Safari में शेयर और “होम स्क्रीन में जोड़ें” इस्तेमाल करें।'
+        'ऊपर हिंदी, अंग्रेज़ी या जर्मन में खोजें। खोज टाइपो और मात्राएँ समझती है (“16 मशाल”)। या उसके नीचे नौ स्टेशनों में से किसी पर टैप करके उसकी रेसिपी पुस्तक देखें।',
+        'आइटम पेज पर “बनाना” रेसिपी को गेम की विंडो में मात्रा, ईंधन और बचे सामान के साथ दिखाता है, “इसमें इस्तेमाल” वह सब जिसमें यह लगता है, और “कहाँ मिलता है” कि यह कहाँ मिलता है (अयस्कों के लिए ऊँचाई कर्व और सबसे अच्छी Y ऊँचाई के साथ)। ऊपर कॉपी करने के लिए /give कमांड हैं।',
+        'गेम जैसे रूप के लिए सेटिंग्स में एक बार “Mojang से लोड करें” दबाएँ (लगभग 41 MB)। उसके बाद Craftionary ऑफ़लाइन भी चलता है। अगर ब्राउज़र ऊपर “इंस्टॉल करें” बटन दिखाता है, तो एक टैप से ऐप इंस्टॉल हो जाता है। iPhone पर Safari में शेयर और “होम स्क्रीन में जोड़ें” इस्तेमाल करें।'
       ],
       zh: [
-        '在顶部用英语或德语搜索。搜索能容忍错别字，也认得数量（“16 torches”）。也可以点下方九个工作站之一，翻看它的配方书。',
-        '在物品页上，“How to make”在游戏窗口里显示配方及数量、燃料和剩余，“Used in”列出它的所有用途，“Where to find”显示在哪里出现（矿石还有高度曲线和最佳 Y 高度）。上方是可复制的 /give 命令。',
-        '想要游戏里的外观，在设置里点一次“Load from Mojang”（约 41 MB），之后 Craftionary 也能离线使用。如果浏览器在顶部显示“Install”按钮，点一下即可安装应用。在 iPhone 上，请用 Safari 的“分享”和“添加到主屏幕”。'
+        '在顶部用中文、英语或德语搜索。搜索能容忍错别字，也认得数量（“16个火把”）。也可以点下方九个工作站之一，翻看它的配方书。',
+        '在物品页上，“合成”在游戏窗口里显示配方及数量、燃料和剩余，“用于”列出它的所有用途，“获取途径”显示在哪里出现（矿石还有高度曲线和最佳 Y 高度）。上方是可复制的 /give 命令。',
+        '想要游戏里的外观，在设置里点一次“从 Mojang 载入”（约 41 MB），之后 Craftionary 也能离线使用。如果浏览器在顶部显示“安装”按钮，点一下即可安装应用。在 iPhone 上，请用 Safari 的“分享”和“添加到主屏幕”。'
       ],
       ja: [
-        '上の検索欄に英語かドイツ語で入力します。打ち間違いや数量（「16 torches」）にも対応します。または、その下の9つの作業場所のどれかをタップしてレシピブックを見ます。',
-        'アイテムのページでは「How to make」がレシピをゲーム画面のとおりに数量・燃料・余りつきで、「Used in」が使い道を、「Where to find」が入手場所を表示します。鉱石なら高さの曲線と最適な Y 座標も。その上にコピーできる /give コマンドがあります。',
-        'ゲームと同じ見た目にするには、設定で一度「Load from Mojang」（約 41 MB）を押します。その後はオフラインでも使えます。ブラウザーが上部に「Install」ボタンを表示していれば、タップでアプリをインストールできます。iPhone では Safari の共有から「ホーム画面に追加」を使います。'
+        '上の検索欄に日本語・英語・ドイツ語で入力します。打ち間違いや数量（「松明 16個」）にも対応します。または、その下の9つの作業場所のどれかをタップしてレシピブックを見ます。',
+        'アイテムのページでは「作り方」がレシピをゲーム画面のとおりに数量・燃料・余りつきで、「使い道」がそのアイテムを使うレシピを、「入手場所」がどこで手に入るかを表示します。鉱石なら高さの曲線と最適な Y 座標も出ます。その上にコピーできる /give コマンドがあります。',
+        'ゲームと同じ見た目にするには、設定で一度「Mojang から読み込む」（約 41 MB）を押します。その後はオフラインでも使えます。ブラウザーが上部に「インストール」ボタンを表示していれば、タップでアプリをインストールできます。iPhone では Safari の共有から「ホーム画面に追加」を使います。'
       ],
       ko: [
-        '위에서 영어나 독일어로 검색합니다. 오타와 수량(‘16 torches’)도 알아듣습니다. 또는 그 아래 아홉 작업대 중 하나를 눌러 조합법 책을 넘겨 보세요.',
-        '아이템 페이지에서 ‘How to make’는 조합법을 게임 창 그대로 수량, 연료, 남는 양과 함께 보여 주고, ‘Used in’은 쓰이는 곳을, ‘Where to find’는 나오는 곳을 보여 줍니다. 광석이면 높이 곡선과 최적 Y 높이까지요. 그 위에 복사할 /give 명령어가 있습니다.',
-        '게임 같은 모습을 원하면 설정에서 ‘Load from Mojang’을 한 번 누르세요(약 41 MB). 그 뒤로는 오프라인에서도 작동합니다. 브라우저가 위쪽에 ‘Install’ 버튼을 보여 주면 한 번 눌러 앱을 설치하고, iPhone에서는 Safari의 공유 → ‘홈 화면에 추가’를 쓰면 됩니다.'
+        '위에서 한국어, 영어 또는 독일어로 검색합니다. 오타와 수량(‘횃불 16개’)도 알아듣습니다. 또는 그 아래 아홉 작업대 중 하나를 눌러 레시피 책을 넘겨 보세요.',
+        '아이템 페이지에서 ‘만드는 법’은 레시피를 게임 창 그대로 수량, 연료, 남는 양과 함께 보여 주고, ‘사용처’는 쓰이는 곳을, ‘얻는 곳’은 나오는 곳을 보여 줍니다. 광석이면 높이 곡선과 최적 Y 높이까지요. 그 위에 복사할 /give 명령어가 있습니다.',
+        '게임 같은 모습을 원하면 설정에서 ‘Mojang에서 불러오기’를 한 번 누르세요(약 41 MB). 그 뒤로는 오프라인에서도 작동합니다. 브라우저가 위쪽에 ‘설치’ 버튼을 보여 주면 한 번 눌러 앱을 설치하고, iPhone에서는 Safari의 공유 → ‘홈 화면에 추가’를 쓰면 됩니다.'
       ]
     },
     pitfalls: {
@@ -3284,98 +3284,98 @@ var GUIDES = {
         'Die /give-Befehle brauchen eingeschaltete Cheats. Was länger als 256 Zeichen ist, passt nicht in den Chat, dann einen Befehlsblock nehmen.',
         'Die Chancen unter „Fundorte“ sind ohne Glück, Plünderung und Behutsamkeit gerechnet. Strukturnamen haben im Spiel keine offizielle Übersetzung.',
         'Craftionary bringt keine Minecraft-Grafiken mit: Ohne geladene Texturen stehen in den Feldern Buchstaben mit Legende. Wer die Texturen vor der Muster-Werkstatt geladen hat, lädt sie für deren Vorschau einmal neu.',
-        'Die App gibt es auf Deutsch und Englisch.'
+        'Die App spricht 14 Sprachen. Umstellen kannst du sie oben mit dem Sprachkürzel oder in den Einstellungen.'
       ],
       en: [
         'Craftionary covers Minecraft Java 26.3. Bedrock and older versions sometimes have different recipes.',
         'The /give commands need cheats switched on. Anything longer than 256 characters does not fit into chat, so use a command block instead.',
         'The chances under “Where to find” leave out Fortune, Looting and Silk Touch. Structure names have no official translation in the game.',
         'Craftionary ships no Minecraft artwork: without loaded textures the slots show letters with a key. If you loaded the textures before the pattern workshop existed, load them once more for its preview.',
-        'The app speaks English and German.'
+        'The app speaks 14 languages. Switch with the language code at the top or in the settings.'
       ],
       es: [
         'Craftionary cubre Minecraft Java 26.3. Bedrock y las versiones antiguas tienen a veces otras recetas.',
         'Los comandos /give necesitan los trucos activados. Lo que pase de 256 caracteres no cabe en el chat: entonces usa un bloque de comandos.',
-        'Las probabilidades de «Where to find» no incluyen Fortuna, Botín ni Toque de seda. Los nombres de las estructuras no tienen traducción oficial en el juego.',
+        'Las probabilidades de «Dónde encontrarlo» no incluyen Fortuna, Botín ni Toque de seda. Los nombres de las estructuras no tienen traducción oficial en el juego.',
         'Craftionary no trae gráficos de Minecraft: sin texturas cargadas, las casillas muestran letras con una leyenda. Si cargaste las texturas antes de que existiera el taller de diseños, vuelve a cargarlas una vez para su vista previa.',
-        'La app está en inglés y alemán.'
+        'La app habla 14 idiomas. Cámbialo arriba con el código de idioma o en los ajustes.'
       ],
       fr: [
         'Craftionary couvre Minecraft Java 26.3. Bedrock et les anciennes versions ont parfois d’autres recettes.',
         'Les commandes /give demandent les commandes de triche activées. Au-delà de 256 caractères, cela ne tient pas dans le chat, utilisez alors un bloc de commande.',
-        'Les probabilités de « Where to find » ne tiennent pas compte de Fortune, Butin ni Toucher de soie. Les noms des structures n’ont pas de traduction officielle dans le jeu.',
+        'Les probabilités de « Où le trouver » ne tiennent pas compte de Fortune, Butin ni Toucher de soie. Les noms des structures n’ont pas de traduction officielle dans le jeu.',
         'Craftionary ne fournit aucun graphisme de Minecraft : sans textures chargées, les cases affichent des lettres avec une légende. Si vous avez chargé les textures avant l’atelier de motifs, rechargez-les une fois pour son aperçu.',
-        'L’application existe en anglais et en allemand.'
+        'L’application parle 14 langues. Changez de langue avec le code de langue en haut ou dans les réglages.'
       ],
       it: [
         'Craftionary copre Minecraft Java 26.3. Bedrock e le versioni più vecchie hanno a volte ricette diverse.',
         'I comandi /give richiedono i trucchi attivi. Ciò che supera i 256 caratteri non entra nella chat: in quel caso usa un blocco comandi.',
-        'Le probabilità sotto «Where to find» non tengono conto di Fortuna, Saccheggio e Tocco di velluto. I nomi delle strutture non hanno una traduzione ufficiale nel gioco.',
-        'Craftionary non include grafica di Minecraft: senza texture caricate gli slot mostrano lettere con una legenda. Se hai caricato le texture prima che esistesse il laboratorio di motivi, ricaricale una volta per la sua anteprima.',
-        'L’app è in inglese e tedesco.'
+        'Le probabilità sotto «Dove trovarlo» non tengono conto di Fortuna, Saccheggio e Tocco di velluto. I nomi delle strutture non hanno una traduzione ufficiale nel gioco.',
+        'Craftionary non include grafica di Minecraft: senza texture caricate gli slot mostrano lettere con una legenda. Se hai caricato le texture prima che esistesse il laboratorio dei motivi, ricaricale una volta per la sua anteprima.',
+        'L’app parla 14 lingue. La cambi in alto con il codice della lingua o nelle impostazioni.'
       ],
       nl: [
         'Craftionary kent Minecraft Java 26.3. Bedrock en oudere versies hebben soms andere recepten.',
         'De /give-commando’s werken alleen met cheats aan. Wat langer is dan 256 tekens past niet in de chat, gebruik dan een opdrachtblok.',
-        'De kansen onder ‘Where to find’ zijn berekend zonder Fortuin, Plundering en Zijdezachte aanraking. Namen van bouwwerken hebben in het spel geen officiële vertaling.',
+        'De kansen onder ‘Vindplaatsen’ zijn berekend zonder Geluk, Plundering en Zijden streling. Namen van bouwwerken hebben in het spel geen officiële vertaling.',
         'Craftionary levert geen Minecraft-afbeeldingen mee: zonder geladen texturen tonen de vakjes letters met een legenda. Heb je de texturen geladen vóór de patroonwerkplaats bestond, laad ze dan voor het voorbeeld nog één keer.',
-        'De app is er in het Engels en Duits.'
+        'De app spreekt 14 talen. Wissel bovenaan via de taalcode of in de instellingen.'
       ],
       pl: [
         'Craftionary obejmuje Minecraft Java 26.3. Bedrock i starsze wersje mają czasem inne receptury.',
         'Komendy /give wymagają włączonych kodów. Co ma ponad 256 znaków, nie zmieści się na czacie, wtedy użyj bloku poleceń.',
-        'Szanse w „Where to find” są liczone bez Szczęścia, Grabieży i Jedwabnego dotyku. Nazwy struktur nie mają w grze oficjalnego tłumaczenia.',
-        'Craftionary nie zawiera grafik z Minecrafta: bez wczytanych tekstur pola pokazują litery z legendą. Jeśli wczytano tekstury przed powstaniem warsztatu wzorów, wczytaj je raz jeszcze dla jego podglądu.',
-        'Aplikacja jest po angielsku i niemiecku.'
+        'Szanse w „Gdzie znaleźć” są liczone bez Szczęścia, Grabieży i Jedwabnego dotyku. Nazwy struktur nie mają w grze oficjalnego tłumaczenia.',
+        'Craftionary nie zawiera grafik z Minecrafta: bez wczytanych tekstur pola pokazują litery z legendą. Jeśli wczytano tekstury przed powstaniem pracowni wzorów, wczytaj je raz jeszcze dla jej podglądu.',
+        'Aplikacja mówi w 14 językach. Zmienisz język u góry kodem języka albo w ustawieniach.'
       ],
       pt: [
         'O Craftionary cobre o Minecraft Java 26.3. A Bedrock e as versões antigas às vezes têm receitas diferentes.',
         'Os comandos /give precisam dos cheats ativados. O que passar de 256 caracteres não cabe no chat, então use um bloco de comando.',
-        'As probabilidades em «Where to find» não contam Fortuna, Pilhagem nem Toque Suave. Os nomes das estruturas não têm tradução oficial no jogo.',
-        'O Craftionary não traz gráficos do Minecraft: sem texturas carregadas, os espaços mostram letras com legenda. Se você carregou as texturas antes de existir a oficina de padrões, carregue de novo para a prévia.',
-        'O app existe em inglês e alemão.'
+        'As probabilidades em «Onde encontrar» não contam Fortuna, Saque nem Toque Suave. Os nomes das estruturas não têm tradução oficial no jogo.',
+        'O Craftionary não traz gráficos do Minecraft: sem texturas carregadas, os espaços mostram letras com legenda. Se você carregou as texturas antes de existir a oficina de figuras, carregue de novo para a prévia.',
+        'O app fala 14 idiomas. Troque no topo pelo código do idioma ou nas configurações.'
       ],
       tr: [
         'Craftionary Minecraft Java 26.3’ü kapsar. Bedrock ve eski sürümlerde bazı tarifler farklıdır.',
         '/give komutları için hileler açık olmalıdır. 256 karakterden uzun olan sohbete sığmaz, o zaman bir komut bloğu kullanın.',
-        '“Where to find” altındaki şanslar Servet, Yağma ve İpeksi Dokunuş olmadan hesaplanır. Yapı adlarının oyunda resmî çevirisi yoktur.',
+        '“Nerede bulunur” altındaki olasılıklar Servet, Ganimet ve İpeksi Dokunuş olmadan hesaplanır. Yapı adlarının oyunda resmî çevirisi yoktur.',
         'Craftionary Minecraft grafikleri içermez: Dokular yüklenmeden kutularda açıklamalı harfler görünür. Dokuları desen atölyesinden önce yüklediyseniz önizleme için bir kez yeniden yükleyin.',
-        'Uygulama İngilizce ve Almanca’dır.'
+        'Uygulama 14 dil konuşur. Dili üstteki dil kodundan ya da ayarlardan değiştirebilirsiniz.'
       ],
       ru: [
         'Craftionary охватывает Minecraft Java 26.3. В Bedrock и старых версиях некоторые рецепты отличаются.',
         'Для команд /give нужны включённые читы. То, что длиннее 256 символов, не помещается в чат, тогда используйте командный блок.',
-        'Шансы во «Where to find» посчитаны без Удачи, Добычи и Шёлкового касания. У названий построек в игре нет официального перевода.',
+        'Шансы в разделе «Где найти» посчитаны без Удачи, Добычи и Шёлкового касания. У названий построек в игре нет официального перевода.',
         'Craftionary не содержит графики Minecraft: без загруженных текстур в ячейках видны буквы с легендой. Если текстуры загружены до появления мастерской узоров, загрузите их ещё раз для её превью.',
-        'Приложение на английском и немецком.'
+        'Приложение говорит на 14 языках. Сменить язык можно кнопкой с кодом языка вверху или в настройках.'
       ],
       hi: [
         'Craftionary Minecraft Java 26.3 पर आधारित है। Bedrock और पुराने वर्ज़न में कुछ रेसिपी अलग होती हैं।',
         '/give कमांड के लिए चीट्स चालू होने चाहिए। 256 अक्षरों से लंबा कमांड चैट में नहीं आता, तब कमांड ब्लॉक इस्तेमाल करें।',
-        '“Where to find” के मौके Fortune, Looting और Silk Touch के बिना गिने गए हैं। संरचनाओं के नामों का गेम में कोई आधिकारिक अनुवाद नहीं है।',
-        'Craftionary के साथ Minecraft के ग्राफ़िक्स नहीं आते: टेक्सचर लोड किए बिना खानों में लेजेंड के साथ अक्षर दिखते हैं। अगर आपने पैटर्न वर्कशॉप से पहले टेक्सचर लोड किए थे, तो उसके प्रीव्यू के लिए उन्हें एक बार फिर लोड करें।',
-        'ऐप अंग्रेज़ी और जर्मन में है।'
+        '“कहाँ मिलता है” के मौके भाग्य, लूटपाट और सिल्क टच के बिना गिने गए हैं। संरचनाओं के नामों का गेम में कोई आधिकारिक अनुवाद नहीं है।',
+        'Craftionary के साथ Minecraft के ग्राफ़िक्स नहीं आते: टेक्सचर लोड किए बिना खानों में सूची के साथ अक्षर दिखते हैं। अगर आपने चित्र कार्यशाला से पहले टेक्सचर लोड किए थे, तो उसके पूर्वावलोकन के लिए उन्हें एक बार फिर लोड करें।',
+        'ऐप 14 भाषाएँ बोलता है। भाषा ऊपर भाषा कोड वाले बटन से या सेटिंग्स में बदलें।'
       ],
       zh: [
         'Craftionary 对应 Minecraft Java 26.3。基岩版和旧版本的部分配方不同。',
         '/give 命令需要开启作弊。超过 256 个字符的命令放不进聊天栏，这时请用命令方块。',
-        '“Where to find”里的概率未计入时运、抢夺和精准采集。结构名称在游戏中没有官方译名。',
+        '“获取途径”里的概率未计入时运、抢夺和精准采集。结构名称在游戏中没有官方译名。',
         'Craftionary 不附带 Minecraft 图像：未加载材质时，格子里显示字母和图例。如果在图案工坊出现之前加载过材质，请再加载一次以显示它的预览。',
-        '应用只有英语和德语。'
+        '应用支持 14 种语言。可以用顶部的语言代码按钮或在设置中切换。'
       ],
       ja: [
         'Craftionary は Minecraft Java 26.3 に対応しています。統合版や古いバージョンでは一部のレシピが違います。',
         '/give コマンドにはチートの有効化が必要です。256 文字を超えるとチャットに入らないので、その場合はコマンドブロックを使います。',
-        '「Where to find」の確率は幸運、ドロップ増加、シルクタッチなしで計算しています。構造物の名前にはゲーム内の公式な訳がありません。',
-        'Craftionary には Minecraft の画像は含まれていません。テクスチャを読み込まないと、マスには凡例つきの文字が表示されます。模様の工房ができる前にテクスチャを読み込んだ場合は、プレビューのために一度読み込み直してください。',
-        'アプリは英語とドイツ語です。'
+        '「入手場所」の確率は幸運、ドロップ増加、シルクタッチなしで計算しています。構造物の名前にはゲーム内の公式な訳がありません。',
+        'Craftionary には Minecraft の画像は含まれていません。テクスチャを読み込まないと、マスには凡例つきの文字が表示されます。模様工房ができる前にテクスチャを読み込んだ場合は、プレビューのために一度読み込み直してください。',
+        'アプリは14の言語に対応しています。上部の言語コードのボタンか設定で切り替えられます。'
       ],
       ko: [
         'Craftionary는 Minecraft Java 26.3 기준입니다. 베드락과 이전 버전은 일부 조합법이 다릅니다.',
         '/give 명령어는 치트가 켜져 있어야 합니다. 256자를 넘으면 채팅에 들어가지 않으니 명령 블록을 쓰세요.',
-        '‘Where to find’의 확률은 행운, 약탈, 섬세한 손길 없이 계산했습니다. 구조물 이름은 게임에 공식 번역이 없습니다.',
+        '‘얻는 곳’의 확률은 행운, 약탈, 섬세한 손길 없이 계산했습니다. 구조물 이름은 게임에 공식 번역이 없습니다.',
         'Craftionary에는 Minecraft 그래픽이 들어 있지 않습니다. 텍스처를 불러오지 않으면 칸에 범례와 함께 글자가 표시됩니다. 무늬 공방이 생기기 전에 텍스처를 불러왔다면 미리 보기를 위해 한 번 더 불러오세요.',
-        '앱은 영어와 독일어로 되어 있습니다.'
+        '앱은 14개 언어를 지원합니다. 위쪽의 언어 코드 버튼이나 설정에서 바꿀 수 있습니다.'
       ]
     },
     docs: {
