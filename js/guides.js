@@ -4057,20 +4057,20 @@ var GUIDES = {
   },
   heizwarte: {
     purpose: {
-      de: 'Heizwarte ist für alle, deren Heizung lange braucht, bis es warm wird. Sie schaut aufs Wetter der nächsten Tage und sagt dir rechtzeitig, wann du höher stellen solltest, damit es drinnen nicht kalt wird, wenn draußen der Frost kommt. Die Heiz-Ampel hat vier Stufen von „Ruhig“ bis „Frost / Sturm“ und rechnet die Aufheizzeit deiner Heizart mit ein. Bis zu fünf Orte, ohne Konto, die App spricht vorerst nur Deutsch.',
-      en: 'Heizwarte is for everyone whose heating takes a long time to warm up. It watches the weather for the next few days and tells you in good time when to turn the heating up, so it doesn’t get cold inside when the frost arrives outside. The heating traffic light has four levels, from “Ruhig” (calm) to “Frost / Sturm” (frost or storm), and factors in how long your kind of heating needs to warm up. Up to five places, no account, and for now the app only speaks German.',
-      es: 'Heizwarte es para todos los que tienen una calefacción que tarda en calentar. Mira el tiempo de los próximos días y te avisa a tiempo de cuándo subir la calefacción, para que dentro no haga frío cuando llegue la helada. El semáforo de calefacción tiene cuatro niveles, de «Ruhig» (tranquilo) a «Frost / Sturm» (helada o tormenta), y tiene en cuenta cuánto tarda en calentar tu tipo de calefacción. Hasta cinco lugares, sin cuenta, y por ahora la aplicación solo está en alemán.',
-      fr: 'Heizwarte est fait pour tous ceux dont le chauffage met longtemps à chauffer. Il regarde la météo des jours à venir et vous dit à temps quand monter le chauffage, pour qu’il ne fasse pas froid à l’intérieur quand le gel arrive. Le feu tricolore du chauffage a quatre niveaux, de « Ruhig » (calme) à « Frost / Sturm » (gel ou tempête), et tient compte du temps de chauffe de votre type de chauffage. Jusqu’à cinq lieux, sans compte, et pour l’instant l’application n’existe qu’en allemand.',
-      it: 'Heizwarte è per chi ha un riscaldamento che ci mette tanto a scaldare. Guarda il meteo dei prossimi giorni e ti dice in tempo quando alzare il riscaldamento, così in casa non fa freddo quando fuori arriva il gelo. Il semaforo del riscaldamento ha quattro livelli, da «Ruhig» (tranquillo) a «Frost / Sturm» (gelo o tempesta), e tiene conto di quanto ci mette a scaldare il tuo tipo di impianto. Fino a cinque luoghi, senza account, e per ora l’app parla solo tedesco.',
-      nl: 'Heizwarte is voor iedereen bij wie de verwarming lang nodig heeft om warm te worden. Het kijkt naar het weer van de komende dagen en zegt je op tijd wanneer je de verwarming hoger moet zetten, zodat het binnen niet koud wordt als buiten de vorst komt. Het verwarmingsstoplicht heeft vier standen, van ‘Ruhig’ (rustig) tot ‘Frost / Sturm’ (vorst of storm), en rekent mee hoe lang jouw soort verwarming nodig heeft. Tot vijf plaatsen, zonder account, en voorlopig spreekt de app alleen Duits.',
-      pl: 'Heizwarte jest dla każdego, czyje ogrzewanie długo się nagrzewa. Sprawdza pogodę na najbliższe dni i mówi ci z wyprzedzeniem, kiedy podkręcić ogrzewanie, żeby w domu nie zrobiło się zimno, gdy na zewnątrz przyjdzie mróz. Sygnalizator ogrzewania ma cztery poziomy, od „Ruhig” (spokojnie) do „Frost / Sturm” (mróz lub burza), i uwzględnia, ile czasu potrzebuje twój rodzaj ogrzewania. Do pięciu miejsc, bez konta, a na razie aplikacja jest tylko po niemiecku.',
-      pt: 'O Heizwarte é para quem tem um aquecimento que demora para esquentar. Ele olha a previsão dos próximos dias e avisa você a tempo de quando aumentar o aquecimento, para que não fique frio dentro de casa quando a geada chegar. O semáforo do aquecimento tem quatro níveis, de «Ruhig» (calmo) a «Frost / Sturm» (geada ou tempestade), e leva em conta quanto tempo o seu tipo de aquecimento precisa para esquentar. Até cinco lugares, sem conta, e por enquanto o app só fala alemão.',
-      tr: 'Heizwarte, ısıtması geç ısınan herkes için. Önümüzdeki günlerin havasına bakar ve dışarıda don geldiğinde içerisi soğumasın diye ısıtmayı ne zaman açmanız gerektiğini size zamanında söyler. Isıtma trafik ışığının “Ruhig” (sakin) ile “Frost / Sturm” (don veya fırtına) arasında dört seviyesi vardır ve ısıtma türünüzün ısınma süresini hesaba katar. En fazla beş yer, hesap yok, uygulama şimdilik yalnızca Almanca.',
-      ru: 'Heizwarte для всех, у кого отопление долго прогревается. Приложение смотрит прогноз на ближайшие дни и вовремя подсказывает, когда прибавить отопление, чтобы дома не стало холодно, когда на улицу придут морозы. У отопительного светофора четыре уровня, от «Ruhig» (спокойно) до «Frost / Sturm» (мороз или буря), и он учитывает, сколько времени нужно вашему типу отопления. До пяти мест, без учётной записи, и пока приложение говорит только по-немецки.',
-      hi: 'Heizwarte उन सबके लिए है जिनकी हीटिंग को गर्म होने में देर लगती है। यह अगले कुछ दिनों का मौसम देखता है और आपको समय रहते बताता है कि हीटिंग कब बढ़ानी है, ताकि बाहर पाला पड़ने पर घर के अंदर ठंड न हो। हीटिंग ट्रैफ़िक लाइट के चार स्तर हैं, “Ruhig” (शांत) से “Frost / Sturm” (पाला या तूफ़ान) तक, और यह आपकी हीटिंग के गर्म होने का समय भी गिनती में लेता है। पाँच जगहों तक, बिना खाते के, और फ़िलहाल ऐप सिर्फ़ जर्मन में है।',
-      zh: 'Heizwarte 适合暖气升温很慢的人。它查看未来几天的天气，及时告诉你什么时候该把暖气调高，这样外面降霜结冰时屋里也不会冷。暖气红绿灯有四级，从“Ruhig”（平静）到“Frost / Sturm”（霜冻或风暴），并会把你家暖气类型的升温时间算进去。最多五个地点，无需账号，目前应用只有德语版。',
-      ja: 'Heizwarte は、暖房が温まるまでに時間がかかる人のためのアプリです。この先数日の天気を見て、外が冷え込んでも部屋が寒くならないよう、暖房を強めるタイミングを早めに教えてくれます。暖房信号は「Ruhig」（穏やか）から「Frost / Sturm」（霜・嵐）までの4段階で、お使いの暖房の種類ごとの立ち上がり時間も計算に入れます。登録できる場所は5か所まで、アカウント不要で、アプリは今のところドイツ語のみです。',
-      ko: 'Heizwarte는 난방이 데워지기까지 오래 걸리는 분들을 위한 앱입니다. 앞으로 며칠간의 날씨를 보고, 바깥에 서리가 내려도 실내가 춥지 않도록 난방을 언제 올려야 할지 미리 알려 줍니다. 난방 신호등은 ‘Ruhig’(평온)부터 ‘Frost / Sturm’(서리·폭풍)까지 네 단계이며, 사용하는 난방 방식이 데워지는 데 걸리는 시간도 함께 계산합니다. 장소는 다섯 곳까지, 계정 없이 쓸 수 있고, 앱은 아직 독일어로만 되어 있습니다.'
+      de: 'Heizwarte ist für alle, deren Heizung lange braucht, bis es warm wird. Sie schaut aufs Wetter der nächsten Tage und sagt dir rechtzeitig, wann du höher stellen solltest, damit es drinnen nicht kalt wird, wenn draußen der Frost kommt. Die Heiz-Ampel hat vier Stufen von „Ruhig“ bis „Frost oder Sturm“ und rechnet die Aufheizzeit deiner Heizart mit ein. Bis zu fünf Orte, ohne Konto, in 14 Sprachen.',
+      en: 'Heizwarte is for everyone whose heating takes a long time to warm up. It watches the weather for the next few days and tells you in good time when to turn the heating up, so it doesn’t get cold inside when the frost arrives outside. The heating traffic light has four levels, from “Calm” to “Frost or storm”, and factors in how long your kind of heating needs to warm up. Up to five places, no account, in 14 languages.',
+      es: 'Heizwarte es para todos los que tienen una calefacción que tarda en calentar. Mira el tiempo de los próximos días y te avisa a tiempo de cuándo subir la calefacción, para que dentro no haga frío cuando llegue la helada. El semáforo de calefacción tiene cuatro niveles, de «Tranquilo» a «Helada o tormenta», y tiene en cuenta cuánto tarda en calentar tu tipo de calefacción. Hasta cinco lugares, sin cuenta, en 14 idiomas.',
+      fr: 'Heizwarte est fait pour tous ceux dont le chauffage met longtemps à chauffer. Il regarde la météo des jours à venir et vous dit à temps quand monter le chauffage, pour qu’il ne fasse pas froid à l’intérieur quand le gel arrive. Le feu tricolore du chauffage a quatre niveaux, de « Calme » à « Gel ou tempête », et tient compte du temps de chauffe de votre type de chauffage. Jusqu’à cinq lieux, sans compte, en 14 langues.',
+      it: 'Heizwarte è per chi ha un riscaldamento che ci mette tanto a scaldare. Guarda il meteo dei prossimi giorni e ti dice in tempo quando alzare il riscaldamento, così in casa non fa freddo quando fuori arriva il gelo. Il semaforo del riscaldamento ha quattro livelli, da «Tranquillo» a «Gelo o tempesta», e tiene conto di quanto ci mette a scaldare il tuo tipo di impianto. Fino a cinque luoghi, senza account, in 14 lingue.',
+      nl: 'Heizwarte is voor iedereen bij wie de verwarming lang nodig heeft om warm te worden. Het kijkt naar het weer van de komende dagen en zegt je op tijd wanneer je de verwarming hoger moet zetten, zodat het binnen niet koud wordt als buiten de vorst komt. Het verwarmingsstoplicht heeft vier standen, van ‘Rustig’ tot ‘Vorst of storm’, en rekent mee hoe lang jouw soort verwarming nodig heeft. Tot vijf plaatsen, zonder account, in 14 talen.',
+      pl: 'Heizwarte jest dla każdego, czyje ogrzewanie długo się nagrzewa. Sprawdza pogodę na najbliższe dni i mówi ci z wyprzedzeniem, kiedy podkręcić ogrzewanie, żeby w domu nie zrobiło się zimno, gdy na zewnątrz przyjdzie mróz. Sygnalizator ogrzewania ma cztery poziomy, od „Spokojnie” do „Mróz albo burza”, i uwzględnia, ile czasu potrzebuje twój rodzaj ogrzewania. Do pięciu miejsc, bez konta, w 14 językach.',
+      pt: 'O Heizwarte é para quem tem um aquecimento que demora para esquentar. Ele olha a previsão dos próximos dias e avisa você a tempo de quando aumentar o aquecimento, para que não fique frio dentro de casa quando a geada chegar. O semáforo do aquecimento tem quatro níveis, de «Tranquilo» a «Geada ou tempestade», e leva em conta quanto tempo o seu tipo de aquecimento precisa para esquentar. Até cinco lugares, sem conta, em 14 idiomas.',
+      tr: 'Heizwarte, ısıtması geç ısınan herkes için. Önümüzdeki günlerin havasına bakar ve dışarıda don geldiğinde içerisi soğumasın diye ısıtmayı ne zaman açmanız gerektiğini size zamanında söyler. Isıtma trafik ışığının “Sakin” ile “Don ya da fırtına” arasında dört seviyesi vardır ve ısıtma türünüzün ısınma süresini hesaba katar. En fazla beş yer, hesap yok, 14 dil.',
+      ru: 'Heizwarte для всех, у кого отопление долго прогревается. Приложение смотрит прогноз на ближайшие дни и вовремя подсказывает, когда прибавить отопление, чтобы дома не стало холодно, когда на улицу придут морозы. У отопительного светофора четыре уровня, от «Спокойно» до «Мороз или буря», и он учитывает, сколько времени нужно вашему типу отопления. До пяти мест, без учётной записи, на 14 языках.',
+      hi: 'Heizwarte उन सबके लिए है जिनकी हीटिंग को गर्म होने में देर लगती है। यह अगले कुछ दिनों का मौसम देखता है और आपको समय रहते बताता है कि हीटिंग कब बढ़ानी है, ताकि बाहर पाला पड़ने पर घर के अंदर ठंड न हो। हीटिंग ट्रैफ़िक लाइट के चार स्तर हैं, “शांत” से “पाला या तूफ़ान” तक, और यह आपकी हीटिंग के गर्म होने का समय भी गिनती में लेता है। पाँच जगहों तक, बिना खाते के, 14 भाषाओं में।',
+      zh: 'Heizwarte 适合暖气升温很慢的人。它查看未来几天的天气，及时告诉你什么时候该把暖气调高，这样外面降霜结冰时屋里也不会冷。暖气红绿灯有四级，从“平静”到“霜冻或风暴”，并会把你家暖气类型的升温时间算进去。最多五个地点，无需账号，支持 14 种语言。',
+      ja: 'Heizwarte は、暖房が温まるまでに時間がかかる人のためのアプリです。この先数日の天気を見て、外が冷え込んでも部屋が寒くならないよう、暖房を強めるタイミングを早めに教えてくれます。暖房信号は「穏やか」から「霜または嵐」までの4段階で、お使いの暖房の種類ごとの立ち上がり時間も計算に入れます。登録できる場所は5か所まで、アカウント不要で、14の言語に対応しています。',
+      ko: 'Heizwarte는 난방이 데워지기까지 오래 걸리는 분들을 위한 앱입니다. 앞으로 며칠간의 날씨를 보고, 바깥에 서리가 내려도 실내가 춥지 않도록 난방을 언제 올려야 할지 미리 알려 줍니다. 난방 신호등은 ‘평온’부터 ‘서리 또는 폭풍’까지 네 단계이며, 사용하는 난방 방식이 데워지는 데 걸리는 시간도 함께 계산합니다. 장소는 다섯 곳까지, 계정 없이 쓸 수 있고, 14개 언어를 지원합니다.'
     },
     shots: [
       {
@@ -4102,141 +4102,141 @@ var GUIDES = {
         'Die Startansicht zeigt das Wetter jetzt, die Heiz-Ampel mit einem Satz, was zu tun ist, und die nächsten drei Tage. Unter „Einstellungen“ stellst du Wunschtemperatur und Aufheizzeiten ein, mit „Ort hinzufügen“ kommen weitere Orte dazu. Nach dem ersten Besuch zeigt Heizwarte auch ohne Netz den letzten Stand.'
       ],
       en: [
-        'Open Heizwarte and set your place, either by address or with “Meinen Standort verwenden” (use my location). Your location is rounded to about 100 m. Then check that the place it found is right and give it a name.',
-        'Pick your kind of heating: radiators, underfloor heating in screed or in a dry build, a heat pump with underfloor heating, or night storage heaters. This decides how early Heizwarte warns you. If you don’t know, tap “Weiß ich nicht” (I don’t know), and Heizwarte assumes radiators.',
-        'The start view shows the weather right now, the heating traffic light with one sentence on what to do, and the next three days. Under “Einstellungen” (settings) you set the room temperature you want and the warm-up times, and “Ort hinzufügen” (add place) adds more places. After the first visit Heizwarte shows the last state even without a connection.'
+        'Open Heizwarte and set your place, either by address or with “Use my location”. Your location is rounded to about 100 m. Then check that the place it found is right and give it a name.',
+        'Pick your kind of heating: radiators, underfloor heating in screed or in a dry build, a heat pump with underfloor heating, or night storage heaters. This decides how early Heizwarte warns you. If you don’t know, tap “I don’t know”, and Heizwarte assumes radiators.',
+        'The start view shows the weather right now, the heating traffic light with one sentence on what to do, and the next three days. Under “Settings” you set the room temperature you want and the warm-up times, and “Add place” adds more places. After the first visit Heizwarte shows the last state even without a connection.'
       ],
       es: [
-        'Abre Heizwarte y fija tu lugar, con una dirección o con «Meinen Standort verwenden» (usar mi ubicación). La ubicación se redondea a unos 100 m. Luego comprueba que el lugar encontrado es el correcto y ponle un nombre.',
-        'Elige tu tipo de calefacción: radiadores, suelo radiante en solera o en construcción en seco, bomba de calor con suelo radiante o acumuladores nocturnos. De eso depende con cuánta antelación te avisa Heizwarte. Si no lo sabes, toca «Weiß ich nicht» (no lo sé) y Heizwarte supone radiadores.',
-        'La vista de inicio muestra el tiempo actual, el semáforo de calefacción con una frase sobre qué hacer y los próximos tres días. En «Einstellungen» (ajustes) fijas la temperatura que quieres y los tiempos de calentamiento, y con «Ort hinzufügen» (añadir lugar) añades más lugares. Después de la primera visita, Heizwarte muestra el último estado también sin conexión.'
+        'Abre Heizwarte y fija tu lugar, con una dirección o con «Usar mi ubicación». La ubicación se redondea a unos 100 m. Luego comprueba que el lugar encontrado es el correcto y ponle un nombre.',
+        'Elige tu tipo de calefacción: radiadores, suelo radiante en solera o en construcción en seco, bomba de calor con suelo radiante o acumuladores nocturnos. De eso depende con cuánta antelación te avisa Heizwarte. Si no lo sabes, toca «No lo sé» y Heizwarte supone radiadores.',
+        'La vista de inicio muestra el tiempo actual, el semáforo de calefacción con una frase sobre qué hacer y los próximos tres días. En «Ajustes» fijas la temperatura que quieres y los tiempos de calentamiento, y con «Añadir lugar» añades más lugares. Después de la primera visita, Heizwarte muestra el último estado también sin conexión.'
       ],
       fr: [
-        'Ouvrez Heizwarte et indiquez votre lieu, par adresse ou avec « Meinen Standort verwenden » (utiliser ma position). La position est arrondie à environ 100 m. Vérifiez ensuite que le lieu trouvé est le bon et donnez-lui un nom.',
-        'Choisissez votre type de chauffage : radiateurs, plancher chauffant dans une chape ou en construction sèche, pompe à chaleur avec plancher chauffant ou radiateurs à accumulation. C’est ce qui décide combien de temps à l’avance Heizwarte vous prévient. Si vous ne savez pas, touchez « Weiß ich nicht » (je ne sais pas), Heizwarte part alors sur des radiateurs.',
-        'L’écran d’accueil montre la météo du moment, le feu tricolore du chauffage avec une phrase sur ce qu’il faut faire, et les trois prochains jours. Dans « Einstellungen » (réglages), vous réglez la température souhaitée et les temps de chauffe, et « Ort hinzufügen » (ajouter un lieu) ajoute d’autres lieux. Après la première visite, Heizwarte affiche le dernier état même sans connexion.'
+        'Ouvrez Heizwarte et indiquez votre lieu, par adresse ou avec « Utiliser ma position ». La position est arrondie à environ 100 m. Vérifiez ensuite que le lieu trouvé est le bon et donnez-lui un nom.',
+        'Choisissez votre type de chauffage : radiateurs, plancher chauffant dans une chape ou en construction sèche, pompe à chaleur avec plancher chauffant ou radiateurs à accumulation. C’est ce qui décide combien de temps à l’avance Heizwarte vous prévient. Si vous ne savez pas, touchez « Je ne sais pas », Heizwarte part alors sur des radiateurs.',
+        'L’écran d’accueil montre la météo du moment, le feu tricolore du chauffage avec une phrase sur ce qu’il faut faire, et les trois prochains jours. Dans « Réglages », vous réglez la température souhaitée et les temps de chauffe, et « Ajouter un lieu » ajoute d’autres lieux. Après la première visite, Heizwarte affiche le dernier état même sans connexion.'
       ],
       it: [
-        'Apri Heizwarte e imposta il tuo luogo, con un indirizzo o con «Meinen Standort verwenden» (usa la mia posizione). La posizione viene arrotondata a circa 100 m. Poi controlla che il luogo trovato sia giusto e dagli un nome.',
-        'Scegli il tipo di riscaldamento: termosifoni, riscaldamento a pavimento nel massetto o a secco, pompa di calore con pavimento radiante oppure stufe ad accumulo. Da questo dipende con quanto anticipo Heizwarte ti avvisa. Se non lo sai, tocca «Weiß ich nicht» (non lo so) e Heizwarte considera i termosifoni.',
-        'La schermata iniziale mostra il meteo di adesso, il semaforo del riscaldamento con una frase su cosa fare e i prossimi tre giorni. In «Einstellungen» (impostazioni) imposti la temperatura che vuoi e i tempi di riscaldamento, con «Ort hinzufügen» (aggiungi luogo) aggiungi altri luoghi. Dopo la prima visita Heizwarte mostra l’ultimo stato anche senza connessione.'
+        'Apri Heizwarte e imposta il tuo luogo, con un indirizzo o con «Usa la mia posizione». La posizione viene arrotondata a circa 100 m. Poi controlla che il luogo trovato sia giusto e dagli un nome.',
+        'Scegli il tipo di riscaldamento: termosifoni, riscaldamento a pavimento nel massetto o a secco, pompa di calore con pavimento radiante oppure stufe ad accumulo. Da questo dipende con quanto anticipo Heizwarte ti avvisa. Se non lo sai, tocca «Non lo so» e Heizwarte considera i termosifoni.',
+        'La schermata iniziale mostra il meteo di adesso, il semaforo del riscaldamento con una frase su cosa fare e i prossimi tre giorni. In «Impostazioni» imposti la temperatura che vuoi e i tempi di riscaldamento, con «Aggiungi luogo» aggiungi altri luoghi. Dopo la prima visita Heizwarte mostra l’ultimo stato anche senza connessione.'
       ],
       nl: [
-        'Open Heizwarte en leg je plaats vast, met een adres of met ‘Meinen Standort verwenden’ (mijn locatie gebruiken). De locatie wordt daarbij op ongeveer 100 m afgerond. Controleer dan of de gevonden plaats klopt en geef hem een naam.',
-        'Kies je soort verwarming: radiatoren, vloerverwarming in de dekvloer of in droogbouw, een warmtepomp met vloerverwarming of nachtaccumulatoren. Daarvan hangt af hoe vroeg Heizwarte je waarschuwt. Weet je het niet, tik dan op ‘Weiß ich nicht’ (weet ik niet), dan rekent Heizwarte met radiatoren.',
-        'Het startscherm toont het weer van nu, het verwarmingsstoplicht met één zin over wat je moet doen, en de komende drie dagen. Onder ‘Einstellungen’ (instellingen) zet je de gewenste temperatuur en de opwarmtijden, met ‘Ort hinzufügen’ (plaats toevoegen) komen er plaatsen bij. Na het eerste bezoek toont Heizwarte ook zonder verbinding de laatste stand.'
+        'Open Heizwarte en leg je plaats vast, met een adres of met ‘Mijn locatie gebruiken’. De locatie wordt daarbij op ongeveer 100 m afgerond. Controleer dan of de gevonden plaats klopt en geef hem een naam.',
+        'Kies je soort verwarming: radiatoren, vloerverwarming in de dekvloer of in droogbouw, een warmtepomp met vloerverwarming of nachtaccumulatoren. Daarvan hangt af hoe vroeg Heizwarte je waarschuwt. Weet je het niet, tik dan op ‘Weet ik niet’, dan rekent Heizwarte met radiatoren.',
+        'Het startscherm toont het weer van nu, het verwarmingsstoplicht met één zin over wat je moet doen, en de komende drie dagen. Onder ‘Instellingen’ zet je de gewenste temperatuur en de opwarmtijden, met ‘Plaats toevoegen’ komen er plaatsen bij. Na het eerste bezoek toont Heizwarte ook zonder verbinding de laatste stand.'
       ],
       pl: [
-        'Otwórz Heizwarte i ustal swoje miejsce, podając adres albo przez „Meinen Standort verwenden” (użyj mojej lokalizacji). Lokalizacja jest przy tym zaokrąglana do około 100 m. Potem sprawdź, czy znalezione miejsce się zgadza, i nadaj mu nazwę.',
-        'Wybierz rodzaj ogrzewania: grzejniki, ogrzewanie podłogowe w wylewce lub w suchej zabudowie, pompę ciepła z ogrzewaniem podłogowym albo piece akumulacyjne. Od tego zależy, jak wcześnie Heizwarte cię ostrzeże. Jeśli nie wiesz, stuknij „Weiß ich nicht” (nie wiem), a Heizwarte przyjmie grzejniki.',
-        'Ekran startowy pokazuje aktualną pogodę, sygnalizator ogrzewania z jednym zdaniem, co robić, i najbliższe trzy dni. W „Einstellungen” (ustawienia) ustawiasz żądaną temperaturę i czasy nagrzewania, a „Ort hinzufügen” (dodaj miejsce) dodaje kolejne miejsca. Po pierwszej wizycie Heizwarte pokazuje ostatni stan także bez internetu.'
+        'Otwórz Heizwarte i ustal swoje miejsce, podając adres albo przez „Użyj mojej lokalizacji”. Lokalizacja jest przy tym zaokrąglana do około 100 m. Potem sprawdź, czy znalezione miejsce się zgadza, i nadaj mu nazwę.',
+        'Wybierz rodzaj ogrzewania: grzejniki, ogrzewanie podłogowe w wylewce lub w suchej zabudowie, pompę ciepła z ogrzewaniem podłogowym albo piece akumulacyjne. Od tego zależy, jak wcześnie Heizwarte cię ostrzeże. Jeśli nie wiesz, stuknij „Nie wiem”, a Heizwarte przyjmie grzejniki.',
+        'Ekran startowy pokazuje aktualną pogodę, sygnalizator ogrzewania z jednym zdaniem, co robić, i najbliższe trzy dni. W menu „Ustawienia” ustawiasz żądaną temperaturę i czasy nagrzewania, a „Dodaj miejsce” dodaje kolejne miejsca. Po pierwszej wizycie Heizwarte pokazuje ostatni stan także bez internetu.'
       ],
       pt: [
-        'Abra o Heizwarte e defina o seu lugar, por endereço ou com «Meinen Standort verwenden» (usar minha localização). A localização é arredondada para cerca de 100 m. Depois confira se o lugar encontrado está certo e dê um nome a ele.',
-        'Escolha o seu tipo de aquecimento: radiadores, piso aquecido no contrapiso ou em construção a seco, bomba de calor com piso aquecido ou aquecedores de acumulação. Disso depende com quanta antecedência o Heizwarte avisa você. Se não souber, toque em «Weiß ich nicht» (não sei) e o Heizwarte considera radiadores.',
-        'A tela inicial mostra o tempo agora, o semáforo do aquecimento com uma frase sobre o que fazer e os próximos três dias. Em «Einstellungen» (configurações) você define a temperatura que quer e os tempos de aquecimento, e «Ort hinzufügen» (adicionar lugar) adiciona mais lugares. Depois da primeira visita, o Heizwarte mostra o último estado mesmo sem internet.'
+        'Abra o Heizwarte e defina o seu lugar, por endereço ou com «Usar minha localização». A localização é arredondada para cerca de 100 m. Depois confira se o lugar encontrado está certo e dê um nome a ele.',
+        'Escolha o seu tipo de aquecimento: radiadores, piso aquecido no contrapiso ou em construção a seco, bomba de calor com piso aquecido ou aquecedores de acumulação. Disso depende com quanta antecedência o Heizwarte avisa você. Se não souber, toque em «Não sei» e o Heizwarte considera radiadores.',
+        'A tela inicial mostra o tempo agora, o semáforo do aquecimento com uma frase sobre o que fazer e os próximos três dias. Em «Configurações» você define a temperatura que quer e os tempos de aquecimento, e «Adicionar local» adiciona mais lugares. Depois da primeira visita, o Heizwarte mostra o último estado mesmo sem internet.'
       ],
       tr: [
-        'Heizwarte’yi açın ve yerinizi belirleyin, adresle ya da “Meinen Standort verwenden” (konumumu kullan) ile. Konum bu sırada yaklaşık 100 m’ye yuvarlanır. Sonra bulunan yerin doğru olup olmadığını kontrol edin ve ona bir ad verin.',
-        'Isıtma türünüzü seçin: radyatör, şapın içinde ya da kuru sistemde yerden ısıtma, yerden ısıtmalı ısı pompası veya gece depolu ısıtıcı. Heizwarte’nin sizi ne kadar erken uyaracağı buna bağlıdır. Bilmiyorsanız “Weiß ich nicht” (bilmiyorum) düğmesine dokunun, Heizwarte radyatör varsayar.',
-        'Başlangıç ekranı şu anki havayı, ne yapılacağını tek cümleyle söyleyen ısıtma trafik ışığını ve sonraki üç günü gösterir. “Einstellungen” (ayarlar) altında istediğiniz sıcaklığı ve ısınma sürelerini ayarlarsınız, “Ort hinzufügen” (yer ekle) ile başka yerler eklenir. İlk ziyaretten sonra Heizwarte bağlantı olmadan da son durumu gösterir.'
+        'Heizwarte’yi açın ve yerinizi belirleyin, adresle ya da “Konumumu kullan” ile. Konum bu sırada yaklaşık 100 m’ye yuvarlanır. Sonra bulunan yerin doğru olup olmadığını kontrol edin ve ona bir ad verin.',
+        'Isıtma türünüzü seçin: radyatör, şapın içinde ya da kuru sistemde yerden ısıtma, yerden ısıtmalı ısı pompası veya gece depolu ısıtıcı. Heizwarte’nin sizi ne kadar erken uyaracağı buna bağlıdır. Bilmiyorsanız “Bilmiyorum” düğmesine dokunun, Heizwarte radyatör varsayar.',
+        'Başlangıç ekranı şu anki havayı, ne yapılacağını tek cümleyle söyleyen ısıtma trafik ışığını ve sonraki üç günü gösterir. “Ayarlar” altında istediğiniz sıcaklığı ve ısınma sürelerini ayarlarsınız, “Yer ekle” ile başka yerler eklenir. İlk ziyaretten sonra Heizwarte bağlantı olmadan da son durumu gösterir.'
       ],
       ru: [
-        'Откройте Heizwarte и укажите своё место, по адресу или кнопкой «Meinen Standort verwenden» (использовать моё местоположение). Местоположение при этом округляется примерно до 100 м. Затем проверьте, верно ли найдено место, и дайте ему название.',
-        'Выберите тип отопления: радиаторы, тёплый пол в стяжке или в сухой конструкции, тепловой насос с тёплым полом или аккумуляционные печи. От этого зависит, как рано Heizwarte вас предупредит. Если не знаете, нажмите «Weiß ich nicht» (не знаю), и Heizwarte будет считать, что у вас радиаторы.',
-        'На стартовом экране видны погода сейчас, отопительный светофор с одной фразой о том, что делать, и ближайшие три дня. В «Einstellungen» (настройки) задаются желаемая температура и время прогрева, а «Ort hinzufügen» (добавить место) добавляет новые места. После первого посещения Heizwarte показывает последнее состояние и без интернета.'
+        'Откройте Heizwarte и укажите своё место, по адресу или кнопкой «Использовать моё местоположение». Местоположение при этом округляется примерно до 100 м. Затем проверьте, верно ли найдено место, и дайте ему название.',
+        'Выберите тип отопления: радиаторы, тёплый пол в стяжке или в сухой конструкции, тепловой насос с тёплым полом или аккумуляционные печи. От этого зависит, как рано Heizwarte вас предупредит. Если не знаете, нажмите «Не знаю», и Heizwarte будет считать, что у вас радиаторы.',
+        'На стартовом экране видны погода сейчас, отопительный светофор с одной фразой о том, что делать, и ближайшие три дня. В разделе «Настройки» задаются желаемая температура и время прогрева, а «Добавить место» добавляет новые места. После первого посещения Heizwarte показывает последнее состояние и без интернета.'
       ],
       hi: [
-        'Heizwarte खोलें और अपनी जगह तय करें, पते से या “Meinen Standort verwenden” (मेरी लोकेशन इस्तेमाल करें) से। लोकेशन को लगभग 100 मीटर तक गोल किया जाता है। फिर जाँच लें कि मिली हुई जगह सही है और उसे एक नाम दें।',
-        'अपनी हीटिंग का प्रकार चुनें: रेडिएटर, स्क्रीड में या ड्राई कंस्ट्रक्शन में फ़्लोर हीटिंग, फ़्लोर हीटिंग वाला हीट पंप, या नाइट स्टोरेज हीटर। इसी से तय होता है कि Heizwarte आपको कितना पहले चेतावनी देगा। अगर आपको पता नहीं है, तो “Weiß ich nicht” (पता नहीं) दबाएँ, तब Heizwarte रेडिएटर मानकर चलता है।',
-        'शुरुआती स्क्रीन पर अभी का मौसम, एक वाक्य में क्या करना है बताने वाली हीटिंग ट्रैफ़िक लाइट, और अगले तीन दिन दिखते हैं। “Einstellungen” (सेटिंग्स) में आप चाहा गया तापमान और गर्म होने का समय सेट करते हैं, और “Ort hinzufügen” (जगह जोड़ें) से और जगहें जुड़ती हैं। पहली विज़िट के बाद Heizwarte बिना इंटरनेट के भी आख़िरी स्थिति दिखाता है।'
+        'Heizwarte खोलें और अपनी जगह तय करें, पते से या “मेरी लोकेशन इस्तेमाल करें” से। लोकेशन को लगभग 100 मीटर तक गोल किया जाता है। फिर जाँच लें कि मिली हुई जगह सही है और उसे एक नाम दें।',
+        'अपनी हीटिंग का प्रकार चुनें: रेडिएटर, स्क्रीड में या ड्राई कंस्ट्रक्शन में फ़्लोर हीटिंग, फ़्लोर हीटिंग वाला हीट पंप, या नाइट स्टोरेज हीटर। इसी से तय होता है कि Heizwarte आपको कितना पहले चेतावनी देगा। अगर आपको पता नहीं है, तो “पता नहीं” दबाएँ, तब Heizwarte रेडिएटर मानकर चलता है।',
+        'शुरुआती स्क्रीन पर अभी का मौसम, एक वाक्य में क्या करना है बताने वाली हीटिंग ट्रैफ़िक लाइट, और अगले तीन दिन दिखते हैं। “सेटिंग्स” में आप चाहा गया तापमान और गर्म होने का समय सेट करते हैं, और “जगह जोड़ें” से और जगहें जुड़ती हैं। पहली विज़िट के बाद Heizwarte बिना इंटरनेट के भी आख़िरी स्थिति दिखाता है।'
       ],
       zh: [
-        '打开 Heizwarte，设定你的地点，可以输入地址，也可以点“Meinen Standort verwenden”（使用我的位置）。位置会被四舍五入到约 100 米。然后确认找到的地点是否正确，并给它起个名字。',
-        '选择你的暖气类型：暖气片、找平层里的地暖、干式施工的地暖、带地暖的热泵，或夜间蓄热式电暖器。Heizwarte 提前多久提醒你，就取决于这一项。如果不清楚，点“Weiß ich nicht”（不知道），Heizwarte 会按暖气片来算。',
-        '首页显示现在的天气、用一句话告诉你该做什么的暖气红绿灯，以及接下来三天的预报。在“Einstellungen”（设置）里可以设定想要的室温和升温时间，点“Ort hinzufügen”（添加地点）可以添加更多地点。首次访问之后，即使没有网络，Heizwarte 也会显示最后一次的数据。'
+        '打开 Heizwarte，设定你的地点，可以输入地址，也可以点“使用我的位置”。位置会被四舍五入到约 100 米。然后确认找到的地点是否正确，并给它起个名字。',
+        '选择你的暖气类型：暖气片、找平层里的地暖、干式施工的地暖、带地暖的热泵，或夜间蓄热式电暖器。Heizwarte 提前多久提醒你，就取决于这一项。如果不清楚，点“不知道”，Heizwarte 会按暖气片来算。',
+        '首页显示现在的天气、用一句话告诉你该做什么的暖气红绿灯，以及接下来三天的预报。在“设置”里可以设定想要的室温和升温时间，点“添加地点”可以添加更多地点。首次访问之后，即使没有网络，Heizwarte 也会显示最后一次的数据。'
       ],
       ja: [
-        'Heizwarte を開き、住所を入力するか「Meinen Standort verwenden」（現在地を使う）で場所を決めます。現在地はおよそ100 mの単位に丸められます。見つかった場所が正しいか確認し、名前を付けます。',
-        '暖房の種類を選びます。ラジエーター、モルタル埋め込み式または乾式の床暖房、床暖房付きヒートポンプ、夜間蓄熱暖房機のいずれかです。これによって Heizwarte がどれだけ早く知らせるかが決まります。わからない場合は「Weiß ich nicht」（わからない）をタップすると、ラジエーターとして計算します。',
-        'ホーム画面には、今の天気、やるべきことを一文で伝える暖房信号、そして今後3日間の予報が表示されます。「Einstellungen」（設定）では希望の室温と暖まるまでの時間を設定でき、「Ort hinzufügen」（場所を追加）で場所を増やせます。一度アクセスすれば、ネットにつながっていなくても最後のデータを表示します。'
+        'Heizwarte を開き、住所を入力するか「現在地を使う」で場所を決めます。現在地はおよそ100 mの単位に丸められます。見つかった場所が正しいか確認し、名前を付けます。',
+        '暖房の種類を選びます。ラジエーター、モルタル埋め込み式または乾式の床暖房、床暖房付きヒートポンプ、夜間蓄熱暖房機のいずれかです。これによって Heizwarte がどれだけ早く知らせるかが決まります。わからない場合は「わからない」をタップすると、ラジエーターとして計算します。',
+        'ホーム画面には、今の天気、やるべきことを一文で伝える暖房信号、そして今後3日間の予報が表示されます。「設定」では希望の室温と暖まるまでの時間を設定でき、「場所を追加」で場所を増やせます。一度アクセスすれば、ネットにつながっていなくても最後のデータを表示します。'
       ],
       ko: [
-        'Heizwarte를 열고 주소를 입력하거나 ‘Meinen Standort verwenden’(내 위치 사용)으로 장소를 정합니다. 위치는 약 100 m 단위로 반올림됩니다. 그다음 찾은 장소가 맞는지 확인하고 이름을 붙입니다.',
-        '난방 방식을 고릅니다. 라디에이터, 몰탈 속 바닥 난방이나 건식 바닥 난방, 바닥 난방이 딸린 히트펌프, 심야 축열기 가운데 하나입니다. 이에 따라 Heizwarte가 얼마나 일찍 알려 줄지가 정해집니다. 잘 모르겠으면 ‘Weiß ich nicht’(모르겠음)를 누르세요. 그러면 라디에이터로 계산합니다.',
-        '첫 화면에는 지금 날씨, 무엇을 해야 할지 한 문장으로 알려 주는 난방 신호등, 그리고 앞으로 사흘의 예보가 나옵니다. ‘Einstellungen’(설정)에서 원하는 실내 온도와 데워지는 시간을 정하고, ‘Ort hinzufügen’(장소 추가)으로 장소를 더할 수 있습니다. 처음 한 번 방문한 뒤에는 인터넷 없이도 마지막 데이터를 보여 줍니다.'
+        'Heizwarte를 열고 주소를 입력하거나 ‘내 위치 사용’으로 장소를 정합니다. 위치는 약 100 m 단위로 반올림됩니다. 그다음 찾은 장소가 맞는지 확인하고 이름을 붙입니다.',
+        '난방 방식을 고릅니다. 라디에이터, 몰탈 속 바닥 난방이나 건식 바닥 난방, 바닥 난방이 딸린 히트펌프, 심야 축열기 가운데 하나입니다. 이에 따라 Heizwarte가 얼마나 일찍 알려 줄지가 정해집니다. 잘 모르겠으면 ‘모르겠음’을 누르세요. 그러면 라디에이터로 계산합니다.',
+        '첫 화면에는 지금 날씨, 무엇을 해야 할지 한 문장으로 알려 주는 난방 신호등, 그리고 앞으로 사흘의 예보가 나옵니다. ‘설정’에서 원하는 실내 온도와 데워지는 시간을 정하고, ‘장소 추가’로 장소를 더할 수 있습니다. 처음 한 번 방문한 뒤에는 인터넷 없이도 마지막 데이터를 보여 줍니다.'
       ]
     },
     pitfalls: {
       de: [
         'Die Ampel ist eine Faustregel, keine Norm. Sie kennt das Wetter und deine Heizart, aber nicht dein Haus. Wird es bei dir trotzdem kalt, stell in den Einstellungen längere Aufheizzeiten ein.',
         'Die Vorhersage kommt von Open-Meteo, in Deutschland, Österreich und der Schweiz aus dem Modell ICON des Deutschen Wetterdienstes. Was in zwei Tagen kommt, kann sich noch ändern, „Neu laden“ holt den neuesten Stand.',
-        'Deine Adresse geht einmal an die Ortssuche (Photon von komoot), die Wetterdienste bekommen nur auf etwa 100 m gerundete Koordinaten. Die Orte liegen nur im Browser dieses Geräts, wer die Browserdaten löscht, löscht sie mit.'
+        'Deine Adresse geht einmal an die Ortssuche (Photon von komoot), die Wetterdienste bekommen nur auf etwa 100 m gerundete Koordinaten, Open-Meteo dazu die Höhe des Ortes. Die Orte liegen nur im Browser dieses Geräts, wer die Browserdaten löscht, löscht sie mit.'
       ],
       en: [
         'The traffic light is a rule of thumb, not a standard. It knows the weather and your kind of heating, but not your home. If it still gets cold at your place, set longer warm-up times in the settings.',
-        'The forecast comes from Open-Meteo, in Germany, Austria and Switzerland from the ICON model of the German Weather Service. What is due in two days can still change, and “Neu laden” (reload) fetches the latest.',
-        'Your address goes once to the place search (Photon by komoot), and the weather services only get coordinates rounded to about 100 m. Your places live only in this device’s browser, so clearing the browser data clears them too.'
+        'The forecast comes from Open-Meteo, in Germany, Austria and Switzerland from the ICON model of the German Weather Service. What is due in two days can still change, and “Reload” fetches the latest.',
+        'Your address goes once to the place search (Photon by komoot), and the weather services only get coordinates rounded to about 100 m, Open-Meteo also gets the elevation of the place. Your places live only in this device’s browser, so clearing the browser data clears them too.'
       ],
       es: [
         'El semáforo es una regla práctica, no una norma. Conoce el tiempo y tu tipo de calefacción, pero no tu casa. Si aun así hace frío en tu casa, pon tiempos de calentamiento más largos en los ajustes.',
-        'La previsión viene de Open-Meteo, y en Alemania, Austria y Suiza del modelo ICON del Servicio Meteorológico Alemán. Lo que viene dentro de dos días aún puede cambiar, y «Neu laden» (recargar) trae lo más reciente.',
-        'Tu dirección va una sola vez a la búsqueda de lugares (Photon de komoot), y los servicios meteorológicos solo reciben coordenadas redondeadas a unos 100 m. Los lugares se guardan solo en el navegador de este dispositivo, así que si borras los datos del navegador, también se borran.'
+        'La previsión viene de Open-Meteo, y en Alemania, Austria y Suiza del modelo ICON del Servicio Meteorológico Alemán. Lo que viene dentro de dos días aún puede cambiar, y «Recargar» trae lo más reciente.',
+        'Tu dirección va una sola vez a la búsqueda de lugares (Photon de komoot), y los servicios meteorológicos solo reciben coordenadas redondeadas a unos 100 m, Open-Meteo también la altitud del lugar. Los lugares se guardan solo en el navegador de este dispositivo, así que si borras los datos del navegador, también se borran.'
       ],
       fr: [
         'Le feu tricolore est une règle empirique, pas une norme. Il connaît la météo et votre type de chauffage, mais pas votre logement. S’il fait quand même froid chez vous, réglez des temps de chauffe plus longs dans les réglages.',
-        'La prévision vient d’Open-Meteo, et en Allemagne, en Autriche et en Suisse du modèle ICON du service météo allemand. Ce qui est prévu dans deux jours peut encore changer, et « Neu laden » (recharger) récupère la dernière version.',
-        'Votre adresse part une seule fois vers la recherche de lieux (Photon de komoot), et les services météo ne reçoivent que des coordonnées arrondies à environ 100 m. Les lieux restent uniquement dans le navigateur de cet appareil, effacer les données du navigateur les efface aussi.'
+        'La prévision vient d’Open-Meteo, et en Allemagne, en Autriche et en Suisse du modèle ICON du service météo allemand. Ce qui est prévu dans deux jours peut encore changer, et « Recharger » récupère la dernière version.',
+        'Votre adresse part une seule fois vers la recherche de lieux (Photon de komoot), et les services météo ne reçoivent que des coordonnées arrondies à environ 100 m, Open-Meteo reçoit en plus l’altitude du lieu. Les lieux restent uniquement dans le navigateur de cet appareil, effacer les données du navigateur les efface aussi.'
       ],
       it: [
         'Il semaforo è una regola pratica, non una norma. Conosce il meteo e il tuo tipo di riscaldamento, ma non la tua casa. Se da te fa comunque freddo, imposta tempi di riscaldamento più lunghi nelle impostazioni.',
-        'La previsione arriva da Open-Meteo, e in Germania, Austria e Svizzera dal modello ICON del servizio meteorologico tedesco. Quello che arriva fra due giorni può ancora cambiare, e «Neu laden» (ricarica) prende i dati più recenti.',
-        'Il tuo indirizzo va una sola volta alla ricerca dei luoghi (Photon di komoot), e i servizi meteo ricevono solo coordinate arrotondate a circa 100 m. I luoghi restano solo nel browser di questo dispositivo, quindi se cancelli i dati del browser spariscono anche loro.'
+        'La previsione arriva da Open-Meteo, e in Germania, Austria e Svizzera dal modello ICON del servizio meteorologico tedesco. Quello che arriva fra due giorni può ancora cambiare, e «Ricarica» prende i dati più recenti.',
+        'Il tuo indirizzo va una sola volta alla ricerca dei luoghi (Photon di komoot), e i servizi meteo ricevono solo coordinate arrotondate a circa 100 m, Open-Meteo anche l’altitudine del luogo. I luoghi restano solo nel browser di questo dispositivo, quindi se cancelli i dati del browser spariscono anche loro.'
       ],
       nl: [
         'Het stoplicht is een vuistregel, geen norm. Het kent het weer en je soort verwarming, maar niet je huis. Wordt het bij jou toch koud, stel dan in de instellingen langere opwarmtijden in.',
-        'De voorspelling komt van Open-Meteo, en in Duitsland, Oostenrijk en Zwitserland van het ICON-model van de Duitse weerdienst. Wat over twee dagen komt, kan nog veranderen, en ‘Neu laden’ (opnieuw laden) haalt de nieuwste stand op.',
-        'Je adres gaat één keer naar de plaatszoeker (Photon van komoot), de weerdiensten krijgen alleen coördinaten die op ongeveer 100 m zijn afgerond. De plaatsen staan alleen in de browser van dit apparaat, wie de browsergegevens wist, wist ze mee.'
+        'De voorspelling komt van Open-Meteo, en in Duitsland, Oostenrijk en Zwitserland van het ICON-model van de Duitse weerdienst. Wat over twee dagen komt, kan nog veranderen, en ‘Opnieuw laden’ haalt de nieuwste stand op.',
+        'Je adres gaat één keer naar de plaatszoeker (Photon van komoot), de weerdiensten krijgen alleen coördinaten die op ongeveer 100 m zijn afgerond, Open-Meteo daarnaast de hoogte van de plaats. De plaatsen staan alleen in de browser van dit apparaat, wie de browsergegevens wist, wist ze mee.'
       ],
       pl: [
         'Sygnalizator to reguła kciuka, a nie norma. Zna pogodę i twój rodzaj ogrzewania, ale nie twój dom. Jeśli mimo to robi się u ciebie zimno, ustaw w ustawieniach dłuższe czasy nagrzewania.',
-        'Prognoza pochodzi z Open-Meteo, a w Niemczech, Austrii i Szwajcarii z modelu ICON niemieckiej służby meteorologicznej. To, co ma przyjść za dwa dni, może się jeszcze zmienić, a „Neu laden” (wczytaj ponownie) pobiera najnowsze dane.',
-        'Twój adres trafia jeden raz do wyszukiwarki miejsc (Photon od komoot), a serwisy pogodowe dostają tylko współrzędne zaokrąglone do około 100 m. Miejsca są zapisane tylko w przeglądarce tego urządzenia, więc usunięcie danych przeglądarki usuwa też je.'
+        'Prognoza pochodzi z Open-Meteo, a w Niemczech, Austrii i Szwajcarii z modelu ICON niemieckiej służby meteorologicznej. To, co ma przyjść za dwa dni, może się jeszcze zmienić, a „Odśwież” pobiera najnowsze dane.',
+        'Twój adres trafia jeden raz do wyszukiwarki miejsc (Photon od komoot), a serwisy pogodowe dostają tylko współrzędne zaokrąglone do około 100 m, Open-Meteo dodatkowo wysokość miejsca. Miejsca są zapisane tylko w przeglądarce tego urządzenia, więc usunięcie danych przeglądarki usuwa też je.'
       ],
       pt: [
         'O semáforo é uma regra prática, não uma norma. Ele conhece o tempo e o seu tipo de aquecimento, mas não a sua casa. Se mesmo assim ficar frio aí, defina tempos de aquecimento mais longos nas configurações.',
-        'A previsão vem do Open-Meteo, e na Alemanha, Áustria e Suíça do modelo ICON do Serviço Meteorológico Alemão. O que vem daqui a dois dias ainda pode mudar, e «Neu laden» (recarregar) busca a versão mais recente.',
-        'O seu endereço vai uma única vez para a busca de lugares (Photon, da komoot), e os serviços de meteorologia só recebem coordenadas arredondadas para cerca de 100 m. Os lugares ficam só no navegador deste aparelho, então apagar os dados do navegador apaga eles também.'
+        'A previsão vem do Open-Meteo, e na Alemanha, Áustria e Suíça do modelo ICON do Serviço Meteorológico Alemão. O que vem daqui a dois dias ainda pode mudar, e «Recarregar» busca a versão mais recente.',
+        'O seu endereço vai uma única vez para a busca de lugares (Photon, da komoot), e os serviços de meteorologia só recebem coordenadas arredondadas para cerca de 100 m, o Open-Meteo também a altitude do local. Os lugares ficam só no navegador deste aparelho, então apagar os dados do navegador apaga eles também.'
       ],
       tr: [
         'Trafik ışığı bir kural değil, pratik bir ölçüdür. Havayı ve ısıtma türünüzü bilir ama evinizi bilmez. Buna rağmen evinizde soğuk oluyorsa ayarlarda daha uzun ısınma süreleri girin.',
-        'Tahmin Open-Meteo’dan gelir, Almanya, Avusturya ve İsviçre’de Alman Meteoroloji Servisi’nin ICON modelinden. İki gün sonrası için olanlar hâlâ değişebilir, “Neu laden” (yeniden yükle) en güncel durumu getirir.',
-        'Adresiniz bir kez yer aramasına (komoot’un Photon’u) gider, hava servisleri ise yalnızca yaklaşık 100 m’ye yuvarlanmış koordinatları alır. Yerler yalnızca bu cihazın tarayıcısında durur, tarayıcı verilerini silen onları da siler.'
+        'Tahmin Open-Meteo’dan gelir, Almanya, Avusturya ve İsviçre’de Alman Meteoroloji Servisi’nin ICON modelinden. İki gün sonrası için olanlar hâlâ değişebilir, “Yeniden yükle” en güncel durumu getirir.',
+        'Adresiniz bir kez yer aramasına (komoot’un Photon’u) gider, hava servisleri ise yalnızca yaklaşık 100 m’ye yuvarlanmış koordinatları alır, Open-Meteo ayrıca yerin rakımını alır. Yerler yalnızca bu cihazın tarayıcısında durur, tarayıcı verilerini silen onları da siler.'
       ],
       ru: [
         'Светофор подсказывает по общему правилу, это не норматив. Он знает погоду и ваш тип отопления, но не ваш дом. Если у вас всё равно становится холодно, задайте в настройках более долгое время прогрева.',
-        'Прогноз берётся из Open-Meteo, а в Германии, Австрии и Швейцарии из модели ICON Немецкой метеослужбы. То, что ожидается через два дня, ещё может измениться, а «Neu laden» (обновить) загружает свежие данные.',
-        'Ваш адрес один раз уходит в поиск мест (Photon от komoot), а метеосервисы получают только координаты, округлённые примерно до 100 м. Места хранятся только в браузере этого устройства, поэтому при очистке данных браузера они тоже удаляются.'
+        'Прогноз берётся из Open-Meteo, а в Германии, Австрии и Швейцарии из модели ICON Немецкой метеослужбы. То, что ожидается через два дня, ещё может измениться, а «Обновить» загружает свежие данные.',
+        'Ваш адрес один раз уходит в поиск мест (Photon от komoot), а метеосервисы получают только координаты, округлённые примерно до 100 м, Open-Meteo ещё и высоту места. Места хранятся только в браузере этого устройства, поэтому при очистке данных браузера они тоже удаляются.'
       ],
       hi: [
         'यह ट्रैफ़िक लाइट एक मोटा अनुमान है, कोई मानक नहीं। यह मौसम और आपकी हीटिंग का प्रकार जानती है, लेकिन आपका घर नहीं। अगर फिर भी आपके यहाँ ठंड हो जाए, तो सेटिंग्स में गर्म होने का समय बढ़ा दें।',
-        'पूर्वानुमान Open-Meteo से आता है, और जर्मनी, ऑस्ट्रिया और स्विट्ज़रलैंड में जर्मन मौसम सेवा के ICON मॉडल से। दो दिन बाद का मौसम अभी बदल सकता है, और “Neu laden” (फिर से लोड करें) सबसे नई जानकारी लाता है।',
-        'आपका पता एक बार जगह खोजने वाली सेवा (komoot का Photon) को जाता है, और मौसम सेवाओं को सिर्फ़ लगभग 100 मीटर तक गोल किए गए निर्देशांक मिलते हैं। जगहें सिर्फ़ इसी डिवाइस के ब्राउज़र में रहती हैं, इसलिए ब्राउज़र का डेटा मिटाने पर वे भी मिट जाती हैं।'
+        'पूर्वानुमान Open-Meteo से आता है, और जर्मनी, ऑस्ट्रिया और स्विट्ज़रलैंड में जर्मन मौसम सेवा के ICON मॉडल से। दो दिन बाद का मौसम अभी बदल सकता है, और “फिर से लोड करें” सबसे नई जानकारी लाता है।',
+        'आपका पता एक बार जगह खोजने वाली सेवा (komoot का Photon) को जाता है, और मौसम सेवाओं को सिर्फ़ लगभग 100 मीटर तक गोल किए गए निर्देशांक मिलते हैं, Open-Meteo को जगह की ऊँचाई भी। जगहें सिर्फ़ इसी डिवाइस के ब्राउज़र में रहती हैं, इसलिए ब्राउज़र का डेटा मिटाने पर वे भी मिट जाती हैं।'
       ],
       zh: [
         '红绿灯只是经验法则，不是标准。它了解天气和你的暖气类型，但不了解你的房子。如果家里还是冷，就在设置里把升温时间调长一些。',
-        '天气预报来自 Open-Meteo，在德国、奥地利和瑞士则来自德国气象局的 ICON 模型。两天后的天气还可能变化，点“Neu laden”（重新加载）可以获取最新数据。',
-        '你的地址只会发送一次给地点搜索（komoot 的 Photon），气象服务只收到四舍五入到约 100 米的坐标。地点只保存在这台设备的浏览器里，清除浏览器数据时它们也会被一起删除。'
+        '天气预报来自 Open-Meteo，在德国、奥地利和瑞士则来自德国气象局的 ICON 模型。两天后的天气还可能变化，点“重新加载”可以获取最新数据。',
+        '你的地址只会发送一次给地点搜索（komoot 的 Photon），气象服务只收到四舍五入到约 100 米的坐标，Open-Meteo 还会收到该地点的海拔。地点只保存在这台设备的浏览器里，清除浏览器数据时它们也会被一起删除。'
       ],
       ja: [
         '信号はあくまで目安で、規格ではありません。天気と暖房の種類は知っていますが、お住まいの建物までは知りません。それでも寒くなるようなら、設定で暖まるまでの時間を長くしてください。',
-        '予報は Open-Meteo から取得し、ドイツ、オーストリア、スイスではドイツ気象局の ICON モデルを使います。2日後の予報はまだ変わることがあり、「Neu laden」（再読み込み）で最新の状態を取得できます。',
-        '住所は場所検索（komoot の Photon）に一度だけ送られ、気象サービスにはおよそ100 m単位に丸めた座標しか渡りません。場所はこの端末のブラウザーにだけ保存されるので、ブラウザーのデータを消すと一緒に消えます。'
+        '予報は Open-Meteo から取得し、ドイツ、オーストリア、スイスではドイツ気象局の ICON モデルを使います。2日後の予報はまだ変わることがあり、「再読み込み」で最新の状態を取得できます。',
+        '住所は場所検索（komoot の Photon）に一度だけ送られ、気象サービスにはおよそ100 m単位に丸めた座標しか渡りません（Open-Meteo にはその場所の標高も渡ります）。場所はこの端末のブラウザーにだけ保存されるので、ブラウザーのデータを消すと一緒に消えます。'
       ],
       ko: [
         '신호등은 어림잡은 기준일 뿐 규정이 아닙니다. 날씨와 난방 방식은 알지만 집 자체는 모릅니다. 그런데도 집이 추워지면 설정에서 데워지는 시간을 더 길게 잡으세요.',
-        '예보는 Open-Meteo에서 가져오며, 독일·오스트리아·스위스에서는 독일 기상청의 ICON 모델을 씁니다. 이틀 뒤의 날씨는 아직 바뀔 수 있고, ‘Neu laden’(새로 고침)을 누르면 최신 상태를 가져옵니다.',
-        '주소는 장소 검색(komoot의 Photon)으로 한 번만 보내지고, 기상 서비스에는 약 100 m 단위로 반올림한 좌표만 전달됩니다. 장소는 이 기기의 브라우저에만 저장되므로 브라우저 데이터를 지우면 함께 지워집니다.'
+        '예보는 Open-Meteo에서 가져오며, 독일·오스트리아·스위스에서는 독일 기상청의 ICON 모델을 씁니다. 이틀 뒤의 날씨는 아직 바뀔 수 있고, ‘새로 고침’을 누르면 최신 상태를 가져옵니다.',
+        '주소는 장소 검색(komoot의 Photon)으로 한 번만 보내지고, 기상 서비스에는 약 100 m 단위로 반올림한 좌표만 전달되고, Open-Meteo에는 그 장소의 고도도 전달됩니다. 장소는 이 기기의 브라우저에만 저장되므로 브라우저 데이터를 지우면 함께 지워집니다.'
       ]
     },
     docs: {
