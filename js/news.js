@@ -201,6 +201,23 @@ var NEWS = {
   wifi: [
     {
       date: '2026-10-31',
+      de: 'Vorleseprogramme nennen den QR-Code jetzt in deiner Sprache. Vorher hieß er überall englisch „QR code“.',
+      en: 'Screen readers now name the QR code in each of the 14 languages. Before, it was “QR code” in English everywhere.',
+      es: 'Los lectores de pantalla ahora nombran el código QR en tu idioma. Antes se llamaba siempre «QR code», en inglés.',
+      fr: 'Les lecteurs d’écran annoncent désormais le code QR dans votre langue. Avant, il s’appelait partout « QR code », en anglais.',
+      it: 'Gli screen reader ora leggono il nome del codice QR nella tua lingua. Prima si chiamava ovunque «QR code», in inglese.',
+      nl: 'Schermlezers noemen de QR-code nu in je eigen taal. Eerst heette hij overal ‘QR code’, in het Engels.',
+      pl: 'Czytniki ekranu podają teraz nazwę kodu QR w twoim języku. Wcześniej wszędzie nazywał się „QR code”, po angielsku.',
+      pt: 'Os leitores de tela agora dizem o nome do código QR no seu idioma. Antes ele se chamava sempre «QR code», em inglês.',
+      tr: 'Ekran okuyucular QR kodun adını artık sizin dilinizde okuyor. Önceden her dilde İngilizce “QR code” deniyordu.',
+      ru: 'Программы экранного доступа теперь называют QR-код на вашем языке. Раньше он везде назывался по-английски, «QR code».',
+      hi: 'स्क्रीन रीडर अब QR कोड का नाम आपकी भाषा में पढ़ते हैं। पहले यह हर भाषा में अंग्रेज़ी में “QR code” कहलाता था।',
+      zh: '读屏软件现在会用你的语言读出二维码的名称，之前在所有语言里都是英文“QR code”。',
+      ja: 'スクリーンリーダーが QR コードの名前を表示言語で読み上げるようになりました。以前はどの言語でも英語の「QR code」でした。',
+      ko: '이제 화면 낭독기가 QR 코드의 이름을 사용하는 언어로 읽어 줍니다. 전에는 모든 언어에서 영어 ‘QR code’였습니다.'
+    },
+    {
+      date: '2026-10-31',
       de: 'Kleine graue Schrift ist jetzt dunkler und besser zu lesen, im hellen Modus und in der Zeile unten auf der Karte (auch gedruckt).',
       en: 'Small grey text is now darker and easier to read, in light mode and in the line at the bottom of the card (printed too).',
       es: 'El texto gris pequeño ahora es más oscuro y se lee mejor, en el modo claro y en la línea inferior de la tarjeta (también impresa).',
@@ -357,6 +374,23 @@ var NEWS = {
   prismatical: [
     {
       date: '2026-10-31',
+      de: 'Auf Russisch, Hindi, Chinesisch und Koreanisch stehen Warnungen, Tipps und Zeitangaben der Stärkeprüfung jetzt in deiner Sprache, vorher auf Englisch (etwa „centuries“). Auch der Titel im Browser-Tab folgt jetzt deiner Sprache.',
+      en: 'In Russian, Hindi, Chinese and Korean, the warnings, tips and time estimates of the strength check now appear in your language instead of English (such as “centuries”). The title in the browser tab now follows your language too.',
+      es: 'En ruso, hindi, chino y coreano, los avisos, consejos y tiempos estimados de la comprobación de seguridad aparecen ahora en tu idioma y no en inglés (como «centuries»). El título de la pestaña del navegador también sigue ahora tu idioma.',
+      fr: 'En russe, hindi, chinois et coréen, les avertissements, conseils et durées estimées du test de robustesse s’affichent désormais dans votre langue et non plus en anglais (comme « centuries »). Le titre dans l’onglet du navigateur suit aussi votre langue.',
+      it: 'In russo, hindi, cinese e coreano gli avvisi, i consigli e i tempi stimati del controllo di robustezza ora compaiono nella tua lingua invece che in inglese (come «centuries»). Anche il titolo nella scheda del browser ora segue la tua lingua.',
+      nl: 'In het Russisch, Hindi, Chinees en Koreaans staan de waarschuwingen, tips en tijdschattingen van de sterktecontrole nu in je eigen taal in plaats van in het Engels (zoals ‘centuries’). Ook de titel in het browsertabblad volgt nu je taal.',
+      pl: 'Po rosyjsku, w hindi, po chińsku i po koreańsku ostrzeżenia, wskazówki i szacowany czas złamania są teraz w twoim języku, a nie po angielsku (np. „centuries”). Tytuł w karcie przeglądarki też jest teraz w twoim języku.',
+      pt: 'Em russo, híndi, chinês e coreano, os avisos, dicas e tempos estimados da verificação de força agora aparecem no seu idioma, e não mais em inglês (como «centuries»). O título na aba do navegador também acompanha o seu idioma agora.',
+      tr: 'Rusça, Hintçe, Çince ve Korecede güç denetiminin uyarıları, ipuçları ve süre tahminleri artık İngilizce yerine sizin dilinizde görünüyor (örneğin “centuries”). Tarayıcı sekmesindeki başlık da artık dilinizi izliyor.',
+      ru: 'На русском, хинди, китайском и корейском предупреждения, советы и оценки времени взлома теперь выводятся на вашем языке, а не по-английски (например, «centuries»). Заголовок во вкладке браузера теперь тоже на вашем языке.',
+      hi: 'रूसी, हिंदी, चीनी और कोरियाई में मज़बूती जाँच की चेतावनियाँ, सुझाव और समय के अनुमान अब अंग्रेज़ी की जगह आपकी भाषा में दिखते हैं (जैसे “centuries”)। ब्राउज़र टैब का शीर्षक भी अब आपकी भाषा में दिखता है।',
+      zh: '在俄语、印地语、中文和韩语中，强度检测的警告、建议和破解时间估计现在都显示为你的语言，不再是英文（比如“centuries”）。浏览器标签页上的标题也会跟随你的语言。',
+      ja: 'ロシア語、ヒンディー語、中国語、韓国語では、強度チェックの警告、ヒント、解読時間の目安が英語（「centuries」など）ではなく表示言語で出るようになりました。ブラウザーのタブのタイトルも表示言語に合わせて変わります。',
+      ko: '러시아어, 힌디어, 중국어, 한국어에서 강도 검사의 경고, 팁, 해독 시간 추정이 이제 영어(예: ‘centuries’) 대신 사용하는 언어로 표시됩니다. 브라우저 탭의 제목도 이제 사용하는 언어를 따릅니다.'
+    },
+    {
+      date: '2026-10-31',
       de: 'Neben Hell und Dunkel gibt es jetzt Hoher Kontrast (dunkel und hell), Farbenblind (dunkel und hell) und Umgekehrte Farben. Deine Wahl gilt in allen meinen Werkzeugen.',
       en: 'Besides light and dark there are now high contrast (dark and light), colour-blind (dark and light) and inverted colours. Your choice applies across all my tools.',
       es: 'Además de claro y oscuro, ahora hay alto contraste (oscuro y claro), daltónico (oscuro y claro) y colores invertidos. Tu elección vale en todas mis herramientas.',
@@ -426,6 +460,23 @@ var NEWS = {
   ],
 
   spectroton: [
+    {
+      date: '2026-10-31',
+      de: 'Die Fußzeile (direktes Speichern in einen Ordner, Farbraum des Bildschirms) steht jetzt gleich beim ersten Öffnen in deiner Sprache. Vorher kam sie immer auf Deutsch.',
+      en: 'The footer line (saving straight into a folder, your screen’s colour space) now shows in your language from the very first visit. Before, it always came up in German.',
+      es: 'La línea del pie de página (guardar directamente en una carpeta, espacio de color de tu pantalla) ahora aparece en tu idioma desde la primera visita. Antes salía siempre en alemán.',
+      fr: 'La ligne du pied de page (enregistrement direct dans un dossier, espace colorimétrique de votre écran) s’affiche désormais dans votre langue dès la première visite. Avant, elle apparaissait toujours en allemand.',
+      it: 'La riga a piè di pagina (salvataggio diretto in una cartella, spazio colore del tuo schermo) ora compare nella tua lingua fin dalla prima visita. Prima usciva sempre in tedesco.',
+      nl: 'De voetregel (direct opslaan in een map, kleurruimte van je scherm) staat nu al bij het eerste bezoek in je eigen taal. Eerst kwam hij altijd in het Duits.',
+      pl: 'Linijka w stopce (zapisywanie wprost do folderu, przestrzeń barw twojego ekranu) pojawia się teraz w twoim języku już przy pierwszej wizycie. Wcześniej zawsze była po niemiecku.',
+      pt: 'A linha do rodapé (salvar direto em uma pasta, espaço de cor da sua tela) agora aparece no seu idioma já na primeira visita. Antes ela vinha sempre em alemão.',
+      tr: 'Alt bilgi satırı (doğrudan bir klasöre kaydetme, ekranınızın renk alanı) artık ilk ziyaretten itibaren sizin dilinizde görünüyor. Önceden hep Almanca çıkıyordu.',
+      ru: 'Строка внизу страницы (сохранение прямо в папку, цветовой охват вашего экрана) теперь с первого же визита показывается на вашем языке. Раньше она всегда была на немецком.',
+      hi: 'फ़ुटर की पंक्ति (सीधे किसी फ़ोल्डर में सेव करना, आपकी स्क्रीन का कलर स्पेस) अब पहली बार खोलते ही आपकी भाषा में दिखती है। पहले यह हमेशा जर्मन में आती थी।',
+      zh: '页脚那一行（直接保存到文件夹、屏幕的色彩空间）现在第一次打开就显示你的语言，之前总是德语。',
+      ja: 'フッターの1行（フォルダーへの直接保存、画面の色空間）が、初めて開いたときから表示言語で出るようになりました。以前はいつもドイツ語でした。',
+      ko: '바닥글 한 줄(폴더에 바로 저장, 화면의 색 공간)이 이제 처음 열 때부터 사용하는 언어로 표시됩니다. 전에는 늘 독일어로 나왔습니다.'
+    },
     {
       date: '2026-10-31',
       de: 'Die blasseste Schrift (Spaltenköpfe, Feldnamen, Fußzeile) ist kräftiger geworden, sie hält jetzt in allen drei Darstellungen mindestens 4,5:1.',
@@ -582,6 +633,23 @@ var NEWS = {
   ],
 
   collective: [
+    {
+      date: '2026-10-31',
+      de: 'Der Titel im Browser-Tab folgt jetzt deiner Sprache. Vorher stand er immer auf Deutsch da.',
+      en: 'The title in the browser tab now follows your language. Before, it was always in German.',
+      es: 'El título de la pestaña del navegador ahora sigue tu idioma. Antes estaba siempre en alemán.',
+      fr: 'Le titre dans l’onglet du navigateur suit désormais votre langue. Avant, il était toujours en allemand.',
+      it: 'Il titolo nella scheda del browser ora segue la tua lingua. Prima era sempre in tedesco.',
+      nl: 'De titel in het browsertabblad volgt nu je taal. Eerst stond hij altijd in het Duits.',
+      pl: 'Tytuł w karcie przeglądarki jest teraz w twoim języku. Wcześniej był zawsze po niemiecku.',
+      pt: 'O título na aba do navegador agora acompanha o seu idioma. Antes ele ficava sempre em alemão.',
+      tr: 'Tarayıcı sekmesindeki başlık artık dilinizi izliyor. Önceden hep Almancaydı.',
+      ru: 'Заголовок во вкладке браузера теперь на вашем языке. Раньше он всегда был на немецком.',
+      hi: 'ब्राउज़र टैब का शीर्षक अब आपकी भाषा में दिखता है। पहले यह हमेशा जर्मन में रहता था।',
+      zh: '浏览器标签页上的标题现在会跟随你的语言，之前一直是德语。',
+      ja: 'ブラウザーのタブに出るタイトルが表示言語に合わせて変わるようになりました。以前はいつもドイツ語でした。',
+      ko: '브라우저 탭의 제목이 이제 사용하는 언어를 따릅니다. 전에는 늘 독일어였습니다.'
+    },
     {
       date: '2026-10-31',
       de: 'Auf schmalen Handys wird der Titel deiner Abrechnung nicht mehr abgeschnitten, er wird dort etwas kleiner und passt ganz ins Feld.',
@@ -862,6 +930,23 @@ var NEWS = {
   rad: [
     {
       date: '2026-10-31',
+      de: 'Der Titel im Browser-Tab folgt jetzt deiner Sprache. Vorher stand dort eine Mischung aus Deutsch und Englisch.',
+      en: 'The title in the browser tab now follows your language. Before, it was a mix of German and English.',
+      es: 'El título de la pestaña del navegador ahora sigue tu idioma. Antes era una mezcla de alemán e inglés.',
+      fr: 'Le titre dans l’onglet du navigateur suit désormais votre langue. Avant, c’était un mélange d’allemand et d’anglais.',
+      it: 'Il titolo nella scheda del browser ora segue la tua lingua. Prima era un misto di tedesco e inglese.',
+      nl: 'De titel in het browsertabblad volgt nu je taal. Eerst was het een mengeling van Duits en Engels.',
+      pl: 'Tytuł w karcie przeglądarki jest teraz w twoim języku. Wcześniej był mieszanką niemieckiego i angielskiego.',
+      pt: 'O título na aba do navegador agora acompanha o seu idioma. Antes era uma mistura de alemão e inglês.',
+      tr: 'Tarayıcı sekmesindeki başlık artık dilinizi izliyor. Önceden Almanca ile İngilizce karışıktı.',
+      ru: 'Заголовок во вкладке браузера теперь на вашем языке. Раньше это была смесь немецкого и английского.',
+      hi: 'ब्राउज़र टैब का शीर्षक अब आपकी भाषा में दिखता है। पहले यह जर्मन और अंग्रेज़ी का मिश्रण था।',
+      zh: '浏览器标签页上的标题现在会跟随你的语言，之前是德语和英语混在一起。',
+      ja: 'ブラウザーのタブに出るタイトルが表示言語に合わせて変わるようになりました。以前はドイツ語と英語が混ざっていました。',
+      ko: '브라우저 탭의 제목이 이제 사용하는 언어를 따릅니다. 전에는 독일어와 영어가 섞여 있었습니다.'
+    },
+    {
+      date: '2026-10-31',
       de: 'Neben Hell und Dunkel gibt es jetzt Hoher Kontrast (dunkel und hell), Farbenblind (dunkel und hell) und Umgekehrte Farben. Deine Wahl gilt in allen meinen Werkzeugen.',
       en: 'Besides light and dark there are now high contrast (dark and light), colour-blind (dark and light) and inverted colours. Your choice applies across all my tools.',
       es: 'Además de claro y oscuro, ahora hay alto contraste (oscuro y claro), daltónico (oscuro y claro) y colores invertidos. Tu elección vale en todas mis herramientas.',
@@ -965,6 +1050,23 @@ var NEWS = {
   ],
 
   zaehlwerk: [
+    {
+      date: '2026-10-31',
+      de: 'Der Titel im Browser-Tab folgt jetzt deiner Sprache. Vorher stand er immer auf Deutsch da.',
+      en: 'The title in the browser tab now follows your language. Before, it was always in German.',
+      es: 'El título de la pestaña del navegador ahora sigue tu idioma. Antes estaba siempre en alemán.',
+      fr: 'Le titre dans l’onglet du navigateur suit désormais votre langue. Avant, il était toujours en allemand.',
+      it: 'Il titolo nella scheda del browser ora segue la tua lingua. Prima era sempre in tedesco.',
+      nl: 'De titel in het browsertabblad volgt nu je taal. Eerst stond hij altijd in het Duits.',
+      pl: 'Tytuł w karcie przeglądarki jest teraz w twoim języku. Wcześniej był zawsze po niemiecku.',
+      pt: 'O título na aba do navegador agora acompanha o seu idioma. Antes ele ficava sempre em alemão.',
+      tr: 'Tarayıcı sekmesindeki başlık artık dilinizi izliyor. Önceden hep Almancaydı.',
+      ru: 'Заголовок во вкладке браузера теперь на вашем языке. Раньше он всегда был на немецком.',
+      hi: 'ब्राउज़र टैब का शीर्षक अब आपकी भाषा में दिखता है। पहले यह हमेशा जर्मन में रहता था।',
+      zh: '浏览器标签页上的标题现在会跟随你的语言，之前一直是德语。',
+      ja: 'ブラウザーのタブに出るタイトルが表示言語に合わせて変わるようになりました。以前はいつもドイツ語でした。',
+      ko: '브라우저 탭의 제목이 이제 사용하는 언어를 따릅니다. 전에는 늘 독일어였습니다.'
+    },
     {
       date: '2026-10-31',
       de: 'Neben Hell und Dunkel gibt es jetzt Hoher Kontrast (dunkel und hell), Farbenblind (dunkel und hell) und Umgekehrte Farben. Deine Wahl gilt in allen meinen Werkzeugen.',
