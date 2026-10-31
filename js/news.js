@@ -61,6 +61,23 @@ var NEWS = {
 
   shrink: [
     {
+      date: '2026-10-31',
+      de: 'Neben Hell und Dunkel gibt es jetzt Hoher Kontrast (dunkel und hell), Farbenblind (dunkel und hell) und Umgekehrte Farben. Deine Wahl gilt in allen meinen Werkzeugen.',
+      en: 'Besides light and dark there are now high contrast (dark and light), colour-blind (dark and light) and inverted colours. Your choice applies across all my tools.',
+      es: 'Además de claro y oscuro, ahora hay alto contraste (oscuro y claro), daltónico (oscuro y claro) y colores invertidos. Tu elección vale en todas mis herramientas.',
+      fr: 'En plus de clair et sombre, il y a désormais contraste élevé (sombre et clair), daltonien (sombre et clair) et couleurs inversées. Votre choix s’applique à tous mes outils.',
+      it: 'Oltre a chiaro e scuro ora ci sono contrasto elevato (scuro e chiaro), daltonico (scuro e chiaro) e colori invertiti. La tua scelta vale in tutti i miei strumenti.',
+      nl: 'Naast licht en donker zijn er nu hoog contrast (donker en licht), kleurenblind (donker en licht) en omgekeerde kleuren. Je keuze geldt in al mijn tools.',
+      pl: 'Oprócz jasnego i ciemnego są teraz wysoki kontrast (ciemny i jasny), wersja dla daltonistów (ciemna i jasna) oraz odwrócone kolory. Twój wybór obowiązuje we wszystkich moich narzędziach.',
+      pt: 'Além de claro e escuro, agora há alto contraste (escuro e claro), daltônico (escuro e claro) e cores invertidas. Sua escolha vale em todas as minhas ferramentas.',
+      tr: 'Açık ve koyunun yanında artık yüksek karşıtlık (koyu ve açık), renk körü (koyu ve açık) ve ters renkler var. Seçiminiz tüm araçlarımda geçerlidir.',
+      ru: 'Помимо светлой и тёмной темы теперь есть контрастная (тёмная и светлая), для дальтоников (тёмная и светлая) и инверсия цветов. Ваш выбор действует во всех моих инструментах.',
+      hi: 'हल्की और गहरी थीम के अलावा अब उच्च कंट्रास्ट (गहरी और हल्की), रंगांधता-अनुकूल (गहरी और हल्की) और उलटे रंग भी हैं। आपकी पसंद मेरे सभी औज़ारों में लागू होती है।',
+      zh: '除了浅色和深色，现在还有高对比度（深色和浅色）、色盲友好（深色和浅色）以及反转颜色。你的选择在我所有的工具里都有效。',
+      ja: 'ライトとダークに加えて、ハイコントラスト（ダーク・ライト）、色覚サポート（ダーク・ライト）、色反転を選べるようになりました。選んだ設定は私のすべてのツールで有効です。',
+      ko: '라이트와 다크 외에 이제 고대비(다크·라이트), 색각 배려(다크·라이트), 색상 반전도 있습니다. 선택한 설정은 제 모든 도구에 적용됩니다.'
+    },
+    {
       date: '2026-10-30',
       de: 'Neuer Knopf „Installieren“ oben in der Kopfzeile: Ein Tipp darauf richtet das Werkzeug als App ein, auf dem Handy wie am PC. Er erscheint, sobald dein Browser die Installation anbietet (etwa Chrome, Edge oder Samsung Internet), und fehlt in der installierten App.',
       en: 'New “Install” button in the header: one tap sets the tool up as an app, on your phone or your computer. It appears as soon as your browser offers installation (Chrome, Edge or Samsung Internet, for example) and is gone in the installed app.',
@@ -165,6 +182,23 @@ var NEWS = {
   ],
 
   wifi: [
+    {
+      date: '2026-10-31',
+      de: 'Neben Hell und Dunkel gibt es jetzt Hoher Kontrast (dunkel und hell), Farbenblind (dunkel und hell) und Umgekehrte Farben. Deine Wahl gilt in allen meinen Werkzeugen.',
+      en: 'Besides light and dark there are now high contrast (dark and light), colour-blind (dark and light) and inverted colours. Your choice applies across all my tools.',
+      es: 'Además de claro y oscuro, ahora hay alto contraste (oscuro y claro), daltónico (oscuro y claro) y colores invertidos. Tu elección vale en todas mis herramientas.',
+      fr: 'En plus de clair et sombre, il y a désormais contraste élevé (sombre et clair), daltonien (sombre et clair) et couleurs inversées. Votre choix s’applique à tous mes outils.',
+      it: 'Oltre a chiaro e scuro ora ci sono contrasto elevato (scuro e chiaro), daltonico (scuro e chiaro) e colori invertiti. La tua scelta vale in tutti i miei strumenti.',
+      nl: 'Naast licht en donker zijn er nu hoog contrast (donker en licht), kleurenblind (donker en licht) en omgekeerde kleuren. Je keuze geldt in al mijn tools.',
+      pl: 'Oprócz jasnego i ciemnego są teraz wysoki kontrast (ciemny i jasny), wersja dla daltonistów (ciemna i jasna) oraz odwrócone kolory. Twój wybór obowiązuje we wszystkich moich narzędziach.',
+      pt: 'Além de claro e escuro, agora há alto contraste (escuro e claro), daltônico (escuro e claro) e cores invertidas. Sua escolha vale em todas as minhas ferramentas.',
+      tr: 'Açık ve koyunun yanında artık yüksek karşıtlık (koyu ve açık), renk körü (koyu ve açık) ve ters renkler var. Seçiminiz tüm araçlarımda geçerlidir.',
+      ru: 'Помимо светлой и тёмной темы теперь есть контрастная (тёмная и светлая), для дальтоников (тёмная и светлая) и инверсия цветов. Ваш выбор действует во всех моих инструментах.',
+      hi: 'हल्की और गहरी थीम के अलावा अब उच्च कंट्रास्ट (गहरी और हल्की), रंगांधता-अनुकूल (गहरी और हल्की) और उलटे रंग भी हैं। आपकी पसंद मेरे सभी औज़ारों में लागू होती है।',
+      zh: '除了浅色和深色，现在还有高对比度（深色和浅色）、色盲友好（深色和浅色）以及反转颜色。你的选择在我所有的工具里都有效。',
+      ja: 'ライトとダークに加えて、ハイコントラスト（ダーク・ライト）、色覚サポート（ダーク・ライト）、色反転を選べるようになりました。選んだ設定は私のすべてのツールで有効です。',
+      ko: '라이트와 다크 외에 이제 고대비(다크·라이트), 색각 배려(다크·라이트), 색상 반전도 있습니다. 선택한 설정은 제 모든 도구에 적용됩니다.'
+    },
     {
       date: '2026-10-30',
       de: 'Auf sehr schmalen Handys (320 px) passt die Seite jetzt in jeder Sprache in die Breite, nichts ragt mehr über den Rand.',
@@ -288,6 +322,23 @@ var NEWS = {
 
   prismatical: [
     {
+      date: '2026-10-31',
+      de: 'Neben Hell und Dunkel gibt es jetzt Hoher Kontrast (dunkel und hell), Farbenblind (dunkel und hell) und Umgekehrte Farben. Deine Wahl gilt in allen meinen Werkzeugen.',
+      en: 'Besides light and dark there are now high contrast (dark and light), colour-blind (dark and light) and inverted colours. Your choice applies across all my tools.',
+      es: 'Además de claro y oscuro, ahora hay alto contraste (oscuro y claro), daltónico (oscuro y claro) y colores invertidos. Tu elección vale en todas mis herramientas.',
+      fr: 'En plus de clair et sombre, il y a désormais contraste élevé (sombre et clair), daltonien (sombre et clair) et couleurs inversées. Votre choix s’applique à tous mes outils.',
+      it: 'Oltre a chiaro e scuro ora ci sono contrasto elevato (scuro e chiaro), daltonico (scuro e chiaro) e colori invertiti. La tua scelta vale in tutti i miei strumenti.',
+      nl: 'Naast licht en donker zijn er nu hoog contrast (donker en licht), kleurenblind (donker en licht) en omgekeerde kleuren. Je keuze geldt in al mijn tools.',
+      pl: 'Oprócz jasnego i ciemnego są teraz wysoki kontrast (ciemny i jasny), wersja dla daltonistów (ciemna i jasna) oraz odwrócone kolory. Twój wybór obowiązuje we wszystkich moich narzędziach.',
+      pt: 'Além de claro e escuro, agora há alto contraste (escuro e claro), daltônico (escuro e claro) e cores invertidas. Sua escolha vale em todas as minhas ferramentas.',
+      tr: 'Açık ve koyunun yanında artık yüksek karşıtlık (koyu ve açık), renk körü (koyu ve açık) ve ters renkler var. Seçiminiz tüm araçlarımda geçerlidir.',
+      ru: 'Помимо светлой и тёмной темы теперь есть контрастная (тёмная и светлая), для дальтоников (тёмная и светлая) и инверсия цветов. Ваш выбор действует во всех моих инструментах.',
+      hi: 'हल्की और गहरी थीम के अलावा अब उच्च कंट्रास्ट (गहरी और हल्की), रंगांधता-अनुकूल (गहरी और हल्की) और उलटे रंग भी हैं। आपकी पसंद मेरे सभी औज़ारों में लागू होती है।',
+      zh: '除了浅色和深色，现在还有高对比度（深色和浅色）、色盲友好（深色和浅色）以及反转颜色。你的选择在我所有的工具里都有效。',
+      ja: 'ライトとダークに加えて、ハイコントラスト（ダーク・ライト）、色覚サポート（ダーク・ライト）、色反転を選べるようになりました。選んだ設定は私のすべてのツールで有効です。',
+      ko: '라이트와 다크 외에 이제 고대비(다크·라이트), 색각 배려(다크·라이트), 색상 반전도 있습니다. 선택한 설정은 제 모든 도구에 적용됩니다.'
+    },
+    {
       date: '2026-10-30',
       de: 'Neuer Knopf „Installieren“ oben in der Kopfzeile: Ein Tipp darauf richtet das Werkzeug als App ein, auf dem Handy wie am PC. Er erscheint, sobald dein Browser die Installation anbietet (etwa Chrome, Edge oder Samsung Internet), und fehlt in der installierten App.',
       en: 'New “Install” button in the header: one tap sets the tool up as an app, on your phone or your computer. It appears as soon as your browser offers installation (Chrome, Edge or Samsung Internet, for example) and is gone in the installed app.',
@@ -341,6 +392,23 @@ var NEWS = {
   ],
 
   spectroton: [
+    {
+      date: '2026-10-31',
+      de: 'Neben Hell und Dunkel gibt es jetzt Hoher Kontrast (dunkel und hell), Farbenblind (dunkel und hell) und Umgekehrte Farben. Deine Wahl gilt in allen meinen Werkzeugen.',
+      en: 'Besides light and dark there are now high contrast (dark and light), colour-blind (dark and light) and inverted colours. Your choice applies across all my tools.',
+      es: 'Además de claro y oscuro, ahora hay alto contraste (oscuro y claro), daltónico (oscuro y claro) y colores invertidos. Tu elección vale en todas mis herramientas.',
+      fr: 'En plus de clair et sombre, il y a désormais contraste élevé (sombre et clair), daltonien (sombre et clair) et couleurs inversées. Votre choix s’applique à tous mes outils.',
+      it: 'Oltre a chiaro e scuro ora ci sono contrasto elevato (scuro e chiaro), daltonico (scuro e chiaro) e colori invertiti. La tua scelta vale in tutti i miei strumenti.',
+      nl: 'Naast licht en donker zijn er nu hoog contrast (donker en licht), kleurenblind (donker en licht) en omgekeerde kleuren. Je keuze geldt in al mijn tools.',
+      pl: 'Oprócz jasnego i ciemnego są teraz wysoki kontrast (ciemny i jasny), wersja dla daltonistów (ciemna i jasna) oraz odwrócone kolory. Twój wybór obowiązuje we wszystkich moich narzędziach.',
+      pt: 'Além de claro e escuro, agora há alto contraste (escuro e claro), daltônico (escuro e claro) e cores invertidas. Sua escolha vale em todas as minhas ferramentas.',
+      tr: 'Açık ve koyunun yanında artık yüksek karşıtlık (koyu ve açık), renk körü (koyu ve açık) ve ters renkler var. Seçiminiz tüm araçlarımda geçerlidir.',
+      ru: 'Помимо светлой и тёмной темы теперь есть контрастная (тёмная и светлая), для дальтоников (тёмная и светлая) и инверсия цветов. Ваш выбор действует во всех моих инструментах.',
+      hi: 'हल्की और गहरी थीम के अलावा अब उच्च कंट्रास्ट (गहरी और हल्की), रंगांधता-अनुकूल (गहरी और हल्की) और उलटे रंग भी हैं। आपकी पसंद मेरे सभी औज़ारों में लागू होती है।',
+      zh: '除了浅色和深色，现在还有高对比度（深色和浅色）、色盲友好（深色和浅色）以及反转颜色。你的选择在我所有的工具里都有效。',
+      ja: 'ライトとダークに加えて、ハイコントラスト（ダーク・ライト）、色覚サポート（ダーク・ライト）、色反転を選べるようになりました。選んだ設定は私のすべてのツールで有効です。',
+      ko: '라이트와 다크 외에 이제 고대비(다크·라이트), 색각 배려(다크·라이트), 색상 반전도 있습니다. 선택한 설정은 제 모든 도구에 적용됩니다.'
+    },
     {
       date: '2026-10-30',
       de: 'Die portugiesische Oberfläche spricht jetzt durchgehend brasilianisches Portugiesisch, mit „você“ als Anrede. Vorher mischten sich Wörter aus dem europäischen Portugiesisch darunter, etwa „Partilhar“ und „ecrã“.',
@@ -463,6 +531,23 @@ var NEWS = {
   ],
 
   collective: [
+    {
+      date: '2026-10-31',
+      de: 'Neben Hell und Dunkel gibt es jetzt Hoher Kontrast (dunkel und hell), Farbenblind (dunkel und hell) und Umgekehrte Farben. Deine Wahl gilt in allen meinen Werkzeugen.',
+      en: 'Besides light and dark there are now high contrast (dark and light), colour-blind (dark and light) and inverted colours. Your choice applies across all my tools.',
+      es: 'Además de claro y oscuro, ahora hay alto contraste (oscuro y claro), daltónico (oscuro y claro) y colores invertidos. Tu elección vale en todas mis herramientas.',
+      fr: 'En plus de clair et sombre, il y a désormais contraste élevé (sombre et clair), daltonien (sombre et clair) et couleurs inversées. Votre choix s’applique à tous mes outils.',
+      it: 'Oltre a chiaro e scuro ora ci sono contrasto elevato (scuro e chiaro), daltonico (scuro e chiaro) e colori invertiti. La tua scelta vale in tutti i miei strumenti.',
+      nl: 'Naast licht en donker zijn er nu hoog contrast (donker en licht), kleurenblind (donker en licht) en omgekeerde kleuren. Je keuze geldt in al mijn tools.',
+      pl: 'Oprócz jasnego i ciemnego są teraz wysoki kontrast (ciemny i jasny), wersja dla daltonistów (ciemna i jasna) oraz odwrócone kolory. Twój wybór obowiązuje we wszystkich moich narzędziach.',
+      pt: 'Além de claro e escuro, agora há alto contraste (escuro e claro), daltônico (escuro e claro) e cores invertidas. Sua escolha vale em todas as minhas ferramentas.',
+      tr: 'Açık ve koyunun yanında artık yüksek karşıtlık (koyu ve açık), renk körü (koyu ve açık) ve ters renkler var. Seçiminiz tüm araçlarımda geçerlidir.',
+      ru: 'Помимо светлой и тёмной темы теперь есть контрастная (тёмная и светлая), для дальтоников (тёмная и светлая) и инверсия цветов. Ваш выбор действует во всех моих инструментах.',
+      hi: 'हल्की और गहरी थीम के अलावा अब उच्च कंट्रास्ट (गहरी और हल्की), रंगांधता-अनुकूल (गहरी और हल्की) और उलटे रंग भी हैं। आपकी पसंद मेरे सभी औज़ारों में लागू होती है।',
+      zh: '除了浅色和深色，现在还有高对比度（深色和浅色）、色盲友好（深色和浅色）以及反转颜色。你的选择在我所有的工具里都有效。',
+      ja: 'ライトとダークに加えて、ハイコントラスト（ダーク・ライト）、色覚サポート（ダーク・ライト）、色反転を選べるようになりました。選んだ設定は私のすべてのツールで有効です。',
+      ko: '라이트와 다크 외에 이제 고대비(다크·라이트), 색각 배려(다크·라이트), 색상 반전도 있습니다. 선택한 설정은 제 모든 도구에 적용됩니다.'
+    },
     {
       date: '2026-10-30',
       de: 'Längere Beschriftungen wie „Zuletzt benutzt“ ragen nicht mehr in die Knöpfe daneben, sie brechen jetzt in zwei Zeilen um. Betroffen waren elf der vierzehn Sprachen. Auf Niederländisch passt außerdem die Ergebnis-Tabelle jetzt aufs Handy.',
@@ -603,6 +688,23 @@ var NEWS = {
 
   bigday: [
     {
+      date: '2026-10-31',
+      de: 'Neu ist ein Feld für die Darstellung: Hoher Kontrast (dunkel und hell), Farbenblind und Umgekehrte Farben. Das eigene Design bleibt, und deine Wahl gilt in allen meinen Werkzeugen.',
+      en: 'New: a display setting with high contrast (dark and light), colour-blind and inverted colours. The tool’s own design stays, and your choice applies across all my tools.',
+      es: 'Nuevo: un ajuste de visualización con alto contraste (oscuro y claro), daltónico y colores invertidos. El diseño propio se mantiene y tu elección vale en todas mis herramientas.',
+      fr: 'Nouveau : un réglage d’affichage avec contraste élevé (sombre et clair), daltonien et couleurs inversées. Le design propre reste, et votre choix s’applique à tous mes outils.',
+      it: 'Novità: un’impostazione di visualizzazione con contrasto elevato (scuro e chiaro), daltonico e colori invertiti. Il design proprio resta e la tua scelta vale in tutti i miei strumenti.',
+      nl: 'Nieuw: een instelling voor de weergave met hoog contrast (donker en licht), kleurenblind en omgekeerde kleuren. Het eigen ontwerp blijft, en je keuze geldt in al mijn tools.',
+      pl: 'Nowość: ustawienie wyglądu z wysokim kontrastem (ciemnym i jasnym), wersją dla daltonistów i odwróconymi kolorami. Własny wygląd narzędzia zostaje, a Twój wybór obowiązuje we wszystkich moich narzędziach.',
+      pt: 'Novidade: uma configuração de aparência com alto contraste (escuro e claro), daltônico e cores invertidas. O design próprio continua, e sua escolha vale em todas as minhas ferramentas.',
+      tr: 'Yeni: yüksek karşıtlık (koyu ve açık), renk körü ve ters renkler sunan bir görünüm ayarı. Aracın kendi tasarımı kalır ve seçiminiz tüm araçlarımda geçerlidir.',
+      ru: 'Новое: настройка оформления с контрастной темой (тёмной и светлой), режимом для дальтоников и инверсией цветов. Собственный дизайн остаётся, а ваш выбор действует во всех моих инструментах.',
+      hi: 'नया: थीम की एक सेटिंग, जिसमें उच्च कंट्रास्ट (गहरी और हल्की), रंगांधता-अनुकूल और उलटे रंग हैं। टूल का अपना डिज़ाइन बना रहता है, और आपकी पसंद मेरे सभी औज़ारों में लागू होती है।',
+      zh: '新增外观设置：高对比度（深色和浅色）、色盲友好和反转颜色。工具自己的设计保持不变，你的选择在我所有的工具里都有效。',
+      ja: '外観の設定を追加しました。ハイコントラスト（ダーク・ライト）、色覚サポート、色反転から選べます。ツール独自のデザインはそのままで、選んだ設定は私のすべてのツールで有効です。',
+      ko: '새 외관 설정: 고대비(다크·라이트), 색각 배려, 색상 반전을 고를 수 있습니다. 도구 고유의 디자인은 그대로이고, 선택한 설정은 제 모든 도구에 적용됩니다.'
+    },
+    {
       date: '2026-10-30',
       de: 'Neuer Knopf „Installieren“ oben in der Kopfzeile: Ein Tipp darauf richtet das Werkzeug als App ein, auf dem Handy wie am PC. Er erscheint, sobald dein Browser die Installation anbietet (etwa Chrome, Edge oder Samsung Internet), und fehlt in der installierten App.',
       en: 'New “Install” button in the header: one tap sets the tool up as an app, on your phone or your computer. It appears as soon as your browser offers installation (Chrome, Edge or Samsung Internet, for example) and is gone in the installed app.',
@@ -691,6 +793,23 @@ var NEWS = {
 
   rad: [
     {
+      date: '2026-10-31',
+      de: 'Neben Hell und Dunkel gibt es jetzt Hoher Kontrast (dunkel und hell), Farbenblind (dunkel und hell) und Umgekehrte Farben. Deine Wahl gilt in allen meinen Werkzeugen.',
+      en: 'Besides light and dark there are now high contrast (dark and light), colour-blind (dark and light) and inverted colours. Your choice applies across all my tools.',
+      es: 'Además de claro y oscuro, ahora hay alto contraste (oscuro y claro), daltónico (oscuro y claro) y colores invertidos. Tu elección vale en todas mis herramientas.',
+      fr: 'En plus de clair et sombre, il y a désormais contraste élevé (sombre et clair), daltonien (sombre et clair) et couleurs inversées. Votre choix s’applique à tous mes outils.',
+      it: 'Oltre a chiaro e scuro ora ci sono contrasto elevato (scuro e chiaro), daltonico (scuro e chiaro) e colori invertiti. La tua scelta vale in tutti i miei strumenti.',
+      nl: 'Naast licht en donker zijn er nu hoog contrast (donker en licht), kleurenblind (donker en licht) en omgekeerde kleuren. Je keuze geldt in al mijn tools.',
+      pl: 'Oprócz jasnego i ciemnego są teraz wysoki kontrast (ciemny i jasny), wersja dla daltonistów (ciemna i jasna) oraz odwrócone kolory. Twój wybór obowiązuje we wszystkich moich narzędziach.',
+      pt: 'Além de claro e escuro, agora há alto contraste (escuro e claro), daltônico (escuro e claro) e cores invertidas. Sua escolha vale em todas as minhas ferramentas.',
+      tr: 'Açık ve koyunun yanında artık yüksek karşıtlık (koyu ve açık), renk körü (koyu ve açık) ve ters renkler var. Seçiminiz tüm araçlarımda geçerlidir.',
+      ru: 'Помимо светлой и тёмной темы теперь есть контрастная (тёмная и светлая), для дальтоников (тёмная и светлая) и инверсия цветов. Ваш выбор действует во всех моих инструментах.',
+      hi: 'हल्की और गहरी थीम के अलावा अब उच्च कंट्रास्ट (गहरी और हल्की), रंगांधता-अनुकूल (गहरी और हल्की) और उलटे रंग भी हैं। आपकी पसंद मेरे सभी औज़ारों में लागू होती है।',
+      zh: '除了浅色和深色，现在还有高对比度（深色和浅色）、色盲友好（深色和浅色）以及反转颜色。你的选择在我所有的工具里都有效。',
+      ja: 'ライトとダークに加えて、ハイコントラスト（ダーク・ライト）、色覚サポート（ダーク・ライト）、色反転を選べるようになりました。選んだ設定は私のすべてのツールで有効です。',
+      ko: '라이트와 다크 외에 이제 고대비(다크·라이트), 색각 배려(다크·라이트), 색상 반전도 있습니다. 선택한 설정은 제 모든 도구에 적용됩니다.'
+    },
+    {
       date: '2026-10-30',
       de: 'Auf sehr schmalen Handys (320 px) passt die Seite jetzt in jeder Sprache in die Breite, nichts ragt mehr über den Rand.',
       en: 'On very narrow phones (320 px) the page now fits the width in every language, and nothing sticks out over the edge any more.',
@@ -778,6 +897,23 @@ var NEWS = {
   ],
 
   zaehlwerk: [
+    {
+      date: '2026-10-31',
+      de: 'Neben Hell und Dunkel gibt es jetzt Hoher Kontrast (dunkel und hell), Farbenblind (dunkel und hell) und Umgekehrte Farben. Deine Wahl gilt in allen meinen Werkzeugen.',
+      en: 'Besides light and dark there are now high contrast (dark and light), colour-blind (dark and light) and inverted colours. Your choice applies across all my tools.',
+      es: 'Además de claro y oscuro, ahora hay alto contraste (oscuro y claro), daltónico (oscuro y claro) y colores invertidos. Tu elección vale en todas mis herramientas.',
+      fr: 'En plus de clair et sombre, il y a désormais contraste élevé (sombre et clair), daltonien (sombre et clair) et couleurs inversées. Votre choix s’applique à tous mes outils.',
+      it: 'Oltre a chiaro e scuro ora ci sono contrasto elevato (scuro e chiaro), daltonico (scuro e chiaro) e colori invertiti. La tua scelta vale in tutti i miei strumenti.',
+      nl: 'Naast licht en donker zijn er nu hoog contrast (donker en licht), kleurenblind (donker en licht) en omgekeerde kleuren. Je keuze geldt in al mijn tools.',
+      pl: 'Oprócz jasnego i ciemnego są teraz wysoki kontrast (ciemny i jasny), wersja dla daltonistów (ciemna i jasna) oraz odwrócone kolory. Twój wybór obowiązuje we wszystkich moich narzędziach.',
+      pt: 'Além de claro e escuro, agora há alto contraste (escuro e claro), daltônico (escuro e claro) e cores invertidas. Sua escolha vale em todas as minhas ferramentas.',
+      tr: 'Açık ve koyunun yanında artık yüksek karşıtlık (koyu ve açık), renk körü (koyu ve açık) ve ters renkler var. Seçiminiz tüm araçlarımda geçerlidir.',
+      ru: 'Помимо светлой и тёмной темы теперь есть контрастная (тёмная и светлая), для дальтоников (тёмная и светлая) и инверсия цветов. Ваш выбор действует во всех моих инструментах.',
+      hi: 'हल्की और गहरी थीम के अलावा अब उच्च कंट्रास्ट (गहरी और हल्की), रंगांधता-अनुकूल (गहरी और हल्की) और उलटे रंग भी हैं। आपकी पसंद मेरे सभी औज़ारों में लागू होती है।',
+      zh: '除了浅色和深色，现在还有高对比度（深色和浅色）、色盲友好（深色和浅色）以及反转颜色。你的选择在我所有的工具里都有效。',
+      ja: 'ライトとダークに加えて、ハイコントラスト（ダーク・ライト）、色覚サポート（ダーク・ライト）、色反転を選べるようになりました。選んだ設定は私のすべてのツールで有効です。',
+      ko: '라이트와 다크 외에 이제 고대비(다크·라이트), 색각 배려(다크·라이트), 색상 반전도 있습니다. 선택한 설정은 제 모든 도구에 적용됩니다.'
+    },
     {
       date: '2026-10-30',
       de: 'Die portugiesische Oberfläche spricht jetzt durchgehend brasilianisches Portugiesisch, mit „você“ als Anrede. Vorher mischten sich Wörter aus dem europäischen Portugiesisch darunter, etwa „ficheiros“ und „registos“.',
@@ -888,6 +1024,23 @@ var NEWS = {
   ],
 
   fontart: [
+    {
+      date: '2026-10-31',
+      de: 'Neu ist ein Feld für die Darstellung: Hoher Kontrast (dunkel und hell), Farbenblind und Umgekehrte Farben. Das eigene Design bleibt, und deine Wahl gilt in allen meinen Werkzeugen. In der Browser-Fassung findest du es im Design-Fenster.',
+      en: 'New: a display setting with high contrast (dark and light), colour-blind and inverted colours. The tool’s own design stays, and your choice applies across all my tools. In the browser version you’ll find it in the design window.',
+      es: 'Nuevo: un ajuste de visualización con alto contraste (oscuro y claro), daltónico y colores invertidos. El diseño propio se mantiene y tu elección vale en todas mis herramientas. En la versión para navegador está en la ventana de diseño.',
+      fr: 'Nouveau : un réglage d’affichage avec contraste élevé (sombre et clair), daltonien et couleurs inversées. Le design propre reste, et votre choix s’applique à tous mes outils. Dans la version navigateur, il se trouve dans la fenêtre Design.',
+      it: 'Novità: un’impostazione di visualizzazione con contrasto elevato (scuro e chiaro), daltonico e colori invertiti. Il design proprio resta e la tua scelta vale in tutti i miei strumenti. Nella versione per browser lo trovi nella finestra Design.',
+      nl: 'Nieuw: een instelling voor de weergave met hoog contrast (donker en licht), kleurenblind en omgekeerde kleuren. Het eigen ontwerp blijft, en je keuze geldt in al mijn tools. In de browserversie vind je het in het designvenster.',
+      pl: 'Nowość: ustawienie wyglądu z wysokim kontrastem (ciemnym i jasnym), wersją dla daltonistów i odwróconymi kolorami. Własny wygląd narzędzia zostaje, a Twój wybór obowiązuje we wszystkich moich narzędziach. W wersji przeglądarkowej znajdziesz je w oknie Design.',
+      pt: 'Novidade: uma configuração de aparência com alto contraste (escuro e claro), daltônico e cores invertidas. O design próprio continua, e sua escolha vale em todas as minhas ferramentas. Na versão para navegador, ele fica na janela de design.',
+      tr: 'Yeni: yüksek karşıtlık (koyu ve açık), renk körü ve ters renkler sunan bir görünüm ayarı. Aracın kendi tasarımı kalır ve seçiminiz tüm araçlarımda geçerlidir. Tarayıcı sürümünde tasarım penceresinde bulursunuz.',
+      ru: 'Новое: настройка оформления с контрастной темой (тёмной и светлой), режимом для дальтоников и инверсией цветов. Собственный дизайн остаётся, а ваш выбор действует во всех моих инструментах. В браузерной версии она находится в окне дизайна.',
+      hi: 'नया: थीम की एक सेटिंग, जिसमें उच्च कंट्रास्ट (गहरी और हल्की), रंगांधता-अनुकूल और उलटे रंग हैं। टूल का अपना डिज़ाइन बना रहता है, और आपकी पसंद मेरे सभी औज़ारों में लागू होती है। ब्राउज़र वाले संस्करण में यह डिज़ाइन विंडो में मिलती है।',
+      zh: '新增外观设置：高对比度（深色和浅色）、色盲友好和反转颜色。工具自己的设计保持不变，你的选择在我所有的工具里都有效。在浏览器版本中，它位于设计窗口里。',
+      ja: '外観の設定を追加しました。ハイコントラスト（ダーク・ライト）、色覚サポート、色反転から選べます。ツール独自のデザインはそのままで、選んだ設定は私のすべてのツールで有効です。ブラウザー版ではデザインウィンドウにあります。',
+      ko: '새 외관 설정: 고대비(다크·라이트), 색각 배려, 색상 반전을 고를 수 있습니다. 도구 고유의 디자인은 그대로이고, 선택한 설정은 제 모든 도구에 적용됩니다. 브라우저 버전에서는 디자인 창에 있습니다.'
+    },
     {
       date: '2026-10-30',
       de: 'Neuer Knopf „Installieren“ oben in der Kopfzeile: Ein Tipp darauf richtet das Werkzeug als App ein, auf dem Handy wie am PC. Er erscheint, sobald dein Browser die Installation anbietet (etwa Chrome, Edge oder Samsung Internet), und fehlt in der installierten App.',
@@ -1074,6 +1227,23 @@ var NEWS = {
   ],
   heizwarte: [
     {
+      date: '2026-10-31',
+      de: 'Neben Hell und Dunkel gibt es jetzt Hoher Kontrast (dunkel und hell), Farbenblind (dunkel und hell) und Umgekehrte Farben. Deine Wahl gilt in allen meinen Werkzeugen.',
+      en: 'Besides light and dark there are now high contrast (dark and light), colour-blind (dark and light) and inverted colours. Your choice applies across all my tools.',
+      es: 'Además de claro y oscuro, ahora hay alto contraste (oscuro y claro), daltónico (oscuro y claro) y colores invertidos. Tu elección vale en todas mis herramientas.',
+      fr: 'En plus de clair et sombre, il y a désormais contraste élevé (sombre et clair), daltonien (sombre et clair) et couleurs inversées. Votre choix s’applique à tous mes outils.',
+      it: 'Oltre a chiaro e scuro ora ci sono contrasto elevato (scuro e chiaro), daltonico (scuro e chiaro) e colori invertiti. La tua scelta vale in tutti i miei strumenti.',
+      nl: 'Naast licht en donker zijn er nu hoog contrast (donker en licht), kleurenblind (donker en licht) en omgekeerde kleuren. Je keuze geldt in al mijn tools.',
+      pl: 'Oprócz jasnego i ciemnego są teraz wysoki kontrast (ciemny i jasny), wersja dla daltonistów (ciemna i jasna) oraz odwrócone kolory. Twój wybór obowiązuje we wszystkich moich narzędziach.',
+      pt: 'Além de claro e escuro, agora há alto contraste (escuro e claro), daltônico (escuro e claro) e cores invertidas. Sua escolha vale em todas as minhas ferramentas.',
+      tr: 'Açık ve koyunun yanında artık yüksek karşıtlık (koyu ve açık), renk körü (koyu ve açık) ve ters renkler var. Seçiminiz tüm araçlarımda geçerlidir.',
+      ru: 'Помимо светлой и тёмной темы теперь есть контрастная (тёмная и светлая), для дальтоников (тёмная и светлая) и инверсия цветов. Ваш выбор действует во всех моих инструментах.',
+      hi: 'हल्की और गहरी थीम के अलावा अब उच्च कंट्रास्ट (गहरी और हल्की), रंगांधता-अनुकूल (गहरी और हल्की) और उलटे रंग भी हैं। आपकी पसंद मेरे सभी औज़ारों में लागू होती है।',
+      zh: '除了浅色和深色，现在还有高对比度（深色和浅色）、色盲友好（深色和浅色）以及反转颜色。你的选择在我所有的工具里都有效。',
+      ja: 'ライトとダークに加えて、ハイコントラスト（ダーク・ライト）、色覚サポート（ダーク・ライト）、色反転を選べるようになりました。選んだ設定は私のすべてのツールで有効です。',
+      ko: '라이트와 다크 외에 이제 고대비(다크·라이트), 색각 배려(다크·라이트), 색상 반전도 있습니다. 선택한 설정은 제 모든 도구에 적용됩니다.'
+    },
+    {
       date: '2026-10-30',
       de: 'Neuer Knopf „Installieren“ oben in der Kopfzeile: Ein Tipp darauf richtet das Werkzeug als App ein, auf dem Handy wie am PC. Er erscheint, sobald dein Browser die Installation anbietet (etwa Chrome, Edge oder Samsung Internet), und fehlt in der installierten App.',
       en: 'New “Installieren” button in the header: one tap sets the tool up as an app, on your phone or your computer. It appears as soon as your browser offers installation (Chrome, Edge or Samsung Internet, for example) and is gone in the installed app.',
@@ -1149,6 +1319,23 @@ var NEWS = {
     }
   ],
   craftionary: [
+    {
+      date: '2026-10-31',
+      de: 'Neben Hell und Dunkel gibt es jetzt Hoher Kontrast (dunkel und hell), Farbenblind (dunkel und hell) und Umgekehrte Farben. Deine Wahl gilt in allen meinen Werkzeugen. In den Einstellungen wählst du sie aus einer Liste, der Knopf oben wechselt hell und dunkel im gewählten Modus.',
+      en: 'Besides light and dark there are now high contrast (dark and light), colour-blind (dark and light) and inverted colours. Your choice applies across all my tools. You pick them from a list in the settings; the button at the top switches between light and dark within the chosen mode.',
+      es: 'Además de claro y oscuro, ahora hay alto contraste (oscuro y claro), daltónico (oscuro y claro) y colores invertidos. Tu elección vale en todas mis herramientas. Se eligen en una lista de los ajustes; el botón de arriba cambia entre claro y oscuro dentro del modo elegido.',
+      fr: 'En plus de clair et sombre, il y a désormais contraste élevé (sombre et clair), daltonien (sombre et clair) et couleurs inversées. Votre choix s’applique à tous mes outils. On les choisit dans une liste des paramètres ; le bouton du haut alterne clair et sombre dans le mode choisi.',
+      it: 'Oltre a chiaro e scuro ora ci sono contrasto elevato (scuro e chiaro), daltonico (scuro e chiaro) e colori invertiti. La tua scelta vale in tutti i miei strumenti. Si scelgono da un elenco nelle impostazioni; il pulsante in alto passa tra chiaro e scuro nella modalità scelta.',
+      nl: 'Naast licht en donker zijn er nu hoog contrast (donker en licht), kleurenblind (donker en licht) en omgekeerde kleuren. Je keuze geldt in al mijn tools. Je kiest ze uit een lijst in de instellingen; de knop bovenaan wisselt tussen licht en donker binnen de gekozen modus.',
+      pl: 'Oprócz jasnego i ciemnego są teraz wysoki kontrast (ciemny i jasny), wersja dla daltonistów (ciemna i jasna) oraz odwrócone kolory. Twój wybór obowiązuje we wszystkich moich narzędziach. Wybierasz je z listy w ustawieniach, a przycisk na górze przełącza jasny i ciemny w wybranym trybie.',
+      pt: 'Além de claro e escuro, agora há alto contraste (escuro e claro), daltônico (escuro e claro) e cores invertidas. Sua escolha vale em todas as minhas ferramentas. Você escolhe numa lista nas configurações; o botão no topo alterna entre claro e escuro dentro do modo escolhido.',
+      tr: 'Açık ve koyunun yanında artık yüksek karşıtlık (koyu ve açık), renk körü (koyu ve açık) ve ters renkler var. Seçiminiz tüm araçlarımda geçerlidir. Ayarlardaki bir listeden seçersiniz; üstteki düğme seçilen modda açık ile koyu arasında geçiş yapar.',
+      ru: 'Помимо светлой и тёмной темы теперь есть контрастная (тёмная и светлая), для дальтоников (тёмная и светлая) и инверсия цветов. Ваш выбор действует во всех моих инструментах. Их можно выбрать из списка в настройках, а кнопка вверху переключает светлую и тёмную тему внутри выбранного режима.',
+      hi: 'हल्की और गहरी थीम के अलावा अब उच्च कंट्रास्ट (गहरी और हल्की), रंगांधता-अनुकूल (गहरी और हल्की) और उलटे रंग भी हैं। आपकी पसंद मेरे सभी औज़ारों में लागू होती है। इन्हें सेटिंग्स की सूची से चुना जाता है, और ऊपर वाला बटन चुने गए मोड में हल्की और गहरी थीम के बीच बदलता है।',
+      zh: '除了浅色和深色，现在还有高对比度（深色和浅色）、色盲友好（深色和浅色）以及反转颜色。你的选择在我所有的工具里都有效。在设置里的列表中选择，顶部的按钮会在所选模式内切换浅色和深色。',
+      ja: 'ライトとダークに加えて、ハイコントラスト（ダーク・ライト）、色覚サポート（ダーク・ライト）、色反転を選べるようになりました。選んだ設定は私のすべてのツールで有効です。設定のリストから選べます。上部のボタンは、選んだモードのままライトとダークを切り替えます。',
+      ko: '라이트와 다크 외에 이제 고대비(다크·라이트), 색각 배려(다크·라이트), 색상 반전도 있습니다. 선택한 설정은 제 모든 도구에 적용됩니다. 설정의 목록에서 고르며, 위쪽 버튼은 고른 모드 안에서 라이트와 다크를 바꿉니다.'
+    },
     {
       date: '2026-10-30',
       de: 'Neuer Knopf „Installieren“ in der Kopfzeile: Wo der Browser es anbietet (etwa Chrome, Edge oder Samsung Internet), richtet ein Tipp Craftionary als App ein, am Handy wie am PC. Auf dem iPhone geht es weiter in Safari über Teilen und „Zum Home-Bildschirm“.',
@@ -1237,6 +1424,23 @@ var NEWS = {
   ],
   vault: [
     {
+      date: '2026-10-31',
+      de: 'Neben Hell und Dunkel gibt es jetzt Hoher Kontrast (dunkel und hell), Farbenblind (dunkel und hell) und Umgekehrte Farben. Deine Wahl gilt in allen meinen Werkzeugen.',
+      en: 'Besides light and dark there are now high contrast (dark and light), colour-blind (dark and light) and inverted colours. Your choice applies across all my tools.',
+      es: 'Además de claro y oscuro, ahora hay alto contraste (oscuro y claro), daltónico (oscuro y claro) y colores invertidos. Tu elección vale en todas mis herramientas.',
+      fr: 'En plus de clair et sombre, il y a désormais contraste élevé (sombre et clair), daltonien (sombre et clair) et couleurs inversées. Votre choix s’applique à tous mes outils.',
+      it: 'Oltre a chiaro e scuro ora ci sono contrasto elevato (scuro e chiaro), daltonico (scuro e chiaro) e colori invertiti. La tua scelta vale in tutti i miei strumenti.',
+      nl: 'Naast licht en donker zijn er nu hoog contrast (donker en licht), kleurenblind (donker en licht) en omgekeerde kleuren. Je keuze geldt in al mijn tools.',
+      pl: 'Oprócz jasnego i ciemnego są teraz wysoki kontrast (ciemny i jasny), wersja dla daltonistów (ciemna i jasna) oraz odwrócone kolory. Twój wybór obowiązuje we wszystkich moich narzędziach.',
+      pt: 'Além de claro e escuro, agora há alto contraste (escuro e claro), daltônico (escuro e claro) e cores invertidas. Sua escolha vale em todas as minhas ferramentas.',
+      tr: 'Açık ve koyunun yanında artık yüksek karşıtlık (koyu ve açık), renk körü (koyu ve açık) ve ters renkler var. Seçiminiz tüm araçlarımda geçerlidir.',
+      ru: 'Помимо светлой и тёмной темы теперь есть контрастная (тёмная и светлая), для дальтоников (тёмная и светлая) и инверсия цветов. Ваш выбор действует во всех моих инструментах.',
+      hi: 'हल्की और गहरी थीम के अलावा अब उच्च कंट्रास्ट (गहरी और हल्की), रंगांधता-अनुकूल (गहरी और हल्की) और उलटे रंग भी हैं। आपकी पसंद मेरे सभी औज़ारों में लागू होती है।',
+      zh: '除了浅色和深色，现在还有高对比度（深色和浅色）、色盲友好（深色和浅色）以及反转颜色。你的选择在我所有的工具里都有效。',
+      ja: 'ライトとダークに加えて、ハイコントラスト（ダーク・ライト）、色覚サポート（ダーク・ライト）、色反転を選べるようになりました。選んだ設定は私のすべてのツールで有効です。',
+      ko: '라이트와 다크 외에 이제 고대비(다크·라이트), 색각 배려(다크·라이트), 색상 반전도 있습니다. 선택한 설정은 제 모든 도구에 적용됩니다.'
+    },
+    {
       date: '2026-10-30',
       de: 'Die Schriften kommen jetzt aus der App selbst statt von Google Fonts: Beim Öffnen geht keine Anfrage mehr an Google, und offline sieht alles genauso aus.',
       en: 'The fonts now come from the app itself instead of Google Fonts: opening it no longer sends a request to Google, and offline everything looks exactly the same.',
@@ -1307,6 +1511,23 @@ var NEWS = {
   ],
   ruestkammer: [
     {
+      date: '2026-10-31',
+      de: 'Neu ist ein Feld für die Darstellung: Hoher Kontrast (dunkel und hell), Farbenblind und Umgekehrte Farben. Das eigene Design bleibt, und deine Wahl gilt in allen meinen Werkzeugen. Du findest es unter Intel.',
+      en: 'New: a display setting with high contrast (dark and light), colour-blind and inverted colours. The tool’s own design stays, and your choice applies across all my tools. You’ll find it under Intel.',
+      es: 'Nuevo: un ajuste de visualización con alto contraste (oscuro y claro), daltónico y colores invertidos. El diseño propio se mantiene y tu elección vale en todas mis herramientas. Está en Intel.',
+      fr: 'Nouveau : un réglage d’affichage avec contraste élevé (sombre et clair), daltonien et couleurs inversées. Le design propre reste, et votre choix s’applique à tous mes outils. Il se trouve sous Intel.',
+      it: 'Novità: un’impostazione di visualizzazione con contrasto elevato (scuro e chiaro), daltonico e colori invertiti. Il design proprio resta e la tua scelta vale in tutti i miei strumenti. Lo trovi sotto Intel.',
+      nl: 'Nieuw: een instelling voor de weergave met hoog contrast (donker en licht), kleurenblind en omgekeerde kleuren. Het eigen ontwerp blijft, en je keuze geldt in al mijn tools. Je vindt het onder Intel.',
+      pl: 'Nowość: ustawienie wyglądu z wysokim kontrastem (ciemnym i jasnym), wersją dla daltonistów i odwróconymi kolorami. Własny wygląd narzędzia zostaje, a Twój wybór obowiązuje we wszystkich moich narzędziach. Znajdziesz je w zakładce Intel.',
+      pt: 'Novidade: uma configuração de aparência com alto contraste (escuro e claro), daltônico e cores invertidas. O design próprio continua, e sua escolha vale em todas as minhas ferramentas. Ele fica em Intel.',
+      tr: 'Yeni: yüksek karşıtlık (koyu ve açık), renk körü ve ters renkler sunan bir görünüm ayarı. Aracın kendi tasarımı kalır ve seçiminiz tüm araçlarımda geçerlidir. Intel bölümünde bulursunuz.',
+      ru: 'Новое: настройка оформления с контрастной темой (тёмной и светлой), режимом для дальтоников и инверсией цветов. Собственный дизайн остаётся, а ваш выбор действует во всех моих инструментах. Она находится в разделе Intel.',
+      hi: 'नया: थीम की एक सेटिंग, जिसमें उच्च कंट्रास्ट (गहरी और हल्की), रंगांधता-अनुकूल और उलटे रंग हैं। टूल का अपना डिज़ाइन बना रहता है, और आपकी पसंद मेरे सभी औज़ारों में लागू होती है। यह Intel में मिलती है।',
+      zh: '新增外观设置：高对比度（深色和浅色）、色盲友好和反转颜色。工具自己的设计保持不变，你的选择在我所有的工具里都有效。它在 Intel 里。',
+      ja: '外観の設定を追加しました。ハイコントラスト（ダーク・ライト）、色覚サポート、色反転から選べます。ツール独自のデザインはそのままで、選んだ設定は私のすべてのツールで有効です。Intel にあります。',
+      ko: '새 외관 설정: 고대비(다크·라이트), 색각 배려, 색상 반전을 고를 수 있습니다. 도구 고유의 디자인은 그대로이고, 선택한 설정은 제 모든 도구에 적용됩니다. Intel에 있습니다.'
+    },
+    {
       date: '2026-10-30',
       de: 'Die Schriften kommen jetzt aus der App selbst statt von Google Fonts: Beim Öffnen geht keine Anfrage mehr an Google, und offline sieht alles genauso aus.',
       en: 'The fonts now come from the app itself instead of Google Fonts: opening it no longer sends a request to Google, and offline everything looks exactly the same.',
@@ -1342,6 +1563,23 @@ var NEWS = {
     }
   ],
   pocketsum: [
+    {
+      date: '2026-10-31',
+      de: 'Neben Hell und Dunkel gibt es jetzt Hoher Kontrast (dunkel und hell), Farbenblind (dunkel und hell) und Umgekehrte Farben. Deine Wahl gilt in allen meinen Werkzeugen.',
+      en: 'Besides light and dark there are now high contrast (dark and light), colour-blind (dark and light) and inverted colours. Your choice applies across all my tools.',
+      es: 'Además de claro y oscuro, ahora hay alto contraste (oscuro y claro), daltónico (oscuro y claro) y colores invertidos. Tu elección vale en todas mis herramientas.',
+      fr: 'En plus de clair et sombre, il y a désormais contraste élevé (sombre et clair), daltonien (sombre et clair) et couleurs inversées. Votre choix s’applique à tous mes outils.',
+      it: 'Oltre a chiaro e scuro ora ci sono contrasto elevato (scuro e chiaro), daltonico (scuro e chiaro) e colori invertiti. La tua scelta vale in tutti i miei strumenti.',
+      nl: 'Naast licht en donker zijn er nu hoog contrast (donker en licht), kleurenblind (donker en licht) en omgekeerde kleuren. Je keuze geldt in al mijn tools.',
+      pl: 'Oprócz jasnego i ciemnego są teraz wysoki kontrast (ciemny i jasny), wersja dla daltonistów (ciemna i jasna) oraz odwrócone kolory. Twój wybór obowiązuje we wszystkich moich narzędziach.',
+      pt: 'Além de claro e escuro, agora há alto contraste (escuro e claro), daltônico (escuro e claro) e cores invertidas. Sua escolha vale em todas as minhas ferramentas.',
+      tr: 'Açık ve koyunun yanında artık yüksek karşıtlık (koyu ve açık), renk körü (koyu ve açık) ve ters renkler var. Seçiminiz tüm araçlarımda geçerlidir.',
+      ru: 'Помимо светлой и тёмной темы теперь есть контрастная (тёмная и светлая), для дальтоников (тёмная и светлая) и инверсия цветов. Ваш выбор действует во всех моих инструментах.',
+      hi: 'हल्की और गहरी थीम के अलावा अब उच्च कंट्रास्ट (गहरी और हल्की), रंगांधता-अनुकूल (गहरी और हल्की) और उलटे रंग भी हैं। आपकी पसंद मेरे सभी औज़ारों में लागू होती है।',
+      zh: '除了浅色和深色，现在还有高对比度（深色和浅色）、色盲友好（深色和浅色）以及反转颜色。你的选择在我所有的工具里都有效。',
+      ja: 'ライトとダークに加えて、ハイコントラスト（ダーク・ライト）、色覚サポート（ダーク・ライト）、色反転を選べるようになりました。選んだ設定は私のすべてのツールで有効です。',
+      ko: '라이트와 다크 외에 이제 고대비(다크·라이트), 색각 배려(다크·라이트), 색상 반전도 있습니다. 선택한 설정은 제 모든 도구에 적용됩니다.'
+    },
     {
       date: '2026-10-30',
       de: 'Die portugiesische Oberfläche spricht jetzt durchgehend brasilianisches Portugiesisch, mit „você“ als Anrede. Vorher mischten sich Wörter aus dem europäischen Portugiesisch darunter, etwa „Repor“ und „ficheiro“. Beträge stehen dort jetzt auch in brasilianischer Schreibweise, also „€ 1.234,56“ statt „1234,56 €“.',

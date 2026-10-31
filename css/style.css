@@ -1604,6 +1604,11 @@ a.wk-shot-frame:focus-visible { outline-color: var(--tool, var(--accent)); }
    wie unter Windows. data-echt markiert, was sonst noch echt bleiben muss. */
 :root[data-vision="invert"] { filter: invert(1); }
 :root[data-vision="invert"] :is(img:not([src*=".svg"]), video, [data-echt]):not([data-echt] *) { filter: invert(1); }
+/* Gedruckt wird ungedreht: Papier bleibt weiß, die Tinte reicht nicht für eine dunkle Seite */
+@media print {
+  :root[data-vision="invert"],
+  :root[data-vision="invert"] :is(img:not([src*=".svg"]), video, [data-echt]):not([data-echt] *) { filter: none; }
+}
 
 /* Umdrehen erhält den WCAG-Kontrast NICHT, weil Helligkeit nicht linear
    empfunden wird: Mitteltöne kippen. Die helle Fassung übersteht es (jede
