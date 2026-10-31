@@ -172,9 +172,12 @@
     target.appendChild(el('h4', 'wk-sub', i18n.t('guidePurpose')));
     target.appendChild(el('p', 'wk-text', guide.purpose[lang]));
 
-    // Optional: not every tool has pictures yet.
+    // Optional: not every tool has pictures yet. The id is where the mini
+    // tile "Pictures" on the start page jumps to.
     if (guide.shots) {
-      target.appendChild(el('h4', 'wk-sub', i18n.t('guideLook')));
+      var look = el('h4', 'wk-sub', i18n.t('guideLook'));
+      look.id = tool.key + '-bilder';
+      target.appendChild(look);
       target.appendChild(shots(tool, guide.shots, lang));
     }
 
