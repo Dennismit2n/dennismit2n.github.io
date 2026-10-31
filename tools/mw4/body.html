@@ -532,6 +532,46 @@ function katalogHtml() {
   </div>`;
 }
 
+/* ===== Darstellung ===== */
+// Sehhilfen der Werkstatt (31.10.2026): Die Wahl gilt in allen Werkzeugen auf dennismit2n.github.io
+// (werkstatt.darstellung, roher Text). Die Rüstkammer hat nur ein dunkles Thema, deshalb fünf Einträge:
+// Hell, Dunkel und System der anderen Werkzeuge zählen hier als „Normal“. Farbenblind merkt sich hell
+// oder dunkel nach dem Gerät, damit die anderen Werkzeuge passend weitermachen.
+const VISION_KEY = 'werkstatt.darstellung';
+const VISION_OPTIONS = [['normal', 'Normal'], ['hc-dark', 'Hoher Kontrast dunkel'], ['hc-light', 'Hoher Kontrast hell'], ['cvd', 'Farbenblind'], ['invert', 'Umgekehrte Farben']];
+const mq = q => !!(window.matchMedia && window.matchMedia(q).matches);
+function storedVision() { try { return localStorage.getItem(VISION_KEY) || 'system'; } catch (e) { return 'system'; } }
+function visionOption(v = storedVision()) {
+  if (v === 'hc-dark' || v === 'hc-light' || v === 'invert') return v;
+  if (v === 'cvd-dark' || v === 'cvd-light') return 'cvd';
+  return 'normal';
+}
+function applyVision(v = storedVision()) {
+  const r = document.documentElement;
+  let hc = null;
+  r.removeAttribute('data-vision'); r.removeAttribute('data-hc');
+  if (v === 'hc-dark' || v === 'hc-light') hc = v.slice(3);
+  else if (v === 'system' && mq('(prefers-contrast: more)')) hc = mq('(prefers-color-scheme: dark)') ? 'dark' : 'light';
+  if (hc) { r.setAttribute('data-vision', 'contrast'); r.setAttribute('data-hc', hc); }
+  else if (v === 'cvd-dark' || v === 'cvd-light') r.setAttribute('data-vision', 'cvd');
+  else if (v === 'invert') r.setAttribute('data-vision', 'invert');
+  const sel = $('#visionSel');
+  if (sel) sel.value = visionOption(v);
+}
+function setVision(option) {
+  const now = storedVision();
+  let next = option;
+  if (option === 'normal') next = visionOption(now) === 'normal' ? now : 'system';
+  else if (option === 'cvd') next = visionOption(now) === 'cvd' ? now : (mq('(prefers-color-scheme: dark)') ? 'cvd-dark' : 'cvd-light');
+  try { localStorage.setItem(VISION_KEY, next); } catch (e) { /* Speicher gesperrt: gilt bis zum Neuladen */ }
+  applyVision(next);
+}
+document.addEventListener('change', e => { if (e.target.id === 'visionSel') setVision(e.target.value); });
+// „System“ folgt dem Gerät live, auch bei „Kontrast erhöhen“; eine Wahl in einem anderen Werkzeug gilt sofort
+['(prefers-color-scheme: dark)', '(prefers-contrast: more)'].forEach(q => { if (window.matchMedia) window.matchMedia(q).addEventListener('change', () => applyVision()); });
+window.addEventListener('storage', e => { if (e.key === VISION_KEY) applyVision(); });
+window.addEventListener('pageshow', e => { if (e.persisted) applyVision(); });
+
 /* ===== Intel ===== */
 function renderIntel() {
   const I = S.data.info, T = I.texte;
@@ -551,6 +591,9 @@ function renderIntel() {
       <p class="hint" id="updHint">${installHint()}</p>
       <ul>${I.aenderungen.map(a => `<li><b>${esc(a.version)}</b> · ${esc(a.text)}</li>`).join('')}</ul>
     </section>
+    <section class="card"><h3><label for="visionSel">Darstellung</label></h3>
+      <select id="visionSel" class="sel">${VISION_OPTIONS.map(([v, l]) => `<option value="${v}"${visionOption() === v ? ' selected' : ''}>${l}</option>`).join('')}</select>
+      <p class="hint">Die Wahl gilt auch in den anderen Werkzeugen der Werkstatt.</p></section>
     <section class="card"><h3>Nächste Termine</h3><div>${termine}</div></section>
     <section class="card"><h3>Apex-Aufsätze</h3><ul>${T.apex.map(x => `<li>${esc(x)}</li>`).join('')}</ul></section>
     <section class="card"><h3>Visier vorne oder hinten?</h3><ul>${T.visier.map(x => `<li>${esc(x)}</li>`).join('')}</ul></section>
