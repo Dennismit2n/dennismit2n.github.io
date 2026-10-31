@@ -6,7 +6,7 @@
 <meta name="description" content="Borderlands-4-Handbuch: Meta-Builds, alle Legendaries und Pearls mit Fundort und Drop-Chance, Firmware, Raids, Farm-Planer und Wochen-Update.">
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#ffd400">
-<meta name="bl4-build" content="2026-10-31T18:07:25Z">
+<meta name="bl4-build" content="2026-10-31T18:35:22Z">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Vault-Handbuch">
@@ -728,6 +728,8 @@ details.more .codes{margin-top:10px}
   --link:#873400; --good:#005b18; --warn:#6f4500; --bad:#9b1816; --info:#024c9c;
   --legend:#7e3c00; --legend-ink:#7e3c00; --on-legend:#fff; --on-good:#fff;
 }
+/* Pearlescent-Schilder im Hohen Kontrast: Vollton statt Verlauf, Schrift darauf 8,77:1 */
+:root[data-vision="contrast"] .chip.r-P{background:var(--pearl-b)}
 /* Farbenblind: Erledigt und Nachteil in Blau und Orange (Okabe-Ito) statt Grün und Rot; der Haken steht ohnehin dabei */
 :root[data-vision="cvd"][data-theme="light"]{ --good:#0067a2; --bad:#974100; }
 :root[data-vision="cvd"][data-theme="dark"]{ --good:#56b4e9; --bad:#e8743a; }
