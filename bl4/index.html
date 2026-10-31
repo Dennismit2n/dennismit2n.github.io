@@ -6,7 +6,7 @@
 <meta name="description" content="Borderlands-4-Handbuch: Meta-Builds, alle Legendaries und Pearls mit Fundort und Drop-Chance, Firmware, Raids, Farm-Planer und Wochen-Update.">
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#ffd400">
-<meta name="bl4-build" content="2026-10-31T17:34:17Z">
+<meta name="bl4-build" content="2026-10-31T18:07:25Z">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Vault-Handbuch">
@@ -53,6 +53,8 @@
   --accent:#ffd400; --on-accent:#1b160d; --link:#9b3d00;
   --legend:#f07a12; --on-legend:#1b0e00; --pearl-a:#52d1f2; --pearl-b:#f294dc; --pearl-c:#b4e866; --on-pearl:#101422;
   --good:#2a7a35; --warn:#9a6200; --bad:#b3332b; --info:#1d5fb0;
+  /* Schrift in Legendär-Orange (#f07a12 auf --panel-2 nur 2,28:1) und Schrift auf Grün (--bg auf --good 4,14:1): gleicher Farbton, nur so weit nachgedunkelt bzw. aufgehellt, bis 4,5:1 halten */
+  --legend-ink:#a65000; --on-good:#f8ebc8;
   --card-img:#0d1a22;
   --f-display:"Bangers","Impact","Arial Black",sans-serif;
   --f-body:"Barlow","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
@@ -66,6 +68,7 @@
     --ink:#f3e9d1; --muted:#b8aa8c; --line:#000; --shadow:#000; --soft-shadow:rgba(0,0,0,.65);
     --accent:#ffd21a; --on-accent:#16120a; --link:#ffcd48;
     --legend:#ff8a24; --good:#62cf70; --warn:#ffb54a; --bad:#ff6d60; --info:#74b2ff;
+    --legend-ink:var(--legend); --on-good:var(--bg);
     color-scheme:dark;
   }
 }
@@ -74,6 +77,7 @@
   --ink:#f3e9d1; --muted:#b8aa8c; --line:#000; --shadow:#000; --soft-shadow:rgba(0,0,0,.65);
   --accent:#ffd21a; --on-accent:#16120a; --link:#ffcd48;
   --legend:#ff8a24; --good:#62cf70; --warn:#ffb54a; --bad:#ff6d60; --info:#74b2ff;
+  --legend-ink:var(--legend); --on-good:var(--bg);
   color-scheme:dark;
 }
 
@@ -216,7 +220,7 @@ section.sec{scroll-margin-top:130px; margin-top:56px}
 h3.sub{font-size:1.6rem; margin:30px 0 12px}
 
 .panel{background:var(--panel); border:2.5px solid var(--line); border-radius:2px; padding:16px}
-.grid-2{display:grid; gap:16px}
+.grid-2{display:grid; grid-template-columns:minmax(0,1fr); gap:16px}
 @media (min-width:760px){ .grid-2{grid-template-columns:repeat(2,minmax(0,1fr))} }
 .grid-3{display:grid; gap:16px}
 @media (min-width:760px){ .grid-3{grid-template-columns:repeat(3,minmax(0,1fr))} }
@@ -258,7 +262,7 @@ h3.sub{font-size:1.6rem; margin:30px 0 12px}
 .step[data-state="now"]::before{background:var(--accent); color:var(--on-accent)}
 .step[data-state="now"] .state{background:var(--accent); color:var(--on-accent)}
 .step[data-state="done"]{opacity:.62}
-.step[data-state="done"] .state{background:var(--good); color:var(--bg); border-color:var(--line)}
+.step[data-state="done"] .state{background:var(--good); color:var(--on-good); border-color:var(--line)}
 .step[data-state="done"]::before{content:"✓"; color:var(--good)}
 .step[data-state="later"] .state{background:var(--chip)}
 .step[data-state="parallel"] .state{background:var(--panel-2); border-style:dashed}
@@ -273,7 +277,7 @@ td.num, th.num{text-align:right; font-variant-numeric:tabular-nums}
 tr.me td{background:var(--accent); color:var(--on-accent); font-weight:700}
 tr.next td{background:var(--panel-2)}
 tr.me td:first-child::after{content:" ◀ du"; font-family:var(--f-label)}
-tr.next td:first-child::after{content:" ← als Nächstes"; font-family:var(--f-label); color:var(--legend)}
+tr.next td:first-child::after{content:" ← als Nächstes"; font-family:var(--f-label); color:var(--legend-ink)}
 
 /* ---------- Builds ---------- */
 .vh-block{margin-top:30px; scroll-margin-top:130px}
@@ -322,7 +326,7 @@ tr.next td:first-child::after{content:" ← als Nächstes"; font-family:var(--f-
 .drop{display:grid; grid-template-columns:auto minmax(0,1fr); gap:3px 10px; margin:0; padding:8px 10px; background:var(--panel-2); border:2px solid var(--line); border-radius:2px; font-size:.92rem}
 .drop dt{font-family:var(--f-label); font-weight:700; text-transform:uppercase; letter-spacing:.04em; font-size:.78rem; color:var(--muted); padding-top:2px}
 .drop dd{margin:0; min-width:0}
-.drop dd b{font-family:var(--f-display); font-weight:400; font-size:1.15rem; letter-spacing:.03em; color:var(--legend)}
+.drop dd b{font-family:var(--f-display); font-weight:400; font-size:1.15rem; letter-spacing:.03em; color:var(--legend-ink)}
 .patchnote{font-size:.88rem; border-left:4px solid var(--warn); padding-left:8px}
 .loot-foot{margin-top:auto; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:6px; font-size:.88rem}
 .empty{padding:18px; border:2.5px dashed var(--line); text-align:center; color:var(--muted); font-weight:600}
@@ -335,7 +339,7 @@ tr.next td:first-child::after{content:" ← als Nächstes"; font-family:var(--f-
 .boss .bn{font-weight:700; font-size:1.02rem}
 .boss .bl{font-size:.9rem; color:var(--muted)}
 .boss .bd{display:flex; flex-wrap:wrap; gap:5px; margin-top:5px}
-.boss .note{font-size:.85rem; font-weight:600; color:var(--legend)}
+.boss .note{font-size:.85rem; font-weight:600; color:var(--legend-ink)}
 .phase-h{font-family:var(--f-label); font-weight:700; text-transform:uppercase; letter-spacing:.06em; margin:18px 0 8px; display:flex; align-items:center; gap:10px}
 .phase-h::after{content:""; flex:1; border-top:2.5px solid var(--line)}
 .prog{font-family:var(--f-label); font-weight:700}
@@ -511,7 +515,8 @@ details.more .codes{margin-top:10px}
 .wk-src{font-size:.86rem; margin-top:10px}
 
 /* ---------- Raid-Guides ---------- */
-.raid{display:grid; gap:16px}
+/* minmax(0,1fr) statt auto: sonst zieht die Zeit-Truhen-Tabelle (rollt in ihrem Kasten) die Spalte bei 320 px auf 374 px */
+.raid{display:grid; grid-template-columns:minmax(0,1fr); gap:16px}
 .raid-head{display:grid; gap:12px; background:var(--panel); border:3px solid var(--line); box-shadow:5px 5px 0 var(--shadow); padding:16px}
 @media (min-width:760px){ .raid-head{grid-template-columns:minmax(0,1fr) auto; align-items:start} }
 .raid-head h3{font-size:clamp(2rem,6vw,2.8rem); margin-top:10px}
@@ -721,7 +726,7 @@ details.more .codes{margin-top:10px}
   --bg:#fff; --dots:transparent; --panel:#fff; --panel-2:#efefef; --chip:#e6e6e6;
   --ink:#000; --muted:#2b2b2b; --line:#000; --shadow:transparent; --soft-shadow:transparent;
   --link:#873400; --good:#005b18; --warn:#6f4500; --bad:#9b1816; --info:#024c9c;
-  --legend:#7e3c00; --on-legend:#fff;
+  --legend:#7e3c00; --legend-ink:#7e3c00; --on-legend:#fff; --on-good:#fff;
 }
 /* Farbenblind: Erledigt und Nachteil in Blau und Orange (Okabe-Ito) statt Grün und Rot; der Haken steht ohnehin dabei */
 :root[data-vision="cvd"][data-theme="light"]{ --good:#0067a2; --bad:#974100; }
