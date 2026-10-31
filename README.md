@@ -15,7 +15,7 @@ Startseite für die kleinen Werkzeuge von Dennis_mit_2n — ohne Anmeldung, kein
 - [Spectroton](https://dennismit2n.github.io/spectroton/) — one colour in, eleven matching shades out, contrast-checked
 - [shrinkling](https://dennismit2n.github.io/shrinkling/) — shrink photos right in your browser
 - [WiFi QR Card](https://dennismit2n.github.io/wifi-qr/) — create a WiFi QR code card, guests scan and connect
-- [Heizwarte](https://dennismit2n.github.io/heizwarte/) — weather with a heating traffic light: when to turn up slow heating (app in German for now)
+- [Heizwarte](https://dennismit2n.github.io/heizwarte/) — weather with a heating traffic light: when to turn up slow heating (14 languages)
 - [Pocketsum](https://dennismit2n.github.io/pocketsum/) — five small calculators in one file: VAT, tips, fuel prices, dividends and trading costs, offline after the first visit
 - [Zählwerk](https://dennismit2n.github.io/zaehlwerk/) — where your Claude Code usage goes, by day, model and project
 - [Besucher-Ticker](https://github.com/Dennismit2n/besucher-ticker) — your GoatCounter visitor numbers floating on the Windows desktop (download, not a browser tool)

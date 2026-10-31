@@ -1449,6 +1449,23 @@ var NEWS = {
   heizwarte: [
     {
       date: '2026-10-31',
+      de: 'Heizwarte spricht jetzt 14 Sprachen, umstellen kannst du sie in den Einstellungen. Dabei sind viele deutsche Texte klarer geworden, etwa „Mittwochnacht“, „Std.“ statt „h“ und Grad statt „Kd“.',
+      en: 'Heizwarte now speaks 14 languages, and you can switch the language in the settings. Several texts also got clearer along the way.',
+      es: 'Heizwarte habla ahora 14 idiomas y puedes cambiar el idioma en los ajustes. De paso, varios textos son ahora más claros.',
+      fr: 'Heizwarte parle désormais 14 langues, et vous pouvez changer de langue dans les réglages. Au passage, plusieurs textes sont devenus plus clairs.',
+      it: 'Heizwarte ora parla 14 lingue e puoi cambiare lingua nelle impostazioni. Già che c’ero, diversi testi sono diventati più chiari.',
+      nl: 'Heizwarte spreekt nu 14 talen, de taal wissel je in de instellingen. Meteen zijn ook een aantal teksten duidelijker geworden.',
+      pl: 'Heizwarte mówi teraz w 14 językach, język zmienisz w ustawieniach. Przy okazji kilka tekstów stało się jaśniejszych.',
+      pt: 'O Heizwarte agora fala 14 idiomas, e você troca o idioma nas configurações. De quebra, vários textos ficaram mais claros.',
+      tr: 'Heizwarte artık 14 dil konuşuyor, dili ayarlardan değiştirebilirsiniz. Bu arada birçok metin de daha anlaşılır hale geldi.',
+      ru: 'Heizwarte теперь говорит на 14 языках, язык можно сменить в настройках. Заодно многие тексты стали понятнее.',
+      hi: 'Heizwarte अब 14 भाषाएँ बोलता है, भाषा आप सेटिंग्स में बदल सकते हैं। साथ ही कई पाठ पहले से ज़्यादा साफ़ हो गए हैं।',
+      zh: 'Heizwarte 现在支持 14 种语言，可以在设置里切换语言。顺带也把不少文字改得更清楚了。',
+      ja: 'Heizwarte が14の言語に対応しました。言語は設定で切り替えられます。あわせて、いくつかの文章もわかりやすくなりました。',
+      ko: '이제 Heizwarte가 14개 언어를 지원하며, 언어는 설정에서 바꿀 수 있습니다. 그 김에 여러 문구도 더 알기 쉬워졌습니다.'
+    },
+    {
+      date: '2026-10-31',
       de: 'Neben Hell und Dunkel gibt es jetzt Hoher Kontrast (dunkel und hell), Farbenblind (dunkel und hell) und Umgekehrte Farben. Deine Wahl gilt in allen meinen Werkzeugen.',
       en: 'Besides light and dark there are now high contrast (dark and light), colour-blind (dark and light) and inverted colours. Your choice applies across all my tools.',
       es: 'Además de claro y oscuro, ahora hay alto contraste (oscuro y claro), daltónico (oscuro y claro) y colores invertidos. Tu elección vale en todas mis herramientas.',
