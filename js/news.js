@@ -62,6 +62,23 @@ var NEWS = {
   shrink: [
     {
       date: '2026-10-31',
+      de: 'Im hellen Modus ist das grüne Schild mit der Ersparnis jetzt dunkler und gut lesbar.',
+      en: 'In light mode the green badge showing your savings is now darker and easy to read.',
+      es: 'En el modo claro, la etiqueta verde con el ahorro ahora es más oscura y se lee bien.',
+      fr: 'En mode clair, l’étiquette verte qui indique le gain est désormais plus foncée et bien lisible.',
+      it: 'In modalità chiara l’etichetta verde con il risparmio ora è più scura e si legge bene.',
+      nl: 'In de lichte modus is het groene label met de besparing nu donkerder en goed leesbaar.',
+      pl: 'W jasnym trybie zielona plakietka z oszczędnością jest teraz ciemniejsza i dobrze czytelna.',
+      pt: 'No modo claro, a etiqueta verde com a economia agora está mais escura e fácil de ler.',
+      tr: 'Açık modda tasarrufu gösteren yeşil etiket artık daha koyu ve rahat okunuyor.',
+      ru: 'В светлой теме зелёная плашка с экономией стала темнее и хорошо читается.',
+      hi: 'हल्की थीम में बचत दिखाने वाला हरा लेबल अब गहरा है और साफ़ पढ़ा जाता है।',
+      zh: '浅色模式下，显示节省比例的绿色标签颜色更深了，看得更清楚。',
+      ja: 'ライトモードで、削減率を示す緑のラベルが濃くなり、読みやすくなりました。',
+      ko: '라이트 모드에서 절감량을 보여 주는 초록색 표시가 더 진해져 잘 읽힙니다.'
+    },
+    {
+      date: '2026-10-31',
       de: 'Neben Hell und Dunkel gibt es jetzt Hoher Kontrast (dunkel und hell), Farbenblind (dunkel und hell) und Umgekehrte Farben. Deine Wahl gilt in allen meinen Werkzeugen.',
       en: 'Besides light and dark there are now high contrast (dark and light), colour-blind (dark and light) and inverted colours. Your choice applies across all my tools.',
       es: 'Además de claro y oscuro, ahora hay alto contraste (oscuro y claro), daltónico (oscuro y claro) y colores invertidos. Tu elección vale en todas mis herramientas.',
@@ -182,6 +199,23 @@ var NEWS = {
   ],
 
   wifi: [
+    {
+      date: '2026-10-31',
+      de: 'Kleine graue Schrift ist jetzt dunkler und besser zu lesen, im hellen Modus und in der Zeile unten auf der Karte (auch gedruckt).',
+      en: 'Small grey text is now darker and easier to read, in light mode and in the line at the bottom of the card (printed too).',
+      es: 'El texto gris pequeño ahora es más oscuro y se lee mejor, en el modo claro y en la línea inferior de la tarjeta (también impresa).',
+      fr: 'Le petit texte gris est désormais plus foncé et plus lisible, en mode clair et dans la ligne en bas de la carte (imprimée aussi).',
+      it: 'Il testo grigio piccolo ora è più scuro e si legge meglio, in modalità chiara e nella riga in fondo alla tessera (anche stampata).',
+      nl: 'Kleine grijze tekst is nu donkerder en beter leesbaar, in de lichte modus en in de regel onderaan het kaartje (ook geprint).',
+      pl: 'Mały szary tekst jest teraz ciemniejszy i łatwiejszy do odczytania, w jasnym trybie i w wierszu na dole karteczki (także po wydruku).',
+      pt: 'O texto cinza pequeno agora está mais escuro e fácil de ler, no modo claro e na linha de baixo do cartão (impresso também).',
+      tr: 'Küçük gri yazı artık daha koyu ve daha kolay okunuyor, açık modda ve kartın altındaki satırda (basılı halde de).',
+      ru: 'Мелкий серый текст стал темнее и читается лучше: в светлой теме и в строке внизу карточки (в том числе при печати).',
+      hi: 'छोटा धूसर टेक्स्ट अब गहरा है और पढ़ने में आसान है, हल्की थीम में और कार्ड के नीचे वाली पंक्ति में (छपे कार्ड पर भी)।',
+      zh: '灰色小字现在颜色更深，更容易看清，包括浅色模式下和卡片底部那一行（打印出来也一样）。',
+      ja: '小さなグレーの文字が濃くなり、読みやすくなりました。ライトモードのほか、カード下部の行（印刷時も）が対象です。',
+      ko: '작은 회색 글씨가 이제 더 진해져 읽기 쉬워졌습니다. 라이트 모드와 카드 아래쪽 줄(인쇄했을 때도)이 해당됩니다.'
+    },
     {
       date: '2026-10-31',
       de: 'Neben Hell und Dunkel gibt es jetzt Hoher Kontrast (dunkel und hell), Farbenblind (dunkel und hell) und Umgekehrte Farben. Deine Wahl gilt in allen meinen Werkzeugen.',
@@ -394,6 +428,23 @@ var NEWS = {
   spectroton: [
     {
       date: '2026-10-31',
+      de: 'Die blasseste Schrift (Spaltenköpfe, Feldnamen, Fußzeile) ist kräftiger geworden, sie hält jetzt in allen drei Darstellungen mindestens 4,5:1.',
+      en: 'The palest text (column headers, field labels, footer) is stronger now and holds at least 4.5:1 in all three themes.',
+      es: 'El texto más pálido (encabezados de columna, nombres de campo, pie de página) ahora es más marcado y llega al menos a 4,5:1 en los tres temas.',
+      fr: 'Le texte le plus pâle (en-têtes de colonne, noms des champs, pied de page) est désormais plus marqué et atteint au moins 4,5:1 dans les trois thèmes.',
+      it: 'Il testo più tenue (intestazioni di colonna, nomi dei campi, piè di pagina) ora è più deciso e raggiunge almeno 4,5:1 in tutti e tre i temi.',
+      nl: 'De bleekste tekst (kolomkoppen, veldnamen, voettekst) is nu krachtiger en haalt in alle drie de thema’s minstens 4,5:1.',
+      pl: 'Najbledszy tekst (nagłówki kolumn, nazwy pól, stopka) jest teraz wyraźniejszy i we wszystkich trzech motywach ma kontrast co najmniej 4,5:1.',
+      pt: 'O texto mais apagado (cabeçalhos de coluna, nomes dos campos, rodapé) agora está mais nítido e chega a pelo menos 4,5:1 nos três temas.',
+      tr: 'En soluk yazı (sütun başlıkları, alan adları, alt bilgi) artık daha belirgin ve üç temanın hepsinde en az 4,5:1 kontrasta ulaşıyor.',
+      ru: 'Самый бледный текст (заголовки столбцов, названия полей, строка внизу страницы) стал заметнее и теперь во всех трёх темах держит не меньше 4,5:1.',
+      hi: 'सबसे फीका टेक्स्ट (कॉलम शीर्षक, फ़ील्ड के नाम, फ़ुटर) अब ज़्यादा साफ़ दिखता है और तीनों थीम में कम से कम 4.5:1 कंट्रास्ट रखता है।',
+      zh: '最浅的文字（列标题、字段名称、页脚）现在更醒目了，在三种主题下对比度都至少达到 4.5:1。',
+      ja: 'いちばん薄い文字（列の見出し、項目名、フッター）がはっきりし、3つのテーマすべてで 4.5:1 以上のコントラストを保つようになりました。',
+      ko: '가장 옅은 글씨(열 제목, 필드 이름, 바닥글)가 더 또렷해져 세 가지 테마 모두에서 4.5:1 이상의 대비를 유지합니다.'
+    },
+    {
+      date: '2026-10-31',
       de: 'Neben Hell und Dunkel gibt es jetzt Hoher Kontrast (dunkel und hell), Farbenblind (dunkel und hell) und Umgekehrte Farben. Deine Wahl gilt in allen meinen Werkzeugen.',
       en: 'Besides light and dark there are now high contrast (dark and light), colour-blind (dark and light) and inverted colours. Your choice applies across all my tools.',
       es: 'Además de claro y oscuro, ahora hay alto contraste (oscuro y claro), daltónico (oscuro y claro) y colores invertidos. Tu elección vale en todas mis herramientas.',
@@ -531,6 +582,23 @@ var NEWS = {
   ],
 
   collective: [
+    {
+      date: '2026-10-31',
+      de: 'Auf schmalen Handys wird der Titel deiner Abrechnung nicht mehr abgeschnitten, er wird dort etwas kleiner und passt ganz ins Feld.',
+      en: 'On narrow phones the title of your settlement is no longer cut off. It gets a little smaller there and fits fully into the field.',
+      es: 'En móviles estrechos, el título de tus cuentas ya no se corta: allí se hace un poco más pequeño y cabe entero en el campo.',
+      fr: 'Sur les téléphones étroits, le titre de vos comptes n’est plus coupé : il y devient un peu plus petit et tient entièrement dans le champ.',
+      it: 'Sui telefoni stretti il titolo dei tuoi conti non viene più tagliato: lì diventa un po’ più piccolo e sta tutto nel campo.',
+      nl: 'Op smalle telefoons wordt de titel van je afrekening niet meer afgekapt: hij wordt daar iets kleiner en past helemaal in het veld.',
+      pl: 'Na wąskich telefonach tytuł twojego rozliczenia nie jest już ucinany: jest tam nieco mniejszy i mieści się cały w polu.',
+      pt: 'Em celulares estreitos, o título das suas contas não é mais cortado: ele fica um pouco menor e cabe inteiro no campo.',
+      tr: 'Dar telefonlarda hesabınızın başlığı artık kesilmiyor: orada biraz küçülüyor ve alana tamamen sığıyor.',
+      ru: 'На узких телефонах название вашего расчёта больше не обрезается: там оно становится чуть меньше и целиком помещается в поле.',
+      hi: 'संकरे फ़ोन पर आपके हिसाब का शीर्षक अब कटता नहीं है: वहाँ वह थोड़ा छोटा हो जाता है और पूरा फ़ील्ड में समा जाता है।',
+      zh: '在窄屏手机上，你的账目标题不再被截断：它会稍微缩小，完整地显示在输入框里。',
+      ja: '幅の狭いスマートフォンでも、精算のタイトルが途中で切れなくなりました。少し小さく表示され、入力欄にすべて収まります。',
+      ko: '좁은 휴대폰에서도 이제 정산 제목이 잘리지 않습니다. 조금 작게 표시되어 입력란에 모두 들어갑니다.'
+    },
     {
       date: '2026-10-31',
       de: 'Neben Hell und Dunkel gibt es jetzt Hoher Kontrast (dunkel und hell), Farbenblind (dunkel und hell) und Umgekehrte Farben. Deine Wahl gilt in allen meinen Werkzeugen.',
@@ -1026,6 +1094,23 @@ var NEWS = {
   fontart: [
     {
       date: '2026-10-31',
+      de: 'Das ✕ zum Schließen ist in den Fenstern jetzt ein kleiner Knopf statt eines breiten Balkens, und am Handy sind die Gruppennamen in der Zeichenwahl besser zu lesen.',
+      en: 'The ✕ that closes a window is now a small button instead of a wide bar, and on phones the group names in the character picker are easier to read.',
+      es: 'La ✕ para cerrar las ventanas ahora es un botón pequeño en lugar de una barra ancha, y en el móvil los nombres de grupo de la selección de caracteres se leen mejor.',
+      fr: 'Le ✕ qui ferme les fenêtres est désormais un petit bouton au lieu d’une large barre, et sur téléphone les noms de groupe du choix des caractères se lisent mieux.',
+      it: 'La ✕ per chiudere le finestre ora è un pulsante piccolo invece di una barra larga, e sul telefono i nomi dei gruppi nella scelta dei caratteri si leggono meglio.',
+      nl: 'Het kruisje ✕ om vensters te sluiten is nu een kleine knop in plaats van een brede balk, en op de telefoon zijn de groepsnamen in de tekenkeuze beter leesbaar.',
+      pl: 'Krzyżyk ✕ zamykający okna jest teraz małym przyciskiem zamiast szerokiego paska, a na telefonie nazwy grup w wyborze znaków są czytelniejsze.',
+      pt: 'O ✕ para fechar as janelas agora é um botão pequeno em vez de uma barra larga, e no celular os nomes dos grupos na escolha de caracteres ficam mais fáceis de ler.',
+      tr: 'Pencereleri kapatan ✕ artık geniş bir çubuk değil, küçük bir düğme. Telefonda da karakter seçimindeki grup adları daha kolay okunuyor.',
+      ru: 'Крестик ✕ для закрытия окон теперь маленькая кнопка, а не широкая полоса. На телефоне названия групп в выборе символов читаются лучше.',
+      hi: 'विंडो बंद करने वाला ✕ अब चौड़ी पट्टी नहीं, बल्कि छोटा बटन है, और फ़ोन पर अक्षर-चयन में समूहों के नाम पढ़ना आसान हो गया है।',
+      zh: '关闭窗口的 ✕ 现在是一个小按钮，不再是一整条宽横条。在手机上，字符选择里的分组名称也更容易看清了。',
+      ja: 'ウィンドウを閉じる ✕ が横長のバーではなく小さなボタンになりました。スマートフォンでは文字選択のグループ名が読みやすくなっています。',
+      ko: '창을 닫는 ✕가 이제 넓은 막대가 아니라 작은 버튼입니다. 휴대폰에서는 문자 선택의 그룹 이름도 더 잘 읽힙니다.'
+    },
+    {
+      date: '2026-10-31',
       de: 'Neu ist ein Feld für die Darstellung: Hoher Kontrast (dunkel und hell), Farbenblind und Umgekehrte Farben. Das eigene Design bleibt, und deine Wahl gilt in allen meinen Werkzeugen. In der Browser-Fassung findest du es im Design-Fenster.',
       en: 'New: a display setting with high contrast (dark and light), colour-blind and inverted colours. The tool’s own design stays, and your choice applies across all my tools. In the browser version you’ll find it in the design window.',
       es: 'Nuevo: un ajuste de visualización con alto contraste (oscuro y claro), daltónico y colores invertidos. El diseño propio se mantiene y tu elección vale en todas mis herramientas. En la versión para navegador está en la ventana de diseño.',
@@ -1321,6 +1406,23 @@ var NEWS = {
   craftionary: [
     {
       date: '2026-10-31',
+      de: 'Lange Namen wie „Diamantschwert“ brechen auf schmalen Handys jetzt um, statt über den Rand zu ragen.',
+      en: 'On narrow phones, long item names now wrap onto the next line instead of sticking out over the edge.',
+      es: 'En móviles estrechos, los nombres largos ahora pasan a la línea siguiente en lugar de sobresalir del borde.',
+      fr: 'Sur les téléphones étroits, les noms longs passent désormais à la ligne au lieu de dépasser du bord.',
+      it: 'Sui telefoni stretti i nomi lunghi ora vanno a capo invece di sporgere dal bordo.',
+      nl: 'Op smalle telefoons lopen lange namen nu door op de volgende regel, in plaats van over de rand te steken.',
+      pl: 'Na wąskich telefonach długie nazwy przechodzą teraz do następnej linii, zamiast wystawać poza krawędź.',
+      pt: 'Em celulares estreitos, nomes longos agora quebram a linha em vez de passar da borda.',
+      tr: 'Dar telefonlarda uzun adlar artık kenardan taşmak yerine alt satıra geçiyor.',
+      ru: 'На узких телефонах длинные названия теперь переносятся на следующую строку, а не выходят за край.',
+      hi: 'संकरे फ़ोन पर लंबे नाम अब किनारे से बाहर निकलने के बजाय अगली पंक्ति में चले जाते हैं।',
+      zh: '在窄屏手机上，较长的名称现在会自动换行，不再超出边缘。',
+      ja: '幅の狭いスマートフォンでは、長い名前が端からはみ出さず、折り返して表示されるようになりました。',
+      ko: '좁은 휴대폰에서 긴 이름이 이제 가장자리 밖으로 나가지 않고 다음 줄로 넘어갑니다.'
+    },
+    {
+      date: '2026-10-31',
       de: 'Neben Hell und Dunkel gibt es jetzt Hoher Kontrast (dunkel und hell), Farbenblind (dunkel und hell) und Umgekehrte Farben. Deine Wahl gilt in allen meinen Werkzeugen. In den Einstellungen wählst du sie aus einer Liste, der Knopf oben wechselt hell und dunkel im gewählten Modus.',
       en: 'Besides light and dark there are now high contrast (dark and light), colour-blind (dark and light) and inverted colours. Your choice applies across all my tools. You pick them from a list in the settings; the button at the top switches between light and dark within the chosen mode.',
       es: 'Además de claro y oscuro, ahora hay alto contraste (oscuro y claro), daltónico (oscuro y claro) y colores invertidos. Tu elección vale en todas mis herramientas. Se eligen en una lista de los ajustes; el botón de arriba cambia entre claro y oscuro dentro del modo elegido.',
@@ -1425,6 +1527,23 @@ var NEWS = {
   vault: [
     {
       date: '2026-10-31',
+      de: 'Im hellen Modus lassen sich Drop-Chancen, Boss-Hinweise und das Schild „Erledigt“ besser lesen. Am Handy passen die Raid-Guides jetzt in die Breite, und im Hohen Kontrast sind die Pearlescent-Schilder einfarbig.',
+      en: 'In light mode drop chances, boss notes and the “Erledigt” (done) badge are easier to read. On phones the raid guides now fit the width, and in high contrast the Pearlescent badges are a single colour.',
+      es: 'En el modo claro, las probabilidades de botín, las notas de los jefes y la etiqueta «Erledigt» (hecho) se leen mejor. En el móvil, las guías de raids ya caben a lo ancho, y en alto contraste las etiquetas Pearlescent son de un solo color.',
+      fr: 'En mode clair, les chances de butin, les notes sur les boss et l’étiquette « Erledigt » (terminé) se lisent mieux. Sur téléphone, les guides de raid tiennent désormais en largeur, et en contraste élevé les étiquettes Pearlescent sont d’une seule couleur.',
+      it: 'In modalità chiara le probabilità di drop, le note sui boss e l’etichetta «Erledigt» (fatto) si leggono meglio. Sul telefono le guide ai raid ora stanno in larghezza, e in contrasto elevato le etichette Pearlescent sono a tinta unita.',
+      nl: 'In de lichte modus zijn dropkansen, bossnotities en het label ‘Erledigt’ (klaar) beter leesbaar. Op de telefoon passen de raidgidsen nu in de breedte, en in hoog contrast zijn de Pearlescent-labels effen.',
+      pl: 'W jasnym trybie szanse na drop, uwagi o bossach i plakietka „Erledigt” (zrobione) są lepiej czytelne. Na telefonie poradniki rajdów mieszczą się teraz na szerokość, a w wysokim kontraście plakietki Pearlescent są jednolite.',
+      pt: 'No modo claro, as chances de drop, as notas dos chefes e a etiqueta “Erledigt” (feito) ficam mais fáceis de ler. No celular, os guias de raid agora cabem na largura, e no alto contraste as etiquetas Pearlescent têm uma cor só.',
+      tr: 'Açık modda düşme şansları, boss notları ve “Erledigt” (tamam) etiketi daha kolay okunuyor. Telefonda raid rehberleri artık genişliğe sığıyor, yüksek karşıtlıkta da Pearlescent etiketleri tek renk.',
+      ru: 'В светлой теме шансы выпадения, заметки о боссах и плашка «Erledigt» (готово) читаются лучше. На телефоне гайды по рейдам теперь помещаются по ширине, а в контрастной теме плашки Pearlescent стали одноцветными.',
+      hi: 'हल्की थीम में ड्रॉप की संभावना, बॉस वाले नोट और “Erledigt” (पूरा) लेबल अब पढ़ने में आसान हैं। फ़ोन पर रेड गाइड अब चौड़ाई में समा जाती हैं, और उच्च कंट्रास्ट में Pearlescent लेबल एक ही रंग के हैं।',
+      zh: '浅色模式下，掉落几率、首领提示和“Erledigt”（已完成）标签更容易看清。在手机上，团战指南现在能完整放进屏幕宽度，在高对比度下，Pearlescent 标签改为单色。',
+      ja: 'ライトモードで、ドロップ率、ボスのメモ、「Erledigt」（完了）ラベルが読みやすくなりました。スマートフォンではレイドガイドが横幅に収まり、ハイコントラストでは Pearlescent のラベルが単色になります。',
+      ko: '라이트 모드에서 드롭 확률, 보스 메모, “Erledigt”(완료) 표시가 더 잘 읽힙니다. 휴대폰에서는 레이드 가이드가 이제 너비에 맞게 들어가고, 고대비에서는 Pearlescent 표시가 단색입니다.'
+    },
+    {
+      date: '2026-10-31',
       de: 'Neben Hell und Dunkel gibt es jetzt Hoher Kontrast (dunkel und hell), Farbenblind (dunkel und hell) und Umgekehrte Farben. Deine Wahl gilt in allen meinen Werkzeugen.',
       en: 'Besides light and dark there are now high contrast (dark and light), colour-blind (dark and light) and inverted colours. Your choice applies across all my tools.',
       es: 'Además de claro y oscuro, ahora hay alto contraste (oscuro y claro), daltónico (oscuro y claro) y colores invertidos. Tu elección vale en todas mis herramientas.',
@@ -1510,6 +1629,23 @@ var NEWS = {
     }
   ],
   ruestkammer: [
+    {
+      date: '2026-10-31',
+      de: 'Der graue Untertext bei den Werten (etwa „Magazin / Reserve“) ist etwas heller und gut lesbar.',
+      en: 'The grey subtext under the weapon stats is a little lighter now and easy to read.',
+      es: 'El subtexto gris bajo los valores de las armas ahora es un poco más claro y se lee bien.',
+      fr: 'Le petit texte gris sous les valeurs des armes est désormais un peu plus clair et bien lisible.',
+      it: 'Il sottotesto grigio sotto i valori delle armi ora è un po’ più chiaro e si legge bene.',
+      nl: 'De grijze subtekst onder de wapenwaarden is nu iets lichter en goed leesbaar.',
+      pl: 'Szary podpis pod wartościami broni jest teraz nieco jaśniejszy i dobrze czytelny.',
+      pt: 'O texto cinza abaixo dos valores das armas agora está um pouco mais claro e fácil de ler.',
+      tr: 'Silah değerlerinin altındaki gri alt yazı artık biraz daha açık ve rahat okunuyor.',
+      ru: 'Серый подстрочный текст под характеристиками оружия стал чуть светлее и хорошо читается.',
+      hi: 'हथियारों के आँकड़ों के नीचे का धूसर छोटा टेक्स्ट अब थोड़ा हल्का है और साफ़ पढ़ा जाता है।',
+      zh: '武器数值下方的灰色小字现在稍亮一些，更容易看清。',
+      ja: '武器の数値の下にあるグレーの補足テキストが少し明るくなり、読みやすくなりました。',
+      ko: '무기 수치 아래의 회색 보조 글씨가 조금 밝아져 잘 읽힙니다.'
+    },
     {
       date: '2026-10-31',
       de: 'Neu ist ein Feld für die Darstellung: Hoher Kontrast (dunkel und hell), Farbenblind und Umgekehrte Farben. Das eigene Design bleibt, und deine Wahl gilt in allen meinen Werkzeugen. Du findest es unter Intel.',
