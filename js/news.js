@@ -1575,6 +1575,23 @@ var NEWS = {
   ],
   craftionary: [
     {
+      date: '2026-11-01',
+      de: 'Craftionary spricht jetzt 14 Sprachen, mit den offiziellen Itemnamen aus dem Spiel. Umstellen kannst du oben über das Sprachkürzel, Deutsch und Englisch findet die Suche weiterhin.',
+      en: 'Craftionary now speaks 14 languages, with the official item names from the game. Switch with the language code at the top; the search still finds English and German too.',
+      es: 'Craftionary ahora habla 14 idiomas, con los nombres oficiales de los objetos del juego. Cámbialo arriba con el código de idioma; la búsqueda sigue encontrando también inglés y alemán.',
+      fr: 'Craftionary parle désormais 14 langues, avec les noms officiels des objets du jeu. Changez de langue avec le code en haut ; la recherche trouve toujours aussi l’anglais et l’allemand.',
+      it: 'Craftionary ora parla 14 lingue, con i nomi ufficiali degli oggetti del gioco. La cambi in alto con il codice della lingua; la ricerca trova sempre anche inglese e tedesco.',
+      nl: 'Craftionary spreekt nu 14 talen, met de officiële voorwerpnamen uit het spel. Wissel bovenaan via de taalcode; de zoekfunctie vindt ook nog steeds Engels en Duits.',
+      pl: 'Craftionary mówi teraz w 14 językach, z oficjalnymi nazwami przedmiotów z gry. Język zmienisz u góry kodem języka, a wyszukiwarka nadal rozumie też angielski i niemiecki.',
+      pt: 'O Craftionary agora fala 14 idiomas, com os nomes oficiais dos itens do jogo. Troque no topo pelo código do idioma; a pesquisa continua achando inglês e alemão também.',
+      tr: 'Craftionary artık 14 dil konuşuyor, eşyaların oyundaki resmî adlarıyla. Dili üstteki dil kodundan değiştirebilirsiniz; arama İngilizceyi ve Almancayı da bulmaya devam ediyor.',
+      ru: 'Craftionary теперь говорит на 14 языках, с официальными названиями предметов из игры. Язык меняется кнопкой с кодом языка вверху, а поиск по-прежнему находит и английский, и немецкий.',
+      hi: 'Craftionary अब 14 भाषाएँ बोलता है, गेम के आधिकारिक आइटम नामों के साथ। भाषा ऊपर भाषा कोड वाले बटन से बदलें, खोज अंग्रेज़ी और जर्मन भी पहले की तरह ढूँढती है।',
+      zh: 'Craftionary 现在支持 14 种语言，使用游戏里的官方物品名称。用顶部的语言代码按钮即可切换，搜索仍然也能找到英文和德文。',
+      ja: 'Craftionary が14の言語に対応し、ゲームの公式なアイテム名で表示するようになりました。言語は上部の言語コードのボタンで切り替えられ、検索では引き続き英語とドイツ語も使えます。',
+      ko: '이제 Craftionary가 14개 언어를 지원하며, 게임의 공식 아이템 이름을 씁니다. 언어는 위쪽의 언어 코드 버튼으로 바꿀 수 있고, 검색은 여전히 영어와 독일어도 찾습니다.'
+    },
+    {
       date: '2026-10-31',
       de: 'Lange Namen wie „Diamantschwert“ brechen auf schmalen Handys jetzt um, statt über den Rand zu ragen.',
       en: 'On narrow phones, long item names now wrap onto the next line instead of sticking out over the edge.',
