@@ -1196,6 +1196,23 @@ var NEWS = {
   fontart: [
     {
       date: '2026-10-31',
+      de: 'Auch im dunklen und im Neon-Stil ist jetzt jede Schrift gut lesbar. In den blauen und violetten Farbwelten waren Schrift, Akzentfarben und Pink teils zu blass, sie sind nur so weit heller geworden, wie es dafür braucht.',
+      en: 'In the dark and neon styles, all text is now easy to read as well. In the blue and violet colour worlds, text, accent colours and pink were sometimes too faint, and they are now only as much lighter as they need to be.',
+      es: 'También en los estilos oscuro y neón ahora todo el texto se lee bien. En los mundos de color azules y violetas, el texto, los colores de acento y el rosa eran a veces demasiado pálidos y se han aclarado solo lo necesario.',
+      fr: 'Dans les styles sombre et néon aussi, tout le texte se lit maintenant bien. Dans les univers de couleurs bleus et violets, le texte, les couleurs d’accent et le rose étaient parfois trop pâles et n’ont été éclaircis que juste ce qu’il faut.',
+      it: 'Anche negli stili scuro e neon ora tutto il testo si legge bene. Nelle atmosfere di colore blu e viola il testo, i colori d’accento e il rosa erano a volte troppo tenui e sono stati schiariti solo quanto serve.',
+      nl: 'Ook in de donkere en de neonstijl is nu alle tekst goed leesbaar. In de blauwe en paarse kleurwerelden waren tekst, accentkleuren en roze soms te flets en ze zijn alleen zo veel lichter geworden als nodig.',
+      pl: 'Także w ciemnej i neonowej odsłonie cały tekst jest teraz czytelny. W niebieskich i fioletowych światach barw tekst, kolory akcentu i róż bywały zbyt blade i zostały rozjaśnione tylko tyle, ile trzeba.',
+      pt: 'Também nos estilos escuro e neon, agora todo o texto fica fácil de ler. Nos mundos de cor azuis e violeta, o texto, as cores de destaque e o rosa às vezes estavam fracos demais e foram clareados só o necessário.',
+      tr: 'Koyu ve neon stillerde de artık tüm yazılar rahatça okunuyor. Mavi ve mor renk dünyalarında yazılar, vurgu renkleri ve pembe bazen fazla soluktu, yalnızca gerektiği kadar açıldı.',
+      ru: 'В тёмном и неоновом стилях теперь тоже хорошо читается весь текст. В синих и фиолетовых цветовых мирах текст, акцентные цвета и розовый местами были слишком бледными и стали светлее ровно настолько, насколько нужно.',
+      hi: 'गहरे और नियॉन अंदाज़ में भी अब सारी लिखावट आसानी से पढ़ी जा सकती है। नीली और बैंगनी रंग-दुनियाओं में लिखावट, ज़ोर वाले रंग और गुलाबी कहीं-कहीं बहुत फीके थे, अब उन्हें सिर्फ़ उतना ही हल्का किया गया है जितना ज़रूरी था।',
+      zh: '在暗色和霓虹风格中，现在所有文字也都清晰易读。蓝色和紫色配色中的文字、强调色和粉色原来有时太淡，现在只做了必要的调亮。',
+      ja: 'ダークとネオンのスタイルでも、すべての文字が読みやすくなりました。青や紫の配色では文字、アクセントカラー、ピンクが薄すぎることがあったため、必要な分だけ明るくしています。',
+      ko: '어두운 스타일과 네온 스타일에서도 이제 모든 글자가 잘 읽힙니다. 파란색과 보라색 색 테마에서 글자, 강조 색, 분홍이 너무 흐린 곳이 있어 필요한 만큼만 밝게 바꿨습니다.'
+    },
+    {
+      date: '2026-10-31',
       de: 'Im hellen Stil der Browser-Fassung ist jetzt jede Schrift gut lesbar. Kopfzeile, Eingabefelder, die Texte in den Fenstern (auch die ganze Anleitung), Meldungen und das gewählte Zeichen standen vorher dunkel auf dunkel oder hell auf hell. Die Kopfzeile nimmt nun die Farben deiner Farbwelt an, Akzentfarben sowie Rot und Grün sind nur so weit dunkler geworden, wie es dafür braucht. Im Hohen Kontrast hell sind jetzt auch die kleinen Buchstaben in der Zeichentabelle kräftig genug.',
       en: 'In the light style of the browser version, all text is now easy to read. The header, input fields, the text in the windows (including the whole guide), messages and the selected character used to be dark on dark or light on light. The header now takes on the colours of your colour world, and the accent colours, red and green are only as much darker as they need to be. In High contrast light, the small letters in the character map are now strong enough too.',
       es: 'En el estilo claro de la versión para navegador, ahora todo el texto se lee bien. La cabecera, los campos de entrada, los textos de las ventanas (también toda la guía), los avisos y el carácter elegido aparecían antes en oscuro sobre oscuro o en claro sobre claro. La cabecera toma ahora los colores de tu mundo de color, y los colores de acento, el rojo y el verde se han oscurecido solo lo necesario. En Alto contraste claro, ahora también las letras pequeñas de la tabla de caracteres tienen suficiente contraste.',
