@@ -1438,3 +1438,200 @@ a.wk-shot-frame:focus-visible { outline-color: var(--tool, var(--accent)); }
 :is(.tool-name[data-i18n], [data-name-uebersetzt]):is(:lang(ru), :lang(hi), :lang(zh), :lang(ja), :lang(ko)) {
   font-family: var(--font-text);
 }
+
+/* ==================================================================
+   Sehhilfen (31.10.2026): Hoher Kontrast, Farbenblind, Umgekehrte Farben.
+   Dennis' Entscheidungen, alle per Auswahl: EIN Feld mit acht Einträgen,
+   und die Wahl gilt in allen Werkzeugen (localStorage
+   „werkstatt.darstellung“, alle liegen auf einem Ursprung). Das Kopf-Skript
+   jeder Seite übersetzt sie vor dem ersten Bild in zwei Attribute:
+     data-theme   light | dark               wie bisher, die drei Blöcke oben
+     data-vision  contrast | cvd | invert    neu, nur hier unten
+   Hoher Kontrast und Farbenblind kommen immer mit festem data-theme, auch
+   wenn „System“ dem Gerätewunsch „Kontrast erhöhen“ folgt (header.js). Die
+   drei Farbblöcke oben bleiben dafür Zeile für Zeile, wie sie sind: die
+   Profil-README liest den Dunkel-Block (readme-bauen.mjs, erster Treffer
+   für :root[data-theme="dark"]).
+   ================================================================== */
+
+/* Hoher Kontrast, dunkel. Schwarz mit Schrift #E0E0E0, 15,91:1 (Dennis:
+   „leicht gedämpft“ statt Reinweiß). Jede Schrift hält 7:1 gegen Schwarz.
+   Die Kachelfarben des Dunkel-Blocks tun das schon alle (schlechtester Wert
+   --ticker 7,61), deshalb erben sie und stehen hier nicht. Verläufe werden
+   zu ihrem Anker-Vollton. Aurora, Schleier, Leuchten und Schatten fallen
+   weg (Regeln weiter unten). */
+:root[data-vision="contrast"][data-theme="dark"] {
+  --bg: #000000;
+  --panel: #000000;
+  --panel-veil: #000000;
+  --text: #E0E0E0;
+  --text-soft: #C4C4C4;   /* 12,04 */
+  --border: #A0A0A0;      /* 8,03, Rahmen im Hohen Kontrast 2 px */
+  --accent-soft: #000000;
+  --claim-1: var(--accent);
+  --claim-2: var(--accent);
+  --claim-3: var(--accent);
+  --glow: 0%;
+  --glow-hover: 0%;
+  --haze: 0;
+  --name-glow: 0px;
+  --shadow: none;
+  --prisma-flow: linear-gradient(var(--prisma), var(--prisma));
+  --spectro-flow: linear-gradient(var(--spectro), var(--spectro));
+  --heizwarte-flow: linear-gradient(var(--heizwarte), var(--heizwarte));
+  --pocketsum-flow: linear-gradient(var(--pocketsum), var(--pocketsum));
+  --gaming-flow: linear-gradient(var(--gaming), var(--gaming));
+}
+
+/* Hoher Kontrast, hell. Weiß mit schwarzer Schrift. Jede Kachelfarbe behält
+   ihren Farbton (OKLCH) und ist so weit nachgedunkelt, dass sie gegen Weiß
+   7,2:1 hält; vorher lagen sie bei 6,3. Gerechnet mit farbe.mjs der
+   Sehhilfen-Runde (Bisektion der Helligkeit, Chroma in den Gamut geklemmt). */
+:root[data-vision="contrast"][data-theme="light"] {
+  --accent: #5249AA;        /* 7,26 */
+  --accent-strong: #464480; /* 8,75 */
+  --accent-soft: #FFFFFF;
+  --bg: #FFFFFF;
+  --panel: #FFFFFF;
+  --panel-veil: #FFFFFF;
+  --text: #000000;
+  --text-soft: #2B2B2B;     /* 14,16 */
+  --border: #585757;        /* 7,20 */
+  --claim-1: var(--accent);
+  --claim-2: var(--accent);
+  --claim-3: var(--accent);
+  --glow: 0%;
+  --glow-hover: 0%;
+  --haze: 0;
+  --name-glow: 0px;
+  --shadow: none;
+  --wifi: #00606E;          /* 7,25 */
+  --shrink: #7E12D2;        /* 7,23 */
+  --bigday: #794E00;        /* 7,23 */
+  --ram: #0058A1;           /* 7,22 */
+  --rad: #B10032;           /* 7,20 */
+  --collective: #00643D;    /* 7,27 */
+  --zaehlwerk: #455F00;     /* 7,27 */
+  --fontart: #9E0099;       /* 7,21 */
+  --ticker: #403DDB;        /* 7,22 */
+  --masterprompt: #993700;  /* 7,24 */
+  --prisma: #5B3FBF;        /* 7,22 */
+  --spectro: #00625B;       /* 7,25 */
+  --heizwarte: #005D82;     /* 7,27 */
+  --craftionary: #00634F;   /* 7,25 */
+  --vault: #6C5400;         /* 7,23 */
+  --ruestkammer: #8D4200;   /* 7,21 */
+  --prisma-flow: linear-gradient(var(--prisma), var(--prisma));
+  --spectro-flow: linear-gradient(var(--spectro), var(--spectro));
+  --heizwarte-flow: linear-gradient(var(--heizwarte), var(--heizwarte));
+  --pocketsum-flow: linear-gradient(var(--pocketsum), var(--pocketsum));
+  --gaming-flow: linear-gradient(var(--gaming), var(--gaming));
+}
+
+/* Was im Hohen Kontrast wegfällt oder kräftiger wird, in beiden Grundtönen.
+   Die Farbkappe wird zum festen oberen Rahmen in der Werkzeugfarbe: die
+   Ebene mit Maske (.tool-card::before) rechnet mit 1 px Rahmen, hier sind es
+   2 px. */
+:root[data-vision="contrast"] .aurora { display: none; }
+:root[data-vision="contrast"] .tool-card,
+:root[data-vision="contrast"] .wk-tool {
+  border-width: 2px;
+  border-top: 5px solid var(--tool, var(--accent));
+  box-shadow: none;
+}
+:root[data-vision="contrast"] .tool-card::before,
+:root[data-vision="contrast"] .wk-tool::before,
+:root[data-vision="contrast"] .tool-card::after { content: none; }
+:root[data-vision="contrast"] .tool-card:hover,
+:root[data-vision="contrast"] .tool-card:focus-within { box-shadow: none; }
+:root[data-vision="contrast"] .tool-platzhalter { border-top: 2px dashed var(--border); }
+:root[data-vision="contrast"] :is(.tool-head img, .tb-icon) { filter: none; }
+:root[data-vision="contrast"] :is(.family-bar, .materie-icon) { box-shadow: none; }
+:root[data-vision="contrast"] :is(.sep, .tool-mini-date) { opacity: 1; }
+/* Verlaufsschrift wird einfarbig: Claim in Textfarbe, Namen in Werkzeugfarbe */
+:root[data-vision="contrast"] :is(.hero h1, .wk-hero h1) { background: none; color: var(--text); }
+:root[data-vision="contrast"] .tool-name { background: none; color: var(--tool); text-shadow: none; }
+:root[data-vision="contrast"] .pledge { border: 2px solid var(--accent-strong); }
+:root[data-vision="contrast"] :is(#langSelect, #themeSelect, .tool-mini a, .wk-shot-frame, .wk-news-version) { border-width: 2px; }
+:root[data-vision="contrast"] :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+:root[data-vision="contrast"] .tool-open:focus-visible { outline: none; }
+:root[data-vision="contrast"] .tool-open:focus-visible::after { outline: 3px solid var(--accent); outline-offset: 2px; }
+/* Textlinks unterstrichen, nicht erst beim Überfahren */
+:root[data-vision="contrast"] :is(.more-line a, .site-footer a, .hero-back a, .wk-nav-back, .wk-external, .wk-tool-cta, .tool-open) { text-decoration: underline; }
+@media (max-width: 720px) {
+  :root[data-vision="contrast"] .wk-nav-button { border-width: 2px; }
+}
+
+/* Am Telefon teilen sich die zwei Auswahlfelder eine Zeile. Seit den acht
+   Darstellungen ist deren längster Eintrag („Hoher Kontrast dunkel“, ru
+   „Для дальтоников, светлая“) gut doppelt so lang wie der längste
+   Sprachname, also bekommt die Darstellung den größeren Teil der Zeile. */
+@media (max-width: 480px) {
+  .header-controls .lang-wrap:has(#themeSelect) { flex-grow: 1.6; }
+}
+/* Die zwei schwarzen Kacheln (dunkle Materie, Fadenkreuz) bleiben schwarz,
+   ihre Schrift ist fest hell. Statt Raumverlauf und Sternen: Schwarz, Rahmen
+   wie jede Kachel, oben ihre Farbe. Die Meta-Zeile der dunklen Materie
+   (#8079a8, 5,22) wird heller, damit sie 7:1 hält (#9892C2, 7,23). */
+:root[data-vision="contrast"] .tool-dunkle-materie,
+:root[data-vision="contrast"] .tool-dunkle-materie:hover {
+  background: #000000;
+  border: 2px dashed #A0A0A0;
+  padding-top: 22px;
+}
+:root[data-vision="contrast"] .tool-dunkle-materie .tool-meta { color: #9892C2; }
+:root[data-vision="contrast"] .tool-card.tool-fadenkreuz {
+  background: #000000;
+  border: 2px solid #A0A0A0;
+  border-top: 5px solid var(--tool);
+  padding-top: 22px;
+}
+:root[data-vision="contrast"] .tool-card.tool-fadenkreuz:hover,
+:root[data-vision="contrast"] .tool-card.tool-fadenkreuz:focus-within { border-color: var(--tool); }
+
+/* Farbenblind: Die Startseite trägt keine Bedeutungsfarben. Kachelfarben
+   sind Erkennungszeichen, und jede Kachel trägt dazu Namen und Symbol. Hier
+   gibt es deshalb nichts zu tauschen; Farbenblind dunkel und hell zeigen
+   dieselben Farben wie Dunkel und Hell. Die Werkzeuge tauschen ihre
+   Bedeutungsfarben selbst. */
+
+/* Umgekehrte Farben, wie der Farbfilter von Windows: umgedreht wird, was
+   gerade zu sehen ist (data-theme bleibt dafür leer, das System entscheidet
+   den Grundton). Bildschirmfotos und andere Rasterbilder werden ein zweites
+   Mal umgedreht und sind damit wieder echt: invert(1) ist seine eigene
+   Umkehrung, im Browser pixelgenau nachgemessen. Mit hue-rotate wäre das
+   nicht so, dort schneidet jeder Schritt Farben ab. Symbole (SVG) drehen mit
+   wie unter Windows. data-echt markiert, was sonst noch echt bleiben muss. */
+:root[data-vision="invert"] { filter: invert(1); }
+:root[data-vision="invert"] :is(img:not([src*=".svg"]), video, [data-echt]):not([data-echt] *) { filter: invert(1); }
+
+/* Umdrehen erhält den WCAG-Kontrast NICHT, weil Helligkeit nicht linear
+   empfunden wird: Mitteltöne kippen. Die helle Fassung übersteht es (jede
+   Farbe umgedreht mindestens 7,05:1). In der dunklen fielen zehn
+   Kachelfarben und fünf Verlaufsstopps umgedreht unter 4,5:1, am
+   schlechtesten Collective-Calc mit 2,83. Sie werden hier gerade so weit
+   heller (gleicher Farbton), dass ihre UMKEHRUNG gegen den umgedrehten
+   Kachelschleier über dem hellsten Aurora-Punkt (#181F3F, umgedreht
+   #E7E0C0) 4,6:1 hält. Freie Schrift auf der Aurora hält umgedreht schon
+   (schlechtester Wert --accent 5,00 gegen #1A4796). farbe.mjs zielUmkehr. */
+@media (prefers-color-scheme: dark) {
+  :root[data-vision="invert"] {
+    --wifi: #3CE9FF;
+    --shrink: #C491FF;
+    --rad: #FF9199;
+    --collective: #3DFBAC;
+    --fontart: #FF8DF6;
+    --ticker: #88A0FF;
+    --masterprompt: #FF995D;
+    --spectro: #3BF3DB;
+    --fadenkreuz: #41FF8C;
+    --ruestkammer: #FF9C4E;
+    --prisma-flow: linear-gradient(100deg, #ff9e95, #ffae55, #cfd149, #39faf1, #bfb9ff);
+    --spectro-flow: linear-gradient(100deg, #8bfff8, #48e8e0, #40e2da, #48d3cb, #53c5bf);
+    --heizwarte-flow: linear-gradient(100deg, #7dd3fc, #86efac, #fde047, #fdba74, #ff928f);
+  }
+}
+/* Die Meta-Zeile der dunklen Materie (fest #8079a8) käme umgedreht auf 3,47,
+   die Trennpunkte der Fußzeile (60 % Deckkraft) auf 3,06 */
+:root[data-vision="invert"] .tool-dunkle-materie .tool-meta { color: #948DBD; }
+:root[data-vision="invert"] .sep { opacity: 1; }
