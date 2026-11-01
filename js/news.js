@@ -1405,6 +1405,25 @@ var NEWS = {
   ticker: [
     {
       date: '2026-11-01',
+      version: 'v1.1.5',
+      link: 'https://github.com/Dennismit2n/besucher-ticker/releases/tag/v1.1.5',
+      de: 'Das Einstellungsfenster ist jetzt ganz dunkel, samt Titelleiste, Auswahllisten und Knöpfen. Vorher waren die hell.',
+      en: 'The settings window is now fully dark, title bar, drop-down lists and buttons included. They used to be light.',
+      es: 'La ventana de ajustes ahora es oscura por completo, incluidas la barra de título, las listas desplegables y los botones. Antes eran claros.',
+      fr: 'La fenêtre des réglages est désormais entièrement sombre, barre de titre, listes déroulantes et boutons compris. Avant, ils étaient clairs.',
+      it: 'La finestra delle impostazioni ora è tutta scura, compresi la barra del titolo, gli elenchi a discesa e i pulsanti. Prima erano chiari.',
+      nl: 'Het instellingenvenster is nu helemaal donker, inclusief titelbalk, keuzelijsten en knoppen. Eerder waren die licht.',
+      pl: 'Okno ustawień jest teraz całkiem ciemne, łącznie z paskiem tytułu, listami rozwijanymi i przyciskami. Wcześniej były jasne.',
+      pt: 'A janela de configurações agora é toda escura, incluindo a barra de título, as listas suspensas e os botões. Antes eram claros.',
+      tr: 'Ayarlar penceresi artık başlık çubuğu, açılır listeler ve düğmeler dahil tamamen koyu. Önceden bunlar açık renkliydi.',
+      ru: 'Окно настроек теперь полностью тёмное, включая заголовок, раскрывающиеся списки и кнопки. Раньше они были светлыми.',
+      hi: 'सेटिंग्स विंडो अब पूरी तरह गहरे रंग में है, टाइटल बार, ड्रॉपडाउन सूचियों और बटनों समेत। पहले ये हल्के थे।',
+      zh: '设置窗口现在完全是深色的，包括标题栏、下拉列表和按钮。以前它们是浅色的。',
+      ja: '設定ウィンドウが、タイトルバー、ドロップダウンリスト、ボタンまで含めてすべてダーク表示になりました。以前は明るい色でした。',
+      ko: '설정 창이 이제 제목 표시줄, 드롭다운 목록, 버튼까지 모두 어둡게 나옵니다. 예전에는 밝았습니다.'
+    },
+    {
+      date: '2026-11-01',
       version: 'v1.1.4',
       link: 'https://github.com/Dennismit2n/besucher-ticker/releases/tag/v1.1.4',
       de: 'Die Frage nach der GoatCounter-Adresse zeigt jetzt ein neutrales Beispiel („deinname“) statt meiner eigenen Seite.',
