@@ -21,6 +21,25 @@ var NEWS = {
   ram: [
     {
       date: '2026-11-01',
+      version: 'v1.3.2',
+      link: 'https://github.com/Dennismit2n/Real_RAM_cooler/releases/tag/v1.3.2',
+      de: 'Das Setup ist jetzt dunkel, auch bei hellem Windows, und spricht auch Hindi (vorher kam dort Englisch). An der App selbst ändert sich nur die Versionsnummer.',
+      en: 'The setup is now dark, even in light Windows, and also speaks Hindi (it used to show English there). Only the version number changes in the app itself.',
+      es: 'El instalador ahora es oscuro, también con Windows en modo claro, y habla también hindi (antes salía en inglés). En la aplicación solo cambia el número de versión.',
+      fr: 'L’installateur est désormais sombre, même avec un Windows clair, et parle aussi le hindi (il s’affichait en anglais jusque-là). Dans l’application, seul le numéro de version change.',
+      it: 'Il programma di installazione ora è scuro, anche con Windows chiaro, e parla anche hindi (prima compariva in inglese). Nell’app cambia solo il numero di versione.',
+      nl: 'De installatie is nu donker, ook bij een licht Windows, en spreekt ook Hindi (eerder verscheen daar Engels). In de app zelf verandert alleen het versienummer.',
+      pl: 'Instalator jest teraz ciemny, także przy jasnym Windows, i mówi też w hindi (wcześniej pokazywał się tam po angielsku). W samej aplikacji zmienia się tylko numer wersji.',
+      pt: 'O instalador agora é escuro, mesmo com o Windows claro, e também fala hindi (antes aparecia em inglês). No aplicativo em si só muda o número da versão.',
+      tr: 'Kurulum artık açık renkli Windows’ta da koyu ve Hintçe de konuşuyor (önceden orada İngilizce görünüyordu). Uygulamanın kendisinde yalnızca sürüm numarası değişiyor.',
+      ru: 'Установщик теперь тёмный, даже при светлой теме Windows, и знает хинди (раньше там был английский). В самом приложении меняется только номер версии.',
+      hi: 'सेटअप अब गहरे रंग में है, हल्के Windows में भी, और हिंदी भी बोलता है (पहले वहाँ अंग्रेज़ी दिखती थी)। ऐप में सिर्फ़ संस्करण संख्या बदली है।',
+      zh: '安装程序现在是深色的，即使 Windows 是浅色也一样，并且也支持印地语（以前那里显示英文）。应用本身只改了版本号。',
+      ja: 'セットアップはダーク表示になりました。Windows がライトでも同じです。ヒンディー語にも対応しました（以前は英語で表示されていました）。アプリ本体はバージョン番号だけが変わります。',
+      ko: '설치 프로그램이 이제 어둡게 나옵니다. 밝은 Windows에서도 마찬가지입니다. 힌디어도 지원합니다(예전에는 영어로 나왔습니다). 앱 자체는 버전 번호만 바뀝니다.'
+    },
+    {
+      date: '2026-11-01',
       version: 'v1.3.1',
       link: 'https://github.com/Dennismit2n/Real_RAM_cooler/releases/tag/v1.3.1',
       de: 'Sieben Texte auf Deutsch und Englisch kommen jetzt ohne Gedankenstriche aus, ein Komma übernimmt die Pause. Die anderen 12 Sprachen waren schon frei.',
@@ -1367,6 +1386,25 @@ var NEWS = {
   ticker: [
     {
       date: '2026-11-01',
+      version: 'v1.1.2',
+      link: 'https://github.com/Dennismit2n/besucher-ticker/releases/tag/v1.1.2',
+      de: 'Die zwei Fragen beim ersten Start haben jetzt Knöpfe in deiner Sprache, vorher standen dort immer „OK“ und „Cancel“.',
+      en: 'The two questions at first start now have buttons in your language, they always used to say “OK” and “Cancel”.',
+      es: 'Las dos preguntas del primer inicio tienen ahora botones en tu idioma, antes siempre decían «OK» y «Cancel».',
+      fr: 'Les deux questions du premier démarrage ont désormais des boutons dans votre langue, avant ils affichaient toujours « OK » et « Cancel ».',
+      it: 'Le due domande al primo avvio ora hanno i pulsanti nella tua lingua, prima c’era sempre «OK» e «Cancel».',
+      nl: 'De twee vragen bij de eerste start hebben nu knoppen in je eigen taal, eerder stond daar altijd ‘OK’ en ‘Cancel’.',
+      pl: 'Dwa pytania przy pierwszym uruchomieniu mają teraz przyciski w twoim języku, wcześniej zawsze było tam „OK” i „Cancel”.',
+      pt: 'As duas perguntas da primeira execução agora têm botões no seu idioma, antes sempre aparecia «OK» e «Cancel».',
+      tr: 'İlk açılıştaki iki sorunun düğmeleri artık sizin dilinizde, önceden orada hep “OK” ve “Cancel” yazıyordu.',
+      ru: 'У двух вопросов при первом запуске теперь кнопки на вашем языке, раньше там всегда было «OK» и «Cancel».',
+      hi: 'पहली बार शुरू करने पर आने वाले दोनों सवालों में अब बटन आपकी भाषा में हैं, पहले वहाँ हमेशा “OK” और “Cancel” लिखा होता था।',
+      zh: '首次启动时的两个问题现在用你的语言显示按钮，以前总是“OK”和“Cancel”。',
+      ja: '初回起動時の 2 つの質問のボタンが、あなたの言語で表示されるようになりました。以前は常に「OK」と「Cancel」でした。',
+      ko: '처음 시작할 때 나오는 두 질문의 버튼이 이제 사용하는 언어로 나옵니다. 예전에는 항상 ‘OK’와 ‘Cancel’이었습니다.'
+    },
+    {
+      date: '2026-11-01',
       version: 'v1.1.1',
       link: 'https://github.com/Dennismit2n/besucher-ticker/releases/tag/v1.1.1',
       de: 'Fenstertitel, Abfrage-Hinweis und drei Meldungen kommen jetzt ohne Gedankenstriche aus. Das betraf nur Deutsch, die anderen 13 Sprachen waren schon frei.',
@@ -1841,6 +1879,25 @@ var NEWS = {
   fadenkreuz: [
     {
       date: '2026-11-01',
+      version: 'v1.2.2',
+      link: 'https://github.com/Dennismit2n/fadenkreuz/releases/tag/v1.2.2',
+      de: 'Das Setup ist jetzt dunkel, spricht auch Hindi (vorher kam dort Englisch) und kommt ohne Gedankenstriche aus. Der Editor passt jetzt auch in ein ganz schmales Fenster, nichts steht mehr seitlich über.',
+      en: 'The setup is now dark, also speaks Hindi (it used to show English there) and does without dashes. The editor now fits a very narrow window too, nothing sticks out sideways any more.',
+      es: 'El instalador ahora es oscuro, habla también hindi (antes salía en inglés) y ya no lleva rayas. El editor cabe ahora también en una ventana muy estrecha, ya no sobresale nada por los lados.',
+      fr: 'L’installateur est désormais sombre, parle aussi le hindi (il s’affichait en anglais jusque-là) et se passe de tirets. L’éditeur tient maintenant aussi dans une fenêtre très étroite, plus rien ne dépasse sur le côté.',
+      it: 'Il programma di installazione ora è scuro, parla anche hindi (prima compariva in inglese) e fa a meno dei trattini lunghi. L’editor ora sta anche in una finestra molto stretta, niente sporge più di lato.',
+      nl: 'De installatie is nu donker, spreekt ook Hindi (eerder verscheen daar Engels) en heeft geen gedachtestreepjes meer. De editor past nu ook in een heel smal venster, er steekt niets meer opzij uit.',
+      pl: 'Instalator jest teraz ciemny, mówi też w hindi (wcześniej pokazywał się tam po angielsku) i obywa się bez myślników. Edytor mieści się teraz także w bardzo wąskim oknie, nic już nie wystaje na boki.',
+      pt: 'O instalador agora é escuro, também fala hindi (antes aparecia em inglês) e dispensa travessões. O editor agora cabe também numa janela bem estreita, nada mais sobra para os lados.',
+      tr: 'Kurulum artık koyu, Hintçe de konuşuyor (önceden orada İngilizce görünüyordu) ve uzun tire kullanmıyor. Düzenleyici artık çok dar bir pencereye de sığıyor, yana hiçbir şey taşmıyor.',
+      ru: 'Установщик теперь тёмный, знает хинди (раньше там был английский) и обходится без тире. Редактор теперь помещается и в очень узкое окно, ничего не выступает вбок.',
+      hi: 'सेटअप अब गहरे रंग में है, हिंदी भी बोलता है (पहले वहाँ अंग्रेज़ी दिखती थी) और बिना डैश के है। एडिटर अब बहुत पतली विंडो में भी पूरा आता है, कुछ भी बगल से बाहर नहीं निकलता।',
+      zh: '安装程序现在是深色的，也支持印地语（以前那里显示英文），并且不再使用破折号。编辑器现在也能放进很窄的窗口，侧面不再有内容超出。',
+      ja: 'セットアップはダーク表示になり、ヒンディー語にも対応し（以前は英語で表示されていました）、ダッシュもなくなりました。エディターはとても狭いウィンドウにも収まり、横にはみ出すものはありません。',
+      ko: '설치 프로그램이 이제 어둡게 나오고 힌디어도 지원하며(예전에는 영어로 나왔습니다) 줄표도 없앴습니다. 에디터는 이제 아주 좁은 창에도 들어가고, 옆으로 삐져나오는 것이 없습니다.'
+    },
+    {
+      date: '2026-11-01',
       version: 'v1.2.1',
       link: 'https://github.com/Dennismit2n/fadenkreuz/releases/tag/v1.2.1',
       de: 'Vier Meldungen im Editor kommen auf Deutsch und Englisch ohne Gedankenstriche aus, die anderen 12 Sprachen waren schon frei.',
@@ -1917,6 +1974,23 @@ var NEWS = {
     }
   ],
   craftionary: [
+    {
+      date: '2026-11-01',
+      de: 'Am Handy passen die Einstellungen jetzt ganz auf den Bildschirm, „Schließen“ rutscht bei Bedarf unter den Titel und der Windows-Pfad bricht um, statt rechts abgeschnitten zu sein.',
+      en: 'On phones the settings now fit the screen completely, “Close” moves below the title when needed and the Windows path wraps instead of being cut off on the right.',
+      es: 'En el móvil los ajustes caben ahora del todo en la pantalla, «Cerrar» pasa debajo del título si hace falta y la ruta de Windows salta de línea en lugar de quedar cortada a la derecha.',
+      fr: 'Sur téléphone, les réglages tiennent désormais entièrement à l’écran, « Fermer » passe sous le titre si besoin et le chemin Windows revient à la ligne au lieu d’être coupé à droite.',
+      it: 'Sul telefono le impostazioni ora stanno tutte nello schermo, «Chiudi» va sotto il titolo se serve e il percorso di Windows va a capo invece di essere tagliato a destra.',
+      nl: 'Op de telefoon passen de instellingen nu helemaal op het scherm, ‘Sluiten’ schuift zo nodig onder de titel en het Windows-pad loopt door op de volgende regel in plaats van rechts afgekapt te worden.',
+      pl: 'Na telefonie ustawienia mieszczą się teraz w całości na ekranie, „Zamknij” w razie potrzeby przechodzi pod tytuł, a ścieżka Windows łamie się, zamiast być ucięta z prawej.',
+      pt: 'No celular as configurações agora cabem inteiras na tela, «Fechar» passa para baixo do título quando preciso e o caminho do Windows quebra a linha em vez de ficar cortado à direita.',
+      tr: 'Telefonda ayarlar artık ekrana tamamen sığıyor, “Kapat” gerektiğinde başlığın altına geçiyor ve Windows yolu sağda kesilmek yerine alt satıra kayıyor.',
+      ru: 'На телефоне настройки теперь целиком помещаются на экране, «Закрыть» при нужде уходит под заголовок, а путь Windows переносится, а не обрезается справа.',
+      hi: 'फ़ोन पर सेटिंग्स अब पूरी स्क्रीन में आ जाती हैं, ज़रूरत हो तो “बंद करें” शीर्षक के नीचे चला जाता है और Windows का पाथ दाईं ओर कटने के बजाय अगली पंक्ति में चला जाता है।',
+      zh: '在手机上，设置现在能完整显示在屏幕内，需要时“关闭”会移到标题下方，Windows 路径会自动换行，不再在右侧被截断。',
+      ja: 'スマートフォンでも設定が画面にすべて収まるようになりました。必要に応じて「閉じる」がタイトルの下に移り、Windows のパスは右端で切れずに折り返されます。',
+      ko: '휴대폰에서도 설정이 이제 화면에 다 들어갑니다. 필요하면 ‘닫기’가 제목 아래로 내려가고, Windows 경로는 오른쪽에서 잘리지 않고 줄바꿈됩니다.'
+    },
     {
       date: '2026-11-01',
       de: 'Craftionary spricht jetzt 14 Sprachen, mit den offiziellen Itemnamen aus dem Spiel. Umstellen kannst du oben über das Sprachkürzel, Deutsch und Englisch findet die Suche weiterhin.',
