@@ -21,6 +21,25 @@ var NEWS = {
   ram: [
     {
       date: '2026-11-01',
+      version: 'v1.3.3',
+      link: 'https://github.com/Dennismit2n/Real_RAM_cooler/releases/tag/v1.3.3',
+      de: 'Das deutsche Setup duzt jetzt, aus „Lesen Sie bitte …“ wird „Lies bitte …“.',
+      en: 'The German setup now uses the informal “du”, so “Lesen Sie bitte …” becomes “Lies bitte …”.',
+      es: 'El instalador en alemán ahora tutea, y «Lesen Sie bitte …» pasa a ser «Lies bitte …».',
+      fr: 'L’installateur en allemand tutoie désormais, « Lesen Sie bitte … » devient « Lies bitte … ».',
+      it: 'Il programma di installazione in tedesco ora dà del tu, «Lesen Sie bitte …» diventa «Lies bitte …».',
+      nl: 'De Duitse installatie tutoyeert nu, ‘Lesen Sie bitte …’ wordt ‘Lies bitte …’.',
+      pl: 'Niemiecki instalator mówi teraz na „ty”, „Lesen Sie bitte …” zmienia się w „Lies bitte …”.',
+      pt: 'O instalador em alemão agora usa o tratamento informal, «Lesen Sie bitte …» vira «Lies bitte …».',
+      tr: 'Almanca kurulum artık samimi “du” hitabını kullanıyor, “Lesen Sie bitte …” yerine “Lies bitte …” yazıyor.',
+      ru: 'Немецкий установщик теперь обращается на «ты», вместо «Lesen Sie bitte …» там написано «Lies bitte …».',
+      hi: 'जर्मन सेटअप अब अनौपचारिक “du” इस्तेमाल करता है, “Lesen Sie bitte …” की जगह अब “Lies bitte …” लिखा है।',
+      zh: '德语安装程序现在用非正式的“du”称呼，“Lesen Sie bitte …”改成了“Lies bitte …”。',
+      ja: 'ドイツ語のセットアップがくだけた「du」で話すようになり、「Lesen Sie bitte …」は「Lies bitte …」になりました。',
+      ko: '독일어 설치 프로그램이 이제 친근한 ‘du’로 말합니다. ‘Lesen Sie bitte …’가 ‘Lies bitte …’로 바뀌었습니다.'
+    },
+    {
+      date: '2026-11-01',
       version: 'v1.3.2',
       link: 'https://github.com/Dennismit2n/Real_RAM_cooler/releases/tag/v1.3.2',
       de: 'Das Setup ist jetzt dunkel, auch bei hellem Windows, und spricht auch Hindi (vorher kam dort Englisch). An der App selbst ändert sich nur die Versionsnummer.',
@@ -1386,6 +1405,25 @@ var NEWS = {
   ticker: [
     {
       date: '2026-11-01',
+      version: 'v1.1.4',
+      link: 'https://github.com/Dennismit2n/besucher-ticker/releases/tag/v1.1.4',
+      de: 'Die Frage nach der GoatCounter-Adresse zeigt jetzt ein neutrales Beispiel („deinname“) statt meiner eigenen Seite.',
+      en: 'The question for the GoatCounter address now shows a neutral example (“yourname”) instead of my own site.',
+      es: 'La pregunta por la dirección de GoatCounter muestra ahora un ejemplo neutro («tunombre») en lugar de mi propio sitio.',
+      fr: 'La question sur l’adresse GoatCounter affiche désormais un exemple neutre (« votrenom ») au lieu de mon propre site.',
+      it: 'La domanda sull’indirizzo GoatCounter ora mostra un esempio neutro («tuonome») invece del mio sito.',
+      nl: 'De vraag naar het GoatCounter-adres toont nu een neutraal voorbeeld (‘jouwnaam’) in plaats van mijn eigen site.',
+      pl: 'Pytanie o adres GoatCounter pokazuje teraz neutralny przykład („twojanazwa”) zamiast mojej własnej strony.',
+      pt: 'A pergunta pelo endereço do GoatCounter agora mostra um exemplo neutro («seunome») em vez do meu próprio site.',
+      tr: 'GoatCounter adresi sorusu artık kendi sitem yerine tarafsız bir örnek (“adiniz”) gösteriyor.',
+      ru: 'Вопрос об адресе GoatCounter теперь показывает нейтральный пример («yourname») вместо моего собственного сайта.',
+      hi: 'GoatCounter पते वाले सवाल में अब मेरी अपनी साइट की जगह एक तटस्थ उदाहरण (“yourname”) दिखता है।',
+      zh: '询问 GoatCounter 地址的问题现在显示中性的示例（“yourname”），不再是我自己的站点。',
+      ja: 'GoatCounter のアドレスを尋ねる質問に、私自身のサイトではなく中立的な例（「yourname」）が表示されるようになりました。',
+      ko: 'GoatCounter 주소를 묻는 질문에 이제 제 사이트 대신 중립적인 예시(‘yourname’)가 나옵니다.'
+    },
+    {
+      date: '2026-11-01',
       version: 'v1.1.3',
       link: 'https://github.com/Dennismit2n/besucher-ticker/releases/tag/v1.1.3',
       de: 'Die zwei Fragen beim ersten Start sind jetzt dunkel wie der Ticker selbst, samt Titelleiste. Vorher waren sie hellgrau.',
@@ -1896,6 +1934,25 @@ var NEWS = {
     }
   ],
   fadenkreuz: [
+    {
+      date: '2026-11-01',
+      version: 'v1.2.3',
+      link: 'https://github.com/Dennismit2n/fadenkreuz/releases/tag/v1.2.3',
+      de: 'Das deutsche Setup duzt jetzt, aus „Lesen Sie bitte …“ wird „Lies bitte …“.',
+      en: 'The German setup now uses the informal “du”, so “Lesen Sie bitte …” becomes “Lies bitte …”.',
+      es: 'El instalador en alemán ahora tutea, y «Lesen Sie bitte …» pasa a ser «Lies bitte …».',
+      fr: 'L’installateur en allemand tutoie désormais, « Lesen Sie bitte … » devient « Lies bitte … ».',
+      it: 'Il programma di installazione in tedesco ora dà del tu, «Lesen Sie bitte …» diventa «Lies bitte …».',
+      nl: 'De Duitse installatie tutoyeert nu, ‘Lesen Sie bitte …’ wordt ‘Lies bitte …’.',
+      pl: 'Niemiecki instalator mówi teraz na „ty”, „Lesen Sie bitte …” zmienia się w „Lies bitte …”.',
+      pt: 'O instalador em alemão agora usa o tratamento informal, «Lesen Sie bitte …» vira «Lies bitte …».',
+      tr: 'Almanca kurulum artık samimi “du” hitabını kullanıyor, “Lesen Sie bitte …” yerine “Lies bitte …” yazıyor.',
+      ru: 'Немецкий установщик теперь обращается на «ты», вместо «Lesen Sie bitte …» там написано «Lies bitte …».',
+      hi: 'जर्मन सेटअप अब अनौपचारिक “du” इस्तेमाल करता है, “Lesen Sie bitte …” की जगह अब “Lies bitte …” लिखा है।',
+      zh: '德语安装程序现在用非正式的“du”称呼，“Lesen Sie bitte …”改成了“Lies bitte …”。',
+      ja: 'ドイツ語のセットアップがくだけた「du」で話すようになり、「Lesen Sie bitte …」は「Lies bitte …」になりました。',
+      ko: '독일어 설치 프로그램이 이제 친근한 ‘du’로 말합니다. ‘Lesen Sie bitte …’가 ‘Lies bitte …’로 바뀌었습니다.'
+    },
     {
       date: '2026-11-01',
       version: 'v1.2.2',
