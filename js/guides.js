@@ -3033,7 +3033,7 @@ var GUIDES = {
         '“Fadenkreuz-Editor” में बनाएँ, एक बार “इस रूप में सहेजें …” चुनें और Documents\\Fadenkreuz में fadenkreuz.bmp नाम से सहेजें। “live” चालू होने पर क्रॉसहेयर हर बदलाव ज़्यादा से ज़्यादा एक सेकंड में अपना लेता है।'
       ],
       zh: [
-        '从发布页下载安装程序并运行。因为文件没有签名，Windows 会提示“未知发布者”，点“更多信息”即可继续。选择“Install for me only”（仅为我安装）不需要管理员权限，准星和编辑器可以分开选择。',
+        '从发布页下载安装程序并运行。因为文件没有签名，Windows 会提示“未知发布者”，点“更多信息”即可继续。选择“仅为我安装”不需要管理员权限，准星和编辑器可以分开选择。',
         '启动“Fadenkreuz”：屏幕中央会出现一个绿色十字。Ctrl+Alt+F9 可隐藏或重新显示，Ctrl+Alt+F12 将其关闭（和再点一次快捷方式效果相同）。',
         '在“Fadenkreuz-Editor”里绘制，点一次“另存为 …”，把文件以 fadenkreuz.bmp 保存到“文档\\Fadenkreuz”。打开“live”后，准星最多一秒就会采用每次改动。'
       ],
@@ -3054,98 +3054,98 @@ var GUIDES = {
         'Strg+Alt+F10 im Spiel heißt: Ab jetzt erscheint das Kreuz nur noch, solange dieses Spiel vorne ist. Fehlt es in einem anderen Spiel, steht das nur noch nicht auf der Liste, dort also auch Strg+Alt+F10 drücken. Eine leere Dokumente\\Fadenkreuz\\programme.txt heißt: immer sichtbar.',
         'Über Startmenü, Taskleiste und manchen Overlays liegt das Kreuz nur mit „Installation für alle Benutzer“ und der Aufgabe „Über allem anzeigen“. Dafür legt das Setup ein Zertifikat an, das nur auf diesem PC gilt, und löscht den privaten Schlüssel gleich wieder.',
         'Fadenkreuz fasst das Spiel nicht an, es ist ein eigenes Fenster. Trotzdem mögen einige Wettkampf-Spiele keine Overlays, also vor Ranglisten-Spielen prüfen.',
-        'Nur der Hauptbildschirm. Der Editor spricht 14 Sprachen und richtet sich nach dem Browser, umstellen kannst du oben im Editor. Das Setup kann alle außer Chinesisch und Hindi, dort kommt es auf Englisch. Edge und Chrome speichern direkt in die Datei, Firefox kann sie nur herunterladen.'
+        'Nur der Hauptbildschirm. Der Editor spricht 14 Sprachen und richtet sich nach dem Browser, umstellen kannst du oben im Editor. Das Setup kann alle außer Hindi, dort kommt es auf Englisch. Edge und Chrome speichern direkt in die Datei, Firefox kann sie nur herunterladen.'
       ],
       en: [
         'Games in exclusive fullscreen draw over every overlay. Switch the game to “borderless window” or “windowed fullscreen”.',
         'Ctrl+Alt+F10 inside a game means: from now on the crosshair only appears while that game is in front. If it is missing in another game, that game is just not on the list yet, so press Ctrl+Alt+F10 there too. An empty Documents\\Fadenkreuz\\programme.txt means: always visible.',
         'The crosshair only sits above the Start menu, the taskbar and some overlays with “Install for all users” and the task “Show on top of everything”. For that, the setup creates a certificate that is only valid on this PC and deletes its private key right away.',
         'Fadenkreuz does not touch the game. It is a window of its own. Still, a few competitive games dislike overlays, so check before playing ranked.',
-        'Main screen only. The editor speaks 14 languages and follows your browser, and you can switch at the top of the editor. The setup speaks all of them except Chinese and Hindi, where it shows English. Edge and Chrome save straight into the file, while Firefox can only download it.'
+        'Main screen only. The editor speaks 14 languages and follows your browser, and you can switch at the top of the editor. The setup speaks all of them except Hindi, where it shows English. Edge and Chrome save straight into the file, while Firefox can only download it.'
       ],
       es: [
         'Los juegos en pantalla completa exclusiva tapan cualquier superposición. Pon el juego en «ventana sin bordes» o «pantalla completa en ventana».',
         'Ctrl+Alt+F10 dentro de un juego significa: a partir de ahora la mira solo aparece mientras ese juego esté delante. Si falta en otro juego, es que ese juego aún no está en la lista, así que pulsa también allí Ctrl+Alt+F10. Un Documentos\\Fadenkreuz\\programme.txt vacío significa: siempre visible.',
         'La mira solo queda por encima del menú Inicio, la barra de tareas y algunas superposiciones con «Instalar para todos los usuarios» y la tarea «Mostrar por encima de todo». Para ello, el instalador crea un certificado válido solo en este PC y borra enseguida su clave privada.',
         'Fadenkreuz no toca el juego: es una ventana propia. Aun así, algunos juegos competitivos no se llevan bien con las superposiciones, así que compruébalo antes de jugar partidas clasificatorias.',
-        'Solo la pantalla principal. El editor habla 14 idiomas y sigue al navegador, puedes cambiarlo arriba en el editor. El instalador está en todos menos chino e hindi, donde sale en inglés. Edge y Chrome guardan directamente en el archivo, Firefox solo puede descargarlo.'
+        'Solo la pantalla principal. El editor habla 14 idiomas y sigue al navegador, puedes cambiarlo arriba en el editor. El instalador está en todos menos hindi, donde sale en inglés. Edge y Chrome guardan directamente en el archivo, Firefox solo puede descargarlo.'
       ],
       fr: [
         'Les jeux en plein écran exclusif recouvrent toute surcouche. Passez le jeu en « fenêtre sans bordure » ou en « plein écran fenêtré ».',
         'Ctrl+Alt+F10 dans un jeu signifie : désormais, le réticule n’apparaît que tant que ce jeu est au premier plan. S’il manque dans un autre jeu, c’est simplement que celui-ci n’est pas encore sur la liste, appuyez donc aussi sur Ctrl+Alt+F10 là-bas. Un fichier Documents\\Fadenkreuz\\programme.txt vide signifie : toujours visible.',
         'Le réticule ne passe au-dessus du menu Démarrer, de la barre des tâches et de certaines surcouches qu’avec « Installer pour tous les utilisateurs » et la tâche « Afficher au-dessus de tout ». L’installateur crée pour cela un certificat valable uniquement sur ce PC et supprime aussitôt sa clé privée.',
         'Fadenkreuz ne touche pas au jeu : c’est une fenêtre à part. Certains jeux compétitifs n’aiment pourtant pas les surcouches, vérifiez donc avant de jouer en classé.',
-        'Écran principal uniquement. L’éditeur parle 14 langues et suit le navigateur, vous pouvez en changer en haut de l’éditeur. L’installateur les parle toutes sauf le chinois et le hindi, où il s’affiche en anglais. Edge et Chrome enregistrent directement dans le fichier, alors que Firefox ne peut que le télécharger.'
+        'Écran principal uniquement. L’éditeur parle 14 langues et suit le navigateur, vous pouvez en changer en haut de l’éditeur. L’installateur les parle toutes sauf le hindi, où il s’affiche en anglais. Edge et Chrome enregistrent directement dans le fichier, alors que Firefox ne peut que le télécharger.'
       ],
       it: [
         'I giochi a schermo intero esclusivo coprono qualsiasi overlay. Imposta il gioco su «finestra senza bordi» o «schermo intero in finestra».',
         'Ctrl+Alt+F10 dentro un gioco significa: da ora il mirino compare solo mentre quel gioco è in primo piano. Se manca in un altro gioco, quel gioco non è ancora nell’elenco, quindi premi Ctrl+Alt+F10 anche lì. Un Documenti\\Fadenkreuz\\programme.txt vuoto significa: sempre visibile.',
         'Il mirino sta sopra il menu Start, la barra delle applicazioni e alcuni overlay solo con «Installa per tutti gli utenti» e l’attività «Mostra sopra a tutto». Per questo il programma di installazione crea un certificato valido solo su questo PC e ne cancella subito la chiave privata.',
         'Fadenkreuz non tocca il gioco: è una finestra a sé. Alcuni giochi competitivi però non amano gli overlay, quindi controlla prima di giocare partite classificate.',
-        'Solo lo schermo principale. L’editor parla 14 lingue e segue il browser, puoi cambiarla in alto nell’editor. Il programma di installazione le parla tutte tranne cinese e hindi, dove compare in inglese. Edge e Chrome salvano direttamente nel file, Firefox può solo scaricarlo.'
+        'Solo lo schermo principale. L’editor parla 14 lingue e segue il browser, puoi cambiarla in alto nell’editor. Il programma di installazione le parla tutte tranne l’hindi, dove compare in inglese. Edge e Chrome salvano direttamente nel file, Firefox può solo scaricarlo.'
       ],
       nl: [
         'Games in exclusief volledig scherm tekenen over elke overlay heen. Zet de game op ‘randloos venster’ of ‘volledig scherm in venster’.',
         'Ctrl+Alt+F10 in een game betekent: vanaf nu verschijnt het vizier alleen zolang die game op de voorgrond staat. Ontbreekt het in een andere game, dan staat die game nog niet op de lijst, dus druk daar ook op Ctrl+Alt+F10. Een lege Documenten\\Fadenkreuz\\programme.txt betekent: altijd zichtbaar.',
         'Het vizier ligt alleen boven het Startmenu, de taakbalk en sommige overlays met ‘Installeer voor alle gebruikers’ en de taak ‘Boven alles tonen’. Daarvoor maakt de installatie een certificaat aan dat alleen op deze pc geldt, en wist de privésleutel meteen weer.',
         'Fadenkreuz raakt de game niet aan, het is een eigen venster. Toch houden sommige competitieve games niet van overlays, dus controleer dat vóór je ranked speelt.',
-        'Alleen het hoofdscherm. De editor spreekt 14 talen en volgt je browser, bovenin de editor zet je hem om. De installatie spreekt ze allemaal behalve Chinees en Hindi, daar verschijnt hij in het Engels. Edge en Chrome slaan direct op in het bestand, Firefox kan het alleen downloaden.'
+        'Alleen het hoofdscherm. De editor spreekt 14 talen en volgt je browser, bovenin de editor zet je hem om. De installatie spreekt ze allemaal behalve Hindi, daar verschijnt hij in het Engels. Edge en Chrome slaan direct op in het bestand, Firefox kan het alleen downloaden.'
       ],
       pl: [
         'Gry w trybie wyłącznego pełnego ekranu zasłaniają każdą nakładkę. Przełącz grę na „okno bez ramki” lub „pełny ekran w oknie”.',
         'Ctrl+Alt+F10 w grze oznacza: od teraz celownik pojawia się tylko wtedy, gdy ta gra jest na pierwszym planie. Jeśli brakuje go w innej grze, tej gry po prostu nie ma jeszcze na liście, więc naciśnij tam też Ctrl+Alt+F10. Pusty plik Dokumenty\\Fadenkreuz\\programme.txt oznacza: zawsze widoczny.',
         'Nad menu Start, paskiem zadań i niektórymi nakładkami celownik leży tylko przy „Zainstaluj dla wszystkich użytkowników” i zadaniu „Pokazuj nad wszystkim”. Instalator tworzy wtedy certyfikat ważny tylko na tym komputerze i od razu usuwa jego klucz prywatny.',
         'Fadenkreuz nie dotyka gry, to osobne okno. Mimo to niektóre gry rywalizacyjne nie lubią nakładek, więc sprawdź to przed grą rankingową.',
-        'Tylko główny ekran. Edytor mówi w 14 językach i dopasowuje się do przeglądarki, zmienisz to u góry edytora. Instalator zna wszystkie oprócz chińskiego i hindi, tam pokazuje się po angielsku. Edge i Chrome zapisują prosto do pliku, Firefox może go tylko pobrać.'
+        'Tylko główny ekran. Edytor mówi w 14 językach i dopasowuje się do przeglądarki, zmienisz to u góry edytora. Instalator zna wszystkie oprócz hindi, tam pokazuje się po angielsku. Edge i Chrome zapisują prosto do pliku, Firefox może go tylko pobrać.'
       ],
       pt: [
         'Jogos em tela cheia exclusiva cobrem qualquer sobreposição. Coloque o jogo em «janela sem bordas» ou «tela cheia em janela».',
         'Ctrl+Alt+F10 dentro de um jogo significa: a partir daí, a mira só aparece enquanto esse jogo estiver na frente. Se ela faltar em outro jogo, é só porque esse jogo ainda não está na lista, então pressione Ctrl+Alt+F10 lá também. Um Documentos\\Fadenkreuz\\programme.txt vazio significa: sempre visível.',
         'A mira só fica por cima do menu Iniciar, da barra de tarefas e de algumas sobreposições com «Instalar pra todos os usuários» e a tarefa «Mostrar acima de tudo». Para isso, o instalador cria um certificado válido só neste PC e apaga na hora a chave privada dele.',
         'O Fadenkreuz não mexe no jogo, ele é uma janela própria. Mesmo assim, alguns jogos competitivos não gostam de sobreposições, então verifique antes de jogar partidas ranqueadas.',
-        'Só a tela principal. O editor fala 14 idiomas e segue o navegador, e você troca no alto do editor. O instalador fala todos menos chinês e hindi, onde aparece em inglês. O Edge e o Chrome salvam direto no arquivo, o Firefox só consegue baixar.'
+        'Só a tela principal. O editor fala 14 idiomas e segue o navegador, e você troca no alto do editor. O instalador fala todos menos hindi, onde aparece em inglês. O Edge e o Chrome salvam direto no arquivo, o Firefox só consegue baixar.'
       ],
       tr: [
         'Özel tam ekran modundaki oyunlar her katmanın üzerini kapatır. Oyunu “kenarlıksız pencere” ya da “pencereli tam ekran” moduna alın.',
         'Oyun içinde Ctrl+Alt+F10 şu anlama gelir: Artık nişangâh yalnızca o oyun öndeyken görünür. Başka bir oyunda görünmüyorsa, o oyun henüz listede değildir, orada da Ctrl+Alt+F10’a basın. Boş bir Belgeler\\Fadenkreuz\\programme.txt dosyası “her zaman görünür” demektir.',
         'Nişangâh Başlat menüsünün, görev çubuğunun ve bazı katmanların üstünde yalnızca “Tüm kullanıcılar için kurulsun” ve “Her şeyin üstünde göster” görevi seçildiğinde durur. Bunun için kurulum, yalnızca bu bilgisayarda geçerli bir sertifika oluşturur ve özel anahtarını hemen siler.',
         'Fadenkreuz oyuna dokunmaz, kendi başına bir penceredir. Yine de bazı rekabetçi oyunlar katmanları sevmez, bu yüzden dereceli oyunlardan önce kontrol edin.',
-        'Yalnızca ana ekran. Düzenleyici 14 dil konuşur ve tarayıcıyı izler, düzenleyicinin üst kısmından değiştirebilirsiniz. Kurulum Çince ve Hintçe dışında hepsini konuşur, bu ikisinde İngilizce görünür. Edge ve Chrome doğrudan dosyaya kaydeder, Firefox dosyayı yalnızca indirebilir.'
+        'Yalnızca ana ekran. Düzenleyici 14 dil konuşur ve tarayıcıyı izler, düzenleyicinin üst kısmından değiştirebilirsiniz. Kurulum Hintçe dışında hepsini konuşur, Hintçede İngilizce görünür. Edge ve Chrome doğrudan dosyaya kaydeder, Firefox dosyayı yalnızca indirebilir.'
       ],
       ru: [
         'Игры в эксклюзивном полноэкранном режиме перекрывают любой оверлей. Переключите игру в режим «окно без рамки» или «полноэкранный в окне».',
         'Ctrl+Alt+F10 в игре означает: теперь прицел появляется только тогда, когда эта игра на переднем плане. Если его нет в другой игре, значит, её просто ещё нет в списке, так что нажмите Ctrl+Alt+F10 и там. Пустой файл Документы\\Fadenkreuz\\programme.txt означает: виден всегда.',
         'Над меню «Пуск», панелью задач и некоторыми оверлеями прицел лежит только с вариантом «Установить для всех пользователей» и задачей «Показывать поверх всего». Для этого установщик создаёт сертификат, действующий только на этом ПК, и сразу удаляет его закрытый ключ.',
         'Fadenkreuz не трогает игру, это отдельное окно. И всё же некоторые соревновательные игры не любят оверлеи, поэтому проверьте это перед рейтинговыми матчами.',
-        'Только основной экран. Редактор говорит на 14 языках и следует языку браузера, сменить его можно вверху редактора. Установщик знает все, кроме китайского и хинди, там он на английском. Edge и Chrome сохраняют прямо в файл, а Firefox может его только скачать.'
+        'Только основной экран. Редактор говорит на 14 языках и следует языку браузера, сменить его можно вверху редактора. Установщик знает все, кроме хинди, там он на английском. Edge и Chrome сохраняют прямо в файл, а Firefox может его только скачать.'
       ],
       hi: [
         'एक्सक्लूसिव फ़ुलस्क्रीन वाले गेम हर ओवरले को ढक देते हैं। गेम को “बॉर्डरलेस विंडो” या “विंडो वाला फ़ुलस्क्रीन” पर रखें।',
         'गेम के अंदर Ctrl+Alt+F10 का मतलब है: अब से क्रॉसहेयर सिर्फ़ तभी दिखेगा, जब वही गेम सबसे आगे हो। अगर किसी दूसरे गेम में वह नहीं दिखता, तो वह गेम अभी सूची में नहीं है, इसलिए वहाँ भी Ctrl+Alt+F10 दबाएँ। खाली Documents\\Fadenkreuz\\programme.txt का मतलब है: हमेशा दिखेगा।',
         'स्टार्ट मेन्यू, टास्कबार और कुछ ओवरले के ऊपर क्रॉसहेयर तभी रहता है, जब आप “Install for all users” और “Show on top of everything” कार्य चुनें। इसके लिए सेटअप एक ऐसा प्रमाणपत्र बनाता है जो सिर्फ़ इसी पीसी पर मान्य है, और उसकी निजी कुंजी तुरंत मिटा देता है।',
         'Fadenkreuz गेम को छूता नहीं, यह एक अलग विंडो है। फिर भी कुछ प्रतियोगी गेम ओवरले पसंद नहीं करते, इसलिए रैंक्ड मैच से पहले जाँच लें।',
-        'सिर्फ़ मुख्य स्क्रीन। एडिटर 14 भाषाएँ बोलता है और ब्राउज़र की भाषा अपनाता है, एडिटर में ऊपर से आप इसे बदल सकते हैं। सेटअप चीनी और हिंदी को छोड़कर सभी भाषाओं में है, इन दोनों में वह अंग्रेज़ी में दिखता है। Edge और Chrome सीधे फ़ाइल में सहेजते हैं, Firefox उसे सिर्फ़ डाउनलोड कर सकता है।'
+        'सिर्फ़ मुख्य स्क्रीन। एडिटर 14 भाषाएँ बोलता है और ब्राउज़र की भाषा अपनाता है, एडिटर में ऊपर से आप इसे बदल सकते हैं। सेटअप हिंदी को छोड़कर सभी भाषाओं में है, हिंदी में वह अंग्रेज़ी में दिखता है। Edge और Chrome सीधे फ़ाइल में सहेजते हैं, Firefox उसे सिर्फ़ डाउनलोड कर सकता है।'
       ],
       zh: [
         '独占全屏模式下的游戏会盖住所有覆盖层。请把游戏改成“无边框窗口”或“窗口化全屏”。',
         '在游戏里按 Ctrl+Alt+F10 的意思是：从现在起，只有这个游戏在最前面时才显示准星。如果在另一个游戏里看不到它，只是因为那个游戏还不在列表里，在那里也按一下 Ctrl+Alt+F10 就行。“文档\\Fadenkreuz\\programme.txt”为空则表示：始终显示。',
-        '只有选择“Install for all users”并勾选“Show on top of everything”时，准星才会位于开始菜单、任务栏和部分覆盖层之上。为此，安装程序会创建一个只在这台电脑上有效的证书，并立即删除其私钥。',
+        '只有选择“为所有用户安装”并勾选“显示在所有内容之上”时，准星才会位于开始菜单、任务栏和部分覆盖层之上。为此，安装程序会创建一个只在这台电脑上有效的证书，并立即删除其私钥。',
         'Fadenkreuz 不会碰游戏，它是一个独立的窗口。尽管如此，有些竞技游戏不喜欢覆盖层，打排位赛之前请先确认。',
-        '仅支持主屏幕。编辑器支持 14 种语言，默认跟随浏览器，可以在编辑器顶部切换。安装程序支持除中文和印地语以外的所有语言，在这两种语言下显示英文。Edge 和 Chrome 能直接保存到文件，Firefox 只能下载。'
+        '仅支持主屏幕。编辑器支持 14 种语言，默认跟随浏览器，可以在编辑器顶部切换。安装程序支持除印地语以外的所有语言，印地语下显示英文。Edge 和 Chrome 能直接保存到文件，Firefox 只能下载。'
       ],
       ja: [
         '排他的フルスクリーンのゲームは、どんなオーバーレイも上から覆い隠します。ゲームを「ボーダーレスウィンドウ」か「ウィンドウ化フルスクリーン」にしてください。',
         'ゲーム内で Ctrl+Alt+F10 を押すと、それ以降はそのゲームが前面にあるときだけ照準が表示されます。別のゲームで照準が出ないのは、そのゲームがまだリストにないだけなので、そこでも Ctrl+Alt+F10 を押してください。ドキュメント\\Fadenkreuz\\programme.txt が空なら、常に表示されます。',
         '照準がスタートメニュー、タスクバー、一部のオーバーレイより上に来るのは、「すべてのユーザー用にインストール」と「すべての上に表示」を選んだときだけです。そのためにセットアップは、この PC でだけ有効な証明書を作り、秘密鍵をすぐに削除します。',
         'Fadenkreuz はゲームに手を触れません。独立したウィンドウです。それでも、オーバーレイを嫌う対戦ゲームもあります。ランクマッチの前に確認してください。',
-        'メイン画面のみです。エディターは14言語に対応し、ブラウザーの言語に合わせます。エディターの上部で切り替えられます。セットアップは中国語とヒンディー語以外のすべてに対応し、この2つでは英語で表示されます。Edge と Chrome はファイルに直接保存できますが、Firefox はダウンロードしかできません。'
+        'メイン画面のみです。エディターは14言語に対応し、ブラウザーの言語に合わせます。エディターの上部で切り替えられます。セットアップはヒンディー語以外のすべてに対応し、ヒンディー語では英語で表示されます。Edge と Chrome はファイルに直接保存できますが、Firefox はダウンロードしかできません。'
       ],
       ko: [
         '독점 전체 화면 모드의 게임은 모든 오버레이를 덮어 버립니다. 게임을 ‘테두리 없는 창’ 또는 ‘창 모드 전체 화면’으로 바꾸세요.',
         '게임 안에서 Ctrl+Alt+F10을 누르면, 그때부터 조준선은 그 게임이 맨 앞에 있을 때만 나타납니다. 다른 게임에서 보이지 않는다면 그 게임이 아직 목록에 없을 뿐이니, 거기서도 Ctrl+Alt+F10을 누르세요. 문서\\Fadenkreuz\\programme.txt가 비어 있으면 항상 보입니다.',
         '조준선이 시작 메뉴, 작업 표시줄, 일부 오버레이보다 위에 오려면 ‘모든 사용자용으로 설치’와 ‘모든 것 위에 표시’ 작업을 골라야 합니다. 이를 위해 설치 프로그램은 이 PC에서만 유효한 인증서를 만들고, 개인 키는 곧바로 지웁니다.',
         'Fadenkreuz는 게임을 건드리지 않습니다. 별도의 창일 뿐입니다. 그래도 일부 경쟁 게임은 오버레이를 싫어하니 랭크 게임 전에 확인하세요.',
-        '메인 화면만 지원합니다. 에디터는 14개 언어를 지원하고 브라우저 언어를 따르며, 에디터 위쪽에서 바꿀 수 있습니다. 설치 프로그램은 중국어와 힌디어를 뺀 모든 언어를 지원하고, 이 두 언어에서는 영어로 나옵니다. Edge와 Chrome은 파일에 바로 저장하지만, Firefox는 내려받기만 할 수 있습니다.'
+        '메인 화면만 지원합니다. 에디터는 14개 언어를 지원하고 브라우저 언어를 따르며, 에디터 위쪽에서 바꿀 수 있습니다. 설치 프로그램은 힌디어를 뺀 모든 언어를 지원하고, 힌디어에서는 영어로 나옵니다. Edge와 Chrome은 파일에 바로 저장하지만, Firefox는 내려받기만 할 수 있습니다.'
       ]
     },
     docs: {
