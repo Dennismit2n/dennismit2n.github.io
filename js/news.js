@@ -1386,6 +1386,25 @@ var NEWS = {
   ticker: [
     {
       date: '2026-11-01',
+      version: 'v1.1.3',
+      link: 'https://github.com/Dennismit2n/besucher-ticker/releases/tag/v1.1.3',
+      de: 'Die zwei Fragen beim ersten Start sind jetzt dunkel wie der Ticker selbst, samt Titelleiste. Vorher waren sie hellgrau.',
+      en: 'The two questions at first start are now dark like the ticker itself, title bar included. They used to be light grey.',
+      es: 'Las dos preguntas del primer inicio son ahora oscuras como el propio ticker, barra de título incluida. Antes eran gris claro.',
+      fr: 'Les deux questions du premier démarrage sont désormais sombres comme le ticker lui-même, barre de titre comprise. Avant, elles étaient gris clair.',
+      it: 'Le due domande al primo avvio ora sono scure come il ticker stesso, barra del titolo compresa. Prima erano grigio chiaro.',
+      nl: 'De twee vragen bij de eerste start zijn nu donker zoals de ticker zelf, inclusief de titelbalk. Eerder waren ze lichtgrijs.',
+      pl: 'Dwa pytania przy pierwszym uruchomieniu są teraz ciemne jak sam ticker, łącznie z paskiem tytułu. Wcześniej były jasnoszare.',
+      pt: 'As duas perguntas da primeira execução agora são escuras como o próprio ticker, incluindo a barra de título. Antes eram cinza-claro.',
+      tr: 'İlk açılıştaki iki soru artık Ticker’ın kendisi gibi koyu, başlık çubuğu dahil. Önceden açık griydi.',
+      ru: 'Два вопроса при первом запуске теперь тёмные, как и сам тикер, вместе с заголовком окна. Раньше они были светло-серыми.',
+      hi: 'पहली बार शुरू करने पर आने वाले दोनों सवाल अब टिकर की तरह गहरे रंग में हैं, टाइटल बार समेत। पहले वे हल्के स्लेटी थे।',
+      zh: '首次启动时的两个问题现在和悬浮窗本身一样是深色的，标题栏也是。以前是浅灰色。',
+      ja: '初回起動時の 2 つの質問が、ティッカー本体と同じようにタイトルバーまでダーク表示になりました。以前は明るいグレーでした。',
+      ko: '처음 시작할 때 나오는 두 질문이 이제 티커처럼 제목 표시줄까지 어둡게 나옵니다. 예전에는 밝은 회색이었습니다.'
+    },
+    {
+      date: '2026-11-01',
       version: 'v1.1.2',
       link: 'https://github.com/Dennismit2n/besucher-ticker/releases/tag/v1.1.2',
       de: 'Die zwei Fragen beim ersten Start haben jetzt Knöpfe in deiner Sprache, vorher standen dort immer „OK“ und „Cancel“.',
