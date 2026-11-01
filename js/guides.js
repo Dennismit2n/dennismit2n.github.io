@@ -2403,10 +2403,10 @@ var GUIDES = {
         'Quello che la versione di prova espressamente non fa: chiedere il tuo indirizzo e-mail. Nessun account, nessuna registrazione, nessun tempo di attesa, nessuna newsletter. La scarichi, disegni e vedi da te se il risultato ti piace.'
       ],
       nl: [
-        'De proefversie laat je alles uitproberen: tekenen, constructielijnen, de spookglyph om mee te vergelijken, kerningvoorstellen, typetest, je werk opslaan en laden. Geen enkel gereedschap is besnoeid, dicht is alleen de uitgang. De export levert de kleine letters a tot en met z op, altijd onder de naam “fontART DEMO”, en de overige uitvoerwegen (.woff, proefblad, compleet pakket, vet en cursief, oefenblad, video-opname) zitten in deze versie helemaal niet ingebouwd.',
+        'De proefversie laat je alles uitproberen: tekenen, constructielijnen, de spookglyph om mee te vergelijken, kerningvoorstellen, typetest, je werk opslaan en laden. Geen enkel gereedschap is besnoeid, dicht is alleen de uitgang. De export levert de kleine letters a tot en met z op, altijd onder de naam ‘fontART DEMO’, en de overige uitvoerwegen (.woff, proefblad, compleet pakket, vet en cursief, oefenblad, video-opname) zitten in deze versie helemaal niet ingebouwd.',
         'Welke van de twee versies? In de browser ben je met één klik aan het tekenen, met vinger of stylus (op een aanraakscherm komt dat dichter bij handschrift dan welke muis dan ook), en daar loopt geen klok. Het Windows-programma ligt dichter bij de volledige versie en draait 60 minuten per start. Daar staat tegenover dat je het voltooide lettertype meteen installeert en het uitprobeert in Word. Op de telefoon gaat dat niet: een lettertypebestand kun je onder Android en iOS niet als systeemlettertype instellen. De telefoon is dus het betere tekenapparaat en de computer het installeerapparaat, de .ttf stuur je gewoon aan jezelf.',
         'De volledige versie tekent alle 333 tekens in plaats van 26 (hoofdletters en kleine letters, cijfers, umlauten, ß, leestekens, daarbij Grieks, Cyrillisch en de Japanse lettergreepschriften). Hij draagt de naam die je intypt, en hij kent de uitgangen die hier ontbreken. Hij is in de maak. Wanneer hij klaar is en hoe hij verkrijgbaar zal zijn, staat nog niet vast. Zodra het vaststaat, staat het hier.',
-        'Blijft de vraag waarom uitgerekend deze ene tool geld moet kosten, terwijl onderaan in de voettekst “Open source op GitHub” staat. De andere doen elk één ding en waren in een paar avonden klaar. fontART bouwt echte TrueType-bestanden (contouren, zijafstanden, kerning, naamtabellen) en is daarmee vele malen groter dan al het andere in deze werkplaats. Programma’s die dat kunnen, kosten stuk voor stuk geld. De werkplaats blijft gratis, alleen deze ene tool moet de tijd dragen die erin zit.',
+        'Blijft de vraag waarom uitgerekend deze ene tool geld moet kosten, terwijl onderaan in de voettekst ‘Open source op GitHub’ staat. De andere doen elk één ding en waren in een paar avonden klaar. fontART bouwt echte TrueType-bestanden (contouren, zijafstanden, kerning, naamtabellen) en is daarmee vele malen groter dan al het andere in deze werkplaats. Programma’s die dat kunnen, kosten stuk voor stuk geld. De werkplaats blijft gratis, alleen deze ene tool moet de tijd dragen die erin zit.',
         'Wat de proefversie uitdrukkelijk niet doet: naar je e-mailadres vragen. Geen account, geen aanmelding, geen wachttijd, geen nieuwsbrief. Je downloadt hem, tekent en ziet zelf of het resultaat je bevalt.'
       ],
       pl: [
@@ -2459,10 +2459,10 @@ var GUIDES = {
         '体験版がはっきりとやらないこと: メールアドレスを尋ねることです。アカウントなし、登録なし、待ち時間なし、ニュースレターなし。ダウンロードして、描いて、結果が気に入るかどうかを自分で見るだけです。'
       ],
       ko: [
-        '체험판에서는 전부 해 볼 수 있습니다: 그리기, 보조선, 비교용 고스트 글리프, 커닝 제안, 타이핑 시험, 작업 저장과 불러오기. 잘려 나간 도구는 하나도 없고, 닫혀 있는 것은 출구뿐입니다. 내보내기는 소문자 a부터 z까지를 언제나 “fontART DEMO”라는 이름으로 내놓으며, 나머지 출구(.woff, 견본지, 완성 꾸러미, 굵게와 기울임, 연습지, 화면 녹화)는 이 판에는 아예 들어 있지 않습니다.',
+        '체험판에서는 전부 해 볼 수 있습니다: 그리기, 보조선, 비교용 고스트 글리프, 커닝 제안, 타이핑 시험, 작업 저장과 불러오기. 잘려 나간 도구는 하나도 없고, 닫혀 있는 것은 출구뿐입니다. 내보내기는 소문자 a부터 z까지를 언제나 ‘fontART DEMO’라는 이름으로 내놓으며, 나머지 출구(.woff, 견본지, 완성 꾸러미, 굵게와 기울임, 연습지, 화면 녹화)는 이 판에는 아예 들어 있지 않습니다.',
         '둘 중 어느 판을 쓸까요? 브라우저에서는 한 번 누르면 바로 그리기 시작이고, 손가락이나 펜으로 그립니다(터치 화면에서는 어떤 마우스보다 손글씨에 가깝습니다). 그리고 거기에는 시계가 돌지 않습니다. Windows 프로그램은 정식판에 더 가깝고 실행할 때마다 60분 동안 돌아갑니다. 대신 완성된 글꼴을 곧바로 설치해 Word에서 시험해 볼 수 있습니다. 휴대폰에서는 그것이 되지 않습니다: 글꼴 파일은 Android와 iOS에서 시스템 글꼴로 설치할 수 없습니다. 그러니 휴대폰은 더 나은 그리기 도구이고 컴퓨터는 설치 도구이며, .ttf 파일은 자기 자신에게 보내면 그만입니다.',
         '정식판은 26자가 아니라 333자를 모두 그립니다(대문자와 소문자, 숫자, 움라우트, ß, 문장 부호, 여기에 그리스 문자, 키릴 문자, 일본어 음절 문자까지). 직접 입력한 이름을 달고, 여기에 없는 출구들을 갖추고 있습니다. 지금 작업 중입니다. 언제 완성될지, 어떤 경로로 구할 수 있을지는 아직 정해지지 않았습니다. 정해지는 대로 여기에 적습니다.',
-        '아래 바닥글에는 “GitHub 오픈 소스”라고 적혀 있는데 왜 하필 이 도구 하나만 돈을 받아야 하느냐는 물음이 남습니다. 다른 도구들은 각각 한 가지 일을 하고 며칠 저녁이면 끝났습니다. fontART는 진짜 TrueType 파일(윤곽선, 좌우 여백, 커닝, 이름 테이블)을 만들고, 그래서 이 작업실의 다른 무엇보다 몇 배는 큽니다. 이 일을 할 수 있는 프로그램은 하나같이 돈을 받습니다. 작업실은 계속 무료로 남고, 이 도구 하나만이 거기에 들어간 시간을 떠받쳐야 합니다.',
+        '아래 바닥글에는 ‘GitHub 오픈 소스’라고 적혀 있는데 왜 하필 이 도구 하나만 돈을 받아야 하느냐는 물음이 남습니다. 다른 도구들은 각각 한 가지 일을 하고 며칠 저녁이면 끝났습니다. fontART는 진짜 TrueType 파일(윤곽선, 좌우 여백, 커닝, 이름 테이블)을 만들고, 그래서 이 작업실의 다른 무엇보다 몇 배는 큽니다. 이 일을 할 수 있는 프로그램은 하나같이 돈을 받습니다. 작업실은 계속 무료로 남고, 이 도구 하나만이 거기에 들어간 시간을 떠받쳐야 합니다.',
         '체험판이 분명히 하지 않는 일: 이메일 주소를 묻지 않습니다. 계정도, 가입도, 대기 기간도, 뉴스레터도 없습니다. 내려받아 그려 보고, 결과가 마음에 드는지 직접 보면 됩니다.'
       ]
     },
@@ -2493,9 +2493,9 @@ var GUIDES = {
         'Con «⬇ Esporta il font…» genera il .ttf. In Windows fai clic destro sul file e scegli «Installa per tutti gli utenti»: dopodiché il tuo carattere compare in Word sotto «fontART DEMO».'
       ],
       nl: [
-        'Open de pagina of download voor Windows de .exe van de releases-pagina en start hem. Daar meldt Windows “Onbekende uitgever”, omdat het bestand niet ondertekend is. Via “Meer informatie” en “Toch uitvoeren” ga je verder. In beide gevallen wordt er niets geïnstalleerd.',
-        'Kies een teken uit de balk en teken het zwarte vlak van de letter, niet de lijn. Begin met n en o, die twee leggen het ritme van je lettertype vast. Trilt je hand, dan helpt de schuifregelaar “Stabilisator”.',
-        'Maak via “⬇ Lettertype exporteren…” de .ttf. Klik in Windows met rechts op het bestand, “Voor alle gebruikers installeren”. Daarna staat je lettertype in Word onder “fontART DEMO”.'
+        'Open de pagina of download voor Windows de .exe van de releases-pagina en start hem. Daar meldt Windows ‘Onbekende uitgever’, omdat het bestand niet ondertekend is. Via ‘Meer informatie’ en ‘Toch uitvoeren’ ga je verder. In beide gevallen wordt er niets geïnstalleerd.',
+        'Kies een teken uit de balk en teken het zwarte vlak van de letter, niet de lijn. Begin met n en o, die twee leggen het ritme van je lettertype vast. Trilt je hand, dan helpt de schuifregelaar ‘Stabilisator’.',
+        'Maak via ‘⬇ Lettertype exporteren…’ de .ttf. Klik in Windows met rechts op het bestand, ‘Voor alle gebruikers installeren’. Daarna staat je lettertype in Word onder ‘fontART DEMO’.'
       ],
       pl: [
         'Otworzyć stronę albo dla Windows pobrać plik .exe ze strony wydań i uruchomić go. Tam Windows zgłosi „Nieznany wydawca”, bo plik nie jest podpisany. Dalej prowadzą „Więcej informacji” i „Uruchom mimo to”. W żadnym z tych dwóch przypadków nic się nie instaluje.',
@@ -2533,9 +2533,9 @@ var GUIDES = {
         '「⬇ フォントを書き出す…」で .ttf を作ります。Windows ではファイルを右クリックして「すべてのユーザーに対してインストール」を選びます。そのあと、あなたの書体が Word に「fontART DEMO」として並びます。'
       ],
       ko: [
-        '페이지를 열거나, Windows용으로 릴리스에서 .exe를 내려받아 실행합니다. 그때 파일에 서명이 없어서 Windows가 “알 수 없는 게시자”라고 알립니다. “추가 정보”와 “실행”을 거쳐 계속 진행하면 됩니다. 어느 쪽이든 설치되는 것은 없습니다.',
-        '막대에서 글자를 하나 고르고 글자의 검은 면을 칠합니다. 선이 아니라 면입니다. n과 o부터 시작합니다. 그 둘이 글씨의 리듬을 정합니다. 손이 떨린다면 “손떨림 보정” 슬라이더가 도와줍니다.',
-        '“⬇ 글꼴 내보내기…”로 .ttf를 만듭니다. Windows에서 파일을 오른쪽 클릭하고 “모든 사용자용으로 설치”를 고릅니다. 그다음부터 Word에 내 글꼴이 “fontART DEMO”로 나타납니다.'
+        '페이지를 열거나, Windows용으로 릴리스에서 .exe를 내려받아 실행합니다. 그때 파일에 서명이 없어서 Windows가 ‘알 수 없는 게시자’라고 알립니다. ‘추가 정보’와 ‘실행’을 거쳐 계속 진행하면 됩니다. 어느 쪽이든 설치되는 것은 없습니다.',
+        '막대에서 글자를 하나 고르고 글자의 검은 면을 칠합니다. 선이 아니라 면입니다. n과 o부터 시작합니다. 그 둘이 글씨의 리듬을 정합니다. 손이 떨린다면 ‘손떨림 보정’ 슬라이더가 도와줍니다.',
+        '‘⬇ 글꼴 내보내기…’로 .ttf를 만듭니다. Windows에서 파일을 오른쪽 클릭하고 ‘모든 사용자용으로 설치’를 고릅니다. 그다음부터 Word에 내 글꼴이 ‘fontART DEMO’로 나타납니다.'
       ]
     },
     pitfalls: {
@@ -2545,7 +2545,7 @@ var GUIDES = {
         'Der Export gibt nur a bis z aus. Großbuchstaben, Zahlen, Umlaute, ß und Satzzeichen kannst du malen, sie landen aber nicht in der Schriftdatei. Wörter mit ihnen erscheinen später in der Ersatzschrift des Programms.',
         'Der Schriftname ist fest „fontART DEMO“. Was du ins Namensfeld tippst, wird beim Export übergangen. Zwei Demo-Schriften nebeneinander zu installieren, klappt also nicht: Windows sieht zweimal denselben Namen.',
         'Deine Arbeit liegt allein in der Datei, die du selbst über „💾 Speichern“ anlegst. Die Testversion merkt sich beim Schließen nichts von allein, vor Ablauf der Uhr also unbedingt speichern.',
-        'Das Programm gibt es nur für Windows 10/11 in 64 Bit, für Mac und Linux nimmst du die Seite im Browser. Einen Update-Prüfer hat weder die eine noch die andere Fassung: neue Fassungen der .exe holst du dir selbst von der Releases-Seite, die Seite ist beim nächsten Aufruf von allein aktuell.'
+        'Das Programm gibt es nur für Windows 10/11 in 64 Bit, für Mac und Linux nimmst du die Seite im Browser. Beide sprechen 14 Sprachen, das Programm startet in der Sprache von Windows, die Seite in der deines Browsers. Umstellen kannst du oben in der Kopfzeile, am Handy wischst du sie dafür zur Seite. Einen Update-Prüfer hat weder die eine noch die andere Fassung: neue Fassungen der .exe holst du dir selbst von der Releases-Seite, die Seite ist beim nächsten Aufruf von allein aktuell.'
       ],
       en: [
         'The 60 minutes apply to the Windows program only. They run from the start and cannot be paused, and a minimised window keeps counting too. Once the time is up you can no longer draw or export, but saving still works. After that, restart fontART, load your saved file and carry on. In the browser no clock runs.',
@@ -2553,7 +2553,7 @@ var GUIDES = {
         'The export only produces a to z. You can draw capitals, digits, umlauts, ß and punctuation, but they do not end up in the font file. Words containing them will later appear in the program’s fallback typeface.',
         'The font name is fixed at “fontART DEMO”. Whatever you type into the name field is ignored on export. So installing two demo fonts side by side does not work: Windows sees the same name twice.',
         'Your work lives only in the file you create yourself via “💾 Save”. The trial remembers nothing on its own when it closes, so do save before the clock runs out.',
-        'The program is Windows 10/11, 64-bit only. On a Mac or on Linux you use the page in your browser. Neither version has an update checker: you fetch new builds of the .exe from the releases page yourself, while the page is simply current the next time you open it.'
+        'The program is Windows 10/11, 64-bit only. On a Mac or on Linux you use the page in your browser. Both speak 14 languages: the program starts in the language of Windows, the page in the language of your browser. You can switch at the top in the header, and on a phone you swipe the header sideways to get there. Neither version has an update checker: you fetch new builds of the .exe from the releases page yourself, while the page is simply current the next time you open it.'
       ],
       es: [
         'Los 60 minutos valen solo para el programa de Windows. Corren desde el arranque y no se pueden parar, una ventana minimizada también sigue contando. Cuando se acaba el tiempo ya no puedes dibujar ni exportar, pero guardar sí sigue funcionando. Después, reinicia fontART, carga el archivo guardado y sigue. En el navegador no corre ningún reloj.',
@@ -2561,7 +2561,7 @@ var GUIDES = {
         'La exportación solo entrega las letras de la a a la z. Las mayúsculas, las cifras, las diéresis, la ß y los signos de puntuación los puedes dibujar, pero no acaban en el archivo de fuente. Las palabras que los lleven aparecerán después en la tipografía de reemplazo del programa.',
         'El nombre de la fuente es fijo, «fontART DEMO». Lo que escribas en el campo del nombre se pasa por alto al exportar. Por eso no funciona instalar dos fuentes de demostración a la vez: Windows ve dos veces el mismo nombre.',
         'Tu trabajo está únicamente en el archivo que tú creas con «💾 Guardar». La versión de prueba no recuerda nada por sí sola al cerrarse, así que guarda sin falta antes de que se acabe el tiempo.',
-        'El programa existe solo para Windows 10/11 de 64 bits. Para Mac y Linux usas la página en el navegador. Ninguna de las dos versiones tiene comprobador de actualizaciones: las versiones nuevas del .exe las buscas tú en la página de versiones, y la página está al día por sí sola la próxima vez que la abras.'
+        'El programa existe solo para Windows 10/11 de 64 bits. Para Mac y Linux usas la página en el navegador. Las dos versiones hablan 14 idiomas: el programa arranca en el idioma de Windows y la página en el de tu navegador. Lo cambias arriba, en la cabecera, y en el móvil la deslizas hacia un lado para llegar. Ninguna de las dos versiones tiene comprobador de actualizaciones: las versiones nuevas del .exe las buscas tú en la página de versiones, y la página está al día por sí sola la próxima vez que la abras.'
       ],
       fr: [
         'Les 60 minutes ne valent que pour le programme Windows. Elles courent à partir du démarrage et ne peuvent pas être mises en pause, même une fenêtre réduite continue de compter. Une fois le temps écoulé, vous ne pouvez plus dessiner ni exporter, mais enregistrer reste possible. Ensuite, redémarrer fontART, charger le fichier enregistré et continuer. Dans le navigateur, aucun chronomètre ne tourne.',
@@ -2569,7 +2569,7 @@ var GUIDES = {
         'L’export ne produit que les lettres de a à z. Vous pouvez dessiner les majuscules, les chiffres, les trémas, le ß et les signes de ponctuation, mais ils n’atterrissent pas dans le fichier de police. Les mots qui en contiennent apparaîtront plus tard dans la police de remplacement du programme.',
         'Le nom de la police est fixé à « fontART DEMO ». Ce que vous tapez dans le champ du nom est ignoré à l’export. Installer deux polices de démonstration côte à côte ne marche donc pas : Windows voit deux fois le même nom.',
         'Votre travail se trouve uniquement dans le fichier que vous créez vous-même via « 💾 Enregistrer ». La version d’essai ne retient rien d’elle-même à la fermeture, enregistrez donc impérativement avant la fin du chronomètre.',
-        'Le programme n’existe que pour Windows 10/11 en 64 bits. Pour Mac et Linux, vous prenez la page dans le navigateur. Ni l’une ni l’autre version n’a de vérificateur de mises à jour : les nouvelles versions du .exe, vous allez les chercher vous-même sur la page des releases, tandis que la page est à jour d’elle-même à la prochaine visite.'
+        'Le programme n’existe que pour Windows 10/11 en 64 bits. Pour Mac et Linux, vous prenez la page dans le navigateur. Les deux versions parlent 14 langues : le programme démarre dans la langue de Windows, la page dans celle de votre navigateur. Vous changez la langue en haut, dans l’en-tête, et sur téléphone vous faites glisser l’en-tête sur le côté pour y arriver. Ni l’une ni l’autre version n’a de vérificateur de mises à jour : les nouvelles versions du .exe, vous allez les chercher vous-même sur la page des releases, tandis que la page est à jour d’elle-même à la prochaine visite.'
       ],
       it: [
         'I 60 minuti valgono solo per il programma per Windows. Corrono dall’avvio e non si possono mettere in pausa, anche una finestra ridotta a icona continua a contare. Finito il tempo, non puoi più disegnare né esportare, ma salvare funziona ancora. Poi riavvia fontART, carica il file salvato e continua. Nel browser non c’è nessun timer.',
@@ -2577,15 +2577,15 @@ var GUIDES = {
         'L’esportazione dà solo le lettere dalla a alla z. Maiuscole, cifre, dieresi, ß e segni di punteggiatura li puoi disegnare, ma non finiscono nel file del carattere. Le parole che li contengono compariranno poi nel carattere sostitutivo del programma.',
         'Il nome del carattere è fisso, «fontART DEMO». Quello che digiti nel campo del nome viene ignorato all’esportazione. Installare due caratteri demo contemporaneamente perciò non funziona: Windows vede due volte lo stesso nome.',
         'Il tuo lavoro si trova soltanto nel file che crei tu con «💾 Salva». La versione di prova non ricorda nulla da sola alla chiusura, quindi salva assolutamente prima che scada il tempo.',
-        'Il programma esiste solo per Windows 10/11 a 64 bit: per Mac e Linux prendi la pagina nel browser. Nessuna delle due versioni ha un controllo degli aggiornamenti: le versioni nuove del file .exe te le prendi da solo dalla pagina delle release, mentre la pagina si aggiorna da sola alla visita successiva.'
+        'Il programma esiste solo per Windows 10/11 a 64 bit: per Mac e Linux prendi la pagina nel browser. Entrambe le versioni parlano 14 lingue: il programma si avvia nella lingua di Windows, la pagina in quella del tuo browser. Cambi lingua in alto, nell’intestazione, e sul telefono per arrivarci fai scorrere l’intestazione di lato. Nessuna delle due versioni ha un controllo degli aggiornamenti: le versioni nuove del file .exe te le prendi da solo dalla pagina delle release, mentre la pagina si aggiorna da sola alla visita successiva.'
       ],
       nl: [
         'De 60 minuten gelden alleen voor het Windows-programma. Ze lopen vanaf de start en zijn niet te pauzeren, ook een geminimaliseerd venster telt door. Is de tijd om, dan kun je niet meer tekenen en niet meer exporteren, maar opslaan gaat nog wel. Daarna fontART opnieuw starten, het opgeslagen bestand laden en verdergaan. In de browser loopt geen klok.',
-        'Gebruik op de iPhone alsjeblieft Safari. In de ingebouwde browsers van Instagram, Facebook of WhatsApp mislukt het downloaden van het voltooide lettertype. Het komt eenvoudigweg niet aan. Wie zo’n link opent, tikt op “In Safari openen” en begint daar.',
+        'Gebruik op de iPhone alsjeblieft Safari. In de ingebouwde browsers van Instagram, Facebook of WhatsApp mislukt het downloaden van het voltooide lettertype. Het komt eenvoudigweg niet aan. Wie zo’n link opent, tikt op ‘In Safari openen’ en begint daar.',
         'De export levert alleen de letters a tot en met z op. Hoofdletters, cijfers, umlauten, ß en leestekens kun je wel tekenen, maar ze belanden niet in het lettertypebestand. Woorden daarmee verschijnen later in het vervangende lettertype van het programma.',
-        'De lettertypenaam ligt vast op “fontART DEMO”. Wat je in het naamveld typt, wordt bij de export genegeerd. Twee demo-lettertypen naast elkaar installeren lukt daarom niet: Windows ziet twee keer dezelfde naam.',
-        'Je werk zit alleen in het bestand dat je zelf via “💾 Opslaan” aanmaakt. De proefversie onthoudt bij het sluiten uit zichzelf niets, sla dus beslist op voordat de klok afloopt.',
-        'Het programma is er alleen voor Windows 10/11 in 64 bit. Voor Mac en Linux neem je de pagina in de browser. Een updatecontrole heeft geen van beide versies: nieuwe versies van de .exe haal je zelf van de releases-pagina, de pagina is bij de volgende keer openen vanzelf actueel.'
+        'De lettertypenaam ligt vast op ‘fontART DEMO’. Wat je in het naamveld typt, wordt bij de export genegeerd. Twee demo-lettertypen naast elkaar installeren lukt daarom niet: Windows ziet twee keer dezelfde naam.',
+        'Je werk zit alleen in het bestand dat je zelf via ‘💾 Opslaan’ aanmaakt. De proefversie onthoudt bij het sluiten uit zichzelf niets, sla dus beslist op voordat de klok afloopt.',
+        'Het programma is er alleen voor Windows 10/11 in 64 bit. Voor Mac en Linux neem je de pagina in de browser. Beide versies spreken 14 talen: het programma start in de taal van Windows, de pagina in die van je browser. Wisselen doe je bovenaan in de kopregel, op de telefoon veeg je die daarvoor opzij. Een updatecontrole heeft geen van beide versies: nieuwe versies van de .exe haal je zelf van de releases-pagina, de pagina is bij de volgende keer openen vanzelf actueel.'
       ],
       pl: [
         'Limit 60 minut dotyczy tylko programu dla Windows. Czas biegnie od uruchomienia i nie da się go zatrzymać, zegar tyka dalej także przy zminimalizowanym oknie. Gdy czas minie, nie możesz już malować ani eksportować, ale zapisywanie działa nadal. Potem uruchomić fontART na nowo, wczytać zapisany plik i pracować dalej. W przeglądarce nie tyka żaden zegar.',
@@ -2593,7 +2593,7 @@ var GUIDES = {
         'Eksport tworzy wyłącznie litery od a do z. Wielkie litery, cyfry, umlauty, ß i znaki interpunkcyjne możesz malować, ale nie trafiają one do pliku z krojem. Słowa z nimi pojawią się później w zastępczym kroju programu.',
         'Nazwa kroju jest na stałe „fontART DEMO”. To, co wpiszesz w pole nazwy, zostaje przy eksporcie pominięte. Zainstalowanie dwóch krojów demo obok siebie dlatego się nie uda: Windows widzi dwa razy tę samą nazwę.',
         'Twoja praca jest wyłącznie w pliku, który tworzysz przez „💾 Zapisz”. Wersja próbna przy zamykaniu nie zapamiętuje sama z siebie niczego, więc koniecznie zapisz, zanim skończy się czas.',
-        'Program jest tylko dla Windows 10/11 w wersji 64-bitowej. Na Maca i Linuksa bierzesz stronę w przeglądarce. Sprawdzania aktualizacji nie ma ani jedna, ani druga wersja: nowe wersje pliku .exe pobierasz samodzielnie ze strony wydań, a strona przy następnym wywołaniu jest aktualna sama z siebie.'
+        'Program jest tylko dla Windows 10/11 w wersji 64-bitowej. Na Maca i Linuksa bierzesz stronę w przeglądarce. Obie wersje mówią 14 językami: program uruchamia się w języku Windows, strona w języku twojej przeglądarki. Język zmieniasz na pasku u góry, a na telefonie przesuwasz w tym celu pasek palcem w bok. Sprawdzania aktualizacji nie ma ani jedna, ani druga wersja: nowe wersje pliku .exe pobierasz samodzielnie ze strony wydań, a strona przy następnym wywołaniu jest aktualna sama z siebie.'
       ],
       pt: [
         'Os 60 minutos valem só para o programa para Windows. Eles correm a partir da inicialização e não podem ser pausados, até uma janela minimizada continua contando. Quando o tempo acaba, você não pode mais desenhar nem exportar, mas salvar continua funcionando. Depois disso, reiniciar o fontART, abrir o arquivo salvo e continuar. No navegador não corre relógio nenhum.',
@@ -2601,7 +2601,7 @@ var GUIDES = {
         'A exportação entrega só as letras de a a z. Maiúsculas, algarismos, tremas, ß e sinais de pontuação você pode desenhar, mas eles não vão para o arquivo da fonte. As palavras com esses caracteres aparecem depois na fonte substituta do programa.',
         'O nome da fonte é fixo, «fontART DEMO». O que você digitar no campo do nome é ignorado na exportação. Por isso não dá para instalar duas fontes de demonstração lado a lado: o Windows vê duas vezes o mesmo nome.',
         'O seu trabalho fica só no arquivo que você cria com «💾 Salvar». A versão de teste não guarda nada sozinha ao fechar, então salve sem falta antes que o relógio acabe.',
-        'O programa só existe para Windows 10/11 em 64 bits. Para Mac e Linux, use a página no navegador. Nenhuma das duas versões tem verificador de atualizações: as versões novas do .exe você busca por conta própria na página de versões, e a página já está atualizada sozinha na próxima vez que você abrir.'
+        'O programa só existe para Windows 10/11 em 64 bits. Para Mac e Linux, use a página no navegador. As duas versões falam 14 idiomas: o programa abre no idioma do Windows, e a página no idioma do seu navegador. Você troca lá em cima, no cabeçalho, e no celular é só deslizar o cabeçalho para o lado para chegar lá. Nenhuma das duas versões tem verificador de atualizações: as versões novas do .exe você busca por conta própria na página de versões, e a página já está atualizada sozinha na próxima vez que você abrir.'
       ],
       tr: [
         '60 dakika yalnızca Windows programı için geçerlidir. Başlangıçtan itibaren işler ve durdurulamaz, küçültülmüş bir pencere de saymayı sürdürür. Süre dolduğunda artık çizemez ve dışa aktaramazsınız, ama kaydetmek yine çalışır. Sonrasında fontART’ı yeniden başlatın, kaydettiğiniz dosyayı yükleyin ve devam edin. Tarayıcıda saat işlemez.',
@@ -2609,7 +2609,7 @@ var GUIDES = {
         'Dışa aktarma yalnızca a’dan z’ye kadar harfleri verir. Büyük harfleri, rakamları, umlautlu harfleri (ä, ö, ü), ß’yi ve noktalama işaretlerini çizebilirsiniz, ama bunlar yazı tipi dosyasına girmez. Onları içeren kelimeler sonradan programın yedek yazı tipiyle görünür.',
         'Yazı tipi adı sabittir: “fontART DEMO”. Ad alanına yazdığınız, dışa aktarmada göz ardı edilir. Bu yüzden iki demo yazı tipini yan yana kurmak işe yaramaz: Windows aynı adı iki kez görür.',
         'Çalışmanız yalnızca, “💾 Kaydet” ile kendiniz oluşturduğunuz dosyada durur. Deneme sürümü kapanırken kendiliğinden hiçbir şey hatırlamaz, yani saat dolmadan mutlaka kaydedin.',
-        'Program yalnızca 64 bit Windows 10/11 için vardır. Mac ve Linux’ta tarayıcıdaki sayfayı kullanırsınız. Güncelleme denetleyicisi iki sürümde de yoktur: .exe dosyasının yeni sürümlerini sürümler sayfasından kendiniz alırsınız, sayfa ise bir sonraki açılışta kendiliğinden günceldir.'
+        'Program yalnızca 64 bit Windows 10/11 için vardır. Mac ve Linux’ta tarayıcıdaki sayfayı kullanırsınız. İki sürüm de 14 dil konuşur: program Windows’un dilinde, sayfa ise tarayıcınızın dilinde açılır. Dili üstteki başlık çubuğundan değiştirirsiniz, telefonda bunun için çubuğu yana kaydırırsınız. Güncelleme denetleyicisi iki sürümde de yoktur: .exe dosyasının yeni sürümlerini sürümler sayfasından kendiniz alırsınız, sayfa ise bir sonraki açılışta kendiliğinden günceldir.'
       ],
       ru: [
         '60 минут относятся только к программе для Windows. Они идут с момента запуска и не останавливаются, свёрнутое окно тоже продолжает считать. Когда время выйдет, рисовать и экспортировать будет нельзя, но сохранять по-прежнему можно. После этого перезапустите fontART, загрузите сохранённый файл и продолжайте. В браузере время не ограничено.',
@@ -2617,7 +2617,7 @@ var GUIDES = {
         'Экспорт выдаёт только буквы от a до z. Прописные буквы, цифры, умлауты, ß и знаки препинания рисовать можно, но в файл шрифта они не попадают. Слова с ними позже появятся в запасном шрифте программы.',
         'Имя шрифта жёстко задано: «fontART DEMO». То, что вы впишете в поле имени, при экспорте не учитывается. Поэтому установить два демо-шрифта рядом не получится: Windows видит одно и то же имя дважды.',
         'Ваша работа лежит только в том файле, который вы сами создаёте через «💾 Сохранить». Пробная версия при закрытии сама ничего не запоминает, так что до истечения времени обязательно сохраняйте.',
-        'Программа есть только для 64-разрядных Windows 10/11. Для Mac и Linux берите страницу в браузере. Проверки обновлений нет ни у той, ни у другой версии: новые версии .exe вы забираете сами со страницы выпусков, а страница обновляется сама при следующем открытии.'
+        'Программа есть только для 64-разрядных Windows 10/11. Для Mac и Linux берите страницу в браузере. Обе версии говорят на 14 языках: программа запускается на языке Windows, страница на языке вашего браузера. Язык меняется на верхней панели, а на телефоне её для этого нужно сдвинуть в сторону. Проверки обновлений нет ни у той, ни у другой версии: новые версии .exe вы забираете сами со страницы выпусков, а страница обновляется сама при следующем открытии.'
       ],
       hi: [
         '60 मिनट केवल Windows प्रोग्राम पर लागू होते हैं। वे शुरू होते ही चलने लगते हैं और रोके नहीं जा सकते, मिनिमाइज़ की हुई विंडो भी गिनती जाती है। समय पूरा होने पर आप न बना सकते हैं, न निर्यात कर सकते हैं, पर सहेजना आगे भी चलता रहता है। उसके बाद fontART दोबारा शुरू करें, सहेजी हुई फ़ाइल लोड करें और आगे बढ़ें। ब्राउज़र में कोई घड़ी नहीं चलती।',
@@ -2625,7 +2625,7 @@ var GUIDES = {
         'निर्यात केवल a से z तक के अक्षर देता है। बड़े अक्षर, अंक, उमलाउट, ß और विराम चिह्न आप बना तो सकते हैं, पर वे फ़ॉन्ट फ़ाइल में नहीं पहुँचते। उनसे बने शब्द बाद में प्रोग्राम के विकल्प फ़ॉन्ट में दिखते हैं।',
         'फ़ॉन्ट का नाम पक्का “fontART DEMO” ही रहता है। नाम वाले खाने में आप जो टाइप करते हैं, उसे निर्यात के समय अनदेखा कर दिया जाता है। इसलिए दो डेमो फ़ॉन्ट साथ-साथ इंस्टॉल करना नहीं चलता: Windows को दो बार वही नाम दिखता है।',
         'आपका काम केवल उसी फ़ाइल में रहता है जो आप खुद “💾 सहेजें” से बनाते हैं। परीक्षण संस्करण बंद होते समय अपने-आप कुछ याद नहीं रखता, इसलिए घड़ी पूरी होने से पहले सहेजना ज़रूरी है।',
-        'प्रोग्राम केवल Windows 10/11, 64 बिट के लिए है। Mac और Linux के लिए आप ब्राउज़र वाला पेज लें। अपडेट जाँचने वाला हिस्सा न एक संस्करण में है, न दूसरे में: .exe के नए संस्करण आपको खुद रिलीज़ पेज से लेने होते हैं, जबकि पेज अगली बार खोलने पर अपने-आप ताज़ा रहता है।'
+        'प्रोग्राम केवल Windows 10/11, 64 बिट के लिए है। Mac और Linux के लिए आप ब्राउज़र वाला पेज लें। दोनों संस्करण 14 भाषाएँ बोलते हैं: प्रोग्राम Windows की भाषा में खुलता है, पेज आपके ब्राउज़र की भाषा में। भाषा आप ऊपर की पट्टी में बदलते हैं, फ़ोन पर इसके लिए पट्टी को उँगली से बगल में खिसकाइए। अपडेट जाँचने वाला हिस्सा न एक संस्करण में है, न दूसरे में: .exe के नए संस्करण आपको खुद रिलीज़ पेज से लेने होते हैं, जबकि पेज अगली बार खोलने पर अपने-आप ताज़ा रहता है।'
       ],
       zh: [
         '那 60 分钟只对 Windows 程序有效。它从启动开始走，而且没法暂停，窗口最小化了也照样在数。时间到了之后，你就不能再画、也不能再导出了，但保存仍然可以。之后把 fontART 重新启动，载入保存好的文件接着做。在浏览器里没有计时。',
@@ -2633,7 +2633,7 @@ var GUIDES = {
         '导出只给出 a 到 z 的字母。大写字母、数字、变音字母、ß 和标点你都可以画，但它们不会进到字体文件里。包含它们的词以后会用程序的后备字体显示出来。',
         '字体名称固定为“fontART DEMO”。你在名称栏里输入的内容，在导出时会被忽略。因此并排装两份 DEMO 字体是行不通的：Windows 会看到两次同一个名字。',
         '你的工作只存在于你自己通过“💾 保存”建立的那个文件里。试用版关闭时不会自动记住任何东西，所以一定要在计时走完之前保存。',
-        '这个程序只有 64 位的 Windows 10/11 版。Mac 和 Linux 上你就用浏览器里的那个页面。两份都没有更新检查器：新版本的 .exe 要你自己去发布页取，而页面在下次打开时自己就是最新的。'
+        '这个程序只有 64 位的 Windows 10/11 版。Mac 和 Linux 上你就用浏览器里的那个页面。程序和页面都支持 14 种语言：程序以 Windows 的语言启动，页面以你浏览器的语言打开。语言在顶栏里切换，手机上要先把顶栏往旁边滑一下。两份都没有更新检查器：新版本的 .exe 要你自己去发布页取，而页面在下次打开时自己就是最新的。'
       ],
       ja: [
         '60分という制限は Windows 版のプログラムにだけあります。起動時から進み、止めることはできません。最小化したウィンドウも数え続けます。時間切れになると、描くことも書き出すこともできなくなりますが、保存は引き続きできます。そのあとは fontART を起動し直し、保存したファイルを読み込んで続けてください。ブラウザー版に時間制限はありません。',
@@ -2641,15 +2641,15 @@ var GUIDES = {
         '書き出されるのは a から z までの文字だけです。大文字、数字、ウムラウト、ß、句読点も描けますが、フォントファイルには入りません。それらを含む単語は、あとでプログラムの代替書体で表示されます。',
         'フォント名は「fontART DEMO」に固定されています。名前の欄に打ち込んだものは、書き出しのときに無視されます。そのため、デモのフォントを2つ並べてインストールすることはできません: Windows には同じ名前が2回見えるからです。',
         'あなたの作業は、自分で「💾 保存」から作ったファイルの中にだけあります。体験版は閉じるときに何ひとつ勝手には覚えないので、時間切れになる前に必ず保存してください。',
-        'プログラムは Windows 10/11 の64ビット版だけです。Mac や Linux ではブラウザーのページを使ってください。更新チェッカーはどちらの版にもありません: .exe の新しい版はリリースページから自分で取ってきてください。ページのほうは、次に開けばひとりでに最新になっています。'
+        'プログラムは Windows 10/11 の64ビット版だけです。Mac や Linux ではブラウザーのページを使ってください。どちらの版も14言語に対応しています。プログラムは Windows の言語で、ページはブラウザーの言語で起動します。言語は上部のヘッダーで切り替えられます。スマートフォンではヘッダーを横にスワイプしてください。更新チェッカーはどちらの版にもありません: .exe の新しい版はリリースページから自分で取ってきてください。ページのほうは、次に開けばひとりでに最新になっています。'
       ],
       ko: [
         '60분은 Windows 프로그램에만 해당합니다. 시작할 때부터 흐르고 멈출 수 없으며, 창을 작게 내려 두어도 계속 셉니다. 시간이 다 되면 더는 그리거나 내보낼 수 없고, 저장은 여전히 할 수 있습니다. 그다음에는 fontART를 다시 시작해 저장한 파일을 불러와 이어 가면 됩니다. 브라우저에서는 시계가 돌지 않습니다.',
-        'iPhone에서는 Safari를 써 주세요. Instagram, Facebook, WhatsApp의 내장 브라우저에서는 완성된 글꼴 내려받기가 실패합니다. 파일이 아예 도착하지 않습니다. 그런 링크를 열었다면 “Safari에서 열기”를 누르고 거기서 시작합니다.',
+        'iPhone에서는 Safari를 써 주세요. Instagram, Facebook, WhatsApp의 내장 브라우저에서는 완성된 글꼴 내려받기가 실패합니다. 파일이 아예 도착하지 않습니다. 그런 링크를 열었다면 ‘Safari에서 열기’를 누르고 거기서 시작합니다.',
         '내보내기는 오직 a부터 z까지의 글자만 내놓습니다. 대문자, 숫자, 움라우트, ß, 문장 부호는 그릴 수는 있지만 글꼴 파일에 담기지 않습니다. 그것이 들어간 낱말은 나중에 프로그램의 대체 글꼴로 나타납니다.',
-        '글꼴 이름은 “fontART DEMO”로 고정되어 있습니다. 이름 칸에 무엇을 입력하든 내보낼 때 무시됩니다. 그래서 데모 글꼴 두 개를 나란히 설치하는 것은 되지 않습니다: Windows에는 같은 이름이 두 번 보이기 때문입니다.',
-        '작업물은 오직 “💾 저장”으로 직접 만든 파일에만 들어 있습니다. 체험판은 닫힐 때 스스로 아무것도 기억하지 않으니, 시계가 다 되기 전에 꼭 저장하세요.',
-        '프로그램은 Windows 10/11 64비트용으로만 있습니다. Mac과 Linux에서는 브라우저의 페이지를 쓰면 됩니다. 업데이트 검사기는 어느 쪽에도 없습니다: .exe의 새 판은 릴리스 페이지에서 직접 가져와야 하고, 페이지는 다음에 열 때 저절로 최신 상태입니다.'
+        '글꼴 이름은 ‘fontART DEMO’로 고정되어 있습니다. 이름 칸에 무엇을 입력하든 내보낼 때 무시됩니다. 그래서 데모 글꼴 두 개를 나란히 설치하는 것은 되지 않습니다: Windows에는 같은 이름이 두 번 보이기 때문입니다.',
+        '작업물은 오직 ‘💾 저장’으로 직접 만든 파일에만 들어 있습니다. 체험판은 닫힐 때 스스로 아무것도 기억하지 않으니, 시계가 다 되기 전에 꼭 저장하세요.',
+        '프로그램은 Windows 10/11 64비트용으로만 있습니다. Mac과 Linux에서는 브라우저의 페이지를 쓰면 됩니다. 두 판 모두 14개 언어를 지원합니다. 프로그램은 Windows 언어로, 페이지는 브라우저 언어로 시작합니다. 언어는 상단 바에서 바꾸고, 휴대폰에서는 상단 바를 옆으로 밀어서 찾으면 됩니다. 업데이트 검사기는 어느 쪽에도 없습니다: .exe의 새 판은 릴리스 페이지에서 직접 가져와야 하고, 페이지는 다음에 열 때 저절로 최신 상태입니다.'
       ]
     },
     docs: {
