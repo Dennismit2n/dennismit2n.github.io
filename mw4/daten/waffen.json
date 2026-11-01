@@ -16,7 +16,7 @@
    {
     "version": "2026.10.25-1",
     "datum": "2026-10-25",
-    "text": "Erste Version: 33 Waffen, Builds, TTK, Klassen-Setup – Launch-Stand vom 23.10.2026."
+    "text": "Erste Version: 33 Waffen, Builds, TTK, Klassen-Setup. Launch-Stand vom 23.10.2026."
    }
   ],
   "release": [
@@ -111,16 +111,16 @@
     "status": "aktuell",
     "punkte": [
      "Nur DMZ-Fixes (MIA-Bug, Exfil-Hubschrauber, Gunsmith-Geld)",
-     "Quelle GamerFuzion – auf callofduty.com nicht gegengeprüft"
+     "Quelle GamerFuzion, auf callofduty.com nicht gegengeprüft"
     ]
    }
   ],
   "texte": {
    "apex": [
     "Apex-Aufsätze sind die Endbelohnung, wenn du eine Waffe auf ihr Max.-Level bringst.",
-    "Sie haben einen eigenen Platz und verbrauchen keinen Aufsatz-Slot – viele blockieren aber trotzdem Standard-Slots.",
+    "Sie haben einen eigenen Platz und verbrauchen keinen Aufsatz-Slot, viele blockieren aber trotzdem Standard-Slots.",
     "Sie geben keine pauschalen Boni, sondern bauen die Waffe um: Umrüstungen, andere Feuermodi, integrierte Werfer, Spezialmunition.",
-    "Zum Launch gibt es 28 Apex-Aufsätze – für jede Primärwaffe und Pistole, nicht für Werfer und Messer.",
+    "Zum Launch gibt es 28 Apex-Aufsätze, für jede Primärwaffe und Pistole, nicht für Werfer und Messer.",
     "Sie bleiben beim Waffen-Prestige erhalten."
    ],
    "visier": [
@@ -129,7 +129,7 @@
     "Stell es so ein, dass du das Absehen am leichtesten verfolgen kannst.",
     "Absehen lassen sich anpassen, inklusive Farbvarianten (auch der begehrte blaue Punkt).",
     "Häufigste Meta-Visiere: ZLR Type C, Slimline Elite, SZ SRE-7, IOTA-D, SZ Micro D-3, SZ Prima-4 Dot.",
-    "ISO Nachtschatten und M4 haben gute Kimme und Korn – erst ohne Visier testen."
+    "ISO Nachtschatten und M4 haben gute Kimme und Korn. Erst ohne Visier testen."
    ],
    "prestige": [
     "Jede Waffe hat ein Max.-Level (37 bis 75). Danach gibt es den Apex und das Waffen-Prestige.",
@@ -142,7 +142,7 @@
     "Auf dem PC sind TPM 2.0 und Secure Boot Pflicht (Activision Support)."
    ],
    "luecken": [
-    "Keine offiziellen Schadenstabellen pro Waffe – alle TTK- und ZV-Werte sind Community-Messungen.",
+    "Keine offiziellen Schadenstabellen pro Waffe, alle TTK- und ZV-Werte sind Community-Messungen.",
     "Hardcore-Lebenspunkte für MW4 nicht offiziell bestätigt; Hardcore-TTK ist geschätzt.",
     "Keine unterschiedlichen Builds für Controller und Maus/Tastatur veröffentlicht.",
     "Warzone-Daten erst ab Season 1 (06.11.2026).",
@@ -157,115 +157,115 @@
   },
   "quellen": [
    {
-    "titel": "Call of Duty – Launch-Patchnotes MW4",
+    "titel": "Call of Duty · Launch-Patchnotes MW4",
     "url": "https://www.callofduty.com/patchnotes/2026/10/call-of-duty-modern-warfare-4-launch-patch-notes"
    },
    {
-    "titel": "Call of Duty – Launch-Blog (DE): Waffen, Ausrüstung, Klassen",
+    "titel": "Call of Duty · Launch-Blog (DE): Waffen, Ausrüstung, Klassen",
     "url": "https://www.callofduty.com/de/blog/2026/10/call-of-duty-modern-warfare-4-launch-multiplayer-operators-weapons-equipment-create-a-class"
    },
    {
-    "titel": "Call of Duty – Beta-Patchnotes MW4",
+    "titel": "Call of Duty · Beta-Patchnotes MW4",
     "url": "https://www.callofduty.com/patchnotes/2026/08/call-of-duty-modern-warfare-4-beta-patch-notes"
    },
    {
-    "titel": "CODMunity – MW4 Meta",
+    "titel": "CODMunity · MW4 Meta",
     "url": "https://codmunity.gg/mw4"
    },
    {
-    "titel": "CODMunity – MW4 TTK",
+    "titel": "CODMunity · MW4 TTK",
     "url": "https://codmunity.gg/ttk/mw4"
    },
    {
-    "titel": "CODMunity – MW4 Waffenwerte",
+    "titel": "CODMunity · MW4 Waffenwerte",
     "url": "https://codmunity.gg/weapon-stats/mw4"
    },
    {
-    "titel": "CODMunity – MW4 Tierliste",
+    "titel": "CODMunity · MW4 Tierliste",
     "url": "https://codmunity.gg/tier-list/mw4"
    },
    {
-    "titel": "CODMunity – MW4 Extras-Tierliste",
+    "titel": "CODMunity · MW4 Extras-Tierliste",
     "url": "https://codmunity.gg/perk-tier-list/mw4"
    },
    {
-    "titel": "CODMunity – MW4 DMZ-Meta",
+    "titel": "CODMunity · MW4 DMZ-Meta",
     "url": "https://codmunity.gg/mw4-dmz"
    },
    {
-    "titel": "CODMunity – Hilfe (keine Activision-API)",
+    "titel": "CODMunity · Hilfe (keine Activision-API)",
     "url": "https://codmunity.gg/help/en"
    },
    {
-    "titel": "ggranked – MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
+    "titel": "ggranked · MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
     "url": "https://ggranked.com/games/call-of-duty-modern-warfare-4/meta"
    },
    {
-    "titel": "Mobalytics – MW4 beste Waffen",
+    "titel": "Mobalytics · MW4 beste Waffen",
     "url": "https://mobalytics.gg/gamebase/guides/mw4-best-weapons"
    },
    {
-    "titel": "WZStats – M4 Loadout",
+    "titel": "WZStats · M4 Loadout",
     "url": "https://wzstats.gg/best-loadouts/m4-mw4"
    },
    {
-    "titel": "WZStats – Extras-Tierliste",
+    "titel": "WZStats · Extras-Tierliste",
     "url": "https://wzstats.gg/mw4/loadouts/best-perks-tier-list"
    },
    {
-    "titel": "GameSpot – Beste MW4-Loadouts",
+    "titel": "GameSpot · Beste MW4-Loadouts",
     "url": "https://www.gamespot.com/articles/best-loadouts-in-call-of-duty-modern-warfare-4-multiplayer/"
    },
    {
-    "titel": "GameRant – Han 86 Build",
+    "titel": "GameRant · Han 86 Build",
     "url": "https://gamerant.com/call-of-duty-cod-modern-warfare-4-mw4-best-meta-han-86-loadout-build/"
    },
    {
-    "titel": "GameRant – VEL 46 Build",
+    "titel": "GameRant · VEL 46 Build",
     "url": "https://gamerant.com/call-of-duty-cod-modern-warfare-4-mw4-best-meta-vel-46-loadout-build/"
    },
    {
-    "titel": "GameRant – KG-7 Vulcan Build",
+    "titel": "GameRant · KG-7 Vulcan Build",
     "url": "https://gamerant.com/call-of-duty-cod-modern-warfare-4-mw4-best-meta-kg-7-vulcan-loadout-build/"
    },
    {
-    "titel": "Game8 – MW4-Guides",
+    "titel": "Game8 · MW4-Guides",
     "url": "https://game8.co/games/Call-of-Duty-Modern-Warfare-4/archives/630961"
    },
    {
-    "titel": "Dot Esports – Waffen freischalten",
+    "titel": "Dot Esports · Waffen freischalten",
     "url": "https://dotesports.com/call-of-duty/guides/all-mw4-weapons-unlock-guide"
    },
    {
-    "titel": "Dot Esports – Rezi 12 Loadout",
+    "titel": "Dot Esports · Rezi 12 Loadout",
     "url": "https://dotesports.com/call-of-duty/guides/best-rezi-12-loadout-mw4"
    },
    {
-    "titel": "4fansites – Meta-Tierliste mit Builds (DE)",
+    "titel": "4fansites · Meta-Tierliste mit Builds (DE)",
     "url": "https://www.4fansites.de/news,1682,Modern-Warfare-4-Meta-Tier-Liste-mit-den-besten-Builds"
    },
    {
-    "titel": "games.gg – VEL 46 Loadout",
+    "titel": "games.gg · VEL 46 Loadout",
     "url": "https://games.gg/call-of-duty-modern-warfare-4/guides/vel-46-best-loadout/"
    },
    {
-    "titel": "games.gg – Alle Spielmodi",
+    "titel": "games.gg · Alle Spielmodi",
     "url": "https://games.gg/call-of-duty-modern-warfare-4/guides/call-of-duty-modern-warfare-4-all-game-modes/"
    },
    {
-    "titel": "GamerFuzion – Update 24. Oktober",
+    "titel": "GamerFuzion · Update 24. Oktober",
     "url": "https://www.gamerfuzion.com/modern-warfare-4-october-24-patch-notes-dmz-mia-fix-exfil-helicopter-weapon-tuning/"
    },
    {
-    "titel": "Timesaver – Season-1-Roadmap",
+    "titel": "Timesaver · Season-1-Roadmap",
     "url": "https://timesaver.gg/blog/modern-warfare-4-season-1-release-date-november-6-roadmap"
    },
    {
-    "titel": "Beebom – Launch-Patchnotes",
+    "titel": "Beebom · Launch-Patchnotes",
     "url": "https://beebom.com/call-of-duty-modern-warfare-4-launch-patch-notes/"
    },
    {
-    "titel": "GamesAtlas – Waffenliste",
+    "titel": "GamesAtlas · Waffenliste",
     "url": "https://www.gamesatlas.com/cod-modern-warfare-4/weapons/"
    }
   ]
@@ -400,7 +400,7 @@
      "titel": "Vielseitig",
      "quellen": [
       {
-       "titel": "CODMunity – MW4 Meta",
+       "titel": "CODMunity · MW4 Meta",
        "url": "https://codmunity.gg/mw4"
       }
      ],
@@ -439,14 +439,14 @@
        "effekt": null
       }
      ],
-     "hinweis": "EaseScore 8,7 – am leichtesten zu kontrollieren."
+     "hinweis": "Am leichtesten zu kontrollieren (EaseScore 8,7)."
     },
     {
      "modus": "Core",
      "titel": "Alternative (DE-Namen)",
      "quellen": [
       {
-       "titel": "4fansites – Meta-Tierliste mit Builds (DE)",
+       "titel": "4fansites · Meta-Tierliste mit Builds (DE)",
        "url": "https://www.4fansites.de/news,1682,Modern-Warfare-4-Meta-Tier-Liste-mit-den-besten-Builds"
       }
      ],
@@ -492,7 +492,7 @@
      "titel": "DMZ",
      "quellen": [
       {
-       "titel": "GameRant – Han 86 Build",
+       "titel": "GameRant · Han 86 Build",
        "url": "https://gamerant.com/call-of-duty-cod-modern-warfare-4-mw4-best-meta-han-86-loadout-build/"
       }
      ],
@@ -535,24 +535,24 @@
     }
    ],
    "hinweise": [
-    "Höchste Nutzungsrate und schnellste AR-TTK bis 40 m – wahrscheinlichstes Ziel des ersten Nerfs.",
+    "Höchste Nutzungsrate und schnellste AR-TTK bis 40 m, also das wahrscheinlichste Ziel des ersten Nerfs.",
     "Der Apex blockiert Visier, Schaft und Lauf: Nutzwert, kein Gunfight-Meta."
    ],
    "beta": [
     "Kopfschuss-Multiplikator in der Beta 1,4 → 1,25 gesenkt (Launch-Wert nicht veröffentlicht).",
-    "Beta-Patch 31.08.: Sprint→Feuer 210 → 185 ms. Zum Launch wieder 210 ms gemessen – 185 ms ist veraltet."
+    "Beta-Patch 31.08.: Sprint→Feuer 210 → 185 ms. Zum Launch wieder 210 ms gemessen, die 185 ms sind veraltet."
    ],
    "quellen": [
     {
-     "titel": "CODMunity – MW4 Meta",
+     "titel": "CODMunity · MW4 Meta",
      "url": "https://codmunity.gg/mw4"
     },
     {
-     "titel": "ggranked – MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
+     "titel": "ggranked · MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
      "url": "https://ggranked.com/games/call-of-duty-modern-warfare-4/meta"
     },
     {
-     "titel": "Call of Duty – Launch-Blog (DE): Waffen, Ausrüstung, Klassen",
+     "titel": "Call of Duty · Launch-Blog (DE): Waffen, Ausrüstung, Klassen",
      "url": "https://www.callofduty.com/de/blog/2026/10/call-of-duty-modern-warfare-4-launch-multiplayer-operators-weapons-equipment-create-a-class"
     }
    ]
@@ -624,7 +624,7 @@
      "titel": "Vielseitig",
      "quellen": [
       {
-       "titel": "CODMunity – MW4 Meta",
+       "titel": "CODMunity · MW4 Meta",
        "url": "https://codmunity.gg/mw4"
       }
      ],
@@ -670,11 +670,11 @@
      "titel": "Alternative (DE-Namen)",
      "quellen": [
       {
-       "titel": "WZStats – M4 Loadout",
+       "titel": "WZStats · M4 Loadout",
        "url": "https://wzstats.gg/best-loadouts/m4-mw4"
       },
       {
-       "titel": "4fansites – Meta-Tierliste mit Builds (DE)",
+       "titel": "4fansites · Meta-Tierliste mit Builds (DE)",
        "url": "https://www.4fansites.de/news,1682,Modern-Warfare-4-Meta-Tier-Liste-mit-den-besten-Builds"
       }
      ],
@@ -720,7 +720,7 @@
      "titel": "Hurricane",
      "quellen": [
       {
-       "titel": "Game8 – MW4-Guides",
+       "titel": "Game8 · MW4-Guides",
        "url": "https://game8.co/games/Call-of-Duty-Modern-Warfare-4/archives/630961"
       }
      ],
@@ -772,11 +772,11 @@
      "titel": "DMZ",
      "quellen": [
       {
-       "titel": "CODMunity – MW4 DMZ-Meta",
+       "titel": "CODMunity · MW4 DMZ-Meta",
        "url": "https://codmunity.gg/mw4-dmz"
       },
       {
-       "titel": "WZStats – M4 Loadout",
+       "titel": "WZStats · M4 Loadout",
        "url": "https://wzstats.gg/best-loadouts/m4-mw4"
       }
      ],
@@ -822,7 +822,7 @@
      "titel": "Two-Shot-Kill",
      "quellen": [
       {
-       "titel": "CODMunity – MW4 Meta",
+       "titel": "CODMunity · MW4 Meta",
        "url": "https://codmunity.gg/mw4"
       }
      ],
@@ -834,7 +834,7 @@
     }
    ],
    "hinweise": [
-    "Sicherster Allrounder – erste Wahl, falls die Han 86 generft wird.",
+    "Sicherster Allrounder, erste Wahl, falls die Han 86 generft wird.",
     "Kimme und Korn sind brauchbar: esports.gg spielt den Build ganz ohne Visier."
    ],
    "beta": [
@@ -842,19 +842,19 @@
    ],
    "quellen": [
     {
-     "titel": "CODMunity – MW4 Meta",
+     "titel": "CODMunity · MW4 Meta",
      "url": "https://codmunity.gg/mw4"
     },
     {
-     "titel": "ggranked – MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
+     "titel": "ggranked · MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
      "url": "https://ggranked.com/games/call-of-duty-modern-warfare-4/meta"
     },
     {
-     "titel": "WZStats – M4 Loadout",
+     "titel": "WZStats · M4 Loadout",
      "url": "https://wzstats.gg/best-loadouts/m4-mw4"
     },
     {
-     "titel": "Game8 – MW4-Guides",
+     "titel": "Game8 · MW4-Guides",
      "url": "https://game8.co/games/Call-of-Duty-Modern-Warfare-4/archives/630961"
     }
    ]
@@ -916,15 +916,15 @@
    "beta": [],
    "quellen": [
     {
-     "titel": "CODMunity – MW4 Meta",
+     "titel": "CODMunity · MW4 Meta",
      "url": "https://codmunity.gg/mw4"
     },
     {
-     "titel": "Mobalytics – MW4 beste Waffen",
+     "titel": "Mobalytics · MW4 beste Waffen",
      "url": "https://mobalytics.gg/gamebase/guides/mw4-best-weapons"
     },
     {
-     "titel": "ggranked – MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
+     "titel": "ggranked · MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
      "url": "https://ggranked.com/games/call-of-duty-modern-warfare-4/meta"
     }
    ]
@@ -985,15 +985,15 @@
    "beta": [],
    "quellen": [
     {
-     "titel": "CODMunity – MW4 Meta",
+     "titel": "CODMunity · MW4 Meta",
      "url": "https://codmunity.gg/mw4"
     },
     {
-     "titel": "Mobalytics – MW4 beste Waffen",
+     "titel": "Mobalytics · MW4 beste Waffen",
      "url": "https://mobalytics.gg/gamebase/guides/mw4-best-weapons"
     },
     {
-     "titel": "ggranked – MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
+     "titel": "ggranked · MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
      "url": "https://ggranked.com/games/call-of-duty-modern-warfare-4/meta"
     }
    ]
@@ -1060,7 +1060,7 @@
      "titel": "Vielseitig (teilweise)",
      "quellen": [
       {
-       "titel": "CODMunity – MW4 Meta",
+       "titel": "CODMunity · MW4 Meta",
        "url": "https://codmunity.gg/mw4"
       }
      ],
@@ -1091,7 +1091,7 @@
     }
    ],
    "hinweise": [
-    "Härtester Rückstoß aller Sturmgewehre – der FSS Fireline Grip ist Pflicht.",
+    "Härtester Rückstoß aller Sturmgewehre, der FSS Fireline Grip ist Pflicht.",
     "Belohnt Kopf-zuerst-Zielen am stärksten: 200 ms auf 15 m (Basiswaffe, ohne Aufsätze).",
     "Der Beta-Apex „Kastov 545“ wurde zum Launch entfernt. Launch-Apex ist Kastov ARC."
    ],
@@ -1100,11 +1100,11 @@
    ],
    "quellen": [
     {
-     "titel": "CODMunity – MW4 Meta",
+     "titel": "CODMunity · MW4 Meta",
      "url": "https://codmunity.gg/mw4"
     },
     {
-     "titel": "Call of Duty – Launch-Patchnotes MW4",
+     "titel": "Call of Duty · Launch-Patchnotes MW4",
      "url": "https://www.callofduty.com/patchnotes/2026/10/call-of-duty-modern-warfare-4-launch-patch-notes"
     }
    ]
@@ -1168,11 +1168,11 @@
    "beta": [],
    "quellen": [
     {
-     "titel": "CODMunity – MW4 Meta",
+     "titel": "CODMunity · MW4 Meta",
      "url": "https://codmunity.gg/mw4"
     },
     {
-     "titel": "ggranked – MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
+     "titel": "ggranked · MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
      "url": "https://ggranked.com/games/call-of-duty-modern-warfare-4/meta"
     }
    ]
@@ -1242,11 +1242,11 @@
    "beta": [],
    "quellen": [
     {
-     "titel": "CODMunity – MW4 Meta",
+     "titel": "CODMunity · MW4 Meta",
      "url": "https://codmunity.gg/mw4"
     },
     {
-     "titel": "Mobalytics – MW4 beste Waffen",
+     "titel": "Mobalytics · MW4 beste Waffen",
      "url": "https://mobalytics.gg/gamebase/guides/mw4-best-weapons"
     }
    ]
@@ -1309,11 +1309,11 @@
    "beta": [],
    "quellen": [
     {
-     "titel": "CODMunity – MW4 Meta",
+     "titel": "CODMunity · MW4 Meta",
      "url": "https://codmunity.gg/mw4"
     },
     {
-     "titel": "ggranked – MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
+     "titel": "ggranked · MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
      "url": "https://ggranked.com/games/call-of-duty-modern-warfare-4/meta"
     }
    ]
@@ -1382,7 +1382,7 @@
      "titel": "Vielseitig (teilweise)",
      "quellen": [
       {
-       "titel": "CODMunity – MW4 Meta",
+       "titel": "CODMunity · MW4 Meta",
        "url": "https://codmunity.gg/mw4"
       }
      ],
@@ -1422,7 +1422,7 @@
      "titel": "Alternative (DE-Namen)",
      "quellen": [
       {
-       "titel": "4fansites – Meta-Tierliste mit Builds (DE)",
+       "titel": "4fansites · Meta-Tierliste mit Builds (DE)",
        "url": "https://www.4fansites.de/news,1682,Modern-Warfare-4-Meta-Tier-Liste-mit-den-besten-Builds"
       }
      ],
@@ -1465,7 +1465,7 @@
     }
    ],
    "hinweise": [
-    "Gute Kimme und Korn (GameRant, noch vor dem Launch geschrieben) – erst ohne Visier testen.",
+    "Gute Kimme und Korn (GameRant, noch vor dem Launch geschrieben). Erst ohne Visier testen.",
     "Zum Launch wurden MPs auf Nah- und Mitteldistanz verstärkt."
    ],
    "beta": [
@@ -1473,11 +1473,11 @@
    ],
    "quellen": [
     {
-     "titel": "CODMunity – MW4 Meta",
+     "titel": "CODMunity · MW4 Meta",
      "url": "https://codmunity.gg/mw4"
     },
     {
-     "titel": "4fansites – Meta-Tierliste mit Builds (DE)",
+     "titel": "4fansites · Meta-Tierliste mit Builds (DE)",
      "url": "https://www.4fansites.de/news,1682,Modern-Warfare-4-Meta-Tier-Liste-mit-den-besten-Builds"
     }
    ]
@@ -1541,7 +1541,7 @@
      "titel": "Vollständig",
      "quellen": [
       {
-       "titel": "GameSpot – Beste MW4-Loadouts",
+       "titel": "GameSpot · Beste MW4-Loadouts",
        "url": "https://www.gamespot.com/articles/best-loadouts-in-call-of-duty-modern-warfare-4-multiplayer/"
       }
      ],
@@ -1587,11 +1587,11 @@
      "titel": "Snap",
      "quellen": [
       {
-       "titel": "CODMunity – MW4 Meta",
+       "titel": "CODMunity · MW4 Meta",
        "url": "https://codmunity.gg/mw4"
       },
       {
-       "titel": "games.gg – VEL 46 Loadout",
+       "titel": "games.gg · VEL 46 Loadout",
        "url": "https://games.gg/call-of-duty-modern-warfare-4/guides/vel-46-best-loadout/"
       }
      ],
@@ -1631,7 +1631,7 @@
      "titel": "Two-Shot-Kill",
      "quellen": [
       {
-       "titel": "CODMunity – MW4 Meta",
+       "titel": "CODMunity · MW4 Meta",
        "url": "https://codmunity.gg/mw4"
       }
      ],
@@ -1643,25 +1643,25 @@
     }
    ],
    "hinweise": [
-    "Snap nur mit Overkill spielen – sonst frisst der Rückstoß-Malus den Bewegungsbonus.",
+    "Snap nur mit Overkill spielen, sonst frisst der Rückstoß-Malus den Bewegungsbonus.",
     "Freischaltung widersprüchlich: offizielle Tabelle Level 5, Waffenkarte Level 13."
    ],
    "beta": [],
    "quellen": [
     {
-     "titel": "CODMunity – MW4 Meta",
+     "titel": "CODMunity · MW4 Meta",
      "url": "https://codmunity.gg/mw4"
     },
     {
-     "titel": "GameSpot – Beste MW4-Loadouts",
+     "titel": "GameSpot · Beste MW4-Loadouts",
      "url": "https://www.gamespot.com/articles/best-loadouts-in-call-of-duty-modern-warfare-4-multiplayer/"
     },
     {
-     "titel": "games.gg – VEL 46 Loadout",
+     "titel": "games.gg · VEL 46 Loadout",
      "url": "https://games.gg/call-of-duty-modern-warfare-4/guides/vel-46-best-loadout/"
     },
     {
-     "titel": "GameRant – VEL 46 Build",
+     "titel": "GameRant · VEL 46 Build",
      "url": "https://gamerant.com/call-of-duty-cod-modern-warfare-4-mw4-best-meta-vel-46-loadout-build/"
     }
    ]
@@ -1727,11 +1727,11 @@
    "beta": [],
    "quellen": [
     {
-     "titel": "CODMunity – MW4 Meta",
+     "titel": "CODMunity · MW4 Meta",
      "url": "https://codmunity.gg/mw4"
     },
     {
-     "titel": "ggranked – MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
+     "titel": "ggranked · MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
      "url": "https://ggranked.com/games/call-of-duty-modern-warfare-4/meta"
     }
    ]
@@ -1801,7 +1801,7 @@
      "titel": "Anker-Aufsatz",
      "quellen": [
       {
-       "titel": "CODMunity – MW4 Meta",
+       "titel": "CODMunity · MW4 Meta",
        "url": "https://codmunity.gg/mw4"
       }
      ],
@@ -1820,7 +1820,7 @@
     }
    ],
    "hinweise": [
-    "Höchste Kadenz im Spiel (1.110 RPM) – rechnerisch schnellste Hardcore-TTK.",
+    "Höchste Kadenz im Spiel (1.110 RPM), rechnerisch die schnellste Hardcore-TTK.",
     "DMZ-Meta-Pick (CODMunity)."
    ],
    "beta": [
@@ -1828,11 +1828,11 @@
    ],
    "quellen": [
     {
-     "titel": "CODMunity – MW4 Meta",
+     "titel": "CODMunity · MW4 Meta",
      "url": "https://codmunity.gg/mw4"
     },
     {
-     "titel": "CODMunity – MW4 DMZ-Meta",
+     "titel": "CODMunity · MW4 DMZ-Meta",
      "url": "https://codmunity.gg/mw4-dmz"
     }
    ]
@@ -1891,16 +1891,16 @@
    },
    "builds": [],
    "hinweise": [
-    "Integrierter Schalldämpfer: Schüsse tauchen nicht auf der Minimap auf – stark in Hardcore."
+    "Integrierter Schalldämpfer: Schüsse tauchen nicht auf der Minimap auf, stark in Hardcore."
    ],
    "beta": [],
    "quellen": [
     {
-     "titel": "CODMunity – MW4 Meta",
+     "titel": "CODMunity · MW4 Meta",
      "url": "https://codmunity.gg/mw4"
     },
     {
-     "titel": "ggranked – MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
+     "titel": "ggranked · MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
      "url": "https://ggranked.com/games/call-of-duty-modern-warfare-4/meta"
     }
    ]
@@ -1951,7 +1951,7 @@
      "titel": "Anker-Aufsatz",
      "quellen": [
       {
-       "titel": "CODMunity – MW4 Meta",
+       "titel": "CODMunity · MW4 Meta",
        "url": "https://codmunity.gg/mw4"
       }
      ],
@@ -1976,11 +1976,11 @@
    "beta": [],
    "quellen": [
     {
-     "titel": "CODMunity – MW4 Meta",
+     "titel": "CODMunity · MW4 Meta",
      "url": "https://codmunity.gg/mw4"
     },
     {
-     "titel": "Dot Esports – Rezi 12 Loadout",
+     "titel": "Dot Esports · Rezi 12 Loadout",
      "url": "https://dotesports.com/call-of-duty/guides/best-rezi-12-loadout-mw4"
     }
    ]
@@ -2026,11 +2026,11 @@
    "beta": [],
    "quellen": [
     {
-     "titel": "CODMunity – MW4 DMZ-Meta",
+     "titel": "CODMunity · MW4 DMZ-Meta",
      "url": "https://codmunity.gg/mw4-dmz"
     },
     {
-     "titel": "Call of Duty – Launch-Blog (DE): Waffen, Ausrüstung, Klassen",
+     "titel": "Call of Duty · Launch-Blog (DE): Waffen, Ausrüstung, Klassen",
      "url": "https://www.callofduty.com/de/blog/2026/10/call-of-duty-modern-warfare-4-launch-multiplayer-operators-weapons-equipment-create-a-class"
     }
    ]
@@ -2096,11 +2096,11 @@
      "titel": "Vielseitig",
      "quellen": [
       {
-       "titel": "GameSpot – Beste MW4-Loadouts",
+       "titel": "GameSpot · Beste MW4-Loadouts",
        "url": "https://www.gamespot.com/articles/best-loadouts-in-call-of-duty-modern-warfare-4-multiplayer/"
       },
       {
-       "titel": "CODMunity – MW4 Meta",
+       "titel": "CODMunity · MW4 Meta",
        "url": "https://codmunity.gg/mw4"
       }
      ],
@@ -2143,18 +2143,18 @@
     }
    ],
    "hinweise": [
-    "Die CODMunity-Einzelseite zeigt 306 ms (0–10 m) statt 356 ms – anderer Build bzw. Trefferzone."
+    "Die CODMunity-Einzelseite zeigt 306 ms (0–10 m) statt 356 ms, anderer Build bzw. Trefferzone."
    ],
    "beta": [
     "Max. Schaden in der Beta 39 → 33 → 30 gesenkt."
    ],
    "quellen": [
     {
-     "titel": "CODMunity – MW4 Meta",
+     "titel": "CODMunity · MW4 Meta",
      "url": "https://codmunity.gg/mw4"
     },
     {
-     "titel": "GameSpot – Beste MW4-Loadouts",
+     "titel": "GameSpot · Beste MW4-Loadouts",
      "url": "https://www.gamespot.com/articles/best-loadouts-in-call-of-duty-modern-warfare-4-multiplayer/"
     }
    ]
@@ -2214,18 +2214,18 @@
    },
    "builds": [],
    "hinweise": [
-    "Die CODMunity-Einzelseite zeigt 219 ms (0–10 m) – anderer Build bzw. Trefferzone."
+    "Die CODMunity-Einzelseite zeigt 219 ms (0–10 m), anderer Build bzw. Trefferzone."
    ],
    "beta": [
     "Beta-Patch 31.08.: max. Schaden 28 → 22."
    ],
    "quellen": [
     {
-     "titel": "CODMunity – MW4 Meta",
+     "titel": "CODMunity · MW4 Meta",
      "url": "https://codmunity.gg/mw4"
     },
     {
-     "titel": "Mobalytics – MW4 beste Waffen",
+     "titel": "Mobalytics · MW4 beste Waffen",
      "url": "https://mobalytics.gg/gamebase/guides/mw4-best-weapons"
     }
    ]
@@ -2289,11 +2289,11 @@
    "beta": [],
    "quellen": [
     {
-     "titel": "CODMunity – MW4 Meta",
+     "titel": "CODMunity · MW4 Meta",
      "url": "https://codmunity.gg/mw4"
     },
     {
-     "titel": "Mobalytics – MW4 beste Waffen",
+     "titel": "Mobalytics · MW4 beste Waffen",
      "url": "https://mobalytics.gg/gamebase/guides/mw4-best-weapons"
     }
    ]
@@ -2354,11 +2354,11 @@
    "beta": [],
    "quellen": [
     {
-     "titel": "CODMunity – MW4 Meta",
+     "titel": "CODMunity · MW4 Meta",
      "url": "https://codmunity.gg/mw4"
     },
     {
-     "titel": "ggranked – MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
+     "titel": "ggranked · MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
      "url": "https://ggranked.com/games/call-of-duty-modern-warfare-4/meta"
     }
    ]
@@ -2421,11 +2421,11 @@
      "titel": "Anker-Aufsätze",
      "quellen": [
       {
-       "titel": "CODMunity – MW4 Meta",
+       "titel": "CODMunity · MW4 Meta",
        "url": "https://codmunity.gg/mw4"
       },
       {
-       "titel": "4fansites – Meta-Tierliste mit Builds (DE)",
+       "titel": "4fansites · Meta-Tierliste mit Builds (DE)",
        "url": "https://www.4fansites.de/news,1682,Modern-Warfare-4-Meta-Tier-Liste-mit-den-besten-Builds"
       }
      ],
@@ -2459,11 +2459,11 @@
    "beta": [],
    "quellen": [
     {
-     "titel": "CODMunity – MW4 Meta",
+     "titel": "CODMunity · MW4 Meta",
      "url": "https://codmunity.gg/mw4"
     },
     {
-     "titel": "4fansites – Meta-Tierliste mit Builds (DE)",
+     "titel": "4fansites · Meta-Tierliste mit Builds (DE)",
      "url": "https://www.4fansites.de/news,1682,Modern-Warfare-4-Meta-Tier-Liste-mit-den-besten-Builds"
     }
    ]
@@ -2518,7 +2518,7 @@
    "beta": [],
    "quellen": [
     {
-     "titel": "CODMunity – MW4 Meta",
+     "titel": "CODMunity · MW4 Meta",
      "url": "https://codmunity.gg/mw4"
     }
    ]
@@ -2567,7 +2567,7 @@
      "titel": "Core",
      "quellen": [
       {
-       "titel": "GameRant – KG-7 Vulcan Build",
+       "titel": "GameRant · KG-7 Vulcan Build",
        "url": "https://gamerant.com/call-of-duty-cod-modern-warfare-4-mw4-best-meta-kg-7-vulcan-loadout-build/"
       }
      ],
@@ -2613,7 +2613,7 @@
      "titel": "DMZ",
      "quellen": [
       {
-       "titel": "GameRant – KG-7 Vulcan Build",
+       "titel": "GameRant · KG-7 Vulcan Build",
        "url": "https://gamerant.com/call-of-duty-cod-modern-warfare-4-mw4-best-meta-kg-7-vulcan-loadout-build/"
       }
      ],
@@ -2662,15 +2662,15 @@
    "beta": [],
    "quellen": [
     {
-     "titel": "CODMunity – MW4 Meta",
+     "titel": "CODMunity · MW4 Meta",
      "url": "https://codmunity.gg/mw4"
     },
     {
-     "titel": "GameRant – KG-7 Vulcan Build",
+     "titel": "GameRant · KG-7 Vulcan Build",
      "url": "https://gamerant.com/call-of-duty-cod-modern-warfare-4-mw4-best-meta-kg-7-vulcan-loadout-build/"
     },
     {
-     "titel": "ggranked – MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
+     "titel": "ggranked · MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
      "url": "https://ggranked.com/games/call-of-duty-modern-warfare-4/meta"
     }
    ]
@@ -2719,11 +2719,11 @@
    "beta": [],
    "quellen": [
     {
-     "titel": "ggranked – MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
+     "titel": "ggranked · MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
      "url": "https://ggranked.com/games/call-of-duty-modern-warfare-4/meta"
     },
     {
-     "titel": "Call of Duty – Launch-Blog (DE): Waffen, Ausrüstung, Klassen",
+     "titel": "Call of Duty · Launch-Blog (DE): Waffen, Ausrüstung, Klassen",
      "url": "https://www.callofduty.com/de/blog/2026/10/call-of-duty-modern-warfare-4-launch-multiplayer-operators-weapons-equipment-create-a-class"
     }
    ]
@@ -2769,16 +2769,16 @@
    },
    "builds": [],
    "hinweise": [
-    "One-Shot-Kandidat für Hardcore – im Schießstand prüfen."
+    "One-Shot-Kandidat für Hardcore, im Schießstand prüfen."
    ],
    "beta": [],
    "quellen": [
     {
-     "titel": "ggranked – MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
+     "titel": "ggranked · MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
      "url": "https://ggranked.com/games/call-of-duty-modern-warfare-4/meta"
     },
     {
-     "titel": "CODMunity – MW4 Tierliste",
+     "titel": "CODMunity · MW4 Tierliste",
      "url": "https://codmunity.gg/tier-list/mw4"
     }
    ]
@@ -2836,16 +2836,16 @@
    },
    "builds": [],
    "hinweise": [
-    "GameSpot empfiehlt Aufsätze für Reichweite, Geschossgeschwindigkeit, Magazin und Schalldämpfer – die genauen Namen sind nicht verifiziert."
+    "GameSpot empfiehlt Aufsätze für Reichweite, Geschossgeschwindigkeit, Magazin und Schalldämpfer. Die genauen Namen sind nicht verifiziert."
    ],
    "beta": [],
    "quellen": [
     {
-     "titel": "GameSpot – Beste MW4-Loadouts",
+     "titel": "GameSpot · Beste MW4-Loadouts",
      "url": "https://www.gamespot.com/articles/best-loadouts-in-call-of-duty-modern-warfare-4-multiplayer/"
     },
     {
-     "titel": "ggranked – MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
+     "titel": "ggranked · MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
      "url": "https://ggranked.com/games/call-of-duty-modern-warfare-4/meta"
     }
    ]
@@ -2908,11 +2908,11 @@
    "beta": [],
    "quellen": [
     {
-     "titel": "CODMunity – MW4 Meta",
+     "titel": "CODMunity · MW4 Meta",
      "url": "https://codmunity.gg/mw4"
     },
     {
-     "titel": "ggranked – MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
+     "titel": "ggranked · MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
      "url": "https://ggranked.com/games/call-of-duty-modern-warfare-4/meta"
     }
    ]
@@ -2962,7 +2962,7 @@
      "titel": "One-Shot-Kill",
      "quellen": [
       {
-       "titel": "CODMunity – MW4 Meta",
+       "titel": "CODMunity · MW4 Meta",
        "url": "https://codmunity.gg/mw4"
       }
      ],
@@ -2979,11 +2979,11 @@
    "beta": [],
    "quellen": [
     {
-     "titel": "CODMunity – MW4 Meta",
+     "titel": "CODMunity · MW4 Meta",
      "url": "https://codmunity.gg/mw4"
     },
     {
-     "titel": "ggranked – MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
+     "titel": "ggranked · MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
      "url": "https://ggranked.com/games/call-of-duty-modern-warfare-4/meta"
     }
    ]
@@ -3044,11 +3044,11 @@
    "beta": [],
    "quellen": [
     {
-     "titel": "CODMunity – MW4 Meta",
+     "titel": "CODMunity · MW4 Meta",
      "url": "https://codmunity.gg/mw4"
     },
     {
-     "titel": "ggranked – MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
+     "titel": "ggranked · MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)",
      "url": "https://ggranked.com/games/call-of-duty-modern-warfare-4/meta"
     }
    ]
@@ -3078,12 +3078,12 @@
    "apex": null,
    "builds": [],
    "hinweise": [
-    "Keine Aufsätze und kein Apex – nur Tarnungen."
+    "Keine Aufsätze und kein Apex, nur Tarnungen."
    ],
    "beta": [],
    "quellen": [
     {
-     "titel": "Call of Duty – Launch-Blog (DE): Waffen, Ausrüstung, Klassen",
+     "titel": "Call of Duty · Launch-Blog (DE): Waffen, Ausrüstung, Klassen",
      "url": "https://www.callofduty.com/de/blog/2026/10/call-of-duty-modern-warfare-4-launch-multiplayer-operators-weapons-equipment-create-a-class"
     }
    ]
@@ -3113,12 +3113,12 @@
    "apex": null,
    "builds": [],
    "hinweise": [
-    "Keine Aufsätze und kein Apex – nur Tarnungen."
+    "Keine Aufsätze und kein Apex, nur Tarnungen."
    ],
    "beta": [],
    "quellen": [
     {
-     "titel": "Call of Duty – Launch-Blog (DE): Waffen, Ausrüstung, Klassen",
+     "titel": "Call of Duty · Launch-Blog (DE): Waffen, Ausrüstung, Klassen",
      "url": "https://www.callofduty.com/de/blog/2026/10/call-of-duty-modern-warfare-4-launch-multiplayer-operators-weapons-equipment-create-a-class"
     }
    ]
@@ -3148,12 +3148,12 @@
    "apex": null,
    "builds": [],
    "hinweise": [
-    "Keine Aufsätze und kein Apex – nur Tarnungen."
+    "Keine Aufsätze und kein Apex, nur Tarnungen."
    ],
    "beta": [],
    "quellen": [
     {
-     "titel": "Call of Duty – Launch-Blog (DE): Waffen, Ausrüstung, Klassen",
+     "titel": "Call of Duty · Launch-Blog (DE): Waffen, Ausrüstung, Klassen",
      "url": "https://www.callofduty.com/de/blog/2026/10/call-of-duty-modern-warfare-4-launch-multiplayer-operators-weapons-equipment-create-a-class"
     }
    ]
@@ -3183,12 +3183,12 @@
    "apex": null,
    "builds": [],
    "hinweise": [
-    "Keine Aufsätze und kein Apex – nur Tarnungen."
+    "Keine Aufsätze und kein Apex, nur Tarnungen."
    ],
    "beta": [],
    "quellen": [
     {
-     "titel": "Call of Duty – Launch-Blog (DE): Waffen, Ausrüstung, Klassen",
+     "titel": "Call of Duty · Launch-Blog (DE): Waffen, Ausrüstung, Klassen",
      "url": "https://www.callofduty.com/de/blog/2026/10/call-of-duty-modern-warfare-4-launch-multiplayer-operators-weapons-equipment-create-a-class"
     }
    ]
@@ -3224,7 +3224,7 @@
    "beta": [],
    "quellen": [
     {
-     "titel": "Call of Duty – Launch-Blog (DE): Waffen, Ausrüstung, Klassen",
+     "titel": "Call of Duty · Launch-Blog (DE): Waffen, Ausrüstung, Klassen",
      "url": "https://www.callofduty.com/de/blog/2026/10/call-of-duty-modern-warfare-4-launch-multiplayer-operators-weapons-equipment-create-a-class"
     }
    ]
@@ -3271,7 +3271,7 @@
     "prozent": 1.1
    }
   ],
-  "hinweis": "Andere Momentaufnahmen zeigen die Han 86 bei 34,2 % und 39,4 % – die Raten schwanken täglich."
+  "hinweis": "Andere Momentaufnahmen zeigen die Han 86 bei 34,2 % und 39,4 %, die Raten schwanken täglich."
  },
  "gesamtTtk": {
   "quelle": "ggranked, 24.10.2026",
@@ -3366,7 +3366,7 @@
     {
      "id": "ppsh-41",
      "rolle": "Rusher",
-     "grund": "1.110 RPM – rechnerisch schnellste Zwei-Treffer-Zeit"
+     "grund": "1.110 RPM, rechnerisch die schnellste Zwei-Treffer-Zeit"
     }
    ],
    "oneShot": [
@@ -3380,7 +3380,7 @@
     },
     {
      "id": "signal-50",
-     "grund": ".50-Kaliber – im Schießstand prüfen"
+     "grund": ".50-Kaliber, im Schießstand prüfen"
     }
    ],
    "prioritaeten": [
@@ -3399,11 +3399,11 @@
     "ppsh-41"
    ],
    "quelle": "CODMunity DMZ „Absolute Meta“",
-   "hinweis": "DMZ hat ein eigenes Waffen-Tuning – Multiplayer-Werte gelten dort nicht 1:1."
+   "hinweis": "DMZ hat ein eigenes Waffen-Tuning, Multiplayer-Werte gelten dort nicht 1:1."
   },
   "warzone": {
    "start": "2026-11-06",
-   "text": "MW4-Waffen kommen mit Season 1 nach Warzone. Bis dahin gibt es keine echten Warzone-Daten – Seiten mit „MW4 Warzone Meta“ sind Spekulation."
+   "text": "MW4-Waffen kommen mit Season 1 nach Warzone. Bis dahin gibt es keine echten Warzone-Daten, Seiten mit „MW4 Warzone Meta“ sind Spekulation."
   }
  },
  "extras": [
@@ -3437,7 +3437,7 @@
    "en": "Ghost",
    "level": 24,
    "slot": 1,
-   "notiz": "Konter gegen UAVs – die halten seit Launch 150 statt 100 Schaden aus und sind schwerer abzuschießen."
+   "notiz": "Konter gegen UAVs. Die halten seit Launch 150 statt 100 Schaden aus und sind schwerer abzuschießen."
   },
   {
    "id": "resupply",
@@ -3469,7 +3469,7 @@
    "en": "Blood Rush",
    "level": 4,
    "slot": 2,
-   "notiz": "Enthält seit Launch den Taktischen Sprint – der ist nicht mehr Standard."
+   "notiz": "Enthält seit Launch den Taktischen Sprint, der ist nicht mehr Standard."
   },
   {
    "id": "bomb-squad",
@@ -3493,7 +3493,7 @@
    "en": "Ninja",
    "level": 30,
    "slot": 2,
-   "notiz": "Seit Launch in Extra 2 (Beta: Extra 1) – konkurriert mit Blutrausch und Flinke Hände."
+   "notiz": "Seit Launch in Extra 2 (Beta: Extra 1), konkurriert dort mit Blutrausch und Flinke Hände."
   },
   {
    "id": "birdseye",
@@ -4071,8 +4071,8 @@
     "attack-heli"
    ],
    "gruende": [
-    "In Hardcore schrumpfen TTK-Unterschiede auf wenige Millisekunden – ZV und Sprint→Feuer entscheiden.",
-    ".50 GS ist laut CODMunity ein Hardcore-One-Shot-Kandidat – vorher im Schießstand testen.",
+    "In Hardcore schrumpfen TTK-Unterschiede auf wenige Millisekunden, ZV und Sprint→Feuer entscheiden.",
+    ".50 GS ist laut CODMunity ein Hardcore-One-Shot-Kandidat, vorher im Schießstand testen.",
     "Ninja, weil man in Hardcore stärker auf Geräusche angewiesen ist."
    ]
   },

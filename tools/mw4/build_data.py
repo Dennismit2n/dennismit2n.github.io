@@ -7,34 +7,34 @@ OUT = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else pathlib.Path(__file__)
 PATCH = "launch-2026-10-23"
 
 Q = {
-    "cod_launch": ("Call of Duty – Launch-Patchnotes MW4", "https://www.callofduty.com/patchnotes/2026/10/call-of-duty-modern-warfare-4-launch-patch-notes"),
-    "cod_de_blog": ("Call of Duty – Launch-Blog (DE): Waffen, Ausrüstung, Klassen", "https://www.callofduty.com/de/blog/2026/10/call-of-duty-modern-warfare-4-launch-multiplayer-operators-weapons-equipment-create-a-class"),
-    "cod_beta": ("Call of Duty – Beta-Patchnotes MW4", "https://www.callofduty.com/patchnotes/2026/08/call-of-duty-modern-warfare-4-beta-patch-notes"),
-    "codmunity": ("CODMunity – MW4 Meta", "https://codmunity.gg/mw4"),
-    "codmunity_ttk": ("CODMunity – MW4 TTK", "https://codmunity.gg/ttk/mw4"),
-    "codmunity_stats": ("CODMunity – MW4 Waffenwerte", "https://codmunity.gg/weapon-stats/mw4"),
-    "codmunity_tier": ("CODMunity – MW4 Tierliste", "https://codmunity.gg/tier-list/mw4"),
-    "codmunity_perks": ("CODMunity – MW4 Extras-Tierliste", "https://codmunity.gg/perk-tier-list/mw4"),
-    "codmunity_dmz": ("CODMunity – MW4 DMZ-Meta", "https://codmunity.gg/mw4-dmz"),
-    "codmunity_api": ("CODMunity – Hilfe (keine Activision-API)", "https://codmunity.gg/help/en"),
-    "ggranked": ("ggranked – MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)", "https://ggranked.com/games/call-of-duty-modern-warfare-4/meta"),
-    "mobalytics": ("Mobalytics – MW4 beste Waffen", "https://mobalytics.gg/gamebase/guides/mw4-best-weapons"),
-    "wzstats_m4": ("WZStats – M4 Loadout", "https://wzstats.gg/best-loadouts/m4-mw4"),
-    "wzstats_perks": ("WZStats – Extras-Tierliste", "https://wzstats.gg/mw4/loadouts/best-perks-tier-list"),
-    "gamespot": ("GameSpot – Beste MW4-Loadouts", "https://www.gamespot.com/articles/best-loadouts-in-call-of-duty-modern-warfare-4-multiplayer/"),
-    "gamerant_han": ("GameRant – Han 86 Build", "https://gamerant.com/call-of-duty-cod-modern-warfare-4-mw4-best-meta-han-86-loadout-build/"),
-    "gamerant_vel": ("GameRant – VEL 46 Build", "https://gamerant.com/call-of-duty-cod-modern-warfare-4-mw4-best-meta-vel-46-loadout-build/"),
-    "gamerant_kg7": ("GameRant – KG-7 Vulcan Build", "https://gamerant.com/call-of-duty-cod-modern-warfare-4-mw4-best-meta-kg-7-vulcan-loadout-build/"),
-    "game8": ("Game8 – MW4-Guides", "https://game8.co/games/Call-of-Duty-Modern-Warfare-4/archives/630961"),
-    "dotesports_unlock": ("Dot Esports – Waffen freischalten", "https://dotesports.com/call-of-duty/guides/all-mw4-weapons-unlock-guide"),
-    "dotesports_rezi": ("Dot Esports – Rezi 12 Loadout", "https://dotesports.com/call-of-duty/guides/best-rezi-12-loadout-mw4"),
-    "fourfansites": ("4fansites – Meta-Tierliste mit Builds (DE)", "https://www.4fansites.de/news,1682,Modern-Warfare-4-Meta-Tier-Liste-mit-den-besten-Builds"),
-    "gamesgg_vel": ("games.gg – VEL 46 Loadout", "https://games.gg/call-of-duty-modern-warfare-4/guides/vel-46-best-loadout/"),
-    "gamesgg_modes": ("games.gg – Alle Spielmodi", "https://games.gg/call-of-duty-modern-warfare-4/guides/call-of-duty-modern-warfare-4-all-game-modes/"),
-    "gamerfuzion": ("GamerFuzion – Update 24. Oktober", "https://www.gamerfuzion.com/modern-warfare-4-october-24-patch-notes-dmz-mia-fix-exfil-helicopter-weapon-tuning/"),
-    "timesaver_s1": ("Timesaver – Season-1-Roadmap", "https://timesaver.gg/blog/modern-warfare-4-season-1-release-date-november-6-roadmap"),
-    "beebom": ("Beebom – Launch-Patchnotes", "https://beebom.com/call-of-duty-modern-warfare-4-launch-patch-notes/"),
-    "gamesatlas": ("GamesAtlas – Waffenliste", "https://www.gamesatlas.com/cod-modern-warfare-4/weapons/"),
+    "cod_launch": ("Call of Duty · Launch-Patchnotes MW4", "https://www.callofduty.com/patchnotes/2026/10/call-of-duty-modern-warfare-4-launch-patch-notes"),
+    "cod_de_blog": ("Call of Duty · Launch-Blog (DE): Waffen, Ausrüstung, Klassen", "https://www.callofduty.com/de/blog/2026/10/call-of-duty-modern-warfare-4-launch-multiplayer-operators-weapons-equipment-create-a-class"),
+    "cod_beta": ("Call of Duty · Beta-Patchnotes MW4", "https://www.callofduty.com/patchnotes/2026/08/call-of-duty-modern-warfare-4-beta-patch-notes"),
+    "codmunity": ("CODMunity · MW4 Meta", "https://codmunity.gg/mw4"),
+    "codmunity_ttk": ("CODMunity · MW4 TTK", "https://codmunity.gg/ttk/mw4"),
+    "codmunity_stats": ("CODMunity · MW4 Waffenwerte", "https://codmunity.gg/weapon-stats/mw4"),
+    "codmunity_tier": ("CODMunity · MW4 Tierliste", "https://codmunity.gg/tier-list/mw4"),
+    "codmunity_perks": ("CODMunity · MW4 Extras-Tierliste", "https://codmunity.gg/perk-tier-list/mw4"),
+    "codmunity_dmz": ("CODMunity · MW4 DMZ-Meta", "https://codmunity.gg/mw4-dmz"),
+    "codmunity_api": ("CODMunity · Hilfe (keine Activision-API)", "https://codmunity.gg/help/en"),
+    "ggranked": ("ggranked · MW4 Meta (ZV, Sprint→Feuer, Gesamt-TTK)", "https://ggranked.com/games/call-of-duty-modern-warfare-4/meta"),
+    "mobalytics": ("Mobalytics · MW4 beste Waffen", "https://mobalytics.gg/gamebase/guides/mw4-best-weapons"),
+    "wzstats_m4": ("WZStats · M4 Loadout", "https://wzstats.gg/best-loadouts/m4-mw4"),
+    "wzstats_perks": ("WZStats · Extras-Tierliste", "https://wzstats.gg/mw4/loadouts/best-perks-tier-list"),
+    "gamespot": ("GameSpot · Beste MW4-Loadouts", "https://www.gamespot.com/articles/best-loadouts-in-call-of-duty-modern-warfare-4-multiplayer/"),
+    "gamerant_han": ("GameRant · Han 86 Build", "https://gamerant.com/call-of-duty-cod-modern-warfare-4-mw4-best-meta-han-86-loadout-build/"),
+    "gamerant_vel": ("GameRant · VEL 46 Build", "https://gamerant.com/call-of-duty-cod-modern-warfare-4-mw4-best-meta-vel-46-loadout-build/"),
+    "gamerant_kg7": ("GameRant · KG-7 Vulcan Build", "https://gamerant.com/call-of-duty-cod-modern-warfare-4-mw4-best-meta-kg-7-vulcan-loadout-build/"),
+    "game8": ("Game8 · MW4-Guides", "https://game8.co/games/Call-of-Duty-Modern-Warfare-4/archives/630961"),
+    "dotesports_unlock": ("Dot Esports · Waffen freischalten", "https://dotesports.com/call-of-duty/guides/all-mw4-weapons-unlock-guide"),
+    "dotesports_rezi": ("Dot Esports · Rezi 12 Loadout", "https://dotesports.com/call-of-duty/guides/best-rezi-12-loadout-mw4"),
+    "fourfansites": ("4fansites · Meta-Tierliste mit Builds (DE)", "https://www.4fansites.de/news,1682,Modern-Warfare-4-Meta-Tier-Liste-mit-den-besten-Builds"),
+    "gamesgg_vel": ("games.gg · VEL 46 Loadout", "https://games.gg/call-of-duty-modern-warfare-4/guides/vel-46-best-loadout/"),
+    "gamesgg_modes": ("games.gg · Alle Spielmodi", "https://games.gg/call-of-duty-modern-warfare-4/guides/call-of-duty-modern-warfare-4-all-game-modes/"),
+    "gamerfuzion": ("GamerFuzion · Update 24. Oktober", "https://www.gamerfuzion.com/modern-warfare-4-october-24-patch-notes-dmz-mia-fix-exfil-helicopter-weapon-tuning/"),
+    "timesaver_s1": ("Timesaver · Season-1-Roadmap", "https://timesaver.gg/blog/modern-warfare-4-season-1-release-date-november-6-roadmap"),
+    "beebom": ("Beebom · Launch-Patchnotes", "https://beebom.com/call-of-duty-modern-warfare-4-launch-patch-notes/"),
+    "gamesatlas": ("GamesAtlas · Waffenliste", "https://www.gamesatlas.com/cod-modern-warfare-4/weapons/"),
 }
 
 
@@ -94,7 +94,7 @@ W("han-86", "ar", "Han 86", unlock=4, maxlvl=72, mag=30, res=90, rpm=740, tier="
           teil("Lauf", "SA H86 465mm", 68, "−4 % Rückstoß, +29 % Reichweite, +20 % Geschossgeschw."),
           teil("Laser", "XRK Clutch-LS", 3),
           teil("Visier", "ZLR Type C", 27),
-          teil("Griff", "XRK Justice II Grip", 14)], hinweis="EaseScore 8,7 – am leichtesten zu kontrollieren."),
+          teil("Griff", "XRK Justice II Grip", 14)], hinweis="Am leichtesten zu kontrollieren (EaseScore 8,7)."),
       build("Core", "Alternative (DE-Namen)", [q("fourfansites")], [
           teil("Mündung", "FSS IS300"), teil("Laser", "Schlager Visiv-5"), teil("Unterlauf", "FSS-Fireline-Griff"),
           teil("Schaft", "Meiko-L9P-Klappschaft"), teil("Griff", "Hanbit H86-Griff")]),
@@ -102,10 +102,10 @@ W("han-86", "ar", "Han 86", unlock=4, maxlvl=72, mag=30, res=90, rpm=740, tier="
           teil("Mündung", "FSS IS300"), teil("Lauf", "Hanbit RK8 406mm"), teil("Unterlauf", "FSS Fireline Grip"),
           teil("Magazin", "60-Schuss-Trommel"), teil("Visier", "SZ SRE-7")]),
   ],
-  hinweise=["Höchste Nutzungsrate und schnellste AR-TTK bis 40 m – wahrscheinlichstes Ziel des ersten Nerfs.",
+  hinweise=["Höchste Nutzungsrate und schnellste AR-TTK bis 40 m, also das wahrscheinlichste Ziel des ersten Nerfs.",
             "Der Apex blockiert Visier, Schaft und Lauf: Nutzwert, kein Gunfight-Meta."],
   beta=["Kopfschuss-Multiplikator in der Beta 1,4 → 1,25 gesenkt (Launch-Wert nicht veröffentlicht).",
-        "Beta-Patch 31.08.: Sprint→Feuer 210 → 185 ms. Zum Launch wieder 210 ms gemessen – 185 ms ist veraltet."],
+        "Beta-Patch 31.08.: Sprint→Feuer 210 → 185 ms. Zum Launch wieder 210 ms gemessen, die 185 ms sind veraltet."],
   quellen=[q("codmunity"), q("ggranked"), q("cod_de_blog")])
 
 W("m4", "ar", "M4", unlock=14, maxlvl=72, mag=30, res=90, rpm=810, tier="S", pick=16.5, hc=True,
@@ -131,7 +131,7 @@ W("m4", "ar", "M4", unlock=14, maxlvl=72, mag=30, res=90, rpm=810, tier="S", pic
       build("Hardcore", "Two-Shot-Kill", [q("codmunity")], [], konfidenz="niedrig", vollstaendig=False,
             hinweis="CODMunity listet zwei Hardcore-Two-Shot-Kill-Builds. Die Aufsätze sind nur in der CODMunity-App sichtbar."),
   ],
-  hinweise=["Sicherster Allrounder – erste Wahl, falls die Han 86 generft wird.",
+  hinweise=["Sicherster Allrounder, erste Wahl, falls die Han 86 generft wird.",
             "Kimme und Korn sind brauchbar: esports.gg spielt den Build ganz ohne Visier."],
   beta=["Kopfschuss-Multiplikator in der Beta 1,5 → 1,2 gesenkt."],
   quellen=[q("codmunity"), q("ggranked"), q("wzstats_m4"), q("game8")])
@@ -157,7 +157,7 @@ W("kastov-762", "ar", "Kastov 762", unlock=34, maxlvl=68, mag=30, res=90, rpm=60
   builds=[build("Core", "Vielseitig (teilweise)", [q("codmunity")], [
       teil("Laser", "XRK Clutch-LS"), teil("Schaft", "Hanbit 655L-M Stock"), teil("Unterlauf", "FSS Fireline Grip")],
       vollstaendig=False, hinweis="Drei weitere Aufsätze sind öffentlich nicht einsehbar.")],
-  hinweise=["Härtester Rückstoß aller Sturmgewehre – der FSS Fireline Grip ist Pflicht.",
+  hinweise=["Härtester Rückstoß aller Sturmgewehre, der FSS Fireline Grip ist Pflicht.",
             "Belohnt Kopf-zuerst-Zielen am stärksten: 200 ms auf 15 m (Basiswaffe, ohne Aufsätze).",
             "Der Beta-Apex „Kastov 545“ wurde zum Launch entfernt. Launch-Apex ist Kastov ARC."],
   beta=["Kopfschuss-Multiplikator in der Beta 1,48 → 1,35 gesenkt."],
@@ -197,7 +197,7 @@ W("iso-nightshade", "smg", "ISO Nachtschatten", "ISO Nightshade", unlock=4, maxl
           teil("Mündung", "FSS Crackdown"), teil("Lauf", "ZLR Carbon-900"), teil("Unterlauf", "FSS-Tac90-Griff"),
           teil("Griff", "Demo STP-1"), teil("Schaft", "GI-80-Militärschaft")]),
   ],
-  hinweise=["Gute Kimme und Korn (GameRant, noch vor dem Launch geschrieben) – erst ohne Visier testen.",
+  hinweise=["Gute Kimme und Korn (GameRant, noch vor dem Launch geschrieben). Erst ohne Visier testen.",
             "Zum Launch wurden MPs auf Nah- und Mitteldistanz verstärkt."],
   beta=["Beta-Patch 31.08.: max. Schaden 20 → 21, Kopf-Multiplikator 1,25 → 1,3."],
   quellen=[q("codmunity"), q("fourfansites")])
@@ -220,7 +220,7 @@ W("vel-46", "smg", "VEL 46", unlock=5, unlock_alt=13, maxlvl=60, mag=40, res=120
       build("Hardcore", "Two-Shot-Kill", [q("codmunity")], [], konfidenz="niedrig", vollstaendig=False,
             hinweis="CODMunity listet einen Hardcore-Two-Shot-Kill-Build. Die Aufsätze sind nur in der CODMunity-App sichtbar."),
   ],
-  hinweise=["Snap nur mit Overkill spielen – sonst frisst der Rückstoß-Malus den Bewegungsbonus.",
+  hinweise=["Snap nur mit Overkill spielen, sonst frisst der Rückstoß-Malus den Bewegungsbonus.",
             "Freischaltung widersprüchlich: offizielle Tabelle Level 5, Waffenkarte Level 13."],
   quellen=[q("codmunity"), q("gamespot"), q("gamesgg_vel"), q("gamerant_vel")])
 
@@ -238,7 +238,7 @@ W("ppsh-41", "smg", "PPSh-41", unlock=30, unlock_alt=27, maxlvl=62, mag=71, res=
   builds=[build("Core", "Anker-Aufsatz", [q("codmunity")], [
       teil("Schaft", "Hanbit Janggun-H9", None, "−8 % Rückstoß, +7 % ZV-Geschwindigkeit")],
       vollstaendig=False, hinweis="Restlicher Build ist öffentlich nicht einsehbar.")],
-  hinweise=["Höchste Kadenz im Spiel (1.110 RPM) – rechnerisch schnellste Hardcore-TTK.", "DMZ-Meta-Pick (CODMunity)."],
+  hinweise=["Höchste Kadenz im Spiel (1.110 RPM), rechnerisch die schnellste Hardcore-TTK.", "DMZ-Meta-Pick (CODMunity)."],
   beta=["Beta-Patch 31.08.: Reichweite für max. Schaden 0–10,4 → 0–10,8 m."],
   quellen=[q("codmunity"), q("codmunity_dmz")])
 
@@ -246,7 +246,7 @@ W("x58-nyx", "smg", "X-58 Nyx", unlock=46, unlock_alt=34, maxlvl=53, mag=40, res
   werte=werte("ggranked", zv=255, stf=110),
   ttk=[300, 462, 608, 697], abfall="11 / 20 / 30 m",
   apx=apex("X-58 Void", "X-58 Void", "Unterschall-Stealth-Umrüstung", ["Lauf", "Munition"]),
-  hinweise=["Integrierter Schalldämpfer: Schüsse tauchen nicht auf der Minimap auf – stark in Hardcore."],
+  hinweise=["Integrierter Schalldämpfer: Schüsse tauchen nicht auf der Minimap auf, stark in Hardcore."],
   quellen=[q("codmunity"), q("ggranked")])
 
 # ---------- Schrotflinten ----------
@@ -273,7 +273,7 @@ W("finn-lmg", "lmg", "FiNN LMG", unlock=4, maxlvl=59, mag=100, res=100, rpm=587,
       teil("Mündung", "XRK Mil-Tac Suppressor"), teil("Laser", "SZ Gen.6 PEQ"), teil("Visier", "ZLR Type C"),
       teil("Aufsatz", "EXP Bulldog-9", None, "Slot in der Quelle nicht genannt"),
       teil("Aufsatz", "XRK Singularity-13", None, "Slot in der Quelle nicht genannt")])],
-  hinweise=["Die CODMunity-Einzelseite zeigt 306 ms (0–10 m) statt 356 ms – anderer Build bzw. Trefferzone."],
+  hinweise=["Die CODMunity-Einzelseite zeigt 306 ms (0–10 m) statt 356 ms, anderer Build bzw. Trefferzone."],
   beta=["Max. Schaden in der Beta 39 → 33 → 30 gesenkt."],
   quellen=[q("codmunity"), q("gamespot")])
 
@@ -282,7 +282,7 @@ W("type-73", "lmg", "Typ 73", "Type 73", unlock=9, maxlvl=65, mag=60, res=60, rp
   werte=werte("ggranked / CODMunity", zv=460, stf=245, openBolt=57),
   ttk=[276, 327, 386, 444], abfall="19,6 / 37,4 m",
   apx=apex("Type 73 Assault", "Typ 73 (Sturm)", "Explosives Top-Magazin", ["Magazin", "Munition"]),
-  hinweise=["Die CODMunity-Einzelseite zeigt 219 ms (0–10 m) – anderer Build bzw. Trefferzone."],
+  hinweise=["Die CODMunity-Einzelseite zeigt 219 ms (0–10 m), anderer Build bzw. Trefferzone."],
   beta=["Beta-Patch 31.08.: max. Schaden 28 → 22."],
   quellen=[q("codmunity"), q("mobalytics")])
 
@@ -338,7 +338,7 @@ W("astaroth-57", "sniper", "Astaroth .57", unlock=25, unlock_alt=10, maxlvl=54, 
 W("signal-50", "sniper", "Signal 50", unlock=50, unlock_alt=35, maxlvl=74, mag=7, res=21, rpm=111, tier="A",
   werte=werte("ggranked", zv=590, stf=283),
   apx=apex("Signal Inferno", "Signal-Inferno", "Brandmunition .50", ["Munition"]),
-  hinweise=["One-Shot-Kandidat für Hardcore – im Schießstand prüfen."],
+  hinweise=["One-Shot-Kandidat für Hardcore, im Schießstand prüfen."],
   quellen=[q("ggranked"), q("codmunity_tier")])
 
 # ---------- Pistolen ----------
@@ -346,7 +346,7 @@ W("sang-9mm", "pistole", "SANG 9mm", unlock=4, maxlvl=38, mag=13, res=39, rpm=37
   werte=werte("ggranked", zv=170, stf=80),
   ttk=[364, None, 632, None],
   apx=apex("SANG Breach", "SANG-Durchbruch", "Unterlauf-Schrotflinte, Kaliber 12", ["Laser"]),
-  hinweise=["GameSpot empfiehlt Aufsätze für Reichweite, Geschossgeschwindigkeit, Magazin und Schalldämpfer – die genauen Namen sind nicht verifiziert."],
+  hinweise=["GameSpot empfiehlt Aufsätze für Reichweite, Geschossgeschwindigkeit, Magazin und Schalldämpfer. Die genauen Namen sind nicht verifiziert."],
   quellen=[q("gamespot"), q("ggranked")])
 
 W("krait-p68", "pistole", "Krait P68", unlock=7, maxlvl=38, mag=10, res=40, rpm=260, tier="A",
@@ -375,7 +375,7 @@ W("mojave-357", "pistole", "Mojave .357", unlock=48, maxlvl=44, mag=8, res=32, r
 for wid, name, ul, mag, res, rpm in [("pila", "PILA", 4, 1, 1, 8), ("rpg-8", "RPG-8", 23, 1, 1, 20),
                                      ("jokr", "JOKR", 43, 1, 1, 13), ("pm40-anvil", "PM-40 Anvil", 54, 3, 6, 38)]:
     W(wid, "werfer", name, unlock=ul, maxlvl=46, mag=mag, res=res, rpm=rpm,
-      hinweise=["Keine Aufsätze und kein Apex – nur Tarnungen."], quellen=[q("cod_de_blog")])
+      hinweise=["Keine Aufsätze und kein Apex, nur Tarnungen."], quellen=[q("cod_de_blog")])
 
 W("fss-carbon-edge", "nahkampf", "FSS Carbon Edge 1095", unlock=4, maxlvl=46,
   hinweise=["Einzige Nahkampfwaffe zum Launch; nur Tarnungen.",
@@ -403,14 +403,14 @@ EXTRAS = [
     E("quick-fix", "Zusammenflicken", "Quick Fix", 4, 1),
     E("overkill", "Overkill", "Overkill", 4, 1, "Ermöglicht mit der VEL 46 Snap den Quick-Draw."),
     E("high-alert", "Alarmiert", "High Alert", 8, 1),
-    E("ghost", "Ghost", "Ghost", 24, 1, "Konter gegen UAVs – die halten seit Launch 150 statt 100 Schaden aus und sind schwerer abzuschießen."),
+    E("ghost", "Ghost", "Ghost", 24, 1, "Konter gegen UAVs. Die halten seit Launch 150 statt 100 Schaden aus und sind schwerer abzuschießen."),
     E("resupply", "Nachschub", "Resupply", 31, 1),
     E("kill-chain", "Abschusskette", "Kill Chain", 48, 1),
     E("hardline", "Hardliner", "Hardline", 4, 2, "UAV schon nach 4 statt 5 Abschüssen."),
-    E("blood-rush", "Blutrausch", "Blood Rush", 4, 2, "Enthält seit Launch den Taktischen Sprint – der ist nicht mehr Standard."),
+    E("blood-rush", "Blutrausch", "Blood Rush", 4, 2, "Enthält seit Launch den Taktischen Sprint, der ist nicht mehr Standard."),
     E("bomb-squad", "Bombenkommando", "Bomb Squad", 16, 2),
     E("fast-hands", "Flinke Hände", "Fast Hands", 20, 2),
-    E("ninja", "Ninja", "Ninja", 30, 2, "Seit Launch in Extra 2 (Beta: Extra 1) – konkurriert mit Blutrausch und Flinke Hände."),
+    E("ninja", "Ninja", "Ninja", 30, 2, "Seit Launch in Extra 2 (Beta: Extra 1), konkurriert dort mit Blutrausch und Flinke Hände."),
     E("birdseye", "Draufsicht", "Birdseye", 40, 2),
     E("lethal-reach", "Tödliche Reichweite", "Lethal Reach", 4, 3, "Nahkampftaste nutzt automatisch das Messer."),
     E("combat-grid", "Kampfraster", "Combat Grid", 4, 3),
@@ -512,8 +512,8 @@ LOADOUTS = [
      "primaer": {"waffe": "iso-nightshade", "build": "Alternative (DE-Namen)"}, "sekundaer": {"waffe": "gs-50"},
      "nahkampf": "fss-carbon-edge", "taktik": "concussion", "toedlich": "frag", "feld": "portable-radar",
      "extras": ["ghost", "ninja", "battle-hardened"], "serien": ["uav", "counter-uav", "attack-heli"],
-     "gruende": ["In Hardcore schrumpfen TTK-Unterschiede auf wenige Millisekunden – ZV und Sprint→Feuer entscheiden.",
-                 ".50 GS ist laut CODMunity ein Hardcore-One-Shot-Kandidat – vorher im Schießstand testen.",
+     "gruende": ["In Hardcore schrumpfen TTK-Unterschiede auf wenige Millisekunden, ZV und Sprint→Feuer entscheiden.",
+                 ".50 GS ist laut CODMunity ein Hardcore-One-Shot-Kandidat, vorher im Schießstand testen.",
                  "Ninja, weil man in Hardcore stärker auf Geräusche angewiesen ist."]},
     {"id": "scharfschuetze", "name": "Scharfschütze", "rolle": "Distanz, große Karten",
      "primaer": {"waffe": "kg7-vulcan", "build": "Core"}, "sekundaer": {"waffe": "krait-p68"},
@@ -553,7 +553,7 @@ DATA = {
         "patch": {"id": PATCH, "name": "Launch-Tuning", "live": "2026-10-23", "notizen": "2026-10-21"},
         "warnung": "Für die Woche ab 26.10. hat Infinity Ward das erste Waffen-Tuning angekündigt. Alle Werte stammen vom Launch-Stand und können danach abweichen.",
         "aenderungen": [
-            {"version": "2026.10.25-1", "datum": "2026-10-25", "text": "Erste Version: 33 Waffen, Builds, TTK, Klassen-Setup – Launch-Stand vom 23.10.2026."}
+            {"version": "2026.10.25-1", "datum": "2026-10-25", "text": "Erste Version: 33 Waffen, Builds, TTK, Klassen-Setup. Launch-Stand vom 23.10.2026."}
         ],
         "release": [
             {"datum": "2026-10-16", "text": "Kampagne Early Access"},
@@ -584,27 +584,27 @@ DATA = {
                         "Event- und Beta-Apex-Aufsätze vorübergehend entfernt („kommen bald zurück“)"]},
             {"datum": "24.10.2026", "titel": "Update 24. Oktober", "status": "aktuell",
              "punkte": ["Nur DMZ-Fixes (MIA-Bug, Exfil-Hubschrauber, Gunsmith-Geld)",
-                        "Quelle GamerFuzion – auf callofduty.com nicht gegengeprüft"]},
+                        "Quelle GamerFuzion, auf callofduty.com nicht gegengeprüft"]},
         ],
         "texte": {
             "apex": ["Apex-Aufsätze sind die Endbelohnung, wenn du eine Waffe auf ihr Max.-Level bringst.",
-                     "Sie haben einen eigenen Platz und verbrauchen keinen Aufsatz-Slot – viele blockieren aber trotzdem Standard-Slots.",
+                     "Sie haben einen eigenen Platz und verbrauchen keinen Aufsatz-Slot, viele blockieren aber trotzdem Standard-Slots.",
                      "Sie geben keine pauschalen Boni, sondern bauen die Waffe um: Umrüstungen, andere Feuermodi, integrierte Werfer, Spezialmunition.",
-                     "Zum Launch gibt es 28 Apex-Aufsätze – für jede Primärwaffe und Pistole, nicht für Werfer und Messer.",
+                     "Zum Launch gibt es 28 Apex-Aufsätze, für jede Primärwaffe und Pistole, nicht für Werfer und Messer.",
                      "Sie bleiben beim Waffen-Prestige erhalten."],
             "visier": ["MW4 lässt dich das Visier auf der Schiene nach vorne oder hinten schieben (Optic Rail Placement).",
                        "Laut Infinity Ward ist das rein kosmetisch: ZV-Zeit und alle Werte bleiben gleich.",
                        "Stell es so ein, dass du das Absehen am leichtesten verfolgen kannst.",
                        "Absehen lassen sich anpassen, inklusive Farbvarianten (auch der begehrte blaue Punkt).",
                        "Häufigste Meta-Visiere: ZLR Type C, Slimline Elite, SZ SRE-7, IOTA-D, SZ Micro D-3, SZ Prima-4 Dot.",
-                       "ISO Nachtschatten und M4 haben gute Kimme und Korn – erst ohne Visier testen."],
+                       "ISO Nachtschatten und M4 haben gute Kimme und Korn. Erst ohne Visier testen."],
             "prestige": ["Jede Waffe hat ein Max.-Level (37 bis 75). Danach gibt es den Apex und das Waffen-Prestige.",
                          "Waffen-Prestige setzt das Waffenlevel zurück und sperrt die Aufsätze dieser Waffe wieder.",
                          "Apex- und Blaupausen-Aufsätze, Tarnungen und Absehen bleiben erhalten.",
                          "Aufsätze werden geteilt: einmal freigeschaltet, auf jeder passenden Waffe nutzbar (über 500 zum Launch).",
                          "Spieler-Prestige: zwei Wege (klassisch mit Freischalt-Token oder ohne Zurücksetzen), 10 Prestige-Symbole, Level-Cap 55."],
             "pc": ["Auf dem PC sind TPM 2.0 und Secure Boot Pflicht (Activision Support)."],
-            "luecken": ["Keine offiziellen Schadenstabellen pro Waffe – alle TTK- und ZV-Werte sind Community-Messungen.",
+            "luecken": ["Keine offiziellen Schadenstabellen pro Waffe, alle TTK- und ZV-Werte sind Community-Messungen.",
                         "Hardcore-Lebenspunkte für MW4 nicht offiziell bestätigt; Hardcore-TTK ist geschätzt.",
                         "Keine unterschiedlichen Builds für Controller und Maus/Tastatur veröffentlicht.",
                         "Warzone-Daten erst ab Season 1 (06.11.2026).",
@@ -620,7 +620,7 @@ DATA = {
     "waffen": WAFFEN,
     "nutzung": {"quelle": "CODMunity, Launch-Woche", "stand": "2026-10-25",
                 "werte": [{"id": i, "prozent": p} for i, p in PICKS],
-                "hinweis": "Andere Momentaufnahmen zeigen die Han 86 bei 34,2 % und 39,4 % – die Raten schwanken täglich."},
+                "hinweis": "Andere Momentaufnahmen zeigen die Han 86 bei 34,2 % und 39,4 %, die Raten schwanken täglich."},
     "gesamtTtk": {"quelle": "ggranked, 24.10.2026", "erklaerung": "Sprint→Feuer + ZV + TTK auf 10–25 m",
                   "werte": [{"id": i, "label": l, "ms": ms} for i, l, ms in GESAMT_TTK]},
     "metaBericht": {
@@ -633,17 +633,17 @@ DATA = {
                 {"id": "iso-nightshade", "rolle": "Objective-Modi", "grund": "923 RPM, wenig Rückstoß"},
                 {"id": "m4", "rolle": "Lanes", "grund": "810 RPM, sicherster Allrounder"},
                 {"id": "x58-nyx", "rolle": "Stealth", "grund": "Integrierter Schalldämpfer"},
-                {"id": "ppsh-41", "rolle": "Rusher", "grund": "1.110 RPM – rechnerisch schnellste Zwei-Treffer-Zeit"}],
+                {"id": "ppsh-41", "rolle": "Rusher", "grund": "1.110 RPM, rechnerisch die schnellste Zwei-Treffer-Zeit"}],
             "oneShot": [
                 {"id": "gs-50", "grund": "CODMunity listet einen Hardcore-One-Shot-Build (nur in der App)"},
                 {"id": "kg7-vulcan", "grund": "Unbegrenzte One-Shot-Reichweite im Core-Modus"},
-                {"id": "signal-50", "grund": ".50-Kaliber – im Schießstand prüfen"}],
+                {"id": "signal-50", "grund": ".50-Kaliber, im Schießstand prüfen"}],
             "prioritaeten": ["ZV-Geschwindigkeit", "Sprint→Feuer", "Wenig Rückstoß für die ersten zwei Treffer", "Schalldämpfer"]},
         "dmz": {"top": ["han-86", "vel-46", "hyeon-burst", "warlord", "ppsh-41"],
                 "quelle": "CODMunity DMZ „Absolute Meta“",
-                "hinweis": "DMZ hat ein eigenes Waffen-Tuning – Multiplayer-Werte gelten dort nicht 1:1."},
+                "hinweis": "DMZ hat ein eigenes Waffen-Tuning, Multiplayer-Werte gelten dort nicht 1:1."},
         "warzone": {"start": "2026-11-06",
-                    "text": "MW4-Waffen kommen mit Season 1 nach Warzone. Bis dahin gibt es keine echten Warzone-Daten – Seiten mit „MW4 Warzone Meta“ sind Spekulation."},
+                    "text": "MW4-Waffen kommen mit Season 1 nach Warzone. Bis dahin gibt es keine echten Warzone-Daten, Seiten mit „MW4 Warzone Meta“ sind Spekulation."},
     },
     "extras": EXTRAS,
     "extrasMeta": {"codmunityTop": ["ninja", "blood-rush", "cold-blooded"], "wzstatsMeta": ["ninja", "ghost", "quick-fix", "blood-rush"]},
