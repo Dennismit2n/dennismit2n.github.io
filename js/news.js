@@ -1405,6 +1405,25 @@ var NEWS = {
   ticker: [
     {
       date: '2026-11-01',
+      version: 'v1.1.6',
+      link: 'https://github.com/Dennismit2n/besucher-ticker/releases/tag/v1.1.6',
+      de: 'Auch der Hinweis „Der Ticker läuft bereits“ ist jetzt dunkel, vorher kam dafür ein heller Windows-Dialog.',
+      en: 'The notice “The ticker is already running” is now dark too, it used to be a light Windows dialog.',
+      es: 'También el aviso «El ticker ya está en marcha» es ahora oscuro, antes salía un diálogo claro de Windows.',
+      fr: 'L’avis « Le ticker est déjà lancé » est désormais sombre lui aussi, avant c’était une boîte de dialogue Windows claire.',
+      it: 'Anche l’avviso «Il ticker è già in esecuzione» ora è scuro, prima era una finestra di dialogo chiara di Windows.',
+      nl: 'Ook de melding ‘De ticker draait al’ is nu donker, eerder was dat een licht Windows-venster.',
+      pl: 'Także komunikat „Ticker już działa” jest teraz ciemny, wcześniej było to jasne okno Windows.',
+      pt: 'O aviso «O ticker já está em execução» agora também é escuro, antes era uma caixa de diálogo clara do Windows.',
+      tr: '“Ticker zaten çalışıyor” uyarısı da artık koyu, önceden açık renkli bir Windows penceresiydi.',
+      ru: 'Сообщение «Тикер уже запущен» теперь тоже тёмное, раньше это было светлое окно Windows.',
+      hi: '“टिकर पहले से चल रहा है” वाली सूचना भी अब गहरे रंग में है, पहले यह हल्के रंग की Windows विंडो थी।',
+      zh: '“Ticker 已在运行”的提示现在也是深色的，以前是浅色的 Windows 对话框。',
+      ja: '「Ticker はすでに起動しています」のお知らせもダーク表示になりました。以前は明るい Windows のダイアログでした。',
+      ko: '‘Ticker가 이미 실행 중입니다’ 알림도 이제 어둡게 나옵니다. 예전에는 밝은 Windows 대화 상자였습니다.'
+    },
+    {
+      date: '2026-11-01',
       version: 'v1.1.5',
       link: 'https://github.com/Dennismit2n/besucher-ticker/releases/tag/v1.1.5',
       de: 'Das Einstellungsfenster ist jetzt ganz dunkel, samt Titelleiste, Auswahllisten und Knöpfen. Vorher waren die hell.',
