@@ -3419,19 +3419,19 @@ var GUIDES = {
         h: 848,
         alt: {
           de: 'Drei Handy-Ansichten des BL4 Vault-Handbuchs: der Fahrplan mit dem erledigten Schritt „UVH 5 freischalten“ und den Wildcard-Missionen dafür; ein Build für C4SH mit Spielstil und Action Skill; die eigene Sammlung als Kacheln nach Waffen, Schilden, Klassenmods und weiteren Gruppen.',
-          en: 'Three phone screens of the BL4 Vault-Handbuch: the roadmap with the finished step “unlock UVH 5” and the Wildcard Missions it takes; a build for C4SH with play style and action skill; your own collection as tiles by weapons, shields, class mods and other groups.',
-          es: 'Tres pantallas de móvil del BL4 Vault-Handbuch: la hoja de ruta con el paso completado «desbloquear UVH 5» y las Wildcard Missions necesarias; un build para C4SH con estilo de juego y habilidad de acción; tu colección en mosaicos por armas, escudos, mods de clase y otros grupos.',
-          fr: 'Trois écrans de téléphone du BL4 Vault-Handbuch : la feuille de route avec l’étape terminée « débloquer UVH 5 » et les Wildcard Missions nécessaires ; un build pour C4SH avec style de jeu et compétence d’action ; votre collection en tuiles par armes, boucliers, mods de classe et autres groupes.',
-          it: 'Tre schermate di telefono del BL4 Vault-Handbuch: la tabella di marcia con il passo completato «sbloccare UVH 5» e le Wildcard Mission necessarie; una build per C4SH con stile di gioco e abilità d’azione; la tua collezione in riquadri per armi, scudi, mod di classe e altri gruppi.',
-          nl: 'Drie telefoonschermen van het BL4 Vault-Handbuch: het routeplan met de voltooide stap ‘UVH 5 vrijspelen’ en de Wildcard Missions die daarvoor nodig zijn; een build voor C4SH met speelstijl en action skill; je eigen collectie als tegels per wapens, schilden, class mods en andere groepen.',
-          pl: 'Trzy ekrany telefonu z BL4 Vault-Handbuch: plan z ukończonym krokiem „odblokuj UVH 5” i potrzebnymi Wildcard Missions; build dla C4SH ze stylem gry i umiejętnością akcji; własna kolekcja w kafelkach według broni, tarcz, modów klas i innych grup.',
-          pt: 'Três telas de celular do BL4 Vault-Handbuch: o plano com o passo concluído «desbloquear UVH 5» e as Wildcard Missions necessárias; um build para C4SH com estilo de jogo e habilidade de ação; a sua coleção em mosaicos por armas, escudos, mods de classe e outros grupos.',
-          tr: 'BL4 Vault-Handbuch’tan üç telefon ekranı: tamamlanmış “UVH 5’i aç” adımı ve bunun için gereken Wildcard Mission’larla yol planı; oynanış tarzı ve aksiyon yeteneğiyle C4SH için bir build; silahlar, kalkanlar, sınıf modları ve diğer gruplara göre kutucuklar hâlinde kendi koleksiyonunuz.',
-          ru: 'Три экрана телефона с BL4 Vault-Handbuch: маршрут с выполненным шагом «открыть UVH 5» и нужными для этого Wildcard Missions; билд для C4SH со стилем игры и активным навыком; ваша коллекция в плитках по оружию, щитам, классовым модам и другим группам.',
-          hi: 'BL4 Vault-Handbuch की तीन फ़ोन स्क्रीन: पूरा हो चुके चरण “UVH 5 अनलॉक करें” और उसके लिए ज़रूरी Wildcard Missions वाला रोडमैप; खेलने के अंदाज़ और एक्शन स्किल के साथ C4SH का एक बिल्ड; हथियार, ढाल, क्लास मॉड और दूसरे समूहों की टाइलों में आपका अपना कलेक्शन।',
-          zh: 'BL4 Vault-Handbuch 的三个手机画面：路线图，显示已完成的“解锁 UVH 5”及所需的 Wildcard Mission；C4SH 的一套配装，含玩法风格和主动技能；按武器、护盾、职业模组等分组的个人收藏方块。',
-          ja: 'BL4 Vault-Handbuch のスマートフォン画面3枚：完了した「UVH 5 の解放」とそのための Wildcard Mission を示したロードマップ、プレイスタイルとアクションスキルつきの C4SH のビルド、武器・シールド・クラスMODなどのグループ別タイルで表示した自分のコレクション。',
-          ko: 'BL4 Vault-Handbuch 휴대폰 화면 세 개: 완료된 ‘UVH 5 해금’ 단계와 필요한 Wildcard Mission이 있는 로드맵, 플레이 스타일과 액션 스킬이 담긴 C4SH 빌드, 무기·실드·클래스 모드 등 그룹별 타일로 보이는 내 수집 현황.'
+          en: 'Three phone screens of the BL4 Vault-Handbuch (German interface): the roadmap with the finished step “unlock UVH 5” and the Wildcard Missions it takes; a build for C4SH with play style and action skill; your own collection as tiles by weapons, shields, class mods and other groups.',
+          es: 'Tres pantallas de móvil del BL4 Vault-Handbuch (interfaz en alemán): la hoja de ruta con el paso completado «desbloquear UVH 5» y las Wildcard Missions necesarias; un build para C4SH con estilo de juego y habilidad de acción; tu colección en mosaicos por armas, escudos, mods de clase y otros grupos.',
+          fr: 'Trois écrans de téléphone du BL4 Vault-Handbuch (interface en allemand) : la feuille de route avec l’étape terminée « débloquer UVH 5 » et les Wildcard Missions nécessaires ; un build pour C4SH avec style de jeu et compétence d’action ; votre collection en tuiles par armes, boucliers, mods de classe et autres groupes.',
+          it: 'Tre schermate di telefono del BL4 Vault-Handbuch (interfaccia in tedesco): la tabella di marcia con il passo completato «sbloccare UVH 5» e le Wildcard Mission necessarie; una build per C4SH con stile di gioco e abilità d’azione; la tua collezione in riquadri per armi, scudi, mod di classe e altri gruppi.',
+          nl: 'Drie telefoonschermen van het BL4 Vault-Handbuch (Duitse interface): het routeplan met de voltooide stap ‘UVH 5 vrijspelen’ en de Wildcard Missions die daarvoor nodig zijn; een build voor C4SH met speelstijl en action skill; je eigen collectie als tegels per wapens, schilden, class mods en andere groepen.',
+          pl: 'Trzy ekrany telefonu z BL4 Vault-Handbuch (interfejs po niemiecku): plan z ukończonym krokiem „odblokuj UVH 5” i potrzebnymi Wildcard Missions; build dla C4SH ze stylem gry i umiejętnością akcji; własna kolekcja w kafelkach według broni, tarcz, modów klas i innych grup.',
+          pt: 'Três telas de celular do BL4 Vault-Handbuch (interface em alemão): o plano com o passo concluído «desbloquear UVH 5» e as Wildcard Missions necessárias; um build para C4SH com estilo de jogo e habilidade de ação; a sua coleção em mosaicos por armas, escudos, mods de classe e outros grupos.',
+          tr: 'BL4 Vault-Handbuch’tan üç telefon ekranı (Almanca arayüz): tamamlanmış “UVH 5’i aç” adımı ve bunun için gereken Wildcard Mission’larla yol planı; oynanış tarzı ve aksiyon yeteneğiyle C4SH için bir build; silahlar, kalkanlar, sınıf modları ve diğer gruplara göre kutucuklar hâlinde kendi koleksiyonunuz.',
+          ru: 'Три экрана телефона с BL4 Vault-Handbuch (немецкий интерфейс): маршрут с выполненным шагом «открыть UVH 5» и нужными для этого Wildcard Missions; билд для C4SH со стилем игры и активным навыком; ваша коллекция в плитках по оружию, щитам, классовым модам и другим группам.',
+          hi: 'BL4 Vault-Handbuch की तीन फ़ोन स्क्रीन (जर्मन इंटरफ़ेस): पूरा हो चुके चरण “UVH 5 अनलॉक करें” और उसके लिए ज़रूरी Wildcard Missions वाला रोडमैप; खेलने के अंदाज़ और एक्शन स्किल के साथ C4SH का एक बिल्ड; हथियार, ढाल, क्लास मॉड और दूसरे समूहों की टाइलों में आपका अपना कलेक्शन।',
+          zh: 'BL4 Vault-Handbuch 的三个手机画面（德语界面）：路线图，显示已完成的“解锁 UVH 5”及所需的 Wildcard Mission；C4SH 的一套配装，含玩法风格和主动技能；按武器、护盾、职业模组等分组的个人收藏方块。',
+          ja: 'BL4 Vault-Handbuch のスマートフォン画面3枚（ドイツ語版の表示）：完了した「UVH 5 の解放」とそのための Wildcard Mission を示したロードマップ、プレイスタイルとアクションスキルつきの C4SH のビルド、武器・シールド・クラスMODなどのグループ別タイルで表示した自分のコレクション。',
+          ko: 'BL4 Vault-Handbuch 휴대폰 화면 세 개(독일어 인터페이스): 완료된 ‘UVH 5 해금’ 단계와 필요한 Wildcard Mission이 있는 로드맵, 플레이 스타일과 액션 스킬이 담긴 C4SH 빌드, 무기·실드·클래스 모드 등 그룹별 타일로 보이는 내 수집 현황.'
         }
       }
     ],
@@ -3442,154 +3442,154 @@ var GUIDES = {
         '„Diese Woche“ zeigt Big-Encore-Boss, Wildcard Mission, Maurice’s Black Market und aktive SHiFT-Codes zum Kopieren, das Update läuft donnerstagabends. Unten im Menü steht der Knopf „App installieren“, auf dem iPhone der Weg über Teilen und „Zum Home-Bildschirm“. Nach dem ersten Besuch geht das Handbuch auch offline.'
       ],
       en: [
-        'Set your UVH rank at the top. The handbook then works out the drop chances for it, and “Dein Fahrplan” (your roadmap) highlights what comes next.',
-        'Use “Menü” (menu) to jump to classes and builds, weapons, firmware, the loot database or farming, or search for an item, boss or skill at the top. In the loot database, “Hab ich” (got it) ticks off what you already own.',
-        '“Diese Woche” (this week) shows the Big Encore boss, the Wildcard Mission, Maurice’s Black Market and active SHiFT codes to copy, and it updates on Thursday evenings. At the bottom of the menu sits the “App installieren” (install app) button, on an iPhone the way via Share and “Add to Home Screen”. After the first visit the handbook also works offline.'
+        'Set your UVH rank at the top. The handbook then works out the drop chances for it, and “Your roadmap” highlights what comes next.',
+        'Use “Menu” to jump to classes and builds, weapons, firmware, the loot database or farming, or search for an item, boss or skill at the top. In the loot database, “Got it” ticks off what you already own.',
+        '“This week” shows the Big Encore boss, the Wildcard Mission, Maurice’s Black Market and active SHiFT codes to copy, and it updates on Thursday evenings. At the bottom of the menu sits the “Install app” button, on an iPhone the way via Share and “Add to Home Screen”. After the first visit the handbook also works offline.'
       ],
       es: [
-        'Elige arriba tu rango UVH. El manual calcula entonces las probabilidades de botín para él, y «Dein Fahrplan» (tu hoja de ruta) resalta lo siguiente que toca.',
-        'Con «Menü» (menú) salta a clases y builds, armas, firmware, la base de datos de botín o el farmeo, o busca arriba un objeto, jefe o habilidad. En la base de datos de botín, «Hab ich» (lo tengo) marca lo que ya tienes.',
-        '«Diese Woche» (esta semana) muestra el jefe de Big Encore, la Wildcard Mission, Maurice’s Black Market y los códigos SHiFT activos para copiar, y se actualiza los jueves por la noche. Abajo en el menú está el botón «App installieren» (instalar app), en el iPhone el camino por Compartir y «Añadir a pantalla de inicio». Tras la primera visita, el manual funciona también sin conexión.'
+        'Elige arriba tu rango UVH. El manual calcula entonces las probabilidades de botín para él, y «Tu hoja de ruta» resalta lo siguiente que toca.',
+        'Con «Menú» salta a clases y builds, armas, firmware, la base de datos de botín o el farmeo, o busca arriba un objeto, jefe o habilidad. En la base de datos de botín, «Lo tengo» marca lo que ya tienes.',
+        '«Esta semana» muestra el jefe de Big Encore, la Wildcard Mission, Maurice’s Black Market y los códigos SHiFT activos para copiar, y se actualiza los jueves por la noche. Abajo en el menú está el botón «Instalar app», en el iPhone el camino por Compartir y «Añadir a pantalla de inicio». Tras la primera visita, el manual funciona también sin conexión.'
       ],
       fr: [
-        'Réglez en haut votre rang UVH. Le manuel calcule alors les taux de drop correspondants, et « Dein Fahrplan » (votre feuille de route) met en avant l’étape suivante.',
-        'Avec « Menü » (menu), allez aux classes et builds, aux armes, au firmware, à la base de butin ou au farm, ou cherchez en haut un objet, un boss ou une compétence. Dans la base de butin, « Hab ich » (je l’ai) coche ce que vous possédez déjà.',
-        '« Diese Woche » (cette semaine) montre le boss du Big Encore, la Wildcard Mission, Maurice’s Black Market et les codes SHiFT actifs à copier, et la mise à jour se fait le jeudi soir. En bas du menu se trouve le bouton « App installieren » (installer l’application), sur iPhone le chemin par Partager et « Sur l’écran d’accueil ». Après la première visite, le manuel fonctionne aussi hors ligne.'
+        'Réglez en haut votre rang UVH. Le manuel calcule alors les taux de drop correspondants, et « Votre feuille de route » met en avant l’étape suivante.',
+        'Avec « Menu », allez aux classes et builds, aux armes, au firmware, à la base de butin ou au farm, ou cherchez en haut un objet, un boss ou une compétence. Dans la base de butin, « Je l’ai » coche ce que vous possédez déjà.',
+        '« Cette semaine » montre le boss du Big Encore, la Wildcard Mission, Maurice’s Black Market et les codes SHiFT actifs à copier, et la mise à jour se fait le jeudi soir. En bas du menu se trouve le bouton « Installer l’appli », sur iPhone le chemin par Partager et « Sur l’écran d’accueil ». Après la première visite, le manuel fonctionne aussi hors ligne.'
       ],
       it: [
-        'Imposta in alto il tuo rango UVH. Il manuale calcola allora le probabilità di drop adatte, e «Dein Fahrplan» (la tua tabella di marcia) evidenzia il prossimo passo.',
-        'Con «Menü» (menu) passa a classi e build, armi, firmware, database del loot o farm, oppure cerca in alto un oggetto, un boss o un’abilità. Nel database del loot, «Hab ich» (ce l’ho) spunta ciò che possiedi già.',
-        '«Diese Woche» (questa settimana) mostra il boss del Big Encore, la Wildcard Mission, Maurice’s Black Market e i codici SHiFT attivi da copiare, e si aggiorna il giovedì sera. In fondo al menu c’è il pulsante «App installieren» (installa app), su iPhone la via con Condividi e «Aggiungi alla schermata Home». Dopo la prima visita il manuale funziona anche offline.'
+        'Imposta in alto il tuo rango UVH. Il manuale calcola allora le probabilità di drop adatte, e «La tua tabella di marcia» evidenzia il prossimo passo.',
+        'Con «Menu» passa a classi e build, armi, firmware, database del loot o farm, oppure cerca in alto un oggetto, un boss o un’abilità. Nel database del loot, «Ce l’ho» spunta ciò che possiedi già.',
+        '«Questa settimana» mostra il boss del Big Encore, la Wildcard Mission, Maurice’s Black Market e i codici SHiFT attivi da copiare, e si aggiorna il giovedì sera. In fondo al menu c’è il pulsante «Installa app», su iPhone la via con Condividi e «Aggiungi alla schermata Home». Dopo la prima visita il manuale funziona anche offline.'
       ],
       nl: [
-        'Stel bovenaan je UVH-rang in. Het handboek rekent dan de dropkansen daarvoor uit, en ‘Dein Fahrplan’ (je routeplan) laat zien wat er nu aan de beurt is.',
-        'Ga via ‘Menü’ (menu) naar klassen en builds, wapens, firmware, de lootdatabase of farmen, of zoek bovenaan een item, baas of skill. In de lootdatabase vink je met ‘Hab ich’ (heb ik) af wat je al hebt.',
-        '‘Diese Woche’ (deze week) toont de Big Encore-baas, de Wildcard Mission, Maurice’s Black Market en actieve SHiFT-codes om te kopiëren, en de update komt op donderdagavond. Onderaan in het menu staat de knop ‘App installieren’ (app installeren), op een iPhone de weg via Deel en ‘Zet op beginscherm’. Na het eerste bezoek werkt het handboek ook offline.'
+        'Stel bovenaan je UVH-rang in. Het handboek rekent dan de dropkansen daarvoor uit, en ‘Jouw stappenplan’ laat zien wat er nu aan de beurt is.',
+        'Ga via ‘Menu’ naar klassen en builds, wapens, firmware, de lootdatabase of farmen, of zoek bovenaan een item, baas of skill. In de lootdatabase vink je met ‘Heb ik’ af wat je al hebt.',
+        '‘Deze week’ toont de Big Encore-baas, de Wildcard Mission, Maurice’s Black Market en actieve SHiFT-codes om te kopiëren, en de update komt op donderdagavond. Onderaan in het menu staat de knop ‘App installeren’, op een iPhone de weg via Deel en ‘Zet op beginscherm’. Na het eerste bezoek werkt het handboek ook offline.'
       ],
       pl: [
-        'Ustaw u góry swoją rangę UVH. Podręcznik przelicza wtedy szanse dropu, a „Dein Fahrplan” (twój plan) wyróżnia, co teraz jest do zrobienia.',
-        'Przez „Menü” (menu) przejdź do klas i buildów, broni, firmware’u, bazy lootu albo farmienia albo szukaj u góry przedmiotu, bossa lub umiejętności. W bazie lootu „Hab ich” (mam) odhacza to, co już masz.',
-        '„Diese Woche” (w tym tygodniu) pokazuje bossa Big Encore, Wildcard Mission, Maurice’s Black Market i aktywne kody SHiFT do skopiowania, a aktualizacja przychodzi w czwartki wieczorem. Na dole menu jest przycisk „App installieren” (zainstaluj aplikację), na iPhonie droga przez Udostępnij i „Do ekranu początkowego”. Po pierwszej wizycie podręcznik działa też offline.'
+        'Ustaw u góry swoją rangę UVH. Podręcznik przelicza wtedy szanse dropu, a „Twój plan” wyróżnia, co teraz jest do zrobienia.',
+        'Przez „Menu” przejdź do klas i buildów, broni, firmware’u, bazy lootu albo farmienia albo szukaj u góry przedmiotu, bossa lub umiejętności. W bazie lootu „Mam” odhacza to, co już masz.',
+        '„Ten tydzień” pokazuje bossa Big Encore, Wildcard Mission, Maurice’s Black Market i aktywne kody SHiFT do skopiowania, a aktualizacja przychodzi w czwartki wieczorem. Na dole menu jest przycisk „Zainstaluj aplikację”, na iPhonie droga przez Udostępnij i „Do ekranu początkowego”. Po pierwszej wizycie podręcznik działa też offline.'
       ],
       pt: [
-        'Defina no topo o seu rank UVH. O manual então calcula as chances de drop para ele, e «Dein Fahrplan» (seu plano) destaca o próximo passo.',
-        'Com «Menü» (menu), vá para classes e builds, armas, firmware, o banco de dados de loot ou o farm, ou pesquise no topo um item, chefe ou habilidade. No banco de dados de loot, «Hab ich» (já tenho) marca o que você já tem.',
-        '«Diese Woche» (esta semana) mostra o chefe do Big Encore, a Wildcard Mission, Maurice’s Black Market e os códigos SHiFT ativos para copiar, e a atualização chega às quintas à noite. No fim do menu fica o botão «App installieren» (instalar app), no iPhone o caminho por Compartilhar e «Adicionar à Tela de Início». Depois da primeira visita, o manual também funciona offline.'
+        'Defina no topo o seu rank UVH. O manual então calcula as chances de drop para ele, e «Seu roteiro» destaca o próximo passo.',
+        'Com «Menu», vá para classes e builds, armas, firmware, o banco de dados de loot ou o farm, ou pesquise no topo um item, chefe ou habilidade. No banco de dados de loot, «Tenho» marca o que você já tem.',
+        '«Esta semana» mostra o chefe do Big Encore, a Wildcard Mission, Maurice’s Black Market e os códigos SHiFT ativos para copiar, e a atualização chega às quintas à noite. No fim do menu fica o botão «Instalar app», no iPhone o caminho por Compartilhar e «Adicionar à Tela de Início». Depois da primeira visita, o manual também funciona offline.'
       ],
       tr: [
-        'Üstte UVH rütbenizi seçin. El kitabı düşme şanslarını buna göre hesaplar ve “Dein Fahrplan” (yol planınız) sıradakini öne çıkarır.',
-        '“Menü” ile sınıflar ve buildler, silahlar, firmware, ganimet veritabanı ya da farm bölümüne gidin veya üstte eşya, boss ya da yetenek arayın. Ganimet veritabanında “Hab ich” (bende var) zaten sahip olduklarınızı işaretler.',
-        '“Diese Woche” (bu hafta) Big Encore boss’unu, Wildcard Mission’ı, Maurice’s Black Market’i ve kopyalanacak etkin SHiFT kodlarını gösterir, güncelleme de perşembe akşamları gelir. Menünün altında “App installieren” (uygulamayı yükle) düğmesi, iPhone’da ise Paylaş ve “Ana Ekrana Ekle” yolu durur. İlk ziyaretten sonra el kitabı çevrimdışı da çalışır.'
+        'Üstte UVH rütbenizi seçin. El kitabı düşme şanslarını buna göre hesaplar ve “Yol haritanız” sıradakini öne çıkarır.',
+        '“Menü” ile sınıflar ve buildler, silahlar, firmware, ganimet veritabanı ya da farm bölümüne gidin veya üstte eşya, boss ya da yetenek arayın. Ganimet veritabanında “Bende var” zaten sahip olduklarınızı işaretler.',
+        '“Bu hafta” Big Encore boss’unu, Wildcard Mission’ı, Maurice’s Black Market’i ve kopyalanacak etkin SHiFT kodlarını gösterir, güncelleme de perşembe akşamları gelir. Menünün altında “Uygulamayı yükle” düğmesi, iPhone’da ise Paylaş ve “Ana Ekrana Ekle” yolu durur. İlk ziyaretten sonra el kitabı çevrimdışı da çalışır.'
       ],
       ru: [
-        'Выберите вверху свой ранг UVH. Справочник пересчитает под него шансы дропа, а «Dein Fahrplan» (ваш маршрут) выделит следующий шаг.',
-        'Через «Menü» (меню) переходите к классам и билдам, оружию, прошивкам, базе лута или фарму или ищите вверху предмет, босса или навык. В базе лута «Hab ich» (есть) отмечает то, что у вас уже есть.',
-        '«Diese Woche» (на этой неделе) показывает босса Big Encore, Wildcard Mission, Maurice’s Black Market и действующие SHiFT-коды для копирования, а обновление выходит по четвергам вечером. Внизу меню есть кнопка «App installieren» (установить приложение), на iPhone путь идёт через «Поделиться» и «На экран „Домой“». После первого посещения справочник работает и офлайн.'
+        'Выберите вверху свой ранг UVH. Справочник пересчитает под него шансы дропа, а «Ваш план» выделит следующий шаг.',
+        'Через «Меню» переходите к классам и билдам, оружию, прошивкам, базе лута или фарму или ищите вверху предмет, босса или навык. В базе лута «Есть» отмечает то, что у вас уже есть.',
+        '«Эта неделя» показывает босса Big Encore, Wildcard Mission, Maurice’s Black Market и действующие SHiFT-коды для копирования, а обновление выходит по четвергам вечером. Внизу меню есть кнопка «Установить приложение», на iPhone путь идёт через «Поделиться» и «На экран „Домой“». После первого посещения справочник работает и офлайн.'
       ],
       hi: [
-        'ऊपर अपनी UVH रैंक चुनें। हैंडबुक उसके हिसाब से ड्रॉप चांस निकालती है, और “Dein Fahrplan” (आपका रोडमैप) अगला कदम उभारकर दिखाता है।',
-        '“Menü” (मेन्यू) से क्लास और बिल्ड, हथियार, फ़र्मवेयर, लूट डेटाबेस या फ़ार्मिंग पर जाएँ या ऊपर कोई आइटम, बॉस या स्किल खोजें। लूट डेटाबेस में “Hab ich” (मेरे पास है) से जो आपके पास है, उस पर निशान लगाएँ।',
-        '“Diese Woche” (इस हफ़्ते) Big Encore बॉस, Wildcard Mission, Maurice’s Black Market और कॉपी करने लायक सक्रिय SHiFT कोड दिखाता है, और अपडेट गुरुवार शाम आता है। मेन्यू में नीचे “App installieren” (ऐप इंस्टॉल करें) बटन है, iPhone पर शेयर और “होम स्क्रीन में जोड़ें” का रास्ता। पहली विज़िट के बाद हैंडबुक ऑफ़लाइन भी चलती है।'
+        'ऊपर अपनी UVH रैंक चुनें। हैंडबुक उसके हिसाब से ड्रॉप चांस निकालती है, और “आपका रोडमैप” अगला कदम उभारकर दिखाता है।',
+        '“मेन्यू” से क्लास और बिल्ड, हथियार, फ़र्मवेयर, लूट डेटाबेस या फ़ार्मिंग पर जाएँ या ऊपर कोई आइटम, बॉस या स्किल खोजें। लूट डेटाबेस में “मेरे पास है” से जो आपके पास है, उस पर निशान लगाएँ।',
+        '“इस हफ़्ते” Big Encore बॉस, Wildcard Mission, Maurice’s Black Market और कॉपी करने लायक सक्रिय SHiFT कोड दिखाता है, और अपडेट गुरुवार शाम आता है। मेन्यू में नीचे “ऐप इंस्टॉल करें” बटन है, iPhone पर शेयर और “होम स्क्रीन में जोड़ें” का रास्ता। पहली विज़िट के बाद हैंडबुक ऑफ़लाइन भी चलती है।'
       ],
       zh: [
-        '在顶部设定你的 UVH 等级。手册会据此算出掉落概率，“Dein Fahrplan”（你的路线图）会突出显示下一步。',
-        '通过“Menü”（菜单）跳到职业与配装、武器、固件、战利品数据库或刷宝，或在顶部搜索物品、首领或技能。在战利品数据库里，用“Hab ich”（已拥有）勾掉已有的东西。',
-        '“Diese Woche”（本周）显示 Big Encore 首领、Wildcard Mission、Maurice’s Black Market 和可复制的有效 SHiFT 兑换码，每周四晚上更新。菜单底部有“App installieren”（安装应用）按钮，iPhone 上则是“分享”→“添加到主屏幕”。首次访问后，手册也能离线使用。'
+        '在顶部设定你的 UVH 等级。手册会据此算出掉落概率，“你的路线”会突出显示下一步。',
+        '通过“菜单”跳到职业与配装、武器、固件、战利品数据库或刷宝，或在顶部搜索物品、首领或技能。在战利品数据库里，用“已拥有”勾掉已有的东西。',
+        '“本周”显示 Big Encore 首领、Wildcard Mission、Maurice’s Black Market 和可复制的有效 SHiFT 兑换码，每周四晚上更新。菜单底部有“安装应用”按钮，iPhone 上则是“分享”→“添加到主屏幕”。首次访问后，手册也能离线使用。'
       ],
       ja: [
-        '上部で自分の UVH ランクを設定します。するとそのランクに合わせてドロップ率が計算され、「Dein Fahrplan」（あなたのロードマップ）が次にやることを強調します。',
-        '「Menü」（メニュー）からクラスとビルド、武器、ファームウェア、ルートデータベース、周回へ移動するか、上部でアイテム・ボス・スキルを検索します。ルートデータベースでは「Hab ich」（持っている）で入手済みにチェックを付けられます。',
-        '「Diese Woche」（今週）は Big Encore のボス、Wildcard Mission、Maurice’s Black Market、コピーできる有効な SHiFT コードを表示し、毎週木曜の夜に更新されます。メニューの下に「App installieren」（アプリをインストール）ボタンがあり、iPhone では共有から「ホーム画面に追加」を使います。初回アクセス後はオフラインでも使えます。'
+        '上部で自分の UVH ランクを設定します。するとそのランクに合わせてドロップ率が計算され、「あなたのロードマップ」が次にやることを強調します。',
+        '「メニュー」からクラスとビルド、武器、ファームウェア、ルートデータベース、周回へ移動するか、上部でアイテム・ボス・スキルを検索します。ルートデータベースでは「入手済み」で、もう持っているアイテムにチェックを付けられます。',
+        '「今週」は Big Encore のボス、Wildcard Mission、Maurice’s Black Market、コピーできる有効な SHiFT コードを表示し、毎週木曜の夜に更新されます。メニューの下に「アプリをインストール」ボタンがあり、iPhone では共有から「ホーム画面に追加」を使います。初回アクセス後はオフラインでも使えます。'
       ],
       ko: [
-        '위에서 자신의 UVH 등급을 고르세요. 그러면 그에 맞춰 드롭 확률이 계산되고, ‘Dein Fahrplan’(로드맵)이 다음에 할 일을 강조합니다.',
-        '‘Menü’(메뉴)로 클래스와 빌드, 무기, 펌웨어, 전리품 데이터베이스, 파밍으로 이동하거나 위에서 아이템, 보스, 스킬을 검색하세요. 전리품 데이터베이스에서는 ‘Hab ich’(가지고 있음)로 이미 가진 것을 표시합니다.',
-        '‘Diese Woche’(이번 주)는 Big Encore 보스, Wildcard Mission, Maurice’s Black Market, 복사할 수 있는 유효한 SHiFT 코드를 보여 주며 매주 목요일 저녁에 업데이트됩니다. 메뉴 아래에 ‘App installieren’(앱 설치) 버튼이 있고, iPhone에서는 공유 → ‘홈 화면에 추가’를 씁니다. 첫 방문 후에는 오프라인에서도 작동합니다.'
+        '위에서 자신의 UVH 등급을 고르세요. 그러면 그에 맞춰 드롭 확률이 계산되고, ‘내 로드맵’이 다음에 할 일을 강조합니다.',
+        '‘메뉴’로 클래스와 빌드, 무기, 펌웨어, 전리품 데이터베이스, 파밍으로 이동하거나 위에서 아이템, 보스, 스킬을 검색하세요. 전리품 데이터베이스에서는 ‘있음’으로 이미 가진 것을 표시합니다.',
+        '‘이번 주’는 Big Encore 보스, Wildcard Mission, Maurice’s Black Market, 복사할 수 있는 유효한 SHiFT 코드를 보여 주며 매주 목요일 저녁에 업데이트됩니다. 메뉴 아래에 ‘앱 설치’ 버튼이 있고, iPhone에서는 공유 → ‘홈 화면에 추가’를 씁니다. 첫 방문 후에는 오프라인에서도 작동합니다.'
       ]
     },
     pitfalls: {
       de: [
-        'Die App ist auf Deutsch. Item-Namen bleiben wie im deutschen Spiel meist englisch, die Suche findet auch die wenigen übersetzten.',
+        'Nur die Bedienung gibt es in 14 Sprachen (umstellen unten im Menü unter „Sprache“), Builds, Raid-Guides, Item-Effekte und Wochendaten sind auf Deutsch. Item-Namen bleiben wie im deutschen Spiel meist englisch, die Suche findet auch die wenigen übersetzten.',
         'Builds und Ranglisten sind Einschätzungen aus der Community mit Quellenangabe, nicht offiziell. Ein Patch kann sie verschieben.',
         'Bis zum Update am Donnerstagabend zeigt „Diese Woche“ manchmal noch die Vorwoche, das steht dann ausdrücklich dabei.',
         'Dein UVH-Rang und was du abgehakt hast, liegen nur in diesem Browser.'
       ],
       en: [
-        'The app is in German. Item names mostly stay English, as in the German game, and the search also finds the few translated ones.',
+        'Only the interface comes in 14 languages (switch it at the bottom of the menu under “Language”). Builds, raid guides, item effects and the weekly data are in German. Item names mostly stay English, as in the German game, and the search also finds the few translated ones.',
         'Builds and rankings are community assessments with their sources named, not official. A patch can shift them.',
-        'Until the Thursday evening update, “Diese Woche” sometimes still shows last week, and it then says so.',
+        'Until the Thursday evening update, “This week” sometimes still shows last week, and it then says so.',
         'Your UVH rank and what you ticked off live only in this browser.'
       ],
       es: [
-        'La app está en alemán. Los nombres de objetos siguen casi siempre en inglés, como en el juego en alemán, y la búsqueda encuentra también los pocos traducidos.',
+        'Solo la interfaz está en 14 idiomas (cámbiala abajo en el menú, en «Idioma»). Los builds, las guías de raids, los efectos de objetos y los datos semanales están en alemán. Los nombres de objetos siguen casi siempre en inglés, como en el juego en alemán, y la búsqueda encuentra también los pocos traducidos.',
         'Los builds y rankings son valoraciones de la comunidad con sus fuentes, no oficiales: un parche puede cambiarlos.',
-        'Hasta la actualización del jueves por la noche, «Diese Woche» a veces aún muestra la semana anterior, y entonces lo indica.',
+        'Hasta la actualización del jueves por la noche, «Esta semana» a veces aún muestra la semana anterior, y entonces lo indica.',
         'Tu rango UVH y lo que has marcado solo se guardan en este navegador.'
       ],
       fr: [
-        'L’application est en allemand. Les noms d’objets restent le plus souvent en anglais, comme dans le jeu allemand, et la recherche trouve aussi les rares traduits.',
+        'Seule l’interface existe en 14 langues (changez-la en bas du menu, sous « Langue »). Les builds, les guides de raid, les effets des objets et les données hebdomadaires sont en allemand. Les noms d’objets restent le plus souvent en anglais, comme dans le jeu allemand, et la recherche trouve aussi les rares traduits.',
         'Les builds et classements sont des avis de la communauté avec leurs sources, pas officiels. Un patch peut les faire bouger.',
-        'Jusqu’à la mise à jour du jeudi soir, « Diese Woche » affiche parfois encore la semaine précédente, et c’est alors indiqué.',
+        'Jusqu’à la mise à jour du jeudi soir, « Cette semaine » affiche parfois encore la semaine précédente, et c’est alors indiqué.',
         'Votre rang UVH et ce que vous avez coché restent uniquement dans ce navigateur.'
       ],
       it: [
-        'L’app è in tedesco. I nomi degli oggetti restano quasi sempre in inglese, come nel gioco tedesco, e la ricerca trova anche i pochi tradotti.',
+        'Solo l’interfaccia è in 14 lingue (la cambi in fondo al menu, sotto «Lingua»). Build, guide ai raid, effetti degli oggetti e dati settimanali sono in tedesco. I nomi degli oggetti restano quasi sempre in inglese, come nel gioco tedesco, e la ricerca trova anche i pochi tradotti.',
         'Build e classifiche sono valutazioni della community con le fonti indicate, non ufficiali: una patch può spostarle.',
-        'Fino all’aggiornamento del giovedì sera, «Diese Woche» a volte mostra ancora la settimana precedente, e in quel caso lo dice.',
+        'Fino all’aggiornamento del giovedì sera, «Questa settimana» a volte mostra ancora la settimana precedente, e in quel caso lo dice.',
         'Il tuo rango UVH e ciò che hai spuntato restano solo in questo browser.'
       ],
       nl: [
-        'De app is in het Duits. Itemnamen blijven meestal Engels, net als in het Duitse spel, en de zoekfunctie vindt ook de paar vertaalde.',
+        'Alleen de bediening is er in 14 talen (wisselen onderaan in het menu onder ‘Taal’). Builds, raidguides, itemeffecten en weekgegevens zijn in het Duits. Itemnamen blijven meestal Engels, net als in het Duitse spel, en de zoekfunctie vindt ook de paar vertaalde.',
         'Builds en ranglijsten zijn inschattingen uit de community met bronvermelding, niet officieel. Een patch kan ze verschuiven.',
-        'Tot de update op donderdagavond toont ‘Diese Woche’ soms nog de vorige week, en dat staat er dan bij.',
+        'Tot de update op donderdagavond toont ‘Deze week’ soms nog de vorige week, en dat staat er dan bij.',
         'Je UVH-rang en wat je hebt afgevinkt staan alleen in deze browser.'
       ],
       pl: [
-        'Aplikacja jest po niemiecku. Nazwy przedmiotów zostają zwykle po angielsku, jak w niemieckiej wersji gry, a wyszukiwarka znajduje też te nieliczne przetłumaczone.',
+        'Tylko interfejs jest w 14 językach (zmienisz go na dole menu w polu „Język”). Buildy, poradniki do raidów, efekty przedmiotów i dane tygodniowe są po niemiecku. Nazwy przedmiotów zostają zwykle po angielsku, jak w niemieckiej wersji gry, a wyszukiwarka znajduje też te nieliczne przetłumaczone.',
         'Buildy i rankingi to oceny społeczności z podanymi źródłami, nie oficjalne. Patch może je zmienić.',
-        'Do czwartkowej aktualizacji wieczorem „Diese Woche” czasem pokazuje jeszcze poprzedni tydzień, i wtedy jest to zaznaczone.',
+        'Do czwartkowej aktualizacji wieczorem „Ten tydzień” czasem pokazuje jeszcze poprzedni tydzień, i wtedy jest to zaznaczone.',
         'Twoja ranga UVH i to, co odhaczono, są zapisane tylko w tej przeglądarce.'
       ],
       pt: [
-        'O app está em alemão. Os nomes dos itens ficam quase sempre em inglês, como no jogo em alemão, e a pesquisa também encontra os poucos traduzidos.',
+        'Só a interface está em 14 idiomas (troque embaixo no menu, em «Idioma»). Builds, guias de raids, efeitos de itens e dados semanais estão em alemão. Os nomes dos itens ficam quase sempre em inglês, como no jogo em alemão, e a pesquisa também encontra os poucos traduzidos.',
         'Builds e rankings são avaliações da comunidade com fontes indicadas, não oficiais. Um patch pode mudar tudo isso.',
-        'Até a atualização de quinta à noite, «Diese Woche» às vezes ainda mostra a semana anterior, e nesse caso isso aparece indicado.',
+        'Até a atualização de quinta à noite, «Esta semana» às vezes ainda mostra a semana anterior, e nesse caso isso aparece indicado.',
         'O seu rank UVH e o que você marcou ficam só neste navegador.'
       ],
       tr: [
-        'Uygulama Almancadır. Eşya adları, Almanca oyunda olduğu gibi çoğunlukla İngilizce kalır, arama az sayıdaki çevrilmiş adları da bulur.',
+        'Yalnızca arayüz 14 dilde (menünün altındaki “Dil” bölümünden değiştirebilirsiniz). Buildler, raid rehberleri, eşya etkileri ve haftalık veriler Almancadır. Eşya adları, Almanca oyunda olduğu gibi çoğunlukla İngilizce kalır, arama az sayıdaki çevrilmiş adları da bulur.',
         'Buildler ve sıralamalar kaynakları belirtilmiş topluluk değerlendirmeleridir, resmî değildir. Bir yama onları değiştirebilir.',
-        'Perşembe akşamı güncellemesine kadar “Diese Woche” bazen hâlâ önceki haftayı gösterir, o zaman bu açıkça yazar.',
+        'Perşembe akşamı güncellemesine kadar “Bu hafta” bazen hâlâ önceki haftayı gösterir, o zaman bu açıkça yazar.',
         'UVH rütbeniz ve işaretledikleriniz yalnızca bu tarayıcıda durur.'
       ],
       ru: [
-        'Приложение на немецком. Названия предметов, как и в немецкой версии игры, в основном остаются английскими, и поиск находит и немногие переведённые.',
+        'Только интерфейс есть на 14 языках (переключить можно внизу меню, в пункте «Язык»). Билды, гайды по рейдам, эффекты предметов и недельные данные на немецком. Названия предметов, как и в немецкой версии игры, в основном остаются английскими, и поиск находит и немногие переведённые.',
         'Билды и рейтинги основаны на оценках сообщества с указанием источников, они не официальные. Патч может их сдвинуть.',
-        'До обновления в четверг вечером «Diese Woche» иногда ещё показывает прошлую неделю, и тогда это прямо указано.',
+        'До обновления в четверг вечером «Эта неделя» иногда ещё показывает прошлую неделю, и тогда это прямо указано.',
         'Ваш ранг UVH и отмеченные предметы хранятся только в этом браузере.'
       ],
       hi: [
-        'ऐप जर्मन में है। आइटम के नाम, जर्मन गेम की तरह, ज़्यादातर अंग्रेज़ी में ही रहते हैं, और खोज कुछ अनूदित नाम भी ढूँढ लेती है।',
+        'सिर्फ़ इंटरफ़ेस 14 भाषाओं में है (मेन्यू में सबसे नीचे “भाषा” से बदलें)। बिल्ड, रेड गाइड, आइटम के इफ़ेक्ट और हफ़्ते का डेटा जर्मन में हैं। आइटम के नाम, जर्मन गेम की तरह, ज़्यादातर अंग्रेज़ी में ही रहते हैं, और खोज कुछ अनूदित नाम भी ढूँढ लेती है।',
         'बिल्ड और रैंकिंग स्रोतों के साथ कम्युनिटी के आकलन हैं, आधिकारिक नहीं। कोई पैच इन्हें बदल सकता है।',
-        'गुरुवार शाम के अपडेट तक “Diese Woche” कभी-कभी पिछला हफ़्ता दिखाता है, और तब यह साफ़ लिखा रहता है।',
+        'गुरुवार शाम के अपडेट तक “इस हफ़्ते” कभी-कभी पिछला हफ़्ता दिखाता है, और तब यह साफ़ लिखा रहता है।',
         'आपकी UVH रैंक और जिन पर निशान लगाया, वे सिर्फ़ इसी ब्राउज़र में रहते हैं।'
       ],
       zh: [
-        '应用只有德语。物品名称和德语版游戏一样大多保留英文，搜索也能找到少数已翻译的名称。',
+        '只有界面有 14 种语言（在菜单底部的“语言”中切换）。配装、团本攻略、物品效果和每周数据都是德语。物品名称和德语版游戏一样大多保留英文，搜索也能找到少数已翻译的名称。',
         '配装和排名是标明来源的社区评估，并非官方。补丁可能改变它们。',
-        '在周四晚上更新之前，“Diese Woche”有时仍显示上一周，这时会明确注明。',
+        '在周四晚上更新之前，“本周”有时仍显示上一周，这时会明确注明。',
         '你的 UVH 等级和勾选记录只保存在这个浏览器里。'
       ],
       ja: [
-        'アプリはドイツ語です。アイテム名はドイツ語版のゲームと同じくほとんど英語のままですが、検索は数少ない翻訳名も見つけます。',
+        '14言語に対応しているのは操作画面だけです（メニュー下部の「言語」で切り替えます）。ビルド、レイドガイド、アイテムの効果、週ごとのデータはドイツ語です。アイテム名はドイツ語版のゲームと同じくほとんど英語のままですが、検索は数少ない翻訳名も見つけます。',
         'ビルドとランキングは出典を示したコミュニティの評価で、公式ではありません。パッチで変わることがあります。',
-        '木曜夜の更新までは「Diese Woche」がまだ先週の内容のことがあり、その場合ははっきり表示されます。',
+        '木曜夜の更新までは「今週」がまだ先週の内容のことがあり、その場合ははっきり表示されます。',
         'UVH ランクとチェックした内容は、このブラウザーの中にだけ保存されます。'
       ],
       ko: [
-        '앱은 독일어입니다. 아이템 이름은 독일어판 게임처럼 대부분 영어로 남아 있고, 검색은 몇 안 되는 번역된 이름도 찾습니다.',
+        '14개 언어로 나오는 것은 화면 조작 부분뿐입니다(메뉴 맨 아래 ‘언어’에서 바꿀 수 있습니다). 빌드, 레이드 가이드, 아이템 효과, 주간 데이터는 독일어입니다. 아이템 이름은 독일어판 게임처럼 대부분 영어로 남아 있고, 검색은 몇 안 되는 번역된 이름도 찾습니다.',
         '빌드와 순위는 출처를 밝힌 커뮤니티 평가일 뿐 공식이 아닙니다. 패치로 바뀔 수 있습니다.',
-        '목요일 저녁 업데이트 전까지 ‘Diese Woche’는 가끔 지난주 내용을 보여 주며, 그때는 분명히 표시됩니다.',
+        '목요일 저녁 업데이트 전까지 ‘이번 주’는 가끔 지난주 내용을 보여 주며, 그때는 분명히 표시됩니다.',
         'UVH 등급과 표시한 항목은 이 브라우저에만 저장됩니다.'
       ]
     },
@@ -3634,19 +3634,19 @@ var GUIDES = {
         h: 848,
         alt: {
           de: 'Drei Handy-Ansichten der MW4 Rüstkammer: das Arsenal mit Suche, Filtern nach Waffenart und den Sturmgewehren samt Kadenz, Time to Kill und Tier; die Han 86 mit Tier, Nutzung und Werten wie Kadenz, Magazin und Freischaltung; die TTK-Analyse mit Messung, Distanz und Klasse und der schnellsten Waffe zuerst.',
-          en: 'Three phone screens of the MW4 Rüstkammer: the Arsenal with search, filters by weapon type and the assault rifles with fire rate, time to kill and tier; the Han 86 with tier, usage and stats such as fire rate, magazine and unlock; the TTK analysis with measurement, range and class and the fastest weapon first.',
-          es: 'Tres pantallas de móvil de la MW4 Rüstkammer: el Arsenal con búsqueda, filtros por tipo de arma y los fusiles de asalto con cadencia, time to kill y nivel; la Han 86 con nivel, uso y estadísticas como cadencia, cargador y desbloqueo; el análisis de TTK con medición, distancia y clase, y el arma más rápida primero.',
-          fr: 'Trois écrans de téléphone de la MW4 Rüstkammer : l’Arsenal avec recherche, filtres par type d’arme et les fusils d’assaut avec cadence, time to kill et tier ; la Han 86 avec tier, taux d’utilisation et statistiques comme la cadence, le chargeur et le déblocage ; l’analyse du TTK avec mesure, distance et classe, l’arme la plus rapide en tête.',
-          it: 'Tre schermate di telefono della MW4 Rüstkammer: l’Arsenal con ricerca, filtri per tipo di arma e i fucili d’assalto con cadenza, time to kill e tier; la Han 86 con tier, utilizzo e statistiche come cadenza, caricatore e sblocco; l’analisi del TTK con misurazione, distanza e classe e l’arma più veloce in cima.',
-          nl: 'Drie telefoonschermen van de MW4 Rüstkammer: het Arsenal met zoeken, filters op wapentype en de aanvalsgeweren met vuursnelheid, time to kill en tier; de Han 86 met tier, gebruik en statistieken zoals vuursnelheid, magazijn en ontgrendeling; de TTK-analyse met meting, afstand en klasse en het snelste wapen bovenaan.',
-          pl: 'Trzy ekrany telefonu z MW4 Rüstkammer: Arsenal z wyszukiwaniem, filtrami według rodzaju broni i karabinami szturmowymi z szybkostrzelnością, time to kill i tierem; Han 86 z tierem, popularnością i statystykami jak szybkostrzelność, magazynek i odblokowanie; analiza TTK z pomiarem, dystansem i klasą, najszybsza broń na górze.',
-          pt: 'Três telas de celular da MW4 Rüstkammer: o Arsenal com pesquisa, filtros por tipo de arma e os fuzis de assalto com cadência, time to kill e tier; a Han 86 com tier, uso e estatísticas como cadência, carregador e desbloqueio; a análise de TTK com medição, distância e classe, e a arma mais rápida primeiro.',
-          tr: 'MW4 Rüstkammer’dan üç telefon ekranı: arama, silah türü filtreleri ve atış hızı, time to kill ve tier ile saldırı tüfekleriyle Arsenal; tier, kullanım oranı ve atış hızı, şarjör, kilit açma gibi değerlerle Han 86; ölçüm, mesafe ve sınıfla, en hızlı silah önde olacak şekilde TTK analizi.',
-          ru: 'Три экрана телефона с MW4 Rüstkammer: Arsenal с поиском, фильтрами по типу оружия и штурмовыми винтовками со скорострельностью, time to kill и тиром; Han 86 с тиром, популярностью и характеристиками вроде скорострельности, магазина и разблокировки; анализ TTK по замеру, дистанции и классу, самое быстрое оружие сверху.',
-          hi: 'MW4 Rüstkammer की तीन फ़ोन स्क्रीन: खोज, हथियार के प्रकार के फ़िल्टर और फ़ायर रेट, time to kill व टियर के साथ असॉल्ट राइफ़लों वाला Arsenal; टियर, इस्तेमाल और फ़ायर रेट, मैगज़ीन व अनलॉक जैसे आँकड़ों के साथ Han 86; माप, दूरी और क्लास के साथ TTK विश्लेषण, सबसे तेज़ हथियार सबसे ऊपर।',
-          zh: 'MW4 Rüstkammer 的三个手机画面：Arsenal，带搜索、武器类型筛选，以及列出射速、击杀时间和梯队的突击步枪；Han 86，显示梯队、使用率以及射速、弹匣、解锁等数值；TTK 分析，可按测量方式、距离和类别查看，最快的武器排在最前。',
-          ja: 'MW4 Rüstkammer のスマートフォン画面3枚：検索と武器種フィルター、連射速度・キルタイム・ティアつきのアサルトライフルが並ぶ Arsenal、ティア・使用率と連射速度・マガジン・解除条件などのステータスを示した Han 86、測定方法・距離・クラスで並べ替え、最速の武器が先頭に来る TTK 分析。',
-          ko: 'MW4 Rüstkammer 휴대폰 화면 세 개: 검색, 무기 종류 필터, 연사 속도·킬 타임·티어가 표시된 돌격소총이 있는 Arsenal, 티어·사용률과 연사 속도·탄창·해금 같은 능력치가 있는 Han 86, 측정 방식·거리·클래스별로 가장 빠른 무기부터 보여 주는 TTK 분석.'
+          en: 'Three phone screens of the MW4 Rüstkammer (German interface): the Arsenal with search, filters by weapon type and the assault rifles with fire rate, time to kill and tier; the Han 86 with tier, usage and stats such as fire rate, magazine and unlock; the TTK analysis with measurement, range and class and the fastest weapon first.',
+          es: 'Tres pantallas de móvil de la MW4 Rüstkammer (interfaz en alemán): el Arsenal con búsqueda, filtros por tipo de arma y los fusiles de asalto con cadencia, time to kill y nivel; la Han 86 con nivel, uso y estadísticas como cadencia, cargador y desbloqueo; el análisis de TTK con medición, distancia y clase, y el arma más rápida primero.',
+          fr: 'Trois écrans de téléphone de la MW4 Rüstkammer (interface en allemand) : l’Arsenal avec recherche, filtres par type d’arme et les fusils d’assaut avec cadence, time to kill et tier ; la Han 86 avec tier, taux d’utilisation et statistiques comme la cadence, le chargeur et le déblocage ; l’analyse du TTK avec mesure, distance et classe, l’arme la plus rapide en tête.',
+          it: 'Tre schermate di telefono della MW4 Rüstkammer (interfaccia in tedesco): l’Arsenal con ricerca, filtri per tipo di arma e i fucili d’assalto con cadenza, time to kill e tier; la Han 86 con tier, utilizzo e statistiche come cadenza, caricatore e sblocco; l’analisi del TTK con misurazione, distanza e classe e l’arma più veloce in cima.',
+          nl: 'Drie telefoonschermen van de MW4 Rüstkammer (Duitse interface): het Arsenal met zoeken, filters op wapentype en de aanvalsgeweren met vuursnelheid, time to kill en tier; de Han 86 met tier, gebruik en statistieken zoals vuursnelheid, magazijn en ontgrendeling; de TTK-analyse met meting, afstand en klasse en het snelste wapen bovenaan.',
+          pl: 'Trzy ekrany telefonu z MW4 Rüstkammer (interfejs po niemiecku): Arsenal z wyszukiwaniem, filtrami według rodzaju broni i karabinami szturmowymi z szybkostrzelnością, time to kill i tierem; Han 86 z tierem, popularnością i statystykami jak szybkostrzelność, magazynek i odblokowanie; analiza TTK z pomiarem, dystansem i klasą, najszybsza broń na górze.',
+          pt: 'Três telas de celular da MW4 Rüstkammer (interface em alemão): o Arsenal com pesquisa, filtros por tipo de arma e os fuzis de assalto com cadência, time to kill e tier; a Han 86 com tier, uso e estatísticas como cadência, carregador e desbloqueio; a análise de TTK com medição, distância e classe, e a arma mais rápida primeiro.',
+          tr: 'MW4 Rüstkammer’dan üç telefon ekranı (Almanca arayüz): arama, silah türü filtreleri ve atış hızı, time to kill ve tier ile saldırı tüfekleriyle Arsenal; tier, kullanım oranı ve atış hızı, şarjör, kilit açma gibi değerlerle Han 86; ölçüm, mesafe ve sınıfla, en hızlı silah önde olacak şekilde TTK analizi.',
+          ru: 'Три экрана телефона с MW4 Rüstkammer (немецкий интерфейс): Arsenal с поиском, фильтрами по типу оружия и штурмовыми винтовками со скорострельностью, time to kill и тиром; Han 86 с тиром, популярностью и характеристиками вроде скорострельности, магазина и разблокировки; анализ TTK по замеру, дистанции и классу, самое быстрое оружие сверху.',
+          hi: 'MW4 Rüstkammer की तीन फ़ोन स्क्रीन (जर्मन इंटरफ़ेस): खोज, हथियार के प्रकार के फ़िल्टर और फ़ायर रेट, time to kill व टियर के साथ असॉल्ट राइफ़लों वाला Arsenal; टियर, इस्तेमाल और फ़ायर रेट, मैगज़ीन व अनलॉक जैसे आँकड़ों के साथ Han 86; माप, दूरी और क्लास के साथ TTK विश्लेषण, सबसे तेज़ हथियार सबसे ऊपर।',
+          zh: 'MW4 Rüstkammer 的三个手机画面（德语界面）：Arsenal，带搜索、武器类型筛选，以及列出射速、击杀时间和梯队的突击步枪；Han 86，显示梯队、使用率以及射速、弹匣、解锁等数值；TTK 分析，可按测量方式、距离和类别查看，最快的武器排在最前。',
+          ja: 'MW4 Rüstkammer のスマートフォン画面3枚（ドイツ語版の表示）：検索と武器種フィルター、連射速度・キルタイム・ティアつきのアサルトライフルが並ぶ Arsenal、ティア・使用率と連射速度・マガジン・解除条件などのステータスを示した Han 86、測定方法・距離・クラスで並べ替え、最速の武器が先頭に来る TTK 分析。',
+          ko: 'MW4 Rüstkammer 휴대폰 화면 세 개(독일어 인터페이스): 검색, 무기 종류 필터, 연사 속도·킬 타임·티어가 표시된 돌격소총이 있는 Arsenal, 티어·사용률과 연사 속도·탄창·해금 같은 능력치가 있는 Han 86, 측정 방식·거리·클래스별로 가장 빠른 무기부터 보여 주는 TTK 분석.'
         }
       }
     ],
@@ -3657,152 +3657,152 @@ var GUIDES = {
         'Unter Intel stehen Datenstand und Patches, „Nach Updates suchen“ und (wo der Browser es anbietet) der Knopf „App installieren“. Auf dem iPhone geht das in Safari über Teilen und „Zum Home-Bildschirm“. Nach dem ersten Besuch läuft die Rüstkammer auch offline.'
       ],
       en: [
-        'Switch between Arsenal, Meta, TTK, Klassen (classes) and Intel at the bottom. In the Arsenal, search for a weapon, Apex or class, or filter by weapon type.',
-        'Tap a weapon: stats, time to kill, meta builds and the Apex attachment. Under “Mein Waffenlevel” (my weapon level) you enter your progress. Under TTK you compare by measurement, range and class.',
-        'Intel holds the data date and patches, “Nach Updates suchen” (check for updates) and, where your browser offers it, the “App installieren” (install app) button. On an iPhone, use Share and “Add to Home Screen” in Safari. After the first visit the Rüstkammer also works offline.'
+        'Switch between Arsenal, Meta, TTK, Classes and Intel at the bottom. In the Arsenal, search for a weapon, Apex or class, or filter by weapon type.',
+        'Tap a weapon: stats, time to kill, meta builds and the Apex attachment. Under “My weapon level” you enter your progress. Under TTK you compare by measurement, range and class.',
+        'Intel holds the data date and patches, “Check for updates” and, where your browser offers it, the “Install app” button. On an iPhone, use Share and “Add to Home Screen” in Safari. After the first visit the Rüstkammer also works offline.'
       ],
       es: [
-        'Cambia abajo entre Arsenal, Meta, TTK, Klassen (clases) e Intel. En el Arsenal, busca un arma, un Apex o una clase, o filtra por tipo de arma.',
-        'Toca un arma: estadísticas, time to kill, builds meta y accesorio Apex. En «Mein Waffenlevel» (mi nivel de arma) anotas tu progreso. En TTK comparas por medición, distancia y clase.',
-        'En Intel están la fecha de los datos y los parches, «Nach Updates suchen» (buscar actualizaciones) y, donde el navegador lo ofrece, el botón «App installieren» (instalar app). En el iPhone, usa Compartir y «Añadir a pantalla de inicio» en Safari. Tras la primera visita, la Rüstkammer funciona también sin conexión.'
+        'Cambia abajo entre Arsenal, Meta, TTK, Clases e Intel. En el Arsenal, busca un arma, un Apex o una clase, o filtra por tipo de arma.',
+        'Toca un arma: estadísticas, time to kill, builds meta y accesorio Apex. En «Mi nivel de arma» anotas tu progreso. En TTK comparas por medición, distancia y clase.',
+        'En Intel están la fecha de los datos y los parches, «Buscar actualizaciones» y, donde el navegador lo ofrece, el botón «Instalar app». En el iPhone, usa Compartir y «Añadir a pantalla de inicio» en Safari. Tras la primera visita, la Rüstkammer funciona también sin conexión.'
       ],
       fr: [
-        'En bas, passez d’Arsenal à Meta, TTK, Klassen (classes) et Intel. Dans l’Arsenal, cherchez une arme, un Apex ou une classe, ou filtrez par type d’arme.',
-        'Touchez une arme : statistiques, time to kill, builds méta et accessoire Apex. Sous « Mein Waffenlevel » (mon niveau d’arme), vous notez votre progression. Sous TTK, vous comparez selon la mesure, la distance et la classe.',
-        'Intel regroupe la date des données et les patchs, « Nach Updates suchen » (rechercher des mises à jour) et, là où le navigateur le propose, le bouton « App installieren » (installer l’application). Sur iPhone, passez par Partager et « Sur l’écran d’accueil » dans Safari. Après la première visite, la Rüstkammer fonctionne aussi hors ligne.'
+        'En bas, passez d’Arsenal à Méta, TTK, Classes et Intel. Dans l’Arsenal, cherchez une arme, un Apex ou une classe, ou filtrez par type d’arme.',
+        'Touchez une arme : statistiques, time to kill, builds méta et accessoire Apex. Sous « Mon niveau d’arme », vous notez votre progression. Sous TTK, vous comparez selon la mesure, la distance et la classe.',
+        'Intel regroupe la date des données et les patchs, « Rechercher des mises à jour » et, là où le navigateur le propose, le bouton « Installer l’appli ». Sur iPhone, passez par Partager et « Sur l’écran d’accueil » dans Safari. Après la première visite, la Rüstkammer fonctionne aussi hors ligne.'
       ],
       it: [
-        'In basso passa tra Arsenal, Meta, TTK, Klassen (classi) e Intel. Nell’Arsenal cerca un’arma, un Apex o una classe, oppure filtra per tipo di arma.',
-        'Tocca un’arma: statistiche, time to kill, build meta e accessorio Apex. In «Mein Waffenlevel» (il mio livello arma) inserisci i tuoi progressi. In TTK confronti per misurazione, distanza e classe.',
-        'In Intel ci sono la data dei dati e le patch, «Nach Updates suchen» (cerca aggiornamenti) e, dove il browser lo offre, il pulsante «App installieren» (installa app). Su iPhone usa Condividi e «Aggiungi alla schermata Home» in Safari. Dopo la prima visita la Rüstkammer funziona anche offline.'
+        'In basso passa tra Arsenale, Meta, TTK, Classi e Intel. Nell’Arsenale cerca un’arma, un Apex o una classe, oppure filtra per tipo di arma.',
+        'Tocca un’arma: statistiche, time to kill, build meta e accessorio Apex. In «Il mio livello arma» inserisci i tuoi progressi. In TTK confronti per misurazione, distanza e classe.',
+        'In Intel ci sono la data dei dati e le patch, «Cerca aggiornamenti» e, dove il browser lo offre, il pulsante «Installa app». Su iPhone usa Condividi e «Aggiungi alla schermata Home» in Safari. Dopo la prima visita la Rüstkammer funziona anche offline.'
       ],
       nl: [
-        'Wissel onderaan tussen Arsenal, Meta, TTK, Klassen (klassen) en Intel. Zoek in het Arsenal naar een wapen, Apex of klasse, of filter op wapentype.',
-        'Tik op een wapen: statistieken, time to kill, metabuilds en de Apex-attachment. Onder ‘Mein Waffenlevel’ (mijn wapenlevel) vul je je voortgang in. Onder TTK vergelijk je op meting, afstand en klasse.',
-        'Intel bevat de datum van de gegevens en de patches, ‘Nach Updates suchen’ (naar updates zoeken) en, waar je browser het aanbiedt, de knop ‘App installieren’ (app installeren). Op een iPhone gebruik je in Safari Deel en ‘Zet op beginscherm’. Na het eerste bezoek werkt de Rüstkammer ook offline.'
+        'Wissel onderaan tussen Arsenaal, Meta, TTK, Klassen en Intel. Zoek in het Arsenaal naar een wapen, Apex of klasse, of filter op wapentype.',
+        'Tik op een wapen: statistieken, time to kill, metabuilds en de Apex-attachment. Onder ‘Mijn wapenlevel’ vul je je voortgang in. Onder TTK vergelijk je op meting, afstand en klasse.',
+        'Intel bevat de datum van de gegevens en de patches, ‘Naar updates zoeken’ en, waar je browser het aanbiedt, de knop ‘App installeren’. Op een iPhone gebruik je in Safari Deel en ‘Zet op beginscherm’. Na het eerste bezoek werkt de Rüstkammer ook offline.'
       ],
       pl: [
-        'Na dole przełączaj między Arsenal, Meta, TTK, Klassen (klasy) i Intel. W Arsenalu szukaj broni, Apexu lub klasy albo filtruj według rodzaju broni.',
-        'Dotknij broni: statystyki, time to kill, buildy meta i dodatek Apex. W „Mein Waffenlevel” (mój poziom broni) wpisujesz swój postęp. W TTK porównujesz według pomiaru, dystansu i klasy.',
-        'W Intel są data danych i patche, „Nach Updates suchen” (sprawdź aktualizacje) oraz, tam gdzie przeglądarka to oferuje, przycisk „App installieren” (zainstaluj aplikację). Na iPhonie użyj w Safari Udostępnij i „Do ekranu początkowego”. Po pierwszej wizycie Rüstkammer działa też offline.'
+        'Na dole przełączasz zakładki: Arsenał, Meta, TTK, Klasy i Intel. W zakładce Arsenał szukaj broni, Apexu lub klasy albo filtruj według rodzaju broni.',
+        'Dotknij broni: statystyki, time to kill, buildy meta i dodatek Apex. W polu „Mój poziom broni” wpisujesz swój postęp. W TTK porównujesz według pomiaru, dystansu i klasy.',
+        'W Intel są data danych i patche, „Sprawdź aktualizacje” oraz, tam gdzie przeglądarka to oferuje, przycisk „Zainstaluj aplikację”. Na iPhonie użyj w Safari Udostępnij i „Do ekranu początkowego”. Po pierwszej wizycie Rüstkammer działa też offline.'
       ],
       pt: [
-        'Embaixo, alterne entre Arsenal, Meta, TTK, Klassen (classes) e Intel. No Arsenal, pesquise uma arma, um Apex ou uma classe, ou filtre por tipo de arma.',
-        'Toque numa arma: estatísticas, time to kill, builds meta e acessório Apex. Em «Mein Waffenlevel» (meu nível de arma) você registra o seu progresso. Em TTK você compara por medição, distância e classe.',
-        'Em Intel ficam a data dos dados e os patches, «Nach Updates suchen» (buscar atualizações) e, onde o navegador oferece, o botão «App installieren» (instalar app). No iPhone, use Compartilhar e «Adicionar à Tela de Início» no Safari. Depois da primeira visita, a Rüstkammer também funciona offline.'
+        'Embaixo, alterne entre Arsenal, Meta, TTK, Classes e Intel. No Arsenal, pesquise uma arma, um Apex ou uma classe, ou filtre por tipo de arma.',
+        'Toque numa arma: estatísticas, time to kill, builds meta e acessório Apex. Em «Meu nível de arma» você registra o seu progresso. Em TTK você compara por medição, distância e classe.',
+        'Em Intel ficam a data dos dados e os patches, «Buscar atualizações» e, onde o navegador oferece, o botão «Instalar app». No iPhone, use Compartilhar e «Adicionar à Tela de Início» no Safari. Depois da primeira visita, a Rüstkammer também funciona offline.'
       ],
       tr: [
-        'Altta Arsenal, Meta, TTK, Klassen (sınıflar) ve Intel arasında geçiş yapın. Arsenal’de silah, Apex ya da sınıf arayın veya silah türüne göre filtreleyin.',
-        'Bir silaha dokunun: istatistikler, time to kill, meta buildler ve Apex eklentisi. “Mein Waffenlevel” (silah seviyem) altında ilerlemenizi girersiniz. TTK’da ölçüm, mesafe ve sınıfa göre karşılaştırırsınız.',
-        'Intel’de veri tarihi ve yamalar, “Nach Updates suchen” (güncellemeleri ara) ve tarayıcının sunduğu yerde “App installieren” (uygulamayı yükle) düğmesi bulunur. iPhone’da Safari’de Paylaş ve “Ana Ekrana Ekle”yi kullanın. İlk ziyaretten sonra Rüstkammer çevrimdışı da çalışır.'
+        'Altta Cephanelik, Meta, TTK, Sınıflar ve Intel arasında geçiş yapın. Cephanelik’te silah, Apex ya da sınıf arayın veya silah türüne göre filtreleyin.',
+        'Bir silaha dokunun: istatistikler, time to kill, meta buildler ve Apex eklentisi. “Silah seviyem” altında ilerlemenizi girersiniz. TTK’da ölçüm, mesafe ve sınıfa göre karşılaştırırsınız.',
+        'Intel’de veri tarihi ve yamalar, “Güncellemeleri ara” ve tarayıcının sunduğu yerde “Uygulamayı yükle” düğmesi bulunur. iPhone’da Safari’de Paylaş ve “Ana Ekrana Ekle”yi kullanın. İlk ziyaretten sonra Rüstkammer çevrimdışı da çalışır.'
       ],
       ru: [
-        'Внизу переключайтесь между Arsenal, Meta, TTK, Klassen (классы) и Intel. В Arsenal ищите оружие, Apex или класс либо фильтруйте по типу оружия.',
-        'Коснитесь оружия: характеристики, time to kill, мета-сборки и модуль Apex. В «Mein Waffenlevel» (мой уровень оружия) вы отмечаете свой прогресс. В TTK сравнивайте по замеру, дистанции и классу.',
-        'В Intel есть дата данных и патчи, «Nach Updates suchen» (проверить обновления) и, где браузер это предлагает, кнопка «App installieren» (установить приложение). На iPhone используйте в Safari «Поделиться» и «На экран „Домой“». После первого посещения Rüstkammer работает и офлайн.'
+        'Внизу переключайтесь между вкладками «Арсенал», «Мета», «TTK», «Классы» и «Intel». Во вкладке «Арсенал» ищите оружие, Apex или класс либо фильтруйте по типу оружия.',
+        'Коснитесь оружия: характеристики, time to kill, мета-сборки и модуль Apex. В разделе «Мой уровень оружия» вы отмечаете свой прогресс. В TTK сравнивайте по замеру, дистанции и классу.',
+        'В Intel есть дата данных и патчи, «Проверить обновления» и, где браузер это предлагает, кнопка «Установить приложение». На iPhone используйте в Safari «Поделиться» и «На экран „Домой“». После первого посещения Rüstkammer работает и офлайн.'
       ],
       hi: [
-        'नीचे Arsenal, Meta, TTK, Klassen (क्लास) और Intel के बीच बदलें। Arsenal में कोई हथियार, Apex या क्लास खोजें, या हथियार के प्रकार से छाँटें।',
-        'किसी हथियार पर टैप करें: आँकड़े, time to kill, मेटा बिल्ड और Apex अटैचमेंट। “Mein Waffenlevel” (मेरा हथियार लेवल) में आप अपनी प्रगति भरते हैं। TTK में माप, दूरी और क्लास के हिसाब से तुलना करें।',
-        'Intel में डेटा की तारीख़ और पैच, “Nach Updates suchen” (अपडेट खोजें) और, जहाँ ब्राउज़र यह देता है, “App installieren” (ऐप इंस्टॉल करें) बटन है। iPhone पर Safari में शेयर और “होम स्क्रीन में जोड़ें” इस्तेमाल करें। पहली विज़िट के बाद Rüstkammer ऑफ़लाइन भी चलता है।'
+        'नीचे शस्त्रागार, मेटा, TTK, क्लास और Intel के बीच बदलें। शस्त्रागार में कोई हथियार, Apex या क्लास खोजें, या हथियार के प्रकार से छाँटें।',
+        'किसी हथियार पर टैप करें: आँकड़े, time to kill, मेटा बिल्ड और Apex अटैचमेंट। “मेरा हथियार लेवल” में आप अपनी प्रगति भरते हैं। TTK में माप, दूरी और क्लास के हिसाब से तुलना करें।',
+        'Intel में डेटा की तारीख़ और पैच, “अपडेट खोजें” और, जहाँ ब्राउज़र यह देता है, “ऐप इंस्टॉल करें” बटन है। iPhone पर Safari में शेयर और “होम स्क्रीन में जोड़ें” इस्तेमाल करें। पहली विज़िट के बाद Rüstkammer ऑफ़लाइन भी चलता है।'
       ],
       zh: [
-        '在底部切换 Arsenal、Meta、TTK、Klassen（配装）和 Intel。在 Arsenal 里可搜索武器、Apex 或配装，或按武器类型筛选。',
-        '点一把武器：数值、击杀时间、Meta 配装和 Apex 配件。在“Mein Waffenlevel”（我的武器等级）里记录你的进度。在 TTK 里按测量方式、距离和类别比较。',
-        'Intel 里有数据日期和补丁、“Nach Updates suchen”（检查更新），以及在浏览器支持时出现的“App installieren”（安装应用）按钮。在 iPhone 上请用 Safari 的“分享”和“添加到主屏幕”。首次访问后，Rüstkammer 也能离线使用。'
+        '在底部切换军械库、Meta、TTK、配装和 Intel。在军械库里可搜索武器、Apex 或配装，或按武器类型筛选。',
+        '点一把武器：数值、击杀时间、Meta 配装和 Apex 配件。在“我的武器等级”里记录你的进度。在 TTK 里按测量方式、距离和类别比较。',
+        'Intel 里有数据日期和补丁、“检查更新”，以及在浏览器支持时出现的“安装应用”按钮。在 iPhone 上请用 Safari 的“分享”和“添加到主屏幕”。首次访问后，Rüstkammer 也能离线使用。'
       ],
       ja: [
-        '下部で Arsenal、Meta、TTK、Klassen（クラス）、Intel を切り替えます。Arsenal では武器・Apex・クラスで検索するか、武器種で絞り込みます。',
-        '武器をタップすると、ステータス、キルタイム、メタビルド、Apex アタッチメントが表示されます。「Mein Waffenlevel」（武器レベル）に自分の進み具合を入力できます。TTK では測定方法・距離・クラスで比較します。',
-        'Intel にはデータの日付とパッチ、「Nach Updates suchen」（更新を確認）、そしてブラウザーが対応していれば「App installieren」（アプリをインストール）ボタンがあります。iPhone では Safari の共有から「ホーム画面に追加」を使います。初回アクセス後はオフラインでも使えます。'
+        '下部で武器庫、メタ、TTK、クラス、Intel を切り替えます。武器庫では武器・Apex・クラスで検索するか、武器種で絞り込みます。',
+        '武器をタップすると、ステータス、キルタイム、メタビルド、Apex アタッチメントが表示されます。「自分の武器レベル」に進み具合を入力できます。TTK では測定方法・距離・クラスで比較します。',
+        'Intel にはデータの日付とパッチ、「更新を確認」、そしてブラウザーが対応していれば「アプリをインストール」ボタンがあります。iPhone では Safari の共有から「ホーム画面に追加」を使います。初回アクセス後はオフラインでも使えます。'
       ],
       ko: [
-        '아래에서 Arsenal, Meta, TTK, Klassen(클래스), Intel 사이를 오갑니다. Arsenal에서는 무기, Apex, 클래스로 검색하거나 무기 종류로 거릅니다.',
-        '무기를 누르면 능력치, 킬 타임, 메타 빌드, Apex 부착물이 나옵니다. ‘Mein Waffenlevel’(내 무기 레벨)에 진행 상황을 넣으세요. TTK에서는 측정 방식, 거리, 클래스별로 비교합니다.',
-        'Intel에는 데이터 날짜와 패치, ‘Nach Updates suchen’(업데이트 확인), 그리고 브라우저가 지원하면 ‘App installieren’(앱 설치) 버튼이 있습니다. iPhone에서는 Safari의 공유 → ‘홈 화면에 추가’를 쓰세요. 첫 방문 후에는 오프라인에서도 작동합니다.'
+        '아래에서 무기고, 메타, TTK, 클래스, Intel 사이를 오갑니다. 무기고에서는 무기, Apex, 클래스로 검색하거나 무기 종류로 거릅니다.',
+        '무기를 누르면 능력치, 킬 타임, 메타 빌드, Apex 부착물이 나옵니다. ‘내 무기 레벨’에 진행 상황을 넣으세요. TTK에서는 측정 방식, 거리, 클래스별로 비교합니다.',
+        'Intel에는 데이터 날짜와 패치, ‘업데이트 확인’, 그리고 브라우저가 지원하면 ‘앱 설치’ 버튼이 있습니다. iPhone에서는 Safari의 공유 → ‘홈 화면에 추가’를 쓰세요. 첫 방문 후에는 오프라인에서도 작동합니다.'
       ]
     },
     pitfalls: {
       de: [
-        'Die App ist auf Deutsch.',
+        'Nur die Bedienung gibt es in 14 Sprachen (umstellen unter Intel bei „Sprache“), Waffenhinweise, Aufsatz-Effekte, Build-Notizen und die Patch-Chronik sind auf Deutsch.',
         'Die Hardcore-Werte (≈) sind geschätzt, nicht gemessen.',
         'Nach einem Tuning-Patch können Werte veralten. Oben stehen der Datenstand und, wenn angekündigt, ein Tuning-Hinweis.',
         'Dein Waffenlevel und deine Einstellungen liegen nur in diesem Browser.'
       ],
       en: [
-        'The app is in German.',
+        'Only the interface comes in 14 languages (switch it under Intel at “Language”). Weapon notes, attachment effects, build notes and the patch history are in German.',
         'Hardcore values (≈) are estimates, not measurements.',
         'A tuning patch can make values outdated. The data date sits at the top, together with a notice when tuning has been announced.',
         'Your weapon level and settings live only in this browser.'
       ],
       es: [
-        'La app está en alemán.',
+        'Solo la interfaz está en 14 idiomas (cámbiala en Intel, en «Idioma»). Las notas de armas, los efectos de accesorios, las notas de builds y el historial de parches están en alemán.',
         'Los valores de Hardcore (≈) son estimaciones, no mediciones.',
         'Tras un parche de ajustes, los valores pueden quedar desfasados. Arriba están la fecha de los datos y, si se ha anunciado, un aviso de ajustes.',
         'Tu nivel de arma y tus ajustes solo se guardan en este navegador.'
       ],
       fr: [
-        'L’application est en allemand.',
+        'Seule l’interface existe en 14 langues (changez-la dans Intel, sous « Langue »). Les notes sur les armes, les effets des accessoires, les notes de build et l’historique des patchs sont en allemand.',
         'Les valeurs Hardcore (≈) sont des estimations, pas des mesures.',
         'Après un patch d’équilibrage, des valeurs peuvent être dépassées. En haut figurent la date des données et, s’il est annoncé, un avertissement d’équilibrage.',
         'Votre niveau d’arme et vos réglages restent uniquement dans ce navigateur.'
       ],
       it: [
-        'L’app è in tedesco.',
+        'Solo l’interfaccia è in 14 lingue (la cambi in Intel, sotto «Lingua»). Note sulle armi, effetti degli accessori, note sulle build e cronologia delle patch sono in tedesco.',
         'I valori Hardcore (≈) sono stime, non misurazioni.',
         'Dopo una patch di bilanciamento i valori possono essere superati. In alto ci sono la data dei dati e, se annunciato, un avviso di bilanciamento.',
         'Il tuo livello arma e le tue impostazioni restano solo in questo browser.'
       ],
       nl: [
-        'De app is in het Duits.',
+        'Alleen de bediening is er in 14 talen (wisselen onder Intel bij ‘Taal’). Wapennotities, effecten van attachments, buildnotities en de patchgeschiedenis zijn in het Duits.',
         'Hardcore-waarden (≈) zijn schattingen, geen metingen.',
         'Na een tuningpatch kunnen waarden verouderd zijn. Bovenaan staan de datum van de gegevens en, als het is aangekondigd, een tuningmelding.',
         'Je wapenlevel en instellingen staan alleen in deze browser.'
       ],
       pl: [
-        'Aplikacja jest po niemiecku.',
+        'Tylko interfejs jest w 14 językach (zmienisz go w Intel, w polu „Język”). Uwagi o broniach, efekty dodatków, notatki do buildów i historia patchy są po niemiecku.',
         'Wartości Hardcore (≈) są szacunkami, nie pomiarami.',
         'Po patchu balansującym wartości mogą się zdezaktualizować. U góry jest data danych i, jeśli zapowiedziano, informacja o zmianach balansu.',
         'Twój poziom broni i ustawienia są zapisane tylko w tej przeglądarce.'
       ],
       pt: [
-        'O app está em alemão.',
+        'Só a interface está em 14 idiomas (troque em Intel, em «Idioma»). Notas das armas, efeitos dos acessórios, notas dos builds e o histórico de patches estão em alemão.',
         'Os valores de Hardcore (≈) são estimativas, não medições.',
         'Depois de um patch de ajuste, os valores podem ficar desatualizados. No topo ficam a data dos dados e, se anunciado, um aviso de ajuste.',
         'O seu nível de arma e as configurações ficam só neste navegador.'
       ],
       tr: [
-        'Uygulama Almancadır.',
+        'Yalnızca arayüz 14 dilde (Intel altındaki “Dil” bölümünden değiştirebilirsiniz). Silah notları, eklenti etkileri, build notları ve yama geçmişi Almancadır.',
         'Hardcore değerleri (≈) tahmindir, ölçüm değildir.',
         'Bir ayar yamasından sonra değerler eskiyebilir. Üstte veri tarihi ve duyurulduysa bir ayar uyarısı yer alır.',
         'Silah seviyeniz ve ayarlarınız yalnızca bu tarayıcıda durur.'
       ],
       ru: [
-        'Приложение на немецком.',
+        'Только интерфейс есть на 14 языках (переключить можно в Intel, в пункте «Язык»). Заметки об оружии, эффекты модулей, заметки к билдам и история патчей на немецком.',
         'Значения для Hardcore (≈) не замерены, а оценены.',
         'После патча с балансировкой значения могут устареть. Вверху указаны дата данных и, если объявлено, предупреждение о балансировке.',
         'Ваш уровень оружия и настройки хранятся только в этом браузере.'
       ],
       hi: [
-        'ऐप जर्मन में है।',
+        'सिर्फ़ इंटरफ़ेस 14 भाषाओं में है (Intel में “भाषा” से बदलें)। हथियारों के नोट, अटैचमेंट के इफ़ेक्ट, बिल्ड नोट और पैच इतिहास जर्मन में हैं।',
         'Hardcore मान (≈) अनुमान हैं, माप नहीं।',
         'ट्यूनिंग पैच के बाद मान पुराने पड़ सकते हैं। ऊपर डेटा की तारीख़ और, घोषणा होने पर, ट्यूनिंग की सूचना रहती है।',
         'आपका हथियार लेवल और सेटिंग्स सिर्फ़ इसी ब्राउज़र में रहती हैं।'
       ],
       zh: [
-        '应用只有德语。',
+        '只有界面有 14 种语言（在 Intel 的“语言”中切换）。武器说明、配件效果、配装备注和补丁记录都是德语。',
         'Hardcore 数值（≈）是估算，不是实测。',
         '平衡调整补丁之后，数值可能过时。顶部有数据日期，宣布调整时还会有提示。',
         '你的武器等级和设置只保存在这个浏览器里。'
       ],
       ja: [
-        'アプリはドイツ語です。',
+        '14言語に対応しているのは操作画面だけです（Intel の「言語」で切り替えます）。武器の注記、アタッチメントの効果、ビルドのメモ、パッチ履歴はドイツ語です。',
         'Hardcore の値（≈）は推定で、実測ではありません。',
         '調整パッチの後は値が古くなることがあります。上部にデータの日付と、予告があれば調整の注意が表示されます。',
         '武器レベルと設定は、このブラウザーの中にだけ保存されます。'
       ],
       ko: [
-        '앱은 독일어입니다.',
+        '14개 언어로 나오는 것은 화면 조작 부분뿐입니다(Intel의 ‘언어’에서 바꿀 수 있습니다). 무기 메모, 부착물 효과, 빌드 메모, 패치 기록은 독일어입니다.',
         'Hardcore 수치(≈)는 측정값이 아니라 추정치입니다.',
         '밸런스 패치 뒤에는 수치가 낡을 수 있습니다. 위쪽에 데이터 날짜와, 예고가 있으면 밸런스 안내가 표시됩니다.',
         '무기 레벨과 설정은 이 브라우저에만 저장됩니다.'

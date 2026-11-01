@@ -1825,6 +1825,23 @@ var NEWS = {
   ],
   vault: [
     {
+      date: '2026-11-01',
+      de: 'Das Vault-Handbuch spricht jetzt 14 Sprachen, und zwar überall, wo du etwas bedienst: Menü, Filter, Knöpfe, Hinweise und Farm-Planer. Builds, Raid-Guides, Item-Effekte und die Wochendaten bleiben deutsch, das steht oben auch dabei. Es übernimmt die Sprache der Startseite (sonst die deines Browsers), umstellen kannst du unten im Menü unter „Sprache“.',
+      en: 'The Vault-Handbuch now speaks 14 languages wherever you operate something: menu, filters, buttons, notices and the farm planner. Builds, raid guides, item effects and the weekly data stay German, and it says so at the top. It takes the language from the homepage (otherwise from your browser), and you can switch at the bottom of the menu under “Language”.',
+      es: 'El Vault-Handbuch ya habla 14 idiomas en todo lo que manejas: menú, filtros, botones, avisos y el planificador de farmeo. Los builds, las guías de raids, los efectos de objetos y los datos semanales siguen en alemán, y arriba lo indica. Toma el idioma de la página de inicio (si no, el de tu navegador), y puedes cambiarlo abajo en el menú, en «Idioma».',
+      fr: 'Le Vault-Handbuch parle désormais 14 langues partout où vous agissez : menu, filtres, boutons, messages et planificateur de farm. Les builds, les guides de raid, les effets des objets et les données hebdomadaires restent en allemand, et c’est indiqué en haut. Il reprend la langue de la page d’accueil (sinon celle de votre navigateur), et vous la changez en bas du menu, sous « Langue ».',
+      it: 'Il Vault-Handbuch ora parla 14 lingue in tutto ciò che usi: menu, filtri, pulsanti, avvisi e pianificatore di farm. Build, guide ai raid, effetti degli oggetti e dati settimanali restano in tedesco, e lo dice anche in alto. Prende la lingua dalla pagina iniziale (altrimenti dal tuo browser), e la cambi in fondo al menu, sotto «Lingua».',
+      nl: 'Het Vault-Handbuch spreekt nu 14 talen bij alles wat je bedient: menu, filters, knoppen, meldingen en de farmplanner. Builds, raidguides, itemeffecten en de weekgegevens blijven Duits, dat staat bovenaan ook vermeld. Het neemt de taal van de startpagina over (anders die van je browser), wisselen doe je onderaan in het menu onder ‘Taal’.',
+      pl: 'Vault-Handbuch mówi teraz w 14 językach wszędzie tam, gdzie coś obsługujesz: menu, filtry, przyciski, komunikaty i planer farmienia. Buildy, poradniki do raidów, efekty przedmiotów i dane tygodniowe zostają po niemiecku, co jest też napisane na górze. Język bierze ze strony głównej (inaczej z przeglądarki), a zmienisz go na dole menu w polu „Język”.',
+      pt: 'O Vault-Handbuch agora fala 14 idiomas em tudo o que você usa: menu, filtros, botões, avisos e o planejador de farm. Builds, guias de raids, efeitos de itens e os dados semanais continuam em alemão, e isso aparece no topo. Ele usa o idioma da página inicial (senão, o do seu navegador), e você troca embaixo no menu, em «Idioma».',
+      tr: 'Vault-Handbuch artık kullandığınız her yerde 14 dil konuşuyor: menü, filtreler, düğmeler, uyarılar ve farm planlayıcı. Buildler, raid rehberleri, eşya etkileri ve haftalık veriler Almanca kalır, bu en üstte de yazar. Dili ana sayfadan alır (yoksa tarayıcınızdan), menünün altındaki “Dil” bölümünden değiştirebilirsiniz.',
+      ru: 'Vault-Handbuch теперь говорит на 14 языках во всём, чем вы управляете: меню, фильтры, кнопки, подсказки и планировщик фарма. Билды, гайды по рейдам, эффекты предметов и недельные данные остаются на немецком, об этом сказано и вверху. Язык берётся со стартовой страницы (иначе из браузера), переключить можно внизу меню, в пункте «Язык».',
+      hi: 'Vault-Handbuch अब हर उस जगह 14 भाषाएँ बोलता है जहाँ आप कुछ चलाते हैं: मेन्यू, फ़िल्टर, बटन, सूचनाएँ और फ़ार्म प्लानर। बिल्ड, रेड गाइड, आइटम के इफ़ेक्ट और हफ़्ते का डेटा जर्मन में ही रहते हैं, यह ऊपर भी लिखा है। भाषा होम पेज से आती है (वरना आपके ब्राउज़र से), और आप इसे मेन्यू में सबसे नीचे “भाषा” से बदल सकते हैं।',
+      zh: 'Vault-Handbuch 现在凡是你要操作的地方都支持 14 种语言：菜单、筛选、按钮、提示和刷宝规划。配装、团本攻略、物品效果和每周数据仍是德语，顶部也有说明。语言沿用首页的设置（否则用浏览器的语言），可在菜单底部的“语言”中切换。',
+      ja: 'Vault-Handbuch は操作する部分すべてが14言語に対応しました。メニュー、フィルター、ボタン、お知らせ、周回プランナーです。ビルド、レイドガイド、アイテムの効果、週ごとのデータはドイツ語のままで、上部にもそう表示されます。言語はトップページの設定を引き継ぎ（なければブラウザーの言語）、メニュー下部の「言語」で切り替えられます。',
+      ko: 'Vault-Handbuch가 이제 조작하는 모든 곳에서 14개 언어를 지원합니다. 메뉴, 필터, 버튼, 안내, 파밍 플래너가 해당됩니다. 빌드, 레이드 가이드, 아이템 효과, 주간 데이터는 독일어 그대로이고, 위쪽에도 그렇게 표시됩니다. 언어는 시작 페이지 설정을 따르고(없으면 브라우저 언어), 메뉴 맨 아래 ‘언어’에서 바꿀 수 있습니다.'
+    },
+    {
       date: '2026-10-31',
       de: 'Im hellen Modus lassen sich Drop-Chancen, Boss-Hinweise und das Schild „Erledigt“ besser lesen. Am Handy passen die Raid-Guides jetzt in die Breite, und im Hohen Kontrast sind die Pearlescent-Schilder einfarbig.',
       en: 'In light mode drop chances, boss notes and the “Erledigt” (done) badge are easier to read. On phones the raid guides now fit the width, and in high contrast the Pearlescent badges are a single colour.',
@@ -1928,6 +1945,23 @@ var NEWS = {
     }
   ],
   ruestkammer: [
+    {
+      date: '2026-11-01',
+      de: 'Die Rüstkammer spricht jetzt 14 Sprachen: Navigation, Filter, Tabellen, Klasseneditor und Meldungen. Waffenhinweise, Aufsatz-Effekte, Build-Notizen und die Patch-Chronik bleiben deutsch (das steht oben auch dabei). Die Sprache kommt von der Startseite oder deinem Browser, umstellen kannst du unter Intel bei „Sprache“.',
+      en: 'The Rüstkammer now speaks 14 languages: navigation, filters, tables, the class editor and messages. Weapon notes, attachment effects, build notes and the patch history stay German (it says so at the top too). The language comes from the homepage or your browser, and you can switch it under Intel at “Language”.',
+      es: 'La Rüstkammer ya habla 14 idiomas: navegación, filtros, tablas, editor de clases y mensajes. Las notas de armas, los efectos de accesorios, las notas de builds y el historial de parches siguen en alemán (arriba también lo indica). El idioma viene de la página de inicio o de tu navegador, y puedes cambiarlo en Intel, en «Idioma».',
+      fr: 'La Rüstkammer parle désormais 14 langues : navigation, filtres, tableaux, éditeur de classes et messages. Les notes sur les armes, les effets des accessoires, les notes de build et l’historique des patchs restent en allemand (c’est aussi indiqué en haut). La langue vient de la page d’accueil ou de votre navigateur, et vous la changez dans Intel, sous « Langue ».',
+      it: 'La Rüstkammer ora parla 14 lingue: navigazione, filtri, tabelle, editor classi e messaggi. Note sulle armi, effetti degli accessori, note sulle build e cronologia delle patch restano in tedesco (lo dice anche in alto). La lingua arriva dalla pagina iniziale o dal tuo browser, e la cambi in Intel, sotto «Lingua».',
+      nl: 'De Rüstkammer spreekt nu 14 talen: navigatie, filters, tabellen, klasse-editor en meldingen. Wapennotities, effecten van attachments, buildnotities en de patchgeschiedenis blijven Duits (dat staat bovenaan ook). De taal komt van de startpagina of je browser, wisselen doe je onder Intel bij ‘Taal’.',
+      pl: 'Rüstkammer mówi teraz w 14 językach: nawigacja, filtry, tabele, edytor klas i komunikaty. Uwagi o broniach, efekty dodatków, notatki do buildów i historia patchy zostają po niemiecku (to też jest napisane na górze). Język bierze się ze strony głównej albo z przeglądarki, a zmienisz go w Intel, w polu „Język”.',
+      pt: 'A Rüstkammer agora fala 14 idiomas: navegação, filtros, tabelas, editor de classes e mensagens. Notas das armas, efeitos dos acessórios, notas dos builds e o histórico de patches continuam em alemão (isso também aparece no topo). O idioma vem da página inicial ou do seu navegador, e você troca em Intel, em «Idioma».',
+      tr: 'Rüstkammer artık 14 dil konuşuyor: gezinme, filtreler, tablolar, sınıf düzenleyici ve mesajlar. Silah notları, eklenti etkileri, build notları ve yama geçmişi Almanca kalır (bu en üstte de yazar). Dil ana sayfadan ya da tarayıcınızdan gelir, Intel altındaki “Dil” bölümünden değiştirebilirsiniz.',
+      ru: 'Rüstkammer теперь говорит на 14 языках: навигация, фильтры, таблицы, редактор классов и сообщения. Заметки об оружии, эффекты модулей, заметки к билдам и история патчей остаются на немецком (об этом сказано и вверху). Язык берётся со стартовой страницы или из браузера, переключить можно в Intel, в пункте «Язык».',
+      hi: 'Rüstkammer अब 14 भाषाएँ बोलता है: नेविगेशन, फ़िल्टर, टेबल, क्लास एडिटर और संदेश। हथियारों के नोट, अटैचमेंट के इफ़ेक्ट, बिल्ड नोट और पैच इतिहास जर्मन में ही रहते हैं (यह ऊपर भी लिखा है)। भाषा होम पेज या आपके ब्राउज़र से आती है, और आप इसे Intel में “भाषा” से बदल सकते हैं।',
+      zh: 'Rüstkammer 现在支持 14 种语言：导航、筛选、表格、配装编辑器和提示信息。武器说明、配件效果、配装备注和补丁记录仍是德语（顶部也有说明）。语言来自首页或浏览器，可在 Intel 的“语言”中切换。',
+      ja: 'Rüstkammer が14言語に対応しました。ナビゲーション、フィルター、表、クラスエディター、メッセージです。武器の注記、アタッチメントの効果、ビルドのメモ、パッチ履歴はドイツ語のままです（上部にもそう表示されます）。言語はトップページかブラウザーの設定から決まり、Intel の「言語」で切り替えられます。',
+      ko: 'Rüstkammer가 이제 14개 언어를 지원합니다. 내비게이션, 필터, 표, 클래스 편집기, 메시지가 해당됩니다. 무기 메모, 부착물 효과, 빌드 메모, 패치 기록은 독일어 그대로입니다(위쪽에도 그렇게 표시됩니다). 언어는 시작 페이지나 브라우저에서 가져오며, Intel의 ‘언어’에서 바꿀 수 있습니다.'
+    },
     {
       date: '2026-10-31',
       de: 'Der graue Untertext bei den Werten (etwa „Magazin / Reserve“) ist etwas heller und gut lesbar.',
