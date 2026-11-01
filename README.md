@@ -18,6 +18,7 @@ Startseite für die kleinen Werkzeuge von Dennis_mit_2n — ohne Anmeldung, kein
 - [Heizwarte](https://dennismit2n.github.io/heizwarte/) — weather with a heating traffic light: when to turn up slow heating (14 languages)
 - [Pocketsum](https://dennismit2n.github.io/pocketsum/) — five small calculators in one file: VAT, tips, fuel prices, dividends and trading costs, offline after the first visit
 - [Zählwerk](https://dennismit2n.github.io/zaehlwerk/) — where your Claude Code usage goes, by day, model and project
+- [Werkstatt-Mods](https://dennismit2n.github.io/mods.html) — five mods for Claude Code (statistics pane, limits band, guard, limit pause, agents pane), each installed with one line; its own page with screenshots, install lines and prompts (see below)
 - [Besucher-Ticker](https://github.com/Dennismit2n/besucher-ticker) — your GoatCounter visitor numbers floating on the Windows desktop (download, not a browser tool)
 - [Collective-Calc](https://dennismit2n.github.io/collective-calc/) — split group expenses, no account, shareable as a link
 - [Dreh das Rad](https://dennismit2n.github.io/dreh-das-rad/) — a decision wheel: options in, fate decides
@@ -28,6 +29,10 @@ Startseite für die kleinen Werkzeuge von Dennis_mit_2n — ohne Anmeldung, kein
 Same order as the tiles on the page — hand-picked by Dennis, last reordered on 30 October 2026; new tools do not simply go to the end. Two further tiles sit at the end as placeholders, with no link and no mini tiles: there is nothing to open yet. Real_RAM_cooler, Besucher-Ticker and Fadenkreuz are Windows downloads and fontART comes both ways — which is why neither the headline nor the tiles promise a browser tool. fontART has three mini tiles instead of two: its main button opens the browser version, and "For Windows" leads to the release. create-masterprompt has three as well, its third one opening the one-page overview from `docs/` — in whichever of the fourteen languages the page is currently set to. create-masterprompt is the first entry that is neither a browser tool nor a Windows program: it is an Agent Skill that runs inside an AI chat, which is why its button leads to the repository and its meta line does not borrow the "no uploads" line of the others.
 
 **fontART is the odd one out**, and the tile says so rather than hiding it: it is the only tool here that is neither open source nor meant to stay free. What this repository links to is the free trial; the full version is being worked on, with no date and no price settled. The reasoning is spelled out in the guide on `werkstatt.html`, because a workshop whose footer says "open source on GitHub" owes an explanation for the one exception.
+
+## Werkstatt-Mods page
+
+Since 1 November 2026 the five mods for Claude Code (repository [werkstatt-mods](https://github.com/Dennismit2n/werkstatt-mods), MIT) have their own page, `mods.html`, reached from the tile “Werkstatt-Mods” right after Zählwerk, because both are for Claude Code users. Like Gaming it is a collection, so the tile has no mini tiles. The page explains what a mod is, then shows each mod as a collapsible entry: a screenshot (`assets/mods/<name>.png`, hidden while the file is missing), what it does, its settings, the install line for the Claude Code prompt and a prompt in the page's language that lets Claude do the install (`js/mods.js` fills the placeholders and runs the copy buttons; every copy counts as a GoatCounter event `mods-kopiert-…`). The mods themselves speak German and English; the page offers all fourteen languages and hands a visitor in any other language the English mod.
 
 ## Gaming page
 

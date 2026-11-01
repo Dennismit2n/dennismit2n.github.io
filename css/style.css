@@ -122,6 +122,8 @@
   --craftionary: #086D57;
   --vault: #765C00;
   --ruestkammer: #9A4900;
+
+  --mods: #7A2E6D;
   --shadow: 0 10px 30px rgba(26, 25, 50, 0.14);
 }
 
@@ -196,6 +198,8 @@
     --craftionary: #63CEAF;
     --vault: #FDD711;
     --ruestkammer: #FF9948;
+
+    --mods: #E08AD0;
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   }
 }
@@ -256,6 +260,8 @@
   --craftionary: #63CEAF;
   --vault: #FDD711;
   --ruestkammer: #FF9948;
+
+  --mods: #E08AD0;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
@@ -1526,6 +1532,8 @@ a.wk-shot-frame:focus-visible { outline-color: var(--tool, var(--accent)); }
   --craftionary: #00634F;   /* 7,25 */
   --vault: #6C5400;         /* 7,23 */
   --ruestkammer: #8D4200;   /* 7,21 */
+
+  --mods: #7A2E6D;
   --prisma-flow: linear-gradient(var(--prisma), var(--prisma));
   --spectro-flow: linear-gradient(var(--spectro), var(--spectro));
   --heizwarte-flow: linear-gradient(var(--heizwarte), var(--heizwarte));
@@ -1636,6 +1644,8 @@ a.wk-shot-frame:focus-visible { outline-color: var(--tool, var(--accent)); }
     --spectro: #3BF3DB;
     --fadenkreuz: #41FF8C;
     --ruestkammer: #FF9C4E;
+
+    --mods: #E08AD0;
     --prisma-flow: linear-gradient(100deg, #ff9e95, #ffae55, #cfd149, #39faf1, #bfb9ff);
     --spectro-flow: linear-gradient(100deg, #8bfff8, #48e8e0, #40e2da, #48d3cb, #53c5bf);
     --heizwarte-flow: linear-gradient(100deg, #7dd3fc, #86efac, #fde047, #fdba74, #ff928f);
@@ -1645,3 +1655,41 @@ a.wk-shot-frame:focus-visible { outline-color: var(--tool, var(--accent)); }
    die Trennpunkte der Fußzeile (60 % Deckkraft) auf 3,06 */
 :root[data-vision="invert"] .tool-dunkle-materie .tool-meta { color: #948DBD; }
 :root[data-vision="invert"] .sep { opacity: 1; }
+
+/* ── Werkstatt-Mods: Kachel (index.html) und Seite mods.html ─────────────────
+   Pflaume als Kachelfarbe, hell gedaempft, dunkel aufgehellt (--mods oben je
+   Themenblock). Die Seite zeigt fuenf aufklappbare <details>, je Mod ein Bild,
+   die Installationszeile und ein Prompt mit Kopierknopf (js/mods.js). */
+.tool-mods { --tool: var(--mods); }
+.mods-bar { background: linear-gradient(90deg, var(--mods), var(--accent)); }
+.mods { max-width: 920px; margin: 0 auto; padding: 0 8px 40px; }
+.mods h2 { display: flex; align-items: center; gap: 12px; }
+.mods-icon { width: 34px; height: 34px; border-radius: 8px; }
+.mods-intro, .mods-how p, .mods-all p { color: var(--text-soft); line-height: 1.6; }
+.mods-how, .mods-all { margin: 22px 0; }
+.mods-how h3, .mods-all h3 { margin: 0 0 6px; color: var(--text); font-size: 1.05rem; }
+.mods-hint { font-size: 0.92rem; }
+.mods-list { display: grid; gap: 12px; margin: 22px 0; }
+details.mod { background: var(--panel); border: 1px solid var(--border); border-top: 3px solid var(--mods); border-radius: 8px; }
+details.mod summary { display: flex; align-items: center; gap: 12px; padding: 14px 18px; cursor: pointer; list-style: none; font-weight: 600; color: var(--text); }
+details.mod summary::-webkit-details-marker { display: none; }
+details.mod summary:hover { color: var(--mods); }
+.mod-cmd { margin-left: auto; font-size: 0.85rem; font-weight: 400; color: var(--text-soft); }
+.mod-chevron { color: var(--text-soft); transition: transform 0.2s; }
+details.mod[open] .mod-chevron { transform: rotate(180deg); }
+.mod-body { padding: 0 18px 18px; color: var(--text-soft); line-height: 1.6; }
+.mod-body > p { margin: 0 0 12px; }
+.mod-shot { margin: 0 0 14px; }
+.mod-shot img { display: block; width: 100%; height: auto; border-radius: 6px; border: 1px solid var(--border); }
+.mod-settings strong { color: var(--text); font-weight: 600; }
+.mod-code { position: relative; margin: 14px 0; }
+.mod-label { margin: 0 0 6px; font-size: 0.9rem; color: var(--text); }
+.mod-line, .mod-prompt { margin: 0; padding: 12px 14px 44px; background: var(--bg); border: 1px solid var(--border); border-radius: 6px; font-size: 0.86rem; line-height: 1.55; white-space: pre-wrap; word-break: break-word; color: var(--text); }
+.mod-line code, .mod-prompt code { font-family: ui-monospace, Consolas, "Cascadia Mono", monospace; }
+.mod-prompt code { font-family: inherit; }
+.copy-btn { position: absolute; right: 8px; bottom: 8px; padding: 6px 12px; border-radius: 6px; border: 1px solid var(--mods); background: transparent; color: var(--mods); font: inherit; font-size: 0.85rem; font-weight: 600; cursor: pointer; }
+.copy-btn:hover, .copy-btn:focus-visible, .copy-btn.is-copied { background: var(--mods); color: #fff; }
+.mod-source { margin: 0; font-size: 0.92rem; }
+.mod-source a { color: var(--accent); font-weight: 500; text-decoration: none; }
+.mod-source a:hover { text-decoration: underline; }
+@media (prefers-reduced-motion: reduce) { .mod-chevron { transition: none; } }

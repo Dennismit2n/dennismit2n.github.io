@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" data-title-key="modsPageTitle">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Werkstatt-Mods · Dennis_mit_2n</title>
+  <meta name="description" content="Five mods for Claude Code by Dennis_mit_2n: statistics pane, limits band, guard, limit pause and agents pane, each installed with one line. / Fünf Mods für Claude Code, jeder mit einer Zeile installiert.">
+  <link rel="canonical" href="https://dennismit2n.github.io/mods.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Dennis_mit_2n">
+  <meta property="og:title" content="Werkstatt-Mods · Dennis_mit_2n">
+  <meta property="og:description" content="Five mods for Claude Code: statistics pane, limits band, guard, limit pause and agents pane, each installed with one line.">
+  <meta property="og:url" content="https://dennismit2n.github.io/mods.html">
+  <meta property="og:image" content="https://dennismit2n.github.io/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Dennis_mit_2n: kleine Werkzeuge, die nichts von dir wollen / Small tools that want nothing from you. Ohne Anmeldung, keine Anzeigen, kostenlos außer fontART.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#524AAB">
+  <link rel="icon" href="./icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="./icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+  <!-- ?v=<datum> wie in index.html, werkstatt.html und gaming.html: bei jedem Deploy,
+       der CSS oder JS ändert, in ALLEN Seiten hochsetzen. -->
+  <link rel="preload" href="./assets/fonts/fraunces/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./css/style.css?v=2026-11-01m">
+  <script>(function(){var v=null,r=document.documentElement,m=window.matchMedia,t=null,s=null;try{v=localStorage.getItem('werkstatt.darstellung')||localStorage.getItem('dennismit2n-home.theme');}catch(e){}var d=!!(m&&m('(prefers-color-scheme: dark)').matches),k=!!(m&&m('(prefers-contrast: more)').matches);if(v==='light'||v==='dark'){t=v;}else if(v==='hc-dark'||v==='hc-light'){t=v.slice(3);s='contrast';}else if(v==='cvd-dark'||v==='cvd-light'){t=v.slice(4);s='cvd';}else if(v==='invert'){s='invert';}else if(v&&/dark/.test(v)){t='dark';}else if(v&&/light/.test(v)){t='light';}else if(k){t=d?'dark':'light';s='contrast';}if(t){r.setAttribute('data-theme',t);}if(s){r.setAttribute('data-vision',s);}})();</script>
+  <!-- Dasselbe Kopf-Skript wie in index.html (.i18n-wartet), samt eigener Kopie
+       der Sprachcodes: die Liste muss zu I18N in i18n.js passen. -->
+  <script>(function(){var c=' de en es fr it nl pl pt tr ru hi zh ja ko ',l='';try{l=localStorage.getItem('dennismit2n-home.lang')||'';}catch(e){}if(!l||c.indexOf(' '+l+' ')<0){l='en';var n=navigator.languages||[navigator.language||'en'];for(var i=0;i<n.length;i++){var k=String(n[i]).toLowerCase().split('-')[0];if(k&&c.indexOf(' '+k+' ')>=0){l=k;break;}}}if(l!=='en'){var h=document.documentElement,f=function(){h.classList.remove('i18n-wartet');};h.classList.add('i18n-wartet');addEventListener('load',f);setTimeout(f,3000);}})();</script>
+  <script data-goatcounter="https://dennis-mit-2n.goatcounter.com/count" async src="./js/vendor/count.js"></script>
+</head>
+<body>
+<div class="aurora" aria-hidden="true"><span class="au-1"></span><span class="au-2"></span><span class="au-3"></span></div>
+<div class="page">
+  <header class="site-header">
+    <a class="brand" href="./">
+      <svg class="brand-icon" viewBox="0 0 48 48" aria-hidden="true">
+        <rect x="2" y="2" width="44" height="44" rx="11" fill="#524AAB"/>
+        <path d="M16 21v-3a8 8 0 0 1 16 0v3" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"/>
+        <rect x="8" y="21" width="32" height="15" rx="3" fill="none" stroke="#fff" stroke-width="3"/>
+        <path d="M9.5 28h29" stroke="#fff" stroke-width="2.6"/>
+        <rect x="21" y="25.5" width="6" height="5" rx="1.4" fill="#fff"/>
+      </svg>
+      <span class="brand-name">Dennis_mit_2n</span>
+    </a>
+    <div class="header-controls">
+      <label class="lang-wrap">
+        <span class="visually-hidden" data-i18n="themeLabel">Appearance</span>
+        <select id="themeSelect" data-i18n-aria="themeLabel" autocomplete="off"></select>
+      </label>
+      <label class="lang-wrap">
+        <span class="visually-hidden" data-i18n="langLabel">Language</span>
+        <select id="langSelect" data-i18n-aria="langLabel" autocomplete="off"></select>
+      </label>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Werkstatt-Mods</h1>
+      <p class="hero-sub" data-i18n="modsSub">Small extensions for Claude Code, built for my workshop. Each one installs with a single line, in German or English.</p>
+      <p class="hero-back"><a href="./" data-i18n="backHome">Back to the start page</a></p>
+      <div class="family-bar mods-bar" aria-hidden="true"></div>
+    </section>
+
+    <section class="mods" aria-labelledby="modsHeading">
+      <h2 id="modsHeading"><img class="mods-icon" src="./assets/mods.svg" alt="" width="34" height="34"> <span data-i18n="modsHeading">The five mods</span></h2>
+      <p class="mods-intro" data-i18n="modsIntro">A mod is a plugin with a piece of code that Claude Code calls when things happen: a pane beside the chat, a band above the prompt, a rule before a tool call. Mods are early access, you need Claude Code 2.1.287 or newer; I tested with the desktop app on Windows 11. All five run on your machine and send nothing anywhere.</p>
+
+      <div class="mods-how">
+        <h3 data-i18n="modsHowTitle">How a mod gets to you</h3>
+        <p data-i18n="modsHowText">Open a mod and look at the picture. Then either copy the install line and type it at the Claude Code prompt, or copy the prompt and let Claude do the install. The first time, Claude Code asks whether it may add the marketplace (y), then for the settings, such as the language. From then on the mod runs in every session.</p>
+        <p class="mods-hint" data-i18n="modsDesktopHint">In the desktop app /plugin does not run: there, use + next to the prompt box, then Plugins, add the marketplace Dennismit2n/werkstatt-mods, then add the mod.</p>
+      </div>
+
+      <!-- Je Mod ein <details>: Bild (assets/mods/<name>.png, verschwindet, solange die
+           Datei fehlt), Beschreibung, Einstellungen, Installationszeile und Prompt.
+           data-mod und data-commands liest js/mods.js fuer den Prompt. -->
+      <div class="mods-list">
+        <details class="mod" id="statistik" data-mod="statistik" data-commands="/statistik">
+          <summary>
+            <span class="mod-name">statistik</span>
+            <code class="mod-cmd">/statistik</code>
+            <span class="mod-chevron" aria-hidden="true">▾</span>
+          </summary>
+          <div class="mod-body">
+            <figure class="mod-shot">
+              <img src="./assets/mods/statistik.png" alt="Screenshot of the statistics pane in the Claude Code desktop app" data-i18n-alt="modStatistikAlt" loading="lazy" onerror="this.closest('figure').hidden=true">
+            </figure>
+            <p data-i18n="modStatistikDesc">A pane beside the chat: sessions, messages, tokens, active days, peak hour and model, plus a calendar of the last 26 weeks. Below that the limits (5 h, week, week per model, extra usage, context) and a counter for the current five-hour block. The numbers come from your own transcript files under ~/.claude, recomputed every minute.</p>
+            <p class="mod-settings"><strong data-i18n="modsSettingsLabel">Settings</strong>: <span data-i18n="modStatistikSettings">language: de or en · autoOpen: open the pane at the start of every session</span></p>
+            <div class="mod-code">
+              <p class="mod-label" data-i18n="modsInstallLabel">Install line for the Claude Code prompt</p>
+              <pre class="mod-line"><code>/plugin install statistik --marketplace Dennismit2n/werkstatt-mods</code></pre>
+              <button type="button" class="copy-btn" data-copy="zeile"><span data-i18n="modsCopy">Copy</span></button>
+            </div>
+            <div class="mod-code">
+              <p class="mod-label" data-i18n="modsPromptLabel">Prompt to paste into Claude Code, Claude does the rest</p>
+              <pre class="mod-prompt"><code data-prompt></code></pre>
+              <button type="button" class="copy-btn" data-copy="prompt"><span data-i18n="modsCopy">Copy</span></button>
+            </div>
+            <p class="mod-source"><a href="https://github.com/Dennismit2n/werkstatt-mods/tree/main/statistik" rel="noopener" data-count="mods-quelle-statistik" data-i18n="modsSource">Source and README on GitHub</a></p>
+          </div>
+        </details>
+
+        <details class="mod" id="werkstatt-band" data-mod="werkstatt-band" data-commands="/limits">
+          <summary>
+            <span class="mod-name">werkstatt-band</span>
+            <code class="mod-cmd">/limits</code>
+            <span class="mod-chevron" aria-hidden="true">▾</span>
+          </summary>
+          <div class="mod-body">
+            <figure class="mod-shot">
+              <img src="./assets/mods/werkstatt-band.png" alt="Screenshot of the limits band above the Claude Code prompt" data-i18n-alt="modBandAlt" loading="lazy" onerror="this.closest('figure').hidden=true">
+            </figure>
+            <p data-i18n="modBandDesc">One line above the prompt: 5 h, week, week per model, extra usage and context with bars and time until reset, with buttons for the two panes on the right. For your own repos also a reminder to update your site’s news file, and a text check that reports straight apostrophes and dashes.</p>
+            <p class="mod-settings"><strong data-i18n="modsSettingsLabel">Settings</strong>: <span data-i18n="modBandSettings">language · reposRoot: path fragment of your repos · newsFile: path ending of the news file · toolRepos: repo folders as folder=Name · textCheck: text check on or off</span></p>
+            <div class="mod-code">
+              <p class="mod-label" data-i18n="modsInstallLabel">Install line for the Claude Code prompt</p>
+              <pre class="mod-line"><code>/plugin install werkstatt-band --marketplace Dennismit2n/werkstatt-mods</code></pre>
+              <button type="button" class="copy-btn" data-copy="zeile"><span data-i18n="modsCopy">Copy</span></button>
+            </div>
+            <div class="mod-code">
+              <p class="mod-label" data-i18n="modsPromptLabel">Prompt to paste into Claude Code, Claude does the rest</p>
+              <pre class="mod-prompt"><code data-prompt></code></pre>
+              <button type="button" class="copy-btn" data-copy="prompt"><span data-i18n="modsCopy">Copy</span></button>
+            </div>
+            <p class="mod-source"><a href="https://github.com/Dennismit2n/werkstatt-mods/tree/main/werkstatt-band" rel="noopener" data-count="mods-quelle-werkstatt-band" data-i18n="modsSource">Source and README on GitHub</a></p>
+          </div>
+        </details>
+
+        <details class="mod" id="waechter" data-mod="waechter" data-commands="/agentenbremse">
+          <summary>
+            <span class="mod-name">waechter</span>
+            <code class="mod-cmd">/agentenbremse</code>
+            <span class="mod-chevron" aria-hidden="true">▾</span>
+          </summary>
+          <div class="mod-body">
+            <figure class="mod-shot">
+              <img src="./assets/mods/waechter.png" alt="Screenshot of a guard message in Claude Code" data-i18n-alt="modWaechterAlt" loading="lazy" onerror="this.closest('figure').hidden=true">
+            </figure>
+            <p data-i18n="modWaechterDesc">Three rules that apply to Claude itself as well: no Write may overwrite a protected file and no shell command may delete it, command lines over 7,500 characters are stopped (Windows silently cuts at 8,000), and at most two heavy subagents run at once. Every refusal says what to do instead.</p>
+            <p class="mod-settings"><strong data-i18n="modsSettingsLabel">Settings</strong>: <span data-i18n="modWaechterSettings">language · protectedFile: path ending of the protected file · maxCommand: longest command line · heavyMax and allMax: agents at once · lightAgents: light types</span></p>
+            <div class="mod-code">
+              <p class="mod-label" data-i18n="modsInstallLabel">Install line for the Claude Code prompt</p>
+              <pre class="mod-line"><code>/plugin install waechter --marketplace Dennismit2n/werkstatt-mods</code></pre>
+              <button type="button" class="copy-btn" data-copy="zeile"><span data-i18n="modsCopy">Copy</span></button>
+            </div>
+            <div class="mod-code">
+              <p class="mod-label" data-i18n="modsPromptLabel">Prompt to paste into Claude Code, Claude does the rest</p>
+              <pre class="mod-prompt"><code data-prompt></code></pre>
+              <button type="button" class="copy-btn" data-copy="prompt"><span data-i18n="modsCopy">Copy</span></button>
+            </div>
+            <p class="mod-source"><a href="https://github.com/Dennismit2n/werkstatt-mods/tree/main/waechter" rel="noopener" data-count="mods-quelle-waechter" data-i18n="modsSource">Source and README on GitHub</a></p>
+          </div>
+        </details>
+
+        <details class="mod" id="limitpause" data-mod="limitpause" data-commands="/limitpause, /limitpause off, /limitpause on">
+          <summary>
+            <span class="mod-name">limitpause</span>
+            <code class="mod-cmd">/limitpause</code>
+            <span class="mod-chevron" aria-hidden="true">▾</span>
+          </summary>
+          <div class="mod-body">
+            <figure class="mod-shot">
+              <img src="./assets/mods/limitpause.png" alt="Screenshot of the limit pause in Claude Code" data-i18n-alt="modLimitpauseAlt" loading="lazy" onerror="this.closest('figure').hidden=true">
+            </figure>
+            <p data-i18n="modLimitpauseDesc">Before every model request the mod checks the limits. If one would reach the threshold, the request waits right where it is until a minute after the reset and then carries on as if nothing had happened. No task ends with “limit reached” any more. /limitpause shows the state, “off” lifts the pause.</p>
+            <p class="mod-settings"><strong data-i18n="modsSettingsLabel">Settings</strong>: <span data-i18n="modLimitpauseSettings">language · limitPercent: threshold in percent, default 99.89</span></p>
+            <div class="mod-code">
+              <p class="mod-label" data-i18n="modsInstallLabel">Install line for the Claude Code prompt</p>
+              <pre class="mod-line"><code>/plugin install limitpause --marketplace Dennismit2n/werkstatt-mods</code></pre>
+              <button type="button" class="copy-btn" data-copy="zeile"><span data-i18n="modsCopy">Copy</span></button>
+            </div>
+            <div class="mod-code">
+              <p class="mod-label" data-i18n="modsPromptLabel">Prompt to paste into Claude Code, Claude does the rest</p>
+              <pre class="mod-prompt"><code data-prompt></code></pre>
+              <button type="button" class="copy-btn" data-copy="prompt"><span data-i18n="modsCopy">Copy</span></button>
+            </div>
+            <p class="mod-source"><a href="https://github.com/Dennismit2n/werkstatt-mods/tree/main/limitpause" rel="noopener" data-count="mods-quelle-limitpause" data-i18n="modsSource">Source and README on GitHub</a></p>
+          </div>
+        </details>
+
+        <details class="mod" id="flugdeck" data-mod="flugdeck" data-commands="/agenten">
+          <summary>
+            <span class="mod-name">flugdeck</span>
+            <code class="mod-cmd">/agenten</code>
+            <span class="mod-chevron" aria-hidden="true">▾</span>
+          </summary>
+          <div class="mod-body">
+            <figure class="mod-shot">
+              <img src="./assets/mods/flugdeck.png" alt="Screenshot of the agents pane in the Claude Code desktop app" data-i18n-alt="modFlugdeckAlt" loading="lazy" onerror="this.closest('figure').hidden=true">
+            </figure>
+            <p data-i18n="modFlugdeckDesc">An “Agents” pane: every subagent with state, description, running time, bar and last tool; a click shows model, tools, requests and tokens and opens the transcript. Below that the other sessions of the desktop app, the working ones first. The pane opens by itself when the first subagent of a session starts.</p>
+            <p class="mod-settings"><strong data-i18n="modsSettingsLabel">Settings</strong>: <span data-i18n="modFlugdeckSettings">language · autoOpen: open at the first subagent · showSessions: show the app’s sessions</span></p>
+            <div class="mod-code">
+              <p class="mod-label" data-i18n="modsInstallLabel">Install line for the Claude Code prompt</p>
+              <pre class="mod-line"><code>/plugin install flugdeck --marketplace Dennismit2n/werkstatt-mods</code></pre>
+              <button type="button" class="copy-btn" data-copy="zeile"><span data-i18n="modsCopy">Copy</span></button>
+            </div>
+            <div class="mod-code">
+              <p class="mod-label" data-i18n="modsPromptLabel">Prompt to paste into Claude Code, Claude does the rest</p>
+              <pre class="mod-prompt"><code data-prompt></code></pre>
+              <button type="button" class="copy-btn" data-copy="prompt"><span data-i18n="modsCopy">Copy</span></button>
+            </div>
+            <p class="mod-source"><a href="https://github.com/Dennismit2n/werkstatt-mods/tree/main/flugdeck" rel="noopener" data-count="mods-quelle-flugdeck" data-i18n="modsSource">Source and README on GitHub</a></p>
+          </div>
+        </details>
+      </div>
+
+      <div class="mods-all">
+        <h3 data-i18n="modsAllTitle">All five at once</h3>
+        <p data-i18n="modsAllText">Five lines, one after the other at the Claude Code prompt. The buttons “Statistics” and “Agents” in the band then open the two panes.</p>
+        <div class="mod-code">
+          <pre class="mod-line"><code>/plugin install statistik --marketplace Dennismit2n/werkstatt-mods
+/plugin install werkstatt-band --marketplace Dennismit2n/werkstatt-mods
+/plugin install waechter --marketplace Dennismit2n/werkstatt-mods
+/plugin install limitpause --marketplace Dennismit2n/werkstatt-mods
+/plugin install flugdeck --marketplace Dennismit2n/werkstatt-mods</code></pre>
+          <button type="button" class="copy-btn" data-copy="alle"><span data-i18n="modsCopy">Copy</span></button>
+        </div>
+        <p class="mod-source"><a href="https://github.com/Dennismit2n/werkstatt-mods" rel="noopener" data-count="mods-repo" data-i18n="modsSource">Source and README on GitHub</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a href="https://github.com/Dennismit2n" rel="noopener">
+      <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.42 7.42 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z" fill="currentColor"/></svg>
+      <span data-i18n="footerSource">Open source on GitHub</span>
+    </a>
+    <span class="sep" aria-hidden="true">·</span>
+    <a href="./werkstatt.html" data-count="werkstatt-gesamt" data-i18n="werkstattHeading">News &amp; guides</a>
+    <span class="sep" aria-hidden="true">·</span>
+    <span data-i18n="footerTranslate">Some translations are machine-made, and I’m happy to take corrections.</span>
+    <span class="sep" aria-hidden="true">·</span>
+    <span data-i18n="footerAnalytics">Anonymous visit counting (GoatCounter, no cookies, never what you enter).</span>
+    <span class="sep" aria-hidden="true">·</span>
+    <span class="footer-copyright">© 2026 Dennis_mit_2n</span>
+  </footer>
+</div>
+
+<!-- Wie in gaming.html: i18n.js und header.js, dazu mods.js fuer Prompts und Kopierknoepfe. -->
+<script src="./js/i18n.js?v=2026-11-01m" fetchpriority="high"></script>
+<script src="./js/header.js?v=2026-10-31" fetchpriority="high"></script>
+<script src="./js/mods.js?v=2026-11-01" fetchpriority="high"></script>
+</body>
+</html>

@@ -37,7 +37,7 @@
   <!-- Die Überschriftenschrift wird auf jeder Seite und in jeder Sprache gebraucht
        (mindestens für den Markennamen), also früh anstoßen statt erst nach der CSS. -->
   <link rel="preload" href="./assets/fonts/fraunces/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="./css/style.css?v=2026-10-31e">
+  <link rel="stylesheet" href="./css/style.css?v=2026-11-01m">
   <!-- Darstellung vor dem ersten Bild: die gemeinsame Wahl aller Werkzeuge
        (werkstatt.darstellung, sonst der alte Schlüssel), sonst entscheidet das
        System per CSS. data-vision trägt Hoher Kontrast, Farbenblind und Umkehr;
@@ -286,6 +286,20 @@
             <a href="./werkstatt.html#zaehlwerk-bilder" data-count="werkstatt-zaehlwerk-bilder" data-i18n="secShots">Screenshots</a>
           </span>
         </div>
+        <!-- Fuenf Mods fuer Claude Code, seit dem 01.11.2026 im Repo Dennismit2n/werkstatt-mods.
+             Wie Gaming eine Sammlung mit eigener Seite (mods.html): keine Mini-Kacheln,
+             die Seite selbst zeigt Bilder, Installationszeilen und Prompts. Steht hinter
+             Zaehlwerk, weil beide fuer Claude-Code-Nutzer sind. -->
+        <div class="tool-card tool-mods">
+          <span class="tool-head">
+            <img src="./assets/mods.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-mods">Werkstatt-Mods</span>
+            <span class="tool-art" data-i18n="artMods">Mods</span>
+          </span>
+          <span class="tool-desc" data-i18n="modsDesc">Five mods for Claude Code: statistics pane, limits band, guard, limit pause and agents pane. Have a look, install with one line.</span>
+          <span class="tool-meta" data-i18n="modsMeta">For Claude Code users · its own page · German and English · open source (MIT)</span>
+          <a class="tool-open" id="open-mods" aria-labelledby="open-mods name-mods" href="./mods.html"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
         <div class="tool-card tool-ticker">
           <span class="tool-head">
             <img src="./assets/besucher-ticker.svg" alt="" width="44" height="44">
@@ -425,7 +439,7 @@
      Als eigenes Skript-Tag hielt es das Übersetzen noch eine halbe Sekunde
      auf; main.js holt es deshalb erst danach. data-news trägt die Adresse
      samt ?v=-Stempel. -->
-<script src="./js/i18n.js?v=2026-11-01b" fetchpriority="high"></script>
+<script src="./js/i18n.js?v=2026-11-01m" fetchpriority="high"></script>
 <script src="./js/dates.js?v=2026-09-14" fetchpriority="high"></script>
 <script src="./js/header.js?v=2026-10-31" fetchpriority="high"></script>
 <script src="./js/main.js?v=2026-09-24" fetchpriority="high" data-news="./js/news.js?v=2026-11-01l"></script>
