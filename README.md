@@ -9,6 +9,7 @@ Startseite für die kleinen Werkzeuge von Dennis_mit_2n — ohne Anmeldung, kein
 ## Tools
 
 - [create-masterprompt](https://github.com/Dennismit2n/create-masterprompt) — turns a vague project idea into a context package a fresh AI chat can run from (a skill, not a program)
+- [Werkstatt-Mods](https://dennismit2n.github.io/mods.html) — five mods for Claude Code (statistics pane, limits band, guard, limit pause, agents pane), each installed with one line; its own page with screenshots, install lines and prompts (see below)
 - [Real_RAM_cooler](https://github.com/Dennismit2n/Real_RAM_cooler) — an honest RAM tool for Windows (download, not a browser tool)
 - [fontART Designer](https://dennismit2n.github.io/fontART-demo/) — turn your handwriting into a real font (trial version: in the browser, or as a Windows download)
 - [Prismatical](https://dennismit2n.github.io/prismatical/) — passwords and passphrases whose strength is the colour of the interface
@@ -18,7 +19,6 @@ Startseite für die kleinen Werkzeuge von Dennis_mit_2n — ohne Anmeldung, kein
 - [Heizwarte](https://dennismit2n.github.io/heizwarte/) — weather with a heating traffic light: when to turn up slow heating (14 languages)
 - [Pocketsum](https://dennismit2n.github.io/pocketsum/) — five small calculators in one file: VAT, tips, fuel prices, dividends and trading costs, offline after the first visit
 - [Zählwerk](https://dennismit2n.github.io/zaehlwerk/) — where your Claude Code usage goes, by day, model and project
-- [Werkstatt-Mods](https://dennismit2n.github.io/mods.html) — five mods for Claude Code (statistics pane, limits band, guard, limit pause, agents pane), each installed with one line; its own page with screenshots, install lines and prompts (see below)
 - [Besucher-Ticker](https://github.com/Dennismit2n/besucher-ticker) — your GoatCounter visitor numbers floating on the Windows desktop (download, not a browser tool)
 - [Collective-Calc](https://dennismit2n.github.io/collective-calc/) — split group expenses, no account, shareable as a link
 - [Dreh das Rad](https://dennismit2n.github.io/dreh-das-rad/) — a decision wheel: options in, fate decides
@@ -32,7 +32,7 @@ Same order as the tiles on the page — hand-picked by Dennis, last reordered on
 
 ## Werkstatt-Mods page
 
-Since 1 November 2026 the five mods for Claude Code (repository [werkstatt-mods](https://github.com/Dennismit2n/werkstatt-mods), MIT) have their own page, `mods.html`, reached from the tile “Werkstatt-Mods” right after Zählwerk, because both are for Claude Code users. Like Gaming it is a collection, so the tile has no mini tiles. The page explains what a mod is, then shows each mod as a collapsible entry: a screenshot (`assets/mods/<name>.png`, hidden while the file is missing), what it does, its settings, the install line for the Claude Code prompt and a prompt in the page's language that lets Claude do the install (`js/mods.js` fills the placeholders and runs the copy buttons; every copy counts as a GoatCounter event `mods-kopiert-…`). The mods themselves speak German and English; the page offers all fourteen languages and hands a visitor in any other language the English mod.
+Since 1 November 2026 the five mods for Claude Code (repository [werkstatt-mods](https://github.com/Dennismit2n/werkstatt-mods), MIT) have their own page, `mods.html`, reached from the tile “Werkstatt-Mods” in second place, right after create-masterprompt (Dennis’ choice, 1 November 2026). Like Gaming it is a collection, so the tile has no mini tiles. The page explains what a mod is, then shows each mod as a collapsible entry: a screenshot (`assets/mods/<name>.png`, hidden while the file is missing), what it does, its settings, the install line for the Claude Code prompt and a prompt in the page's language that lets Claude do the install (`js/mods.js` fills the placeholders and runs the copy buttons; every copy counts as a GoatCounter event `mods-kopiert-…`). The mods themselves speak German and English; the page offers all fourteen languages and hands a visitor in any other language the English mod.
 
 ## Gaming page
 
