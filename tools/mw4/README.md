@@ -11,6 +11,7 @@ Inhalt: alle 33 Waffen aus Call of Duty: Modern Warfare 4 mit deutschen und engl
 | `build_data.py` | **Alle Werte.** Hier wird nach einem Patch gepflegt |
 | `head.html` | Styles der Oberfläche |
 | `body.html` | Markup und App-Logik |
+| `i18n.js` | Oberflächentexte in den 14 Sprachen der Startseite (seit 01.11.2026). `build.py` setzt die Datei an die Stelle von `<!--__I18N__-->` in `body.html`. Bedienung in jeder Sprache, die Handbuch-Texte aus `build_data.py` bleiben Deutsch und tragen in fremder Oberfläche `lang="de"`. Namen von Waffen, Apex, Extras, Ausrüstung und Abschussserien zeigt nur Deutsch auf Deutsch, alle anderen Sprachen englisch. Die Sprache teilt sich die App mit der Startseite (`dennismit2n-home.lang`), umstellen geht unter **Intel**. Neue Texte in den Daten, die als Bedienung wirken (Build-Titel, Rollen, Feuerart …), brauchen einen Eintrag in den Listen am Ende jedes Sprachblocks. |
 | `sw.template.js` | Vorlage für den Service Worker |
 | `fonts/` | Schriften (Barlow, Barlow Condensed, Share Tech Mono; SIL OFL, Lizenztexte daneben). `build.py` kopiert sie nach `mw4/fonts/`, der Worker lädt die lateinischen beim Installieren vorab. Kein Google Fonts mehr. |
 | `build.py` | Baut alles nach `mw4/` |

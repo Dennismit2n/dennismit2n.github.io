@@ -377,6 +377,11 @@ button.slotcard:hover{border-color:var(--lime)}
   .bar-row,.axis{grid-template-columns:62px minmax(0,1fr) 60px}
   .lvlmini{margin-left:0}
 }
+/* Schmale Handys: S, A und B/C der Tierliste untereinander. Drei Spalten ließen bei 320 und 360 px für einen
+   langen Namen wie „Kriegsherr“ zu wenig Platz, der Chip ragte über den Rand (Altbefund, behoben 01.11.2026). */
+@media (max-width:399px){
+  .tier-row{grid-template-columns:minmax(0,1fr)}
+}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
 
 /* ===== Sehhilfen der Werkstatt (31.10.2026) =====

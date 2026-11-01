@@ -7,7 +7,8 @@ Aufruf (aus dem Repo-Stamm):
 
 Ablauf:
   1. build_data.py schreibt mw4/daten/waffen.json
-  2. head.html + body.html werden zu mw4/index.html (data-pwa="1", Build-Stempel im <meta>)
+  2. head.html + body.html werden zu mw4/index.html (data-pwa="1", Build-Stempel im <meta>);
+     i18n.js (Oberflächentexte in 14 Sprachen) kommt an die Stelle von <!--__I18N__--> in body.html
   3. sw.template.js wird zu mw4/sw.js (VERSION = Build-Stempel)
   4. Manifest, Icons und version.json {build, page, daten}
   5. Schriften aus tools/mw4/fonts/ nach mw4/fonts/ (SIL OFL, Lizenztexte daneben; seit 30.10.2026
@@ -138,6 +139,9 @@ manifest_bytes = json.dumps(manifest, ensure_ascii=False, indent=1).encode("utf-
 # 4 – Seite
 head = (HERE / "head.html").read_text(encoding="utf-8")
 body = (HERE / "body.html").read_text(encoding="utf-8")
+# Oberflächentexte in 14 Sprachen (seit 01.11.2026): i18n.js steht als eigenes Skript vor dem App-Skript
+assert body.count("<!--__I18N__-->") == 1, "Platzhalter <!--__I18N__--> fehlt in body.html"
+body = body.replace("<!--__I18N__-->", "<script>\n" + (HERE / "i18n.js").read_text(encoding="utf-8") + "</script>", 1)
 pwa_head = f"""<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex">
