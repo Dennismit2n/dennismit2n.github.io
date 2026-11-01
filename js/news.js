@@ -1252,6 +1252,23 @@ var NEWS = {
 
   fontart: [
     {
+      date: '2026-11-01',
+      de: 'In der Browser-Fassung ist mit „Umgekehrte Farben“ jetzt auch im dunklen und im Neon-Stil jede Schrift gut lesbar. Nebenschrift, Akzentfarben, Pink und Rot (im Neon-Stil teils auch die normale Schrift) waren dort zu blass, sie werden jetzt nur so weit dunkler, wie es dafür braucht.',
+      en: 'With inverted colours, all text in the browser version is now easy to read in the dark and neon styles too. Secondary text, accent colours, pink and red (and in the neon style, sometimes the normal text) were too faint, and they now only get as much darker as they need to be.',
+      es: 'Con los colores invertidos, en la versión para navegador ahora todo el texto se lee bien también en los estilos oscuro y neón. El texto secundario, los colores de acento, el rosa y el rojo (y en el estilo neón a veces también el texto normal) eran demasiado pálidos y ahora solo se oscurecen lo necesario.',
+      fr: 'Avec les couleurs inversées, tout le texte de la version navigateur se lit maintenant bien, aussi dans les styles sombre et néon. Le texte secondaire, les couleurs d’accent, le rose et le rouge (et dans le style néon, parfois aussi le texte normal) étaient trop pâles et ne sont désormais assombris que juste ce qu’il faut.',
+      it: 'Con i colori invertiti, nella versione per browser ora tutto il testo si legge bene anche negli stili scuro e neon. Il testo secondario, i colori d’accento, il rosa e il rosso (e nello stile neon a volte anche il testo normale) erano troppo tenui e ora vengono scuriti solo quanto serve.',
+      nl: 'Met omgekeerde kleuren is in de browserversie nu ook in de donkere en de neonstijl alle tekst goed leesbaar. Secundaire tekst, accentkleuren, roze en rood (en in de neonstijl soms ook de gewone tekst) waren te flets en worden nu alleen zo veel donkerder als nodig.',
+      pl: 'Przy odwróconych kolorach cały tekst w wersji przeglądarkowej jest teraz czytelny także w ciemnej i neonowej odsłonie. Tekst pomocniczy, kolory akcentu, róż i czerwień (a w neonowej odsłonie czasem też zwykły tekst) były zbyt blade i teraz są przyciemniane tylko tyle, ile trzeba.',
+      pt: 'Com as cores invertidas, na versão para navegador agora todo o texto fica fácil de ler também nos estilos escuro e neon. O texto secundário, as cores de destaque, o rosa e o vermelho (e no estilo neon às vezes também o texto normal) estavam fracos demais e agora só escurecem o necessário.',
+      tr: 'Tarayıcı sürümünde ters renkler açıkken koyu ve neon stillerde de artık tüm yazılar rahatça okunuyor. İkincil yazılar, vurgu renkleri, pembe ve kırmızı (neon stilde yer yer normal yazılar da) fazla soluktu, artık yalnızca gerektiği kadar koyulaşıyor.',
+      ru: 'С инверсией цветов в браузерной версии теперь хорошо читается весь текст и в тёмном, и в неоновом стиле. Второстепенный текст, акцентные цвета, розовый и красный (а в неоновом стиле местами и обычный текст) были слишком бледными и теперь темнеют ровно настолько, насколько нужно.',
+      hi: 'उलटे रंगों के साथ ब्राउज़र वाले संस्करण में अब गहरे और नियॉन अंदाज़ में भी सारी लिखावट आसानी से पढ़ी जा सकती है। सहायक लिखावट, ज़ोर वाले रंग, गुलाबी और लाल (नियॉन अंदाज़ में कहीं-कहीं सामान्य लिखावट भी) बहुत फीके थे, अब उन्हें सिर्फ़ उतना ही गहरा किया जाता है जितना ज़रूरी है।',
+      zh: '在浏览器版本中开启反转颜色时，暗色和霓虹风格下的所有文字现在也都清晰易读。次要文字、强调色、粉色和红色（霓虹风格中有时还包括普通文字）原来太淡，现在只做了必要的调暗。',
+      ja: 'ブラウザー版で色反転を使うと、ダークとネオンのスタイルでもすべての文字が読みやすくなりました。補助テキスト、アクセントカラー、ピンク、赤（ネオンでは通常の文字の一部も）が薄すぎたため、必要な分だけ暗くしています。',
+      ko: '브라우저 버전에서 색상 반전을 켜면 이제 어두운 스타일과 네온 스타일에서도 모든 글자가 잘 읽힙니다. 보조 글자, 강조 색, 분홍, 빨강(네온 스타일에서는 일반 글자 일부도)이 너무 흐려서 필요한 만큼만 어둡게 바꿨습니다.'
+    },
+    {
       date: '2026-10-31',
       de: 'Auch im dunklen und im Neon-Stil ist jetzt jede Schrift gut lesbar. In den blauen und violetten Farbwelten waren Schrift, Akzentfarben und Pink teils zu blass, sie sind nur so weit heller geworden, wie es dafür braucht.',
       en: 'In the dark and neon styles, all text is now easy to read as well. In the blue and violet colour worlds, text, accent colours and pink were sometimes too faint, and they are now only as much lighter as they need to be.',
