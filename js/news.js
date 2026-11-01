@@ -20,6 +20,25 @@
 var NEWS = {
   ram: [
     {
+      date: '2026-11-01',
+      version: 'v1.3',
+      link: 'https://github.com/Dennismit2n/Real_RAM_cooler/releases/tag/v1.3',
+      de: 'Die App spricht jetzt 14 Sprachen statt zwei. Sie startet weiter in der Sprache von Windows, in den Einstellungen suchst du dir die Sprache jetzt aus einer Liste aus (gilt ab dem nächsten Start). Das Setup kann 12 davon, auf Chinesisch und Hindi zeigt es Englisch.',
+      en: 'The app now speaks 14 languages instead of two. It still starts in your Windows language, and in the settings you now pick the language from a list (it applies from the next start). The setup knows 12 of them and shows English in Chinese and Hindi.',
+      es: 'La aplicación ahora habla 14 idiomas en lugar de dos. Sigue arrancando en el idioma de Windows, y en los ajustes eliges ahora el idioma en una lista (se aplica desde el próximo inicio). El instalador conoce 12 de ellos, en chino e hindi aparece en inglés.',
+      fr: 'L’application parle désormais 14 langues au lieu de deux. Elle démarre toujours dans la langue de Windows, et dans les réglages vous choisissez maintenant la langue dans une liste (elle s’applique au prochain démarrage). L’installateur en connaît 12, en chinois et en hindi il s’affiche en anglais.',
+      it: 'L’app ora parla 14 lingue invece di due. Parte sempre nella lingua di Windows, e nelle impostazioni ora scegli la lingua da un elenco (vale dal prossimo avvio). Il programma di installazione ne conosce 12, in cinese e hindi compare in inglese.',
+      nl: 'De app spreekt nu 14 talen in plaats van twee. Hij start nog steeds in de taal van Windows, en in de instellingen kies je de taal nu uit een lijst (dat geldt vanaf de volgende start). De installatie kent er 12 van, in het Chinees en Hindi verschijnt hij in het Engels.',
+      pl: 'Aplikacja mówi teraz w 14 językach zamiast dwóch. Nadal startuje w języku Windows, a w ustawieniach wybierasz teraz język z listy (działa od następnego uruchomienia). Instalator zna 12 z nich, po chińsku i w hindi pokazuje się po angielsku.',
+      pt: 'O aplicativo agora fala 14 idiomas em vez de dois. Ele continua iniciando no idioma do Windows, e nas configurações você agora escolhe o idioma numa lista (vale a partir da próxima inicialização). O instalador conhece 12 deles e aparece em inglês para chinês e hindi.',
+      tr: 'Uygulama artık iki yerine 14 dil konuşuyor. Yine Windows’un dilinde açılıyor, ayarlarda ise dili artık bir listeden seçiyorsunuz (bir sonraki açılışta geçerli olur). Kurulum bunların 12’sini biliyor, Çince ve Hintçede İngilizce görünüyor.',
+      ru: 'Программа теперь говорит на 14 языках вместо двух. Она по-прежнему запускается на языке Windows, а в настройках язык теперь выбирается из списка (действует со следующего запуска). Установщик знает 12 из них, на китайском и хинди он показывается на английском.',
+      hi: 'ऐप अब दो की जगह 14 भाषाएँ बोलता है। यह अब भी Windows की भाषा में शुरू होता है, और सेटिंग्स में आप भाषा अब एक सूची से चुनते हैं (यह अगली बार शुरू करने से लागू होती है)। सेटअप इनमें से 12 भाषाएँ जानता है, चीनी और हिंदी में वह अंग्रेज़ी में दिखता है।',
+      zh: '应用现在支持 14 种语言，而不再只有两种。它仍然按 Windows 的语言启动，设置里的语言现在从列表中选择（下次启动时生效）。安装程序支持其中 12 种，中文和印地语下显示英文。',
+      ja: 'アプリが2言語ではなく14言語を話すようになりました。起動時は今までどおり Windows の言語に合わせ、設定では言語を一覧から選べるようになりました（次回の起動から有効）。セットアップはそのうち12言語に対応し、中国語とヒンディー語では英語で表示されます。',
+      ko: '이제 앱이 두 개가 아니라 14개 언어를 지원합니다. 여전히 Windows 언어로 시작하며, 설정에서는 이제 목록에서 언어를 고릅니다(다음 실행부터 적용). 설치 프로그램은 그중 12개 언어를 지원하고, 중국어와 힌디어에서는 영어로 나옵니다.'
+    },
+    {
       date: '2026-07-30',
       version: 'v1.2',
       link: 'https://github.com/Dennismit2n/Real_RAM_cooler/releases/tag/v1.2',
@@ -1051,6 +1070,25 @@ var NEWS = {
 
   zaehlwerk: [
     {
+      date: '2026-11-01',
+      version: 'Ticker v1.1',
+      link: 'https://github.com/Dennismit2n/zaehlwerk-ticker/releases/tag/v1.1',
+      de: 'Der Zählwerk Ticker spricht jetzt alle 14 Sprachen der Browser-Fassung statt nur Deutsch und Englisch. Er startet in der Sprache von Windows, per Rechtsklick aufs Symbol stellst du unter „Sprache“ um.',
+      en: 'Zählwerk Ticker now speaks all 14 languages of the browser version instead of just German and English. It starts in your Windows language, and you can switch it under “Language” by right-clicking the icon.',
+      es: 'Zählwerk Ticker ahora habla los 14 idiomas de la versión de navegador en lugar de solo alemán e inglés. Arranca en el idioma de Windows, y con clic derecho en el icono lo cambias en «Idioma».',
+      fr: 'Zählwerk Ticker parle désormais les 14 langues de la version navigateur au lieu de l’allemand et de l’anglais seulement. Il démarre dans la langue de Windows, et un clic droit sur l’icône permet d’en changer sous « Langue ».',
+      it: 'Zählwerk Ticker ora parla tutte le 14 lingue della versione per browser invece di solo tedesco e inglese. Parte nella lingua di Windows, e con un clic destro sull’icona la cambi alla voce «Lingua».',
+      nl: 'De Zählwerk Ticker spreekt nu alle 14 talen van de browserversie in plaats van alleen Duits en Engels. Hij start in de taal van Windows, met een rechtsklik op het pictogram zet je hem om onder ‘Taal’.',
+      pl: 'Zählwerk Ticker mówi teraz we wszystkich 14 językach wersji przeglądarkowej zamiast tylko po niemiecku i angielsku. Startuje w języku Windows, a prawym przyciskiem na ikonie zmienisz to pod „Język”.',
+      pt: 'O Zählwerk Ticker agora fala os 14 idiomas da versão para navegador em vez de só alemão e inglês. Ele inicia no idioma do Windows, e com o botão direito no ícone você troca em «Idioma».',
+      tr: 'Zählwerk Ticker artık yalnızca Almanca ve İngilizce yerine tarayıcı sürümünün 14 dilinin hepsini konuşuyor. Windows’un dilinde açılıyor, simgeye sağ tıklayıp “Dil” bölümünden değiştirebilirsiniz.',
+      ru: 'Zählwerk Ticker теперь говорит на всех 14 языках браузерной версии, а не только по-немецки и по-английски. Он запускается на языке Windows, а сменить язык можно правым щелчком по значку, в пункте «Язык».',
+      hi: 'Zählwerk Ticker अब सिर्फ़ जर्मन और अंग्रेज़ी की जगह ब्राउज़र वाले संस्करण की सभी 14 भाषाएँ बोलता है। यह Windows की भाषा में शुरू होता है, और चिह्न पर दायाँ क्लिक करके “भाषा” से आप इसे बदल सकते हैं।',
+      zh: 'Zählwerk Ticker 现在支持浏览器版的全部 14 种语言，不再只有德语和英语。它按 Windows 的语言启动，右键点击图标，在“语言”里就能切换。',
+      ja: 'Zählwerk Ticker が、ドイツ語と英語だけでなくブラウザー版と同じ14言語すべてを話すようになりました。起動時は Windows の言語に合わせ、アイコンを右クリックして「言語」から切り替えられます。',
+      ko: '이제 Zählwerk Ticker가 독일어와 영어만이 아니라 브라우저 버전의 14개 언어를 모두 지원합니다. Windows 언어로 시작하며, 아이콘을 오른쪽 클릭해 ‘언어’에서 바꿀 수 있습니다.'
+    },
+    {
       date: '2026-10-31',
       de: 'Der Titel im Browser-Tab folgt jetzt deiner Sprache. Vorher stand er immer auf Deutsch da.',
       en: 'The title in the browser tab now follows your language. Before, it was always in German.',
@@ -1172,6 +1210,25 @@ var NEWS = {
   ],
 
   ticker: [
+    {
+      date: '2026-11-01',
+      version: 'v1.1',
+      link: 'https://github.com/Dennismit2n/besucher-ticker/releases/tag/v1.1',
+      de: 'Der Ticker spricht jetzt 14 Sprachen statt nur Deutsch. Er startet in der Sprache von Windows, per Rechtsklick aufs Symbol stellst du unter „Sprache“ um. Große Zahlen bekommen die Tausendertrennung deiner Sprache.',
+      en: 'The ticker now speaks 14 languages instead of just German. It starts in your Windows language, and you can switch it under “Language” by right-clicking the icon. Large numbers use the thousands separator of your language.',
+      es: 'El ticker ahora habla 14 idiomas en lugar de solo alemán. Arranca en el idioma de Windows, y con clic derecho en el icono lo cambias en «Idioma». Los números grandes usan el separador de miles de tu idioma.',
+      fr: 'Le ticker parle désormais 14 langues au lieu du seul allemand. Il démarre dans la langue de Windows, et un clic droit sur l’icône permet d’en changer sous « Langue ». Les grands nombres utilisent le séparateur de milliers de votre langue.',
+      it: 'Il ticker ora parla 14 lingue invece del solo tedesco. Parte nella lingua di Windows, e con un clic destro sull’icona la cambi alla voce «Lingua». I numeri grandi usano il separatore delle migliaia della tua lingua.',
+      nl: 'De ticker spreekt nu 14 talen in plaats van alleen Duits. Hij start in de taal van Windows, met een rechtsklik op het pictogram zet je hem om onder ‘Taal’. Grote getallen krijgen het scheidingsteken voor duizendtallen van je taal.',
+      pl: 'Ticker mówi teraz w 14 językach zamiast tylko po niemiecku. Startuje w języku Windows, a prawym przyciskiem na ikonie zmienisz to pod „Język”. Duże liczby dostają separator tysięcy twojego języka.',
+      pt: 'O ticker agora fala 14 idiomas em vez de só alemão. Ele inicia no idioma do Windows, e com o botão direito no ícone você troca em «Idioma». Números grandes usam o separador de milhar do seu idioma.',
+      tr: 'Ticker artık yalnızca Almanca yerine 14 dil konuşuyor. Windows’un dilinde açılıyor, simgeye sağ tıklayıp “Dil” bölümünden değiştirebilirsiniz. Büyük sayılar dilinizin binlik ayırıcısını kullanıyor.',
+      ru: 'Тикер теперь говорит на 14 языках, а не только по-немецки. Он запускается на языке Windows, а сменить язык можно правым щелчком по значку, в пункте «Язык». Большие числа получают разделитель тысяч вашего языка.',
+      hi: 'टिकर अब सिर्फ़ जर्मन की जगह 14 भाषाएँ बोलता है। यह Windows की भाषा में शुरू होता है, और चिह्न पर दायाँ क्लिक करके “भाषा” से आप इसे बदल सकते हैं। बड़ी संख्याओं में आपकी भाषा वाला हज़ार का विभाजक लगता है।',
+      zh: '这个小窗口现在支持 14 种语言，不再只有德语。它按 Windows 的语言启动，右键点击图标，在“语言”里就能切换。大数字使用你所选语言的千位分隔符。',
+      ja: 'ティッカーがドイツ語だけでなく14言語を話すようになりました。起動時は Windows の言語に合わせ、アイコンを右クリックして「言語」から切り替えられます。大きな数字には、その言語の桁区切りが使われます。',
+      ko: '이제 티커가 독일어만이 아니라 14개 언어를 지원합니다. Windows 언어로 시작하며, 아이콘을 오른쪽 클릭해 ‘언어’에서 바꿀 수 있습니다. 큰 숫자에는 해당 언어의 천 단위 구분 기호가 쓰입니다.'
+    },
     {
       date: '2026-08-03',
       version: 'v1.0',
@@ -1534,6 +1591,25 @@ var NEWS = {
     }
   ],
   fadenkreuz: [
+    {
+      date: '2026-11-01',
+      version: 'v1.2.0',
+      link: 'https://github.com/Dennismit2n/fadenkreuz/releases/tag/v1.2.0',
+      de: 'Der Editor spricht jetzt 14 Sprachen statt zwei, oben in der Kopfleiste wählst du sie aus einer Liste. Er startet in der ersten Sprache deines Browsers, die er kennt. Das Setup kann 12 davon, auf Chinesisch und Hindi kommt es auf Englisch.',
+      en: 'The editor now speaks 14 languages instead of two, and you pick one from a list in the header. It starts in the first of your browser languages it knows. The setup knows 12 of them and shows English in Chinese and Hindi.',
+      es: 'El editor ahora habla 14 idiomas en lugar de dos, y arriba en la cabecera eliges uno de una lista. Arranca en el primer idioma de tu navegador que conoce. El instalador conoce 12 de ellos, en chino e hindi aparece en inglés.',
+      fr: 'L’éditeur parle désormais 14 langues au lieu de deux, et vous en choisissez une dans une liste en haut, dans l’en-tête. Il démarre dans la première langue de votre navigateur qu’il connaît. L’installateur en connaît 12, en chinois et en hindi il s’affiche en anglais.',
+      it: 'L’editor ora parla 14 lingue invece di due, e in alto nell’intestazione ne scegli una da un elenco. Parte nella prima lingua del tuo browser che conosce. Il programma di installazione ne conosce 12, in cinese e hindi compare in inglese.',
+      nl: 'De editor spreekt nu 14 talen in plaats van twee, bovenin de kopbalk kies je er een uit een lijst. Hij start in de eerste taal van je browser die hij kent. De installatie kent er 12 van, in het Chinees en Hindi verschijnt hij in het Engels.',
+      pl: 'Edytor mówi teraz w 14 językach zamiast dwóch, a u góry w nagłówku wybierasz język z listy. Startuje w pierwszym języku twojej przeglądarki, który zna. Instalator zna 12 z nich, po chińsku i w hindi pokazuje się po angielsku.',
+      pt: 'O editor agora fala 14 idiomas em vez de dois, e no cabeçalho, lá em cima, você escolhe um numa lista. Ele inicia no primeiro idioma do seu navegador que conhece. O instalador conhece 12 deles e aparece em inglês para chinês e hindi.',
+      tr: 'Düzenleyici artık iki yerine 14 dil konuşuyor, üstteki başlık çubuğunda dili bir listeden seçiyorsunuz. Tarayıcınızın dilleri arasından tanıdığı ilk dilde açılıyor. Kurulum bunların 12’sini biliyor, Çince ve Hintçede İngilizce görünüyor.',
+      ru: 'Редактор теперь говорит на 14 языках вместо двух, язык выбирается из списка в шапке. Он запускается на первом из языков вашего браузера, который знает. Установщик знает 12 из них, на китайском и хинди он показывается на английском.',
+      hi: 'एडिटर अब दो की जगह 14 भाषाएँ बोलता है, और ऊपर हेडर में आप एक सूची से भाषा चुनते हैं। यह आपके ब्राउज़र की भाषाओं में से पहली ऐसी भाषा में शुरू होता है जिसे वह जानता है। सेटअप इनमें से 12 भाषाएँ जानता है, चीनी और हिंदी में वह अंग्रेज़ी में दिखता है।',
+      zh: '编辑器现在支持 14 种语言，而不再只有两种，在顶部标题栏的列表里选择。它会用浏览器语言中它认识的第一种启动。安装程序支持其中 12 种，中文和印地语下显示英文。',
+      ja: 'エディターが2言語ではなく14言語を話すようになり、上部のヘッダーにある一覧から選べます。起動時は、ブラウザーの言語のうちエディターが知っている最初の言語になります。セットアップはそのうち12言語に対応し、中国語とヒンディー語では英語で表示されます。',
+      ko: '이제 에디터가 두 개가 아니라 14개 언어를 지원하며, 위쪽 머리글의 목록에서 고를 수 있습니다. 브라우저 언어 가운데 에디터가 아는 첫 번째 언어로 시작합니다. 설치 프로그램은 그중 12개 언어를 지원하고, 중국어와 힌디어에서는 영어로 나옵니다.'
+    },
     {
       date: '2026-10-26',
       version: 'v1.1.0',
