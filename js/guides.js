@@ -65,7 +65,7 @@ var GUIDES = {
           hi: 'Real_RAM_cooler की विंडो: एक पट्टी, जो मेमोरी को इस्तेमाल हो रहे, स्टैंडबाय और सचमुच खाली हिस्सों में बाँटती है, उसके नीचे गेमिंग के लिए मेमोरी साफ़ करने वाला बटन, एक प्लेसीबो बटन और Touches व Owns कॉलम के साथ सबसे ज़्यादा मेमोरी खाने वाले बारह प्रोसेस।',
           zh: 'Real_RAM_cooler 的窗口：一根把内存分为已用、待机和真正空闲三段的横条，下面是为玩游戏清理内存的按钮、一个安慰剂按钮，以及占用内存最多的十二个进程，带有“Touches”和“Owns”两列。',
           ja: 'Real_RAM_cooler のウィンドウ: メモリを使用中・スタンバイ・本当の空きに分けて示すバー。その下に、ゲーム向けにメモリを片付けるボタン、プラセボボタン、そしてメモリを食っている上位12のプロセスが「Touches」と「Owns」の列付きで並びます。',
-          ko: 'Real_RAM_cooler 창: 메모리를 사용 중, 대기, 정말로 비어 있는 부분으로 나눠 보여 주는 막대, 그 아래에 게임을 위해 메모리를 정리하는 버튼과 플라시보 버튼, 그리고 “Touches”와 “Owns” 열이 있는, 메모리를 가장 많이 잡아먹는 프로세스 열두 개.'
+          ko: 'Real_RAM_cooler 창: 메모리를 사용 중, 대기, 정말로 비어 있는 부분으로 나눠 보여 주는 막대, 그 아래에 게임을 위해 메모리를 정리하는 버튼과 플라시보 버튼, 그리고 ‘Touches’와 ‘Owns’ 열이 있는, 메모리를 가장 많이 잡아먹는 프로세스 열두 개.'
         }
       }
     ],
@@ -83,62 +83,62 @@ var GUIDES = {
       es: [
         'Descarga el instalador desde las versiones y ejecútalo. Windows avisa de «Editor desconocido» porque el archivo no está firmado. Se continúa con «Más información».',
         'Inicia la aplicación y confirma el aviso de Windows. Sin permisos de administrador la aplicación solo muestra datos: no puede vaciar nada.',
-        'Haz clic en el botón para limpiar la memoria antes de jugar («Clean up for gaming»). Justo encima aparece después cuántos megabytes se han liberado realmente.'
+        'Haz clic en «Limpiar para jugar». Justo encima aparece después cuántos megabytes se han liberado realmente.'
       ],
       fr: [
         'Télécharger le programme d’installation depuis les releases et l’exécuter. Windows signale « Éditeur inconnu », parce que le fichier n’est pas signé. On continue via « Informations complémentaires ».',
         'Démarrer l’application et confirmer la demande de Windows. Sans droits d’administrateur, l’application se contente d’afficher les valeurs et ne peut alors rien vider.',
-        'Cliquer sur « Clean up for gaming » / « Fürs Gaming bereinigen » (faire le ménage pour le jeu). Au-dessus s’affiche ensuite le nombre de mégaoctets réellement libérés.'
+        'Cliquer sur « Nettoyer pour jouer ». Au-dessus s’affiche ensuite le nombre de mégaoctets réellement libérés.'
       ],
       it: [
         'Scarica l’installer dalla pagina delle release ed eseguilo. Windows segnala «Editore sconosciuto» perché il file non è firmato: prosegui con «Ulteriori informazioni».',
         'Avvia l’app e conferma la richiesta di Windows. Senza diritti di amministratore l’app si limita a mostrare i valori: non può svuotare nulla.',
-        'Fai clic su «Clean up for gaming». Sopra compare poi quanti megabyte sono stati effettivamente liberati.'
+        'Fai clic su «Pulisci per giocare». Sopra compare poi quanti megabyte sono stati effettivamente liberati.'
       ],
       nl: [
-        'Download het installatieprogramma van de releases-pagina en voer het uit. Windows meldt “Onbekende uitgever”, omdat het bestand niet ondertekend is. Via “Meer informatie” ga je verder.',
+        'Download het installatieprogramma van de releases-pagina en voer het uit. Windows meldt ‘Onbekende uitgever’, omdat het bestand niet ondertekend is. Via ‘Meer informatie’ ga je verder.',
         'Start de app en bevestig de vraag van Windows. Zonder beheerdersrechten laat de app alleen waarden zien, maar hij kan dan niets legen.',
-        'Klik op “Clean up for gaming” (in de Duitse versie “Fürs Gaming bereinigen”). Daarboven staat daarna hoeveel megabyte er werkelijk is vrijgekomen.'
+        'Klik op ‘Opschonen voor gaming’. Daarboven staat daarna hoeveel megabyte er werkelijk is vrijgekomen.'
       ],
       pl: [
         'Pobrać instalator ze strony wydań i uruchomić go. Windows zgłosi „Nieznany wydawca”, bo plik nie jest podpisany. Dalej prowadzi „Więcej informacji”.',
         'Uruchomić aplikację i potwierdzić pytanie Windows. Bez uprawnień administratora aplikacja tylko pokazuje wartości i niczego wtedy nie opróżni.',
-        'Kliknąć „Clean up for gaming” (wyczyść pamięć przed grą). Powyżej pojawi się potem, ile megabajtów rzeczywiście się zwolniło.'
+        'Kliknąć „Wyczyść pod gry”. Powyżej pojawi się potem, ile megabajtów rzeczywiście się zwolniło.'
       ],
       pt: [
         'Baixar o instalador da página de versões e executar. O Windows avisa «Editor desconhecido», porque o arquivo não está assinado. Para continuar, use «Mais informações».',
         'Iniciar o aplicativo e confirmar a pergunta do Windows. Sem direitos de administrador, o aplicativo só mostra valores e não consegue esvaziar nada.',
-        'Clicar em «Clean up for gaming» (na versão alemã, «Fürs Gaming bereinigen»). O aplicativo só fala alemão e inglês. Acima dele aparece depois quantos megabytes foram realmente liberados.'
+        'Clicar em «Limpar para jogar». Acima dele aparece depois quantos megabytes foram realmente liberados.'
       ],
       tr: [
         'Kurulum dosyasını sürümler sayfasından indirin ve çalıştırın. Dosya imzalı olmadığı için Windows “Bilinmeyen yayımcı” uyarısı verir. “Daha fazla bilgi” üzerinden devam edilir.',
         'Uygulamayı başlatın ve Windows’un sorduğu onayı verin. Yönetici hakları olmadan uygulama yalnızca değerleri gösterir ve hiçbir şeyi boşaltamaz.',
-        '“Clean up for gaming” düğmesine tıklayın. Hemen üstünde, kaç megabaytın gerçekten boşaldığı yazar.'
+        '“Oyun için temizle” düğmesine tıklayın. Hemen üstünde, kaç megabaytın gerçekten boşaldığı yazar.'
       ],
       ru: [
         'Скачайте установщик со страницы выпусков и запустите его. Windows сообщит «Неизвестный издатель», потому что файл не подписан. Продолжить можно через «Подробнее».',
         'Запустите приложение и подтвердите запрос Windows. Без прав администратора приложение только показывает значения и ничего не может очистить.',
-        'Нажмите «Clean up for gaming» (в немецкой версии «Fürs Gaming bereinigen»). Над кнопкой затем написано, сколько мегабайт на самом деле освободилось.'
+        'Нажмите «Очистить для игр». Над кнопкой затем написано, сколько мегабайт на самом деле освободилось.'
       ],
       hi: [
         'रिलीज़ पेज से इंस्टॉलर डाउनलोड करके चलाएँ। Windows “अज्ञात प्रकाशक” की चेतावनी देता है, क्योंकि फ़ाइल पर हस्ताक्षर नहीं हैं। “अधिक जानकारी” से आगे बढ़ा जा सकता है।',
         'ऐप शुरू करें और Windows का सवाल स्वीकार करें। प्रशासक अधिकारों के बिना ऐप सिर्फ़ आँकड़े दिखाती है और तब कुछ भी खाली नहीं कर सकती।',
-        '“Clean up for gaming” पर क्लिक करें। उसके ऊपर फिर लिखा आता है कि सचमुच कितने मेगाबाइट खाली हुए।'
+        '“गेमिंग के लिए साफ़ करें” पर क्लिक करें। उसके ऊपर फिर लिखा आता है कि सचमुच कितने मेगाबाइट खाली हुए।'
       ],
       zh: [
         '从发布页下载安装程序并运行。Windows 会提示“未知发布者”，因为这个文件没有签名。通过“更多信息”继续。',
         '启动应用并确认 Windows 的提示。没有管理员权限时，应用只能显示数值，什么也清不了。',
-        '点击“Clean up for gaming”。按钮上方随后会写出实际释放了多少兆字节。'
+        '点击“为游戏清理”。按钮上方随后会写出实际释放了多少兆字节。'
       ],
       ja: [
         'リリースページからインストーラーをダウンロードして実行します。ファイルに署名がないため、Windows は「不明な発行元」と表示します。「詳細情報」から先に進めます。',
         'アプリを起動して、Windows の確認に応じます。管理者権限がないと、アプリは表示するだけで、空にすることはできません。',
-        '「Clean up for gaming」（ゲーム向けにメモリを片付ける）をクリックします。このアプリはドイツ語と英語しか話さないので、表示言語によってはドイツ語の同じボタン「Fürs Gaming bereinigen」が出ます。そのすぐ上に、実際に何メガバイト空いたかが表示されます。'
+        '「ゲーム用にクリーンアップ」をクリックします。そのすぐ上に、実際に何メガバイト空いたかが表示されます。'
       ],
       ko: [
-        '릴리스 페이지에서 설치 프로그램을 내려받아 실행합니다. 파일에 서명이 없어서 Windows가 “알 수 없는 게시자”라고 알립니다. “추가 정보”를 거쳐 계속 진행하면 됩니다.',
+        '릴리스 페이지에서 설치 프로그램을 내려받아 실행합니다. 파일에 서명이 없어서 Windows가 ‘알 수 없는 게시자’라고 알립니다. ‘추가 정보’를 거쳐 계속 진행하면 됩니다.',
         '앱을 실행하고 Windows의 확인 창을 승인합니다. 관리자 권한이 없으면 앱은 값을 보여 주기만 하고 아무것도 비우지 못합니다.',
-        '“Clean up for gaming”을 누릅니다. 그 위에 실제로 몇 메가바이트가 비워졌는지 표시됩니다.'
+        '‘게임용으로 정리’를 누릅니다. 그 위에 실제로 몇 메가바이트가 비워졌는지 표시됩니다.'
       ]
     },
     pitfalls: {
@@ -146,85 +146,85 @@ var GUIDES = {
         'Der Placebo-Knopf daneben macht absichtlich nichts Messbares. Er ist da, um vorzuführen, was die meisten „RAM-Booster“ als Hauptfunktion verkaufen.',
         'Mehr Bilder pro Sekunde gibt es nicht. Das Programm behebt nur Ruckeln, das vom vollgelaufenen Standby-Cache kommt, und ersetzt kein RAM-Aufrüsten.',
         'Zu häufiges Leeren kann mehr Ruckler erzeugen statt weniger, weil der geleerte Cache von der Platte nachgelesen werden muss. Die Automatik wartet also zwischen zwei Durchgängen.',
-        'Nur Windows 10/11 in 64 Bit. Einen Update-Prüfer gibt es nicht, neue Fassungen holst du dir selbst auf der Releases-Seite.'
+        'Nur Windows 10/11 in 64 Bit. Die App spricht 14 Sprachen und richtet sich nach Windows, umstellen kannst du das über ⚙ unter „Sprache / Language“. Einen Update-Prüfer gibt es nicht, neue Fassungen holst du dir selbst auf der Releases-Seite.'
       ],
       en: [
         'The placebo button next to it deliberately does nothing measurable. It is there to demonstrate what most “RAM boosters” sell as their main feature.',
         'You will not get more frames per second. It only fixes stutter caused by a bloated standby cache, and it is no substitute for more RAM.',
         'Purging too often can cause more stutter rather than less, because the emptied cache has to be read back from disk. That is why the automatic mode waits between runs.',
-        'Windows 10/11, 64-bit only. There is no update checker, so you fetch new versions from the releases page yourself.'
+        'Windows 10/11, 64-bit only. The app speaks 14 languages and follows Windows, and you can switch it via ⚙ under “Sprache / Language”. There is no update checker, so you fetch new versions from the releases page yourself.'
       ],
       es: [
         'El botón placebo que hay al lado no hace nada medible, y es a propósito. Está ahí para enseñar lo que la mayoría de los «optimizadores de RAM» venden como función principal.',
         'Más fotogramas por segundo no vas a conseguir. Solo se corrigen los tirones que vienen de una caché en espera desbordada: el programa no sustituye a ampliar la RAM.',
         'Vaciar demasiado a menudo puede provocar más tirones en vez de menos, porque la caché vaciada hay que volver a leerla del disco. Por eso el modo automático espera entre dos pasadas.',
-        'Solo Windows 10/11 de 64 bits. No hay comprobador de actualizaciones, así que las versiones nuevas las buscas tú en la página de versiones.'
+        'Solo Windows 10/11 de 64 bits. La aplicación habla 14 idiomas y sigue a Windows, puedes cambiarlo con ⚙ en «Idioma / Language». No hay comprobador de actualizaciones, así que las versiones nuevas las buscas tú en la página de versiones.'
       ],
       fr: [
         'Le bouton placebo juste à côté ne fait volontairement rien de mesurable. Il est là pour montrer ce que la plupart des « boosters de RAM » vendent comme fonction principale.',
         'Vous n’aurez pas plus d’images par seconde. Le programme ne corrige que les saccades venant d’un cache de veille rempli, et il ne remplace pas un ajout de RAM.',
         'Vider trop souvent peut produire plus de saccades au lieu de moins, parce que le cache vidé doit être relu depuis le disque. C’est pourquoi le mode automatique attend entre deux passages.',
-        'Uniquement Windows 10/11 en 64 bits. Il n’y a pas de vérificateur de mises à jour, les nouvelles versions, vous allez donc les chercher vous-même sur la page des releases.'
+        'Uniquement Windows 10/11 en 64 bits. L’application parle 14 langues et suit Windows, vous pouvez en changer via ⚙ sous « Langue / Language ». Il n’y a pas de vérificateur de mises à jour, les nouvelles versions, vous allez donc les chercher vous-même sur la page des releases.'
       ],
       it: [
         'Il pulsante placebo qui accanto non fa apposta niente di misurabile. Sta lì per mostrare che cosa la maggior parte dei «RAM booster» vende come funzione principale.',
         'Fotogrammi al secondo in più non ce ne sono. Vengono risolti esclusivamente gli scatti dovuti alla cache standby piena: il programma non sostituisce un aumento di RAM.',
         'Svuotare troppo spesso può creare più scatti invece che meno, perché la cache svuotata va riletta dal disco. Per questo l’automatismo aspetta fra un passaggio e l’altro.',
-        'Solo Windows 10/11 a 64 bit. Non c’è un controllo degli aggiornamenti: le versioni nuove te le prendi da solo sulla pagina delle release.'
+        'Solo Windows 10/11 a 64 bit. L’app parla 14 lingue e segue Windows, puoi cambiarla con ⚙ in «Lingua / Language». Non c’è un controllo degli aggiornamenti: le versioni nuove te le prendi da solo sulla pagina delle release.'
       ],
       nl: [
-        'De placeboknop ernaast doet met opzet niets meetbaars. Hij is er om voor te doen wat de meeste “RAM-boosters” als hoofdfunctie verkopen.',
+        'De placeboknop ernaast doet met opzet niets meetbaars. Hij is er om voor te doen wat de meeste ‘RAM-boosters’ als hoofdfunctie verkopen.',
         'Meer beelden per seconde krijg je er niet bij. Het programma verhelpt alleen het haperen dat door een volgelopen standby-cache komt, en het is geen vervanging voor meer RAM.',
         'Te vaak legen kan meer gehaper opleveren in plaats van minder, omdat de geleegde cache weer van de schijf gelezen moet worden. Daarom wacht de automatische modus tussen twee rondes.',
-        'Alleen Windows 10/11 in 64 bit. Een updatecontrole is er niet, nieuwe versies haal je dus zelf op de releases-pagina.'
+        'Alleen Windows 10/11 in 64 bit. De app spreekt 14 talen en volgt Windows, omzetten doe je via ⚙ onder ‘Taal / Language’. Een updatecontrole is er niet, nieuwe versies haal je dus zelf op de releases-pagina.'
       ],
       pl: [
         'Przycisk placebo obok celowo nie robi niczego mierzalnego. Jest po to, żeby pokazać, co większość „RAM-boosterów” sprzedaje jako główną funkcję.',
         'Więcej klatek na sekundę z tego nie będzie. Program naprawia wyłącznie szarpanie, które bierze się z zapełnionej pamięci podręcznej standby, i nie zastępuje dołożenia RAM-u.',
         'Zbyt częste opróżnianie może wywołać więcej szarpnięć zamiast mniej, bo opróżniona pamięć podręczna musi zostać doczytana z dysku. Dlatego tryb automatyczny czeka między dwoma przebiegami.',
-        'Tylko Windows 10/11 w wersji 64-bitowej. Sprawdzania aktualizacji nie ma, więc nowe wersje pobierasz samodzielnie ze strony wydań.'
+        'Tylko Windows 10/11 w wersji 64-bitowej. Aplikacja mówi w 14 językach i dopasowuje się do Windows, zmienisz to przez ⚙ w sekcji „Język / Language”. Sprawdzania aktualizacji nie ma, więc nowe wersje pobierasz samodzielnie ze strony wydań.'
       ],
       pt: [
         'O botão placebo ao lado não faz nada mensurável, e isso é de propósito. Ele está ali para mostrar o que a maioria dos «aceleradores de RAM» vende como função principal.',
         'Não há mais quadros por segundo. O programa só corrige as travadas que vêm do cache de standby cheio, e ele não substitui comprar mais RAM.',
         'Esvaziar com frequência demais pode causar mais travadas em vez de menos, porque o cache esvaziado precisa ser lido de novo do disco. Por isso o modo automático espera entre duas execuções.',
-        'Só Windows 10/11 em 64 bits. Não há verificador de atualizações, então você busca as versões novas por conta própria na página de versões.'
+        'Só Windows 10/11 em 64 bits. O aplicativo fala 14 idiomas e segue o Windows, e você troca isso em ⚙, na parte «Idioma / Language». Não há verificador de atualizações, então você busca as versões novas por conta própria na página de versões.'
       ],
       tr: [
         'Yanındaki plasebo düğmesi bilerek ölçülebilir hiçbir şey yapmaz. Çoğu “RAM hızlandırıcı”nın ana işlev diye sattığı şeyi göstermek için oradadır.',
         'Saniyedeki kare sayısı artmaz. Program yalnızca dolup taşmış bekleme önbelleğinden kaynaklanan takılmayı giderir ve RAM yükseltmenin yerini tutmaz.',
         'Çok sık boşaltmak, takılmayı azaltmak yerine artırabilir, çünkü boşaltılan önbelleğin diskten yeniden okunması gerekir. Bu yüzden otomatik kip iki tur arasında bekler.',
-        'Yalnızca 64 bit Windows 10/11. Güncelleme denetleyicisi yoktur, yeni sürümleri sürümler sayfasından kendiniz alırsınız.'
+        'Yalnızca 64 bit Windows 10/11. Uygulama 14 dil konuşur ve Windows’u izler, ⚙ içindeki “Dil / Language” bölümünden değiştirebilirsiniz. Güncelleme denetleyicisi yoktur, yeni sürümleri sürümler sayfasından kendiniz alırsınız.'
       ],
       ru: [
         'Кнопка-плацебо рядом намеренно не делает ничего измеримого. Она здесь, чтобы показать, что большинство «ускорителей оперативной памяти» продают как главную функцию.',
         'Кадров в секунду больше не станет. Программа устраняет только подтормаживания от переполненного кэша ожидания и не заменяет установку дополнительной оперативной памяти.',
         'Слишком частая очистка может создавать больше рывков, а не меньше, потому что очищенный кэш приходится дочитывать с диска. Поэтому автоматика выжидает между двумя проходами.',
-        'Только 64-разрядные Windows 10/11. Проверки обновлений нет, новые версии вы забираете сами со страницы выпусков.'
+        'Только 64-разрядные Windows 10/11. Приложение говорит на 14 языках и следует языку Windows, сменить его можно через ⚙ в разделе «Язык / Language». Проверки обновлений нет, новые версии вы забираете сами со страницы выпусков.'
       ],
       hi: [
         'बग़ल वाला प्लेसीबो बटन जान-बूझकर कुछ भी मापने लायक नहीं करता। वह यह दिखाने के लिए है कि ज़्यादातर “RAM बूस्टर” किस चीज़ को अपनी मुख्य ख़ूबी बताकर बेचते हैं।',
         'इससे फ़्रेम प्रति सेकंड नहीं बढ़ते। यह प्रोग्राम केवल वही अटकन ठीक करता है जो भरे हुए स्टैंडबाय कैश से आती है, और RAM बढ़ाने की जगह नहीं ले सकता।',
         'बहुत बार खाली करने से अटकन कम होने के बजाय बढ़ सकती है, क्योंकि खाली किए गए कैश को डिस्क से दोबारा पढ़ना पड़ता है। इसीलिए स्वचालित मोड दो दौरों के बीच रुककर इंतज़ार करता है।',
-        'केवल Windows 10/11, 64 बिट में। अपडेट जाँचने वाला कोई हिस्सा नहीं है, इसलिए नए संस्करण आपको खुद रिलीज़ पेज से लेने होते हैं।'
+        'केवल Windows 10/11, 64 बिट में। ऐप 14 भाषाएँ बोलता है और Windows की भाषा अपनाता है, ⚙ में “भाषा / Language” से आप इसे बदल सकते हैं। अपडेट जाँचने वाला कोई हिस्सा नहीं है, इसलिए नए संस्करण आपको खुद रिलीज़ पेज से लेने होते हैं।'
       ],
       zh: [
         '旁边那个安慰剂按钮故意不做任何可测量的事。它放在那里，是为了演示大多数“内存加速器”当作主要功能来卖的东西。',
         '不会有更高的帧数。这个程序只解决由待机缓存被填满引起的卡顿，代替不了加内存条。',
         '清得太频繁反而可能带来更多卡顿而不是更少，因为被清空的缓存必须从硬盘重新读回来。所以自动模式会在两次清理之间等待。',
-        '仅限 64 位的 Windows 10/11。没有更新检查器，新版本要你自己去发布页取。'
+        '仅限 64 位的 Windows 10/11。程序支持 14 种语言，默认跟随 Windows，可以在 ⚙ 的“语言 / Language”里切换。没有更新检查器，新版本要你自己去发布页取。'
       ],
       ja: [
         '隣にあるプラセボボタンは、わざと測定できることを何もしません。ほとんどの「RAM ブースター」が主要機能として売っているものが何なのかを実演するために置いてあります。',
         'フレームレートが上がることはありません。このプログラムが直すのは、いっぱいになったスタンバイキャッシュから来るカクつきだけで、RAM の増設の代わりにはなりません。',
         '空にしすぎると、カクつきが減るどころか増えることがあります。空にしたキャッシュをディスクから読み直さなければならないからです。だから自動モードは2回の実行のあいだに間隔を置きます。',
-        'Windows 10/11 の64ビットのみです。更新チェッカーはないので、新しい版はリリースページから自分で取ってきてください。'
+        'Windows 10/11 の64ビットのみです。アプリは14言語に対応し、Windows の言語に合わせます。⚙ の「言語 / Language」で切り替えられます。更新チェッカーはないので、新しい版はリリースページから自分で取ってきてください。'
       ],
       ko: [
-        '옆에 있는 플라시보 버튼은 일부러 측정 가능한 일을 아무것도 하지 않습니다. 대부분의 “RAM 부스터”가 주요 기능이라고 파는 것이 무엇인지 보여 주려고 있는 버튼입니다.',
+        '옆에 있는 플라시보 버튼은 일부러 측정 가능한 일을 아무것도 하지 않습니다. 대부분의 ‘RAM 부스터’가 주요 기능이라고 파는 것이 무엇인지 보여 주려고 있는 버튼입니다.',
         '초당 프레임 수가 늘어나지는 않습니다. 고쳐지는 것은 대기 캐시가 가득 차서 생긴 끊김뿐이며, 이 프로그램이 RAM 증설을 대신하지는 못합니다.',
         '너무 자주 비우면 끊김이 줄기는커녕 늘어날 수 있습니다. 비워진 캐시를 디스크에서 다시 읽어 와야 하기 때문입니다. 그래서 자동 모드는 두 번의 실행 사이에 기다립니다.',
-        'Windows 10/11 64비트 전용입니다. 업데이트 검사기는 없으니 새 버전은 릴리스 페이지에서 직접 가져와야 합니다.'
+        'Windows 10/11 64비트 전용입니다. 앱은 14개 언어를 지원하고 Windows 언어를 따르며, ⚙의 ‘언어 / Language’에서 바꿀 수 있습니다. 업데이트 검사기는 없으니 새 버전은 릴리스 페이지에서 직접 가져와야 합니다.'
       ]
     },
     docs: {
@@ -2133,19 +2133,19 @@ var GUIDES = {
         h: 470,
         alt: {
           de: 'Der Besucher-Ticker mit Beispielzahlen: oben 87 Aufrufe heute und 12.480 insgesamt, darunter ein Balken je Werkzeug von der Startseite bis wifi-qr und ganz unten die Verweise, also woher die Besucher kamen.',
-          en: 'The Besucher-Ticker with sample numbers: at the top 87 pageviews today and 12,480 in total, below that one bar per tool from the start page to wifi-qr, and at the bottom the referrers, meaning where the visitors came from. The ticker itself speaks German.',
-          es: 'El Besucher-Ticker con cifras de ejemplo: arriba 87 visitas hoy y 12.480 en total, debajo una barra por herramienta, desde la página de inicio hasta wifi-qr, y abajo del todo las referencias, es decir, de dónde llegaron los visitantes. El ticker está en alemán.',
-          fr: 'Le Besucher-Ticker avec des chiffres d’exemple : en haut 87 pages vues aujourd’hui et 12 480 au total, en dessous une barre par outil, de la page d’accueil à wifi-qr, et tout en bas les référents, c’est-à-dire d’où venaient les visiteurs. Le ticker est en allemand.',
-          it: 'Il Besucher-Ticker con numeri di esempio: in alto 87 visualizzazioni oggi e 12.480 in totale, sotto una barra per ogni strumento, dalla pagina iniziale a wifi-qr, e in fondo i referrer, cioè da dove sono arrivati i visitatori. Il ticker è in tedesco.',
-          nl: 'De Besucher-Ticker met voorbeeldgetallen: bovenaan 87 weergaven vandaag en 12.480 in totaal, daaronder één balk per tool, van de startpagina tot wifi-qr, en helemaal onderaan de verwijzers, dus waar de bezoekers vandaan kwamen. De ticker is in het Duits.',
-          pl: 'Besucher-Ticker z przykładowymi liczbami: u góry 87 odsłon dzisiaj i 12 480 łącznie, pod spodem jeden pasek na każde narzędzie, od strony startowej do wifi-qr, a na samym dole odsyłacze, czyli skąd przyszli odwiedzający. Ticker jest po niemiecku.',
-          pt: 'O Besucher-Ticker com números de exemplo: no alto 87 visualizações hoje e 12.480 no total, abaixo uma barra por ferramenta, da página inicial até wifi-qr, e lá embaixo as origens, ou seja, de onde vieram os visitantes. O ticker está em alemão.',
-          tr: 'Örnek sayılarla Besucher-Ticker: üstte bugün 87 görüntüleme ve toplam 12.480, altında başlangıç sayfasından wifi-qr’ye kadar her araç için bir çubuk, en altta da yönlendirenler, yani ziyaretçilerin nereden geldiği. Ticker Almancadır.',
-          ru: 'Besucher-Ticker с примерными цифрами: вверху 87 просмотров за сегодня и 12 480 всего, ниже по одной полосе на каждый инструмент, от стартовой страницы до wifi-qr, а в самом низу источники переходов, то есть откуда пришли посетители. Тикер на немецком.',
-          hi: 'उदाहरण वाले आँकड़ों के साथ Besucher-Ticker: ऊपर आज के 87 व्यू और कुल 12,480, उसके नीचे हर टूल के लिए एक बार, स्टार्ट पेज से wifi-qr तक, और सबसे नीचे रेफ़रर, यानी विज़िटर कहाँ से आए। टिकर जर्मन में है।',
-          zh: '带示例数字的 Besucher-Ticker：上方是今天 87 次浏览、总计 12,480 次，下面每个工具一条横条，从首页到 wifi-qr，最下面是来源，也就是访客从哪里来。这个小窗口是德语界面。',
-          ja: 'サンプルの数字を入れた Besucher-Ticker。上に今日の閲覧数87と累計12,480、その下にスタートページから wifi-qr までツールごとのバー、いちばん下に参照元（訪問者がどこから来たか）。表示はドイツ語です。',
-          ko: '예시 숫자를 넣은 Besucher-Ticker. 위에는 오늘 조회 수 87과 누적 12,480, 그 아래에는 시작 페이지부터 wifi-qr까지 도구마다 막대 하나, 맨 아래에는 유입 경로, 곧 방문자가 어디서 왔는지가 나옵니다. 티커는 독일어로 되어 있습니다.'
+          en: 'The Besucher-Ticker with sample numbers: at the top 87 pageviews today and 12,480 in total, below that one bar per tool from the start page to wifi-qr, and at the bottom the referrers, meaning where the visitors came from. The picture shows the German interface.',
+          es: 'El Besucher-Ticker con cifras de ejemplo: arriba 87 visitas hoy y 12.480 en total, debajo una barra por herramienta, desde la página de inicio hasta wifi-qr, y abajo del todo las referencias, es decir, de dónde llegaron los visitantes. La imagen muestra la interfaz en alemán.',
+          fr: 'Le Besucher-Ticker avec des chiffres d’exemple : en haut 87 pages vues aujourd’hui et 12 480 au total, en dessous une barre par outil, de la page d’accueil à wifi-qr, et tout en bas les référents, c’est-à-dire d’où venaient les visiteurs. L’image montre l’interface en allemand.',
+          it: 'Il Besucher-Ticker con numeri di esempio: in alto 87 visualizzazioni oggi e 12.480 in totale, sotto una barra per ogni strumento, dalla pagina iniziale a wifi-qr, e in fondo i referrer, cioè da dove sono arrivati i visitatori. L’immagine mostra l’interfaccia in tedesco.',
+          nl: 'De Besucher-Ticker met voorbeeldgetallen: bovenaan 87 weergaven vandaag en 12.480 in totaal, daaronder één balk per tool, van de startpagina tot wifi-qr, en helemaal onderaan de verwijzers, dus waar de bezoekers vandaan kwamen. De afbeelding toont de Duitse interface.',
+          pl: 'Besucher-Ticker z przykładowymi liczbami: u góry 87 odsłon dzisiaj i 12 480 łącznie, pod spodem jeden pasek na każde narzędzie, od strony startowej do wifi-qr, a na samym dole odsyłacze, czyli skąd przyszli odwiedzający. Obraz pokazuje interfejs po niemiecku.',
+          pt: 'O Besucher-Ticker com números de exemplo: no alto 87 visualizações hoje e 12.480 no total, abaixo uma barra por ferramenta, da página inicial até wifi-qr, e lá embaixo as origens, ou seja, de onde vieram os visitantes. A imagem mostra a interface em alemão.',
+          tr: 'Örnek sayılarla Besucher-Ticker: üstte bugün 87 görüntüleme ve toplam 12.480, altında başlangıç sayfasından wifi-qr’ye kadar her araç için bir çubuk, en altta da yönlendirenler, yani ziyaretçilerin nereden geldiği. Görselde Almanca arayüz görünüyor.',
+          ru: 'Besucher-Ticker с примерными цифрами: вверху 87 просмотров за сегодня и 12 480 всего, ниже по одной полосе на каждый инструмент, от стартовой страницы до wifi-qr, а в самом низу источники переходов, то есть откуда пришли посетители. На картинке интерфейс на немецком.',
+          hi: 'उदाहरण वाले आँकड़ों के साथ Besucher-Ticker: ऊपर आज के 87 व्यू और कुल 12,480, उसके नीचे हर टूल के लिए एक बार, स्टार्ट पेज से wifi-qr तक, और सबसे नीचे रेफ़रर, यानी विज़िटर कहाँ से आए। तस्वीर में जर्मन इंटरफ़ेस दिख रहा है।',
+          zh: '带示例数字的 Besucher-Ticker：上方是今天 87 次浏览、总计 12,480 次，下面每个工具一条横条，从首页到 wifi-qr，最下面是来源，也就是访客从哪里来。图中是德语界面。',
+          ja: 'サンプルの数字を入れた Besucher-Ticker。上に今日の閲覧数87と累計12,480、その下にスタートページから wifi-qr までツールごとのバー、いちばん下に参照元（訪問者がどこから来たか）。画像はドイツ語の画面です。',
+          ko: '예시 숫자를 넣은 Besucher-Ticker. 위에는 오늘 조회 수 87과 누적 12,480, 그 아래에는 시작 페이지부터 wifi-qr까지 도구마다 막대 하나, 맨 아래에는 유입 경로, 곧 방문자가 어디서 왔는지가 나옵니다. 그림 속 화면은 독일어입니다.'
         }
       }
     ],
@@ -2153,72 +2153,72 @@ var GUIDES = {
       de: [
         'Die ZIP-Datei aus den Releases laden, entpacken und die Exe doppelklicken. Windows meldet „Unbekannter Herausgeber“, weil die Datei nicht signiert ist. Über „Weitere Informationen“ geht es weiter.',
         'Beim ersten Start die Adresse der eigenen GoatCounter-Seite eintippen und ein API-Token einfügen. Das Token legst du auf deiner GoatCounter-Seite an: Benutzername oben rechts → API → „Add new token“. Das Häkchen „Read statistics“ genügt.',
-        'Das Overlay mit der Maus dorthin ziehen, wo es nicht stört. Rechtsklick aufs Symbol im Infobereich der Taskleiste: Zeitraum, Zusatzblock, Themes, Einstellungen.'
+        'Das Overlay mit der Maus dorthin ziehen, wo es nicht stört. Rechtsklick aufs Symbol im Infobereich der Taskleiste: Zeitraum, Zusatzblock, Einstellungen, Nächstes Theme, Sprache.'
       ],
       en: [
         'Download the ZIP from the releases, unpack it and double-click the exe. Windows will say “unknown publisher” because the file is not signed. Continue via “more info”.',
         'On first start, type in the address of your own GoatCounter site and paste an API token. You create the token on your GoatCounter site: username in the top right → API → “Add new token”. Ticking “Read statistics” is enough.',
-        'Drag the overlay wherever it does not get in the way. Right-click the tray icon for period, extra block, themes and settings.'
+        'Drag the overlay wherever it does not get in the way. Right-click the tray icon for Time range, Extra block, Settings, Next theme and Language.'
       ],
       es: [
         'Descarga el archivo ZIP desde las versiones, descomprímelo y haz doble clic en el exe. Windows avisa de «Editor desconocido» porque el archivo no está firmado. Se continúa con «Más información».',
         'En el primer arranque, escribe la dirección de tu propia página de GoatCounter y pega un token de la API. El token lo creas en tu página de GoatCounter: nombre de usuario arriba a la derecha → API → «Add new token». Basta con la casilla «Read statistics».',
-        'Arrastra la ventana flotante con el ratón a donde no moleste. Clic derecho en el icono del área de notificación de la barra de tareas: periodo, bloque adicional, temas, ajustes.'
+        'Arrastra la ventana flotante con el ratón a donde no moleste. Clic derecho en el icono del área de notificación de la barra de tareas: Periodo, Bloque extra, Ajustes, Siguiente tema, Idioma.'
       ],
       fr: [
         'Télécharger le fichier ZIP depuis les releases, le décompresser et double-cliquer sur l’exécutable. Windows signale « Éditeur inconnu », parce que le fichier n’est pas signé. On continue via « Informations complémentaires ».',
         'Au premier démarrage, taper l’adresse de votre propre page GoatCounter et coller un jeton d’API. Le jeton, vous le créez sur votre page GoatCounter : nom d’utilisateur en haut à droite → API → « Add new token ». La case « Read statistics » suffit.',
-        'Faire glisser la fenêtre flottante à la souris là où elle ne gêne pas. Clic droit sur l’icône dans la zone de notification de la barre des tâches : « Zeitraum » (période), « Zusatzblock » (bloc supplémentaire), « Themes », « Einstellungen » (réglages).'
+        'Faire glisser la fenêtre flottante à la souris là où elle ne gêne pas. Clic droit sur l’icône dans la zone de notification de la barre des tâches : Période, Bloc supplémentaire, Réglages, Thème suivant, Langue.'
       ],
       it: [
         'Scarica il file ZIP dalle release, decomprimilo e fai doppio clic sull’eseguibile. Windows segnala «Editore sconosciuto» perché il file non è firmato: prosegui con «Ulteriori informazioni».',
         'Al primo avvio digita l’indirizzo della tua pagina GoatCounter e incolla un token API. Il token lo crei sulla tua pagina GoatCounter: nome utente in alto a destra → API → «Add new token». Basta la spunta «Read statistics».',
-        'Trascina l’overlay con il mouse dove non dà fastidio. Clic destro sull’icona nell’area di notifica della barra delle applicazioni: periodo, blocco aggiuntivo, temi, impostazioni.'
+        'Trascina l’overlay con il mouse dove non dà fastidio. Clic destro sull’icona nell’area di notifica della barra delle applicazioni: Periodo, Blocco extra, Impostazioni, Tema successivo, Lingua.'
       ],
       nl: [
-        'Download het ZIP-bestand van de releases, pak het uit en dubbelklik op de exe. Windows meldt “Onbekende uitgever”, omdat het bestand niet ondertekend is. Via “Meer informatie” ga je verder.',
-        'Typ bij de eerste start het adres van je eigen GoatCounter-pagina in en plak een API-token. Het token maak je aan op je GoatCounter-pagina: gebruikersnaam rechtsboven → API → “Add new token”. Het vinkje “Read statistics” is genoeg.',
-        'Sleep de overlay met de muis naar een plek waar hij niet stoort. Rechtsklik op het pictogram in het systeemvak van de taakbalk: Zeitraum (periode), Zusatzblock (extra blok), Themes, Einstellungen (instellingen).'
+        'Download het ZIP-bestand van de releases, pak het uit en dubbelklik op de exe. Windows meldt ‘Onbekende uitgever’, omdat het bestand niet ondertekend is. Via ‘Meer informatie’ ga je verder.',
+        'Typ bij de eerste start het adres van je eigen GoatCounter-pagina in en plak een API-token. Het token maak je aan op je GoatCounter-pagina: gebruikersnaam rechtsboven → API → ‘Add new token’. Het vinkje ‘Read statistics’ is genoeg.',
+        'Sleep de overlay met de muis naar een plek waar hij niet stoort. Rechtsklik op het pictogram in het systeemvak van de taakbalk: Periode, Extra blok, Instellingen, Volgend thema, Taal.'
       ],
       pl: [
         'Pobrać plik ZIP ze strony wydań, rozpakować i kliknąć dwukrotnie plik exe. Windows zgłosi „Nieznany wydawca”, bo plik nie jest podpisany. Dalej prowadzi „Więcej informacji”.',
         'Przy pierwszym uruchomieniu wpisać adres własnej strony w GoatCounter i wkleić token API. Token zakładasz na swojej stronie w GoatCounter: nazwa użytkownika w prawym górnym rogu → API → „Add new token”. Wystarczy zaznaczenie „Read statistics”.',
-        'Przeciągnąć nakładkę myszą tam, gdzie nie przeszkadza. Prawy przycisk myszy na ikonie w obszarze powiadomień paska zadań: okres, blok dodatkowy, motywy, ustawienia.'
+        'Przeciągnąć nakładkę myszą tam, gdzie nie przeszkadza. Prawy przycisk myszy na ikonie w obszarze powiadomień paska zadań: Okres, Dodatkowy blok, Ustawienia, Następny motyw, Język.'
       ],
       pt: [
         'Baixar o arquivo ZIP da página de versões, descompactar e dar um clique duplo no executável. O Windows avisa «Editor desconhecido», porque o arquivo não está assinado. Para continuar, use «Mais informações».',
         'Na primeira execução, digitar o endereço da sua própria página do GoatCounter e colar um token da API. O token você cria na sua página do GoatCounter: nome de usuário em cima à direita → API → «Add new token». Basta marcar «Read statistics».',
-        'Arrastar o overlay com o mouse para onde não atrapalhe. Clicar com o botão direito no ícone da área de notificação da barra de tarefas: «Zeitraum» (período), «Zusatzblock» (bloco adicional), «Themes» (temas), «Einstellungen» (configurações).'
+        'Arrastar o overlay com o mouse para onde não atrapalhe. Clicar com o botão direito no ícone da área de notificação da barra de tarefas: Período, Bloco extra, Configurações, Próximo tema, Idioma.'
       ],
       tr: [
         'ZIP dosyasını sürümler sayfasından indirin, açın ve exe dosyasına çift tıklayın. Dosya imzalı olmadığı için Windows “Bilinmeyen yayımcı” uyarısı verir. “Daha fazla bilgi” üzerinden devam edilir.',
         'İlk başlatmada kendi GoatCounter sayfanızın adresini yazın ve bir API belirteci yapıştırın. Belirteci kendi GoatCounter sayfanızda oluşturursunuz: sağ üstteki kullanıcı adı → API → “Add new token”. “Read statistics” kutusunu işaretlemek yeterlidir.',
-        'Kaplamayı fareyle rahatsız etmeyeceği bir yere sürükleyin. Görev çubuğunun bildirim alanındaki simgeye sağ tıklayın: dönem, ek blok, temalar, ayarlar.'
+        'Katmanı fareyle rahatsız etmeyeceği bir yere sürükleyin. Görev çubuğunun bildirim alanındaki simgeye sağ tıklayın: Zaman aralığı, Ek blok, Ayarlar, Sonraki tema, Dil.'
       ],
       ru: [
         'Скачайте ZIP-файл со страницы выпусков, распакуйте и дважды щёлкните по exe. Windows сообщит «Неизвестный издатель», потому что файл не подписан. Продолжить можно через «Подробнее».',
         'При первом запуске впишите адрес своей страницы GoatCounter и вставьте токен API. Токен вы создаёте на своей странице GoatCounter: имя пользователя вверху справа → API → «Add new token». Галочки «Read statistics» достаточно.',
-        'Перетащите оверлей мышью туда, где он не мешает. Правый щелчок по значку в области уведомлений панели задач: период, дополнительный блок, темы, настройки.'
+        'Перетащите оверлей мышью туда, где он не мешает. Правый щелчок по значку в области уведомлений панели задач: Период, Дополнительный блок, Настройки, Следующая тема, Язык.'
       ],
       hi: [
         'रिलीज़ से ZIP फ़ाइल डाउनलोड करें, खोलें और exe पर दो बार क्लिक करें। Windows “अज्ञात प्रकाशक” की चेतावनी देता है, क्योंकि फ़ाइल पर हस्ताक्षर नहीं हैं। “अधिक जानकारी” से आगे बढ़ा जा सकता है।',
         'पहली बार शुरू करते समय अपनी GoatCounter साइट का पता टाइप करें और एक API टोकन चिपकाएँ। टोकन आप अपनी GoatCounter साइट पर बनाते हैं: ऊपर दाईं ओर उपयोक्ता नाम → API → “Add new token”। “Read statistics” का चेकबॉक्स काफ़ी है।',
-        'ओवरले को माउस से वहाँ खींच ले जाएँ जहाँ वह परेशान न करे। टास्कबार के सूचना क्षेत्र में उसके चिह्न पर दायाँ क्लिक: अवधि, अतिरिक्त खंड, थीम, सेटिंग्स।'
+        'ओवरले को माउस से वहाँ खींच ले जाएँ जहाँ वह परेशान न करे। टास्कबार के सूचना क्षेत्र में उसके चिह्न पर दायाँ क्लिक: समय अवधि, अतिरिक्त ब्लॉक, सेटिंग्स, अगली थीम, भाषा।'
       ],
       zh: [
         '从发布页下载 ZIP 文件，解压后双击那个 exe。Windows 会提示“未知发布者”，因为这个文件没有签名。通过“更多信息”继续。',
         '首次启动时输入你自己 GoatCounter 站点的地址，并粘贴一个 API 令牌。令牌是在你的 GoatCounter 站点上创建的：右上角的用户名 → API → “Add new token”。勾上“Read statistics”就够了。',
-        '用鼠标把这个悬浮窗拖到不碍事的地方。右键点击任务栏通知区域里的图标：时间段、附加板块、主题、设置。'
+        '用鼠标把这个悬浮窗拖到不碍事的地方。右键点击任务栏通知区域里的图标：时间范围、附加区块、设置、下一个主题、语言。'
       ],
       ja: [
         'リリースページから ZIP ファイルをダウンロードして展開し、exe をダブルクリックします。ファイルに署名がないため、Windows は「不明な発行元」と表示します。「詳細情報」から先に進めます。',
         '初回起動時に、自分の GoatCounter サイトのアドレスを打ち込み、API トークンを貼り付けます。トークンは自分の GoatCounter のページで作ります: 右上のユーザー名 → API → 「Add new token」。「Read statistics」のチェックだけで足ります。',
-        'オーバーレイをマウスで、邪魔にならない場所へドラッグします。タスクバーの通知領域のアイコンを右クリックすると、期間、追加のブロック、テーマ、設定が出てきます。'
+        'オーバーレイをマウスで、邪魔にならない場所へドラッグします。タスクバーの通知領域のアイコンを右クリックすると、期間、追加ブロック、設定、次のテーマ、言語が出てきます。'
       ],
       ko: [
-        '릴리스에서 ZIP 파일을 내려받아 압축을 풀고 exe를 두 번 누릅니다. 파일에 서명이 없어서 Windows가 “알 수 없는 게시자”라고 알립니다. “추가 정보”를 거쳐 계속 진행하면 됩니다.',
-        '처음 실행할 때 자기 GoatCounter 사이트의 주소를 입력하고 API 토큰을 붙여 넣습니다. 토큰은 자기 GoatCounter 페이지에서 만듭니다: 오른쪽 위의 사용자 이름 → API → “Add new token”. “Read statistics” 체크 하나면 충분합니다.',
-        '오버레이를 마우스로 끌어서 방해되지 않는 자리에 둡니다. 작업 표시줄 알림 영역의 아이콘을 오른쪽 클릭하면 기간, 추가 블록, 테마, 설정이 나옵니다.'
+        '릴리스에서 ZIP 파일을 내려받아 압축을 풀고 exe를 두 번 누릅니다. 파일에 서명이 없어서 Windows가 ‘알 수 없는 게시자’라고 알립니다. ‘추가 정보’를 거쳐 계속 진행하면 됩니다.',
+        '처음 실행할 때 자기 GoatCounter 사이트의 주소를 입력하고 API 토큰을 붙여 넣습니다. 토큰은 자기 GoatCounter 페이지에서 만듭니다: 오른쪽 위의 사용자 이름 → API → ‘Add new token’. ‘Read statistics’ 체크 하나면 충분합니다.',
+        '오버레이를 마우스로 끌어서 방해되지 않는 자리에 둡니다. 작업 표시줄 알림 영역의 아이콘을 오른쪽 클릭하면 기간, 추가 블록, 설정, 다음 테마, 언어가 나옵니다.'
       ]
     },
     pitfalls: {
@@ -2226,85 +2226,85 @@ var GUIDES = {
         'Ohne eigenes GoatCounter-Konto zeigt der Ticker nichts an. Er ist ein Anzeigegerät für die eigenen Zahlen, kein Zählwerkzeug für fremde Seiten.',
         'Die Summe der Balken ergibt nicht die große Zahl, und das ist richtig so: Oben stehen Aufrufe, die Balken zählen Besucher (zwei verschiedene Größen).',
         'Das Token liegt in der config.json neben dem Programm, mit pywin32 verschlüsselt und an Benutzerkonto und Rechner gebunden. Exe und config.json müssen also im selben Ordner bleiben.',
-        'Nur Windows, Oberfläche nur auf Deutsch. Einen Update-Prüfer gibt es nicht, neue Fassungen holst du dir selbst auf der Releases-Seite.'
+        'Nur Windows. Die Oberfläche spricht 14 Sprachen und richtet sich nach Windows, umstellen kannst du das im Menü unter „Sprache“. Einen Update-Prüfer gibt es nicht, neue Fassungen holst du dir selbst auf der Releases-Seite.'
       ],
       en: [
         'Without your own GoatCounter account the ticker shows nothing. It is a display for your own numbers, not a counting tool for other people’s sites.',
         'The bars do not add up to the big number, and that is correct: the top shows pageviews, the bars count visitors (two different quantities).',
         'The token lives in config.json next to the program, encrypted with pywin32 and bound to your user account and machine. So the exe and config.json have to stay in the same folder.',
-        'Windows only, interface in German only. There is no update checker, so you fetch new versions from the releases page yourself.'
+        'Windows only. The interface speaks 14 languages and follows Windows, and you can switch it under “Language” in the menu. There is no update checker, so you fetch new versions from the releases page yourself.'
       ],
       es: [
         'Sin una cuenta propia de GoatCounter el ticker no muestra nada: es un visor de tus propias cifras, no una herramienta de recuento para páginas ajenas.',
         'La suma de las barras no da la cifra grande, y está bien que sea así: arriba están las páginas vistas, las barras cuentan visitantes, dos magnitudes distintas.',
         'El token está en el config.json que hay junto al programa, cifrado con pywin32 y ligado a la cuenta de usuario y al ordenador. Por eso el exe y config.json tienen que quedarse en la misma carpeta.',
-        'Solo Windows, interfaz solo en alemán. No hay comprobador de actualizaciones, así que las versiones nuevas las buscas tú en la página de versiones.'
+        'Solo Windows. La interfaz habla 14 idiomas y sigue a Windows, puedes cambiarlo en el menú, en «Idioma». No hay comprobador de actualizaciones, así que las versiones nuevas las buscas tú en la página de versiones.'
       ],
       fr: [
         'Sans compte GoatCounter à soi, le ticker n’affiche rien. C’est un appareil d’affichage pour ses propres chiffres, pas un outil de comptage pour les sites des autres.',
         'La somme des barres ne donne pas le grand nombre, et c’est normal : en haut figurent les pages vues, les barres comptent les visiteurs (deux grandeurs différentes).',
         'Le jeton se trouve dans le fichier config.json, à côté du programme, chiffré avec pywin32 et lié au compte utilisateur et à la machine. L’exécutable et config.json doivent donc rester dans le même dossier.',
-        'Windows uniquement, interface en allemand uniquement. Il n’y a pas de vérificateur de mises à jour, les nouvelles versions, vous allez donc les chercher vous-même sur la page des releases.'
+        'Windows uniquement. L’interface parle 14 langues et suit Windows, vous pouvez en changer dans le menu, sous « Langue ». Il n’y a pas de vérificateur de mises à jour, les nouvelles versions, vous allez donc les chercher vous-même sur la page des releases.'
       ],
       it: [
         'Senza un proprio account GoatCounter il ticker non mostra niente: è un visualizzatore dei propri numeri, non uno strumento di conteggio per siti altrui.',
         'La somma delle barre non dà il numero grande, ed è giusto così: in alto stanno le visualizzazioni, le barre contano i visitatori (due grandezze diverse).',
         'Il token si trova nel file config.json accanto al programma, cifrato con pywin32 e legato all’account utente e al computer. Per questo l’eseguibile e config.json devono restare nella stessa cartella.',
-        'Solo Windows, interfaccia solo in tedesco. Non c’è un controllo degli aggiornamenti: le versioni nuove te le prendi da solo sulla pagina delle release.'
+        'Solo Windows. L’interfaccia parla 14 lingue e segue Windows, puoi cambiarla dal menu, alla voce «Lingua». Non c’è un controllo degli aggiornamenti: le versioni nuove te le prendi da solo sulla pagina delle release.'
       ],
       nl: [
         'Zonder een eigen GoatCounter-account laat de ticker niets zien. Hij is een weergaveapparaat voor je eigen cijfers, geen telinstrument voor de pagina’s van anderen.',
         'De som van de balken levert niet het grote getal op, en dat hoort zo: bovenaan staan paginaweergaven, de balken tellen bezoekers (twee verschillende grootheden).',
         'Het token staat in de config.json naast het programma, met pywin32 versleuteld en gebonden aan gebruikersaccount en computer. De exe en config.json moeten daarom in dezelfde map blijven.',
-        'Alleen Windows, interface alleen in het Duits. Een updatecontrole is er niet, nieuwe versies haal je dus zelf op de releases-pagina.'
+        'Alleen Windows. De interface spreekt 14 talen en volgt Windows, omzetten doe je in het menu onder ‘Taal’. Een updatecontrole is er niet, nieuwe versies haal je dus zelf op de releases-pagina.'
       ],
       pl: [
         'Bez własnego konta w GoatCounter ticker nic nie pokazuje. Jest urządzeniem wyświetlającym własne liczby, nie narzędziem do liczenia cudzych stron.',
         'Suma słupków nie daje dużej liczby i tak właśnie ma być: na górze są wyświetlenia, słupki liczą odwiedzających (dwie różne wielkości).',
         'Token leży w pliku config.json obok programu, zaszyfrowany za pomocą pywin32 i związany z kontem użytkownika i komputerem. Exe i config.json muszą więc zostać w tym samym folderze.',
-        'Tylko Windows, interfejs tylko po niemiecku. Sprawdzania aktualizacji nie ma, więc nowe wersje pobierasz samodzielnie ze strony wydań.'
+        'Tylko Windows. Interfejs mówi w 14 językach i dopasowuje się do Windows, zmienisz to w menu pod „Język”. Sprawdzania aktualizacji nie ma, więc nowe wersje pobierasz samodzielnie ze strony wydań.'
       ],
       pt: [
         'Sem conta própria no GoatCounter, o ticker não mostra nada. Ele é um mostrador para os seus próprios números, não uma ferramenta de contagem para sites dos outros.',
         'A soma das barras não dá o número grande, e é assim mesmo: em cima ficam as visualizações, as barras contam visitantes (duas grandezas diferentes).',
         'O token fica no config.json ao lado do programa, criptografado com o pywin32 e preso à conta de usuário e ao computador. Por isso, o executável e o config.json precisam ficar na mesma pasta.',
-        'Só Windows, interface só em alemão. Não há verificador de atualizações, então você busca as versões novas por conta própria na página de versões.'
+        'Só Windows. A interface fala 14 idiomas e segue o Windows, e você troca isso no menu, em «Idioma». Não há verificador de atualizações, então você busca as versões novas por conta própria na página de versões.'
       ],
       tr: [
         'Kendi GoatCounter hesabınız olmadan Ticker hiçbir şey göstermez. O, kendi sayılarınız için bir gösterge aygıtıdır, başkalarının sayfaları için bir sayma aracı değil.',
         'Çubukların toplamı büyük sayıyı vermez ve bu böyle doğrudur: Yukarıda görüntülenmeler durur, çubuklar ise ziyaretçileri sayar (iki ayrı büyüklük).',
         'Belirteç, programın yanındaki config.json dosyasında durur, pywin32 ile şifrelenmiş ve kullanıcı hesabına ve bilgisayara bağlı olarak. Bu yüzden exe ile config.json aynı klasörde kalmalıdır.',
-        'Yalnızca Windows, arayüz yalnızca Almanca. Güncelleme denetleyicisi yoktur, yeni sürümleri sürümler sayfasından kendiniz alırsınız.'
+        'Yalnızca Windows. Arayüz 14 dil konuşur ve Windows’u izler, menüdeki “Dil” bölümünden değiştirebilirsiniz. Güncelleme denetleyicisi yoktur, yeni sürümleri sürümler sayfasından kendiniz alırsınız.'
       ],
       ru: [
         'Без собственного аккаунта GoatCounter тикер ничего не показывает. Он показывает ваши собственные цифры, а не считает чужие сайты.',
         'Сумма столбиков не совпадает с большим числом наверху, и это правильно: наверху просмотры, а столбики считают посетителей (это две разные величины).',
         'Токен лежит в config.json рядом с программой, зашифрованный средствами pywin32 и привязанный к учётной записи и компьютеру. Поэтому exe и config.json должны оставаться в одной папке.',
-        'Только Windows, интерфейс только на немецком. Проверки обновлений нет, новые версии вы забираете сами со страницы выпусков.'
+        'Только Windows. Интерфейс говорит на 14 языках и следует языку Windows, сменить его можно в меню, в пункте «Язык». Проверки обновлений нет, новые версии вы забираете сами со страницы выпусков.'
       ],
       hi: [
         'अपने GoatCounter खाते के बिना टिकर कुछ नहीं दिखाता। वह आपके अपने आँकड़ों के लिए एक प्रदर्शक है, दूसरों की साइटों के लिए गिनने का औज़ार नहीं।',
         'बारों का जोड़ उस बड़ी संख्या के बराबर नहीं होता, और यह ठीक ही है: ऊपर पेजव्यू लिखे होते हैं, बार विज़िटर गिनते हैं (दो अलग-अलग राशियाँ)।',
         'टोकन प्रोग्राम के बग़ल में config.json में रहता है, pywin32 से एन्क्रिप्ट किया हुआ और आपके उपयोक्ता खाते और कंप्यूटर से बँधा हुआ। इसीलिए exe और config.json को एक ही फ़ोल्डर में रहना चाहिए।',
-        'केवल Windows, इंटरफ़ेस केवल जर्मन में। अपडेट जाँचने वाला कोई हिस्सा नहीं है, इसलिए नए संस्करण आपको खुद रिलीज़ पेज से लेने होते हैं।'
+        'केवल Windows। इंटरफ़ेस 14 भाषाएँ बोलता है और Windows की भाषा अपनाता है, मेन्यू में “भाषा” से आप इसे बदल सकते हैं। अपडेट जाँचने वाला कोई हिस्सा नहीं है, इसलिए नए संस्करण आपको खुद रिलीज़ पेज से लेने होते हैं।'
       ],
       zh: [
         '没有自己的 GoatCounter 账号，这个 Ticker 什么都显示不了。它是显示你自己数字的仪表，不是统计别人网站的工具。',
         '柱条加起来不等于上面那个大数字，这样才对：上面是浏览量，柱条数的是访客（两个不同的量）。',
         '令牌放在程序旁边的 config.json 里，用 pywin32 加密，并绑定到用户账号和这台电脑。所以 exe 和 config.json 必须留在同一个文件夹里。',
-        '仅限 Windows，界面只有德语。没有更新检查器，新版本要你自己去发布页取。'
+        '仅限 Windows。界面支持 14 种语言，默认跟随 Windows，可以在菜单的“语言”里切换。没有更新检查器，新版本要你自己去发布页取。'
       ],
       ja: [
         '自分の GoatCounter アカウントがないと、Ticker は何も表示しません。自分の数字のための表示装置であって、他人のサイトを数える道具ではありません。',
         'バーの合計は上の大きな数字にはなりませんが、それで正しいのです: 上に出ているのはページビュー、バーが数えているのは訪問者で、別々の量です。',
         'トークンはプログラムの隣の config.json にあり、pywin32 で暗号化され、ユーザーアカウントとパソコンに結び付けられています。そのため exe と config.json は同じフォルダーに置いたままにする必要があります。',
-        'Windows のみ、画面はドイツ語のみです。更新チェッカーはないので、新しい版はリリースページから自分で取ってきてください。'
+        'Windows のみです。画面は14言語に対応し、Windows の言語に合わせます。メニューの「言語」で切り替えられます。更新チェッカーはないので、新しい版はリリースページから自分で取ってきてください。'
       ],
       ko: [
         '자기 GoatCounter 계정이 없으면 티커는 아무것도 보여 주지 않습니다. 이것은 자기 숫자를 보는 표시 장치이지, 남의 사이트를 세는 도구가 아닙니다.',
         '막대의 합은 위의 큰 숫자와 맞지 않는데, 그게 맞습니다: 위에 있는 것은 조회수이고 막대는 방문자를 세기 때문입니다(서로 다른 두 가지 값입니다).',
         '토큰은 프로그램 옆의 config.json에 들어 있고, pywin32로 암호화되어 사용자 계정과 컴퓨터에 묶여 있습니다. 그래서 exe와 config.json은 같은 폴더에 남아 있어야 합니다.',
-        'Windows 전용이고 화면은 독일어로만 제공됩니다. 업데이트 검사기는 없으니 새 버전은 릴리스 페이지에서 직접 가져와야 합니다.'
+        'Windows 전용입니다. 화면은 14개 언어를 지원하고 Windows 언어를 따르며, 메뉴의 ‘언어’에서 바꿀 수 있습니다. 업데이트 검사기는 없으니 새 버전은 릴리스 페이지에서 직접 가져와야 합니다.'
       ]
     },
     docs: {
@@ -2988,64 +2988,64 @@ var GUIDES = {
         'Draw in the “Fadenkreuz-Editor”, choose “Save as …” once and save as fadenkreuz.bmp in Documents\\Fadenkreuz. With “live” switched on, the crosshair picks up every change within a second.'
       ],
       es: [
-        'Descarga el instalador desde las versiones y ejecútalo. Windows avisa de «Editor desconocido» porque el archivo no está firmado. Se continúa con «Más información». «Install for me only» (instalar solo para mí) no necesita permisos de administrador, y la mira y el editor se pueden elegir por separado.',
+        'Descarga el instalador desde las versiones y ejecútalo. Windows avisa de «Editor desconocido» porque el archivo no está firmado. Se continúa con «Más información». «Instalar para mí solamente» no necesita permisos de administrador, y la mira y el editor se pueden elegir por separado.',
         'Inicia «Fadenkreuz»: en el centro de la pantalla aparece una cruz verde. Ctrl+Alt+F9 la oculta y la vuelve a mostrar, Ctrl+Alt+F12 la cierra, igual que un segundo clic en el acceso directo.',
-        'Dibuja en el «Fadenkreuz-Editor», elige una vez «Save as …» (guardar como) y guarda como fadenkreuz.bmp en Documentos\\Fadenkreuz. Con «live» activado, la mira recoge cada cambio en un segundo como mucho.'
+        'Dibuja en el «Fadenkreuz-Editor», elige una vez «Guardar como …» y guarda como fadenkreuz.bmp en Documentos\\Fadenkreuz. Con «live» activado, la mira recoge cada cambio en un segundo como mucho.'
       ],
       fr: [
-        'Télécharger l’installateur depuis les releases et le lancer. Windows signale « Éditeur inconnu », parce que le fichier n’est pas signé. On continue via « Informations complémentaires ». « Install for me only » (installer pour moi seulement) ne demande pas de droits d’administrateur, et le réticule et l’éditeur se choisissent séparément.',
+        'Télécharger l’installateur depuis les releases et le lancer. Windows signale « Éditeur inconnu », parce que le fichier n’est pas signé. On continue via « Informations complémentaires ». « Installer seulement pour moi » ne demande pas de droits d’administrateur, et le réticule et l’éditeur se choisissent séparément.',
         'Lancer « Fadenkreuz » : une croix verte apparaît au centre de l’écran. Ctrl+Alt+F9 la masque et la réaffiche, Ctrl+Alt+F12 la ferme (exactement comme un second clic sur le raccourci).',
-        'Dessiner dans le « Fadenkreuz-Editor », choisir une fois « Save as … » (enregistrer sous) et enregistrer sous le nom fadenkreuz.bmp dans Documents\\Fadenkreuz. Avec « live » activé, le réticule reprend chaque modification en une seconde au plus.'
+        'Dessiner dans le « Fadenkreuz-Editor », choisir une fois « Enregistrer sous … » et enregistrer sous le nom fadenkreuz.bmp dans Documents\\Fadenkreuz. Avec « live » activé, le réticule reprend chaque modification en une seconde au plus.'
       ],
       it: [
-        'Scarica il programma di installazione dalle release ed eseguilo. Windows segnala «Editore sconosciuto» perché il file non è firmato: prosegui con «Ulteriori informazioni». «Install for me only» (installa solo per me) non richiede diritti di amministratore, e mirino ed editor si scelgono separatamente.',
+        'Scarica il programma di installazione dalle release ed eseguilo. Windows segnala «Editore sconosciuto» perché il file non è firmato: prosegui con «Ulteriori informazioni». «Installa solo per l’utente attuale» non richiede diritti di amministratore, e mirino ed editor si scelgono separatamente.',
         'Avvia «Fadenkreuz»: al centro dello schermo compare una croce verde. Ctrl+Alt+F9 la nasconde e la rimostra, Ctrl+Alt+F12 la chiude (proprio come un secondo clic sul collegamento).',
-        'Disegna nel «Fadenkreuz-Editor», scegli una volta «Save as …» (salva con nome) e salva come fadenkreuz.bmp in Documenti\\Fadenkreuz. Con «live» attivo, il mirino recepisce ogni modifica entro un secondo.'
+        'Disegna nel «Fadenkreuz-Editor», scegli una volta «Salva con nome …» e salva come fadenkreuz.bmp in Documenti\\Fadenkreuz. Con «live» attivo, il mirino recepisce ogni modifica entro un secondo.'
       ],
       nl: [
-        'Download de installatie van de releases en voer hem uit. Windows meldt “Onbekende uitgever”, omdat het bestand niet ondertekend is. Via “Meer informatie” ga je verder. “Install for me only” (alleen voor mij installeren) vraagt geen beheerdersrechten, en vizier en editor kun je los kiezen.',
-        'Start “Fadenkreuz”: midden op het scherm verschijnt een groen kruis. Ctrl+Alt+F9 verbergt en toont het, Ctrl+Alt+F12 sluit het af (net als een tweede klik op de snelkoppeling).',
-        'Teken in de “Fadenkreuz-Editor”, kies één keer “Save as …” (opslaan als) en sla op als fadenkreuz.bmp in Documenten\\Fadenkreuz. Met “live” aan neemt het vizier elke wijziging binnen een seconde over.'
+        'Download de installatie van de releases en voer hem uit. Windows meldt ‘Onbekende uitgever’, omdat het bestand niet ondertekend is. Via ‘Meer informatie’ ga je verder. ‘Installeer voor mij alleen’ vraagt geen beheerdersrechten, en vizier en editor kun je los kiezen.',
+        'Start ‘Fadenkreuz’: midden op het scherm verschijnt een groen kruis. Ctrl+Alt+F9 verbergt en toont het, Ctrl+Alt+F12 sluit het af (net als een tweede klik op de snelkoppeling).',
+        'Teken in de ‘Fadenkreuz-Editor’, kies één keer ‘Opslaan als …’ en sla op als fadenkreuz.bmp in Documenten\\Fadenkreuz. Met ‘live’ aan neemt het vizier elke wijziging binnen een seconde over.'
       ],
       pl: [
-        'Pobrać instalator ze strony wydań i go uruchomić. Windows zgłosi „Nieznany wydawca”, bo plik nie jest podpisany. Dalej prowadzi „Więcej informacji”. „Install for me only” (instalacja tylko dla mnie) nie wymaga uprawnień administratora, a celownik i edytor można wybrać osobno.',
+        'Pobrać instalator ze strony wydań i go uruchomić. Windows zgłosi „Nieznany wydawca”, bo plik nie jest podpisany. Dalej prowadzi „Więcej informacji”. „Zainstaluj dla bieżącego użytkownika” nie wymaga uprawnień administratora, a celownik i edytor można wybrać osobno.',
         'Uruchomić „Fadenkreuz”: na środku ekranu pojawi się zielony krzyż. Ctrl+Alt+F9 ukrywa go i pokazuje z powrotem, Ctrl+Alt+F12 go zamyka (tak samo jak drugie kliknięcie skrótu).',
-        'Narysować celownik w „Fadenkreuz-Editor”, raz wybrać „Save as …” (zapisz jako) i zapisać jako fadenkreuz.bmp w folderze Dokumenty\\Fadenkreuz. Z włączonym „live” celownik przejmuje każdą zmianę najpóźniej po sekundzie.'
+        'Narysować celownik w „Fadenkreuz-Editor”, raz wybrać „Zapisz jako …” i zapisać jako fadenkreuz.bmp w folderze Dokumenty\\Fadenkreuz. Z włączonym „live” celownik przejmuje każdą zmianę najpóźniej po sekundzie.'
       ],
       pt: [
-        'Baixar o instalador da página de versões e executar. O Windows avisa «Editor desconhecido», porque o arquivo não está assinado. Para continuar, use «Mais informações». «Install for me only» (instalar só para mim) não precisa de direitos de administrador, e a mira e o editor podem ser escolhidos separadamente.',
+        'Baixar o instalador da página de versões e executar. O Windows avisa «Editor desconhecido», porque o arquivo não está assinado. Para continuar, use «Mais informações». «Instalar só pra mim» não precisa de direitos de administrador, e a mira e o editor podem ser escolhidos separadamente.',
         'Iniciar o «Fadenkreuz»: no centro da tela aparece uma cruz verde. Ctrl+Alt+F9 esconde e mostra de novo, Ctrl+Alt+F12 fecha (igual a um segundo clique no atalho).',
-        'Desenhar no «Fadenkreuz-Editor», escolher uma vez «Save as …» (salvar como) e salvar como fadenkreuz.bmp em Documentos\\Fadenkreuz. Com «live» ligado, a mira assume cada alteração em no máximo um segundo.'
+        'Desenhar no «Fadenkreuz-Editor», escolher uma vez «Salvar como …» e salvar como fadenkreuz.bmp em Documentos\\Fadenkreuz. Com «live» ligado, a mira assume cada alteração em no máximo um segundo.'
       ],
       tr: [
-        'Kurulum dosyasını sürümler sayfasından indirip çalıştırın. Dosya imzalı olmadığı için Windows “Bilinmeyen yayımcı” uyarısı verir. “Daha fazla bilgi” üzerinden devam edilir. “Install for me only” (yalnızca benim için kur) yönetici hakları gerektirmez, nişangâh ve düzenleyici ayrı ayrı seçilebilir.',
+        'Kurulum dosyasını sürümler sayfasından indirip çalıştırın. Dosya imzalı olmadığı için Windows “Bilinmeyen yayımcı” uyarısı verir. “Daha fazla bilgi” üzerinden devam edilir. “Yalnızca geçerli kullanıcı için kurulsun” yönetici hakları gerektirmez, nişangâh ve düzenleyici ayrı ayrı seçilebilir.',
         'Fadenkreuz’u başlatın: ekranın ortasında yeşil bir artı belirir. Ctrl+Alt+F9 onu gizler ve yeniden gösterir, Ctrl+Alt+F12 kapatır (tıpkı kısayola ikinci kez tıklamak gibi).',
-        '“Fadenkreuz-Editor” içinde çizin, bir kez “Save as …” (farklı kaydet) seçeneğini seçin ve dosyayı Belgeler\\Fadenkreuz klasörüne fadenkreuz.bmp adıyla kaydedin. “live” açıkken nişangâh her değişikliği en geç bir saniye içinde alır.'
+        '“Fadenkreuz-Editor” içinde çizin, bir kez “Farklı kaydet …” seçeneğini seçin ve dosyayı Belgeler\\Fadenkreuz klasörüne fadenkreuz.bmp adıyla kaydedin. “live” açıkken nişangâh her değişikliği en geç bir saniye içinde alır.'
       ],
       ru: [
-        'Скачайте установщик со страницы релизов и запустите его. Windows сообщит «Неизвестный издатель», потому что файл не подписан. Продолжите через «Подробнее». Вариант «Install for me only» (установить только для меня) не требует прав администратора, а прицел и редактор можно выбрать по отдельности.',
+        'Скачайте установщик со страницы релизов и запустите его. Windows сообщит «Неизвестный издатель», потому что файл не подписан. Продолжите через «Подробнее». Вариант «Установить только для меня» не требует прав администратора, а прицел и редактор можно выбрать по отдельности.',
         'Запустите «Fadenkreuz»: в центре экрана появится зелёный крест. Ctrl+Alt+F9 скрывает и снова показывает его, Ctrl+Alt+F12 закрывает (так же, как повторный щелчок по ярлыку).',
-        'Нарисуйте прицел в «Fadenkreuz-Editor», один раз выберите «Save as …» (сохранить как) и сохраните файл как fadenkreuz.bmp в папке Документы\\Fadenkreuz. Если включено «live», прицел подхватывает каждое изменение не позже чем через секунду.'
+        'Нарисуйте прицел в «Fadenkreuz-Editor», один раз выберите «Сохранить как …» и сохраните файл как fadenkreuz.bmp в папке Документы\\Fadenkreuz. Если включено «live», прицел подхватывает каждое изменение не позже чем через секунду.'
       ],
       hi: [
         'Releases से सेटअप डाउनलोड करके चलाएँ। फ़ाइल साइन की हुई नहीं है, इसलिए Windows “अज्ञात प्रकाशक” बताएगा। “अधिक जानकारी” से आगे बढ़ें। “Install for me only” (सिर्फ़ मेरे लिए इंस्टॉल करें) के लिए एडमिन अधिकार नहीं चाहिए, और क्रॉसहेयर और एडिटर अलग-अलग चुने जा सकते हैं।',
         '“Fadenkreuz” शुरू करें: स्क्रीन के बीच में एक हरा क्रॉस दिखेगा। Ctrl+Alt+F9 उसे छिपाता और फिर दिखाता है, Ctrl+Alt+F12 उसे बंद करता है (ठीक शॉर्टकट पर दूसरी बार क्लिक करने की तरह)।',
-        '“Fadenkreuz-Editor” में बनाएँ, एक बार “Save as …” (इस रूप में सहेजें) चुनें और Documents\\Fadenkreuz में fadenkreuz.bmp नाम से सहेजें। “live” चालू होने पर क्रॉसहेयर हर बदलाव ज़्यादा से ज़्यादा एक सेकंड में अपना लेता है।'
+        '“Fadenkreuz-Editor” में बनाएँ, एक बार “इस रूप में सहेजें …” चुनें और Documents\\Fadenkreuz में fadenkreuz.bmp नाम से सहेजें। “live” चालू होने पर क्रॉसहेयर हर बदलाव ज़्यादा से ज़्यादा एक सेकंड में अपना लेता है।'
       ],
       zh: [
         '从发布页下载安装程序并运行。因为文件没有签名，Windows 会提示“未知发布者”，点“更多信息”即可继续。选择“Install for me only”（仅为我安装）不需要管理员权限，准星和编辑器可以分开选择。',
         '启动“Fadenkreuz”：屏幕中央会出现一个绿色十字。Ctrl+Alt+F9 可隐藏或重新显示，Ctrl+Alt+F12 将其关闭（和再点一次快捷方式效果相同）。',
-        '在“Fadenkreuz-Editor”里绘制，点一次“Save as …”（另存为），把文件以 fadenkreuz.bmp 保存到“文档\\Fadenkreuz”。打开“live”后，准星最多一秒就会采用每次改动。'
+        '在“Fadenkreuz-Editor”里绘制，点一次“另存为 …”，把文件以 fadenkreuz.bmp 保存到“文档\\Fadenkreuz”。打开“live”后，准星最多一秒就会采用每次改动。'
       ],
       ja: [
-        'リリースページからセットアップをダウンロードして実行します。ファイルに署名がないため Windows は「不明な発行元」と表示します。「詳細情報」から先へ進めます。「Install for me only」（自分だけにインストール）なら管理者権限は不要で、照準とエディターは別々に選べます。',
+        'リリースページからセットアップをダウンロードして実行します。ファイルに署名がないため Windows は「不明な発行元」と表示します。「詳細情報」から先へ進めます。「現在のユーザー用にインストール」なら管理者権限は不要で、照準とエディターは別々に選べます。',
         '「Fadenkreuz」を起動すると、画面の中央に緑の十字が現れます。Ctrl+Alt+F9 で隠したり再表示したりでき、Ctrl+Alt+F12 で終了します（ショートカットをもう一度クリックしても同じです）。',
-        '「Fadenkreuz-Editor」で描き、一度だけ「Save as …」（名前を付けて保存）を選んで、ドキュメント\\Fadenkreuz に fadenkreuz.bmp として保存します。「live」をオンにすると、照準は変更を遅くとも1秒以内に反映します。'
+        '「Fadenkreuz-Editor」で描き、一度だけ「名前を付けて保存 …」を選んで、ドキュメント\\Fadenkreuz に fadenkreuz.bmp として保存します。「live」をオンにすると、照準は変更を遅くとも1秒以内に反映します。'
       ],
       ko: [
-        '릴리스 페이지에서 설치 프로그램을 내려받아 실행합니다. 파일에 서명이 없어서 Windows가 “알 수 없는 게시자”라고 알립니다. “추가 정보”를 눌러 계속하면 됩니다. “Install for me only”(나만 설치)는 관리자 권한이 필요 없고, 조준선과 에디터는 따로 고를 수 있습니다.',
-        '“Fadenkreuz”를 실행하면 화면 가운데에 녹색 십자가 나타납니다. Ctrl+Alt+F9로 숨기거나 다시 보이게 하고, Ctrl+Alt+F12로 끕니다(바로 가기를 한 번 더 클릭해도 같습니다).',
-        '“Fadenkreuz-Editor”에서 그린 다음, “Save as …”(다른 이름으로 저장)를 한 번 골라 문서\\Fadenkreuz에 fadenkreuz.bmp로 저장합니다. “live”를 켜 두면 조준선이 바뀐 내용을 늦어도 1초 안에 반영합니다.'
+        '릴리스 페이지에서 설치 프로그램을 내려받아 실행합니다. 파일에 서명이 없어서 Windows가 ‘알 수 없는 게시자’라고 알립니다. ‘추가 정보’를 눌러 계속하면 됩니다. ‘현재 사용자용으로 설치’는 관리자 권한이 필요 없고, 조준선과 에디터는 따로 고를 수 있습니다.',
+        '‘Fadenkreuz’를 실행하면 화면 가운데에 녹색 십자가 나타납니다. Ctrl+Alt+F9로 숨기거나 다시 보이게 하고, Ctrl+Alt+F12로 끕니다(바로 가기를 한 번 더 클릭해도 같습니다).',
+        '‘Fadenkreuz-Editor’에서 그린 다음, ‘다른 이름으로 저장 …’을 한 번 골라 문서\\Fadenkreuz에 fadenkreuz.bmp로 저장합니다. ‘live’를 켜 두면 조준선이 바뀐 내용을 늦어도 1초 안에 반영합니다.'
       ]
     },
     pitfalls: {
@@ -3054,98 +3054,98 @@ var GUIDES = {
         'Strg+Alt+F10 im Spiel heißt: Ab jetzt erscheint das Kreuz nur noch, solange dieses Spiel vorne ist. Fehlt es in einem anderen Spiel, steht das nur noch nicht auf der Liste, dort also auch Strg+Alt+F10 drücken. Eine leere Dokumente\\Fadenkreuz\\programme.txt heißt: immer sichtbar.',
         'Über Startmenü, Taskleiste und manchen Overlays liegt das Kreuz nur mit „Installation für alle Benutzer“ und der Aufgabe „Über allem anzeigen“. Dafür legt das Setup ein Zertifikat an, das nur auf diesem PC gilt, und löscht den privaten Schlüssel gleich wieder.',
         'Fadenkreuz fasst das Spiel nicht an, es ist ein eigenes Fenster. Trotzdem mögen einige Wettkampf-Spiele keine Overlays, also vor Ranglisten-Spielen prüfen.',
-        'Nur der Hauptbildschirm. Editor und Setup sprechen Deutsch und Englisch. Edge und Chrome speichern direkt in die Datei, Firefox kann sie nur herunterladen.'
+        'Nur der Hauptbildschirm. Der Editor spricht 14 Sprachen und richtet sich nach dem Browser, umstellen kannst du oben im Editor. Das Setup kann alle außer Chinesisch und Hindi, dort kommt es auf Englisch. Edge und Chrome speichern direkt in die Datei, Firefox kann sie nur herunterladen.'
       ],
       en: [
         'Games in exclusive fullscreen draw over every overlay. Switch the game to “borderless window” or “windowed fullscreen”.',
         'Ctrl+Alt+F10 inside a game means: from now on the crosshair only appears while that game is in front. If it is missing in another game, that game is just not on the list yet, so press Ctrl+Alt+F10 there too. An empty Documents\\Fadenkreuz\\programme.txt means: always visible.',
         'The crosshair only sits above the Start menu, the taskbar and some overlays with “Install for all users” and the task “Show on top of everything”. For that, the setup creates a certificate that is only valid on this PC and deletes its private key right away.',
         'Fadenkreuz does not touch the game. It is a window of its own. Still, a few competitive games dislike overlays, so check before playing ranked.',
-        'Main screen only. Editor and setup speak English and German. Edge and Chrome save straight into the file, while Firefox can only download it.'
+        'Main screen only. The editor speaks 14 languages and follows your browser, and you can switch at the top of the editor. The setup speaks all of them except Chinese and Hindi, where it shows English. Edge and Chrome save straight into the file, while Firefox can only download it.'
       ],
       es: [
         'Los juegos en pantalla completa exclusiva tapan cualquier superposición. Pon el juego en «ventana sin bordes» o «pantalla completa en ventana».',
         'Ctrl+Alt+F10 dentro de un juego significa: a partir de ahora la mira solo aparece mientras ese juego esté delante. Si falta en otro juego, es que ese juego aún no está en la lista, así que pulsa también allí Ctrl+Alt+F10. Un Documentos\\Fadenkreuz\\programme.txt vacío significa: siempre visible.',
-        'La mira solo queda por encima del menú Inicio, la barra de tareas y algunas superposiciones con «Install for all users» y la tarea «Show on top of everything». Para ello, el instalador crea un certificado válido solo en este PC y borra enseguida su clave privada.',
+        'La mira solo queda por encima del menú Inicio, la barra de tareas y algunas superposiciones con «Instalar para todos los usuarios» y la tarea «Mostrar por encima de todo». Para ello, el instalador crea un certificado válido solo en este PC y borra enseguida su clave privada.',
         'Fadenkreuz no toca el juego: es una ventana propia. Aun así, algunos juegos competitivos no se llevan bien con las superposiciones, así que compruébalo antes de jugar partidas clasificatorias.',
-        'Solo la pantalla principal. El editor y el instalador están en inglés y en alemán. Edge y Chrome guardan directamente en el archivo, Firefox solo puede descargarlo.'
+        'Solo la pantalla principal. El editor habla 14 idiomas y sigue al navegador, puedes cambiarlo arriba en el editor. El instalador está en todos menos chino e hindi, donde sale en inglés. Edge y Chrome guardan directamente en el archivo, Firefox solo puede descargarlo.'
       ],
       fr: [
         'Les jeux en plein écran exclusif recouvrent toute surcouche. Passez le jeu en « fenêtre sans bordure » ou en « plein écran fenêtré ».',
         'Ctrl+Alt+F10 dans un jeu signifie : désormais, le réticule n’apparaît que tant que ce jeu est au premier plan. S’il manque dans un autre jeu, c’est simplement que celui-ci n’est pas encore sur la liste, appuyez donc aussi sur Ctrl+Alt+F10 là-bas. Un fichier Documents\\Fadenkreuz\\programme.txt vide signifie : toujours visible.',
-        'Le réticule ne passe au-dessus du menu Démarrer, de la barre des tâches et de certaines surcouches qu’avec « Install for all users » et la tâche « Show on top of everything ». L’installateur crée pour cela un certificat valable uniquement sur ce PC et supprime aussitôt sa clé privée.',
+        'Le réticule ne passe au-dessus du menu Démarrer, de la barre des tâches et de certaines surcouches qu’avec « Installer pour tous les utilisateurs » et la tâche « Afficher au-dessus de tout ». L’installateur crée pour cela un certificat valable uniquement sur ce PC et supprime aussitôt sa clé privée.',
         'Fadenkreuz ne touche pas au jeu : c’est une fenêtre à part. Certains jeux compétitifs n’aiment pourtant pas les surcouches, vérifiez donc avant de jouer en classé.',
-        'Écran principal uniquement. L’éditeur et l’installateur sont en anglais et en allemand. Edge et Chrome enregistrent directement dans le fichier, alors que Firefox ne peut que le télécharger.'
+        'Écran principal uniquement. L’éditeur parle 14 langues et suit le navigateur, vous pouvez en changer en haut de l’éditeur. L’installateur les parle toutes sauf le chinois et le hindi, où il s’affiche en anglais. Edge et Chrome enregistrent directement dans le fichier, alors que Firefox ne peut que le télécharger.'
       ],
       it: [
         'I giochi a schermo intero esclusivo coprono qualsiasi overlay. Imposta il gioco su «finestra senza bordi» o «schermo intero in finestra».',
         'Ctrl+Alt+F10 dentro un gioco significa: da ora il mirino compare solo mentre quel gioco è in primo piano. Se manca in un altro gioco, quel gioco non è ancora nell’elenco, quindi premi Ctrl+Alt+F10 anche lì. Un Documenti\\Fadenkreuz\\programme.txt vuoto significa: sempre visibile.',
-        'Il mirino sta sopra il menu Start, la barra delle applicazioni e alcuni overlay solo con «Install for all users» e l’attività «Show on top of everything». Per questo il programma di installazione crea un certificato valido solo su questo PC e ne cancella subito la chiave privata.',
+        'Il mirino sta sopra il menu Start, la barra delle applicazioni e alcuni overlay solo con «Installa per tutti gli utenti» e l’attività «Mostra sopra a tutto». Per questo il programma di installazione crea un certificato valido solo su questo PC e ne cancella subito la chiave privata.',
         'Fadenkreuz non tocca il gioco: è una finestra a sé. Alcuni giochi competitivi però non amano gli overlay, quindi controlla prima di giocare partite classificate.',
-        'Solo lo schermo principale. Editor e programma di installazione sono in inglese e in tedesco. Edge e Chrome salvano direttamente nel file, Firefox può solo scaricarlo.'
+        'Solo lo schermo principale. L’editor parla 14 lingue e segue il browser, puoi cambiarla in alto nell’editor. Il programma di installazione le parla tutte tranne cinese e hindi, dove compare in inglese. Edge e Chrome salvano direttamente nel file, Firefox può solo scaricarlo.'
       ],
       nl: [
         'Games in exclusief volledig scherm tekenen over elke overlay heen. Zet de game op ‘randloos venster’ of ‘volledig scherm in venster’.',
         'Ctrl+Alt+F10 in een game betekent: vanaf nu verschijnt het vizier alleen zolang die game op de voorgrond staat. Ontbreekt het in een andere game, dan staat die game nog niet op de lijst, dus druk daar ook op Ctrl+Alt+F10. Een lege Documenten\\Fadenkreuz\\programme.txt betekent: altijd zichtbaar.',
-        'Het vizier ligt alleen boven het Startmenu, de taakbalk en sommige overlays met “Install for all users” en de taak “Show on top of everything”. Daarvoor maakt de installatie een certificaat aan dat alleen op deze pc geldt, en wist de privésleutel meteen weer.',
+        'Het vizier ligt alleen boven het Startmenu, de taakbalk en sommige overlays met ‘Installeer voor alle gebruikers’ en de taak ‘Boven alles tonen’. Daarvoor maakt de installatie een certificaat aan dat alleen op deze pc geldt, en wist de privésleutel meteen weer.',
         'Fadenkreuz raakt de game niet aan, het is een eigen venster. Toch houden sommige competitieve games niet van overlays, dus controleer dat vóór je ranked speelt.',
-        'Alleen het hoofdscherm. Editor en installatie zijn er in het Engels en het Duits. Edge en Chrome slaan direct op in het bestand, Firefox kan het alleen downloaden.'
+        'Alleen het hoofdscherm. De editor spreekt 14 talen en volgt je browser, bovenin de editor zet je hem om. De installatie spreekt ze allemaal behalve Chinees en Hindi, daar verschijnt hij in het Engels. Edge en Chrome slaan direct op in het bestand, Firefox kan het alleen downloaden.'
       ],
       pl: [
         'Gry w trybie wyłącznego pełnego ekranu zasłaniają każdą nakładkę. Przełącz grę na „okno bez ramki” lub „pełny ekran w oknie”.',
         'Ctrl+Alt+F10 w grze oznacza: od teraz celownik pojawia się tylko wtedy, gdy ta gra jest na pierwszym planie. Jeśli brakuje go w innej grze, tej gry po prostu nie ma jeszcze na liście, więc naciśnij tam też Ctrl+Alt+F10. Pusty plik Dokumenty\\Fadenkreuz\\programme.txt oznacza: zawsze widoczny.',
-        'Nad menu Start, paskiem zadań i niektórymi nakładkami celownik leży tylko przy „Install for all users” i zadaniu „Show on top of everything”. Instalator tworzy wtedy certyfikat ważny tylko na tym komputerze i od razu usuwa jego klucz prywatny.',
+        'Nad menu Start, paskiem zadań i niektórymi nakładkami celownik leży tylko przy „Zainstaluj dla wszystkich użytkowników” i zadaniu „Pokazuj nad wszystkim”. Instalator tworzy wtedy certyfikat ważny tylko na tym komputerze i od razu usuwa jego klucz prywatny.',
         'Fadenkreuz nie dotyka gry, to osobne okno. Mimo to niektóre gry rywalizacyjne nie lubią nakładek, więc sprawdź to przed grą rankingową.',
-        'Tylko główny ekran. Edytor i instalator są po angielsku i po niemiecku. Edge i Chrome zapisują prosto do pliku, Firefox może go tylko pobrać.'
+        'Tylko główny ekran. Edytor mówi w 14 językach i dopasowuje się do przeglądarki, zmienisz to u góry edytora. Instalator zna wszystkie oprócz chińskiego i hindi, tam pokazuje się po angielsku. Edge i Chrome zapisują prosto do pliku, Firefox może go tylko pobrać.'
       ],
       pt: [
         'Jogos em tela cheia exclusiva cobrem qualquer sobreposição. Coloque o jogo em «janela sem bordas» ou «tela cheia em janela».',
         'Ctrl+Alt+F10 dentro de um jogo significa: a partir daí, a mira só aparece enquanto esse jogo estiver na frente. Se ela faltar em outro jogo, é só porque esse jogo ainda não está na lista, então pressione Ctrl+Alt+F10 lá também. Um Documentos\\Fadenkreuz\\programme.txt vazio significa: sempre visível.',
-        'A mira só fica por cima do menu Iniciar, da barra de tarefas e de algumas sobreposições com «Install for all users» e a tarefa «Show on top of everything». Para isso, o instalador cria um certificado válido só neste PC e apaga na hora a chave privada dele.',
+        'A mira só fica por cima do menu Iniciar, da barra de tarefas e de algumas sobreposições com «Instalar pra todos os usuários» e a tarefa «Mostrar acima de tudo». Para isso, o instalador cria um certificado válido só neste PC e apaga na hora a chave privada dele.',
         'O Fadenkreuz não mexe no jogo, ele é uma janela própria. Mesmo assim, alguns jogos competitivos não gostam de sobreposições, então verifique antes de jogar partidas ranqueadas.',
-        'Só a tela principal. O editor e o instalador estão em inglês e em alemão. O Edge e o Chrome salvam direto no arquivo, o Firefox só consegue baixar.'
+        'Só a tela principal. O editor fala 14 idiomas e segue o navegador, e você troca no alto do editor. O instalador fala todos menos chinês e hindi, onde aparece em inglês. O Edge e o Chrome salvam direto no arquivo, o Firefox só consegue baixar.'
       ],
       tr: [
         'Özel tam ekran modundaki oyunlar her katmanın üzerini kapatır. Oyunu “kenarlıksız pencere” ya da “pencereli tam ekran” moduna alın.',
         'Oyun içinde Ctrl+Alt+F10 şu anlama gelir: Artık nişangâh yalnızca o oyun öndeyken görünür. Başka bir oyunda görünmüyorsa, o oyun henüz listede değildir, orada da Ctrl+Alt+F10’a basın. Boş bir Belgeler\\Fadenkreuz\\programme.txt dosyası “her zaman görünür” demektir.',
-        'Nişangâh Başlat menüsünün, görev çubuğunun ve bazı katmanların üstünde yalnızca “Install for all users” ve “Show on top of everything” görevi seçildiğinde durur. Bunun için kurulum, yalnızca bu bilgisayarda geçerli bir sertifika oluşturur ve özel anahtarını hemen siler.',
+        'Nişangâh Başlat menüsünün, görev çubuğunun ve bazı katmanların üstünde yalnızca “Tüm kullanıcılar için kurulsun” ve “Her şeyin üstünde göster” görevi seçildiğinde durur. Bunun için kurulum, yalnızca bu bilgisayarda geçerli bir sertifika oluşturur ve özel anahtarını hemen siler.',
         'Fadenkreuz oyuna dokunmaz, kendi başına bir penceredir. Yine de bazı rekabetçi oyunlar katmanları sevmez, bu yüzden dereceli oyunlardan önce kontrol edin.',
-        'Yalnızca ana ekran. Düzenleyici ve kurulum İngilizce ve Almancadır. Edge ve Chrome doğrudan dosyaya kaydeder, Firefox dosyayı yalnızca indirebilir.'
+        'Yalnızca ana ekran. Düzenleyici 14 dil konuşur ve tarayıcıyı izler, düzenleyicinin üst kısmından değiştirebilirsiniz. Kurulum Çince ve Hintçe dışında hepsini konuşur, bu ikisinde İngilizce görünür. Edge ve Chrome doğrudan dosyaya kaydeder, Firefox dosyayı yalnızca indirebilir.'
       ],
       ru: [
         'Игры в эксклюзивном полноэкранном режиме перекрывают любой оверлей. Переключите игру в режим «окно без рамки» или «полноэкранный в окне».',
         'Ctrl+Alt+F10 в игре означает: теперь прицел появляется только тогда, когда эта игра на переднем плане. Если его нет в другой игре, значит, её просто ещё нет в списке, так что нажмите Ctrl+Alt+F10 и там. Пустой файл Документы\\Fadenkreuz\\programme.txt означает: виден всегда.',
-        'Над меню «Пуск», панелью задач и некоторыми оверлеями прицел лежит только с вариантом «Install for all users» и задачей «Show on top of everything». Для этого установщик создаёт сертификат, действующий только на этом ПК, и сразу удаляет его закрытый ключ.',
+        'Над меню «Пуск», панелью задач и некоторыми оверлеями прицел лежит только с вариантом «Установить для всех пользователей» и задачей «Показывать поверх всего». Для этого установщик создаёт сертификат, действующий только на этом ПК, и сразу удаляет его закрытый ключ.',
         'Fadenkreuz не трогает игру, это отдельное окно. И всё же некоторые соревновательные игры не любят оверлеи, поэтому проверьте это перед рейтинговыми матчами.',
-        'Только основной экран. Редактор и установщик есть на английском и немецком. Edge и Chrome сохраняют прямо в файл, а Firefox может его только скачать.'
+        'Только основной экран. Редактор говорит на 14 языках и следует языку браузера, сменить его можно вверху редактора. Установщик знает все, кроме китайского и хинди, там он на английском. Edge и Chrome сохраняют прямо в файл, а Firefox может его только скачать.'
       ],
       hi: [
         'एक्सक्लूसिव फ़ुलस्क्रीन वाले गेम हर ओवरले को ढक देते हैं। गेम को “बॉर्डरलेस विंडो” या “विंडो वाला फ़ुलस्क्रीन” पर रखें।',
         'गेम के अंदर Ctrl+Alt+F10 का मतलब है: अब से क्रॉसहेयर सिर्फ़ तभी दिखेगा, जब वही गेम सबसे आगे हो। अगर किसी दूसरे गेम में वह नहीं दिखता, तो वह गेम अभी सूची में नहीं है, इसलिए वहाँ भी Ctrl+Alt+F10 दबाएँ। खाली Documents\\Fadenkreuz\\programme.txt का मतलब है: हमेशा दिखेगा।',
         'स्टार्ट मेन्यू, टास्कबार और कुछ ओवरले के ऊपर क्रॉसहेयर तभी रहता है, जब आप “Install for all users” और “Show on top of everything” कार्य चुनें। इसके लिए सेटअप एक ऐसा प्रमाणपत्र बनाता है जो सिर्फ़ इसी पीसी पर मान्य है, और उसकी निजी कुंजी तुरंत मिटा देता है।',
         'Fadenkreuz गेम को छूता नहीं, यह एक अलग विंडो है। फिर भी कुछ प्रतियोगी गेम ओवरले पसंद नहीं करते, इसलिए रैंक्ड मैच से पहले जाँच लें।',
-        'सिर्फ़ मुख्य स्क्रीन। एडिटर और सेटअप अंग्रेज़ी और जर्मन में हैं। Edge और Chrome सीधे फ़ाइल में सहेजते हैं, Firefox उसे सिर्फ़ डाउनलोड कर सकता है।'
+        'सिर्फ़ मुख्य स्क्रीन। एडिटर 14 भाषाएँ बोलता है और ब्राउज़र की भाषा अपनाता है, एडिटर में ऊपर से आप इसे बदल सकते हैं। सेटअप चीनी और हिंदी को छोड़कर सभी भाषाओं में है, इन दोनों में वह अंग्रेज़ी में दिखता है। Edge और Chrome सीधे फ़ाइल में सहेजते हैं, Firefox उसे सिर्फ़ डाउनलोड कर सकता है।'
       ],
       zh: [
         '独占全屏模式下的游戏会盖住所有覆盖层。请把游戏改成“无边框窗口”或“窗口化全屏”。',
         '在游戏里按 Ctrl+Alt+F10 的意思是：从现在起，只有这个游戏在最前面时才显示准星。如果在另一个游戏里看不到它，只是因为那个游戏还不在列表里，在那里也按一下 Ctrl+Alt+F10 就行。“文档\\Fadenkreuz\\programme.txt”为空则表示：始终显示。',
         '只有选择“Install for all users”并勾选“Show on top of everything”时，准星才会位于开始菜单、任务栏和部分覆盖层之上。为此，安装程序会创建一个只在这台电脑上有效的证书，并立即删除其私钥。',
         'Fadenkreuz 不会碰游戏，它是一个独立的窗口。尽管如此，有些竞技游戏不喜欢覆盖层，打排位赛之前请先确认。',
-        '仅支持主屏幕。编辑器和安装程序都有英语和德语。Edge 和 Chrome 能直接保存到文件，Firefox 只能下载。'
+        '仅支持主屏幕。编辑器支持 14 种语言，默认跟随浏览器，可以在编辑器顶部切换。安装程序支持除中文和印地语以外的所有语言，在这两种语言下显示英文。Edge 和 Chrome 能直接保存到文件，Firefox 只能下载。'
       ],
       ja: [
         '排他的フルスクリーンのゲームは、どんなオーバーレイも上から覆い隠します。ゲームを「ボーダーレスウィンドウ」か「ウィンドウ化フルスクリーン」にしてください。',
         'ゲーム内で Ctrl+Alt+F10 を押すと、それ以降はそのゲームが前面にあるときだけ照準が表示されます。別のゲームで照準が出ないのは、そのゲームがまだリストにないだけなので、そこでも Ctrl+Alt+F10 を押してください。ドキュメント\\Fadenkreuz\\programme.txt が空なら、常に表示されます。',
-        '照準がスタートメニュー、タスクバー、一部のオーバーレイより上に来るのは、「Install for all users」と「Show on top of everything」を選んだときだけです。そのためにセットアップは、この PC でだけ有効な証明書を作り、秘密鍵をすぐに削除します。',
+        '照準がスタートメニュー、タスクバー、一部のオーバーレイより上に来るのは、「すべてのユーザー用にインストール」と「すべての上に表示」を選んだときだけです。そのためにセットアップは、この PC でだけ有効な証明書を作り、秘密鍵をすぐに削除します。',
         'Fadenkreuz はゲームに手を触れません。独立したウィンドウです。それでも、オーバーレイを嫌う対戦ゲームもあります。ランクマッチの前に確認してください。',
-        'メイン画面のみです。エディターとセットアップは英語とドイツ語に対応しています。Edge と Chrome はファイルに直接保存できますが、Firefox はダウンロードしかできません。'
+        'メイン画面のみです。エディターは14言語に対応し、ブラウザーの言語に合わせます。エディターの上部で切り替えられます。セットアップは中国語とヒンディー語以外のすべてに対応し、この2つでは英語で表示されます。Edge と Chrome はファイルに直接保存できますが、Firefox はダウンロードしかできません。'
       ],
       ko: [
-        '독점 전체 화면 모드의 게임은 모든 오버레이를 덮어 버립니다. 게임을 “테두리 없는 창” 또는 “창 모드 전체 화면”으로 바꾸세요.',
+        '독점 전체 화면 모드의 게임은 모든 오버레이를 덮어 버립니다. 게임을 ‘테두리 없는 창’ 또는 ‘창 모드 전체 화면’으로 바꾸세요.',
         '게임 안에서 Ctrl+Alt+F10을 누르면, 그때부터 조준선은 그 게임이 맨 앞에 있을 때만 나타납니다. 다른 게임에서 보이지 않는다면 그 게임이 아직 목록에 없을 뿐이니, 거기서도 Ctrl+Alt+F10을 누르세요. 문서\\Fadenkreuz\\programme.txt가 비어 있으면 항상 보입니다.',
-        '조준선이 시작 메뉴, 작업 표시줄, 일부 오버레이보다 위에 오려면 “Install for all users”와 “Show on top of everything” 작업을 골라야 합니다. 이를 위해 설치 프로그램은 이 PC에서만 유효한 인증서를 만들고, 개인 키는 곧바로 지웁니다.',
+        '조준선이 시작 메뉴, 작업 표시줄, 일부 오버레이보다 위에 오려면 ‘모든 사용자용으로 설치’와 ‘모든 것 위에 표시’ 작업을 골라야 합니다. 이를 위해 설치 프로그램은 이 PC에서만 유효한 인증서를 만들고, 개인 키는 곧바로 지웁니다.',
         'Fadenkreuz는 게임을 건드리지 않습니다. 별도의 창일 뿐입니다. 그래도 일부 경쟁 게임은 오버레이를 싫어하니 랭크 게임 전에 확인하세요.',
-        '메인 화면만 지원합니다. 에디터와 설치 프로그램은 영어와 독일어를 지원합니다. Edge와 Chrome은 파일에 바로 저장하지만, Firefox는 내려받기만 할 수 있습니다.'
+        '메인 화면만 지원합니다. 에디터는 14개 언어를 지원하고 브라우저 언어를 따르며, 에디터 위쪽에서 바꿀 수 있습니다. 설치 프로그램은 중국어와 힌디어를 뺀 모든 언어를 지원하고, 이 두 언어에서는 영어로 나옵니다. Edge와 Chrome은 파일에 바로 저장하지만, Firefox는 내려받기만 할 수 있습니다.'
       ]
     },
     docs: {
