@@ -80,6 +80,23 @@ var NEWS = {
 
   shrink: [
     {
+      date: '2026-11-01',
+      de: 'Alle Texte ohne Gedankenstriche, in allen 14 Sprachen, auch der Titel im Browser-Tab.',
+      en: 'All texts without dashes, in all 14 languages, including the title in the browser tab.',
+      es: 'Todos los textos sin rayas, en los 14 idiomas, también el título de la pestaña del navegador.',
+      fr: 'Tous les textes sans tirets, dans les 14 langues, y compris le titre de l’onglet du navigateur.',
+      it: 'Tutti i testi senza trattini lunghi, in tutte le 14 lingue, anche il titolo nella scheda del browser.',
+      nl: 'Alle teksten zonder gedachtestreepjes, in alle 14 talen, ook de titel in het browsertabblad.',
+      pl: 'Wszystkie teksty bez myślników, we wszystkich 14 językach, także tytuł na karcie przeglądarki.',
+      pt: 'Todos os textos sem travessões, nos 14 idiomas, inclusive o título na aba do navegador.',
+      tr: 'Tüm metinler artık uzun tire olmadan, 14 dilin hepsinde, tarayıcı sekmesindeki başlık dahil.',
+      ru: 'Все тексты без тире, на всех 14 языках, включая заголовок вкладки браузера.',
+      hi: 'सभी पाठ अब बिना डैश के, सभी 14 भाषाओं में, ब्राउज़र टैब का शीर्षक भी।',
+      zh: '所有文字都不再使用破折号，14 种语言都一样，浏览器标签页的标题也是。',
+      ja: 'すべての文章からダッシュをなくしました（14 言語すべて）。ブラウザーのタブのタイトルも同じです。',
+      ko: '모든 문장에서 줄표를 없앴습니다(14개 언어 모두). 브라우저 탭의 제목도 마찬가지입니다.'
+    },
+    {
       date: '2026-10-31',
       de: 'Im hellen Modus ist das grüne Schild mit der Ersparnis jetzt dunkler und gut lesbar.',
       en: 'In light mode the green badge showing your savings is now darker and easy to read.',
@@ -218,6 +235,23 @@ var NEWS = {
   ],
 
   wifi: [
+    {
+      date: '2026-11-01',
+      de: 'Alle Texte ohne Gedankenstriche, in allen 14 Sprachen.',
+      en: 'All texts without dashes, in all 14 languages.',
+      es: 'Todos los textos sin rayas, en los 14 idiomas.',
+      fr: 'Tous les textes sans tirets, dans les 14 langues.',
+      it: 'Tutti i testi senza trattini lunghi, in tutte le 14 lingue.',
+      nl: 'Alle teksten zonder gedachtestreepjes, in alle 14 talen.',
+      pl: 'Wszystkie teksty bez myślników, we wszystkich 14 językach.',
+      pt: 'Todos os textos sem travessões, nos 14 idiomas.',
+      tr: 'Tüm metinler artık uzun tire olmadan, 14 dilin hepsinde.',
+      ru: 'Все тексты без тире, на всех 14 языках.',
+      hi: 'सभी पाठ अब बिना डैश के, सभी 14 भाषाओं में।',
+      zh: '所有文字都不再使用破折号，14 种语言都一样。',
+      ja: 'すべての文章からダッシュをなくしました（14 言語すべて）。',
+      ko: '모든 문장에서 줄표를 없앴습니다(14개 언어 모두).'
+    },
     {
       date: '2026-10-31',
       de: 'Vorleseprogramme nennen den QR-Code jetzt in deiner Sprache. Vorher hieß er überall englisch „QR code“.',
@@ -392,6 +426,23 @@ var NEWS = {
 
   prismatical: [
     {
+      date: '2026-11-01',
+      de: 'Alle Texte ohne Gedankenstriche, in allen 14 Sprachen, auch die Warnungen und der Vorlesetext der Stärkeanzeige.',
+      en: 'All texts without dashes, in all 14 languages, including the warnings and the screen reader text of the strength meter.',
+      es: 'Todos los textos sin rayas, en los 14 idiomas, también los avisos y el texto del medidor de fuerza para lectores de pantalla.',
+      fr: 'Tous les textes sans tirets, dans les 14 langues, y compris les avertissements et le texte lu par le lecteur d’écran pour la jauge de force.',
+      it: 'Tutti i testi senza trattini lunghi, in tutte le 14 lingue, anche gli avvisi e il testo letto dallo screen reader per l’indicatore di forza.',
+      nl: 'Alle teksten zonder gedachtestreepjes, in alle 14 talen, ook de waarschuwingen en de voorleestekst van de sterktemeter.',
+      pl: 'Wszystkie teksty bez myślników, we wszystkich 14 językach, także ostrzeżenia i tekst wskaźnika siły dla czytników ekranu.',
+      pt: 'Todos os textos sem travessões, nos 14 idiomas, inclusive os avisos e o texto do medidor de força para leitores de tela.',
+      tr: 'Tüm metinler artık uzun tire olmadan, 14 dilin hepsinde, uyarılar ve güç göstergesinin ekran okuyucu metni dahil.',
+      ru: 'Все тексты без тире, на всех 14 языках, включая предупреждения и текст индикатора надёжности для экранного диктора.',
+      hi: 'सभी पाठ अब बिना डैश के, सभी 14 भाषाओं में, चेतावनियाँ और मज़बूती मीटर का स्क्रीन रीडर वाला पाठ भी।',
+      zh: '所有文字都不再使用破折号，14 种语言都一样，警告和强度条的读屏文字也包括在内。',
+      ja: 'すべての文章からダッシュをなくしました（14 言語すべて）。警告と、強度メーターの読み上げテキストも含みます。',
+      ko: '모든 문장에서 줄표를 없앴습니다(14개 언어 모두). 경고와 강도 표시의 화면 낭독용 텍스트도 포함됩니다.'
+    },
+    {
       date: '2026-10-31',
       de: 'Auf Russisch, Hindi, Chinesisch und Koreanisch stehen Warnungen, Tipps und Zeitangaben der Stärkeprüfung jetzt in deiner Sprache, vorher auf Englisch (etwa „centuries“). Auch der Titel im Browser-Tab folgt jetzt deiner Sprache.',
       en: 'In Russian, Hindi, Chinese and Korean, the warnings, tips and time estimates of the strength check now appear in your language instead of English (such as “centuries”). The title in the browser tab now follows your language too.',
@@ -479,6 +530,23 @@ var NEWS = {
   ],
 
   spectroton: [
+    {
+      date: '2026-11-01',
+      de: 'Alle Texte ohne Gedankenstriche, in allen 14 Sprachen. Wo vorher ein Strich stand, steht jetzt ein Komma, ein Punkt oder ein Doppelpunkt.',
+      en: 'All texts without dashes, in all 14 languages. Where a dash used to be, there is now a comma, a full stop or a colon.',
+      es: 'Todos los textos sin rayas, en los 14 idiomas. Donde antes había una raya, ahora hay una coma, un punto o dos puntos.',
+      fr: 'Tous les textes sans tirets, dans les 14 langues. Là où il y avait un tiret, il y a maintenant une virgule, un point ou deux-points.',
+      it: 'Tutti i testi senza trattini lunghi, in tutte le 14 lingue. Dove prima c’era un trattino, ora c’è una virgola, un punto o i due punti.',
+      nl: 'Alle teksten zonder gedachtestreepjes, in alle 14 talen. Waar eerst een streepje stond, staat nu een komma, een punt of een dubbele punt.',
+      pl: 'Wszystkie teksty bez myślników, we wszystkich 14 językach. Tam, gdzie był myślnik, jest teraz przecinek, kropka albo dwukropek.',
+      pt: 'Todos os textos sem travessões, nos 14 idiomas. Onde antes havia um travessão, agora há uma vírgula, um ponto ou dois-pontos.',
+      tr: 'Tüm metinler artık uzun tire olmadan, 14 dilin hepsinde. Eskiden tire olan yerde şimdi virgül, nokta ya da iki nokta var.',
+      ru: 'Все тексты без тире, на всех 14 языках. Где раньше стояло тире, теперь запятая, точка или двоеточие.',
+      hi: 'सभी पाठ अब बिना डैश के, सभी 14 भाषाओं में। जहाँ पहले डैश था, वहाँ अब अल्पविराम, पूर्ण विराम या कोलन है।',
+      zh: '所有文字都不再使用破折号，14 种语言都一样。原来用破折号的地方，现在改成了逗号、句号或冒号。',
+      ja: 'すべての文章からダッシュをなくしました（14 言語すべて）。ダッシュがあった所は、読点、句点、コロンになっています。',
+      ko: '모든 문장에서 줄표를 없앴습니다(14개 언어 모두). 줄표가 있던 자리는 이제 쉼표, 마침표, 쌍점입니다.'
+    },
     {
       date: '2026-10-31',
       de: 'Die Fußzeile (direktes Speichern in einen Ordner, Farbraum des Bildschirms) steht jetzt gleich beim ersten Öffnen in deiner Sprache. Vorher kam sie immer auf Deutsch.',
@@ -652,6 +720,23 @@ var NEWS = {
   ],
 
   collective: [
+    {
+      date: '2026-11-01',
+      de: 'Alle Texte ohne Gedankenstriche, in allen 14 Sprachen. Der Hinweis zum Rest spricht dich jetzt direkt an.',
+      en: 'All texts without dashes, in all 14 languages. The note about the remainder now speaks to you directly.',
+      es: 'Todos los textos sin rayas, en los 14 idiomas. El aviso sobre el resto ahora se dirige a ti directamente.',
+      fr: 'Tous les textes sans tirets, dans les 14 langues. La note sur le reste s’adresse maintenant directement à toi.',
+      it: 'Tutti i testi senza trattini lunghi, in tutte le 14 lingue. La nota sul resto ora si rivolge direttamente a te.',
+      nl: 'Alle teksten zonder gedachtestreepjes, in alle 14 talen. De opmerking over de rest spreekt jou nu direct aan.',
+      pl: 'Wszystkie teksty bez myślników, we wszystkich 14 językach. Uwaga o reszcie zwraca się teraz bezpośrednio do ciebie.',
+      pt: 'Todos os textos sem travessões, nos 14 idiomas. O aviso sobre o resto agora fala diretamente com você.',
+      tr: 'Tüm metinler artık uzun tire olmadan, 14 dilin hepsinde. Artan küsuratla ilgili not artık doğrudan sana sesleniyor.',
+      ru: 'Все тексты без тире, на всех 14 языках. Подсказка об остатке теперь обращается прямо к тебе.',
+      hi: 'सभी पाठ अब बिना डैश के, सभी 14 भाषाओं में। बची रकम वाला नोट अब सीधे आपसे बात करता है।',
+      zh: '所有文字都不再使用破折号，14 种语言都一样。关于余额的提示现在直接对你说话。',
+      ja: 'すべての文章からダッシュをなくしました（14 言語すべて）。端数についての注意書きは、あなたに直接語りかける形になりました。',
+      ko: '모든 문장에서 줄표를 없앴습니다(14개 언어 모두). 남는 금액 안내는 이제 읽는 사람에게 바로 말을 겁니다.'
+    },
     {
       date: '2026-10-31',
       de: 'Der Titel im Browser-Tab folgt jetzt deiner Sprache. Vorher stand er immer auf Deutsch da.',
@@ -843,6 +928,23 @@ var NEWS = {
 
   bigday: [
     {
+      date: '2026-11-01',
+      de: 'Alle Texte ohne Gedankenstriche, in allen 14 Sprachen, auch der Titel im Browser-Tab.',
+      en: 'All texts without dashes, in all 14 languages, including the title in the browser tab.',
+      es: 'Todos los textos sin rayas, en los 14 idiomas, también el título de la pestaña del navegador.',
+      fr: 'Tous les textes sans tirets, dans les 14 langues, y compris le titre de l’onglet du navigateur.',
+      it: 'Tutti i testi senza trattini lunghi, in tutte le 14 lingue, anche il titolo nella scheda del browser.',
+      nl: 'Alle teksten zonder gedachtestreepjes, in alle 14 talen, ook de titel in het browsertabblad.',
+      pl: 'Wszystkie teksty bez myślników, we wszystkich 14 językach, także tytuł na karcie przeglądarki.',
+      pt: 'Todos os textos sem travessões, nos 14 idiomas, inclusive o título na aba do navegador.',
+      tr: 'Tüm metinler artık uzun tire olmadan, 14 dilin hepsinde, tarayıcı sekmesindeki başlık dahil.',
+      ru: 'Все тексты без тире, на всех 14 языках, включая заголовок вкладки браузера.',
+      hi: 'सभी पाठ अब बिना डैश के, सभी 14 भाषाओं में, ब्राउज़र टैब का शीर्षक भी।',
+      zh: '所有文字都不再使用破折号，14 种语言都一样，浏览器标签页的标题也是。',
+      ja: 'すべての文章からダッシュをなくしました（14 言語すべて）。ブラウザーのタブのタイトルも同じです。',
+      ko: '모든 문장에서 줄표를 없앴습니다(14개 언어 모두). 브라우저 탭의 제목도 마찬가지입니다.'
+    },
+    {
       date: '2026-10-31',
       de: 'Neu ist ein Feld für die Darstellung: Hoher Kontrast (dunkel und hell), Farbenblind und Umgekehrte Farben. Das eigene Design bleibt, und deine Wahl gilt in allen meinen Werkzeugen.',
       en: 'New: a display setting with high contrast (dark and light), colour-blind and inverted colours. The tool’s own design stays, and your choice applies across all my tools.',
@@ -947,6 +1049,23 @@ var NEWS = {
   ],
 
   rad: [
+    {
+      date: '2026-11-01',
+      de: 'Alle Texte ohne Gedankenstriche, in allen 14 Sprachen, auch die Beschriftung des Ton-Knopfs.',
+      en: 'All texts without dashes, in all 14 languages, including the label of the sound button.',
+      es: 'Todos los textos sin rayas, en los 14 idiomas, también la etiqueta del botón de sonido.',
+      fr: 'Tous les textes sans tirets, dans les 14 langues, y compris le libellé du bouton du son.',
+      it: 'Tutti i testi senza trattini lunghi, in tutte le 14 lingue, anche l’etichetta del pulsante dell’audio.',
+      nl: 'Alle teksten zonder gedachtestreepjes, in alle 14 talen, ook het label van de geluidsknop.',
+      pl: 'Wszystkie teksty bez myślników, we wszystkich 14 językach, także opis przycisku dźwięku.',
+      pt: 'Todos os textos sem travessões, nos 14 idiomas, inclusive o rótulo do botão de som.',
+      tr: 'Tüm metinler artık uzun tire olmadan, 14 dilin hepsinde, ses düğmesinin etiketi dahil.',
+      ru: 'Все тексты без тире, на всех 14 языках, включая подпись кнопки звука.',
+      hi: 'सभी पाठ अब बिना डैश के, सभी 14 भाषाओं में, आवाज़ वाले बटन का लेबल भी।',
+      zh: '所有文字都不再使用破折号，14 种语言都一样，声音按钮的说明文字也是。',
+      ja: 'すべての文章からダッシュをなくしました（14 言語すべて）。音のボタンの表示も同じです。',
+      ko: '모든 문장에서 줄표를 없앴습니다(14개 언어 모두). 소리 버튼의 이름표도 마찬가지입니다.'
+    },
     {
       date: '2026-10-31',
       de: 'Der Titel im Browser-Tab folgt jetzt deiner Sprache. Vorher stand dort eine Mischung aus Deutsch und Englisch.',
@@ -1069,6 +1188,23 @@ var NEWS = {
   ],
 
   zaehlwerk: [
+    {
+      date: '2026-11-01',
+      de: 'Alle Texte samt Erklärungen ohne Gedankenstriche, in allen 14 Sprachen.',
+      en: 'All texts, the explanations included, without dashes, in all 14 languages.',
+      es: 'Todos los textos, explicaciones incluidas, sin rayas, en los 14 idiomas.',
+      fr: 'Tous les textes, explications comprises, sans tirets, dans les 14 langues.',
+      it: 'Tutti i testi, spiegazioni comprese, senza trattini lunghi, in tutte le 14 lingue.',
+      nl: 'Alle teksten, de uitleg inbegrepen, zonder gedachtestreepjes, in alle 14 talen.',
+      pl: 'Wszystkie teksty razem z objaśnieniami bez myślników, we wszystkich 14 językach.',
+      pt: 'Todos os textos, explicações incluídas, sem travessões, nos 14 idiomas.',
+      tr: 'Açıklamalar dahil tüm metinler artık uzun tire olmadan, 14 dilin hepsinde.',
+      ru: 'Все тексты вместе с пояснениями без тире, на всех 14 языках.',
+      hi: 'व्याख्याओं समेत सभी पाठ अब बिना डैश के, सभी 14 भाषाओं में।',
+      zh: '包括说明在内的所有文字都不再使用破折号，14 种语言都一样。',
+      ja: '説明を含むすべての文章からダッシュをなくしました（14 言語すべて）。',
+      ko: '설명을 포함한 모든 문장에서 줄표를 없앴습니다(14개 언어 모두).'
+    },
     {
       date: '2026-11-01',
       version: 'Ticker v1.1',
@@ -1251,6 +1387,23 @@ var NEWS = {
   ],
 
   fontart: [
+    {
+      date: '2026-11-01',
+      de: 'Alle Texte samt Anleitung ohne Gedankenstriche, in allen 14 Sprachen. Das gilt hier im Browser, die Windows-Fassung folgt mit dem nächsten Release.',
+      en: 'All texts, the guide included, without dashes, in all 14 languages. This applies here in the browser, the Windows version follows with the next release.',
+      es: 'Todos los textos, la guía incluida, sin rayas, en los 14 idiomas. Esto vale aquí en el navegador, la versión para Windows llega con la próxima versión.',
+      fr: 'Tous les textes, guide compris, sans tirets, dans les 14 langues. Cela vaut ici dans le navigateur, la version Windows suivra avec la prochaine publication.',
+      it: 'Tutti i testi, guida compresa, senza trattini lunghi, in tutte le 14 lingue. Vale qui nel browser, la versione per Windows arriva con la prossima release.',
+      nl: 'Alle teksten, de handleiding inbegrepen, zonder gedachtestreepjes, in alle 14 talen. Dat geldt hier in de browser, de Windows-versie volgt met de volgende release.',
+      pl: 'Wszystkie teksty razem z instrukcją bez myślników, we wszystkich 14 językach. Dotyczy to wersji w przeglądarce, wersja na Windows przyjdzie z następnym wydaniem.',
+      pt: 'Todos os textos, o guia incluído, sem travessões, nos 14 idiomas. Isso vale aqui no navegador, a versão para Windows vem com o próximo lançamento.',
+      tr: 'Kılavuz dahil tüm metinler artık uzun tire olmadan, 14 dilin hepsinde. Bu tarayıcı sürümü için geçerli, Windows sürümü bir sonraki yayınla gelecek.',
+      ru: 'Все тексты вместе с руководством без тире, на всех 14 языках. Это касается версии в браузере, версия для Windows выйдет со следующим релизом.',
+      hi: 'गाइड समेत सभी पाठ अब बिना डैश के, सभी 14 भाषाओं में। यह ब्राउज़र वाले संस्करण पर लागू है, Windows संस्करण अगली रिलीज़ के साथ आएगा।',
+      zh: '包括说明在内的所有文字都不再使用破折号，14 种语言都一样。这适用于浏览器版，Windows 版会随下一个版本跟上。',
+      ja: '説明書を含むすべての文章からダッシュをなくしました（14 言語すべて）。これはブラウザー版の話で、Windows 版は次のリリースで対応します。',
+      ko: '안내서를 포함한 모든 문장에서 줄표를 없앴습니다(14개 언어 모두). 브라우저판 이야기이고, Windows판은 다음 릴리스에서 따라옵니다.'
+    },
     {
       date: '2026-11-01',
       version: 'v10.2.0',
@@ -1947,6 +2100,23 @@ var NEWS = {
   ruestkammer: [
     {
       date: '2026-11-01',
+      de: 'Bedienung und Handbuch-Hinweise ohne Gedankenstriche, die Bedienung in allen 14 Sprachen. Die Quellen stehen jetzt mit Mittelpunkt da.',
+      en: 'Controls and handbook notes without dashes, the controls in all 14 languages. The sources are now listed with a middle dot.',
+      es: 'Controles y notas del manual sin rayas, los controles en los 14 idiomas. Las fuentes aparecen ahora con un punto medio.',
+      fr: 'Commandes et notes du manuel sans tirets, les commandes dans les 14 langues. Les sources s’affichent maintenant avec un point médian.',
+      it: 'Comandi e note del manuale senza trattini lunghi, i comandi in tutte le 14 lingue. Le fonti ora compaiono con un punto centrale.',
+      nl: 'Bediening en handboeknotities zonder gedachtestreepjes, de bediening in alle 14 talen. De bronnen staan er nu met een middenpunt.',
+      pl: 'Obsługa i uwagi z poradnika bez myślników, obsługa we wszystkich 14 językach. Źródła mają teraz kropkę środkową.',
+      pt: 'Controles e notas do manual sem travessões, os controles nos 14 idiomas. As fontes agora aparecem com um ponto médio.',
+      tr: 'Kullanım ve el kitabı notları artık uzun tire olmadan, kullanım 14 dilin hepsinde. Kaynaklar artık orta noktayla yazılıyor.',
+      ru: 'Управление и заметки справочника без тире, управление на всех 14 языках. Источники теперь разделены средней точкой.',
+      hi: 'नियंत्रण और हैंडबुक के नोट अब बिना डैश के, नियंत्रण सभी 14 भाषाओं में। स्रोत अब बीच वाले बिंदु के साथ दिखते हैं।',
+      zh: '操作和手册注记都不再使用破折号，操作部分 14 种语言都一样。来源现在用间隔号分开。',
+      ja: '操作と手引きの注記からダッシュをなくしました。操作は 14 言語すべてです。出典は中点で区切るようになりました。',
+      ko: '조작부와 안내서 메모에서 줄표를 없앴습니다. 조작부는 14개 언어 모두입니다. 출처는 이제 가운뎃점으로 구분합니다.'
+    },
+    {
+      date: '2026-11-01',
       de: 'Die Rüstkammer spricht jetzt 14 Sprachen: Navigation, Filter, Tabellen, Klasseneditor und Meldungen. Waffenhinweise, Aufsatz-Effekte, Build-Notizen und die Patch-Chronik bleiben deutsch (das steht oben auch dabei). Die Sprache kommt von der Startseite oder deinem Browser, umstellen kannst du unter Intel bei „Sprache“.',
       en: 'The Rüstkammer now speaks 14 languages: navigation, filters, tables, the class editor and messages. Weapon notes, attachment effects, build notes and the patch history stay German (it says so at the top too). The language comes from the homepage or your browser, and you can switch it under Intel at “Language”.',
       es: 'La Rüstkammer ya habla 14 idiomas: navegación, filtros, tablas, editor de clases y mensajes. Las notas de armas, los efectos de accesorios, las notas de builds y el historial de parches siguen en alemán (arriba también lo indica). El idioma viene de la página de inicio o de tu navegador, y puedes cambiarlo en Intel, en «Idioma».',
@@ -2032,6 +2202,23 @@ var NEWS = {
     }
   ],
   pocketsum: [
+    {
+      date: '2026-11-01',
+      de: 'Alle Texte ohne Gedankenstriche, in allen 14 Sprachen, auch der Titel im Browser-Tab.',
+      en: 'All texts without dashes, in all 14 languages, including the title in the browser tab.',
+      es: 'Todos los textos sin rayas, en los 14 idiomas, también el título de la pestaña del navegador.',
+      fr: 'Tous les textes sans tirets, dans les 14 langues, y compris le titre de l’onglet du navigateur.',
+      it: 'Tutti i testi senza trattini lunghi, in tutte le 14 lingue, anche il titolo nella scheda del browser.',
+      nl: 'Alle teksten zonder gedachtestreepjes, in alle 14 talen, ook de titel in het browsertabblad.',
+      pl: 'Wszystkie teksty bez myślników, we wszystkich 14 językach, także tytuł na karcie przeglądarki.',
+      pt: 'Todos os textos sem travessões, nos 14 idiomas, inclusive o título na aba do navegador.',
+      tr: 'Tüm metinler artık uzun tire olmadan, 14 dilin hepsinde, tarayıcı sekmesindeki başlık dahil.',
+      ru: 'Все тексты без тире, на всех 14 языках, включая заголовок вкладки браузера.',
+      hi: 'सभी पाठ अब बिना डैश के, सभी 14 भाषाओं में, ब्राउज़र टैब का शीर्षक भी।',
+      zh: '所有文字都不再使用破折号，14 种语言都一样，浏览器标签页的标题也是。',
+      ja: 'すべての文章からダッシュをなくしました（14 言語すべて）。ブラウザーのタブのタイトルも同じです。',
+      ko: '모든 문장에서 줄표를 없앴습니다(14개 언어 모두). 브라우저 탭의 제목도 마찬가지입니다.'
+    },
     {
       date: '2026-10-31',
       de: 'Neben Hell und Dunkel gibt es jetzt Hoher Kontrast (dunkel und hell), Farbenblind (dunkel und hell) und Umgekehrte Farben. Deine Wahl gilt in allen meinen Werkzeugen.',
