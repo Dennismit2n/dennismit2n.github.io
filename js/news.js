@@ -1427,6 +1427,25 @@ var NEWS = {
   fontart: [
     {
       date: '2026-11-01',
+      version: 'v10.2.2',
+      link: 'https://github.com/Dennismit2n/fontART-demo/releases/tag/v10.2.2',
+      de: 'Die Konsole zeigt die Befehlsliste und die Übersicht von „stats“ wieder Zeile für Zeile, im Browser und in der Windows-Fassung.',
+      en: 'The console shows the command list and the “stats” overview line by line again, in the browser and in the Windows version.',
+      es: 'La consola vuelve a mostrar la lista de comandos y el resumen de «stats» línea por línea, en el navegador y en la versión para Windows.',
+      fr: 'La console affiche de nouveau la liste des commandes et le récapitulatif de « stats » ligne par ligne, dans le navigateur et dans la version Windows.',
+      it: 'La console mostra di nuovo l’elenco dei comandi e il riepilogo di «stats» riga per riga, nel browser e nella versione per Windows.',
+      nl: 'De console toont de lijst met commando’s en het overzicht van ‘stats’ weer regel voor regel, in de browser en in de Windows-versie.',
+      pl: 'Konsola znowu pokazuje listę poleceń i podsumowanie „stats” wiersz po wierszu, w przeglądarce i w wersji na Windows.',
+      pt: 'O console voltou a mostrar a lista de comandos e o resumo de «stats» linha por linha, no navegador e na versão para Windows.',
+      tr: 'Konsol, komut listesini ve “stats” özetini yeniden satır satır gösteriyor, tarayıcıda ve Windows sürümünde.',
+      ru: 'Консоль снова показывает список команд и сводку «stats» построчно, в браузере и в версии для Windows.',
+      hi: 'कंसोल कमांड की सूची और “stats” का ब्यौरा फिर से पंक्ति दर पंक्ति दिखाता है, ब्राउज़र में भी और Windows संस्करण में भी।',
+      zh: '控制台又会逐行显示命令列表和“stats”的总览了，浏览器版和 Windows 版都是。',
+      ja: 'コンソールのコマンド一覧と「stats」の概要が、また 1 行ずつ表示されるようになりました。ブラウザー版と Windows 版の両方です。',
+      ko: '콘솔이 명령어 목록과 ‘stats’ 요약을 다시 한 줄씩 보여 줍니다. 브라우저판과 Windows판 모두 해당됩니다.'
+    },
+    {
+      date: '2026-11-01',
       version: 'v10.2.1',
       link: 'https://github.com/Dennismit2n/fontART-demo/releases/tag/v10.2.1',
       de: 'Alle Texte samt Anleitung ohne Gedankenstriche, in allen 14 Sprachen. Das gilt im Browser und in der Windows-Fassung ab v10.2.1.',
