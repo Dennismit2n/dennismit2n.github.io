@@ -101,6 +101,7 @@
   --collective: #006E43;
   --zaehlwerk: #4C6900;
   --fontart: #AA0DA5;
+  --fontart-flow: linear-gradient(100deg, #8A6A00, #AA0DA5, #8A6A00, #AA0DA5, #8A6A00);
   --ticker: #4648E5;
   --masterprompt: #A73D00;
   --prisma: #6349C9;
@@ -177,6 +178,7 @@
     --collective: #00E698;
     --zaehlwerk: #BEE800;
     --fontart: #F96EF0;
+    --fontart-flow: linear-gradient(100deg, #EAC54F, #F96EF0, #EAC54F, #F96EF0, #EAC54F);
     --ticker: #7D95FF;
     --masterprompt: #FF8F4B;
     --prisma: #CCC6FF;
@@ -239,6 +241,7 @@
   --collective: #00E698;
   --zaehlwerk: #BEE800;
   --fontart: #F96EF0;
+  --fontart-flow: linear-gradient(100deg, #EAC54F, #F96EF0, #EAC54F, #F96EF0, #EAC54F);
   --ticker: #7D95FF;
   --masterprompt: #FF8F4B;
   --prisma: #CCC6FF;
@@ -608,7 +611,7 @@ a.brand { text-decoration: none; color: inherit; }
 .tool-rad { --tool: var(--rad); }
 .tool-collective { --tool: var(--collective); }
 .tool-zaehlwerk { --tool: var(--zaehlwerk); }
-.tool-fontart { --tool: var(--fontart); }
+.tool-fontart { --tool: var(--fontart); --tool-flow: var(--fontart-flow); }
 .tool-ticker { --tool: var(--ticker); }
 .tool-masterprompt { --tool: var(--masterprompt); }
 .tool-prismatical { --tool: var(--prisma); --tool-flow: var(--prisma-flow); }
@@ -1487,6 +1490,7 @@ a.wk-shot-frame:focus-visible { outline-color: var(--tool, var(--accent)); }
   --haze: 0;
   --name-glow: 0px;
   --shadow: none;
+  --fontart-flow: linear-gradient(var(--fontart), var(--fontart));
   --prisma-flow: linear-gradient(var(--prisma), var(--prisma));
   --spectro-flow: linear-gradient(var(--spectro), var(--spectro));
   --heizwarte-flow: linear-gradient(var(--heizwarte), var(--heizwarte));
@@ -1534,6 +1538,7 @@ a.wk-shot-frame:focus-visible { outline-color: var(--tool, var(--accent)); }
   --ruestkammer: #8D4200;   /* 7,21 */
 
   --mods: #7A2E6D;
+  --fontart-flow: linear-gradient(var(--fontart), var(--fontart));
   --prisma-flow: linear-gradient(var(--prisma), var(--prisma));
   --spectro-flow: linear-gradient(var(--spectro), var(--spectro));
   --heizwarte-flow: linear-gradient(var(--heizwarte), var(--heizwarte));
@@ -1646,6 +1651,7 @@ a.wk-shot-frame:focus-visible { outline-color: var(--tool, var(--accent)); }
     --ruestkammer: #FF9C4E;
 
     --mods: #E08AD0;
+    --fontart-flow: linear-gradient(100deg, #F5D56A, #FF8DF6, #F5D56A, #FF8DF6, #F5D56A);
     --prisma-flow: linear-gradient(100deg, #ff9e95, #ffae55, #cfd149, #39faf1, #bfb9ff);
     --spectro-flow: linear-gradient(100deg, #8bfff8, #48e8e0, #40e2da, #48d3cb, #53c5bf);
     --heizwarte-flow: linear-gradient(100deg, #7dd3fc, #86efac, #fde047, #fdba74, #ff928f);
