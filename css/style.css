@@ -1680,7 +1680,7 @@ details.mod[open] .mod-chevron { transform: rotate(180deg); }
 .mod-body { padding: 0 18px 18px; color: var(--text-soft); line-height: 1.6; }
 .mod-body > p { margin: 0 0 12px; }
 .mod-shot { margin: 0 0 14px; }
-.mod-shot img { display: block; width: 100%; height: auto; border-radius: 6px; border: 1px solid var(--border); }
+.mod-shot img { display: block; max-width: 100%; height: auto; border-radius: 6px; border: 1px solid var(--border); }
 .mod-settings strong { color: var(--text); font-weight: 600; }
 .mod-code { position: relative; margin: 14px 0; }
 .mod-label { margin: 0 0 6px; font-size: 0.9rem; color: var(--text); }
