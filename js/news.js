@@ -14,7 +14,7 @@
  * it nl pl pt tr ru hi zh ja ko, same order as in i18n.js; optionally version
  * and link — Real_RAM_cooler, fontART, Besucher-Ticker, create-masterprompt
  * and Fadenkreuz have real GitHub releases; the browser tools carry no tags.
- * The key mods (Werkstatt-Mods) is shown on mods.html, not on werkstatt.html.
+ * The key mods (Werkstatt-Mods) has its own section on werkstatt.html, news only.
  */
 'use strict';
 

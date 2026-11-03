@@ -37,35 +37,7 @@
     }
   }
 
-  // ── Neuigkeiten: Schlüssel mods in news.js, gebaut wie in werkstatt.js ──
-  // Fehlt news.js, bleibt der Abschnitt verborgen statt leer.
-  function fillNews(lang) {
-    var list = document.querySelector('[data-news-list]');
-    if (!list) { return; }
-    var entries = (typeof NEWS !== 'undefined' && NEWS.mods) || [];
-    list.closest('#neuigkeiten').hidden = !entries.length || typeof Dates === 'undefined';
-    if (list.closest('#neuigkeiten').hidden) { return; }
-    list.textContent = '';
-    for (var i = 0; i < entries.length; i++) {
-      var item = document.createElement('li');
-      var meta = document.createElement('p');
-      meta.className = 'wk-news-meta';
-      var time = document.createElement('time');
-      time.className = 'wk-news-date';
-      time.setAttribute('datetime', entries[i].date);
-      time.textContent = Dates.long(entries[i].date, lang);
-      meta.appendChild(time);
-      item.appendChild(meta);
-      var text = document.createElement('p');
-      text.className = 'wk-text';
-      text.textContent = entries[i][lang] || entries[i].en;
-      item.appendChild(text);
-      list.appendChild(item);
-    }
-  }
-
   i18n.onApply(fillPrompts);
-  i18n.onApply(fillNews);
   Header.init();
   document.documentElement.classList.remove('i18n-wartet');
 

@@ -154,7 +154,7 @@
         <!-- Fuenf Mods fuer Claude Code, seit dem 01.11.2026 im Repo Dennismit2n/werkstatt-mods.
              Wie Gaming eine Sammlung mit eigener Seite (mods.html), die Bilder, Installationszeilen
              und Prompts zeigt. Seit 03.11.2026 eine Mini-Kachel "Neuigkeiten" (Dennis), die auf
-             mods.html#neuigkeiten springt; Eintraege in js/news.js unter dem Schluessel mods.
+             werkstatt.html#mods-neuigkeiten springt; Eintraege in js/news.js unter dem Schluessel mods.
              Steht auf Platz 2 hinter create-masterprompt (Dennis, 01.11.2026 abends). -->
         <div class="tool-card tool-mods">
           <span class="tool-head">
@@ -166,7 +166,7 @@
           <span class="tool-meta" data-i18n="modsMeta">For Claude Code users · its own page · German and English · open source (MIT)</span>
           <a class="tool-open" id="open-mods" aria-labelledby="open-mods name-mods" href="./mods.html"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
           <span class="tool-mini" data-tool="mods">
-            <a href="./mods.html#neuigkeiten" data-count="mods-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#mods-neuigkeiten" data-count="werkstatt-mods-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
           </span>
         </div>
         <div class="tool-card tool-ram">
@@ -349,7 +349,7 @@
         <!-- Gaming: führt auf die eigene Seite gaming.html (Dennis' Wunsch vom
              30.10.2026, Gaming getrennt von den übrigen Werkzeugen). Seit 03.11.2026
              eine Mini-Kachel "Neuigkeiten" (Dennis): Datum des neuesten Eintrags von
-             Craftionary, BL4, MW4 und Fadenkreuz, Sprung auf gaming.html#neuigkeiten. -->
+             Craftionary, BL4, MW4 und Fadenkreuz, Sprung auf werkstatt.html#craftionary, die vier stehen dort einzeln. -->
         <div class="tool-card tool-gaming">
           <span class="tool-head">
             <img src="./assets/gaming.svg" alt="" width="44" height="44">
@@ -359,7 +359,7 @@
           <span class="tool-meta" data-i18n="gamingMeta">Its own page · guides and tools · more to come</span>
           <a class="tool-open" id="open-gaming" aria-labelledby="open-gaming name-gaming" href="./gaming.html"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
           <span class="tool-mini" data-tool="craftionary vault ruestkammer fadenkreuz">
-            <a href="./gaming.html#neuigkeiten" data-count="gaming-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#craftionary" data-count="werkstatt-gaming-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
           </span>
         </div>
         <div class="tool-card tool-bigday">
@@ -450,6 +450,6 @@
 <script src="./js/i18n.js?v=2026-11-03" fetchpriority="high"></script>
 <script src="./js/dates.js?v=2026-09-14" fetchpriority="high"></script>
 <script src="./js/header.js?v=2026-10-31" fetchpriority="high"></script>
-<script src="./js/main.js?v=2026-11-03" fetchpriority="high" data-news="./js/news.js?v=2026-11-03"></script>
+<script src="./js/main.js?v=2026-11-03b" fetchpriority="high" data-news="./js/news.js?v=2026-11-03b"></script>
 </body>
 </html>

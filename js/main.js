@@ -47,47 +47,6 @@
       slot.textContent = all.length ? Dates.short(all[0].entry.date, lang) : '';
       slot.style.visibility = '';
     }
-    fillNewsList(lang);
-  }
-
-  // ── News list on gaming.html (#neuigkeiten) ───────────────────────
-  // The newest entries of the keys in data-news-keys, each with the tool's
-  // name (taken from its tile on the same page) linking to its full list on
-  // werkstatt.html. Hidden while news.js is missing.
-  function fillNewsList(lang) {
-    var list = document.querySelector('[data-news-keys]');
-    if (!list) { return; }
-    var box = list.closest('#neuigkeiten');
-    var all = newsPending ? [] : collect(list.getAttribute('data-news-keys'));
-    all = all.slice(0, Number(list.getAttribute('data-news-max')) || all.length);
-    // Stays in place while news.js is still loading, so a jump to
-    // #neuigkeiten finds it; only an empty result hides it.
-    box.hidden = !newsPending && !all.length;
-    list.textContent = '';
-    for (var i = 0; i < all.length; i++) {
-      var entry = all[i].entry;
-      var item = document.createElement('li');
-      var meta = document.createElement('p');
-      meta.className = 'wk-news-meta';
-      var time = document.createElement('time');
-      time.className = 'wk-news-date';
-      time.setAttribute('datetime', entry.date);
-      time.textContent = Dates.long(entry.date, lang);
-      meta.appendChild(time);
-      var nameEl = document.getElementById('name-' + all[i].key);
-      var tool = document.createElement('a');
-      tool.className = 'wk-news-version';
-      tool.href = './werkstatt.html#' + all[i].key + '-neuigkeiten';
-      tool.setAttribute('data-count', 'werkstatt-' + all[i].key + '-news');
-      tool.textContent = nameEl ? nameEl.textContent : all[i].key;
-      meta.appendChild(tool);
-      item.appendChild(meta);
-      var text = document.createElement('p');
-      text.className = 'wk-text';
-      text.textContent = entry[lang] || entry.en;
-      item.appendChild(text);
-      list.appendChild(item);
-    }
   }
 
   i18n.onApply(fillDates);
@@ -107,9 +66,6 @@
     newsScript.onload = newsScript.onerror = function () {
       newsPending = false;
       fillDates(i18n.lang);
-      // The list only got its height now: land on it again after a jump.
-      var target = location.hash === '#neuigkeiten' && document.getElementById('neuigkeiten');
-      if (target && !target.hidden) { target.scrollIntoView(); }
     };
     document.body.appendChild(newsScript);
   }
