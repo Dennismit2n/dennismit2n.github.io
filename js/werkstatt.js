@@ -21,6 +21,10 @@
   var TOOLS = [
     { key: 'masterprompt', name: 'create-masterprompt', icon: './assets/masterprompt.svg',
       url: 'https://github.com/Dennismit2n/create-masterprompt', ctaKey: 'openTool' },
+    // Werkstatt-Mods (seit 03.11.2026): nur Neuigkeiten, keine Anleitung in
+    // guides.js, die steht mit Bildern und Installationszeilen auf mods.html.
+    { key: 'mods', name: 'Werkstatt-Mods', icon: './assets/mods.svg',
+      url: './mods.html', ctaKey: 'openTool' },
     { key: 'ram', name: 'Real_RAM_cooler', icon: './assets/ramcooler.svg',
       url: 'https://github.com/Dennismit2n/Real_RAM_cooler/releases/latest', ctaKey: 'downloadTool' },
     { key: 'fontart', name: 'fontART Designer', icon: './assets/fontart.svg',
