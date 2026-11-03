@@ -691,23 +691,6 @@ var NEWS = {
       ko: '헤더에 새 ‘설치’ 버튼: 한 번 누르면 이 도구가 휴대폰이나 컴퓨터에 앱으로 설치됩니다. 버튼은 브라우저가 설치를 제안할 때(예: Chrome, Edge, Samsung Internet) 나타나며, 설치된 앱에서는 보이지 않습니다.'
     },
     {
-      date: '2026-09-23',
-      de: 'Spectroton zählt jetzt Besuche anonym mit GoatCounter, ohne Cookies, wie die meisten Werkzeuge der Werkstatt. Die Fußzeile sagt es offen. Das Zählskript wird mit dem Werkzeug ausgeliefert statt von einem fremden Dienst nachgeladen, und die Farben eines geteilten Links stehen im Anker der Adresse, der nie mitgesendet wird.',
-      en: 'Spectroton now counts visits anonymously with GoatCounter, no cookies, like most tools in the workshop, and the footer says so. The counting script ships with the tool instead of being loaded from someone else’s service, and the colours of a shared link sit in the address fragment, which is never sent along.',
-      es: 'Spectroton cuenta ahora las visitas de forma anónima con GoatCounter, sin cookies, como la mayoría de las herramientas del taller. El pie de página lo indica abiertamente. El script de recuento se entrega con la herramienta en lugar de cargarse desde un servicio ajeno, y los colores de un enlace compartido van en el ancla de la dirección, que nunca se envía.',
-      fr: 'Spectroton compte désormais les visites de façon anonyme avec GoatCounter, sans cookies, comme la plupart des outils de l’atelier, et le pied de page le dit clairement. Le script de comptage est livré avec l’outil au lieu d’être chargé depuis un service tiers, et les couleurs d’un lien partagé se trouvent dans l’ancre de l’adresse, qui n’est jamais transmise.',
-      it: 'Spectroton ora conta le visite in forma anonima con GoatCounter, senza cookie, come la maggior parte degli strumenti dell’officina. Il piè di pagina lo dice apertamente. Lo script di conteggio viene fornito insieme allo strumento invece di essere caricato da un servizio altrui, e i colori di un link condiviso stanno nell’ancora dell’indirizzo, che non viene mai inviata.',
-      nl: 'Spectroton telt bezoeken nu anoniem met GoatCounter, zonder cookies, net als de meeste gereedschappen van de werkplaats, en de voettekst zegt het openlijk. Het telscript wordt met het gereedschap meegeleverd in plaats van bij een externe dienst te worden opgehaald, en de kleuren van een gedeelde link staan in het anker van het adres, dat nooit wordt meegestuurd.',
-      pl: 'Spectroton liczy teraz odwiedziny anonimowo za pomocą GoatCounter, bez plików cookie, tak jak większość narzędzi warsztatu, a stopka mówi o tym otwarcie. Skrypt zliczający jest dostarczany razem z narzędziem, zamiast być pobierany z cudzej usługi, a kolory udostępnionego linku są zapisane w kotwicy adresu, która nigdy nie jest wysyłana.',
-      pt: 'O Spectroton agora conta as visitas de forma anônima com o GoatCounter, sem cookies, como a maioria das ferramentas da oficina, e o rodapé diz isso abertamente. O script de contagem vem junto com a ferramenta em vez de ser carregado de um serviço de terceiros, e as cores de um link compartilhado ficam na âncora do endereço, que nunca é enviada.',
-      tr: 'Spectroton artık ziyaretleri GoatCounter ile anonim ve çerezsiz sayıyor, atölyenin çoğu aracı gibi. Alt bilgi bunu açıkça belirtiyor. Sayım betiği başka bir hizmetten yüklenmek yerine araçla birlikte geliyor ve paylaşılan bir bağlantının renkleri adresin # işaretinden sonraki kısmında duruyor. Bu kısım asla gönderilmiyor.',
-      ru: 'Spectroton теперь анонимно считает посещения с помощью GoatCounter, без файлов cookie, как и большинство инструментов мастерской. В подвале страницы об этом сказано прямо. Скрипт подсчёта поставляется вместе с инструментом, а не загружается с чужого сервиса, а цвета из общей ссылки хранятся в части адреса после #, которая никогда не отправляется.',
-      hi: 'Spectroton अब GoatCounter से बिना कुकीज़ के गुमनाम रूप से विज़िट गिनता है, वर्कशॉप के ज़्यादातर औज़ारों की तरह। फ़ुटर में यह साफ़ लिखा है। गिनती की स्क्रिप्ट किसी दूसरी सेवा से लोड होने के बजाय औज़ार के साथ ही आती है, और साझा लिंक के रंग पते में # के बाद वाले हिस्से में रहते हैं, जो कभी भेजा नहीं जाता।',
-      zh: 'Spectroton 现在用 GoatCounter 匿名统计访问量，不使用 Cookie，与工坊里的大多数工具一样。页脚中也写明了这一点。统计脚本随工具一起提供，而不是从别人的服务加载。共享链接中的颜色保存在地址 # 之后的部分，这部分从不会被发送。',
-      ja: 'Spectroton は GoatCounter で訪問数を匿名で数えるようになりました。Cookie は使わず、工房のほとんどの道具と同じで、フッターにもはっきり書いてあります。集計スクリプトは他人のサービスから読み込むのではなく、道具と一緒に配信されます。共有リンクの色はアドレスの # 以降の部分に入っていて、そこが送られることはありません。',
-      ko: 'Spectroton은 이제 GoatCounter로 방문 수를 익명으로 셉니다. 쿠키는 쓰지 않으며, 작업실의 도구 대부분과 같고, 푸터에도 분명히 적혀 있습니다. 집계 스크립트는 다른 서비스에서 불러오지 않고 도구와 함께 제공되며, 공유 링크의 색은 주소의 # 뒤 부분에 들어 있어 절대 전송되지 않습니다.'
-    },
-    {
       date: '2026-09-22',
       de: 'Behoben: Stufen, deren Buntheit für sRGB gekappt werden musste, trugen in jeder Sprache das deutsche Schild „eng“, und weder dieses noch „P3“ erklärte sich. Jetzt steht dort ein Wort in der Sprache der Oberfläche. Die Erklärung erscheint beim Darüberfahren mit der Maus, auf Handy und Tablet als Legende unter der Rampe, und Vorleseprogramme lesen sie mit. Auf schmalen Bildschirmen rückt das Schild unter den HEX-Wert, damit die Kontrastspalten bündig bleiben.',
       en: 'Fixed: steps whose chroma had to be clipped to sRGB carried the German label “eng” in every language, and neither it nor “P3” explained itself. The label is now a word in the interface language. The explanation appears when hovering with the mouse, on phones and tablets as a legend below the ramp, and screen readers read it out too. On narrow screens the label moves below the HEX value so the contrast columns stay aligned.',
@@ -2090,23 +2073,6 @@ var NEWS = {
   ],
   craftionary: [
     {
-      date: '2026-11-03',
-      de: 'Craftionary zählt Besuche jetzt anonym mit GoatCounter, ohne Cookies, wie die übrigen Werkzeuge. Was du suchst oder auswählst, wird nie mitgesendet.',
-      en: 'Craftionary now counts visits anonymously with GoatCounter, without cookies, like the other tools. What you search for or select is never sent.',
-      es: 'Craftionary ahora cuenta las visitas de forma anónima con GoatCounter, sin cookies, como las demás herramientas. Lo que buscas o seleccionas nunca se envía.',
-      fr: 'Craftionary compte désormais les visites de façon anonyme avec GoatCounter, sans cookies, comme les autres outils. Ce que vous cherchez ou sélectionnez n’est jamais envoyé.',
-      it: 'Craftionary ora conta le visite in modo anonimo con GoatCounter, senza cookie, come gli altri strumenti. Ciò che cerchi o selezioni non viene mai inviato.',
-      nl: 'Craftionary telt bezoeken nu anoniem met GoatCounter, zonder cookies, net als de andere tools. Wat je zoekt of kiest, wordt nooit meegestuurd.',
-      pl: 'Craftionary liczy teraz odwiedziny anonimowo przez GoatCounter, bez plików cookie, jak pozostałe narzędzia. To, czego szukasz lub co wybierasz, nigdy nie jest wysyłane.',
-      pt: 'Craftionary agora conta as visitas de forma anônima com o GoatCounter, sem cookies, como as outras ferramentas. O que você pesquisa ou seleciona nunca é enviado.',
-      tr: 'Craftionary artık ziyaretleri diğer araçlar gibi GoatCounter ile anonim ve çerezsiz sayıyor. Aradığınız veya seçtiğiniz şey asla gönderilmez.',
-      ru: 'Craftionary теперь анонимно считает посещения через GoatCounter, без файлов cookie, как и остальные инструменты. То, что вы ищете или выбираете, никогда не отправляется.',
-      hi: 'Craftionary अब बाकी औज़ारों की तरह GoatCounter से विज़िट गुमनाम रूप से गिनता है, बिना कुकीज़ के। तुम जो खोजते या चुनते हो, वह कभी नहीं भेजा जाता।',
-      zh: 'Craftionary 现在像其他工具一样，用 GoatCounter 匿名统计访问，不使用 Cookie。你搜索或选择的内容永远不会被发送。',
-      ja: 'Craftionary はほかのツールと同じく、GoatCounter で訪問を匿名に集計するようになりました。Cookie は使いません。検索や選択の内容は送信されません。',
-      ko: 'Craftionary도 이제 다른 도구처럼 GoatCounter로 방문을 익명 집계해요. 쿠키는 쓰지 않아요. 검색하거나 고른 내용은 절대 보내지 않아요.'
-    },
-    {
       date: '2026-11-01',
       de: 'Am Handy passen die Einstellungen jetzt ganz auf den Bildschirm, „Schließen“ rutscht bei Bedarf unter den Titel und der Windows-Pfad bricht um, statt rechts abgeschnitten zu sein.',
       en: 'On phones the settings now fit the screen completely, “Close” moves below the title when needed and the Windows path wraps instead of being cut off on the right.',
@@ -2262,23 +2228,6 @@ var NEWS = {
   ],
   vault: [
     {
-      date: '2026-11-03',
-      de: 'BL4 Vault-Handbuch zählt Besuche jetzt anonym mit GoatCounter, ohne Cookies, wie die übrigen Werkzeuge. Was du suchst oder auswählst, wird nie mitgesendet.',
-      en: 'BL4 Vault-Handbuch now counts visits anonymously with GoatCounter, without cookies, like the other tools. What you search for or select is never sent.',
-      es: 'BL4 Vault-Handbuch ahora cuenta las visitas de forma anónima con GoatCounter, sin cookies, como las demás herramientas. Lo que buscas o seleccionas nunca se envía.',
-      fr: 'BL4 Vault-Handbuch compte désormais les visites de façon anonyme avec GoatCounter, sans cookies, comme les autres outils. Ce que vous cherchez ou sélectionnez n’est jamais envoyé.',
-      it: 'BL4 Vault-Handbuch ora conta le visite in modo anonimo con GoatCounter, senza cookie, come gli altri strumenti. Ciò che cerchi o selezioni non viene mai inviato.',
-      nl: 'BL4 Vault-Handbuch telt bezoeken nu anoniem met GoatCounter, zonder cookies, net als de andere tools. Wat je zoekt of kiest, wordt nooit meegestuurd.',
-      pl: 'BL4 Vault-Handbuch liczy teraz odwiedziny anonimowo przez GoatCounter, bez plików cookie, jak pozostałe narzędzia. To, czego szukasz lub co wybierasz, nigdy nie jest wysyłane.',
-      pt: 'BL4 Vault-Handbuch agora conta as visitas de forma anônima com o GoatCounter, sem cookies, como as outras ferramentas. O que você pesquisa ou seleciona nunca é enviado.',
-      tr: 'BL4 Vault-Handbuch artık ziyaretleri diğer araçlar gibi GoatCounter ile anonim ve çerezsiz sayıyor. Aradığınız veya seçtiğiniz şey asla gönderilmez.',
-      ru: 'BL4 Vault-Handbuch теперь анонимно считает посещения через GoatCounter, без файлов cookie, как и остальные инструменты. То, что вы ищете или выбираете, никогда не отправляется.',
-      hi: 'BL4 Vault-Handbuch अब बाकी औज़ारों की तरह GoatCounter से विज़िट गुमनाम रूप से गिनता है, बिना कुकीज़ के। तुम जो खोजते या चुनते हो, वह कभी नहीं भेजा जाता।',
-      zh: 'BL4 Vault-Handbuch 现在像其他工具一样，用 GoatCounter 匿名统计访问，不使用 Cookie。你搜索或选择的内容永远不会被发送。',
-      ja: 'BL4 Vault-Handbuch はほかのツールと同じく、GoatCounter で訪問を匿名に集計するようになりました。Cookie は使いません。検索や選択の内容は送信されません。',
-      ko: 'BL4 Vault-Handbuch도 이제 다른 도구처럼 GoatCounter로 방문을 익명 집계해요. 쿠키는 쓰지 않아요. 검색하거나 고른 내용은 절대 보내지 않아요.'
-    },
-    {
       date: '2026-11-01',
       de: 'Das Vault-Handbuch spricht jetzt 14 Sprachen, und zwar überall, wo du etwas bedienst: Menü, Filter, Knöpfe, Hinweise und Farm-Planer. Builds, Raid-Guides, Item-Effekte und die Wochendaten bleiben deutsch, das steht oben auch dabei. Es übernimmt die Sprache der Startseite (sonst die deines Browsers), umstellen kannst du unten im Menü unter „Sprache“.',
       en: 'The Vault-Handbuch now speaks 14 languages wherever you operate something: menu, filters, buttons, notices and the farm planner. Builds, raid guides, item effects and the weekly data stay German, and it says so at the top. It takes the language from the homepage (otherwise from your browser), and you can switch at the bottom of the menu under “Language”.',
@@ -2399,23 +2348,6 @@ var NEWS = {
     }
   ],
   ruestkammer: [
-    {
-      date: '2026-11-03',
-      de: 'MW4 Rüstkammer zählt Besuche jetzt anonym mit GoatCounter, ohne Cookies, wie die übrigen Werkzeuge. Was du suchst oder auswählst, wird nie mitgesendet.',
-      en: 'MW4 Rüstkammer now counts visits anonymously with GoatCounter, without cookies, like the other tools. What you search for or select is never sent.',
-      es: 'MW4 Rüstkammer ahora cuenta las visitas de forma anónima con GoatCounter, sin cookies, como las demás herramientas. Lo que buscas o seleccionas nunca se envía.',
-      fr: 'MW4 Rüstkammer compte désormais les visites de façon anonyme avec GoatCounter, sans cookies, comme les autres outils. Ce que vous cherchez ou sélectionnez n’est jamais envoyé.',
-      it: 'MW4 Rüstkammer ora conta le visite in modo anonimo con GoatCounter, senza cookie, come gli altri strumenti. Ciò che cerchi o selezioni non viene mai inviato.',
-      nl: 'MW4 Rüstkammer telt bezoeken nu anoniem met GoatCounter, zonder cookies, net als de andere tools. Wat je zoekt of kiest, wordt nooit meegestuurd.',
-      pl: 'MW4 Rüstkammer liczy teraz odwiedziny anonimowo przez GoatCounter, bez plików cookie, jak pozostałe narzędzia. To, czego szukasz lub co wybierasz, nigdy nie jest wysyłane.',
-      pt: 'MW4 Rüstkammer agora conta as visitas de forma anônima com o GoatCounter, sem cookies, como as outras ferramentas. O que você pesquisa ou seleciona nunca é enviado.',
-      tr: 'MW4 Rüstkammer artık ziyaretleri diğer araçlar gibi GoatCounter ile anonim ve çerezsiz sayıyor. Aradığınız veya seçtiğiniz şey asla gönderilmez.',
-      ru: 'MW4 Rüstkammer теперь анонимно считает посещения через GoatCounter, без файлов cookie, как и остальные инструменты. То, что вы ищете или выбираете, никогда не отправляется.',
-      hi: 'MW4 Rüstkammer अब बाकी औज़ारों की तरह GoatCounter से विज़िट गुमनाम रूप से गिनता है, बिना कुकीज़ के। तुम जो खोजते या चुनते हो, वह कभी नहीं भेजा जाता।',
-      zh: 'MW4 Rüstkammer 现在像其他工具一样，用 GoatCounter 匿名统计访问，不使用 Cookie。你搜索或选择的内容永远不会被发送。',
-      ja: 'MW4 Rüstkammer はほかのツールと同じく、GoatCounter で訪問を匿名に集計するようになりました。Cookie は使いません。検索や選択の内容は送信されません。',
-      ko: 'MW4 Rüstkammer도 이제 다른 도구처럼 GoatCounter로 방문을 익명 집계해요. 쿠키는 쓰지 않아요. 검색하거나 고른 내용은 절대 보내지 않아요.'
-    },
     {
       date: '2026-11-01',
       de: 'Bedienung und Handbuch-Hinweise ohne Gedankenstriche, die Bedienung in allen 14 Sprachen. Die Quellen stehen jetzt mit Mittelpunkt da.',
