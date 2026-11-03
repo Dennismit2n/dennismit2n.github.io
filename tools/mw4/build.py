@@ -156,6 +156,9 @@ pwa_head = f"""<meta charset="utf-8">
 <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<!-- Zählung (seit 03.11.2026): GoatCounter, anonym, ohne Cookies, unter Intel bei den Quellen offengelegt.
+     count.js der Startseite, fester Titel, damit übersetzte Titel nicht als eigene Seiten zählen. -->
+<script data-goatcounter="https://dennis-mit-2n.goatcounter.com/count" data-goatcounter-settings='{{"title": "mw4"}}' async src="../js/vendor/count.js"></script>
 <style>:root{{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}}</style>
 """
 page_tpl = "<!doctype html>\n<html lang=\"de\" data-pwa=\"1\">\n<head>\n" + pwa_head + head + "</head>\n<body>\n" + body + "</body>\n</html>\n"
