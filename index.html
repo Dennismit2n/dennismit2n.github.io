@@ -347,8 +347,9 @@
           </span>
         </div>
         <!-- Gaming: führt auf die eigene Seite gaming.html (Dennis' Wunsch vom
-             30.10.2026, Gaming getrennt von den übrigen Werkzeugen). Keine
-             Mini-Kacheln: es ist eine Sammlung, kein einzelnes Werkzeug. -->
+             30.10.2026, Gaming getrennt von den übrigen Werkzeugen). Seit 03.11.2026
+             eine Mini-Kachel "Neuigkeiten" (Dennis): Datum des neuesten Eintrags von
+             Craftionary, BL4, MW4 und Fadenkreuz, Sprung auf gaming.html#neuigkeiten. -->
         <div class="tool-card tool-gaming">
           <span class="tool-head">
             <img src="./assets/gaming.svg" alt="" width="44" height="44">
@@ -357,6 +358,9 @@
           <span class="tool-desc" data-i18n="gamingDesc">Guides, handbooks and tools for gaming: Minecraft, Borderlands 4, Modern Warfare 4 and more to come.</span>
           <span class="tool-meta" data-i18n="gamingMeta">Its own page · guides and tools · more to come</span>
           <a class="tool-open" id="open-gaming" aria-labelledby="open-gaming name-gaming" href="./gaming.html"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="craftionary vault ruestkammer fadenkreuz">
+            <a href="./gaming.html#neuigkeiten" data-count="gaming-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+          </span>
         </div>
         <div class="tool-card tool-bigday">
           <span class="tool-head">
@@ -443,9 +447,9 @@
      Als eigenes Skript-Tag hielt es das Übersetzen noch eine halbe Sekunde
      auf; main.js holt es deshalb erst danach. data-news trägt die Adresse
      samt ?v=-Stempel. -->
-<script src="./js/i18n.js?v=2026-11-02" fetchpriority="high"></script>
+<script src="./js/i18n.js?v=2026-11-03" fetchpriority="high"></script>
 <script src="./js/dates.js?v=2026-09-14" fetchpriority="high"></script>
 <script src="./js/header.js?v=2026-10-31" fetchpriority="high"></script>
-<script src="./js/main.js?v=2026-09-24" fetchpriority="high" data-news="./js/news.js?v=2026-11-03"></script>
+<script src="./js/main.js?v=2026-11-03" fetchpriority="high" data-news="./js/news.js?v=2026-11-03"></script>
 </body>
 </html>
