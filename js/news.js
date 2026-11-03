@@ -14,6 +14,7 @@
  * it nl pl pt tr ru hi zh ja ko, same order as in i18n.js; optionally version
  * and link — Real_RAM_cooler, fontART, Besucher-Ticker, create-masterprompt
  * and Fadenkreuz have real GitHub releases; the browser tools carry no tags.
+ * The key mods (Werkstatt-Mods) is shown on mods.html, not on werkstatt.html.
  */
 'use strict';
 
@@ -2552,6 +2553,43 @@ var NEWS = {
       zh: '首个版本。一个文件里有五个计算器：双向换算的增值税、可取整和分摊的小费、带价格表的油价、按德国税法计算的股息（包括 ETF），以及股票、ETF 和加密货币的交易成本，附实际价格和回本点。十四种语言，数字按你的语言习惯书写，首次访问后可离线使用。Pocketsum 不统计访问，也不会把你输入的内容发送到任何地方。',
       ja: '最初の公開です。1つのファイルに5つの計算機：双方向の付加価値税、切り上げと割り勘つきのチップ、価格表つきの燃料価格、ドイツの税法に沿った配当（ETF を含む）、株式・ETF・暗号資産の実質価格と損益分岐点がわかる取引コスト。14 言語に対応し、数字はあなたの言語の書き方で入力でき、初回アクセス後はオフラインでも使えます。Pocketsum は訪問を数えず、入力した内容をどこにも送りません。',
       ko: '첫 공개. 파일 하나에 계산기 다섯 개: 양방향 부가세, 올림과 나누기가 되는 팁, 가격표가 있는 연료 가격, 독일 세법에 따른 배당(ETF 포함), 주식·ETF·암호화폐의 실제 단가와 손익분기점이 나오는 거래 비용. 14개 언어를 지원하고 숫자는 사용하는 언어의 표기대로 쓰며, 첫 방문 후에는 오프라인으로도 쓸 수 있습니다. Pocketsum은 방문 수를 세지 않고 입력한 내용을 어디로도 보내지 않습니다.'
+    }
+  ],
+  // Werkstatt-Mods (mods.html), keine GitHub-Releases, Versionen stehen im Text.
+  mods: [
+    {
+      date: '2026-11-02',
+      de: 'Limit-Pause 0.3.0 hält deine Sitzung nicht mehr stundenlang an. Ist das Limit erst in mehr als fünf Minuten wieder frei, beendet sie die Runde und sagt dir, wann es weitergeht. Agenten hält sie gar nicht mehr an. Limits-Band 0.2.1 lässt die Zeilen anderer Mods unter dem Band stehen, vorher waren sie unsichtbar.',
+      en: 'Limit pause 0.3.0 no longer holds your session for hours. If the limit only frees up in more than five minutes, it ends the turn and tells you when you can go on. It no longer holds agents at all. Limits band 0.2.1 keeps the lines of other mods visible below the band, before they were hidden.',
+      es: 'La pausa de límite 0.3.0 ya no detiene tu sesión durante horas. Si el límite tarda más de cinco minutos en liberarse, termina el turno y te dice cuándo puedes seguir. A los agentes ya no los detiene nunca. La barra de límites 0.2.1 deja visibles bajo la barra las líneas de otros mods, antes quedaban ocultas.',
+      fr: 'La pause de limite 0.3.0 ne bloque plus votre session pendant des heures. Si la limite ne se libère que dans plus de cinq minutes, elle termine le tour et vous indique quand reprendre. Elle n’arrête plus du tout les agents. La bande des limites 0.2.1 laisse visibles sous la bande les lignes des autres mods, auparavant masquées.',
+      it: 'La pausa limite 0.3.0 non blocca più la tua sessione per ore. Se il limite si libera solo tra più di cinque minuti, chiude il turno e ti dice quando puoi riprendere. Gli agenti non li ferma più. La barra dei limiti 0.2.1 lascia visibili sotto la barra le righe delle altre mod, prima erano nascoste.',
+      nl: 'Limietpauze 0.3.0 houdt je sessie niet meer urenlang vast. Komt de limiet pas over meer dan vijf minuten vrij, dan beëindigt hij de beurt en zegt je wanneer je verder kunt. Agents houdt hij helemaal niet meer tegen. Limietbalk 0.2.1 laat de regels van andere mods onder de balk staan, eerder waren ze onzichtbaar.',
+      pl: 'Pauza limitu 0.3.0 nie wstrzymuje już twojej sesji na całe godziny. Jeśli limit zwolni się dopiero za ponad pięć minut, kończy turę i mówi ci, kiedy możesz kontynuować. Agentów w ogóle już nie zatrzymuje. Pasek limitów 0.2.1 zostawia pod paskiem wiersze innych modów, wcześniej były niewidoczne.',
+      pt: 'A pausa de limite 0.3.0 já não segura a tua sessão durante horas. Se o limite só ficar livre daqui a mais de cinco minutos, termina a ronda e diz-te quando podes continuar. Os agentes deixam de ser parados. A barra de limites 0.2.1 mantém visíveis por baixo da barra as linhas de outros mods, antes ficavam escondidas.',
+      tr: 'Limit duraklatması 0.3.0 artık oturumunu saatlerce bekletmiyor. Limit ancak beş dakikadan uzun süre sonra açılacaksa turu bitirir ve sana ne zaman devam edebileceğini söyler. Ajanları artık hiç durdurmaz. Limit şeridi 0.2.1, diğer modların satırlarını şeridin altında görünür bırakır, önceden gizli kalıyorlardı.',
+      ru: 'Пауза по лимиту 0.3.0 больше не держит твою сессию часами. Если лимит освободится только через пять с лишним минут, она завершает ход и говорит, когда можно продолжить. Агентов она больше не останавливает вовсе. Полоса лимитов 0.2.1 оставляет строки других модов видимыми под полосой, раньше они пропадали.',
+      hi: 'सीमा-विराम 0.3.0 अब तुम्हारा सत्र घंटों तक नहीं रोकता। अगर सीमा पाँच मिनट से ज़्यादा बाद खुलेगी, तो यह बारी खत्म कर देता है और बताता है कि तुम कब आगे बढ़ सकते हो। एजेंटों को यह अब बिल्कुल नहीं रोकता। सीमा पट्टी 0.2.1 दूसरे मॉड की पंक्तियों को पट्टी के नीचे दिखती रहने देती है, पहले वे छिप जाती थीं।',
+      zh: '限额暂停 0.3.0 不再把你的会话卡上几个小时。如果限额要五分钟以后才恢复，它会结束这一轮，并告诉你什么时候可以继续。它也不再暂停代理。限额条 0.2.1 让其他模组的行留在限额条下方显示，以前它们会被挡住。',
+      ja: '上限ポーズ 0.3.0 は、セッションを何時間も止めなくなりました。上限が空くのが5分より先なら、そのターンを終えて、いつ再開できるかを知らせます。エージェントはもう止めません。上限バー 0.2.1 は、ほかのModの行をバーの下に表示したままにします。以前は見えなくなっていました。',
+      ko: '한도 일시정지 0.3.0은 이제 세션을 몇 시간씩 붙잡아 두지 않아요. 한도가 5분보다 늦게 풀리면 턴을 끝내고 언제 이어갈 수 있는지 알려 줘요. 에이전트는 더 이상 멈추지 않아요. 한도 바 0.2.1은 다른 모드의 줄을 바 아래에 그대로 보여 줘요. 전에는 가려졌어요.'
+    },
+    {
+      date: '2026-11-01',
+      de: 'Erste Ausgabe: fünf Mods für Claude Code, nämlich Statistik-Leiste, Limits-Band, Wächter, Limit-Pause und Agenten-Leiste. Jede installierst du mit einer Zeile, auf Deutsch oder Englisch, alles quelloffen unter MIT.',
+      en: 'First release: five mods for Claude Code, namely statistics pane, limits band, guard, limit pause and agents pane. You install each one with a single line, in German or English, all open source under MIT.',
+      es: 'Primera versión: cinco mods para Claude Code, en concreto panel de estadísticas, barra de límites, guardián, pausa de límite y panel de agentes. Cada uno se instala con una línea, en alemán o inglés, todo de código abierto con licencia MIT.',
+      fr: 'Première version : cinq mods pour Claude Code, à savoir panneau de statistiques, bande des limites, gardien, pause de limite et panneau des agents. Chacun s’installe en une ligne, en allemand ou en anglais, le tout open source sous licence MIT.',
+      it: 'Prima versione: cinque mod per Claude Code, cioè pannello statistiche, barra dei limiti, guardiano, pausa limite e pannello agenti. Ognuna si installa con una riga, in tedesco o in inglese, tutto open source con licenza MIT.',
+      nl: 'Eerste uitgave: vijf mods voor Claude Code, namelijk statistiekenpaneel, limietbalk, wachter, limietpauze en agentenpaneel. Elke mod installeer je met één regel, in het Duits of Engels, alles open source onder MIT.',
+      pl: 'Pierwsze wydanie: pięć modów do Claude Code, czyli panel statystyk, pasek limitów, strażnik, pauza limitu i panel agentów. Każdy instalujesz jedną linią, po niemiecku lub angielsku, wszystko jako open source na licencji MIT.',
+      pt: 'Primeira versão: cinco mods para o Claude Code, ou seja, painel de estatísticas, barra de limites, guardião, pausa de limite e painel de agentes. Cada um instala-se com uma linha, em alemão ou inglês, tudo em código aberto com licença MIT.',
+      tr: 'İlk sürüm: Claude Code için beş mod, yani istatistik paneli, limit şeridi, bekçi, limit duraklatması ve ajan paneli. Her birini tek satırla kurarsın, Almanca ya da İngilizce, hepsi MIT lisansıyla açık kaynak.',
+      ru: 'Первый выпуск: пять модов для Claude Code, а именно панель статистики, полоса лимитов, страж, пауза по лимиту и панель агентов. Каждый ставится одной строкой, на немецком или английском, всё с открытым кодом под MIT.',
+      hi: 'पहला रिलीज़: Claude Code के लिए पाँच मॉड, यानी आँकड़ा पैनल, सीमा पट्टी, प्रहरी, सीमा-विराम और एजेंट पैनल। हर एक को तुम एक पंक्ति से इंस्टॉल करते हो, जर्मन या अंग्रेज़ी में, सब MIT लाइसेंस के तहत ओपन सोर्स।',
+      zh: '首个版本：五个 Claude Code 模组，分别是统计面板、限额条、守卫、限额暂停和代理面板。每个都只需一行命令安装，支持德语或英语，全部以 MIT 许可开源。',
+      ja: '最初の公開です。Claude Code 向けの5つのMod、統計パネル、上限バー、ガード、上限ポーズ、エージェントパネル。どれも1行でインストールでき、ドイツ語か英語を選べます。すべてMITライセンスのオープンソースです。',
+      ko: '첫 공개: Claude Code용 모드 다섯 개, 통계 패널, 한도 바, 가드, 한도 일시정지, 에이전트 패널이에요. 각각 한 줄로 설치하고, 독일어나 영어를 고를 수 있어요. 모두 MIT 라이선스의 오픈 소스예요.'
     }
   ]
 };
