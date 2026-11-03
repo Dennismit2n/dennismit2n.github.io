@@ -2090,6 +2090,23 @@ var NEWS = {
   ],
   craftionary: [
     {
+      date: '2026-11-03',
+      de: 'Craftionary zählt Besuche jetzt anonym mit GoatCounter, ohne Cookies, wie die übrigen Werkzeuge. Was du suchst oder auswählst, wird nie mitgesendet.',
+      en: 'Craftionary now counts visits anonymously with GoatCounter, without cookies, like the other tools. What you search for or select is never sent.',
+      es: 'Craftionary ahora cuenta las visitas de forma anónima con GoatCounter, sin cookies, como las demás herramientas. Lo que buscas o seleccionas nunca se envía.',
+      fr: 'Craftionary compte désormais les visites de façon anonyme avec GoatCounter, sans cookies, comme les autres outils. Ce que vous cherchez ou sélectionnez n’est jamais envoyé.',
+      it: 'Craftionary ora conta le visite in modo anonimo con GoatCounter, senza cookie, come gli altri strumenti. Ciò che cerchi o selezioni non viene mai inviato.',
+      nl: 'Craftionary telt bezoeken nu anoniem met GoatCounter, zonder cookies, net als de andere tools. Wat je zoekt of kiest, wordt nooit meegestuurd.',
+      pl: 'Craftionary liczy teraz odwiedziny anonimowo przez GoatCounter, bez plików cookie, jak pozostałe narzędzia. To, czego szukasz lub co wybierasz, nigdy nie jest wysyłane.',
+      pt: 'Craftionary agora conta as visitas de forma anônima com o GoatCounter, sem cookies, como as outras ferramentas. O que você pesquisa ou seleciona nunca é enviado.',
+      tr: 'Craftionary artık ziyaretleri diğer araçlar gibi GoatCounter ile anonim ve çerezsiz sayıyor. Aradığınız veya seçtiğiniz şey asla gönderilmez.',
+      ru: 'Craftionary теперь анонимно считает посещения через GoatCounter, без файлов cookie, как и остальные инструменты. То, что вы ищете или выбираете, никогда не отправляется.',
+      hi: 'Craftionary अब बाकी औज़ारों की तरह GoatCounter से विज़िट गुमनाम रूप से गिनता है, बिना कुकीज़ के। तुम जो खोजते या चुनते हो, वह कभी नहीं भेजा जाता।',
+      zh: 'Craftionary 现在像其他工具一样，用 GoatCounter 匿名统计访问，不使用 Cookie。你搜索或选择的内容永远不会被发送。',
+      ja: 'Craftionary はほかのツールと同じく、GoatCounter で訪問を匿名に集計するようになりました。Cookie は使いません。検索や選択の内容は送信されません。',
+      ko: 'Craftionary도 이제 다른 도구처럼 GoatCounter로 방문을 익명 집계해요. 쿠키는 쓰지 않아요. 검색하거나 고른 내용은 절대 보내지 않아요.'
+    },
+    {
       date: '2026-11-01',
       de: 'Am Handy passen die Einstellungen jetzt ganz auf den Bildschirm, „Schließen“ rutscht bei Bedarf unter den Titel und der Windows-Pfad bricht um, statt rechts abgeschnitten zu sein.',
       en: 'On phones the settings now fit the screen completely, “Close” moves below the title when needed and the Windows path wraps instead of being cut off on the right.',
@@ -2245,6 +2262,23 @@ var NEWS = {
   ],
   vault: [
     {
+      date: '2026-11-03',
+      de: 'BL4 Vault-Handbuch zählt Besuche jetzt anonym mit GoatCounter, ohne Cookies, wie die übrigen Werkzeuge. Was du suchst oder auswählst, wird nie mitgesendet.',
+      en: 'BL4 Vault-Handbuch now counts visits anonymously with GoatCounter, without cookies, like the other tools. What you search for or select is never sent.',
+      es: 'BL4 Vault-Handbuch ahora cuenta las visitas de forma anónima con GoatCounter, sin cookies, como las demás herramientas. Lo que buscas o seleccionas nunca se envía.',
+      fr: 'BL4 Vault-Handbuch compte désormais les visites de façon anonyme avec GoatCounter, sans cookies, comme les autres outils. Ce que vous cherchez ou sélectionnez n’est jamais envoyé.',
+      it: 'BL4 Vault-Handbuch ora conta le visite in modo anonimo con GoatCounter, senza cookie, come gli altri strumenti. Ciò che cerchi o selezioni non viene mai inviato.',
+      nl: 'BL4 Vault-Handbuch telt bezoeken nu anoniem met GoatCounter, zonder cookies, net als de andere tools. Wat je zoekt of kiest, wordt nooit meegestuurd.',
+      pl: 'BL4 Vault-Handbuch liczy teraz odwiedziny anonimowo przez GoatCounter, bez plików cookie, jak pozostałe narzędzia. To, czego szukasz lub co wybierasz, nigdy nie jest wysyłane.',
+      pt: 'BL4 Vault-Handbuch agora conta as visitas de forma anônima com o GoatCounter, sem cookies, como as outras ferramentas. O que você pesquisa ou seleciona nunca é enviado.',
+      tr: 'BL4 Vault-Handbuch artık ziyaretleri diğer araçlar gibi GoatCounter ile anonim ve çerezsiz sayıyor. Aradığınız veya seçtiğiniz şey asla gönderilmez.',
+      ru: 'BL4 Vault-Handbuch теперь анонимно считает посещения через GoatCounter, без файлов cookie, как и остальные инструменты. То, что вы ищете или выбираете, никогда не отправляется.',
+      hi: 'BL4 Vault-Handbuch अब बाकी औज़ारों की तरह GoatCounter से विज़िट गुमनाम रूप से गिनता है, बिना कुकीज़ के। तुम जो खोजते या चुनते हो, वह कभी नहीं भेजा जाता।',
+      zh: 'BL4 Vault-Handbuch 现在像其他工具一样，用 GoatCounter 匿名统计访问，不使用 Cookie。你搜索或选择的内容永远不会被发送。',
+      ja: 'BL4 Vault-Handbuch はほかのツールと同じく、GoatCounter で訪問を匿名に集計するようになりました。Cookie は使いません。検索や選択の内容は送信されません。',
+      ko: 'BL4 Vault-Handbuch도 이제 다른 도구처럼 GoatCounter로 방문을 익명 집계해요. 쿠키는 쓰지 않아요. 검색하거나 고른 내용은 절대 보내지 않아요.'
+    },
+    {
       date: '2026-11-01',
       de: 'Das Vault-Handbuch spricht jetzt 14 Sprachen, und zwar überall, wo du etwas bedienst: Menü, Filter, Knöpfe, Hinweise und Farm-Planer. Builds, Raid-Guides, Item-Effekte und die Wochendaten bleiben deutsch, das steht oben auch dabei. Es übernimmt die Sprache der Startseite (sonst die deines Browsers), umstellen kannst du unten im Menü unter „Sprache“.',
       en: 'The Vault-Handbuch now speaks 14 languages wherever you operate something: menu, filters, buttons, notices and the farm planner. Builds, raid guides, item effects and the weekly data stay German, and it says so at the top. It takes the language from the homepage (otherwise from your browser), and you can switch at the bottom of the menu under “Language”.',
@@ -2365,6 +2399,23 @@ var NEWS = {
     }
   ],
   ruestkammer: [
+    {
+      date: '2026-11-03',
+      de: 'MW4 Rüstkammer zählt Besuche jetzt anonym mit GoatCounter, ohne Cookies, wie die übrigen Werkzeuge. Was du suchst oder auswählst, wird nie mitgesendet.',
+      en: 'MW4 Rüstkammer now counts visits anonymously with GoatCounter, without cookies, like the other tools. What you search for or select is never sent.',
+      es: 'MW4 Rüstkammer ahora cuenta las visitas de forma anónima con GoatCounter, sin cookies, como las demás herramientas. Lo que buscas o seleccionas nunca se envía.',
+      fr: 'MW4 Rüstkammer compte désormais les visites de façon anonyme avec GoatCounter, sans cookies, comme les autres outils. Ce que vous cherchez ou sélectionnez n’est jamais envoyé.',
+      it: 'MW4 Rüstkammer ora conta le visite in modo anonimo con GoatCounter, senza cookie, come gli altri strumenti. Ciò che cerchi o selezioni non viene mai inviato.',
+      nl: 'MW4 Rüstkammer telt bezoeken nu anoniem met GoatCounter, zonder cookies, net als de andere tools. Wat je zoekt of kiest, wordt nooit meegestuurd.',
+      pl: 'MW4 Rüstkammer liczy teraz odwiedziny anonimowo przez GoatCounter, bez plików cookie, jak pozostałe narzędzia. To, czego szukasz lub co wybierasz, nigdy nie jest wysyłane.',
+      pt: 'MW4 Rüstkammer agora conta as visitas de forma anônima com o GoatCounter, sem cookies, como as outras ferramentas. O que você pesquisa ou seleciona nunca é enviado.',
+      tr: 'MW4 Rüstkammer artık ziyaretleri diğer araçlar gibi GoatCounter ile anonim ve çerezsiz sayıyor. Aradığınız veya seçtiğiniz şey asla gönderilmez.',
+      ru: 'MW4 Rüstkammer теперь анонимно считает посещения через GoatCounter, без файлов cookie, как и остальные инструменты. То, что вы ищете или выбираете, никогда не отправляется.',
+      hi: 'MW4 Rüstkammer अब बाकी औज़ारों की तरह GoatCounter से विज़िट गुमनाम रूप से गिनता है, बिना कुकीज़ के। तुम जो खोजते या चुनते हो, वह कभी नहीं भेजा जाता।',
+      zh: 'MW4 Rüstkammer 现在像其他工具一样，用 GoatCounter 匿名统计访问，不使用 Cookie。你搜索或选择的内容永远不会被发送。',
+      ja: 'MW4 Rüstkammer はほかのツールと同じく、GoatCounter で訪問を匿名に集計するようになりました。Cookie は使いません。検索や選択の内容は送信されません。',
+      ko: 'MW4 Rüstkammer도 이제 다른 도구처럼 GoatCounter로 방문을 익명 집계해요. 쿠키는 쓰지 않아요. 검색하거나 고른 내용은 절대 보내지 않아요.'
+    },
     {
       date: '2026-11-01',
       de: 'Bedienung und Handbuch-Hinweise ohne Gedankenstriche, die Bedienung in allen 14 Sprachen. Die Quellen stehen jetzt mit Mittelpunkt da.',
