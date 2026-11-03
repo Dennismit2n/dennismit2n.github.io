@@ -1,7 +1,7 @@
 /* BL4 Vault-Handbuch: Service Worker
    Seite, Manifest und Daten: zuerst Netz (bei jedem Start frisch), offline aus dem Cache.
    Bilder: sofort aus dem Cache, im Hintergrund aktualisiert. Neue Version = neue Datei, wird sofort aktiv. */
-const VERSION = "2026-11-03T16:25:08Z";
+const VERSION = "2026-11-03T16:47:48Z";
 const CORE = "bl4-core-" + VERSION;
 const IMG = "bl4-img";
 /* Schriften liegen seit dem 30.10.2026 in fonts/ (vorher Google Fonts, Cache "bl4-font") */

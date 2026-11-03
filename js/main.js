@@ -70,7 +70,7 @@
     document.body.appendChild(newsScript);
   }
 
-  // ── GoatCounter: count tile clicks as events ──────────────────────
+  // ── Tile click hook (dormant since 03.11.2026, no counter loaded) ──
   // Shows up in the dashboard as "kachel-ram", "kachel-shrink", … so we can
   // see which tool actually gets picked up, not just page views.
   // The listener sits on the stretched link, NOT on the whole tile: since the

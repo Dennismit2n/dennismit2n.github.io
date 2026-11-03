@@ -57,8 +57,6 @@ Both come from hand-maintained data files, not from a feed: `js/news.js` and `js
 
 The interface words exist in all 14 languages, and since 14 September 2026 so do the texts. Until then news and guides were German and English only, and every other language got the English version plus a notice saying so; that fallback and its notice are gone.
 
-*Analytics:* the page uses [GoatCounter](https://www.goatcounter.com) for anonymous, cookieless visit counting (disclosed in the footer). The script is vendored locally in `js/vendor/count.js`, so no third-party script runs here and no CDN is contacted; the only external request is the count pixel. Beyond page views, **each tile click is counted as its own event** (`kachel-ram`, `kachel-shrink`, …) so it is visible which tool people actually open. The links to the news and guides page are counted the same way (`werkstatt-ram-news`, `werkstatt-ram-anleitung`, `werkstatt-gesamt`, …), and so is opening a screenshot there at full size (`werkstatt-ram-bild`, …) — without cookies, without an account, and without anything that identifies a visitor across visits.
-
 *Look (since 30 October 2026):* the tiles fill the width of the window — one column on a phone, up to five on a wide screen (the page is at most 1680 px wide, the hero stays narrow). Behind everything, four soft colour clouds drift slowly over the construction grid of the blueprint drawing from the profile README; they stand still for anyone who has asked their system for reduced motion. The clouds carry a lot of colour but little brightness, so text that stands directly on them keeps 4.6:1 even where two of them overlap. Every tile glows in its own colour (a haze from its colour cap, a soft light around the top edge and its icon). The light theme is deliberately muted (background `#DADBE6` instead of near-white), and every tile colour was recalculated for it; the hues of tiles that looked alike (Real_RAM_cooler, Heizwarte and WiFi QR Card, shrinkling and Besucher-Ticker, Zählwerk and Collective-Calc) were pulled apart. The section headings carry drawn icons instead of emoji: the flat toolbox from the profile README, and a gamepad on the gaming page.
 
 *Display modes (since 31 October 2026):* the appearance menu offers eight entries: System, Light, Dark, High contrast dark, High contrast light, Colour-blind dark, Colour-blind light and Inverted colours. The choice is stored as `werkstatt.darstellung` in localStorage and holds for every tool of the workshop, because they all live on this origin (the old key `dennismit2n-home.theme` is still read as a fallback). A small script in the `<head>` of each page turns it into two attributes before the first paint: `data-theme` (light or dark, as before) and `data-vision` (`contrast`, `cvd` or `invert`); `js/header.js` does the same at runtime and follows the system live. *System* also follows the device setting “increase contrast” and then shows high contrast. High contrast drops the clouds, glows, translucency and gradients; text is `#E0E0E0` on black or black on white, and every colour holds 7:1. This page has no colours that carry meaning, so colour-blind looks like light or dark here; the tools swap their meaning colours themselves. Inverted colours works like the colour filter of Windows (`filter: invert(1)` on the page); screenshots are flipped back so they stay true. Inverting does not keep WCAG contrast, so a few tile colours are lightened in that mode until they hold 4.5:1 after the flip. The three colour blocks at the top of `css/style.css` stay untouched; the modes live in their own blocks at the end of the file.
@@ -69,7 +67,7 @@ The interface words exist in all 14 languages, and since 14 September 2026 so do
 
 ## Development
 
-No build step — plain HTML, CSS, and JavaScript. 80 files make up the site (not counting the apps in `bl4/` and `mw4/`): three pages, one stylesheet, eight scripts (one of them GoatCounter’s, vendored), twenty-three images, three icons, thirty-nine screenshots for the guides in `assets/anleitung/`, and two font files with their licence in `assets/fonts/fraunces/`. No npm dependencies.
+No build step — plain HTML, CSS, and JavaScript. 79 files make up the site (not counting the apps in `bl4/` and `mw4/`): three pages, one stylesheet, seven scripts, twenty-three images, three icons, thirty-nine screenshots for the guides in `assets/anleitung/`, and two font files with their licence in `assets/fonts/fraunces/`. No npm dependencies.
 
 ```
 node tools/dev-server.js
@@ -80,8 +78,7 @@ Then open http://localhost:8615
 The stylesheet and every own script are pulled in with a `?v=<date>` suffix. GitHub Pages serves
 HTML and code with `max-age=600` and caches them independently, so without the suffix a freshly
 deployed `index.html` can meet a ten-minute-old `i18n.js` and render raw keys instead of text.
-**Bump the date in both HTML files whenever a deploy changes CSS or JS**, and append a letter for a second deploy on the same day (`…-13b`). `js/vendor/count.js`
-deliberately has no suffix — it is third-party code and never changes.
+**Bump the date in both HTML files whenever a deploy changes CSS or JS**, and append a letter for a second deploy on the same day (`…-13b`).
 
 ## Preview and promo images
 
@@ -93,4 +90,4 @@ The page speaks 14 languages (`js/i18n.js`), and so do the news and guides (`js/
 
 ## License
 
-[MIT](LICENSE) for everything in this repository, with two exceptions: `js/vendor/count.js` is GoatCounter’s counter script and is released under the ISC license, as stated in its file header; and the font files in `assets/fonts/fraunces/` are Fraunces by The Fraunces Project Authors, licensed under the SIL Open Font License 1.1 (see `OFL.txt` there).
+[MIT](LICENSE) for everything in this repository, with one exception: the font files in `assets/fonts/fraunces/` are Fraunces by The Fraunces Project Authors, licensed under the SIL Open Font License 1.1 (see `OFL.txt` there).

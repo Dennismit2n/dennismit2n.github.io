@@ -159,7 +159,8 @@ var Header = (function () {
     });
   }
 
-  // GoatCounter (anonymous, cookieless — disclosed in the footer). Anything
+  // Click counting hook, dormant since 03.11.2026: no counter script is loaded,
+  // so count() returns at once. Anything
   // carrying a data-count attribute is counted under exactly that name, so the
   // HTML says what is being counted instead of it being guessed from classes.
   function count(path, title) {

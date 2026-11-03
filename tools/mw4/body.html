@@ -702,7 +702,7 @@ function renderIntel() {
     <section class="card"><h3>${esc(t('hGlossary'))}</h3><div class="tbl-wrap"><table class="tbl"><thead><tr><th>${esc(t('colInGame'))}</th><th>${esc(t('colEnglish'))}</th><th>${esc(t('colNote'))}</th></tr></thead><tbody>${S.data.glossar.map(g => `<tr><td${DE()}>${esc(g.de)}</td><td class="m">${esc(g.en)}</td><td${DE()}>${esc(g.notiz || '')}</td></tr>`).join('')}</tbody></table></div></section>
     <section class="card"><h3>${esc(t('hRelease'))}</h3><dl class="facts">${I.release.map(r => `<dt>${dateDE(r.datum)}</dt><dd${DE()}>${esc(r.text)}</dd>`).join('')}</dl><p${DE()}>${esc(T.pc[0])}</p></section>
     <section class="card"><h3>${esc(t('hSources'))}</h3><p class="hint">${esc(t('sourcesHint'))}</p>
-      <ul>${I.quellen.map(q => `<li><a href="${esc(q.url)}" target="_blank" rel="noopener"${DE()}>${esc(q.titel)}</a></li>`).join('')}</ul><p class="hint">${esc(t('analytics'))}</p></section>
+      <ul>${I.quellen.map(q => `<li><a href="${esc(q.url)}" target="_blank" rel="noopener"${DE()}>${esc(q.titel)}</a></li>`).join('')}</ul></section>
   </div></div>`;
 }
 function installHint() {
