@@ -1,51 +1,60 @@
 {
  "v": 1,
- "week_start": "2026-10-22",
- "week_end": "2026-10-29",
- "reset_utc": "2026-10-29T16:00:00Z",
- "updated": "2026-10-22T20:35:04Z",
+ "week_start": "2026-10-29",
+ "week_end": "2026-11-05",
+ "reset_utc": "2026-11-05T17:00:00Z",
+ "updated": "2026-11-04T21:56:56Z",
  "encore": {
-  "boss": "Driller Hole",
-  "where": "Queen's Cradle, Tonnage Peel (Carcadia Burn). Schnellreise zum Lowrise Safehouse, folge der Straße zur Anlage und fahr mit dem Aufzug direkt hinunter in die Boss-Arena.",
+  "boss": "Core Observer, Divisioner, Fractis und Directive-0",
   "loot": [
-   "Katagawa's Revenge",
-   "Fuse",
-   "G.M.R."
+   "Defibrillator",
+   "Divided Focus",
+   "Bully",
+   "Inkling",
+   "Principal",
+   "Sideshow",
+   "Chuck",
+   "Protean Cell",
+   "UAV",
+   "Bonnie & Clyde",
+   "Rowan's Charge",
+   "Whiskey Foxtrot"
   ],
-  "note": "Wochen-Herausforderung am Big-Encore-Automaten von Moxxi vor der Arena (roter Boss-Marker auf der Karte, freigeschaltet nach der Story ab UVH-Rang 1): kostet Eridium, der Boss hat doppelte HP. Seine Dedicated Legendaries (Katagawa's Revenge, Fuse, G.M.R.) fallen dann mit festen 30 % statt 9 % (Pearlescent 1,18 %, Phosphene 1,5 %), unabhängig vom UVH. Gearbox spricht von einer härteren Variante mit „noch lohnenderem“ Loot-Pool; zusätzliche Items sind bisher nicht dokumentiert. Quellen: MentalMars, Lootlemon."
+  "note": "Wochen-Herausforderung am Big-Encore-Automaten von Moxxi vor der jeweiligen Arena (roter Boss-Marker auf der Karte, freigeschaltet nach der Story ab UVH-Rang 1): kostet Eridium, der Boss hat doppelte HP. Die Dedicated Legendaries fallen dann mit festen 30 % statt 9 % (Pearlescent 1,18 %, Phosphene 1,5 %), unabhängig vom UVH. Loot je Boss: Core Observer (Defibrillator, Divided Focus, Bully), Divisioner (Inkling, Principal, Sideshow), Fractis (Chuck, Protean Cell, UAV), Directive-0 (Bonnie & Clyde, Rowan's Charge, Whiskey Foxtrot). Quelle: MentalMars.",
+  "where": "Vier Order-Bunker-Bosse: Core Observer im Blacklime Bunker (The Howl, Fadefields; Schnellreise Rootdown Estates, dann nach Nordosten). Divisioner in The Wireworks (The Low Leys, Terminus Range; Heritage Opus Safehouse, nach Osten von der Klippe und nach Norden über die Brücke). Fractis in The Crawlcroft (Grindstone of the Worthy, Carcadia Burn; Rustical Hurl Order Silo, nach Osten fliegen, Eingang durch die Höhle). Directive-0 in Ironwall Resolve (Terminus District, Dominion; Schnellreise Frantic Screwl, dann nach Süden)."
  },
  "wildcard": {
-  "mission": "Old Lads",
+  "mission": "The Falling Wall",
   "mods": [
-   "Vampiric",
-   "Armored",
-   "Strong"
+   "Sulfur Hexafluoride",
+   "Centripetal",
+   "Immovable"
   ],
-  "reward": "Golden God",
-  "reward_info": "Ripper-Shotgun, Legendary",
-  "note": "Die Belohnung ist garantiert, und du kannst die Mission die ganze Woche wiederholen, bis der Roll passt. Start: ECHO-Menü → Karte → Wildcard-Symbol unten links gedrückt halten."
+  "note": "Die Belohnung ist garantiert, und du kannst die Mission die ganze Woche wiederholen, bis der Roll passt. Start: ECHO-Menü → Karte → Wildcard-Symbol unten links gedrückt halten.",
+  "reward": "Phantom Flame",
+  "reward_info": "Jakobs-Pistole, Legendary"
  },
  "black_market": {
-  "place": "Siedlung westlich von Rattlehead Crest",
-  "area": "Idolator's Noose",
-  "region": "Fadefields",
-  "how": "Schnellreise zum Someday Rise Safehouse und durch die rechte Tür raus. Geh nach Süden zur Siedlung westlich von Rattlehead Crest: Der Automat steht im großen Gebäude am Ufer (MentalMars: oberstes Stockwerk, TheBaseDotaku: erstes Stockwerk).",
-  "note": "Das Angebot ist bei jedem anders: 2 Legendaries in je 4 Varianten, ein Kauf pro Besuch, danach 30 Minuten Wartezeit."
+  "area": "Carcadia District",
+  "how": "Schnellreise zum Lockaway Safehouse und nach Nordosten zum Groaning Core laufen. Der Automat steht auf einem Balkon über der Lava. Bisher nur von MentalMars bestätigt.",
+  "note": "Das Angebot ist bei jedem anders: 2 Legendaries in je 4 Varianten, ein Kauf pro Besuch, danach 30 Minuten Wartezeit.",
+  "place": "Balkon über der Lava, Groaning Core",
+  "region": "Dominion"
  },
  "shift": [
   {
-   "a": "2026-10-21",
-   "c": "JZRJ3-BWJ3C-K6JJ5-T3BJJ-CFR59",
+   "a": "2026-11-02",
+   "c": "CZKJJ-35RH6-T9K9C-9TJJT-SXRCT",
    "k": "keys",
-   "r": "3 Golden Keys",
-   "x": "2026-10-27",
-   "n": "läuft am 27.10. ab"
+   "n": "schaltet auch Keys in älteren Borderlands-Teilen frei",
+   "r": "20 Golden Keys",
+   "x": "2026-11-16"
   },
   {
    "a": "2026-09-29",
    "c": "CSKJJ-63XZ6-BSKHK-SBBJJ-RRB9F",
    "k": "keys",
-   "n": "MentalMars nennt 5",
+   "n": "MentalMars nennt 5, GamesRadar 2",
    "r": "2 Golden Keys",
    "x": ""
   },
@@ -225,36 +234,36 @@
  ],
  "sources": [
   [
-   "Gearbox: Version 1.11 (22.10.2026)",
-   "https://support.borderlands.com/hc/en-us/articles/56652595228051-Borderlands-4-Version-1-11-October-22-2026"
+   "MentalMars: Patch Notes (Weekly Rotation 29.10.2026)",
+   "https://mentalmars.com/borderlands-4/patch-notes/"
   ],
   [
-   "2K: Update Notes",
-   "https://borderlands.2k.com/borderlands-4/update-notes/"
-  ],
-  [
-   "MentalMars: Black Market",
-   "https://mentalmars.com/borderlands-4/loot/black-market/"
-  ],
-  [
-   "TheBaseDotaku: Black Market",
-   "https://thebasedotaku.com/guides/borderlands-4-maurices-black-market-vending-machine-location-for-this-week/"
+   "MentalMars: Wildcard",
+   "https://mentalmars.com/borderlands-4/gameplay/wildcard/"
   ],
   [
    "MentalMars: Moxxi's Encore",
    "https://mentalmars.com/borderlands-4/gameplay/moxxis-encore/"
   ],
   [
-   "MentalMars: Driller Hole",
-   "https://mentalmars.com/borderlands-4/bosses/driller-hole/"
+   "MentalMars: Core Observer",
+   "https://mentalmars.com/bosses-enemies/core-observer/"
   ],
   [
-   "Lootlemon: Driller Hole",
-   "https://www.lootlemon.com/loot-source/driller-hole"
+   "MentalMars: Divisioner",
+   "https://mentalmars.com/bosses-enemies/divisioner/"
   ],
   [
-   "Lootlemon: Golden God",
-   "https://www.lootlemon.com/weapon/golden-god-bl4"
+   "MentalMars: Fractis",
+   "https://mentalmars.com/bosses-enemies/fractis/"
+  ],
+  [
+   "MentalMars: Directive-0",
+   "https://mentalmars.com/bosses-enemies/directive-o/"
+  ],
+  [
+   "MentalMars: Black Market",
+   "https://mentalmars.com/borderlands-4/loot/black-market/"
   ],
   [
    "MentalMars: SHiFT-Codes",
@@ -265,12 +274,8 @@
    "https://www.gamesradar.com/games/borderlands/borderlands-4-shift-codes-golden-keys/"
   ],
   [
-   "TheBaseDotaku: SHiFT-Codes",
-   "https://thebasedotaku.com/codes/borderlands-4/"
-  ],
-  [
-   "OzBargain: SHiFT-Code",
-   "https://www.ozbargain.com.au/node/979886"
+   "2K: Update Notes",
+   "https://borderlands.2k.com/borderlands-4/update-notes/"
   ]
  ]
 }
