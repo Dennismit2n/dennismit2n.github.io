@@ -2229,6 +2229,23 @@ var NEWS = {
   vault: [
     {
       date: '2026-11-05',
+      de: 'Maurice’s Black Market zeigt in der Wochenkarte jetzt eine Infografik mit Karte, Weg und Automat, und zwar jede Woche neu. Dazu hat der Tediore Digi-Rift ein Gebietsbild bekommen.',
+      en: 'Maurice’s Black Market now shows an infographic in the weekly card with map, route and vending machine, updated every week. The Tediore Digi-Rift also got an area picture.',
+      es: 'El Black Market de Maurice ahora muestra en la tarjeta semanal una infografía con mapa, ruta y máquina, renovada cada semana. Además, el Tediore Digi-Rift tiene ahora una imagen de la zona.',
+      fr: 'Le Black Market de Maurice affiche désormais dans la carte de la semaine une infographie avec carte, chemin et distributeur, renouvelée chaque semaine. Le Tediore Digi-Rift a aussi reçu une image de la zone.',
+      it: 'Il Black Market di Maurice ora mostra nella scheda settimanale un’infografica con mappa, percorso e distributore, aggiornata ogni settimana. Anche il Tediore Digi-Rift ha ora un’immagine della zona.',
+      nl: 'Maurice’s Black Market toont in de weekkaart nu een infographic met kaart, route en automaat, elke week opnieuw. De Tediore Digi-Rift heeft ook een gebiedsafbeelding gekregen.',
+      pl: 'Black Market Maurice’a pokazuje teraz w karcie tygodnia infografikę z mapą, drogą i automatem, co tydzień nową. Tediore Digi-Rift dostał też zdjęcie obszaru.',
+      pt: 'O Black Market do Maurice agora mostra no cartão da semana um infográfico com mapa, caminho e máquina, renovado toda semana. O Tediore Digi-Rift também ganhou uma imagem da área.',
+      tr: 'Maurice’in Black Market’i haftalık kartta artık her hafta yenilenen, harita, yol ve otomatı gösteren bir infografik sunuyor. Tediore Digi-Rift de bir bölge görseli aldı.',
+      ru: 'Black Market Мориса теперь показывает в карточке недели инфографику с картой, путём и автоматом, каждую неделю новую. У Tediore Digi-Rift тоже появилась картинка местности.',
+      hi: 'Maurice का Black Market अब हफ़्ते वाले कार्ड में नक्शे, रास्ते और वेंडिंग मशीन के साथ एक इन्फ़ोग्राफ़िक दिखाता है, जो हर हफ़्ते नया होता है। Tediore Digi-Rift को भी इलाके की एक तस्वीर मिली है।',
+      zh: 'Maurice 的 Black Market 现在会在每周卡片中显示一张包含地图、路线和售货机的信息图，每周更新。Tediore Digi-Rift 也加上了区域图片。',
+      ja: 'Maurice の Black Market は、週ごとのカードにマップ、ルート、自販機をまとめたインフォグラフィックを毎週表示するようになりました。Tediore Digi-Rift にもエリアの画像がつきました。',
+      ko: 'Maurice의 Black Market이 이제 주간 카드에 지도, 경로, 자판기를 담은 인포그래픽을 매주 새로 보여 줍니다. Tediore Digi-Rift에도 지역 사진이 생겼습니다.'
+    },
+    {
+      date: '2026-11-05',
       de: 'Das Handbuch steht jetzt auf Patch 1.11 vom 22.10.: Die Patch-Seite zeigt die Buffs für Rafa, Vex, Amon, Harlowe und Loveless, Murmur und Skully haben ihre neuen Boss-Quellen, und 17 Items tragen den passenden Patch-Hinweis.',
       en: 'The handbook is now on patch 1.11 from 22 October: the patch page shows the buffs for Rafa, Vex, Amon, Harlowe and Loveless, Murmur and Skully have their new boss sources, and 17 items carry the matching patch note.',
       es: 'El manual ya está en el parche 1.11 del 22 de octubre: la página del parche muestra las mejoras de Rafa, Vex, Amon, Harlowe y Loveless, Murmur y Skully tienen sus nuevas fuentes de jefe, y 17 objetos llevan la nota de parche correspondiente.',

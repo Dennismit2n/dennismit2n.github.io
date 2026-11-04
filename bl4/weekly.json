@@ -35,6 +35,7 @@
   "reward_info": "Jakobs-Pistole, Legendary"
  },
  "black_market": {
+  "nr": "005",
   "area": "Carcadia District",
   "how": "Schnellreise zum Lockaway Safehouse und nach Nordosten zum Groaning Core laufen. Der Automat steht auf einem Balkon über der Lava. Bisher nur von MentalMars bestätigt.",
   "note": "Das Angebot ist bei jedem anders: 2 Legendaries in je 4 Varianten, ein Kauf pro Besuch, danach 30 Minuten Wartezeit.",
