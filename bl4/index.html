@@ -6,7 +6,7 @@
 <meta name="description" content="Borderlands-4-Handbuch: Meta-Builds, alle Legendaries und Pearls mit Fundort und Drop-Chance, Firmware, Raids, Farm-Planer und Wochen-Update.">
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#ffd400">
-<meta name="bl4-build" content="2026-11-04T22:44:09Z">
+<meta name="bl4-build" content="2026-11-04T23:00:05Z">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Vault-Handbuch">
@@ -4491,10 +4491,18 @@ function renderWeek(){
   const e = w.encore || {}, wc = w.wildcard || {}, bm = w.black_market || {};
   /* Fundort-Bild des Encore-Bosses, wenn die Datenbank die Quelle kennt */
   const norm2 = x => String(x || "").toLowerCase().replace(/[^a-z0-9]/g, "");
-  const eSrc = e.boss ? Object.values(LOOT.src).find(x => x.im && x.im.length && norm2(x.n) === norm2(e.boss)) : null;
+  /* Mehrere Bosse in einer Woche („A, B, C und D“): jedes Fundort-Bild einzeln zeigen */
+  const eSrcs = [];
+  if (e.boss){
+    const namen = [e.boss, ...String(e.boss).split(/\s*,\s*|\s+(?:und|and)\s+|\s*&\s*/)];
+    for (const nm of namen){
+      const s = nm ? Object.values(LOOT.src).find(x => x.im && x.im.length && norm2(x.n) === norm2(nm)) : null;
+      if (s && !eSrcs.includes(s)) eSrcs.push(s);
+    }
+  }
   $("#wkGrid").innerHTML = `
     <article class="wk-card hl"><span class="wk-k">${t("Big-Encore-Boss der Woche")}</span><h3>${esc(e.boss || "–")}</h3>
-      ${eSrc ? `<div class="wk-loc">${locPic(eSrc, eSrc.im[0], "")}</div>` : ""}
+      ${eSrcs.length ? `<div class="wk-loc${eSrcs.length > 1 ? " lp-row" : ""}">${eSrcs.map(s => locPic(s, s.im[0], eSrcs.length > 1 ? s.n : "")).join("")}</div>` : ""}
       ${e.where ? `<p class="wk-where"${DE()}>${esc(e.where)}</p>` : ""}
       ${(e.loot || []).length ? `<div class="ichips">${e.loot.map(nameChip).join("")}</div>` : ""}
       ${e.note ? `<p class="wk-note"${DE()}>${esc(e.note)}</p>` : ""}</article>
