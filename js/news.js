@@ -2228,6 +2228,23 @@ var NEWS = {
   ],
   vault: [
     {
+      date: '2026-11-04',
+      de: 'Die App holt die Wochendaten jetzt auch frisch, wenn du sie aus dem Hintergrund zurückholst, und sucht nach dem Reset am Donnerstag alle 5 Minuten nach der neuen Woche. Vorher kamen neue Daten erst nach einem kompletten Neustart der App an.',
+      en: 'The app now also fetches the weekly data fresh when you bring it back from the background, and after the Thursday reset it checks for the new week every 5 minutes. Before, new data only showed up after fully restarting the app.',
+      es: 'La app ahora también carga de nuevo los datos semanales cuando la traes de vuelta desde segundo plano, y tras el reinicio del jueves busca la nueva semana cada 5 minutos. Antes, los datos nuevos solo aparecían al reiniciar la app por completo.',
+      fr: 'L’application recharge désormais aussi les données hebdomadaires quand vous la ramenez au premier plan, et après la réinitialisation du jeudi, elle cherche la nouvelle semaine toutes les 5 minutes. Avant, les nouvelles données n’apparaissaient qu’après un redémarrage complet de l’application.',
+      it: 'L’app ora ricarica i dati settimanali anche quando la riporti in primo piano, e dopo il reset del giovedì cerca la nuova settimana ogni 5 minuti. Prima i nuovi dati arrivavano solo dopo un riavvio completo dell’app.',
+      nl: 'De app haalt de weekgegevens nu ook opnieuw op als je hem uit de achtergrond terughaalt, en zoekt na de reset op donderdag elke 5 minuten naar de nieuwe week. Eerder kwamen nieuwe gegevens pas na een volledige herstart van de app binnen.',
+      pl: 'Aplikacja pobiera teraz dane tygodniowe na nowo także wtedy, gdy przywracasz ją z tła, a po czwartkowym resecie co 5 minut sprawdza, czy jest już nowy tydzień. Wcześniej nowe dane pojawiały się dopiero po pełnym ponownym uruchomieniu aplikacji.',
+      pt: 'O app agora também busca os dados semanais de novo quando você o traz de volta do segundo plano, e depois do reset de quinta-feira procura a nova semana a cada 5 minutos. Antes, os dados novos só apareciam depois de reiniciar o app por completo.',
+      tr: 'Uygulama artık arka plandan geri getirdiğinizde de haftalık verileri yeniden yüklüyor ve perşembe sıfırlamasından sonra yeni haftayı 5 dakikada bir arıyor. Önceden yeni veriler ancak uygulama tamamen yeniden başlatıldığında geliyordu.',
+      ru: 'Приложение теперь заново загружает недельные данные и тогда, когда вы возвращаете его из фона, а после сброса в четверг каждые 5 минут проверяет, появилась ли новая неделя. Раньше новые данные появлялись только после полного перезапуска приложения.',
+      hi: 'ऐप अब बैकग्राउंड से वापस लाने पर भी साप्ताहिक डेटा नए सिरे से लाता है, और गुरुवार के रीसेट के बाद हर 5 मिनट में नए हफ़्ते की जाँच करता है। पहले नया डेटा ऐप को पूरी तरह दोबारा शुरू करने के बाद ही आता था।',
+      zh: '现在把应用从后台切回来时，也会重新加载每周数据；周四重置后，它每 5 分钟检查一次新一周的数据。以前只有完全重启应用后才会出现新数据。',
+      ja: 'アプリをバックグラウンドから戻したときにも週ごとのデータを読み込み直すようになり、木曜日のリセット後は5分ごとに新しい週のデータを確認します。これまでは、アプリを完全に再起動しないと新しいデータが表示されませんでした。',
+      ko: '이제 앱을 백그라운드에서 다시 불러올 때도 주간 데이터를 새로 가져오고, 목요일 리셋 후에는 5분마다 새 주의 데이터를 확인합니다. 예전에는 앱을 완전히 다시 시작해야 새 데이터가 나타났습니다.'
+    },
+    {
       date: '2026-11-01',
       de: 'Das Vault-Handbuch spricht jetzt 14 Sprachen, und zwar überall, wo du etwas bedienst: Menü, Filter, Knöpfe, Hinweise und Farm-Planer. Builds, Raid-Guides, Item-Effekte und die Wochendaten bleiben deutsch, das steht oben auch dabei. Es übernimmt die Sprache der Startseite (sonst die deines Browsers), umstellen kannst du unten im Menü unter „Sprache“.',
       en: 'The Vault-Handbuch now speaks 14 languages wherever you operate something: menu, filters, buttons, notices and the farm planner. Builds, raid guides, item effects and the weekly data stay German, and it says so at the top. It takes the language from the homepage (otherwise from your browser), and you can switch at the bottom of the menu under “Language”.',

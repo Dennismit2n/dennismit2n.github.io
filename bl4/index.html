@@ -6,7 +6,7 @@
 <meta name="description" content="Borderlands-4-Handbuch: Meta-Builds, alle Legendaries und Pearls mit Fundort und Drop-Chance, Firmware, Raids, Farm-Planer und Wochen-Update.">
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#ffd400">
-<meta name="bl4-build" content="2026-11-03T16:47:48Z">
+<meta name="bl4-build" content="2026-11-04T22:44:09Z">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Vault-Handbuch">
@@ -4536,15 +4536,43 @@ async function copyCode(btn){
   btn.textContent = ok ? t("Kopiert ✓") : t("Markiert");
   setTimeout(() => { btn.textContent = t("Kopieren"); }, 1800);
 }
+/* App-Version: Wochen-Daten liegen als weekly.json neben der Seite. Die App holt sie beim Start, noch einmal
+   10 s später (langsames Netz: der Service Worker zeigt nach 4,5 s erst den alten Stand), beim Zurückholen aus
+   dem Hintergrund, alle 30 Minuten und nach dem Reset alle 5 Minuten, bis die neue Woche da ist. */
+let weekBusy = false, weekLast = 0;
+async function loadWeekFile(force){
+  if (!IS_PWA || weekBusy) return;
+  if (!force && Date.now() - weekLast < 60000) return;
+  weekBusy = true; weekLast = Date.now();
+  try {
+    const r = await fetch("weekly.json", {cache:"no-cache"});
+    const d = r.ok ? await r.json() : null;
+    if (d && typeof d === "object" && d.week_start && d.encore && !(WEEK && WEEK.updated && d.updated && String(d.updated) < String(WEEK.updated))){
+      const neu = !WEEK || d.updated !== WEEK.updated || d.week_start !== WEEK.week_start;
+      WEEK = d;
+      if (neu) renderWeek();
+    }
+  } catch(e){} finally { weekBusy = false; }
+}
+function weekIsStale(){
+  const reset = WEEK && WEEK.reset_utc ? new Date(WEEK.reset_utc) : null;
+  return !!(reset && !isNaN(reset) && Date.now() >= reset);
+}
 /* Live-Daten aus der Artefakt-Datenbank: überschreiben den eingebauten Stand, sobald sie neuer sind */
 (async function liveWeek(){
   try {
     if (!window.claude || typeof window.claude.use !== "function"){
-      /* App-Version: Wochen-Daten liegen als weekly.json neben der Seite und werden bei jedem Start frisch geholt */
       if (IS_PWA){
-        const r = await fetch("weekly.json", {cache:"no-cache"});
-        const d = r.ok ? await r.json() : null;
-        if (d && typeof d === "object" && d.week_start && d.encore && !(WEEK && WEEK.updated && d.updated && String(d.updated) < String(WEEK.updated))){ WEEK = d; renderWeek(); }
+        await loadWeekFile(true);
+        setTimeout(() => loadWeekFile(true), 10000);
+        document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") loadWeekFile(false); });
+        window.addEventListener("pageshow", e => { if (e.persisted) loadWeekFile(false); });
+        window.addEventListener("online", () => loadWeekFile(true));
+        setInterval(() => {
+          if (document.visibilityState !== "visible") return;
+          const wait = weekIsStale() ? 300000 : 1800000;
+          if (Date.now() - weekLast >= wait) loadWeekFile(true);
+        }, 60000);
       }
       return;
     }
@@ -4606,7 +4634,7 @@ if (IS_PWA){
   window.addEventListener("appinstalled", () => { installEvt = null; renderAppBox(); toast(t("Installiert. Du startest das Handbuch jetzt wie eine App.")); });
   document.addEventListener("click", async e => {
     if (e.target.closest("#appInstall") && installEvt){ installEvt.prompt(); try { await installEvt.userChoice; } catch(x){} installEvt = null; renderAppBox(); }
-    if (e.target.closest("#appCheck")) checkUpdate(true);
+    if (e.target.closest("#appCheck")){ loadWeekFile(true); checkUpdate(true); }
   });
   try {
     const last = localStorage.getItem("bl4.build");
