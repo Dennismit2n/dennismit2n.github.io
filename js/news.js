@@ -2228,6 +2228,23 @@ var NEWS = {
   ],
   vault: [
     {
+      date: '2026-11-05',
+      de: 'Das Handbuch steht jetzt auf Patch 1.11 vom 22.10.: Die Patch-Seite zeigt die Buffs für Rafa, Vex, Amon, Harlowe und Loveless, Murmur und Skully haben ihre neuen Boss-Quellen, und 17 Items tragen den passenden Patch-Hinweis.',
+      en: 'The handbook is now on patch 1.11 from 22 October: the patch page shows the buffs for Rafa, Vex, Amon, Harlowe and Loveless, Murmur and Skully have their new boss sources, and 17 items carry the matching patch note.',
+      es: 'El manual ya está en el parche 1.11 del 22 de octubre: la página del parche muestra las mejoras de Rafa, Vex, Amon, Harlowe y Loveless, Murmur y Skully tienen sus nuevas fuentes de jefe, y 17 objetos llevan la nota de parche correspondiente.',
+      fr: 'Le manuel est désormais à jour du patch 1.11 du 22 octobre : la page du patch présente les buffs de Rafa, Vex, Amon, Harlowe et Loveless, Murmur et Skully ont leurs nouvelles sources de boss, et 17 objets portent la note de patch correspondante.',
+      it: 'Il manuale ora è aggiornato alla patch 1.11 del 22 ottobre: la pagina della patch mostra i potenziamenti di Rafa, Vex, Amon, Harlowe e Loveless, Murmur e Skully hanno le nuove fonti boss, e 17 oggetti riportano la nota di patch corrispondente.',
+      nl: 'Het handboek staat nu op patch 1.11 van 22 oktober: de patchpagina toont de buffs voor Rafa, Vex, Amon, Harlowe en Loveless, Murmur en Skully hebben hun nieuwe baasbronnen, en 17 items hebben de bijbehorende patchnotitie.',
+      pl: 'Podręcznik jest teraz zgodny z patchem 1.11 z 22 października: strona patcha pokazuje buffy dla Rafy, Vex, Amona, Harlowe i Loveless, Murmur i Skully mają nowe źródła z bossów, a 17 przedmiotów ma odpowiednią notkę o patchu.',
+      pt: 'O manual agora está no patch 1.11 de 22 de outubro: a página do patch mostra os buffs de Rafa, Vex, Amon, Harlowe e Loveless, Murmur e Skully têm suas novas fontes de chefe, e 17 itens trazem a nota de patch correspondente.',
+      tr: 'El kitabı artık 22 Ekim tarihli 1.11 yamasına göre güncel: Yama sayfası Rafa, Vex, Amon, Harlowe ve Loveless için güçlendirmeleri gösteriyor, Murmur ve Skully’nin yeni boss kaynakları var ve 17 eşyada ilgili yama notu bulunuyor.',
+      ru: 'Справочник теперь соответствует патчу 1.11 от 22 октября: на странице патча есть усиления Rafa, Vex, Amon, Harlowe и Loveless, у Murmur и Skully новые источники с боссов, а у 17 предметов есть соответствующая пометка о патче.',
+      hi: 'हैंडबुक अब 22 अक्टूबर के पैच 1.11 पर है: पैच वाले पेज पर Rafa, Vex, Amon, Harlowe और Loveless के बफ़ हैं, Murmur और Skully के नए बॉस स्रोत जुड़ गए हैं, और 17 आइटम पर उससे जुड़ा पैच नोट है।',
+      zh: '手册已更新到 10 月 22 日的 1.11 补丁：补丁页面列出了 Rafa、Vex、Amon、Harlowe 和 Loveless 的增强，Murmur 和 Skully 有了新的首领来源，17 件物品附上了相应的补丁说明。',
+      ja: 'ハンドブックを 10 月 22 日のパッチ 1.11 に合わせました。パッチのページで Rafa、Vex、Amon、Harlowe、Loveless の強化を確認でき、Murmur と Skully には新しいボスの入手先が入り、17 個のアイテムに該当するパッチメモがつきました。',
+      ko: '핸드북이 이제 10월 22일 1.11 패치 기준입니다. 패치 페이지에서 Rafa, Vex, Amon, Harlowe, Loveless의 버프를 볼 수 있고, Murmur와 Skully에 새 보스 출처가 생겼으며, 17개 아이템에 해당 패치 메모가 붙었습니다.'
+    },
+    {
       date: '2026-11-04',
       de: 'Die App holt die Wochendaten jetzt auch frisch, wenn du sie aus dem Hintergrund zurückholst, und sucht nach dem Reset am Donnerstag alle 5 Minuten nach der neuen Woche. Vorher kamen neue Daten erst nach einem kompletten Neustart der App an. Spielen in einer Woche mehrere Big-Encore-Bosse, zeigt sie jetzt für jeden das Fundort-Bild.',
       en: 'The app now also fetches the weekly data fresh when you bring it back from the background, and after the Thursday reset it checks for the new week every 5 minutes. Before, new data only showed up after fully restarting the app. When a week has several Big Encore bosses, it now shows the location picture for each of them.',
