@@ -1,46 +1,37 @@
 {
  "v": 1,
- "week_start": "2026-10-29",
- "week_end": "2026-11-05",
- "reset_utc": "2026-11-05T17:00:00Z",
- "updated": "2026-11-04T21:56:56Z",
+ "week_start": "2026-11-05",
+ "week_end": "2026-11-12",
+ "reset_utc": "2026-11-12T17:00:00Z",
+ "updated": "2026-11-05T18:48:34Z",
  "encore": {
-  "boss": "Core Observer, Divisioner, Fractis und Directive-0",
+  "boss": "Battle Wagon",
+  "where": "Ripper Drill Site „The Lowering March“ im Stoneblood Forest (Terminus Range). Schnellreise zum Snowy Wells Safehouse, von der Klippe springen und zur Drill Site gleiten. Der Big-Encore-Automat steht direkt vor der Arena.",
   "loot": [
-   "Defibrillator",
-   "Divided Focus",
-   "Bully",
-   "Inkling",
-   "Principal",
-   "Sideshow",
-   "Chuck",
-   "Protean Cell",
-   "UAV",
-   "Bonnie & Clyde",
-   "Rowan's Charge",
-   "Whiskey Foxtrot"
+   "Bugbear",
+   "Compleation",
+   "Finnity XXX-L"
   ],
-  "note": "Wochen-Herausforderung am Big-Encore-Automaten von Moxxi vor der jeweiligen Arena (roter Boss-Marker auf der Karte, freigeschaltet nach der Story ab UVH-Rang 1): kostet Eridium, der Boss hat doppelte HP. Die Dedicated Legendaries fallen dann mit festen 30 % statt 9 % (Pearlescent 1,18 %, Phosphene 1,5 %), unabhängig vom UVH. Loot je Boss: Core Observer (Defibrillator, Divided Focus, Bully), Divisioner (Inkling, Principal, Sideshow), Fractis (Chuck, Protean Cell, UAV), Directive-0 (Bonnie & Clyde, Rowan's Charge, Whiskey Foxtrot). Quelle: MentalMars.",
-  "where": "Vier Order-Bunker-Bosse: Core Observer im Blacklime Bunker (The Howl, Fadefields; Schnellreise Rootdown Estates, dann nach Nordosten). Divisioner in The Wireworks (The Low Leys, Terminus Range; Heritage Opus Safehouse, nach Osten von der Klippe und nach Norden über die Brücke). Fractis in The Crawlcroft (Grindstone of the Worthy, Carcadia Burn; Rustical Hurl Order Silo, nach Osten fliegen, Eingang durch die Höhle). Directive-0 in Ironwall Resolve (Terminus District, Dominion; Schnellreise Frantic Screwl, dann nach Süden)."
+  "note": "Wochen-Herausforderung am Big-Encore-Automaten von Moxxi vor der Arena (roter Boss-Marker auf der Karte, freigeschaltet nach der Story ab UVH-Rang 1): kostet Eridium, der Boss hat doppelte HP. Die Dedicated Legendaries Bugbear (Assault Rifle), Compleation und Finnity XXX-L (Sniper Rifle) fallen dann mit festen 30 % statt 9 % (Pearlescent 1,18 %, Phosphene 1,5 %), unabhängig vom UVH. Tipp: Battle Wagon hat einen roten Fleischbalken (schwach gegen Incendiary), die gepanzerten Seitenkanonen sind schwach gegen Corrosive. Quelle: MentalMars."
  },
  "wildcard": {
-  "mission": "The Falling Wall",
+  "mission": "One Slimy Issue",
   "mods": [
-   "Sulfur Hexafluoride",
-   "Centripetal",
-   "Immovable"
+   "Wimpy",
+   "Ticking",
+   "Dazed"
   ],
-  "note": "Die Belohnung ist garantiert, und du kannst die Mission die ganze Woche wiederholen, bis der Roll passt. Start: ECHO-Menü → Karte → Wildcard-Symbol unten links gedrückt halten.",
-  "reward": "Phantom Flame",
-  "reward_info": "Jakobs-Pistole, Legendary"
+  "reward": "Bloody Lumberjack",
+  "reward_info": "Daedalus-Assault-Rifle, Legendary",
+  "note": "Die Belohnung ist garantiert, und du kannst die Mission die ganze Woche wiederholen, bis der Roll passt. Start: ECHO-Menü → Karte → Wildcard-Symbol unten links gedrückt halten."
  },
  "black_market": {
-  "nr": "005",
-  "area": "Carcadia District",
-  "how": "Schnellreise zum Lockaway Safehouse und nach Nordosten zum Groaning Core laufen. Der Automat steht auf einem Balkon über der Lava. Bisher nur von MentalMars bestätigt.",
-  "note": "Das Angebot ist bei jedem anders: 2 Legendaries in je 4 Varianten, ein Kauf pro Besuch, danach 30 Minuten Wartezeit.",
-  "place": "Balkon über der Lava, Groaning Core",
-  "region": "Dominion"
+  "nr": "006",
+  "place": "Westlich vom Bowel Buster, an der Klippe",
+  "area": "Ruined Sumplands",
+  "region": "Carcadia Burn",
+  "how": "Schnellreise zum Lowrise Safehouse (Tonnage Peel) und nach Norden zum Bowel Buster laufen; der Automat steht westlich davon an der Klippe. Alternativ laut TheBaseDotaku: Schnellreise zu Moxxi's Bottoms Up, rechts dem Weg folgen und zur Plattform gleiten.",
+  "note": "Das Angebot ist bei jedem anders: 2 Legendaries in je 4 Varianten, ein Kauf pro Besuch, danach 30 Minuten Wartezeit."
  },
  "shift": [
   {
@@ -235,7 +226,7 @@
  ],
  "sources": [
   [
-   "MentalMars: Patch Notes (Weekly Rotation 29.10.2026)",
+   "Gearbox/MentalMars: Weekly Rotation 05.11.2026",
    "https://mentalmars.com/borderlands-4/patch-notes/"
   ],
   [
@@ -247,24 +238,16 @@
    "https://mentalmars.com/borderlands-4/gameplay/moxxis-encore/"
   ],
   [
-   "MentalMars: Core Observer",
-   "https://mentalmars.com/bosses-enemies/core-observer/"
-  ],
-  [
-   "MentalMars: Divisioner",
-   "https://mentalmars.com/bosses-enemies/divisioner/"
-  ],
-  [
-   "MentalMars: Fractis",
-   "https://mentalmars.com/bosses-enemies/fractis/"
-  ],
-  [
-   "MentalMars: Directive-0",
-   "https://mentalmars.com/bosses-enemies/directive-o/"
+   "MentalMars: Battle Wagon",
+   "https://mentalmars.com/bosses-enemies/battle-wagon/"
   ],
   [
    "MentalMars: Black Market",
    "https://mentalmars.com/borderlands-4/loot/black-market/"
+  ],
+  [
+   "TheBaseDotaku: Black Market",
+   "https://thebasedotaku.com/guides/borderlands-4-maurices-black-market-vending-machine-location-for-this-week/"
   ],
   [
    "MentalMars: SHiFT-Codes",
