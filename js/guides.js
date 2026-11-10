@@ -4255,5 +4255,235 @@ var GUIDES = {
       ja: 'https://github.com/Dennismit2n/heizwarte',
       ko: 'https://github.com/Dennismit2n/heizwarte'
     }
+  },
+  hourbridge: {
+    purpose: {
+      de: 'Für alle, die wissen wollen, wie spät es woanders ist: Wie viel Uhr ist 14:00 UTC bei uns? Wann muss ich für den Anruf in New York wach sein? Hourbridge rechnet UTC in deutsche Zeit um und zurück, für so viele Orte, wie du brauchst, und sagt dir, wenn die Zeitumstellung den gewohnten Abstand verschiebt. Die Zeitzonenregeln kommen aus deinem Browser, nachgeladen wird nichts.',
+      en: 'For anyone who wants to know what time it is somewhere else: what is 14:00 UTC in Germany? When do I need to be awake for the call to New York? Hourbridge converts UTC to German time and back, for as many places as you need, and tells you when a clock change shifts the usual gap. The time zone rules come from your browser, nothing is loaded from elsewhere.',
+      es: 'Para quien quiere saber qué hora es en otro sitio: ¿qué hora son las 14:00 UTC en Alemania? ¿A qué hora tengo que estar despierto para la llamada a Nueva York? Hourbridge convierte UTC a hora alemana y al revés, para todos los lugares que necesites, y te avisa cuando un cambio de hora mueve la diferencia de siempre. Las reglas de zonas horarias vienen de tu navegador, no se descarga nada más.',
+      fr: 'Pour tous ceux qui veulent savoir quelle heure il est ailleurs : quelle heure fait 14:00 UTC en Allemagne ? À quelle heure faut-il être réveillé pour l’appel à New York ? Hourbridge convertit l’UTC en heure allemande et inversement, pour autant de lieux que nécessaire, et vous prévient quand un changement d’heure décale l’écart habituel. Les règles des fuseaux horaires viennent de votre navigateur, rien n’est téléchargé en plus.',
+      it: 'Per chi vuole sapere che ore sono altrove: che ora sono le 14:00 UTC in Germania? A che ora devo essere sveglio per la chiamata a New York? Hourbridge converte UTC nell’ora tedesca e ritorno, per tutti i luoghi che ti servono, e ti avvisa quando un cambio d’ora sposta la differenza solita. Le regole dei fusi orari vengono dal tuo browser, non si scarica nient’altro.',
+      nl: 'Voor iedereen die wil weten hoe laat het ergens anders is: hoe laat is 14:00 UTC in Duitsland? Wanneer moet ik wakker zijn voor het gesprek met New York? Hourbridge rekent UTC om naar Duitse tijd en terug, voor zoveel plaatsen als je nodig hebt, en zegt het je als een klokwissel het gewone verschil verschuift. De tijdzoneregels komen uit je browser, er wordt niets bijgeladen.',
+      pl: 'Dla każdego, kto chce wiedzieć, która godzina jest gdzie indziej: która to godzina 14:00 UTC w Niemczech? O której muszę wstać na rozmowę z Nowym Jorkiem? Hourbridge przelicza UTC na czas niemiecki i z powrotem, dla tylu miejsc, ilu potrzebujesz, i mówi ci, kiedy zmiana czasu przesuwa zwykłą różnicę. Reguły stref czasowych pochodzą z twojej przeglądarki, nic nie jest dociągane.',
+      pt: 'Para quem quer saber que horas são em outro lugar: que horas são 14:00 UTC na Alemanha? A que horas você precisa estar acordado para a chamada com Nova York? O Hourbridge converte UTC para o horário alemão e vice-versa, para quantos lugares você precisar, e avisa quando uma mudança de horário altera a diferença de sempre. As regras de fuso horário vêm do seu navegador, nada mais é baixado.',
+      tr: 'Başka bir yerde saatin kaç olduğunu bilmek isteyen herkes için: 14:00 UTC Almanya’da saat kaç? New York’la görüşme için kaçta uyanık olmam gerek? Hourbridge UTC’yi Alman saatine ve geri çevirir, ihtiyacınız olan kadar yer için, ve bir saat değişikliği alışılmış farkı kaydırdığında size söyler. Saat dilimi kuralları tarayıcınızdan gelir, başka bir şey indirilmez.',
+      ru: 'Для всех, кто хочет знать, сколько времени в другом месте: сколько будет 14:00 UTC в Германии? Во сколько нужно проснуться для звонка в Нью-Йорк? Hourbridge переводит UTC в немецкое время и обратно, для стольких мест, сколько вам нужно, и предупреждает, когда перевод часов сдвигает привычную разницу. Правила часовых поясов берутся из вашего браузера, ничего не подгружается.',
+      hi: 'उन सबके लिए जो जानना चाहते हैं कि कहीं और क्या समय है: 14:00 UTC जर्मनी में कितने बजे होता है? न्यूयॉर्क वाली कॉल के लिए आपको कब जागना होगा? Hourbridge UTC को जर्मन समय में और वापस बदलता है, जितनी जगहें आपको चाहिए उतनी के लिए, और बताता है जब घड़ी बदलने से सामान्य अंतर खिसक जाता है। समय क्षेत्र के नियम आपके ब्राउज़र से आते हैं, कुछ भी अलग से लोड नहीं होता।',
+      zh: '适合想知道别处现在几点的人：UTC 14:00 是德国几点？和纽约通电话得几点起床？Hourbridge 在 UTC 和德国时间之间互相换算，地点要几个就加几个，调钟让平常的时差变了时也会告诉你。时区规则来自你的浏览器，不会额外下载任何东西。',
+      ja: 'ほかの場所がいま何時かを知りたい人のために。UTC 14:00 はドイツで何時？ニューヨークとの通話には何時に起きればいい？Hourbridge は UTC とドイツ時間を相互に換算し、必要なだけ場所を追加でき、時刻の切り替えでいつもの時差がずれるときは知らせてくれます。タイムゾーンの規則はブラウザーに入っているものを使い、ほかから読み込むものはありません。',
+      ko: '다른 곳이 지금 몇 시인지 알고 싶은 분을 위한 도구입니다. UTC 14:00은 독일에서 몇 시일까요? 뉴욕과 통화하려면 몇 시에 일어나야 할까요? Hourbridge는 UTC와 독일 시간을 서로 바꿔 주고, 장소는 필요한 만큼 넣을 수 있으며, 시간 변경 때문에 평소 시차가 달라지면 알려 줍니다. 시간대 규칙은 브라우저에 들어 있는 것을 쓰고, 다른 곳에서 내려받는 것은 없습니다.'
+    },
+    shots: [
+      {
+        files: {
+          de: ['hourbridge-de.webp', 1440, 927],
+          en: ['hourbridge-en.webp', 1440, 927]
+        },
+        alt: {
+          de: 'Hourbridge im Dunkelmodus am 20. März 2027: oben „14:00 UTC ist 15:00 MEZ in Berlin“, darunter Karten für UTC, Berlin, New York und Tokio, jede mit Uhrzeit, Versatz und einer 24-Stunden-Leiste mit grüner Arbeitszeit. New York steht wegen der früheren Umstellung schon auf UTC−4, nur 5 Stunden hinter Berlin.',
+          en: 'Hourbridge in dark mode on 20 March 2027: at the top “14:00 UTC is 15:00 CET in Berlin”, below it cards for UTC, Berlin, New York and Tokyo, each with time, offset and a 24-hour bar with working hours in green. Because its clocks changed earlier, New York is already on UTC−4, only 5 hours behind Berlin.',
+          es: 'Hourbridge en modo oscuro el 20 de marzo de 2027: arriba la respuesta, 14:00 UTC equivale a 15:00 CET en Berlín, debajo tarjetas para UTC, Berlín, Nueva York y Tokio, cada una con hora, desfase y una barra de 24 horas con el horario laboral en verde. Como cambió la hora antes, Nueva York ya está en UTC−4, solo 5 horas por detrás de Berlín.',
+          fr: 'Hourbridge en mode sombre le 20 mars 2027 : en haut la réponse, 14:00 UTC correspond à 15:00 CET à Berlin, en dessous des cartes pour UTC, Berlin, New York et Tokyo, chacune avec l’heure, le décalage et une barre de 24 heures où les heures de bureau sont en vert. Ayant changé d’heure plus tôt, New York est déjà en UTC−4, à seulement 5 heures de Berlin.',
+          it: 'Hourbridge in modalità scura il 20 marzo 2027: in alto la risposta, 14:00 UTC corrisponde alle 15:00 CET a Berlino, sotto le schede per UTC, Berlino, New York e Tokyo, ognuna con ora, scarto e una barra di 24 ore con l’orario di lavoro in verde. Avendo cambiato l’ora prima, New York è già su UTC−4, solo 5 ore dietro Berlino.',
+          nl: 'Hourbridge in donkere modus op 20 maart 2027: bovenaan het antwoord, 14:00 UTC is 15:00 CET in Berlijn, daaronder kaarten voor UTC, Berlijn, New York en Tokio, elk met tijd, verschil en een balk van 24 uur met de werktijd in groen. Omdat de klok daar eerder is verzet, staat New York al op UTC−4, maar 5 uur achter Berlijn.',
+          pl: 'Hourbridge w trybie ciemnym 20 marca 2027: u góry odpowiedź, że 14:00 UTC to 15:00 CET w Berlinie, pod spodem karty dla UTC, Berlina, Nowego Jorku i Tokio, każda z godziną, przesunięciem i paskiem 24 godzin z godzinami pracy na zielono. Nowy Jork zmienił czas wcześniej i jest już na UTC−4, tylko 5 godzin za Berlinem.',
+          pt: 'Hourbridge no modo escuro em 20 de março de 2027: no topo a resposta, 14:00 UTC equivale a 15:00 CET em Berlim, embaixo cartões para UTC, Berlim, Nova York e Tóquio, cada um com horário, diferença e uma barra de 24 horas com o horário de trabalho em verde. Como mudou o horário antes, Nova York já está em UTC−4, só 5 horas atrás de Berlim.',
+          tr: '20 Mart 2027’de karanlık modda Hourbridge: üstte 14:00 UTC’nin Berlin’de 15:00 CET olduğu cevabı, altında UTC, Berlin, New York ve Tokyo kartları, her birinde saat, fark ve mesai saatleri yeşil olan 24 saatlik bir çubuk. Saatini daha erken değiştirdiği için New York şimdiden UTC−4’te, Berlin’in yalnızca 5 saat gerisinde.',
+          ru: 'Hourbridge в тёмном режиме 20 марта 2027 года: вверху ответ, что 14:00 UTC соответствует 15:00 CET в Берлине, ниже карточки для UTC, Берлина, Нью-Йорка и Токио, в каждой время, смещение и полоса на 24 часа с рабочим временем зелёным. Нью-Йорк перевёл часы раньше и уже живёт по UTC−4, всего на 5 часов позади Берлина.',
+          hi: '20 मार्च 2027 को डार्क मोड में Hourbridge: ऊपर जवाब कि 14:00 UTC बर्लिन में 15:00 CET है, नीचे UTC, बर्लिन, न्यूयॉर्क और टोक्यो के कार्ड, हर एक में समय, अंतर और 24 घंटे की पट्टी जिसमें काम के घंटे हरे हैं। न्यूयॉर्क ने घड़ी पहले बदली है, इसलिए वह पहले से UTC−4 पर है, बर्लिन से सिर्फ़ 5 घंटे पीछे।',
+          zh: '2027 年 3 月 20 日深色模式下的 Hourbridge：顶部给出答案：UTC 14:00 相当于柏林 CET 15:00，下面是 UTC、柏林、纽约和东京的卡片，每张都有时间、时差和一条 24 小时条，工作时间标为绿色。纽约调钟更早，已经是 UTC−4，只比柏林晚 5 小时。',
+          ja: '2027年3月20日、ダークモードの Hourbridge。上に UTC 14:00 がベルリンの CET 15:00 にあたるという答え、その下に UTC、ベルリン、ニューヨーク、東京のカードがあり、それぞれ時刻、時差、勤務時間が緑の24時間バーを表示。ニューヨークは先に切り替えたので、すでに UTC−4 で、ベルリンとの差は5時間だけです。',
+          ko: '2027년 3월 20일 다크 모드의 Hourbridge. 맨 위에 UTC 14:00이 베를린 CET 15:00이라는 답, 그 아래 UTC, 베를린, 뉴욕, 도쿄 카드가 있고, 각 카드에 시각, 시차, 근무 시간이 초록색인 24시간 막대가 있습니다. 뉴욕은 먼저 시간을 바꿔서 이미 UTC−4이고, 베를린보다 5시간만 늦습니다.'
+        }
+      }
+    ],
+    steps: {
+      de: [
+        'Hourbridge öffnen. Oben steht sofort die Antwort, etwa „14:00 UTC ist 15:00 MEZ in Berlin“, live auf die Sekunde. Sprache und Darstellung stehen ganz oben, darunter das Suchfeld für weitere Orte: „Tokio“, „9am New York“ oder Kürzel wie PST. „Meine Zeitzone“ fügt die Zone deines Geräts hinzu, ohne nach dem Standort zu fragen.',
+        'Eine andere Zeit wählst du, indem du an der Zeitleiste eines Orts ziehst, darauf klickst oder die Pfeiltasten nimmst. Alle Uhren laufen mit. Du kannst die Uhrzeit auch direkt in eine Karte tippen, „Jetzt“ springt zurück zur aktuellen Zeit.',
+        '„Link kopieren“ merkt sich genau diese Ansicht mit Orten und Uhrzeit, „Zeiten kopieren“ legt sie als Text ab, „In den Kalender“ lädt eine .ics-Datei herunter. Mit dem Haken „Orte auf diesem Gerät merken“ sind deine Orte beim nächsten Öffnen wieder da. Nach dem ersten Besuch läuft Hourbridge auch ohne Netz, und zeigt dein Browser oben „Installieren“, richtet ein Tipp darauf Hourbridge als App ein.'
+      ],
+      en: [
+        'Open Hourbridge. The answer is right at the top, for example “14:00 UTC is 15:00 CET in Berlin”, live to the second. Language and appearance sit at the very top, below them the search field for more places: “Tokyo”, “9am New York” or abbreviations like PST. “My time zone” adds your device’s zone without asking for your location.',
+        'To pick another time, drag along a place’s timeline, click on it or use the arrow keys. Every clock moves along. You can also type a time straight into a card, and “Now” jumps back to the current time.',
+        '“Copy link” keeps exactly this view with its places and time, “Copy times” puts it on the clipboard as text, “Add to calendar” downloads an .ics file. Tick “Remember places on this device” and your places are back the next time you open it. After the first visit Hourbridge also works without a connection, and if your browser shows “Install” at the top, one tap sets Hourbridge up as an app.'
+      ],
+      es: [
+        'Abre Hourbridge. Arriba aparece enseguida la respuesta en una frase, en directo al segundo. El idioma y la apariencia están arriba del todo, debajo el campo de búsqueda para más lugares: «Tokio», «9am Nueva York» o abreviaturas como PST. «Mi zona horaria» añade la zona de tu dispositivo sin pedir tu ubicación.',
+        'Para elegir otra hora, arrastra sobre la línea de tiempo de un lugar, haz clic en ella o usa las flechas del teclado. Todos los relojes se mueven a la vez. También puedes escribir la hora directamente en una tarjeta, y «Ahora» vuelve a la hora actual.',
+        '«Copiar enlace» guarda exactamente esta vista con lugares y hora, «Copiar horas» la copia como texto, «Añadir al calendario» descarga un archivo .ics. Si marcas «Recordar lugares en este dispositivo», tus lugares vuelven a estar ahí la próxima vez. Tras la primera visita Hourbridge funciona también sin conexión, y si tu navegador muestra «Instalar» arriba, con un toque Hourbridge se instala como app.'
+      ],
+      fr: [
+        'Ouvrez Hourbridge. La réponse s’affiche tout de suite en haut, en une phrase, en direct à la seconde près. La langue et l’apparence sont tout en haut, en dessous le champ de recherche pour d’autres lieux : « Tokyo », « 9am New York » ou des abréviations comme PST. « Mon fuseau » ajoute le fuseau de votre appareil sans demander votre position.',
+        'Pour choisir une autre heure, faites glisser la frise d’un lieu, cliquez dessus ou utilisez les flèches du clavier. Toutes les horloges suivent. Vous pouvez aussi taper l’heure directement dans une carte, et « Maintenant » revient à l’heure actuelle.',
+        '« Copier le lien » garde exactement cette vue avec les lieux et l’heure, « Copier les heures » la copie en texte, « Ajouter au calendrier » télécharge un fichier .ics. En cochant « Retenir les lieux sur cet appareil », vos lieux sont de nouveau là à la prochaine ouverture. Après la première visite, Hourbridge fonctionne aussi sans connexion, et si votre navigateur affiche « Installer » en haut, un appui installe Hourbridge comme application.'
+      ],
+      it: [
+        'Apri Hourbridge. In alto c’è subito la risposta in una frase, in diretta al secondo. Lingua e aspetto sono proprio in cima, sotto c’è il campo di ricerca per altri luoghi: «Tokyo», «9am New York» o sigle come PST. «Il mio fuso» aggiunge il fuso del tuo dispositivo senza chiedere la posizione.',
+        'Per scegliere un’altra ora trascina sulla linea del tempo di un luogo, cliccaci sopra o usa i tasti freccia. Tutti gli orologi si muovono insieme. Puoi anche scrivere l’ora direttamente in una scheda, e «Adesso» torna all’ora attuale.',
+        '«Copia link» conserva esattamente questa vista con luoghi e ora, «Copia orari» la copia come testo, «Aggiungi al calendario» scarica un file .ics. Se spunti «Ricorda i luoghi su questo dispositivo», i tuoi luoghi ci sono anche la prossima volta. Dopo la prima visita Hourbridge funziona anche senza rete, e se il browser mostra «Installa» in alto, con un tocco Hourbridge si installa come app.'
+      ],
+      nl: [
+        'Open Hourbridge. Bovenaan staat meteen het antwoord in één zin, live op de seconde. Taal en weergave staan helemaal bovenaan, daaronder het zoekveld voor meer plaatsen: ‘Tokio’, ‘9am New York’ of afkortingen als PST. ‘Mijn tijdzone’ voegt de zone van je apparaat toe zonder naar je locatie te vragen.',
+        'Een andere tijd kies je door over de tijdlijn van een plaats te slepen, erop te klikken of de pijltjestoetsen te gebruiken. Alle klokken lopen mee. Je kunt de tijd ook direct in een kaart typen, en ‘Nu’ springt terug naar de huidige tijd.',
+        '‘Link kopiëren’ bewaart precies deze weergave met plaatsen en tijd, ‘Tijden kopiëren’ zet hem als tekst klaar, ‘Aan agenda toevoegen’ downloadt een .ics-bestand. Vink je ‘Plaatsen op dit apparaat onthouden’ aan, dan staan je plaatsen er de volgende keer weer. Na het eerste bezoek werkt Hourbridge ook zonder verbinding, en toont je browser bovenaan ‘Installeren’, dan installeer je Hourbridge met één tik als app.'
+      ],
+      pl: [
+        'Otwórz Hourbridge. Na górze od razu widać odpowiedź w jednym zdaniu, na żywo co do sekundy. Język i wygląd są na samej górze, pod nimi pole wyszukiwania kolejnych miejsc: „Tokio”, „9am New York” albo skróty jak PST. „Moja strefa” dodaje strefę twojego urządzenia bez pytania o lokalizację.',
+        'Inną godzinę wybierasz, przeciągając po osi czasu miejsca, klikając w nią albo używając strzałek. Wszystkie zegary przesuwają się razem. Godzinę możesz też wpisać prosto w kartę, a „Teraz” wraca do bieżącego czasu.',
+        '„Kopiuj link” zapamiętuje dokładnie ten widok z miejscami i godziną, „Kopiuj godziny” kopiuje go jako tekst, „Dodaj do kalendarza” pobiera plik .ics. Gdy zaznaczysz „Zapamiętaj miejsca na tym urządzeniu”, twoje miejsca będą przy następnym otwarciu. Po pierwszej wizycie Hourbridge działa też bez sieci, a jeśli przeglądarka pokazuje u góry „Zainstaluj”, jedno dotknięcie instaluje Hourbridge jako aplikację.'
+      ],
+      pt: [
+        'Abra o Hourbridge. No topo aparece logo a resposta em uma frase, ao vivo até o segundo. O idioma e a aparência ficam bem no topo, embaixo o campo de busca para mais lugares: «Tóquio», «9am Nova York» ou siglas como PST. «Meu fuso» adiciona o fuso do seu dispositivo sem pedir sua localização.',
+        'Para escolher outro horário, arraste na linha do tempo de um lugar, clique nela ou use as setas do teclado. Todos os relógios andam juntos. Você também pode digitar o horário direto em um cartão, e «Agora» volta para o horário atual.',
+        '«Copiar link» guarda exatamente esta vista com lugares e horário, «Copiar horários» copia como texto, «Adicionar à agenda» baixa um arquivo .ics. Se você marcar «Lembrar lugares neste dispositivo», seus lugares estarão lá da próxima vez. Após a primeira visita o Hourbridge funciona também sem conexão, e se o navegador mostrar «Instalar» no topo, um toque instala o Hourbridge como app.'
+      ],
+      tr: [
+        'Hourbridge’i açın. En üstte hemen tek cümlelik cevap görünür, saniyesi saniyesine canlı. Dil ve görünüm en üstte, altında başka yerler için arama alanı: “Tokyo”, “9am New York” ya da PST gibi kısaltmalar. “Saat dilimim” konumunuzu sormadan cihazınızın saat dilimini ekler.',
+        'Başka bir saat seçmek için bir yerin zaman çizelgesinde sürükleyin, üzerine tıklayın ya da ok tuşlarını kullanın. Bütün saatler birlikte kayar. Saati doğrudan bir karta da yazabilirsiniz, “Şimdi” ise şu anki saate döner.',
+        '“Bağlantıyı kopyala” tam bu görünümü yerleri ve saatiyle saklar, “Saatleri kopyala” metin olarak kopyalar, “Takvime ekle” bir .ics dosyası indirir. “Yerleri bu cihazda hatırla” işaretliyse yerleriniz bir sonraki açılışta yine oradadır. İlk ziyaretten sonra Hourbridge bağlantı olmadan da çalışır, tarayıcınız üstte “Yükle” gösteriyorsa tek dokunuşla Hourbridge uygulama olarak kurulur.'
+      ],
+      ru: [
+        'Откройте Hourbridge. Вверху сразу виден ответ одной фразой, в реальном времени до секунды. Язык и оформление находятся в самом верху, под ними поле поиска для других мест: «Токио», «9am New York» или сокращения вроде PST. «Мой часовой пояс» добавляет пояс вашего устройства, не спрашивая местоположение.',
+        'Чтобы выбрать другое время, потяните шкалу времени любого места, щёлкните по ней или используйте клавиши со стрелками. Все часы двигаются вместе. Время можно ввести и прямо в карточку, а «Сейчас» возвращает к текущему времени.',
+        '«Копировать ссылку» сохраняет именно этот вид с местами и временем, «Копировать время» копирует его текстом, «В календарь» скачивает файл .ics. Если отметить «Запомнить места на этом устройстве», ваши места будут на месте при следующем открытии. После первого посещения Hourbridge работает и без сети, а если браузер показывает вверху «Установить», одно касание устанавливает Hourbridge как приложение.'
+      ],
+      hi: [
+        'Hourbridge खोलें। सबसे ऊपर तुरंत एक वाक्य में जवाब दिखता है, सेकंड तक लाइव। भाषा और रूप सबसे ऊपर हैं, उनके नीचे और जगहों के लिए खोज फ़ील्ड: “टोक्यो”, “9am New York” या PST जैसे संक्षिप्त नाम। “मेरा समय क्षेत्र” आपकी लोकेशन पूछे बिना आपके डिवाइस का समय क्षेत्र जोड़ देता है।',
+        'कोई दूसरा समय चुनने के लिए किसी जगह की टाइमलाइन पर खींचें, उस पर क्लिक करें या तीर वाली कुंजियाँ इस्तेमाल करें। सारी घड़ियाँ साथ चलती हैं। आप समय सीधे किसी कार्ड में भी टाइप कर सकते हैं, और “अभी” मौजूदा समय पर लौट आता है।',
+        '“लिंक कॉपी करें” ठीक यही दृश्य जगहों और समय के साथ सहेजता है, “समय कॉपी करें” इसे टेक्स्ट के रूप में कॉपी करता है, “कैलेंडर में जोड़ें” एक .ics फ़ाइल डाउनलोड करता है। “इस डिवाइस पर जगहें याद रखें” पर निशान लगाने से आपकी जगहें अगली बार भी मौजूद रहती हैं। पहली विज़िट के बाद Hourbridge बिना इंटरनेट के भी चलता है, और अगर आपका ब्राउज़र ऊपर “इंस्टॉल करें” दिखाता है, तो एक टैप से Hourbridge ऐप की तरह इंस्टॉल हो जाता है।'
+      ],
+      zh: [
+        '打开 Hourbridge。最上方马上用一句话给出答案，实时精确到秒。语言和外观在最上方，下面是添加更多地点的搜索框：“东京”、“9am New York”或 PST 之类的缩写。“我的时区”会添加你设备的时区，不会询问你的位置。',
+        '想选别的时间，就在某个地点的时间轴上拖动、点击，或者用方向键。所有时钟一起走。也可以直接在卡片里输入时间，“现在”会回到当前时间。',
+        '“复制链接”会保存当前这个视图，包括地点和时间；“复制时间”把它复制成文本；“添加到日历”会下载一个 .ics 文件。勾选“在此设备上记住地点”后，下次打开时你的地点还在。首次访问后 Hourbridge 断网也能用；如果浏览器在顶部显示“安装”，点一下就能把 Hourbridge 安装为应用。'
+      ],
+      ja: [
+        'Hourbridge を開きます。いちばん上にすぐ答えが一文で出ます。秒単位でリアルタイムです。言語と表示はいちばん上、その下にほかの場所を追加する検索欄があります。「東京」「9am New York」や PST のような略称も使えます。「自分のタイムゾーン」は位置情報をたずねずに、端末のタイムゾーンを追加します。',
+        '別の時刻にするには、場所のタイムラインをドラッグするか、クリックするか、矢印キーを使います。すべての時計が一緒に動きます。カードに時刻を直接入力することもでき、「現在」で今の時刻に戻ります。',
+        '「リンクをコピー」はこの表示を場所と時刻ごと保存し、「時刻をコピー」はテキストとしてコピーし、「カレンダーに追加」は .ics ファイルをダウンロードします。「この端末で場所を記憶」にチェックを入れると、次に開いたときも場所が残っています。初回アクセス後はネットがなくても動き、ブラウザーの上部に「インストール」が出ていれば、タップひとつで Hourbridge をアプリとしてインストールできます。'
+      ],
+      ko: [
+        'Hourbridge를 엽니다. 맨 위에 바로 한 문장으로 답이 나오고, 초 단위로 실시간입니다. 언어와 화면 모드는 맨 위에 있고, 그 아래에 장소를 더 넣는 검색창이 있습니다. ‘도쿄’, ‘9am New York’ 또는 PST 같은 약어도 됩니다. ‘내 시간대’는 위치를 묻지 않고 기기의 시간대를 추가합니다.',
+        '다른 시간을 고르려면 장소의 타임라인을 끌거나, 클릭하거나, 화살표 키를 쓰세요. 모든 시계가 함께 움직입니다. 카드에 시간을 바로 입력할 수도 있고, ‘지금’을 누르면 현재 시간으로 돌아갑니다.',
+        '‘링크 복사’는 지금 이 화면을 장소와 시간 그대로 저장하고, ‘시간 복사’는 텍스트로 복사하며, ‘캘린더에 추가’는 .ics 파일을 내려받습니다. ‘이 기기에 장소 기억’을 체크하면 다음에 열 때도 장소가 남아 있습니다. 첫 방문 후에는 인터넷 없이도 작동하고, 브라우저 위쪽에 ‘설치’가 보이면 한 번 눌러 Hourbridge를 앱으로 설치할 수 있습니다.'
+      ]
+    },
+    pitfalls: {
+      de: [
+        'Im März fehlt eine Stunde, im Oktober gibt es eine doppelt. Liegt deine Zeit in der Lücke, zeigt Hourbridge die Uhrzeit nach dem Sprung. Bei der doppelten Stunde wählst du mit „Zweites Mal zeigen“, welche gemeint ist.',
+        'USA und Europa stellen an verschiedenen Tagen um. In diesen Wochen liegen etwa Berlin und New York 5 statt 6 Stunden auseinander. Hourbridge warnt davor, prüf Termine in dieser Zeit trotzdem lieber zweimal.',
+        'Die Zeitzonenregeln kommen aus deinem Browser. Ändert ein Land seine Regeln, kennt ein lange nicht aktualisierter Browser sie noch nicht. Ein Update behebt das.',
+        'Die grün unterstrichene Arbeitszeit ist eine Faustregel: 9 bis 17 Uhr Ortszeit.',
+        'Ohne Haken stehen deine Orte nur im Link, nicht auf dem Gerät. Gemerkte Orte liegen nur im Browser dieses Geräts. Wer die Browserdaten löscht, löscht sie mit, und ein anderes Gerät sieht sie nicht. Ein geteilter Link nimmt die Orte dagegen mit.'
+      ],
+      en: [
+        'In March an hour goes missing, in October one happens twice. If your time falls into the gap, Hourbridge shows the time after the jump. For the repeated hour, “Show the second one” lets you pick which one you mean.',
+        'The US and Europe change their clocks on different days. In those weeks Berlin and New York, for example, are 5 hours apart instead of 6. Hourbridge warns you, but double-check appointments in that period anyway.',
+        'The time zone rules come from your browser. When a country changes its rules, a browser that has not been updated in a long time does not know them yet. An update fixes that.',
+        'The working hours underlined in green are a rule of thumb: 9 to 5 local time.',
+        'Without the tick your places live only in the link, not on the device. Remembered places live only in this device’s browser. Clearing the browser data clears them too, and another device does not see them. A shared link, on the other hand, carries the places with it.'
+      ],
+      es: [
+        'En marzo falta una hora y en octubre una se repite. Si tu hora cae en el hueco, Hourbridge muestra la hora después del salto. En la hora repetida eliges con «Mostrar la segunda» cuál quieres decir.',
+        'EE. UU. y Europa cambian la hora en días distintos. En esas semanas, por ejemplo, Berlín y Nueva York están a 5 horas en lugar de 6. Hourbridge te avisa, pero revisa dos veces las citas de esas fechas.',
+        'Las reglas de zonas horarias vienen de tu navegador. Si un país cambia sus reglas, un navegador que lleva mucho sin actualizarse aún no las conoce. Una actualización lo arregla.',
+        'El horario laboral subrayado en verde es una regla práctica: de 9 a 17 h, hora local.',
+        'Sin la casilla marcada, tus lugares solo están en el enlace, no en el dispositivo. Los lugares recordados solo están en el navegador de este dispositivo. Si borras los datos del navegador, se borran también, y otro dispositivo no los ve. Un enlace compartido, en cambio, lleva los lugares consigo.'
+      ],
+      fr: [
+        'En mars, une heure manque, en octobre, une heure se répète. Si votre heure tombe dans le trou, Hourbridge affiche l’heure après le saut. Pour l’heure en double, « Afficher la seconde » vous permet de choisir laquelle vous voulez dire.',
+        'Les États-Unis et l’Europe changent d’heure à des dates différentes. Pendant ces semaines, Berlin et New York, par exemple, ont 5 heures d’écart au lieu de 6. Hourbridge vous prévient, vérifiez quand même deux fois les rendez-vous de cette période.',
+        'Les règles des fuseaux horaires viennent de votre navigateur. Quand un pays change ses règles, un navigateur pas mis à jour depuis longtemps ne les connaît pas encore. Une mise à jour règle le problème.',
+        'Les heures de bureau soulignées en vert sont une règle empirique : de 9 h à 17 h, heure locale.',
+        'Sans la case cochée, vos lieux ne sont que dans le lien, pas sur l’appareil. Les lieux retenus restent uniquement dans le navigateur de cet appareil. Effacer les données du navigateur les efface aussi, et un autre appareil ne les voit pas. Un lien partagé, en revanche, emporte les lieux avec lui.'
+      ],
+      it: [
+        'A marzo manca un’ora, a ottobre una si ripete. Se la tua ora cade nel buco, Hourbridge mostra l’ora dopo il salto. Per l’ora doppia scegli con «Mostra la seconda» quale intendi.',
+        'Stati Uniti ed Europa cambiano l’ora in giorni diversi. In quelle settimane, per esempio, Berlino e New York sono a 5 ore invece di 6. Hourbridge ti avvisa, ma controlla comunque due volte gli appuntamenti di quel periodo.',
+        'Le regole dei fusi orari vengono dal tuo browser. Se un paese cambia le sue regole, un browser non aggiornato da tanto non le conosce ancora. Un aggiornamento risolve.',
+        'L’orario di lavoro sottolineato in verde è una regola pratica: dalle 9 alle 17, ora locale.',
+        'Senza la spunta i tuoi luoghi stanno solo nel link, non sul dispositivo. I luoghi ricordati stanno solo nel browser di questo dispositivo. Chi cancella i dati del browser cancella anche loro, e un altro dispositivo non li vede. Un link condiviso, invece, porta con sé i luoghi.'
+      ],
+      nl: [
+        'In maart ontbreekt een uur, in oktober komt er een twee keer voor. Valt je tijd in het gat, dan toont Hourbridge de tijd na de sprong. Bij het dubbele uur kies je met ‘Tweede keer tonen’ welke je bedoelt.',
+        'De VS en Europa verzetten de klok op verschillende dagen. In die weken liggen Berlijn en New York bijvoorbeeld 5 in plaats van 6 uur uit elkaar. Hourbridge waarschuwt je, controleer afspraken in die periode toch maar twee keer.',
+        'De tijdzoneregels komen uit je browser. Verandert een land zijn regels, dan kent een browser die lang niet is bijgewerkt ze nog niet. Een update lost dat op.',
+        'De groen onderstreepte werktijd is een vuistregel: 9 tot 17 uur lokale tijd.',
+        'Zonder vinkje staan je plaatsen alleen in de link, niet op het apparaat. Onthouden plaatsen staan alleen in de browser van dit apparaat. Wie de browsergegevens wist, wist ze mee, en een ander apparaat ziet ze niet. Een gedeelde link neemt de plaatsen juist wel mee.'
+      ],
+      pl: [
+        'W marcu brakuje godziny, w październiku jedna powtarza się dwa razy. Jeśli twoja godzina wypada w luce, Hourbridge pokazuje czas po przeskoku. Przy podwójnej godzinie przyciskiem „Pokaż drugą” wybierasz, o którą chodzi.',
+        'USA i Europa zmieniają czas w różne dni. W tych tygodniach na przykład Berlin i Nowy Jork dzieli 5 zamiast 6 godzin. Hourbridge ostrzega, ale terminy z tego okresu i tak lepiej sprawdź dwa razy.',
+        'Reguły stref czasowych pochodzą z twojej przeglądarki. Gdy jakiś kraj zmienia reguły, przeglądarka dawno nieaktualizowana jeszcze ich nie zna. Aktualizacja to naprawia.',
+        'Godziny pracy podkreślone na zielono to reguła kciuka: od 9 do 17 czasu lokalnego.',
+        'Bez zaznaczenia twoje miejsca są tylko w linku, nie na urządzeniu. Zapamiętane miejsca są tylko w przeglądarce tego urządzenia. Kto usunie dane przeglądarki, usunie i je, a inne urządzenie ich nie widzi. Udostępniony link za to zabiera miejsca ze sobą.'
+      ],
+      pt: [
+        'Em março falta uma hora, em outubro uma se repete. Se o seu horário cair no buraco, o Hourbridge mostra o horário depois do salto. Na hora repetida, você escolhe com «Mostrar a segunda» qual quer dizer.',
+        'Os EUA e a Europa mudam o horário em dias diferentes. Nessas semanas, por exemplo, Berlim e Nova York ficam 5 horas de diferença em vez de 6. O Hourbridge avisa, mas confira duas vezes os compromissos desse período.',
+        'As regras de fuso horário vêm do seu navegador. Se um país muda suas regras, um navegador sem atualização há muito tempo ainda não as conhece. Uma atualização resolve.',
+        'O horário de trabalho sublinhado em verde é uma regra prática: das 9 às 17 h, hora local.',
+        'Sem a caixa marcada, seus lugares ficam só no link, não no dispositivo. Os lugares lembrados ficam só no navegador deste dispositivo. Se você apagar os dados do navegador, eles somem junto, e outro dispositivo não os vê. Já um link compartilhado leva os lugares junto.'
+      ],
+      tr: [
+        'Mart’ta bir saat eksik, Ekim’de bir saat iki kez yaşanır. Saatiniz bu boşluğa düşerse Hourbridge sıçramadan sonraki saati gösterir. İki kez yaşanan saatte hangisini kastettiğinizi “İkincisini göster” ile seçersiniz.',
+        'ABD ve Avrupa saatlerini farklı günlerde değiştirir. Bu haftalarda örneğin Berlin ile New York arasında 6 değil 5 saat fark olur. Hourbridge sizi uyarır, yine de o dönemdeki randevuları iki kez kontrol edin.',
+        'Saat dilimi kuralları tarayıcınızdan gelir. Bir ülke kurallarını değiştirdiğinde, uzun süredir güncellenmemiş bir tarayıcı bunları henüz bilmez. Bir güncelleme bunu düzeltir.',
+        'Yeşil altı çizili mesai saatleri pratik bir ölçüdür: yerel saatle 9 ile 17 arası.',
+        'İşaret yoksa yerleriniz yalnızca bağlantıda durur, cihazda değil. Hatırlanan yerler yalnızca bu cihazın tarayıcısında durur. Tarayıcı verilerini silen onları da siler, başka bir cihaz da onları görmez. Paylaşılan bir bağlantı ise yerleri yanında götürür.'
+      ],
+      ru: [
+        'В марте пропадает один час, в октябре один час повторяется. Если ваше время попадает в пропуск, Hourbridge показывает время после скачка. Для повторяющегося часа кнопкой «Показать второй раз» вы выбираете, какой имеется в виду.',
+        'США и Европа переводят часы в разные дни. В эти недели, например, между Берлином и Нью-Йорком 5 часов разницы вместо 6. Hourbridge предупреждает об этом, но встречи в этот период всё же лучше проверить дважды.',
+        'Правила часовых поясов берутся из вашего браузера. Если страна меняет свои правила, браузер, который давно не обновлялся, их ещё не знает. Обновление это исправляет.',
+        'Рабочее время, подчёркнутое зелёным, это общее правило: с 9 до 17 по местному времени.',
+        'Без галочки ваши места хранятся только в ссылке, а не на устройстве. Запомненные места хранятся только в браузере этого устройства. Если удалить данные браузера, удалятся и они, а другое устройство их не видит. Зато ссылка, которой вы поделились, переносит места с собой.'
+      ],
+      hi: [
+        'मार्च में एक घंटा गायब होता है, अक्टूबर में एक घंटा दो बार आता है। अगर आपका समय इस खाली जगह में पड़ता है, तो Hourbridge छलांग के बाद का समय दिखाता है। दोहराए गए घंटे में “दूसरी बार दिखाएँ” से आप चुनते हैं कि कौन-सा मतलब है।',
+        'अमेरिका और यूरोप अलग-अलग दिन घड़ी बदलते हैं। उन हफ़्तों में, जैसे, बर्लिन और न्यूयॉर्क के बीच 6 की जगह 5 घंटे का अंतर होता है। Hourbridge चेतावनी देता है, फिर भी उस समय की मीटिंग दो बार जाँच लें।',
+        'समय क्षेत्र के नियम आपके ब्राउज़र से आते हैं। कोई देश अपने नियम बदले, तो लंबे समय से अपडेट न हुआ ब्राउज़र उन्हें अभी नहीं जानता। अपडेट करने से यह ठीक हो जाता है।',
+        'हरे रंग से रेखांकित काम के घंटे एक मोटा नियम हैं: स्थानीय समय से 9 से 17 बजे तक।',
+        'निशान के बिना आपकी जगहें सिर्फ़ लिंक में रहती हैं, डिवाइस पर नहीं। याद रखी गई जगहें सिर्फ़ इसी डिवाइस के ब्राउज़र में रहती हैं। ब्राउज़र का डेटा मिटाने पर वे भी मिट जाती हैं, और दूसरा डिवाइस उन्हें नहीं देखता। साझा किया गया लिंक जगहों को अपने साथ ले जाता है।'
+      ],
+      zh: [
+        '三月会少一小时，十月有一小时会出现两次。如果你选的时间落在空缺里，Hourbridge 会显示跳过之后的时间。遇到重复的那一小时，用“显示第二次”选你指的是哪一次。',
+        '美国和欧洲在不同的日子调钟。那几周里，比如柏林和纽约只差 5 小时，而不是 6 小时。Hourbridge 会提醒你，但这段时间的约会最好再核对一遍。',
+        '时区规则来自你的浏览器。某个国家改了规则时，很久没更新的浏览器还不知道。更新一下就好。',
+        '绿色下划线标出的工作时间只是个大概：当地时间 9 点到 17 点。',
+        '不勾选时，你的地点只在链接里，不在设备上。记住的地点只保存在这台设备的浏览器里。清除浏览器数据会把它们一起删掉，别的设备也看不到。分享出去的链接则会带上这些地点。'
+      ],
+      ja: [
+        '3月には1時間が抜け、10月には1時間が2回あります。選んだ時刻が抜けた時間に入ると、Hourbridge は切り替え後の時刻を表示します。2回ある時間では「2 回目を表示」でどちらの意味かを選びます。',
+        'アメリカとヨーロッパは別々の日に時刻を切り替えます。その数週間は、たとえばベルリンとニューヨークの差が6時間ではなく5時間になります。Hourbridge は警告しますが、その時期の予定は念のため二度確認してください。',
+        'タイムゾーンの規則はブラウザーから来ます。ある国が規則を変えると、長く更新していないブラウザーはまだそれを知りません。更新すれば直ります。',
+        '緑の下線の勤務時間は目安です。現地時間の9時から17時です。',
+        'チェックを入れないと、場所はリンクの中だけにあり、端末には残りません。記憶した場所はこの端末のブラウザーの中だけにあります。ブラウザーのデータを消すと一緒に消え、ほかの端末からは見えません。一方、共有したリンクは場所ごと伝わります。'
+      ],
+      ko: [
+        '3월에는 한 시간이 빠지고, 10월에는 한 시간이 두 번 옵니다. 고른 시간이 빠진 구간에 들어가면 Hourbridge는 건너뛴 뒤의 시간을 보여 줍니다. 두 번 오는 시간에서는 ‘두 번째 보기’로 어느 쪽인지 고릅니다.',
+        '미국과 유럽은 서로 다른 날 시간을 바꿉니다. 그 몇 주 동안은 예를 들어 베를린과 뉴욕의 차이가 6시간이 아니라 5시간입니다. Hourbridge가 경고하지만, 그 기간의 일정은 한 번 더 확인하세요.',
+        '시간대 규칙은 브라우저에서 옵니다. 어떤 나라가 규칙을 바꾸면, 오래 업데이트하지 않은 브라우저는 아직 모릅니다. 업데이트하면 해결됩니다.',
+        '초록 밑줄로 표시된 근무 시간은 대략적인 기준입니다. 현지 시간 9시부터 17시까지입니다.',
+        '체크하지 않으면 장소는 링크에만 있고 기기에는 남지 않습니다. 기억한 장소는 이 기기의 브라우저에만 있습니다. 브라우저 데이터를 지우면 함께 지워지고, 다른 기기에서는 보이지 않습니다. 반면 공유한 링크는 장소를 함께 전합니다.'
+      ]
+    },
+    docs: {
+      de: 'https://github.com/Dennismit2n/hourbridge/blob/main/README.de.md',
+      en: 'https://github.com/Dennismit2n/hourbridge/blob/main/README.md',
+      es: 'https://github.com/Dennismit2n/hourbridge/blob/main/README.md',
+      fr: 'https://github.com/Dennismit2n/hourbridge/blob/main/README.md',
+      it: 'https://github.com/Dennismit2n/hourbridge/blob/main/README.md',
+      nl: 'https://github.com/Dennismit2n/hourbridge/blob/main/README.md',
+      pl: 'https://github.com/Dennismit2n/hourbridge/blob/main/README.md',
+      pt: 'https://github.com/Dennismit2n/hourbridge/blob/main/README.md',
+      tr: 'https://github.com/Dennismit2n/hourbridge/blob/main/README.md',
+      ru: 'https://github.com/Dennismit2n/hourbridge/blob/main/README.md',
+      hi: 'https://github.com/Dennismit2n/hourbridge/blob/main/README.md',
+      zh: 'https://github.com/Dennismit2n/hourbridge/blob/main/README.md',
+      ja: 'https://github.com/Dennismit2n/hourbridge/blob/main/README.md',
+      ko: 'https://github.com/Dennismit2n/hourbridge/blob/main/README.md'
+    }
   }
 };

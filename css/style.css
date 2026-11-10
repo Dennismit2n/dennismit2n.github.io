@@ -88,7 +88,7 @@
      Methode: OKLCH bei festem Farbton, Chroma per Bisektion in den Gamut geklemmt,
      Helligkeit per Bisektion auf das Kontrastziel. Wer den Grund oder die Aurora
      verschiebt, rechnet diese Werte neu — sie sind Prüfnachweis, keine Verzierung.
-     Prismatical, Spectroton, Heizwarte und Pocketsum tragen dazu ihren Verlauf
+     Prismatical, Spectroton, Heizwarte, Hourbridge und Pocketsum tragen dazu ihren Verlauf
      (Name und Kappe), der Vollton daneben ist nur Anker für Rahmen und Knopf.
      Fadenkreuz bleibt in beiden Darstellungen schwarz (siehe .tool-card.tool-fadenkreuz);
      --fadenkreuz gilt nur für seinen Abschnitt auf werkstatt.html. Die Kappe von
@@ -110,6 +110,8 @@
   --spectro-flow: linear-gradient(100deg, #006B67, #005D59, #004F4C, #00423F, #003533);
   --heizwarte: #03678E;
   --heizwarte-flow: linear-gradient(100deg, #00678E, #007015, #8F5000, #AE3600, #C30010);
+  --hourbridge: #7E4B91;
+  --hourbridge-flow: linear-gradient(100deg, #7E4B91, #305FA3, #006D51);
   --fadenkreuz: #101512;
   --fadenkreuz-flow: linear-gradient(#33ff88, #33ff88);
   --pocketsum: #1A1932;
@@ -187,6 +189,8 @@
     --spectro-flow: linear-gradient(100deg, #8bfff8, #48e8e0, #13ccc5, #00b0a9, #129993);
     --heizwarte: #A7E3FF;
     --heizwarte-flow: linear-gradient(100deg, #7dd3fc, #86efac, #fde047, #fdba74, #f87171);
+    --hourbridge: #B699C1;
+    --hourbridge-flow: linear-gradient(100deg, #B699C1, #8CA7CE, #7EB39D);
     --fadenkreuz: #33ff88;
     --fadenkreuz-flow: linear-gradient(#33ff88, #33ff88);
     --pocketsum: #E2E2F6;
@@ -250,6 +254,8 @@
   --spectro-flow: linear-gradient(100deg, #8bfff8, #48e8e0, #13ccc5, #00b0a9, #129993);
   --heizwarte: #A7E3FF;
   --heizwarte-flow: linear-gradient(100deg, #7dd3fc, #86efac, #fde047, #fdba74, #f87171);
+  --hourbridge: #B699C1;
+  --hourbridge-flow: linear-gradient(100deg, #B699C1, #8CA7CE, #7EB39D);
   --fadenkreuz: #33ff88;
   --fadenkreuz-flow: linear-gradient(#33ff88, #33ff88);
   --pocketsum: #E2E2F6;
@@ -617,6 +623,7 @@ a.brand { text-decoration: none; color: inherit; }
 .tool-prismatical { --tool: var(--prisma); --tool-flow: var(--prisma-flow); }
 .tool-spectroton { --tool: var(--spectro); --tool-flow: var(--spectro-flow); }
 .tool-heizwarte { --tool: var(--heizwarte); --tool-flow: var(--heizwarte-flow); }
+.tool-hourbridge { --tool: var(--hourbridge); --tool-flow: var(--hourbridge-flow); }
 .tool-fadenkreuz { --tool: var(--fadenkreuz); --tool-flow: var(--fadenkreuz-flow); }
 .tool-pocketsum { --tool: var(--pocketsum); --tool-flow: var(--pocketsum-flow); }
 .tool-gaming { --tool: var(--gaming); --tool-flow: var(--gaming-flow); }
@@ -856,6 +863,19 @@ a.brand { text-decoration: none; color: inherit; }
   .tool-heizwarte .tool-name {
     text-shadow: none;
     background-image: var(--heizwarte-flow);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+/* Hourbridge: die drei Farben der App, Mauve → Blau → Grün. Jeder Stopp hält
+   hell 4,6:1 gegen --bg und den Aurora-Schleier, dunkel 6,4:1 gegen --panel,
+   --bg und den hellsten Aurora-Punkt, umgedreht 4,86:1. */
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .tool-hourbridge .tool-name {
+    text-shadow: none;
+    background-image: var(--hourbridge-flow);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -1494,6 +1514,7 @@ a.wk-shot-frame:focus-visible { outline-color: var(--tool, var(--accent)); }
   --prisma-flow: linear-gradient(var(--prisma), var(--prisma));
   --spectro-flow: linear-gradient(var(--spectro), var(--spectro));
   --heizwarte-flow: linear-gradient(var(--heizwarte), var(--heizwarte));
+  --hourbridge-flow: linear-gradient(var(--hourbridge), var(--hourbridge));
   --pocketsum-flow: linear-gradient(var(--pocketsum), var(--pocketsum));
   --gaming-flow: linear-gradient(var(--gaming), var(--gaming));
 }
@@ -1533,6 +1554,7 @@ a.wk-shot-frame:focus-visible { outline-color: var(--tool, var(--accent)); }
   --prisma: #5B3FBF;        /* 7,22 */
   --spectro: #00625B;       /* 7,25 */
   --heizwarte: #005D82;     /* 7,27 */
+  --hourbridge: #754387;    /* 7,22 */
   --craftionary: #00634F;   /* 7,25 */
   --vault: #6C5400;         /* 7,23 */
   --ruestkammer: #8D4200;   /* 7,21 */
@@ -1542,6 +1564,7 @@ a.wk-shot-frame:focus-visible { outline-color: var(--tool, var(--accent)); }
   --prisma-flow: linear-gradient(var(--prisma), var(--prisma));
   --spectro-flow: linear-gradient(var(--spectro), var(--spectro));
   --heizwarte-flow: linear-gradient(var(--heizwarte), var(--heizwarte));
+  --hourbridge-flow: linear-gradient(var(--hourbridge), var(--hourbridge));
   --pocketsum-flow: linear-gradient(var(--pocketsum), var(--pocketsum));
   --gaming-flow: linear-gradient(var(--gaming), var(--gaming));
 }

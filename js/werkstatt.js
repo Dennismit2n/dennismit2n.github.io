@@ -39,6 +39,8 @@
       url: 'https://dennismit2n.github.io/wifi-qr/', ctaKey: 'openTool' },
     { key: 'heizwarte', name: 'Heizwarte', icon: './assets/heizwarte.svg',
       url: 'https://dennismit2n.github.io/heizwarte/', ctaKey: 'openTool' },
+    { key: 'hourbridge', name: 'Hourbridge', icon: './assets/hourbridge.svg',
+      url: 'https://dennismit2n.github.io/hourbridge/', ctaKey: 'openTool' },
     { key: 'pocketsum', name: 'Pocketsum', icon: './assets/pocketsum.svg',
       url: 'https://dennismit2n.github.io/pocketsum/', ctaKey: 'openTool' },
     { key: 'zaehlwerk', name: 'Zählwerk', icon: './assets/zaehlwerk.svg',

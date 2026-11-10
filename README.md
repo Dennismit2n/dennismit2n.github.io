@@ -19,6 +19,7 @@ Startseite für die kleinen Werkzeuge von Dennis_mit_2n: ohne Anmeldung, keine A
 - [shrinkling](https://dennismit2n.github.io/shrinkling/): shrink photos right in your browser
 - [WiFi QR Card](https://dennismit2n.github.io/wifi-qr/): create a WiFi QR code card, guests scan and connect
 - [Heizwarte](https://dennismit2n.github.io/heizwarte/): weather with a heating traffic light, tells you when to turn up slow heating (14 languages)
+- [Hourbridge](https://dennismit2n.github.io/hourbridge/): UTC to German time and back, for any number of places, with a draggable timeline and clock change warnings, offline after the first visit
 - [Pocketsum](https://dennismit2n.github.io/pocketsum/): five small calculators in one file: VAT, tips, fuel prices, dividends and trading costs, offline after the first visit
 - [Zählwerk](https://dennismit2n.github.io/zaehlwerk/): where your Claude Code usage goes, by day, model and project
 - [Besucher-Ticker](https://github.com/Dennismit2n/besucher-ticker): your GoatCounter visitor numbers floating on the Windows desktop (download, not a browser tool)
@@ -38,7 +39,7 @@ Since 1 November 2026 the five mods for Claude Code (repository [werkstatt-mods]
 
 ## Gaming page
 
-Since 30 October 2026 everything to do with games lives on its own page, `gaming.html`, so it stays apart from the other tools. On the start page it is one tile, “Gaming”, at position 14: name, border and button in graphite, the cap a gradient from magenta through cherry red and neon blue to neon green. Its single mini tile shows the newest news date of the gaming apps and jumps to their section on `werkstatt.html`.
+Since 30 October 2026 everything to do with games lives on its own page, `gaming.html`, so it stays apart from the other tools. On the start page it is one tile, “Gaming”, at position 16: name, border and button in graphite, the cap a gradient from magenta through cherry red and neon blue to neon green. Its single mini tile shows the newest news date of the gaming apps and jumps to their section on `werkstatt.html`.
 
 - [Craftionary](https://dennismit2n.github.io/craftionary/): every Minecraft recipe, where to find items and ores, ready `/give` commands and a banner and pot workshop (14 languages)
 - [BL4 Vault-Handbuch](https://dennismit2n.github.io/bl4/): Borderlands 4 handbook, lives in `bl4/` of this repository (app in German, controls in 14 languages)
@@ -73,7 +74,7 @@ The interface words exist in all 14 languages, and since 14 September 2026 so do
 
 ## Development
 
-No build step: plain HTML, CSS, and JavaScript. 91 files make up the site (not counting the apps in `bl4/` and `mw4/`, the `heizwarte/` helper and `tools/`): four pages, one stylesheet, eight scripts, twenty-four images plus the five mod screenshots in `assets/mods/`, three icons, forty-three screenshots for the guides in `assets/anleitung/`, and two font files with their licence in `assets/fonts/fraunces/`. No npm dependencies.
+No build step: plain HTML, CSS, and JavaScript. 94 files make up the site (not counting the apps in `bl4/` and `mw4/`, the `heizwarte/` helper and `tools/`): four pages, one stylesheet, eight scripts, twenty-five images plus the five mod screenshots in `assets/mods/`, three icons, forty-five screenshots for the guides in `assets/anleitung/`, and two font files with their licence in `assets/fonts/fraunces/`. No npm dependencies.
 
 ```
 node tools/dev-server.js
