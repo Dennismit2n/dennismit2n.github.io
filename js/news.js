@@ -138,6 +138,23 @@ var NEWS = {
 
   shrink: [
     {
+      date: '2026-11-12',
+      de: 'Neuer Look wie auf der Startseite: Alles mit Rahmen trägt jetzt einen eckigen Innenrahmen und vier kleine Schrauben in Weißgold, und die Schatten fallen nach links unten. An der Bedienung ändert sich nichts.',
+      en: 'New look, matching the start page: everything with a border now carries a square inner frame and four small white gold screws, and the shadows fall to the bottom left. Nothing changes in how you use it.',
+      es: 'Nuevo aspecto, como en la página de inicio: todo lo que tiene borde lleva ahora un marco interior recto y cuatro tornillos pequeños de oro blanco, y las sombras caen hacia abajo a la izquierda. El manejo no cambia.',
+      fr: 'Nouveau look, comme sur la page d’accueil : tout ce qui a une bordure porte désormais un cadre intérieur à angles droits et quatre petites vis en or blanc, et les ombres tombent en bas à gauche. Rien ne change à l’utilisation.',
+      it: 'Nuovo aspetto, come nella pagina iniziale: tutto ciò che ha un bordo porta ora una cornice interna squadrata e quattro piccole viti in oro bianco, e le ombre cadono in basso a sinistra. Nell’uso non cambia nulla.',
+      nl: 'Nieuwe look, zoals op de startpagina: alles met een rand heeft nu een hoekig binnenkader en vier kleine schroefjes in witgoud, en de schaduwen vallen naar linksonder. Aan de bediening verandert niets.',
+      pl: 'Nowy wygląd, jak na stronie startowej: wszystko, co ma ramkę, nosi teraz kanciastą ramkę wewnętrzną i cztery małe śrubki z białego złota, a cienie padają w lewo w dół. W obsłudze nic się nie zmienia.',
+      pt: 'Novo visual, como na página inicial: tudo o que tem borda agora traz uma moldura interna reta e quatro pequenos parafusos em ouro branco, e as sombras caem para baixo à esquerda. Nada muda no uso.',
+      tr: 'Başlangıç sayfasındaki gibi yeni görünüm: çerçevesi olan her şey artık köşeli bir iç çerçeve ve beyaz altından dört küçük vida taşıyor, gölgeler de sol alta düşüyor. Kullanımda hiçbir şey değişmiyor.',
+      ru: 'Новый вид, как на стартовой странице: у всего, что с рамкой, теперь прямоугольная внутренняя рамка и четыре маленьких винта из белого золота, а тени падают влево вниз. В управлении ничего не меняется.',
+      hi: 'शुरुआती पेज जैसा नया रूप: जिस भी चीज़ में बॉर्डर है, उसमें अब एक चौकोर भीतरी फ़्रेम और सफ़ेद सोने के चार छोटे पेंच हैं, और परछाइयाँ नीचे बाईं ओर गिरती हैं। इस्तेमाल में कुछ नहीं बदलता।',
+      zh: '新外观，与首页一致：所有带边框的元素现在都有一个方角内框和四颗白金小螺丝，阴影落向左下方。用法没有任何变化。',
+      ja: 'スタートページと同じ新しい見た目になりました。枠のあるものにはすべて、角ばった内枠とホワイトゴールドの小さなねじが4本付き、影は左下に落ちます。使い方は何も変わりません。',
+      ko: '시작 페이지와 같은 새 모습입니다. 테두리가 있는 모든 요소에 각진 안쪽 틀과 화이트 골드 작은 나사 네 개가 붙었고, 그림자는 왼쪽 아래로 떨어집니다. 사용법은 그대로입니다.'
+    },
+    {
       date: '2026-11-01',
       de: 'Alle Texte ohne Gedankenstriche, in allen 14 Sprachen, auch der Titel im Browser-Tab.',
       en: 'All texts without dashes, in all 14 languages, including the title in the browser tab.',
@@ -293,6 +310,23 @@ var NEWS = {
   ],
 
   wifi: [
+    {
+      date: '2026-11-12',
+      de: 'Neuer Look wie auf der Startseite: Alles mit Rahmen trägt jetzt einen eckigen Innenrahmen und vier kleine Schrauben in Weißgold, und die Schatten fallen nach links unten. An der Bedienung ändert sich nichts.',
+      en: 'New look, matching the start page: everything with a border now carries a square inner frame and four small white gold screws, and the shadows fall to the bottom left. Nothing changes in how you use it.',
+      es: 'Nuevo aspecto, como en la página de inicio: todo lo que tiene borde lleva ahora un marco interior recto y cuatro tornillos pequeños de oro blanco, y las sombras caen hacia abajo a la izquierda. El manejo no cambia.',
+      fr: 'Nouveau look, comme sur la page d’accueil : tout ce qui a une bordure porte désormais un cadre intérieur à angles droits et quatre petites vis en or blanc, et les ombres tombent en bas à gauche. Rien ne change à l’utilisation.',
+      it: 'Nuovo aspetto, come nella pagina iniziale: tutto ciò che ha un bordo porta ora una cornice interna squadrata e quattro piccole viti in oro bianco, e le ombre cadono in basso a sinistra. Nell’uso non cambia nulla.',
+      nl: 'Nieuwe look, zoals op de startpagina: alles met een rand heeft nu een hoekig binnenkader en vier kleine schroefjes in witgoud, en de schaduwen vallen naar linksonder. Aan de bediening verandert niets.',
+      pl: 'Nowy wygląd, jak na stronie startowej: wszystko, co ma ramkę, nosi teraz kanciastą ramkę wewnętrzną i cztery małe śrubki z białego złota, a cienie padają w lewo w dół. W obsłudze nic się nie zmienia.',
+      pt: 'Novo visual, como na página inicial: tudo o que tem borda agora traz uma moldura interna reta e quatro pequenos parafusos em ouro branco, e as sombras caem para baixo à esquerda. Nada muda no uso.',
+      tr: 'Başlangıç sayfasındaki gibi yeni görünüm: çerçevesi olan her şey artık köşeli bir iç çerçeve ve beyaz altından dört küçük vida taşıyor, gölgeler de sol alta düşüyor. Kullanımda hiçbir şey değişmiyor.',
+      ru: 'Новый вид, как на стартовой странице: у всего, что с рамкой, теперь прямоугольная внутренняя рамка и четыре маленьких винта из белого золота, а тени падают влево вниз. В управлении ничего не меняется.',
+      hi: 'शुरुआती पेज जैसा नया रूप: जिस भी चीज़ में बॉर्डर है, उसमें अब एक चौकोर भीतरी फ़्रेम और सफ़ेद सोने के चार छोटे पेंच हैं, और परछाइयाँ नीचे बाईं ओर गिरती हैं। इस्तेमाल में कुछ नहीं बदलता।',
+      zh: '新外观，与首页一致：所有带边框的元素现在都有一个方角内框和四颗白金小螺丝，阴影落向左下方。用法没有任何变化。',
+      ja: 'スタートページと同じ新しい見た目になりました。枠のあるものにはすべて、角ばった内枠とホワイトゴールドの小さなねじが4本付き、影は左下に落ちます。使い方は何も変わりません。',
+      ko: '시작 페이지와 같은 새 모습입니다. 테두리가 있는 모든 요소에 각진 안쪽 틀과 화이트 골드 작은 나사 네 개가 붙었고, 그림자는 왼쪽 아래로 떨어집니다. 사용법은 그대로입니다.'
+    },
     {
       date: '2026-11-01',
       de: 'Alle Texte ohne Gedankenstriche, in allen 14 Sprachen.',
@@ -484,6 +518,23 @@ var NEWS = {
 
   prismatical: [
     {
+      date: '2026-11-12',
+      de: 'Neuer Look wie auf der Startseite: Alles mit Rahmen trägt jetzt einen eckigen Innenrahmen und vier kleine Schrauben in Weißgold, und die Schatten fallen nach links unten. An der Bedienung ändert sich nichts.',
+      en: 'New look, matching the start page: everything with a border now carries a square inner frame and four small white gold screws, and the shadows fall to the bottom left. Nothing changes in how you use it.',
+      es: 'Nuevo aspecto, como en la página de inicio: todo lo que tiene borde lleva ahora un marco interior recto y cuatro tornillos pequeños de oro blanco, y las sombras caen hacia abajo a la izquierda. El manejo no cambia.',
+      fr: 'Nouveau look, comme sur la page d’accueil : tout ce qui a une bordure porte désormais un cadre intérieur à angles droits et quatre petites vis en or blanc, et les ombres tombent en bas à gauche. Rien ne change à l’utilisation.',
+      it: 'Nuovo aspetto, come nella pagina iniziale: tutto ciò che ha un bordo porta ora una cornice interna squadrata e quattro piccole viti in oro bianco, e le ombre cadono in basso a sinistra. Nell’uso non cambia nulla.',
+      nl: 'Nieuwe look, zoals op de startpagina: alles met een rand heeft nu een hoekig binnenkader en vier kleine schroefjes in witgoud, en de schaduwen vallen naar linksonder. Aan de bediening verandert niets.',
+      pl: 'Nowy wygląd, jak na stronie startowej: wszystko, co ma ramkę, nosi teraz kanciastą ramkę wewnętrzną i cztery małe śrubki z białego złota, a cienie padają w lewo w dół. W obsłudze nic się nie zmienia.',
+      pt: 'Novo visual, como na página inicial: tudo o que tem borda agora traz uma moldura interna reta e quatro pequenos parafusos em ouro branco, e as sombras caem para baixo à esquerda. Nada muda no uso.',
+      tr: 'Başlangıç sayfasındaki gibi yeni görünüm: çerçevesi olan her şey artık köşeli bir iç çerçeve ve beyaz altından dört küçük vida taşıyor, gölgeler de sol alta düşüyor. Kullanımda hiçbir şey değişmiyor.',
+      ru: 'Новый вид, как на стартовой странице: у всего, что с рамкой, теперь прямоугольная внутренняя рамка и четыре маленьких винта из белого золота, а тени падают влево вниз. В управлении ничего не меняется.',
+      hi: 'शुरुआती पेज जैसा नया रूप: जिस भी चीज़ में बॉर्डर है, उसमें अब एक चौकोर भीतरी फ़्रेम और सफ़ेद सोने के चार छोटे पेंच हैं, और परछाइयाँ नीचे बाईं ओर गिरती हैं। इस्तेमाल में कुछ नहीं बदलता।',
+      zh: '新外观，与首页一致：所有带边框的元素现在都有一个方角内框和四颗白金小螺丝，阴影落向左下方。用法没有任何变化。',
+      ja: 'スタートページと同じ新しい見た目になりました。枠のあるものにはすべて、角ばった内枠とホワイトゴールドの小さなねじが4本付き、影は左下に落ちます。使い方は何も変わりません。',
+      ko: '시작 페이지와 같은 새 모습입니다. 테두리가 있는 모든 요소에 각진 안쪽 틀과 화이트 골드 작은 나사 네 개가 붙었고, 그림자는 왼쪽 아래로 떨어집니다. 사용법은 그대로입니다.'
+    },
+    {
       date: '2026-11-01',
       de: 'Alle Texte ohne Gedankenstriche, in allen 14 Sprachen, auch die Warnungen und der Vorlesetext der Stärkeanzeige.',
       en: 'All texts without dashes, in all 14 languages, including the warnings and the screen reader text of the strength meter.',
@@ -588,6 +639,23 @@ var NEWS = {
   ],
 
   spectroton: [
+    {
+      date: '2026-11-12',
+      de: 'Neuer Look wie auf der Startseite: Alles mit Rahmen trägt jetzt einen eckigen Innenrahmen und vier kleine Schrauben in Weißgold, und die Schatten fallen nach links unten. An der Bedienung ändert sich nichts.',
+      en: 'New look, matching the start page: everything with a border now carries a square inner frame and four small white gold screws, and the shadows fall to the bottom left. Nothing changes in how you use it.',
+      es: 'Nuevo aspecto, como en la página de inicio: todo lo que tiene borde lleva ahora un marco interior recto y cuatro tornillos pequeños de oro blanco, y las sombras caen hacia abajo a la izquierda. El manejo no cambia.',
+      fr: 'Nouveau look, comme sur la page d’accueil : tout ce qui a une bordure porte désormais un cadre intérieur à angles droits et quatre petites vis en or blanc, et les ombres tombent en bas à gauche. Rien ne change à l’utilisation.',
+      it: 'Nuovo aspetto, come nella pagina iniziale: tutto ciò che ha un bordo porta ora una cornice interna squadrata e quattro piccole viti in oro bianco, e le ombre cadono in basso a sinistra. Nell’uso non cambia nulla.',
+      nl: 'Nieuwe look, zoals op de startpagina: alles met een rand heeft nu een hoekig binnenkader en vier kleine schroefjes in witgoud, en de schaduwen vallen naar linksonder. Aan de bediening verandert niets.',
+      pl: 'Nowy wygląd, jak na stronie startowej: wszystko, co ma ramkę, nosi teraz kanciastą ramkę wewnętrzną i cztery małe śrubki z białego złota, a cienie padają w lewo w dół. W obsłudze nic się nie zmienia.',
+      pt: 'Novo visual, como na página inicial: tudo o que tem borda agora traz uma moldura interna reta e quatro pequenos parafusos em ouro branco, e as sombras caem para baixo à esquerda. Nada muda no uso.',
+      tr: 'Başlangıç sayfasındaki gibi yeni görünüm: çerçevesi olan her şey artık köşeli bir iç çerçeve ve beyaz altından dört küçük vida taşıyor, gölgeler de sol alta düşüyor. Kullanımda hiçbir şey değişmiyor.',
+      ru: 'Новый вид, как на стартовой странице: у всего, что с рамкой, теперь прямоугольная внутренняя рамка и четыре маленьких винта из белого золота, а тени падают влево вниз. В управлении ничего не меняется.',
+      hi: 'शुरुआती पेज जैसा नया रूप: जिस भी चीज़ में बॉर्डर है, उसमें अब एक चौकोर भीतरी फ़्रेम और सफ़ेद सोने के चार छोटे पेंच हैं, और परछाइयाँ नीचे बाईं ओर गिरती हैं। इस्तेमाल में कुछ नहीं बदलता।',
+      zh: '新外观，与首页一致：所有带边框的元素现在都有一个方角内框和四颗白金小螺丝，阴影落向左下方。用法没有任何变化。',
+      ja: 'スタートページと同じ新しい見た目になりました。枠のあるものにはすべて、角ばった内枠とホワイトゴールドの小さなねじが4本付き、影は左下に落ちます。使い方は何も変わりません。',
+      ko: '시작 페이지와 같은 새 모습입니다. 테두리가 있는 모든 요소에 각진 안쪽 틀과 화이트 골드 작은 나사 네 개가 붙었고, 그림자는 왼쪽 아래로 떨어집니다. 사용법은 그대로입니다.'
+    },
     {
       date: '2026-11-01',
       de: 'Alle Texte ohne Gedankenstriche, in allen 14 Sprachen. Wo vorher ein Strich stand, steht jetzt ein Komma, ein Punkt oder ein Doppelpunkt.',
@@ -761,6 +829,23 @@ var NEWS = {
   ],
 
   collective: [
+    {
+      date: '2026-11-12',
+      de: 'Neuer Look wie auf der Startseite: Alles mit Rahmen trägt jetzt einen eckigen Innenrahmen und vier kleine Schrauben in Weißgold, und die Schatten fallen nach links unten. An der Bedienung ändert sich nichts.',
+      en: 'New look, matching the start page: everything with a border now carries a square inner frame and four small white gold screws, and the shadows fall to the bottom left. Nothing changes in how you use it.',
+      es: 'Nuevo aspecto, como en la página de inicio: todo lo que tiene borde lleva ahora un marco interior recto y cuatro tornillos pequeños de oro blanco, y las sombras caen hacia abajo a la izquierda. El manejo no cambia.',
+      fr: 'Nouveau look, comme sur la page d’accueil : tout ce qui a une bordure porte désormais un cadre intérieur à angles droits et quatre petites vis en or blanc, et les ombres tombent en bas à gauche. Rien ne change à l’utilisation.',
+      it: 'Nuovo aspetto, come nella pagina iniziale: tutto ciò che ha un bordo porta ora una cornice interna squadrata e quattro piccole viti in oro bianco, e le ombre cadono in basso a sinistra. Nell’uso non cambia nulla.',
+      nl: 'Nieuwe look, zoals op de startpagina: alles met een rand heeft nu een hoekig binnenkader en vier kleine schroefjes in witgoud, en de schaduwen vallen naar linksonder. Aan de bediening verandert niets.',
+      pl: 'Nowy wygląd, jak na stronie startowej: wszystko, co ma ramkę, nosi teraz kanciastą ramkę wewnętrzną i cztery małe śrubki z białego złota, a cienie padają w lewo w dół. W obsłudze nic się nie zmienia.',
+      pt: 'Novo visual, como na página inicial: tudo o que tem borda agora traz uma moldura interna reta e quatro pequenos parafusos em ouro branco, e as sombras caem para baixo à esquerda. Nada muda no uso.',
+      tr: 'Başlangıç sayfasındaki gibi yeni görünüm: çerçevesi olan her şey artık köşeli bir iç çerçeve ve beyaz altından dört küçük vida taşıyor, gölgeler de sol alta düşüyor. Kullanımda hiçbir şey değişmiyor.',
+      ru: 'Новый вид, как на стартовой странице: у всего, что с рамкой, теперь прямоугольная внутренняя рамка и четыре маленьких винта из белого золота, а тени падают влево вниз. В управлении ничего не меняется.',
+      hi: 'शुरुआती पेज जैसा नया रूप: जिस भी चीज़ में बॉर्डर है, उसमें अब एक चौकोर भीतरी फ़्रेम और सफ़ेद सोने के चार छोटे पेंच हैं, और परछाइयाँ नीचे बाईं ओर गिरती हैं। इस्तेमाल में कुछ नहीं बदलता।',
+      zh: '新外观，与首页一致：所有带边框的元素现在都有一个方角内框和四颗白金小螺丝，阴影落向左下方。用法没有任何变化。',
+      ja: 'スタートページと同じ新しい見た目になりました。枠のあるものにはすべて、角ばった内枠とホワイトゴールドの小さなねじが4本付き、影は左下に落ちます。使い方は何も変わりません。',
+      ko: '시작 페이지와 같은 새 모습입니다. 테두리가 있는 모든 요소에 각진 안쪽 틀과 화이트 골드 작은 나사 네 개가 붙었고, 그림자는 왼쪽 아래로 떨어집니다. 사용법은 그대로입니다.'
+    },
     {
       date: '2026-11-01',
       de: 'Alle Texte ohne Gedankenstriche, in allen 14 Sprachen. Der Hinweis zum Rest spricht dich jetzt direkt an.',
@@ -969,6 +1054,23 @@ var NEWS = {
 
   bigday: [
     {
+      date: '2026-11-12',
+      de: 'Neuer Look wie auf der Startseite: Alles mit Rahmen trägt jetzt einen eckigen Innenrahmen und vier kleine Schrauben in Weißgold, und die Schatten fallen nach links unten. An der Bedienung ändert sich nichts.',
+      en: 'New look, matching the start page: everything with a border now carries a square inner frame and four small white gold screws, and the shadows fall to the bottom left. Nothing changes in how you use it.',
+      es: 'Nuevo aspecto, como en la página de inicio: todo lo que tiene borde lleva ahora un marco interior recto y cuatro tornillos pequeños de oro blanco, y las sombras caen hacia abajo a la izquierda. El manejo no cambia.',
+      fr: 'Nouveau look, comme sur la page d’accueil : tout ce qui a une bordure porte désormais un cadre intérieur à angles droits et quatre petites vis en or blanc, et les ombres tombent en bas à gauche. Rien ne change à l’utilisation.',
+      it: 'Nuovo aspetto, come nella pagina iniziale: tutto ciò che ha un bordo porta ora una cornice interna squadrata e quattro piccole viti in oro bianco, e le ombre cadono in basso a sinistra. Nell’uso non cambia nulla.',
+      nl: 'Nieuwe look, zoals op de startpagina: alles met een rand heeft nu een hoekig binnenkader en vier kleine schroefjes in witgoud, en de schaduwen vallen naar linksonder. Aan de bediening verandert niets.',
+      pl: 'Nowy wygląd, jak na stronie startowej: wszystko, co ma ramkę, nosi teraz kanciastą ramkę wewnętrzną i cztery małe śrubki z białego złota, a cienie padają w lewo w dół. W obsłudze nic się nie zmienia.',
+      pt: 'Novo visual, como na página inicial: tudo o que tem borda agora traz uma moldura interna reta e quatro pequenos parafusos em ouro branco, e as sombras caem para baixo à esquerda. Nada muda no uso.',
+      tr: 'Başlangıç sayfasındaki gibi yeni görünüm: çerçevesi olan her şey artık köşeli bir iç çerçeve ve beyaz altından dört küçük vida taşıyor, gölgeler de sol alta düşüyor. Kullanımda hiçbir şey değişmiyor.',
+      ru: 'Новый вид, как на стартовой странице: у всего, что с рамкой, теперь прямоугольная внутренняя рамка и четыре маленьких винта из белого золота, а тени падают влево вниз. В управлении ничего не меняется.',
+      hi: 'शुरुआती पेज जैसा नया रूप: जिस भी चीज़ में बॉर्डर है, उसमें अब एक चौकोर भीतरी फ़्रेम और सफ़ेद सोने के चार छोटे पेंच हैं, और परछाइयाँ नीचे बाईं ओर गिरती हैं। इस्तेमाल में कुछ नहीं बदलता।',
+      zh: '新外观，与首页一致：所有带边框的元素现在都有一个方角内框和四颗白金小螺丝，阴影落向左下方。用法没有任何变化。',
+      ja: 'スタートページと同じ新しい見た目になりました。枠のあるものにはすべて、角ばった内枠とホワイトゴールドの小さなねじが4本付き、影は左下に落ちます。使い方は何も変わりません。',
+      ko: '시작 페이지와 같은 새 모습입니다. 테두리가 있는 모든 요소에 각진 안쪽 틀과 화이트 골드 작은 나사 네 개가 붙었고, 그림자는 왼쪽 아래로 떨어집니다. 사용법은 그대로입니다.'
+    },
+    {
       date: '2026-11-01',
       de: 'Alle Texte ohne Gedankenstriche, in allen 14 Sprachen, auch der Titel im Browser-Tab.',
       en: 'All texts without dashes, in all 14 languages, including the title in the browser tab.',
@@ -1090,6 +1192,23 @@ var NEWS = {
   ],
 
   rad: [
+    {
+      date: '2026-11-12',
+      de: 'Neuer Look wie auf der Startseite: Alles mit Rahmen trägt jetzt einen eckigen Innenrahmen und vier kleine Schrauben in Weißgold, und die Schatten fallen nach links unten. An der Bedienung ändert sich nichts.',
+      en: 'New look, matching the start page: everything with a border now carries a square inner frame and four small white gold screws, and the shadows fall to the bottom left. Nothing changes in how you use it.',
+      es: 'Nuevo aspecto, como en la página de inicio: todo lo que tiene borde lleva ahora un marco interior recto y cuatro tornillos pequeños de oro blanco, y las sombras caen hacia abajo a la izquierda. El manejo no cambia.',
+      fr: 'Nouveau look, comme sur la page d’accueil : tout ce qui a une bordure porte désormais un cadre intérieur à angles droits et quatre petites vis en or blanc, et les ombres tombent en bas à gauche. Rien ne change à l’utilisation.',
+      it: 'Nuovo aspetto, come nella pagina iniziale: tutto ciò che ha un bordo porta ora una cornice interna squadrata e quattro piccole viti in oro bianco, e le ombre cadono in basso a sinistra. Nell’uso non cambia nulla.',
+      nl: 'Nieuwe look, zoals op de startpagina: alles met een rand heeft nu een hoekig binnenkader en vier kleine schroefjes in witgoud, en de schaduwen vallen naar linksonder. Aan de bediening verandert niets.',
+      pl: 'Nowy wygląd, jak na stronie startowej: wszystko, co ma ramkę, nosi teraz kanciastą ramkę wewnętrzną i cztery małe śrubki z białego złota, a cienie padają w lewo w dół. W obsłudze nic się nie zmienia.',
+      pt: 'Novo visual, como na página inicial: tudo o que tem borda agora traz uma moldura interna reta e quatro pequenos parafusos em ouro branco, e as sombras caem para baixo à esquerda. Nada muda no uso.',
+      tr: 'Başlangıç sayfasındaki gibi yeni görünüm: çerçevesi olan her şey artık köşeli bir iç çerçeve ve beyaz altından dört küçük vida taşıyor, gölgeler de sol alta düşüyor. Kullanımda hiçbir şey değişmiyor.',
+      ru: 'Новый вид, как на стартовой странице: у всего, что с рамкой, теперь прямоугольная внутренняя рамка и четыре маленьких винта из белого золота, а тени падают влево вниз. В управлении ничего не меняется.',
+      hi: 'शुरुआती पेज जैसा नया रूप: जिस भी चीज़ में बॉर्डर है, उसमें अब एक चौकोर भीतरी फ़्रेम और सफ़ेद सोने के चार छोटे पेंच हैं, और परछाइयाँ नीचे बाईं ओर गिरती हैं। इस्तेमाल में कुछ नहीं बदलता।',
+      zh: '新外观，与首页一致：所有带边框的元素现在都有一个方角内框和四颗白金小螺丝，阴影落向左下方。用法没有任何变化。',
+      ja: 'スタートページと同じ新しい見た目になりました。枠のあるものにはすべて、角ばった内枠とホワイトゴールドの小さなねじが4本付き、影は左下に落ちます。使い方は何も変わりません。',
+      ko: '시작 페이지와 같은 새 모습입니다. 테두리가 있는 모든 요소에 각진 안쪽 틀과 화이트 골드 작은 나사 네 개가 붙었고, 그림자는 왼쪽 아래로 떨어집니다. 사용법은 그대로입니다.'
+    },
     {
       date: '2026-11-01',
       de: 'Alle Texte ohne Gedankenstriche, in allen 14 Sprachen, auch die Beschriftung des Ton-Knopfs.',
@@ -1229,6 +1348,23 @@ var NEWS = {
   ],
 
   zaehlwerk: [
+    {
+      date: '2026-11-12',
+      de: 'Neuer Look wie auf der Startseite: Alles mit Rahmen trägt jetzt einen eckigen Innenrahmen und vier kleine Schrauben in Weißgold, und die Schatten fallen nach links unten. An der Bedienung ändert sich nichts.',
+      en: 'New look, matching the start page: everything with a border now carries a square inner frame and four small white gold screws, and the shadows fall to the bottom left. Nothing changes in how you use it.',
+      es: 'Nuevo aspecto, como en la página de inicio: todo lo que tiene borde lleva ahora un marco interior recto y cuatro tornillos pequeños de oro blanco, y las sombras caen hacia abajo a la izquierda. El manejo no cambia.',
+      fr: 'Nouveau look, comme sur la page d’accueil : tout ce qui a une bordure porte désormais un cadre intérieur à angles droits et quatre petites vis en or blanc, et les ombres tombent en bas à gauche. Rien ne change à l’utilisation.',
+      it: 'Nuovo aspetto, come nella pagina iniziale: tutto ciò che ha un bordo porta ora una cornice interna squadrata e quattro piccole viti in oro bianco, e le ombre cadono in basso a sinistra. Nell’uso non cambia nulla.',
+      nl: 'Nieuwe look, zoals op de startpagina: alles met een rand heeft nu een hoekig binnenkader en vier kleine schroefjes in witgoud, en de schaduwen vallen naar linksonder. Aan de bediening verandert niets.',
+      pl: 'Nowy wygląd, jak na stronie startowej: wszystko, co ma ramkę, nosi teraz kanciastą ramkę wewnętrzną i cztery małe śrubki z białego złota, a cienie padają w lewo w dół. W obsłudze nic się nie zmienia.',
+      pt: 'Novo visual, como na página inicial: tudo o que tem borda agora traz uma moldura interna reta e quatro pequenos parafusos em ouro branco, e as sombras caem para baixo à esquerda. Nada muda no uso.',
+      tr: 'Başlangıç sayfasındaki gibi yeni görünüm: çerçevesi olan her şey artık köşeli bir iç çerçeve ve beyaz altından dört küçük vida taşıyor, gölgeler de sol alta düşüyor. Kullanımda hiçbir şey değişmiyor.',
+      ru: 'Новый вид, как на стартовой странице: у всего, что с рамкой, теперь прямоугольная внутренняя рамка и четыре маленьких винта из белого золота, а тени падают влево вниз. В управлении ничего не меняется.',
+      hi: 'शुरुआती पेज जैसा नया रूप: जिस भी चीज़ में बॉर्डर है, उसमें अब एक चौकोर भीतरी फ़्रेम और सफ़ेद सोने के चार छोटे पेंच हैं, और परछाइयाँ नीचे बाईं ओर गिरती हैं। इस्तेमाल में कुछ नहीं बदलता।',
+      zh: '新外观，与首页一致：所有带边框的元素现在都有一个方角内框和四颗白金小螺丝，阴影落向左下方。用法没有任何变化。',
+      ja: 'スタートページと同じ新しい見た目になりました。枠のあるものにはすべて、角ばった内枠とホワイトゴールドの小さなねじが4本付き、影は左下に落ちます。使い方は何も変わりません。',
+      ko: '시작 페이지와 같은 새 모습입니다. 테두리가 있는 모든 요소에 각진 안쪽 틀과 화이트 골드 작은 나사 네 개가 붙었고, 그림자는 왼쪽 아래로 떨어집니다. 사용법은 그대로입니다.'
+    },
     {
       date: '2026-11-01',
       de: 'Alle Texte samt Erklärungen ohne Gedankenstriche, in allen 14 Sprachen.',
@@ -1887,6 +2023,23 @@ var NEWS = {
   ],
   heizwarte: [
     {
+      date: '2026-11-12',
+      de: 'Neuer Look wie auf der Startseite: Alles mit Rahmen trägt jetzt einen eckigen Innenrahmen und vier kleine Schrauben in Weißgold, und die Schatten fallen nach links unten. An der Bedienung ändert sich nichts.',
+      en: 'New look, matching the start page: everything with a border now carries a square inner frame and four small white gold screws, and the shadows fall to the bottom left. Nothing changes in how you use it.',
+      es: 'Nuevo aspecto, como en la página de inicio: todo lo que tiene borde lleva ahora un marco interior recto y cuatro tornillos pequeños de oro blanco, y las sombras caen hacia abajo a la izquierda. El manejo no cambia.',
+      fr: 'Nouveau look, comme sur la page d’accueil : tout ce qui a une bordure porte désormais un cadre intérieur à angles droits et quatre petites vis en or blanc, et les ombres tombent en bas à gauche. Rien ne change à l’utilisation.',
+      it: 'Nuovo aspetto, come nella pagina iniziale: tutto ciò che ha un bordo porta ora una cornice interna squadrata e quattro piccole viti in oro bianco, e le ombre cadono in basso a sinistra. Nell’uso non cambia nulla.',
+      nl: 'Nieuwe look, zoals op de startpagina: alles met een rand heeft nu een hoekig binnenkader en vier kleine schroefjes in witgoud, en de schaduwen vallen naar linksonder. Aan de bediening verandert niets.',
+      pl: 'Nowy wygląd, jak na stronie startowej: wszystko, co ma ramkę, nosi teraz kanciastą ramkę wewnętrzną i cztery małe śrubki z białego złota, a cienie padają w lewo w dół. W obsłudze nic się nie zmienia.',
+      pt: 'Novo visual, como na página inicial: tudo o que tem borda agora traz uma moldura interna reta e quatro pequenos parafusos em ouro branco, e as sombras caem para baixo à esquerda. Nada muda no uso.',
+      tr: 'Başlangıç sayfasındaki gibi yeni görünüm: çerçevesi olan her şey artık köşeli bir iç çerçeve ve beyaz altından dört küçük vida taşıyor, gölgeler de sol alta düşüyor. Kullanımda hiçbir şey değişmiyor.',
+      ru: 'Новый вид, как на стартовой странице: у всего, что с рамкой, теперь прямоугольная внутренняя рамка и четыре маленьких винта из белого золота, а тени падают влево вниз. В управлении ничего не меняется.',
+      hi: 'शुरुआती पेज जैसा नया रूप: जिस भी चीज़ में बॉर्डर है, उसमें अब एक चौकोर भीतरी फ़्रेम और सफ़ेद सोने के चार छोटे पेंच हैं, और परछाइयाँ नीचे बाईं ओर गिरती हैं। इस्तेमाल में कुछ नहीं बदलता।',
+      zh: '新外观，与首页一致：所有带边框的元素现在都有一个方角内框和四颗白金小螺丝，阴影落向左下方。用法没有任何变化。',
+      ja: 'スタートページと同じ新しい見た目になりました。枠のあるものにはすべて、角ばった内枠とホワイトゴールドの小さなねじが4本付き、影は左下に落ちます。使い方は何も変わりません。',
+      ko: '시작 페이지와 같은 새 모습입니다. 테두리가 있는 모든 요소에 각진 안쪽 틀과 화이트 골드 작은 나사 네 개가 붙었고, 그림자는 왼쪽 아래로 떨어집니다. 사용법은 그대로입니다.'
+    },
+    {
       date: '2026-10-31',
       de: 'Heizwarte spricht jetzt 14 Sprachen, umstellen kannst du sie in den Einstellungen. Dabei sind viele deutsche Texte klarer geworden, etwa „Mittwochnacht“, „Std.“ statt „h“ und Grad statt „Kd“.',
       en: 'Heizwarte now speaks 14 languages, and you can switch the language in the settings. Several texts also got clearer along the way.',
@@ -1957,6 +2110,23 @@ var NEWS = {
   ],
   hourbridge: [
     {
+      date: '2026-11-12',
+      de: 'Neuer Look wie auf der Startseite: Alles mit Rahmen trägt jetzt einen eckigen Innenrahmen und vier kleine Schrauben in Weißgold, und die Schatten fallen nach links unten. An der Bedienung ändert sich nichts.',
+      en: 'New look, matching the start page: everything with a border now carries a square inner frame and four small white gold screws, and the shadows fall to the bottom left. Nothing changes in how you use it.',
+      es: 'Nuevo aspecto, como en la página de inicio: todo lo que tiene borde lleva ahora un marco interior recto y cuatro tornillos pequeños de oro blanco, y las sombras caen hacia abajo a la izquierda. El manejo no cambia.',
+      fr: 'Nouveau look, comme sur la page d’accueil : tout ce qui a une bordure porte désormais un cadre intérieur à angles droits et quatre petites vis en or blanc, et les ombres tombent en bas à gauche. Rien ne change à l’utilisation.',
+      it: 'Nuovo aspetto, come nella pagina iniziale: tutto ciò che ha un bordo porta ora una cornice interna squadrata e quattro piccole viti in oro bianco, e le ombre cadono in basso a sinistra. Nell’uso non cambia nulla.',
+      nl: 'Nieuwe look, zoals op de startpagina: alles met een rand heeft nu een hoekig binnenkader en vier kleine schroefjes in witgoud, en de schaduwen vallen naar linksonder. Aan de bediening verandert niets.',
+      pl: 'Nowy wygląd, jak na stronie startowej: wszystko, co ma ramkę, nosi teraz kanciastą ramkę wewnętrzną i cztery małe śrubki z białego złota, a cienie padają w lewo w dół. W obsłudze nic się nie zmienia.',
+      pt: 'Novo visual, como na página inicial: tudo o que tem borda agora traz uma moldura interna reta e quatro pequenos parafusos em ouro branco, e as sombras caem para baixo à esquerda. Nada muda no uso.',
+      tr: 'Başlangıç sayfasındaki gibi yeni görünüm: çerçevesi olan her şey artık köşeli bir iç çerçeve ve beyaz altından dört küçük vida taşıyor, gölgeler de sol alta düşüyor. Kullanımda hiçbir şey değişmiyor.',
+      ru: 'Новый вид, как на стартовой странице: у всего, что с рамкой, теперь прямоугольная внутренняя рамка и четыре маленьких винта из белого золота, а тени падают влево вниз. В управлении ничего не меняется.',
+      hi: 'शुरुआती पेज जैसा नया रूप: जिस भी चीज़ में बॉर्डर है, उसमें अब एक चौकोर भीतरी फ़्रेम और सफ़ेद सोने के चार छोटे पेंच हैं, और परछाइयाँ नीचे बाईं ओर गिरती हैं। इस्तेमाल में कुछ नहीं बदलता।',
+      zh: '新外观，与首页一致：所有带边框的元素现在都有一个方角内框和四颗白金小螺丝，阴影落向左下方。用法没有任何变化。',
+      ja: 'スタートページと同じ新しい見た目になりました。枠のあるものにはすべて、角ばった内枠とホワイトゴールドの小さなねじが4本付き、影は左下に落ちます。使い方は何も変わりません。',
+      ko: '시작 페이지와 같은 새 모습입니다. 테두리가 있는 모든 요소에 각진 안쪽 틀과 화이트 골드 작은 나사 네 개가 붙었고, 그림자는 왼쪽 아래로 떨어집니다. 사용법은 그대로입니다.'
+    },
+    {
       date: '2026-11-10',
       de: 'Erste Veröffentlichung. UTC in deutsche Zeit und zurück, für beliebig viele Orte: Antwortsatz ganz oben, eine Zeitleiste zum Ziehen, bei der alle Uhren mitlaufen, die fehlende und die doppelte Stunde bei der Zeitumstellung und eine Warnung für die Wochen, in denen USA und Europa an verschiedenen Tagen umstellen. Dazu Link, Text und Kalenderdatei (.ics), 14 Sprachen und acht Darstellungen. Als App installierbar, nach dem ersten Besuch auch offline.',
       en: 'First release. UTC to German time and back, for as many places as you like: the answer in one sentence at the top, a timeline to drag that moves every clock along, the missing and the repeated hour at clock changes, and a warning for the weeks when the US and Europe change their clocks on different days. Plus link, text and calendar file (.ics), 14 languages and eight appearances. Installable as an app, and offline after the first visit.',
@@ -1975,6 +2145,23 @@ var NEWS = {
     }
   ],
   followerlog: [
+    {
+      date: '2026-11-12',
+      de: 'Neuer Look wie auf der Startseite: Alles mit Rahmen trägt jetzt einen eckigen Innenrahmen und vier kleine Schrauben in Weißgold, und die Schatten fallen nach links unten. An der Bedienung ändert sich nichts.',
+      en: 'New look, matching the start page: everything with a border now carries a square inner frame and four small white gold screws, and the shadows fall to the bottom left. Nothing changes in how you use it.',
+      es: 'Nuevo aspecto, como en la página de inicio: todo lo que tiene borde lleva ahora un marco interior recto y cuatro tornillos pequeños de oro blanco, y las sombras caen hacia abajo a la izquierda. El manejo no cambia.',
+      fr: 'Nouveau look, comme sur la page d’accueil : tout ce qui a une bordure porte désormais un cadre intérieur à angles droits et quatre petites vis en or blanc, et les ombres tombent en bas à gauche. Rien ne change à l’utilisation.',
+      it: 'Nuovo aspetto, come nella pagina iniziale: tutto ciò che ha un bordo porta ora una cornice interna squadrata e quattro piccole viti in oro bianco, e le ombre cadono in basso a sinistra. Nell’uso non cambia nulla.',
+      nl: 'Nieuwe look, zoals op de startpagina: alles met een rand heeft nu een hoekig binnenkader en vier kleine schroefjes in witgoud, en de schaduwen vallen naar linksonder. Aan de bediening verandert niets.',
+      pl: 'Nowy wygląd, jak na stronie startowej: wszystko, co ma ramkę, nosi teraz kanciastą ramkę wewnętrzną i cztery małe śrubki z białego złota, a cienie padają w lewo w dół. W obsłudze nic się nie zmienia.',
+      pt: 'Novo visual, como na página inicial: tudo o que tem borda agora traz uma moldura interna reta e quatro pequenos parafusos em ouro branco, e as sombras caem para baixo à esquerda. Nada muda no uso.',
+      tr: 'Başlangıç sayfasındaki gibi yeni görünüm: çerçevesi olan her şey artık köşeli bir iç çerçeve ve beyaz altından dört küçük vida taşıyor, gölgeler de sol alta düşüyor. Kullanımda hiçbir şey değişmiyor.',
+      ru: 'Новый вид, как на стартовой странице: у всего, что с рамкой, теперь прямоугольная внутренняя рамка и четыре маленьких винта из белого золота, а тени падают влево вниз. В управлении ничего не меняется.',
+      hi: 'शुरुआती पेज जैसा नया रूप: जिस भी चीज़ में बॉर्डर है, उसमें अब एक चौकोर भीतरी फ़्रेम और सफ़ेद सोने के चार छोटे पेंच हैं, और परछाइयाँ नीचे बाईं ओर गिरती हैं। इस्तेमाल में कुछ नहीं बदलता।',
+      zh: '新外观，与首页一致：所有带边框的元素现在都有一个方角内框和四颗白金小螺丝，阴影落向左下方。用法没有任何变化。',
+      ja: 'スタートページと同じ新しい見た目になりました。枠のあるものにはすべて、角ばった内枠とホワイトゴールドの小さなねじが4本付き、影は左下に落ちます。使い方は何も変わりません。',
+      ko: '시작 페이지와 같은 새 모습입니다. 테두리가 있는 모든 요소에 각진 안쪽 틀과 화이트 골드 작은 나사 네 개가 붙었고, 그림자는 왼쪽 아래로 떨어집니다. 사용법은 그대로입니다.'
+    },
     {
       date: '2026-11-11',
       de: 'Erste Veröffentlichung. Eine Vorlage für dein eigenes Follower-Logbuch auf GitHub: Ein Workflow schreibt jeden Tag auf, wer dir neu folgt und wer gegangen ist. Dazu eine kleine App fürs Handy, die beim Öffnen einen neuen Abruf startet, höchstens einmal alle 178 Minuten. Deine Liste bleibt in deinem privaten Repo, die App liest sie mit einem Token, das nur für dieses eine Repo gilt. Die Einrichtung zeigt eine Anleitung in zehn Bildern. App und Anleitung sind auf Deutsch.',
@@ -2110,6 +2297,23 @@ var NEWS = {
     }
   ],
   craftionary: [
+    {
+      date: '2026-11-12',
+      de: 'Neuer Look wie auf der Startseite: Alles mit Rahmen trägt jetzt einen eckigen Innenrahmen und vier kleine Schrauben in Weißgold, und die Schatten fallen nach links unten. An der Bedienung ändert sich nichts.',
+      en: 'New look, matching the start page: everything with a border now carries a square inner frame and four small white gold screws, and the shadows fall to the bottom left. Nothing changes in how you use it.',
+      es: 'Nuevo aspecto, como en la página de inicio: todo lo que tiene borde lleva ahora un marco interior recto y cuatro tornillos pequeños de oro blanco, y las sombras caen hacia abajo a la izquierda. El manejo no cambia.',
+      fr: 'Nouveau look, comme sur la page d’accueil : tout ce qui a une bordure porte désormais un cadre intérieur à angles droits et quatre petites vis en or blanc, et les ombres tombent en bas à gauche. Rien ne change à l’utilisation.',
+      it: 'Nuovo aspetto, come nella pagina iniziale: tutto ciò che ha un bordo porta ora una cornice interna squadrata e quattro piccole viti in oro bianco, e le ombre cadono in basso a sinistra. Nell’uso non cambia nulla.',
+      nl: 'Nieuwe look, zoals op de startpagina: alles met een rand heeft nu een hoekig binnenkader en vier kleine schroefjes in witgoud, en de schaduwen vallen naar linksonder. Aan de bediening verandert niets.',
+      pl: 'Nowy wygląd, jak na stronie startowej: wszystko, co ma ramkę, nosi teraz kanciastą ramkę wewnętrzną i cztery małe śrubki z białego złota, a cienie padają w lewo w dół. W obsłudze nic się nie zmienia.',
+      pt: 'Novo visual, como na página inicial: tudo o que tem borda agora traz uma moldura interna reta e quatro pequenos parafusos em ouro branco, e as sombras caem para baixo à esquerda. Nada muda no uso.',
+      tr: 'Başlangıç sayfasındaki gibi yeni görünüm: çerçevesi olan her şey artık köşeli bir iç çerçeve ve beyaz altından dört küçük vida taşıyor, gölgeler de sol alta düşüyor. Kullanımda hiçbir şey değişmiyor.',
+      ru: 'Новый вид, как на стартовой странице: у всего, что с рамкой, теперь прямоугольная внутренняя рамка и четыре маленьких винта из белого золота, а тени падают влево вниз. В управлении ничего не меняется.',
+      hi: 'शुरुआती पेज जैसा नया रूप: जिस भी चीज़ में बॉर्डर है, उसमें अब एक चौकोर भीतरी फ़्रेम और सफ़ेद सोने के चार छोटे पेंच हैं, और परछाइयाँ नीचे बाईं ओर गिरती हैं। इस्तेमाल में कुछ नहीं बदलता।',
+      zh: '新外观，与首页一致：所有带边框的元素现在都有一个方角内框和四颗白金小螺丝，阴影落向左下方。用法没有任何变化。',
+      ja: 'スタートページと同じ新しい見た目になりました。枠のあるものにはすべて、角ばった内枠とホワイトゴールドの小さなねじが4本付き、影は左下に落ちます。使い方は何も変わりません。',
+      ko: '시작 페이지와 같은 새 모습입니다. 테두리가 있는 모든 요소에 각진 안쪽 틀과 화이트 골드 작은 나사 네 개가 붙었고, 그림자는 왼쪽 아래로 떨어집니다. 사용법은 그대로입니다.'
+    },
     {
       date: '2026-11-01',
       de: 'Am Handy passen die Einstellungen jetzt ganz auf den Bildschirm, „Schließen“ rutscht bei Bedarf unter den Titel und der Windows-Pfad bricht um, statt rechts abgeschnitten zu sein.',
@@ -2265,6 +2469,23 @@ var NEWS = {
     }
   ],
   vault: [
+    {
+      date: '2026-11-12',
+      de: 'Neuer Look wie auf der Startseite: Alles mit Rahmen trägt jetzt einen eckigen Innenrahmen und vier kleine Schrauben in Weißgold, und die Schatten fallen nach links unten. An der Bedienung ändert sich nichts.',
+      en: 'New look, matching the start page: everything with a border now carries a square inner frame and four small white gold screws, and the shadows fall to the bottom left. Nothing changes in how you use it.',
+      es: 'Nuevo aspecto, como en la página de inicio: todo lo que tiene borde lleva ahora un marco interior recto y cuatro tornillos pequeños de oro blanco, y las sombras caen hacia abajo a la izquierda. El manejo no cambia.',
+      fr: 'Nouveau look, comme sur la page d’accueil : tout ce qui a une bordure porte désormais un cadre intérieur à angles droits et quatre petites vis en or blanc, et les ombres tombent en bas à gauche. Rien ne change à l’utilisation.',
+      it: 'Nuovo aspetto, come nella pagina iniziale: tutto ciò che ha un bordo porta ora una cornice interna squadrata e quattro piccole viti in oro bianco, e le ombre cadono in basso a sinistra. Nell’uso non cambia nulla.',
+      nl: 'Nieuwe look, zoals op de startpagina: alles met een rand heeft nu een hoekig binnenkader en vier kleine schroefjes in witgoud, en de schaduwen vallen naar linksonder. Aan de bediening verandert niets.',
+      pl: 'Nowy wygląd, jak na stronie startowej: wszystko, co ma ramkę, nosi teraz kanciastą ramkę wewnętrzną i cztery małe śrubki z białego złota, a cienie padają w lewo w dół. W obsłudze nic się nie zmienia.',
+      pt: 'Novo visual, como na página inicial: tudo o que tem borda agora traz uma moldura interna reta e quatro pequenos parafusos em ouro branco, e as sombras caem para baixo à esquerda. Nada muda no uso.',
+      tr: 'Başlangıç sayfasındaki gibi yeni görünüm: çerçevesi olan her şey artık köşeli bir iç çerçeve ve beyaz altından dört küçük vida taşıyor, gölgeler de sol alta düşüyor. Kullanımda hiçbir şey değişmiyor.',
+      ru: 'Новый вид, как на стартовой странице: у всего, что с рамкой, теперь прямоугольная внутренняя рамка и четыре маленьких винта из белого золота, а тени падают влево вниз. В управлении ничего не меняется.',
+      hi: 'शुरुआती पेज जैसा नया रूप: जिस भी चीज़ में बॉर्डर है, उसमें अब एक चौकोर भीतरी फ़्रेम और सफ़ेद सोने के चार छोटे पेंच हैं, और परछाइयाँ नीचे बाईं ओर गिरती हैं। इस्तेमाल में कुछ नहीं बदलता।',
+      zh: '新外观，与首页一致：所有带边框的元素现在都有一个方角内框和四颗白金小螺丝，阴影落向左下方。用法没有任何变化。',
+      ja: 'スタートページと同じ新しい見た目になりました。枠のあるものにはすべて、角ばった内枠とホワイトゴールドの小さなねじが4本付き、影は左下に落ちます。使い方は何も変わりません。',
+      ko: '시작 페이지와 같은 새 모습입니다. 테두리가 있는 모든 요소에 각진 안쪽 틀과 화이트 골드 작은 나사 네 개가 붙었고, 그림자는 왼쪽 아래로 떨어집니다. 사용법은 그대로입니다.'
+    },
     {
       date: '2026-11-05',
       de: 'Maurice’s Black Market zeigt in der Wochenkarte jetzt eine Infografik mit Karte, Weg und Automat, und zwar jede Woche neu. Dazu hat der Tediore Digi-Rift ein Gebietsbild bekommen.',
@@ -2438,6 +2659,23 @@ var NEWS = {
   ],
   ruestkammer: [
     {
+      date: '2026-11-12',
+      de: 'Neuer Look wie auf der Startseite: Alles mit Rahmen trägt jetzt einen eckigen Innenrahmen und vier kleine Schrauben in Weißgold, und die Schatten fallen nach links unten. An der Bedienung ändert sich nichts.',
+      en: 'New look, matching the start page: everything with a border now carries a square inner frame and four small white gold screws, and the shadows fall to the bottom left. Nothing changes in how you use it.',
+      es: 'Nuevo aspecto, como en la página de inicio: todo lo que tiene borde lleva ahora un marco interior recto y cuatro tornillos pequeños de oro blanco, y las sombras caen hacia abajo a la izquierda. El manejo no cambia.',
+      fr: 'Nouveau look, comme sur la page d’accueil : tout ce qui a une bordure porte désormais un cadre intérieur à angles droits et quatre petites vis en or blanc, et les ombres tombent en bas à gauche. Rien ne change à l’utilisation.',
+      it: 'Nuovo aspetto, come nella pagina iniziale: tutto ciò che ha un bordo porta ora una cornice interna squadrata e quattro piccole viti in oro bianco, e le ombre cadono in basso a sinistra. Nell’uso non cambia nulla.',
+      nl: 'Nieuwe look, zoals op de startpagina: alles met een rand heeft nu een hoekig binnenkader en vier kleine schroefjes in witgoud, en de schaduwen vallen naar linksonder. Aan de bediening verandert niets.',
+      pl: 'Nowy wygląd, jak na stronie startowej: wszystko, co ma ramkę, nosi teraz kanciastą ramkę wewnętrzną i cztery małe śrubki z białego złota, a cienie padają w lewo w dół. W obsłudze nic się nie zmienia.',
+      pt: 'Novo visual, como na página inicial: tudo o que tem borda agora traz uma moldura interna reta e quatro pequenos parafusos em ouro branco, e as sombras caem para baixo à esquerda. Nada muda no uso.',
+      tr: 'Başlangıç sayfasındaki gibi yeni görünüm: çerçevesi olan her şey artık köşeli bir iç çerçeve ve beyaz altından dört küçük vida taşıyor, gölgeler de sol alta düşüyor. Kullanımda hiçbir şey değişmiyor.',
+      ru: 'Новый вид, как на стартовой странице: у всего, что с рамкой, теперь прямоугольная внутренняя рамка и четыре маленьких винта из белого золота, а тени падают влево вниз. В управлении ничего не меняется.',
+      hi: 'शुरुआती पेज जैसा नया रूप: जिस भी चीज़ में बॉर्डर है, उसमें अब एक चौकोर भीतरी फ़्रेम और सफ़ेद सोने के चार छोटे पेंच हैं, और परछाइयाँ नीचे बाईं ओर गिरती हैं। इस्तेमाल में कुछ नहीं बदलता।',
+      zh: '新外观，与首页一致：所有带边框的元素现在都有一个方角内框和四颗白金小螺丝，阴影落向左下方。用法没有任何变化。',
+      ja: 'スタートページと同じ新しい見た目になりました。枠のあるものにはすべて、角ばった内枠とホワイトゴールドの小さなねじが4本付き、影は左下に落ちます。使い方は何も変わりません。',
+      ko: '시작 페이지와 같은 새 모습입니다. 테두리가 있는 모든 요소에 각진 안쪽 틀과 화이트 골드 작은 나사 네 개가 붙었고, 그림자는 왼쪽 아래로 떨어집니다. 사용법은 그대로입니다.'
+    },
+    {
       date: '2026-11-01',
       de: 'Bedienung und Handbuch-Hinweise ohne Gedankenstriche, die Bedienung in allen 14 Sprachen. Die Quellen stehen jetzt mit Mittelpunkt da.',
       en: 'Controls and handbook notes without dashes, the controls in all 14 languages. The sources are now listed with a middle dot.',
@@ -2541,6 +2779,23 @@ var NEWS = {
     }
   ],
   pocketsum: [
+    {
+      date: '2026-11-12',
+      de: 'Neuer Look wie auf der Startseite: Alles mit Rahmen trägt jetzt einen eckigen Innenrahmen und vier kleine Schrauben in Weißgold, und die Schatten fallen nach links unten. An der Bedienung ändert sich nichts.',
+      en: 'New look, matching the start page: everything with a border now carries a square inner frame and four small white gold screws, and the shadows fall to the bottom left. Nothing changes in how you use it.',
+      es: 'Nuevo aspecto, como en la página de inicio: todo lo que tiene borde lleva ahora un marco interior recto y cuatro tornillos pequeños de oro blanco, y las sombras caen hacia abajo a la izquierda. El manejo no cambia.',
+      fr: 'Nouveau look, comme sur la page d’accueil : tout ce qui a une bordure porte désormais un cadre intérieur à angles droits et quatre petites vis en or blanc, et les ombres tombent en bas à gauche. Rien ne change à l’utilisation.',
+      it: 'Nuovo aspetto, come nella pagina iniziale: tutto ciò che ha un bordo porta ora una cornice interna squadrata e quattro piccole viti in oro bianco, e le ombre cadono in basso a sinistra. Nell’uso non cambia nulla.',
+      nl: 'Nieuwe look, zoals op de startpagina: alles met een rand heeft nu een hoekig binnenkader en vier kleine schroefjes in witgoud, en de schaduwen vallen naar linksonder. Aan de bediening verandert niets.',
+      pl: 'Nowy wygląd, jak na stronie startowej: wszystko, co ma ramkę, nosi teraz kanciastą ramkę wewnętrzną i cztery małe śrubki z białego złota, a cienie padają w lewo w dół. W obsłudze nic się nie zmienia.',
+      pt: 'Novo visual, como na página inicial: tudo o que tem borda agora traz uma moldura interna reta e quatro pequenos parafusos em ouro branco, e as sombras caem para baixo à esquerda. Nada muda no uso.',
+      tr: 'Başlangıç sayfasındaki gibi yeni görünüm: çerçevesi olan her şey artık köşeli bir iç çerçeve ve beyaz altından dört küçük vida taşıyor, gölgeler de sol alta düşüyor. Kullanımda hiçbir şey değişmiyor.',
+      ru: 'Новый вид, как на стартовой странице: у всего, что с рамкой, теперь прямоугольная внутренняя рамка и четыре маленьких винта из белого золота, а тени падают влево вниз. В управлении ничего не меняется.',
+      hi: 'शुरुआती पेज जैसा नया रूप: जिस भी चीज़ में बॉर्डर है, उसमें अब एक चौकोर भीतरी फ़्रेम और सफ़ेद सोने के चार छोटे पेंच हैं, और परछाइयाँ नीचे बाईं ओर गिरती हैं। इस्तेमाल में कुछ नहीं बदलता।',
+      zh: '新外观，与首页一致：所有带边框的元素现在都有一个方角内框和四颗白金小螺丝，阴影落向左下方。用法没有任何变化。',
+      ja: 'スタートページと同じ新しい見た目になりました。枠のあるものにはすべて、角ばった内枠とホワイトゴールドの小さなねじが4本付き、影は左下に落ちます。使い方は何も変わりません。',
+      ko: '시작 페이지와 같은 새 모습입니다. 테두리가 있는 모든 요소에 각진 안쪽 틀과 화이트 골드 작은 나사 네 개가 붙었고, 그림자는 왼쪽 아래로 떨어집니다. 사용법은 그대로입니다.'
+    },
     {
       date: '2026-11-01',
       de: 'Alle Texte ohne Gedankenstriche, in allen 14 Sprachen, auch der Titel im Browser-Tab.',
