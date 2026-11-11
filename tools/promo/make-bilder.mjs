@@ -25,7 +25,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { dirname, resolve, join } from 'node:path';
 import { homedir } from 'node:os';
 import { mkdir, writeFile, readFile, stat, copyFile } from 'node:fs/promises';
-import { MARKE, TOOLS, FORMATE, MARKENFORMATE, KACHELN, iconSvg, KISTE_UMRISS } from './marke.mjs';
+import { MARKE, TOOLS, FORMATE, MARKENFORMATE, KACHELN, SCHRAUBEN, iconSvg, KISTE_UMRISS } from './marke.mjs';
 
 const hier = dirname(fileURLToPath(import.meta.url));
 const ZIEL = resolve(hier, '..', 'Bilder');
@@ -92,8 +92,21 @@ const kopf = (b, h) => `<!doctype html><html lang="de"><head><meta charset="utf-
   .raster{position:absolute;inset:0}
   .schild{font-family:${SCHILD};font-weight:560}
   .kachel{position:relative;isolation:isolate;border-radius:calc(8px * var(--k));
-          background:${MARKE.schleier};border:1px solid ${MARKE.linie};
-          box-shadow:0 calc(10px * var(--k)) calc(30px * var(--k)) rgba(0,0,0,.5),
+          border:1px solid ${MARKE.linie};
+          /* Beschlag wie auf der Startseite: eckiger Rahmen 7 px innerhalb der Rundung
+           * (vier Linien), in jeder Ecke eine Schraube. Schatten nach links unten. */
+          --bl:${mit('var(--tool)', 42)};
+          background:
+            ${SCHRAUBEN[0]} left calc(10px * var(--k)) top calc(10px * var(--k)) / calc(9px * var(--k)) calc(9px * var(--k)) no-repeat,
+            ${SCHRAUBEN[1]} right calc(10px * var(--k)) top calc(10px * var(--k)) / calc(9px * var(--k)) calc(9px * var(--k)) no-repeat,
+            ${SCHRAUBEN[2]} left calc(10px * var(--k)) bottom calc(10px * var(--k)) / calc(9px * var(--k)) calc(9px * var(--k)) no-repeat,
+            ${SCHRAUBEN[3]} right calc(10px * var(--k)) bottom calc(10px * var(--k)) / calc(9px * var(--k)) calc(9px * var(--k)) no-repeat,
+            linear-gradient(var(--bl), var(--bl)) center top calc(7px * var(--k)) / calc(100% - 14px * var(--k)) calc(1px * var(--k)) no-repeat,
+            linear-gradient(var(--bl), var(--bl)) center bottom calc(7px * var(--k)) / calc(100% - 14px * var(--k)) calc(1px * var(--k)) no-repeat,
+            linear-gradient(var(--bl), var(--bl)) left calc(7px * var(--k)) center / calc(1px * var(--k)) calc(100% - 14px * var(--k)) no-repeat,
+            linear-gradient(var(--bl), var(--bl)) right calc(7px * var(--k)) center / calc(1px * var(--k)) calc(100% - 14px * var(--k)) no-repeat,
+            ${MARKE.schleier};
+          box-shadow:calc(-12px * var(--k)) calc(14px * var(--k)) calc(30px * var(--k)) rgba(0,0,0,.5),
                      0 calc(-10px * var(--k)) calc(30px * var(--k)) calc(-16px * var(--k)) ${mit('var(--tool)', 62)}}
   .kachel::after{content:'';position:absolute;inset:0;z-index:-1;border-radius:inherit;background:var(--tool-flow);
           opacity:.17;filter:blur(calc(12px * var(--k)));

@@ -181,6 +181,8 @@ const ICONS = {
   /* Ab hier die Icons, die seit dem 15.09.2026 auf die Startseite kamen. Jeweils
    * der Inhalt von assets/<name>.svg, unverändert. */
   heizwarte: `<rect x="2" y="2" width="44" height="44" rx="11" fill="#0b6b93"/><path d="M10 24 24 12l14 12" fill="none" stroke="#e0f2fe" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 22v14h20V22" fill="none" stroke="#e0f2fe" stroke-width="3" stroke-linejoin="round"/><rect x="22.5" y="21" width="3" height="10" rx="1.5" fill="#fde047"/><circle cx="24" cy="31.5" r="3.5" fill="#f87171"/>`,
+  /* hourbridge.svg zeichnet auf 64, hier auf 48 verkleinert. */
+  hourbridge: `<g transform="scale(0.75)"><rect width="64" height="64" rx="16" fill="#131E28"/><path d="M32 12a20 20 0 0 0 0 40Z" fill="#29405A"/><path d="M32 12a20 20 0 0 1 0 40Z" fill="#0F1A2B"/><circle cx="32" cy="32" r="20" fill="none" stroke="#B699C1" stroke-width="3"/><path d="M32 20v12l8 5" fill="none" stroke="#D8D1E2" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="32" r="2.6" fill="#D8D1E2"/></g>`,
   /* follower-log.svg zeichnet auf 100, hier auf 48 verkleinert. */
   followerlog: `<g transform="scale(0.48)"><rect width="100" height="100" rx="18" fill="#0f1115"/><circle cx="38.8" cy="38.8" r="10.4" fill="#8fa3c4"/><path d="M19.6 74.8a19.2 19.2 0 0 1 38.4 0z" fill="#8fa3c4"/><rect x="59.6" y="38.4" width="20.8" height="4" fill="#7FE39B"/><rect x="68" y="30" width="4" height="20.8" fill="#7FE39B"/><rect x="59.6" y="60.8" width="20.8" height="4" fill="#FF9A92"/></g>`,
   /* pocketsum.svg hat als einziges ein 44er-Feld; um 2 verschoben sitzt es
@@ -665,6 +667,31 @@ export const TOOLS = [
     hatSeite: false,
   },
   {
+    /* Nachgetragen am 11.11.2026: Hourbridge hatte seit dem 10.11. eine Kachel,
+     * aber keinen Eintrag hier. Farben wie --hourbridge-flow (dunkle Fassung). */
+    slug: 'hourbridge',
+    name: 'Hourbridge',
+    icon: 'hourbridge',
+    farbe: '#B699C1',
+    flow: 'linear-gradient(100deg, #B699C1, #8CA7CE, #7EB39D)',
+    nameFlow: true,
+    claimDe: 'UTC in deutsche Zeit und zurück.',
+    claimEn: 'UTC to German time and back',
+    zusagen: ['Kostenlos', 'ohne Cookies', 'offline nach dem ersten Besuch'],
+    url: 'dennismit2n.github.io/hourbridge',
+    story: [
+      { ober: 'Termine über Zeitzonen', gross: 'Wie spät ist 14:00 UTC bei uns?', unter: 'Und gilt das auch noch in der Woche, in der die USA schon umgestellt haben?' },
+      { ober: 'So geht es', gross: 'Ort eintippen, Zeitleiste ziehen.', unter: 'Alle Uhren laufen mit. Die fehlende und die doppelte Stunde bei der Zeitumstellung zeigt Hourbridge an, für beliebig viele Orte.' },
+      { ober: 'Kostenlos & quelloffen', gross: 'Jetzt umrechnen', unter: 'dennismit2n.github.io/hourbridge' },
+    ],
+    repo: 'hourbridge',
+    /* Hourbridge zeichnet sein og.png selbst (tools/bilder.mjs im Repo, mit der
+     * Zeile „14:00 UTC ist 15:00 MEZ in Berlin“). Das bleibt, deshalb geht von
+     * hier nur das Bild für GitHub nach docs/. */
+    assetOrdner: 'docs',
+    hatSeite: false,
+  },
+  {
     /* Eingetragen am 11.11.2026 mit der Kachel. Rot und Grün im Wechsel wie
      * --followerlog-flow der Startseite (dunkle Fassung, Deckkraft 88 %). */
     slug: 'follower-log',
@@ -741,9 +768,19 @@ export const TOOLS = [
  * für die Icon-Reihe der Banner. Der Zählwerk Ticker hat keine eigene Kachel. */
 export const KACHELN = [
   'create-masterprompt', 'werkstatt-mods', 'real-ram-cooler', 'fontart-demo',
-  'prismatical', 'spectroton', 'shrinkling', 'wifi-qr', 'heizwarte', 'follower-log', 'pocketsum',
+  'prismatical', 'spectroton', 'shrinkling', 'wifi-qr', 'heizwarte', 'hourbridge',
+  'follower-log', 'pocketsum',
   'zaehlwerk', 'besucher-ticker', 'collective-calc', 'dreh-das-rad', 'gaming',
   'bigday', 'fadenkreuz',
+];
+
+/* Beschlag der Kacheln wie auf der Startseite (css/style.css, --schraube-1 bis -4,
+ * seit 11.11.2026): vier Schrauben in Weißgold, jede in einem anderen Winkel. */
+export const SCHRAUBEN = [
+  'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 12 12\'%3E%3Cdefs%3E%3CradialGradient id=\'s\' cx=\'42%\' cy=\'58%\' r=\'50%\'%3E%3Cstop offset=\'55%\' stop-opacity=\'.6\'/%3E%3Cstop offset=\'100%\' stop-opacity=\'0\'/%3E%3C/radialGradient%3E%3CradialGradient id=\'k\' cx=\'66%\' cy=\'30%\' r=\'78%\'%3E%3Cstop offset=\'0\' stop-color=\'%23FFFFFF\'/%3E%3Cstop offset=\'.2\' stop-color=\'%23FFFCEE\'/%3E%3Cstop offset=\'.5\' stop-color=\'%23F1E4BC\'/%3E%3Cstop offset=\'.8\' stop-color=\'%23C4A964\'/%3E%3Cstop offset=\'1\' stop-color=\'%237A6226\'/%3E%3C/radialGradient%3E%3ClinearGradient id=\'m\' x1=\'1\' y1=\'0\' x2=\'0\' y2=\'1\'%3E%3Cstop offset=\'0\' stop-color=\'%238A6A22\' stop-opacity=\'.55\'/%3E%3Cstop offset=\'.5\' stop-color=\'%23FFF3C4\' stop-opacity=\'0\'/%3E%3Cstop offset=\'1\' stop-color=\'%23FFFBEA\' stop-opacity=\'.7\'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx=\'5.1\' cy=\'6.9\' r=\'5\' fill=\'url(%23s)\'/%3E%3Ccircle cx=\'6\' cy=\'6\' r=\'4.3\' fill=\'url(%23k)\'/%3E%3Ccircle cx=\'6\' cy=\'6\' r=\'4.3\' fill=\'none\' stroke=\'%23553E0C\' stroke-opacity=\'.6\' stroke-width=\'.45\'/%3E%3Ccircle cx=\'6\' cy=\'6\' r=\'2.9\' fill=\'none\' stroke=\'url(%23m)\' stroke-width=\'.5\'/%3E%3Cg transform=\'rotate(32 6 6)\'%3E%3Cpath d=\'M2.5 6h7\' stroke=\'%233A2A07\' stroke-width=\'1.2\' stroke-linecap=\'round\'/%3E%3Cpath d=\'M2.7 6.62h6.6\' stroke=\'%23FFF7DA\' stroke-opacity=\'.75\' stroke-width=\'.3\' stroke-linecap=\'round\'/%3E%3C/g%3E%3Cellipse cx=\'7.7\' cy=\'3.9\' rx=\'1.05\' ry=\'.6\' transform=\'rotate(-35 7.7 3.9)\' fill=\'%23FFFFFF\' fill-opacity=\'.9\'/%3E%3C/svg%3E")',
+  'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 12 12\'%3E%3Cdefs%3E%3CradialGradient id=\'s\' cx=\'42%\' cy=\'58%\' r=\'50%\'%3E%3Cstop offset=\'55%\' stop-opacity=\'.6\'/%3E%3Cstop offset=\'100%\' stop-opacity=\'0\'/%3E%3C/radialGradient%3E%3CradialGradient id=\'k\' cx=\'66%\' cy=\'30%\' r=\'78%\'%3E%3Cstop offset=\'0\' stop-color=\'%23FFFFFF\'/%3E%3Cstop offset=\'.2\' stop-color=\'%23FFFCEE\'/%3E%3Cstop offset=\'.5\' stop-color=\'%23F1E4BC\'/%3E%3Cstop offset=\'.8\' stop-color=\'%23C4A964\'/%3E%3Cstop offset=\'1\' stop-color=\'%237A6226\'/%3E%3C/radialGradient%3E%3ClinearGradient id=\'m\' x1=\'1\' y1=\'0\' x2=\'0\' y2=\'1\'%3E%3Cstop offset=\'0\' stop-color=\'%238A6A22\' stop-opacity=\'.55\'/%3E%3Cstop offset=\'.5\' stop-color=\'%23FFF3C4\' stop-opacity=\'0\'/%3E%3Cstop offset=\'1\' stop-color=\'%23FFFBEA\' stop-opacity=\'.7\'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx=\'5.1\' cy=\'6.9\' r=\'5\' fill=\'url(%23s)\'/%3E%3Ccircle cx=\'6\' cy=\'6\' r=\'4.3\' fill=\'url(%23k)\'/%3E%3Ccircle cx=\'6\' cy=\'6\' r=\'4.3\' fill=\'none\' stroke=\'%23553E0C\' stroke-opacity=\'.6\' stroke-width=\'.45\'/%3E%3Ccircle cx=\'6\' cy=\'6\' r=\'2.9\' fill=\'none\' stroke=\'url(%23m)\' stroke-width=\'.5\'/%3E%3Cg transform=\'rotate(-58 6 6)\'%3E%3Cpath d=\'M2.5 6h7\' stroke=\'%233A2A07\' stroke-width=\'1.2\' stroke-linecap=\'round\'/%3E%3Cpath d=\'M2.7 6.62h6.6\' stroke=\'%23FFF7DA\' stroke-opacity=\'.75\' stroke-width=\'.3\' stroke-linecap=\'round\'/%3E%3C/g%3E%3Cellipse cx=\'7.7\' cy=\'3.9\' rx=\'1.05\' ry=\'.6\' transform=\'rotate(-35 7.7 3.9)\' fill=\'%23FFFFFF\' fill-opacity=\'.9\'/%3E%3C/svg%3E")',
+  'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 12 12\'%3E%3Cdefs%3E%3CradialGradient id=\'s\' cx=\'42%\' cy=\'58%\' r=\'50%\'%3E%3Cstop offset=\'55%\' stop-opacity=\'.6\'/%3E%3Cstop offset=\'100%\' stop-opacity=\'0\'/%3E%3C/radialGradient%3E%3CradialGradient id=\'k\' cx=\'66%\' cy=\'30%\' r=\'78%\'%3E%3Cstop offset=\'0\' stop-color=\'%23FFFFFF\'/%3E%3Cstop offset=\'.2\' stop-color=\'%23FFFCEE\'/%3E%3Cstop offset=\'.5\' stop-color=\'%23F1E4BC\'/%3E%3Cstop offset=\'.8\' stop-color=\'%23C4A964\'/%3E%3Cstop offset=\'1\' stop-color=\'%237A6226\'/%3E%3C/radialGradient%3E%3ClinearGradient id=\'m\' x1=\'1\' y1=\'0\' x2=\'0\' y2=\'1\'%3E%3Cstop offset=\'0\' stop-color=\'%238A6A22\' stop-opacity=\'.55\'/%3E%3Cstop offset=\'.5\' stop-color=\'%23FFF3C4\' stop-opacity=\'0\'/%3E%3Cstop offset=\'1\' stop-color=\'%23FFFBEA\' stop-opacity=\'.7\'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx=\'5.1\' cy=\'6.9\' r=\'5\' fill=\'url(%23s)\'/%3E%3Ccircle cx=\'6\' cy=\'6\' r=\'4.3\' fill=\'url(%23k)\'/%3E%3Ccircle cx=\'6\' cy=\'6\' r=\'4.3\' fill=\'none\' stroke=\'%23553E0C\' stroke-opacity=\'.6\' stroke-width=\'.45\'/%3E%3Ccircle cx=\'6\' cy=\'6\' r=\'2.9\' fill=\'none\' stroke=\'url(%23m)\' stroke-width=\'.5\'/%3E%3Cg transform=\'rotate(78 6 6)\'%3E%3Cpath d=\'M2.5 6h7\' stroke=\'%233A2A07\' stroke-width=\'1.2\' stroke-linecap=\'round\'/%3E%3Cpath d=\'M2.7 6.62h6.6\' stroke=\'%23FFF7DA\' stroke-opacity=\'.75\' stroke-width=\'.3\' stroke-linecap=\'round\'/%3E%3C/g%3E%3Cellipse cx=\'7.7\' cy=\'3.9\' rx=\'1.05\' ry=\'.6\' transform=\'rotate(-35 7.7 3.9)\' fill=\'%23FFFFFF\' fill-opacity=\'.9\'/%3E%3C/svg%3E")',
+  'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 12 12\'%3E%3Cdefs%3E%3CradialGradient id=\'s\' cx=\'42%\' cy=\'58%\' r=\'50%\'%3E%3Cstop offset=\'55%\' stop-opacity=\'.6\'/%3E%3Cstop offset=\'100%\' stop-opacity=\'0\'/%3E%3C/radialGradient%3E%3CradialGradient id=\'k\' cx=\'66%\' cy=\'30%\' r=\'78%\'%3E%3Cstop offset=\'0\' stop-color=\'%23FFFFFF\'/%3E%3Cstop offset=\'.2\' stop-color=\'%23FFFCEE\'/%3E%3Cstop offset=\'.5\' stop-color=\'%23F1E4BC\'/%3E%3Cstop offset=\'.8\' stop-color=\'%23C4A964\'/%3E%3Cstop offset=\'1\' stop-color=\'%237A6226\'/%3E%3C/radialGradient%3E%3ClinearGradient id=\'m\' x1=\'1\' y1=\'0\' x2=\'0\' y2=\'1\'%3E%3Cstop offset=\'0\' stop-color=\'%238A6A22\' stop-opacity=\'.55\'/%3E%3Cstop offset=\'.5\' stop-color=\'%23FFF3C4\' stop-opacity=\'0\'/%3E%3Cstop offset=\'1\' stop-color=\'%23FFFBEA\' stop-opacity=\'.7\'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx=\'5.1\' cy=\'6.9\' r=\'5\' fill=\'url(%23s)\'/%3E%3Ccircle cx=\'6\' cy=\'6\' r=\'4.3\' fill=\'url(%23k)\'/%3E%3Ccircle cx=\'6\' cy=\'6\' r=\'4.3\' fill=\'none\' stroke=\'%23553E0C\' stroke-opacity=\'.6\' stroke-width=\'.45\'/%3E%3Ccircle cx=\'6\' cy=\'6\' r=\'2.9\' fill=\'none\' stroke=\'url(%23m)\' stroke-width=\'.5\'/%3E%3Cg transform=\'rotate(-14 6 6)\'%3E%3Cpath d=\'M2.5 6h7\' stroke=\'%233A2A07\' stroke-width=\'1.2\' stroke-linecap=\'round\'/%3E%3Cpath d=\'M2.7 6.62h6.6\' stroke=\'%23FFF7DA\' stroke-opacity=\'.75\' stroke-width=\'.3\' stroke-linecap=\'round\'/%3E%3C/g%3E%3Cellipse cx=\'7.7\' cy=\'3.9\' rx=\'1.05\' ry=\'.6\' transform=\'rotate(-35 7.7 3.9)\' fill=\'%23FFFFFF\' fill-opacity=\'.9\'/%3E%3C/svg%3E")',
 ];
 
 export function iconSvg(schluessel, groesse) {
