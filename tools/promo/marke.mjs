@@ -181,6 +181,8 @@ const ICONS = {
   /* Ab hier die Icons, die seit dem 15.09.2026 auf die Startseite kamen. Jeweils
    * der Inhalt von assets/<name>.svg, unverändert. */
   heizwarte: `<rect x="2" y="2" width="44" height="44" rx="11" fill="#0b6b93"/><path d="M10 24 24 12l14 12" fill="none" stroke="#e0f2fe" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 22v14h20V22" fill="none" stroke="#e0f2fe" stroke-width="3" stroke-linejoin="round"/><rect x="22.5" y="21" width="3" height="10" rx="1.5" fill="#fde047"/><circle cx="24" cy="31.5" r="3.5" fill="#f87171"/>`,
+  /* follower-log.svg zeichnet auf 100, hier auf 48 verkleinert. */
+  followerlog: `<g transform="scale(0.48)"><rect width="100" height="100" rx="18" fill="#0f1115"/><circle cx="38.8" cy="38.8" r="10.4" fill="#8fa3c4"/><path d="M19.6 74.8a19.2 19.2 0 0 1 38.4 0z" fill="#8fa3c4"/><rect x="59.6" y="38.4" width="20.8" height="4" fill="#7FE39B"/><rect x="68" y="30" width="4" height="20.8" fill="#7FE39B"/><rect x="59.6" y="60.8" width="20.8" height="4" fill="#FF9A92"/></g>`,
   /* pocketsum.svg hat als einziges ein 44er-Feld; um 2 verschoben sitzt es
    * genau wie die anderen. */
   pocketsum: `<g transform="translate(2 2)"><rect width="44" height="44" rx="11" fill="#181831"/>
@@ -663,6 +665,28 @@ export const TOOLS = [
     hatSeite: false,
   },
   {
+    /* Eingetragen am 11.11.2026 mit der Kachel. Rot und Grün im Wechsel wie
+     * --followerlog-flow der Startseite (dunkle Fassung, Deckkraft 88 %). */
+    slug: 'follower-log',
+    name: 'Follower-Log',
+    icon: 'followerlog',
+    farbe: '#7FE39B',
+    flow: 'linear-gradient(100deg, #FF9A92E0, #7FE39BE0, #FF9A92E0, #7FE39BE0, #FF9A92E0, #7FE39BE0)',
+    nameFlow: true,
+    claimDe: 'Wer folgt dir, wer ist gegangen?',
+    claimEn: 'Who follows you, who has left?',
+    zusagen: ['Kostenlos', 'GitHub-Vorlage', 'läuft in deinem eigenen Repo'],
+    url: 'dennismit2n.github.io/follower-log-vorlage',
+    story: [
+      { ober: 'Für alle mit GitHub-Konto', gross: 'Wer ist eigentlich gegangen?', unter: 'GitHub zeigt dir nur die aktuelle Liste. Wer dir nicht mehr folgt, erfährst du dort nicht.' },
+      { ober: 'So geht es', gross: 'Vorlage kopieren, App öffnen.', unter: 'Ein Workflow schreibt jeden Tag auf, wer neu ist und wer weg ist. Die App fürs Handy zeigt das Logbuch aus deinem privaten Repo.' },
+      { ober: 'Kostenlos & quelloffen', gross: 'Vorlage ansehen', unter: 'dennismit2n.github.io/follower-log-vorlage' },
+    ],
+    repo: 'follower-log-vorlage',
+    /* docs/ ist die Wurzel der Seite auf GitHub Pages, dort liegt index.html. */
+    assetOrdner: 'docs',
+  },
+  {
     slug: 'werkstatt-mods',
     name: 'Werkstatt-Mods',
     icon: 'mods',
@@ -717,7 +741,7 @@ export const TOOLS = [
  * für die Icon-Reihe der Banner. Der Zählwerk Ticker hat keine eigene Kachel. */
 export const KACHELN = [
   'create-masterprompt', 'werkstatt-mods', 'real-ram-cooler', 'fontart-demo',
-  'prismatical', 'spectroton', 'shrinkling', 'wifi-qr', 'heizwarte', 'pocketsum',
+  'prismatical', 'spectroton', 'shrinkling', 'wifi-qr', 'heizwarte', 'follower-log', 'pocketsum',
   'zaehlwerk', 'besucher-ticker', 'collective-calc', 'dreh-das-rad', 'gaming',
   'bigday', 'fadenkreuz',
 ];
