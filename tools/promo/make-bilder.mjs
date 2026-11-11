@@ -23,12 +23,13 @@
 
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { dirname, resolve, join } from 'node:path';
+import { homedir } from 'node:os';
 import { mkdir, writeFile, readFile, stat, copyFile } from 'node:fs/promises';
 import { MARKE, TOOLS, FORMATE, MARKENFORMATE, KACHELN, iconSvg, KISTE_UMRISS } from './marke.mjs';
 
 const hier = dirname(fileURLToPath(import.meta.url));
 const ZIEL = resolve(hier, '..', 'Bilder');
-const REPOS = 'C:/Users/nutzer/source/repos';
+const REPOS = join(homedir(), 'source', 'repos').replace(/\\/g, '/');
 
 const argv = process.argv.slice(2);
 const nur = argv.includes('--nur') ? argv[argv.indexOf('--nur') + 1] : null;

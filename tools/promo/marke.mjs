@@ -394,7 +394,7 @@ export const TOOLS = [
      * uebrigen Skill-Kram — derselbe Pfad, den pruefliste.py als Konstante
      * MASTERPROMPT schon kennt. Der Apostroph zwingt zu doppelten
      * Anfuehrungszeichen. */
-    repoBasis: "C:/Users/nutzer/Claud_ins.Projects/CLAUDE/meine_Skill's",
+    repoBasis: `${(globalThis.process?.env?.USERPROFILE ?? '').replace(/\\/g, '/')}/Claud_ins.Projects/CLAUDE/meine_Skill's`,
     /* NICHT 'docs': docs/ steckt in jedem `git clone --depth 1`, und genau so
      * installiert man diesen Skill. Ein Werbebild laege damit bei jedem Nutzer
      * im Skill-Ordner und risse zwei belegte Zahlen um. Deshalb promo/ daneben
