@@ -264,7 +264,7 @@ var GUIDES = {
     },
     shots: [
       {
-        file: 'shrink-de.webp', w: 1600, h: 1408,
+        file: 'shrink-de.webp', w: 1600, h: 1558,
         alt: {
           de: 'shrinkling: die Fläche zum Hineinziehen, Auswählen oder Einfügen von Bildern, darunter die vier Zielgrößen für E-Mail, Bewerbungsportale, Kleinanzeigen und das Web.',
           en: 'shrinkling: the area for dropping, choosing or pasting images, and below it the four target sizes for email, job portals, classifieds and the web.',
@@ -1867,7 +1867,7 @@ var GUIDES = {
     },
     shots: [
       {
-        file: 'zaehlwerk-de.webp', w: 1430, h: 1304,
+        file: 'zaehlwerk-de.webp', w: 1430, h: 1506,
         alt: {
           de: 'Zählwerk vor dem ersten Einlesen: die Fläche, auf die man den Ordner zieht oder über die man ihn auswählt, darunter, wo dieser Ordner unter Windows und unter macOS oder Linux liegt, und der Hinweis auf den Zählwerk Ticker.',
           en: 'Zählwerk before the first import: the area you drag the folder onto or click to pick it, below it where that folder lives on Windows and on macOS or Linux, and the pointer to Zählwerk Ticker.',
