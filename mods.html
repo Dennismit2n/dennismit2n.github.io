@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Werkstatt-Mods · Dennis_mit_2n</title>
-  <meta name="description" content="Five mods for Claude Code by Dennis_mit_2n: statistics pane, limits band, guard, limit pause and agents pane, each installed with one line. / Fünf Mods für Claude Code, jeder mit einer Zeile installiert.">
+  <meta name="description" content="Nine mods for Claude Code by Dennis_mit_2n: statistics pane, limits band, guard, limit pause, agents pane, handoff, chat inventory, screen guard and switchboard, each installed with one line. / Neun Mods für Claude Code, jeder mit einer Zeile installiert.">
   <link rel="canonical" href="https://dennismit2n.github.io/mods.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Dennis_mit_2n">
   <meta property="og:title" content="Werkstatt-Mods · Dennis_mit_2n">
-  <meta property="og:description" content="Five mods for Claude Code: statistics pane, limits band, guard, limit pause and agents pane, each installed with one line.">
+  <meta property="og:description" content="Nine mods for Claude Code: statistics pane, limits band, guard, limit pause, agents pane, handoff, chat inventory, screen guard and switchboard, each installed with one line.">
   <meta property="og:url" content="https://dennismit2n.github.io/mods.html">
   <meta property="og:image" content="https://dennismit2n.github.io/assets/og.png">
   <meta property="og:image:width" content="1200">
@@ -66,8 +66,8 @@
     </section>
 
     <section class="mods" aria-labelledby="modsHeading">
-      <h2 id="modsHeading"><img class="mods-icon" src="./assets/mods.svg" alt="" width="34" height="34"> <span data-i18n="modsHeading">The five mods</span></h2>
-      <p class="mods-intro" data-i18n="modsIntro">A mod is a plugin with a piece of code that Claude Code calls when things happen: a pane beside the chat, a band above the prompt, a rule before a tool call. Mods are early access, you need Claude Code 2.1.287 or newer; I tested with the desktop app on Windows 11. All five run on your machine and send nothing anywhere.</p>
+      <h2 id="modsHeading"><img class="mods-icon" src="./assets/mods.svg" alt="" width="34" height="34"> <span data-i18n="modsHeading">The nine mods</span></h2>
+      <p class="mods-intro" data-i18n="modsIntro">A mod is a plugin with a piece of code that Claude Code calls when things happen: a pane beside the chat, a band above the prompt, a rule before a tool call. Mods are early access, you need Claude Code 2.1.287 or newer; I tested with the desktop app on Windows 11. All nine run on your machine and send nothing anywhere.</p>
 
       <div class="mods-how">
         <h3 data-i18n="modsHowTitle">How a mod gets to you</h3>
@@ -141,8 +141,8 @@
             <figure class="mod-shot">
               <img src="./assets/mods/waechter.png" alt="Screenshot of a guard message in Claude Code" data-i18n-alt="modWaechterAlt" loading="lazy" onerror="this.closest('figure').hidden=true">
             </figure>
-            <p data-i18n="modWaechterDesc">Three rules that apply to Claude itself as well: no Write may overwrite a protected file and no shell command may delete it, command lines over 7,500 characters are stopped (Windows silently cuts at 8,000), and at most two heavy subagents run at once. Every refusal says what to do instead.</p>
-            <p class="mod-settings"><strong data-i18n="modsSettingsLabel">Settings</strong>: <span data-i18n="modWaechterSettings">language · protectedFile: path ending of the protected file · maxCommand: longest command line · heavyMax and allMax: agents at once · lightAgents: light types</span></p>
+            <p data-i18n="modWaechterDesc">Three rules that apply to Claude itself as well: no Write may overwrite a protected file and no shell command may delete it, command lines over 7,500 characters are stopped (Windows silently cuts at 8,000), and at most two heavy subagents run at once. Every refusal says what to do instead. Plus two saving rules: subagents without a model of their own get a cheaper model, and screenshots from the app browser arrive at half size.</p>
+            <p class="mod-settings"><strong data-i18n="modsSettingsLabel">Settings</strong>: <span data-i18n="modWaechterSettings">language · protectedFile: path ending of the protected file · maxCommand: longest command line · heavyMax and allMax: agents at once · lightAgents: light types · agentModels: model per agent type · screenshotScale: size of browser screenshots</span></p>
             <div class="mod-code">
               <p class="mod-label" data-i18n="modsInstallLabel">Install line for the Claude Code prompt</p>
               <pre class="mod-line"><code>/plugin install waechter --marketplace Dennismit2n/werkstatt-mods</code></pre>
@@ -208,17 +208,121 @@
             <p class="mod-source"><a href="https://github.com/Dennismit2n/werkstatt-mods/tree/main/flugdeck" rel="noopener" data-count="mods-quelle-flugdeck" data-i18n="modsSource">Source and README on GitHub</a></p>
           </div>
         </details>
+        <details class="mod" id="uebergabe" data-mod="uebergabe" data-commands="/uebergabe">
+          <summary>
+            <span class="mod-name">uebergabe</span>
+            <code class="mod-cmd">/uebergabe</code>
+            <span class="mod-chevron" aria-hidden="true">▾</span>
+          </summary>
+          <div class="mod-body">
+            <figure class="mod-shot">
+              <img src="./assets/mods/uebergabe.png" alt="Screenshot of the handoff hint above the prompt in Claude Code" data-i18n-alt="modUebergabeAlt" loading="lazy" onerror="this.closest('figure').hidden=true">
+            </figure>
+            <p data-i18n="modUebergabeDesc">Long sessions get expensive and less precise. From a context threshold (250,000 tokens by default) the band suggests a handoff. One click or /uebergabe has Claude write it in detail as a file: goal, state, decisions, files, open points. A button then starts a fresh session that continues from the handoff. The mod calls no model of its own; writing the handoff is a normal turn of your session.</p>
+            <p class="mod-settings"><strong data-i18n="modsSettingsLabel">Settings</strong>: <span data-i18n="modUebergabeSettings">language · thresholdTokens: hint from this many tokens · remindStep: remind again after “Later” · folder: folder for the handoffs</span></p>
+            <div class="mod-code">
+              <p class="mod-label" data-i18n="modsInstallLabel">Install line for the Claude Code prompt</p>
+              <pre class="mod-line"><code>/plugin install uebergabe --marketplace Dennismit2n/werkstatt-mods</code></pre>
+              <button type="button" class="copy-btn" data-copy="zeile"><span data-i18n="modsCopy">Copy</span></button>
+            </div>
+            <div class="mod-code">
+              <p class="mod-label" data-i18n="modsPromptLabel">Prompt to paste into Claude Code, Claude does the rest</p>
+              <pre class="mod-prompt"><code data-prompt></code></pre>
+              <button type="button" class="copy-btn" data-copy="prompt"><span data-i18n="modsCopy">Copy</span></button>
+            </div>
+            <p class="mod-source"><a href="https://github.com/Dennismit2n/werkstatt-mods/tree/main/uebergabe" rel="noopener" data-count="mods-quelle-uebergabe" data-i18n="modsSource">Source and README on GitHub</a></p>
+          </div>
+        </details>
+        <details class="mod" id="inventar" data-mod="inventar" data-commands="/inventar">
+          <summary>
+            <span class="mod-name">inventar</span>
+            <code class="mod-cmd">/inventar</code>
+            <span class="mod-chevron" aria-hidden="true">▾</span>
+          </summary>
+          <div class="mod-body">
+            <figure class="mod-shot">
+              <img src="./assets/mods/inventar.png" alt="Screenshot of the “In this chat” pane in the Claude Code desktop app" data-i18n-alt="modInventarAlt" loading="lazy" onerror="this.closest('figure').hidden=true">
+            </figure>
+            <p data-i18n="modInventarDesc">An “In this chat” pane: the session’s task list, every connector used with its number of calls, skills, fetched links and the files read and written, newest first. The pane only keeps count and calls no model.</p>
+            <p class="mod-settings"><strong data-i18n="modsSettingsLabel">Settings</strong>: <span data-i18n="modInventarSettings">language · autoOpen: open the pane when a session starts</span></p>
+            <div class="mod-code">
+              <p class="mod-label" data-i18n="modsInstallLabel">Install line for the Claude Code prompt</p>
+              <pre class="mod-line"><code>/plugin install inventar --marketplace Dennismit2n/werkstatt-mods</code></pre>
+              <button type="button" class="copy-btn" data-copy="zeile"><span data-i18n="modsCopy">Copy</span></button>
+            </div>
+            <div class="mod-code">
+              <p class="mod-label" data-i18n="modsPromptLabel">Prompt to paste into Claude Code, Claude does the rest</p>
+              <pre class="mod-prompt"><code data-prompt></code></pre>
+              <button type="button" class="copy-btn" data-copy="prompt"><span data-i18n="modsCopy">Copy</span></button>
+            </div>
+            <p class="mod-source"><a href="https://github.com/Dennismit2n/werkstatt-mods/tree/main/inventar" rel="noopener" data-count="mods-quelle-inventar" data-i18n="modsSource">Source and README on GitHub</a></p>
+          </div>
+        </details>
+        <details class="mod" id="sichtschutz" data-mod="sichtschutz" data-commands="/sichtschutz, /sichtschutz on, /sichtschutz off">
+          <summary>
+            <span class="mod-name">sichtschutz</span>
+            <code class="mod-cmd">/sichtschutz</code>
+            <span class="mod-chevron" aria-hidden="true">▾</span>
+          </summary>
+          <div class="mod-body">
+            <figure class="mod-shot">
+              <img src="./assets/mods/sichtschutz.png" alt="Screenshot of a masked transcript in Claude Code" data-i18n-alt="modSichtschutzAlt" loading="lazy" onerror="this.closest('figure').hidden=true">
+            </figure>
+            <p data-i18n="modSichtschutzDesc">For screen sharing: while the screen guard is on, mail addresses, phone numbers, amounts of money, IBANs, the name of your user folder and your own words are masked in the transcript. The mod changes only what is drawn; what is stored and sent to the model stays the original. It works with fixed patterns: it does not recognise names by itself, you add those as your own words.</p>
+            <p class="mod-settings"><strong data-i18n="modsSettingsLabel">Settings</strong>: <span data-i18n="modSichtschutzSettings">language · words: your own words and names · maskMoney: mask amounts · startOn: on at the start</span></p>
+            <div class="mod-code">
+              <p class="mod-label" data-i18n="modsInstallLabel">Install line for the Claude Code prompt</p>
+              <pre class="mod-line"><code>/plugin install sichtschutz --marketplace Dennismit2n/werkstatt-mods</code></pre>
+              <button type="button" class="copy-btn" data-copy="zeile"><span data-i18n="modsCopy">Copy</span></button>
+            </div>
+            <div class="mod-code">
+              <p class="mod-label" data-i18n="modsPromptLabel">Prompt to paste into Claude Code, Claude does the rest</p>
+              <pre class="mod-prompt"><code data-prompt></code></pre>
+              <button type="button" class="copy-btn" data-copy="prompt"><span data-i18n="modsCopy">Copy</span></button>
+            </div>
+            <p class="mod-source"><a href="https://github.com/Dennismit2n/werkstatt-mods/tree/main/sichtschutz" rel="noopener" data-count="mods-quelle-sichtschutz" data-i18n="modsSource">Source and README on GitHub</a></p>
+          </div>
+        </details>
+        <details class="mod" id="schalttafel" data-mod="schalttafel" data-commands="/mods">
+          <summary>
+            <span class="mod-name">schalttafel</span>
+            <code class="mod-cmd">/mods</code>
+            <span class="mod-chevron" aria-hidden="true">▾</span>
+          </summary>
+          <div class="mod-body">
+            <figure class="mod-shot">
+              <img src="./assets/mods/schalttafel.png" alt="Screenshot of the switchboard in the Claude Code desktop app" data-i18n-alt="modSchalttafelAlt" loading="lazy" onerror="this.closest('figure').hidden=true">
+            </figure>
+            <p data-i18n="modSchalttafelDesc">A “Mods” pane: every mod loaded from a folder with version, state and its commands, plus the plugins from your settings. A switch per mod writes only the enabledPlugins entry in your settings.json and applies from the next session; running sessions keep their mods.</p>
+            <p class="mod-settings"><strong data-i18n="modsSettingsLabel">Settings</strong>: <span data-i18n="modSchalttafelSettings">language: de or en</span></p>
+            <div class="mod-code">
+              <p class="mod-label" data-i18n="modsInstallLabel">Install line for the Claude Code prompt</p>
+              <pre class="mod-line"><code>/plugin install schalttafel --marketplace Dennismit2n/werkstatt-mods</code></pre>
+              <button type="button" class="copy-btn" data-copy="zeile"><span data-i18n="modsCopy">Copy</span></button>
+            </div>
+            <div class="mod-code">
+              <p class="mod-label" data-i18n="modsPromptLabel">Prompt to paste into Claude Code, Claude does the rest</p>
+              <pre class="mod-prompt"><code data-prompt></code></pre>
+              <button type="button" class="copy-btn" data-copy="prompt"><span data-i18n="modsCopy">Copy</span></button>
+            </div>
+            <p class="mod-source"><a href="https://github.com/Dennismit2n/werkstatt-mods/tree/main/schalttafel" rel="noopener" data-count="mods-quelle-schalttafel" data-i18n="modsSource">Source and README on GitHub</a></p>
+          </div>
+        </details>
       </div>
 
       <div class="mods-all">
-        <h3 data-i18n="modsAllTitle">All five at once</h3>
-        <p data-i18n="modsAllText">Five lines, one after the other at the Claude Code prompt. The buttons “Statistics” and “Agents” in the band then open the two panes.</p>
+        <h3 data-i18n="modsAllTitle">All nine at once</h3>
+        <p data-i18n="modsAllText">Nine lines, one after the other at the Claude Code prompt. The buttons “Statistics” and “Agents” in the band then open the two panes.</p>
         <div class="mod-code">
           <pre class="mod-line"><code>/plugin install statistik --marketplace Dennismit2n/werkstatt-mods
 /plugin install werkstatt-band --marketplace Dennismit2n/werkstatt-mods
 /plugin install waechter --marketplace Dennismit2n/werkstatt-mods
 /plugin install limitpause --marketplace Dennismit2n/werkstatt-mods
-/plugin install flugdeck --marketplace Dennismit2n/werkstatt-mods</code></pre>
+/plugin install flugdeck --marketplace Dennismit2n/werkstatt-mods
+/plugin install uebergabe --marketplace Dennismit2n/werkstatt-mods
+/plugin install inventar --marketplace Dennismit2n/werkstatt-mods
+/plugin install sichtschutz --marketplace Dennismit2n/werkstatt-mods
+/plugin install schalttafel --marketplace Dennismit2n/werkstatt-mods</code></pre>
           <button type="button" class="copy-btn" data-copy="alle"><span data-i18n="modsCopy">Copy</span></button>
         </div>
         <p class="mod-source"><a href="https://github.com/Dennismit2n/werkstatt-mods" rel="noopener" data-count="mods-repo" data-i18n="modsSource">Source and README on GitHub</a></p>
@@ -242,7 +346,7 @@
 
 <!-- Wie in gaming.html: i18n.js und header.js, dazu mods.js fuer Prompts und Kopierknoepfe.
      Die Neuigkeiten der Mods stehen seit 03.11.2026 auf werkstatt.html#mods. -->
-<script src="./js/i18n.js?v=2026-11-10" fetchpriority="high"></script>
+<script src="./js/i18n.js?v=2026-11-11" fetchpriority="high"></script>
 <script src="./js/header.js?v=2026-11-03" fetchpriority="high"></script>
 <script src="./js/mods.js?v=2026-11-03b" fetchpriority="high"></script>
 </body>

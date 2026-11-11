@@ -11,7 +11,7 @@ Startseite für die kleinen Werkzeuge von Dennis_mit_2n: ohne Anmeldung, keine A
 ## Tools
 
 - [create-masterprompt](https://github.com/Dennismit2n/create-masterprompt): turns a vague project idea into a context package a fresh AI chat can run from (a skill, not a program)
-- [Werkstatt-Mods](https://dennismit2n.github.io/mods.html): five mods for Claude Code (statistics pane, limits band, guard, limit pause, agents pane), each installed with one line; its own page with screenshots, install lines and prompts (see below)
+- [Werkstatt-Mods](https://dennismit2n.github.io/mods.html): nine mods for Claude Code (statistics pane, limits band, guard, limit pause, agents pane, handoff, chat inventory, screen guard, switchboard), each installed with one line; its own page with screenshots, install lines and prompts (see below)
 - [Real_RAM_cooler](https://github.com/Dennismit2n/Real_RAM_cooler): an honest RAM tool for Windows (download, not a browser tool)
 - [fontART Designer](https://dennismit2n.github.io/fontART-demo/): turn your handwriting into a real font (trial version: in the browser, or as a Windows download)
 - [Prismatical](https://dennismit2n.github.io/prismatical/): passwords and passphrases whose strength is the colour of the interface
@@ -35,7 +35,7 @@ Same order as the tiles on the page, hand-picked by Dennis, last reordered on 30
 
 ## Werkstatt-Mods page
 
-Since 1 November 2026 the five mods for Claude Code (repository [werkstatt-mods](https://github.com/Dennismit2n/werkstatt-mods), MIT) have their own page, `mods.html`, reached from the tile “Werkstatt-Mods” in second place, right after create-masterprompt (Dennis’ choice, 1 November 2026). Like Gaming it is a collection, so the tile has one mini tile only, the news. The page explains what a mod is, then shows each mod as a collapsible entry: a screenshot (`assets/mods/<name>.png`), what it does, its settings, the install line for the Claude Code prompt and a prompt in the page’s language that lets Claude do the install (`js/mods.js` fills the placeholders and runs the copy buttons). The mods themselves speak German and English; the page offers all fourteen languages and hands a visitor in any other language the English mod.
+Since 1 November 2026 the mods for Claude Code (five at first, nine since 11 November 2026) (repository [werkstatt-mods](https://github.com/Dennismit2n/werkstatt-mods), MIT) have their own page, `mods.html`, reached from the tile “Werkstatt-Mods” in second place, right after create-masterprompt (Dennis’ choice, 1 November 2026). Like Gaming it is a collection, so the tile has one mini tile only, the news. The page explains what a mod is, then shows each mod as a collapsible entry: a screenshot (`assets/mods/<name>.png`), what it does, its settings, the install line for the Claude Code prompt and a prompt in the page’s language that lets Claude do the install (`js/mods.js` fills the placeholders and runs the copy buttons). The mods themselves speak German and English; the page offers all fourteen languages and hands a visitor in any other language the English mod.
 
 ## Gaming page
 
