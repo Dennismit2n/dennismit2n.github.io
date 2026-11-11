@@ -694,20 +694,20 @@ var GUIDES = {
       {
         file: 'prismatical-en.webp', w: 1174, h: 1438,
         alt: {
-          de: 'Prismatical im Theme Cyber: oben ein erzeugtes Passwort mit der höchsten Stärkestufe und 116 Bit Entropie, darunter die sechs Arten vom Passwort bis zum deterministischen Modus, Länge, Zeichenklassen und Regeln.',
-          en: 'Prismatical in the Cyber theme: a generated password at the highest strength level with 116 bits of entropy at the top, below it the six kinds from password to deterministic mode, length, character classes and rules.',
-          es: 'Prismatical con el tema Cyber: arriba, una contraseña generada con el nivel de fortaleza más alto y 116 bits de entropía, y debajo los seis modos, de contraseña a determinista, la longitud, las clases de caracteres y las reglas.',
-          fr: 'Prismatical avec le thème Cyber : en haut, un mot de passe généré au plus haut niveau de force, avec 116 bits d’entropie, et en dessous les six modes, du mot de passe au mode déterministe, la longueur, les classes de caractères et les règles.',
-          it: 'Prismatical con il tema Cyber: in alto una password generata al livello di robustezza più alto, con 116 bit di entropia, e sotto le sei modalità, dalla password a quella deterministica, la lunghezza, le classi di caratteri e le regole.',
-          nl: 'Prismatical met het thema Cyber: bovenaan een gegenereerd wachtwoord met het hoogste sterkteniveau en 116 bits entropie, daaronder de zes soorten, van wachtwoord tot deterministische modus, en lengte, tekenklassen en regels.',
-          pl: 'Prismatical w motywie Cyber: na górze wygenerowane hasło o najwyższym poziomie siły i entropii 116 bitów, pod nim sześć trybów, od hasła po deterministyczny, a także długość, klasy znaków i reguły.',
-          pt: 'O Prismatical no tema Cyber: em cima, uma senha gerada com o nível de força mais alto e 116 bits de entropia, e embaixo os seis tipos, da senha ao modo determinístico, além do comprimento, das classes de caracteres e das regras.',
-          tr: 'Cyber temasında Prismatical: üstte en yüksek güç seviyesinde, 116 bit entropili oluşturulmuş bir parola, altında da parolayla başlayıp deterministik modla biten altı tür, uzunluk, karakter sınıfları ve kurallar.',
-          ru: 'Prismatical в теме Cyber: вверху сгенерированный пароль с наивысшим уровнем надёжности и 116 битами энтропии, ниже шесть режимов, от пароля до детерминированного, а также длина, классы символов и правила.',
-          hi: 'Cyber थीम में Prismatical: ऊपर मज़बूती के सबसे ऊँचे स्तर और 116 बिट एंट्रॉपी वाला एक बनाया गया पासवर्ड, उसके नीचे पासवर्ड से लेकर नियतात्मक तक छह मोड, लंबाई, वर्ण श्रेणियाँ और नियम।',
-          zh: '主题为 Cyber 的 Prismatical：上方是一个生成的密码，处于最高强度等级，熵为 116 比特，下面是从密码到确定性模式的六种类型，以及长度、字符类别和规则。',
-          ja: 'Cyber テーマの Prismatical: 上には強度が最高レベルでエントロピー116ビットの生成済みパスワード、その下にパスワードから決定論的モードまでの6種類、長さ、文字種、ルール。',
-          ko: 'Cyber 테마의 Prismatical: 위에는 강도가 가장 높은 단계이고 엔트로피가 116비트인 생성된 비밀번호, 그 아래에는 비밀번호부터 결정론적 생성까지 여섯 가지 모드, 길이, 문자 종류, 규칙.'
+          de: 'Prismatical im Theme Cyber: oben ein erzeugtes Passwort mit der höchsten Stärkestufe und 122 Bit Entropie, darunter die sechs Arten vom Passwort bis zum deterministischen Modus, Länge, Zeichenklassen und Regeln.',
+          en: 'Prismatical in the Cyber theme: a generated password at the highest strength level with 122 bits of entropy at the top, below it the six kinds from password to deterministic mode, length, character classes and rules.',
+          es: 'Prismatical con el tema Cyber: arriba, una contraseña generada con el nivel de fortaleza más alto y 122 bits de entropía, y debajo los seis modos, de contraseña a determinista, la longitud, las clases de caracteres y las reglas.',
+          fr: 'Prismatical avec le thème Cyber : en haut, un mot de passe généré au plus haut niveau de force, avec 122 bits d’entropie, et en dessous les six modes, du mot de passe au mode déterministe, la longueur, les classes de caractères et les règles.',
+          it: 'Prismatical con il tema Cyber: in alto una password generata al livello di robustezza più alto, con 122 bit di entropia, e sotto le sei modalità, dalla password a quella deterministica, la lunghezza, le classi di caratteri e le regole.',
+          nl: 'Prismatical met het thema Cyber: bovenaan een gegenereerd wachtwoord met het hoogste sterkteniveau en 122 bits entropie, daaronder de zes soorten, van wachtwoord tot deterministische modus, en lengte, tekenklassen en regels.',
+          pl: 'Prismatical w motywie Cyber: na górze wygenerowane hasło o najwyższym poziomie siły i entropii 122 bitów, pod nim sześć trybów, od hasła po deterministyczny, a także długość, klasy znaków i reguły.',
+          pt: 'O Prismatical no tema Cyber: em cima, uma senha gerada com o nível de força mais alto e 122 bits de entropia, e embaixo os seis tipos, da senha ao modo determinístico, além do comprimento, das classes de caracteres e das regras.',
+          tr: 'Cyber temasında Prismatical: üstte en yüksek güç seviyesinde, 122 bit entropili oluşturulmuş bir parola, altında da parolayla başlayıp deterministik modla biten altı tür, uzunluk, karakter sınıfları ve kurallar.',
+          ru: 'Prismatical в теме Cyber: вверху сгенерированный пароль с наивысшим уровнем надёжности и 122 битами энтропии, ниже шесть режимов, от пароля до детерминированного, а также длина, классы символов и правила.',
+          hi: 'Cyber थीम में Prismatical: ऊपर मज़बूती के सबसे ऊँचे स्तर और 122 बिट एंट्रॉपी वाला एक बनाया गया पासवर्ड, उसके नीचे पासवर्ड से लेकर नियतात्मक तक छह मोड, लंबाई, वर्ण श्रेणियाँ और नियम।',
+          zh: '主题为 Cyber 的 Prismatical：上方是一个生成的密码，处于最高强度等级，熵为 122 比特，下面是从密码到确定性模式的六种类型，以及长度、字符类别和规则。',
+          ja: 'Cyber テーマの Prismatical: 上には強度が最高レベルでエントロピー122ビットの生成済みパスワード、その下にパスワードから決定論的モードまでの6種類、長さ、文字種、ルール。',
+          ko: 'Cyber 테마의 Prismatical: 위에는 강도가 가장 높은 단계이고 엔트로피가 122비트인 생성된 비밀번호, 그 아래에는 비밀번호부터 결정론적 생성까지 여섯 가지 모드, 길이, 문자 종류, 규칙.'
         }
       }
     ],
