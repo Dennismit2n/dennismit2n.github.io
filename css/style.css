@@ -1807,3 +1807,121 @@ details.mod[open] .mod-chevron { transform: rotate(180deg); }
 .mod-source a { color: var(--accent); font-weight: 500; text-decoration: none; }
 .mod-source a:hover { text-decoration: underline; }
 @media (prefers-reduced-motion: reduce) { .mod-chevron { transition: none; } }
+
+/* Beschlag überall (12.11.2026, Dennis: „wirklich überall, auch an den
+   Dropdown-Menüs“). Alles, was einen Rahmen hat, trägt denselben eckigen
+   Innenrahmen mit vier Schrauben wie die Kacheln, und jeder Kasten wirft
+   seinen Schatten nach links unten.
+   Hier liegt der Beschlag als Hintergrund-Ebenen statt als Pseudo-Element:
+   ein <select> kennt kein ::before, und so braucht keins dieser Bauteile eine
+   freie Ebene. --beschlag sind acht Ebenen (vier Schrauben, vier Linien), jedes
+   Bauteil setzt sie vor seinen eigenen Grund. Maße je Bauteil:
+   --bi Abstand des Rahmens von der Innenkante, --bg Schraubengröße,
+   --ba Abstand der Schraube vom Rahmen, --bl Linienfarbe.
+   Die Bildrahmen (.wk-shot-frame, .mod-shot) sind ganz vom Bild bedeckt, dort
+   liegt der Beschlag als ::after über dem Bild. */
+#langSelect,
+#themeSelect,
+.pledge,
+.wk-tool,
+details.mod,
+.mod-line,
+.mod-prompt,
+.copy-btn,
+.wk-shot-frame::after,
+.mod-shot::after {
+  --bi: 2px;
+  --bg: 4.5px;
+  --ba: 1px;
+  --bl: var(--border);
+  --beschlag:
+    var(--schraube-1) left calc(var(--bi) + var(--ba)) top calc(var(--bi) + var(--ba)) / var(--bg) var(--bg) no-repeat,
+    var(--schraube-2) right calc(var(--bi) + var(--ba)) top calc(var(--bi) + var(--ba)) / var(--bg) var(--bg) no-repeat,
+    var(--schraube-3) left calc(var(--bi) + var(--ba)) bottom calc(var(--bi) + var(--ba)) / var(--bg) var(--bg) no-repeat,
+    var(--schraube-4) right calc(var(--bi) + var(--ba)) bottom calc(var(--bi) + var(--ba)) / var(--bg) var(--bg) no-repeat,
+    linear-gradient(var(--bl), var(--bl)) center top var(--bi) / calc(100% - 2 * var(--bi)) 1px no-repeat,
+    linear-gradient(var(--bl), var(--bl)) center bottom var(--bi) / calc(100% - 2 * var(--bi)) 1px no-repeat,
+    linear-gradient(var(--bl), var(--bl)) left var(--bi) center / 1px calc(100% - 2 * var(--bi)) no-repeat,
+    linear-gradient(var(--bl), var(--bl)) right var(--bi) center / 1px calc(100% - 2 * var(--bi)) no-repeat;
+}
+@supports (color: color-mix(in srgb, red 50%, transparent)) {
+  #langSelect, #themeSelect, .pledge { --bl: color-mix(in srgb, var(--accent) 48%, transparent); }
+  .wk-tool, .wk-shot-frame::after { --bl: color-mix(in srgb, var(--tool, var(--accent)) 42%, transparent); }
+  details.mod, .mod-line, .mod-prompt, .copy-btn, .mod-shot::after { --bl: color-mix(in srgb, var(--mods) 45%, transparent); }
+}
+/* Dropdowns: der Text beginnt bei 10 px, die Schrauben enden bei 7,5. */
+#langSelect,
+#themeSelect {
+  background: var(--beschlag), var(--panel);
+  box-shadow: -3px 4px 8px -4px rgba(0, 0, 0, 0.55);
+}
+/* Die Zusage ist eine Pille, einzeilig mit rund 22 px Radius, zweizeilig mit 33.
+   Ein eckiger Rahmen passt nur hinein, wenn seine Ecke innerhalb des Bogens
+   liegt: (r - x)² + (r - y)² ≤ r². Mit 5 px von oben und unten braucht er bei
+   r = 33 mindestens 15,5 px von den Seiten, mit Luft 20. Die Zusage bekommt dafür
+   12 px mehr Innenabstand an den Seiten, sonst säßen die Schrauben im Schloss. */
+.pledge {
+  --px: 20px;
+  --py: 5px;
+  --bg: 4.5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background:
+    var(--schraube-1) left calc(var(--px) + 1px) top calc(var(--py) + 1px) / var(--bg) var(--bg) no-repeat,
+    var(--schraube-2) right calc(var(--px) + 1px) top calc(var(--py) + 1px) / var(--bg) var(--bg) no-repeat,
+    var(--schraube-3) left calc(var(--px) + 1px) bottom calc(var(--py) + 1px) / var(--bg) var(--bg) no-repeat,
+    var(--schraube-4) right calc(var(--px) + 1px) bottom calc(var(--py) + 1px) / var(--bg) var(--bg) no-repeat,
+    linear-gradient(var(--bl), var(--bl)) center top var(--py) / calc(100% - 2 * var(--px)) 1px no-repeat,
+    linear-gradient(var(--bl), var(--bl)) center bottom var(--py) / calc(100% - 2 * var(--px)) 1px no-repeat,
+    linear-gradient(var(--bl), var(--bl)) left var(--px) center / 1px calc(100% - 2 * var(--py)) no-repeat,
+    linear-gradient(var(--bl), var(--bl)) right var(--px) center / 1px calc(100% - 2 * var(--py)) no-repeat,
+    var(--accent-soft);
+  box-shadow: -6px 8px 18px -8px rgba(0, 0, 0, 0.5);
+}
+/* Abschnitte der Werkstatt: wie die Kacheln der Startseite. */
+.wk-tool {
+  --bi: 6px;
+  --bg: 9px;
+  --ba: 3px;
+  background: var(--beschlag), var(--panel-veil);
+}
+/* Mods-Seite: Karten, Code-Kästen und Kopierknöpfe. */
+details.mod {
+  --bi: 5px;
+  --bg: 8px;
+  --ba: 2.5px;
+  background: var(--beschlag), var(--panel);
+  box-shadow: var(--shadow);
+}
+.mod-line,
+.mod-prompt {
+  --bi: 3px;
+  --bg: 5px;
+  --ba: 1.5px;
+  background: var(--beschlag), var(--bg);
+  box-shadow: -4px 5px 12px -6px rgba(0, 0, 0, 0.5);
+}
+.copy-btn {
+  background: var(--beschlag), transparent;
+  box-shadow: -3px 4px 8px -4px rgba(0, 0, 0, 0.55);
+}
+.copy-btn:hover, .copy-btn:focus-visible, .copy-btn.is-copied { background: var(--beschlag), var(--mods); }
+/* Bildrahmen: Beschlag über dem Bild, nimmt keine Klicks an. */
+.wk-shot-frame,
+.mod-shot { position: relative; box-shadow: -5px 6px 14px -6px rgba(0, 0, 0, 0.5); }
+.mod-shot { width: fit-content; max-width: 100%; border-radius: 6px; }
+.wk-shot-frame::after,
+.mod-shot::after {
+  --bi: 3px;
+  --bg: 6px;
+  --ba: 1.5px;
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--beschlag);
+  pointer-events: none;
+}
+/* Auch die Platzhalter werfen jetzt ihren Schatten: sämtliche Kacheln. */
+.tool-platzhalter { box-shadow: var(--shadow); }
+/* Hoher Kontrast kennt keine Schatten (siehe oben), der Beschlag bleibt. */
+:root[data-vision="contrast"] :is(#langSelect, #themeSelect, .pledge, details.mod, .mod-line, .mod-prompt, .copy-btn, .wk-shot-frame, .mod-shot, .tool-platzhalter) { box-shadow: none; }
