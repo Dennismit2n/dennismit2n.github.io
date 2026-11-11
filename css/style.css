@@ -1816,8 +1816,8 @@ details.mod[open] .mod-chevron { transform: rotate(180deg); }
    ein <select> kennt kein ::before, und so braucht keins dieser Bauteile eine
    freie Ebene. --beschlag sind acht Ebenen (vier Schrauben, vier Linien), jedes
    Bauteil setzt sie vor seinen eigenen Grund. Maße je Bauteil:
-   --bi Abstand des Rahmens von der Innenkante, --bg Schraubengröße,
-   --ba Abstand der Schraube vom Rahmen, --bl Linienfarbe.
+   --bsl-i Abstand des Rahmens von der Innenkante, --bg Schraubengröße,
+   --bsl-a Abstand der Schraube vom Rahmen, --bsl-l Linienfarbe.
    Die Bildrahmen (.wk-shot-frame, .mod-shot) sind ganz vom Bild bedeckt, dort
    liegt der Beschlag als ::after über dem Bild. */
 #langSelect,
@@ -1830,24 +1830,24 @@ details.mod,
 .copy-btn,
 .wk-shot-frame::after,
 .mod-shot::after {
-  --bi: 2px;
-  --bg: 4.5px;
-  --ba: 1px;
-  --bl: var(--border);
+  --bsl-i: 2px;
+  --bsl-g: 4.5px;
+  --bsl-a: 1px;
+  --bsl-l: var(--border);
   --beschlag:
-    var(--schraube-1) left calc(var(--bi) + var(--ba)) top calc(var(--bi) + var(--ba)) / var(--bg) var(--bg) no-repeat,
-    var(--schraube-2) right calc(var(--bi) + var(--ba)) top calc(var(--bi) + var(--ba)) / var(--bg) var(--bg) no-repeat,
-    var(--schraube-3) left calc(var(--bi) + var(--ba)) bottom calc(var(--bi) + var(--ba)) / var(--bg) var(--bg) no-repeat,
-    var(--schraube-4) right calc(var(--bi) + var(--ba)) bottom calc(var(--bi) + var(--ba)) / var(--bg) var(--bg) no-repeat,
-    linear-gradient(var(--bl), var(--bl)) center top var(--bi) / calc(100% - 2 * var(--bi)) 1px no-repeat,
-    linear-gradient(var(--bl), var(--bl)) center bottom var(--bi) / calc(100% - 2 * var(--bi)) 1px no-repeat,
-    linear-gradient(var(--bl), var(--bl)) left var(--bi) center / 1px calc(100% - 2 * var(--bi)) no-repeat,
-    linear-gradient(var(--bl), var(--bl)) right var(--bi) center / 1px calc(100% - 2 * var(--bi)) no-repeat;
+    var(--schraube-1) left calc(var(--bsl-i) + var(--bsl-a)) top calc(var(--bsl-i) + var(--bsl-a)) / var(--bsl-g) var(--bsl-g) no-repeat,
+    var(--schraube-2) right calc(var(--bsl-i) + var(--bsl-a)) top calc(var(--bsl-i) + var(--bsl-a)) / var(--bsl-g) var(--bsl-g) no-repeat,
+    var(--schraube-3) left calc(var(--bsl-i) + var(--bsl-a)) bottom calc(var(--bsl-i) + var(--bsl-a)) / var(--bsl-g) var(--bsl-g) no-repeat,
+    var(--schraube-4) right calc(var(--bsl-i) + var(--bsl-a)) bottom calc(var(--bsl-i) + var(--bsl-a)) / var(--bsl-g) var(--bsl-g) no-repeat,
+    linear-gradient(var(--bsl-l), var(--bsl-l)) center top var(--bsl-i) / calc(100% - 2 * var(--bsl-i)) 1px no-repeat,
+    linear-gradient(var(--bsl-l), var(--bsl-l)) center bottom var(--bsl-i) / calc(100% - 2 * var(--bsl-i)) 1px no-repeat,
+    linear-gradient(var(--bsl-l), var(--bsl-l)) left var(--bsl-i) center / 1px calc(100% - 2 * var(--bsl-i)) no-repeat,
+    linear-gradient(var(--bsl-l), var(--bsl-l)) right var(--bsl-i) center / 1px calc(100% - 2 * var(--bsl-i)) no-repeat;
 }
 @supports (color: color-mix(in srgb, red 50%, transparent)) {
-  #langSelect, #themeSelect, .pledge { --bl: color-mix(in srgb, var(--accent) 48%, transparent); }
-  .wk-tool, .wk-shot-frame::after { --bl: color-mix(in srgb, var(--tool, var(--accent)) 42%, transparent); }
-  details.mod, .mod-line, .mod-prompt, .copy-btn, .mod-shot::after { --bl: color-mix(in srgb, var(--mods) 45%, transparent); }
+  #langSelect, #themeSelect, .pledge { --bsl-l: color-mix(in srgb, var(--accent) 48%, transparent); }
+  .wk-tool, .wk-shot-frame::after { --bsl-l: color-mix(in srgb, var(--tool, var(--accent)) 42%, transparent); }
+  details.mod, .mod-line, .mod-prompt, .copy-btn, .mod-shot::after { --bsl-l: color-mix(in srgb, var(--mods) 45%, transparent); }
 }
 /* Dropdowns: der Text beginnt bei 10 px, die Schrauben enden bei 7,5. */
 #langSelect,
@@ -1863,41 +1863,41 @@ details.mod,
 .pledge {
   --px: 20px;
   --py: 5px;
-  --bg: 4.5px;
+  --bsl-g: 4.5px;
   padding-left: 30px;
   padding-right: 30px;
   background:
-    var(--schraube-1) left calc(var(--px) + 1px) top calc(var(--py) + 1px) / var(--bg) var(--bg) no-repeat,
-    var(--schraube-2) right calc(var(--px) + 1px) top calc(var(--py) + 1px) / var(--bg) var(--bg) no-repeat,
-    var(--schraube-3) left calc(var(--px) + 1px) bottom calc(var(--py) + 1px) / var(--bg) var(--bg) no-repeat,
-    var(--schraube-4) right calc(var(--px) + 1px) bottom calc(var(--py) + 1px) / var(--bg) var(--bg) no-repeat,
-    linear-gradient(var(--bl), var(--bl)) center top var(--py) / calc(100% - 2 * var(--px)) 1px no-repeat,
-    linear-gradient(var(--bl), var(--bl)) center bottom var(--py) / calc(100% - 2 * var(--px)) 1px no-repeat,
-    linear-gradient(var(--bl), var(--bl)) left var(--px) center / 1px calc(100% - 2 * var(--py)) no-repeat,
-    linear-gradient(var(--bl), var(--bl)) right var(--px) center / 1px calc(100% - 2 * var(--py)) no-repeat,
+    var(--schraube-1) left calc(var(--px) + 1px) top calc(var(--py) + 1px) / var(--bsl-g) var(--bsl-g) no-repeat,
+    var(--schraube-2) right calc(var(--px) + 1px) top calc(var(--py) + 1px) / var(--bsl-g) var(--bsl-g) no-repeat,
+    var(--schraube-3) left calc(var(--px) + 1px) bottom calc(var(--py) + 1px) / var(--bsl-g) var(--bsl-g) no-repeat,
+    var(--schraube-4) right calc(var(--px) + 1px) bottom calc(var(--py) + 1px) / var(--bsl-g) var(--bsl-g) no-repeat,
+    linear-gradient(var(--bsl-l), var(--bsl-l)) center top var(--py) / calc(100% - 2 * var(--px)) 1px no-repeat,
+    linear-gradient(var(--bsl-l), var(--bsl-l)) center bottom var(--py) / calc(100% - 2 * var(--px)) 1px no-repeat,
+    linear-gradient(var(--bsl-l), var(--bsl-l)) left var(--px) center / 1px calc(100% - 2 * var(--py)) no-repeat,
+    linear-gradient(var(--bsl-l), var(--bsl-l)) right var(--px) center / 1px calc(100% - 2 * var(--py)) no-repeat,
     var(--accent-soft);
   box-shadow: -6px 8px 18px -8px rgba(0, 0, 0, 0.5);
 }
 /* Abschnitte der Werkstatt: wie die Kacheln der Startseite. */
 .wk-tool {
-  --bi: 6px;
-  --bg: 9px;
-  --ba: 3px;
+  --bsl-i: 6px;
+  --bsl-g: 9px;
+  --bsl-a: 3px;
   background: var(--beschlag), var(--panel-veil);
 }
 /* Mods-Seite: Karten, Code-Kästen und Kopierknöpfe. */
 details.mod {
-  --bi: 5px;
-  --bg: 8px;
-  --ba: 2.5px;
+  --bsl-i: 5px;
+  --bsl-g: 8px;
+  --bsl-a: 2.5px;
   background: var(--beschlag), var(--panel);
   box-shadow: var(--shadow);
 }
 .mod-line,
 .mod-prompt {
-  --bi: 3px;
-  --bg: 5px;
-  --ba: 1.5px;
+  --bsl-i: 3px;
+  --bsl-g: 5px;
+  --bsl-a: 1.5px;
   background: var(--beschlag), var(--bg);
   box-shadow: -4px 5px 12px -6px rgba(0, 0, 0, 0.5);
 }
@@ -1912,9 +1912,9 @@ details.mod {
 .mod-shot { width: fit-content; max-width: 100%; border-radius: 6px; }
 .wk-shot-frame::after,
 .mod-shot::after {
-  --bi: 3px;
-  --bg: 6px;
-  --ba: 1.5px;
+  --bsl-i: 3px;
+  --bsl-g: 6px;
+  --bsl-a: 1.5px;
   content: '';
   position: absolute;
   inset: 0;
