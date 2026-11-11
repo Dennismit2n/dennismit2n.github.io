@@ -41,6 +41,8 @@
       url: 'https://dennismit2n.github.io/heizwarte/', ctaKey: 'openTool' },
     { key: 'hourbridge', name: 'Hourbridge', icon: './assets/hourbridge.svg',
       url: 'https://dennismit2n.github.io/hourbridge/', ctaKey: 'openTool' },
+    { key: 'followerlog', name: 'Follower-Log', icon: './assets/follower-log.svg',
+      url: 'https://dennismit2n.github.io/follower-log-vorlage/', ctaKey: 'openTool' },
     { key: 'pocketsum', name: 'Pocketsum', icon: './assets/pocketsum.svg',
       url: 'https://dennismit2n.github.io/pocketsum/', ctaKey: 'openTool' },
     { key: 'zaehlwerk', name: 'Zählwerk', icon: './assets/zaehlwerk.svg',

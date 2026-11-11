@@ -4485,5 +4485,218 @@ var GUIDES = {
       ja: 'https://github.com/Dennismit2n/hourbridge/blob/main/README.md',
       ko: 'https://github.com/Dennismit2n/hourbridge/blob/main/README.md'
     }
+  },
+  followerlog: {
+    purpose: {
+      de: 'Für alle, die wissen wollen, wer ihnen auf GitHub folgt und wer wieder gegangen ist. GitHub selbst zeigt nur die aktuelle Liste, keine Abgänge. Follower-Log ist eine Vorlage: Du kopierst sie als eigenes privates Repo, ein Workflow vergleicht dort jeden Tag die Liste mit der vom Vortag und schreibt die Unterschiede in ein Logbuch. Die App fürs Handy zeigt dieses Logbuch und startet beim Öffnen einen neuen Abruf. App und Anleitung sind auf Deutsch.',
+      en: 'For anyone who wants to know who follows them on GitHub and who has left again. GitHub itself only shows the current list, not who is gone. Follower-Log is a template: you copy it as your own private repo, where a workflow compares the list with the previous day’s every day and writes the differences into a logbook. The phone app shows that logbook and starts a fresh check when you open it. App and guide are in German.',
+      es: 'Para quien quiere saber quién le sigue en GitHub y quién se ha vuelto a ir. GitHub solo muestra la lista actual, no las bajas. Follower-Log es una plantilla: la copias como repo privado propio, y allí un workflow compara cada día la lista con la del día anterior y escribe las diferencias en un registro. La app para el móvil muestra ese registro y lanza una consulta nueva al abrirla. La app y la guía están en alemán.',
+      fr: 'Pour tous ceux qui veulent savoir qui les suit sur GitHub et qui est reparti. GitHub n’affiche que la liste actuelle, pas les départs. Follower-Log est un modèle : vous le copiez comme dépôt privé à vous, où un workflow compare chaque jour la liste à celle de la veille et écrit les différences dans un journal. L’appli pour téléphone affiche ce journal et lance une nouvelle vérification à l’ouverture. L’appli et le guide sont en allemand.',
+      it: 'Per chi vuole sapere chi lo segue su GitHub e chi se n’è andato di nuovo. GitHub mostra solo la lista attuale, non chi è uscito. Follower-Log è un modello: lo copi come tuo repo privato, dove un workflow confronta ogni giorno la lista con quella del giorno prima e scrive le differenze in un registro. L’app per il telefono mostra quel registro e avvia un nuovo controllo all’apertura. App e guida sono in tedesco.',
+      nl: 'Voor iedereen die wil weten wie hem of haar op GitHub volgt en wie weer is vertrokken. GitHub zelf toont alleen de huidige lijst, niet wie weg is. Follower-Log is een sjabloon: je kopieert het als eigen privérepo, waar een workflow elke dag de lijst vergelijkt met die van de dag ervoor en de verschillen in een logboek schrijft. De app voor je telefoon toont dat logboek en start bij het openen een nieuwe controle. App en handleiding zijn in het Duits.',
+      pl: 'Dla każdego, kto chce wiedzieć, kto obserwuje go na GitHubie i kto znów odszedł. Sam GitHub pokazuje tylko aktualną listę, bez odejść. Follower-Log to szablon: kopiujesz go jako własne prywatne repozytorium, w którym workflow codziennie porównuje listę z wczorajszą i zapisuje różnice w dzienniku. Aplikacja na telefon pokazuje ten dziennik i przy otwarciu uruchamia nowe sprawdzenie. Aplikacja i instrukcja są po niemiecku.',
+      pt: 'Para quem quer saber quem o segue no GitHub e quem foi embora de novo. O GitHub só mostra a lista atual, não as saídas. O Follower-Log é um modelo: você o copia como repositório privado seu, onde um workflow compara todo dia a lista com a do dia anterior e escreve as diferenças em um registro. O app para o celular mostra esse registro e inicia uma nova consulta ao abrir. O app e o guia estão em alemão.',
+      tr: 'GitHub’da kendisini kimin takip ettiğini ve kimin yeniden ayrıldığını bilmek isteyen herkes için. GitHub yalnızca güncel listeyi gösterir, ayrılanları göstermez. Follower-Log bir şablondur: onu kendi özel deponuz olarak kopyalarsınız, orada bir workflow her gün listeyi bir önceki günküyle karşılaştırır ve farkları bir kayıt defterine yazar. Telefon uygulaması bu defteri gösterir ve açıldığında yeni bir sorgu başlatır. Uygulama ve kılavuz Almancadır.',
+      ru: 'Для всех, кто хочет знать, кто подписан на них на GitHub и кто снова ушёл. Сам GitHub показывает только текущий список, без ушедших. Follower-Log это шаблон: вы копируете его как свой приватный репозиторий, где workflow каждый день сравнивает список со вчерашним и записывает различия в журнал. Приложение для телефона показывает этот журнал и при открытии запускает новую проверку. Приложение и руководство на немецком языке.',
+      hi: 'उन सबके लिए जो जानना चाहते हैं कि GitHub पर उन्हें कौन फ़ॉलो करता है और कौन फिर चला गया। GitHub ख़ुद सिर्फ़ मौजूदा सूची दिखाता है, जाने वालों को नहीं। Follower-Log एक टेम्पलेट है: आप इसे अपने निजी रेपो के रूप में कॉपी करते हैं, जहाँ एक वर्कफ़्लो हर दिन सूची की तुलना पिछले दिन की सूची से करता है और अंतर लॉगबुक में लिखता है। फ़ोन का ऐप यह लॉगबुक दिखाता है और खोलने पर नई जाँच शुरू करता है। ऐप और गाइड जर्मन में हैं।',
+      zh: '适合想知道谁在 GitHub 上关注了自己、谁又离开了的人。GitHub 本身只显示当前名单，不显示离开的人。Follower-Log 是一个模板：你把它复制成自己的私有仓库，那里的工作流每天把名单和前一天的对比，把差异写进日志。手机应用显示这份日志，并在打开时发起一次新的查询。应用和指南为德语。',
+      ja: 'GitHub で誰が自分をフォローし、誰がまた去ったのかを知りたい人のために。GitHub 自体は現在のリストしか表示せず、去った人は分かりません。Follower-Log はテンプレートです。自分の非公開リポジトリとしてコピーすると、そこでワークフローが毎日リストを前日のものと比べ、違いをログブックに書きます。スマホ用アプリはそのログブックを表示し、開くと新しい取得を始めます。アプリとガイドはドイツ語です。',
+      ko: 'GitHub에서 누가 나를 팔로우하고 누가 다시 떠났는지 알고 싶은 분을 위한 도구입니다. GitHub 자체는 현재 목록만 보여 주고 떠난 사람은 보여 주지 않습니다. Follower-Log는 템플릿입니다. 내 비공개 저장소로 복사하면 그곳에서 워크플로가 매일 목록을 전날 것과 비교해 차이를 기록장에 적습니다. 휴대폰 앱은 이 기록장을 보여 주고, 열면 새 조회를 시작합니다. 앱과 안내서는 독일어입니다.'
+    },
+    shots: [
+      {
+        file: 'follower-log.webp', w: 1027, h: 2000,
+        alt: {
+          de: 'Follower-Log auf dem Handy im Dunkelmodus: oben die Zahl 73 Follower, darunter „Letzter Lauf vor 1 h 21 min. Nächster Abruf ab 23:12.“ und der Knopf „Jetzt abrufen“. Im Verlauf stehen die Tage mit grünen Marken „neu“ und roten Marken „weg“, die Namen sind geschwärzt.',
+          en: 'Follower-Log on a phone in dark mode: at the top the number 73 followers, below it the time of the last run, when the next check is possible, and the button “Jetzt abrufen”. The history lists the days with green “neu” (new) and red “weg” (gone) labels, the names are blacked out.',
+          es: 'Follower-Log en el móvil en modo oscuro: arriba la cifra de 73 seguidores, debajo la hora de la última ejecución, a partir de cuándo se puede volver a consultar y el botón „Jetzt abrufen“. El historial muestra los días con etiquetas verdes „neu“ (nuevo) y rojas „weg“ (se fue), los nombres están tachados en negro.',
+          fr: 'Follower-Log sur téléphone en mode sombre : en haut le nombre de 73 abonnés, en dessous l’heure de la dernière exécution, le moment de la prochaine vérification possible et le bouton « Jetzt abrufen ». L’historique montre les jours avec des étiquettes vertes « neu » (nouveau) et rouges « weg » (parti), les noms sont noircis.',
+          it: 'Follower-Log sul telefono in modalità scura: in alto il numero 73 follower, sotto l’ora dell’ultima esecuzione, da quando è possibile il prossimo controllo e il pulsante „Jetzt abrufen“. La cronologia mostra i giorni con etichette verdi „neu“ (nuovo) e rosse „weg“ (andato), i nomi sono anneriti.',
+          nl: 'Follower-Log op de telefoon in donkere modus: bovenaan het getal 73 volgers, daaronder het tijdstip van de laatste run, vanaf wanneer de volgende controle kan en de knop „Jetzt abrufen“. De geschiedenis toont de dagen met groene labels „neu“ (nieuw) en rode labels „weg“, de namen zijn zwartgemaakt.',
+          pl: 'Follower-Log na telefonie w trybie ciemnym: u góry liczba 73 obserwujących, niżej czas ostatniego uruchomienia, od kiedy możliwe jest następne sprawdzenie, i przycisk „Jetzt abrufen”. Historia pokazuje dni z zielonymi etykietami „neu” (nowy) i czerwonymi „weg” (odszedł), nazwy są zaczernione.',
+          pt: 'Follower-Log no celular em modo escuro: no topo o número 73 seguidores, embaixo o horário da última execução, a partir de quando a próxima consulta é possível e o botão “Jetzt abrufen”. O histórico mostra os dias com etiquetas verdes “neu” (novo) e vermelhas “weg” (saiu), os nomes estão cobertos de preto.',
+          tr: 'Karanlık modda telefonda Follower-Log: üstte 73 takipçi sayısı, altında son çalışmanın zamanı, bir sonraki sorgunun ne zaman mümkün olduğu ve „Jetzt abrufen“ düğmesi. Geçmişte günler yeşil „neu“ (yeni) ve kırmızı „weg“ (ayrıldı) etiketleriyle listelenir, adlar karartılmıştır.',
+          ru: 'Follower-Log на телефоне в тёмном режиме: вверху число 73 подписчика, ниже время последнего запуска, с какого момента возможна следующая проверка, и кнопка «Jetzt abrufen». В истории перечислены дни с зелёными метками «neu» (новый) и красными «weg» (ушёл), имена закрашены чёрным.',
+          hi: 'डार्क मोड में फ़ोन पर Follower-Log: ऊपर 73 फ़ॉलोअर की संख्या, उसके नीचे पिछली बार चलने का समय, अगली जाँच कब से हो सकती है, और बटन “Jetzt abrufen”। इतिहास में दिन हरे “neu” (नया) और लाल “weg” (चला गया) लेबल के साथ दिखते हैं, नाम काले किए गए हैं।',
+          zh: '深色模式下手机上的 Follower-Log：顶部是数字 73 位关注者，下面是上次运行的时间、下次可以查询的时间和“Jetzt abrufen”按钮。历史记录按天列出，绿色标签“neu”（新增）、红色标签“weg”（离开），名字已涂黑。',
+          ja: 'ダークモードのスマホで見た Follower-Log。上にフォロワー数 73、その下に前回の実行時刻、次に取得できる時刻、「Jetzt abrufen」ボタン。履歴には日ごとに緑の「neu」（新規）と赤の「weg」（離脱）のラベルが並び、名前は黒く塗りつぶしてあります。',
+          ko: '다크 모드의 휴대폰에서 본 Follower-Log. 맨 위에 팔로워 수 73, 그 아래 마지막 실행 시각, 다음 조회가 가능한 시각, “Jetzt abrufen” 버튼이 있습니다. 기록에는 날짜별로 초록색 “neu”(새로 옴)와 빨간색 “weg”(떠남) 표시가 있고, 이름은 검게 가려져 있습니다.'
+        }
+      }
+    ],
+    steps: {
+      de: [
+        'Auf der GitHub-Seite der Vorlage „Use this template“ wählen und das neue Repo als privat anlegen. Dann unter „Actions“ den Workflow „Follower-Tracker“ einmal von Hand starten. Der erste Lauf legt den Startbestand an, danach läuft er jeden Tag um 09:09 UTC.',
+        'In den GitHub-Einstellungen ein Fine-grained Token anlegen, nur für dieses eine Repo, mit genau zwei Rechten: „Actions“ lesen und schreiben, „Contents“ nur lesen. Das Token gleich kopieren, GitHub zeigt es nur einmal.',
+        'Die App öffnen, Repo und Token eintragen, speichern. Zeigt dein Browser „Installieren“, legt ein Tipp darauf die App auf den Startbildschirm. Die Anleitung in Bildern führt durch alle zehn Schritte, du findest sie in den Einstellungen der App.'
+      ],
+      en: [
+        'On the template’s GitHub page choose “Use this template” and create the new repo as private. Then start the workflow “Follower-Tracker” once by hand under “Actions”. The first run records your starting list, after that it runs every day at 09:09 UTC.',
+        'In your GitHub settings create a fine-grained token for this one repo only, with exactly two permissions: “Actions” read and write, “Contents” read-only. Copy the token right away, GitHub shows it only once.',
+        'Open the app, enter repo and token, save. If your browser shows “Installieren”, a tap on it puts the app on your home screen. The picture guide walks through all ten steps, you find it in the app’s settings.'
+      ],
+      es: [
+        'En la página de GitHub de la plantilla elige “Use this template” y crea el nuevo repo como privado. Luego, en “Actions”, lanza una vez a mano el workflow “Follower-Tracker”. La primera ejecución guarda la lista inicial, después se ejecuta cada día a las 09:09 UTC.',
+        'En los ajustes de GitHub crea un token fine-grained solo para ese repo, con exactamente dos permisos: “Actions” de lectura y escritura, “Contents” solo de lectura. Copia el token enseguida, GitHub lo muestra una sola vez.',
+        'Abre la app, introduce el repo y el token, guarda. Si tu navegador muestra „Installieren“, un toque pone la app en la pantalla de inicio. La guía en imágenes recorre los diez pasos, la encuentras en los ajustes de la app.'
+      ],
+      fr: [
+        'Sur la page GitHub du modèle, choisissez « Use this template » et créez le nouveau dépôt en privé. Puis, sous « Actions », lancez une fois à la main le workflow « Follower-Tracker ». La première exécution enregistre la liste de départ, ensuite il tourne chaque jour à 09:09 UTC.',
+        'Dans les paramètres GitHub, créez un jeton fine-grained pour ce seul dépôt, avec exactement deux droits : « Actions » en lecture et écriture, « Contents » en lecture seule. Copiez le jeton tout de suite, GitHub ne l’affiche qu’une fois.',
+        'Ouvrez l’appli, saisissez le dépôt et le jeton, enregistrez. Si votre navigateur affiche « Installieren », un appui place l’appli sur l’écran d’accueil. Le guide en images parcourt les dix étapes, vous le trouvez dans les réglages de l’appli.'
+      ],
+      it: [
+        'Nella pagina GitHub del modello scegli “Use this template” e crea il nuovo repo come privato. Poi, sotto “Actions”, avvia una volta a mano il workflow “Follower-Tracker”. La prima esecuzione salva la lista di partenza, poi gira ogni giorno alle 09:09 UTC.',
+        'Nelle impostazioni di GitHub crea un token fine-grained solo per quel repo, con esattamente due permessi: “Actions” in lettura e scrittura, “Contents” in sola lettura. Copia subito il token, GitHub lo mostra una volta sola.',
+        'Apri l’app, inserisci repo e token, salva. Se il browser mostra „Installieren“, un tocco mette l’app nella schermata iniziale. La guida a immagini percorre tutti i dieci passi, la trovi nelle impostazioni dell’app.'
+      ],
+      nl: [
+        'Kies op de GitHub-pagina van het sjabloon “Use this template” en maak de nieuwe repo privé aan. Start daarna onder “Actions” de workflow “Follower-Tracker” één keer met de hand. De eerste run legt de beginlijst vast, daarna draait hij elke dag om 09:09 UTC.',
+        'Maak in de GitHub-instellingen een fine-grained token aan, alleen voor die ene repo, met precies twee rechten: “Actions” lezen en schrijven, “Contents” alleen lezen. Kopieer het token meteen, GitHub toont het maar één keer.',
+        'Open de app, vul repo en token in, sla op. Toont je browser „Installieren“, dan zet een tik de app op je beginscherm. De handleiding in plaatjes loopt alle tien stappen door, je vindt haar in de instellingen van de app.'
+      ],
+      pl: [
+        'Na stronie szablonu w GitHubie wybierz „Use this template” i utwórz nowe repozytorium jako prywatne. Potem w „Actions” uruchom raz ręcznie workflow „Follower-Tracker”. Pierwsze uruchomienie zapisuje listę początkową, później działa codziennie o 09:09 UTC.',
+        'W ustawieniach GitHuba utwórz token fine-grained tylko dla tego jednego repozytorium, z dokładnie dwoma uprawnieniami: „Actions” do odczytu i zapisu, „Contents” tylko do odczytu. Skopiuj token od razu, GitHub pokazuje go tylko raz.',
+        'Otwórz aplikację, wpisz repozytorium i token, zapisz. Jeśli przeglądarka pokazuje „Installieren”, dotknięcie umieszcza aplikację na ekranie głównym. Instrukcja w obrazkach prowadzi przez wszystkie dziesięć kroków, znajdziesz ją w ustawieniach aplikacji.'
+      ],
+      pt: [
+        'Na página do modelo no GitHub, escolha “Use this template” e crie o novo repositório como privado. Depois, em “Actions”, inicie uma vez à mão o workflow “Follower-Tracker”. A primeira execução grava a lista inicial, depois ele roda todo dia às 09:09 UTC.',
+        'Nas configurações do GitHub, crie um token fine-grained só para esse repositório, com exatamente duas permissões: “Actions” de leitura e escrita, “Contents” somente leitura. Copie o token na hora, o GitHub o mostra uma única vez.',
+        'Abra o app, informe repositório e token, salve. Se o navegador mostrar “Installieren”, um toque coloca o app na tela inicial. O guia em imagens percorre os dez passos, você o encontra nas configurações do app.'
+      ],
+      tr: [
+        'Şablonun GitHub sayfasında “Use this template” seçeneğini seçin ve yeni depoyu özel olarak oluşturun. Sonra “Actions” altında “Follower-Tracker” workflow’unu bir kez elle başlatın. İlk çalışma başlangıç listesini kaydeder, sonrasında her gün 09:09 UTC’de çalışır.',
+        'GitHub ayarlarında yalnızca bu depo için, tam iki izinli bir fine-grained token oluşturun: “Actions” okuma ve yazma, “Contents” yalnızca okuma. Token’ı hemen kopyalayın, GitHub onu yalnızca bir kez gösterir.',
+        'Uygulamayı açın, depoyu ve token’ı girin, kaydedin. Tarayıcınız „Installieren“ gösteriyorsa, ona dokunmak uygulamayı ana ekrana koyar. Resimli kılavuz on adımın hepsini anlatır, onu uygulamanın ayarlarında bulursunuz.'
+      ],
+      ru: [
+        'На странице шаблона в GitHub выберите «Use this template» и создайте новый репозиторий как приватный. Затем в разделе «Actions» один раз вручную запустите workflow «Follower-Tracker». Первый запуск сохраняет начальный список, дальше он работает каждый день в 09:09 UTC.',
+        'В настройках GitHub создайте fine-grained токен только для этого репозитория, ровно с двумя правами: «Actions» на чтение и запись, «Contents» только на чтение. Сразу скопируйте токен, GitHub показывает его лишь один раз.',
+        'Откройте приложение, введите репозиторий и токен, сохраните. Если браузер показывает «Installieren», нажатие добавит приложение на главный экран. Руководство в картинках проводит по всем десяти шагам, оно находится в настройках приложения.'
+      ],
+      hi: [
+        'टेम्पलेट के GitHub पेज पर “Use this template” चुनें और नया रेपो निजी बनाएँ। फिर “Actions” में वर्कफ़्लो “Follower-Tracker” को एक बार हाथ से चलाएँ। पहली बार चलने पर शुरुआती सूची सहेजी जाती है, उसके बाद यह हर दिन 09:09 UTC पर चलता है।',
+        'GitHub की सेटिंग्स में सिर्फ़ इसी एक रेपो के लिए एक fine-grained टोकन बनाएँ, ठीक दो अनुमतियों के साथ: “Actions” पढ़ना और लिखना, “Contents” सिर्फ़ पढ़ना। टोकन तुरंत कॉपी करें, GitHub उसे सिर्फ़ एक बार दिखाता है।',
+        'ऐप खोलें, रेपो और टोकन भरें, सहेजें। अगर आपका ब्राउज़र “Installieren” दिखाता है, तो उस पर टैप करने से ऐप होम स्क्रीन पर आ जाता है। चित्रों वाली गाइड सभी दस चरण समझाती है, वह ऐप की सेटिंग्स में मिलती है।'
+      ],
+      zh: [
+        '在模板的 GitHub 页面选择“Use this template”，把新仓库建为私有。然后在“Actions”里手动运行一次工作流“Follower-Tracker”。第一次运行会保存初始名单，之后每天 UTC 09:09 运行。',
+        '在 GitHub 设置里创建一个 fine-grained 令牌，只针对这一个仓库，正好两项权限：“Actions”读写，“Contents”只读。马上复制令牌，GitHub 只显示一次。',
+        '打开应用，填入仓库和令牌，保存。如果浏览器显示“Installieren”，点一下就能把应用放到主屏幕。图文指南会带你走完全部十步，它在应用的设置里。'
+      ],
+      ja: [
+        'テンプレートの GitHub ページで「Use this template」を選び、新しいリポジトリを非公開で作ります。次に「Actions」でワークフロー「Follower-Tracker」を一度手動で実行します。最初の実行で開始時点のリストが保存され、その後は毎日 09:09 UTC に実行されます。',
+        'GitHub の設定で、このリポジトリだけを対象にした fine-grained トークンを作ります。権限はちょうど2つ、「Actions」は読み書き、「Contents」は読み取りのみです。トークンはすぐにコピーしてください。GitHub は一度しか表示しません。',
+        'アプリを開き、リポジトリとトークンを入力して保存します。ブラウザーに「Installieren」が出ていれば、タップするとアプリがホーム画面に入ります。画像のガイドが10の手順すべてを案内します。アプリの設定から開けます。'
+      ],
+      ko: [
+        '템플릿의 GitHub 페이지에서 “Use this template”을 고르고 새 저장소를 비공개로 만듭니다. 그다음 “Actions”에서 워크플로 “Follower-Tracker”를 한 번 직접 실행합니다. 첫 실행이 시작 목록을 저장하고, 그 뒤로는 매일 09:09 UTC에 실행됩니다.',
+        'GitHub 설정에서 이 저장소 하나만을 위한 fine-grained 토큰을 만듭니다. 권한은 딱 두 가지, “Actions” 읽기와 쓰기, “Contents” 읽기 전용입니다. 토큰은 바로 복사하세요. GitHub는 한 번만 보여 줍니다.',
+        '앱을 열고 저장소와 토큰을 입력한 뒤 저장합니다. 브라우저에 “Installieren”이 보이면 누르면 앱이 홈 화면에 놓입니다. 그림 안내서가 열 단계를 모두 안내하며, 앱 설정에서 찾을 수 있습니다.'
+      ]
+    },
+    pitfalls: {
+      de: [
+        'Die App startet höchstens einen Abruf alle 178 Minuten, der tägliche Lauf zählt mit. Davor zeigt sie den letzten Stand und sagt, ab wann der nächste Abruf geht.',
+        'Das Token liegt nur im Browser deines Geräts und geht ausschließlich an api.github.com. Wer dein Gerät in der Hand hat, kann es aber auslesen. Gib ihm deshalb nur die zwei Rechte für das eine Repo und ein Ablaufdatum.',
+        'Läuft das Token ab, meldet die App einen Fehler. Dann ein neues anlegen und in den Einstellungen eintragen.',
+        'Das Logbuch sieht nur, was sich zwischen zwei Läufen geändert hat. Wer dir folgt und vor dem nächsten Lauf wieder geht, taucht nicht auf.'
+      ],
+      en: [
+        'The app starts at most one check every 178 minutes, and the daily run counts too. Before that it shows the last state and tells you when the next check is possible.',
+        'The token is stored only in your device’s browser and is sent to api.github.com alone. Anyone holding your device can still read it, so give it just the two permissions for the one repo and an expiry date.',
+        'When the token expires, the app reports an error. Create a new one and enter it in the settings.',
+        'The logbook only sees what changed between two runs. Someone who follows you and leaves again before the next run does not show up.'
+      ],
+      es: [
+        'La app lanza como mucho una consulta cada 178 minutos, y la ejecución diaria también cuenta. Antes muestra el último estado y dice a partir de cuándo se puede volver a consultar.',
+        'El token se guarda solo en el navegador de tu dispositivo y se envía únicamente a api.github.com. Quien tenga tu dispositivo en la mano puede leerlo, así que dale solo los dos permisos para ese repo y una fecha de caducidad.',
+        'Cuando el token caduca, la app da un error. Crea uno nuevo e introdúcelo en los ajustes.',
+        'El registro solo ve lo que cambió entre dos ejecuciones. Quien te sigue y se va antes de la siguiente no aparece.'
+      ],
+      fr: [
+        'L’appli lance au plus une vérification toutes les 178 minutes, et l’exécution quotidienne compte aussi. Avant cela, elle affiche le dernier état et indique à partir de quand la prochaine est possible.',
+        'Le jeton n’est stocké que dans le navigateur de votre appareil et n’est envoyé qu’à api.github.com. Quiconque tient votre appareil peut tout de même le lire : donnez-lui donc seulement les deux droits pour ce dépôt et une date d’expiration.',
+        'Quand le jeton expire, l’appli signale une erreur. Créez-en un nouveau et saisissez-le dans les réglages.',
+        'Le journal ne voit que ce qui a changé entre deux exécutions. Quelqu’un qui s’abonne et repart avant la suivante n’apparaît pas.'
+      ],
+      it: [
+        'L’app avvia al massimo un controllo ogni 178 minuti, e conta anche l’esecuzione quotidiana. Prima mostra l’ultimo stato e dice da quando è possibile il prossimo.',
+        'Il token resta solo nel browser del tuo dispositivo e viene inviato soltanto ad api.github.com. Chi ha in mano il dispositivo può comunque leggerlo: dagli quindi solo i due permessi per quel repo e una data di scadenza.',
+        'Quando il token scade, l’app segnala un errore. Creane uno nuovo e inseriscilo nelle impostazioni.',
+        'Il registro vede solo ciò che è cambiato tra due esecuzioni. Chi ti segue e se ne va prima della successiva non compare.'
+      ],
+      nl: [
+        'De app start hooguit één controle per 178 minuten, en de dagelijkse run telt mee. Daarvoor toont ze de laatste stand en zegt ze vanaf wanneer de volgende kan.',
+        'Het token staat alleen in de browser van je apparaat en gaat uitsluitend naar api.github.com. Wie je apparaat in handen heeft, kan het wel uitlezen. Geef het daarom alleen de twee rechten voor die ene repo en een vervaldatum.',
+        'Verloopt het token, dan meldt de app een fout. Maak een nieuw aan en vul het in bij de instellingen.',
+        'Het logboek ziet alleen wat tussen twee runs is veranderd. Wie je volgt en vóór de volgende run weer vertrekt, verschijnt niet.'
+      ],
+      pl: [
+        'Aplikacja uruchamia najwyżej jedno sprawdzenie na 178 minut, a codzienne uruchomienie też się liczy. Wcześniej pokazuje ostatni stan i mówi, od kiedy możliwe jest następne.',
+        'Token leży tylko w przeglądarce twojego urządzenia i trafia wyłącznie do api.github.com. Kto ma twoje urządzenie w ręku, może go jednak odczytać. Daj mu więc tylko te dwa uprawnienia dla jednego repozytorium i datę ważności.',
+        'Gdy token wygaśnie, aplikacja zgłosi błąd. Utwórz nowy i wpisz go w ustawieniach.',
+        'Dziennik widzi tylko to, co zmieniło się między dwoma uruchomieniami. Kto zacznie cię obserwować i odejdzie przed następnym, nie pojawi się.'
+      ],
+      pt: [
+        'O app inicia no máximo uma consulta a cada 178 minutos, e a execução diária também conta. Antes disso ele mostra o último estado e diz a partir de quando a próxima é possível.',
+        'O token fica só no navegador do seu aparelho e vai apenas para api.github.com. Quem estiver com o aparelho na mão ainda pode lê-lo, então dê a ele só as duas permissões para esse repositório e uma data de validade.',
+        'Quando o token expira, o app mostra um erro. Crie um novo e informe-o nas configurações.',
+        'O registro só vê o que mudou entre duas execuções. Quem segue você e sai antes da próxima não aparece.'
+      ],
+      tr: [
+        'Uygulama en fazla 178 dakikada bir sorgu başlatır, günlük çalışma da sayılır. Öncesinde son durumu gösterir ve bir sonrakinin ne zaman mümkün olduğunu söyler.',
+        'Token yalnızca cihazınızın tarayıcısında durur ve sadece api.github.com adresine gider. Yine de cihazınızı elinde tutan biri onu okuyabilir. Bu yüzden ona yalnızca o depo için iki izni ve bir son kullanma tarihi verin.',
+        'Token’ın süresi dolduğunda uygulama hata verir. Yenisini oluşturup ayarlara girin.',
+        'Kayıt defteri yalnızca iki çalışma arasında değişeni görür. Sizi takip edip bir sonraki çalışmadan önce ayrılan biri görünmez.'
+      ],
+      ru: [
+        'Приложение запускает не больше одной проверки в 178 минут, ежедневный запуск тоже считается. До этого оно показывает последнее состояние и сообщает, когда возможна следующая проверка.',
+        'Токен хранится только в браузере вашего устройства и отправляется исключительно на api.github.com. Но тот, у кого в руках ваше устройство, может его прочитать. Поэтому дайте ему только два права для одного репозитория и срок действия.',
+        'Когда срок токена истекает, приложение сообщает об ошибке. Создайте новый и введите его в настройках.',
+        'Журнал видит только то, что изменилось между двумя запусками. Тот, кто подписался и ушёл до следующего запуска, в нём не появится.'
+      ],
+      hi: [
+        'ऐप ज़्यादा से ज़्यादा हर 178 मिनट में एक जाँच शुरू करता है, रोज़ का रन भी गिना जाता है। उससे पहले वह पिछली स्थिति दिखाता है और बताता है कि अगली जाँच कब से हो सकती है।',
+        'टोकन सिर्फ़ आपके डिवाइस के ब्राउज़र में रहता है और केवल api.github.com को जाता है। फिर भी जिसके हाथ में आपका डिवाइस है, वह उसे पढ़ सकता है। इसलिए उसे सिर्फ़ उस एक रेपो की दो अनुमतियाँ और एक समाप्ति तिथि दें।',
+        'टोकन की अवधि ख़त्म होने पर ऐप त्रुटि दिखाता है। तब नया बनाकर सेटिंग्स में भरें।',
+        'लॉगबुक सिर्फ़ वही देखती है जो दो रन के बीच बदला। जो आपको फ़ॉलो करके अगले रन से पहले चला जाए, वह नहीं दिखता।'
+      ],
+      zh: [
+        '应用最多每 178 分钟发起一次查询，每天的定时运行也算在内。在那之前它显示上次的结果，并告诉你下次什么时候可以查询。',
+        '令牌只保存在你设备的浏览器里，只发送给 api.github.com。不过拿到你设备的人仍能读到它，所以只给它这一个仓库的两项权限，并设一个到期日。',
+        '令牌过期后，应用会报错。这时新建一个并填进设置。',
+        '日志只能看到两次运行之间的变化。关注你又在下次运行前离开的人不会出现。'
+      ],
+      ja: [
+        'アプリが取得を始めるのは多くても 178 分に1回で、毎日の定時実行も数に入ります。それまでは前回の状態を表示し、次に取得できる時刻を知らせます。',
+        'トークンは端末のブラウザーの中だけにあり、api.github.com にしか送られません。それでも端末を手にした人は読み取れます。そのため、このリポジトリ向けの2つの権限と有効期限だけを与えてください。',
+        'トークンの期限が切れると、アプリはエラーを表示します。新しく作って設定に入力してください。',
+        'ログブックに見えるのは、2回の実行の間に変わったことだけです。フォローして次の実行までに去った人は現れません。'
+      ],
+      ko: [
+        '앱은 많아야 178분에 한 번 조회를 시작하고, 매일의 예약 실행도 여기에 포함됩니다. 그 전에는 마지막 상태를 보여 주고 다음 조회가 언제부터 가능한지 알려 줍니다.',
+        '토큰은 내 기기의 브라우저에만 있고 api.github.com으로만 전송됩니다. 그래도 기기를 손에 넣은 사람은 읽을 수 있습니다. 그러니 그 저장소 하나에 대한 두 가지 권한과 만료일만 주세요.',
+        '토큰이 만료되면 앱이 오류를 알립니다. 새로 만들어 설정에 입력하세요.',
+        '기록장은 두 실행 사이에 바뀐 것만 봅니다. 팔로우했다가 다음 실행 전에 떠난 사람은 나타나지 않습니다.'
+      ]
+    },
+    docs: {
+      de: 'https://dennismit2n.github.io/follower-log-vorlage/anleitung/',
+      en: 'https://dennismit2n.github.io/follower-log-vorlage/anleitung/',
+      es: 'https://dennismit2n.github.io/follower-log-vorlage/anleitung/',
+      fr: 'https://dennismit2n.github.io/follower-log-vorlage/anleitung/',
+      it: 'https://dennismit2n.github.io/follower-log-vorlage/anleitung/',
+      nl: 'https://dennismit2n.github.io/follower-log-vorlage/anleitung/',
+      pl: 'https://dennismit2n.github.io/follower-log-vorlage/anleitung/',
+      pt: 'https://dennismit2n.github.io/follower-log-vorlage/anleitung/',
+      tr: 'https://dennismit2n.github.io/follower-log-vorlage/anleitung/',
+      ru: 'https://dennismit2n.github.io/follower-log-vorlage/anleitung/',
+      hi: 'https://dennismit2n.github.io/follower-log-vorlage/anleitung/',
+      zh: 'https://dennismit2n.github.io/follower-log-vorlage/anleitung/',
+      ja: 'https://dennismit2n.github.io/follower-log-vorlage/anleitung/',
+      ko: 'https://dennismit2n.github.io/follower-log-vorlage/anleitung/'
+    }
   }
 };

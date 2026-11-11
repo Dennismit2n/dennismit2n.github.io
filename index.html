@@ -36,7 +36,7 @@
   <!-- Die Überschriftenschrift wird auf jeder Seite und in jeder Sprache gebraucht
        (mindestens für den Markennamen), also früh anstoßen statt erst nach der CSS. -->
   <link rel="preload" href="./assets/fonts/fraunces/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="./css/style.css?v=2026-11-10">
+  <link rel="stylesheet" href="./css/style.css?v=2026-11-11c">
   <!-- Darstellung vor dem ersten Bild: die gemeinsame Wahl aller Werkzeuge
        (werkstatt.darstellung, sonst der alte Schlüssel), sonst entscheidet das
        System per CSS. data-vision trägt Hoher Kontrast, Farbenblind und Umkehr;
@@ -286,6 +286,22 @@
             <a href="./werkstatt.html#hourbridge-bilder" data-count="werkstatt-hourbridge-bilder" data-i18n="secShots">Screenshots</a>
           </span>
         </div>
+        <!-- Follower-Log: Kappe und Name in Rot und Grün im Wechsel, leicht durchscheinend,
+             siehe --followerlog-flow in style.css. -->
+        <div class="tool-card tool-followerlog">
+          <span class="tool-head">
+            <img src="./assets/follower-log.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-followerlog">Follower-Log</span>
+          </span>
+          <span class="tool-desc" data-i18n="followerlogDesc">Who follows you on GitHub, and who has left? A template for your own logbook, with a small app for your phone.</span>
+          <span class="tool-meta" data-i18n="followerlogMeta">Free · GitHub template · runs in your own repo · app in German</span>
+          <a class="tool-open" id="open-followerlog" aria-labelledby="open-followerlog name-followerlog" href="https://dennismit2n.github.io/follower-log-vorlage/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="followerlog">
+            <a href="./werkstatt.html#followerlog-neuigkeiten" data-count="werkstatt-followerlog-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#followerlog-anleitung" data-count="werkstatt-followerlog-anleitung" data-i18n="secGuide">Guide</a>
+            <a href="./werkstatt.html#followerlog-bilder" data-count="werkstatt-followerlog-bilder" data-i18n="secShots">Screenshots</a>
+          </span>
+        </div>
         <!-- Pocketsum: neutrale Kachel, die Kappe trägt die fünf Farben der Rechner
              (siehe --pocketsum-flow in style.css). -->
         <div class="tool-card tool-pocketsum">
@@ -457,9 +473,9 @@
      Als eigenes Skript-Tag hielt es das Übersetzen noch eine halbe Sekunde
      auf; main.js holt es deshalb erst danach. data-news trägt die Adresse
      samt ?v=-Stempel. -->
-<script src="./js/i18n.js?v=2026-11-11b" fetchpriority="high"></script>
+<script src="./js/i18n.js?v=2026-11-11c" fetchpriority="high"></script>
 <script src="./js/dates.js?v=2026-09-14" fetchpriority="high"></script>
 <script src="./js/header.js?v=2026-11-03" fetchpriority="high"></script>
-<script src="./js/main.js?v=2026-11-03c" fetchpriority="high" data-news="./js/news.js?v=2026-11-11b"></script>
+<script src="./js/main.js?v=2026-11-03c" fetchpriority="high" data-news="./js/news.js?v=2026-11-11c"></script>
 </body>
 </html>
