@@ -1886,7 +1886,7 @@ var GUIDES = {
         }
       },
       {
-        file: 'zaehlwerk-ticker-de.webp', w: 448, h: 424,
+        file: 'zaehlwerk-ticker-de.webp', w: 355, h: 333,
         alt: {
           de: 'Der Zählwerk Ticker, die schwebende Anzeige für Windows: der laufende Fünf-Stunden-Block mit der Zeit bis zu seinem Ende, die Tagessumme mit der Zahl der Antworten und der Verbrauch je Modell.',
           en: 'Zählwerk Ticker, the floating readout for Windows: the current five-hour block with the time until it ends, today’s total with the number of replies, and usage per model.',

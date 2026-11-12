@@ -1350,6 +1350,25 @@ var NEWS = {
   zaehlwerk: [
     {
       date: '2026-11-12',
+      version: 'Ticker v1.2',
+      link: 'https://github.com/Dennismit2n/zaehlwerk-ticker/releases/tag/v1.2',
+      de: 'Der Zählwerk Ticker trägt jetzt denselben Look wie die Kacheln hier: Die Anzeige sitzt auf einer Platte mit eckigem Rahmen und vier kleinen Schrauben in Weißgold, und der Schatten fällt nach links unten. An Zahlen und Bedienung ändert sich nichts.',
+      en: 'Zählwerk Ticker now wears the same look as the tiles here: the readout sits on a plate with a square frame and four small white gold screws, and the shadow falls to the bottom left. Nothing changes in the numbers or in how you use it.',
+      es: 'Zählwerk Ticker lleva ahora el mismo aspecto que las tarjetas de aquí: el indicador se apoya en una placa con marco recto y cuatro tornillos pequeños de oro blanco, y la sombra cae hacia abajo a la izquierda. Ni las cifras ni el manejo cambian.',
+      fr: 'Zählwerk Ticker porte désormais le même look que les tuiles d’ici : l’affichage repose sur une plaque avec un cadre à angles droits et quatre petites vis en or blanc, et l’ombre tombe en bas à gauche. Rien ne change aux chiffres ni à l’utilisation.',
+      it: 'Zählwerk Ticker ora ha lo stesso aspetto delle tessere di qui: il riquadro poggia su una piastra con cornice squadrata e quattro piccole viti in oro bianco, e l’ombra cade in basso a sinistra. Numeri e uso restano uguali.',
+      nl: 'De Zählwerk Ticker draagt nu dezelfde look als de tegels hier: de uitlezing zit op een plaat met een rechte lijst en vier kleine schroefjes in witgoud, en de schaduw valt naar linksonder. Aan de cijfers en de bediening verandert niets.',
+      pl: 'Zählwerk Ticker ma teraz ten sam wygląd co kafelki tutaj: okienko leży na płytce z prostokątną ramką i czterema małymi śrubkami z białego złota, a cień pada w lewo w dół. Liczby i obsługa zostają bez zmian.',
+      pt: 'O Zählwerk Ticker agora tem o mesmo visual dos blocos daqui: o mostrador fica sobre uma placa com moldura reta e quatro parafusinhos em ouro branco, e a sombra cai para baixo à esquerda. Nada muda nos números nem no uso.',
+      tr: 'Zählwerk Ticker artık buradaki kutularla aynı görünümü taşıyor: gösterge, köşeli çerçevesi ve beyaz altın dört küçük vidası olan bir plakanın üstünde duruyor, gölge de sol alta düşüyor. Sayılarda ve kullanımda bir şey değişmiyor.',
+      ru: 'Zählwerk Ticker теперь выглядит так же, как плитки здесь: окошко лежит на пластине с прямоугольной рамкой и четырьмя маленькими винтами из белого золота, а тень падает влево вниз. Цифры и управление остались прежними.',
+      hi: 'Zählwerk Ticker अब यहाँ की टाइलों जैसा ही दिखता है: पैनल एक प्लेट पर बैठा है, जिसमें चौकोर फ़्रेम और सफ़ेद सोने के चार छोटे पेंच हैं, और परछाईं नीचे बाईं ओर पड़ती है। आँकड़ों और इस्तेमाल में कुछ नहीं बदला।',
+      zh: 'Zählwerk Ticker 现在和这里的卡片是同一种外观：小窗放在一块面板上，面板带直角内框和四颗白金色小螺丝，阴影落向左下方。数字和用法都没有变化。',
+      ja: 'Zählwerk Ticker が、ここのタイルと同じ見た目になりました。表示は、角ばった枠と4本の小さなホワイトゴールドのねじが付いたプレートの上に載り、影は左下に落ちます。数字と使い方は変わりません。',
+      ko: 'Zählwerk Ticker가 이제 이곳 타일과 같은 모습입니다. 표시창은 각진 테두리와 화이트골드 작은 나사 네 개가 달린 판 위에 놓이고, 그림자는 왼쪽 아래로 떨어집니다. 숫자와 사용법은 그대로입니다.'
+    },
+    {
+      date: '2026-11-12',
       de: 'Neuer Look wie auf der Startseite: Alles mit Rahmen trägt jetzt einen eckigen Innenrahmen und vier kleine Schrauben in Weißgold, und die Schatten fallen nach links unten. An der Bedienung ändert sich nichts.',
       en: 'New look, matching the start page: everything with a border now carries a square inner frame and four small white gold screws, and the shadows fall to the bottom left. Nothing changes in how you use it.',
       es: 'Nuevo aspecto, como en la página de inicio: todo lo que tiene borde lleva ahora un marco interior recto y cuatro tornillos pequeños de oro blanco, y las sombras caen hacia abajo a la izquierda. El manejo no cambia.',
