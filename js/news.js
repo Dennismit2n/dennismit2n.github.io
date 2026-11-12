@@ -21,6 +21,25 @@
 var NEWS = {
   ram: [
     {
+      date: '2026-11-12',
+      version: 'v1.4.0',
+      link: 'https://github.com/Dennismit2n/Real_RAM_cooler/releases/tag/v1.4.0',
+      de: 'Real_RAM_cooler trägt jetzt denselben Look wie die Kacheln hier: Der RAM-Balken und die Prozessliste sitzen auf Karten mit eckigem Innenrahmen und vier kleinen Schrauben in Weißgold, und der Schatten fällt nach links unten. Fenstergröße, Zahlen und Knöpfe bleiben, wie sie sind.',
+      en: 'Real_RAM_cooler now wears the same look as the tiles here: the RAM bar and the process list sit on cards with a square inner frame and four small white gold screws, and the shadow falls to the bottom left. Window size, numbers and buttons stay as they are.',
+      es: 'Real_RAM_cooler lleva ahora el mismo aspecto que las tarjetas de aquí: la barra de RAM y la lista de procesos se apoyan en tarjetas con marco interior recto y cuatro tornillos pequeños de oro blanco, y la sombra cae hacia abajo a la izquierda. El tamaño de la ventana, las cifras y los botones no cambian.',
+      fr: 'Real_RAM_cooler porte désormais le même look que les tuiles d’ici : la barre de RAM et la liste des processus reposent sur des cartes avec un cadre intérieur à angles droits et quatre petites vis en or blanc, et l’ombre tombe en bas à gauche. La taille de la fenêtre, les chiffres et les boutons restent les mêmes.',
+      it: 'Real_RAM_cooler ora ha lo stesso aspetto delle tessere di qui: la barra della RAM e l’elenco dei processi poggiano su schede con cornice interna squadrata e quattro piccole viti in oro bianco, e l’ombra cade in basso a sinistra. Dimensione della finestra, numeri e pulsanti restano uguali.',
+      nl: 'Real_RAM_cooler draagt nu dezelfde look als de tegels hier: de RAM-balk en de proceslijst zitten op kaarten met een rechte binnenlijst en vier kleine schroefjes in witgoud, en de schaduw valt naar linksonder. Venstergrootte, cijfers en knoppen blijven zoals ze zijn.',
+      pl: 'Real_RAM_cooler ma teraz ten sam wygląd co kafelki tutaj: pasek RAM i lista procesów leżą na kartach z prostokątną ramką wewnętrzną i czterema małymi śrubkami z białego złota, a cień pada w lewo w dół. Rozmiar okna, liczby i przyciski zostają bez zmian.',
+      pt: 'O Real_RAM_cooler agora tem o mesmo visual dos blocos daqui: a barra de RAM e a lista de processos ficam sobre cartões com moldura interna reta e quatro parafusinhos em ouro branco, e a sombra cai para baixo à esquerda. Tamanho da janela, números e botões continuam iguais.',
+      tr: 'Real_RAM_cooler artık buradaki kutularla aynı görünümü taşıyor: RAM çubuğu ve işlem listesi, köşeli bir iç çerçeve ile beyaz altın dört küçük vidası olan kartların üstünde duruyor, gölge de sol alta düşüyor. Pencere boyutu, sayılar ve düğmeler aynı kalıyor.',
+      ru: 'Real_RAM_cooler теперь выглядит так же, как плитки здесь: полоса RAM и список процессов лежат на карточках с прямоугольной внутренней рамкой и четырьмя маленькими винтами из белого золота, а тень падает влево вниз. Размер окна, цифры и кнопки остались прежними.',
+      hi: 'Real_RAM_cooler अब यहाँ की टाइलों जैसा ही दिखता है: RAM पट्टी और प्रोसेस सूची ऐसे कार्डों पर हैं, जिनमें चौकोर भीतरी फ़्रेम और सफ़ेद सोने के चार छोटे पेंच हैं, और परछाईं नीचे बाईं ओर पड़ती है। विंडो का आकार, आँकड़े और बटन वैसे ही हैं।',
+      zh: 'Real_RAM_cooler 现在和这里的卡片是同一种外观：内存条和进程列表放在带直角内框和四颗白金色小螺丝的卡片上，阴影落向左下方。窗口大小、数字和按钮都保持不变。',
+      ja: 'Real_RAM_cooler が、ここのタイルと同じ見た目になりました。RAM バーとプロセス一覧は、角ばった内枠と4本の小さなホワイトゴールドのねじが付いたカードに載り、影は左下に落ちます。ウィンドウの大きさ、数字、ボタンは変わりません。',
+      ko: 'Real_RAM_cooler가 이제 이곳 타일과 같은 모습입니다. RAM 막대와 프로세스 목록이 각진 안쪽 테두리와 화이트골드 작은 나사 네 개가 달린 카드 위에 놓이고, 그림자는 왼쪽 아래로 떨어집니다. 창 크기, 숫자, 버튼은 그대로입니다.'
+    },
+    {
       date: '2026-11-01',
       version: 'v1.3.3',
       link: 'https://github.com/Dennismit2n/Real_RAM_cooler/releases/tag/v1.3.3',

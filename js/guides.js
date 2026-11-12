@@ -48,8 +48,8 @@ var GUIDES = {
     shots: [
       {
         files: {
-          de: ['ram-de.webp', 612, 802],
-          en: ['ram-en.webp', 611, 806]
+          de: ['ram-de.webp', 612, 807],
+          en: ['ram-en.webp', 612, 807]
         },
         alt: {
           de: 'Das Fenster von Real_RAM_cooler: ein Balken, der zeigt, wie viel Arbeitsspeicher in Benutzung, im Standby und wirklich frei ist, darunter der Knopf zum Bereinigen fürs Gaming, ein Placebo-Knopf und die zwölf größten Speicherfresser mit den Spalten Berührt und Besitzt.',
