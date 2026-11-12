@@ -189,7 +189,10 @@ var Header = (function () {
     function onClick(event) {
       // auxclick: the middle button opens a link in a new tab and fires no
       // click event. Right-click "open in new tab" cannot be seen at all.
+      // Each event only for its own button, so no browser can count one
+      // middle-click twice (once as auxclick, once as a legacy click).
       if (event.type === 'auxclick' && event.button !== 1) { return; }
+      if (event.type === 'click' && event.button !== 0) { return; }
       var link = event.target && event.target.closest ? event.target.closest('a[data-count]') : null;
       var card = link ? link.closest('.tool-card') : null;
       if (!card) { return; }

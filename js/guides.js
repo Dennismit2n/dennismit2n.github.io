@@ -2111,20 +2111,20 @@ var GUIDES = {
 
   ticker: {
     purpose: {
-      de: 'Für alle, die ihre eigene Webseite mit GoatCounter zählen lassen: Der Besucher-Ticker stellt die Zahlen des eigenen Kontos als kleines, immer sichtbares Fenster auf den Windows-Schreibtisch. Er zeigt Aufrufe im gewählten Zeitraum, Besucher je Seite als Balken, dazu Länder oder Verweise. Selbst zählt der Ticker nichts, er zeigt nur an, was GoatCounter schon weiß.',
-      en: 'For everyone whose own website counts with GoatCounter: the Besucher-Ticker puts the numbers of your account on the Windows desktop as a small, always visible window. It shows pageviews for the chosen period, visitors per page as bars, plus countries or referrers. The ticker does not count anything itself. It only displays what GoatCounter already knows.',
-      es: 'Para todos los que miden su propia web con GoatCounter: el Besucher-Ticker pone las cifras de tu propia cuenta en el escritorio de Windows como una ventana pequeña y siempre visible. Muestra las páginas vistas en el periodo elegido, los visitantes por página en forma de barras, además de países o referencias. El ticker no cuenta nada por sí mismo, solo muestra lo que GoatCounter ya sabe.',
-      fr: 'Pour qui fait compter son propre site web par GoatCounter : le Besucher-Ticker affiche les chiffres du compte sur le bureau Windows sous forme de petite fenêtre toujours visible. Il montre les pages vues sur la période choisie, les visiteurs par page sous forme de barres, plus les pays ou les référents. Le ticker ne compte rien lui-même, il montre seulement ce que GoatCounter sait déjà.',
-      it: 'Per tutti quelli che fanno contare il proprio sito con GoatCounter: il Besucher-Ticker mette i numeri del proprio account sul desktop di Windows come una piccola finestra sempre visibile. Mostra le visualizzazioni nel periodo scelto, i visitatori per pagina come barre, più paesi o referrer. Il ticker non conta niente da sé, mostra solo quello che GoatCounter sa già.',
-      nl: 'Voor iedereen die de eigen website door GoatCounter laat tellen: de Besucher-Ticker zet de cijfers van je eigen account als klein, altijd zichtbaar venster op het Windows-bureaublad. Hij toont paginaweergaven in de gekozen periode, bezoekers per pagina als balken, plus landen of verwijzers. De ticker telt zelf niets, hij laat alleen zien wat GoatCounter al weet.',
-      pl: 'Dla wszystkich, którzy zliczają ruch na własnej stronie w usłudze GoatCounter: Besucher-Ticker stawia liczby z własnego konta na pulpicie Windows jako małe, zawsze widoczne okno. Pokazuje wyświetlenia w wybranym okresie, odwiedzających dla każdej strony w formie słupków, do tego kraje albo źródła wejść. Ticker sam niczego nie liczy, pokazuje tylko to, co GoatCounter już wie.',
-      pt: 'Para quem deixa o GoatCounter contar o próprio site: o Besucher-Ticker coloca os números da sua conta na área de trabalho do Windows como uma janelinha sempre visível. Ele mostra visualizações no período escolhido, visitantes por página em barras, e ainda países ou referências. O ticker não conta nada por conta própria, ele só mostra o que o GoatCounter já sabe.',
-      tr: 'Kendi web sitesini GoatCounter ile saydıran herkes için: Besucher-Ticker, kendi hesabınızın sayılarını küçük, her zaman görünen bir pencere olarak Windows masaüstüne koyar. Seçilen dönemdeki görüntülenmeleri, sayfa başına ziyaretçileri çubuk olarak, ayrıca ülkeleri veya yönlendirenleri gösterir. Ticker kendisi hiçbir şey saymaz, yalnızca GoatCounter’ın zaten bildiğini gösterir.',
-      ru: 'Для всех, кто считает посещения своего сайта через GoatCounter: Besucher-Ticker показывает цифры вашего аккаунта на рабочем столе Windows в небольшом, всегда видимом окне. Там видны просмотры за выбранный период, посетители по страницам в виде столбиков, плюс страны или источники переходов. Сам тикер ничего не считает, он только показывает то, что GoatCounter уже знает.',
-      hi: 'उन सबके लिए जो अपनी वेबसाइट GoatCounter से गिनवाते हैं: Besucher-Ticker आपके अपने खाते के आँकड़ों को एक छोटी, हमेशा दिखने वाली विंडो के रूप में Windows डेस्कटॉप पर रख देता है। उसमें चुनी हुई अवधि के पेजव्यू, प्रति पेज विज़िटर बार के रूप में, और साथ में देश या रेफ़रर दिखते हैं। टिकर खुद कुछ नहीं गिनता, वह बस वही दिखाता है जो GoatCounter पहले से जानता है।',
-      zh: '给所有让 GoatCounter 统计自己网站的人：Besucher-Ticker 用一个小小的、始终可见的窗口，把你自己账号里的数字摆在 Windows 桌面上。里面有所选时间段的浏览量、按页面的访客柱条，以及国家或来源。这个 Ticker 自己什么都不统计，它只显示 GoatCounter 已经知道的东西。',
-      ja: '自分のウェブサイトを GoatCounter で数えてもらっている方へ: Besucher-Ticker は、自分のアカウントの数字を、小さくて常に見えるウィンドウとして Windows のデスクトップに置きます。選んだ期間のページビュー、ページごとの訪問者数をバーで、さらに国または参照元も表示します。Ticker 自体は何も数えません。GoatCounter がすでに知っていることを表示するだけです。',
-      ko: '자기 웹사이트를 GoatCounter로 집계하게 하는 분들을 위한 도구입니다. Besucher-Ticker는 자기 계정의 숫자를 Windows 바탕화면 위에 작고 늘 보이는 창으로 올려놓습니다. 선택한 기간의 조회수, 페이지별 방문자를 막대로, 여기에 국가 또는 유입 경로를 보여 줍니다. 티커 자체는 아무것도 세지 않습니다. GoatCounter가 이미 아는 것을 보여 줄 뿐입니다.'
+      de: 'Für alle, die ihre eigene Webseite mit GoatCounter zählen lassen: Der Besucher-Ticker stellt die Zahlen des eigenen Kontos als kleines, immer sichtbares Fenster auf den Windows-Schreibtisch. Er zeigt wahlweise Seitenbesuche oder Klicks auf Kacheln im gewählten Zeitraum, als Summe und als Balken je Werkzeug, dazu Länder oder Verweise. Selbst zählt der Ticker nichts, er zeigt nur an, was GoatCounter schon weiß.',
+      en: 'For everyone whose own website counts with GoatCounter: the Besucher-Ticker puts the numbers of your account on the Windows desktop as a small, always visible window. It shows either page visits or clicks on tiles for the chosen period, as a total and as bars per tool, plus countries or referrers. The ticker does not count anything itself. It only displays what GoatCounter already knows.',
+      es: 'Para todos los que miden su propia web con GoatCounter: el Besucher-Ticker pone las cifras de tu propia cuenta en el escritorio de Windows como una ventana pequeña y siempre visible. Muestra, según prefieras, las visitas a páginas o los clics en tarjetas en el periodo elegido, como total y en forma de barras por herramienta, además de países o referencias. El ticker no cuenta nada por sí mismo, solo muestra lo que GoatCounter ya sabe.',
+      fr: 'Pour qui fait compter son propre site web par GoatCounter : le Besucher-Ticker affiche les chiffres du compte sur le bureau Windows sous forme de petite fenêtre toujours visible. Il montre au choix les visites de pages ou les clics sur les vignettes pour la période sélectionnée, sous forme de total et de barres par outil, plus les pays ou les référents. Le ticker ne compte rien lui-même, il montre seulement ce que GoatCounter sait déjà.',
+      it: 'Per tutti quelli che fanno contare il proprio sito con GoatCounter: il Besucher-Ticker mette i numeri del proprio account sul desktop di Windows come una piccola finestra sempre visibile. Mostra a scelta le visite alle pagine o i clic sulle schede nel periodo selezionato, come totale e come barre per strumento, più paesi o referrer. Il ticker non conta niente da sé, mostra solo quello che GoatCounter sa già.',
+      nl: 'Voor iedereen die de eigen website door GoatCounter laat tellen: de Besucher-Ticker zet de cijfers van je eigen account als klein, altijd zichtbaar venster op het Windows-bureaublad. Hij toont naar keuze paginabezoeken of klikken op tegels in de gekozen periode, als totaal en als balken per tool, plus landen of verwijzers. De ticker telt zelf niets, hij laat alleen zien wat GoatCounter al weet.',
+      pl: 'Dla wszystkich, którzy zliczają ruch na własnej stronie w usłudze GoatCounter: Besucher-Ticker stawia liczby z własnego konta na pulpicie Windows jako małe, zawsze widoczne okno. Pokazuje do wyboru odwiedziny stron albo kliknięcia kafelków w wybranym okresie, jako sumę i jako słupki dla każdego narzędzia, do tego kraje albo źródła wejść. Ticker sam niczego nie liczy, pokazuje tylko to, co GoatCounter już wie.',
+      pt: 'Para quem deixa o GoatCounter contar o próprio site: o Besucher-Ticker coloca os números da sua conta na área de trabalho do Windows como uma janelinha sempre visível. Ele mostra, à sua escolha, visitas às páginas ou cliques nos cartões no período escolhido, como total e em barras por ferramenta, e ainda países ou referências. O ticker não conta nada por conta própria, ele só mostra o que o GoatCounter já sabe.',
+      tr: 'Kendi web sitesini GoatCounter ile saydıran herkes için: Besucher-Ticker, kendi hesabınızın sayılarını küçük, her zaman görünen bir pencere olarak Windows masaüstüne koyar. Seçilen dönem için tercihe göre ya sayfa ziyaretlerini ya da kartlara yapılan tıklamaları, toplam olarak ve araç başına çubuklar halinde, ayrıca ülkeleri veya yönlendirenleri gösterir. Ticker kendisi hiçbir şey saymaz, yalnızca GoatCounter’ın zaten bildiğini gösterir.',
+      ru: 'Для всех, кто считает посещения своего сайта через GoatCounter: Besucher-Ticker показывает цифры вашего аккаунта на рабочем столе Windows в небольшом, всегда видимом окне. Там видны, на ваш выбор, посещения страниц или клики по плиткам за выбранный период, общей суммой и столбиками по инструментам, плюс страны или источники переходов. Сам тикер ничего не считает, он только показывает то, что GoatCounter уже знает.',
+      hi: 'उन सबके लिए जो अपनी वेबसाइट GoatCounter से गिनवाते हैं: Besucher-Ticker आपके अपने खाते के आँकड़ों को एक छोटी, हमेशा दिखने वाली विंडो के रूप में Windows डेस्कटॉप पर रख देता है। उसमें आपकी पसंद के अनुसार चुनी हुई अवधि के पेज विज़िट या कार्डों पर क्लिक दिखते हैं, कुल योग के रूप में और प्रति टूल बार के रूप में, और साथ में देश या रेफ़रर। टिकर खुद कुछ नहीं गिनता, वह बस वही दिखाता है जो GoatCounter पहले से जानता है।',
+      zh: '给所有让 GoatCounter 统计自己网站的人：Besucher-Ticker 用一个小小的、始终可见的窗口，把你自己账号里的数字摆在 Windows 桌面上。它显示所选时间段内的页面访问或卡片点击（二者任选其一），既有总数，也有按工具的柱条，另外还有国家或来源。这个 Ticker 自己什么都不统计，它只显示 GoatCounter 已经知道的东西。',
+      ja: '自分のウェブサイトを GoatCounter で数えてもらっている方へ: Besucher-Ticker は、自分のアカウントの数字を、小さくて常に見えるウィンドウとして Windows のデスクトップに置きます。選んだ期間のページ訪問かカードのクリックのどちらかを、合計とツールごとのバーで示し、さらに国または参照元も表示します。Ticker 自体は何も数えません。GoatCounter がすでに知っていることを表示するだけです。',
+      ko: '자기 웹사이트를 GoatCounter로 집계하게 하는 분들을 위한 도구입니다. Besucher-Ticker는 자기 계정의 숫자를 Windows 바탕화면 위에 작고 늘 보이는 창으로 올려놓습니다. 선택한 기간의 페이지 방문 또는 타일 클릭 중 원하는 쪽을 합계와 도구별 막대로 보여 주고, 여기에 국가 또는 유입 경로도 보여 줍니다. 티커 자체는 아무것도 세지 않습니다. GoatCounter가 이미 아는 것을 보여 줄 뿐입니다.'
     },
     shots: [
       {
@@ -2153,156 +2153,156 @@ var GUIDES = {
       de: [
         'Die ZIP-Datei aus den Releases laden, entpacken und die Exe doppelklicken. Windows meldet „Unbekannter Herausgeber“, weil die Datei nicht signiert ist. Über „Weitere Informationen“ geht es weiter.',
         'Beim ersten Start die Adresse der eigenen GoatCounter-Seite eintippen und ein API-Token einfügen. Das Token legst du auf deiner GoatCounter-Seite an: Benutzername oben rechts → API → „Add new token“. Das Häkchen „Read statistics“ genügt.',
-        'Das Overlay mit der Maus dorthin ziehen, wo es nicht stört. Rechtsklick aufs Symbol im Infobereich der Taskleiste: Zeitraum, Zusatzblock, Einstellungen, Nächstes Theme, Sprache.'
+        'Das Overlay mit der Maus dorthin ziehen, wo es nicht stört. Rechtsklick aufs Symbol im Infobereich der Taskleiste: Zeitraum, Zusatzblock, Zählweise, Einstellungen, Nächstes Theme, Sprache.'
       ],
       en: [
         'Download the ZIP from the releases, unpack it and double-click the exe. Windows will say “unknown publisher” because the file is not signed. Continue via “more info”.',
         'On first start, type in the address of your own GoatCounter site and paste an API token. You create the token on your GoatCounter site: username in the top right → API → “Add new token”. Ticking “Read statistics” is enough.',
-        'Drag the overlay wherever it does not get in the way. Right-click the tray icon for Time range, Extra block, Settings, Next theme and Language.'
+        'Drag the overlay wherever it does not get in the way. Right-click the tray icon for Time range, Extra block, Counting, Settings, Next theme and Language.'
       ],
       es: [
         'Descarga el archivo ZIP desde las versiones, descomprímelo y haz doble clic en el exe. Windows avisa de «Editor desconocido» porque el archivo no está firmado. Se continúa con «Más información».',
         'En el primer arranque, escribe la dirección de tu propia página de GoatCounter y pega un token de la API. El token lo creas en tu página de GoatCounter: nombre de usuario arriba a la derecha → API → «Add new token». Basta con la casilla «Read statistics».',
-        'Arrastra la ventana flotante con el ratón a donde no moleste. Clic derecho en el icono del área de notificación de la barra de tareas: Periodo, Bloque extra, Ajustes, Siguiente tema, Idioma.'
+        'Arrastra la ventana flotante con el ratón a donde no moleste. Clic derecho en el icono del área de notificación de la barra de tareas: Periodo, Bloque extra, Recuento, Ajustes, Siguiente tema, Idioma.'
       ],
       fr: [
         'Télécharger le fichier ZIP depuis les releases, le décompresser et double-cliquer sur l’exécutable. Windows signale « Éditeur inconnu », parce que le fichier n’est pas signé. On continue via « Informations complémentaires ».',
         'Au premier démarrage, taper l’adresse de votre propre page GoatCounter et coller un jeton d’API. Le jeton, vous le créez sur votre page GoatCounter : nom d’utilisateur en haut à droite → API → « Add new token ». La case « Read statistics » suffit.',
-        'Faire glisser la fenêtre flottante à la souris là où elle ne gêne pas. Clic droit sur l’icône dans la zone de notification de la barre des tâches : Période, Bloc supplémentaire, Réglages, Thème suivant, Langue.'
+        'Faire glisser la fenêtre flottante à la souris là où elle ne gêne pas. Clic droit sur l’icône dans la zone de notification de la barre des tâches : Période, Bloc supplémentaire, Comptage, Réglages, Thème suivant, Langue.'
       ],
       it: [
         'Scarica il file ZIP dalle release, decomprimilo e fai doppio clic sull’eseguibile. Windows segnala «Editore sconosciuto» perché il file non è firmato: prosegui con «Ulteriori informazioni».',
         'Al primo avvio digita l’indirizzo della tua pagina GoatCounter e incolla un token API. Il token lo crei sulla tua pagina GoatCounter: nome utente in alto a destra → API → «Add new token». Basta la spunta «Read statistics».',
-        'Trascina l’overlay con il mouse dove non dà fastidio. Clic destro sull’icona nell’area di notifica della barra delle applicazioni: Periodo, Blocco extra, Impostazioni, Tema successivo, Lingua.'
+        'Trascina l’overlay con il mouse dove non dà fastidio. Clic destro sull’icona nell’area di notifica della barra delle applicazioni: Periodo, Blocco extra, Conteggio, Impostazioni, Tema successivo, Lingua.'
       ],
       nl: [
         'Download het ZIP-bestand van de releases, pak het uit en dubbelklik op de exe. Windows meldt ‘Onbekende uitgever’, omdat het bestand niet ondertekend is. Via ‘Meer informatie’ ga je verder.',
         'Typ bij de eerste start het adres van je eigen GoatCounter-pagina in en plak een API-token. Het token maak je aan op je GoatCounter-pagina: gebruikersnaam rechtsboven → API → ‘Add new token’. Het vinkje ‘Read statistics’ is genoeg.',
-        'Sleep de overlay met de muis naar een plek waar hij niet stoort. Rechtsklik op het pictogram in het systeemvak van de taakbalk: Periode, Extra blok, Instellingen, Volgend thema, Taal.'
+        'Sleep de overlay met de muis naar een plek waar hij niet stoort. Rechtsklik op het pictogram in het systeemvak van de taakbalk: Periode, Extra blok, Telwijze, Instellingen, Volgend thema, Taal.'
       ],
       pl: [
         'Pobrać plik ZIP ze strony wydań, rozpakować i kliknąć dwukrotnie plik exe. Windows zgłosi „Nieznany wydawca”, bo plik nie jest podpisany. Dalej prowadzi „Więcej informacji”.',
         'Przy pierwszym uruchomieniu wpisać adres własnej strony w GoatCounter i wkleić token API. Token zakładasz na swojej stronie w GoatCounter: nazwa użytkownika w prawym górnym rogu → API → „Add new token”. Wystarczy zaznaczenie „Read statistics”.',
-        'Przeciągnąć nakładkę myszą tam, gdzie nie przeszkadza. Prawy przycisk myszy na ikonie w obszarze powiadomień paska zadań: Okres, Dodatkowy blok, Ustawienia, Następny motyw, Język.'
+        'Przeciągnąć nakładkę myszą tam, gdzie nie przeszkadza. Prawy przycisk myszy na ikonie w obszarze powiadomień paska zadań: Okres, Dodatkowy blok, Liczenie, Ustawienia, Następny motyw, Język.'
       ],
       pt: [
         'Baixar o arquivo ZIP da página de versões, descompactar e dar um clique duplo no executável. O Windows avisa «Editor desconhecido», porque o arquivo não está assinado. Para continuar, use «Mais informações».',
         'Na primeira execução, digitar o endereço da sua própria página do GoatCounter e colar um token da API. O token você cria na sua página do GoatCounter: nome de usuário em cima à direita → API → «Add new token». Basta marcar «Read statistics».',
-        'Arrastar o overlay com o mouse para onde não atrapalhe. Clicar com o botão direito no ícone da área de notificação da barra de tarefas: Período, Bloco extra, Configurações, Próximo tema, Idioma.'
+        'Arrastar o overlay com o mouse para onde não atrapalhe. Clicar com o botão direito no ícone da área de notificação da barra de tarefas: Período, Bloco extra, Contagem, Configurações, Próximo tema, Idioma.'
       ],
       tr: [
         'ZIP dosyasını sürümler sayfasından indirin, açın ve exe dosyasına çift tıklayın. Dosya imzalı olmadığı için Windows “Bilinmeyen yayımcı” uyarısı verir. “Daha fazla bilgi” üzerinden devam edilir.',
         'İlk başlatmada kendi GoatCounter sayfanızın adresini yazın ve bir API belirteci yapıştırın. Belirteci kendi GoatCounter sayfanızda oluşturursunuz: sağ üstteki kullanıcı adı → API → “Add new token”. “Read statistics” kutusunu işaretlemek yeterlidir.',
-        'Katmanı fareyle rahatsız etmeyeceği bir yere sürükleyin. Görev çubuğunun bildirim alanındaki simgeye sağ tıklayın: Zaman aralığı, Ek blok, Ayarlar, Sonraki tema, Dil.'
+        'Katmanı fareyle rahatsız etmeyeceği bir yere sürükleyin. Görev çubuğunun bildirim alanındaki simgeye sağ tıklayın: Zaman aralığı, Ek blok, Sayım, Ayarlar, Sonraki tema, Dil.'
       ],
       ru: [
         'Скачайте ZIP-файл со страницы выпусков, распакуйте и дважды щёлкните по exe. Windows сообщит «Неизвестный издатель», потому что файл не подписан. Продолжить можно через «Подробнее».',
         'При первом запуске впишите адрес своей страницы GoatCounter и вставьте токен API. Токен вы создаёте на своей странице GoatCounter: имя пользователя вверху справа → API → «Add new token». Галочки «Read statistics» достаточно.',
-        'Перетащите оверлей мышью туда, где он не мешает. Правый щелчок по значку в области уведомлений панели задач: Период, Дополнительный блок, Настройки, Следующая тема, Язык.'
+        'Перетащите оверлей мышью туда, где он не мешает. Правый щелчок по значку в области уведомлений панели задач: Период, Дополнительный блок, Подсчёт, Настройки, Следующая тема, Язык.'
       ],
       hi: [
         'रिलीज़ से ZIP फ़ाइल डाउनलोड करें, खोलें और exe पर दो बार क्लिक करें। Windows “अज्ञात प्रकाशक” की चेतावनी देता है, क्योंकि फ़ाइल पर हस्ताक्षर नहीं हैं। “अधिक जानकारी” से आगे बढ़ा जा सकता है।',
         'पहली बार शुरू करते समय अपनी GoatCounter साइट का पता टाइप करें और एक API टोकन चिपकाएँ। टोकन आप अपनी GoatCounter साइट पर बनाते हैं: ऊपर दाईं ओर उपयोक्ता नाम → API → “Add new token”। “Read statistics” का चेकबॉक्स काफ़ी है।',
-        'ओवरले को माउस से वहाँ खींच ले जाएँ जहाँ वह परेशान न करे। टास्कबार के सूचना क्षेत्र में उसके चिह्न पर दायाँ क्लिक: समय अवधि, अतिरिक्त ब्लॉक, सेटिंग्स, अगली थीम, भाषा।'
+        'ओवरले को माउस से वहाँ खींच ले जाएँ जहाँ वह परेशान न करे। टास्कबार के सूचना क्षेत्र में उसके चिह्न पर दायाँ क्लिक: समय अवधि, अतिरिक्त ब्लॉक, गिनती, सेटिंग्स, अगली थीम, भाषा।'
       ],
       zh: [
         '从发布页下载 ZIP 文件，解压后双击那个 exe。Windows 会提示“未知发布者”，因为这个文件没有签名。通过“更多信息”继续。',
         '首次启动时输入你自己 GoatCounter 站点的地址，并粘贴一个 API 令牌。令牌是在你的 GoatCounter 站点上创建的：右上角的用户名 → API → “Add new token”。勾上“Read statistics”就够了。',
-        '用鼠标把这个悬浮窗拖到不碍事的地方。右键点击任务栏通知区域里的图标：时间范围、附加区块、设置、下一个主题、语言。'
+        '用鼠标把这个悬浮窗拖到不碍事的地方。右键点击任务栏通知区域里的图标：时间范围、附加区块、计数方式、设置、下一个主题、语言。'
       ],
       ja: [
         'リリースページから ZIP ファイルをダウンロードして展開し、exe をダブルクリックします。ファイルに署名がないため、Windows は「不明な発行元」と表示します。「詳細情報」から先に進めます。',
         '初回起動時に、自分の GoatCounter サイトのアドレスを打ち込み、API トークンを貼り付けます。トークンは自分の GoatCounter のページで作ります: 右上のユーザー名 → API → 「Add new token」。「Read statistics」のチェックだけで足ります。',
-        'オーバーレイをマウスで、邪魔にならない場所へドラッグします。タスクバーの通知領域のアイコンを右クリックすると、期間、追加ブロック、設定、次のテーマ、言語が出てきます。'
+        'オーバーレイをマウスで、邪魔にならない場所へドラッグします。タスクバーの通知領域のアイコンを右クリックすると、期間、追加ブロック、集計方法、設定、次のテーマ、言語が出てきます。'
       ],
       ko: [
         '릴리스에서 ZIP 파일을 내려받아 압축을 풀고 exe를 두 번 누릅니다. 파일에 서명이 없어서 Windows가 ‘알 수 없는 게시자’라고 알립니다. ‘추가 정보’를 거쳐 계속 진행하면 됩니다.',
         '처음 실행할 때 자기 GoatCounter 사이트의 주소를 입력하고 API 토큰을 붙여 넣습니다. 토큰은 자기 GoatCounter 페이지에서 만듭니다: 오른쪽 위의 사용자 이름 → API → ‘Add new token’. ‘Read statistics’ 체크 하나면 충분합니다.',
-        '오버레이를 마우스로 끌어서 방해되지 않는 자리에 둡니다. 작업 표시줄 알림 영역의 아이콘을 오른쪽 클릭하면 기간, 추가 블록, 설정, 다음 테마, 언어가 나옵니다.'
+        '오버레이를 마우스로 끌어서 방해되지 않는 자리에 둡니다. 작업 표시줄 알림 영역의 아이콘을 오른쪽 클릭하면 기간, 추가 블록, 집계 방식, 설정, 다음 테마, 언어가 나옵니다.'
       ]
     },
     pitfalls: {
       de: [
         'Ohne eigenes GoatCounter-Konto zeigt der Ticker nichts an. Er ist ein Anzeigegerät für die eigenen Zahlen, kein Zählwerkzeug für fremde Seiten.',
-        'Die Summe der Balken ergibt nicht die große Zahl, und das ist richtig so: Oben stehen Aufrufe, die Balken zählen Besucher (zwei verschiedene Größen).',
+        'Die große Zahl ist die Summe aller Seiten oder aller Kacheln. Die Balken zeigen nur die größten Werkzeuge, passen alle hinein, ergeben sie zusammen genau diese Zahl. GoatCounter zählt dabei Besucher: Klickt jemand bei einem Besuch mehrmals auf dasselbe, zählt das einmal.',
         'Das Token liegt in der config.json neben dem Programm, mit pywin32 verschlüsselt und an Benutzerkonto und Rechner gebunden. Exe und config.json müssen also im selben Ordner bleiben.',
         'Nur Windows. Die Oberfläche spricht 14 Sprachen und richtet sich nach Windows, umstellen kannst du das im Menü unter „Sprache“. Einen Update-Prüfer gibt es nicht, neue Fassungen holst du dir selbst auf der Releases-Seite.'
       ],
       en: [
         'Without your own GoatCounter account the ticker shows nothing. It is a display for your own numbers, not a counting tool for other people’s sites.',
-        'The bars do not add up to the big number, and that is correct: the top shows pageviews, the bars count visitors (two different quantities).',
+        'The big number is the total of all pages or of all tiles. The bars show only the biggest tools; if they all fit, together they add up to exactly that number. GoatCounter counts visitors here: if someone clicks the same thing several times during one visit, it counts once.',
         'The token lives in config.json next to the program, encrypted with pywin32 and bound to your user account and machine. So the exe and config.json have to stay in the same folder.',
         'Windows only. The interface speaks 14 languages and follows Windows, and you can switch it under “Language” in the menu. There is no update checker, so you fetch new versions from the releases page yourself.'
       ],
       es: [
         'Sin una cuenta propia de GoatCounter el ticker no muestra nada: es un visor de tus propias cifras, no una herramienta de recuento para páginas ajenas.',
-        'La suma de las barras no da la cifra grande, y está bien que sea así: arriba están las páginas vistas, las barras cuentan visitantes, dos magnitudes distintas.',
+        'La cifra grande es la suma de todas las páginas o de todas las tarjetas. Las barras muestran solo las herramientas con las cifras más altas; si caben todas, juntas dan exactamente esa cifra. Aquí GoatCounter cuenta visitantes: si alguien hace clic varias veces en lo mismo durante una visita, se cuenta una sola vez.',
         'El token está en el config.json que hay junto al programa, cifrado con pywin32 y ligado a la cuenta de usuario y al ordenador. Por eso el exe y config.json tienen que quedarse en la misma carpeta.',
         'Solo Windows. La interfaz habla 14 idiomas y sigue a Windows, puedes cambiarlo en el menú, en «Idioma». No hay comprobador de actualizaciones, así que las versiones nuevas las buscas tú en la página de versiones.'
       ],
       fr: [
         'Sans compte GoatCounter à soi, le ticker n’affiche rien. C’est un appareil d’affichage pour ses propres chiffres, pas un outil de comptage pour les sites des autres.',
-        'La somme des barres ne donne pas le grand nombre, et c’est normal : en haut figurent les pages vues, les barres comptent les visiteurs (deux grandeurs différentes).',
+        'Le grand nombre est la somme de toutes les pages ou de toutes les vignettes. Les barres ne montrent que les outils aux chiffres les plus élevés ; s’ils y tiennent tous, leur somme donne exactement ce nombre. GoatCounter compte ici des visiteurs : si quelqu’un clique plusieurs fois sur la même chose pendant une visite, cela n’est compté qu’une fois.',
         'Le jeton se trouve dans le fichier config.json, à côté du programme, chiffré avec pywin32 et lié au compte utilisateur et à la machine. L’exécutable et config.json doivent donc rester dans le même dossier.',
         'Windows uniquement. L’interface parle 14 langues et suit Windows, vous pouvez en changer dans le menu, sous « Langue ». Il n’y a pas de vérificateur de mises à jour, les nouvelles versions, vous allez donc les chercher vous-même sur la page des releases.'
       ],
       it: [
         'Senza un proprio account GoatCounter il ticker non mostra niente: è un visualizzatore dei propri numeri, non uno strumento di conteggio per siti altrui.',
-        'La somma delle barre non dà il numero grande, ed è giusto così: in alto stanno le visualizzazioni, le barre contano i visitatori (due grandezze diverse).',
+        'Il numero grande è la somma di tutte le pagine o di tutte le schede. Le barre mostrano solo gli strumenti con i numeri più alti; se ci stanno tutti, insieme danno esattamente quel numero. GoatCounter qui conta i visitatori: se qualcuno clicca più volte sulla stessa cosa durante una visita, viene contato una volta sola.',
         'Il token si trova nel file config.json accanto al programma, cifrato con pywin32 e legato all’account utente e al computer. Per questo l’eseguibile e config.json devono restare nella stessa cartella.',
         'Solo Windows. L’interfaccia parla 14 lingue e segue Windows, puoi cambiarla dal menu, alla voce «Lingua». Non c’è un controllo degli aggiornamenti: le versioni nuove te le prendi da solo sulla pagina delle release.'
       ],
       nl: [
         'Zonder een eigen GoatCounter-account laat de ticker niets zien. Hij is een weergaveapparaat voor je eigen cijfers, geen telinstrument voor de pagina’s van anderen.',
-        'De som van de balken levert niet het grote getal op, en dat hoort zo: bovenaan staan paginaweergaven, de balken tellen bezoekers (twee verschillende grootheden).',
+        'Het grote getal is het totaal van alle pagina’s of van alle tegels. De balken tonen alleen de grootste tools; passen ze er allemaal in, dan leveren ze samen precies dat getal op. GoatCounter telt daarbij bezoekers: klikt iemand tijdens één bezoek meerdere keren op hetzelfde, dan telt dat één keer.',
         'Het token staat in de config.json naast het programma, met pywin32 versleuteld en gebonden aan gebruikersaccount en computer. De exe en config.json moeten daarom in dezelfde map blijven.',
         'Alleen Windows. De interface spreekt 14 talen en volgt Windows, omzetten doe je in het menu onder ‘Taal’. Een updatecontrole is er niet, nieuwe versies haal je dus zelf op de releases-pagina.'
       ],
       pl: [
         'Bez własnego konta w GoatCounter ticker nic nie pokazuje. Jest urządzeniem wyświetlającym własne liczby, nie narzędziem do liczenia cudzych stron.',
-        'Suma słupków nie daje dużej liczby i tak właśnie ma być: na górze są wyświetlenia, słupki liczą odwiedzających (dwie różne wielkości).',
+        'Duża liczba to suma wszystkich stron albo wszystkich kafelków. Słupki pokazują tylko największe narzędzia; jeśli zmieszczą się wszystkie, razem dają dokładnie tę liczbę. GoatCounter liczy przy tym odwiedzających: jeśli ktoś podczas jednej wizyty kliknie kilka razy w to samo, zostanie to policzone jeden raz.',
         'Token leży w pliku config.json obok programu, zaszyfrowany za pomocą pywin32 i związany z kontem użytkownika i komputerem. Exe i config.json muszą więc zostać w tym samym folderze.',
         'Tylko Windows. Interfejs mówi w 14 językach i dopasowuje się do Windows, zmienisz to w menu pod „Język”. Sprawdzania aktualizacji nie ma, więc nowe wersje pobierasz samodzielnie ze strony wydań.'
       ],
       pt: [
         'Sem conta própria no GoatCounter, o ticker não mostra nada. Ele é um mostrador para os seus próprios números, não uma ferramenta de contagem para sites dos outros.',
-        'A soma das barras não dá o número grande, e é assim mesmo: em cima ficam as visualizações, as barras contam visitantes (duas grandezas diferentes).',
+        'O número grande é a soma de todas as páginas ou de todos os cartões. As barras mostram só as maiores ferramentas; se couberem todas, juntas dão exatamente esse número. O GoatCounter conta visitantes: se alguém clica várias vezes na mesma coisa durante uma visita, isso conta uma vez só.',
         'O token fica no config.json ao lado do programa, criptografado com o pywin32 e preso à conta de usuário e ao computador. Por isso, o executável e o config.json precisam ficar na mesma pasta.',
         'Só Windows. A interface fala 14 idiomas e segue o Windows, e você troca isso no menu, em «Idioma». Não há verificador de atualizações, então você busca as versões novas por conta própria na página de versões.'
       ],
       tr: [
         'Kendi GoatCounter hesabınız olmadan Ticker hiçbir şey göstermez. O, kendi sayılarınız için bir gösterge aygıtıdır, başkalarının sayfaları için bir sayma aracı değil.',
-        'Çubukların toplamı büyük sayıyı vermez ve bu böyle doğrudur: Yukarıda görüntülenmeler durur, çubuklar ise ziyaretçileri sayar (iki ayrı büyüklük).',
+        'Büyük sayı, tüm sayfaların ya da tüm kartların toplamıdır. Çubuklar yalnızca en büyük araçları gösterir; hepsi sığıyorsa, toplamları tam olarak bu sayıyı verir. GoatCounter burada ziyaretçileri sayar: Biri bir ziyaret sırasında aynı şeye birkaç kez tıklarsa, bu bir kez sayılır.',
         'Belirteç, programın yanındaki config.json dosyasında durur, pywin32 ile şifrelenmiş ve kullanıcı hesabına ve bilgisayara bağlı olarak. Bu yüzden exe ile config.json aynı klasörde kalmalıdır.',
         'Yalnızca Windows. Arayüz 14 dil konuşur ve Windows’u izler, menüdeki “Dil” bölümünden değiştirebilirsiniz. Güncelleme denetleyicisi yoktur, yeni sürümleri sürümler sayfasından kendiniz alırsınız.'
       ],
       ru: [
         'Без собственного аккаунта GoatCounter тикер ничего не показывает. Он показывает ваши собственные цифры, а не считает чужие сайты.',
-        'Сумма столбиков не совпадает с большим числом наверху, и это правильно: наверху просмотры, а столбики считают посетителей (это две разные величины).',
+        'Большое число показывает сумму по всем страницам или по всем плиткам. Столбики показывают только инструменты с наибольшими значениями; если все помещаются, в сумме они дают ровно это число. GoatCounter при этом считает посетителей: если кто-то за одно посещение несколько раз кликает по одному и тому же, это засчитывается один раз.',
         'Токен лежит в config.json рядом с программой, зашифрованный средствами pywin32 и привязанный к учётной записи и компьютеру. Поэтому exe и config.json должны оставаться в одной папке.',
         'Только Windows. Интерфейс говорит на 14 языках и следует языку Windows, сменить его можно в меню, в пункте «Язык». Проверки обновлений нет, новые версии вы забираете сами со страницы выпусков.'
       ],
       hi: [
         'अपने GoatCounter खाते के बिना टिकर कुछ नहीं दिखाता। वह आपके अपने आँकड़ों के लिए एक प्रदर्शक है, दूसरों की साइटों के लिए गिनने का औज़ार नहीं।',
-        'बारों का जोड़ उस बड़ी संख्या के बराबर नहीं होता, और यह ठीक ही है: ऊपर पेजव्यू लिखे होते हैं, बार विज़िटर गिनते हैं (दो अलग-अलग राशियाँ)।',
+        'बड़ी संख्या सभी पेजों या सभी कार्डों का जोड़ है। बार सिर्फ़ सबसे ज़्यादा संख्या वाले टूल दिखाते हैं; अगर सब समा जाएँ, तो उनका जोड़ ठीक यही संख्या होता है। GoatCounter यहाँ विज़िटर गिनता है: अगर कोई एक ही विज़िट में एक ही चीज़ पर कई बार क्लिक करे, तो वह एक बार गिना जाता है।',
         'टोकन प्रोग्राम के बग़ल में config.json में रहता है, pywin32 से एन्क्रिप्ट किया हुआ और आपके उपयोक्ता खाते और कंप्यूटर से बँधा हुआ। इसीलिए exe और config.json को एक ही फ़ोल्डर में रहना चाहिए।',
         'केवल Windows। इंटरफ़ेस 14 भाषाएँ बोलता है और Windows की भाषा अपनाता है, मेन्यू में “भाषा” से आप इसे बदल सकते हैं। अपडेट जाँचने वाला कोई हिस्सा नहीं है, इसलिए नए संस्करण आपको खुद रिलीज़ पेज से लेने होते हैं।'
       ],
       zh: [
         '没有自己的 GoatCounter 账号，这个 Ticker 什么都显示不了。它是显示你自己数字的仪表，不是统计别人网站的工具。',
-        '柱条加起来不等于上面那个大数字，这样才对：上面是浏览量，柱条数的是访客（两个不同的量）。',
+        '大数字是所有页面或所有卡片的总和。柱条只显示数值最大的几个工具；如果所有工具都放得下，它们加起来正好等于这个数字。GoatCounter 在这里统计的是访客：如果有人在一次访问中多次点击同一个东西，只算一次。',
         '令牌放在程序旁边的 config.json 里，用 pywin32 加密，并绑定到用户账号和这台电脑。所以 exe 和 config.json 必须留在同一个文件夹里。',
         '仅限 Windows。界面支持 14 种语言，默认跟随 Windows，可以在菜单的“语言”里切换。没有更新检查器，新版本要你自己去发布页取。'
       ],
       ja: [
         '自分の GoatCounter アカウントがないと、Ticker は何も表示しません。自分の数字のための表示装置であって、他人のサイトを数える道具ではありません。',
-        'バーの合計は上の大きな数字にはなりませんが、それで正しいのです: 上に出ているのはページビュー、バーが数えているのは訪問者で、別々の量です。',
+        '大きな数字は、すべてのページまたはすべてのカードの合計です。バーは数値の大きいツールだけを表示します。すべてのツールが収まる場合は、合わせるとちょうどこの数字になります。ここで GoatCounter が数えているのは訪問者です: 1回の訪問で同じものを何度クリックしても、1回として数えます。',
         'トークンはプログラムの隣の config.json にあり、pywin32 で暗号化され、ユーザーアカウントとパソコンに結び付けられています。そのため exe と config.json は同じフォルダーに置いたままにする必要があります。',
         'Windows のみです。画面は14言語に対応し、Windows の言語に合わせます。メニューの「言語」で切り替えられます。更新チェッカーはないので、新しい版はリリースページから自分で取ってきてください。'
       ],
       ko: [
         '자기 GoatCounter 계정이 없으면 티커는 아무것도 보여 주지 않습니다. 이것은 자기 숫자를 보는 표시 장치이지, 남의 사이트를 세는 도구가 아닙니다.',
-        '막대의 합은 위의 큰 숫자와 맞지 않는데, 그게 맞습니다: 위에 있는 것은 조회수이고 막대는 방문자를 세기 때문입니다(서로 다른 두 가지 값입니다).',
+        '큰 숫자는 모든 페이지 또는 모든 타일의 합계입니다. 막대는 수치가 가장 큰 도구들만 보여 주며, 도구가 모두 다 들어가면 합쳐서 정확히 이 숫자가 됩니다. 이때 GoatCounter는 방문자를 셉니다: 누군가 한 번 방문하는 동안 같은 것을 여러 번 클릭해도 한 번으로 칩니다.',
         '토큰은 프로그램 옆의 config.json에 들어 있고, pywin32로 암호화되어 사용자 계정과 컴퓨터에 묶여 있습니다. 그래서 exe와 config.json은 같은 폴더에 남아 있어야 합니다.',
         'Windows 전용입니다. 화면은 14개 언어를 지원하고 Windows 언어를 따르며, 메뉴의 ‘언어’에서 바꿀 수 있습니다. 업데이트 검사기는 없으니 새 버전은 릴리스 페이지에서 직접 가져와야 합니다.'
       ]
