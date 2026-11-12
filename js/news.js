@@ -2220,6 +2220,25 @@ var NEWS = {
   ],
   fadenkreuz: [
     {
+      date: '2026-11-12',
+      version: 'v1.2.4',
+      link: 'https://github.com/Dennismit2n/fadenkreuz/releases/tag/v1.2.4',
+      de: 'Der Editor trägt jetzt denselben Look wie die Kacheln hier: Karten, Knöpfe, Sprachliste, Umschalter und Eingabefelder haben einen eckigen Innenrahmen und vier kleine Schrauben in Weißgold, und die Schatten fallen nach links unten. Zeichenfläche, Vorschau und Vorlagen bleiben, wie sie sind, das Fadenkreuz selbst auch.',
+      en: 'The editor now wears the same look as the tiles here: cards, buttons, the language list, toggles and input fields carry a square inner frame and four small white gold screws, and the shadows fall to the bottom left. The drawing area, the preview and the templates stay as they are, and so does the crosshair itself.',
+      es: 'El editor lleva ahora el mismo aspecto que las tarjetas de aquí: tarjetas, botones, lista de idiomas, conmutadores y campos de entrada tienen un marco interior recto y cuatro tornillos pequeños de oro blanco, y las sombras caen hacia abajo a la izquierda. El área de dibujo, la vista previa y las plantillas siguen como estaban, y la mira también.',
+      fr: 'L’éditeur porte désormais le même look que les tuiles d’ici : cartes, boutons, liste des langues, sélecteurs et champs de saisie ont un cadre intérieur à angles droits et quatre petites vis en or blanc, et les ombres tombent en bas à gauche. La zone de dessin, l’aperçu et les modèles restent tels quels, le viseur lui-même aussi.',
+      it: 'L’editor ora ha lo stesso aspetto delle tessere di qui: schede, pulsanti, elenco delle lingue, selettori e campi di immissione hanno una cornice interna squadrata e quattro piccole viti in oro bianco, e le ombre cadono in basso a sinistra. Area di disegno, anteprima e modelli restano come sono, e anche il mirino.',
+      nl: 'De editor draagt nu dezelfde look als de tegels hier: kaarten, knoppen, de talenlijst, schakelaars en invoervelden hebben een rechte binnenlijst en vier kleine schroefjes in witgoud, en de schaduwen vallen naar linksonder. Het tekenvlak, de voorvertoning en de sjablonen blijven zoals ze zijn, het vizier zelf ook.',
+      pl: 'Edytor ma teraz ten sam wygląd co kafelki tutaj: karty, przyciski, lista języków, przełączniki i pola mają prostokątną ramkę wewnętrzną i cztery małe śrubki z białego złota, a cienie padają w lewo w dół. Pole rysowania, podgląd i szablony zostają bez zmian, sam celownik też.',
+      pt: 'O editor agora tem o mesmo visual dos blocos daqui: cartões, botões, lista de idiomas, alternadores e campos de entrada têm uma moldura interna reta e quatro parafusinhos em ouro branco, e as sombras caem para baixo à esquerda. A área de desenho, a prévia e os modelos continuam como estão, e a mira também.',
+      tr: 'Düzenleyici artık buradaki kutularla aynı görünümü taşıyor: kartlar, düğmeler, dil listesi, seçiciler ve giriş alanları köşeli bir iç çerçeve ile beyaz altın dört küçük vida taşıyor, gölgeler de sol alta düşüyor. Çizim alanı, önizleme ve şablonlar olduğu gibi kalıyor, nişangâhın kendisi de.',
+      ru: 'Редактор теперь выглядит так же, как плитки здесь: у карточек, кнопок, списка языков, переключателей и полей ввода есть прямоугольная внутренняя рамка и четыре маленьких винта из белого золота, а тени падают влево вниз. Поле рисования, предпросмотр и шаблоны остались как были, сам прицел тоже.',
+      hi: 'एडिटर अब यहाँ की टाइलों जैसा ही दिखता है: कार्ड, बटन, भाषा सूची, स्विच और इनपुट फ़ील्ड में चौकोर भीतरी फ़्रेम और सफ़ेद सोने के चार छोटे पेंच हैं, और परछाइयाँ नीचे बाईं ओर पड़ती हैं। ड्रॉइंग क्षेत्र, पूर्वावलोकन और टेम्पलेट जैसे थे वैसे ही हैं, क्रॉसहेयर भी।',
+      zh: '编辑器现在和这里的卡片是同一种外观：卡片、按钮、语言列表、切换开关和输入框都带直角内框和四颗白金色小螺丝，阴影落向左下方。绘图区、预览和模板保持原样，准星本身也没有变化。',
+      ja: 'エディターが、ここのタイルと同じ見た目になりました。カード、ボタン、言語リスト、切り替え、入力欄に、角ばった内枠と4本の小さなホワイトゴールドのねじが付き、影は左下に落ちます。描画エリア、プレビュー、テンプレートはそのままで、クロスヘア自体も変わりません。',
+      ko: '에디터가 이제 이곳 타일과 같은 모습입니다. 카드, 버튼, 언어 목록, 전환 버튼, 입력란에 각진 안쪽 테두리와 화이트골드 작은 나사 네 개가 달렸고, 그림자는 왼쪽 아래로 떨어집니다. 그리기 영역, 미리보기, 템플릿은 그대로이고 조준선 자체도 그대로입니다.'
+    },
+    {
       date: '2026-11-01',
       version: 'v1.2.3',
       link: 'https://github.com/Dennismit2n/fadenkreuz/releases/tag/v1.2.3',
