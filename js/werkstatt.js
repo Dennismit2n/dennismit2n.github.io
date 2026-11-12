@@ -27,6 +27,8 @@
       url: './mods.html', ctaKey: 'openTool' },
     { key: 'ram', name: 'Real_RAM_cooler', icon: './assets/ramcooler.svg',
       url: 'https://github.com/Dennismit2n/Real_RAM_cooler/releases/latest', ctaKey: 'downloadTool' },
+    { key: 'wingetarium', name: 'Wingetarium', icon: './assets/wingetarium.svg',
+      url: 'https://dennismit2n.github.io/wingetarium/', ctaKey: 'openTool' },
     { key: 'fontart', name: 'fontART Designer', icon: './assets/fontart.svg',
       url: 'https://dennismit2n.github.io/fontART-demo/', ctaKey: 'openTool' },
     { key: 'prismatical', name: 'Prismatical', icon: './assets/prismatical.svg',

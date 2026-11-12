@@ -183,6 +183,8 @@ const ICONS = {
   heizwarte: `<rect x="2" y="2" width="44" height="44" rx="11" fill="#0b6b93"/><path d="M10 24 24 12l14 12" fill="none" stroke="#e0f2fe" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 22v14h20V22" fill="none" stroke="#e0f2fe" stroke-width="3" stroke-linejoin="round"/><rect x="22.5" y="21" width="3" height="10" rx="1.5" fill="#fde047"/><circle cx="24" cy="31.5" r="3.5" fill="#f87171"/>`,
   /* hourbridge.svg zeichnet auf 64, hier auf 48 verkleinert. */
   hourbridge: `<g transform="scale(0.75)"><rect width="64" height="64" rx="16" fill="#131E28"/><path d="M32 12a20 20 0 0 0 0 40Z" fill="#29405A"/><path d="M32 12a20 20 0 0 1 0 40Z" fill="#0F1A2B"/><circle cx="32" cy="32" r="20" fill="none" stroke="#B699C1" stroke-width="3"/><path d="M32 20v12l8 5" fill="none" stroke="#D8D1E2" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="32" r="2.6" fill="#D8D1E2"/></g>`,
+  /* wingetarium.svg (Kopie des favicons der App) zeichnet auf 64, hier auf 48 verkleinert. */
+  wingetarium: `<g transform="scale(0.75)"><rect width="64" height="64" rx="14" fill="#0E1116"/><path d="M10 50h44" stroke="#2C4A66" stroke-width="3" stroke-linecap="round"/><rect x="13" y="33" width="17" height="15" rx="2" fill="#1B3550" stroke="#74AEE0" stroke-width="2"/><rect x="34" y="33" width="17" height="15" rx="2" fill="#1B3550" stroke="#74AEE0" stroke-width="2"/><path d="M21.5 33v6M42.5 33v6" stroke="#74AEE0" stroke-width="2"/><rect x="23" y="14" width="18" height="17" rx="2" fill="#74AEE0"/><path d="M32 14v7" stroke="#0E1116" stroke-width="2.4"/><path d="M28 24.5l4 4 4-4" fill="none" stroke="#0E1116" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></g>`,
   /* follower-log.svg zeichnet auf 100, hier auf 48 verkleinert. */
   followerlog: `<g transform="scale(0.48)"><rect width="100" height="100" rx="18" fill="#0f1115"/><circle cx="38.8" cy="38.8" r="10.4" fill="#8fa3c4"/><path d="M19.6 74.8a19.2 19.2 0 0 1 38.4 0z" fill="#8fa3c4"/><rect x="59.6" y="38.4" width="20.8" height="4" fill="#7FE39B"/><rect x="68" y="30" width="4" height="20.8" fill="#7FE39B"/><rect x="59.6" y="60.8" width="20.8" height="4" fill="#FF9A92"/></g>`,
   /* pocketsum.svg hat als einziges ein 44er-Feld; um 2 verschoben sitzt es
@@ -256,6 +258,30 @@ export const TOOLS = [
     /* Windows-App ohne Webseite: og.png und instagram.png hätten dort keinen
      * Abnehmer. Nur die GitHub-Vorschau ist sinnvoll. */
     hatSeite: false,
+  },
+  {
+    /* Eingetragen am 12.11.2026 mit der Kachel (Platz 4, direkt hinter
+     * Real_RAM_cooler, Dennis' Wahl). Farben wie --wingetarium-flow der
+     * Startseite, dunkle Fassung: Index-Blau der App ins Grün („täglich frisch“).
+     * Claim wie der Seitentitel der App, so beschreibt ihn auch og:image:alt dort. */
+    slug: 'wingetarium',
+    name: 'Wingetarium',
+    icon: 'wingetarium',
+    farbe: '#7CB4E4',
+    flow: 'linear-gradient(100deg, #7CB4E4, #5BBE8B)',
+    nameFlow: true,
+    claimDe: 'Der winget-Katalog, täglich frisch.',
+    claimEn: 'The winget catalogue, fresh every day',
+    zusagen: ['Kostenlos', 'ohne Konto', 'ohne Cookies'],
+    url: 'dennismit2n.github.io/wingetarium',
+    story: [
+      { ober: 'Für Windows mit winget', gross: 'Gibt es das auch per winget?', unter: 'Und welche Version liegt da gerade? Im Verzeichnis stecken über 16.000 Pakete.' },
+      { ober: 'So geht es', gross: 'Suchen, klicken, Befehl kopieren.', unter: '108 handverlesene Pakete mit der Version von heute, Suche über alle, was seit gestern neu ist. Jeden Morgen frisch aus dem Original-Index.' },
+      { ober: 'Kostenlos & quelloffen', gross: 'Katalog öffnen', unter: 'dennismit2n.github.io/wingetarium' },
+    ],
+    repo: 'wingetarium',
+    /* index.html liegt in der Wurzel und verweist auf ./og.png daneben. */
+    assetOrdner: '',
   },
   {
     slug: 'shrinkling',
@@ -764,10 +790,10 @@ export const TOOLS = [
   },
 ];
 
-/* Reihenfolge der Kacheln auf der Startseite (Stand 02.11.2026, index.html),
+/* Reihenfolge der Kacheln auf der Startseite (Stand 12.11.2026, index.html),
  * für die Icon-Reihe der Banner. Der Zählwerk Ticker hat keine eigene Kachel. */
 export const KACHELN = [
-  'create-masterprompt', 'werkstatt-mods', 'real-ram-cooler', 'fontart-demo',
+  'create-masterprompt', 'werkstatt-mods', 'real-ram-cooler', 'wingetarium', 'fontart-demo',
   'prismatical', 'spectroton', 'shrinkling', 'wifi-qr', 'heizwarte', 'hourbridge',
   'follower-log', 'pocketsum',
   'zaehlwerk', 'besucher-ticker', 'collective-calc', 'dreh-das-rad', 'gaming',

@@ -4486,6 +4486,222 @@ var GUIDES = {
       ko: 'https://github.com/Dennismit2n/hourbridge/blob/main/README.md'
     }
   },
+  wingetarium: {
+    purpose: {
+      de: 'Für alle, die Programme unter Windows mit winget installieren oder wissen wollen, ob es etwas dort überhaupt gibt. Wingetarium zeigt, was im offiziellen Verzeichnis steckt, in welcher Version und mit welchem Befehl es sich installiert. Die Daten liest jeden Morgen ein GitHub-Workflow aus dem Original-Index, dein Browser fragt nur diese Seite ab, nie Microsoft. Installiert wird von hier aus nichts: Du kopierst den Befehl und führst ihn selbst im Terminal aus.',
+      en: 'For anyone who installs Windows programs with winget or wants to know whether something is in there at all. Wingetarium shows what the official repository holds, in which version, and which command installs it. A GitHub workflow reads the data from the original index every morning, and your browser only ever asks this site, never Microsoft. Nothing gets installed from here: you copy the command and run it yourself in a terminal.',
+      es: 'Para quien instala programas en Windows con winget o quiere saber si algo está ahí siquiera. Wingetarium muestra lo que contiene el repositorio oficial, en qué versión y con qué comando se instala. Un workflow de GitHub lee los datos del índice original cada mañana, y tu navegador solo consulta esta página, nunca a Microsoft. Desde aquí no se instala nada: copias el comando y lo ejecutas tú en una terminal.',
+      fr: 'Pour tous ceux qui installent des programmes Windows avec winget ou qui veulent savoir si quelque chose s’y trouve. Wingetarium montre ce que contient le dépôt officiel, dans quelle version et avec quelle commande l’installer. Un workflow GitHub lit les données dans l’index d’origine chaque matin, et votre navigateur n’interroge que ce site, jamais Microsoft. Rien ne s’installe d’ici : vous copiez la commande et l’exécutez vous-même dans un terminal.',
+      it: 'Per chi installa programmi Windows con winget o vuole sapere se una cosa c’è. Wingetarium mostra cosa contiene il repository ufficiale, in quale versione e con quale comando si installa. Un workflow di GitHub legge i dati dall’indice originale ogni mattina, e il tuo browser interroga solo questo sito, mai Microsoft. Da qui non si installa niente: copi il comando e lo esegui tu in un terminale.',
+      nl: 'Voor iedereen die Windows-programma’s met winget installeert of wil weten of iets er überhaupt in zit. Wingetarium laat zien wat de officiële repository bevat, in welke versie en met welke opdracht je het installeert. Een GitHub-workflow leest de gegevens elke ochtend uit de originele index, en je browser vraagt alleen deze site, nooit Microsoft. Vanaf hier wordt niets geïnstalleerd: je kopieert de opdracht en voert hem zelf uit in een terminal.',
+      pl: 'Dla każdego, kto instaluje programy na Windowsie przez winget albo chce wiedzieć, czy coś tam w ogóle jest. Wingetarium pokazuje, co zawiera oficjalne repozytorium, w jakiej wersji i jakim poleceniem to zainstalować. Workflow na GitHubie co rano czyta dane z oryginalnego indeksu, a twoja przeglądarka pyta tylko tę stronę, nigdy Microsoft. Stąd nic się nie instaluje: kopiujesz polecenie i sam uruchamiasz je w terminalu.',
+      pt: 'Para quem instala programas no Windows com o winget ou quer saber se algo está lá. O Wingetarium mostra o que o repositório oficial contém, em qual versão e com qual comando instalar. Um workflow do GitHub lê os dados do índice original toda manhã, e o seu navegador só consulta este site, nunca a Microsoft. Daqui nada é instalado: você copia o comando e o executa no terminal.',
+      tr: 'Windows’ta programları winget ile kuran ya da bir şeyin orada olup olmadığını bilmek isteyen herkes için. Wingetarium resmî depoda neler olduğunu, hangi sürümde olduğunu ve hangi komutla kurulduğunu gösterir. Bir GitHub workflow’u verileri her sabah orijinal dizinden okur, tarayıcınız yalnızca bu siteye sorar, asla Microsoft’a değil. Buradan hiçbir şey kurulmaz: komutu kopyalar ve terminalde kendiniz çalıştırırsınız.',
+      ru: 'Для всех, кто ставит программы в Windows через winget или хочет узнать, есть ли там вообще нужное. Wingetarium показывает, что лежит в официальном каталоге, в какой версии и какой командой это установить. Каждое утро workflow на GitHub читает данные из оригинального индекса, а ваш браузер обращается только к этому сайту, никогда к Microsoft. Отсюда ничего не устанавливается: вы копируете команду и сами запускаете её в терминале.',
+      hi: 'उन सबके लिए जो Windows पर winget से प्रोग्राम इंस्टॉल करते हैं या जानना चाहते हैं कि कोई चीज़ वहाँ है भी या नहीं। Wingetarium दिखाता है कि आधिकारिक रिपॉज़िटरी में क्या है, किस संस्करण में और किस कमांड से इंस्टॉल होता है। एक GitHub वर्कफ़्लो हर सुबह मूल इंडेक्स से डेटा पढ़ता है, और आपका ब्राउज़र सिर्फ़ इसी साइट से पूछता है, Microsoft से कभी नहीं। यहाँ से कुछ इंस्टॉल नहीं होता: आप कमांड कॉपी करते हैं और उसे ख़ुद टर्मिनल में चलाते हैं।',
+      zh: '适合用 winget 在 Windows 上安装程序、或想知道某个软件到底在不在里面的人。Wingetarium 展示官方仓库里有什么、是什么版本、用哪条命令安装。GitHub 工作流每天早上从原始索引读取数据，你的浏览器只访问本站，从不访问 Microsoft。这里不会安装任何东西：你复制命令，自己在终端里运行。',
+      ja: 'winget で Windows のプログラムを入れる人や、そもそも目当てのものがあるのか知りたい人のために。Wingetarium は公式リポジトリに何があり、どのバージョンで、どのコマンドで入れられるかを見せます。毎朝 GitHub のワークフローが元のインデックスからデータを読み込み、ブラウザーはこのサイトにだけアクセスし、Microsoft には一切アクセスしません。ここから何かがインストールされることはありません。コマンドをコピーして、ターミナルで自分で実行します。',
+      ko: 'winget으로 Windows 프로그램을 설치하거나, 원하는 것이 거기 있기는 한지 알고 싶은 분을 위한 도구입니다. Wingetarium은 공식 저장소에 무엇이 있는지, 어떤 버전인지, 어떤 명령어로 설치하는지 보여 줍니다. 매일 아침 GitHub 워크플로가 원본 인덱스에서 데이터를 읽고, 브라우저는 이 사이트에만 묻고 Microsoft에는 절대 묻지 않습니다. 여기서 설치되는 것은 없습니다. 명령어를 복사해서 터미널에서 직접 실행합니다.'
+    },
+    shots: [
+      {
+        files: {
+          de: ['wingetarium-de.webp', 1446, 848],
+          en: ['wingetarium-en.webp', 1446, 848]
+        },
+        alt: {
+          de: 'Drei Handy-Ansichten von Wingetarium im Dunkelmodus: links der Überblick mit Index-Stand und 16.365 Paketen, in der Mitte die Auswahl mit Kategorien, Paket-IDs und Namen, rechts die Befehle zum Kopieren, etwa „winget search obsidian“.',
+          en: 'Three phone views of Wingetarium in dark mode: on the left the overview with the index date and 16,365 packages, in the middle the picks with categories, package IDs and names, on the right the commands to copy, such as “winget search obsidian”.',
+          es: 'Tres vistas de móvil de Wingetarium en modo oscuro: a la izquierda el resumen con la fecha del índice y 16.365 paquetes, en el centro la selección con categorías, IDs de paquete y nombres, a la derecha los comandos para copiar, como «winget search obsidian». La interfaz de la imagen está en inglés.',
+          fr: 'Trois vues mobiles de Wingetarium en mode sombre : à gauche l’aperçu avec la date de l’index et 16 365 paquets, au milieu la sélection avec catégories, ID de paquets et noms, à droite les commandes à copier, comme « winget search obsidian ». L’interface de l’image est en anglais.',
+          it: 'Tre viste da telefono di Wingetarium in modalità scura: a sinistra la panoramica con la data dell’indice e 16.365 pacchetti, al centro la selezione con categorie, ID dei pacchetti e nomi, a destra i comandi da copiare, come «winget search obsidian». L’interfaccia nell’immagine è in inglese.',
+          nl: 'Drie telefoonweergaven van Wingetarium in donkere modus: links het overzicht met de indexdatum en 16.365 pakketten, in het midden de selectie met categorieën, pakket-ID’s en namen, rechts de opdrachten om te kopiëren, zoals ‘winget search obsidian’. De interface in de afbeelding is Engels.',
+          pl: 'Trzy widoki telefonu z Wingetarium w trybie ciemnym: po lewej przegląd z datą indeksu i 16 365 pakietami, pośrodku wybór z kategoriami, ID pakietów i nazwami, po prawej polecenia do skopiowania, na przykład „winget search obsidian”. Interfejs na obrazku jest po angielsku.',
+          pt: 'Três telas de celular do Wingetarium no modo escuro: à esquerda a visão geral com a data do índice e 16.365 pacotes, no meio a seleção com categorias, IDs de pacote e nomes, à direita os comandos para copiar, como «winget search obsidian». A interface na imagem está em inglês.',
+          tr: 'Karanlık modda Wingetarium’un üç telefon görünümü: solda dizin tarihi ve 16.365 paketle genel bakış, ortada kategoriler, paket kimlikleri ve adlarla seçki, sağda kopyalanacak komutlar, örneğin “winget search obsidian”. Görseldeki arayüz İngilizcedir.',
+          ru: 'Три вида Wingetarium на телефоне в тёмном режиме: слева обзор с датой индекса и 16 365 пакетами, в середине подборка с категориями, ID пакетов и названиями, справа команды для копирования, например «winget search obsidian». Интерфейс на снимке на английском.',
+          hi: 'डार्क मोड में Wingetarium के फ़ोन के तीन दृश्य: बाईं ओर इंडेक्स की तारीख़ और 16,365 पैकेज वाला सारांश, बीच में श्रेणियों, पैकेज ID और नामों वाला चयन, दाईं ओर कॉपी करने वाली कमांड, जैसे “winget search obsidian”। चित्र में इंटरफ़ेस अंग्रेज़ी में है।',
+          zh: '深色模式下 Wingetarium 的三个手机界面：左边是带索引日期和 16,365 个软件包的概览，中间是带类别、软件包 ID 和名称的精选，右边是可复制的命令，例如“winget search obsidian”。图中界面为英文。',
+          ja: 'ダークモードの Wingetarium、スマホ画面3枚。左はインデックスの日付と 16,365 パッケージの概要、中央はカテゴリー、パッケージ ID、名前が並ぶ厳選、右はコピーできるコマンドで、たとえば「winget search obsidian」。画像の画面は英語です。',
+          ko: '다크 모드의 Wingetarium 휴대폰 화면 세 개. 왼쪽은 인덱스 날짜와 패키지 16,365개가 있는 개요, 가운데는 분류, 패키지 ID, 이름이 있는 엄선 목록, 오른쪽은 복사할 수 있는 명령어로, 예를 들면 ‘winget search obsidian’입니다. 그림 속 화면은 영어입니다.'
+        }
+      }
+    ],
+    steps: {
+      de: [
+        'Wingetarium öffnen. Oben stehen der Index-Stand und die Paketzahl von heute, der Reiter „Überblick“ zeigt Manifeste, Versionen, die häufigsten Schlagworte und die Kurve der Paketzahl. Sprache und Darstellung wählst du ganz oben.',
+        'Unter „Auswahl“ stehen 108 handverlesene Pakete mit Version, Kosten und wofür sie gut sind. Ein Klick auf einen Spaltenkopf sortiert, die Kategorien filtern, das Suchfeld sucht. Was dort fehlt, findest du unter „Alle Pakete“ (ab zwei Zeichen), was seit gestern dazugekommen ist, unter „Neu“.',
+        'Ein Klick auf eine Paket-ID kopiert den fertigen Befehl „winget install --id … -e“, unter „Befehle“ kopiert ein Klick die ganze Zeile. Den Befehl fügst du im Terminal ein und führst ihn selbst aus. „Grenzen“ sagt, was winget nicht kann. Zeigt dein Browser oben „Installieren“, richtet ein Tipp darauf Wingetarium als App ein, nach dem ersten Besuch läuft es auch ohne Netz.'
+      ],
+      en: [
+        'Open Wingetarium. The index date and today’s package count sit at the top, and the “Overview” tab shows manifests, versions, the most common tags and the curve of the package count. Language and appearance are at the very top.',
+        '“Picks” lists 108 hand-picked packages with version, cost and what they are good for. Click a column header to sort, use the categories to filter, type in the field to search. Whatever is missing there is under “All packages” (from two characters on), and what came in since yesterday is under “New”.',
+        'A click on a package ID copies the ready command “winget install --id … -e”, and under “Commands” a click copies the whole line. Paste it into a terminal and run it yourself. “Limits” tells you what winget cannot do. If your browser shows “Install” at the top, one tap sets Wingetarium up as an app, and after the first visit it also works without a connection.'
+      ],
+      es: [
+        'Abre Wingetarium. Arriba están la fecha del índice y el número de paquetes de hoy, y la pestaña «Resumen» muestra manifiestos, versiones, las etiquetas más comunes y la curva del número de paquetes. El idioma y la apariencia se eligen arriba del todo.',
+        'En «Selección» hay 108 paquetes elegidos a mano con versión, coste y para qué sirven. Un clic en la cabecera de una columna ordena, las categorías filtran y el campo de búsqueda busca. Lo que falte ahí lo encuentras en «Todos los paquetes» (a partir de dos caracteres), y lo que ha llegado desde ayer, en «Nuevos».',
+        'Un clic en un ID de paquete copia el comando listo «winget install --id … -e», y en «Comandos» un clic copia la línea entera. Pégalo en una terminal y ejecútalo tú. «Límites» te dice lo que winget no sabe hacer. Si tu navegador muestra «Instalar» arriba, un toque instala Wingetarium como app, y tras la primera visita funciona también sin conexión.'
+      ],
+      fr: [
+        'Ouvrez Wingetarium. En haut figurent la date de l’index et le nombre de paquets du jour, et l’onglet « Aperçu » montre les manifestes, les versions, les étiquettes les plus fréquentes et la courbe du nombre de paquets. La langue et l’apparence se choisissent tout en haut.',
+        '« Sélection » réunit 108 paquets choisis à la main avec version, coût et usage. Un clic sur un en-tête de colonne trie, les catégories filtrent, le champ de recherche cherche. Ce qui manque se trouve sous « Tous les paquets » (à partir de deux caractères), et ce qui est arrivé depuis hier sous « Nouveautés ».',
+        'Un clic sur un ID de paquet copie la commande prête « winget install --id … -e », et sous « Commandes » un clic copie toute la ligne. Collez-la dans un terminal et exécutez-la vous-même. « Limites » indique ce que winget ne sait pas faire. Si votre navigateur affiche « Installer » en haut, un appui installe Wingetarium comme application, et après la première visite il fonctionne aussi hors ligne.'
+      ],
+      it: [
+        'Apri Wingetarium. In alto ci sono la data dell’indice e il numero di pacchetti di oggi, e la scheda «Panoramica» mostra manifesti, versioni, i tag più comuni e la curva del numero di pacchetti. Lingua e aspetto si scelgono proprio in cima.',
+        'In «Selezione» ci sono 108 pacchetti scelti a mano con versione, costo e a cosa servono. Un clic sull’intestazione di una colonna ordina, le categorie filtrano, il campo di ricerca cerca. Quello che manca lo trovi in «Tutti i pacchetti» (da due caratteri), quello arrivato da ieri in «Novità».',
+        'Un clic su un ID di pacchetto copia il comando pronto «winget install --id … -e», e in «Comandi» un clic copia tutta la riga. Incollalo in un terminale ed eseguilo tu. «Limiti» ti dice cosa winget non sa fare. Se il browser mostra «Installa» in alto, un tocco installa Wingetarium come app, e dopo la prima visita funziona anche senza connessione.'
+      ],
+      nl: [
+        'Open Wingetarium. Bovenaan staan de indexdatum en het aantal pakketten van vandaag, en het tabblad ‘Overzicht’ toont manifesten, versies, de meest voorkomende tags en de curve van het aantal pakketten. Taal en weergave kies je helemaal bovenaan.',
+        'Onder ‘Selectie’ staan 108 met de hand gekozen pakketten met versie, kosten en waar ze goed voor zijn. Een klik op een kolomkop sorteert, de categorieën filteren, het zoekveld zoekt. Wat daar ontbreekt, vind je onder ‘Alle pakketten’ (vanaf twee tekens), wat er sinds gisteren bij is gekomen onder ‘Nieuw’.',
+        'Een klik op een pakket-ID kopieert de kant-en-klare opdracht ‘winget install --id … -e’, en onder ‘Opdrachten’ kopieert een klik de hele regel. Plak hem in een terminal en voer hem zelf uit. ‘Grenzen’ zegt wat winget niet kan. Toont je browser bovenaan ‘Installeren’, dan installeert één tik Wingetarium als app, en na het eerste bezoek werkt het ook zonder verbinding.'
+      ],
+      pl: [
+        'Otwórz Wingetarium. Na górze widać datę indeksu i dzisiejszą liczbę pakietów, a karta „Przegląd” pokazuje manifesty, wersje, najczęstsze tagi i krzywą liczby pakietów. Język i wygląd wybierasz na samej górze.',
+        'W „Wybór” jest 108 ręcznie wybranych pakietów z wersją, kosztem i opisem, do czego się nadają. Kliknięcie nagłówka kolumny sortuje, kategorie filtrują, pole wyszukiwania szuka. Czego tam brakuje, znajdziesz w „Wszystkie pakiety” (od dwóch znaków), a co doszło od wczoraj, w „Nowe”.',
+        'Kliknięcie ID pakietu kopiuje gotowe polecenie „winget install --id … -e”, a w „Polecenia” kliknięcie kopiuje cały wiersz. Wklej je w terminalu i uruchom samodzielnie. „Ograniczenia” mówi, czego winget nie potrafi. Jeśli przeglądarka pokazuje na górze „Zainstaluj”, jedno stuknięcie instaluje Wingetarium jako aplikację, a po pierwszej wizycie działa ono też bez sieci.'
+      ],
+      pt: [
+        'Abra o Wingetarium. No topo ficam a data do índice e o número de pacotes de hoje, e a aba «Visão geral» mostra manifestos, versões, as tags mais comuns e a curva do número de pacotes. Idioma e aparência ficam bem no topo.',
+        'Em «Seleção» estão 108 pacotes escolhidos a dedo com versão, custo e para que servem. Um clique no cabeçalho de uma coluna ordena, as categorias filtram, o campo de busca busca. O que faltar ali você encontra em «Todos os pacotes» (a partir de dois caracteres), e o que chegou desde ontem, em «Novos».',
+        'Um clique em um ID de pacote copia o comando pronto «winget install --id … -e», e em «Comandos» um clique copia a linha inteira. Cole no terminal e execute você mesmo. «Limites» diz o que o winget não faz. Se o navegador mostrar «Instalar» no topo, um toque instala o Wingetarium como app, e após a primeira visita ele funciona também sem conexão.'
+      ],
+      tr: [
+        'Wingetarium’u açın. En üstte dizinin tarihi ve bugünkü paket sayısı durur, “Genel bakış” sekmesi manifestoları, sürümleri, en sık etiketleri ve paket sayısının eğrisini gösterir. Dil ve görünümü en üstte seçersiniz.',
+        '“Seçki” bölümünde sürümü, maliyeti ve ne işe yaradığıyla elle seçilmiş 108 paket var. Sütun başlığına tıklamak sıralar, kategoriler süzer, arama kutusu arar. Orada olmayanı “Tüm paketler” altında (iki karakterden itibaren), dünden beri ekleneni “Yeni” altında bulursunuz.',
+        'Bir paket kimliğine tıklamak hazır “winget install --id … -e” komutunu kopyalar, “Komutlar” altında tıklamak satırın tamamını kopyalar. Terminale yapıştırıp kendiniz çalıştırın. “Sınırlar” winget’in yapamadıklarını söyler. Tarayıcınız üstte “Yükle” gösteriyorsa, tek dokunuş Wingetarium’u uygulama olarak kurar, ilk ziyaretten sonra bağlantı olmadan da çalışır.'
+      ],
+      ru: [
+        'Откройте Wingetarium. Вверху видны дата индекса и сегодняшнее число пакетов, а вкладка «Обзор» показывает манифесты, версии, самые частые теги и кривую числа пакетов. Язык и оформление выбираются в самом верху.',
+        'Во вкладке «Подборка» 108 вручную отобранных пакетов с версией, стоимостью и тем, для чего они нужны. Щелчок по заголовку столбца сортирует, категории фильтруют, поле поиска ищет. Чего там нет, найдётся во вкладке «Все пакеты» (от двух символов), а что появилось со вчерашнего дня, во вкладке «Новое».',
+        'Щелчок по ID пакета копирует готовую команду «winget install --id … -e», а во вкладке «Команды» щелчок копирует всю строку. Вставьте её в терминал и запустите сами. «Ограничения» рассказывает, чего winget не умеет. Если браузер показывает вверху «Установить», одно нажатие устанавливает Wingetarium как приложение, а после первого посещения оно работает и без сети.'
+      ],
+      hi: [
+        'Wingetarium खोलें। सबसे ऊपर इंडेक्स की तारीख़ और आज की पैकेज संख्या है, और “सारांश” टैब मैनिफ़ेस्ट, संस्करण, सबसे आम टैग और पैकेज संख्या का ग्राफ़ दिखाता है। भाषा और रूप सबसे ऊपर चुनें।',
+        '“चयन” में संस्करण, कीमत और उपयोग के साथ 108 हाथ से चुने पैकेज हैं। कॉलम के शीर्षक पर क्लिक करने से क्रम बदलता है, श्रेणियाँ छाँटती हैं, खोज बॉक्स खोजता है। जो वहाँ नहीं है, वह “सभी पैकेज” में मिलेगा (दो अक्षरों से), और कल से जो जुड़ा है, वह “नया” में।',
+        'किसी पैकेज ID पर क्लिक करने से तैयार कमांड “winget install --id … -e” कॉपी होती है, और “कमांड” में क्लिक पूरी पंक्ति कॉपी करता है। उसे टर्मिनल में पेस्ट करें और ख़ुद चलाएँ। “सीमाएँ” बताता है कि winget क्या नहीं कर सकता। अगर ब्राउज़र ऊपर “इंस्टॉल करें” दिखाए, तो एक टैप से Wingetarium ऐप की तरह इंस्टॉल हो जाता है, और पहली विज़िट के बाद यह बिना नेटवर्क के भी चलता है।'
+      ],
+      zh: [
+        '打开 Wingetarium。最上方是索引日期和今天的软件包数量，“概览”选项卡显示清单数、版本数、最常见的标签和软件包数量曲线。语言和外观在最上方选择。',
+        '“精选”里有 108 个手工挑选的软件包，附版本、费用和用途。点击列标题排序，用类别筛选，在搜索框里搜索。这里没有的，去“全部软件包”里找（至少输入两个字符），昨天以来新增的在“新增”里。',
+        '点击软件包 ID 会复制现成的命令“winget install --id … -e”，在“命令”里点击一行会复制整行。把它粘贴到终端里自己运行。“局限”告诉你 winget 做不到什么。如果浏览器在上方显示“安装”，点一下就能把 Wingetarium 安装为应用，首次访问后没有网络也能用。'
+      ],
+      ja: [
+        'Wingetarium を開きます。いちばん上にインデックスの日付と今日のパッケージ数があり、「概要」タブにはマニフェスト数、バージョン数、よく使われるタグ、パッケージ数の推移が出ます。言語と表示はいちばん上で選びます。',
+        '「厳選」には、バージョン、費用、用途つきの厳選 108 パッケージが並びます。列の見出しをクリックすると並べ替え、カテゴリーで絞り込み、検索欄で検索できます。そこにないものは「全パッケージ」で（2文字から）、昨日以降に追加されたものは「新着」で見つかります。',
+        'パッケージ ID をクリックすると、そのまま使えるコマンド「winget install --id … -e」がコピーされ、「コマンド」では1行クリックすると行全体がコピーされます。ターミナルに貼り付けて自分で実行します。「制限」には winget にできないことがまとめてあります。ブラウザーの上部に「インストール」が出ていれば、タップ1回で Wingetarium をアプリとして入れられ、初回アクセス後はネットがなくても使えます。'
+      ],
+      ko: [
+        'Wingetarium을 엽니다. 맨 위에 인덱스 날짜와 오늘의 패키지 수가 있고, ‘개요’ 탭은 매니페스트, 버전, 가장 흔한 태그, 패키지 수 곡선을 보여 줍니다. 언어와 화면 모드는 맨 위에서 고릅니다.',
+        '‘엄선’에는 버전, 비용, 쓰임새와 함께 엄선한 패키지 108개가 있습니다. 열 제목을 누르면 정렬되고, 분류로 거르고, 검색 칸으로 찾습니다. 거기 없는 것은 ‘모든 패키지’에서(두 글자부터), 어제 이후 새로 들어온 것은 ‘새로 추가’에서 찾습니다.',
+        '패키지 ID를 누르면 바로 쓸 수 있는 명령어 ‘winget install --id … -e’가 복사되고, ‘명령어’에서는 한 줄을 누르면 줄 전체가 복사됩니다. 터미널에 붙여 넣고 직접 실행합니다. ‘한계’는 winget이 못 하는 일을 알려 줍니다. 브라우저 위쪽에 ‘설치’가 보이면 한 번 눌러 Wingetarium을 앱으로 설치할 수 있고, 첫 방문 후에는 인터넷 없이도 작동합니다.'
+      ]
+    },
+    pitfalls: {
+      de: [
+        'Die Daten sind bis zu einen Tag alt. Der Workflow läuft jeden Morgen um 05:17 UTC, was danach ins Verzeichnis kommt, steht erst am nächsten Morgen hier.',
+        'Die Versionen sind der Stand im winget-Index, nicht zwingend das, was der Hersteller gerade auf seiner Seite anbietet. Bis ein neues Release im Verzeichnis landet, vergehen manchmal Tage.',
+        'Manche Installationen brauchen Adminrechte. Was nach „Program Files“ geht, braucht ein Terminal als Administrator, Pakete, die nur ins Benutzerprofil schreiben, kommen ohne aus.',
+        'Wingetarium ist ein Hobbyprojekt und nicht von Microsoft. Es zeigt, was im Verzeichnis steht, und prüft die Programme nicht selbst. Die Texte und Kostenangaben in der Auswahl habe ich geschrieben, sie können veralten.'
+      ],
+      en: [
+        'The data is up to a day old. The workflow runs every morning at 05:17 UTC, so anything that reaches the repository later only shows up here the next morning.',
+        'Versions are what the winget index says, not necessarily what the maker offers on their own site right now. A new release sometimes takes days to reach the repository.',
+        'Some installs need admin rights. Anything that goes into “Program Files” needs a terminal running as administrator, packages that only write to your user profile do without.',
+        'Wingetarium is a hobby project and not made by Microsoft. It shows what the repository lists and does not test the programs itself. I wrote the descriptions and costs in the picks, and they can go out of date.'
+      ],
+      es: [
+        'Los datos tienen hasta un día de antigüedad. El workflow se ejecuta cada mañana a las 05:17 UTC, así que lo que llega al repositorio después aparece aquí a la mañana siguiente.',
+        'Las versiones son las del índice de winget, no necesariamente lo que el fabricante ofrece ahora en su web. A veces pasan días hasta que una nueva versión llega al repositorio.',
+        'Algunas instalaciones necesitan permisos de administrador. Lo que va a «Program Files» necesita una terminal como administrador, los paquetes que solo escriben en tu perfil de usuario no.',
+        'Wingetarium es un proyecto personal y no es de Microsoft. Muestra lo que figura en el repositorio y no prueba los programas. Los textos y los costes de la selección los he escrito yo y pueden quedarse anticuados.'
+      ],
+      fr: [
+        'Les données ont jusqu’à un jour. Le workflow tourne chaque matin à 05:17 UTC, donc ce qui arrive dans le dépôt plus tard n’apparaît ici que le lendemain matin.',
+        'Les versions sont celles de l’index winget, pas forcément ce que l’éditeur propose en ce moment sur son site. Il faut parfois quelques jours pour qu’une nouvelle version arrive dans le dépôt.',
+        'Certaines installations demandent des droits d’administrateur. Ce qui va dans « Program Files » demande un terminal en administrateur, les paquets qui n’écrivent que dans votre profil utilisateur s’en passent.',
+        'Wingetarium est un projet personnel, pas un produit Microsoft. Il montre ce que liste le dépôt et ne teste pas les programmes lui-même. Les textes et les coûts de la sélection sont de moi et peuvent vieillir.'
+      ],
+      it: [
+        'I dati hanno fino a un giorno. Il workflow gira ogni mattina alle 05:17 UTC, quindi ciò che arriva nel repository dopo compare qui solo la mattina seguente.',
+        'Le versioni sono quelle dell’indice di winget, non per forza ciò che il produttore offre adesso sul suo sito. A volte passano giorni prima che una nuova versione arrivi nel repository.',
+        'Alcune installazioni richiedono i diritti di amministratore. Ciò che va in «Program Files» richiede un terminale come amministratore, i pacchetti che scrivono solo nel tuo profilo utente no.',
+        'Wingetarium è un progetto amatoriale e non è di Microsoft. Mostra ciò che il repository elenca e non prova i programmi. Testi e costi della selezione li ho scritti io e possono invecchiare.'
+      ],
+      nl: [
+        'De gegevens zijn tot een dag oud. De workflow draait elke ochtend om 05:17 UTC, dus wat later in de repository komt, staat hier pas de volgende ochtend.',
+        'De versies zijn de stand in de winget-index, niet per se wat de maker nu op zijn eigen site aanbiedt. Soms duurt het dagen voor een nieuwe release in de repository staat.',
+        'Sommige installaties hebben beheerdersrechten nodig. Wat naar ‘Program Files’ gaat, heeft een terminal als administrator nodig, pakketten die alleen in je gebruikersprofiel schrijven niet.',
+        'Wingetarium is een hobbyproject en niet van Microsoft. Het toont wat de repository bevat en test de programma’s niet zelf. De teksten en kosten in de selectie heb ik geschreven, ze kunnen verouderen.'
+      ],
+      pl: [
+        'Dane mają do jednego dnia. Workflow działa co rano o 05:17 UTC, więc to, co trafi do repozytorium później, pojawi się tu dopiero następnego ranka.',
+        'Wersje to stan z indeksu winget, niekoniecznie to, co producent oferuje teraz na swojej stronie. Czasem mija kilka dni, zanim nowe wydanie trafi do repozytorium.',
+        'Niektóre instalacje wymagają uprawnień administratora. To, co trafia do „Program Files”, wymaga terminala uruchomionego jako administrator, pakiety zapisujące tylko w profilu użytkownika obejdą się bez tego.',
+        'Wingetarium to hobbystyczny projekt, nie produkt Microsoftu. Pokazuje, co jest w repozytorium, i nie testuje programów. Opisy i koszty w wyborze napisałem ja i mogą się zestarzeć.'
+      ],
+      pt: [
+        'Os dados têm até um dia. O workflow roda toda manhã às 05:17 UTC, então o que chega ao repositório depois só aparece aqui na manhã seguinte.',
+        'As versões são as do índice do winget, não necessariamente o que o fabricante oferece agora no próprio site. Às vezes leva dias até uma nova versão chegar ao repositório.',
+        'Algumas instalações precisam de direitos de administrador. O que vai para «Program Files» precisa de um terminal como administrador, pacotes que só gravam no seu perfil de usuário não.',
+        'O Wingetarium é um projeto pessoal e não é da Microsoft. Ele mostra o que o repositório lista e não testa os programas. Os textos e custos da seleção fui eu que escrevi, e eles podem ficar desatualizados.'
+      ],
+      tr: [
+        'Veriler en fazla bir günlüktür. Workflow her sabah 05:17 UTC’de çalışır, depoya sonradan gelen şey burada ancak ertesi sabah görünür.',
+        'Sürümler winget dizinindeki durumdur, üreticinin şu anda kendi sitesinde sunduğu şey olmayabilir. Yeni bir sürümün depoya girmesi bazen günler sürer.',
+        'Bazı kurulumlar yönetici hakları ister. “Program Files” altına gidenler için terminali yönetici olarak açmanız gerekir, yalnızca kullanıcı profilinize yazan paketler bunsuz kurulur.',
+        'Wingetarium bir hobi projesidir ve Microsoft’a ait değildir. Depoda olanı gösterir, programları kendisi denemez. Seçkideki açıklamaları ve maliyetleri ben yazdım, eskiyebilirler.'
+      ],
+      ru: [
+        'Данным может быть до суток. Workflow запускается каждое утро в 05:17 UTC, поэтому то, что попало в каталог позже, появится здесь только на следующее утро.',
+        'Версии взяты из индекса winget и не обязательно совпадают с тем, что производитель предлагает сейчас на своём сайте. Иногда новый выпуск попадает в каталог только через несколько дней.',
+        'Некоторым установкам нужны права администратора. Для всего, что ставится в «Program Files», нужен терминал от имени администратора, пакетам, которые пишут только в профиль пользователя, это не нужно.',
+        'Wingetarium сделан как хобби и не является продуктом Microsoft. Он показывает, что есть в каталоге, и не проверяет программы сам. Описания и стоимость в подборке написал я, они могут устареть.'
+      ],
+      hi: [
+        'डेटा एक दिन तक पुराना हो सकता है। वर्कफ़्लो हर सुबह 05:17 UTC पर चलता है, इसलिए जो बाद में रिपॉज़िटरी में आता है, वह यहाँ अगली सुबह ही दिखता है।',
+        'संस्करण winget इंडेक्स के हिसाब से हैं, ज़रूरी नहीं कि निर्माता अभी अपनी साइट पर यही दे रहा हो। नया रिलीज़ रिपॉज़िटरी तक पहुँचने में कभी कभी कई दिन लगते हैं।',
+        'कुछ इंस्टॉलेशन को एडमिन अधिकार चाहिए। जो “Program Files” में जाता है, उसके लिए टर्मिनल एडमिनिस्ट्रेटर के रूप में चलाना होगा, जो पैकेज सिर्फ़ आपकी यूज़र प्रोफ़ाइल में लिखते हैं, उन्हें नहीं।',
+        'Wingetarium एक शौकिया प्रोजेक्ट है और Microsoft का नहीं है। यह दिखाता है कि रिपॉज़िटरी में क्या है, प्रोग्रामों को ख़ुद नहीं जाँचता। चयन के विवरण और कीमतें मैंने लिखी हैं, वे पुरानी हो सकती हैं।'
+      ],
+      zh: [
+        '数据最多晚一天。工作流每天早上 05:17 UTC 运行，之后才进入仓库的内容要到第二天早上才会出现在这里。',
+        '版本号是 winget 索引里的状态，不一定是厂商官网此刻提供的版本。新版本有时要过几天才进入仓库。',
+        '有些安装需要管理员权限。装到“Program Files”里的程序需要以管理员身份运行终端，只写入用户目录的软件包则不需要。',
+        'Wingetarium 是个业余项目，不是 Microsoft 的产品。它只展示仓库里有什么，不会自己检验这些程序。精选里的说明和费用是我写的，可能会过时。'
+      ],
+      ja: [
+        'データは最大で1日古いことがあります。ワークフローは毎朝 05:17 UTC に動くので、それ以降にリポジトリに入ったものは翌朝ここに出ます。',
+        'バージョンは winget インデックス上のもので、メーカーがいま自社サイトで出しているものと同じとは限りません。新しいリリースがリポジトリに入るまで数日かかることもあります。',
+        'インストールによっては管理者権限が必要です。「Program Files」に入るものは管理者として開いたターミナルが必要で、ユーザープロファイルにだけ書き込むパッケージは不要です。',
+        'Wingetarium は趣味のプロジェクトで、Microsoft 製ではありません。リポジトリにあるものを見せるだけで、プログラム自体は検証していません。厳選の説明と費用は私が書いたもので、古くなることがあります。'
+      ],
+      ko: [
+        '데이터는 최대 하루 늦을 수 있습니다. 워크플로는 매일 아침 05:17 UTC에 돌기 때문에, 그 뒤에 저장소에 들어온 것은 다음 날 아침에야 여기에 나옵니다.',
+        '버전은 winget 인덱스 기준이며, 제조사가 지금 자기 사이트에서 내놓은 것과 같다는 보장은 없습니다. 새 릴리스가 저장소에 들어오기까지 며칠 걸리기도 합니다.',
+        '어떤 설치는 관리자 권한이 필요합니다. ‘Program Files’로 가는 것은 관리자 권한 터미널이 필요하고, 사용자 프로필에만 쓰는 패키지는 필요 없습니다.',
+        'Wingetarium은 취미 프로젝트이며 Microsoft 제품이 아닙니다. 저장소에 있는 것을 보여 줄 뿐, 프로그램을 직접 검사하지 않습니다. 엄선 목록의 설명과 비용은 제가 썼고, 시간이 지나면 낡을 수 있습니다.'
+      ]
+    },
+    docs: {
+      de: 'https://github.com/Dennismit2n/wingetarium/blob/main/README.de.md',
+      en: 'https://github.com/Dennismit2n/wingetarium/blob/main/README.md',
+      es: 'https://github.com/Dennismit2n/wingetarium/blob/main/README.md',
+      fr: 'https://github.com/Dennismit2n/wingetarium/blob/main/README.md',
+      it: 'https://github.com/Dennismit2n/wingetarium/blob/main/README.md',
+      nl: 'https://github.com/Dennismit2n/wingetarium/blob/main/README.md',
+      pl: 'https://github.com/Dennismit2n/wingetarium/blob/main/README.md',
+      pt: 'https://github.com/Dennismit2n/wingetarium/blob/main/README.md',
+      tr: 'https://github.com/Dennismit2n/wingetarium/blob/main/README.md',
+      ru: 'https://github.com/Dennismit2n/wingetarium/blob/main/README.md',
+      hi: 'https://github.com/Dennismit2n/wingetarium/blob/main/README.md',
+      zh: 'https://github.com/Dennismit2n/wingetarium/blob/main/README.md',
+      ja: 'https://github.com/Dennismit2n/wingetarium/blob/main/README.md',
+      ko: 'https://github.com/Dennismit2n/wingetarium/blob/main/README.md'
+    }
+  },
   followerlog: {
     purpose: {
       de: 'Für alle, die wissen wollen, wer ihnen auf GitHub folgt und wer wieder gegangen ist. GitHub selbst zeigt nur die aktuelle Liste, keine Abgänge. Follower-Log ist eine Vorlage: Du kopierst sie als eigenes privates Repo, ein Workflow vergleicht dort jeden Tag die Liste mit der vom Vortag und schreibt die Unterschiede in ein Logbuch. Die App fürs Handy zeigt dieses Logbuch und startet beim Öffnen einen neuen Abruf. App und Anleitung sind auf Deutsch.',

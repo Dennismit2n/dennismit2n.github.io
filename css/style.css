@@ -88,7 +88,7 @@
      Methode: OKLCH bei festem Farbton, Chroma per Bisektion in den Gamut geklemmt,
      Helligkeit per Bisektion auf das Kontrastziel. Wer den Grund oder die Aurora
      verschiebt, rechnet diese Werte neu — sie sind Prüfnachweis, keine Verzierung.
-     Prismatical, Spectroton, Heizwarte, Hourbridge, Follower-Log und Pocketsum tragen dazu ihren Verlauf
+     Prismatical, Spectroton, Heizwarte, Hourbridge, Follower-Log, Wingetarium und Pocketsum tragen dazu ihren Verlauf
      (Name und Kappe), der Vollton daneben ist nur Anker für Rahmen und Knopf.
      Fadenkreuz bleibt in beiden Darstellungen schwarz (siehe .tool-card.tool-fadenkreuz);
      --fadenkreuz gilt nur für seinen Abschnitt auf werkstatt.html. Die Kappe von
@@ -114,6 +114,8 @@
   --hourbridge-flow: linear-gradient(100deg, #7E4B91, #305FA3, #006D51);
   --followerlog: #07501F;
   --followerlog-flow: linear-gradient(100deg, #8E0E14E0, #07501FE0, #8E0E14E0, #07501FE0, #8E0E14E0, #07501FE0);
+  --wingetarium: #0F4C81;
+  --wingetarium-flow: linear-gradient(100deg, #0F4C81, #17673F);
   --fadenkreuz: #101512;
   --fadenkreuz-flow: linear-gradient(#33ff88, #33ff88);
   --pocketsum: #1A1932;
@@ -195,6 +197,8 @@
     --hourbridge-flow: linear-gradient(100deg, #B699C1, #8CA7CE, #7EB39D);
     --followerlog: #7FE39B;
     --followerlog-flow: linear-gradient(100deg, #FF9A92E0, #7FE39BE0, #FF9A92E0, #7FE39BE0, #FF9A92E0, #7FE39BE0);
+    --wingetarium: #7CB4E4;
+    --wingetarium-flow: linear-gradient(100deg, #7CB4E4, #5BBE8B);
     --fadenkreuz: #33ff88;
     --fadenkreuz-flow: linear-gradient(#33ff88, #33ff88);
     --pocketsum: #E2E2F6;
@@ -262,6 +266,8 @@
   --hourbridge-flow: linear-gradient(100deg, #B699C1, #8CA7CE, #7EB39D);
   --followerlog: #7FE39B;
   --followerlog-flow: linear-gradient(100deg, #FF9A92E0, #7FE39BE0, #FF9A92E0, #7FE39BE0, #FF9A92E0, #7FE39BE0);
+  --wingetarium: #7CB4E4;
+  --wingetarium-flow: linear-gradient(100deg, #7CB4E4, #5BBE8B);
   --fadenkreuz: #33ff88;
   --fadenkreuz-flow: linear-gradient(#33ff88, #33ff88);
   --pocketsum: #E2E2F6;
@@ -631,6 +637,7 @@ a.brand { text-decoration: none; color: inherit; }
 .tool-heizwarte { --tool: var(--heizwarte); --tool-flow: var(--heizwarte-flow); }
 .tool-hourbridge { --tool: var(--hourbridge); --tool-flow: var(--hourbridge-flow); }
 .tool-followerlog { --tool: var(--followerlog); --tool-flow: var(--followerlog-flow); }
+.tool-wingetarium { --tool: var(--wingetarium); --tool-flow: var(--wingetarium-flow); }
 .tool-fadenkreuz { --tool: var(--fadenkreuz); --tool-flow: var(--fadenkreuz-flow); }
 .tool-pocketsum { --tool: var(--pocketsum); --tool-flow: var(--pocketsum-flow); }
 .tool-gaming { --tool: var(--gaming); --tool-flow: var(--gaming-flow); }
@@ -897,6 +904,23 @@ a.brand { text-decoration: none; color: inherit; }
   .tool-followerlog .tool-name {
     text-shadow: none;
     background-image: var(--followerlog-flow);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+/* Wingetarium: Index-Blau der App → Grün („täglich frisch“). Hell gegen --bg
+   mindestens 5,00:1 (Grün; Blau 6,43), gegen den Schleier über dem dunkelsten
+   Aurora-Punkt 5,41. Dunkel gegen --panel, --bg und den hellsten Aurora-Punkt
+   (#181F3F) mindestens 7,03:1. Hoher Kontrast hell #0F4C81 gegen Weiß 8,86,
+   dunkel erbt (gegen Schwarz 9,18). Umgedreht fiele das Grün auf 4,41,
+   darum unten im Umkehr-Block #60C490 (4,75). Neben Real_RAM_cooler (Azur
+   #6CB2FF) hebt sich die Kachel über das Grün im Verlauf ab. */
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .tool-wingetarium .tool-name {
+    text-shadow: none;
+    background-image: var(--wingetarium-flow);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -1599,6 +1623,7 @@ a.wk-shot-frame:focus-visible { outline-color: var(--tool, var(--accent)); }
   --heizwarte-flow: linear-gradient(var(--heizwarte), var(--heizwarte));
   --hourbridge-flow: linear-gradient(var(--hourbridge), var(--hourbridge));
   --followerlog-flow: linear-gradient(var(--followerlog), var(--followerlog));
+  --wingetarium-flow: linear-gradient(var(--wingetarium), var(--wingetarium));
   --pocketsum-flow: linear-gradient(var(--pocketsum), var(--pocketsum));
   --gaming-flow: linear-gradient(var(--gaming), var(--gaming));
 }
@@ -1639,6 +1664,7 @@ a.wk-shot-frame:focus-visible { outline-color: var(--tool, var(--accent)); }
   --spectro: #00625B;       /* 7,25 */
   --heizwarte: #005D82;     /* 7,27 */
   --hourbridge: #754387;    /* 7,22 */
+  --wingetarium: #0F4C81;   /* 8,86 */
   --craftionary: #00634F;   /* 7,25 */
   --vault: #6C5400;         /* 7,23 */
   --ruestkammer: #8D4200;   /* 7,21 */
@@ -1650,6 +1676,7 @@ a.wk-shot-frame:focus-visible { outline-color: var(--tool, var(--accent)); }
   --heizwarte-flow: linear-gradient(var(--heizwarte), var(--heizwarte));
   --hourbridge-flow: linear-gradient(var(--hourbridge), var(--hourbridge));
   --followerlog-flow: linear-gradient(var(--followerlog), var(--followerlog));
+  --wingetarium-flow: linear-gradient(var(--wingetarium), var(--wingetarium));
   --pocketsum-flow: linear-gradient(var(--pocketsum), var(--pocketsum));
   --gaming-flow: linear-gradient(var(--gaming), var(--gaming));
 }
@@ -1763,6 +1790,7 @@ a.wk-shot-frame:focus-visible { outline-color: var(--tool, var(--accent)); }
     --prisma-flow: linear-gradient(100deg, #ff9e95, #ffae55, #cfd149, #39faf1, #bfb9ff);
     --spectro-flow: linear-gradient(100deg, #8bfff8, #48e8e0, #40e2da, #48d3cb, #53c5bf);
     --heizwarte-flow: linear-gradient(100deg, #7dd3fc, #86efac, #fde047, #fdba74, #ff928f);
+    --wingetarium-flow: linear-gradient(100deg, #7CB4E4, #60C490);
   }
 }
 /* Die Meta-Zeile der dunklen Materie (fest #8079a8) käme umgedreht auf 3,47,

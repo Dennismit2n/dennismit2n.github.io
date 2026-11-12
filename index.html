@@ -36,7 +36,7 @@
   <!-- Die Überschriftenschrift wird auf jeder Seite und in jeder Sprache gebraucht
        (mindestens für den Markennamen), also früh anstoßen statt erst nach der CSS. -->
   <link rel="preload" href="./assets/fonts/fraunces/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="./css/style.css?v=2026-11-12c">
+  <link rel="stylesheet" href="./css/style.css?v=2026-11-12g">
   <!-- Darstellung vor dem ersten Bild: die gemeinsame Wahl aller Werkzeuge
        (werkstatt.darstellung, sonst der alte Schlüssel), sonst entscheidet das
        System per CSS. data-vision trägt Hoher Kontrast, Farbenblind und Umkehr;
@@ -181,6 +181,24 @@
             <a href="./werkstatt.html#ram-bilder" data-count="werkstatt-ram-bilder" data-i18n="secShots">Screenshots</a>
             <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/Real_RAM_cooler/blob/main/README.de.md" rel="noopener" data-count="readme-ram" data-i18n="secReadme">README</a>
             <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/Real_RAM_cooler#readme" rel="noopener" data-count="readme-ram" data-i18n="secReadme">README</a>
+          </span>
+        </div>
+        <!-- Wingetarium: Kappe und Name im Verlauf Index-Blau → Grün („täglich frisch“),
+             siehe --wingetarium-flow in style.css. -->
+        <div class="tool-card tool-wingetarium">
+          <span class="tool-head">
+            <img src="./assets/wingetarium.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-wingetarium">Wingetarium</span>
+          </span>
+          <span class="tool-desc" data-i18n="wingetariumDesc">What is inside the winget repository, fresh every day. With 108 hand-picked packages at today’s version, a search across all of them and the key commands.</span>
+          <span class="tool-meta" data-i18n="wingetariumMeta">In your browser · fresh from the winget index every day · 14 languages</span>
+          <a class="tool-open" id="open-wingetarium" aria-labelledby="open-wingetarium name-wingetarium" href="https://dennismit2n.github.io/wingetarium/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="wingetarium">
+            <a href="./werkstatt.html#wingetarium-neuigkeiten" data-count="werkstatt-wingetarium-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#wingetarium-anleitung" data-count="werkstatt-wingetarium-anleitung" data-i18n="secGuide">Guide</a>
+            <a href="./werkstatt.html#wingetarium-bilder" data-count="werkstatt-wingetarium-bilder" data-i18n="secShots">Screenshots</a>
+            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/wingetarium/blob/main/README.de.md" rel="noopener" data-count="readme-wingetarium" data-i18n="secReadme">README</a>
+            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/wingetarium#readme" rel="noopener" data-count="readme-wingetarium" data-i18n="secReadme">README</a>
           </span>
         </div>
         <!-- The odd one out: the only tool whose full version is meant to cost
@@ -504,9 +522,9 @@
      Als eigenes Skript-Tag hielt es das Übersetzen noch eine halbe Sekunde
      auf; main.js holt es deshalb erst danach. data-news trägt die Adresse
      samt ?v=-Stempel. -->
-<script src="./js/i18n.js?v=2026-11-12" fetchpriority="high"></script>
+<script src="./js/i18n.js?v=2026-11-12g" fetchpriority="high"></script>
 <script src="./js/dates.js?v=2026-09-14" fetchpriority="high"></script>
 <script src="./js/header.js?v=2026-11-03" fetchpriority="high"></script>
-<script src="./js/main.js?v=2026-11-03c" fetchpriority="high" data-news="./js/news.js?v=2026-11-12f"></script>
+<script src="./js/main.js?v=2026-11-03c" fetchpriority="high" data-news="./js/news.js?v=2026-11-12g"></script>
 </body>
 </html>

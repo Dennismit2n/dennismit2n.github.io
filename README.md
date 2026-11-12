@@ -6,13 +6,14 @@ Startseite für die kleinen Werkzeuge von Dennis_mit_2n: ohne Anmeldung, keine A
 
 **➡️ [dennismit2n.github.io](https://dennismit2n.github.io/)**
 
-<img src="assets/screenshot-startseite.webp" alt="The start page in dark mode: the headline „Kleine Werkzeuge, die nichts von dir wollen“, the pledge line, and the first six tiles of the toolbox (create-masterprompt, Werkstatt-Mods, Real_RAM_cooler, fontART Designer, Prismatical, Spectroton), each glowing in its own colour on the blueprint grid with the aurora clouds." width="800">
+<img src="assets/screenshot-startseite.webp" alt="The start page in dark mode: the headline „Kleine Werkzeuge, die nichts von dir wollen“, the pledge line, and the first six tiles of the toolbox (create-masterprompt, Werkstatt-Mods, Real_RAM_cooler, Wingetarium, fontART Designer, Prismatical), each glowing in its own colour on the blueprint grid with the aurora clouds." width="800">
 
 ## Tools
 
 - [create-masterprompt](https://github.com/Dennismit2n/create-masterprompt): turns a vague project idea into a context package a fresh AI chat can run from (a skill, not a program)
 - [Werkstatt-Mods](https://dennismit2n.github.io/mods.html): nine mods for Claude Code (statistics pane, limits band, guard, limit pause, agents pane, handoff, chat inventory, screen guard, switchboard), each installed with one line; its own page with screenshots, install lines and prompts (see below)
 - [Real_RAM_cooler](https://github.com/Dennismit2n/Real_RAM_cooler): an honest RAM tool for Windows (download, not a browser tool)
+- [Wingetarium](https://dennismit2n.github.io/wingetarium/): what is inside the official winget repository, fresh every day: 108 hand-picked packages at today’s version, a search across all packages, what is new and the key commands, offline after the first visit
 - [fontART Designer](https://dennismit2n.github.io/fontART-demo/): turn your handwriting into a real font (trial version: in the browser, or as a Windows download)
 - [Prismatical](https://dennismit2n.github.io/prismatical/): passwords and passphrases whose strength is the colour of the interface
 - [Spectroton](https://dennismit2n.github.io/spectroton/): one colour in, eleven matching shades out, contrast-checked
@@ -77,7 +78,7 @@ The interface words exist in all 14 languages, and since 14 September 2026 so do
 
 ## Development
 
-No build step: plain HTML, CSS, and JavaScript. 96 files make up the site (not counting the apps in `bl4/` and `mw4/`, the `heizwarte/` helper and `tools/`): four pages, one stylesheet, eight scripts, twenty-six images plus the five mod screenshots in `assets/mods/`, three icons, forty-six screenshots for the guides in `assets/anleitung/`, and two font files with their licence in `assets/fonts/fraunces/`. No npm dependencies.
+No build step: plain HTML, CSS, and JavaScript. 104 files make up the site (not counting the apps in `bl4/` and `mw4/`, the `heizwarte/` helper and `tools/`): four pages, one stylesheet, eight scripts, twenty-eight images plus the nine mod screenshots in `assets/mods/`, three icons, forty-eight screenshots for the guides in `assets/anleitung/`, and two font files with their licence in `assets/fonts/fraunces/`. No npm dependencies.
 
 ```
 node tools/dev-server.js
