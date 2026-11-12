@@ -1736,6 +1736,25 @@ var NEWS = {
 
   fontart: [
     {
+      date: '2026-11-12',
+      version: 'v10.3.0',
+      link: 'https://github.com/Dennismit2n/fontART-demo/releases/tag/v10.3.0',
+      de: 'fontART trägt jetzt denselben Look wie die Kacheln hier: Knöpfe, Eingabefelder, Auswahllisten, Karten und Fenster haben einen eckigen Innenrahmen und vier kleine Schrauben in Weißgold, und die Schatten fallen nach links unten. Malfläche und Buchstabenknöpfe bleiben, wie sie sind, im Browser und in der Windows-Fassung.',
+      en: 'fontART now wears the same look as the tiles here: buttons, input fields, dropdowns, cards and dialogs carry a square inner frame and four small white gold screws, and the shadows fall to the bottom left. The drawing area and the letter buttons stay as they are, in the browser and in the Windows version.',
+      es: 'fontART lleva ahora el mismo aspecto que las tarjetas de aquí: botones, campos de entrada, listas desplegables, tarjetas y ventanas tienen un marco interior recto y cuatro tornillos pequeños de oro blanco, y las sombras caen hacia abajo a la izquierda. El área de dibujo y los botones de letras siguen como estaban, en el navegador y en la versión para Windows.',
+      fr: 'fontART porte désormais le même look que les tuiles d’ici : boutons, champs de saisie, listes déroulantes, cartes et fenêtres ont un cadre intérieur à angles droits et quatre petites vis en or blanc, et les ombres tombent en bas à gauche. La zone de dessin et les boutons de lettres restent tels quels, dans le navigateur et dans la version Windows.',
+      it: 'fontART ora ha lo stesso aspetto delle tessere di qui: pulsanti, campi di immissione, elenchi a discesa, schede e finestre hanno una cornice interna squadrata e quattro piccole viti in oro bianco, e le ombre cadono in basso a sinistra. Area di disegno e pulsanti delle lettere restano come sono, nel browser e nella versione per Windows.',
+      nl: 'fontART draagt nu dezelfde look als de tegels hier: knoppen, invoervelden, keuzelijsten, kaarten en vensters hebben een rechte binnenlijst en vier kleine schroefjes in witgoud, en de schaduwen vallen naar linksonder. Het tekenvlak en de letterknoppen blijven zoals ze zijn, in de browser en in de Windows-versie.',
+      pl: 'fontART ma teraz ten sam wygląd co kafelki tutaj: przyciski, pola, listy rozwijane, karty i okna mają prostokątną ramkę wewnętrzną i cztery małe śrubki z białego złota, a cienie padają w lewo w dół. Pole rysowania i przyciski liter zostają bez zmian, w przeglądarce i w wersji na Windows.',
+      pt: 'O fontART agora tem o mesmo visual dos blocos daqui: botões, campos de entrada, listas suspensas, cartões e janelas têm uma moldura interna reta e quatro parafusinhos em ouro branco, e as sombras caem para baixo à esquerda. A área de desenho e os botões de letras continuam como estão, no navegador e na versão para Windows.',
+      tr: 'fontART artık buradaki kutularla aynı görünümü taşıyor: düğmeler, giriş alanları, açılır listeler, kartlar ve pencereler köşeli bir iç çerçeve ile beyaz altın dört küçük vida taşıyor, gölgeler de sol alta düşüyor. Çizim alanı ve harf düğmeleri olduğu gibi kalıyor, tarayıcıda da Windows sürümünde de.',
+      ru: 'fontART теперь выглядит так же, как плитки здесь: у кнопок, полей ввода, выпадающих списков, карточек и окон есть прямоугольная внутренняя рамка и четыре маленьких винта из белого золота, а тени падают влево вниз. Поле рисования и кнопки букв остались как были, в браузере и в версии для Windows.',
+      hi: 'fontART अब यहाँ की टाइलों जैसा ही दिखता है: बटन, इनपुट फ़ील्ड, ड्रॉपडाउन, कार्ड और विंडो में चौकोर भीतरी फ़्रेम और सफ़ेद सोने के चार छोटे पेंच हैं, और परछाइयाँ नीचे बाईं ओर पड़ती हैं। ड्रॉइंग क्षेत्र और अक्षर बटन जैसे थे वैसे ही हैं, ब्राउज़र में भी और Windows संस्करण में भी।',
+      zh: 'fontART 现在和这里的卡片是同一种外观：按钮、输入框、下拉列表、卡片和对话框都带直角内框和四颗白金色小螺丝，阴影落向左下方。绘图区和字母按钮保持原样，浏览器版和 Windows 版都是如此。',
+      ja: 'fontART が、ここのタイルと同じ見た目になりました。ボタン、入力欄、ドロップダウン、カード、ダイアログに、角ばった内枠と4本の小さなホワイトゴールドのねじが付き、影は左下に落ちます。描画エリアと文字ボタンはそのままで、ブラウザー版も Windows 版も同じです。',
+      ko: 'fontART가 이제 이곳 타일과 같은 모습입니다. 버튼, 입력란, 드롭다운, 카드, 대화 상자에 각진 안쪽 테두리와 화이트골드 작은 나사 네 개가 달렸고, 그림자는 왼쪽 아래로 떨어집니다. 그리기 영역과 글자 버튼은 그대로이며, 브라우저 버전과 Windows 버전 모두 같습니다.'
+    },
+    {
       date: '2026-11-01',
       version: 'v10.2.2',
       link: 'https://github.com/Dennismit2n/fontART-demo/releases/tag/v10.2.2',
