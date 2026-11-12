@@ -1543,6 +1543,25 @@ var NEWS = {
 
   ticker: [
     {
+      date: '2026-11-12',
+      version: 'v1.2.0',
+      link: 'https://github.com/Dennismit2n/besucher-ticker/releases/tag/v1.2.0',
+      de: 'Der Besucher-Ticker trägt jetzt denselben Look wie die Kacheln hier: Die Anzeige sitzt auf einer Platte mit eckigem Rahmen und vier kleinen Schrauben in Weißgold, und der Schatten fällt nach links unten. Platte und Rahmen nehmen die Farben deines Themes. An Zahlen und Bedienung ändert sich nichts.',
+      en: 'Besucher-Ticker now wears the same look as the tiles here: the overlay sits on a plate with a square frame and four small white gold screws, and the shadow falls to the bottom left. Plate and frame take the colours of your theme. Nothing changes in the numbers or in how you use it.',
+      es: 'Besucher-Ticker lleva ahora el mismo aspecto que las tarjetas de aquí: el overlay se apoya en una placa con marco recto y cuatro tornillos pequeños de oro blanco, y la sombra cae hacia abajo a la izquierda. Placa y marco toman los colores de tu tema. Ni las cifras ni el manejo cambian.',
+      fr: 'Besucher-Ticker porte désormais le même look que les tuiles d’ici : l’overlay repose sur une plaque avec un cadre à angles droits et quatre petites vis en or blanc, et l’ombre tombe en bas à gauche. La plaque et le cadre prennent les couleurs de votre thème. Rien ne change aux chiffres ni à l’utilisation.',
+      it: 'Besucher-Ticker ora ha lo stesso aspetto delle tessere di qui: l’overlay poggia su una piastra con cornice squadrata e quattro piccole viti in oro bianco, e l’ombra cade in basso a sinistra. Piastra e cornice prendono i colori del tuo tema. Numeri e uso restano uguali.',
+      nl: 'De Besucher-Ticker draagt nu dezelfde look als de tegels hier: de overlay zit op een plaat met een rechte lijst en vier kleine schroefjes in witgoud, en de schaduw valt naar linksonder. Plaat en lijst nemen de kleuren van je thema over. Aan de cijfers en de bediening verandert niets.',
+      pl: 'Besucher-Ticker ma teraz ten sam wygląd co kafelki tutaj: nakładka leży na płytce z prostokątną ramką i czterema małymi śrubkami z białego złota, a cień pada w lewo w dół. Płytka i ramka biorą kolory twojego motywu. Liczby i obsługa zostają bez zmian.',
+      pt: 'O Besucher-Ticker agora tem o mesmo visual dos blocos daqui: o overlay fica sobre uma placa com moldura reta e quatro parafusinhos em ouro branco, e a sombra cai para baixo à esquerda. Placa e moldura usam as cores do seu tema. Nada muda nos números nem no uso.',
+      tr: 'Besucher-Ticker artık buradaki kutularla aynı görünümü taşıyor: katman, köşeli çerçevesi ve beyaz altın dört küçük vidası olan bir plakanın üstünde duruyor, gölge de sol alta düşüyor. Plaka ve çerçeve temanızın renklerini alıyor. Sayılarda ve kullanımda bir şey değişmiyor.',
+      ru: 'Besucher-Ticker теперь выглядит так же, как плитки здесь: оверлей лежит на пластине с прямоугольной рамкой и четырьмя маленькими винтами из белого золота, а тень падает влево вниз. Пластина и рамка берут цвета вашей темы. Цифры и управление остались прежними.',
+      hi: 'Besucher-Ticker अब यहाँ की टाइलों जैसा ही दिखता है: ओवरले एक प्लेट पर बैठा है, जिसमें चौकोर फ़्रेम और सफ़ेद सोने के चार छोटे पेंच हैं, और परछाईं नीचे बाईं ओर पड़ती है। प्लेट और फ़्रेम आपकी थीम के रंग लेते हैं। आँकड़ों और इस्तेमाल में कुछ नहीं बदला।',
+      zh: 'Besucher-Ticker 现在和这里的卡片是同一种外观：悬浮窗放在一块面板上，面板带直角内框和四颗白金色小螺丝，阴影落向左下方。面板和内框采用你所选主题的颜色。数字和用法都没有变化。',
+      ja: 'Besucher-Ticker が、ここのタイルと同じ見た目になりました。オーバーレイは、角ばった枠と4本の小さなホワイトゴールドのねじが付いたプレートの上に載り、影は左下に落ちます。プレートと枠は選んだテーマの色になります。数字と使い方は変わりません。',
+      ko: 'Besucher-Ticker가 이제 이곳 타일과 같은 모습입니다. 오버레이는 각진 테두리와 화이트골드 작은 나사 네 개가 달린 판 위에 놓이고, 그림자는 왼쪽 아래로 떨어집니다. 판과 테두리는 고른 테마의 색을 따릅니다. 숫자와 사용법은 그대로입니다.'
+    },
+    {
       date: '2026-11-01',
       version: 'v1.1.6',
       link: 'https://github.com/Dennismit2n/besucher-ticker/releases/tag/v1.1.6',

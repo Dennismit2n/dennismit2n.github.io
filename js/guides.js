@@ -2129,8 +2129,8 @@ var GUIDES = {
     shots: [
       {
         file: 'ticker-de.webp',
-        w: 210,
-        h: 470,
+        w: 300,
+        h: 576,
         alt: {
           de: 'Der Besucher-Ticker mit Beispielzahlen: oben 87 Aufrufe heute und 12.480 insgesamt, darunter ein Balken je Werkzeug von der Startseite bis wifi-qr und ganz unten die Verweise, also woher die Besucher kamen.',
           en: 'The Besucher-Ticker with sample numbers: at the top 87 pageviews today and 12,480 in total, below that one bar per tool from the start page to wifi-qr, and at the bottom the referrers, meaning where the visitors came from. The picture shows the German interface.',
