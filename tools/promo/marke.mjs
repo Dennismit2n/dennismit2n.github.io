@@ -139,6 +139,9 @@ const ICONS = {
   <rect x="20" y="21" width="8" height="17" rx="1.5" fill="#38bdf8"/>
   <rect x="31" y="28" width="8" height="10" rx="1.5" fill="#2f6bff" opacity=".8"/>
   <circle cx="36.5" cy="13.5" r="4.5" fill="#ff2d95"/>`,
+  /* Besucher-Ticker App: favicon.svg der App (64er Raster) auf 48 verkleinert.
+   * Schwarz, drei blaue Saeulen, pinker Punkt, wie die App selbst. */
+  tickerApp: `<g transform="scale(0.75)"><rect width="64" height="64" rx="14" fill="#000000"/><rect x="11" y="30" width="10" height="23" rx="1.5" fill="#2f6bff"/><rect x="27" y="20" width="10" height="33" rx="1.5" fill="#2f6bff"/><rect x="43" y="38" width="10" height="15" rx="1.5" fill="#2f6bff"/><circle cx="48" cy="15" r="6.5" fill="#ff2d95"/></g>`,
   shrink: `<rect x="2" y="2" width="44" height="44" rx="11" fill="#7c3aed"/>
   <rect x="9" y="17" width="22" height="19" rx="3" fill="none" stroke="#fff" stroke-width="3"/>
   <circle cx="15.5" cy="23.5" r="2.2" fill="#fff"/>
@@ -593,6 +596,33 @@ export const TOOLS = [
     assetOrdner: 'assets',
     /* Windows-App ohne eigene Webseite — wie der Zaehlwerk Ticker. Nur die
      * GitHub-Vorschau hat einen Abnehmer. */
+    hatSeite: false,
+  },
+  {
+    /* Eingetragen am 12.11.2026: die Handy-Fassung des Besucher-Tickers als
+     * PWA, eigenes Repo, auf der Startseite nur als Mini-Kachel „Handy-App“
+     * in der Kachel des Besucher-Tickers (deshalb nicht in KACHELN). Farben
+     * wie die App: Schwarz, Pink #ff2d95, Blau #2f6bff. */
+    slug: 'besucher-ticker-app',
+    name: 'Besucher-Ticker App',
+    icon: 'tickerApp',
+    farbe: '#ff2d95',
+    flow: 'linear-gradient(100deg, #ff2d95, #2f6bff)',
+    nameFlow: true,
+    claimDe: 'Deine Besucherzahlen am Handy.',
+    claimEn: 'Your visitor numbers on your phone',
+    zusagen: ['Kostenlos', 'quelloffen', 'installierbar'],
+    url: 'dennismit2n.github.io/besucher-ticker-app',
+    story: [
+      { ober: 'Für GoatCounter-Nutzer', gross: 'Wie viele waren heute da?', unter: 'Unterwegs willst du nicht erst den Rechner anwerfen, nur um eine Zahl nachzusehen.' },
+      { ober: 'So geht es', gross: 'Adresse und Token eintragen, fertig.', unter: 'Dieselben Zahlen wie das Overlay unter Windows: Aufrufe oder Kachel-Klicks, Balken je Seite, dazu Länder oder Verweise. Das Token bleibt nur auf deinem Gerät.' },
+      { ober: 'Kostenlos & quelloffen', gross: 'Jetzt öffnen', unter: 'dennismit2n.github.io/besucher-ticker-app' },
+    ],
+    repo: 'besucher-ticker-app',
+    /* Die App macht ihr og.png selbst (tools/bilder.cjs, Bildschirmfoto mit
+     * Beispielzahlen). Von hier geht nur das Bild für GitHub nach docs/; dort
+     * ist docs/*.png ignoriert, es bleibt also lokal wie bei Hourbridge. */
+    assetOrdner: 'docs',
     hatSeite: false,
   },
   {
