@@ -1,39 +1,47 @@
 {
  "v": 1,
- "week_start": "2026-11-05",
- "week_end": "2026-11-12",
- "reset_utc": "2026-11-12T17:00:00Z",
- "updated": "2026-11-05T18:48:34Z",
+ "week_start": "2026-11-12",
+ "week_end": "2026-11-19",
+ "reset_utc": "2026-11-19T17:00:00Z",
+ "updated": "2026-11-12T18:53:01Z",
  "encore": {
-  "boss": "Battle Wagon",
-  "where": "Ripper Drill Site „The Lowering March“ im Stoneblood Forest (Terminus Range). Schnellreise zum Snowy Wells Safehouse, von der Klippe springen und zur Drill Site gleiten. Der Big-Encore-Automat steht direkt vor der Arena.",
+  "boss": "Pango & Bango",
+  "where": "Ripper Drill Site „Tendercage“ in der Provinz Lopside (Carcadia Burn). Schnellreise zum Makeshift Chalet Safehouse und nach Osten zur Drill Site fahren. Der Big-Encore-Automat steht direkt vor der Arena.",
   "loot": [
-   "Bugbear",
-   "Compleation",
-   "Finnity XXX-L"
+   "Phantom Flame",
+   "Prince Harming",
+   "Stray"
   ],
-  "note": "Wochen-Herausforderung am Big-Encore-Automaten von Moxxi vor der Arena (roter Boss-Marker auf der Karte, freigeschaltet nach der Story ab UVH-Rang 1): kostet Eridium, der Boss hat doppelte HP. Die Dedicated Legendaries Bugbear (Assault Rifle), Compleation und Finnity XXX-L (Sniper Rifle) fallen dann mit festen 30 % statt 9 % (Pearlescent 1,18 %, Phosphene 1,5 %), unabhängig vom UVH. Tipp: Battle Wagon hat einen roten Fleischbalken (schwach gegen Incendiary), die gepanzerten Seitenkanonen sind schwach gegen Corrosive. Quelle: MentalMars."
+  "note": "Wochen-Herausforderung am Big-Encore-Automaten von Moxxi vor der Arena (roter Boss-Marker auf der Karte, freigeschaltet nach der Story ab UVH-Rang 1): kostet Eridium, die Bosse haben doppelte HP. Die Dedicated Legendaries fallen dann mit festen 30 % statt 9 % (Pearlescent 1,18 %, Phosphene 1,5 %), unabhängig vom UVH: Phantom Flame (Pistol) von beiden, Prince Harming (SMG) nur von Bango, Stray (Sniper Rifle) nur von Pango. Tipp: Beide haben einen roten Fleischbalken (schwach gegen Incendiary), die Geschütztürme auf dem Rücken haben gelbe Panzerung (schwach gegen Corrosive); zerstör sie zuerst, dann fallen die Fernangriffe weg. Quelle: MentalMars."
  },
  "wildcard": {
-  "mission": "One Slimy Issue",
+  "mission": "His Vile Sanctum",
   "mods": [
-   "Wimpy",
-   "Ticking",
-   "Dazed"
+   "Irritable",
+   "Centripetal",
+   "Leaking"
   ],
-  "reward": "Bloody Lumberjack",
-  "reward_info": "Daedalus-Assault-Rifle, Legendary",
+  "reward": "Boomslang",
+  "reward_info": "Jakobs-Sniper-Rifle, Legendary",
   "note": "Die Belohnung ist garantiert, und du kannst die Mission die ganze Woche wiederholen, bis der Roll passt. Start: ECHO-Menü → Karte → Wildcard-Symbol unten links gedrückt halten."
  },
  "black_market": {
-  "nr": "006",
-  "place": "Westlich vom Bowel Buster, an der Klippe",
-  "area": "Ruined Sumplands",
-  "region": "Carcadia Burn",
-  "how": "Schnellreise zum Lowrise Safehouse (Tonnage Peel) und nach Norden zum Bowel Buster laufen; der Automat steht westlich davon an der Klippe. Alternativ laut TheBaseDotaku: Schnellreise zu Moxxi's Bottoms Up, rechts dem Weg folgen und zur Plattform gleiten.",
+  "nr": "007",
+  "place": "Versteckter Raum vor dem Dahl-Aufzug",
+  "area": "Orbital Shatterfield",
+  "region": "Elpis",
+  "how": "Über den Level-Übergang in Fallen Crown (Carcadia Burn) zum Orbital Shatterfield reisen und zum Ende der Karte laufen, den Aufzug zum Bosskampf aber nicht nehmen. Am Dahl-Aufzug umdrehen, die Plattformen hochklettern und auf der letzten durch das halb offene Rolltor; drinnen steht der Automat.",
   "note": "Das Angebot ist bei jedem anders: 2 Legendaries in je 4 Varianten, ein Kauf pro Besuch, danach 30 Minuten Wartezeit."
  },
  "shift": [
+  {
+   "c": "S6RJJ-6THZT-BJJTJ-TB3JT-R995J",
+   "r": "5 Golden Keys",
+   "k": "keys",
+   "a": "2026-11-11",
+   "x": "2026-11-17",
+   "n": "schaltet auch Keys in älteren Borderlands-Teilen frei"
+  },
   {
    "a": "2026-11-02",
    "c": "CZKJJ-35RH6-T9K9C-9TJJT-SXRCT",
@@ -226,7 +234,7 @@
  ],
  "sources": [
   [
-   "Gearbox/MentalMars: Weekly Rotation 05.11.2026",
+   "Gearbox/MentalMars: Weekly Rotation 12.11.2026",
    "https://mentalmars.com/borderlands-4/patch-notes/"
   ],
   [
@@ -238,8 +246,8 @@
    "https://mentalmars.com/borderlands-4/gameplay/moxxis-encore/"
   ],
   [
-   "MentalMars: Battle Wagon",
-   "https://mentalmars.com/bosses-enemies/battle-wagon/"
+   "MentalMars: Pango & Bango",
+   "https://mentalmars.com/bosses-enemies/pango-bango/"
   ],
   [
    "MentalMars: Black Market",
