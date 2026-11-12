@@ -4507,7 +4507,7 @@ var GUIDES = {
       {
         file: 'follower-log.webp', w: 1027, h: 2000,
         alt: {
-          de: 'Follower-Log auf dem Handy im Dunkelmodus: oben die Zahl 73 Follower, darunter „Letzter Lauf vor 1 h 21 min. Nächster Abruf ab 23:12.“ und der Knopf „Jetzt abrufen“. Im Verlauf stehen die Tage mit grünen Marken „neu“ und roten Marken „weg“, die Namen sind geschwärzt.',
+          de: 'Follower-Log auf dem Handy im Dunkelmodus: oben die Zahl 73 Follower, darunter „Letzter Lauf vor 1 h 16 min. Nächster Abruf ab 02:31.“ und der Knopf „Jetzt abrufen“. Im Verlauf stehen die Tage mit grünen Marken „neu“ und roten Marken „weg“, die Namen sind geschwärzt.',
           en: 'Follower-Log on a phone in dark mode: at the top the number 73 followers, below it the time of the last run, when the next check is possible, and the button “Jetzt abrufen”. The history lists the days with green “neu” (new) and red “weg” (gone) labels, the names are blacked out.',
           es: 'Follower-Log en el móvil en modo oscuro: arriba la cifra de 73 seguidores, debajo la hora de la última ejecución, a partir de cuándo se puede volver a consultar y el botón „Jetzt abrufen“. El historial muestra los días con etiquetas verdes „neu“ (nuevo) y rojas „weg“ (se fue), los nombres están tachados en negro.',
           fr: 'Follower-Log sur téléphone en mode sombre : en haut le nombre de 73 abonnés, en dessous l’heure de la dernière exécution, le moment de la prochaine vérification possible et le bouton « Jetzt abrufen ». L’historique montre les jours avec des étiquettes vertes « neu » (nouveau) et rouges « weg » (parti), les noms sont noircis.',
