@@ -98,11 +98,12 @@
     return span;
   }
 
-  function externalLink(text, url, countPath) {
+  // Nothing on this page is counted (since 12.11.2026 only tile clicks are,
+  // on index.html and gaming.html), so no link here carries data-count.
+  function externalLink(text, url) {
     var link = el('a', 'wk-external', text);
     link.href = url;
     link.rel = 'noopener';
-    if (countPath) { link.setAttribute('data-count', countPath); }
     link.appendChild(document.createTextNode(' '));
     link.appendChild(arrow('↗'));
     return link;
@@ -160,7 +161,6 @@
       } else {
         frame = el('a', 'wk-shot-frame');
         frame.href = src;
-        frame.setAttribute('data-count', 'werkstatt-' + tool.key + '-bild');
         frame.appendChild(img);
         // Read after the alt text, so the link says where it leads.
         frame.appendChild(el('span', 'visually-hidden', ' ' + i18n.t('guideShotFull')));
@@ -208,8 +208,7 @@
     target.appendChild(list('ul', 'wk-pitfalls', guide.pitfalls[lang]));
 
     var docs = el('p', 'wk-docs');
-    docs.appendChild(externalLink(i18n.t('guideDocs'), guide.docs[lang],
-      'werkstatt-' + tool.key + '-readme'));
+    docs.appendChild(externalLink(i18n.t('guideDocs'), guide.docs[lang]));
     target.appendChild(docs);
   }
 
@@ -238,8 +237,7 @@
 
       if (entry.link) {
         var release = el('p', 'wk-docs');
-        release.appendChild(externalLink(i18n.t('viewRelease'), entry.link,
-          'werkstatt-' + tool.key + '-release'));
+        release.appendChild(externalLink(i18n.t('viewRelease'), entry.link));
         item.appendChild(release);
       }
       listEl.appendChild(item);
@@ -283,7 +281,6 @@
       var cta = el('a', 'wk-tool-cta', i18n.t(tool.ctaKey));
       cta.href = tool.url;
       cta.rel = 'noopener';
-      cta.setAttribute('data-count', 'werkstatt-' + tool.key + '-open');
       cta.appendChild(document.createTextNode(' '));
       cta.appendChild(arrow('→'));
       head.appendChild(cta);

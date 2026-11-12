@@ -159,28 +159,46 @@ var Header = (function () {
     });
   }
 
-  // Click counting hook, dormant since 03.11.2026: no counter script is loaded,
-  // so count() returns at once. Anything
-  // carrying a data-count attribute is counted under exactly that name, so the
-  // HTML says what is being counted instead of it being guessed from classes.
+  // GoatCounter, since 12.11.2026 for tile clicks ONLY (Dennis' wish: nothing
+  // else, and nothing at all in the apps, PWAs and programs).
+  // - count.js is loaded on index.html and gaming.html only, the two pages
+  //   with tiles, and with no_onload: it never counts a page view by itself.
+  //   The only thing that reaches GoatCounter is what count() sends.
+  // - count() sends nothing whose name does not match the tile scheme:
+  //   "kachel-<tool>" for the tile itself (its stretched .tool-open link),
+  //   "kachel-<tool>-<part>" for a mini tile inside it (news, anleitung,
+  //   bilder, readme, overview, windows). <tool> is the tool-<tool> class of
+  //   the card. Besucher-Ticker 1.3.0 groups by exactly this scheme.
+  // - Only links inside a .tool-card are looked at. A data-count anywhere else
+  //   would still not be counted.
+  // Without count.js (werkstatt.html, mods.html) count() returns at once.
+  var TILE_COUNT = /^kachel-[a-z]+(-[a-z]+)?$/;
+
   function count(path, title) {
+    if (!TILE_COUNT.test(path || '')) { return; }
     if (!window.goatcounter || !window.goatcounter.count) { return; }
     window.goatcounter.count({ path: path, title: title || path, event: true });
   }
 
   function initCounting() {
-    // One listener on the document: werkstatt.html rebuilds its links on every
-    // language change, and re-binding them each time would be easy to forget.
-    document.addEventListener('click', function (event) {
-      var node = event.target;
-      while (node && node !== document.body) {
-        if (node.getAttribute && node.getAttribute('data-count')) {
-          count(node.getAttribute('data-count'));
-          return;
-        }
-        node = node.parentNode;
-      }
-    });
+    // One listener on the document instead of one per link. The title is the
+    // tool name on the card, the same for the tile and its mini tiles, so the
+    // dashboard (and the ticker) can name every tile. A name that gets
+    // translated (WiFi QR Card) carries data-count-title with a fixed name,
+    // otherwise the title would change with the visitor's language.
+    function onClick(event) {
+      // auxclick: the middle button opens a link in a new tab and fires no
+      // click event. Right-click "open in new tab" cannot be seen at all.
+      if (event.type === 'auxclick' && event.button !== 1) { return; }
+      var link = event.target && event.target.closest ? event.target.closest('a[data-count]') : null;
+      var card = link ? link.closest('.tool-card') : null;
+      if (!card) { return; }
+      var nameEl = card.querySelector('.tool-name');
+      var title = nameEl ? (nameEl.getAttribute('data-count-title') || nameEl.textContent.trim()) : '';
+      count(link.getAttribute('data-count'), title);
+    }
+    document.addEventListener('click', onClick);
+    document.addEventListener('auxclick', onClick);
   }
 
   function init() {

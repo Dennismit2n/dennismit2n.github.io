@@ -32,7 +32,8 @@
        getrennt zwischengespeichert (GitHub Pages liefert max-age=600 fuer beides).
        Ohne das Anhaengsel kann eine neue index.html zehn Minuten lang auf altes
        i18n.js treffen — dann stehen rohe Schluessel wie "masterpromptDesc" auf der
-       Seite. BEI JEDEM DEPLOY, DER CSS ODER JS AENDERT, DAS DATUM HOCHSETZEN. -->
+       Seite. BEI JEDEM DEPLOY, DER CSS ODER JS AENDERT, DAS DATUM HOCHSETZEN.
+       js/vendor/count.js bleibt bewusst ohne: das ist Fremdcode und aendert sich nie. -->
   <!-- Die Überschriftenschrift wird auf jeder Seite und in jeder Sprache gebraucht
        (mindestens für den Markennamen), also früh anstoßen statt erst nach der CSS. -->
   <link rel="preload" href="./assets/fonts/fraunces/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -51,6 +52,15 @@
        die CSS da ist; übersetzt war danach bei Fast 3G nach 0,13 s, bei Slow 3G
        nach 0,5 s, gemessen 24.09.2026). -->
   <script>(function(){var c=' de en es fr it nl pl pt tr ru hi zh ja ko ',l='';try{l=localStorage.getItem('dennismit2n-home.lang')||'';}catch(e){}if(!l||c.indexOf(' '+l+' ')<0){l='en';var n=navigator.languages||[navigator.language||'en'];for(var i=0;i<n.length;i++){var k=String(n[i]).toLowerCase().split('-')[0];if(k&&c.indexOf(' '+k+' ')>=0){l=k;break;}}}if(l!=='en'){var h=document.documentElement,f=function(){h.classList.remove('i18n-wartet');};h.classList.add('i18n-wartet');addEventListener('load',f);setTimeout(f,3000);}})();</script>
+  <!-- GoatCounter seit 12.11.2026 NUR fuer Klicks auf Kacheln (Dennis' Wunsch),
+       in der Fusszeile offengelegt (footerAnalytics). no_onload: kein einziger
+       Seitenaufruf wird gezaehlt. no_events: keine automatischen Klick-Haken.
+       Was GoatCounter erreicht, schickt allein Header.count() in js/header.js,
+       und das nimmt nur Namen nach dem Schema kachel-<werkzeug>[-<teil>].
+       count.js liegt lokal, kein CDN; einzige Anfrage nach aussen ist der
+       Zaehlpunkt beim Klick. Ohne ?v=: Fremdcode, aendert sich nie.
+       Nur hier und in gaming.html, den beiden Seiten mit Kacheln. -->
+  <script data-goatcounter="https://dennis-mit-2n.goatcounter.com/count" data-goatcounter-settings='{"no_onload": true, "no_events": true}' async src="./js/vendor/count.js"></script>
 </head>
 <body>
 <!-- Aurora: rein dekorative Ebene hinter allem, drei weich gezeichnete
@@ -121,31 +131,31 @@
           </span>
           <span class="tool-desc" data-i18n="masterpromptDesc">Six phases from a vague idea to a context package. A fresh chat carries on from there, no history needed.</span>
           <span class="tool-meta" data-i18n="masterpromptMeta">For AI chats · open source (MIT) · free</span>
-          <a class="tool-open" id="open-masterprompt" aria-labelledby="open-masterprompt name-masterprompt" href="https://github.com/Dennismit2n/create-masterprompt" rel="noopener"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="tool-open" data-count="kachel-masterprompt" id="open-masterprompt" aria-labelledby="open-masterprompt name-masterprompt" href="https://github.com/Dennismit2n/create-masterprompt" rel="noopener"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
           <span class="tool-mini" data-tool="masterprompt">
-            <a href="./werkstatt.html#masterprompt-neuigkeiten" data-count="werkstatt-masterprompt-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#masterprompt-anleitung" data-count="werkstatt-masterprompt-anleitung" data-i18n="secGuide">Guide</a>
-            <a href="./werkstatt.html#masterprompt-bilder" data-count="werkstatt-masterprompt-bilder" data-i18n="secShots">Screenshots</a>
+            <a href="./werkstatt.html#masterprompt-neuigkeiten" data-count="kachel-masterprompt-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#masterprompt-anleitung" data-count="kachel-masterprompt-anleitung" data-i18n="secGuide">Guide</a>
+            <a href="./werkstatt.html#masterprompt-bilder" data-count="kachel-masterprompt-bilder" data-i18n="secShots">Screenshots</a>
             <!-- Fourteen links, one per language, all but one hidden by CSS depending on
                  html[lang] — since create-masterprompt v1.7.0 the overview image exists in
                  every language this page speaks; English is the fallback for anything else.
                  No JS: document.documentElement.lang is set synchronously in i18n.js apply(),
                  so the attribute selectors react on every language switch by themselves. -->
-            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/create-masterprompt/blob/main/docs/uebersicht-de.png" rel="noopener" data-count="masterprompt-overview" data-i18n="secOverview">Overview</a>
-            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/create-masterprompt/blob/main/docs/uebersicht-en.png" rel="noopener" data-count="masterprompt-overview" data-i18n="secOverview">Overview</a>
-            <a class="tool-mini-lang-only" data-lang-only="es" href="https://github.com/Dennismit2n/create-masterprompt/blob/main/docs/uebersicht-es.png" rel="noopener" data-count="masterprompt-overview" data-i18n="secOverview">Overview</a>
-            <a class="tool-mini-lang-only" data-lang-only="fr" href="https://github.com/Dennismit2n/create-masterprompt/blob/main/docs/uebersicht-fr.png" rel="noopener" data-count="masterprompt-overview" data-i18n="secOverview">Overview</a>
-            <a class="tool-mini-lang-only" data-lang-only="it" href="https://github.com/Dennismit2n/create-masterprompt/blob/main/docs/uebersicht-it.png" rel="noopener" data-count="masterprompt-overview" data-i18n="secOverview">Overview</a>
-            <a class="tool-mini-lang-only" data-lang-only="nl" href="https://github.com/Dennismit2n/create-masterprompt/blob/main/docs/uebersicht-nl.png" rel="noopener" data-count="masterprompt-overview" data-i18n="secOverview">Overview</a>
-            <a class="tool-mini-lang-only" data-lang-only="pl" href="https://github.com/Dennismit2n/create-masterprompt/blob/main/docs/uebersicht-pl.png" rel="noopener" data-count="masterprompt-overview" data-i18n="secOverview">Overview</a>
-            <a class="tool-mini-lang-only" data-lang-only="pt" href="https://github.com/Dennismit2n/create-masterprompt/blob/main/docs/uebersicht-pt.png" rel="noopener" data-count="masterprompt-overview" data-i18n="secOverview">Overview</a>
-            <a class="tool-mini-lang-only" data-lang-only="tr" href="https://github.com/Dennismit2n/create-masterprompt/blob/main/docs/uebersicht-tr.png" rel="noopener" data-count="masterprompt-overview" data-i18n="secOverview">Overview</a>
-            <a class="tool-mini-lang-only" data-lang-only="ru" href="https://github.com/Dennismit2n/create-masterprompt/blob/main/docs/uebersicht-ru.png" rel="noopener" data-count="masterprompt-overview" data-i18n="secOverview">Overview</a>
-            <a class="tool-mini-lang-only" data-lang-only="hi" href="https://github.com/Dennismit2n/create-masterprompt/blob/main/docs/uebersicht-hi.png" rel="noopener" data-count="masterprompt-overview" data-i18n="secOverview">Overview</a>
-            <a class="tool-mini-lang-only" data-lang-only="zh" href="https://github.com/Dennismit2n/create-masterprompt/blob/main/docs/uebersicht-zh.png" rel="noopener" data-count="masterprompt-overview" data-i18n="secOverview">Overview</a>
-            <a class="tool-mini-lang-only" data-lang-only="ja" href="https://github.com/Dennismit2n/create-masterprompt/blob/main/docs/uebersicht-ja.png" rel="noopener" data-count="masterprompt-overview" data-i18n="secOverview">Overview</a>
-            <a class="tool-mini-lang-only" data-lang-only="ko" href="https://github.com/Dennismit2n/create-masterprompt/blob/main/docs/uebersicht-ko.png" rel="noopener" data-count="masterprompt-overview" data-i18n="secOverview">Overview</a>
-            <a href="https://github.com/Dennismit2n/create-masterprompt#readme" rel="noopener" data-count="readme-masterprompt" data-i18n="secReadme">README</a>
+            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/create-masterprompt/blob/main/docs/uebersicht-de.png" rel="noopener" data-count="kachel-masterprompt-overview" data-i18n="secOverview">Overview</a>
+            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/create-masterprompt/blob/main/docs/uebersicht-en.png" rel="noopener" data-count="kachel-masterprompt-overview" data-i18n="secOverview">Overview</a>
+            <a class="tool-mini-lang-only" data-lang-only="es" href="https://github.com/Dennismit2n/create-masterprompt/blob/main/docs/uebersicht-es.png" rel="noopener" data-count="kachel-masterprompt-overview" data-i18n="secOverview">Overview</a>
+            <a class="tool-mini-lang-only" data-lang-only="fr" href="https://github.com/Dennismit2n/create-masterprompt/blob/main/docs/uebersicht-fr.png" rel="noopener" data-count="kachel-masterprompt-overview" data-i18n="secOverview">Overview</a>
+            <a class="tool-mini-lang-only" data-lang-only="it" href="https://github.com/Dennismit2n/create-masterprompt/blob/main/docs/uebersicht-it.png" rel="noopener" data-count="kachel-masterprompt-overview" data-i18n="secOverview">Overview</a>
+            <a class="tool-mini-lang-only" data-lang-only="nl" href="https://github.com/Dennismit2n/create-masterprompt/blob/main/docs/uebersicht-nl.png" rel="noopener" data-count="kachel-masterprompt-overview" data-i18n="secOverview">Overview</a>
+            <a class="tool-mini-lang-only" data-lang-only="pl" href="https://github.com/Dennismit2n/create-masterprompt/blob/main/docs/uebersicht-pl.png" rel="noopener" data-count="kachel-masterprompt-overview" data-i18n="secOverview">Overview</a>
+            <a class="tool-mini-lang-only" data-lang-only="pt" href="https://github.com/Dennismit2n/create-masterprompt/blob/main/docs/uebersicht-pt.png" rel="noopener" data-count="kachel-masterprompt-overview" data-i18n="secOverview">Overview</a>
+            <a class="tool-mini-lang-only" data-lang-only="tr" href="https://github.com/Dennismit2n/create-masterprompt/blob/main/docs/uebersicht-tr.png" rel="noopener" data-count="kachel-masterprompt-overview" data-i18n="secOverview">Overview</a>
+            <a class="tool-mini-lang-only" data-lang-only="ru" href="https://github.com/Dennismit2n/create-masterprompt/blob/main/docs/uebersicht-ru.png" rel="noopener" data-count="kachel-masterprompt-overview" data-i18n="secOverview">Overview</a>
+            <a class="tool-mini-lang-only" data-lang-only="hi" href="https://github.com/Dennismit2n/create-masterprompt/blob/main/docs/uebersicht-hi.png" rel="noopener" data-count="kachel-masterprompt-overview" data-i18n="secOverview">Overview</a>
+            <a class="tool-mini-lang-only" data-lang-only="zh" href="https://github.com/Dennismit2n/create-masterprompt/blob/main/docs/uebersicht-zh.png" rel="noopener" data-count="kachel-masterprompt-overview" data-i18n="secOverview">Overview</a>
+            <a class="tool-mini-lang-only" data-lang-only="ja" href="https://github.com/Dennismit2n/create-masterprompt/blob/main/docs/uebersicht-ja.png" rel="noopener" data-count="kachel-masterprompt-overview" data-i18n="secOverview">Overview</a>
+            <a class="tool-mini-lang-only" data-lang-only="ko" href="https://github.com/Dennismit2n/create-masterprompt/blob/main/docs/uebersicht-ko.png" rel="noopener" data-count="kachel-masterprompt-overview" data-i18n="secOverview">Overview</a>
+            <a href="https://github.com/Dennismit2n/create-masterprompt#readme" rel="noopener" data-count="kachel-masterprompt-readme" data-i18n="secReadme">README</a>
           </span>
         </div>
         <!-- Fuenf Mods fuer Claude Code, seit dem 01.11.2026 im Repo Dennismit2n/werkstatt-mods.
@@ -161,10 +171,10 @@
           </span>
           <span class="tool-desc" data-i18n="modsDesc">Nine mods for Claude Code: statistics pane, limits band, guard, limit pause, agents pane, handoff, chat inventory, screen guard and switchboard. Have a look, install with one line.</span>
           <span class="tool-meta" data-i18n="modsMeta">For Claude Code users · its own page · German and English · open source (MIT)</span>
-          <a class="tool-open" id="open-mods" aria-labelledby="open-mods name-mods" href="./mods.html"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="tool-open" data-count="kachel-mods" id="open-mods" aria-labelledby="open-mods name-mods" href="./mods.html"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
           <span class="tool-mini" data-tool="mods">
-            <a href="./werkstatt.html#mods-neuigkeiten" data-count="werkstatt-mods-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="https://github.com/Dennismit2n/werkstatt-mods#readme" rel="noopener" data-count="readme-mods" data-i18n="secReadme">README</a>
+            <a href="./werkstatt.html#mods-neuigkeiten" data-count="kachel-mods-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="https://github.com/Dennismit2n/werkstatt-mods#readme" rel="noopener" data-count="kachel-mods-readme" data-i18n="secReadme">README</a>
           </span>
         </div>
         <div class="tool-card tool-ram">
@@ -174,13 +184,13 @@
           </span>
           <span class="tool-desc" data-i18n="ramDesc">An honest RAM tool for Windows. The placebo button is called exactly that.</span>
           <span class="tool-meta" data-i18n="ramMeta">Windows 10/11 · open source · free</span>
-          <a class="tool-open" id="open-ram" aria-labelledby="open-ram name-ram" href="https://github.com/Dennismit2n/Real_RAM_cooler/releases/latest" rel="noopener"><span data-i18n="downloadTool">Download</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="tool-open" data-count="kachel-ram" id="open-ram" aria-labelledby="open-ram name-ram" href="https://github.com/Dennismit2n/Real_RAM_cooler/releases/latest" rel="noopener"><span data-i18n="downloadTool">Download</span> <span class="arrow" aria-hidden="true">→</span></a>
           <span class="tool-mini" data-tool="ram">
-            <a href="./werkstatt.html#ram-neuigkeiten" data-count="werkstatt-ram-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#ram-anleitung" data-count="werkstatt-ram-anleitung" data-i18n="secGuide">Guide</a>
-            <a href="./werkstatt.html#ram-bilder" data-count="werkstatt-ram-bilder" data-i18n="secShots">Screenshots</a>
-            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/Real_RAM_cooler/blob/main/README.de.md" rel="noopener" data-count="readme-ram" data-i18n="secReadme">README</a>
-            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/Real_RAM_cooler#readme" rel="noopener" data-count="readme-ram" data-i18n="secReadme">README</a>
+            <a href="./werkstatt.html#ram-neuigkeiten" data-count="kachel-ram-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#ram-anleitung" data-count="kachel-ram-anleitung" data-i18n="secGuide">Guide</a>
+            <a href="./werkstatt.html#ram-bilder" data-count="kachel-ram-bilder" data-i18n="secShots">Screenshots</a>
+            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/Real_RAM_cooler/blob/main/README.de.md" rel="noopener" data-count="kachel-ram-readme" data-i18n="secReadme">README</a>
+            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/Real_RAM_cooler#readme" rel="noopener" data-count="kachel-ram-readme" data-i18n="secReadme">README</a>
           </span>
         </div>
         <!-- Wingetarium: Kappe und Name im Verlauf Index-Blau → Grün („täglich frisch“),
@@ -192,13 +202,13 @@
           </span>
           <span class="tool-desc" data-i18n="wingetariumDesc">What is inside the winget repository, fresh every day. With 108 hand-picked packages at today’s version, a search across all of them and the key commands.</span>
           <span class="tool-meta" data-i18n="wingetariumMeta">In your browser · fresh from the winget index every day · 14 languages</span>
-          <a class="tool-open" id="open-wingetarium" aria-labelledby="open-wingetarium name-wingetarium" href="https://dennismit2n.github.io/wingetarium/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="tool-open" data-count="kachel-wingetarium" id="open-wingetarium" aria-labelledby="open-wingetarium name-wingetarium" href="https://dennismit2n.github.io/wingetarium/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
           <span class="tool-mini" data-tool="wingetarium">
-            <a href="./werkstatt.html#wingetarium-neuigkeiten" data-count="werkstatt-wingetarium-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#wingetarium-anleitung" data-count="werkstatt-wingetarium-anleitung" data-i18n="secGuide">Guide</a>
-            <a href="./werkstatt.html#wingetarium-bilder" data-count="werkstatt-wingetarium-bilder" data-i18n="secShots">Screenshots</a>
-            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/wingetarium/blob/main/README.de.md" rel="noopener" data-count="readme-wingetarium" data-i18n="secReadme">README</a>
-            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/wingetarium#readme" rel="noopener" data-count="readme-wingetarium" data-i18n="secReadme">README</a>
+            <a href="./werkstatt.html#wingetarium-neuigkeiten" data-count="kachel-wingetarium-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#wingetarium-anleitung" data-count="kachel-wingetarium-anleitung" data-i18n="secGuide">Guide</a>
+            <a href="./werkstatt.html#wingetarium-bilder" data-count="kachel-wingetarium-bilder" data-i18n="secShots">Screenshots</a>
+            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/wingetarium/blob/main/README.de.md" rel="noopener" data-count="kachel-wingetarium-readme" data-i18n="secReadme">README</a>
+            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/wingetarium#readme" rel="noopener" data-count="kachel-wingetarium-readme" data-i18n="secReadme">README</a>
           </span>
         </div>
         <!-- The odd one out: the only tool whose full version is meant to cost
@@ -214,14 +224,14 @@
           </span>
           <span class="tool-desc" data-i18n="fontartDesc">Your handwriting becomes a real font for Word &amp; co. You draw the letters, the app turns them into a font.</span>
           <span class="tool-meta" data-i18n="fontartMeta">In your browser and for Windows · free trial · full version in the works</span>
-          <a class="tool-open" id="open-fontart" aria-labelledby="open-fontart name-fontart" href="https://dennismit2n.github.io/fontART-demo/" rel="noopener"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="tool-open" data-count="kachel-fontart" id="open-fontart" aria-labelledby="open-fontart name-fontart" href="https://dennismit2n.github.io/fontART-demo/" rel="noopener"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
           <span class="tool-mini" data-tool="fontart">
-            <a href="./werkstatt.html#fontart-neuigkeiten" data-count="werkstatt-fontart-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#fontart-anleitung" data-count="werkstatt-fontart-anleitung" data-i18n="secGuide">Guide</a>
-            <a href="./werkstatt.html#fontart-bilder" data-count="werkstatt-fontart-bilder" data-i18n="secShots">Screenshots</a>
-            <a href="https://github.com/Dennismit2n/fontART-demo/releases/latest" rel="noopener" data-count="fontart-windows" data-i18n="forWindows">For Windows</a>
-            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/fontART-demo/blob/main/README.de.md" rel="noopener" data-count="readme-fontart" data-i18n="secReadme">README</a>
-            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/fontART-demo#readme" rel="noopener" data-count="readme-fontart" data-i18n="secReadme">README</a>
+            <a href="./werkstatt.html#fontart-neuigkeiten" data-count="kachel-fontart-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#fontart-anleitung" data-count="kachel-fontart-anleitung" data-i18n="secGuide">Guide</a>
+            <a href="./werkstatt.html#fontart-bilder" data-count="kachel-fontart-bilder" data-i18n="secShots">Screenshots</a>
+            <a href="https://github.com/Dennismit2n/fontART-demo/releases/latest" rel="noopener" data-count="kachel-fontart-windows" data-i18n="forWindows">For Windows</a>
+            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/fontART-demo/blob/main/README.de.md" rel="noopener" data-count="kachel-fontart-readme" data-i18n="secReadme">README</a>
+            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/fontART-demo#readme" rel="noopener" data-count="kachel-fontart-readme" data-i18n="secReadme">README</a>
           </span>
         </div>
         <div class="tool-card tool-prismatical">
@@ -231,12 +241,12 @@
           </span>
           <span class="tool-desc" data-i18n="prismaticalDesc">Passwords and passphrases with a strength spectrum. The colour shows you how strong they are.</span>
           <span class="tool-meta" data-i18n="featuresLine">Free · no sign-up · no uploads</span>
-          <a class="tool-open" id="open-prismatical" aria-labelledby="open-prismatical name-prismatical" href="https://dennismit2n.github.io/prismatical/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="tool-open" data-count="kachel-prismatical" id="open-prismatical" aria-labelledby="open-prismatical name-prismatical" href="https://dennismit2n.github.io/prismatical/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
           <span class="tool-mini" data-tool="prismatical">
-            <a href="./werkstatt.html#prismatical-neuigkeiten" data-count="werkstatt-prismatical-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#prismatical-anleitung" data-count="werkstatt-prismatical-anleitung" data-i18n="secGuide">Guide</a>
-            <a href="./werkstatt.html#prismatical-bilder" data-count="werkstatt-prismatical-bilder" data-i18n="secShots">Screenshots</a>
-            <a href="https://github.com/Dennismit2n/prismatical#readme" rel="noopener" data-count="readme-prismatical" data-i18n="secReadme">README</a>
+            <a href="./werkstatt.html#prismatical-neuigkeiten" data-count="kachel-prismatical-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#prismatical-anleitung" data-count="kachel-prismatical-anleitung" data-i18n="secGuide">Guide</a>
+            <a href="./werkstatt.html#prismatical-bilder" data-count="kachel-prismatical-bilder" data-i18n="secShots">Screenshots</a>
+            <a href="https://github.com/Dennismit2n/prismatical#readme" rel="noopener" data-count="kachel-prismatical-readme" data-i18n="secReadme">README</a>
           </span>
         </div>
         <div class="tool-card tool-spectroton">
@@ -246,12 +256,12 @@
           </span>
           <span class="tool-desc" data-i18n="spectrotonDesc">One colour in, eleven matching shades out, each one checked for text contrast.</span>
           <span class="tool-meta" data-i18n="spectrotonMeta">In your browser · open source · colour names come from api.color.pizza</span>
-          <a class="tool-open" id="open-spectroton" aria-labelledby="open-spectroton name-spectroton" href="https://dennismit2n.github.io/spectroton/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="tool-open" data-count="kachel-spectroton" id="open-spectroton" aria-labelledby="open-spectroton name-spectroton" href="https://dennismit2n.github.io/spectroton/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
           <span class="tool-mini" data-tool="spectroton">
-            <a href="./werkstatt.html#spectroton-neuigkeiten" data-count="werkstatt-spectroton-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#spectroton-anleitung" data-count="werkstatt-spectroton-anleitung" data-i18n="secGuide">Guide</a>
-            <a href="./werkstatt.html#spectroton-bilder" data-count="werkstatt-spectroton-bilder" data-i18n="secShots">Screenshots</a>
-            <a href="https://github.com/Dennismit2n/spectroton#readme" rel="noopener" data-count="readme-spectroton" data-i18n="secReadme">README</a>
+            <a href="./werkstatt.html#spectroton-neuigkeiten" data-count="kachel-spectroton-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#spectroton-anleitung" data-count="kachel-spectroton-anleitung" data-i18n="secGuide">Guide</a>
+            <a href="./werkstatt.html#spectroton-bilder" data-count="kachel-spectroton-bilder" data-i18n="secShots">Screenshots</a>
+            <a href="https://github.com/Dennismit2n/spectroton#readme" rel="noopener" data-count="kachel-spectroton-readme" data-i18n="secReadme">README</a>
           </span>
         </div>
         <div class="tool-card tool-shrink">
@@ -261,29 +271,29 @@
           </span>
           <span class="tool-desc" data-i18n="shrinkDesc">Shrink photos right in your browser, for email, job applications or classifieds.</span>
           <span class="tool-meta" data-i18n="featuresLine">Free · no sign-up · no uploads</span>
-          <a class="tool-open" id="open-shrink" aria-labelledby="open-shrink name-shrink" href="https://dennismit2n.github.io/shrinkling/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="tool-open" data-count="kachel-shrink" id="open-shrink" aria-labelledby="open-shrink name-shrink" href="https://dennismit2n.github.io/shrinkling/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
           <span class="tool-mini" data-tool="shrink">
-            <a href="./werkstatt.html#shrink-neuigkeiten" data-count="werkstatt-shrink-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#shrink-anleitung" data-count="werkstatt-shrink-anleitung" data-i18n="secGuide">Guide</a>
-            <a href="./werkstatt.html#shrink-bilder" data-count="werkstatt-shrink-bilder" data-i18n="secShots">Screenshots</a>
-            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/shrinkling/blob/main/README.de.md" rel="noopener" data-count="readme-shrink" data-i18n="secReadme">README</a>
-            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/shrinkling#readme" rel="noopener" data-count="readme-shrink" data-i18n="secReadme">README</a>
+            <a href="./werkstatt.html#shrink-neuigkeiten" data-count="kachel-shrink-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#shrink-anleitung" data-count="kachel-shrink-anleitung" data-i18n="secGuide">Guide</a>
+            <a href="./werkstatt.html#shrink-bilder" data-count="kachel-shrink-bilder" data-i18n="secShots">Screenshots</a>
+            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/shrinkling/blob/main/README.de.md" rel="noopener" data-count="kachel-shrink-readme" data-i18n="secReadme">README</a>
+            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/shrinkling#readme" rel="noopener" data-count="kachel-shrink-readme" data-i18n="secReadme">README</a>
           </span>
         </div>
         <div class="tool-card tool-wifi">
           <span class="tool-head">
             <img src="./assets/wifi-qr.svg" alt="" width="44" height="44">
-            <span class="tool-name" id="name-wifi" data-i18n="wifiName">WiFi QR Card</span>
+            <span class="tool-name" id="name-wifi" data-i18n="wifiName" data-count-title="WiFi QR Card">WiFi QR Card</span>
           </span>
           <span class="tool-desc" data-i18n="wifiDesc">Create a QR code for your WiFi. Guests scan it and they’re in.</span>
           <span class="tool-meta" data-i18n="featuresLine">Free · no sign-up · no uploads</span>
-          <a class="tool-open" id="open-wifi" aria-labelledby="open-wifi name-wifi" href="https://dennismit2n.github.io/wifi-qr/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="tool-open" data-count="kachel-wifi" id="open-wifi" aria-labelledby="open-wifi name-wifi" href="https://dennismit2n.github.io/wifi-qr/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
           <span class="tool-mini" data-tool="wifi">
-            <a href="./werkstatt.html#wifi-neuigkeiten" data-count="werkstatt-wifi-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#wifi-anleitung" data-count="werkstatt-wifi-anleitung" data-i18n="secGuide">Guide</a>
-            <a href="./werkstatt.html#wifi-bilder" data-count="werkstatt-wifi-bilder" data-i18n="secShots">Screenshots</a>
-            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/wifi-qr/blob/main/README.de.md" rel="noopener" data-count="readme-wifi" data-i18n="secReadme">README</a>
-            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/wifi-qr#readme" rel="noopener" data-count="readme-wifi" data-i18n="secReadme">README</a>
+            <a href="./werkstatt.html#wifi-neuigkeiten" data-count="kachel-wifi-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#wifi-anleitung" data-count="kachel-wifi-anleitung" data-i18n="secGuide">Guide</a>
+            <a href="./werkstatt.html#wifi-bilder" data-count="kachel-wifi-bilder" data-i18n="secShots">Screenshots</a>
+            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/wifi-qr/blob/main/README.de.md" rel="noopener" data-count="kachel-wifi-readme" data-i18n="secReadme">README</a>
+            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/wifi-qr#readme" rel="noopener" data-count="kachel-wifi-readme" data-i18n="secReadme">README</a>
           </span>
         </div>
         <div class="tool-card tool-heizwarte">
@@ -293,13 +303,13 @@
           </span>
           <span class="tool-desc" data-i18n="heizwarteDesc">Weather with a heating traffic light: it tells you when to turn up your slow heating, for up to five places.</span>
           <span class="tool-meta" data-i18n="heizwarteMeta">In your browser · no account · 14 languages · weather from Open-Meteo &amp; DWD</span>
-          <a class="tool-open" id="open-heizwarte" aria-labelledby="open-heizwarte name-heizwarte" href="https://dennismit2n.github.io/heizwarte/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="tool-open" data-count="kachel-heizwarte" id="open-heizwarte" aria-labelledby="open-heizwarte name-heizwarte" href="https://dennismit2n.github.io/heizwarte/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
           <span class="tool-mini" data-tool="heizwarte">
-            <a href="./werkstatt.html#heizwarte-neuigkeiten" data-count="werkstatt-heizwarte-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#heizwarte-anleitung" data-count="werkstatt-heizwarte-anleitung" data-i18n="secGuide">Guide</a>
-            <a href="./werkstatt.html#heizwarte-bilder" data-count="werkstatt-heizwarte-bilder" data-i18n="secShots">Screenshots</a>
-            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/heizwarte/blob/main/README.de.md" rel="noopener" data-count="readme-heizwarte" data-i18n="secReadme">README</a>
-            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/heizwarte#readme" rel="noopener" data-count="readme-heizwarte" data-i18n="secReadme">README</a>
+            <a href="./werkstatt.html#heizwarte-neuigkeiten" data-count="kachel-heizwarte-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#heizwarte-anleitung" data-count="kachel-heizwarte-anleitung" data-i18n="secGuide">Guide</a>
+            <a href="./werkstatt.html#heizwarte-bilder" data-count="kachel-heizwarte-bilder" data-i18n="secShots">Screenshots</a>
+            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/heizwarte/blob/main/README.de.md" rel="noopener" data-count="kachel-heizwarte-readme" data-i18n="secReadme">README</a>
+            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/heizwarte#readme" rel="noopener" data-count="kachel-heizwarte-readme" data-i18n="secReadme">README</a>
           </span>
         </div>
         <!-- Hourbridge: Kappe und Name im Verlauf der App (Mauve, Blau, Grün),
@@ -311,13 +321,13 @@
           </span>
           <span class="tool-desc" data-i18n="hourbridgeDesc">UTC to German time and back, for any number of places. With a draggable timeline and clock change warnings.</span>
           <span class="tool-meta" data-i18n="hourbridgeMeta">Free · no cookies · offline after the first visit</span>
-          <a class="tool-open" id="open-hourbridge" aria-labelledby="open-hourbridge name-hourbridge" href="https://dennismit2n.github.io/hourbridge/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="tool-open" data-count="kachel-hourbridge" id="open-hourbridge" aria-labelledby="open-hourbridge name-hourbridge" href="https://dennismit2n.github.io/hourbridge/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
           <span class="tool-mini" data-tool="hourbridge">
-            <a href="./werkstatt.html#hourbridge-neuigkeiten" data-count="werkstatt-hourbridge-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#hourbridge-anleitung" data-count="werkstatt-hourbridge-anleitung" data-i18n="secGuide">Guide</a>
-            <a href="./werkstatt.html#hourbridge-bilder" data-count="werkstatt-hourbridge-bilder" data-i18n="secShots">Screenshots</a>
-            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/hourbridge/blob/main/README.de.md" rel="noopener" data-count="readme-hourbridge" data-i18n="secReadme">README</a>
-            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/hourbridge#readme" rel="noopener" data-count="readme-hourbridge" data-i18n="secReadme">README</a>
+            <a href="./werkstatt.html#hourbridge-neuigkeiten" data-count="kachel-hourbridge-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#hourbridge-anleitung" data-count="kachel-hourbridge-anleitung" data-i18n="secGuide">Guide</a>
+            <a href="./werkstatt.html#hourbridge-bilder" data-count="kachel-hourbridge-bilder" data-i18n="secShots">Screenshots</a>
+            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/hourbridge/blob/main/README.de.md" rel="noopener" data-count="kachel-hourbridge-readme" data-i18n="secReadme">README</a>
+            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/hourbridge#readme" rel="noopener" data-count="kachel-hourbridge-readme" data-i18n="secReadme">README</a>
           </span>
         </div>
         <!-- Follower-Log: Kappe und Name in Rot und Grün im Wechsel, leicht durchscheinend,
@@ -329,12 +339,12 @@
           </span>
           <span class="tool-desc" data-i18n="followerlogDesc">Who follows you on GitHub, and who has left? A template for your own logbook, with a small app for your phone.</span>
           <span class="tool-meta" data-i18n="followerlogMeta">Free · GitHub template · runs in your own repo · app in German</span>
-          <a class="tool-open" id="open-followerlog" aria-labelledby="open-followerlog name-followerlog" href="https://dennismit2n.github.io/follower-log-vorlage/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="tool-open" data-count="kachel-followerlog" id="open-followerlog" aria-labelledby="open-followerlog name-followerlog" href="https://dennismit2n.github.io/follower-log-vorlage/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
           <span class="tool-mini" data-tool="followerlog">
-            <a href="./werkstatt.html#followerlog-neuigkeiten" data-count="werkstatt-followerlog-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="https://github.com/Dennismit2n/follower-log-vorlage#einrichten-etwa-f%C3%BCnf-minuten" data-count="readme-followerlog-anleitung" data-i18n="secGuide">Guide</a>
-            <a href="./werkstatt.html#followerlog-bilder" data-count="werkstatt-followerlog-bilder" data-i18n="secShots">Screenshots</a>
-            <a href="https://github.com/Dennismit2n/follower-log-vorlage#readme" rel="noopener" data-count="readme-followerlog" data-i18n="secReadme">README</a>
+            <a href="./werkstatt.html#followerlog-neuigkeiten" data-count="kachel-followerlog-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="https://github.com/Dennismit2n/follower-log-vorlage#einrichten-etwa-f%C3%BCnf-minuten" data-count="kachel-followerlog-anleitung" data-i18n="secGuide">Guide</a>
+            <a href="./werkstatt.html#followerlog-bilder" data-count="kachel-followerlog-bilder" data-i18n="secShots">Screenshots</a>
+            <a href="https://github.com/Dennismit2n/follower-log-vorlage#readme" rel="noopener" data-count="kachel-followerlog-readme" data-i18n="secReadme">README</a>
           </span>
         </div>
         <!-- Pocketsum: neutrale Kachel, die Kappe trägt die fünf Farben der Rechner
@@ -346,13 +356,13 @@
           </span>
           <span class="tool-desc" data-i18n="pocketsumDesc">Five small calculators in one file: VAT, tips, fuel prices, dividends and trading costs.</span>
           <span class="tool-meta" data-i18n="pocketsumMeta">Free · no sign-up · offline after the first visit</span>
-          <a class="tool-open" id="open-pocketsum" aria-labelledby="open-pocketsum name-pocketsum" href="https://dennismit2n.github.io/pocketsum/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="tool-open" data-count="kachel-pocketsum" id="open-pocketsum" aria-labelledby="open-pocketsum name-pocketsum" href="https://dennismit2n.github.io/pocketsum/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
           <span class="tool-mini" data-tool="pocketsum">
-            <a href="./werkstatt.html#pocketsum-neuigkeiten" data-count="werkstatt-pocketsum-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#pocketsum-anleitung" data-count="werkstatt-pocketsum-anleitung" data-i18n="secGuide">Guide</a>
-            <a href="./werkstatt.html#pocketsum-bilder" data-count="werkstatt-pocketsum-bilder" data-i18n="secShots">Screenshots</a>
-            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/pocketsum/blob/main/README.de.md" rel="noopener" data-count="readme-pocketsum" data-i18n="secReadme">README</a>
-            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/pocketsum#readme" rel="noopener" data-count="readme-pocketsum" data-i18n="secReadme">README</a>
+            <a href="./werkstatt.html#pocketsum-neuigkeiten" data-count="kachel-pocketsum-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#pocketsum-anleitung" data-count="kachel-pocketsum-anleitung" data-i18n="secGuide">Guide</a>
+            <a href="./werkstatt.html#pocketsum-bilder" data-count="kachel-pocketsum-bilder" data-i18n="secShots">Screenshots</a>
+            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/pocketsum/blob/main/README.de.md" rel="noopener" data-count="kachel-pocketsum-readme" data-i18n="secReadme">README</a>
+            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/pocketsum#readme" rel="noopener" data-count="kachel-pocketsum-readme" data-i18n="secReadme">README</a>
           </span>
         </div>
         <div class="tool-card tool-zaehlwerk">
@@ -362,13 +372,13 @@
           </span>
           <span class="tool-desc" data-i18n="zaehlwerkDesc">Shows where your Claude Code usage goes: by day, model and project.</span>
           <span class="tool-meta" data-i18n="zaehlwerkMeta">For Claude Code users · in the browser · your logs stay with you</span>
-          <a class="tool-open" id="open-zaehlwerk" aria-labelledby="open-zaehlwerk name-zaehlwerk" href="https://dennismit2n.github.io/zaehlwerk/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="tool-open" data-count="kachel-zaehlwerk" id="open-zaehlwerk" aria-labelledby="open-zaehlwerk name-zaehlwerk" href="https://dennismit2n.github.io/zaehlwerk/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
           <span class="tool-mini" data-tool="zaehlwerk">
-            <a href="./werkstatt.html#zaehlwerk-neuigkeiten" data-count="werkstatt-zaehlwerk-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#zaehlwerk-anleitung" data-count="werkstatt-zaehlwerk-anleitung" data-i18n="secGuide">Guide</a>
-            <a href="./werkstatt.html#zaehlwerk-bilder" data-count="werkstatt-zaehlwerk-bilder" data-i18n="secShots">Screenshots</a>
-            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/zaehlwerk/blob/main/README.de.md" rel="noopener" data-count="readme-zaehlwerk" data-i18n="secReadme">README</a>
-            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/zaehlwerk#readme" rel="noopener" data-count="readme-zaehlwerk" data-i18n="secReadme">README</a>
+            <a href="./werkstatt.html#zaehlwerk-neuigkeiten" data-count="kachel-zaehlwerk-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#zaehlwerk-anleitung" data-count="kachel-zaehlwerk-anleitung" data-i18n="secGuide">Guide</a>
+            <a href="./werkstatt.html#zaehlwerk-bilder" data-count="kachel-zaehlwerk-bilder" data-i18n="secShots">Screenshots</a>
+            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/zaehlwerk/blob/main/README.de.md" rel="noopener" data-count="kachel-zaehlwerk-readme" data-i18n="secReadme">README</a>
+            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/zaehlwerk#readme" rel="noopener" data-count="kachel-zaehlwerk-readme" data-i18n="secReadme">README</a>
           </span>
         </div>
         <div class="tool-card tool-ticker">
@@ -378,13 +388,13 @@
           </span>
           <span class="tool-desc" data-i18n="tickerDesc">Your GoatCounter visitor numbers float live on your desktop: pageviews, bars per page, countries or referrers.</span>
           <span class="tool-meta" data-i18n="tickerMeta">For GoatCounter users · Windows 10/11 · your token stays with you</span>
-          <a class="tool-open" id="open-ticker" aria-labelledby="open-ticker name-ticker" href="https://github.com/Dennismit2n/besucher-ticker/releases/latest" rel="noopener"><span data-i18n="downloadTool">Download</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="tool-open" data-count="kachel-ticker" id="open-ticker" aria-labelledby="open-ticker name-ticker" href="https://github.com/Dennismit2n/besucher-ticker/releases/latest" rel="noopener"><span data-i18n="downloadTool">Download</span> <span class="arrow" aria-hidden="true">→</span></a>
           <span class="tool-mini" data-tool="ticker">
-            <a href="./werkstatt.html#ticker-neuigkeiten" data-count="werkstatt-ticker-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#ticker-anleitung" data-count="werkstatt-ticker-anleitung" data-i18n="secGuide">Guide</a>
-            <a href="./werkstatt.html#ticker-bilder" data-count="werkstatt-ticker-bilder" data-i18n="secShots">Screenshots</a>
-            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/besucher-ticker/blob/main/README.de.md" rel="noopener" data-count="readme-ticker" data-i18n="secReadme">README</a>
-            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/besucher-ticker#readme" rel="noopener" data-count="readme-ticker" data-i18n="secReadme">README</a>
+            <a href="./werkstatt.html#ticker-neuigkeiten" data-count="kachel-ticker-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#ticker-anleitung" data-count="kachel-ticker-anleitung" data-i18n="secGuide">Guide</a>
+            <a href="./werkstatt.html#ticker-bilder" data-count="kachel-ticker-bilder" data-i18n="secShots">Screenshots</a>
+            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/besucher-ticker/blob/main/README.de.md" rel="noopener" data-count="kachel-ticker-readme" data-i18n="secReadme">README</a>
+            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/besucher-ticker#readme" rel="noopener" data-count="kachel-ticker-readme" data-i18n="secReadme">README</a>
           </span>
         </div>
         <div class="tool-card tool-collective">
@@ -394,12 +404,12 @@
           </span>
           <span class="tool-desc" data-i18n="collectiveDesc">Who owes whom what? Split group expenses with no account and no app, then share the result as a link.</span>
           <span class="tool-meta" data-i18n="featuresLine">Free · no sign-up · no uploads</span>
-          <a class="tool-open" id="open-collective" aria-labelledby="open-collective name-collective" href="https://dennismit2n.github.io/collective-calc/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="tool-open" data-count="kachel-collective" id="open-collective" aria-labelledby="open-collective name-collective" href="https://dennismit2n.github.io/collective-calc/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
           <span class="tool-mini" data-tool="collective">
-            <a href="./werkstatt.html#collective-neuigkeiten" data-count="werkstatt-collective-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#collective-anleitung" data-count="werkstatt-collective-anleitung" data-i18n="secGuide">Guide</a>
-            <a href="./werkstatt.html#collective-bilder" data-count="werkstatt-collective-bilder" data-i18n="secShots">Screenshots</a>
-            <a href="https://github.com/Dennismit2n/collective-calc#readme" rel="noopener" data-count="readme-collective" data-i18n="secReadme">README</a>
+            <a href="./werkstatt.html#collective-neuigkeiten" data-count="kachel-collective-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#collective-anleitung" data-count="kachel-collective-anleitung" data-i18n="secGuide">Guide</a>
+            <a href="./werkstatt.html#collective-bilder" data-count="kachel-collective-bilder" data-i18n="secShots">Screenshots</a>
+            <a href="https://github.com/Dennismit2n/collective-calc#readme" rel="noopener" data-count="kachel-collective-readme" data-i18n="secReadme">README</a>
           </span>
         </div>
         <div class="tool-card tool-rad">
@@ -409,13 +419,13 @@
           </span>
           <span class="tool-desc" data-i18n="radDesc">Options in, spin the wheel, let fate decide. Shareable as a link.</span>
           <span class="tool-meta" data-i18n="featuresLine">Free · no sign-up · no uploads</span>
-          <a class="tool-open" id="open-rad" aria-labelledby="open-rad name-rad" href="https://dennismit2n.github.io/dreh-das-rad/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="tool-open" data-count="kachel-rad" id="open-rad" aria-labelledby="open-rad name-rad" href="https://dennismit2n.github.io/dreh-das-rad/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
           <span class="tool-mini" data-tool="rad">
-            <a href="./werkstatt.html#rad-neuigkeiten" data-count="werkstatt-rad-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#rad-anleitung" data-count="werkstatt-rad-anleitung" data-i18n="secGuide">Guide</a>
-            <a href="./werkstatt.html#rad-bilder" data-count="werkstatt-rad-bilder" data-i18n="secShots">Screenshots</a>
-            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/dreh-das-rad/blob/main/README.de.md" rel="noopener" data-count="readme-rad" data-i18n="secReadme">README</a>
-            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/dreh-das-rad#readme" rel="noopener" data-count="readme-rad" data-i18n="secReadme">README</a>
+            <a href="./werkstatt.html#rad-neuigkeiten" data-count="kachel-rad-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#rad-anleitung" data-count="kachel-rad-anleitung" data-i18n="secGuide">Guide</a>
+            <a href="./werkstatt.html#rad-bilder" data-count="kachel-rad-bilder" data-i18n="secShots">Screenshots</a>
+            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/dreh-das-rad/blob/main/README.de.md" rel="noopener" data-count="kachel-rad-readme" data-i18n="secReadme">README</a>
+            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/dreh-das-rad#readme" rel="noopener" data-count="kachel-rad-readme" data-i18n="secReadme">README</a>
           </span>
         </div>
         <!-- Gaming: führt auf die eigene Seite gaming.html (Dennis' Wunsch vom
@@ -429,10 +439,10 @@
           </span>
           <span class="tool-desc" data-i18n="gamingDesc">Guides, handbooks and tools for gaming: Minecraft, Borderlands 4, Modern Warfare 4 and more to come.</span>
           <span class="tool-meta" data-i18n="gamingMeta">Its own page · guides and tools · more to come</span>
-          <a class="tool-open" id="open-gaming" aria-labelledby="open-gaming name-gaming" href="./gaming.html"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="tool-open" data-count="kachel-gaming" id="open-gaming" aria-labelledby="open-gaming name-gaming" href="./gaming.html"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
           <span class="tool-mini" data-tool="craftionary vault ruestkammer fadenkreuz">
-            <a href="./werkstatt.html#craftionary" data-count="werkstatt-gaming-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="https://github.com/Dennismit2n/dennismit2n.github.io#gaming-page" rel="noopener" data-count="readme-gaming" data-i18n="secReadme">README</a>
+            <a href="./werkstatt.html#craftionary" data-count="kachel-gaming-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="https://github.com/Dennismit2n/dennismit2n.github.io#gaming-page" rel="noopener" data-count="kachel-gaming-readme" data-i18n="secReadme">README</a>
           </span>
         </div>
         <div class="tool-card tool-bigday">
@@ -442,13 +452,13 @@
           </span>
           <span class="tool-desc" data-i18n="bigdayDesc">A pretty countdown to your holiday, birthday &amp; more, shareable as a link.</span>
           <span class="tool-meta" data-i18n="featuresLine">Free · no sign-up · no uploads</span>
-          <a class="tool-open" id="open-bigday" aria-labelledby="open-bigday name-bigday" href="https://dennismit2n.github.io/bigday/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="tool-open" data-count="kachel-bigday" id="open-bigday" aria-labelledby="open-bigday name-bigday" href="https://dennismit2n.github.io/bigday/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
           <span class="tool-mini" data-tool="bigday">
-            <a href="./werkstatt.html#bigday-neuigkeiten" data-count="werkstatt-bigday-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#bigday-anleitung" data-count="werkstatt-bigday-anleitung" data-i18n="secGuide">Guide</a>
-            <a href="./werkstatt.html#bigday-bilder" data-count="werkstatt-bigday-bilder" data-i18n="secShots">Screenshots</a>
-            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/bigday/blob/main/README.de.md" rel="noopener" data-count="readme-bigday" data-i18n="secReadme">README</a>
-            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/bigday#readme" rel="noopener" data-count="readme-bigday" data-i18n="secReadme">README</a>
+            <a href="./werkstatt.html#bigday-neuigkeiten" data-count="kachel-bigday-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#bigday-anleitung" data-count="kachel-bigday-anleitung" data-i18n="secGuide">Guide</a>
+            <a href="./werkstatt.html#bigday-bilder" data-count="kachel-bigday-bilder" data-i18n="secShots">Screenshots</a>
+            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/bigday/blob/main/README.de.md" rel="noopener" data-count="kachel-bigday-readme" data-i18n="secReadme">README</a>
+            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/bigday#readme" rel="noopener" data-count="kachel-bigday-readme" data-i18n="secReadme">README</a>
           </span>
         </div>
         <!-- Fadenkreuz steht seit dem 30.10.2026 abends wieder AUCH hier (Platz 16),
@@ -461,13 +471,13 @@
           </span>
           <span class="tool-desc" data-i18n="fadenkreuzDesc">Your own crosshair in the centre of the screen, over your game. You draw it yourself, clicks go right through.</span>
           <span class="tool-meta" data-i18n="fadenkreuzMeta">Windows 10/11 · about 1 MB of RAM · free</span>
-          <a class="tool-open" id="open-fadenkreuz" aria-labelledby="open-fadenkreuz name-fadenkreuz" href="https://github.com/Dennismit2n/fadenkreuz/releases/latest" rel="noopener"><span data-i18n="downloadTool">Download</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="tool-open" data-count="kachel-fadenkreuz" id="open-fadenkreuz" aria-labelledby="open-fadenkreuz name-fadenkreuz" href="https://github.com/Dennismit2n/fadenkreuz/releases/latest" rel="noopener"><span data-i18n="downloadTool">Download</span> <span class="arrow" aria-hidden="true">→</span></a>
           <span class="tool-mini" data-tool="fadenkreuz">
-            <a href="./werkstatt.html#fadenkreuz-neuigkeiten" data-count="werkstatt-fadenkreuz-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#fadenkreuz-anleitung" data-count="werkstatt-fadenkreuz-anleitung" data-i18n="secGuide">Guide</a>
-            <a href="./werkstatt.html#fadenkreuz-bilder" data-count="werkstatt-fadenkreuz-bilder" data-i18n="secShots">Screenshots</a>
-            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/fadenkreuz/blob/main/README.de.md" rel="noopener" data-count="readme-fadenkreuz" data-i18n="secReadme">README</a>
-            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/fadenkreuz#readme" rel="noopener" data-count="readme-fadenkreuz" data-i18n="secReadme">README</a>
+            <a href="./werkstatt.html#fadenkreuz-neuigkeiten" data-count="kachel-fadenkreuz-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#fadenkreuz-anleitung" data-count="kachel-fadenkreuz-anleitung" data-i18n="secGuide">Guide</a>
+            <a href="./werkstatt.html#fadenkreuz-bilder" data-count="kachel-fadenkreuz-bilder" data-i18n="secShots">Screenshots</a>
+            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/fadenkreuz/blob/main/README.de.md" rel="noopener" data-count="kachel-fadenkreuz-readme" data-i18n="secReadme">README</a>
+            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/fadenkreuz#readme" rel="noopener" data-count="kachel-fadenkreuz-readme" data-i18n="secReadme">README</a>
           </span>
         </div>
         <!-- Zwei Platzhalter auf Dennis' Ansage (13.09.2026). Bewusst OHNE
@@ -493,7 +503,7 @@
       </div>
       <p class="more-line">
         <span data-i18n="moreLine">More is on the way.</span>
-        <a href="./werkstatt.html" data-count="werkstatt-gesamt" data-i18n="werkstattHeading">News &amp; guides</a>
+        <a href="./werkstatt.html" data-i18n="werkstattHeading">News &amp; guides</a>
       </p>
     </section>
   </main>
@@ -504,9 +514,11 @@
       <span data-i18n="footerSource">Open source on GitHub</span>
     </a>
     <span class="sep" aria-hidden="true">·</span>
-    <a href="./werkstatt.html" data-count="werkstatt-gesamt" data-i18n="werkstattHeading">News &amp; guides</a>
+    <a href="./werkstatt.html" data-i18n="werkstattHeading">News &amp; guides</a>
     <span class="sep" aria-hidden="true">·</span>
     <span data-i18n="footerTranslate">Some translations are machine-made, and I’m happy to take corrections.</span>
+    <span class="sep" aria-hidden="true">·</span>
+    <span data-i18n="footerAnalytics">Only tile clicks are counted, anonymously (GoatCounter, no page views, no cookies, never what you enter).</span>
     <span class="sep" aria-hidden="true">·</span>
     <span class="footer-copyright">© 2026 Dennis_mit_2n</span>
   </footer>
@@ -522,9 +534,9 @@
      Als eigenes Skript-Tag hielt es das Übersetzen noch eine halbe Sekunde
      auf; main.js holt es deshalb erst danach. data-news trägt die Adresse
      samt ?v=-Stempel. -->
-<script src="./js/i18n.js?v=2026-11-12g" fetchpriority="high"></script>
+<script src="./js/i18n.js?v=2026-11-12h" fetchpriority="high"></script>
 <script src="./js/dates.js?v=2026-09-14" fetchpriority="high"></script>
-<script src="./js/header.js?v=2026-11-03" fetchpriority="high"></script>
-<script src="./js/main.js?v=2026-11-03c" fetchpriority="high" data-news="./js/news.js?v=2026-11-12g"></script>
+<script src="./js/header.js?v=2026-11-12h" fetchpriority="high"></script>
+<script src="./js/main.js?v=2026-11-12h" fetchpriority="high" data-news="./js/news.js?v=2026-11-12h"></script>
 </body>
 </html>

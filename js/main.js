@@ -70,20 +70,9 @@
     document.body.appendChild(newsScript);
   }
 
-  // ── Tile click hook (dormant since 03.11.2026, no counter loaded) ──
-  // Shows up in the dashboard as "kachel-ram", "kachel-shrink", … so we can
-  // see which tool actually gets picked up, not just page views.
-  // The listener sits on the stretched link, NOT on the whole tile: since the
-  // mini tiles moved inside the card, a listener on the tile would count every
-  // click on "News" or "Guide" as a tool click too. Those two count themselves
-  // via data-count, handled by Header.init().
-  var opens = document.querySelectorAll('.tool-card .tool-open');
-  for (var c = 0; c < opens.length; c++) {
-    opens[c].addEventListener('click', function () {
-      var card = this.closest('.tool-card');
-      var tool = (card.className.match(/tool-(?!card)([a-z]+)/) || [])[1] || 'unbekannt';
-      var nameEl = card.querySelector('.tool-name');
-      Header.count('kachel-' + tool, nameEl ? nameEl.textContent : tool);
-    });
-  }
+  // Tile clicks are counted by Header (header.js) since 12.11.2026: the
+  // stretched .tool-open link of every tile carries data-count="kachel-<tool>"
+  // and every mini tile data-count="kachel-<tool>-<part>", so the HTML says
+  // what is counted. The old listener on .tool-open lived here; a second one
+  // would count every tile click twice.
 })();

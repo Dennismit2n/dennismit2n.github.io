@@ -30,6 +30,15 @@
   <!-- Dasselbe Kopf-Skript wie in index.html (.i18n-wartet), samt eigener Kopie
        der Sprachcodes — die Liste muss zu I18N in i18n.js passen. -->
   <script>(function(){var c=' de en es fr it nl pl pt tr ru hi zh ja ko ',l='';try{l=localStorage.getItem('dennismit2n-home.lang')||'';}catch(e){}if(!l||c.indexOf(' '+l+' ')<0){l='en';var n=navigator.languages||[navigator.language||'en'];for(var i=0;i<n.length;i++){var k=String(n[i]).toLowerCase().split('-')[0];if(k&&c.indexOf(' '+k+' ')>=0){l=k;break;}}}if(l!=='en'){var h=document.documentElement,f=function(){h.classList.remove('i18n-wartet');};h.classList.add('i18n-wartet');addEventListener('load',f);setTimeout(f,3000);}})();</script>
+  <!-- GoatCounter seit 12.11.2026 NUR fuer Klicks auf Kacheln (Dennis' Wunsch),
+       in der Fusszeile offengelegt (footerAnalytics). no_onload: kein einziger
+       Seitenaufruf wird gezaehlt. no_events: keine automatischen Klick-Haken.
+       Was GoatCounter erreicht, schickt allein Header.count() in js/header.js,
+       und das nimmt nur Namen nach dem Schema kachel-<werkzeug>[-<teil>].
+       count.js liegt lokal, kein CDN; einzige Anfrage nach aussen ist der
+       Zaehlpunkt beim Klick. Ohne ?v=: Fremdcode, aendert sich nie.
+       Nur hier und in gaming.html, den beiden Seiten mit Kacheln. -->
+  <script data-goatcounter="https://dennis-mit-2n.goatcounter.com/count" data-goatcounter-settings='{"no_onload": true, "no_events": true}' async src="./js/vendor/count.js"></script>
 </head>
 <body>
 <div class="aurora" aria-hidden="true"><span class="au-1"></span><span class="au-2"></span><span class="au-3"></span></div>
@@ -81,12 +90,12 @@
           </span>
           <span class="tool-desc" data-i18n="craftionaryDesc">All Minecraft recipes, where to find items and ores, ready /give commands, plus a banner and pot workshop.</span>
           <span class="tool-meta" data-i18n="craftionaryMeta">Phone (Android &amp; iOS) and desktop · install button · 14 languages</span>
-          <a class="tool-open" id="open-craftionary" aria-labelledby="open-craftionary name-craftionary" href="https://dennismit2n.github.io/craftionary/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="tool-open" data-count="kachel-craftionary" id="open-craftionary" aria-labelledby="open-craftionary name-craftionary" href="https://dennismit2n.github.io/craftionary/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
           <span class="tool-mini" data-tool="craftionary">
-            <a href="./werkstatt.html#craftionary-neuigkeiten" data-count="werkstatt-craftionary-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#craftionary-anleitung" data-count="werkstatt-craftionary-anleitung" data-i18n="secGuide">Guide</a>
-            <a href="./werkstatt.html#craftionary-bilder" data-count="werkstatt-craftionary-bilder" data-i18n="secShots">Screenshots</a>
-            <a href="https://github.com/Dennismit2n/craftionary#readme" rel="noopener" data-count="readme-craftionary" data-i18n="secReadme">README</a>
+            <a href="./werkstatt.html#craftionary-neuigkeiten" data-count="kachel-craftionary-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#craftionary-anleitung" data-count="kachel-craftionary-anleitung" data-i18n="secGuide">Guide</a>
+            <a href="./werkstatt.html#craftionary-bilder" data-count="kachel-craftionary-bilder" data-i18n="secShots">Screenshots</a>
+            <a href="https://github.com/Dennismit2n/craftionary#readme" rel="noopener" data-count="kachel-craftionary-readme" data-i18n="secReadme">README</a>
           </span>
         </div>
         <div class="tool-card tool-vault">
@@ -96,12 +105,12 @@
           </span>
           <span class="tool-desc" data-i18n="vaultDesc">Borderlands 4 handbook: meta builds, legendaries and Pearls with location and drop chance, raids, farm planner.</span>
           <span class="tool-meta" data-i18n="gameAppMeta">Phone (Android &amp; iOS) and desktop · install button · 14 languages, guides in German</span>
-          <a class="tool-open" id="open-vault" aria-labelledby="open-vault name-vault" href="./bl4/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="tool-open" data-count="kachel-vault" id="open-vault" aria-labelledby="open-vault name-vault" href="./bl4/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
           <span class="tool-mini" data-tool="vault">
-            <a href="./werkstatt.html#vault-neuigkeiten" data-count="werkstatt-vault-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#vault-anleitung" data-count="werkstatt-vault-anleitung" data-i18n="secGuide">Guide</a>
-            <a href="./werkstatt.html#vault-bilder" data-count="werkstatt-vault-bilder" data-i18n="secShots">Screenshots</a>
-            <a href="https://github.com/Dennismit2n/dennismit2n.github.io#gaming-page" rel="noopener" data-count="readme-vault" data-i18n="secReadme">README</a>
+            <a href="./werkstatt.html#vault-neuigkeiten" data-count="kachel-vault-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#vault-anleitung" data-count="kachel-vault-anleitung" data-i18n="secGuide">Guide</a>
+            <a href="./werkstatt.html#vault-bilder" data-count="kachel-vault-bilder" data-i18n="secShots">Screenshots</a>
+            <a href="https://github.com/Dennismit2n/dennismit2n.github.io#gaming-page" rel="noopener" data-count="kachel-vault-readme" data-i18n="secReadme">README</a>
           </span>
         </div>
         <div class="tool-card tool-ruestkammer">
@@ -111,12 +120,12 @@
           </span>
           <span class="tool-desc" data-i18n="ruestkammerDesc">For Call of Duty: Modern Warfare 4. Meta builds, attachments, time to kill and a class editor.</span>
           <span class="tool-meta" data-i18n="gameAppMeta">Phone (Android &amp; iOS) and desktop · install button · 14 languages, guides in German</span>
-          <a class="tool-open" id="open-ruestkammer" aria-labelledby="open-ruestkammer name-ruestkammer" href="./mw4/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="tool-open" data-count="kachel-ruestkammer" id="open-ruestkammer" aria-labelledby="open-ruestkammer name-ruestkammer" href="./mw4/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
           <span class="tool-mini" data-tool="ruestkammer">
-            <a href="./werkstatt.html#ruestkammer-neuigkeiten" data-count="werkstatt-ruestkammer-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#ruestkammer-anleitung" data-count="werkstatt-ruestkammer-anleitung" data-i18n="secGuide">Guide</a>
-            <a href="./werkstatt.html#ruestkammer-bilder" data-count="werkstatt-ruestkammer-bilder" data-i18n="secShots">Screenshots</a>
-            <a href="https://github.com/Dennismit2n/dennismit2n.github.io/tree/main/tools/mw4#readme" rel="noopener" data-count="readme-ruestkammer" data-i18n="secReadme">README</a>
+            <a href="./werkstatt.html#ruestkammer-neuigkeiten" data-count="kachel-ruestkammer-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#ruestkammer-anleitung" data-count="kachel-ruestkammer-anleitung" data-i18n="secGuide">Guide</a>
+            <a href="./werkstatt.html#ruestkammer-bilder" data-count="kachel-ruestkammer-bilder" data-i18n="secShots">Screenshots</a>
+            <a href="https://github.com/Dennismit2n/dennismit2n.github.io/tree/main/tools/mw4#readme" rel="noopener" data-count="kachel-ruestkammer-readme" data-i18n="secReadme">README</a>
           </span>
         </div>
         <!-- Neongrün, Schwarz, Weiß: die Kachel bleibt in beiden Darstellungen
@@ -128,13 +137,13 @@
           </span>
           <span class="tool-desc" data-i18n="fadenkreuzDesc">Your own crosshair in the centre of the screen, over your game. You draw it yourself, clicks go right through.</span>
           <span class="tool-meta" data-i18n="fadenkreuzMeta">Windows 10/11 · about 1 MB of RAM · free</span>
-          <a class="tool-open" id="open-fadenkreuz" aria-labelledby="open-fadenkreuz name-fadenkreuz" href="https://github.com/Dennismit2n/fadenkreuz/releases/latest" rel="noopener"><span data-i18n="downloadTool">Download</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="tool-open" data-count="kachel-fadenkreuz" id="open-fadenkreuz" aria-labelledby="open-fadenkreuz name-fadenkreuz" href="https://github.com/Dennismit2n/fadenkreuz/releases/latest" rel="noopener"><span data-i18n="downloadTool">Download</span> <span class="arrow" aria-hidden="true">→</span></a>
           <span class="tool-mini" data-tool="fadenkreuz">
-            <a href="./werkstatt.html#fadenkreuz-neuigkeiten" data-count="werkstatt-fadenkreuz-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#fadenkreuz-anleitung" data-count="werkstatt-fadenkreuz-anleitung" data-i18n="secGuide">Guide</a>
-            <a href="./werkstatt.html#fadenkreuz-bilder" data-count="werkstatt-fadenkreuz-bilder" data-i18n="secShots">Screenshots</a>
-            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/fadenkreuz/blob/main/README.de.md" rel="noopener" data-count="readme-fadenkreuz" data-i18n="secReadme">README</a>
-            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/fadenkreuz#readme" rel="noopener" data-count="readme-fadenkreuz" data-i18n="secReadme">README</a>
+            <a href="./werkstatt.html#fadenkreuz-neuigkeiten" data-count="kachel-fadenkreuz-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#fadenkreuz-anleitung" data-count="kachel-fadenkreuz-anleitung" data-i18n="secGuide">Guide</a>
+            <a href="./werkstatt.html#fadenkreuz-bilder" data-count="kachel-fadenkreuz-bilder" data-i18n="secShots">Screenshots</a>
+            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/fadenkreuz/blob/main/README.de.md" rel="noopener" data-count="kachel-fadenkreuz-readme" data-i18n="secReadme">README</a>
+            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/fadenkreuz#readme" rel="noopener" data-count="kachel-fadenkreuz-readme" data-i18n="secReadme">README</a>
           </span>
         </div>
         <div class="tool-card tool-ram">
@@ -144,13 +153,13 @@
           </span>
           <span class="tool-desc" data-i18n="ramDesc">An honest RAM tool for Windows. The placebo button is called exactly that.</span>
           <span class="tool-meta" data-i18n="ramMeta">Windows 10/11 · open source · free</span>
-          <a class="tool-open" id="open-ram" aria-labelledby="open-ram name-ram" href="https://github.com/Dennismit2n/Real_RAM_cooler/releases/latest" rel="noopener"><span data-i18n="downloadTool">Download</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="tool-open" data-count="kachel-ram" id="open-ram" aria-labelledby="open-ram name-ram" href="https://github.com/Dennismit2n/Real_RAM_cooler/releases/latest" rel="noopener"><span data-i18n="downloadTool">Download</span> <span class="arrow" aria-hidden="true">→</span></a>
           <span class="tool-mini" data-tool="ram">
-            <a href="./werkstatt.html#ram-neuigkeiten" data-count="werkstatt-ram-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#ram-anleitung" data-count="werkstatt-ram-anleitung" data-i18n="secGuide">Guide</a>
-            <a href="./werkstatt.html#ram-bilder" data-count="werkstatt-ram-bilder" data-i18n="secShots">Screenshots</a>
-            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/Real_RAM_cooler/blob/main/README.de.md" rel="noopener" data-count="readme-ram" data-i18n="secReadme">README</a>
-            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/Real_RAM_cooler#readme" rel="noopener" data-count="readme-ram" data-i18n="secReadme">README</a>
+            <a href="./werkstatt.html#ram-neuigkeiten" data-count="kachel-ram-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#ram-anleitung" data-count="kachel-ram-anleitung" data-i18n="secGuide">Guide</a>
+            <a href="./werkstatt.html#ram-bilder" data-count="kachel-ram-bilder" data-i18n="secShots">Screenshots</a>
+            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/Real_RAM_cooler/blob/main/README.de.md" rel="noopener" data-count="kachel-ram-readme" data-i18n="secReadme">README</a>
+            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/Real_RAM_cooler#readme" rel="noopener" data-count="kachel-ram-readme" data-i18n="secReadme">README</a>
           </span>
         </div>
         <!-- Platzhalter wie auf der Startseite: nichts zu öffnen, also kein Knopf. -->
@@ -172,9 +181,11 @@
       <span data-i18n="footerSource">Open source on GitHub</span>
     </a>
     <span class="sep" aria-hidden="true">·</span>
-    <a href="./werkstatt.html" data-count="werkstatt-gesamt" data-i18n="werkstattHeading">News &amp; guides</a>
+    <a href="./werkstatt.html" data-i18n="werkstattHeading">News &amp; guides</a>
     <span class="sep" aria-hidden="true">·</span>
     <span data-i18n="footerTranslate">Some translations are machine-made, and I’m happy to take corrections.</span>
+    <span class="sep" aria-hidden="true">·</span>
+    <span data-i18n="footerAnalytics">Only tile clicks are counted, anonymously (GoatCounter, no page views, no cookies, never what you enter).</span>
     <span class="sep" aria-hidden="true">·</span>
     <span class="footer-copyright">© 2026 Dennis_mit_2n</span>
   </footer>
@@ -182,9 +193,9 @@
 
 <!-- Wie in index.html: main.js übersetzt, füllt die Daten der Mini-Kacheln aus news.js
      und zählt Kachelklicks. -->
-<script src="./js/i18n.js?v=2026-11-12g" fetchpriority="high"></script>
+<script src="./js/i18n.js?v=2026-11-12h" fetchpriority="high"></script>
 <script src="./js/dates.js?v=2026-09-14" fetchpriority="high"></script>
-<script src="./js/header.js?v=2026-11-03" fetchpriority="high"></script>
-<script src="./js/main.js?v=2026-11-03c" fetchpriority="high" data-news="./js/news.js?v=2026-11-12g"></script>
+<script src="./js/header.js?v=2026-11-12h" fetchpriority="high"></script>
+<script src="./js/main.js?v=2026-11-12h" fetchpriority="high" data-news="./js/news.js?v=2026-11-12h"></script>
 </body>
 </html>

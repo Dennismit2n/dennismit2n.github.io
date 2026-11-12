@@ -69,8 +69,6 @@
         btn.classList.remove('is-copied');
         if (label) { label.textContent = i18n.t('modsCopy'); }
       }, 1600);
-      var mod = btn.closest('details.mod');
-      Header.count('mods-kopiert-' + (mod ? mod.getAttribute('data-mod') : 'alle') + '-' + btn.getAttribute('data-copy'), 'Werkstatt-Mods kopiert');
     };
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(text).then(done, function () { fallbackCopy(text); done(); });
