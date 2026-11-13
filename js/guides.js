@@ -4486,6 +4486,244 @@ var GUIDES = {
       ko: 'https://github.com/Dennismit2n/hourbridge/blob/main/README.md'
     }
   },
+  kugelblitz: {
+    purpose: {
+      de: 'Für alle, die zwischendurch eine Runde Flipper spielen wollen, ohne etwas zu installieren. Kugelblitz ist ein ganzer Tisch auf einem Bildschirm: Abschussrampe, zwei Flipper, drei Bumper, Ziele und in der Mitte die Zündkammer, die startet, was gerade leuchtet. Fünf Missionen bringen dich durch sechs Ränge bis zum Multiball. Es läuft im Browser am Rechner, am Handy und am Tablet, ohne Ton und ohne Blitze. Dein Browser merkt sich nur deine Einstellungen und deine Bestenliste.',
+      en: 'For anyone who wants a quick round of pinball without installing anything. Kugelblitz is a whole table on one screen: the plunger lane, two flippers, three bumpers, targets and, in the middle, the Chamber, which starts whatever is lit. Five missions take you through six ranks up to the multiball. It runs in the browser on computers, phones and tablets, with no sound and no flashes. Your browser only remembers your settings and your high scores.',
+      es: 'Para quien quiere echar una partida de pinball sin instalar nada. Kugelblitz es una mesa entera en una sola pantalla: el carril de lanzamiento, dos flippers, tres bumpers, dianas y, en el centro, la Cámara, que pone en marcha lo que esté encendido. Cinco misiones te llevan por seis rangos hasta la multibola. Funciona en el navegador del ordenador, del móvil y de la tableta, sin sonido y sin destellos. Tu navegador solo recuerda tus ajustes y tus mejores puntuaciones.',
+      fr: 'Pour tous ceux qui veulent faire une partie de flipper sans rien installer. Kugelblitz est une table entière sur un seul écran : le couloir de lancement, deux flippers, trois bumpers, des cibles et, au milieu, la Chambre, qui déclenche ce qui est allumé. Cinq missions vous font passer par six rangs jusqu’à la multibille. Il tourne dans le navigateur, sur ordinateur, téléphone et tablette, sans son et sans flash. Votre navigateur ne retient que vos réglages et vos meilleurs scores.',
+      it: 'Per chi vuole fare una partita a flipper senza installare niente. Kugelblitz è un tavolo intero su un solo schermo: la corsia di lancio, due flipper, tre bumper, bersagli e, al centro, la Camera, che avvia ciò che è acceso. Cinque missioni ti portano attraverso sei gradi fino al multiball. Funziona nel browser su computer, telefono e tablet, senza audio e senza lampi. Il tuo browser ricorda solo le tue impostazioni e la tua classifica.',
+      nl: 'Voor iedereen die tussendoor een potje wil flipperen zonder iets te installeren. Kugelblitz is een hele kast op één scherm: de schietbaan, twee flippers, drie bumpers, doelen en in het midden de ontstekingskamer, die start wat er brandt. Vijf missies brengen je via zes rangen tot aan de multiball. Het draait in de browser op computer, telefoon en tablet, zonder geluid en zonder flitsen. Je browser onthoudt alleen je instellingen en je topscores.',
+      pl: 'Dla każdego, kto chce między jednym a drugim zagrać w pinball bez instalowania czegokolwiek. Kugelblitz to cały stół na jednym ekranie: tor wyrzutni, dwa flippery, trzy bumpery, cele, a pośrodku komora zapłonu, która uruchamia to, co akurat świeci. Pięć misji prowadzi cię przez sześć rang aż do multiballa. Działa w przeglądarce na komputerze, telefonie i tablecie, bez dźwięku i bez błysków. Twoja przeglądarka zapamiętuje tylko twoje ustawienia i najlepsze wyniki.',
+      pt: 'Para quem quer jogar uma partida de pinball sem instalar nada. O Kugelblitz é uma mesa inteira em uma só tela: a pista de lançamento, dois flippers, três bumpers, alvos e, no centro, a Câmara, que ativa o que estiver aceso. Cinco missões levam você por seis níveis até a multibola. Funciona no navegador do computador, do celular e do tablet, sem som e sem flashes. Seu navegador guarda apenas as suas configurações e o seu ranking.',
+      tr: 'Bir şey kurmadan arada bir pinball oynamak isteyen herkes için. Kugelblitz tek ekranda koca bir masa: atış şeridi, iki flipper, üç bumper, hedefler ve ortada, o an yanan şeyi başlatan Ateşleme Odası. Beş görev sizi altı rütbeden geçirip multiball’a kadar götürür. Bilgisayarda, telefonda ve tablette tarayıcıda çalışır, ses yok, flaş yok. Tarayıcınız yalnızca ayarlarınızı ve en iyi skorlarınızı hatırlar.',
+      ru: 'Для всех, кто хочет между делом сыграть в пинбол, ничего не устанавливая. Kugelblitz представляет собой целый стол на одном экране: пусковая дорожка, два флиппера, три бампера, мишени, а посередине камера зажигания, которая запускает то, что сейчас горит. Пять миссий ведут вас через шесть рангов до мультибола. Работает в браузере на компьютере, телефоне и планшете, без звука и без вспышек. Браузер запоминает только ваши настройки и таблицу рекордов.',
+      hi: 'उन सबके लिए जो बिना कुछ इंस्टॉल किए बीच-बीच में पिनबॉल का एक दौर खेलना चाहते हैं। Kugelblitz एक ही स्क्रीन पर पूरी टेबल है: लॉन्च लेन, दो फ़्लिपर, तीन बंपर, टारगेट और बीच में प्रज्वलन कक्ष, जो उस समय जो जल रहा हो उसे शुरू करता है। पाँच मिशन आपको छह रैंक से होते हुए मल्टीबॉल तक ले जाते हैं। यह कंप्यूटर, फ़ोन और टैबलेट पर ब्राउज़र में चलता है, बिना आवाज़ और बिना चमक के। आपका ब्राउज़र सिर्फ़ आपकी सेटिंग्स और आपके सर्वश्रेष्ठ स्कोर याद रखता है।',
+      zh: '适合想随手玩一局弹珠台、又不想安装任何东西的人。Kugelblitz 把整张球台放在一个屏幕上：发射道、两个挡板、三个弹柱、目标，中间是点火室，它会启动当前亮着的东西。五个任务带你经过六个等级，一直到多球。它在电脑、手机和平板的浏览器里运行，没有声音，也没有闪光。浏览器只会记住你的设置和你的排行榜。',
+      ja: '何もインストールせずに、ちょっとピンボールを1ゲーム遊びたい人のために。Kugelblitz は1画面に台をまるごと収めています。発射レーン、フリッパー2本、バンパー3つ、ターゲット、そして中央には、いま光っているものを始動させる点火室。5つのミッションで6つのランクを上がり、マルチボールまで進みます。パソコン、スマホ、タブレットのブラウザで動き、音も点滅もありません。ブラウザが覚えているのは、あなたの設定とハイスコアだけです。',
+      ko: '아무것도 설치하지 않고 틈틈이 핀볼 한 판을 하고 싶은 분을 위한 게임입니다. Kugelblitz는 화면 하나에 테이블 전체를 담았습니다. 발사 레인, 플리퍼 두 개, 범퍼 세 개, 타깃, 그리고 가운데에는 지금 켜져 있는 것을 시작하는 점화실이 있습니다. 미션 다섯 개를 거치며 등급 여섯 개를 올라 멀티볼까지 갑니다. 컴퓨터, 휴대폰, 태블릿의 브라우저에서 작동하며 소리도 번쩍임도 없습니다. 브라우저는 설정과 순위표만 기억합니다.'
+    },
+    shots: [
+      {
+        files: {
+          de: ['kugelblitz-de.webp', 1440, 900],
+          en: ['kugelblitz-en.webp', 1440, 900]
+        },
+        alt: {
+          de: 'Kugelblitz am Rechner während des Multiballs: in der Mitte der dunkelviolette Flippertisch mit zwei Kugeln, drei Bumpern mit Goldring und dem Band „Jackpot: 50.000“, links die Kacheln für Punkte, Kugel, Rang, Mission und Bonus, rechts Bestenliste, Einstellungen und Tasten.',
+          en: 'Kugelblitz on a computer during multiball: in the middle the dark violet pinball table with two balls, three bumpers with gold rings and the banner “Jackpot: 50,000”, on the left the tiles for score, ball, rank, mission and bonus, on the right high scores, settings and keys.',
+          es: 'Kugelblitz en el ordenador durante la multibola: en el centro la mesa violeta oscura con dos bolas, tres bumpers con anillo dorado y el letrero «Jackpot: 50,000», a la izquierda las tarjetas de puntos, bola, rango, misión y bonus, a la derecha mejores puntuaciones, ajustes y teclas. La interfaz de la imagen está en inglés.',
+          fr: 'Kugelblitz sur ordinateur pendant la multibille : au milieu la table violet foncé avec deux billes, trois bumpers cerclés d’or et le bandeau « Jackpot: 50,000 », à gauche les tuiles des points, de la bille, du rang, de la mission et du bonus, à droite meilleurs scores, réglages et touches. L’interface de l’image est en anglais.',
+          it: 'Kugelblitz sul computer durante il multiball: al centro il tavolo viola scuro con due palline, tre bumper con anello dorato e la scritta «Jackpot: 50,000», a sinistra le schede di punti, pallina, grado, missione e bonus, a destra classifica, impostazioni e tasti. L’interfaccia nell’immagine è in inglese.',
+          nl: 'Kugelblitz op de computer tijdens de multiball: in het midden de donkerpaarse kast met twee ballen, drie bumpers met een gouden ring en de banner ‘Jackpot: 50,000’, links de tegels voor punten, bal, rang, missie en bonus, rechts topscores, instellingen en toetsen. De interface in de afbeelding is Engels.',
+          pl: 'Kugelblitz na komputerze podczas multiballa: pośrodku ciemnofioletowy stół z dwiema kulkami, trzema bumperami w złotych obręczach i napisem „Jackpot: 50,000”, po lewej kafelki z punktami, kulką, rangą, misją i bonusem, po prawej najlepsze wyniki, ustawienia i klawisze. Interfejs na obrazku jest po angielsku.',
+          pt: 'O Kugelblitz no computador durante a multibola: no centro a mesa roxo-escura com duas bolas, três bumpers com anel dourado e a faixa «Jackpot: 50,000», à esquerda os cartões de pontos, bola, nível, missão e bônus, à direita ranking, configurações e teclas. A interface na imagem está em inglês.',
+          tr: 'Multiball sırasında bilgisayarda Kugelblitz: ortada iki toplu, altın halkalı üç bumperlı koyu mor masa ve “Jackpot: 50,000” şeridi, solda puan, top, rütbe, görev ve bonus kutuları, sağda en iyi skorlar, ayarlar ve tuşlar. Görseldeki arayüz İngilizcedir.',
+          ru: 'Kugelblitz на компьютере во время мультибола: в центре тёмно-фиолетовый стол с двумя шарами, тремя бамперами в золотых кольцах и надписью «Jackpot: 50,000», слева плитки с очками, шаром, рангом, миссией и бонусом, справа рекорды, настройки и клавиши. Интерфейс на снимке на английском.',
+          hi: 'मल्टीबॉल के दौरान कंप्यूटर पर Kugelblitz: बीच में गहरे बैंगनी रंग की टेबल, जिस पर दो गेंदें, सुनहरे छल्ले वाले तीन बंपर और “Jackpot: 50,000” वाली पट्टी है, बाईं ओर अंक, गेंद, रैंक, मिशन और बोनस की टाइलें, दाईं ओर सर्वश्रेष्ठ स्कोर, सेटिंग्स और कुंजियाँ। चित्र में इंटरफ़ेस अंग्रेज़ी में है।',
+          zh: '电脑上多球进行中的 Kugelblitz：中间是深紫色球台，上面有两颗球、三个带金环的弹柱和“Jackpot: 50,000”横幅，左边是得分、球、等级、任务和奖励卡片，右边是排行榜、设置和按键。图中界面为英文。',
+          ja: 'マルチボール中のパソコン版 Kugelblitz。中央に濃い紫の台があり、ボール2つ、金の輪の付いたバンパー3つ、「Jackpot: 50,000」の帯。左にスコア、ボール、ランク、ミッション、ボーナスのタイル、右にハイスコア、設定、キー。画像の画面は英語です。',
+          ko: '멀티볼 중인 컴퓨터 화면의 Kugelblitz. 가운데에 짙은 보라색 테이블이 있고 볼 두 개, 금색 고리가 달린 범퍼 세 개, ‘Jackpot: 50,000’ 띠가 보입니다. 왼쪽에는 점수, 볼, 등급, 미션, 보너스 타일, 오른쪽에는 순위표, 설정, 키가 있습니다. 그림 속 화면은 영어입니다.'
+        }
+      },
+      {
+        files: {
+          de: ['kugelblitz-handy-de.webp', 780, 1688],
+          en: ['kugelblitz-handy-en.webp', 780, 1688]
+        },
+        alt: {
+          de: 'Kugelblitz auf dem Handy: oben Punkte, Kugel 1 von 3 und der Rang, darunter der Tisch über die ganze Breite mit dem Band zum neuen Rang, dann vier Knöpfe zum Schubsen nach links, oben und rechts und für Pause, ganz unten die Kachel mit den Punkten.',
+          en: 'Kugelblitz on a phone: at the top score, ball 1 of 3 and the rank, below it the table across the full width with the banner for the new rank, then four buttons to nudge left, up and right and to pause, and at the very bottom the score tile.',
+          es: 'Kugelblitz en el móvil: arriba los puntos, la bola 1 de 3 y el rango, debajo la mesa a todo lo ancho con el letrero del nuevo rango, luego cuatro botones para empujar a la izquierda, arriba y a la derecha y para pausar, y abajo del todo la tarjeta de puntos. La interfaz de la imagen está en inglés.',
+          fr: 'Kugelblitz sur téléphone : en haut les points, la bille 1 sur 3 et le rang, en dessous la table sur toute la largeur avec le bandeau du nouveau rang, puis quatre boutons pour secouer à gauche, en haut et à droite et pour la pause, et tout en bas la tuile des points. L’interface de l’image est en anglais.',
+          it: 'Kugelblitz sul telefono: in alto punti, pallina 1 di 3 e grado, sotto il tavolo a tutta larghezza con la scritta del nuovo grado, poi quattro pulsanti per la spinta a sinistra, in alto e a destra e per la pausa, e in fondo la scheda dei punti. L’interfaccia nell’immagine è in inglese.',
+          nl: 'Kugelblitz op de telefoon: bovenaan punten, bal 1 van 3 en de rang, daaronder de kast over de volle breedte met de banner van de nieuwe rang, dan vier knoppen om naar links, omhoog en naar rechts te duwen en voor pauze, en helemaal onderaan de tegel met de punten. De interface in de afbeelding is Engels.',
+          pl: 'Kugelblitz na telefonie: u góry punkty, kulka 1 z 3 i ranga, pod spodem stół na całą szerokość z napisem o nowej randze, potem cztery przyciski do pchnięcia w lewo, w górę i w prawo oraz do pauzy, a na samym dole kafelek z punktami. Interfejs na obrazku jest po angielsku.',
+          pt: 'O Kugelblitz no celular: no topo os pontos, a bola 1 de 3 e o nível, embaixo a mesa na largura toda com a faixa do novo nível, depois quatro botões para empurrar para a esquerda, para cima e para a direita e para pausar, e lá embaixo o cartão de pontos. A interface na imagem está em inglês.',
+          tr: 'Telefonda Kugelblitz: üstte puan, 3 toptan 1. top ve rütbe, altında yeni rütbenin şeridiyle tam genişlikte masa, sonra sola, yukarı ve sağa sarsmak ve duraklatmak için dört düğme, en altta puan kutusu. Görseldeki arayüz İngilizcedir.',
+          ru: 'Kugelblitz на телефоне: вверху очки, шар 1 из 3 и ранг, под ними стол во всю ширину с надписью о новом ранге, затем четыре кнопки для толчка влево, вверх и вправо и для паузы, а в самом низу плитка с очками. Интерфейс на снимке на английском.',
+          hi: 'फ़ोन पर Kugelblitz: ऊपर अंक, 3 में से गेंद 1 और रैंक, उसके नीचे पूरी चौड़ाई में टेबल और नई रैंक वाली पट्टी, फिर बाएँ, ऊपर और दाएँ धक्का देने और विराम के चार बटन, और सबसे नीचे अंकों वाली टाइल। चित्र में इंटरफ़ेस अंग्रेज़ी में है।',
+          zh: '手机上的 Kugelblitz：顶部是得分、第 1 球（共 3 球）和等级，下面是占满宽度的球台和新等级的横幅，再往下是向左、向上、向右推台和暂停的四个按钮，最下面是得分卡片。图中界面为英文。',
+          ja: 'スマホ版 Kugelblitz。上にスコア、ボール 1/3、ランク。その下に横幅いっぱいの台と新しいランクの帯、続いて左・上・右に揺らすボタンと一時停止の4つのボタン、いちばん下にスコアのタイル。画像の画面は英語です。',
+          ko: '휴대폰의 Kugelblitz. 위쪽에 점수, 볼 1/3, 등급이 있고, 그 아래에 화면 너비를 채운 테이블과 새 등급 띠가 있습니다. 이어서 왼쪽, 위, 오른쪽으로 흔드는 버튼과 일시정지 버튼 네 개, 맨 아래에 점수 타일이 있습니다. 그림 속 화면은 영어입니다.'
+        }
+      }
+    ],
+    steps: {
+      de: [
+        'Kugelblitz öffnen und mit Enter, F2 oder einem Klick ein neues Spiel starten, am Handy tippst du auf den Tisch. Leertaste oder ↓ halten und loslassen schießt die Kugel ab. Mit den Fingern hältst du die Rampe rechts unten oder ziehst sie nach unten.',
+        'Die Flipper schlagen mit Shift links und rechts, mit ← und → oder mit Y und der Minustaste (auf einer englischen Tastatur Z und /). Mit den Fingern tippst du auf die linke oder rechte Tischhälfte. Schubsen geht mit X, Punkt oder ↑, am Handy mit den Knöpfen unter dem Tisch. P oder Esc hält das Spiel an.',
+        'Neben dem Tisch, am Handy darunter, stehen Punkte, Kugel, Rang, Mission und Bonus. Jede Mission bringt dich einen Rang höher, ab Rang Gewitter startet die Zündkammer den Multiball „Gewittersturm“. Unter „Einstellungen“ wählst du Sprache, „Lichtstärke“, „Weniger Bewegung“ und „Darstellung“. Zeigt dein Browser dort „Installieren“, richtet ein Tipp darauf Kugelblitz als App ein, nach dem ersten Besuch läuft es auch ohne Netz.'
+      ],
+      en: [
+        'Open Kugelblitz and start a new game with Enter, F2 or a click, or tap the table on a phone. Hold Space or ↓ and let go to launch the ball. With your fingers, hold the plunger lane at the bottom right or pull it down.',
+        'The flippers fire with left and right Shift, with ← and → or with Z and / (Y and the minus key on a German keyboard). With your fingers, tap the left or right half of the table. Nudge with X, the period key or ↑, or on a phone with the buttons below the table. P or Esc pauses the game.',
+        'Next to the table, or below it on a phone, you see score, ball, rank, mission and bonus. Every mission takes you one rank higher, and from the rank Thunder on, the Chamber starts the “Thunderstorm” multiball. Under “Settings” you choose the language, “Light intensity”, “Reduce motion” and “Appearance”. If your browser shows “Install” there, one tap sets Kugelblitz up as an app, and after the first visit it also works without a connection.'
+      ],
+      es: [
+        'Abre Kugelblitz y empieza una partida nueva con Intro, F2 o un clic, o toca la mesa en el móvil. Mantén Espacio o ↓ y suelta para lanzar la bola. Con los dedos, mantén el carril de lanzamiento abajo a la derecha o tira de él hacia abajo.',
+        'Los flippers se mueven con Mayús izquierda y derecha o con ← y →. En «Teclas», el juego muestra un tercer par con el nombre que tiene en tu teclado. Con los dedos, toca la mitad izquierda o derecha de la mesa. Para empujar, X, punto o ↑, y en el móvil los botones bajo la mesa. P o Esc pausa la partida.',
+        'Junto a la mesa, o debajo en el móvil, ves los puntos, la bola, el rango, la misión y el bonus. Cada misión te sube un rango, y a partir del rango Trueno la Cámara lanza la multibola «Tormenta eléctrica». En «Ajustes» eliges el idioma, «Intensidad de luz», «Menos movimiento» y «Apariencia». Si tu navegador muestra ahí «Instalar», un toque instala Kugelblitz como app, y tras la primera visita funciona también sin conexión.'
+      ],
+      fr: [
+        'Ouvrez Kugelblitz et lancez une nouvelle partie avec Entrée, F2 ou un clic, ou touchez la table sur un téléphone. Maintenez Espace ou ↓ puis relâchez pour lancer la bille. Avec les doigts, maintenez le couloir de lancement en bas à droite ou tirez-le vers le bas.',
+        'Les flippers se commandent avec Maj gauche et droite ou avec ← et →. Sous « Touches », le jeu affiche une troisième paire avec le nom qu’elle porte sur votre clavier. Avec les doigts, touchez la moitié gauche ou droite de la table. Pour secouer, X, point ou ↑, et sur téléphone les boutons sous la table. P ou Échap met la partie en pause.',
+        'À côté de la table, ou en dessous sur un téléphone, s’affichent les points, la bille, le rang, la mission et le bonus. Chaque mission vous fait monter d’un rang, et à partir du rang Orage la Chambre lance la multibille « Tempête ». Dans « Réglages », vous choisissez la langue, « Intensité des lumières », « Moins d’animations » et « Apparence ». Si votre navigateur y affiche « Installer », un appui installe Kugelblitz comme application, et après la première visite il fonctionne aussi hors ligne.'
+      ],
+      it: [
+        'Apri Kugelblitz e avvia una nuova partita con Invio, F2 o un clic, oppure tocca il tavolo sul telefono. Tieni premuto Spazio o ↓ e rilascia per lanciare la pallina. Con le dita tieni premuta la corsia di lancio in basso a destra o trascinala giù.',
+        'I flipper si muovono con Maiusc sinistro e destro o con ← e →. Sotto «Tasti» il gioco mostra una terza coppia con il nome che ha sulla tua tastiera. Con le dita tocca la metà sinistra o destra del tavolo. Per la spinta usa X, punto o ↑, sul telefono i pulsanti sotto il tavolo. P o Esc mette in pausa.',
+        'Accanto al tavolo, o sotto sul telefono, trovi punti, pallina, grado, missione e bonus. Ogni missione ti fa salire di un grado, e dal grado Temporale in poi la Camera avvia il multiball «Tempesta». In «Impostazioni» scegli la lingua, «Intensità delle luci», «Meno movimento» e «Aspetto». Se lì il browser mostra «Installa», un tocco installa Kugelblitz come app, e dopo la prima visita funziona anche senza rete.'
+      ],
+      nl: [
+        'Open Kugelblitz en start een nieuw spel met Enter, F2 of een klik, of tik op je telefoon op de kast. Houd de spatiebalk of ↓ vast en laat los om de bal af te schieten. Met je vingers houd je de schietbaan rechtsonder vast of trek je hem omlaag.',
+        'De flippers sla je met Shift links en rechts of met ← en →. Onder ‘Toetsen’ toont het spel nog een paar, met de naam die het op jouw toetsenbord heeft. Met je vingers tik je op de linker- of rechterhelft van de kast. Duwen gaat met X, punt of ↑, op je telefoon met de knoppen onder de kast. P of Esc pauzeert het spel.',
+        'Naast de kast, op je telefoon eronder, staan punten, bal, rang, missie en bonus. Elke missie brengt je een rang hoger, en vanaf de rang Onweer start de ontstekingskamer de multiball ‘Onweersstorm’. Onder ‘Instellingen’ kies je de taal, ‘Lichtsterkte’, ‘Minder beweging’ en ‘Weergave’. Toont je browser daar ‘Installeren’, dan zet één tik Kugelblitz als app op je apparaat, en na het eerste bezoek werkt het ook zonder verbinding.'
+      ],
+      pl: [
+        'Otwórz Kugelblitz i zacznij nową grę klawiszem Enter, F2 albo kliknięciem, a na telefonie stuknij w stół. Przytrzymaj spację lub ↓ i puść, żeby wystrzelić kulkę. Palcami przytrzymaj tor wyrzutni w prawym dolnym rogu albo pociągnij go w dół.',
+        'Flippery poruszasz lewym i prawym Shiftem albo strzałkami ← i →. W sekcji „Klawisze” gra pokazuje jeszcze jedną parę, z nazwami z twojej klawiatury. Palcami stukasz w lewą lub prawą połowę stołu. Pchnięcie to X, kropka lub ↑, a na telefonie przyciski pod stołem. P lub Esc wstrzymuje grę.',
+        'Obok stołu, a na telefonie pod nim, widać punkty, kulkę, rangę, misję i bonus. Każda misja daje ci rangę wyżej, a od rangi Burza komora zapłonu uruchamia multiball „Nawałnica”. W sekcji „Ustawienia” wybierasz język, „Jasność świateł”, „Mniej ruchu” i „Wygląd”. Jeśli przeglądarka pokazuje tam „Zainstaluj”, jedno stuknięcie instaluje Kugelblitz jako aplikację, a po pierwszej wizycie działa on też bez sieci.'
+      ],
+      pt: [
+        'Abra o Kugelblitz e comece um novo jogo com Enter, F2 ou um clique, ou toque na mesa no celular. Segure Espaço ou ↓ e solte para lançar a bola. Com os dedos, segure a pista de lançamento no canto inferior direito ou puxe-a para baixo.',
+        'Os flippers batem com Shift esquerdo e direito ou com ← e →. Em «Teclas», o jogo mostra mais um par, com o nome que ele tem no seu teclado. Com os dedos, toque na metade esquerda ou direita da mesa. Para empurrar, use X, ponto ou ↑, e no celular os botões embaixo da mesa. P ou Esc pausa o jogo.',
+        'Ao lado da mesa, ou embaixo dela no celular, aparecem pontos, bola, nível, missão e bônus. Cada missão sobe você um nível, e a partir do nível Trovoada a Câmara inicia a multibola «Tempestade». Em «Configurações» você escolhe o idioma, «Intensidade das luzes», «Menos movimento» e «Aparência». Se o navegador mostrar «Instalar» ali, um toque instala o Kugelblitz como app, e depois da primeira visita ele funciona também sem conexão.'
+      ],
+      tr: [
+        'Kugelblitz’i açın ve Enter, F2 ya da bir tıklamayla yeni bir oyun başlatın, telefonda masaya dokunun. Topu atmak için Boşluk’u ya da ↓’yi basılı tutup bırakın. Parmaklarınızla sağ alttaki atış şeridini basılı tutun ya da aşağı çekin.',
+        'Flipperları sol ve sağ Shift ya da ← ve → ile çalıştırırsınız. Oyun “Tuşlar” bölümünde, klavyenizdeki adlarıyla bir çift tuş daha gösterir. Parmaklarınızla masanın sol ya da sağ yarısına dokunun. Sarsmak için X, nokta ya da ↑, telefonda masanın altındaki düğmeler. P ya da Esc oyunu duraklatır.',
+        'Masanın yanında, telefonda ise altında puan, top, rütbe, görev ve bonus durur. Her görev sizi bir rütbe yükseltir, Şimşek rütbesinden itibaren de Ateşleme Odası “Fırtına” multiball’unu başlatır. “Ayarlar” altında dili, “Işık gücü”nü, “Daha az hareket”i ve “Görünüm”ü seçersiniz. Tarayıcınız orada “Yükle” gösteriyorsa tek dokunuş Kugelblitz’i uygulama olarak kurar, ilk ziyaretten sonra bağlantı olmadan da çalışır.'
+      ],
+      ru: [
+        'Откройте Kugelblitz и начните новую игру клавишей Enter, F2 или щелчком, а на телефоне коснитесь стола. Удерживайте пробел или ↓ и отпустите, чтобы запустить шар. Пальцами удерживайте пусковую дорожку справа внизу или потяните её вниз.',
+        'Флипперы работают от левого и правого Shift или от ← и →. В разделе «Клавиши» игра показывает ещё одну пару с теми названиями, что стоят на вашей клавиатуре. Пальцами касайтесь левой или правой половины стола. Толчок делается клавишами X, точка или ↑, на телефоне кнопками под столом. P или Esc ставит игру на паузу.',
+        'Рядом со столом, а на телефоне под ним, видны очки, шар, ранг, миссия и бонус. Каждая миссия поднимает вас на ранг выше, а начиная с ранга Гроза камера зажигания запускает мультибол «Буря». В разделе «Настройки» выбираются язык, «Яркость огней», «Меньше движения» и «Оформление». Если браузер показывает там «Установить», одно касание установит Kugelblitz как приложение, а после первого посещения он работает и без сети.'
+      ],
+      hi: [
+        'Kugelblitz खोलें और Enter, F2 या एक क्लिक से नया खेल शुरू करें, फ़ोन पर टेबल पर टैप करें। गेंद छोड़ने के लिए स्पेस या ↓ दबाए रखें और फिर छोड़ें। उँगलियों से दाईं ओर नीचे की लॉन्च लेन दबाए रखें या उसे नीचे खींचें।',
+        'फ़्लिपर बाएँ और दाएँ Shift से या ← और → से चलते हैं। “कुंजियाँ” में खेल एक और जोड़ी दिखाता है, उसी नाम से जो आपके कीबोर्ड पर है। उँगलियों से टेबल के बाएँ या दाएँ आधे हिस्से पर टैप करें। धक्का X, बिंदु या ↑ से लगता है, फ़ोन पर टेबल के नीचे के बटनों से। P या Esc खेल रोक देता है।',
+        'टेबल के बगल में, फ़ोन पर उसके नीचे, अंक, गेंद, रैंक, मिशन और बोनस दिखते हैं। हर मिशन आपको एक रैंक ऊपर ले जाता है, और रैंक गर्जन से प्रज्वलन कक्ष मल्टीबॉल “तूफ़ान” शुरू करता है। “सेटिंग्स” में आप भाषा, “रोशनी की तीव्रता”, “कम हलचल” और “थीम” चुनते हैं। अगर आपका ब्राउज़र वहाँ “इंस्टॉल करें” दिखाता है, तो एक टैप से Kugelblitz ऐप की तरह इंस्टॉल हो जाता है, और पहली विज़िट के बाद यह बिना नेटवर्क के भी चलता है।'
+      ],
+      zh: [
+        '打开 Kugelblitz，用 Enter、F2 或点击开始新游戏，手机上点一下球台即可。按住空格或 ↓ 再松开，就能把球发射出去。用手指时，按住右下方的发射道或把它往下拉。',
+        '挡板用左右 Shift 或 ← 和 → 控制。游戏会在“按键”里再列出一对按键，名称和你键盘上的一样。用手指时，点球台的左半边或右半边。推台用 X、句点或 ↑，手机上用球台下方的按钮。P 或 Esc 暂停游戏。',
+        '球台旁边（手机上在球台下方）显示得分、球、等级、任务和奖励。每完成一个任务就升一级，从“雷暴”等级起，点火室会开启多球“暴风雨”。在“设置”里可以选择语言、“灯光亮度”、“减少动态”和“外观”。如果浏览器在那里显示“安装”，点一下就能把 Kugelblitz 安装为应用，首次访问后没有网络也能玩。'
+      ],
+      ja: [
+        'Kugelblitz を開き、Enter、F2、クリックでニューゲームを始めます。スマホでは台をタップします。スペースか ↓ を長押しして離すとボールを発射します。指で遊ぶときは、右下の発射レーンを長押しするか下に引きます。',
+        'フリッパーは左右の Shift か ← と → で動かします。「キー」には、あなたのキーボードでの名前でもう1組のキーも表示されます。指で遊ぶときは台の左半分か右半分をタップします。台を揺らすのは X、ピリオド、↑ で、スマホでは台の下のボタンです。P か Esc で一時停止します。',
+        '台の横（スマホでは台の下）に、スコア、ボール、ランク、ミッション、ボーナスが表示されます。ミッションを1つ達成するごとにランクが1つ上がり、ランク「雷雨」からは点火室がマルチボール「大嵐」を始めます。「設定」では言語、「ライトの明るさ」、「動きを減らす」、「外観」を選べます。そこに「インストール」が表示されていれば、タップで Kugelblitz をアプリとしてインストールでき、初回アクセス後はネットなしでも遊べます。'
+      ],
+      ko: [
+        'Kugelblitz를 열고 Enter, F2 또는 클릭으로 새 게임을 시작합니다. 휴대폰에서는 테이블을 탭합니다. 스페이스나 ↓를 누르고 있다가 떼면 볼이 발사됩니다. 손가락으로는 오른쪽 아래 발사 레인을 누르고 있거나 아래로 당깁니다.',
+        '플리퍼는 왼쪽과 오른쪽 Shift 또는 ←와 →로 칩니다. ‘키’ 항목에는 내 키보드에 적힌 이름으로 키 한 쌍이 더 나옵니다. 손가락으로는 테이블의 왼쪽이나 오른쪽 절반을 탭합니다. 흔들기는 X, 마침표, ↑로 하고, 휴대폰에서는 테이블 아래 버튼을 씁니다. P 또는 Esc로 일시정지합니다.',
+        '테이블 옆(휴대폰에서는 아래)에 점수, 볼, 등급, 미션, 보너스가 나옵니다. 미션을 하나 마칠 때마다 등급이 하나 오르고, ‘뇌우’ 등급부터는 점화실이 멀티볼 ‘폭풍우’를 시작합니다. ‘설정’에서 언어, ‘조명 밝기’, ‘동작 줄이기’, ‘테마’를 고릅니다. 브라우저가 그곳에 ‘설치’를 보여 주면 한 번 눌러 Kugelblitz를 앱으로 설치할 수 있고, 첫 방문 후에는 인터넷 없이도 작동합니다.'
+      ]
+    },
+    pitfalls: {
+      de: [
+        'Drei schnelle Schubser kippen den Tisch. Die ersten beiden bringen „Vorsicht“, der dritte TILT: Die Flipper sind aus, bis die Kugel weg ist, und es gibt keinen Bonus.',
+        'Die Taste T stellt die Physik auf die Schrittweite der Lektion 04 von Ten Minute Physics um, auf der Kugelblitz aufbaut. Dann rutschen schnelle Kugeln durch die Flipper. Ein zweites T schaltet die Unterschritte wieder ein.',
+        'Bestenliste und Einstellungen liegen nur in diesem Browser auf diesem Gerät. Löschst du die Websitedaten, sind sie weg, und auf einem anderen Gerät fängt die Liste leer an.',
+        'Auf dem iPhone gibt es keinen Knopf „Installieren“. Dort richtest du Kugelblitz in Safari über Teilen und „Zum Home-Bildschirm“ als App ein.'
+      ],
+      en: [
+        'Three quick nudges tilt the table. The first two bring “Danger”, the third TILT: the flippers are off until the ball drains, and there is no bonus.',
+        'The T key switches the physics to the step size of lesson 04 of Ten Minute Physics, which Kugelblitz is built on. Fast balls then slip through the flippers. Press T again to switch the substeps back on.',
+        'High scores and settings live only in this browser on this device. If you clear the site data, they are gone, and on another device the list starts empty.',
+        'There is no “Install” button on an iPhone. There you set Kugelblitz up as an app in Safari with Share and “Add to Home Screen”.'
+      ],
+      es: [
+        'Tres empujones rápidos inclinan la mesa. Los dos primeros traen «Cuidado», el tercero TILT: los flippers se apagan hasta que cae la bola, y no hay bonus.',
+        'La tecla T cambia la física al paso de la lección 04 de Ten Minute Physics, en la que se basa Kugelblitz. Entonces las bolas rápidas atraviesan los flippers. Pulsa T otra vez para volver a los subpasos.',
+        'Las mejores puntuaciones y los ajustes solo se guardan en este navegador de este dispositivo. Si borras los datos del sitio, desaparecen, y en otro dispositivo la lista empieza vacía.',
+        'En el iPhone no hay botón «Instalar». Allí instalas Kugelblitz como app en Safari con Compartir y «Añadir a pantalla de inicio».'
+      ],
+      fr: [
+        'Trois secousses rapides font basculer la table. Les deux premières affichent « Attention », la troisième TILT : les flippers sont coupés jusqu’à la perte de la bille, et il n’y a pas de bonus.',
+        'La touche T fait passer la physique au pas de la leçon 04 de Ten Minute Physics, sur laquelle repose Kugelblitz. Les billes rapides traversent alors les flippers. Appuyez de nouveau sur T pour rétablir les sous-pas.',
+        'Meilleurs scores et réglages ne sont enregistrés que dans ce navigateur, sur cet appareil. Si vous effacez les données du site, ils disparaissent, et sur un autre appareil la liste commence vide.',
+        'Sur iPhone, il n’y a pas de bouton « Installer ». Vous y installez Kugelblitz comme application dans Safari, avec Partager et « Sur l’écran d’accueil ».'
+      ],
+      it: [
+        'Tre spinte veloci mandano il tavolo in tilt. Le prime due mostrano «Attenzione», la terza TILT: i flipper restano spenti finché la pallina non esce, e niente bonus.',
+        'Il tasto T porta la fisica al passo della lezione 04 di Ten Minute Physics, su cui si basa Kugelblitz. Allora le palline veloci attraversano i flipper. Premi di nuovo T per riattivare i sottopassi.',
+        'Classifica e impostazioni restano solo in questo browser su questo dispositivo. Se cancelli i dati del sito spariscono, e su un altro dispositivo la classifica parte vuota.',
+        'Su iPhone non c’è il pulsante «Installa». Lì installi Kugelblitz come app in Safari con Condividi e «Aggiungi alla schermata Home».'
+      ],
+      nl: [
+        'Drie snelle duwen laten de kast kantelen. De eerste twee geven ‘Pas op’, de derde TILT: de flippers zijn uit tot de bal weg is, en er is geen bonus.',
+        'De toets T zet de natuurkunde op de stapgrootte van les 04 van Ten Minute Physics, waarop Kugelblitz is gebouwd. Snelle ballen glippen dan door de flippers. Druk nog eens op T om de deelstappen weer aan te zetten.',
+        'Topscores en instellingen staan alleen in deze browser op dit apparaat. Wis je de websitegegevens, dan zijn ze weg, en op een ander apparaat begint de lijst leeg.',
+        'Op een iPhone is er geen knop ‘Installeren’. Daar zet je Kugelblitz als app neer in Safari via Deel en ‘Zet op beginscherm’.'
+      ],
+      pl: [
+        'Trzy szybkie pchnięcia przechylają stół. Dwa pierwsze dają „Uwaga”, trzecie TILT: flippery są wyłączone, aż kulka odpadnie, i nie ma bonusu.',
+        'Klawisz T przełącza fizykę na krok z lekcji 04 Ten Minute Physics, na której opiera się Kugelblitz. Wtedy szybkie kulki przelatują przez flippery. Drugie naciśnięcie T przywraca podkroki.',
+        'Najlepsze wyniki i ustawienia są zapisane tylko w tej przeglądarce na tym urządzeniu. Gdy usuniesz dane strony, znikną, a na innym urządzeniu lista zaczyna się pusta.',
+        'Na iPhonie nie ma przycisku „Zainstaluj”. Tam instalujesz Kugelblitz jako aplikację w Safari przez Udostępnij i „Do ekranu początkowego”.'
+      ],
+      pt: [
+        'Três empurrões rápidos inclinam a mesa. Os dois primeiros mostram «Cuidado», o terceiro TILT: os flippers ficam desligados até a bola cair, e não há bônus.',
+        'A tecla T muda a física para o passo da lição 04 do Ten Minute Physics, na qual o Kugelblitz se baseia. Aí as bolas rápidas atravessam os flippers. Aperte T de novo para voltar aos subpassos.',
+        'O ranking e as configurações ficam só neste navegador, neste aparelho. Se você apagar os dados do site, eles somem, e em outro aparelho a lista começa vazia.',
+        'No iPhone não existe o botão «Instalar». Lá você instala o Kugelblitz como app no Safari, com Compartilhar e «Adicionar à Tela de Início».'
+      ],
+      tr: [
+        'Üç hızlı sarsma masayı devirir. İlk ikisi “Dikkat” gösterir, üçüncüsü TILT: top düşene kadar flipperlar kapalı kalır ve bonus yoktur.',
+        'T tuşu fiziği, Kugelblitz’in dayandığı Ten Minute Physics ders 04’ün adım boyuna çevirir. O zaman hızlı toplar flipperların içinden geçer. Alt adımları geri açmak için T’ye bir kez daha basın.',
+        'En iyi skorlar ve ayarlar yalnızca bu cihazdaki bu tarayıcıda durur. Site verilerini silerseniz kaybolurlar, başka bir cihazda da liste boş başlar.',
+        'iPhone’da “Yükle” düğmesi yoktur. Orada Kugelblitz’i Safari’de Paylaş ve “Ana Ekrana Ekle” ile uygulama olarak kurarsınız.'
+      ],
+      ru: [
+        'Три быстрых толчка опрокидывают стол. Первые два дают «Осторожно», третий TILT: флипперы выключены, пока шар не уйдёт, и бонуса нет.',
+        'Клавиша T переключает физику на шаг из урока 04 Ten Minute Physics, на котором построен Kugelblitz. Тогда быстрые шары проскакивают сквозь флипперы. Повторное нажатие T снова включает подшаги.',
+        'Рекорды и настройки хранятся только в этом браузере на этом устройстве. Если удалить данные сайта, они пропадут, а на другом устройстве таблица начнётся с нуля.',
+        'На iPhone кнопки «Установить» нет. Там Kugelblitz устанавливается как приложение в Safari через «Поделиться» и «На экран „Домой“».'
+      ],
+      hi: [
+        'तीन तेज़ धक्के टेबल को झुका देते हैं। पहले दो पर “सावधान” आता है, तीसरे पर TILT: गेंद जाने तक फ़्लिपर बंद रहते हैं और कोई बोनस नहीं मिलता।',
+        'T कुंजी फ़िज़िक्स को Ten Minute Physics के पाठ 04 के कदम पर ले आती है, जिस पर Kugelblitz बना है। तब तेज़ गेंदें फ़्लिपर के आर-पार निकल जाती हैं। उप-कदम वापस चालू करने के लिए T फिर से दबाएँ।',
+        'सर्वश्रेष्ठ स्कोर और सेटिंग्स सिर्फ़ इसी डिवाइस के इसी ब्राउज़र में रहती हैं। साइट का डेटा मिटाने पर वे चली जाती हैं, और किसी दूसरे डिवाइस पर सूची ख़ाली शुरू होती है।',
+        'iPhone पर “इंस्टॉल करें” बटन नहीं होता। वहाँ Safari में शेयर और “होम स्क्रीन में जोड़ें” से Kugelblitz को ऐप की तरह इंस्टॉल करें।'
+      ],
+      zh: [
+        '连续快速推台三次，球台就会倾斜。前两次会显示“小心”，第三次就是 TILT：在球落下之前挡板都会关闭，也没有奖励。',
+        '按 T 键会把物理切换成 Ten Minute Physics 第 04 课的步长，Kugelblitz 正是基于这一课。这时快速的球会穿过挡板。再按一次 T 就会恢复子步。',
+        '排行榜和设置只保存在这台设备的这个浏览器里。清除网站数据后它们就没了，换一台设备，排行榜也是空的。',
+        'iPhone 上没有“安装”按钮。在那里请用 Safari 的“分享”和“添加到主屏幕”把 Kugelblitz 安装为应用。'
+      ],
+      ja: [
+        '素早く3回揺らすと台が傾きます。最初の2回は「注意」、3回目で TILT になり、ボールが落ちるまでフリッパーが止まり、ボーナスもありません。',
+        'T キーを押すと、物理演算が Kugelblitz のもとになった Ten Minute Physics レッスン04の刻み幅に切り替わり、速いボールがフリッパーをすり抜けるようになります。もう一度 T を押すとサブステップに戻ります。',
+        'ハイスコアと設定は、この端末のこのブラウザにだけ保存されます。サイトのデータを消すとなくなり、別の端末ではリストが空から始まります。',
+        'iPhone には「インストール」ボタンがありません。Safari の共有から「ホーム画面に追加」で Kugelblitz をアプリとして追加します。'
+      ],
+      ko: [
+        '빠르게 세 번 흔들면 테이블이 기울어집니다. 처음 두 번은 ‘조심’이 뜨고, 세 번째에 TILT가 됩니다. 볼이 빠질 때까지 플리퍼가 꺼지고 보너스도 없습니다.',
+        'T 키를 누르면 물리가 Kugelblitz의 바탕인 Ten Minute Physics 레슨 04의 단계 크기로 바뀝니다. 그러면 빠른 볼이 플리퍼를 뚫고 지나갑니다. T를 한 번 더 누르면 하위 단계가 다시 켜집니다.',
+        '순위표와 설정은 이 기기의 이 브라우저에만 저장됩니다. 사이트 데이터를 지우면 사라지고, 다른 기기에서는 목록이 비어 있는 상태로 시작합니다.',
+        'iPhone에는 ‘설치’ 버튼이 없습니다. 그곳에서는 Safari의 공유 → ‘홈 화면에 추가’로 Kugelblitz를 앱으로 설치합니다.'
+      ]
+    },
+    docs: {
+      de: 'https://github.com/Dennismit2n/kugelblitz/blob/main/README.de.md',
+      en: 'https://github.com/Dennismit2n/kugelblitz/blob/main/README.md',
+      es: 'https://github.com/Dennismit2n/kugelblitz/blob/main/README.md',
+      fr: 'https://github.com/Dennismit2n/kugelblitz/blob/main/README.md',
+      it: 'https://github.com/Dennismit2n/kugelblitz/blob/main/README.md',
+      nl: 'https://github.com/Dennismit2n/kugelblitz/blob/main/README.md',
+      pl: 'https://github.com/Dennismit2n/kugelblitz/blob/main/README.md',
+      pt: 'https://github.com/Dennismit2n/kugelblitz/blob/main/README.md',
+      tr: 'https://github.com/Dennismit2n/kugelblitz/blob/main/README.md',
+      ru: 'https://github.com/Dennismit2n/kugelblitz/blob/main/README.md',
+      hi: 'https://github.com/Dennismit2n/kugelblitz/blob/main/README.md',
+      zh: 'https://github.com/Dennismit2n/kugelblitz/blob/main/README.md',
+      ja: 'https://github.com/Dennismit2n/kugelblitz/blob/main/README.md',
+      ko: 'https://github.com/Dennismit2n/kugelblitz/blob/main/README.md'
+    }
+  },
   wingetarium: {
     purpose: {
       de: 'Für alle, die Programme unter Windows mit winget installieren oder wissen wollen, ob es etwas dort überhaupt gibt. Wingetarium zeigt, was im offiziellen Verzeichnis steckt, in welcher Version und mit welchem Befehl es sich installiert. Die Daten liest jeden Morgen ein GitHub-Workflow aus dem Original-Index, dein Browser fragt nur diese Seite ab, nie Microsoft. Installiert wird von hier aus nichts: Du kopierst den Befehl und führst ihn selbst im Terminal aus.',

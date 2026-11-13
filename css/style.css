@@ -90,6 +90,8 @@
      verschiebt, rechnet diese Werte neu — sie sind Prüfnachweis, keine Verzierung.
      Prismatical, Spectroton, Heizwarte, Hourbridge, Follower-Log, Wingetarium und Pocketsum tragen dazu ihren Verlauf
      (Name und Kappe), der Vollton daneben ist nur Anker für Rahmen und Knopf.
+     Kugelblitz trägt den Verlauf nur in der Kappe: sein Name steht hell auf einem
+     Schild mit weißgoldenem Rahmen (Block „Kugelblitz“ weiter unten).
      Fadenkreuz bleibt in beiden Darstellungen schwarz (siehe .tool-card.tool-fadenkreuz);
      --fadenkreuz gilt nur für seinen Abschnitt auf werkstatt.html. Die Kappe von
      Gaming ist Schmuck, keine Schrift, und folgt Dennis' Farben (--gm-1 bis 4). */
@@ -114,6 +116,8 @@
   --hourbridge-flow: linear-gradient(100deg, #7E4B91, #305FA3, #006D51);
   --followerlog: #07501F;
   --followerlog-flow: linear-gradient(100deg, #8E0E14E0, #07501FE0, #8E0E14E0, #07501FE0, #8E0E14E0, #07501FE0);
+  --kugelblitz: #6A5F3B;
+  --kugelblitz-flow: linear-gradient(100deg, #006597, #6352A9, #765C10, #6A5F3B);
   --wingetarium: #0F4C81;
   --wingetarium-flow: linear-gradient(100deg, #0F4C81, #17673F);
   --fadenkreuz: #101512;
@@ -197,6 +201,8 @@
     --hourbridge-flow: linear-gradient(100deg, #B699C1, #8CA7CE, #7EB39D);
     --followerlog: #7FE39B;
     --followerlog-flow: linear-gradient(100deg, #FF9A92E0, #7FE39BE0, #FF9A92E0, #7FE39BE0, #FF9A92E0, #7FE39BE0);
+    --kugelblitz: #F1E4BC;
+    --kugelblitz-flow: linear-gradient(100deg, #75C7FF, #AFA1FF, #C4A964, #F1E4BC);
     --wingetarium: #7CB4E4;
     --wingetarium-flow: linear-gradient(100deg, #7CB4E4, #5BBE8B);
     --fadenkreuz: #33ff88;
@@ -266,6 +272,8 @@
   --hourbridge-flow: linear-gradient(100deg, #B699C1, #8CA7CE, #7EB39D);
   --followerlog: #7FE39B;
   --followerlog-flow: linear-gradient(100deg, #FF9A92E0, #7FE39BE0, #FF9A92E0, #7FE39BE0, #FF9A92E0, #7FE39BE0);
+  --kugelblitz: #F1E4BC;
+  --kugelblitz-flow: linear-gradient(100deg, #75C7FF, #AFA1FF, #C4A964, #F1E4BC);
   --wingetarium: #7CB4E4;
   --wingetarium-flow: linear-gradient(100deg, #7CB4E4, #5BBE8B);
   --fadenkreuz: #33ff88;
@@ -637,6 +645,7 @@ a.brand { text-decoration: none; color: inherit; }
 .tool-heizwarte { --tool: var(--heizwarte); --tool-flow: var(--heizwarte-flow); }
 .tool-hourbridge { --tool: var(--hourbridge); --tool-flow: var(--hourbridge-flow); }
 .tool-followerlog { --tool: var(--followerlog); --tool-flow: var(--followerlog-flow); }
+.tool-kugelblitz { --tool: var(--kugelblitz); --tool-flow: var(--kugelblitz-flow); }
 .tool-wingetarium { --tool: var(--wingetarium); --tool-flow: var(--wingetarium-flow); }
 .tool-fadenkreuz { --tool: var(--fadenkreuz); --tool-flow: var(--fadenkreuz-flow); }
 .tool-pocketsum { --tool: var(--pocketsum); --tool-flow: var(--pocketsum-flow); }
@@ -924,6 +933,58 @@ a.brand { text-decoration: none; color: inherit; }
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+  }
+}
+
+/* Kugelblitz (13.11.2026, Dennis: „Schrift so hell wie die Punktzahl mit
+   weißgoldenem Rahmen“). Die Kappe läuft durch die Farben des Spiels: Eisblau
+   des Blitzes, Lavendel, Gold und Weißgold der Schrauben. Hell steht jeder
+   Stopp im selben Farbton auf 4,61:1 gegen --bg (#006597, #6352A9, #765C10,
+   #6A5F3B; gegen --panel 5,10, gegen den Schleier über dem dunkelsten
+   Aurora-Punkt 4,97). Dunkel sind es die Spielfarben selbst, mindestens
+   7,05:1 (Gold gegen #181F3F). Anker ist das Weißgold: dunkel #F1E4BC
+   (12,68 gegen #181F3F), hell #6A5F3B (4,61 gegen --bg, 4,97 Schleier),
+   Hoher Kontrast hell #625633 (7,25 gegen Weiß, derselbe Wert wie im Spiel).
+   Umgedreht hält dunkel jeder Stopp mindestens 5,29, hell 6,02: kein Eintrag
+   im Umkehr-Block nötig.
+   Der Name trägt keinen Verlauf. Er steht wie die Plakette auf dem Tisch auf
+   einem Schild: dunkle Platte aus dem Spiel (#26254F → #151432, Licht von
+   rechts oben), Rahmen in Weißgold wie die Schrauben (#FFFCEE → #7A6226),
+   vier kleine Schrauben, Schrift #E2E2F6 wie die Punktzahl (11,26 bis
+   13,96:1 auf der Platte). Das Schild bleibt in BEIDEN Darstellungen dunkel,
+   wie die Kachel von Fadenkreuz: Helle Schrift auf heller Kachel gäbe es nicht.
+   Die Schrauben sitzen in der Polsterung, 2 px vom Rahmen; der Text beginnt
+   erst bei 13 px. Auf werkstatt.html trägt der Abschnittsname dasselbe Schild. */
+:is(.tool-card, .wk-tool).tool-kugelblitz :is(.tool-name, .wk-tool-name) {
+  padding: 2px 13px 3px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background:
+    var(--schraube-1) left 2px top 2px / 4.5px 4.5px no-repeat padding-box,
+    var(--schraube-2) right 2px top 2px / 4.5px 4.5px no-repeat padding-box,
+    var(--schraube-3) left 2px bottom 2px / 4.5px 4.5px no-repeat padding-box,
+    var(--schraube-4) right 2px bottom 2px / 4.5px 4.5px no-repeat padding-box,
+    linear-gradient(to bottom left, #26254F, #1C1B3E 50%, #151432) padding-box,
+    linear-gradient(to bottom left, #FFFCEE, #F1E4BC 32%, #C4A964 68%, #7A6226) border-box;
+  color: #E2E2F6;
+  /* Eingeprägt wie der Name auf der Plakette im Spiel: der dunkle Abdruck
+     nach links unten, oben rechts fängt die Kante das Licht. */
+  text-shadow: -0.8px 0.8px 0 rgba(4, 3, 16, 0.75);
+  box-shadow: inset -1px 1px 0 rgba(255, 252, 238, 0.14), -3px 4px 8px -4px rgba(0, 0, 0, 0.55);
+}
+/* Erzwungene Farben (Kontrastdesigns von Windows): Der Browser malt hinter
+   die Schrift eine eigene Fläche, die auf der dunklen Platte als Kasten im
+   Kasten stünde. Dort bleiben nur Rahmen und Schrauben, Grund und Schrift
+   kommen aus dem Design. */
+@media (forced-colors: active) {
+  :is(.tool-card, .wk-tool).tool-kugelblitz :is(.tool-name, .wk-tool-name) {
+    border-color: CanvasText;
+    background:
+      var(--schraube-1) left 2px top 2px / 4.5px 4.5px no-repeat,
+      var(--schraube-2) right 2px top 2px / 4.5px 4.5px no-repeat,
+      var(--schraube-3) left 2px bottom 2px / 4.5px 4.5px no-repeat,
+      var(--schraube-4) right 2px bottom 2px / 4.5px 4.5px no-repeat,
+      Canvas;
   }
 }
 
@@ -1623,6 +1684,7 @@ a.wk-shot-frame:focus-visible { outline-color: var(--tool, var(--accent)); }
   --heizwarte-flow: linear-gradient(var(--heizwarte), var(--heizwarte));
   --hourbridge-flow: linear-gradient(var(--hourbridge), var(--hourbridge));
   --followerlog-flow: linear-gradient(var(--followerlog), var(--followerlog));
+  --kugelblitz-flow: linear-gradient(var(--kugelblitz), var(--kugelblitz));
   --wingetarium-flow: linear-gradient(var(--wingetarium), var(--wingetarium));
   --pocketsum-flow: linear-gradient(var(--pocketsum), var(--pocketsum));
   --gaming-flow: linear-gradient(var(--gaming), var(--gaming));
@@ -1665,6 +1727,7 @@ a.wk-shot-frame:focus-visible { outline-color: var(--tool, var(--accent)); }
   --heizwarte: #005D82;     /* 7,27 */
   --hourbridge: #754387;    /* 7,22 */
   --wingetarium: #0F4C81;   /* 8,86 */
+  --kugelblitz: #625633;    /* 7,25 */
   --craftionary: #00634F;   /* 7,25 */
   --vault: #6C5400;         /* 7,23 */
   --ruestkammer: #8D4200;   /* 7,21 */
@@ -1676,6 +1739,7 @@ a.wk-shot-frame:focus-visible { outline-color: var(--tool, var(--accent)); }
   --heizwarte-flow: linear-gradient(var(--heizwarte), var(--heizwarte));
   --hourbridge-flow: linear-gradient(var(--hourbridge), var(--hourbridge));
   --followerlog-flow: linear-gradient(var(--followerlog), var(--followerlog));
+  --kugelblitz-flow: linear-gradient(var(--kugelblitz), var(--kugelblitz));
   --wingetarium-flow: linear-gradient(var(--wingetarium), var(--wingetarium));
   --pocketsum-flow: linear-gradient(var(--pocketsum), var(--pocketsum));
   --gaming-flow: linear-gradient(var(--gaming), var(--gaming));
@@ -1741,6 +1805,22 @@ a.wk-shot-frame:focus-visible { outline-color: var(--tool, var(--accent)); }
 }
 :root[data-vision="contrast"] .tool-card.tool-fadenkreuz:hover,
 :root[data-vision="contrast"] .tool-card.tool-fadenkreuz:focus-within { border-color: var(--tool); }
+/* Das Namensschild von Kugelblitz wird flach: Grund und Schrift der
+   Darstellung, Rahmen 2 px im Weißgold-Anker (dunkel #F1E4BC 16,6:1 gegen
+   Schwarz, hell #625633 7,25 gegen Weiß), keine Prägung und kein Schatten.
+   Die Schrauben bleiben, wie überall im Hohen Kontrast. */
+:root[data-vision="contrast"] :is(.tool-card, .wk-tool).tool-kugelblitz :is(.tool-name, .wk-tool-name) {
+  border: 2px solid var(--kugelblitz);
+  background:
+    var(--schraube-1) left 2px top 2px / 4.5px 4.5px no-repeat,
+    var(--schraube-2) right 2px top 2px / 4.5px 4.5px no-repeat,
+    var(--schraube-3) left 2px bottom 2px / 4.5px 4.5px no-repeat,
+    var(--schraube-4) right 2px bottom 2px / 4.5px 4.5px no-repeat,
+    var(--bg);
+  color: var(--text);
+  text-shadow: none;
+  box-shadow: none;
+}
 
 /* Farbenblind: Die Startseite trägt keine Bedeutungsfarben. Kachelfarben
    sind Erkennungszeichen, und jede Kachel trägt dazu Namen und Symbol. Hier

@@ -16,7 +16,7 @@
 (function () {
   // Same order as the tiles on the start page.
   // Reihenfolge muss mit den Kacheln in index.html uebereinstimmen
-  // (Dennis' Liste vom 30.10.2026). Die beiden Platzhalter-Kacheln stehen
+  // (Dennis' Liste vom 13.11.2026). Die beiden Platzhalter-Kacheln stehen
   // hier bewusst NICHT: sie haben weder Neuigkeiten noch Anleitung.
   var TOOLS = [
     { key: 'masterprompt', name: 'create-masterprompt', icon: './assets/masterprompt.svg',
@@ -27,6 +27,10 @@
       url: './mods.html', ctaKey: 'openTool' },
     { key: 'ram', name: 'Real_RAM_cooler', icon: './assets/ramcooler.svg',
       url: 'https://github.com/Dennismit2n/Real_RAM_cooler/releases/latest', ctaKey: 'downloadTool' },
+    // Kugelblitz steht wie auf der Startseite auf Platz 4, auf gaming.html
+    // dagegen an erster Stelle; einen Abschnitt gibt es nur einmal.
+    { key: 'kugelblitz', name: 'Kugelblitz', icon: './assets/kugelblitz.svg',
+      url: 'https://dennismit2n.github.io/kugelblitz/', ctaKey: 'openTool' },
     { key: 'wingetarium', name: 'Wingetarium', icon: './assets/wingetarium.svg',
       url: 'https://dennismit2n.github.io/wingetarium/', ctaKey: 'openTool' },
     { key: 'fontart', name: 'fontART Designer', icon: './assets/fontart.svg',
@@ -45,25 +49,25 @@
       url: 'https://dennismit2n.github.io/hourbridge/', ctaKey: 'openTool' },
     { key: 'followerlog', name: 'Follower-Log', icon: './assets/follower-log.svg',
       url: 'https://dennismit2n.github.io/follower-log-vorlage/', ctaKey: 'openTool' },
-    { key: 'pocketsum', name: 'Pocketsum', icon: './assets/pocketsum.svg',
-      url: 'https://dennismit2n.github.io/pocketsum/', ctaKey: 'openTool' },
-    { key: 'zaehlwerk', name: 'Zählwerk', icon: './assets/zaehlwerk.svg',
-      url: 'https://dennismit2n.github.io/zaehlwerk/', ctaKey: 'openTool' },
     { key: 'ticker', name: 'Besucher-Ticker', icon: './assets/besucher-ticker.svg',
       url: 'https://github.com/Dennismit2n/besucher-ticker/releases/latest', ctaKey: 'downloadTool' },
-    { key: 'collective', name: 'Collective-Calc', icon: './assets/collective-calc.svg',
-      url: 'https://dennismit2n.github.io/collective-calc/', ctaKey: 'openTool' },
-    { key: 'rad', name: 'Dreh das Rad', icon: './assets/dreh-das-rad.svg',
-      url: 'https://dennismit2n.github.io/dreh-das-rad/', ctaKey: 'openTool' },
     // Platz der Gaming-Kachel: die drei Spiele-Werkzeuge, die nur auf gaming.html
     // stehen. BL4 und MW4 liegen in diesem Repo (bl4/, mw4/). Fadenkreuz steht
-    // wie auf der Startseite hinter bigday (Dennis' Liste vom 30.10.2026).
+    // wie auf der Startseite hinter bigday (Dennis' Liste vom 13.11.2026).
     { key: 'craftionary', name: 'Craftionary', icon: './assets/craftionary.svg',
       url: 'https://dennismit2n.github.io/craftionary/', ctaKey: 'openTool' },
     { key: 'vault', name: 'BL4 Vault-Handbuch', icon: './assets/bl4.svg',
       url: 'https://dennismit2n.github.io/bl4/', ctaKey: 'openTool' },
     { key: 'ruestkammer', name: 'MW4 Rüstkammer', icon: './assets/mw4.svg',
       url: 'https://dennismit2n.github.io/mw4/', ctaKey: 'openTool' },
+    { key: 'zaehlwerk', name: 'Zählwerk', icon: './assets/zaehlwerk.svg',
+      url: 'https://dennismit2n.github.io/zaehlwerk/', ctaKey: 'openTool' },
+    { key: 'pocketsum', name: 'Pocketsum', icon: './assets/pocketsum.svg',
+      url: 'https://dennismit2n.github.io/pocketsum/', ctaKey: 'openTool' },
+    { key: 'collective', name: 'Collective-Calc', icon: './assets/collective-calc.svg',
+      url: 'https://dennismit2n.github.io/collective-calc/', ctaKey: 'openTool' },
+    { key: 'rad', name: 'Dreh das Rad', icon: './assets/dreh-das-rad.svg',
+      url: 'https://dennismit2n.github.io/dreh-das-rad/', ctaKey: 'openTool' },
     { key: 'bigday', name: 'bigday', icon: './assets/bigday.svg',
       url: 'https://dennismit2n.github.io/bigday/', ctaKey: 'openTool' },
     { key: 'fadenkreuz', name: 'Fadenkreuz', icon: './assets/fadenkreuz.svg',

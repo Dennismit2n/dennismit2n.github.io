@@ -37,7 +37,7 @@
   <!-- Die Überschriftenschrift wird auf jeder Seite und in jeder Sprache gebraucht
        (mindestens für den Markennamen), also früh anstoßen statt erst nach der CSS. -->
   <link rel="preload" href="./assets/fonts/fraunces/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="./css/style.css?v=2026-11-12g">
+  <link rel="stylesheet" href="./css/style.css?v=2026-11-13">
   <!-- Darstellung vor dem ersten Bild: die gemeinsame Wahl aller Werkzeuge
        (werkstatt.darstellung, sonst der alte Schlüssel), sonst entscheidet das
        System per CSS. data-vision trägt Hoher Kontrast, Farbenblind und Umkehr;
@@ -115,10 +115,12 @@
            would announce itself as just "Open". The two placeholder tiles at the
            end carry no link at all, so they need none of this. -->
       <div class="tool-grid">
-        <!-- Reihenfolge nach Dennis' Liste vom 30.10.2026 (18 Kacheln, wieder
-             handverlesen). Sie muss mit der TOOLS-Liste in js/werkstatt.js und der
-             Liste in der README uebereinstimmen; die drei Werkzeuge, die nur auf
-             gaming.html stehen, haben in TOOLS den Platz der Gaming-Kachel. -->
+        <!-- Reihenfolge nach Dennis' Liste vom 13.11.2026 (21 Kacheln, wieder
+             handverlesen: Kugelblitz neu auf Platz 4, Besucher-Ticker direkt hinter
+             Follower-Log, Gaming dahinter, Pocketsum hinter Zählwerk). Sie muss mit
+             der TOOLS-Liste in js/werkstatt.js und der Liste in der README
+             uebereinstimmen; die drei Werkzeuge, die nur auf gaming.html stehen,
+             haben in TOOLS den Platz der Gaming-Kachel. -->
         <!-- Der erste Eintrag, der kein Programm ist, sondern ein Skill fuer
              KI-Chats: nichts zum Oeffnen im Browser, nichts zum Installieren
              unter Windows. Deshalb zeigt der Knopf auf das Repo, und die
@@ -191,6 +193,26 @@
             <a href="./werkstatt.html#ram-bilder" data-count="kachel-ram-bilder" data-i18n="secShots">Screenshots</a>
             <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/Real_RAM_cooler/blob/main/README.de.md" rel="noopener" data-count="kachel-ram-readme" data-i18n="secReadme">README</a>
             <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/Real_RAM_cooler#readme" rel="noopener" data-count="kachel-ram-readme" data-i18n="secReadme">README</a>
+          </span>
+        </div>
+        <!-- Kugelblitz (13.11.2026, Platz 4 nach Dennis' Liste): die Kappe im Verlauf der
+             Spielfarben (Eisblau, Lavendel, Gold, Weißgold), der Name hell wie die
+             Punktzahl im Spiel auf einem Schild mit weißgoldenem Rahmen. Siehe
+             --kugelblitz-flow und den Block „Kugelblitz“ in style.css. -->
+        <div class="tool-card tool-kugelblitz">
+          <span class="tool-head">
+            <img src="./assets/kugelblitz.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-kugelblitz">Kugelblitz</span>
+          </span>
+          <span class="tool-desc" data-i18n="kugelblitzDesc">A pinball game for keys and fingers. Five missions, multiball, high scores and physics that no ball slips through.</span>
+          <span class="tool-meta" data-i18n="kugelblitzMeta">In your browser · 14 languages · no sound, no flashes · offline after the first visit</span>
+          <a class="tool-open" data-count="kachel-kugelblitz" id="open-kugelblitz" aria-labelledby="open-kugelblitz name-kugelblitz" href="https://dennismit2n.github.io/kugelblitz/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="kugelblitz">
+            <a href="./werkstatt.html#kugelblitz-neuigkeiten" data-count="kachel-kugelblitz-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#kugelblitz-anleitung" data-count="kachel-kugelblitz-anleitung" data-i18n="secGuide">Guide</a>
+            <a href="./werkstatt.html#kugelblitz-bilder" data-count="kachel-kugelblitz-bilder" data-i18n="secShots">Screenshots</a>
+            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/kugelblitz/blob/main/README.de.md" rel="noopener" data-count="kachel-kugelblitz-readme" data-i18n="secReadme">README</a>
+            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/kugelblitz#readme" rel="noopener" data-count="kachel-kugelblitz-readme" data-i18n="secReadme">README</a>
           </span>
         </div>
         <!-- Wingetarium: Kappe und Name im Verlauf Index-Blau → Grün („täglich frisch“),
@@ -347,22 +369,40 @@
             <a href="https://github.com/Dennismit2n/follower-log-vorlage#readme" rel="noopener" data-count="kachel-followerlog-readme" data-i18n="secReadme">README</a>
           </span>
         </div>
-        <!-- Pocketsum: neutrale Kachel, die Kappe trägt die fünf Farben der Rechner
-             (siehe --pocketsum-flow in style.css). -->
-        <div class="tool-card tool-pocketsum">
+        <div class="tool-card tool-ticker">
           <span class="tool-head">
-            <img src="./assets/pocketsum.svg" alt="" width="44" height="44">
-            <span class="tool-name" id="name-pocketsum">Pocketsum</span>
+            <img src="./assets/besucher-ticker.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-ticker">Besucher-Ticker</span>
           </span>
-          <span class="tool-desc" data-i18n="pocketsumDesc">Five small calculators in one file: VAT, tips, fuel prices, dividends and trading costs.</span>
-          <span class="tool-meta" data-i18n="pocketsumMeta">Free · no sign-up · offline after the first visit</span>
-          <a class="tool-open" data-count="kachel-pocketsum" id="open-pocketsum" aria-labelledby="open-pocketsum name-pocketsum" href="https://dennismit2n.github.io/pocketsum/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
-          <span class="tool-mini" data-tool="pocketsum">
-            <a href="./werkstatt.html#pocketsum-neuigkeiten" data-count="kachel-pocketsum-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="./werkstatt.html#pocketsum-anleitung" data-count="kachel-pocketsum-anleitung" data-i18n="secGuide">Guide</a>
-            <a href="./werkstatt.html#pocketsum-bilder" data-count="kachel-pocketsum-bilder" data-i18n="secShots">Screenshots</a>
-            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/pocketsum/blob/main/README.de.md" rel="noopener" data-count="kachel-pocketsum-readme" data-i18n="secReadme">README</a>
-            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/pocketsum#readme" rel="noopener" data-count="kachel-pocketsum-readme" data-i18n="secReadme">README</a>
+          <span class="tool-desc" data-i18n="tickerDesc">Your GoatCounter visitor numbers float live on your desktop: pageviews, bars per page, countries or referrers.</span>
+          <span class="tool-meta" data-i18n="tickerMeta">For GoatCounter users · Windows 10/11 · your token stays with you</span>
+          <a class="tool-open" data-count="kachel-ticker" id="open-ticker" aria-labelledby="open-ticker name-ticker" href="https://github.com/Dennismit2n/besucher-ticker/releases/latest" rel="noopener"><span data-i18n="downloadTool">Download</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="ticker">
+            <a href="./werkstatt.html#ticker-neuigkeiten" data-count="kachel-ticker-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="https://dennismit2n.github.io/besucher-ticker-app/" data-count="kachel-ticker-app" data-i18n="secApp">Phone app</a>
+            <a href="./werkstatt.html#ticker-anleitung" data-count="kachel-ticker-anleitung" data-i18n="secGuide">Guide</a>
+            <a href="./werkstatt.html#ticker-bilder" data-count="kachel-ticker-bilder" data-i18n="secShots">Screenshots</a>
+            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/besucher-ticker/blob/main/README.de.md" rel="noopener" data-count="kachel-ticker-readme" data-i18n="secReadme">README</a>
+            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/besucher-ticker#readme" rel="noopener" data-count="kachel-ticker-readme" data-i18n="secReadme">README</a>
+          </span>
+        </div>
+        <!-- Gaming: führt auf die eigene Seite gaming.html (Dennis' Wunsch vom
+             30.10.2026, Gaming getrennt von den übrigen Werkzeugen). Seit 03.11.2026
+             eine Mini-Kachel "Neuigkeiten" (Dennis): Datum des neuesten Eintrags von
+             Craftionary, BL4, MW4 und Fadenkreuz, Sprung auf werkstatt.html#craftionary, die vier stehen dort einzeln.
+             Seit 13.11.2026 zählt Kugelblitz mit (steht auf gaming.html an erster Stelle);
+             sein Abschnitt auf werkstatt.html steht wie hier auf Platz 4. -->
+        <div class="tool-card tool-gaming">
+          <span class="tool-head">
+            <img src="./assets/gaming.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-gaming">Gaming</span>
+          </span>
+          <span class="tool-desc" data-i18n="gamingDesc">Guides, handbooks and tools for gaming: Minecraft, Borderlands 4, Modern Warfare 4, my pinball game Kugelblitz and more to come.</span>
+          <span class="tool-meta" data-i18n="gamingMeta">Its own page · guides and tools · more to come</span>
+          <a class="tool-open" data-count="kachel-gaming" id="open-gaming" aria-labelledby="open-gaming name-gaming" href="./gaming.html"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="kugelblitz craftionary vault ruestkammer fadenkreuz">
+            <a href="./werkstatt.html#craftionary" data-count="kachel-gaming-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="https://github.com/Dennismit2n/dennismit2n.github.io#gaming-page" rel="noopener" data-count="kachel-gaming-readme" data-i18n="secReadme">README</a>
           </span>
         </div>
         <div class="tool-card tool-zaehlwerk">
@@ -381,21 +421,22 @@
             <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/zaehlwerk#readme" rel="noopener" data-count="kachel-zaehlwerk-readme" data-i18n="secReadme">README</a>
           </span>
         </div>
-        <div class="tool-card tool-ticker">
+        <!-- Pocketsum: neutrale Kachel, die Kappe trägt die fünf Farben der Rechner
+             (siehe --pocketsum-flow in style.css). -->
+        <div class="tool-card tool-pocketsum">
           <span class="tool-head">
-            <img src="./assets/besucher-ticker.svg" alt="" width="44" height="44">
-            <span class="tool-name" id="name-ticker">Besucher-Ticker</span>
+            <img src="./assets/pocketsum.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-pocketsum">Pocketsum</span>
           </span>
-          <span class="tool-desc" data-i18n="tickerDesc">Your GoatCounter visitor numbers float live on your desktop: pageviews, bars per page, countries or referrers.</span>
-          <span class="tool-meta" data-i18n="tickerMeta">For GoatCounter users · Windows 10/11 · your token stays with you</span>
-          <a class="tool-open" data-count="kachel-ticker" id="open-ticker" aria-labelledby="open-ticker name-ticker" href="https://github.com/Dennismit2n/besucher-ticker/releases/latest" rel="noopener"><span data-i18n="downloadTool">Download</span> <span class="arrow" aria-hidden="true">→</span></a>
-          <span class="tool-mini" data-tool="ticker">
-            <a href="./werkstatt.html#ticker-neuigkeiten" data-count="kachel-ticker-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="https://dennismit2n.github.io/besucher-ticker-app/" data-count="kachel-ticker-app" data-i18n="secApp">Phone app</a>
-            <a href="./werkstatt.html#ticker-anleitung" data-count="kachel-ticker-anleitung" data-i18n="secGuide">Guide</a>
-            <a href="./werkstatt.html#ticker-bilder" data-count="kachel-ticker-bilder" data-i18n="secShots">Screenshots</a>
-            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/besucher-ticker/blob/main/README.de.md" rel="noopener" data-count="kachel-ticker-readme" data-i18n="secReadme">README</a>
-            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/besucher-ticker#readme" rel="noopener" data-count="kachel-ticker-readme" data-i18n="secReadme">README</a>
+          <span class="tool-desc" data-i18n="pocketsumDesc">Five small calculators in one file: VAT, tips, fuel prices, dividends and trading costs.</span>
+          <span class="tool-meta" data-i18n="pocketsumMeta">Free · no sign-up · offline after the first visit</span>
+          <a class="tool-open" data-count="kachel-pocketsum" id="open-pocketsum" aria-labelledby="open-pocketsum name-pocketsum" href="https://dennismit2n.github.io/pocketsum/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="pocketsum">
+            <a href="./werkstatt.html#pocketsum-neuigkeiten" data-count="kachel-pocketsum-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#pocketsum-anleitung" data-count="kachel-pocketsum-anleitung" data-i18n="secGuide">Guide</a>
+            <a href="./werkstatt.html#pocketsum-bilder" data-count="kachel-pocketsum-bilder" data-i18n="secShots">Screenshots</a>
+            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/pocketsum/blob/main/README.de.md" rel="noopener" data-count="kachel-pocketsum-readme" data-i18n="secReadme">README</a>
+            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/pocketsum#readme" rel="noopener" data-count="kachel-pocketsum-readme" data-i18n="secReadme">README</a>
           </span>
         </div>
         <div class="tool-card tool-collective">
@@ -429,23 +470,6 @@
             <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/dreh-das-rad#readme" rel="noopener" data-count="kachel-rad-readme" data-i18n="secReadme">README</a>
           </span>
         </div>
-        <!-- Gaming: führt auf die eigene Seite gaming.html (Dennis' Wunsch vom
-             30.10.2026, Gaming getrennt von den übrigen Werkzeugen). Seit 03.11.2026
-             eine Mini-Kachel "Neuigkeiten" (Dennis): Datum des neuesten Eintrags von
-             Craftionary, BL4, MW4 und Fadenkreuz, Sprung auf werkstatt.html#craftionary, die vier stehen dort einzeln. -->
-        <div class="tool-card tool-gaming">
-          <span class="tool-head">
-            <img src="./assets/gaming.svg" alt="" width="44" height="44">
-            <span class="tool-name" id="name-gaming">Gaming</span>
-          </span>
-          <span class="tool-desc" data-i18n="gamingDesc">Guides, handbooks and tools for gaming: Minecraft, Borderlands 4, Modern Warfare 4 and more to come.</span>
-          <span class="tool-meta" data-i18n="gamingMeta">Its own page · guides and tools · more to come</span>
-          <a class="tool-open" data-count="kachel-gaming" id="open-gaming" aria-labelledby="open-gaming name-gaming" href="./gaming.html"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
-          <span class="tool-mini" data-tool="craftionary vault ruestkammer fadenkreuz">
-            <a href="./werkstatt.html#craftionary" data-count="kachel-gaming-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
-            <a href="https://github.com/Dennismit2n/dennismit2n.github.io#gaming-page" rel="noopener" data-count="kachel-gaming-readme" data-i18n="secReadme">README</a>
-          </span>
-        </div>
         <div class="tool-card tool-bigday">
           <span class="tool-head">
             <img src="./assets/bigday.svg" alt="" width="44" height="44">
@@ -462,7 +486,7 @@
             <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/bigday#readme" rel="noopener" data-count="kachel-bigday-readme" data-i18n="secReadme">README</a>
           </span>
         </div>
-        <!-- Fadenkreuz steht seit dem 30.10.2026 abends wieder AUCH hier (Platz 16),
+        <!-- Fadenkreuz steht seit dem 30.10.2026 abends wieder AUCH hier (seit 13.11.2026 Platz 21),
              zusaetzlich zu gaming.html. Neongruen, Schwarz, Weiss: die Kachel bleibt
              in beiden Darstellungen schwarz (siehe .tool-card.tool-fadenkreuz in style.css). -->
         <div class="tool-card tool-fadenkreuz">
@@ -535,9 +559,9 @@
      Als eigenes Skript-Tag hielt es das Übersetzen noch eine halbe Sekunde
      auf; main.js holt es deshalb erst danach. data-news trägt die Adresse
      samt ?v=-Stempel. -->
-<script src="./js/i18n.js?v=2026-11-12k" fetchpriority="high"></script>
+<script src="./js/i18n.js?v=2026-11-13" fetchpriority="high"></script>
 <script src="./js/dates.js?v=2026-09-14" fetchpriority="high"></script>
 <script src="./js/header.js?v=2026-11-12h" fetchpriority="high"></script>
-<script src="./js/main.js?v=2026-11-12h" fetchpriority="high" data-news="./js/news.js?v=2026-11-12k"></script>
+<script src="./js/main.js?v=2026-11-12h" fetchpriority="high" data-news="./js/news.js?v=2026-11-13"></script>
 </body>
 </html>
