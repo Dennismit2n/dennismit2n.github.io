@@ -120,6 +120,20 @@ const kopf = (b, h) => `<!doctype html><html lang="de"><head><meta charset="utf-
           mask-composite:intersect, exclude}
   .name{color:var(--tool);text-shadow:0 0 calc(16px * var(--k)) ${mit('var(--tool)', 55)}}
   .name.verlauf{text-shadow:none;background-image:var(--tool-flow);-webkit-background-clip:text;background-clip:text;color:transparent}
+  /* Plakette wie der Name der Kugelblitz-Kachel (css/style.css, seit 13.11.2026):
+   * dunkle Platte aus dem Spiel, Rahmen in Weißgold, vier Schrauben, Schrift so
+   * hell wie die Punktzahl, eingeprägt nach links unten. Maße in em, damit sie mit
+   * jeder Schriftgröße mitwachsen (Kachel: 18,4 px Schrift, 2/13/3 px Polster). */
+  .name.plakette{width:fit-content;color:${MARKE.text};padding:.06em .6em .1em;border:.055em solid transparent;border-radius:.16em;
+          background:
+            ${SCHRAUBEN[0]} left .11em top .11em / .245em .245em no-repeat padding-box,
+            ${SCHRAUBEN[1]} right .11em top .11em / .245em .245em no-repeat padding-box,
+            ${SCHRAUBEN[2]} left .11em bottom .11em / .245em .245em no-repeat padding-box,
+            ${SCHRAUBEN[3]} right .11em bottom .11em / .245em .245em no-repeat padding-box,
+            linear-gradient(to bottom left, #26254F, #1C1B3E 50%, #151432) padding-box,
+            linear-gradient(to bottom left, #FFFCEE, #F1E4BC 32%, #C4A964 68%, #7A6226) border-box;
+          text-shadow:-.045em .045em 0 rgba(4,3,16,.75);
+          box-shadow:inset -.055em .055em 0 rgba(255,252,238,.14),-.16em .22em .44em -.22em rgba(0,0,0,.55)}
   .ikon{filter:drop-shadow(0 0 calc(10px * var(--k)) ${mit('var(--tool)', 62)})}
   .balken{position:absolute;display:flex;border-radius:99px;overflow:hidden}
   .balken span{height:100%}
@@ -156,7 +170,7 @@ function grund(b, h) {
 /* Werkzeugfarbe und -verlauf als Variablen, k als Maßstab der Kachel. */
 const vars = (t, k) => `--tool:${t.farbe};--tool-flow:${fluss(t)};--k:${k}`;
 const kachelStil = (t) => t.kachelGrund ? `background:${t.kachelGrund};border-color:${mit(t.farbe, 40)}` : '';
-const nameKlasse = (t) => `name schild${t.nameFlow ? ' verlauf' : ''}`;
+const nameKlasse = (t) => `name schild${t.nameFlow ? ' verlauf' : ''}${t.namePlakette ? ' plakette' : ''}`;
 
 /* Der 3-Segment-Farbbalken, die Familien-Signatur der Startseite —
  * vorn immer die Farbe des jeweiligen Werkzeugs. */
@@ -185,7 +199,9 @@ function karte(t, f) {
   /* Die Namenslaenge muss mit rein, nicht nur der claimEn-Umbruch:
    * 'create-masterprompt' (19 Zeichen) bricht bei 86*1.16 auf
    * instagram-1080 sonst zweizeilig um. 'fontART Designer' hat genau 16. */
-  const nameGr = (zeilen > 1 || t.name.length > 16 ? 70 : 82) * s;
+  /* Die Plakette bringt Polster und Rahmen mit; in voller Größe drückte sie das
+   * Symbol bis an den Rahmen der Kachel. */
+  const nameGr = (zeilen > 1 || t.name.length > 16 || t.namePlakette ? 70 : 82) * s;
   const k = 2 * s;
   const rand = 56 * s;
   return kopf(f.b, f.h) + `<div class="buehne" style="align-items:center;justify-content:center;padding:${rand}px ${rand}px ${rand + 34 * s}px">
@@ -394,15 +410,17 @@ if (verteilen) {
     for (const f of noetig) {
       const von = join(ZIEL, t.slug, `${f.datei}.png`);
       /* Bilder, die nur GitHub abruft, dürfen bei Projekten mit Bauschritt nicht
-       * in den ausgelieferten Ordner. sozialOrdner überstimmt das dort. */
-      const ordner = (f.inRepo === 'github-social.png' && t.sozialOrdner) || t.assetOrdner;
+       * in den ausgelieferten Ordner. sozialOrdner überstimmt das dort, instaOrdner
+       * ebenso für instagram.png (Kugelblitz: beide nach docs/, wie bei Hourbridge). */
+      const ordner = (f.inRepo === 'github-social.png' && t.sozialOrdner)
+        || (f.inRepo === 'instagram.png' && t.instaOrdner) || t.assetOrdner;
       const nach = join(basis, t.repo, ordner, f.inRepo);
       try {
         await mkdir(dirname(nach), { recursive: true });
         await copyFile(von, nach);
         console.log(`  ${t.repo}/${ordner}/${f.inRepo}`);
       } catch (e) {
-        console.log(`  ÜBERSPRUNGEN ${t.repo}/${t.assetOrdner}/${f.inRepo} — ${e.code}`);
+        console.log(`  ÜBERSPRUNGEN ${t.repo}/${ordner}/${f.inRepo} — ${e.code}`);
       }
     }
   }

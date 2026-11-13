@@ -188,6 +188,10 @@ const ICONS = {
   hourbridge: `<g transform="scale(0.75)"><rect width="64" height="64" rx="16" fill="#131E28"/><path d="M32 12a20 20 0 0 0 0 40Z" fill="#29405A"/><path d="M32 12a20 20 0 0 1 0 40Z" fill="#0F1A2B"/><circle cx="32" cy="32" r="20" fill="none" stroke="#B699C1" stroke-width="3"/><path d="M32 20v12l8 5" fill="none" stroke="#D8D1E2" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="32" r="2.6" fill="#D8D1E2"/></g>`,
   /* wingetarium.svg (Kopie des favicons der App) zeichnet auf 64, hier auf 48 verkleinert. */
   wingetarium: `<g transform="scale(0.75)"><rect width="64" height="64" rx="14" fill="#0E1116"/><path d="M10 50h44" stroke="#2C4A66" stroke-width="3" stroke-linecap="round"/><rect x="13" y="33" width="17" height="15" rx="2" fill="#1B3550" stroke="#74AEE0" stroke-width="2"/><rect x="34" y="33" width="17" height="15" rx="2" fill="#1B3550" stroke="#74AEE0" stroke-width="2"/><path d="M21.5 33v6M42.5 33v6" stroke="#74AEE0" stroke-width="2"/><rect x="23" y="14" width="18" height="17" rx="2" fill="#74AEE0"/><path d="M32 14v7" stroke="#0E1116" stroke-width="2.4"/><path d="M28 24.5l4 4 4-4" fill="none" stroke="#0E1116" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></g>`,
+  /* kugelblitz.svg (das favicon der App) zeichnet auf 64, hier auf 48 verkleinert:
+   * Chromkugel mit Blitz in einer Fassung aus Weißgold. Die erste Fläche ist der
+   * Vollton, darüber der Verlauf der Platte, wie in der Datei der Startseite. */
+  kugelblitz: `<g transform="scale(0.75)"><defs><linearGradient id="kb-p" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#26254F"/><stop offset="1" stop-color="#121128"/></linearGradient><radialGradient id="kb-c" cx=".66" cy=".3" r=".96" fx=".66" fy=".3"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".07" stop-color="#FFFFFF"/><stop offset=".22" stop-color="#BDB8E6"/><stop offset=".5" stop-color="#6E68A4"/><stop offset=".56" stop-color="#26234B"/><stop offset="1" stop-color="#4A4680"/></radialGradient><linearGradient id="kb-g" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFCEE"/><stop offset=".4" stop-color="#F1E4BC"/><stop offset="1" stop-color="#7A6226"/></linearGradient><linearGradient id="kb-b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B9E2FF"/><stop offset=".45" stop-color="#75C7FF"/><stop offset="1" stop-color="#AFA1FF"/></linearGradient></defs><rect width="64" height="64" rx="14" fill="#1C1B3E"/><rect width="64" height="64" rx="14" fill="url(#kb-p)"/><circle cx="32" cy="32" r="23.5" fill="none" stroke="url(#kb-g)" stroke-width="3"/><circle cx="32" cy="32" r="21.5" fill="url(#kb-c)"/><path d="M36.2 12.5 L23.6 33.2 L30.6 33.2 L26.2 51.6 L39.9 28.7 L32.6 28.7 L40.1 12.5 Z" fill="url(#kb-b)" stroke="#F1E4BC" stroke-width="1.3" stroke-linejoin="round"/></g>`,
   /* follower-log.svg zeichnet auf 100, hier auf 48 verkleinert. */
   followerlog: `<g transform="scale(0.48)"><rect width="100" height="100" rx="18" fill="#0f1115"/><circle cx="38.8" cy="38.8" r="10.4" fill="#8fa3c4"/><path d="M19.6 74.8a19.2 19.2 0 0 1 38.4 0z" fill="#8fa3c4"/><rect x="59.6" y="38.4" width="20.8" height="4" fill="#7FE39B"/><rect x="68" y="30" width="4" height="20.8" fill="#7FE39B"/><rect x="59.6" y="60.8" width="20.8" height="4" fill="#FF9A92"/></g>`,
   /* pocketsum.svg hat als einziges ein 44er-Feld; um 2 verschoben sitzt es
@@ -261,6 +265,39 @@ export const TOOLS = [
     /* Windows-App ohne Webseite: og.png und instagram.png hätten dort keinen
      * Abnehmer. Nur die GitHub-Vorschau ist sinnvoll. */
     hatSeite: false,
+  },
+  {
+    /* Eingetragen am 13.11.2026 mit der Kachel (Platz 4, vor Wingetarium).
+     * Farben wie --kugelblitz-flow der Startseite, dunkle Fassung: Eisblau des
+     * Blitzes, Lavendel, Gold und Weißgold der Schrauben; Vollton ist das
+     * Weißgold. Der Name trägt wie auf der Kachel keinen Verlauf, sondern steht
+     * auf einer Plakette (namePlakette in make-bilder.mjs). Claims wie
+     * og:image:alt der App. „offline nach dem ersten Besuch“ wäre als vierte
+     * Zusage wahr, bricht die Zeile auf instagram-1080 aber um; die drei hier
+     * sind das, was diesen Flipper von anderen unterscheidet. */
+    slug: 'kugelblitz',
+    name: 'Kugelblitz',
+    icon: 'kugelblitz',
+    farbe: '#F1E4BC',
+    flow: 'linear-gradient(100deg, #75C7FF, #AFA1FF, #C4A964, #F1E4BC)',
+    namePlakette: true,
+    claimDe: 'Flipper im Browser.',
+    claimEn: 'Pinball in your browser',
+    zusagen: ['Kostenlos', 'ohne Ton', 'ohne Blitze'],
+    url: 'dennismit2n.github.io/kugelblitz',
+    story: [
+      { ober: 'Für zwischendurch', gross: 'Nur noch eine Kugel.', unter: 'Ein ganzer Flippertisch mit Bumpern, Zündkammer und Multiball. Ohne Münzen, ohne Konto, ohne Installation.' },
+      { ober: 'So geht es', gross: 'Abschießen, flippern, aufsteigen.', unter: 'Fünf Missionen bringen dich vom Funken bis zum Kugelblitz. Am Rechner mit Tasten, am Handy mit den Fingern. Kein Ton und kein einziger Blitz.' },
+      { ober: 'Kostenlos & quelloffen', gross: 'Jetzt spielen', unter: 'dennismit2n.github.io/kugelblitz' },
+    ],
+    repo: 'kugelblitz',
+    /* index.html liegt in der Wurzel und verweist auf og.png daneben. Die
+     * beiden Bilder ohne Abnehmer auf der Seite gehen nach docs/ wie bei
+     * Hourbridge: dort ist docs/*.png ignoriert, sie bleiben lokal, und
+     * github-social.png wird von Hand bei GitHub hochgeladen. */
+    assetOrdner: '',
+    sozialOrdner: 'docs',
+    instaOrdner: 'docs',
   },
   {
     /* Eingetragen am 12.11.2026 mit der Kachel (Platz 4, direkt hinter
@@ -820,14 +857,14 @@ export const TOOLS = [
   },
 ];
 
-/* Reihenfolge der Kacheln auf der Startseite (Stand 12.11.2026, index.html),
- * für die Icon-Reihe der Banner. Der Zählwerk Ticker hat keine eigene Kachel. */
+/* Reihenfolge der Kacheln auf der Startseite (Stand 13.11.2026, index.html),
+ * für die Icon-Reihe der Banner. Der Zählwerk Ticker hat keine eigene Kachel,
+ * die Besucher-Ticker App ist nur eine Mini-Kachel. */
 export const KACHELN = [
-  'create-masterprompt', 'werkstatt-mods', 'real-ram-cooler', 'wingetarium', 'fontart-demo',
-  'prismatical', 'spectroton', 'shrinkling', 'wifi-qr', 'heizwarte', 'hourbridge',
-  'follower-log', 'pocketsum',
-  'zaehlwerk', 'besucher-ticker', 'collective-calc', 'dreh-das-rad', 'gaming',
-  'bigday', 'fadenkreuz',
+  'create-masterprompt', 'werkstatt-mods', 'real-ram-cooler', 'kugelblitz', 'wingetarium',
+  'fontart-demo', 'prismatical', 'spectroton', 'shrinkling', 'wifi-qr', 'heizwarte',
+  'hourbridge', 'follower-log', 'besucher-ticker', 'gaming',
+  'zaehlwerk', 'pocketsum', 'collective-calc', 'dreh-das-rad', 'bigday', 'fadenkreuz',
 ];
 
 /* Beschlag der Kacheln wie auf der Startseite (css/style.css, --schraube-1 bis -4,

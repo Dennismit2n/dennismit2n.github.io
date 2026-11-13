@@ -97,7 +97,7 @@ deployed `index.html` can meet a ten-minute-old `i18n.js` and render raw keys in
 
 ## Preview and promo images
 
-`tools/promo/` renders the preview and promo images for the workshop from one shared template: 223 images, ten formats per tool (link preview, GitHub social preview, Instagram, LinkedIn, X, three story cards, Twitch panel, Twitch banner) plus thirteen brand images (avatars and profile banners), in the design of the start page since 30 October 2026. It knows all 20 tiles and pages plus the Zählwerk Ticker. Colours come straight from `css/style.css`, the icons are the same SVGs as the tiles. Everything editable lives in `tools/promo/marke.mjs`; see `tools/promo/README.md`.
+`tools/promo/` renders the preview and promo images for the workshop from one shared template: 253 images, ten formats per tool (link preview, GitHub social preview, Instagram, LinkedIn, X, three story cards, Twitch panel, Twitch banner) plus thirteen brand images (avatars and profile banners), in the design of the start page since 30 October 2026. It knows all 21 tiles and the start page plus the Zählwerk Ticker and the Besucher-Ticker App. Colours come straight from `css/style.css`, the icons are the same SVGs as the tiles. Everything editable lives in `tools/promo/marke.mjs`; see `tools/promo/README.md`.
 
 ## Translations
 

@@ -7,7 +7,7 @@ einer gemeinsamen Vorlage — nicht nur die der Startseite.
 node make-bilder.mjs
 ```
 
-Legt 243 Bilder unter `Bilder/` ab (Zielordner steht oben im Skript): zehn Formate je
+Legt 253 Bilder unter `Bilder/` ab (Zielordner steht oben im Skript): zehn Formate je
 Auftritt plus dreizehn Markenbilder. Seit 02.11.2026 im Design der Startseite vom
 30.10.2026: Aurora mit vier Wolken, Bauplanraster, Fraunces, Inhalt in einer Kachel mit
 Farbkappe. Fraunces kommt aus `assets/fonts/fraunces/` der Startseite.
@@ -19,7 +19,7 @@ python verkleinern.py ../../Bilder
 Verkleinert die PNG ohne sichtbaren Verlust — Palette statt Volltonfarbe, mit gemessener
 Abweichungsgrenze. Beim alten Design sparte das rund 60 %. Die Aurora-Verläufe des neuen
 Designs reißen die Grenze meist, dann bleibt das Bild in Volltonfarbe und wird nur neu
-gepackt: alle 243 Bilder zusammen rund 76 MB statt vorher 13 MB, ein `og.png` rund 200 KB.
+gepackt: alle 253 Bilder zusammen rund 69 MB statt vorher 13 MB, ein `og.png` rund 200 KB.
 
 ```bash
 node make-bilder.mjs --verteilen --ohne-rendern
@@ -34,6 +34,9 @@ Real_RAM_cooler, create-masterprompt, der Zählwerk Ticker, der Besucher-Ticker,
 die Werkstatt-Mods, Hourbridge und die Besucher-Ticker App bekommen nur `github-social.png`. Die ersten sechs haben keine eigene Webseite, `og.png` hätte dort niemanden, der es abruft; Hourbridge und die Besucher-Ticker App zeichnen ihr `og.png` selbst. Bei beiden landet das Bild in `docs/`, wo `*.png` ignoriert ist: es bleibt lokal und wird nur von Hand bei GitHub hochgeladen. fontART bekommt seine drei
 Bilder in die Wurzel des Repos, weil dort auch die ausgelieferte `index.html` liegt. Gaming
 hat kein eigenes Repo (die Seite liegt hier im Startseiten-Repo) und wird nicht verteilt.
+Kugelblitz bekommt `og.png` in die Wurzel, wo seine `index.html` liegt; `github-social.png`
+und `instagram.png` gehen wie bei Hourbridge nach `docs/` (`sozialOrdner` und `instaOrdner`
+in `marke.mjs`), wo `*.png` ignoriert ist.
 
 Der Zielordner je Repo steht als `assetOrdner` in `marke.mjs`. `--verteilen` legt einen
 fehlenden Ordner ohne Rückfrage an. Vor dem Verteilen also nachsehen, ob der Ordner dort
@@ -43,10 +46,14 @@ der ist, auf den `og:image` der Seite zeigt.
 
 Farben (aus `css/style.css` der Startseite übernommen), Namen, Claims, Zusagen, Story-Texte
 und die Formatliste. Wer ein Bild ändern will, ändert dort — nicht im Renderer.
+Sonderfelder für einzelne Auftritte: `kachelGrund` (Fadenkreuz, schwarze Kachel),
+`unterIcons` (Gaming, drei Symbole unter dem Namen) und `namePlakette` (Kugelblitz: der
+Name steht wie auf seiner Kachel auf einem dunklen Schild mit Rahmen und Schrauben in
+Weißgold).
 
 ## Warum als Vorlage und nicht als fertige Grafik
 
-Ändert sich ein Claim, läuft das hier einmal neu, statt dass jemand 243 Bilder nachzieht.
+Ändert sich ein Claim, läuft das hier einmal neu, statt dass jemand 253 Bilder nachzieht.
 Genau der Grund, aus dem `assets/promo.png` der Startseite beim Wechsel der Überschrift
 einmal falsch stehen blieb: der alte Claim war ins Bild eingebrannt.
 
@@ -54,7 +61,7 @@ einmal falsch stehen blieb: der alte Claim war ins Bild eingebrannt.
 
 `collective-calc/tools/promo.html` (versioniert) und `wifi-qr/tools/promo.html`
 (unversioniert) sind die Vorläufer — dort ist der dunkle Familien-Entwurf entstanden, den
-dieser Generator für alle dreiundzwanzig Auftritte fortführt.
+dieser Generator für alle vierundzwanzig Auftritte fortführt.
 
 Dazu kommt `pocketsum/tools/bilder.mjs`: es rendert die Icons und ein `og.png` im alten
 Entwurf. Seit 03.11.2026 liegt dort das `og.png` von hier, der Kopf des Skripts warnt davor.
