@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Werkstatt-Mods · Dennis_mit_2n</title>
-  <meta name="description" content="Ten mods for Claude Code by Dennis_mit_2n: statistics pane, limits band, guard, limit pause, agents pane, handoff, chat inventory, screen guard, switchboard and traffic light, each installed with one line. / Zehn Mods für Claude Code, jeder mit einer Zeile installiert.">
+  <meta name="description" content="Eleven mods for Claude Code by Dennis_mit_2n: statistics pane, limits band, guard, limit pause, agents pane, handoff, chat inventory, screen guard, switchboard, traffic light and sidebar tabs, each installed with one line. / Elf Mods für Claude Code, jeder mit einer Zeile installiert.">
   <link rel="canonical" href="https://dennismit2n.github.io/mods.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Dennis_mit_2n">
   <meta property="og:title" content="Werkstatt-Mods · Dennis_mit_2n">
-  <meta property="og:description" content="Ten mods for Claude Code: statistics pane, limits band, guard, limit pause, agents pane, handoff, chat inventory, screen guard, switchboard and traffic light, each installed with one line.">
+  <meta property="og:description" content="Eleven mods for Claude Code: statistics pane, limits band, guard, limit pause, agents pane, handoff, chat inventory, screen guard, switchboard, traffic light and sidebar tabs, each installed with one line.">
   <meta property="og:url" content="https://dennismit2n.github.io/mods.html">
   <meta property="og:image" content="https://dennismit2n.github.io/assets/og.png">
   <meta property="og:image:width" content="1200">
@@ -66,8 +66,8 @@
     </section>
 
     <section class="mods" aria-labelledby="modsHeading">
-      <h2 id="modsHeading"><img class="mods-icon" src="./assets/mods.svg" alt="" width="34" height="34"> <span data-i18n="modsHeading">The ten mods</span></h2>
-      <p class="mods-intro" data-i18n="modsIntro">A mod is a plugin with a piece of code that Claude Code calls when things happen: a pane beside the chat, a band above the prompt, a rule before a tool call. Mods are early access, you need Claude Code 2.1.287 or newer; I tested with the desktop app on Windows 11. All nine run on your machine and send nothing anywhere.</p>
+      <h2 id="modsHeading"><img class="mods-icon" src="./assets/mods.svg" alt="" width="34" height="34"> <span data-i18n="modsHeading">The eleven mods</span></h2>
+      <p class="mods-intro" data-i18n="modsIntro">A mod is a plugin with a piece of code that Claude Code calls when things happen: a pane beside the chat, a band above the prompt, a rule before a tool call. Mods are early access, you need Claude Code 2.1.287 or newer; I tested with the desktop app on Windows 11. All eleven run on your machine and send nothing anywhere.</p>
 
       <div class="mods-how">
         <h3 data-i18n="modsHowTitle">How a mod gets to you</h3>
@@ -333,11 +333,36 @@
             <p class="mod-source"><a href="https://github.com/Dennismit2n/werkstatt-mods/tree/main/ampel" rel="noopener" data-i18n="modsSource">Source and README on GitHub</a></p>
           </div>
         </details>
+        <details class="mod" id="registerkarten" data-mod="registerkarten" data-commands="/registerkarten, /registerkarten färben, /registerkarten 🟠 Name">
+          <summary>
+            <span class="mod-name">registerkarten</span>
+            <code class="mod-cmd">/registerkarten</code>
+            <span class="mod-chevron" aria-hidden="true">▾</span>
+          </summary>
+          <div class="mod-body">
+            <figure class="mod-shot">
+              <img src="./assets/mods/registerkarten.png" alt="Screenshot of the sidebar with color dots in front of the sections" data-i18n-alt="modRegisterkartenAlt" loading="lazy" onerror="this.closest('figure').hidden=true">
+            </figure>
+            <p data-i18n="modRegisterkartenDesc">Colored tabs for the sidebar in the Code tab: every section of your own gets a color dot by topic in front of its name, like colored tabs in a binder. Blue for web, green for Windows, purple for Claude and mods, orange for games, red for guides. The mod colors new sections by itself and never touches your own choice. /registerkarten shows the legend, “color” adds every missing dot, “🟠 name” colors one by hand.</p>
+            <p class="mod-settings"><strong data-i18n="modsSettingsLabel">Settings</strong>: <span data-i18n="modRegisterkartenSettings">language · autoColor: color new sections automatically · rules: dot and keywords per topic</span></p>
+            <div class="mod-code">
+              <p class="mod-label" data-i18n="modsInstallLabel">Install line for the Claude Code prompt</p>
+              <pre class="mod-line"><code>/plugin install registerkarten --marketplace Dennismit2n/werkstatt-mods</code></pre>
+              <button type="button" class="copy-btn" data-copy="zeile"><span data-i18n="modsCopy">Copy</span></button>
+            </div>
+            <div class="mod-code">
+              <p class="mod-label" data-i18n="modsPromptLabel">Prompt to paste into Claude Code, Claude does the rest</p>
+              <pre class="mod-prompt"><code data-prompt></code></pre>
+              <button type="button" class="copy-btn" data-copy="prompt"><span data-i18n="modsCopy">Copy</span></button>
+            </div>
+            <p class="mod-source"><a href="https://github.com/Dennismit2n/werkstatt-mods/tree/main/registerkarten" rel="noopener" data-i18n="modsSource">Source and README on GitHub</a></p>
+          </div>
+        </details>
       </div>
 
       <div class="mods-all">
-        <h3 data-i18n="modsAllTitle">All ten at once</h3>
-        <p data-i18n="modsAllText">Ten lines, one after the other at the Claude Code prompt. The buttons “Statistics” and “Agents” in the band then open the two panes.</p>
+        <h3 data-i18n="modsAllTitle">All eleven at once</h3>
+        <p data-i18n="modsAllText">Eleven lines, one after the other at the Claude Code prompt. The buttons “Statistics” and “Agents” in the band then open the two panes.</p>
         <div class="mod-code">
           <pre class="mod-line"><code>/plugin install statistik --marketplace Dennismit2n/werkstatt-mods
 /plugin install werkstatt-band --marketplace Dennismit2n/werkstatt-mods
@@ -348,7 +373,8 @@
 /plugin install inventar --marketplace Dennismit2n/werkstatt-mods
 /plugin install sichtschutz --marketplace Dennismit2n/werkstatt-mods
 /plugin install schalttafel --marketplace Dennismit2n/werkstatt-mods
-/plugin install ampel --marketplace Dennismit2n/werkstatt-mods</code></pre>
+/plugin install ampel --marketplace Dennismit2n/werkstatt-mods
+/plugin install registerkarten --marketplace Dennismit2n/werkstatt-mods</code></pre>
           <button type="button" class="copy-btn" data-copy="alle"><span data-i18n="modsCopy">Copy</span></button>
         </div>
         <p class="mod-source"><a href="https://github.com/Dennismit2n/werkstatt-mods" rel="noopener" data-i18n="modsSource">Source and README on GitHub</a></p>
