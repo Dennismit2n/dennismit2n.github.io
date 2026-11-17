@@ -4724,6 +4724,244 @@ var GUIDES = {
       ko: 'https://github.com/Dennismit2n/kugelblitz/blob/main/README.md'
     }
   },
+  streckenblitz: {
+    purpose: {
+      de: 'Für alle, die zwischendurch ein paar Runden drehen wollen: am Rechner mit Tasten oder Gamepad, am Handy und Tablet mit den Fingern. Streckenblitz ist ein Formelrennen mit Blick von hinter dem Auto, auf einem kleinen Pixelraster mit vollen Farben, wie die frühen Rennspiele, nur in der Abenddämmerung und ohne einen einzigen Blitz. Drei Strecken, sieben Gegner mit eigenem Fahrstil und ein Zeitfahren mit Rekord je Strecke. In den Einstellungen gibt es dieselben Sehhilfen wie überall in der Werkstatt. Dein Browser merkt sich nur Sprache, Ton, Strecke, Darstellung und deine Bestzeiten.',
+      en: 'For anyone who wants to drive a few laps in between: on a computer with keys or a gamepad, on phones and tablets with your fingers. Streckenblitz is a formula racer seen from behind the car, on a small pixel grid in full colour, like the early racing games, only at dusk and without a single flash. Three tracks, seven rivals with their own driving styles and a time trial with a record per track. The settings have the same vision aids as everywhere in the workshop. Your browser only remembers the language, sound, track, appearance and your best times.',
+      es: 'Para quien quiere dar unas vueltas de vez en cuando: en el ordenador con teclado o mando, en el móvil y la tableta con los dedos. Streckenblitz es una carrera de fórmula vista desde detrás del coche, en una pequeña rejilla de píxeles a todo color, como los primeros juegos de carreras, solo que al atardecer y sin un solo destello. Tres circuitos, siete rivales con su propio estilo y una contrarreloj con récord por circuito. En los ajustes están las mismas ayudas visuales que en todo el taller. Tu navegador solo recuerda el idioma, el sonido, el circuito, la apariencia y tus mejores tiempos.',
+      fr: 'Pour tous ceux qui veulent faire quelques tours entre deux choses : sur ordinateur au clavier ou à la manette, sur téléphone et tablette avec les doigts. Streckenblitz est une course de formule vue de derrière la voiture, sur une petite grille de pixels en pleines couleurs, comme les premiers jeux de course, mais au crépuscule et sans un seul flash. Trois circuits, sept rivaux au style bien à eux et un contre-la-montre avec un record par circuit. Les réglages offrent les mêmes aides visuelles que partout dans l’atelier. Votre navigateur ne retient que la langue, le son, le circuit, l’apparence et vos meilleurs temps.',
+      it: 'Per chi vuole fare qualche giro ogni tanto: sul computer con tastiera o gamepad, su telefono e tablet con le dita. Streckenblitz è una corsa di formula vista da dietro l’auto, su una piccola griglia di pixel a colori pieni, come i primi giochi di corse, solo al crepuscolo e senza un solo lampo. Tre circuiti, sette avversari con il loro stile di guida e una prova a tempo con record per circuito. Nelle impostazioni ci sono gli stessi aiuti visivi di tutto il laboratorio. Il tuo browser ricorda solo lingua, suono, circuito, aspetto e i tuoi tempi migliori.',
+      nl: 'Voor iedereen die tussendoor een paar rondjes wil rijden: op de computer met toetsen of een gamepad, op telefoon en tablet met je vingers. Streckenblitz is een formulerace gezien van achter de auto, op een klein pixelraster met volle kleuren, zoals de vroege racegames, alleen in de schemering en zonder één flits. Drie circuits, zeven tegenstanders met een eigen rijstijl en een tijdrit met een record per circuit. In de instellingen staan dezelfde kijkhulpen als overal in de werkplaats. Je browser onthoudt alleen taal, geluid, circuit, weergave en je beste tijden.',
+      pl: 'Dla każdego, kto chce przejechać kilka okrążeń w przerwie: na komputerze klawiszami albo padem, na telefonie i tablecie palcami. Streckenblitz to wyścig formuły widziany zza auta, na małej siatce pikseli w pełnych kolorach, jak dawne gry wyścigowe, tylko o zmierzchu i bez ani jednego błysku. Trzy tory, siedmiu rywali z własnym stylem jazdy i jazda na czas z rekordem dla każdego toru. W ustawieniach są te same pomoce wzrokowe co w całym warsztacie. Twoja przeglądarka zapamiętuje tylko język, dźwięk, tor, wygląd i twoje najlepsze czasy.',
+      pt: 'Para quem quer dar umas voltas de vez em quando: no computador com teclado ou controle, no celular e no tablet com os dedos. Streckenblitz é uma corrida de fórmula vista de trás do carro, em uma pequena grade de pixels com cores cheias, como os primeiros jogos de corrida, só que ao entardecer e sem um único flash. Três pistas, sete rivais com estilo próprio e um contra o relógio com recorde por pista. Nos ajustes estão os mesmos recursos visuais de toda a oficina. Seu navegador guarda apenas o idioma, o som, a pista, a aparência e seus melhores tempos.',
+      tr: 'Arada birkaç tur atmak isteyen herkes için: bilgisayarda klavye ya da gamepad ile, telefonda ve tablette parmaklarla. Streckenblitz, aracın arkasından görülen bir formül yarışıdır; küçük bir piksel ızgarasında, tam renklerle, ilk yarış oyunları gibi, ama alacakaranlıkta ve tek bir flaş olmadan. Üç pist, her biri kendi tarzında süren yedi rakip ve her pist için rekorlu zamana karşı modu. Ayarlarda atölyenin her yerindeki görme yardımları var. Tarayıcınız yalnızca dili, sesi, pisti, görünümü ve en iyi sürelerinizi hatırlar.',
+      ru: 'Для всех, кто хочет между делом проехать пару кругов: на компьютере клавишами или геймпадом, на телефоне и планшете пальцами. Streckenblitz это гонка формулы с видом из-за машины, на маленькой пиксельной сетке и в полном цвете, как первые гоночные игры, только в сумерках и без единой вспышки. Три трассы, семь соперников со своим стилем езды и заезд на время с рекордом для каждой трассы. В настройках есть те же помощники для зрения, что и во всей мастерской. Браузер запоминает только язык, звук, трассу, оформление и ваши лучшие времена.',
+      hi: 'उन सबके लिए जो बीच बीच में कुछ लैप लगाना चाहते हैं: कंप्यूटर पर कीबोर्ड या गेमपैड से, फ़ोन और टैबलेट पर उँगलियों से। Streckenblitz एक फ़ॉर्मूला रेस है जिसमें नज़ारा कार के पीछे से है, छोटे पिक्सेल ग्रिड पर पूरे रंगों में, शुरुआती रेसिंग गेम जैसा, बस शाम के धुंधलके में और बिना एक भी चमक के। तीन ट्रैक, अपने अपने अंदाज़ वाले सात प्रतिद्वंद्वी और हर ट्रैक के रिकॉर्ड वाला टाइम ट्रायल। सेटिंग्स में पूरी वर्कशॉप जैसी ही देखने की सहायता है। आपका ब्राउज़र सिर्फ़ भाषा, आवाज़, ट्रैक, थीम और आपके सबसे अच्छे समय याद रखता है।',
+      zh: '适合想在空闲时跑几圈的人：电脑上用键盘或手柄，手机和平板上用手指。Streckenblitz 是一款从车后视角看的方程式赛车，画面是小小的像素网格，色彩饱满，像早期的赛车游戏，只是在黄昏里，而且没有一次闪光。三条赛道、七名驾驶风格各异的对手，还有每条赛道都记录成绩的计时赛。设置里有和整个工作室一样的视觉辅助。浏览器只会记住语言、声音、赛道、外观和你的最佳成绩。',
+      ja: 'ちょっとした合間に何周か走りたい人のために。パソコンならキーかゲームパッド、スマホやタブレットなら指で遊べます。Streckenblitz は車の後ろから見るフォーミュラレースで、小さなピクセルの画面を豊かな色で描いています。昔のレースゲームのようで、ただし夕暮れの中、フラッシュは一度もありません。3つのコース、走り方の違うライバル7台、そしてコースごとに記録が残るタイムアタック。設定には工房のどこでも同じ見やすさの設定があります。ブラウザが覚えるのは言語、サウンド、コース、外観、ベストタイムだけです。',
+      ko: '틈틈이 몇 바퀴 달리고 싶은 분을 위한 게임입니다. 컴퓨터에서는 키보드나 게임패드로, 휴대폰과 태블릿에서는 손가락으로 합니다. Streckenblitz는 차 뒤에서 보는 포뮬러 레이스로, 작은 픽셀 화면을 풍부한 색으로 그렸습니다. 초창기 레이싱 게임 같지만, 해 질 녘에 달리고 번쩍임은 한 번도 없습니다. 트랙 세 개, 저마다 운전 스타일이 다른 라이벌 7명, 트랙마다 기록이 남는 타임 트라이얼이 있습니다. 설정에는 작업실 어디서나 같은 보기 도움 기능이 있습니다. 브라우저는 언어, 소리, 트랙, 테마, 최고 기록만 기억합니다.'
+    },
+    shots: [
+      {
+        files: {
+          de: ['streckenblitz-de.webp', 1440, 900],
+          en: ['streckenblitz-en.webp', 1440, 900]
+        },
+        alt: {
+          de: 'Streckenblitz am Rechner im Rennen auf Möwenkap in der Abenddämmerung: vorn der eigene petrolfarbene Formelwagen, davor ein roter Gegner und weiter vorn der Pulk, links und rechts Palmen unter violettem Himmel. Oben links Platz 7/8 und Runde 1/3, oben rechts die Zeit 0:05,1, unten links die Streckenkarte und daneben 305 km/h mit dem Akku-Balken, ganz unten die Tastenhilfe.',
+          en: 'Streckenblitz on a computer, racing on Möwenkap at dusk: in front your own teal formula car, ahead of it a red rival and further on the pack, palms on both sides under a violet sky. Top left position 7/8 and lap 1/3, top right the time 0:05.1, bottom left the track map and next to it 305 km/h with the battery bar, at the very bottom the key help.',
+          es: 'Streckenblitz en el ordenador, en carrera en Möwenkap al atardecer: delante tu propio coche de fórmula color petróleo, por delante un rival rojo y más lejos el pelotón, palmeras a ambos lados bajo un cielo violeta. Arriba a la izquierda Pos 7/8 y Lap 1/3, arriba a la derecha el tiempo 0:05.1, abajo a la izquierda el mapa del circuito y al lado 305 km/h con la barra Battery, y abajo del todo la ayuda de teclas. La interfaz de la imagen está en inglés.',
+          fr: 'Streckenblitz sur ordinateur, en course à Möwenkap au crépuscule : devant, votre propre formule bleu pétrole, plus loin un rival rouge puis le peloton, des palmiers des deux côtés sous un ciel violet. En haut à gauche Pos 7/8 et Lap 1/3, en haut à droite le temps 0:05.1, en bas à gauche la carte du circuit et à côté 305 km/h avec la barre Battery, tout en bas l’aide des touches. L’interface de l’image est en anglais.',
+          it: 'Streckenblitz sul computer, in gara a Möwenkap al crepuscolo: davanti la tua formula color petrolio, più avanti un avversario rosso e poi il gruppo, palme ai due lati sotto un cielo viola. In alto a sinistra Pos 7/8 e Lap 1/3, in alto a destra il tempo 0:05.1, in basso a sinistra la mappa del circuito e accanto 305 km/h con la barra Battery, in fondo l’aiuto dei tasti. L’interfaccia nell’immagine è in inglese.',
+          nl: 'Streckenblitz op de computer, in een race op Möwenkap in de schemering: vooraan je eigen petrolblauwe formulewagen, daarvoor een rode tegenstander en verderop het peloton, palmen aan beide kanten onder een violette lucht. Linksboven Pos 7/8 en Lap 1/3, rechtsboven de tijd 0:05.1, linksonder de circuitkaart en daarnaast 305 km/h met de balk Battery, helemaal onderaan de toetsenhulp. De interface in de afbeelding is Engels.',
+          pl: 'Streckenblitz na komputerze, wyścig na Möwenkap o zmierzchu: z przodu twój własny bolid w kolorze petrol, przed nim czerwony rywal, a dalej peleton, po obu stronach palmy pod fioletowym niebem. W lewym górnym rogu Pos 7/8 i Lap 1/3, w prawym górnym czas 0:05.1, w lewym dolnym mapa toru, obok 305 km/h z paskiem Battery, na samym dole pomoc klawiszy. Interfejs na obrazku jest po angielsku.',
+          pt: 'Streckenblitz no computador, correndo em Möwenkap ao entardecer: na frente o seu carro de fórmula cor de petróleo, adiante um rival vermelho e mais longe o pelotão, palmeiras dos dois lados sob um céu violeta. No canto superior esquerdo Pos 7/8 e Lap 1/3, no superior direito o tempo 0:05.1, no inferior esquerdo o mapa da pista e ao lado 305 km/h com a barra Battery, e bem embaixo a ajuda de teclas. A interface na imagem está em inglês.',
+          tr: 'Bilgisayarda Streckenblitz, alacakaranlıkta Möwenkap’ta yarış: önde kendi petrol mavisi formül aracınız, onun önünde kırmızı bir rakip ve daha ileride grup, iki yanda mor gökyüzü altında palmiyeler. Sol üstte Pos 7/8 ve Lap 1/3, sağ üstte 0:05.1 süresi, sol altta pist haritası ve yanında Battery çubuğuyla 305 km/h, en altta tuş yardımı. Görseldeki arayüz İngilizcedir.',
+          ru: 'Streckenblitz на компьютере, гонка на Möwenkap в сумерках: впереди ваша машина цвета морской волны, перед ней красный соперник, дальше группа, по обеим сторонам пальмы под фиолетовым небом. Вверху слева Pos 7/8 и Lap 1/3, вверху справа время 0:05.1, внизу слева карта трассы, рядом 305 km/h с полоской Battery, в самом низу подсказка по клавишам. Интерфейс на снимке на английском.',
+          hi: 'कंप्यूटर पर Streckenblitz, शाम के धुंधलके में Möwenkap पर रेस: सामने आपकी अपनी पेट्रोल नीले रंग की फ़ॉर्मूला कार, उसके आगे एक लाल प्रतिद्वंद्वी और और आगे बाकी कारें, दोनों ओर बैंगनी आसमान के नीचे ताड़ के पेड़। ऊपर बाईं ओर Pos 7/8 और Lap 1/3, ऊपर दाईं ओर समय 0:05.1, नीचे बाईं ओर ट्रैक का नक्शा और उसके पास Battery पट्टी के साथ 305 km/h, सबसे नीचे कुंजियों की मदद। चित्र में इंटरफ़ेस अंग्रेज़ी में है।',
+          zh: '电脑上的 Streckenblitz，在黄昏的 Möwenkap 比赛：最前面是你自己的青绿色方程式赛车，前方有一辆红色对手，更远处是车群，两侧是紫色天空下的棕榈树。左上角是 Pos 7/8 和 Lap 1/3，右上角是时间 0:05.1，左下角是赛道地图，旁边是 305 km/h 和 Battery 电量条，最下面是按键提示。图中界面为英文。',
+          ja: 'パソコン版 Streckenblitz、夕暮れの Möwenkap でのレース。手前に自分のティール色のフォーミュラカー、その先に赤いライバル、さらに先に集団、両側には紫の空の下にヤシの木。左上に Pos 7/8 と Lap 1/3、右上にタイム 0:05.1、左下にコースマップ、その横に 305 km/h と Battery のバー、いちばん下にキーの説明があります。画像の画面は英語です。',
+          ko: '컴퓨터의 Streckenblitz, 해 질 녘 Möwenkap에서의 레이스입니다. 앞쪽에 내 청록색 포뮬러 카, 그 앞에 빨간 라이벌, 더 멀리 무리가 있고, 양쪽에는 보랏빛 하늘 아래 야자수가 서 있습니다. 왼쪽 위에 Pos 7/8과 Lap 1/3, 오른쪽 위에 시간 0:05.1, 왼쪽 아래에 트랙 지도와 그 옆에 Battery 막대와 함께 305 km/h, 맨 아래에 키 안내가 있습니다. 그림 속 화면은 영어입니다.'
+        }
+      },
+      {
+        files: {
+          de: ['streckenblitz-handy-de.webp', 1688, 780],
+          en: ['streckenblitz-handy-en.webp', 1688, 780]
+        },
+        alt: {
+          de: 'Streckenblitz auf dem Handy quer im selben Rennen auf Möwenkap: links unten die Lenkzone mit Kugel und zwei Pfeilen, rechts die Knöpfe Bremse und Gas, über dem Gas der Knopf Turbo. Oben links der Pausenknopf, daneben Platz 7/8, Runde 1/3 und darunter 306 km/h mit dem Akku, oben rechts die Zeit 0:05,1 mit letzter und bester Runde, darunter die Streckenkarte.',
+          en: 'Streckenblitz on a phone held sideways, same race on Möwenkap: bottom left the steering zone with a ball and two arrows, on the right the buttons Brake and Gas, above Gas the Boost button. Top left the pause button, next to it Pos 7/8, Lap 1/3 and below 305 km/h with the battery, top right the time 0:05.1 with last and best lap, below it the track map.',
+          es: 'Streckenblitz en el móvil en horizontal, la misma carrera en Möwenkap: abajo a la izquierda la zona de dirección con una bola y dos flechas, a la derecha los botones Brake y Gas, encima de Gas el botón Boost. Arriba a la izquierda el botón de pausa, al lado Pos 7/8, Lap 1/3 y debajo 305 km/h con la batería, arriba a la derecha el tiempo 0:05.1 con la última y la mejor vuelta, y debajo el mapa del circuito. La interfaz de la imagen está en inglés.',
+          fr: 'Streckenblitz sur téléphone à l’horizontale, même course à Möwenkap : en bas à gauche la zone de direction avec une bille et deux flèches, à droite les boutons Brake et Gas, au-dessus de Gas le bouton Boost. En haut à gauche le bouton pause, à côté Pos 7/8, Lap 1/3 et dessous 305 km/h avec la batterie, en haut à droite le temps 0:05.1 avec le dernier et le meilleur tour, dessous la carte du circuit. L’interface de l’image est en anglais.',
+          it: 'Streckenblitz sul telefono in orizzontale, stessa gara a Möwenkap: in basso a sinistra la zona di sterzo con una sfera e due frecce, a destra i pulsanti Brake e Gas, sopra Gas il pulsante Boost. In alto a sinistra il pulsante pausa, accanto Pos 7/8, Lap 1/3 e sotto 305 km/h con la batteria, in alto a destra il tempo 0:05.1 con ultimo e miglior giro, sotto la mappa del circuito. L’interfaccia nell’immagine è in inglese.',
+          nl: 'Streckenblitz op een telefoon die dwars ligt, dezelfde race op Möwenkap: linksonder de stuurzone met een bol en twee pijlen, rechts de knoppen Brake en Gas, boven Gas de knop Boost. Linksboven de pauzeknop, daarnaast Pos 7/8, Lap 1/3 en eronder 305 km/h met de accu, rechtsboven de tijd 0:05.1 met laatste en beste ronde, daaronder de circuitkaart. De interface in de afbeelding is Engels.',
+          pl: 'Streckenblitz na telefonie trzymanym poziomo, ten sam wyścig na Möwenkap: w lewym dolnym rogu strefa skrętu z kulką i dwiema strzałkami, po prawej przyciski Brake i Gas, nad Gas przycisk Boost. W lewym górnym rogu przycisk pauzy, obok Pos 7/8, Lap 1/3, a pod nimi 305 km/h z baterią, w prawym górnym czas 0:05.1 z ostatnim i najlepszym okrążeniem, pod nim mapa toru. Interfejs na obrazku jest po angielsku.',
+          pt: 'Streckenblitz no celular na horizontal, a mesma corrida em Möwenkap: no canto inferior esquerdo a zona de direção com uma bola e duas setas, à direita os botões Brake e Gas, acima de Gas o botão Boost. No canto superior esquerdo o botão de pausa, ao lado Pos 7/8, Lap 1/3 e abaixo 305 km/h com a bateria, no superior direito o tempo 0:05.1 com a última e a melhor volta, e abaixo o mapa da pista. A interface na imagem está em inglês.',
+          tr: 'Yan tutulmuş telefonda Streckenblitz, Möwenkap’taki aynı yarış: sol altta top ve iki okla direksiyon alanı, sağda Brake ve Gas düğmeleri, Gas’ın üstünde Boost düğmesi. Sol üstte duraklatma düğmesi, yanında Pos 7/8, Lap 1/3 ve altında bataryayla 305 km/h, sağ üstte son ve en iyi turla 0:05.1 süresi, altında pist haritası. Görseldeki arayüz İngilizcedir.',
+          ru: 'Streckenblitz на телефоне в горизонтальном положении, та же гонка на Möwenkap: внизу слева зона руля с шариком и двумя стрелками, справа кнопки Brake и Gas, над Gas кнопка Boost. Вверху слева кнопка паузы, рядом Pos 7/8, Lap 1/3, под ними 305 km/h с зарядом, вверху справа время 0:05.1 с последним и лучшим кругом, под ним карта трассы. Интерфейс на снимке на английском.',
+          hi: 'फ़ोन को आड़ा पकड़कर Streckenblitz, Möwenkap पर वही रेस: नीचे बाईं ओर गेंद और दो तीरों वाला स्टीयरिंग क्षेत्र, दाईं ओर Brake और Gas बटन, Gas के ऊपर Boost बटन। ऊपर बाईं ओर विराम बटन, उसके पास Pos 7/8, Lap 1/3 और नीचे बैटरी के साथ 305 km/h, ऊपर दाईं ओर आख़िरी और सबसे अच्छे लैप के साथ समय 0:05.1, उसके नीचे ट्रैक का नक्शा। चित्र में इंटरफ़ेस अंग्रेज़ी में है।',
+          zh: '横屏手机上的 Streckenblitz，同一场 Möwenkap 比赛：左下角是带一个圆球和两个箭头的转向区，右侧是 Brake 和 Gas 按钮，Gas 上方是 Boost 按钮。左上角是暂停按钮，旁边是 Pos 7/8、Lap 1/3，下面是 305 km/h 和电量，右上角是时间 0:05.1 以及上一圈和最佳圈，下面是赛道地图。图中界面为英文。',
+          ja: '横向きのスマホで遊ぶ Streckenblitz、Möwenkap での同じレース。左下にボールと2つの矢印があるハンドル操作エリア、右に Brake と Gas のボタン、Gas の上に Boost のボタン。左上にポーズボタン、その横に Pos 7/8、Lap 1/3、その下にバッテリーと 305 km/h、右上に前の周とベストの周つきのタイム 0:05.1、その下にコースマップがあります。画像の画面は英語です。',
+          ko: '가로로 든 휴대폰의 Streckenblitz, Möwenkap에서의 같은 레이스입니다. 왼쪽 아래에 공과 화살표 두 개가 있는 핸들 영역, 오른쪽에 Brake와 Gas 버튼, Gas 위에 Boost 버튼이 있습니다. 왼쪽 위에 일시정지 버튼, 그 옆에 Pos 7/8, Lap 1/3, 아래에 배터리와 305 km/h, 오른쪽 위에 이전 랩과 최고 랩이 붙은 시간 0:05.1, 그 아래에 트랙 지도가 있습니다. 그림 속 화면은 영어입니다.'
+        }
+      }
+    ],
+    steps: {
+      de: [
+        'Streckenblitz öffnen und in der Streckenwahl eine der drei Strecken nehmen: Möwenkap, Mondsenke oder Tannenjoch. Darunter wählst du „Rennen“ gegen sieben Gegner oder „Zeitfahren“ allein, dazu 3 oder 5 Runden, dann „Los“. Mit Tasten geht das auch: Enter startet, ← → wählt die Strecke, R und Z den Modus, 3 und 5 die Runden. Das Spiel startet stumm, „Ton aus“ oder die Taste T schaltet den Ton ein.',
+        'Gas gibst du mit ↑ oder W, du bremst mit ↓, S oder der Leertaste und lenkst mit ← → oder A D. Am Gamepad lenken linker Stick oder Steuerkreuz, rechter Trigger oder A gibt Gas, linker Trigger oder B bremst. Am Handy hältst du es quer: links liegt die Lenkzone, die Stelle deines Fingers lenkt, rechts liegen „Gas“, „Bremse“ und „Turbo“. Wer zu schnell in die Kurve geht, den trägt die Fliehkraft ins Gras.',
+        'Unter dem Tempo steht der Akku. Bremsen lädt ihn, Rollen ohne Gas ein wenig, Gas nie. Ab einem Viertel Ladung zünden E oder Umschalt, RB am Gamepad oder der Knopf „Turbo“ drei Sekunden Schub. Pause gibt es mit Esc, P, Start oder dem Knopf oben links. Am Ende siehst du Platz, Zeit und beste Runde je Fahrer, und die Bestzeit im Zeitfahren steht danach in der Streckenwahl.'
+      ],
+      en: [
+        'Open Streckenblitz and pick one of the three tracks in the track selection: Möwenkap, Mondsenke or Tannenjoch. Below it you choose “Race” against seven rivals or “Time trial” on your own, plus 3 or 5 laps, then “Go”. Keys work too: Enter starts, ← → picks the track, R and Z the mode, 3 and 5 the laps. The game starts silent, “Sound off” or the T key turns the sound on.',
+        'You accelerate with ↑ or W, brake with ↓, S or Space and steer with ← → or A D. On a gamepad the left stick or D-pad steers, the right trigger or A accelerates, the left trigger or B brakes. On a phone, hold it sideways: the steering zone is on the left, where your finger rests is where you steer, and “Gas”, “Brake” and “Boost” sit on the right. Take a corner too fast and the centrifugal force carries you into the grass.',
+        'The battery sits below the speed. Braking charges it, rolling without throttle a little, the throttle never. From a quarter charge, E or Shift, RB on a gamepad or the “Boost” button fire three seconds of extra push. Pause with Esc, P, Start or the button at the top left. At the end you see position, time and best lap for every driver, and your time trial best then shows up in the track selection.'
+      ],
+      es: [
+        'Abre Streckenblitz y elige uno de los tres circuitos: Möwenkap, Mondsenke o Tannenjoch. Debajo eliges «Carrera» contra siete rivales o «Contrarreloj» en solitario, además de 3 o 5 vueltas, y luego «Salir». También va con teclas: Enter arranca, ← → elige el circuito, R y Z el modo, 3 y 5 las vueltas. El juego empieza en silencio, «Sin sonido» o la tecla T activan el sonido.',
+        'Aceleras con ↑ o W, frenas con ↓, S o espacio y giras con ← → o A D. Con mando gira el stick izquierdo o la cruceta, el gatillo derecho o A acelera, el gatillo izquierdo o B frena. En el móvil, ponlo en horizontal: a la izquierda está la zona de dirección, donde apoyas el dedo es hacia donde giras, y a la derecha están «Gas», «Freno» y «Turbo». Si entras demasiado rápido en una curva, la fuerza centrífuga te saca a la hierba.',
+        'Bajo la velocidad está la batería. Frenar la carga, rodar sin acelerar un poco, acelerar nunca. Desde un cuarto de carga, E o Mayús, RB en el mando o el botón «Turbo» dan tres segundos de empuje. La pausa va con Esc, P, Start o el botón de arriba a la izquierda. Al final ves posición, tiempo y mejor vuelta de cada piloto, y tu mejor tiempo de contrarreloj aparece luego en la elección de circuito.'
+      ],
+      fr: [
+        'Ouvrez Streckenblitz et choisissez l’un des trois circuits : Möwenkap, Mondsenke ou Tannenjoch. En dessous, vous choisissez « Course » contre sept rivaux ou « Contre-la-montre » seul, puis 3 ou 5 tours, et « Départ ». Au clavier aussi : Entrée lance, ← → choisit le circuit, R et Z le mode, 3 et 5 les tours. Le jeu démarre en silence, « Son coupé » ou la touche T active le son.',
+        'Vous accélérez avec ↑ ou Z, freinez avec ↓, S ou Espace et dirigez avec ← → ou Q D. À la manette, le stick gauche ou la croix dirige, la gâchette droite ou A accélère, la gâchette gauche ou B freine. Sur téléphone, tenez-le à l’horizontale : à gauche la zone de direction, l’endroit où se pose votre doigt donne la direction, à droite « Gaz », « Frein » et « Turbo ». Qui prend un virage trop vite part dans l’herbe, emporté par la force centrifuge.',
+        'Sous la vitesse se trouve la batterie. Freiner la recharge, rouler sans gaz un peu, accélérer jamais. Dès un quart de charge, E ou Maj, RB à la manette ou le bouton « Turbo » donnent trois secondes de poussée. La pause se fait avec Échap, P, Start ou le bouton en haut à gauche. À l’arrivée, vous voyez position, temps et meilleur tour de chaque pilote, et votre meilleur temps en contre-la-montre apparaît ensuite dans le choix du circuit.'
+      ],
+      it: [
+        'Apri Streckenblitz e scegli uno dei tre circuiti: Möwenkap, Mondsenke o Tannenjoch. Sotto scegli «Gara» contro sette avversari o «Prova a tempo» da solo, poi 3 o 5 giri e infine «Via». Funziona anche con i tasti: Invio parte, ← → sceglie il circuito, R e Z la modalità, 3 e 5 i giri. Il gioco parte senza audio, «Suono spento» o il tasto T accendono il suono.',
+        'Acceleri con ↑ o W, freni con ↓, S o Spazio e sterzi con ← → o A D. Col gamepad sterzano la levetta sinistra o la croce direzionale, il grilletto destro o A accelera, il grilletto sinistro o B frena. Sul telefono tienilo in orizzontale: a sinistra c’è la zona di sterzo, dove appoggi il dito decide la direzione, a destra ci sono «Gas», «Freno» e «Turbo». Chi entra troppo veloce in curva finisce sull’erba, portato fuori dalla forza centrifuga.',
+        'Sotto la velocità c’è la batteria. Frenare la ricarica, andare senza gas un po’, accelerare mai. Da un quarto di carica, E o Maiusc, RB sul gamepad o il pulsante «Turbo» danno tre secondi di spinta. La pausa arriva con Esc, P, Start o il pulsante in alto a sinistra. Alla fine vedi posizione, tempo e miglior giro di ogni pilota, e il tuo miglior tempo nella prova a tempo compare poi nella scelta del circuito.'
+      ],
+      nl: [
+        'Open Streckenblitz en kies in de circuitkeuze een van de drie circuits: Möwenkap, Mondsenke of Tannenjoch. Daaronder kies je ‘Race’ tegen zeven tegenstanders of ‘Tijdrit’ in je eentje, plus 3 of 5 ronden, en dan ‘Start’. Met toetsen gaat het ook: Enter start, ← → kiest het circuit, R en Z de modus, 3 en 5 de ronden. Het spel begint zonder geluid, ‘Geluid uit’ of de toets T zet het geluid aan.',
+        'Gas geef je met ↑ of W, je remt met ↓, S of spatie en stuurt met ← → of A D. Op een gamepad sturen de linkerstick of het D-pad, de rechtertrigger of A geeft gas, de linkertrigger of B remt. Op een telefoon houd je hem dwars: links zit de stuurzone, waar je vinger ligt, stuur je heen, rechts zitten ‘Gas’, ‘Rem’ en ‘Turbo’. Wie te snel een bocht in gaat, wordt door de middelpuntvliedende kracht het gras in gedragen.',
+        'Onder de snelheid staat de accu. Remmen laadt hem op, uitrollen zonder gas een beetje, gas geven nooit. Vanaf een kwart lading geven E of Shift, RB op de gamepad of de knop ‘Turbo’ drie seconden extra duw. Pauzeren doe je met Esc, P, Start of de knop linksboven. Aan het eind zie je plaats, tijd en snelste ronde van elke coureur, en je beste tijdrit staat daarna in de circuitkeuze.'
+      ],
+      pl: [
+        'Otwórz Streckenblitz i wybierz jeden z trzech torów: Möwenkap, Mondsenke albo Tannenjoch. Pod spodem wybierasz „Wyścig” z siedmioma rywalami albo „Jazda na czas” w pojedynkę, do tego 3 lub 5 okrążeń, a potem „Start”. Klawiszami też się da: Enter startuje, ← → wybiera tor, R i Z tryb, 3 i 5 okrążenia. Gra zaczyna bez dźwięku, „Bez dźwięku” albo klawisz T włącza dźwięk.',
+        'Gaz dodajesz ↑ lub W, hamujesz ↓, S lub spacją, a skręcasz ← → lub A D. Na padzie skręca lewa gałka lub krzyżak, prawy spust lub A dodaje gazu, lewy spust lub B hamuje. Telefon trzymaj poziomo: po lewej jest strefa skrętu, tam gdzie położysz palec, tam skręcasz, po prawej są „Gaz”, „Hamulec” i „Turbo”. Kto wjedzie w zakręt za szybko, tego siła odśrodkowa wyniesie na trawę.',
+        'Pod prędkością jest bateria. Hamowanie ją ładuje, toczenie bez gazu trochę, gaz nigdy. Od ćwierci naładowania E lub Shift, RB na padzie albo przycisk „Turbo” dają trzy sekundy dodatkowego ciągu. Pauza to Esc, P, Start albo przycisk w lewym górnym rogu. Na końcu widzisz pozycję, czas i najlepsze okrążenie każdego kierowcy, a twój najlepszy czas z jazdy na czas pojawia się potem przy wyborze toru.'
+      ],
+      pt: [
+        'Abra o Streckenblitz e escolha uma das três pistas: Möwenkap, Mondsenke ou Tannenjoch. Logo abaixo você escolhe «Corrida» contra sete rivais ou «Contra o relógio» sozinho, além de 3 ou 5 voltas, e depois «Largar». Com teclas também dá: Enter larga, ← → escolhe a pista, R e Z o modo, 3 e 5 as voltas. O jogo começa sem som, «Som desligado» ou a tecla T ligam o som.',
+        'Você acelera com ↑ ou W, freia com ↓, S ou espaço e vira com ← → ou A D. No controle, o analógico esquerdo ou o direcional vira, o gatilho direito ou A acelera, o gatilho esquerdo ou B freia. No celular, segure na horizontal: à esquerda fica a zona de direção, onde o dedo encosta é para onde você vira, e à direita ficam «Acelerar», «Frear» e «Turbo». Quem entra rápido demais na curva é levado para a grama pela força centrífuga.',
+        'Abaixo da velocidade fica a bateria. Frear carrega, rodar sem acelerar carrega um pouco, acelerar nunca. A partir de um quarto de carga, E ou Shift, RB no controle ou o botão «Turbo» dão três segundos de empurrão. Pausa com Esc, P, Start ou o botão no canto superior esquerdo. No fim você vê posição, tempo e melhor volta de cada piloto, e seu melhor tempo no contra o relógio aparece depois na escolha da pista.'
+      ],
+      tr: [
+        'Streckenblitz’i açın ve pist seçiminde üç pistten birini alın: Möwenkap, Mondsenke ya da Tannenjoch. Altında yedi rakibe karşı “Yarış” ya da tek başınıza “Zamana karşı” modunu, ayrıca 3 ya da 5 turu seçip “Başla”ya basarsınız. Tuşlarla da olur: Enter başlatır, ← → pisti, R ve Z modu, 3 ve 5 tur sayısını seçer. Oyun sessiz başlar, “Ses kapalı” ya da T tuşu sesi açar.',
+        'Gazı ↑ veya W ile verirsiniz, ↓, S veya boşlukla fren yapar, ← → veya A D ile direksiyonu çevirirsiniz. Gamepad’de sol çubuk veya yön tuşları direksiyondur, sağ tetik veya A gaz verir, sol tetik veya B fren yapar. Telefonu yan tutun: solda direksiyon alanı var, parmağınızın durduğu yer yönü belirler, sağda “Gaz”, “Fren” ve “Turbo” bulunur. Viraja fazla hızlı giren, merkezkaç kuvvetiyle çimlere savrulur.',
+        'Hızın altında batarya durur. Fren onu şarj eder, gazsız yuvarlanmak biraz, gaz asla. Çeyrek şarjdan itibaren E veya Shift, gamepad’de RB ya da “Turbo” düğmesi üç saniyelik itiş verir. Duraklatmak için Esc, P, Start ya da sol üstteki düğme. Sonunda her sürücünün sırasını, süresini ve en iyi turunu görürsünüz, zamana karşı en iyi süreniz de sonra pist seçiminde görünür.'
+      ],
+      ru: [
+        'Откройте Streckenblitz и выберите одну из трёх трасс: Möwenkap, Mondsenke или Tannenjoch. Ниже выберите «Гонка» против семи соперников или «Заезд на время» в одиночку, затем 3 или 5 кругов и «Старт». С клавиатуры тоже можно: Enter стартует, ← → выбирает трассу, R и Z режим, 3 и 5 число кругов. Игра начинается без звука, «Звук выкл.» или клавиша T включают звук.',
+        'Газ ↑ или W, тормоз ↓, S или пробел, руль ← → или A D. На геймпаде рулит левый стик или крестовина, правый курок или A даёт газ, левый курок или B тормозит. Телефон держите горизонтально: слева зона руля, куда положите палец, туда и повернёте, справа кнопки «Газ», «Тормоз» и «Турбо». Кто входит в поворот слишком быстро, того центробежная сила выносит на траву.',
+        'Под скоростью показан заряд. Торможение заряжает батарею, накат без газа немного, газ никогда. С четверти заряда E или Shift, RB на геймпаде или кнопка «Турбо» дают три секунды дополнительной тяги. Пауза: Esc, P, Start или кнопка вверху слева. В конце видны место, время и лучший круг каждого гонщика, а ваш лучший результат в заезде на время потом появляется в выборе трассы.'
+      ],
+      hi: [
+        'Streckenblitz खोलें और ट्रैक चुनाव में तीन में से एक ट्रैक लें: Möwenkap, Mondsenke या Tannenjoch। नीचे सात प्रतिद्वंद्वियों के ख़िलाफ़ “रेस” या अकेले “टाइम ट्रायल” चुनें, साथ में 3 या 5 लैप, फिर “चलो”। कुंजियों से भी होता है: Enter शुरू करता है, ← → ट्रैक चुनता है, R और Z मोड, 3 और 5 लैप। गेम बिना आवाज़ के शुरू होता है, “आवाज़ बंद” या T कुंजी आवाज़ चालू करती है।',
+        'गैस ↑ या W से, ब्रेक ↓, S या स्पेस से और स्टीयरिंग ← → या A D से। गेमपैड पर बायाँ स्टिक या डी पैड मोड़ता है, दायाँ ट्रिगर या A गैस देता है, बायाँ ट्रिगर या B ब्रेक लगाता है। फ़ोन को आड़ा पकड़ें: बाईं ओर स्टीयरिंग क्षेत्र है, जहाँ उँगली रखते हैं उधर कार मुड़ती है, दाईं ओर “गैस”, “ब्रेक” और “टर्बो” हैं। मोड़ में बहुत तेज़ घुसने पर अपकेंद्री बल कार को घास में ले जाता है।',
+        'रफ़्तार के नीचे बैटरी दिखती है। ब्रेक उसे चार्ज करता है, बिना गैस के लुढ़कना थोड़ा, गैस कभी नहीं। एक चौथाई चार्ज से E या Shift, गेमपैड पर RB या “टर्बो” बटन तीन सेकंड का ज़ोर देते हैं। विराम Esc, P, Start या ऊपर बाईं ओर के बटन से। आख़िर में हर ड्राइवर का स्थान, समय और सबसे अच्छा लैप दिखता है, और टाइम ट्रायल का आपका सबसे अच्छा समय बाद में ट्रैक चुनाव में दिखता है।'
+      ],
+      zh: [
+        '打开 Streckenblitz，在赛道选择里挑一条：Möwenkap、Mondsenke 或 Tannenjoch。下面选择对阵七名对手的“比赛”或独自驾驶的“计时赛”，再选 3 或 5 圈，然后点“出发”。用键盘也行：Enter 开始，← → 选赛道，R 和 Z 选模式，3 和 5 选圈数。游戏启动时没有声音，“声音关”按钮或 T 键可以打开声音。',
+        '↑ 或 W 加油门，↓、S 或空格刹车，← → 或 A D 转向。手柄上用左摇杆或方向键转向，右扳机或 A 加速，左扳机或 B 刹车。手机请横着拿：左边是转向区，手指放在哪里就往哪边转，右边是“油门”“刹车”和“涡轮”。弯道进得太快，离心力会把你甩到草地上。',
+        '速度下面是电量。刹车会充电，不踩油门滑行时充一点，踩油门从不充电。电量达到四分之一后，按 E 或 Shift、手柄上的 RB 或“涡轮”按钮，可获得三秒推力。暂停用 Esc、P、Start 或左上角的按钮。结束后能看到每位车手的名次、时间和最快圈，计时赛的最佳成绩之后会显示在赛道选择里。'
+      ],
+      ja: [
+        'Streckenblitz を開き、コース選択で3つのコースから1つを選びます。Möwenkap、Mondsenke、Tannenjoch です。その下で、ライバル7台と走る「レース」か、ひとりで走る「タイムアタック」、それに3周か5周を選び、「スタート」を押します。キーでも操作できます。Enter でスタート、← → でコース、R と Z でモード、3 と 5 で周回数。最初は音が出ません。「サウンド オフ」ボタンか T キーで音が出ます。',
+        'アクセルは ↑ か W、ブレーキは ↓、S かスペース、ハンドルは ← → か A D。ゲームパッドでは左スティックか十字キーでハンドル、右トリガーか A でアクセル、左トリガーか B でブレーキ。スマホは横向きに持ちます。左がハンドル操作エリアで、指を置いた位置の方向に曲がります。右には「アクセル」「ブレーキ」「ブースト」があります。速すぎるままカーブに入ると、遠心力で芝生へ押し出されます。',
+        '速度の下にバッテリーがあります。ブレーキで充電され、アクセルを離して転がると少し充電、アクセルでは充電されません。4分の1以上たまると、E か Shift、ゲームパッドの RB、または「ブースト」ボタンで3秒間加速します。ポーズは Esc、P、Start か左上のボタン。最後に全ドライバーの順位、タイム、ベストラップが表示され、タイムアタックのベストタイムはその後コース選択に表示されます。'
+      ],
+      ko: [
+        'Streckenblitz를 열고 트랙 선택에서 세 트랙 중 하나를 고르세요. Möwenkap, Mondsenke, Tannenjoch입니다. 그 아래에서 라이벌 7명과 겨루는 ‘레이스’나 혼자 달리는 ‘타임 트라이얼’, 그리고 3랩이나 5랩을 고른 뒤 ‘출발’을 누릅니다. 키로도 됩니다. Enter로 출발, ← →로 트랙, R과 Z로 모드, 3과 5로 랩 수를 고릅니다. 게임은 소리 없이 시작하고, ‘소리 끔’ 버튼이나 T 키로 소리를 켭니다.',
+        '가속은 ↑ 또는 W, 브레이크는 ↓, S 또는 스페이스, 핸들은 ← → 또는 A D입니다. 게임패드에서는 왼쪽 스틱이나 방향 패드로 핸들, 오른쪽 트리거나 A로 가속, 왼쪽 트리거나 B로 브레이크입니다. 휴대폰은 가로로 드세요. 왼쪽이 핸들 영역이고 손가락을 둔 쪽으로 돌며, 오른쪽에 ‘가속’, ‘브레이크’, ‘부스트’가 있습니다. 너무 빠르게 커브에 들어가면 원심력이 차를 잔디로 밀어냅니다.',
+        '속도 아래에 배터리가 있습니다. 브레이크를 밟으면 충전되고, 가속 없이 굴러가면 조금, 가속할 때는 전혀 충전되지 않습니다. 4분의 1 이상 차면 E나 Shift, 게임패드의 RB, 또는 ‘부스트’ 버튼으로 3초 동안 힘을 더합니다. 일시정지는 Esc, P, Start 또는 왼쪽 위 버튼입니다. 끝나면 모든 드라이버의 순위, 시간, 최고 랩이 나오고, 타임 트라이얼 최고 기록은 그 뒤 트랙 선택에 표시됩니다.'
+      ]
+    },
+    pitfalls: {
+      de: [
+        'Der Turbo zündet beim Drücken, Halten zündet nicht nach, und erst ab der Startlinie. Unter einem Viertel Akku passiert nichts, danach ruht er zwei Sekunden.',
+        'Hochkant bittet das Spiel darum, das Handy quer zu halten. „Trotzdem spielen“ geht, gebaut ist Streckenblitz aber fürs Querformat, hochkant wird es eng.',
+        'Offline geht es erst nach dem ersten Besuch. Bestzeiten liegen nur in diesem Browser: Wer die Websitedaten löscht, löscht auch die Rekorde.',
+        'Auf dem iPhone gibt es keinen Knopf „Installieren“. Dort richtest du Streckenblitz in Safari über Teilen und „Zum Home-Bildschirm“ als App ein.'
+      ],
+      en: [
+        'The boost fires when you press, holding does not fire it again, and only from the start line on. Below a quarter battery nothing happens, and afterwards it rests for two seconds.',
+        'Held upright, the game asks you to turn the phone sideways. “Play anyway” works, but Streckenblitz is built for landscape and upright it gets cramped.',
+        'Offline only works after the first visit. Best times live in this browser only: clear the site data and the records go with it.',
+        'There is no “Install” button on an iPhone. There you set Streckenblitz up as an app in Safari with Share and “Add to Home Screen”.'
+      ],
+      es: [
+        'El turbo se activa al pulsar, mantenerlo no lo vuelve a activar, y solo a partir de la línea de salida. Con menos de un cuarto de batería no pasa nada, y después descansa dos segundos.',
+        'En vertical, el juego te pide girar el móvil. «Jugar igualmente» funciona, pero Streckenblitz está hecho para horizontal y en vertical todo queda apretado.',
+        'Sin conexión funciona solo tras la primera visita. Los mejores tiempos se guardan solo en este navegador: si borras los datos del sitio, se van los récords.',
+        'En el iPhone no hay botón «Instalar». Allí instalas Streckenblitz como app en Safari con Compartir y «Añadir a pantalla de inicio».'
+      ],
+      fr: [
+        'Le turbo se déclenche à l’appui, le maintenir ne le relance pas, et seulement à partir de la ligne de départ. Sous un quart de batterie, rien ne se passe, et ensuite il se repose deux secondes.',
+        'Tenu à la verticale, le jeu vous demande de tourner le téléphone. « Jouer quand même » fonctionne, mais Streckenblitz est conçu pour le paysage, et à la verticale c’est à l’étroit.',
+        'Le mode hors ligne ne fonctionne qu’après la première visite. Les meilleurs temps restent dans ce navigateur : effacer les données du site efface aussi les records.',
+        'Sur iPhone, il n’y a pas de bouton « Installer ». Vous y installez Streckenblitz comme application dans Safari, avec Partager et « Sur l’écran d’accueil ».'
+      ],
+      it: [
+        'Il turbo parte quando premi, tenerlo premuto non lo riattiva, e solo dalla linea di partenza in poi. Sotto un quarto di batteria non succede nulla, e dopo riposa due secondi.',
+        'In verticale il gioco ti chiede di girare il telefono. «Gioca comunque» funziona, ma Streckenblitz è fatto per l’orizzontale e in verticale lo spazio è stretto.',
+        'Offline funziona solo dopo la prima visita. I tempi migliori restano solo in questo browser: se cancelli i dati del sito, spariscono anche i record.',
+        'Su iPhone non c’è il pulsante «Installa». Lì installi Streckenblitz come app in Safari con Condividi e «Aggiungi alla schermata Home».'
+      ],
+      nl: [
+        'De turbo gaat af bij het indrukken, ingedrukt houden start hem niet opnieuw, en pas vanaf de startlijn. Onder een kwart accu gebeurt er niets, daarna rust hij twee seconden.',
+        'Rechtop gehouden vraagt het spel je de telefoon te draaien. ‘Toch spelen’ kan, maar Streckenblitz is gemaakt voor liggend en rechtop wordt het krap.',
+        'Offline werkt pas na het eerste bezoek. Beste tijden staan alleen in deze browser: wis je de sitegegevens, dan zijn de records ook weg.',
+        'Op een iPhone is er geen knop ‘Installeren’. Daar zet je Streckenblitz als app neer in Safari via Deel en ‘Zet op beginscherm’.'
+      ],
+      pl: [
+        'Turbo odpala się przy naciśnięciu, przytrzymanie nie odpala go ponownie, i dopiero od linii startu. Poniżej ćwierci baterii nic się nie dzieje, a potem odpoczywa dwie sekundy.',
+        'Gdy trzymasz telefon pionowo, gra prosi o obrócenie go. „Graj mimo to” działa, ale Streckenblitz jest zrobiony do poziomu, a w pionie robi się ciasno.',
+        'Offline działa dopiero po pierwszej wizycie. Najlepsze czasy są tylko w tej przeglądarce: kto usunie dane witryny, usunie też rekordy.',
+        'Na iPhonie nie ma przycisku „Zainstaluj”. Tam instalujesz Streckenblitz jako aplikację w Safari przez Udostępnij i „Do ekranu początkowego”.'
+      ],
+      pt: [
+        'O turbo dispara ao apertar, segurar não dispara de novo, e só a partir da linha de largada. Com menos de um quarto de bateria nada acontece, e depois ele descansa dois segundos.',
+        'Na vertical, o jogo pede para virar o celular. «Jogar mesmo assim» funciona, mas o Streckenblitz foi feito para a horizontal e na vertical tudo fica apertado.',
+        'Offline só funciona depois da primeira visita. Os melhores tempos ficam só neste navegador: quem apaga os dados do site apaga também os recordes.',
+        'No iPhone não existe o botão «Instalar». Lá você instala o Streckenblitz como app no Safari, com Compartilhar e «Adicionar à Tela de Início».'
+      ],
+      tr: [
+        'Turbo basınca ateşlenir, basılı tutmak yeniden ateşlemez, ve ancak başlangıç çizgisinden sonra çalışır. Çeyrek bataryanın altında hiçbir şey olmaz, sonrasında iki saniye dinlenir.',
+        'Telefon dik tutulunca oyun yan çevirmenizi ister. “Yine de oyna” çalışır, ama Streckenblitz yatay ekran için yapıldı, dik tutunca yer daralır.',
+        'Çevrimdışı kullanım ancak ilk ziyaretten sonra çalışır. En iyi süreler yalnızca bu tarayıcıda durur: site verilerini silen rekorları da siler.',
+        'iPhone’da “Yükle” düğmesi yoktur. Orada Streckenblitz’i Safari’de Paylaş ve “Ana Ekrana Ekle” ile uygulama olarak kurarsınız.'
+      ],
+      ru: [
+        'Турбо срабатывает при нажатии, удержание не включает его снова, и только после линии старта. При заряде меньше четверти ничего не происходит, а после срабатывания оно две секунды отдыхает.',
+        'Если держать телефон вертикально, игра просит повернуть его. «Всё равно играть» работает, но Streckenblitz сделан для горизонтального экрана, а вертикально становится тесно.',
+        'Офлайн работает только после первого посещения. Лучшие времена хранятся только в этом браузере: если удалить данные сайта, пропадут и рекорды.',
+        'На iPhone кнопки «Установить» нет. Там Streckenblitz устанавливается как приложение в Safari через «Поделиться» и «На экран „Домой“».'
+      ],
+      hi: [
+        'टर्बो दबाते ही चलता है, दबाए रखने से दोबारा नहीं चलता, और सिर्फ़ स्टार्ट लाइन के बाद। एक चौथाई से कम बैटरी पर कुछ नहीं होता, और उसके बाद वह दो सेकंड आराम करता है।',
+        'फ़ोन सीधा पकड़ने पर गेम उसे आड़ा करने को कहता है। “फिर भी खेलो” चलता है, पर Streckenblitz आड़ी स्क्रीन के लिए बना है, सीधे में जगह तंग हो जाती है।',
+        'ऑफ़लाइन सिर्फ़ पहली विज़िट के बाद चलता है। सबसे अच्छे समय सिर्फ़ इसी ब्राउज़र में रहते हैं: साइट का डेटा मिटाने पर रिकॉर्ड भी मिट जाते हैं।',
+        'iPhone पर “इंस्टॉल करें” बटन नहीं होता। वहाँ Safari में शेयर और “होम स्क्रीन में जोड़ें” से Streckenblitz को ऐप की तरह इंस्टॉल करें।'
+      ],
+      zh: [
+        '涡轮在按下时启动，按住不放不会再次启动，而且只有过了起跑线才行。电量不到四分之一时什么也不会发生，启动后会休息两秒。',
+        '竖着拿手机时，游戏会请你把它横过来。“仍然开始玩”也可以，但 Streckenblitz 是为横屏做的，竖屏时会很挤。',
+        '离线只在首次访问后可用。最佳成绩只保存在这个浏览器里：清除网站数据，纪录也会一起消失。',
+        'iPhone 上没有“安装”按钮。在那里请用 Safari 的“分享”和“添加到主屏幕”把 Streckenblitz 安装为应用。'
+      ],
+      ja: [
+        'ブーストは押した瞬間に作動し、押し続けても再作動しません。作動するのはスタートラインを越えてからです。バッテリーが4分の1未満だと何も起きず、作動後は2秒間休みます。',
+        '縦向きに持つと、横向きにするよう案内が出ます。「このまま遊ぶ」でも遊べますが、Streckenblitz は横画面向けに作られていて、縦では窮屈になります。',
+        'オフラインで使えるのは初回アクセスの後だけです。ベストタイムはこのブラウザにしか残りません。サイトのデータを消すと記録も消えます。',
+        'iPhone には「インストール」ボタンがありません。Safari の共有から「ホーム画面に追加」で Streckenblitz をアプリとして追加します。'
+      ],
+      ko: [
+        '부스트는 누르는 순간 켜지고, 계속 누르고 있어도 다시 켜지지 않으며, 출발선을 지난 뒤에만 작동합니다. 배터리가 4분의 1 미만이면 아무 일도 없고, 작동한 뒤에는 2초 동안 쉽니다.',
+        '휴대폰을 세로로 들면 게임이 가로로 돌려 달라고 합니다. ‘그냥 할래’로도 할 수 있지만, Streckenblitz는 가로 화면용이라 세로에서는 비좁아집니다.',
+        '오프라인은 첫 방문 후에만 작동합니다. 최고 기록은 이 브라우저에만 남습니다. 사이트 데이터를 지우면 기록도 함께 사라집니다.',
+        'iPhone에는 ‘설치’ 버튼이 없습니다. 그곳에서는 Safari의 공유 → ‘홈 화면에 추가’로 Streckenblitz를 앱으로 설치합니다.'
+      ]
+    },
+    docs: {
+      de: 'https://github.com/Dennismit2n/streckenblitz/blob/main/README.de.md',
+      en: 'https://github.com/Dennismit2n/streckenblitz/blob/main/README.md',
+      es: 'https://github.com/Dennismit2n/streckenblitz/blob/main/README.md',
+      fr: 'https://github.com/Dennismit2n/streckenblitz/blob/main/README.md',
+      it: 'https://github.com/Dennismit2n/streckenblitz/blob/main/README.md',
+      nl: 'https://github.com/Dennismit2n/streckenblitz/blob/main/README.md',
+      pl: 'https://github.com/Dennismit2n/streckenblitz/blob/main/README.md',
+      pt: 'https://github.com/Dennismit2n/streckenblitz/blob/main/README.md',
+      tr: 'https://github.com/Dennismit2n/streckenblitz/blob/main/README.md',
+      ru: 'https://github.com/Dennismit2n/streckenblitz/blob/main/README.md',
+      hi: 'https://github.com/Dennismit2n/streckenblitz/blob/main/README.md',
+      zh: 'https://github.com/Dennismit2n/streckenblitz/blob/main/README.md',
+      ja: 'https://github.com/Dennismit2n/streckenblitz/blob/main/README.md',
+      ko: 'https://github.com/Dennismit2n/streckenblitz/blob/main/README.md'
+    }
+  },
   anagrammaton: {
     purpose: {
       de: 'Für alle, die mit Wörtern spielen: beim Rätseln, beim Scrabble, auf der Suche nach einem Namen oder aus Neugier, was in einem Wort noch steckt. Anagrammaton stellt deine Buchstaben um und zeigt, welche echten Wörter dabei herauskommen, aus einem Wort, aus einem ganzen Satz oder rückwärts gelesen. Jeder Buchstabe ist eine Kachel mit fester Farbe, so siehst du beim Umstellen, wohin jeder wandert. Es läuft im Browser am Rechner, am Handy und am Tablet. Dein Browser merkt sich nur Sprache und Darstellung, das Wort steht im Link.',

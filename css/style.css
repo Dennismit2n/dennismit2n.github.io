@@ -88,8 +88,8 @@
      Methode: OKLCH bei festem Farbton, Chroma per Bisektion in den Gamut geklemmt,
      Helligkeit per Bisektion auf das Kontrastziel. Wer den Grund oder die Aurora
      verschiebt, rechnet diese Werte neu — sie sind Prüfnachweis, keine Verzierung.
-     Prismatical, Spectroton, Heizwarte, Hourbridge, Follower-Log, Wingetarium, Anagrammaton und Pocketsum tragen dazu
-     ihren Verlauf (Name und Kappe), der Vollton daneben ist nur Anker für Rahmen und Knopf.
+     Prismatical, Spectroton, Heizwarte, Hourbridge, Follower-Log, Wingetarium, Anagrammaton, Streckenblitz und
+     Pocketsum tragen dazu ihren Verlauf (Name und Kappe), der Vollton daneben ist nur Anker für Rahmen und Knopf.
      Kugelblitz trägt den Verlauf nur in der Kappe: sein Name steht hell auf einem
      Schild mit weißgoldenem Rahmen (Block „Kugelblitz“ weiter unten).
      Fadenkreuz bleibt in beiden Darstellungen schwarz (siehe .tool-card.tool-fadenkreuz);
@@ -118,6 +118,8 @@
   --followerlog-flow: linear-gradient(100deg, #8E0E14E0, #07501FE0, #8E0E14E0, #07501FE0, #8E0E14E0, #07501FE0);
   --kugelblitz: #6A5F3B;
   --kugelblitz-flow: linear-gradient(100deg, #006597, #6352A9, #765C10, #6A5F3B);
+  --streckenblitz: #875233;
+  --streckenblitz-flow: linear-gradient(100deg, #4C5E8B, #875233, #6A5E3B);
   --anagrammaton: #B21977;
   --anagrammaton-flow: linear-gradient(100deg, #B21977, #984900, #006F1B, #0061AA);
   --wingetarium: #0F4C81;
@@ -205,6 +207,8 @@
     --followerlog-flow: linear-gradient(100deg, #FF9A92E0, #7FE39BE0, #FF9A92E0, #7FE39BE0, #FF9A92E0, #7FE39BE0);
     --kugelblitz: #F1E4BC;
     --kugelblitz-flow: linear-gradient(100deg, #75C7FF, #AFA1FF, #C4A964, #F1E4BC);
+    --streckenblitz: #CE9272;
+    --streckenblitz-flow: linear-gradient(100deg, #8BA0D0, #CE9272, #F1E4BC);
     --anagrammaton: #FF69B9;
     --anagrammaton-flow: linear-gradient(100deg, #FF69B9, #FF8526, #00C737, #51A9FF);
     --wingetarium: #7CB4E4;
@@ -278,6 +282,8 @@
   --followerlog-flow: linear-gradient(100deg, #FF9A92E0, #7FE39BE0, #FF9A92E0, #7FE39BE0, #FF9A92E0, #7FE39BE0);
   --kugelblitz: #F1E4BC;
   --kugelblitz-flow: linear-gradient(100deg, #75C7FF, #AFA1FF, #C4A964, #F1E4BC);
+  --streckenblitz: #CE9272;
+  --streckenblitz-flow: linear-gradient(100deg, #8BA0D0, #CE9272, #F1E4BC);
   --anagrammaton: #FF69B9;
   --anagrammaton-flow: linear-gradient(100deg, #FF69B9, #FF8526, #00C737, #51A9FF);
   --wingetarium: #7CB4E4;
@@ -652,6 +658,7 @@ a.brand { text-decoration: none; color: inherit; }
 .tool-hourbridge { --tool: var(--hourbridge); --tool-flow: var(--hourbridge-flow); }
 .tool-followerlog { --tool: var(--followerlog); --tool-flow: var(--followerlog-flow); }
 .tool-kugelblitz { --tool: var(--kugelblitz); --tool-flow: var(--kugelblitz-flow); }
+.tool-streckenblitz { --tool: var(--streckenblitz); --tool-flow: var(--streckenblitz-flow); }
 .tool-anagrammaton { --tool: var(--anagrammaton); --tool-flow: var(--anagrammaton-flow); }
 .tool-wingetarium { --tool: var(--wingetarium); --tool-flow: var(--wingetarium-flow); }
 .tool-fadenkreuz { --tool: var(--fadenkreuz); --tool-flow: var(--fadenkreuz-flow); }
@@ -961,6 +968,33 @@ a.brand { text-decoration: none; color: inherit; }
   .tool-anagrammaton .tool-name {
     text-shadow: none;
     background-image: var(--anagrammaton-flow);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+/* Streckenblitz (17.11.2026, Platz 5 hinter Kugelblitz, Dennis' Wahl): Name
+   und Kappe laufen durch die Abenddämmerung des Spiels, Asphaltblau der
+   Platten, gedämpftes Signalorange der Kappen und Weißgold von Blitz und
+   Schrauben. Jeder Stopp liegt im Farbton des Spiels fest (#2C354A, #D58A4E,
+   #F1E4BC; Blau mit Chroma 0,075, Orange auf 50° und Chroma 0,085 gedämpft)
+   und ist per OKLCH auf sein Ziel gerechnet (farbe.mjs der Sehhilfen-Runde).
+   Dunkel (#8BA0D0, #CE9272, #F1E4BC) hält jeder Stopp gegen --panel, --bg
+   und den hellsten Aurora-Punkt (#181F3F) mindestens 6,11:1 (Weißgold 12,68),
+   jeder Punkt dazwischen 5,97. Hell (#4C5E8B, #875233, #6A5E3B) hält jeder
+   Stopp 4,64:1 gegen --bg, gegen --panel 5,14, gegen den Schleier über dem
+   dunkelsten Aurora-Punkt 5,02. Anker ist das Orange, dunkel #CE9272 (gegen
+   Schwarz 7,98, darum erbt Hoher Kontrast dunkel), hell #875233, Hoher
+   Kontrast hell #7F4A2A (7,20 gegen Weiß). Nächste Kachelfarbe dunkel ist
+   create-masterprompt (OKLab 0,087), hell bigday (0,043); unterscheidbar
+   macht es der Verlauf. Umgedreht fiele das Orange
+   dunkel auf 4,27, darum steht es im Umkehr-Block heller (#D49777, 4,60);
+   hell hält umgedreht jeder Stopp mindestens 6,08. */
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .tool-streckenblitz .tool-name {
+    text-shadow: none;
+    background-image: var(--streckenblitz-flow);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -1716,6 +1750,7 @@ a.wk-shot-frame:focus-visible { outline-color: var(--tool, var(--accent)); }
   --hourbridge-flow: linear-gradient(var(--hourbridge), var(--hourbridge));
   --followerlog-flow: linear-gradient(var(--followerlog), var(--followerlog));
   --kugelblitz-flow: linear-gradient(var(--kugelblitz), var(--kugelblitz));
+  --streckenblitz-flow: linear-gradient(var(--streckenblitz), var(--streckenblitz));
   --anagrammaton-flow: linear-gradient(var(--anagrammaton), var(--anagrammaton));
   --wingetarium-flow: linear-gradient(var(--wingetarium), var(--wingetarium));
   --pocketsum-flow: linear-gradient(var(--pocketsum), var(--pocketsum));
@@ -1761,6 +1796,7 @@ a.wk-shot-frame:focus-visible { outline-color: var(--tool, var(--accent)); }
   --wingetarium: #0F4C81;   /* 8,86 */
   --kugelblitz: #625633;    /* 7,25 */
   --anagrammaton: #A7036E;  /* 7,29 */
+  --streckenblitz: #7F4A2A; /* 7,20 */
   --craftionary: #00634F;   /* 7,25 */
   --vault: #6C5400;         /* 7,23 */
   --ruestkammer: #8D4200;   /* 7,21 */
@@ -1773,6 +1809,7 @@ a.wk-shot-frame:focus-visible { outline-color: var(--tool, var(--accent)); }
   --hourbridge-flow: linear-gradient(var(--hourbridge), var(--hourbridge));
   --followerlog-flow: linear-gradient(var(--followerlog), var(--followerlog));
   --kugelblitz-flow: linear-gradient(var(--kugelblitz), var(--kugelblitz));
+  --streckenblitz-flow: linear-gradient(var(--streckenblitz), var(--streckenblitz));
   --anagrammaton-flow: linear-gradient(var(--anagrammaton), var(--anagrammaton));
   --wingetarium-flow: linear-gradient(var(--wingetarium), var(--wingetarium));
   --pocketsum-flow: linear-gradient(var(--pocketsum), var(--pocketsum));
@@ -1907,6 +1944,8 @@ a.wk-shot-frame:focus-visible { outline-color: var(--tool, var(--accent)); }
     --wingetarium-flow: linear-gradient(100deg, #7CB4E4, #60C490);
     --anagrammaton: #FF8EC6;
     --anagrammaton-flow: linear-gradient(100deg, #FF8EC6, #FF9A57, #4FEE61, #65B2FF);
+    --streckenblitz: #D49777;
+    --streckenblitz-flow: linear-gradient(100deg, #8BA0D0, #D49777, #F1E4BC);
   }
 }
 /* Die Meta-Zeile der dunklen Materie (fest #8079a8) käme umgedreht auf 3,47,

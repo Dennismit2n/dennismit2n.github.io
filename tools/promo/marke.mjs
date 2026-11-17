@@ -192,6 +192,10 @@ const ICONS = {
    * Chromkugel mit Blitz in einer Fassung aus Weißgold. Die erste Fläche ist der
    * Vollton, darüber der Verlauf der Platte, wie in der Datei der Startseite. */
   kugelblitz: `<g transform="scale(0.75)"><defs><linearGradient id="kb-p" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#26254F"/><stop offset="1" stop-color="#121128"/></linearGradient><radialGradient id="kb-c" cx=".66" cy=".3" r=".96" fx=".66" fy=".3"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".07" stop-color="#FFFFFF"/><stop offset=".22" stop-color="#BDB8E6"/><stop offset=".5" stop-color="#6E68A4"/><stop offset=".56" stop-color="#26234B"/><stop offset="1" stop-color="#4A4680"/></radialGradient><linearGradient id="kb-g" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFCEE"/><stop offset=".4" stop-color="#F1E4BC"/><stop offset="1" stop-color="#7A6226"/></linearGradient><linearGradient id="kb-b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B9E2FF"/><stop offset=".45" stop-color="#75C7FF"/><stop offset="1" stop-color="#AFA1FF"/></linearGradient></defs><rect width="64" height="64" rx="14" fill="#1C1B3E"/><rect width="64" height="64" rx="14" fill="url(#kb-p)"/><circle cx="32" cy="32" r="23.5" fill="none" stroke="url(#kb-g)" stroke-width="3"/><circle cx="32" cy="32" r="21.5" fill="url(#kb-c)"/><path d="M36.2 12.5 L23.6 33.2 L30.6 33.2 L26.2 51.6 L39.9 28.7 L32.6 28.7 L40.1 12.5 Z" fill="url(#kb-b)" stroke="#F1E4BC" stroke-width="1.3" stroke-linejoin="round"/></g>`,
+  /* streckenblitz.svg (das favicon des Spiels) zeichnet auf 64, hier auf 48 verkleinert:
+   * Abendhimmel, Pixelstraße und Blitz auf gerundeter Platte. Ids mit Vorsatz sb-,
+   * weil die Banner viele Symbole in einem Bild zeigen. */
+  streckenblitz: `<g transform="scale(0.75)"><defs><linearGradient id="sb-himmel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#151530"/><stop offset=".55" stop-color="#2e2040"/><stop offset=".85" stop-color="#5a3040"/><stop offset="1" stop-color="#7c4238"/></linearGradient><radialGradient id="sb-schein" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#c4794a" stop-opacity=".45"/><stop offset="1" stop-color="#c4794a" stop-opacity="0"/></radialGradient><linearGradient id="sb-blitz" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6EBC8"/><stop offset=".5" stop-color="#E9B57C"/><stop offset="1" stop-color="#D58A4E"/></linearGradient><filter id="sb-weich" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1"/></filter><clipPath id="sb-k"><path d="M13 0H51A13 13 0 0 1 64 13V51A13 13 0 0 1 51 64H13A13 13 0 0 1 0 51V13A13 13 0 0 1 13 0Z"/></clipPath></defs><g clip-path="url(#sb-k)"><rect width="64" height="64" rx="13" fill="#0D111B"/><rect x="0" y="0" width="64" height="28" fill="url(#sb-himmel)"/><circle cx="16.64" cy="23.2" r="3.52" fill="#c4794a"/><rect x="0" y="25.333" width="1.333" height="2.667" fill="#1b1d33"/><rect x="1.333" y="24" width="1.333" height="4" fill="#1b1d33"/><rect x="2.667" y="24" width="1.333" height="4" fill="#1b1d33"/><rect x="4" y="24" width="1.333" height="4" fill="#1b1d33"/><rect x="5.333" y="22.667" width="1.333" height="5.333" fill="#1b1d33"/><rect x="6.667" y="22.667" width="1.333" height="5.333" fill="#1b1d33"/><rect x="8" y="22.667" width="1.333" height="5.333" fill="#1b1d33"/><rect x="9.333" y="22.667" width="1.333" height="5.333" fill="#1b1d33"/><rect x="10.667" y="21.333" width="1.333" height="6.667" fill="#1b1d33"/><rect x="12" y="21.333" width="1.333" height="6.667" fill="#1b1d33"/><rect x="13.333" y="21.333" width="1.333" height="6.667" fill="#1b1d33"/><rect x="14.667" y="21.333" width="1.333" height="6.667" fill="#1b1d33"/><rect x="16" y="21.333" width="1.333" height="6.667" fill="#1b1d33"/><rect x="17.333" y="21.333" width="1.333" height="6.667" fill="#1b1d33"/><rect x="18.667" y="21.333" width="1.333" height="6.667" fill="#1b1d33"/><rect x="20" y="21.333" width="1.333" height="6.667" fill="#1b1d33"/><rect x="21.333" y="21.333" width="1.333" height="6.667" fill="#1b1d33"/><rect x="22.667" y="21.333" width="1.333" height="6.667" fill="#1b1d33"/><rect x="24" y="21.333" width="1.333" height="6.667" fill="#1b1d33"/><rect x="25.333" y="21.333" width="1.333" height="6.667" fill="#1b1d33"/><rect x="26.667" y="21.333" width="1.333" height="6.667" fill="#1b1d33"/><rect x="28" y="21.333" width="1.333" height="6.667" fill="#1b1d33"/><rect x="29.333" y="21.333" width="1.333" height="6.667" fill="#1b1d33"/><rect x="30.667" y="22.667" width="1.333" height="5.333" fill="#1b1d33"/><rect x="32" y="22.667" width="1.333" height="5.333" fill="#1b1d33"/><rect x="33.333" y="24" width="1.333" height="4" fill="#1b1d33"/><rect x="34.667" y="24" width="1.333" height="4" fill="#1b1d33"/><rect x="36" y="25.333" width="1.333" height="2.667" fill="#1b1d33"/><rect x="37.333" y="25.333" width="1.333" height="2.667" fill="#1b1d33"/><rect x="38.667" y="25.333" width="1.333" height="2.667" fill="#1b1d33"/><rect x="40" y="26.667" width="1.333" height="1.333" fill="#1b1d33"/><rect x="41.333" y="26.667" width="1.333" height="1.333" fill="#1b1d33"/><rect x="42.667" y="26.667" width="1.333" height="1.333" fill="#1b1d33"/><rect x="44" y="26.667" width="1.333" height="1.333" fill="#1b1d33"/><rect x="45.333" y="26.667" width="1.333" height="1.333" fill="#1b1d33"/><rect x="46.667" y="25.333" width="1.333" height="2.667" fill="#1b1d33"/><rect x="48" y="25.333" width="1.333" height="2.667" fill="#1b1d33"/><rect x="49.333" y="25.333" width="1.333" height="2.667" fill="#1b1d33"/><rect x="50.667" y="24" width="1.333" height="4" fill="#1b1d33"/><rect x="52" y="24" width="1.333" height="4" fill="#1b1d33"/><rect x="53.333" y="24" width="1.333" height="4" fill="#1b1d33"/><rect x="54.667" y="22.667" width="1.333" height="5.333" fill="#1b1d33"/><rect x="56" y="22.667" width="1.333" height="5.333" fill="#1b1d33"/><rect x="57.333" y="22.667" width="1.333" height="5.333" fill="#1b1d33"/><rect x="58.667" y="22.667" width="1.333" height="5.333" fill="#1b1d33"/><rect x="60" y="22.667" width="1.333" height="5.333" fill="#1b1d33"/><rect x="61.333" y="22.667" width="1.333" height="5.333" fill="#1b1d33"/><rect x="62.667" y="22.667" width="1.333" height="5.333" fill="#1b1d33"/><rect x="0" y="28" width="64" height="4" fill="#142127"/><rect x="25.333" y="28" width="13.333" height="4" fill="#5f322d"/><rect x="26.667" y="28" width="10.667" height="4" fill="#292c39"/><rect x="26.667" y="28" width="1.333" height="4" fill="#8f877a"/><rect x="36" y="28" width="1.333" height="4" fill="#8f877a"/><rect x="0" y="32" width="64" height="4" fill="#142127"/><rect x="22.667" y="32" width="18.667" height="4" fill="#5f322d"/><rect x="24" y="32" width="16" height="4" fill="#292c39"/><rect x="24" y="32" width="1.333" height="4" fill="#8f877a"/><rect x="38.667" y="32" width="1.333" height="4" fill="#8f877a"/><rect x="0" y="36" width="64" height="4" fill="#16242a"/><rect x="18.667" y="36" width="26.667" height="4" fill="#6e3a32"/><rect x="20" y="36" width="24" height="4" fill="#2c2f3d"/><rect x="20" y="36" width="1.333" height="4" fill="#8f877a"/><rect x="42.667" y="36" width="1.333" height="4" fill="#8f877a"/><rect x="0" y="40" width="64" height="4" fill="#16242a"/><rect x="14.667" y="40" width="34.667" height="4" fill="#6e3a32"/><rect x="17.333" y="40" width="29.333" height="4" fill="#2c2f3d"/><rect x="17.333" y="40" width="1.333" height="4" fill="#8f877a"/><rect x="45.333" y="40" width="1.333" height="4" fill="#8f877a"/><rect x="0" y="44" width="64" height="4" fill="#142127"/><rect x="12" y="44" width="40" height="4" fill="#5f322d"/><rect x="14.667" y="44" width="34.667" height="4" fill="#292c39"/><rect x="14.667" y="44" width="1.333" height="4" fill="#8f877a"/><rect x="48" y="44" width="1.333" height="4" fill="#8f877a"/><rect x="0" y="48" width="64" height="4" fill="#142127"/><rect x="9.333" y="48" width="45.333" height="4" fill="#5f322d"/><rect x="12" y="48" width="40" height="4" fill="#292c39"/><rect x="12" y="48" width="1.333" height="4" fill="#8f877a"/><rect x="50.667" y="48" width="1.333" height="4" fill="#8f877a"/><rect x="0" y="52" width="64" height="4" fill="#16242a"/><rect x="4" y="52" width="56" height="4" fill="#6e3a32"/><rect x="8" y="52" width="48" height="4" fill="#2c2f3d"/><rect x="8" y="52" width="1.333" height="4" fill="#8f877a"/><rect x="54.667" y="52" width="1.333" height="4" fill="#8f877a"/><rect x="0" y="56" width="64" height="4" fill="#16242a"/><rect x="1.333" y="56" width="61.333" height="4" fill="#6e3a32"/><rect x="5.333" y="56" width="53.333" height="4" fill="#2c2f3d"/><rect x="5.333" y="56" width="1.333" height="4" fill="#8f877a"/><rect x="57.333" y="56" width="1.333" height="4" fill="#8f877a"/><rect x="0" y="60" width="64" height="4" fill="#142127"/><rect x="-2.667" y="60" width="69.333" height="4" fill="#5f322d"/><rect x="2.667" y="60" width="58.667" height="4" fill="#292c39"/><rect x="2.667" y="60" width="1.333" height="4" fill="#8f877a"/><rect x="60" y="60" width="1.333" height="4" fill="#8f877a"/><path d="M36.4 8.3 L23.1 32.9 L30.2 32.9 L24.6 56.3 L41.2 27.6 L33.5 27.6 L41.8 8.3 Z" fill="#000" opacity=".5" transform="translate(-1.3333333333333333 1.6296296296296295)" filter="url(#sb-weich)"/><path d="M36.4 8.3 L23.1 32.9 L30.2 32.9 L24.6 56.3 L41.2 27.6 L33.5 27.6 L41.8 8.3 Z" fill="url(#sb-blitz)" stroke="#F1E4BC" stroke-width="0.9" stroke-linejoin="round"/><path d="M37.3 10.4 L25.8 31.4" stroke="#FFF7DA" stroke-opacity=".5" stroke-width="0.6" stroke-linecap="round"/></g><rect x="0.5" y="0.5" width="63" height="63" rx="12.5" fill="none" stroke="#F1E4BC" stroke-opacity=".3"/></g>`,
   /* anagrammaton.svg (das favicon der App) zeichnet auf 64, hier auf 48 verkleinert:
    * vier Buchstabenkacheln A, N, A, G, die letzte im Flug leicht gedreht. Die
    * Verläufe tragen den Vorsatz ag-, weil die Banner viele Symbole in einem Bild zeigen. */
@@ -298,6 +302,37 @@ export const TOOLS = [
     /* index.html liegt in der Wurzel und verweist auf og.png daneben. Die
      * beiden Bilder ohne Abnehmer auf der Seite gehen nach docs/ wie bei
      * Hourbridge: dort ist docs/*.png ignoriert, sie bleiben lokal, und
+     * github-social.png wird von Hand bei GitHub hochgeladen. */
+    assetOrdner: '',
+    sozialOrdner: 'docs',
+    instaOrdner: 'docs',
+  },
+  {
+    /* Eingetragen am 17.11.2026 abends mit der Kachel (Platz 5, hinter
+     * Kugelblitz, Dennis' Wahl). Farben wie --streckenblitz-flow der Startseite,
+     * dunkle Fassung: Asphaltblau, gedämpftes Signalorange und Weißgold aus der
+     * Abenddämmerung des Spiels, Vollton ist das Orange. Name im Verlauf wie auf
+     * der Kachel. Claims wie og:image:alt des Spiels („Formula racing on a pixel
+     * grid“, „Formelrennen im Pixelraster.“). */
+    slug: 'streckenblitz',
+    name: 'Streckenblitz',
+    icon: 'streckenblitz',
+    farbe: '#CE9272',
+    flow: 'linear-gradient(100deg, #8BA0D0, #CE9272, #F1E4BC)',
+    nameFlow: true,
+    claimDe: 'Formelrennen im Pixelraster.',
+    claimEn: 'Formula racing on a pixel grid',
+    zusagen: ['Kostenlos', 'ohne Blitze', 'offline nach dem ersten Besuch'],
+    url: 'dennismit2n.github.io/streckenblitz',
+    story: [
+      { ober: 'Für zwischendurch', gross: 'Vollgas in die Dämmerung.', unter: 'Drei Strecken, sieben Gegner, bis 342 km/h. Ein Formelrennen im Pixelraster mit vollen Farben, ohne Konto, ohne Installation.' },
+      { ober: 'So geht es', gross: 'Bremsen, laden, zünden.', unter: 'Bremsen lädt den Akku, der E-Turbo gibt drei Sekunden Schub. Am Rechner mit Tasten oder Gamepad, am Handy mit den Fingern. Kein einziger Blitz.' },
+      { ober: 'Kostenlos & quelloffen', gross: 'Jetzt losfahren', unter: 'dennismit2n.github.io/streckenblitz' },
+    ],
+    repo: 'streckenblitz',
+    /* index.html liegt in der Wurzel und verweist auf og.png daneben. Die
+     * beiden Bilder ohne Abnehmer auf der Seite gehen wie bei Kugelblitz nach
+     * docs/: dort ist docs/*.png ignoriert, sie bleiben lokal, und
      * github-social.png wird von Hand bei GitHub hochgeladen. */
     assetOrdner: '',
     sozialOrdner: 'docs',
@@ -892,13 +927,13 @@ export const TOOLS = [
   },
 ];
 
-/* Reihenfolge der Kacheln auf der Startseite (Stand 17.11.2026, index.html),
+/* Reihenfolge der Kacheln auf der Startseite (Stand 17.11.2026 abends, index.html),
  * für die Icon-Reihe der Banner. Der Zählwerk Ticker hat keine eigene Kachel,
  * die Besucher-Ticker App ist nur eine Mini-Kachel. */
 export const KACHELN = [
-  'create-masterprompt', 'werkstatt-mods', 'real-ram-cooler', 'kugelblitz', 'anagrammaton',
-  'wingetarium', 'fontart-demo', 'prismatical', 'spectroton', 'shrinkling', 'wifi-qr',
-  'heizwarte', 'hourbridge', 'follower-log', 'besucher-ticker', 'gaming',
+  'create-masterprompt', 'werkstatt-mods', 'real-ram-cooler', 'kugelblitz', 'streckenblitz',
+  'wingetarium', 'fontart-demo', 'prismatical', 'spectroton', 'anagrammaton', 'shrinkling',
+  'wifi-qr', 'heizwarte', 'hourbridge', 'follower-log', 'besucher-ticker', 'gaming',
   'zaehlwerk', 'pocketsum', 'collective-calc', 'dreh-das-rad', 'bigday', 'fadenkreuz',
 ];
 
