@@ -193,7 +193,7 @@ var I18N = {
     followerlogMeta: 'Free · GitHub template · runs in your own repo · app in German',
     kugelblitzDesc: 'A pinball game for keys and fingers. Five missions, multiball, high scores and physics that no ball slips through.',
     kugelblitzMeta: 'In your browser · 14 languages · no sound, no flashes · offline after the first visit',
-    streckenblitzDesc: 'My formula racer on a pixel grid in full colour. Three tracks at dusk, seven rivals, time trial, brake regeneration and an e-boost.',
+    streckenblitzDesc: 'My formula racer on a pixel grid in full colour. Three tracks at dusk, seven rivals, time trial, brake regeneration and an e‑boost.',
     streckenblitzMeta: 'In your browser · 14 languages · no flashes · offline after the first visit',
     anagrammatonDesc: 'Anagrams, reversals and palindromes. Your letters are coloured tiles that fly to their new places, with Shuffle, Invert and Reverse.',
     anagrammatonMeta: 'In your browser · 14 languages · no cookies · offline after the first visit',
