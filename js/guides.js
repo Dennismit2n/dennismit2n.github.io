@@ -2978,7 +2978,7 @@ var GUIDES = {
     ],
     steps: {
       de: [
-        'Das Setup aus den Releases laden und ausführen. Windows meldet „Unbekannter Herausgeber“, weil die Datei nicht signiert ist. Über „Weitere Informationen“ geht es weiter. „Installation nur für Sie“ braucht keine Adminrechte, Fadenkreuz und Editor lassen sich getrennt wählen.',
+        'Das Setup aus den Releases laden und ausführen. Windows meldet „Unbekannter Herausgeber“, weil die Datei nicht signiert ist. Über „Weitere Informationen“ geht es weiter. „Installation nur für dich“ braucht keine Adminrechte, Fadenkreuz und Editor lassen sich getrennt wählen.',
         '„Fadenkreuz“ starten: In der Bildschirmmitte erscheint ein grünes Kreuz. Strg+Alt+F9 blendet es aus und wieder ein, Strg+Alt+F12 beendet es (genau wie ein zweiter Klick auf die Verknüpfung).',
         'Im „Fadenkreuz-Editor“ zeichnen, einmal „Speichern unter …“ wählen und als fadenkreuz.bmp in Dokumente\\Fadenkreuz speichern. Mit „live“ übernimmt das Kreuz jede Änderung nach spätestens einer Sekunde.'
       ],

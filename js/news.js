@@ -2352,6 +2352,25 @@ var NEWS = {
   ],
   fadenkreuz: [
     {
+      date: '2026-11-17',
+      version: 'v1.2.5',
+      link: 'https://github.com/Dennismit2n/fadenkreuz/releases/tag/v1.2.5',
+      de: 'Bildschirmleser und Testwerkzeuge können die Knöpfe im Editor jetzt auseinanderhalten. Wo dasselbe Wort zweimal steht, nennt der Editor den Ort mit, also „Hintergrund der Vorschau: dunkel“ statt nur „dunkel“, und die fünf Schieberegler haben jetzt Namen wie „Umrandung: Deckkraft“. Sichtbar ändert sich nichts.',
+      en: 'Screen readers and testing tools can now tell the editor’s buttons apart. Where the same word appears twice, the editor names the place too, so “Background of the preview: dark” instead of just “dark”, and the five sliders now have names such as “Outline: Opacity”. Nothing changes visually.',
+      es: 'Los lectores de pantalla y las herramientas de prueba ya distinguen los botones del editor. Donde la misma palabra aparece dos veces, el editor nombra también el lugar, así que «Fondo de la vista previa: oscuro» en vez de solo «oscuro», y los cinco deslizadores tienen ahora nombres como «Contorno: Opacidad». A la vista no cambia nada.',
+      fr: 'Les lecteurs d’écran et les outils de test distinguent désormais les boutons de l’éditeur. Là où le même mot apparaît deux fois, l’éditeur indique aussi l’endroit, donc « Fond de l’aperçu : sombre » au lieu de « sombre » seul, et les cinq curseurs ont maintenant des noms comme « Contour : Opacité ». Rien ne change à l’écran.',
+      it: 'Gli screen reader e gli strumenti di test ora distinguono i pulsanti dell’editor. Dove la stessa parola compare due volte, l’editor indica anche il punto, quindi «Sfondo dell’anteprima: scuro» invece di solo «scuro», e i cinque cursori hanno ora nomi come «Contorno: Opacità». A vista non cambia nulla.',
+      nl: 'Schermlezers en testtools kunnen de knoppen in de editor nu uit elkaar houden. Waar hetzelfde woord twee keer staat, noemt de editor ook de plek, dus ‘Achtergrond van het voorbeeld: donker’ in plaats van alleen ‘donker’, en de vijf schuifregelaars hebben nu namen als ‘Rand: Dekking’. Zichtbaar verandert er niets.',
+      pl: 'Czytniki ekranu i narzędzia testowe odróżniają teraz przyciski edytora. Tam, gdzie to samo słowo występuje dwa razy, edytor podaje też miejsce, czyli „Tło podglądu: ciemne” zamiast samego „ciemne”, a pięć suwaków ma teraz nazwy w rodzaju „Obrys: Krycie”. Na ekranie nic się nie zmienia.',
+      pt: 'Leitores de tela e ferramentas de teste agora distinguem os botões do editor. Onde a mesma palavra aparece duas vezes, o editor diz também o lugar, então «Fundo da prévia: escuro» em vez de só «escuro», e os cinco controles deslizantes agora têm nomes como «Contorno: Opacidade». Visualmente nada muda.',
+      tr: 'Ekran okuyucular ve test araçları düzenleyicinin düğmelerini artık birbirinden ayırabiliyor. Aynı sözcük iki kez geçtiğinde düzenleyici yerini de söylüyor, yani yalnızca “koyu” yerine “Önizlemenin arka planı: koyu”, beş kaydırıcının da artık “Kenarlık: Opaklık” gibi adları var. Görünüşte hiçbir şey değişmiyor.',
+      ru: 'Экранные дикторы и инструменты тестирования теперь различают кнопки редактора. Где одно и то же слово стоит дважды, редактор называет и место, то есть «Фон предпросмотра: тёмный» вместо просто «тёмный», а у пяти ползунков теперь есть названия вроде «Обводка: Непрозрачность». Внешне ничего не меняется.',
+      hi: 'स्क्रीन रीडर और टेस्टिंग टूल अब एडिटर के बटनों को अलग पहचानते हैं। जहाँ एक ही शब्द दो बार आता है, वहाँ एडिटर जगह भी बताता है, यानी सिर्फ़ “गहरा” की जगह “पूर्वावलोकन की पृष्ठभूमि: गहरा”, और पाँचों स्लाइडर के अब “किनारा: अपारदर्शिता” जैसे नाम हैं। दिखने में कुछ नहीं बदलता।',
+      zh: '屏幕阅读器和测试工具现在能分清编辑器里的按钮了。同一个词出现两次的地方，编辑器会一并说出位置，比如“预览背景：深色”，而不只是“深色”；五个滑块现在也有了名字，例如“描边：不透明度”。外观上没有任何变化。',
+      ja: 'スクリーンリーダーやテストツールが、エディターのボタンを区別できるようになりました。同じ言葉が2か所にある場合は場所も読み上げるので、「ダーク」だけでなく「プレビューの背景：ダーク」となり、5つのスライダーにも「縁取り：不透明度」のような名前が付きました。見た目は何も変わりません。',
+      ko: '스크린 리더와 테스트 도구가 이제 에디터의 버튼을 구별할 수 있습니다. 같은 단어가 두 곳에 있으면 위치도 함께 알려 주므로 ‘어둡게’ 대신 ‘미리 보기 배경: 어둡게’가 되고, 다섯 개의 슬라이더에도 ‘테두리: 불투명도’ 같은 이름이 생겼습니다. 보이는 모습은 바뀌지 않습니다.'
+    },
+    {
       date: '2026-11-12',
       version: 'v1.2.4',
       link: 'https://github.com/Dennismit2n/fadenkreuz/releases/tag/v1.2.4',
