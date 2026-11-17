@@ -2333,6 +2333,23 @@ var NEWS = {
   ],
   streckenblitz: [
     {
+      date: '2026-11-18',
+      de: 'Die Kachel hier auf der Startseite sagt jetzt auch, dass du mit Tasten oder Fingern spielst und dass Streckenblitz stumm startet. Am Spiel selbst ändert sich nichts.',
+      en: 'The tile here on the homepage now also says that you play with keys or fingers and that Streckenblitz starts muted. Nothing changes in the game itself.',
+      es: 'La tarjeta de aquí, en la página de inicio, ahora también dice que juegas con teclado o con los dedos y que Streckenblitz empieza sin sonido. En el juego no cambia nada.',
+      fr: 'La tuile ici sur la page d’accueil indique maintenant aussi que vous jouez au clavier ou aux doigts et que Streckenblitz démarre sans son. Rien ne change dans le jeu lui-même.',
+      it: 'La tessera qui nella pagina iniziale ora dice anche che giochi con tastiera o dita e che Streckenblitz parte senza audio. Nel gioco non cambia nulla.',
+      nl: 'De tegel hier op de startpagina zegt nu ook dat je met toetsen of vingers speelt en dat Streckenblitz zonder geluid start. Aan het spel zelf verandert niets.',
+      pl: 'Kafelek tutaj na stronie głównej mówi teraz także, że grasz klawiaturą lub palcami i że Streckenblitz startuje bez dźwięku. W samej grze nic się nie zmienia.',
+      pt: 'O bloco aqui na página inicial agora também diz que você joga com teclado ou dedos e que o Streckenblitz começa sem som. No jogo em si nada muda.',
+      tr: 'Ana sayfadaki kutu artık klavye veya parmakla oynadığını ve Streckenblitz’in sessiz başladığını da söylüyor. Oyunun kendisinde hiçbir şey değişmiyor.',
+      ru: 'Плитка здесь, на главной странице, теперь также сообщает, что играть можно клавиатурой или пальцами и что Streckenblitz запускается без звука. В самой игре ничего не меняется.',
+      hi: 'होम पेज की यह टाइल अब यह भी बताती है कि आप कीबोर्ड या उँगलियों से खेलते हैं और Streckenblitz बिना आवाज़ के शुरू होता है। खेल में कुछ नहीं बदला।',
+      zh: '首页上的这张卡片现在也会说明：可以用键盘或手指玩，Streckenblitz 静音启动。游戏本身没有变化。',
+      ja: 'このホームページのタイルに、キーでも指でも遊べることと、Streckenblitz が音なしで始まることも書くようにしました。ゲーム自体は変わりません。',
+      ko: '홈페이지의 이 타일이 이제 키보드나 손가락으로 플레이한다는 것과 Streckenblitz가 소리 없이 시작한다는 것도 알려 줍니다. 게임 자체는 바뀌지 않습니다.'
+    },
+    {
       date: '2026-11-17',
       de: 'Erste Veröffentlichung. Streckenblitz ist mein Formelrennen im Browser, Ansicht hinter dem Auto, auf einem kleinen Pixelraster mit vollen Farben. Drei Strecken in der Dämmerung: Möwenkap an der Küste, Mondsenke in der Wüste unter Sternen und Tannenjoch im Bergwald. Im Rennen fahren sieben Gegner mit eigenem Stil gegen dich, im Zeitfahren fährst du allein auf Rekord. Bis 342 km/h, Bremsen lädt den Akku, und der E-Turbo gibt drei Sekunden Schub. Gespielt wird mit Tasten, Gamepad oder Fingern, unten links dreht sich eine Streckenkarte mit. Keine Blitze, nichts blinkt. 14 Sprachen, dieselben Sehhilfen wie überall in der Werkstatt, als App installierbar und nach dem ersten Besuch auch offline.',
       en: 'First release. Streckenblitz is my formula racer in the browser, seen from behind the car, on a small pixel grid in full colour. Three tracks at dusk: Möwenkap on the coast, Mondsenke in the desert under the stars and Tannenjoch in a mountain forest. In a race seven rivals with their own driving styles take you on, in time trial you chase the record alone. Up to 342 km/h, braking charges the battery, and the e-boost gives three seconds of extra push. You play with keys, a gamepad or your fingers, and a track map turns along with you in the bottom left. No flashes, nothing blinks. 14 languages, the same vision aids as everywhere in the workshop, installable as an app and offline after the first visit.',
