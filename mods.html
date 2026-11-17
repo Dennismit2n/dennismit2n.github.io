@@ -318,7 +318,10 @@
             <figure class="mod-shot">
               <img src="./assets/mods/ampel.png" alt="Screenshot of the traffic light above the Claude Code prompt" data-i18n-alt="modAmpelAlt" loading="lazy" onerror="this.closest('figure').hidden=true">
             </figure>
-            <p data-i18n="modAmpelDesc">A traffic light above the prompt: green when nothing is running any more, amber while Claude works or something runs in the background (commands, monitors, agents, side sessions, each with its name and run time), red when a turn was interrupted, a command ended with an error code or something was stopped. Red lines stay until you dismiss them, so you can still tell later whether you stopped something by accident.</p>
+            <p data-i18n="modAmpelDesc">A traffic light above the prompt: green when nothing is running any more, amber while Claude works or something runs in the background (commands, monitors, agents, side sessions, each with its name and run time), red when a turn was interrupted, a command ended with an error code or something was stopped. Red lines stay until you dismiss them, so you can still tell later whether you stopped something by accident. Since 0.2.0 the rule is “green only with proof”: if Claude ends a reply with “Verified:” although no checking tool ran in that turn, the light turns red as well.</p>
+            <figure class="mod-shot">
+              <img src="./assets/mods/ampel-nachweis.png" alt="The traffic light with red and green lamps and the note that nothing is running, below it in red at 02:20: “Verified” claimed, but nothing ran this turn to back it, and the Seen button" data-i18n-alt="modAmpelNachweisAlt" loading="lazy" onerror="this.closest('figure').hidden=true">
+            </figure>
             <p class="mod-settings"><strong data-i18n="modsSettingsLabel">Settings</strong>: <span data-i18n="modAmpelSettings">language · showSessions: show the app’s running side sessions · toastWhenDone: short note when everything has finished</span></p>
             <div class="mod-code">
               <p class="mod-label" data-i18n="modsInstallLabel">Install line for the Claude Code prompt</p>
@@ -398,7 +401,7 @@
 
 <!-- Wie in gaming.html: i18n.js und header.js, dazu mods.js fuer Prompts und Kopierknoepfe.
      Die Neuigkeiten der Mods stehen seit 03.11.2026 auf werkstatt.html#mods. -->
-<script src="./js/i18n.js?v=2026-11-15" fetchpriority="high"></script>
+<script src="./js/i18n.js?v=2026-11-17" fetchpriority="high"></script>
 <script src="./js/header.js?v=2026-11-12h" fetchpriority="high"></script>
 <script src="./js/mods.js?v=2026-11-12h" fetchpriority="high"></script>
 </body>

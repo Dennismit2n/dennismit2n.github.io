@@ -3093,6 +3093,23 @@ var NEWS = {
   // Werkstatt-Mods (mods.html), keine GitHub-Releases, Versionen stehen im Text.
   mods: [
     {
+      date: '2026-11-17',
+      de: 'Ampel 0.2.0 wird auch rot, wenn Claude am Ende einer Antwort „Geprüft:“ meldet, ohne dass im Zug ein prüfendes Werkzeug lief (Befehl, Test, Lesen, Suche, Browser, Agent): Grün gibt es nur mit Nachweis.',
+      en: 'Ampel 0.2.0 also turns red when Claude ends a reply with “Verified:” although no checking tool ran in that turn (command, test, reading, search, browser, agent): green only comes with proof.',
+      es: 'Ampel 0.2.0 también se pone en rojo cuando Claude termina una respuesta con «Verified:» sin que en ese turno se ejecutara ninguna herramienta de comprobación (comando, prueba, lectura, búsqueda, navegador, agente): el verde solo llega con prueba.',
+      fr: 'Ampel 0.2.0 passe aussi au rouge quand Claude termine une réponse par « Verified: » alors qu’aucun outil de vérification n’a tourné pendant ce tour (commande, test, lecture, recherche, navigateur, agent) : le vert ne vient qu’avec une preuve.',
+      it: 'Ampel 0.2.0 diventa rossa anche quando Claude chiude una risposta con «Verified:» senza che in quel turno sia girato uno strumento di verifica (comando, test, lettura, ricerca, browser, agente): il verde arriva solo con una prova.',
+      nl: 'Ampel 0.2.0 springt ook op rood als Claude een antwoord afsluit met ‘Verified:’ terwijl er in die beurt geen controlerend hulpmiddel draaide (opdracht, test, lezen, zoeken, browser, agent): groen komt er alleen met bewijs.',
+      pl: 'Ampel 0.2.0 zapala się też na czerwono, gdy Claude kończy odpowiedź słowem „Verified:”, choć w tej turze nie zadziałało żadne sprawdzające narzędzie (polecenie, test, czytanie, wyszukiwanie, przeglądarka, agent): zielony jest tylko z dowodem.',
+      pt: 'Ampel 0.2.0 também fica vermelho quando o Claude termina uma resposta com «Verified:» sem que nesse turno tenha corrido alguma ferramenta de verificação (comando, teste, leitura, pesquisa, navegador, agente): o verde só vem com prova.',
+      tr: 'Ampel 0.2.0, Claude bir yanıtı “Verified:” ile bitirdiğinde ama o turda hiçbir doğrulama aracı çalışmadığında (komut, test, okuma, arama, tarayıcı, ajan) da kırmızı yanar: yeşil yalnızca kanıtla gelir.',
+      ru: 'Ampel 0.2.0 теперь горит красным и тогда, когда Claude заканчивает ответ строкой «Verified:», хотя за этот ход не запускался ни один проверяющий инструмент (команда, тест, чтение, поиск, браузер, агент): зелёный бывает только с доказательством.',
+      hi: 'Ampel 0.2.0 तब भी लाल होती है जब Claude किसी जवाब के अंत में “Verified:” लिखता है, जबकि उस टर्न में कोई जाँचने वाला टूल नहीं चला (कमांड, टेस्ट, पढ़ना, खोज, ब्राउज़र, एजेंट): हरी बत्ती सिर्फ़ सबूत के साथ मिलती है।',
+      zh: 'Ampel 0.2.0 在 Claude 于回答末尾写出“Verified:”、而这一回合并没有运行任何检查类工具（命令、测试、读取、搜索、浏览器、代理）时也会亮红灯：只有有证据才亮绿灯。',
+      ja: 'Ampel 0.2.0 は、そのターンで確認用のツール（コマンド、テスト、読み取り、検索、ブラウザー、エージェント）が一つも動いていないのに、Claude が回答の最後に「Verified:」と書いたときも赤になります。緑は証拠があるときだけです。',
+      ko: 'Ampel 0.2.0은 그 턴에서 확인하는 도구(명령, 테스트, 읽기, 검색, 브라우저, 에이전트)가 하나도 돌지 않았는데 Claude가 답변 끝에 “Verified:”라고 쓸 때도 빨강이 돼요. 초록은 증거가 있을 때만이에요.',
+    },
+    {
       date: '2026-11-16',
       de: 'Neue Mod Registerkarten: Die Seitenleiste im Code-Tab bekommt farbige Reiter. Jeder eigene Abschnitt trägt nach Thema einen Farbpunkt vor dem Namen, blau für Web, grün für Windows, lila für Claude und Mods, orange für Spiele, rot für Anleitungen. Neue Abschnitte färbt der Mod selbst, /registerkarten zeigt die Legende. Dazu rechnen Limits-Band und Statistik den Kontext jetzt genau aus den Tokens, etwa 32,47 %.',
       en: 'New mod Registerkarten (sidebar tabs): the sidebar in the Code tab gets colored tabs. Every section of your own carries a color dot by topic in front of its name, blue for web, green for Windows, purple for Claude and mods, orange for games, red for guides. The mod colors new sections by itself, /registerkarten shows the legend. Limits band and statistics now also work out the context exactly from the tokens, such as 32.47%.',
