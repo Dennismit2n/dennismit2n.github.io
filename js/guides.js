@@ -4724,6 +4724,244 @@ var GUIDES = {
       ko: 'https://github.com/Dennismit2n/kugelblitz/blob/main/README.md'
     }
   },
+  anagrammaton: {
+    purpose: {
+      de: 'Für alle, die mit Wörtern spielen: beim Rätseln, beim Scrabble, auf der Suche nach einem Namen oder aus Neugier, was in einem Wort noch steckt. Anagrammaton stellt deine Buchstaben um und zeigt, welche echten Wörter dabei herauskommen, aus einem Wort, aus einem ganzen Satz oder rückwärts gelesen. Jeder Buchstabe ist eine Kachel mit fester Farbe, so siehst du beim Umstellen, wohin jeder wandert. Es läuft im Browser am Rechner, am Handy und am Tablet. Dein Browser merkt sich nur Sprache und Darstellung, das Wort steht im Link.',
+      en: 'For anyone who likes playing with words: for puzzles, for Scrabble, when looking for a name, or out of curiosity about what else hides in a word. Anagrammaton rearranges your letters and shows which real words come out of them, from one word, from a whole sentence or read backwards. Every letter is a tile with a fixed colour, so when they move you can see where each one goes. It runs in the browser on computers, phones and tablets. Your browser only remembers the language and the appearance. The word lives in the link.',
+      es: 'Para quien disfruta jugando con las palabras: con crucigramas, con el Scrabble, buscando un nombre o por curiosidad por lo que esconde una palabra. Anagrammaton reordena tus letras y muestra qué palabras reales salen de ellas, de una palabra, de una frase entera o leyendo al revés. Cada letra es una ficha con un color fijo, así ves adónde va cada una cuando se mueven. Funciona en el navegador del ordenador, del móvil y de la tableta. Tu navegador solo recuerda el idioma y la apariencia. La palabra va en el enlace.',
+      fr: 'Pour tous ceux qui aiment jouer avec les mots : pour les grilles, pour le Scrabble, pour chercher un nom ou par curiosité de ce qui se cache encore dans un mot. Anagrammaton réarrange vos lettres et montre quels vrais mots en sortent, à partir d’un mot, d’une phrase entière ou à l’envers. Chaque lettre est une tuile d’une couleur fixe, vous voyez donc où va chacune quand elles bougent. Il tourne dans le navigateur, sur ordinateur, téléphone et tablette. Votre navigateur ne retient que la langue et l’apparence. Le mot est dans le lien.',
+      it: 'Per chi ama giocare con le parole: per i cruciverba, per lo Scrabble, per cercare un nome o per curiosità di cosa si nasconde in una parola. Anagrammaton riordina le tue lettere e mostra quali parole vere ne escono, da una parola, da una frase intera o leggendo al contrario. Ogni lettera è una tessera con un colore fisso, così vedi dove va ciascuna quando si spostano. Funziona nel browser su computer, telefono e tablet. Il tuo browser ricorda solo lingua e aspetto. La parola sta nel link.',
+      nl: 'Voor iedereen die graag met woorden speelt: bij puzzels, bij Scrabble, bij het zoeken naar een naam of uit nieuwsgierigheid naar wat er nog meer in een woord zit. Anagrammaton zet je letters om en laat zien welke echte woorden eruit komen, uit één woord, uit een hele zin of achterstevoren gelezen. Elke letter is een tegel met een vaste kleur, zo zie je bij het omzetten waar elke letter heen gaat. Het draait in de browser op computer, telefoon en tablet. Je browser onthoudt alleen taal en weergave. Het woord staat in de link.',
+      pl: 'Dla każdego, kto lubi bawić się słowami: przy krzyżówkach, przy Scrabble, przy szukaniu nazwy albo z ciekawości, co jeszcze kryje się w słowie. Anagrammaton przestawia twoje litery i pokazuje, jakie prawdziwe słowa z nich wychodzą, z jednego słowa, z całego zdania albo czytane wspak. Każda litera to kafelek o stałym kolorze, więc przy przestawianiu widzisz, dokąd wędruje każda z nich. Działa w przeglądarce na komputerze, telefonie i tablecie. Twoja przeglądarka zapamiętuje tylko język i wygląd. Słowo jest w linku.',
+      pt: 'Para quem gosta de brincar com palavras: em palavras cruzadas, no Scrabble, procurando um nome ou por curiosidade sobre o que mais se esconde numa palavra. O Anagrammaton reorganiza suas letras e mostra quais palavras de verdade saem delas, de uma palavra, de uma frase inteira ou lendo ao contrário. Cada letra é uma peça com uma cor fixa, assim você vê para onde cada uma vai quando elas se movem. Funciona no navegador do computador, do celular e do tablet. Seu navegador guarda apenas o idioma e a aparência. A palavra fica no link.',
+      tr: 'Kelimelerle oynamayı seven herkes için: bulmacada, Scrabble’da, bir isim ararken ya da bir kelimede başka neler saklı olduğunu merak ettiğinizde. Anagrammaton harflerinizin yerini değiştirir ve bunlardan hangi gerçek kelimelerin çıktığını gösterir: tek bir kelimeden, bütün bir cümleden ya da tersten okuyarak. Her harf sabit renkli bir taştır, böylece yer değiştirirken her birinin nereye gittiğini görürsünüz. Bilgisayarda, telefonda ve tablette tarayıcıda çalışır. Tarayıcınız yalnızca dili ve görünümü hatırlar. Kelime bağlantının içindedir.',
+      ru: 'Для всех, кто любит играть словами: в кроссвордах, в Scrabble, в поисках названия или из любопытства, что ещё прячется в слове. Anagrammaton переставляет ваши буквы и показывает, какие настоящие слова из них получаются: из одного слова, из целой фразы или при чтении наоборот. Каждая буква становится плиткой постоянного цвета, поэтому при перестановке видно, куда уходит каждая из них. Работает в браузере на компьютере, телефоне и планшете. Браузер запоминает только язык и оформление, а слово хранится в ссылке.',
+      hi: 'उन सबके लिए जिन्हें शब्दों से खेलना पसंद है: पहेलियों में, Scrabble में, कोई नाम ढूँढते हुए या इस जिज्ञासा में कि किसी शब्द में और क्या छिपा है। Anagrammaton आपके अक्षरों को नए क्रम में रखता है और दिखाता है कि उनसे कौन से असली शब्द बनते हैं: एक शब्द से, पूरे वाक्य से या उलटा पढ़कर। हर अक्षर एक तय रंग की टाइल है, इसलिए क्रम बदलते समय आप देख पाते हैं कि कौन सा अक्षर कहाँ जाता है। यह कंप्यूटर, फ़ोन और टैबलेट पर ब्राउज़र में चलता है। आपका ब्राउज़र सिर्फ़ भाषा और रूप याद रखता है, शब्द लिंक में रहता है।',
+      zh: '适合喜欢玩文字的人：做字谜、玩 Scrabble、想取个名字，或者好奇一个词里还藏着什么。Anagrammaton 会重新排列你的字母，并显示能组成哪些真正的词：从一个词、从整句话，或者倒着读。每个字母都是颜色固定的方块，所以重新排列时你能看到每个字母去了哪里。它在电脑、手机和平板的浏览器里运行。浏览器只会记住语言和外观，词语保存在链接里。',
+      ja: '言葉遊びが好きな人のために。パズルやスクラブル、名前探し、あるいは言葉の中にほかに何が隠れているか気になったときに。Anagrammaton は文字を並べ替え、そこからどんな本物の語ができるかを見せます。1語から、文全体から、あるいは逆から読んで。文字はそれぞれ色の決まったタイルなので、並べ替えるときにどの文字がどこへ行くかが見えます。パソコン、スマホ、タブレットのブラウザで動きます。ブラウザが覚えるのは言語と表示だけで、語はリンクに入ります。',
+      ko: '단어로 놀기를 좋아하는 분을 위한 도구입니다. 퍼즐을 풀 때, Scrabble을 할 때, 이름을 찾을 때, 또는 한 단어 안에 또 무엇이 숨어 있는지 궁금할 때 쓰세요. Anagrammaton은 글자의 순서를 바꾸고, 거기서 어떤 진짜 단어가 나오는지 보여 줍니다. 한 단어에서, 문장 전체에서, 또는 거꾸로 읽어서요. 글자마다 정해진 색의 타일이라서, 순서가 바뀔 때 어느 글자가 어디로 가는지 보입니다. 컴퓨터, 휴대폰, 태블릿의 브라우저에서 작동합니다. 브라우저는 언어와 화면 모드만 기억하고, 단어는 링크에 들어 있습니다.'
+    },
+    shots: [
+      {
+        files: {
+          de: ['anagrammaton-de.webp', 1440, 900],
+          en: ['anagrammaton-en.webp', 1440, 900]
+        },
+        alt: {
+          de: 'Anagrammaton am Rechner im Dunkelmodus: oben das Eingabefeld mit „Sterne“, darunter die Bühne, auf der die sechs farbigen Kacheln schon als E, R, N, S, T, E stehen, darunter die Knöpfe Mischen, Invert, Reverse und Ausgangsstellung, ganz unten der Reiter „Ein Wort“ mit sechs Treffern von „ersten“ bis „nester“ in Buchstabenfarben.',
+          en: 'Anagrammaton on a computer in dark mode: at the top the input field with “listen”, below it the stage where the six coloured tiles already stand as S, I, L, E, N, T, then the buttons Shuffle, Invert, Reverse and Start position, and at the bottom the tab “One word” with four results in letter colours: silent, enlist, tinsel and inlets.',
+          es: 'Anagrammaton en el ordenador en modo oscuro: arriba el campo de texto con «listen», debajo el escenario, donde las seis fichas de colores ya forman S, I, L, E, N, T, luego los botones Shuffle, Invert, Reverse y Start position, y abajo la pestaña «One word» con cuatro resultados en los colores de las letras: silent, enlist, tinsel e inlets. La interfaz de la imagen está en inglés.',
+          fr: 'Anagrammaton sur ordinateur en mode sombre : en haut le champ de saisie avec « listen », en dessous la scène où les six tuiles colorées forment déjà S, I, L, E, N, T, puis les boutons Shuffle, Invert, Reverse et Start position, et en bas l’onglet « One word » avec quatre résultats aux couleurs des lettres : silent, enlist, tinsel et inlets. L’interface de l’image est en anglais.',
+          it: 'Anagrammaton sul computer in modalità scura: in alto il campo di testo con «listen», sotto il palco dove le sei tessere colorate formano già S, I, L, E, N, T, poi i pulsanti Shuffle, Invert, Reverse e Start position, e in basso la scheda «One word» con quattro risultati nei colori delle lettere: silent, enlist, tinsel e inlets. L’interfaccia nell’immagine è in inglese.',
+          nl: 'Anagrammaton op de computer in donkere modus: bovenaan het invoerveld met ‘listen’, daaronder het podium waar de zes gekleurde tegels al als S, I, L, E, N, T staan, dan de knoppen Shuffle, Invert, Reverse en Start position, en onderaan het tabblad ‘One word’ met vier resultaten in de kleuren van de letters: silent, enlist, tinsel en inlets. De interface in de afbeelding is Engels.',
+          pl: 'Anagrammaton na komputerze w trybie ciemnym: na górze pole tekstowe z „listen”, pod nim scena, na której sześć kolorowych kafelków układa się już w S, I, L, E, N, T, dalej przyciski Shuffle, Invert, Reverse i Start position, a na dole karta „One word” z czterema wynikami w kolorach liter: silent, enlist, tinsel i inlets. Interfejs na obrazku jest po angielsku.',
+          pt: 'Anagrammaton no computador no modo escuro: em cima o campo de texto com «listen», abaixo o palco onde as seis peças coloridas já formam S, I, L, E, N, T, depois os botões Shuffle, Invert, Reverse e Start position, e embaixo a aba «One word» com quatro resultados nas cores das letras: silent, enlist, tinsel e inlets. A interface na imagem está em inglês.',
+          tr: 'Bilgisayarda koyu modda Anagrammaton: üstte “listen” yazılı giriş alanı, altında altı renkli taşın S, I, L, E, N, T olarak dizildiği sahne, ardından Shuffle, Invert, Reverse ve Start position düğmeleri, en altta harf renklerinde dört sonuçla “One word” sekmesi: silent, enlist, tinsel ve inlets. Görseldeki arayüz İngilizcedir.',
+          ru: 'Anagrammaton на компьютере в тёмном режиме: вверху поле ввода со словом «listen», под ним сцена, где шесть цветных плиток уже стоят как S, I, L, E, N, T, затем кнопки Shuffle, Invert, Reverse и Start position, а внизу вкладка «One word» с четырьмя результатами в цветах букв: silent, enlist, tinsel и inlets. Интерфейс на снимке на английском.',
+          hi: 'डार्क मोड में कंप्यूटर पर Anagrammaton: ऊपर “listen” वाला इनपुट बॉक्स, उसके नीचे मंच जहाँ छह रंगीन टाइलें पहले से S, I, L, E, N, T बनकर खड़ी हैं, फिर Shuffle, Invert, Reverse और Start position बटन, और सबसे नीचे “One word” टैब, जिसमें अक्षरों के रंगों में चार नतीजे हैं: silent, enlist, tinsel और inlets। चित्र में इंटरफ़ेस अंग्रेज़ी में है।',
+          zh: '电脑上深色模式的 Anagrammaton：上方是写着“listen”的输入框，下面是舞台，六个彩色方块已经排成 S、I、L、E、N、T，再往下是 Shuffle、Invert、Reverse 和 Start position 按钮，最下面是“One word”标签页，用字母颜色显示四个结果：silent、enlist、tinsel 和 inlets。图中界面为英文。',
+          ja: 'ダークモードのパソコン版 Anagrammaton。上に「listen」と入った入力欄、その下のステージでは6枚の色付きタイルがすでに S、I、L、E、N、T と並び、続いて Shuffle、Invert、Reverse、Start position のボタン、いちばん下の「One word」タブには silent、enlist、tinsel、inlets の4つの結果が文字の色で並んでいます。画像の画面は英語です。',
+          ko: '다크 모드의 컴퓨터용 Anagrammaton입니다. 위에는 ‘listen’이 들어간 입력란, 그 아래 무대에는 색깔 타일 여섯 개가 이미 S, I, L, E, N, T로 서 있고, 이어서 Shuffle, Invert, Reverse, Start position 버튼, 맨 아래 ‘One word’ 탭에는 결과 네 개 silent, enlist, tinsel, inlets가 글자 색으로 있습니다. 그림 속 화면은 영어입니다.'
+        }
+      },
+      {
+        files: {
+          de: ['anagrammaton-handy-de.webp', 780, 1688],
+          en: ['anagrammaton-handy-en.webp', 780, 1688]
+        },
+        alt: {
+          de: 'Anagrammaton auf dem Handy: oben „Ein Esel lese nie“ im Eingabefeld, darunter die Bühne mit vierzehn farbigen Kacheln in zwei Reihen, dann die vier Knöpfe Mischen, Invert, Reverse und Ausgangsstellung, ganz unten der Reiter „Rückwärts“ mit dem rückwärts gelesenen Satz und dem Urteil „Ein Palindrom: vorwärts und rückwärts gleich.“',
+          en: 'Anagrammaton on a phone: at the top “stressed” in the input field, below it the stage with eight coloured tiles, then the four buttons Shuffle, Invert, Reverse and Start position, and at the bottom the tab “Backwards” with the word read backwards, “desserts”, and the verdict “Not a palindrome.”',
+          es: 'Anagrammaton en el móvil: arriba «stressed» en el campo de texto, debajo el escenario con ocho fichas de colores, luego los cuatro botones Shuffle, Invert, Reverse y Start position, y abajo la pestaña «Backwards» con la palabra leída al revés, «desserts», y el veredicto «Not a palindrome». La interfaz de la imagen está en inglés.',
+          fr: 'Anagrammaton sur téléphone : en haut « stressed » dans le champ de saisie, en dessous la scène avec huit tuiles colorées, puis les quatre boutons Shuffle, Invert, Reverse et Start position, et en bas l’onglet « Backwards » avec le mot lu à l’envers, « desserts », et le verdict « Not a palindrome ». L’interface de l’image est en anglais.',
+          it: 'Anagrammaton sul telefono: in alto «stressed» nel campo di testo, sotto il palco con otto tessere colorate, poi i quattro pulsanti Shuffle, Invert, Reverse e Start position, e in basso la scheda «Backwards» con la parola letta al contrario, «desserts», e il verdetto «Not a palindrome». L’interfaccia nell’immagine è in inglese.',
+          nl: 'Anagrammaton op een telefoon: bovenaan ‘stressed’ in het invoerveld, daaronder het podium met acht gekleurde tegels, dan de vier knoppen Shuffle, Invert, Reverse en Start position, en onderaan het tabblad ‘Backwards’ met het achterstevoren gelezen woord, ‘desserts’, en het oordeel ‘Not a palindrome’. De interface in de afbeelding is Engels.',
+          pl: 'Anagrammaton na telefonie: na górze „stressed” w polu tekstowym, pod nim scena z ośmioma kolorowymi kafelkami, dalej cztery przyciski Shuffle, Invert, Reverse i Start position, a na dole karta „Backwards” ze słowem czytanym wspak, „desserts”, i oceną „Not a palindrome”. Interfejs na obrazku jest po angielsku.',
+          pt: 'Anagrammaton no celular: em cima «stressed» no campo de texto, abaixo o palco com oito peças coloridas, depois os quatro botões Shuffle, Invert, Reverse e Start position, e embaixo a aba «Backwards» com a palavra lida ao contrário, «desserts», e o veredito «Not a palindrome». A interface na imagem está em inglês.',
+          tr: 'Telefonda Anagrammaton: üstte giriş alanında “stressed”, altında sekiz renkli taşın durduğu sahne, ardından dört düğme Shuffle, Invert, Reverse ve Start position, en altta tersten okunan kelime “desserts” ve “Not a palindrome” kararıyla “Backwards” sekmesi. Görseldeki arayüz İngilizcedir.',
+          ru: 'Anagrammaton на телефоне: вверху «stressed» в поле ввода, под ним сцена с восемью цветными плитками, затем четыре кнопки Shuffle, Invert, Reverse и Start position, а внизу вкладка «Backwards» со словом, прочитанным наоборот, «desserts», и ответом «Not a palindrome». Интерфейс на снимке на английском.',
+          hi: 'फ़ोन पर Anagrammaton: ऊपर इनपुट बॉक्स में “stressed”, उसके नीचे आठ रंगीन टाइलों वाला मंच, फिर चार बटन Shuffle, Invert, Reverse और Start position, और सबसे नीचे “Backwards” टैब, जिसमें उलटा पढ़ा शब्द “desserts” और फ़ैसला “Not a palindrome” है। चित्र में इंटरफ़ेस अंग्रेज़ी में है।',
+          zh: '手机上的 Anagrammaton：上方输入框里是“stressed”，下面是有八个彩色方块的舞台，再往下是 Shuffle、Invert、Reverse 和 Start position 四个按钮，最下面是“Backwards”标签页，显示倒读的词“desserts”和判断“Not a palindrome”。图中界面为英文。',
+          ja: 'スマホ版 Anagrammaton。上の入力欄に「stressed」、その下に8枚の色付きタイルが並ぶステージ、続いて Shuffle、Invert、Reverse、Start position の4つのボタン、いちばん下の「Backwards」タブには逆から読んだ「desserts」と判定「Not a palindrome」が表示されています。画像の画面は英語です。',
+          ko: '휴대폰의 Anagrammaton입니다. 위에는 입력란에 ‘stressed’, 그 아래 색깔 타일 여덟 개가 있는 무대, 이어서 버튼 네 개 Shuffle, Invert, Reverse, Start position, 맨 아래 ‘Backwards’ 탭에는 거꾸로 읽은 단어 ‘desserts’와 판정 ‘Not a palindrome’이 있습니다. 그림 속 화면은 영어입니다.'
+        }
+      }
+    ],
+    steps: {
+      de: [
+        'Anagrammaton öffnen und oben ein Wort oder einen Satz tippen. Bei „Wörterbuch“ wählst du die Sprache der Wörter, sie darf eine andere sein als die der Oberfläche. Wo es passt, lässt „Akzente gleich“ ä wie a zählen. Jeder Buchstabe erscheint auf der Bühne als Kachel in seiner eigenen Farbe.',
+        'Darunter stehen drei Reiter. „Ein Wort“ zeigt alle Wörter aus genau denselben Buchstaben, „Mehrere Wörter“ stellt ganze Sätze um, mit Grenzen für die Wortzahl, einer Mindestlänge und einem Wort, das vorkommen muss. „Rückwärts“ liest deine Eingabe von hinten, sagt, ob sie ein Palindrom ist, und hat eine Liste zum Entdecken. Ein Klick auf einen Treffer lässt die Kacheln an ihren neuen Platz fliegen.',
+        'Mit den Knöpfen unter der Bühne spielst du: Mischen würfelt die Kacheln neu, Invert kippt jede Farbe in ihre Gegenfarbe, Reverse stellt die Kacheln rückwärts auf, Ausgangsstellung bringt deine Eingabe zurück. „Link kopieren“ merkt sich Wort, Sprache, Invert und Reverse, jeder Treffer lässt sich einzeln kopieren.'
+      ],
+      en: [
+        'Open Anagrammaton and type a word or a sentence at the top. Under “Dictionary” you pick the language of the words, which can differ from the language of the interface. Where it fits, “Ignore accents” lets é count as e. Every letter appears on the stage as a tile in its own colour.',
+        'Below it are three tabs. “One word” shows every word made of exactly the same letters, “Several words” rearranges whole sentences, with limits for the number of words, a minimum length and a word that has to be in it. “Backwards” reads your input from the end, tells you whether it is a palindrome and has a list to discover. Click a result and the tiles fly to their new places.',
+        'The buttons under the stage are for playing: Shuffle mixes the tiles, Invert flips every colour to its opposite, Reverse lines the tiles up backwards, and Start position brings back what you typed. “Copy link” keeps the word, the language, Invert and Reverse, and every result can be copied on its own.'
+      ],
+      es: [
+        'Abre Anagrammaton y escribe arriba una palabra o una frase. En «Diccionario» eliges el idioma de las palabras, que puede ser distinto del de la interfaz. Donde tiene sentido, «Ignorar acentos» hace que á cuente como a. Cada letra aparece en el escenario como una ficha de su propio color.',
+        'Debajo hay tres pestañas. «Una palabra» muestra todas las palabras con exactamente las mismas letras, «Varias palabras» reordena frases enteras, con límites para el número de palabras, una longitud mínima y una palabra obligatoria. «Al revés» lee lo que escribiste desde el final, te dice si es un palíndromo y trae una lista para descubrir. Un clic en un resultado y las fichas vuelan a su nuevo sitio.',
+        'Los botones bajo el escenario son para jugar: «Mezclar» revuelve las fichas, «Color opuesto» pasa cada color a su opuesto, «Al revés» coloca las fichas de atrás hacia delante y «Posición inicial» recupera lo que escribiste. «Copiar enlace» guarda la palabra, el idioma, el color opuesto y el orden al revés, y cada resultado se puede copiar por separado.'
+      ],
+      fr: [
+        'Ouvrez Anagrammaton et tapez en haut un mot ou une phrase. Sous « Dictionnaire », vous choisissez la langue des mots, qui peut différer de celle de l’interface. Là où c’est utile, « Ignorer les accents » fait compter é comme e. Chaque lettre apparaît sur la scène sous forme de tuile dans sa propre couleur.',
+        'En dessous se trouvent trois onglets. « Un mot » montre tous les mots formés exactement des mêmes lettres, « Plusieurs mots » réarrange des phrases entières, avec des limites pour le nombre de mots, une longueur minimale et un mot qui doit y figurer. « À l’envers » lit votre saisie depuis la fin, indique s’il s’agit d’un palindrome et propose une liste à découvrir. Un clic sur un résultat, et les tuiles volent à leur nouvelle place.',
+        'Les boutons sous la scène servent à jouer : « Mélanger » brasse les tuiles, « Couleur opposée » fait passer chaque couleur à son opposée, « À l’envers » aligne les tuiles à rebours et « Position de départ » rétablit votre saisie. « Copier le lien » retient le mot, la langue, la couleur opposée et l’ordre inversé, et chaque résultat se copie séparément.'
+      ],
+      it: [
+        'Apri Anagrammaton e scrivi in alto una parola o una frase. In «Dizionario» scegli la lingua delle parole, che può essere diversa da quella dell’interfaccia. Dove ha senso, «Ignora gli accenti» fa contare è come e. Ogni lettera compare sul palco come una tessera del suo colore.',
+        'Sotto ci sono tre schede. «Una parola» mostra tutte le parole fatte esattamente delle stesse lettere, «Più parole» riordina frasi intere, con limiti per il numero di parole, una lunghezza minima e una parola che deve esserci. «Al contrario» legge il testo dalla fine, ti dice se è un palindromo e offre un elenco da scoprire. Un clic su un risultato e le tessere volano al loro nuovo posto.',
+        'I pulsanti sotto il palco servono per giocare: «Mescola» mette le tessere in disordine, «Colore opposto» porta ogni colore al suo opposto, «Al contrario» allinea le tessere a rovescio e «Posizione iniziale» riporta il tuo testo. «Copia link» ricorda parola, lingua, colore opposto e ordine al contrario, e ogni risultato si copia anche da solo.'
+      ],
+      nl: [
+        'Open Anagrammaton en typ bovenaan een woord of een zin. Bij ‘Woordenboek’ kies je de taal van de woorden, die anders mag zijn dan die van de interface. Waar het past, laat ‘Accenten negeren’ é meetellen als e. Elke letter verschijnt op het podium als tegel in zijn eigen kleur.',
+        'Daaronder staan drie tabbladen. ‘Eén woord’ toont alle woorden met precies dezelfde letters, ‘Meerdere woorden’ zet hele zinnen om, met grenzen voor het aantal woorden, een minimale lengte en een woord dat erin moet. ‘Achterstevoren’ leest je invoer van achteren, zegt of het een palindroom is en heeft een lijst om te ontdekken. Klik op een resultaat en de tegels vliegen naar hun nieuwe plek.',
+        'Met de knoppen onder het podium speel je: ‘Schudden’ gooit de tegels door elkaar, ‘Tegenkleur’ zet elke kleur om in zijn tegenkleur, ‘Achterstevoren’ zet de tegels in omgekeerde volgorde en ‘Beginstand’ haalt je invoer terug. ‘Link kopiëren’ onthoudt woord, taal, tegenkleur en omgekeerde volgorde, en elk resultaat kun je los kopiëren.'
+      ],
+      pl: [
+        'Otwórz Anagrammaton i wpisz na górze słowo albo zdanie. W polu „Słownik” wybierasz język słów, który może być inny niż język interfejsu. Tam, gdzie to ma sens, „Ignoruj znaki diakrytyczne” sprawia, że ą liczy się jak a. Każda litera pojawia się na scenie jako kafelek we własnym kolorze.',
+        'Pod spodem są trzy karty. „Jedno słowo” pokazuje wszystkie słowa z dokładnie tych samych liter, „Kilka słów” przestawia całe zdania, z limitem liczby słów, minimalną długością i słowem, które musi się pojawić. „Wspak” czyta twój tekst od końca, mówi, czy to palindrom, i ma listę do odkrywania. Kliknij wynik, a kafelki przelecą na nowe miejsca.',
+        'Przyciski pod sceną służą do zabawy: „Wymieszaj” tasuje kafelki, „Kolor przeciwny” zmienia każdy kolor na przeciwny, „Wspak” ustawia kafelki od tyłu, a „Układ wyjściowy” przywraca twój tekst. „Kopiuj link” zapamiętuje słowo, język, kolor przeciwny i kolejność wspak, a każdy wynik da się skopiować osobno.'
+      ],
+      pt: [
+        'Abra o Anagrammaton e digite uma palavra ou uma frase lá em cima. Em «Dicionário» você escolhe o idioma das palavras, que pode ser diferente do idioma da interface. Onde faz sentido, «Ignorar acentos» faz á contar como a. Cada letra aparece no palco como uma peça da sua própria cor.',
+        'Logo abaixo há três abas. «Uma palavra» mostra todas as palavras com exatamente as mesmas letras, «Várias palavras» reorganiza frases inteiras, com limites para o número de palavras, um tamanho mínimo e uma palavra que precisa aparecer. «Ao contrário» lê o que você digitou de trás para frente, diz se é um palíndromo e traz uma lista para descobrir. Um clique em um resultado e as peças voam para o novo lugar.',
+        'Os botões abaixo do palco são para brincar: «Embaralhar» mistura as peças, «Cor oposta» leva cada cor ao seu oposto, «Ao contrário» enfileira as peças de trás para frente e «Posição inicial» traz de volta o que você digitou. «Copiar link» guarda a palavra, o idioma, a cor oposta e a ordem invertida, e cada resultado pode ser copiado separadamente.'
+      ],
+      tr: [
+        'Anagrammaton’u açın ve en üste bir kelime ya da cümle yazın. “Sözlük” bölümünde kelimelerin dilini seçersiniz, bu dil arayüzün dilinden farklı olabilir. Uygun olduğu yerde “Aksanları yok say” ç harfini c gibi saydırır. Her harf sahnede kendi renginde bir taş olarak görünür.',
+        'Altında üç sekme var. “Tek kelime” tam olarak aynı harflerden oluşan bütün kelimeleri gösterir. “Birden çok kelime” bütün cümleleri yeniden dizer, kelime sayısı için bir sınır, en az uzunluk ve içinde geçmesi gereken bir kelime seçebilirsiniz. “Tersten” yazdığınızı sondan okur, palindrom olup olmadığını söyler ve keşfetmek için bir liste sunar. Bir sonuca tıklayınca taşlar yeni yerlerine uçar.',
+        'Sahnenin altındaki düğmeler oyun içindir: “Karıştır” taşları rastgele dizer, “Karşıt renk” her rengi karşıtına çevirir, “Tersine” taşları sondan başa dizer, “Başlangıç” yazdığınızı geri getirir. “Bağlantıyı kopyala” kelimeyi, dili, karşıt rengi ve ters sırayı saklar, her sonuç ayrı ayrı kopyalanabilir.'
+      ],
+      ru: [
+        'Откройте Anagrammaton и введите вверху слово или фразу. В поле «Словарь» выбирается язык слов, он может отличаться от языка интерфейса. Где это уместно, «Не различать ё и е» считает ё за е. Каждая буква появляется на сцене плиткой своего цвета.',
+        'Ниже три вкладки. «Одно слово» показывает все слова ровно из тех же букв, «Несколько слов» переставляет целые фразы, с ограничением числа слов, минимальной длиной и словом, которое должно встретиться. «Наоборот» читает ввод с конца, говорит, палиндром ли это, и предлагает список для открытий. Щёлкните по результату, и плитки перелетят на новые места.',
+        'Кнопки под сценой нужны для игры: «Перемешать» тасует плитки, «Обратный цвет» меняет каждый цвет на противоположный, «Задом наперёд» выстраивает плитки в обратном порядке, а «Исходный порядок» возвращает введённое. «Копировать ссылку» сохраняет слово, язык, обратный цвет и обратный порядок, а каждый результат можно скопировать отдельно.'
+      ],
+      hi: [
+        'Anagrammaton खोलें और ऊपर कोई शब्द या वाक्य लिखें। “शब्दकोश” में आप शब्दों की भाषा चुनते हैं, जो इंटरफ़ेस की भाषा से अलग हो सकती है। हर अक्षर मंच पर अपने रंग की टाइल बनकर दिखता है। हिंदी में मात्रा वाला अक्षर, जैसे “कि”, एक ही टाइल होता है।',
+        'नीचे तीन टैब हैं। “एक शब्द” ठीक उन्हीं अक्षरों से बने सारे शब्द दिखाता है, “कई शब्द” पूरे वाक्यों को नए क्रम में रखता है, शब्दों की संख्या की सीमा, न्यूनतम लंबाई और ज़रूर शामिल होने वाले शब्द के साथ। “उलटा” आपके लिखे को अंत से पढ़ता है, बताता है कि वह पैलिंड्रोम है या नहीं, और खोजने के लिए एक सूची देता है। किसी नतीजे पर क्लिक करें और टाइलें उड़कर नई जगह पहुँच जाती हैं।',
+        'मंच के नीचे वाले बटन खेलने के लिए हैं: “फेंटें” टाइलों को मिला देता है, “विपरीत रंग” हर रंग को उलटे रंग में बदल देता है, “उलटा क्रम” टाइलों को पीछे से लगाता है और “शुरुआती क्रम” आपका लिखा वापस लाता है। “लिंक कॉपी करें” शब्द, भाषा, विपरीत रंग और उलटा क्रम याद रखता है, और हर नतीजा अलग से कॉपी हो सकता है।'
+      ],
+      zh: [
+        '打开 Anagrammaton，在上方输入一个词或一句话。在“词典”里选择词语的语言，它可以和界面语言不同。每个字母都会在舞台上变成一个自己颜色的方块。中文里一个汉字就是一个方块，比如“蜂蜜”和“蜜蜂”。',
+        '下面有三个标签页。“单个词”显示由完全相同的字母组成的所有词，“多个词”重新排列整句话，可以限制词数、最短长度和必须包含的词。“倒读”从末尾读你的输入，告诉你它是不是回文，还有一份可以探索的列表。点一下结果，方块就会飞到新的位置。',
+        '舞台下方的按钮用来玩：“打乱”把方块打乱，“对比色”把每种颜色换成相反的颜色，“倒序”把方块倒着排，“初始顺序”恢复你的输入。“复制链接”会记住词语、语言、对比色和倒序，每个结果也能单独复制。'
+      ],
+      ja: [
+        'Anagrammaton を開き、上の欄に語か文を入力します。「辞書」で語の言語を選びます。画面の言語と違っていてもかまいません。文字はひとつずつ、自分の色のタイルとしてステージに並びます。日本語では1文字が1タイルで、たとえば「会社」と「社会」です。',
+        'その下にタブが3つあります。「1語」はまったく同じ文字からできた語をすべて表示し、「複数の語」は文全体を並べ替えます。語数の上限、最小文字数、必ず含む語を指定できます。「逆さ読み」は入力を後ろから読み、回文かどうかを教え、見つけるためのリストもあります。結果をクリックすると、タイルが新しい場所へ飛んでいきます。',
+        'ステージの下のボタンで遊べます。「シャッフル」はタイルをばらばらにし、「反対色」は色を反対の色に変え、「逆順」はタイルを後ろから並べ、「元の順番」は入力どおりに戻します。「リンクをコピー」は語、言語、反対色、逆順を覚えていて、結果もひとつずつコピーできます。'
+      ],
+      ko: [
+        'Anagrammaton을 열고 위쪽에 단어나 문장을 입력하세요. ‘사전’에서 단어의 언어를 고릅니다. 화면 언어와 달라도 됩니다. 글자는 하나씩 자기 색의 타일이 되어 무대에 나타납니다. 한국어에서는 음절 하나가 타일 하나입니다.',
+        '그 아래에 탭이 세 개 있습니다. ‘한 단어’는 정확히 같은 글자로 된 단어를 모두 보여 주고, ‘여러 단어’는 문장 전체를 다시 배열합니다. 단어 수 제한, 최소 길이, 반드시 들어갈 단어를 정할 수 있습니다. ‘거꾸로’는 입력을 끝에서부터 읽고, 회문인지 알려 주며, 찾아볼 목록도 있습니다. 결과를 클릭하면 타일이 새 자리로 날아갑니다.',
+        '무대 아래 버튼으로 놀 수 있습니다. ‘섞기’는 타일을 뒤섞고, ‘반대색’은 모든 색을 반대색으로 바꾸고, ‘거꾸로’는 타일을 뒤에서부터 세우고, ‘처음 순서’는 입력한 순서로 돌아갑니다. ‘링크 복사’는 단어, 언어, 반대색, 거꾸로 상태를 기억하고, 결과도 하나씩 복사할 수 있습니다.'
+      ]
+    },
+    pitfalls: {
+      de: [
+        'Die Wortlisten kommen aus Häufigkeitslisten echter Texte (wordfreq). Darum stehen auch Namen, Kürzel und seltene Formen drin, und bei langen Sätzen sind unter den Treffern viele davon. Schimpfwörter sind herausgefiltert, ganz dicht ist so ein Filter aber nie.',
+        'Bei „Mehrere Wörter“ hört die Suche nach 4 Sekunden auf und zeigt, was sie bis dahin gefunden hat. Bei langen Sätzen hilft eine größere Mindestlänge oder ein Wort, das vorkommen muss.',
+        'Offline geht es erst nach dem ersten Besuch und nur mit den Wörterbüchern, die du schon benutzt hast. Jedes ist etwa ein halbes Megabyte groß und kommt erst, wenn du es brauchst.',
+        'Auf dem iPhone gibt es keinen Knopf „Installieren“. Dort richtest du Anagrammaton in Safari über Teilen und „Zum Home-Bildschirm“ als App ein.'
+      ],
+      en: [
+        'The word lists come from frequency lists of real texts (wordfreq). That is why names, abbreviations and rare forms are in there too, and long sentences bring up many of them. Swear words are filtered out, but no filter like that is ever watertight.',
+        'With “Several words” the search stops after 4 seconds and shows what it has found by then. For long sentences, a higher minimum length or a word that has to be in it helps.',
+        'Offline only works after the first visit, and only with the dictionaries you have already used. Each one is about half a megabyte and only comes when you need it.',
+        'There is no “Install” button on an iPhone. There you set Anagrammaton up as an app in Safari with Share and “Add to Home Screen”.'
+      ],
+      es: [
+        'Las listas de palabras salen de listas de frecuencia de textos reales (wordfreq). Por eso también hay nombres, abreviaturas y formas raras, y en frases largas aparecen muchas. Las palabrotas están filtradas, pero ningún filtro así es perfecto.',
+        'En «Varias palabras» la búsqueda se detiene a los 4 segundos y muestra lo que encontró hasta entonces. Con frases largas ayuda una longitud mínima mayor o una palabra obligatoria.',
+        'Sin conexión funciona solo tras la primera visita, y solo con los diccionarios que ya usaste. Cada uno ocupa más o menos medio megabyte y solo se descarga cuando lo necesitas.',
+        'En el iPhone no hay botón «Instalar». Allí instalas Anagrammaton como app en Safari con Compartir y «Añadir a pantalla de inicio».'
+      ],
+      fr: [
+        'Les listes de mots viennent de listes de fréquence de vrais textes (wordfreq). C’est pourquoi on y trouve aussi des noms, des abréviations et des formes rares, et les longues phrases en font remonter beaucoup. Les gros mots sont filtrés, mais aucun filtre de ce genre n’est parfait.',
+        'Avec « Plusieurs mots », la recherche s’arrête au bout de 4 secondes et affiche ce qu’elle a trouvé jusqu’alors. Pour les longues phrases, une longueur minimale plus grande ou un mot imposé aide.',
+        'Le mode hors ligne ne fonctionne qu’après la première visite, et seulement avec les dictionnaires déjà utilisés. Chacun pèse environ un demi-mégaoctet et n’est chargé que lorsque vous en avez besoin.',
+        'Sur iPhone, il n’y a pas de bouton « Installer ». Vous y installez Anagrammaton comme application dans Safari, avec Partager et « Sur l’écran d’accueil ».'
+      ],
+      it: [
+        'Gli elenchi di parole vengono da liste di frequenza di testi reali (wordfreq). Per questo ci sono anche nomi, sigle e forme rare, e con le frasi lunghe ne escono molte. Le parolacce sono filtrate, ma nessun filtro del genere è perfetto.',
+        'Con «Più parole» la ricerca si ferma dopo 4 secondi e mostra quello che ha trovato fino a quel momento. Con le frasi lunghe aiuta una lunghezza minima maggiore o una parola obbligatoria.',
+        'Offline funziona solo dopo la prima visita, e solo con i dizionari che hai già usato. Ognuno pesa circa mezzo megabyte e viene caricato solo quando ti serve.',
+        'Su iPhone non c’è il pulsante «Installa». Lì installi Anagrammaton come app in Safari con Condividi e «Aggiungi alla schermata Home».'
+      ],
+      nl: [
+        'De woordenlijsten komen uit frequentielijsten van echte teksten (wordfreq). Daarom staan er ook namen, afkortingen en zeldzame vormen in, en bij lange zinnen zitten daar veel van tussen. Scheldwoorden zijn eruit gefilterd, maar zo’n filter is nooit volmaakt.',
+        'Bij ‘Meerdere woorden’ stopt het zoeken na 4 seconden en toont wat er tot dan toe gevonden is. Bij lange zinnen helpt een grotere minimale lengte of een woord dat erin moet.',
+        'Offline werkt pas na het eerste bezoek, en alleen met de woordenboeken die je al gebruikt hebt. Elk is ongeveer een halve megabyte en wordt pas geladen als je het nodig hebt.',
+        'Op een iPhone is er geen knop ‘Installeren’. Daar zet je Anagrammaton als app neer in Safari via Deel en ‘Zet op beginscherm’.'
+      ],
+      pl: [
+        'Listy słów pochodzą z list frekwencyjnych prawdziwych tekstów (wordfreq). Dlatego są w nich też nazwy, skróty i rzadkie formy, a przy długich zdaniach jest ich wśród wyników sporo. Przekleństwa są odfiltrowane, ale żaden taki filtr nie jest doskonały.',
+        'W karcie „Kilka słów” wyszukiwanie kończy się po 4 sekundach i pokazuje to, co znalazło do tej pory. Przy długich zdaniach pomaga większa minimalna długość albo słowo, które musi się pojawić.',
+        'Offline działa dopiero po pierwszej wizycie i tylko ze słownikami, które były już używane. Każdy ma około pół megabajta i jest pobierany dopiero wtedy, gdy jest potrzebny.',
+        'Na iPhonie nie ma przycisku „Zainstaluj”. Tam instalujesz Anagrammaton jako aplikację w Safari przez Udostępnij i „Do ekranu początkowego”.'
+      ],
+      pt: [
+        'As listas de palavras vêm de listas de frequência de textos reais (wordfreq). Por isso também aparecem nomes, siglas e formas raras, e em frases longas surgem muitas delas. Os palavrões foram filtrados, mas nenhum filtro desse tipo é perfeito.',
+        'Em «Várias palavras» a busca para depois de 4 segundos e mostra o que encontrou até então. Em frases longas ajuda um tamanho mínimo maior ou uma palavra obrigatória.',
+        'Offline só funciona depois da primeira visita, e só com os dicionários que você já usou. Cada um tem cerca de meio megabyte e só é baixado quando você precisa dele.',
+        'No iPhone não existe o botão «Instalar». Lá você instala o Anagrammaton como app no Safari, com Compartilhar e «Adicionar à Tela de Início».'
+      ],
+      tr: [
+        'Kelime listeleri gerçek metinlerin sıklık listelerinden gelir (wordfreq). Bu yüzden içlerinde isimler, kısaltmalar ve nadir biçimler de vardır, uzun cümlelerde sonuçlar arasında bunlardan çok olur. Küfürler ayıklanmıştır, ama böyle bir filtre hiçbir zaman kusursuz değildir.',
+        '“Birden çok kelime” sekmesinde arama 4 saniye sonra durur ve o ana kadar bulduklarını gösterir. Uzun cümlelerde daha büyük bir en az uzunluk ya da zorunlu bir kelime işe yarar.',
+        'Çevrimdışı kullanım ancak ilk ziyaretten sonra ve yalnızca daha önce kullandığınız sözlüklerle çalışır. Her biri yaklaşık yarım megabayttır ve ancak gerektiğinde indirilir.',
+        'iPhone’da “Yükle” düğmesi yoktur. Orada Anagrammaton’u Safari’de Paylaş ve “Ana Ekrana Ekle” ile uygulama olarak kurarsınız.'
+      ],
+      ru: [
+        'Списки слов взяты из частотных списков настоящих текстов (wordfreq). Поэтому в них есть имена, сокращения и редкие формы, и в длинных фразах их среди результатов много. Ругательства отфильтрованы, но такой фильтр никогда не бывает идеальным.',
+        'Во вкладке «Несколько слов» поиск останавливается через 4 секунды и показывает то, что успел найти. Для длинных фраз помогает большая минимальная длина или обязательное слово.',
+        'Офлайн работает только после первого посещения и только со словарями, которые вы уже открывали. Каждый весит около половины мегабайта и загружается, только когда нужен.',
+        'На iPhone кнопки «Установить» нет. Там Anagrammaton устанавливается как приложение в Safari через «Поделиться» и «На экран „Домой“».'
+      ],
+      hi: [
+        'शब्द-सूचियाँ असली लेखों की आवृत्ति-सूचियों से आती हैं (wordfreq)। इसलिए उनमें नाम, संक्षिप्त रूप और दुर्लभ रूप भी हैं, और लंबे वाक्यों के नतीजों में ऐसे बहुत आते हैं। गालियाँ छाँटी गई हैं, पर ऐसा कोई फ़िल्टर कभी पूरा नहीं होता।',
+        '“कई शब्द” में खोज 4 सेकंड बाद रुक जाती है और तब तक जो मिला वह दिखाती है। लंबे वाक्यों में ज़्यादा न्यूनतम लंबाई या कोई ज़रूरी शब्द मदद करता है।',
+        'ऑफ़लाइन सिर्फ़ पहली विज़िट के बाद चलता है, और सिर्फ़ उन शब्दकोशों के साथ जिन्हें आप पहले इस्तेमाल कर चुके हैं। हर शब्दकोश लगभग आधा मेगाबाइट का है और तभी डाउनलोड होता है जब उसकी ज़रूरत हो।',
+        'iPhone पर “इंस्टॉल करें” बटन नहीं होता। वहाँ Safari में शेयर और “होम स्क्रीन में जोड़ें” से Anagrammaton को ऐप की तरह इंस्टॉल करें।'
+      ],
+      zh: [
+        '词表来自真实文本的词频表（wordfreq）。因此里面也有人名、缩写和少见的形式，长句的结果里这类词会很多。脏话已经滤掉，但这种过滤从来不会完美。',
+        '在“多个词”里，搜索 4 秒后就会停止，并显示到那时为止找到的结果。句子很长时，提高最短长度或设定一个必须包含的词会有帮助。',
+        '离线只在首次访问后可用，而且只限已经用过的词典。每个词典约半兆字节，只在需要时才下载。',
+        'iPhone 上没有“安装”按钮。在那里请用 Safari 的“分享”和“添加到主屏幕”把 Anagrammaton 安装为应用。'
+      ],
+      ja: [
+        '語のリストは実際の文章の頻度リストから作っています（wordfreq）。そのため人名、略語、まれな形も入っていて、長い文ではそうした語が結果に多く出ます。汚い言葉は除いていますが、この種のフィルターは完全にはなりません。',
+        '「複数の語」では、検索は4秒で止まり、それまでに見つかったものを表示します。長い文では、最小文字数を上げるか、必ず含む語を指定すると絞り込めます。',
+        'オフラインで使えるのは初回アクセスの後だけで、使ったことのある辞書に限られます。辞書はそれぞれ約0.5メガバイトで、必要になったときにだけ読み込まれます。',
+        'iPhone には「インストール」ボタンがありません。Safari の共有から「ホーム画面に追加」で Anagrammaton をアプリとして追加します。'
+      ],
+      ko: [
+        '단어 목록은 실제 글의 빈도 목록에서 왔습니다(wordfreq). 그래서 이름, 약어, 드문 형태도 들어 있고, 긴 문장에서는 결과에 이런 단어가 많이 나옵니다. 욕설은 걸러 냈지만, 이런 필터가 완벽할 수는 없습니다.',
+        '‘여러 단어’에서는 검색이 4초 뒤에 멈추고 그때까지 찾은 결과를 보여 줍니다. 문장이 길면 최소 길이를 늘리거나 반드시 들어갈 단어를 정하면 도움이 됩니다.',
+        '오프라인은 첫 방문 후에만, 그리고 이미 쓴 사전으로만 작동합니다. 사전은 하나에 약 0.5MB이고 필요할 때만 내려받습니다.',
+        'iPhone에는 ‘설치’ 버튼이 없습니다. 그곳에서는 Safari의 공유 → ‘홈 화면에 추가’로 Anagrammaton을 앱으로 설치합니다.'
+      ]
+    },
+    docs: {
+      de: 'https://github.com/Dennismit2n/anagrammaton/blob/main/README.de.md',
+      en: 'https://github.com/Dennismit2n/anagrammaton/blob/main/README.md',
+      es: 'https://github.com/Dennismit2n/anagrammaton/blob/main/README.md',
+      fr: 'https://github.com/Dennismit2n/anagrammaton/blob/main/README.md',
+      it: 'https://github.com/Dennismit2n/anagrammaton/blob/main/README.md',
+      nl: 'https://github.com/Dennismit2n/anagrammaton/blob/main/README.md',
+      pl: 'https://github.com/Dennismit2n/anagrammaton/blob/main/README.md',
+      pt: 'https://github.com/Dennismit2n/anagrammaton/blob/main/README.md',
+      tr: 'https://github.com/Dennismit2n/anagrammaton/blob/main/README.md',
+      ru: 'https://github.com/Dennismit2n/anagrammaton/blob/main/README.md',
+      hi: 'https://github.com/Dennismit2n/anagrammaton/blob/main/README.md',
+      zh: 'https://github.com/Dennismit2n/anagrammaton/blob/main/README.md',
+      ja: 'https://github.com/Dennismit2n/anagrammaton/blob/main/README.md',
+      ko: 'https://github.com/Dennismit2n/anagrammaton/blob/main/README.md'
+    }
+  },
   wingetarium: {
     purpose: {
       de: 'Für alle, die Programme unter Windows mit winget installieren oder wissen wollen, ob es etwas dort überhaupt gibt. Wingetarium zeigt, was im offiziellen Verzeichnis steckt, in welcher Version und mit welchem Befehl es sich installiert. Die Daten liest jeden Morgen ein GitHub-Workflow aus dem Original-Index, dein Browser fragt nur diese Seite ab, nie Microsoft. Installiert wird von hier aus nichts: Du kopierst den Befehl und führst ihn selbst im Terminal aus.',

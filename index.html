@@ -37,7 +37,7 @@
   <!-- Die Überschriftenschrift wird auf jeder Seite und in jeder Sprache gebraucht
        (mindestens für den Markennamen), also früh anstoßen statt erst nach der CSS. -->
   <link rel="preload" href="./assets/fonts/fraunces/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="./css/style.css?v=2026-11-13">
+  <link rel="stylesheet" href="./css/style.css?v=2026-11-17">
   <!-- Darstellung vor dem ersten Bild: die gemeinsame Wahl aller Werkzeuge
        (werkstatt.darstellung, sonst der alte Schlüssel), sonst entscheidet das
        System per CSS. data-vision trägt Hoher Kontrast, Farbenblind und Umkehr;
@@ -117,7 +117,8 @@
       <div class="tool-grid">
         <!-- Reihenfolge nach Dennis' Liste vom 13.11.2026 (21 Kacheln, wieder
              handverlesen: Kugelblitz neu auf Platz 4, Besucher-Ticker direkt hinter
-             Follower-Log, Gaming dahinter, Pocketsum hinter Zählwerk). Sie muss mit
+             Follower-Log, Gaming dahinter, Pocketsum hinter Zählwerk), seit 17.11.2026
+             mit Anagrammaton auf Platz 5 hinter Kugelblitz (22 Kacheln). Sie muss mit
              der TOOLS-Liste in js/werkstatt.js und der Liste in der README
              uebereinstimmen; die drei Werkzeuge, die nur auf gaming.html stehen,
              haben in TOOLS den Platz der Gaming-Kachel. -->
@@ -213,6 +214,25 @@
             <a href="./werkstatt.html#kugelblitz-bilder" data-count="kachel-kugelblitz-bilder" data-i18n="secShots">Screenshots</a>
             <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/kugelblitz/blob/main/README.de.md" rel="noopener" data-count="kachel-kugelblitz-readme" data-i18n="secReadme">README</a>
             <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/kugelblitz#readme" rel="noopener" data-count="kachel-kugelblitz-readme" data-i18n="secReadme">README</a>
+          </span>
+        </div>
+        <!-- Anagrammaton (17.11.2026, Platz 5 hinter Kugelblitz, Dennis' Wahl): Name und
+             Kappe im Verlauf der Buchstabenkacheln der App, Magenta, Orange, Grün, Blau.
+             Nur hier, nicht auf gaming.html. Siehe --anagrammaton-flow in style.css. -->
+        <div class="tool-card tool-anagrammaton">
+          <span class="tool-head">
+            <img src="./assets/anagrammaton.svg" alt="" width="44" height="44">
+            <span class="tool-name" id="name-anagrammaton">Anagrammaton</span>
+          </span>
+          <span class="tool-desc" data-i18n="anagrammatonDesc">Anagrams, reversals and palindromes. Your letters are coloured tiles that fly to their new places, with Shuffle, Invert and Reverse.</span>
+          <span class="tool-meta" data-i18n="anagrammatonMeta">In your browser · 14 languages · no cookies · offline after the first visit</span>
+          <a class="tool-open" data-count="kachel-anagrammaton" id="open-anagrammaton" aria-labelledby="open-anagrammaton name-anagrammaton" href="https://dennismit2n.github.io/anagrammaton/"><span data-i18n="openTool">Open</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="tool-mini" data-tool="anagrammaton">
+            <a href="./werkstatt.html#anagrammaton-neuigkeiten" data-count="kachel-anagrammaton-news"><span data-i18n="secNews">News</span> <span class="tool-mini-date"></span></a>
+            <a href="./werkstatt.html#anagrammaton-anleitung" data-count="kachel-anagrammaton-anleitung" data-i18n="secGuide">Guide</a>
+            <a href="./werkstatt.html#anagrammaton-bilder" data-count="kachel-anagrammaton-bilder" data-i18n="secShots">Screenshots</a>
+            <a class="tool-mini-lang-only" data-lang-only="de" href="https://github.com/Dennismit2n/anagrammaton/blob/main/README.de.md" rel="noopener" data-count="kachel-anagrammaton-readme" data-i18n="secReadme">README</a>
+            <a class="tool-mini-lang-only" data-lang-only="en" href="https://github.com/Dennismit2n/anagrammaton#readme" rel="noopener" data-count="kachel-anagrammaton-readme" data-i18n="secReadme">README</a>
           </span>
         </div>
         <!-- Wingetarium: Kappe und Name im Verlauf Index-Blau → Grün („täglich frisch“),
@@ -559,9 +579,9 @@
      Als eigenes Skript-Tag hielt es das Übersetzen noch eine halbe Sekunde
      auf; main.js holt es deshalb erst danach. data-news trägt die Adresse
      samt ?v=-Stempel. -->
-<script src="./js/i18n.js?v=2026-11-17" fetchpriority="high"></script>
+<script src="./js/i18n.js?v=2026-11-17b" fetchpriority="high"></script>
 <script src="./js/dates.js?v=2026-09-14" fetchpriority="high"></script>
 <script src="./js/header.js?v=2026-11-12h" fetchpriority="high"></script>
-<script src="./js/main.js?v=2026-11-12h" fetchpriority="high" data-news="./js/news.js?v=2026-11-17b"></script>
+<script src="./js/main.js?v=2026-11-12h" fetchpriority="high" data-news="./js/news.js?v=2026-11-17c"></script>
 </body>
 </html>

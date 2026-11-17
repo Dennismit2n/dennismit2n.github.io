@@ -6,7 +6,7 @@ Startseite für die kleinen Werkzeuge von Dennis_mit_2n: ohne Anmeldung, keine A
 
 **➡️ [dennismit2n.github.io](https://dennismit2n.github.io/)**
 
-<img src="assets/screenshot-startseite.webp" alt="The start page in dark mode: the headline „Kleine Werkzeuge, die nichts von dir wollen“, the pledge line, and the first six tiles of the toolbox (create-masterprompt, Werkstatt-Mods, Real_RAM_cooler, Kugelblitz with its name on a dark plate in a white gold frame, Wingetarium, fontART Designer), each glowing in its own colour on the blueprint grid with the aurora clouds." width="800">
+<img src="assets/screenshot-startseite.webp" alt="The start page in dark mode: the headline „Kleine Werkzeuge, die nichts von dir wollen“, the pledge line, and the first six tiles of the toolbox (create-masterprompt, Werkstatt-Mods, Real_RAM_cooler, Kugelblitz with its name on a dark plate in a white gold frame, Anagrammaton with its name running through magenta, orange, green and blue, Wingetarium), each glowing in its own colour on the blueprint grid with the aurora clouds." width="800">
 
 ## Tools
 
@@ -14,6 +14,7 @@ Startseite für die kleinen Werkzeuge von Dennis_mit_2n: ohne Anmeldung, keine A
 - [Werkstatt-Mods](https://dennismit2n.github.io/mods.html): ten mods for Claude Code (statistics pane, limits band, guard, limit pause, agents pane, handoff, chat inventory, screen guard, switchboard, traffic light), each installed with one line; its own page with screenshots, install lines and prompts (see below)
 - [Real_RAM_cooler](https://github.com/Dennismit2n/Real_RAM_cooler): an honest RAM tool for Windows (download, not a browser tool)
 - [Kugelblitz](https://dennismit2n.github.io/kugelblitz/): a pinball game for keys and fingers with five missions, multiball, high scores and physics no ball slips through, no sound and no flashes, offline after the first visit (on the gaming page as well)
+- [Anagrammaton](https://dennismit2n.github.io/anagrammaton/): anagrams, reversals and palindromes in 14 languages, shown as coloured letter tiles that fly to their new places, with Shuffle, Invert and Reverse buttons, offline after the first visit
 - [Wingetarium](https://dennismit2n.github.io/wingetarium/): what is inside the official winget repository, fresh every day: 108 hand-picked packages at today’s version, a search across all packages, what is new and the key commands, offline after the first visit
 - [fontART Designer](https://dennismit2n.github.io/fontART-demo/): turn your handwriting into a real font (trial version: in the browser, or as a Windows download)
 - [Prismatical](https://dennismit2n.github.io/prismatical/): passwords and passphrases whose strength is the colour of the interface
@@ -32,7 +33,7 @@ Startseite für die kleinen Werkzeuge von Dennis_mit_2n: ohne Anmeldung, keine A
 - [bigday](https://dennismit2n.github.io/bigday/): pretty shareable countdown page
 - [Fadenkreuz](https://github.com/Dennismit2n/fadenkreuz): your own crosshair in the exact centre of the screen, drawn in a small editor, on about 1 MB of RAM (Windows download, not a browser tool; on the gaming page as well)
 
-Same order as the tiles on the page, hand-picked by Dennis, last reordered on 13 November 2026; new tools do not simply go to the end. Two further tiles sit at the end as placeholders, with no link and no mini tiles: there is nothing to open yet. Real_RAM_cooler, Besucher-Ticker and Fadenkreuz are Windows downloads and fontART comes both ways, which is why neither the headline nor the tiles promise a browser tool. fontART has one mini tile more than the others: its main button opens the browser version, and "For Windows" leads to the release. create-masterprompt has an extra one as well, opening the one-page overview from `docs/`, in whichever of the fourteen languages the page is currently set to. create-masterprompt is the first entry that is neither a browser tool nor a Windows program: it is an Agent Skill that runs inside an AI chat, which is why its button leads to the repository and its meta line does not borrow the "no uploads" line of the others.
+Same order as the tiles on the page, hand-picked by Dennis, last reordered on 13 November 2026, with Anagrammaton added at position 5 on 17 November 2026; new tools do not simply go to the end. Two further tiles sit at the end as placeholders, with no link and no mini tiles: there is nothing to open yet. Real_RAM_cooler, Besucher-Ticker and Fadenkreuz are Windows downloads and fontART comes both ways, which is why neither the headline nor the tiles promise a browser tool. fontART has one mini tile more than the others: its main button opens the browser version, and "For Windows" leads to the release. create-masterprompt has an extra one as well, opening the one-page overview from `docs/`, in whichever of the fourteen languages the page is currently set to. create-masterprompt is the first entry that is neither a browser tool nor a Windows program: it is an Agent Skill that runs inside an AI chat, which is why its button leads to the repository and its meta line does not borrow the "no uploads" line of the others.
 
 **fontART is the odd one out**, and the tile says so rather than hiding it: it is the only tool here that is neither open source nor meant to stay free. What this repository links to is the free trial; the full version is being worked on, with no date and no price settled. The reasoning is spelled out in the guide on `werkstatt.html`, because a workshop whose footer says "open source on GitHub" owes an explanation for the one exception.
 
@@ -42,13 +43,13 @@ Since 1 November 2026 the mods for Claude Code (five at first, nine since 11 Nov
 
 ## Gaming page
 
-Since 30 October 2026 everything to do with games lives on its own page, `gaming.html`, so it stays apart from the other tools. On the start page it is one tile, “Gaming”, at position 15: name, border and button in graphite, the cap a gradient from magenta through cherry red and neon blue to neon green. Its news mini tile shows the newest news date of the gaming apps and jumps to their section on `werkstatt.html`.
+Since 30 October 2026 everything to do with games lives on its own page, `gaming.html`, so it stays apart from the other tools. On the start page it is one tile, “Gaming”, at position 16: name, border and button in graphite, the cap a gradient from magenta through cherry red and neon blue to neon green. Its news mini tile shows the newest news date of the gaming apps and jumps to their section on `werkstatt.html`.
 
 - [Kugelblitz](https://dennismit2n.github.io/kugelblitz/): my pinball game, first on the gaming page and at position 4 on the start page (14 languages, five appearances, offline after the first visit)
 - [Craftionary](https://dennismit2n.github.io/craftionary/): every Minecraft recipe, where to find items and ores, ready `/give` commands and a banner and pot workshop (14 languages)
 - [BL4 Vault-Handbuch](https://dennismit2n.github.io/bl4/): Borderlands 4 handbook, lives in `bl4/` of this repository (app in German, controls in 14 languages)
 - [MW4 Rüstkammer](https://dennismit2n.github.io/mw4/): Call of Duty: Modern Warfare 4 builds and time to kill, lives in `mw4/` of this repository (app in German, controls in 14 languages)
-- [Fadenkreuz](https://github.com/Dennismit2n/fadenkreuz): your own crosshair in the exact centre of the screen, drawn in a small editor, on about 1 MB of RAM (Windows download, not a browser tool). Since the evening of 30 October 2026 it is back on the start page as well, today at position 21.
+- [Fadenkreuz](https://github.com/Dennismit2n/fadenkreuz): your own crosshair in the exact centre of the screen, drawn in a small editor, on about 1 MB of RAM (Windows download, not a browser tool). Since the evening of 30 October 2026 it is back on the start page as well, today at position 22.
 - [Real_RAM_cooler](https://github.com/Dennismit2n/Real_RAM_cooler): also on the start page; its “Clean up for gaming” button is why it belongs here too
 - a placeholder for the game guides still to come, with no link
 
@@ -82,7 +83,7 @@ The interface words exist in all 14 languages, and since 14 September 2026 so do
 
 ## Development
 
-No build step: plain HTML, CSS, and JavaScript. 110 files make up the site (not counting the apps in `bl4/` and `mw4/`, the `heizwarte/` helper and `tools/`): four pages, one stylesheet, nine scripts (one of them GoatCounter’s, vendored), twenty-nine images plus the nine mod screenshots in `assets/mods/`, three icons, fifty-two screenshots for the guides in `assets/anleitung/`, and two font files with their licence in `assets/fonts/fraunces/`. No npm dependencies.
+No build step: plain HTML, CSS, and JavaScript. 118 files make up the site (not counting the apps in `bl4/` and `mw4/`, the `heizwarte/` helper and `tools/`): four pages, one stylesheet, nine scripts (one of them GoatCounter’s, vendored), thirty images plus the twelve mod screenshots in `assets/mods/`, three icons, fifty-six screenshots for the guides in `assets/anleitung/`, and two font files with their licence in `assets/fonts/fraunces/`. No npm dependencies.
 
 ```
 node tools/dev-server.js
@@ -97,7 +98,7 @@ deployed `index.html` can meet a ten-minute-old `i18n.js` and render raw keys in
 
 ## Preview and promo images
 
-`tools/promo/` renders the preview and promo images for the workshop from one shared template: 253 images, ten formats per tool (link preview, GitHub social preview, Instagram, LinkedIn, X, three story cards, Twitch panel, Twitch banner) plus thirteen brand images (avatars and profile banners), in the design of the start page since 30 October 2026. It knows all 21 tiles and the start page plus the Zählwerk Ticker and the Besucher-Ticker App. Colours come straight from `css/style.css`, the icons are the same SVGs as the tiles. Everything editable lives in `tools/promo/marke.mjs`; see `tools/promo/README.md`.
+`tools/promo/` renders the preview and promo images for the workshop from one shared template: 263 images, ten formats per tool (link preview, GitHub social preview, Instagram, LinkedIn, X, three story cards, Twitch panel, Twitch banner) plus thirteen brand images (avatars and profile banners), in the design of the start page since 30 October 2026. It knows all 22 tiles and the start page plus the Zählwerk Ticker and the Besucher-Ticker App. Colours come straight from `css/style.css`, the icons are the same SVGs as the tiles. Everything editable lives in `tools/promo/marke.mjs`; see `tools/promo/README.md`.
 
 ## Translations
 

@@ -16,7 +16,8 @@
 (function () {
   // Same order as the tiles on the start page.
   // Reihenfolge muss mit den Kacheln in index.html uebereinstimmen
-  // (Dennis' Liste vom 13.11.2026). Die beiden Platzhalter-Kacheln stehen
+  // (Dennis' Liste vom 13.11.2026, seit 17.11.2026 mit Anagrammaton auf
+  // Platz 5). Die beiden Platzhalter-Kacheln stehen
   // hier bewusst NICHT: sie haben weder Neuigkeiten noch Anleitung.
   var TOOLS = [
     { key: 'masterprompt', name: 'create-masterprompt', icon: './assets/masterprompt.svg',
@@ -31,6 +32,9 @@
     // dagegen an erster Stelle; einen Abschnitt gibt es nur einmal.
     { key: 'kugelblitz', name: 'Kugelblitz', icon: './assets/kugelblitz.svg',
       url: 'https://dennismit2n.github.io/kugelblitz/', ctaKey: 'openTool' },
+    // Anagrammaton seit 17.11.2026 auf Platz 5 wie auf der Startseite.
+    { key: 'anagrammaton', name: 'Anagrammaton', icon: './assets/anagrammaton.svg',
+      url: 'https://dennismit2n.github.io/anagrammaton/', ctaKey: 'openTool' },
     { key: 'wingetarium', name: 'Wingetarium', icon: './assets/wingetarium.svg',
       url: 'https://dennismit2n.github.io/wingetarium/', ctaKey: 'openTool' },
     { key: 'fontart', name: 'fontART Designer', icon: './assets/fontart.svg',

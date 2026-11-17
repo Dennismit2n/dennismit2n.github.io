@@ -192,6 +192,10 @@ const ICONS = {
    * Chromkugel mit Blitz in einer Fassung aus Weißgold. Die erste Fläche ist der
    * Vollton, darüber der Verlauf der Platte, wie in der Datei der Startseite. */
   kugelblitz: `<g transform="scale(0.75)"><defs><linearGradient id="kb-p" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#26254F"/><stop offset="1" stop-color="#121128"/></linearGradient><radialGradient id="kb-c" cx=".66" cy=".3" r=".96" fx=".66" fy=".3"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".07" stop-color="#FFFFFF"/><stop offset=".22" stop-color="#BDB8E6"/><stop offset=".5" stop-color="#6E68A4"/><stop offset=".56" stop-color="#26234B"/><stop offset="1" stop-color="#4A4680"/></radialGradient><linearGradient id="kb-g" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFCEE"/><stop offset=".4" stop-color="#F1E4BC"/><stop offset="1" stop-color="#7A6226"/></linearGradient><linearGradient id="kb-b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B9E2FF"/><stop offset=".45" stop-color="#75C7FF"/><stop offset="1" stop-color="#AFA1FF"/></linearGradient></defs><rect width="64" height="64" rx="14" fill="#1C1B3E"/><rect width="64" height="64" rx="14" fill="url(#kb-p)"/><circle cx="32" cy="32" r="23.5" fill="none" stroke="url(#kb-g)" stroke-width="3"/><circle cx="32" cy="32" r="21.5" fill="url(#kb-c)"/><path d="M36.2 12.5 L23.6 33.2 L30.6 33.2 L26.2 51.6 L39.9 28.7 L32.6 28.7 L40.1 12.5 Z" fill="url(#kb-b)" stroke="#F1E4BC" stroke-width="1.3" stroke-linejoin="round"/></g>`,
+  /* anagrammaton.svg (das favicon der App) zeichnet auf 64, hier auf 48 verkleinert:
+   * vier Buchstabenkacheln A, N, A, G, die letzte im Flug leicht gedreht. Die
+   * Verläufe tragen den Vorsatz ag-, weil die Banner viele Symbole in einem Bild zeigen. */
+  anagrammaton: `<g transform="scale(0.75)"><defs><linearGradient id="ag-a" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8D55DD"/><stop offset="1" stop-color="#8B1693"/></linearGradient><linearGradient id="ag-n" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#CB3587"/><stop offset="1" stop-color="#A6002F"/></linearGradient><linearGradient id="ag-g" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#AF6600"/><stop offset="1" stop-color="#6C5500"/></linearGradient></defs><rect width="64" height="64" rx="16" fill="#15121E"/><g fill="#000" fill-opacity=".45"><rect x="7.5" y="11" width="22" height="22" rx="4"/><rect x="31.5" y="11" width="22" height="22" rx="4"/><rect x="7.5" y="35" width="22" height="22" rx="4"/><rect x="31.5" y="35" width="22" height="22" rx="4" transform="rotate(-7 42.5 46)"/></g><rect x="9" y="9" width="22" height="22" rx="4" fill="url(#ag-a)"/><rect x="33" y="9" width="22" height="22" rx="4" fill="url(#ag-n)"/><rect x="9" y="33" width="22" height="22" rx="4" fill="url(#ag-a)"/><g transform="rotate(-7 44 44)"><rect x="33" y="33" width="22" height="22" rx="4" fill="url(#ag-g)"/></g><g fill="none" stroke="#F4EFFA" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 26 20 14l6 12M16.6 21.6h6.8"/><path d="M39 26V14l10 12V14"/><path d="M14 50 20 38l6 12M16.6 45.6h6.8"/><path d="M49.3 40.6A6.3 6.3 0 1 0 50.2 45H44.6" transform="rotate(-7 44 44)"/></g></g>`,
   /* follower-log.svg zeichnet auf 100, hier auf 48 verkleinert. */
   followerlog: `<g transform="scale(0.48)"><rect width="100" height="100" rx="18" fill="#0f1115"/><circle cx="38.8" cy="38.8" r="10.4" fill="#8fa3c4"/><path d="M19.6 74.8a19.2 19.2 0 0 1 38.4 0z" fill="#8fa3c4"/><rect x="59.6" y="38.4" width="20.8" height="4" fill="#7FE39B"/><rect x="68" y="30" width="4" height="20.8" fill="#7FE39B"/><rect x="59.6" y="60.8" width="20.8" height="4" fill="#FF9A92"/></g>`,
   /* pocketsum.svg hat als einziges ein 44er-Feld; um 2 verschoben sitzt es
@@ -294,6 +298,37 @@ export const TOOLS = [
     /* index.html liegt in der Wurzel und verweist auf og.png daneben. Die
      * beiden Bilder ohne Abnehmer auf der Seite gehen nach docs/ wie bei
      * Hourbridge: dort ist docs/*.png ignoriert, sie bleiben lokal, und
+     * github-social.png wird von Hand bei GitHub hochgeladen. */
+    assetOrdner: '',
+    sozialOrdner: 'docs',
+    instaOrdner: 'docs',
+  },
+  {
+    /* Eingetragen am 17.11.2026 mit der Kachel (Platz 5, hinter Kugelblitz,
+     * Dennis' Wahl). Farben wie --anagrammaton-flow der Startseite, dunkle
+     * Fassung: Magenta, Orange, Grün und Blau wie die Buchstabenkacheln der
+     * App, Vollton ist das Magenta. Name im Verlauf wie auf der Kachel.
+     * Claims wie og:image:alt der App („Anagrams, reversals and palindromes in
+     * 14 languages“). */
+    slug: 'anagrammaton',
+    name: 'Anagrammaton',
+    icon: 'anagrammaton',
+    farbe: '#FF69B9',
+    flow: 'linear-gradient(100deg, #FF69B9, #FF8526, #00C737, #51A9FF)',
+    nameFlow: true,
+    claimDe: 'Anagramme, Rückwärtswörter und Palindrome.',
+    claimEn: 'Anagrams, reversals and palindromes\nin 14 languages',
+    zusagen: ['Kostenlos', 'ohne Cookies', 'offline nach dem ersten Besuch'],
+    url: 'dennismit2n.github.io/anagrammaton',
+    story: [
+      { ober: 'Für Rätsel und Wortspiele', gross: 'Was steckt noch in deinem Wort?', unter: 'Aus Lager wird Regal, aus listen wird silent. Jeder Buchstabe ist eine farbige Kachel und fliegt an seinen neuen Platz.' },
+      { ober: 'So geht es', gross: 'Tippen, klicken, zusehen.', unter: 'Ein Wort, ganze Sätze oder rückwärts gelesen, in 14 Sprachen. Mischen, Invert und Reverse spielen mit Reihenfolge und Farben.' },
+      { ober: 'Kostenlos & quelloffen', gross: 'Jetzt umstellen', unter: 'dennismit2n.github.io/anagrammaton' },
+    ],
+    repo: 'anagrammaton',
+    /* index.html liegt in der Wurzel und verweist auf og.png daneben. Die
+     * beiden Bilder ohne Abnehmer auf der Seite gehen wie bei Kugelblitz nach
+     * docs/: dort ist docs/*.png ignoriert, sie bleiben lokal, und
      * github-social.png wird von Hand bei GitHub hochgeladen. */
     assetOrdner: '',
     sozialOrdner: 'docs',
@@ -857,13 +892,13 @@ export const TOOLS = [
   },
 ];
 
-/* Reihenfolge der Kacheln auf der Startseite (Stand 13.11.2026, index.html),
+/* Reihenfolge der Kacheln auf der Startseite (Stand 17.11.2026, index.html),
  * für die Icon-Reihe der Banner. Der Zählwerk Ticker hat keine eigene Kachel,
  * die Besucher-Ticker App ist nur eine Mini-Kachel. */
 export const KACHELN = [
-  'create-masterprompt', 'werkstatt-mods', 'real-ram-cooler', 'kugelblitz', 'wingetarium',
-  'fontart-demo', 'prismatical', 'spectroton', 'shrinkling', 'wifi-qr', 'heizwarte',
-  'hourbridge', 'follower-log', 'besucher-ticker', 'gaming',
+  'create-masterprompt', 'werkstatt-mods', 'real-ram-cooler', 'kugelblitz', 'anagrammaton',
+  'wingetarium', 'fontart-demo', 'prismatical', 'spectroton', 'shrinkling', 'wifi-qr',
+  'heizwarte', 'hourbridge', 'follower-log', 'besucher-ticker', 'gaming',
   'zaehlwerk', 'pocketsum', 'collective-calc', 'dreh-das-rad', 'bigday', 'fadenkreuz',
 ];
 
