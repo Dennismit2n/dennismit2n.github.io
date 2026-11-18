@@ -139,7 +139,7 @@ var NEWS = {
       version: 'v1.1',
       link: 'https://github.com/Dennismit2n/Real_RAM_cooler/releases/tag/v1.1',
       de: 'Erste Veröffentlichung. Installer für Windows 10/11 mit dem dreifarbigen RAM-Balken, der Top-12-Liste der Speicherfresser und dem Placebo-Knopf, der ehrlich beschriftet ist.',
-      en: 'First release. An installer for Windows 10/11 with the three-colour RAM bar, the top-12 list of memory hogs, and the placebo button that honestly says what it is.',
+      en: 'First release. An installer for Windows 10/11 with the three-color RAM bar, the top-12 list of memory hogs, and the placebo button that honestly says what it is.',
       es: 'Primera publicación. Instalador para Windows 10/11 con la barra de RAM de tres colores, la lista de los doce mayores devoradores de memoria y el botón placebo, que está etiquetado con honestidad.',
       fr: 'Première publication. Programme d’installation pour Windows 10/11, avec la barre de RAM tricolore, le classement des douze plus gros dévoreurs de mémoire et le bouton placebo, honnêtement étiqueté.',
       it: 'Prima pubblicazione. Installer per Windows 10/11 con la barra della RAM a tre colori, la classifica dei dodici maggiori divoratori di memoria e il pulsante placebo, etichettato onestamente.',
@@ -210,7 +210,7 @@ var NEWS = {
     {
       date: '2026-10-31',
       de: 'Neben Hell und Dunkel gibt es jetzt Hoher Kontrast (dunkel und hell), Farbenblind (dunkel und hell) und Umgekehrte Farben. Deine Wahl gilt in allen meinen Werkzeugen.',
-      en: 'Besides light and dark there are now high contrast (dark and light), colour-blind (dark and light) and inverted colours. Your choice applies across all my tools.',
+      en: 'Besides light and dark there are now high contrast (dark and light), color-blind (dark and light) and inverted colors. Your choice applies across all my tools.',
       es: 'Además de claro y oscuro, ahora hay alto contraste (oscuro y claro), daltónico (oscuro y claro) y colores invertidos. Tu elección vale en todas mis herramientas.',
       fr: 'En plus de clair et sombre, il y a désormais contraste élevé (sombre et clair), daltonien (sombre et clair) et couleurs inversées. Votre choix s’applique à tous mes outils.',
       it: 'Oltre a chiaro e scuro ora ci sono contrasto elevato (scuro e chiaro), daltonico (scuro e chiaro) e colori invertiti. La tua scelta vale in tutti i miei strumenti.',
@@ -383,7 +383,7 @@ var NEWS = {
     {
       date: '2026-10-31',
       de: 'Kleine graue Schrift ist jetzt dunkler und besser zu lesen, im hellen Modus und in der Zeile unten auf der Karte (auch gedruckt).',
-      en: 'Small grey text is now darker and easier to read, in light mode and in the line at the bottom of the card (printed too).',
+      en: 'Small gray text is now darker and easier to read, in light mode and in the line at the bottom of the card (printed too).',
       es: 'El texto gris pequeño ahora es más oscuro y se lee mejor, en el modo claro y en la línea inferior de la tarjeta (también impresa).',
       fr: 'Le petit texte gris est désormais plus foncé et plus lisible, en mode clair et dans la ligne en bas de la carte (imprimée aussi).',
       it: 'Il testo grigio piccolo ora è più scuro e si legge meglio, in modalità chiara e nella riga in fondo alla tessera (anche stampata).',
@@ -400,7 +400,7 @@ var NEWS = {
     {
       date: '2026-10-31',
       de: 'Neben Hell und Dunkel gibt es jetzt Hoher Kontrast (dunkel und hell), Farbenblind (dunkel und hell) und Umgekehrte Farben. Deine Wahl gilt in allen meinen Werkzeugen.',
-      en: 'Besides light and dark there are now high contrast (dark and light), colour-blind (dark and light) and inverted colours. Your choice applies across all my tools.',
+      en: 'Besides light and dark there are now high contrast (dark and light), color-blind (dark and light) and inverted colors. Your choice applies across all my tools.',
       es: 'Además de claro y oscuro, ahora hay alto contraste (oscuro y claro), daltónico (oscuro y claro) y colores invertidos. Tu elección vale en todas mis herramientas.',
       fr: 'En plus de clair et sombre, il y a désormais contraste élevé (sombre et clair), daltonien (sombre et clair) et couleurs inversées. Votre choix s’applique à tous mes outils.',
       it: 'Oltre a chiaro e scuro ora ci sono contrasto elevato (scuro e chiaro), daltonico (scuro e chiaro) e colori invertiti. La tua scelta vale in tutti i miei strumenti.',
@@ -590,7 +590,7 @@ var NEWS = {
     {
       date: '2026-10-31',
       de: 'Neben Hell und Dunkel gibt es jetzt Hoher Kontrast (dunkel und hell), Farbenblind (dunkel und hell) und Umgekehrte Farben. Deine Wahl gilt in allen meinen Werkzeugen.',
-      en: 'Besides light and dark there are now high contrast (dark and light), colour-blind (dark and light) and inverted colours. Your choice applies across all my tools.',
+      en: 'Besides light and dark there are now high contrast (dark and light), color-blind (dark and light) and inverted colors. Your choice applies across all my tools.',
       es: 'Además de claro y oscuro, ahora hay alto contraste (oscuro y claro), daltónico (oscuro y claro) y colores invertidos. Tu elección vale en todas mis herramientas.',
       fr: 'En plus de clair et sombre, il y a désormais contraste élevé (sombre et clair), daltonien (sombre et clair) et couleurs inversées. Votre choix s’applique à tous mes outils.',
       it: 'Oltre a chiaro e scuro ora ci sono contrasto elevato (scuro e chiaro), daltonico (scuro e chiaro) e colori invertiti. La tua scelta vale in tutti i miei strumenti.',
@@ -641,7 +641,7 @@ var NEWS = {
     {
       date: '2026-08-14',
       de: 'Erste Veröffentlichung. Ein Passwort-Generator, bei dem die Farbe der ganzen Oberfläche die Stärke ist: Sie wandert live von Rot nach Violett, während du an den Reglern drehst. Fünf Arten von Geheimnis: Zufallspasswort, Passphrase aus Wortlisten, PIN, aussprechbar und ein zustandsloser Modus, der dasselbe Passwort immer wieder aus Merksatz, Domain und Login errechnet. Alles bleibt auf deinem Gerät, im Auslieferungszustand geht kein einziger Netzwerk-Aufruf hinaus.',
-      en: 'First release. A password generator where the colour of the whole interface is the strength: it travels live from red to violet as you move the sliders. Five kinds of secret: random password, passphrase from word lists, PIN, pronounceable, and a stateless mode that recomputes the same password from a master phrase, domain and login. Everything stays on your device, and as shipped, not a single network request goes out.',
+      en: 'First release. A password generator where the color of the whole interface is the strength: it travels live from red to violet as you move the sliders. Five kinds of secret: random password, passphrase from word lists, PIN, pronounceable, and a stateless mode that recomputes the same password from a master phrase, domain and login. Everything stays on your device, and as shipped, not a single network request goes out.',
       es: 'Primera publicación. Un generador de contraseñas en el que el color de toda la interfaz es la fuerza: va en vivo del rojo al violeta mientras mueves los controles. Cinco tipos de secreto: contraseña aleatoria, frase de contraseña a partir de listas de palabras, PIN, pronunciable y un modo sin estado que vuelve a calcular una y otra vez la misma contraseña a partir de una frase maestra, el dominio y el usuario. Todo se queda en tu dispositivo, y tal como viene de fábrica no sale ni una sola petición de red.',
       fr: 'Première publication. Un générateur de mots de passe où la couleur de toute l’interface est la robustesse : elle va en direct du rouge au violet pendant que vous manipulez les curseurs. Cinq sortes de secret : mot de passe aléatoire, phrase secrète tirée de listes de mots, code PIN, prononçable, et un mode sans état qui recalcule toujours le même mot de passe à partir d’une phrase maîtresse, d’un domaine et d’un identifiant. Tout reste sur votre appareil, et dans sa configuration d’origine, pas un seul appel réseau ne sort.',
       it: 'Prima pubblicazione. Un generatore di password in cui il colore di tutta l’interfaccia è la robustezza: si sposta in tempo reale dal rosso al violetto mentre muovi i cursori. Cinque tipi di segreto: password casuale, passphrase da liste di parole, PIN, pronunciabile e una modalità senza stato, che ricalcola sempre la stessa password da frase chiave, dominio e login. Tutto resta sul tuo dispositivo, e nella configurazione di fabbrica non esce nemmeno una richiesta di rete.',
@@ -678,7 +678,7 @@ var NEWS = {
     {
       date: '2026-11-01',
       de: 'Alle Texte ohne Gedankenstriche, in allen 14 Sprachen. Wo vorher ein Strich stand, steht jetzt ein Komma, ein Punkt oder ein Doppelpunkt.',
-      en: 'All texts without dashes, in all 14 languages. Where a dash used to be, there is now a comma, a full stop or a colon.',
+      en: 'All texts without dashes, in all 14 languages. Where a dash used to be, there is now a comma, a period or a colon.',
       es: 'Todos los textos sin rayas, en los 14 idiomas. Donde antes había una raya, ahora hay una coma, un punto o dos puntos.',
       fr: 'Tous les textes sans tirets, dans les 14 langues. Là où il y avait un tiret, il y a maintenant une virgule, un point ou deux-points.',
       it: 'Tutti i testi senza trattini lunghi, in tutte le 14 lingue. Dove prima c’era un trattino, ora c’è una virgola, un punto o i due punti.',
@@ -695,7 +695,7 @@ var NEWS = {
     {
       date: '2026-10-31',
       de: 'Die Fußzeile (direktes Speichern in einen Ordner, Farbraum des Bildschirms) steht jetzt gleich beim ersten Öffnen in deiner Sprache. Vorher kam sie immer auf Deutsch.',
-      en: 'The footer line (saving straight into a folder, your screen’s colour space) now shows in your language from the very first visit. Before, it always came up in German.',
+      en: 'The footer line (saving straight into a folder, your screen’s color space) now shows in your language from the very first visit. Before, it always came up in German.',
       es: 'La línea del pie de página (guardar directamente en una carpeta, espacio de color de tu pantalla) ahora aparece en tu idioma desde la primera visita. Antes salía siempre en alemán.',
       fr: 'La ligne du pied de page (enregistrement direct dans un dossier, espace colorimétrique de votre écran) s’affiche désormais dans votre langue dès la première visite. Avant, elle apparaissait toujours en allemand.',
       it: 'La riga a piè di pagina (salvataggio diretto in una cartella, spazio colore del tuo schermo) ora compare nella tua lingua fin dalla prima visita. Prima usciva sempre in tedesco.',
@@ -729,7 +729,7 @@ var NEWS = {
     {
       date: '2026-10-31',
       de: 'Neben Hell und Dunkel gibt es jetzt Hoher Kontrast (dunkel und hell), Farbenblind (dunkel und hell) und Umgekehrte Farben. Deine Wahl gilt in allen meinen Werkzeugen.',
-      en: 'Besides light and dark there are now high contrast (dark and light), colour-blind (dark and light) and inverted colours. Your choice applies across all my tools.',
+      en: 'Besides light and dark there are now high contrast (dark and light), color-blind (dark and light) and inverted colors. Your choice applies across all my tools.',
       es: 'Además de claro y oscuro, ahora hay alto contraste (oscuro y claro), daltónico (oscuro y claro) y colores invertidos. Tu elección vale en todas mis herramientas.',
       fr: 'En plus de clair et sombre, il y a désormais contraste élevé (sombre et clair), daltonien (sombre et clair) et couleurs inversées. Votre choix s’applique à tous mes outils.',
       it: 'Oltre a chiaro e scuro ora ci sono contrasto elevato (scuro e chiaro), daltonico (scuro e chiaro) e colori invertiti. La tua scelta vale in tutti i miei strumenti.',
@@ -814,7 +814,7 @@ var NEWS = {
     {
       date: '2026-09-13',
       de: 'Behoben: Wer die Darstellung von Hand auf Dunkel stellte, sah die Kachel weiter im Türkis des Hellmodus, einem dunklen Ton, der auf dunklem Grund kaum noch zu lesen war. Für den erzwungenen Dunkelmodus fehlte die Farbe. Über die Systemeinstellung war sie immer richtig.',
-      en: 'Fixed: with the display switched to dark by hand, the tile kept the teal meant for light mode, a dark shade that barely read against a dark background. The colour was missing for the forced dark mode. Via the system setting it was always correct.',
+      en: 'Fixed: with the display switched to dark by hand, the tile kept the teal meant for light mode, a dark shade that barely read against a dark background. The color was missing for the forced dark mode. Via the system setting it was always correct.',
       es: 'Corregido: quien cambiaba a mano la apariencia a oscuro seguía viendo en la tarjeta el turquesa del modo claro, un tono oscuro que sobre fondo oscuro apenas se leía. Para el modo oscuro forzado faltaba el color. A través del ajuste del sistema siempre fue correcto.',
       fr: 'Corrigé : si vous régliez l’apparence sur sombre à la main, la vignette gardait le turquoise du mode clair, un ton foncé qui ne se lisait presque plus sur fond sombre. La couleur manquait pour le mode sombre forcé. Via le réglage du système, elle était toujours juste.',
       it: 'Risolto: chi impostava a mano l’aspetto su scuro vedeva la scheda conservare il turchese della modalità chiara, una tonalità scura che su fondo scuro era ormai a malapena leggibile. Per la modalità scura forzata il colore mancava. Tramite l’impostazione di sistema era sempre giusto.',
@@ -831,7 +831,7 @@ var NEWS = {
     {
       date: '2026-09-10',
       de: 'Erste Veröffentlichung. Du setzt eine Basisfarbe, Spectroton rechnet daraus elf abgestimmte Stufen und schreibt zu jeder den Kontrastwert, wahlweise nach WCAG 2.2 oder nach APCA. Dazu Akzentfarben nach Harmonie-Regeln, einzeln sperrbare Stufen, vier Erscheinungsbilder und Export als CSS, Tailwind, Tokens-Datei oder HEX-Liste. Fertige Paletten kannst du benannt im Gerät ablegen oder komplett als Link weitergeben.',
-      en: 'First release. You set a base colour, Spectroton computes eleven matching shades from it and writes the contrast value next to each one, either WCAG 2.2 or APCA, whichever you pick. Plus accent colours by harmony rules, individually lockable shades, four appearances, and export as CSS, Tailwind, a tokens file or a plain HEX list. Finished palettes can be stored by name on your device or passed on complete as a link.',
+      en: 'First release. You set a base color, Spectroton computes eleven matching shades from it and writes the contrast value next to each one, either WCAG 2.2 or APCA, whichever you pick. Plus accent colors by harmony rules, individually lockable shades, four appearances, and export as CSS, Tailwind, a tokens file or a plain HEX list. Finished palettes can be stored by name on your device or passed on complete as a link.',
       es: 'Primera publicación. Tú fijas un color base, Spectroton calcula a partir de él once tonos armonizados y escribe junto a cada uno el valor de contraste, a elegir según WCAG 2.2 o según APCA. Además, colores de acento según reglas de armonía, tonos bloqueables uno a uno, cuatro apariencias y exportación como CSS, Tailwind, archivo de tokens o lista HEX. Las paletas terminadas puedes guardarlas con nombre en el dispositivo o pasarlas enteras como enlace.',
       fr: 'Première publication. Vous posez une couleur de base, Spectroton en calcule onze nuances accordées et inscrit à côté de chacune la valeur de contraste, au choix selon WCAG 2.2 ou selon APCA. S’y ajoutent des couleurs d’accent selon des règles d’harmonie, des nuances verrouillables une à une, quatre apparences et l’export en CSS, Tailwind, fichier de tokens ou liste HEX. Les palettes terminées, vous pouvez les ranger sous un nom sur votre appareil ou les transmettre entières sous forme de lien.',
       it: 'Prima pubblicazione. Tu imposti un colore di base, Spectroton ne calcola undici tonalità coordinate e accanto a ciascuna scrive il valore di contrasto: a scelta secondo WCAG 2.2 oppure secondo APCA. In più colori d’accento secondo regole di armonia, tonalità bloccabili singolarmente, quattro aspetti ed esportazione come CSS, Tailwind, file di token o elenco HEX. Le palette finite puoi salvarle con un nome sul dispositivo oppure passarle intere come link.',
@@ -919,7 +919,7 @@ var NEWS = {
     {
       date: '2026-10-31',
       de: 'Neben Hell und Dunkel gibt es jetzt Hoher Kontrast (dunkel und hell), Farbenblind (dunkel und hell) und Umgekehrte Farben. Deine Wahl gilt in allen meinen Werkzeugen.',
-      en: 'Besides light and dark there are now high contrast (dark and light), colour-blind (dark and light) and inverted colours. Your choice applies across all my tools.',
+      en: 'Besides light and dark there are now high contrast (dark and light), color-blind (dark and light) and inverted colors. Your choice applies across all my tools.',
       es: 'Además de claro y oscuro, ahora hay alto contraste (oscuro y claro), daltónico (oscuro y claro) y colores invertidos. Tu elección vale en todas mis herramientas.',
       fr: 'En plus de clair et sombre, il y a désormais contraste élevé (sombre et clair), daltonien (sombre et clair) et couleurs inversées. Votre choix s’applique à tous mes outils.',
       it: 'Oltre a chiaro e scuro ora ci sono contrasto elevato (scuro e chiaro), daltonico (scuro e chiaro) e colori invertiti. La tua scelta vale in tutti i miei strumenti.',
@@ -1109,7 +1109,7 @@ var NEWS = {
     {
       date: '2026-10-31',
       de: 'Neu ist ein Feld für die Darstellung: Hoher Kontrast (dunkel und hell), Farbenblind und Umgekehrte Farben. Das eigene Design bleibt, und deine Wahl gilt in allen meinen Werkzeugen.',
-      en: 'New: a display setting with high contrast (dark and light), colour-blind and inverted colours. The tool’s own design stays, and your choice applies across all my tools.',
+      en: 'New: a display setting with high contrast (dark and light), color-blind and inverted colors. The tool’s own design stays, and your choice applies across all my tools.',
       es: 'Nuevo: un ajuste de visualización con alto contraste (oscuro y claro), daltónico y colores invertidos. El diseño propio se mantiene y tu elección vale en todas mis herramientas.',
       fr: 'Nouveau : un réglage d’affichage avec contraste élevé (sombre et clair), daltonien et couleurs inversées. Le design propre reste, et votre choix s’applique à tous mes outils.',
       it: 'Novità: un’impostazione di visualizzazione con contrasto elevato (scuro e chiaro), daltonico e colori invertiti. Il design proprio resta e la tua scelta vale in tutti i miei strumenti.',
@@ -1265,7 +1265,7 @@ var NEWS = {
     {
       date: '2026-10-31',
       de: 'Neben Hell und Dunkel gibt es jetzt Hoher Kontrast (dunkel und hell), Farbenblind (dunkel und hell) und Umgekehrte Farben. Deine Wahl gilt in allen meinen Werkzeugen.',
-      en: 'Besides light and dark there are now high contrast (dark and light), colour-blind (dark and light) and inverted colours. Your choice applies across all my tools.',
+      en: 'Besides light and dark there are now high contrast (dark and light), color-blind (dark and light) and inverted colors. Your choice applies across all my tools.',
       es: 'Además de claro y oscuro, ahora hay alto contraste (oscuro y claro), daltónico (oscuro y claro) y colores invertidos. Tu elección vale en todas mis herramientas.',
       fr: 'En plus de clair et sombre, il y a désormais contraste élevé (sombre et clair), daltonien (sombre et clair) et couleurs inversées. Votre choix s’applique à tous mes outils.',
       it: 'Oltre a chiaro e scuro ora ci sono contrasto elevato (scuro e chiaro), daltonico (scuro e chiaro) e colori invertiti. La tua scelta vale in tutti i miei strumenti.',
@@ -1459,7 +1459,7 @@ var NEWS = {
     {
       date: '2026-10-31',
       de: 'Neben Hell und Dunkel gibt es jetzt Hoher Kontrast (dunkel und hell), Farbenblind (dunkel und hell) und Umgekehrte Farben. Deine Wahl gilt in allen meinen Werkzeugen.',
-      en: 'Besides light and dark there are now high contrast (dark and light), colour-blind (dark and light) and inverted colours. Your choice applies across all my tools.',
+      en: 'Besides light and dark there are now high contrast (dark and light), color-blind (dark and light) and inverted colors. Your choice applies across all my tools.',
       es: 'Además de claro y oscuro, ahora hay alto contraste (oscuro y claro), daltónico (oscuro y claro) y colores invertidos. Tu elección vale en todas mis herramientas.',
       fr: 'En plus de clair et sombre, il y a désormais contraste élevé (sombre et clair), daltonien (sombre et clair) et couleurs inversées. Votre choix s’applique à tous mes outils.',
       it: 'Oltre a chiaro e scuro ora ci sono contrasto elevato (scuro e chiaro), daltonico (scuro e chiaro) e colori invertiti. La tua scelta vale in tutti i miei strumenti.',
@@ -1527,7 +1527,7 @@ var NEWS = {
     {
       date: '2026-07-31',
       de: 'Dazu gibt es jetzt den Zählwerk Ticker: eine kleine schwebende Anzeige für Windows mit dem laufenden Fünf-Stunden-Fenster, der Tagessumme und den stärksten Modellen, zum Mitschauen beim Arbeiten statt zum Nachschauen hinterher. Der Verweis darauf steht auf der Zählwerk-Seite, Quellcode und fertige Exe liegen auf GitHub.',
-      en: 'There is now a Zählwerk Ticker to go with it: a small floating readout for Windows showing the current five-hour window, the daily total and the busiest models, to watch while working rather than to check afterwards. The link sits on the Zählwerk page, and source code and a prebuilt exe are on GitHub.',
+      en: 'There is now a Zählwerk Ticker to go with it: a small floating readout for Windows showing the current five-hour window, the daily total and the busiest models, to watch while working rather than to check afterward. The link sits on the Zählwerk page, and source code and a prebuilt exe are on GitHub.',
       es: 'Ahora hay además el Zählwerk Ticker: un pequeño indicador flotante para Windows con el periodo de cinco horas en curso, el total del día y los modelos más usados, para mirarlo mientras trabajas en vez de consultarlo después. El enlace está en la página de Zählwerk, y el código fuente y el exe ya compilado están en GitHub.',
       fr: 'Il existe maintenant le Zählwerk Ticker qui va avec : un petit affichage flottant pour Windows avec la fenêtre de cinq heures en cours, le total du jour et les modèles les plus sollicités, à regarder pendant le travail plutôt qu’à consulter après coup. Le lien se trouve sur la page de Zählwerk, et le code source et un exécutable tout prêt sont sur GitHub.',
       it: 'Ora c’è anche lo Zählwerk Ticker: un piccolo indicatore fluttuante per Windows con la finestra di cinque ore in corso, il totale del giorno e i modelli più usati, da guardare mentre lavori invece che da controllare dopo. Il rimando si trova sulla pagina di Zählwerk, e codice sorgente ed eseguibile pronto sono su GitHub.',
@@ -1603,7 +1603,7 @@ var NEWS = {
       version: 'v1.3.0',
       link: 'https://github.com/Dennismit2n/besucher-ticker/releases/tag/v1.3.0',
       de: 'Neu im Menü: „Zählweise“, mit Seitenbesuchen oder Kachel-Klicks. Kachel-Klicks sind Ereignisse, deren Name mit „kachel-“ beginnt; so meldet diese Seite seit dem 12. November nur noch Klicks auf ihre Kacheln. Die große Zahl und die Balken je Werkzeug zählen dann nur sie. Die Einstellung „automatisch“ wählt Kachel-Klicks, sobald es welche gibt. Außerdem stimmt jetzt die Beschriftung: GoatCounter zählt Besucher, nicht Aufrufe, und bei den Seitenbesuchen stecken keine Klicks mehr in der großen Zahl.',
-      en: 'New in the menu: “Counting”, with page visits or tile clicks. Tile clicks are events whose name starts with “kachel-”; that is how this site has reported only clicks on its tiles since 12 November. The big number and the bars per tool then count only those. The setting “automatic” picks tile clicks as soon as there are any. The labels are also right now: GoatCounter counts visitors, not views, and the big number for page visits no longer contains clicks.',
+      en: 'New in the menu: “Counting”, with page visits or tile clicks. Tile clicks are events whose name starts with “kachel-”; that is how this site has reported only clicks on its tiles since November 12. The big number and the bars per tool then count only those. The setting “automatic” picks tile clicks as soon as there are any. The labels are also right now: GoatCounter counts visitors, not views, and the big number for page visits no longer contains clicks.',
       es: 'Nuevo en el menú: «Recuento», con visitas a páginas o clics en tarjetas. Los clics en tarjetas son eventos cuyo nombre empieza por «kachel-»; así, desde el 12 de noviembre, esta web ya solo informa de los clics en sus tarjetas. La cifra grande y las barras por herramienta cuentan entonces solo esos clics. El ajuste «automático» elige los clics en tarjetas en cuanto hay alguno. Además, ahora las etiquetas son correctas: GoatCounter cuenta visitantes, no páginas vistas, y en las visitas a páginas la cifra grande ya no incluye clics.',
       fr: 'Nouveau dans le menu : « Comptage », avec les visites de pages ou les clics sur les vignettes. Les clics sur les vignettes sont des événements dont le nom commence par « kachel- » ; c’est ainsi que, depuis le 12 novembre, ce site ne signale plus que les clics sur ses vignettes. Le grand nombre et les barres par outil ne comptent alors que ceux-ci. Le réglage « automatique » choisit les clics sur les vignettes dès qu’il y en a. De plus, les libellés sont désormais corrects : GoatCounter compte des visiteurs, pas des pages vues, et pour les visites de pages, le grand nombre ne contient plus de clics.',
       it: 'Novità nel menu: «Conteggio», con visite alle pagine o clic sulle schede. I clic sulle schede sono eventi il cui nome inizia con «kachel-»; è così che questo sito, dal 12 novembre, segnala solo i clic sulle sue schede. Il numero grande e le barre per strumento contano allora solo quelli. L’impostazione «automatico» sceglie i clic sulle schede non appena ce ne sono. Inoltre ora le etichette sono corrette: GoatCounter conta visitatori, non visualizzazioni, e per le visite alle pagine il numero grande non contiene più clic.',
@@ -1622,7 +1622,7 @@ var NEWS = {
       version: 'v1.2.0',
       link: 'https://github.com/Dennismit2n/besucher-ticker/releases/tag/v1.2.0',
       de: 'Der Besucher-Ticker trägt jetzt denselben Look wie die Kacheln hier: Die Anzeige sitzt auf einer Platte mit eckigem Rahmen und vier kleinen Schrauben in Weißgold, und der Schatten fällt nach links unten. Platte und Rahmen nehmen die Farben deines Themes. An Zahlen und Bedienung ändert sich nichts.',
-      en: 'Besucher-Ticker now wears the same look as the tiles here: the overlay sits on a plate with a square frame and four small white gold screws, and the shadow falls to the bottom left. Plate and frame take the colours of your theme. Nothing changes in the numbers or in how you use it.',
+      en: 'Besucher-Ticker now wears the same look as the tiles here: the overlay sits on a plate with a square frame and four small white gold screws, and the shadow falls to the bottom left. Plate and frame take the colors of your theme. Nothing changes in the numbers or in how you use it.',
       es: 'Besucher-Ticker lleva ahora el mismo aspecto que las tarjetas de aquí: el overlay se apoya en una placa con marco recto y cuatro tornillos pequeños de oro blanco, y la sombra cae hacia abajo a la izquierda. Placa y marco toman los colores de tu tema. Ni las cifras ni el manejo cambian.',
       fr: 'Besucher-Ticker porte désormais le même look que les tuiles d’ici : l’overlay repose sur une plaque avec un cadre à angles droits et quatre petites vis en or blanc, et l’ombre tombe en bas à gauche. La plaque et le cadre prennent les couleurs de votre thème. Rien ne change aux chiffres ni à l’utilisation.',
       it: 'Besucher-Ticker ora ha lo stesso aspetto delle tessere di qui: l’overlay poggia su una piastra con cornice squadrata e quattro piccole viti in oro bianco, e l’ombra cade in basso a sinistra. Piastra e cornice prendono i colori del tuo tema. Numeri e uso restano uguali.',
@@ -1698,7 +1698,7 @@ var NEWS = {
       version: 'v1.1.3',
       link: 'https://github.com/Dennismit2n/besucher-ticker/releases/tag/v1.1.3',
       de: 'Die zwei Fragen beim ersten Start sind jetzt dunkel wie der Ticker selbst, samt Titelleiste. Vorher waren sie hellgrau.',
-      en: 'The two questions at first start are now dark like the ticker itself, title bar included. They used to be light grey.',
+      en: 'The two questions at first start are now dark like the ticker itself, title bar included. They used to be light gray.',
       es: 'Las dos preguntas del primer inicio son ahora oscuras como el propio ticker, barra de título incluida. Antes eran gris claro.',
       fr: 'Les deux questions du premier démarrage sont désormais sombres comme le ticker lui-même, barre de titre comprise. Avant, elles étaient gris clair.',
       it: 'Le due domande al primo avvio ora sono scure come il ticker stesso, barra del titolo compresa. Prima erano grigio chiaro.',
@@ -1853,7 +1853,7 @@ var NEWS = {
       version: 'v10.2.0',
       link: 'https://github.com/Dennismit2n/fontART-demo/releases/tag/v10.2.0',
       de: 'Das Windows-Programm spricht jetzt dieselben 14 Sprachen wie die Seite im Browser, bisher konnte es nur Deutsch. Es startet in der Sprache von Windows, umstellen kannst du oben in der Kopfzeile. Die neue Fassung 10.2.0 bringt außerdem die neu geordnete Anleitung und die besser lesbaren Farbwelten mit, die es bisher nur im Browser gab. In beiden Fassungen standen beim ersten Start noch ein paar Texte auf Deutsch (etwa die Namen der Zeichengruppen, der vorgegebene Schriftname und der Mustertext im Tipptest), bis du die Sprache einmal von Hand gewechselt hast. Das ist behoben.',
-      en: 'The Windows program now speaks the same 14 languages as the page in your browser. Until now it only knew German. It starts in the language of Windows, and you can switch it at the top in the header. The new version 10.2.0 also brings the reordered guide and the more readable colour worlds that until now only the browser version had. In both versions, a few texts were still in German on the first start (such as the names of the character groups, the default font name and the sample text in the type test) until you changed the language by hand once. That’s fixed.',
+      en: 'The Windows program now speaks the same 14 languages as the page in your browser. Until now it only knew German. It starts in the language of Windows, and you can switch it at the top in the header. The new version 10.2.0 also brings the reordered guide and the more readable color worlds that until now only the browser version had. In both versions, a few texts were still in German on the first start (such as the names of the character groups, the default font name and the sample text in the type test) until you changed the language by hand once. That’s fixed.',
       es: 'El programa para Windows ahora habla los mismos 14 idiomas que la página en el navegador. Hasta ahora solo sabía alemán. Arranca en el idioma de Windows y lo puedes cambiar arriba, en la cabecera. La nueva versión 10.2.0 trae además la guía reordenada y los mundos de color más legibles, que hasta ahora solo tenía la versión para navegador. En las dos versiones, al arrancar por primera vez seguían algunos textos en alemán (por ejemplo, los nombres de los grupos de caracteres, el nombre de fuente predeterminado y el texto de muestra de la prueba de escritura) hasta que cambiabas el idioma a mano una vez. Ya está corregido.',
       fr: 'Le programme pour Windows parle maintenant les mêmes 14 langues que la page dans le navigateur. Jusqu’ici, il ne connaissait que l’allemand. Il démarre dans la langue de Windows, et vous pouvez la changer en haut, dans l’en-tête. La nouvelle version 10.2.0 apporte aussi le guide réorganisé et les univers de couleurs plus lisibles, qui n’existaient jusqu’ici que dans le navigateur. Dans les deux versions, quelques textes restaient en allemand au premier démarrage (par exemple les noms des groupes de caractères, le nom de police proposé par défaut et le texte d’exemple du test de frappe), jusqu’à ce que vous changiez la langue une fois à la main. C’est corrigé.',
       it: 'Il programma per Windows ora parla le stesse 14 lingue della pagina nel browser. Finora conosceva solo il tedesco. Si avvia nella lingua di Windows, e puoi cambiarla in alto, nell’intestazione. La nuova versione 10.2.0 porta anche la guida riordinata e le atmosfere di colore più leggibili, che finora c’erano solo nel browser. In entrambe le versioni, al primo avvio alcuni testi restavano in tedesco (per esempio i nomi dei gruppi di caratteri, il nome del font predefinito e il testo di esempio nella prova testo) finché non cambiavi la lingua a mano una volta. Ora è corretto.',
@@ -1870,7 +1870,7 @@ var NEWS = {
     {
       date: '2026-11-01',
       de: 'In der Browser-Fassung ist mit „Umgekehrte Farben“ jetzt auch im dunklen und im Neon-Stil jede Schrift gut lesbar. Nebenschrift, Akzentfarben, Pink und Rot (im Neon-Stil teils auch die normale Schrift) waren dort zu blass, sie werden jetzt nur so weit dunkler, wie es dafür braucht.',
-      en: 'With inverted colours, all text in the browser version is now easy to read in the dark and neon styles too. Secondary text, accent colours, pink and red (and in the neon style, sometimes the normal text) were too faint, and they now only get as much darker as they need to be.',
+      en: 'With inverted colors, all text in the browser version is now easy to read in the dark and neon styles too. Secondary text, accent colors, pink and red (and in the neon style, sometimes the normal text) were too faint, and they now only get as much darker as they need to be.',
       es: 'Con los colores invertidos, en la versión para navegador ahora todo el texto se lee bien también en los estilos oscuro y neón. El texto secundario, los colores de acento, el rosa y el rojo (y en el estilo neón a veces también el texto normal) eran demasiado pálidos y ahora solo se oscurecen lo necesario.',
       fr: 'Avec les couleurs inversées, tout le texte de la version navigateur se lit maintenant bien, aussi dans les styles sombre et néon. Le texte secondaire, les couleurs d’accent, le rose et le rouge (et dans le style néon, parfois aussi le texte normal) étaient trop pâles et ne sont désormais assombris que juste ce qu’il faut.',
       it: 'Con i colori invertiti, nella versione per browser ora tutto il testo si legge bene anche negli stili scuro e neon. Il testo secondario, i colori d’accento, il rosa e il rosso (e nello stile neon a volte anche il testo normale) erano troppo tenui e ora vengono scuriti solo quanto serve.',
@@ -1887,7 +1887,7 @@ var NEWS = {
     {
       date: '2026-10-31',
       de: 'Auch im dunklen und im Neon-Stil ist jetzt jede Schrift gut lesbar. In den blauen und violetten Farbwelten waren Schrift, Akzentfarben und Pink teils zu blass, sie sind nur so weit heller geworden, wie es dafür braucht.',
-      en: 'In the dark and neon styles, all text is now easy to read as well. In the blue and violet colour worlds, text, accent colours and pink were sometimes too faint, and they are now only as much lighter as they need to be.',
+      en: 'In the dark and neon styles, all text is now easy to read as well. In the blue and violet color worlds, text, accent colors and pink were sometimes too faint, and they are now only as much lighter as they need to be.',
       es: 'También en los estilos oscuro y neón ahora todo el texto se lee bien. En los mundos de color azules y violetas, el texto, los colores de acento y el rosa eran a veces demasiado pálidos y se han aclarado solo lo necesario.',
       fr: 'Dans les styles sombre et néon aussi, tout le texte se lit maintenant bien. Dans les univers de couleurs bleus et violets, le texte, les couleurs d’accent et le rose étaient parfois trop pâles et n’ont été éclaircis que juste ce qu’il faut.',
       it: 'Anche negli stili scuro e neon ora tutto il testo si legge bene. Nelle atmosfere di colore blu e viola il testo, i colori d’accento e il rosa erano a volte troppo tenui e sono stati schiariti solo quanto serve.',
@@ -1904,7 +1904,7 @@ var NEWS = {
     {
       date: '2026-10-31',
       de: 'Im hellen Stil der Browser-Fassung ist jetzt jede Schrift gut lesbar. Kopfzeile, Eingabefelder, die Texte in den Fenstern (auch die ganze Anleitung), Meldungen und das gewählte Zeichen standen vorher dunkel auf dunkel oder hell auf hell. Die Kopfzeile nimmt nun die Farben deiner Farbwelt an, Akzentfarben sowie Rot und Grün sind nur so weit dunkler geworden, wie es dafür braucht. Im Hohen Kontrast hell sind jetzt auch die kleinen Buchstaben in der Zeichentabelle kräftig genug.',
-      en: 'In the light style of the browser version, all text is now easy to read. The header, input fields, the text in the windows (including the whole guide), messages and the selected character used to be dark on dark or light on light. The header now takes on the colours of your colour world, and the accent colours, red and green are only as much darker as they need to be. In High contrast light, the small letters in the character map are now strong enough too.',
+      en: 'In the light style of the browser version, all text is now easy to read. The header, input fields, the text in the windows (including the whole guide), messages and the selected character used to be dark on dark or light on light. The header now takes on the colors of your color world, and the accent colors, red and green are only as much darker as they need to be. In High contrast light, the small letters in the character map are now strong enough too.',
       es: 'En el estilo claro de la versión para navegador, ahora todo el texto se lee bien. La cabecera, los campos de entrada, los textos de las ventanas (también toda la guía), los avisos y el carácter elegido aparecían antes en oscuro sobre oscuro o en claro sobre claro. La cabecera toma ahora los colores de tu mundo de color, y los colores de acento, el rojo y el verde se han oscurecido solo lo necesario. En Alto contraste claro, ahora también las letras pequeñas de la tabla de caracteres tienen suficiente contraste.',
       fr: 'Dans le style clair de la version navigateur, tout le texte se lit maintenant bien. L’en-tête, les champs de saisie, les textes des fenêtres (y compris tout le guide), les messages et le caractère choisi étaient auparavant sombres sur fond sombre ou clairs sur fond clair. L’en-tête prend maintenant les couleurs de votre univers de couleurs, et les couleurs d’accent ainsi que le rouge et le vert n’ont été assombris que juste ce qu’il faut. En Contraste élevé clair, les petites lettres de la table des caractères sont maintenant elles aussi assez marquées.',
       it: 'Nello stile chiaro della versione per browser ora tutto il testo si legge bene. L’intestazione, i campi di inserimento, i testi delle finestre (anche tutta la guida), i messaggi e il carattere scelto prima apparivano scuro su scuro o chiaro su chiaro. L’intestazione ora prende i colori della tua atmosfera di colore, e i colori d’accento, il rosso e il verde sono stati scuriti solo quanto serve. In Contrasto elevato chiaro ora anche le lettere piccole nella tabella dei caratteri sono abbastanza marcate.',
@@ -1921,7 +1921,7 @@ var NEWS = {
     {
       date: '2026-10-31',
       de: 'In der Browser-Fassung ist die Nebenschrift (Gruppennamen, Beschriftungen, Hinweise) jetzt gut lesbar, egal welche Farbwelt und welchen Stil du nimmst. Bei 57 der 126 Varianten war sie zu blass und ist nur so weit heller oder dunkler geworden, wie es dafür braucht.',
-      en: 'In the browser version, the secondary text (group names, labels, hints) is now easy to read, whichever colour world and style you pick. In 57 of the 126 variants it was too faint and is now only as much lighter or darker as it needs to be.',
+      en: 'In the browser version, the secondary text (group names, labels, hints) is now easy to read, whichever color world and style you pick. In 57 of the 126 variants it was too faint and is now only as much lighter or darker as it needs to be.',
       es: 'En la versión para navegador, el texto secundario (nombres de grupo, etiquetas, indicaciones) ahora se lee bien, sea cual sea el mundo de color y el estilo que elijas. En 57 de las 126 variantes era demasiado pálido y se ha aclarado u oscurecido solo lo necesario.',
       fr: 'Dans la version navigateur, le texte secondaire (noms de groupe, libellés, indications) se lit maintenant bien, quels que soient l’univers de couleurs et le style choisis. Dans 57 des 126 variantes, il était trop pâle et n’a été éclairci ou assombri que juste ce qu’il faut.',
       it: 'Nella versione per browser il testo secondario (nomi dei gruppi, etichette, indicazioni) ora si legge bene in qualunque atmosfera di colore e stile tu scelga. In 57 delle 126 varianti era troppo tenue ed è stato schiarito o scurito solo quanto serve.',
@@ -1955,7 +1955,7 @@ var NEWS = {
     {
       date: '2026-10-31',
       de: 'Neu ist ein Feld für die Darstellung: Hoher Kontrast (dunkel und hell), Farbenblind und Umgekehrte Farben. Das eigene Design bleibt, und deine Wahl gilt in allen meinen Werkzeugen. In der Browser-Fassung findest du es im Design-Fenster.',
-      en: 'New: a display setting with high contrast (dark and light), colour-blind and inverted colours. The tool’s own design stays, and your choice applies across all my tools. In the browser version you’ll find it in the design window.',
+      en: 'New: a display setting with high contrast (dark and light), color-blind and inverted colors. The tool’s own design stays, and your choice applies across all my tools. In the browser version you’ll find it in the design window.',
       es: 'Nuevo: un ajuste de visualización con alto contraste (oscuro y claro), daltónico y colores invertidos. El diseño propio se mantiene y tu elección vale en todas mis herramientas. En la versión para navegador está en la ventana de diseño.',
       fr: 'Nouveau : un réglage d’affichage avec contraste élevé (sombre et clair), daltonien et couleurs inversées. Le design propre reste, et votre choix s’applique à tous mes outils. Dans la version navigateur, il se trouve dans la fenêtre Design.',
       it: 'Novità: un’impostazione di visualizzazione con contrasto elevato (scuro e chiaro), daltonico e colori invertiti. Il design proprio resta e la tua scelta vale in tutti i miei strumenti. Nella versione per browser lo trovi nella finestra Design.',
@@ -2191,7 +2191,7 @@ var NEWS = {
     {
       date: '2026-10-31',
       de: 'Neben Hell und Dunkel gibt es jetzt Hoher Kontrast (dunkel und hell), Farbenblind (dunkel und hell) und Umgekehrte Farben. Deine Wahl gilt in allen meinen Werkzeugen.',
-      en: 'Besides light and dark there are now high contrast (dark and light), colour-blind (dark and light) and inverted colours. Your choice applies across all my tools.',
+      en: 'Besides light and dark there are now high contrast (dark and light), color-blind (dark and light) and inverted colors. Your choice applies across all my tools.',
       es: 'Además de claro y oscuro, ahora hay alto contraste (oscuro y claro), daltónico (oscuro y claro) y colores invertidos. Tu elección vale en todas mis herramientas.',
       fr: 'En plus de clair et sombre, il y a désormais contraste élevé (sombre et clair), daltonien (sombre et clair) et couleurs inversées. Votre choix s’applique à tous mes outils.',
       it: 'Oltre a chiaro e scuro ora ci sono contrasto elevato (scuro e chiaro), daltonico (scuro e chiaro) e colori invertiti. La tua scelta vale in tutti i miei strumenti.',
@@ -2352,7 +2352,7 @@ var NEWS = {
     {
       date: '2026-11-17',
       de: 'Erste Veröffentlichung. Streckenblitz ist mein Formelrennen im Browser, Ansicht hinter dem Auto, auf einem kleinen Pixelraster mit vollen Farben. Drei Strecken in der Dämmerung: Möwenkap an der Küste, Mondsenke in der Wüste unter Sternen und Tannenjoch im Bergwald. Im Rennen fahren sieben Gegner mit eigenem Stil gegen dich, im Zeitfahren fährst du allein auf Rekord. Bis 342 km/h, Bremsen lädt den Akku, und der E-Turbo gibt drei Sekunden Schub. Gespielt wird mit Tasten, Gamepad oder Fingern, unten links dreht sich eine Streckenkarte mit. Keine Blitze, nichts blinkt. 14 Sprachen, dieselben Sehhilfen wie überall in der Werkstatt, als App installierbar und nach dem ersten Besuch auch offline.',
-      en: 'First release. Streckenblitz is my formula racer in the browser, seen from behind the car, on a small pixel grid in full colour. Three tracks at dusk: Möwenkap on the coast, Mondsenke in the desert under the stars and Tannenjoch in a mountain forest. In a race seven rivals with their own driving styles take you on, in time trial you chase the record alone. Up to 342 km/h, braking charges the battery, and the e-boost gives three seconds of extra push. You play with keys, a gamepad or your fingers, and a track map turns along with you in the bottom left. No flashes, nothing blinks. 14 languages, the same vision aids as everywhere in the workshop, installable as an app and offline after the first visit.',
+      en: 'First release. Streckenblitz is my formula racer in the browser, seen from behind the car, on a small pixel grid in full color. Three tracks at dusk: Möwenkap on the coast, Mondsenke in the desert under the stars and Tannenjoch in a mountain forest. In a race seven rivals with their own driving styles take you on, in time trial you chase the record alone. Up to 342 km/h, braking charges the battery, and the e-boost gives three seconds of extra push. You play with keys, a gamepad or your fingers, and a track map turns along with you in the bottom left. No flashes, nothing blinks. 14 languages, the same vision aids as everywhere in the workshop, installable as an app and offline after the first visit.',
       es: 'Primera publicación. Streckenblitz es mi carrera de fórmula en el navegador, vista desde detrás del coche, en una pequeña rejilla de píxeles a todo color. Tres circuitos al atardecer: Möwenkap en la costa, Mondsenke en el desierto bajo las estrellas y Tannenjoch en un bosque de montaña. En carrera te enfrentas a siete rivales, cada uno con su estilo, y en contrarreloj vas solo a por el récord. Hasta 342 km/h, frenar carga la batería y el turbo eléctrico da tres segundos de empuje. Se juega con teclado, mando o los dedos, y abajo a la izquierda gira un mapa del circuito contigo. Sin destellos, nada parpadea. 14 idiomas, las mismas ayudas visuales que en todo el taller, se puede instalar como app y funciona sin conexión tras la primera visita.',
       fr: 'Première publication. Streckenblitz est ma course de formule dans le navigateur, vue de derrière la voiture, sur une petite grille de pixels en pleines couleurs. Trois circuits au crépuscule : Möwenkap sur la côte, Mondsenke dans le désert sous les étoiles et Tannenjoch dans une forêt de montagne. En course, sept rivaux au style bien à eux vous affrontent, en contre-la-montre vous visez le record seul. Jusqu’à 342 km/h, freiner recharge la batterie, et le turbo électrique donne trois secondes de poussée. On joue au clavier, à la manette ou aux doigts, et en bas à gauche une carte du circuit tourne avec vous. Pas de flash, rien ne clignote. 14 langues, les mêmes aides visuelles que partout dans l’atelier, installable comme application et hors ligne après la première visite.',
       it: 'Prima pubblicazione. Streckenblitz è la mia corsa di formula nel browser, vista da dietro l’auto, su una piccola griglia di pixel a colori pieni. Tre circuiti al crepuscolo: Möwenkap sulla costa, Mondsenke nel deserto sotto le stelle e Tannenjoch in un bosco di montagna. In gara ti sfidano sette avversari, ognuno con il suo stile, nella prova a tempo corri da solo verso il record. Fino a 342 km/h, frenare ricarica la batteria e il turbo elettrico dà tre secondi di spinta. Si gioca con tastiera, gamepad o dita, e in basso a sinistra una mappa del circuito gira insieme a te. Niente lampi, niente lampeggia. 14 lingue, gli stessi aiuti visivi di tutto il laboratorio, si installa come app e funziona offline dopo la prima visita.',
@@ -2371,7 +2371,7 @@ var NEWS = {
     {
       date: '2026-11-17',
       de: 'Erste Veröffentlichung. Anagrammaton findet Anagramme, Rückwärtswörter und Palindrome in 14 Sprachen. Jeder Buchstabe ist eine farbige Kachel, und ein Klick auf einen Treffer lässt die Kacheln an ihren neuen Platz fliegen. Mischen würfelt sie durcheinander, Invert kippt jede Farbe in ihre Gegenfarbe, Reverse dreht die Reihe um. Drei Reiter: Ein Wort, Mehrere Wörter für ganze Sätze und Rückwärts mit dem Urteil, ob es ein Palindrom ist. Die Wörter kommen aus wordfreq, je Sprache 23.000 bis 69.000, Schimpfwörter herausgefiltert. Ohne Cookies, als App installierbar und nach dem ersten Besuch auch offline.',
-      en: 'First release. Anagrammaton finds anagrams, reversals and palindromes in 14 languages. Every letter is a coloured tile, and a click on a result makes the tiles fly to their new places. Shuffle mixes them up, Invert flips every colour to its opposite, Reverse turns the row around. Three tabs: One word, Several words for whole sentences, and Backwards with a verdict on whether it is a palindrome. The words come from wordfreq, 23,000 to 69,000 per language, with swear words filtered out. No cookies, installable as an app and offline after the first visit.',
+      en: 'First release. Anagrammaton finds anagrams, reversals and palindromes in 14 languages. Every letter is a colored tile, and a click on a result makes the tiles fly to their new places. Shuffle mixes them up, Invert flips every color to its opposite, Reverse turns the row around. Three tabs: One word, Several words for whole sentences, and Backwards with a verdict on whether it is a palindrome. The words come from wordfreq, 23,000 to 69,000 per language, with swear words filtered out. No cookies, installable as an app and offline after the first visit.',
       es: 'Primera publicación. Anagrammaton encuentra anagramas, palabras al revés y palíndromos en 14 idiomas. Cada letra es una ficha de color, y un clic en un resultado hace volar las fichas a su nuevo sitio. Mezclar las revuelve, Color opuesto pasa cada color a su opuesto, Al revés da la vuelta a la fila. Tres pestañas: Una palabra, Varias palabras para frases enteras y Al revés, que dice si es un palíndromo. Las palabras vienen de wordfreq, entre 23.000 y 69.000 por idioma, sin palabrotas. Sin cookies, se puede instalar como app y funciona sin conexión tras la primera visita.',
       fr: 'Première publication. Anagrammaton trouve des anagrammes, des mots à l’envers et des palindromes en 14 langues. Chaque lettre est une tuile colorée, et un clic sur un résultat fait voler les tuiles à leur nouvelle place. Mélanger les brasse, Couleur opposée fait passer chaque couleur à son opposée, À l’envers retourne la rangée. Trois onglets : Un mot, Plusieurs mots pour des phrases entières et À l’envers, qui indique s’il s’agit d’un palindrome. Les mots viennent de wordfreq, de 23 000 à 69 000 par langue, sans les gros mots. Sans cookies, installable comme application et hors ligne après la première visite.',
       it: 'Prima pubblicazione. Anagrammaton trova anagrammi, parole al contrario e palindromi in 14 lingue. Ogni lettera è una tessera colorata, e un clic su un risultato fa volare le tessere al loro nuovo posto. Mescola le mette in disordine, Colore opposto porta ogni colore al suo opposto, Al contrario gira la fila. Tre schede: Una parola, Più parole per frasi intere e Al contrario, che dice se è un palindromo. Le parole vengono da wordfreq, da 23.000 a 69.000 per lingua, senza parolacce. Senza cookie, si installa come app e funziona offline dopo la prima visita.',
@@ -2561,7 +2561,7 @@ var NEWS = {
       version: 'v1.0.0',
       link: 'https://github.com/Dennismit2n/fadenkreuz/releases/tag/v1.0.0',
       de: 'Erste Veröffentlichung. Ein Fadenkreuz exakt in der Mitte des Hauptbildschirms, das über dem Spiel liegt und Klicks durchlässt (rund 1 MB Arbeitsspeicher). Im Editor zeichnest du es selbst: mit Vorlagen wie „Oval weiß“, weichem Rand und eigenen Presets. Overlay und Editor lassen sich getrennt installieren. Strg+Alt+F10 zeigt das Kreuz nur im gewählten Spiel.',
-      en: 'First release. A crosshair in the exact centre of the main screen that sits on top of your game and lets clicks through (on about 1 MB of RAM). You draw it yourself in the editor: with templates such as “Oval weiß”, a soft outline and your own presets. Overlay and editor can be installed separately. Ctrl+Alt+F10 shows the crosshair only in the chosen game. The editor speaks German.',
+      en: 'First release. A crosshair in the exact center of the main screen that sits on top of your game and lets clicks through (on about 1 MB of RAM). You draw it yourself in the editor: with templates such as “Oval weiß”, a soft outline and your own presets. Overlay and editor can be installed separately. Ctrl+Alt+F10 shows the crosshair only in the chosen game. The editor speaks German.',
       es: 'Primera publicación. Una mira justo en el centro de la pantalla principal, por encima de tu juego y sin bloquear los clics, con alrededor de 1 MB de RAM. La dibujas tú en el editor: con plantillas como «Oval weiß», un borde suave y tus propios preajustes. La superposición y el editor se instalan por separado. Ctrl+Alt+F10 muestra la mira solo en el juego elegido. El editor está en alemán.',
       fr: 'Première publication. Un réticule pile au centre de l’écran principal, posé au-dessus de votre jeu et transparent aux clics (environ 1 Mo de mémoire vive). Vous le dessinez vous-même dans l’éditeur : avec des modèles comme « Oval weiß », un contour adouci et vos propres préréglages. La surcouche et l’éditeur s’installent séparément. Ctrl+Alt+F10 n’affiche le réticule que dans le jeu choisi. L’éditeur est en allemand.',
       it: 'Prima pubblicazione. Un mirino esattamente al centro dello schermo principale, sopra il tuo gioco e trasparente ai clic, con circa 1 MB di RAM. Lo disegni tu nell’editor: con modelli come «Oval weiß», un bordo morbido e preset tuoi. Overlay ed editor si installano separatamente. Ctrl+Alt+F10 mostra il mirino solo nel gioco scelto. L’editor è in tedesco.',
@@ -2648,7 +2648,7 @@ var NEWS = {
     {
       date: '2026-10-31',
       de: 'Neben Hell und Dunkel gibt es jetzt Hoher Kontrast (dunkel und hell), Farbenblind (dunkel und hell) und Umgekehrte Farben. Deine Wahl gilt in allen meinen Werkzeugen. In den Einstellungen wählst du sie aus einer Liste, der Knopf oben wechselt hell und dunkel im gewählten Modus.',
-      en: 'Besides light and dark there are now high contrast (dark and light), colour-blind (dark and light) and inverted colours. Your choice applies across all my tools. You pick them from a list in the settings; the button at the top switches between light and dark within the chosen mode.',
+      en: 'Besides light and dark there are now high contrast (dark and light), color-blind (dark and light) and inverted colors. Your choice applies across all my tools. You pick them from a list in the settings; the button at the top switches between light and dark within the chosen mode.',
       es: 'Además de claro y oscuro, ahora hay alto contraste (oscuro y claro), daltónico (oscuro y claro) y colores invertidos. Tu elección vale en todas mis herramientas. Se eligen en una lista de los ajustes; el botón de arriba cambia entre claro y oscuro dentro del modo elegido.',
       fr: 'En plus de clair et sombre, il y a désormais contraste élevé (sombre et clair), daltonien (sombre et clair) et couleurs inversées. Votre choix s’applique à tous mes outils. On les choisit dans une liste des paramètres ; le bouton du haut alterne clair et sombre dans le mode choisi.',
       it: 'Oltre a chiaro e scuro ora ci sono contrasto elevato (scuro e chiaro), daltonico (scuro e chiaro) e colori invertiti. La tua scelta vale in tutti i miei strumenti. Si scelgono da un elenco nelle impostazioni; il pulsante in alto passa tra chiaro e scuro nella modalità scelta.',
@@ -2786,7 +2786,7 @@ var NEWS = {
     {
       date: '2026-11-05',
       de: 'Das Handbuch steht jetzt auf Patch 1.11 vom 22.10.: Die Patch-Seite zeigt die Buffs für Rafa, Vex, Amon, Harlowe und Loveless, Murmur und Skully haben ihre neuen Boss-Quellen, und 17 Items tragen den passenden Patch-Hinweis.',
-      en: 'The handbook is now on patch 1.11 from 22 October: the patch page shows the buffs for Rafa, Vex, Amon, Harlowe and Loveless, Murmur and Skully have their new boss sources, and 17 items carry the matching patch note.',
+      en: 'The handbook is now on patch 1.11 from October 22: the patch page shows the buffs for Rafa, Vex, Amon, Harlowe and Loveless, Murmur and Skully have their new boss sources, and 17 items carry the matching patch note.',
       es: 'El manual ya está en el parche 1.11 del 22 de octubre: la página del parche muestra las mejoras de Rafa, Vex, Amon, Harlowe y Loveless, Murmur y Skully tienen sus nuevas fuentes de jefe, y 17 objetos llevan la nota de parche correspondiente.',
       fr: 'Le manuel est désormais à jour du patch 1.11 du 22 octobre : la page du patch présente les buffs de Rafa, Vex, Amon, Harlowe et Loveless, Murmur et Skully ont leurs nouvelles sources de boss, et 17 objets portent la note de patch correspondante.',
       it: 'Il manuale ora è aggiornato alla patch 1.11 del 22 ottobre: la pagina della patch mostra i potenziamenti di Rafa, Vex, Amon, Harlowe e Loveless, Murmur e Skully hanno le nuove fonti boss, e 17 oggetti riportano la nota di patch corrispondente.',
@@ -2837,7 +2837,7 @@ var NEWS = {
     {
       date: '2026-10-31',
       de: 'Im hellen Modus lassen sich Drop-Chancen, Boss-Hinweise und das Schild „Erledigt“ besser lesen. Am Handy passen die Raid-Guides jetzt in die Breite, und im Hohen Kontrast sind die Pearlescent-Schilder einfarbig.',
-      en: 'In light mode drop chances, boss notes and the “Erledigt” (done) badge are easier to read. On phones the raid guides now fit the width, and in high contrast the Pearlescent badges are a single colour.',
+      en: 'In light mode drop chances, boss notes and the “Erledigt” (done) badge are easier to read. On phones the raid guides now fit the width, and in high contrast the Pearlescent badges are a single color.',
       es: 'En el modo claro, las probabilidades de botín, las notas de los jefes y la etiqueta «Erledigt» (hecho) se leen mejor. En el móvil, las guías de raids ya caben a lo ancho, y en alto contraste las etiquetas Pearlescent son de un solo color.',
       fr: 'En mode clair, les chances de butin, les notes sur les boss et l’étiquette « Erledigt » (terminé) se lisent mieux. Sur téléphone, les guides de raid tiennent désormais en largeur, et en contraste élevé les étiquettes Pearlescent sont d’une seule couleur.',
       it: 'In modalità chiara le probabilità di drop, le note sui boss e l’etichetta «Erledigt» (fatto) si leggono meglio. Sul telefono le guide ai raid ora stanno in larghezza, e in contrasto elevato le etichette Pearlescent sono a tinta unita.',
@@ -2854,7 +2854,7 @@ var NEWS = {
     {
       date: '2026-10-31',
       de: 'Neben Hell und Dunkel gibt es jetzt Hoher Kontrast (dunkel und hell), Farbenblind (dunkel und hell) und Umgekehrte Farben. Deine Wahl gilt in allen meinen Werkzeugen.',
-      en: 'Besides light and dark there are now high contrast (dark and light), colour-blind (dark and light) and inverted colours. Your choice applies across all my tools.',
+      en: 'Besides light and dark there are now high contrast (dark and light), color-blind (dark and light) and inverted colors. Your choice applies across all my tools.',
       es: 'Además de claro y oscuro, ahora hay alto contraste (oscuro y claro), daltónico (oscuro y claro) y colores invertidos. Tu elección vale en todas mis herramientas.',
       fr: 'En plus de clair et sombre, il y a désormais contraste élevé (sombre et clair), daltonien (sombre et clair) et couleurs inversées. Votre choix s’applique à tous mes outils.',
       it: 'Oltre a chiaro e scuro ora ci sono contrasto elevato (scuro e chiaro), daltonico (scuro e chiaro) e colori invertiti. La tua scelta vale in tutti i miei strumenti.',
@@ -2992,7 +2992,7 @@ var NEWS = {
     {
       date: '2026-10-31',
       de: 'Der graue Untertext bei den Werten (etwa „Magazin / Reserve“) ist etwas heller und gut lesbar.',
-      en: 'The grey subtext under the weapon stats is a little lighter now and easy to read.',
+      en: 'The gray subtext under the weapon stats is a little lighter now and easy to read.',
       es: 'El subtexto gris bajo los valores de las armas ahora es un poco más claro y se lee bien.',
       fr: 'Le petit texte gris sous les valeurs des armes est désormais un peu plus clair et bien lisible.',
       it: 'Il sottotesto grigio sotto i valori delle armi ora è un po’ più chiaro e si legge bene.',
@@ -3009,7 +3009,7 @@ var NEWS = {
     {
       date: '2026-10-31',
       de: 'Neu ist ein Feld für die Darstellung: Hoher Kontrast (dunkel und hell), Farbenblind und Umgekehrte Farben. Das eigene Design bleibt, und deine Wahl gilt in allen meinen Werkzeugen. Du findest es unter Intel.',
-      en: 'New: a display setting with high contrast (dark and light), colour-blind and inverted colours. The tool’s own design stays, and your choice applies across all my tools. You’ll find it under Intel.',
+      en: 'New: a display setting with high contrast (dark and light), color-blind and inverted colors. The tool’s own design stays, and your choice applies across all my tools. You’ll find it under Intel.',
       es: 'Nuevo: un ajuste de visualización con alto contraste (oscuro y claro), daltónico y colores invertidos. El diseño propio se mantiene y tu elección vale en todas mis herramientas. Está en Intel.',
       fr: 'Nouveau : un réglage d’affichage avec contraste élevé (sombre et clair), daltonien et couleurs inversées. Le design propre reste, et votre choix s’applique à tous mes outils. Il se trouve sous Intel.',
       it: 'Novità: un’impostazione di visualizzazione con contrasto elevato (scuro e chiaro), daltonico e colori invertiti. Il design proprio resta e la tua scelta vale in tutti i miei strumenti. Lo trovi sotto Intel.',
@@ -3043,7 +3043,7 @@ var NEWS = {
     {
       date: '2026-10-25',
       de: 'Erste Veröffentlichung als installierbare App: alle Waffen mit Meta-Builds, Apex, Zielvisier-Zeit und Time to Kill, Tierlisten, empfohlene Klassen und Patch-Chronik. Datenstand: Launch-Tuning vom 23.10.2026.',
-      en: 'First release as an installable app: every weapon with meta builds, Apex, aim-down-sight time and time to kill, tier lists, recommended classes and the patch history. Data as of the launch tuning of 23 October 2026.',
+      en: 'First release as an installable app: every weapon with meta builds, Apex, aim-down-sight time and time to kill, tier lists, recommended classes and the patch history. Data as of the launch tuning of October 23, 2026.',
       es: 'Primera publicación como app instalable: todas las armas con builds meta, Apex, tiempo de apuntado y time to kill, listas de niveles, clases recomendadas e historial de parches. Datos según el ajuste de lanzamiento del 23 de octubre de 2026.',
       fr: 'Première publication en application installable : toutes les armes avec builds méta, Apex, temps de visée et time to kill, tier lists, classes recommandées et historique des patchs. Données à jour de l’équilibrage de lancement du 23 octobre 2026.',
       it: 'Prima pubblicazione come app installabile: tutte le armi con build meta, Apex, tempo di mira e time to kill, tier list, classi consigliate e cronologia delle patch. Dati aggiornati al bilanciamento di lancio del 23 ottobre 2026.',
@@ -3096,7 +3096,7 @@ var NEWS = {
     {
       date: '2026-10-31',
       de: 'Neben Hell und Dunkel gibt es jetzt Hoher Kontrast (dunkel und hell), Farbenblind (dunkel und hell) und Umgekehrte Farben. Deine Wahl gilt in allen meinen Werkzeugen.',
-      en: 'Besides light and dark there are now high contrast (dark and light), colour-blind (dark and light) and inverted colours. Your choice applies across all my tools.',
+      en: 'Besides light and dark there are now high contrast (dark and light), color-blind (dark and light) and inverted colors. Your choice applies across all my tools.',
       es: 'Además de claro y oscuro, ahora hay alto contraste (oscuro y claro), daltónico (oscuro y claro) y colores invertidos. Tu elección vale en todas mis herramientas.',
       fr: 'En plus de clair et sombre, il y a désormais contraste élevé (sombre et clair), daltonien (sombre et clair) et couleurs inversées. Votre choix s’applique à tous mes outils.',
       it: 'Oltre a chiaro e scuro ora ci sono contrasto elevato (scuro e chiaro), daltonico (scuro e chiaro) e colori invertiti. La tua scelta vale in tutti i miei strumenti.',

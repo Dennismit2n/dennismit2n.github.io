@@ -167,7 +167,7 @@
             <figure class="mod-shot">
               <img src="./assets/mods/limitpause.png" alt="Screenshot of the limit pause in Claude Code" data-i18n-alt="modLimitpauseAlt" loading="lazy" onerror="this.closest('figure').hidden=true">
             </figure>
-            <p data-i18n="modLimitpauseDesc">Before every model request of the main session the mod checks the limits. If one would reach the threshold and the reset is close (five minutes at most, adjustable), the request waits until shortly after the reset and then carries on. If the reset is far off, the mod ends the turn with a clear note instead of waiting for hours; simply send again afterwards. Agents are never held. /limitpause shows the state, “off” lifts the pause. If only one model’s weekly limit is full, it carries on with Opus without stopping. Shortly before the threshold a warning reminds you to write the handover, and “once” lets exactly one turn through after a stop.</p>
+            <p data-i18n="modLimitpauseDesc">Before every model request of the main session the mod checks the limits. If one would reach the threshold and the reset is close (five minutes at most, adjustable), the request waits until shortly after the reset and then carries on. If the reset is far off, the mod ends the turn with a clear note instead of waiting for hours; simply send again afterward. Agents are never held. /limitpause shows the state, “off” lifts the pause. If only one model’s weekly limit is full, it carries on with Opus without stopping. Shortly before the threshold a warning reminds you to write the handover, and “once” lets exactly one turn through after a stop.</p>
             <p class="mod-settings"><strong data-i18n="modsSettingsLabel">Settings</strong>: <span data-i18n="modLimitpauseSettings">language · limitPercent: threshold in percent, default 99.89 · maxWaitMinutes: longest wait in minutes, default 5 · fallbackModel: fallback model, default opus · warnPoints: warning in points before the threshold, default 3</span></p>
             <div class="mod-code">
               <p class="mod-label" data-i18n="modsInstallLabel">Install line for the Claude Code prompt</p>
@@ -268,7 +268,7 @@
             <figure class="mod-shot">
               <img src="./assets/mods/sichtschutz.png" alt="Screenshot of a masked transcript in Claude Code" data-i18n-alt="modSichtschutzAlt" loading="lazy" onerror="this.closest('figure').hidden=true">
             </figure>
-            <p data-i18n="modSichtschutzDesc">For screen sharing: while the screen guard is on, mail addresses, phone numbers, amounts of money, IBANs, the name of your user folder and your own words are masked in the transcript. The mod changes only what is drawn; what is stored and sent to the model stays the original. It works with fixed patterns: it does not recognise names by itself, you add those as your own words.</p>
+            <p data-i18n="modSichtschutzDesc">For screen sharing: while the screen guard is on, mail addresses, phone numbers, amounts of money, IBANs, the name of your user folder and your own words are masked in the transcript. The mod changes only what is drawn; what is stored and sent to the model stays the original. It works with fixed patterns: it does not recognize names by itself, you add those as your own words.</p>
             <p class="mod-settings"><strong data-i18n="modsSettingsLabel">Settings</strong>: <span data-i18n="modSichtschutzSettings">language · words: your own words and names · maskMoney: mask amounts · startOn: on at the start</span></p>
             <div class="mod-code">
               <p class="mod-label" data-i18n="modsInstallLabel">Install line for the Claude Code prompt</p>
@@ -401,7 +401,7 @@
 
 <!-- Wie in gaming.html: i18n.js und header.js, dazu mods.js fuer Prompts und Kopierknoepfe.
      Die Neuigkeiten der Mods stehen seit 03.11.2026 auf werkstatt.html#mods. -->
-<script src="./js/i18n.js?v=2026-11-18" fetchpriority="high"></script>
+<script src="./js/i18n.js?v=2026-11-19" fetchpriority="high"></script>
 <script src="./js/header.js?v=2026-11-12h" fetchpriority="high"></script>
 <script src="./js/mods.js?v=2026-11-12h" fetchpriority="high"></script>
 </body>

@@ -577,7 +577,7 @@ var GUIDES = {
         'Bei reinen WPA3-Netzen kann der Code auf einzelnen Geräten scheitern, weil die Karte immer den WPA-Typ einträgt.'
       ],
       en: [
-        'The QR code is not encrypted. Anyone who photographs the card has access to your WiFi, so do not hang it in a shop window or post it online.',
+        'The QR code is not encrypted. Anyone who photographs the card has access to your WiFi, so do not hang it in a store window or post it online.',
         'Corporate and university networks with individual logins (WPA-Enterprise, eduroam) and captive-portal networks with voucher codes cannot be shared this way.',
         'Not every browser offers copy and share. Those buttons only appear where the device supports them. Downloading a PNG works everywhere.',
         'On WPA3-only networks the code can fail on some devices, because the card always writes the WPA type.'
@@ -676,7 +676,7 @@ var GUIDES = {
   prismatical: {
     purpose: {
       de: 'Neue Passwörter erzeugen und dabei sehen, was sie taugen. Die Akzentfarbe der Seite ist die Stärkeanzeige: Sie wandert von Rot über Gelb und Grün bis Violett, während du an Länge und Zeichenarten drehst. Daneben stehen immer die nackten Zahlen, also Bits und geschätzte Knackzeit in vier Angriffslagen. Die Passwörter entstehen auf deinem Gerät, mit dem Zufallsgenerator des Betriebssystems.',
-      en: 'Create new passwords and see what they are worth. The page’s accent colour is the strength meter: it travels from red through yellow and green to violet as you change length and character types. Next to it stand the bare numbers, bits and estimated crack time in four attack situations. Everything is generated on your device, using the operating system’s random generator.',
+      en: 'Create new passwords and see what they are worth. The page’s accent color is the strength meter: it travels from red through yellow and green to violet as you change length and character types. Next to it stand the bare numbers, bits and estimated crack time in four attack situations. Everything is generated on your device, using the operating system’s random generator.',
       es: 'Generar contraseñas nuevas y ver al mismo tiempo lo que valen. El color de acento de la página es el indicador de fuerza: va del rojo al violeta pasando por el amarillo y el verde mientras cambias la longitud y los tipos de caracteres. Al lado están siempre las cifras en bruto: bits y tiempo estimado para descifrar la contraseña en cuatro situaciones de ataque. Se genera en tu dispositivo, con el generador aleatorio del sistema operativo.',
       fr: 'Créer de nouveaux mots de passe et voir en même temps ce qu’ils valent. La couleur d’accent de la page est l’indicateur de robustesse : elle va du rouge au violet en passant par le jaune et le vert, pendant que vous jouez sur la longueur et les types de caractères. À côté figurent toujours les chiffres bruts, c’est-à-dire les bits et le temps estimé pour le casser dans quatre situations d’attaque. Les mots de passe naissent sur votre appareil, avec le générateur aléatoire du système d’exploitation.',
       it: 'Generare password nuove e vedere allo stesso tempo quanto valgono. Il colore d’accento della pagina è l’indicatore di robustezza: passa dal rosso al giallo e al verde fino al violetto mentre regoli la lunghezza e le categorie di caratteri. Accanto ci sono sempre i numeri puri e semplici: bit e tempo stimato per forzare la password in quattro scenari d’attacco. La generazione avviene sul tuo dispositivo, con il generatore casuale del sistema operativo.',
@@ -718,7 +718,7 @@ var GUIDES = {
         'Auf Kopieren tippen und im Passwortspeicher einfügen. Die Zwischenablage leert sich von selbst wieder, voreingestellt nach 30 Sekunden, sichtbar als Countdown.'
       ],
       en: [
-        'Pick the kind at the top: password, passphrase, PIN, pronounceable, username or deterministic. For most accounts “password” with the preset 20 characters is right. For something you have to memorise, take the passphrase.',
+        'Pick the kind at the top: password, passphrase, PIN, pronounceable, username or deterministic. For most accounts “password” with the preset 20 characters is right. For something you have to memorize, take the passphrase.',
         'Set length and character types, or pick a preset at the top when a website imposes rules (“at most 16 characters”, “letters and digits only”). Every change immediately produces a new password.',
         'Tap copy and paste it into your password manager. The clipboard clears itself again after 30 seconds by default, and a countdown shows it.'
       ],
@@ -904,7 +904,7 @@ var GUIDES = {
   spectroton: {
     purpose: {
       de: 'Für eine Website oder App brauchst du selten nur eine Farbe, sondern eine ganze Treppe davon: hell für Flächen, mittig für Knöpfe, dunkel für Schrift. Spectroton rechnet diese elf Stufen aus einer einzigen Basisfarbe (gleichmäßig fürs Auge, nicht nur in den Zahlen) und schreibt zu jeder Stufe dazu, ob Text darauf noch lesbar ist.',
-      en: 'For a website or an app you rarely need one colour, you need a whole staircase of it: light for surfaces, mid for buttons, dark for type. Spectroton computes those eleven shades from a single base colour (evenly spaced for the eye, not just in the numbers) and notes for every shade whether text on it is still readable.',
+      en: 'For a website or an app you rarely need one color, you need a whole staircase of it: light for surfaces, mid for buttons, dark for type. Spectroton computes those eleven shades from a single base color (evenly spaced for the eye, not just in the numbers) and notes for every shade whether text on it is still readable.',
       es: 'Para una web o una aplicación rara vez necesitas un solo color: lo que hace falta es toda una escalera de él, con tonos claros para las superficies, medios para los botones y oscuros para el texto. Spectroton calcula esos once tonos a partir de un único color base (uniformes para el ojo, no solo en los números) y anota en cada tono si el texto encima sigue siendo legible.',
       fr: 'Pour un site web ou une application, vous avez rarement besoin d’une seule couleur, mais de toute une gamme de nuances de cette couleur : clair pour les surfaces, moyen pour les boutons, sombre pour le texte. Spectroton calcule ces onze nuances à partir d’une unique couleur de base (régulières pour l’œil, pas seulement dans les chiffres) et indique pour chaque nuance si un texte y reste lisible.',
       it: 'Per un sito web o un’app raramente ti serve un colore solo: te ne serve un’intera scala, chiara per le superfici, media per i pulsanti, scura per il testo. Spectroton calcola queste undici tonalità da un unico colore di base (uniformi per l’occhio, non solo nei numeri) e accanto a ogni tonalità annota se il testo sopra è ancora leggibile.',
@@ -923,7 +923,7 @@ var GUIDES = {
         file: 'spectroton-uebersicht-en.webp', w: 1600, h: 1092,
         alt: {
           de: 'Spectroton: die Basisfarbe als Farbfeld und HEX-Wert mit ihrer OKLCH-Angabe, darunter sieben Akzentfarben mit den vier Harmonie-Knöpfen und die Suche nach Farbnamen.',
-          en: 'Spectroton: the base colour as a swatch and hex value with its OKLCH reading, below it seven accent colours with the four harmony buttons, and the search for colour names.',
+          en: 'Spectroton: the base color as a swatch and hex value with its OKLCH reading, below it seven accent colors with the four harmony buttons, and the search for color names.',
           es: 'Spectroton: el color base como muestra y como valor HEX, con su equivalente en OKLCH, y debajo siete colores de acento con los cuatro botones de armonía y la búsqueda por nombre de color.',
           fr: 'Spectroton : la couleur de base en échantillon et en valeur HEX, avec son équivalent OKLCH, et en dessous sept couleurs d’accent avec les quatre boutons d’harmonie, et la recherche par nom de couleur.',
           it: 'Spectroton: il colore base come campione e come valore HEX, con il suo equivalente OKLCH, e sotto sette colori d’accento con i quattro pulsanti di armonia e la ricerca per nome del colore.',
@@ -942,7 +942,7 @@ var GUIDES = {
         file: 'spectroton-rampe-en.webp', w: 1588, h: 1439,
         alt: {
           de: 'Die elf Stufen einer gelben Akzentfarbe von 50 bis 950, jede mit HEX-Wert, Kontrast gegen Weiß und gegen Schwarz und einem Schloss zum Sperren. An den meisten Stufen zeigt ein kleines Schild, dass die Buntheit für den Farbraum zurückgenommen wurde.',
-          en: 'The eleven steps of a yellow accent colour from 50 to 950, each with its hex value, contrast against white and against black, and a lock. On most steps a small tag shows that the chroma had to be reduced to fit the gamut.',
+          en: 'The eleven steps of a yellow accent color from 50 to 950, each with its hex value, contrast against white and against black, and a lock. On most steps a small tag shows that the chroma had to be reduced to fit the gamut.',
           es: 'Los once pasos de un color de acento amarillo, de 50 a 950, cada uno con su valor HEX, el contraste con el blanco y con el negro y un candado. En la mayoría de los pasos, una pequeña etiqueta indica que hubo que reducir la saturación para que cupiera en el espacio de color.',
           fr: 'Les onze paliers d’une couleur d’accent jaune, de 50 à 950, chacun avec sa valeur HEX, le contraste avec le blanc et avec le noir, et un cadenas. Sur la plupart des paliers, une petite étiquette signale que la saturation a dû être réduite pour tenir dans l’espace colorimétrique.',
           it: 'Gli undici gradini di un colore d’accento giallo, da 50 a 950, ciascuno con il valore HEX, il contrasto con il bianco e con il nero e un lucchetto. Sulla maggior parte dei gradini una piccola etichetta indica che la saturazione è stata ridotta per rientrare nello spazio colore.',
@@ -1003,8 +1003,8 @@ var GUIDES = {
         'Unter „Export“ das Format wählen (CSS, Tailwind, Tokens oder HEX) und kopieren oder als Datei speichern. Wer die Palette behalten will, legt sie unter „Bibliothek“ mit Namen ab. Wer sie weitergeben will, kopiert bei „Teilen“ den Link, der die ganze Palette in sich trägt.'
       ],
       en: [
-        'Set a colour under “Base color”: type a HEX value, use the colour picker, or search for a name under “Color name” and pick from the hits. The eleven shades appear at once.',
-        'Refine under “Fine-tuning” and add “Accent colors” if you want. Spectroton suggests them by harmony rules and gives each its own ramp. The padlock on a shade freezes its value, so it survives the sliders and a change of base colour.',
+        'Set a color under “Base color”: type a HEX value, use the color picker, or search for a name under “Color name” and pick from the hits. The eleven shades appear at once.',
+        'Refine under “Fine-tuning” and add “Accent colors” if you want. Spectroton suggests them by harmony rules and gives each its own ramp. The padlock on a shade freezes its value, so it survives the sliders and a change of base color.',
         'Pick a format under “Export” (CSS, Tailwind, Tokens or HEX), then copy it or save it as a file. To keep a palette, store it by name under “Library”. To pass it on, copy the link under “Share”, which carries the whole palette inside it.'
       ],
       es: [
@@ -1078,9 +1078,9 @@ var GUIDES = {
       ],
       en: [
         'The interface speaks fourteen languages, some of it machine-translated. I’m happy to take corrections.',
-        'The colour names come from api.color.pizza, someone else’s service. Spectroton asks it for the name of the current colour as soon as the page opens, and that colour value goes to the service. Without a connection only this one field stays empty, and everything else keeps computing on your device.',
-        'After the first visit Spectroton also runs without an internet connection, except for the colour-name search.',
-        'Not every colour can be shown on every screen. Instead of clipping hard, Spectroton falls back to the nearest possible tone and points out when a shade needs Display-P3 and will land differently on an sRGB screen.',
+        'The color names come from api.color.pizza, someone else’s service. Spectroton asks it for the name of the current color as soon as the page opens, and that color value goes to the service. Without a connection only this one field stays empty, and everything else keeps computing on your device.',
+        'After the first visit Spectroton also runs without an internet connection, except for the color-name search.',
+        'Not every color can be shown on every screen. Instead of clipping hard, Spectroton falls back to the nearest possible tone and points out when a shade needs Display-P3 and will land differently on an sRGB screen.',
         'A contrast value is a calculation, not a permit: WCAG 2.2 and APCA judge the same pairing differently, especially for light text on a dark ground. Where it matters, look at both measures and check on a real screen in the end.'
       ],
       es: [
@@ -1189,7 +1189,7 @@ var GUIDES = {
   collective: {
     purpose: {
       de: 'Wer schuldet wem was nach Urlaub, Ferienhaus, Festival oder Restaurantabend? Die Abrechnung steckt komprimiert im Link, die anderen brauchen weder Konto noch App, um sie zu sehen.',
-      en: 'Who owes whom what after a holiday, a rented house, a festival or a dinner out? The ledger is compressed into the link itself, and nobody else needs an account or an app to open it.',
+      en: 'Who owes whom what after a vacation, a rented house, a festival or a dinner out? The ledger is compressed into the link itself, and nobody else needs an account or an app to open it.',
       es: '¿Quién le debe qué a quién después de un viaje, una casa rural, un festival o una cena en un restaurante? La cuenta va comprimida dentro del enlace, y los demás no necesitan registrarse ni instalar una aplicación para verla.',
       fr: 'Qui doit quoi à qui après des vacances, une location de vacances, un festival ou une soirée au restaurant ? Le décompte tient, compressé, dans le lien, et les autres n’ont besoin ni de compte ni d’application pour le voir.',
       it: 'Chi deve cosa a chi dopo una vacanza, una casa in affitto, un festival o una serata al ristorante? Il conteggio è compresso nel link, e gli altri non hanno bisogno né di un account né di un’app per vederlo.',
@@ -1232,7 +1232,7 @@ var GUIDES = {
       ],
       en: [
         'Add the names and enter expenses: amount, purpose, who paid, and how it splits (evenly, by shares, by percentage or with exact amounts).',
-        'The result shows the balances and the suggested transfers. Anything already paid you add as a repayment. It changes the balances but does not count towards total spending.',
+        'The result shows the balances and the suggested transfers. Anything already paid you add as a repayment. It changes the balances but does not count toward total spending.',
         '“Share result” sends the overview to look at, “hand over ledger” sends the whole event so someone else can carry on.'
       ],
       es: [
@@ -1404,7 +1404,7 @@ var GUIDES = {
   bigday: {
     purpose: {
       de: 'Ein Countdown auf Urlaub, Geburtstag oder Hochzeitstag, der als Link verschickt wird. Titel und Datum stehen im Link selbst, es gibt keine Datenbank, in der sie liegen könnten.',
-      en: 'A countdown to a holiday, a birthday or an anniversary that travels as a link. Title and date live inside the link itself. There is no database they could sit in.',
+      en: 'A countdown to a vacation, a birthday or an anniversary that travels as a link. Title and date live inside the link itself. There is no database they could sit in.',
       es: 'Una cuenta atrás para unas vacaciones, un cumpleaños o un aniversario, que se envía como enlace. El título y la fecha están en el propio enlace: no hay ninguna base de datos en la que pudieran estar.',
       fr: 'Un compte à rebours jusqu’aux vacances, à un anniversaire ou à une date de mariage, qui s’envoie sous forme de lien. Le titre et la date sont dans le lien lui-même, il n’y a pas de base de données où ils pourraient se trouver.',
       it: 'Un conto alla rovescia verso una vacanza, un compleanno o un anniversario, da inviare come link. Titolo e data sono nel link stesso: non c’è nessun database in cui potrebbero trovarsi.',
@@ -1447,7 +1447,7 @@ var GUIDES = {
       ],
       en: [
         'Enter a title and a date, optionally a time and the “repeat every year” checkbox.',
-        'Pick one of the nine moods. It sets the colours, the display font and the background.',
+        'Pick one of the nine moods. It sets the colors, the display font and the background.',
         'Copy the link, show the QR code, or send it through the share menu. Whoever opens it sees exactly that mood.'
       ],
       es: [
@@ -1637,7 +1637,7 @@ var GUIDES = {
         file: 'rad-de.webp', w: 1584, h: 1439,
         alt: {
           de: 'Dreh das Rad mit sechs Optionen in der Farbwelt Neon: links das Rad mit Zeiger und dem Knopf zum Drehen, rechts Frage, Optionen, Schnellstart-Vorlagen und Farbwelten, darunter der Link zum Teilen.',
-          en: 'Dreh das Rad with six options in the Neon colours: on the left the wheel with its pointer and the spin button, on the right question, options, quick-start presets and colour sets, and below them the share link.',
+          en: 'Dreh das Rad with six options in the Neon colors: on the left the wheel with its pointer and the spin button, on the right question, options, quick-start presets and color sets, and below them the share link.',
           es: 'Dreh das Rad con seis opciones y los colores Neón: a la izquierda, la ruleta con su puntero y el botón para girarla, a la derecha, la pregunta, las opciones, las plantillas de inicio rápido y la elección de colores, y debajo el enlace para compartir.',
           fr: 'Dreh das Rad avec six options dans les couleurs Néon : à gauche, la roue avec son pointeur et le bouton pour la faire tourner, à droite, la question, les options, les modèles de démarrage rapide et le choix des couleurs, avec en dessous le lien de partage.',
           it: 'Dreh das Rad con sei opzioni nei colori Neon: a sinistra la ruota con l’indicatore e il pulsante per farla girare, a destra domanda, opzioni, modelli di avvio rapido e scelta dei colori, e sotto il link da condividere.',
@@ -1754,7 +1754,7 @@ var GUIDES = {
       en: [
         'At most 100 slots, and the question may be 90 characters long. Beyond that the app tells you and drops the rest.',
         'Full screen only exists where the browser supports it, not on an iPhone, for instance. The button is then hidden entirely.',
-        'The “recent spins” list lives in memory only and is gone once you close the page. Question, options and colour scheme, on the other hand, stay stored in your browser.',
+        'The “recent spins” list lives in memory only and is gone once you close the page. Question, options and color scheme, on the other hand, stay stored in your browser.',
         'With very long option lists the link no longer fits into a QR code. The message you get is currently misleading: it talks about copying rather than about length.'
       ],
       es: [
@@ -2157,7 +2157,7 @@ var GUIDES = {
       ],
       en: [
         'Download the ZIP from the releases, unpack it and double-click the exe. Windows will say “unknown publisher” because the file is not signed. Continue via “more info”.',
-        'On first start, type in the address of your own GoatCounter site and paste an API token. You create the token on your GoatCounter site: username in the top right → API → “Add new token”. Ticking “Read statistics” is enough.',
+        'On first start, type in the address of your own GoatCounter site and paste an API token. You create the token on your GoatCounter site: username in the top right → API → “Add new token”. Checking “Read statistics” is enough.',
         'Drag the overlay wherever it does not get in the way. Right-click the tray icon for Time range, Extra block, Counting, Settings, Next theme and Language.'
       ],
       es: [
@@ -2548,7 +2548,7 @@ var GUIDES = {
         'Das Programm gibt es nur für Windows 10/11 in 64 Bit, für Mac und Linux nimmst du die Seite im Browser. Beide sprechen 14 Sprachen, das Programm startet in der Sprache von Windows, die Seite in der deines Browsers. Umstellen kannst du oben in der Kopfzeile, am Handy wischst du sie dafür zur Seite. Einen Update-Prüfer hat weder die eine noch die andere Fassung: neue Fassungen der .exe holst du dir selbst von der Releases-Seite, die Seite ist beim nächsten Aufruf von allein aktuell.'
       ],
       en: [
-        'The 60 minutes apply to the Windows program only. They run from the start and cannot be paused, and a minimised window keeps counting too. Once the time is up you can no longer draw or export, but saving still works. After that, restart fontART, load your saved file and carry on. In the browser no clock runs.',
+        'The 60 minutes apply to the Windows program only. They run from the start and cannot be paused, and a minimized window keeps counting too. Once the time is up you can no longer draw or export, but saving still works. After that, restart fontART, load your saved file and carry on. In the browser no clock runs.',
         'On an iPhone, please use Safari. Inside the built-in browsers of Instagram, Facebook or WhatsApp, downloading the finished font fails. It simply never arrives. If you opened such a link, tap “open in Safari” and start there.',
         'The export only produces a to z. You can draw capitals, digits, umlauts, ß and punctuation, but they do not end up in the font file. Words containing them will later appear in the program’s fallback typeface.',
         'The font name is fixed at “fontART DEMO”. Whatever you type into the name field is ignored on export. So installing two demo fonts side by side does not work: Windows sees the same name twice.',
@@ -2916,7 +2916,7 @@ var GUIDES = {
   fadenkreuz: {
     purpose: {
       de: 'Für Spiele ohne gutes Fadenkreuz: Fadenkreuz legt dein eigenes exakt in die Mitte des Hauptbildschirms, immer im Vordergrund, und Klicks gehen ans Spiel durch. Ein winziges Windows-Programm mit rund 1 MB Arbeitsspeicher. Das Kreuz zeichnest du selbst im Editor, mit Vorlagen, weichem Rand und eigenen Presets.',
-      en: 'For games without a good crosshair: Fadenkreuz puts your own in the exact centre of the main screen, always in front, with clicks going straight through to the game. A tiny Windows program on about 1 MB of RAM. You draw the crosshair yourself in the editor, with templates, a soft outline and your own presets.',
+      en: 'For games without a good crosshair: Fadenkreuz puts your own in the exact center of the main screen, always in front, with clicks going straight through to the game. A tiny Windows program on about 1 MB of RAM. You draw the crosshair yourself in the editor, with templates, a soft outline and your own presets.',
       es: 'Para juegos sin una buena mira: Fadenkreuz coloca la tuya justo en el centro de la pantalla principal, siempre en primer plano y dejando pasar los clics al juego. Un programa diminuto para Windows que usa alrededor de 1 MB de RAM. La mira la dibujas tú en el editor, con plantillas, un borde suave y tus propios preajustes.',
       fr: 'Pour les jeux sans bon réticule : Fadenkreuz place le vôtre pile au centre de l’écran principal, toujours au premier plan, et les clics passent directement au jeu. Un tout petit programme Windows d’environ 1 Mo de mémoire vive. Le réticule, vous le dessinez vous-même dans l’éditeur, avec des modèles, un contour adouci et vos propres préréglages.',
       it: 'Per i giochi senza un buon mirino: Fadenkreuz mette il tuo esattamente al centro dello schermo principale, sempre in primo piano, e i clic passano dritti al gioco. Un programmino per Windows da circa 1 MB di RAM. Il mirino lo disegni tu nell’editor, con modelli, un bordo morbido e preset tuoi.',
@@ -2938,7 +2938,7 @@ var GUIDES = {
         },
         alt: {
           de: 'Der Fadenkreuz-Editor: links ein kariertes Zeichenfeld mit einem grünen Kreuz samt dünnem schwarzem Rand, rechts Farbe, Umrandung, eigene Fadenkreuze, Vorlagen und eine Vorschau vor einer Spielszene.',
-          en: 'The Fadenkreuz editor: on the left a chequered drawing grid with a green cross and a thin black outline, on the right colour, outline, your own crosshairs, templates and a preview against a game scene.',
+          en: 'The Fadenkreuz editor: on the left a checkered drawing grid with a green cross and a thin black outline, on the right color, outline, your own crosshairs, templates and a preview against a game scene.',
           es: 'El editor de Fadenkreuz: a la izquierda, una cuadrícula de dibujo a cuadros con una cruz verde y un fino borde negro, y a la derecha color, borde, tus propias miras, plantillas y una vista previa sobre una escena de juego.',
           fr: 'L’éditeur de Fadenkreuz : à gauche, une grille de dessin en damier avec une croix verte et un fin contour noir, et à droite la couleur, le contour, vos propres réticules, des modèles et un aperçu sur une scène de jeu.',
           it: 'L’editor di Fadenkreuz: a sinistra una griglia di disegno a scacchi con una croce verde e un sottile bordo nero, a destra colore, bordo, i tuoi mirini, modelli e un’anteprima su una scena di gioco.',
@@ -2960,7 +2960,7 @@ var GUIDES = {
         file: 'fadenkreuz-klein.webp', w: 1234, h: 1456,
         alt: {
           de: 'Die Mitte von vier Bildschirmen in voller Höhe, jeweils mit dem Fadenkreuz in der Mitte, auf grauem, lila, weißem und schwarzem Grund: so klein kann das Kreuz im Spiel wirken.',
-          en: 'The middle of four screens at full height, each with the crosshair in the centre, on a grey, purple, white and black background: this is how small it can look in a game.',
+          en: 'The middle of four screens at full height, each with the crosshair in the center, on a gray, purple, white and black background: this is how small it can look in a game.',
           es: 'El centro de cuatro pantallas a toda altura, cada una con la mira en el medio, sobre fondo gris, morado, blanco y negro: así de pequeña puede verse en un juego.',
           fr: 'Le centre de quatre écrans sur toute leur hauteur, chacun avec le réticule au milieu, sur fond gris, violet, blanc et noir : voici à quel point il peut paraître petit en jeu.',
           it: 'La parte centrale di quattro schermi a tutta altezza, ciascuno con il mirino al centro, su sfondo grigio, viola, bianco e nero: ecco quanto può sembrare piccolo in gioco.',
@@ -3190,7 +3190,7 @@ var GUIDES = {
         },
         alt: {
           de: 'Drei Handy-Ansichten von Craftionary im Dunkelmodus: das Rezept für das Leuchtfeuer im Werkbank-Fenster mit fünf Glas, einem Netherstern und drei Obsidian; die Fundorte von Diamant als Höhenkurve mit der besten Höhe Y −59; die Muster-Werkstatt mit türkiser Grundfarbe und drei Mustern: Creeper, Bord und Farbverlauf.',
-          en: 'Three phone screens of Craftionary in dark mode: the beacon recipe in the crafting table window with five glass, one nether star and three obsidian; where to find diamonds as a height curve with the best level at Y −59; the pattern workshop with cyan as the base colour and three patterns: creeper, bordure and gradient.',
+          en: 'Three phone screens of Craftionary in dark mode: the beacon recipe in the crafting table window with five glass, one nether star and three obsidian; where to find diamonds as a height curve with the best level at Y −59; the pattern workshop with cyan as the base color and three patterns: creeper, bordure and gradient.',
           es: 'Tres pantallas de móvil de Craftionary en modo oscuro: la receta del faro en la ventana de la mesa de crafteo con cinco cristales, una estrella del Nether y tres de obsidiana; dónde encontrar diamantes como curva de alturas con la mejor altura en Y −59; el taller de diseños con cian como color base y tres diseños: creeper, borde y degradado.',
           fr: 'Trois écrans de téléphone de Craftionary en mode sombre : la recette de la balise dans la fenêtre de l’établi avec cinq verres, une étoile du Nether et trois obsidiennes ; où trouver les diamants sous forme de courbe des hauteurs avec la meilleure hauteur en Y −59 ; l’atelier de motifs avec le cyan comme couleur de base et trois motifs : creeper, bordure et dégradé.',
           it: 'Tre schermate di telefono di Craftionary in modalità scura: la ricetta del faro nella finestra del banco da lavoro con cinque vetri, una stella del Nether e tre ossidiane; dove trovare i diamanti come curva delle altezze con l’altezza migliore a Y −59; il laboratorio di motivi con il ciano come colore di base e tre motivi: creeper, bordo e sfumatura.',
@@ -3443,7 +3443,7 @@ var GUIDES = {
       ],
       en: [
         'Set your UVH rank at the top. The handbook then works out the drop chances for it, and “Your roadmap” highlights what comes next.',
-        'Use “Menu” to jump to classes and builds, weapons, firmware, the loot database or farming, or search for an item, boss or skill at the top. In the loot database, “Got it” ticks off what you already own.',
+        'Use “Menu” to jump to classes and builds, weapons, firmware, the loot database or farming, or search for an item, boss or skill at the top. In the loot database, “Got it” checks off what you already own.',
         '“This week” shows the Big Encore boss, the Wildcard Mission, Maurice’s Black Market and active SHiFT codes to copy, and it updates on Thursday evenings. At the bottom of the menu sits the “Install app” button, on an iPhone the way via Share and “Add to Home Screen”. After the first visit the handbook also works offline.'
       ],
       es: [
@@ -3518,7 +3518,7 @@ var GUIDES = {
         'Only the interface comes in 14 languages (switch it at the bottom of the menu under “Language”). Builds, raid guides, item effects and the weekly data are in German. Item names mostly stay English, as in the German game, and the search also finds the few translated ones.',
         'Builds and rankings are community assessments with their sources named, not official. A patch can shift them.',
         'Until the Thursday evening update, “This week” sometimes still shows last week, and it then says so.',
-        'Your UVH rank and what you ticked off live only in this browser.'
+        'Your UVH rank and what you checked off live only in this browser.'
       ],
       es: [
         'Solo la interfaz está en 14 idiomas (cámbiala abajo en el menú, en «Idioma»). Los builds, las guías de raids, los efectos de objetos y los datos semanales están en alemán. Los nombres de objetos siguen casi siempre en inglés, como en el juego en alemán, y la búsqueda encuentra también los pocos traducidos.',
@@ -3947,7 +3947,7 @@ var GUIDES = {
         'Die Eingaben liegen nur im Browser dieses Geräts. Wer die Browserdaten löscht, löscht sie mit, und ein anderes Gerät sieht sie nicht.'
       ],
       en: [
-        'The dividend calculator follows German tax law in a simplified form: no lower-rate check against your personal income tax, no offsetting of losses, no advance lump sum (Vorabpauschale) on funds. If you are not taxed in Germany, untick “Deduct taxes under German law”.',
+        'The dividend calculator follows German tax law in a simplified form: no lower-rate check against your personal income tax, no offsetting of losses, no advance lump sum (Vorabpauschale) on funds. If you are not taxed in Germany, uncheck “Deduct taxes under German law”.',
         'The fee examples are generic models, not price lists of real providers. What your provider charges is in its price list. With crypto apps, part of the cost is often hidden in the price rather than in the fee.',
         '“Markup per buy or sell” counts once when buying and once when selling. If your provider quotes a bid-ask spread, enter only half of it.',
         '19% and 7% are the German VAT rates. For other countries, choose your own rate.',
@@ -4281,7 +4281,7 @@ var GUIDES = {
         },
         alt: {
           de: 'Hourbridge im Dunkelmodus am 20. März 2027: oben „14:00 UTC ist 15:00 MEZ in Berlin“, darunter Karten für UTC, Berlin, New York und Tokio, jede mit Uhrzeit, Versatz und einer 24-Stunden-Leiste mit grüner Arbeitszeit. New York steht wegen der früheren Umstellung schon auf UTC−4, nur 5 Stunden hinter Berlin.',
-          en: 'Hourbridge in dark mode on 20 March 2027: at the top “14:00 UTC is 15:00 CET in Berlin”, below it cards for UTC, Berlin, New York and Tokyo, each with time, offset and a 24-hour bar with working hours in green. Because its clocks changed earlier, New York is already on UTC−4, only 5 hours behind Berlin.',
+          en: 'Hourbridge in dark mode on March 20, 2027: at the top “14:00 UTC is 15:00 CET in Berlin”, below it cards for UTC, Berlin, New York and Tokyo, each with time, offset and a 24-hour bar with working hours in green. Because its clocks changed earlier, New York is already on UTC−4, only 5 hours behind Berlin.',
           es: 'Hourbridge en modo oscuro el 20 de marzo de 2027: arriba la respuesta, 14:00 UTC equivale a 15:00 CET en Berlín, debajo tarjetas para UTC, Berlín, Nueva York y Tokio, cada una con hora, desfase y una barra de 24 horas con el horario laboral en verde. Como cambió la hora antes, Nueva York ya está en UTC−4, solo 5 horas por detrás de Berlín.',
           fr: 'Hourbridge en mode sombre le 20 mars 2027 : en haut la réponse, 14:00 UTC correspond à 15:00 CET à Berlin, en dessous des cartes pour UTC, Berlin, New York et Tokyo, chacune avec l’heure, le décalage et une barre de 24 heures où les heures de bureau sont en vert. Ayant changé d’heure plus tôt, New York est déjà en UTC−4, à seulement 5 heures de Berlin.',
           it: 'Hourbridge in modalità scura il 20 marzo 2027: in alto la risposta, 14:00 UTC corrisponde alle 15:00 CET a Berlino, sotto le schede per UTC, Berlino, New York e Tokyo, ognuna con ora, scarto e una barra di 24 ore con l’orario di lavoro in verde. Avendo cambiato l’ora prima, New York è già su UTC−4, solo 5 ore dietro Berlino.',
@@ -4306,7 +4306,7 @@ var GUIDES = {
       en: [
         'Open Hourbridge. The answer is right at the top, for example “14:00 UTC is 15:00 CET in Berlin”, live to the second. Language and appearance sit at the very top, below them the search field for more places: “Tokyo”, “9am New York” or abbreviations like PST. “My time zone” adds your device’s zone without asking for your location.',
         'To pick another time, drag along a place’s timeline, click on it or use the arrow keys. Every clock moves along. You can also type a time straight into a card, and “Now” jumps back to the current time.',
-        '“Copy link” keeps exactly this view with its places and time, “Copy times” puts it on the clipboard as text, “Add to calendar” downloads an .ics file. Tick “Remember places on this device” and your places are back the next time you open it. After the first visit Hourbridge also works without a connection, and if your browser shows “Install” at the top, one tap sets Hourbridge up as an app.'
+        '“Copy link” keeps exactly this view with its places and time, “Copy times” puts it on the clipboard as text, “Add to calendar” downloads an .ics file. Check “Remember places on this device” and your places are back the next time you open it. After the first visit Hourbridge also works without a connection, and if your browser shows “Install” at the top, one tap sets Hourbridge up as an app.'
       ],
       es: [
         'Abre Hourbridge. Arriba aparece enseguida la respuesta en una frase, en directo al segundo. El idioma y la apariencia están arriba del todo, debajo el campo de búsqueda para más lugares: «Tokio», «9am Nueva York» o abreviaturas como PST. «Mi zona horaria» añade la zona de tu dispositivo sin pedir tu ubicación.',
@@ -4382,7 +4382,7 @@ var GUIDES = {
         'The US and Europe change their clocks on different days. In those weeks Berlin and New York, for example, are 5 hours apart instead of 6. Hourbridge warns you, but double-check appointments in that period anyway.',
         'The time zone rules come from your browser. When a country changes its rules, a browser that has not been updated in a long time does not know them yet. An update fixes that.',
         'The working hours underlined in green are a rule of thumb: 9 to 5 local time.',
-        'Without the tick your places live only in the link, not on the device. Remembered places live only in this device’s browser. Clearing the browser data clears them too, and another device does not see them. A shared link, on the other hand, carries the places with it.'
+        'Without the check mark your places live only in the link, not on the device. Remembered places live only in this device’s browser. Clearing the browser data clears them too, and another device does not see them. A shared link, on the other hand, carries the places with it.'
       ],
       es: [
         'En marzo falta una hora y en octubre una se repite. Si tu hora cae en el hueco, Hourbridge muestra la hora después del salto. En la hora repetida eliges con «Mostrar la segunda» cuál quieres decir.',
@@ -4727,7 +4727,7 @@ var GUIDES = {
   streckenblitz: {
     purpose: {
       de: 'Für alle, die zwischendurch ein paar Runden drehen wollen: am Rechner mit Tasten oder Gamepad, am Handy und Tablet mit den Fingern. Streckenblitz ist ein Formelrennen mit Blick von hinter dem Auto, auf einem kleinen Pixelraster mit vollen Farben, wie die frühen Rennspiele, nur in der Abenddämmerung und ohne einen einzigen Blitz. Drei Strecken, sieben Gegner mit eigenem Fahrstil und ein Zeitfahren mit Rekord je Strecke. In den Einstellungen gibt es dieselben Sehhilfen wie überall in der Werkstatt. Dein Browser merkt sich nur Sprache, Ton, Strecke, Darstellung und deine Bestzeiten.',
-      en: 'For anyone who wants to drive a few laps in between: on a computer with keys or a gamepad, on phones and tablets with your fingers. Streckenblitz is a formula racer seen from behind the car, on a small pixel grid in full colour, like the early racing games, only at dusk and without a single flash. Three tracks, seven rivals with their own driving styles and a time trial with a record per track. The settings have the same vision aids as everywhere in the workshop. Your browser only remembers the language, sound, track, appearance and your best times.',
+      en: 'For anyone who wants to drive a few laps in between: on a computer with keys or a gamepad, on phones and tablets with your fingers. Streckenblitz is a formula racer seen from behind the car, on a small pixel grid in full color, like the early racing games, only at dusk and without a single flash. Three tracks, seven rivals with their own driving styles and a time trial with a record per track. The settings have the same vision aids as everywhere in the workshop. Your browser only remembers the language, sound, track, appearance and your best times.',
       es: 'Para quien quiere dar unas vueltas de vez en cuando: en el ordenador con teclado o mando, en el móvil y la tableta con los dedos. Streckenblitz es una carrera de fórmula vista desde detrás del coche, en una pequeña rejilla de píxeles a todo color, como los primeros juegos de carreras, solo que al atardecer y sin un solo destello. Tres circuitos, siete rivales con su propio estilo y una contrarreloj con récord por circuito. En los ajustes están las mismas ayudas visuales que en todo el taller. Tu navegador solo recuerda el idioma, el sonido, el circuito, la apariencia y tus mejores tiempos.',
       fr: 'Pour tous ceux qui veulent faire quelques tours entre deux choses : sur ordinateur au clavier ou à la manette, sur téléphone et tablette avec les doigts. Streckenblitz est une course de formule vue de derrière la voiture, sur une petite grille de pixels en pleines couleurs, comme les premiers jeux de course, mais au crépuscule et sans un seul flash. Trois circuits, sept rivaux au style bien à eux et un contre-la-montre avec un record par circuit. Les réglages offrent les mêmes aides visuelles que partout dans l’atelier. Votre navigateur ne retient que la langue, le son, le circuit, l’apparence et vos meilleurs temps.',
       it: 'Per chi vuole fare qualche giro ogni tanto: sul computer con tastiera o gamepad, su telefono e tablet con le dita. Streckenblitz è una corsa di formula vista da dietro l’auto, su una piccola griglia di pixel a colori pieni, come i primi giochi di corse, solo al crepuscolo e senza un solo lampo. Tre circuiti, sette avversari con il loro stile di guida e una prova a tempo con record per circuito. Nelle impostazioni ci sono gli stessi aiuti visivi di tutto il laboratorio. Il tuo browser ricorda solo lingua, suono, circuito, aspetto e i tuoi tempi migliori.',
@@ -4867,7 +4867,7 @@ var GUIDES = {
         'Auf dem iPhone gibt es keinen Knopf „Installieren“. Dort richtest du Streckenblitz in Safari über Teilen und „Zum Home-Bildschirm“ als App ein.'
       ],
       en: [
-        'The boost fires when you press, holding does not fire it again, and only from the start line on. Below a quarter battery nothing happens, and afterwards it rests for two seconds.',
+        'The boost fires when you press, holding does not fire it again, and only from the start line on. Below a quarter battery nothing happens, and afterward it rests for two seconds.',
         'Held upright, the game asks you to turn the phone sideways. “Play anyway” works, but Streckenblitz is built for landscape and upright it gets cramped.',
         'Offline only works after the first visit. Best times live in this browser only: clear the site data and the records go with it.',
         'There is no “Install” button on an iPhone. There you set Streckenblitz up as an app in Safari with Share and “Add to Home Screen”.'
@@ -4965,7 +4965,7 @@ var GUIDES = {
   anagrammaton: {
     purpose: {
       de: 'Für alle, die mit Wörtern spielen: beim Rätseln, beim Scrabble, auf der Suche nach einem Namen oder aus Neugier, was in einem Wort noch steckt. Anagrammaton stellt deine Buchstaben um und zeigt, welche echten Wörter dabei herauskommen, aus einem Wort, aus einem ganzen Satz oder rückwärts gelesen. Jeder Buchstabe ist eine Kachel mit fester Farbe, so siehst du beim Umstellen, wohin jeder wandert. Es läuft im Browser am Rechner, am Handy und am Tablet. Dein Browser merkt sich nur Sprache und Darstellung, das Wort steht im Link.',
-      en: 'For anyone who likes playing with words: for puzzles, for Scrabble, when looking for a name, or out of curiosity about what else hides in a word. Anagrammaton rearranges your letters and shows which real words come out of them, from one word, from a whole sentence or read backwards. Every letter is a tile with a fixed colour, so when they move you can see where each one goes. It runs in the browser on computers, phones and tablets. Your browser only remembers the language and the appearance. The word lives in the link.',
+      en: 'For anyone who likes playing with words: for puzzles, for Scrabble, when looking for a name, or out of curiosity about what else hides in a word. Anagrammaton rearranges your letters and shows which real words come out of them, from one word, from a whole sentence or read backwards. Every letter is a tile with a fixed color, so when they move you can see where each one goes. It runs in the browser on computers, phones and tablets. Your browser only remembers the language and the appearance. The word lives in the link.',
       es: 'Para quien disfruta jugando con las palabras: con crucigramas, con el Scrabble, buscando un nombre o por curiosidad por lo que esconde una palabra. Anagrammaton reordena tus letras y muestra qué palabras reales salen de ellas, de una palabra, de una frase entera o leyendo al revés. Cada letra es una ficha con un color fijo, así ves adónde va cada una cuando se mueven. Funciona en el navegador del ordenador, del móvil y de la tableta. Tu navegador solo recuerda el idioma y la apariencia. La palabra va en el enlace.',
       fr: 'Pour tous ceux qui aiment jouer avec les mots : pour les grilles, pour le Scrabble, pour chercher un nom ou par curiosité de ce qui se cache encore dans un mot. Anagrammaton réarrange vos lettres et montre quels vrais mots en sortent, à partir d’un mot, d’une phrase entière ou à l’envers. Chaque lettre est une tuile d’une couleur fixe, vous voyez donc où va chacune quand elles bougent. Il tourne dans le navigateur, sur ordinateur, téléphone et tablette. Votre navigateur ne retient que la langue et l’apparence. Le mot est dans le lien.',
       it: 'Per chi ama giocare con le parole: per i cruciverba, per lo Scrabble, per cercare un nome o per curiosità di cosa si nasconde in una parola. Anagrammaton riordina le tue lettere e mostra quali parole vere ne escono, da una parola, da una frase intera o leggendo al contrario. Ogni lettera è una tessera con un colore fisso, così vedi dove va ciascuna quando si spostano. Funziona nel browser su computer, telefono e tablet. Il tuo browser ricorda solo lingua e aspetto. La parola sta nel link.',
@@ -4987,7 +4987,7 @@ var GUIDES = {
         },
         alt: {
           de: 'Anagrammaton am Rechner im Dunkelmodus: oben das Eingabefeld mit „Sterne“, darunter die Bühne, auf der die sechs farbigen Kacheln schon als E, R, N, S, T, E stehen, darunter die Knöpfe Mischen, Invert, Reverse und Ausgangsstellung, ganz unten der Reiter „Ein Wort“ mit sechs Treffern von „ersten“ bis „nester“ in Buchstabenfarben.',
-          en: 'Anagrammaton on a computer in dark mode: at the top the input field with “listen”, below it the stage where the six coloured tiles already stand as S, I, L, E, N, T, then the buttons Shuffle, Invert, Reverse and Start position, and at the bottom the tab “One word” with four results in letter colours: silent, enlist, tinsel and inlets.',
+          en: 'Anagrammaton on a computer in dark mode: at the top the input field with “listen”, below it the stage where the six colored tiles already stand as S, I, L, E, N, T, then the buttons Shuffle, Invert, Reverse and Start position, and at the bottom the tab “One word” with four results in letter colors: silent, enlist, tinsel and inlets.',
           es: 'Anagrammaton en el ordenador en modo oscuro: arriba el campo de texto con «listen», debajo el escenario, donde las seis fichas de colores ya forman S, I, L, E, N, T, luego los botones Shuffle, Invert, Reverse y Start position, y abajo la pestaña «One word» con cuatro resultados en los colores de las letras: silent, enlist, tinsel e inlets. La interfaz de la imagen está en inglés.',
           fr: 'Anagrammaton sur ordinateur en mode sombre : en haut le champ de saisie avec « listen », en dessous la scène où les six tuiles colorées forment déjà S, I, L, E, N, T, puis les boutons Shuffle, Invert, Reverse et Start position, et en bas l’onglet « One word » avec quatre résultats aux couleurs des lettres : silent, enlist, tinsel et inlets. L’interface de l’image est en anglais.',
           it: 'Anagrammaton sul computer in modalità scura: in alto il campo di testo con «listen», sotto il palco dove le sei tessere colorate formano già S, I, L, E, N, T, poi i pulsanti Shuffle, Invert, Reverse e Start position, e in basso la scheda «One word» con quattro risultati nei colori delle lettere: silent, enlist, tinsel e inlets. L’interfaccia nell’immagine è in inglese.',
@@ -5009,7 +5009,7 @@ var GUIDES = {
         },
         alt: {
           de: 'Anagrammaton auf dem Handy: oben „Ein Esel lese nie“ im Eingabefeld, darunter die Bühne mit vierzehn farbigen Kacheln in zwei Reihen, dann die vier Knöpfe Mischen, Invert, Reverse und Ausgangsstellung, ganz unten der Reiter „Rückwärts“ mit dem rückwärts gelesenen Satz und dem Urteil „Ein Palindrom: vorwärts und rückwärts gleich.“',
-          en: 'Anagrammaton on a phone: at the top “stressed” in the input field, below it the stage with eight coloured tiles, then the four buttons Shuffle, Invert, Reverse and Start position, and at the bottom the tab “Backwards” with the word read backwards, “desserts”, and the verdict “Not a palindrome.”',
+          en: 'Anagrammaton on a phone: at the top “stressed” in the input field, below it the stage with eight colored tiles, then the four buttons Shuffle, Invert, Reverse and Start position, and at the bottom the tab “Backwards” with the word read backwards, “desserts”, and the verdict “Not a palindrome.”',
           es: 'Anagrammaton en el móvil: arriba «stressed» en el campo de texto, debajo el escenario con ocho fichas de colores, luego los cuatro botones Shuffle, Invert, Reverse y Start position, y abajo la pestaña «Backwards» con la palabra leída al revés, «desserts», y el veredicto «Not a palindrome». La interfaz de la imagen está en inglés.',
           fr: 'Anagrammaton sur téléphone : en haut « stressed » dans le champ de saisie, en dessous la scène avec huit tuiles colorées, puis les quatre boutons Shuffle, Invert, Reverse et Start position, et en bas l’onglet « Backwards » avec le mot lu à l’envers, « desserts », et le verdict « Not a palindrome ». L’interface de l’image est en anglais.',
           it: 'Anagrammaton sul telefono: in alto «stressed» nel campo di testo, sotto il palco con otto tessere colorate, poi i quattro pulsanti Shuffle, Invert, Reverse e Start position, e in basso la scheda «Backwards» con la parola letta al contrario, «desserts», e il verdetto «Not a palindrome». L’interfaccia nell’immagine è in inglese.',
@@ -5032,9 +5032,9 @@ var GUIDES = {
         'Mit den Knöpfen unter der Bühne spielst du: Mischen würfelt die Kacheln neu, Invert kippt jede Farbe in ihre Gegenfarbe, Reverse stellt die Kacheln rückwärts auf, Ausgangsstellung bringt deine Eingabe zurück. „Link kopieren“ merkt sich Wort, Sprache, Invert und Reverse, jeder Treffer lässt sich einzeln kopieren.'
       ],
       en: [
-        'Open Anagrammaton and type a word or a sentence at the top. Under “Dictionary” you pick the language of the words, which can differ from the language of the interface. Where it fits, “Ignore accents” lets é count as e. Every letter appears on the stage as a tile in its own colour.',
+        'Open Anagrammaton and type a word or a sentence at the top. Under “Dictionary” you pick the language of the words, which can differ from the language of the interface. Where it fits, “Ignore accents” lets é count as e. Every letter appears on the stage as a tile in its own color.',
         'Below it are three tabs. “One word” shows every word made of exactly the same letters, “Several words” rearranges whole sentences, with limits for the number of words, a minimum length and a word that has to be in it. “Backwards” reads your input from the end, tells you whether it is a palindrome and has a list to discover. Click a result and the tiles fly to their new places.',
-        'The buttons under the stage are for playing: Shuffle mixes the tiles, Invert flips every colour to its opposite, Reverse lines the tiles up backwards, and Start position brings back what you typed. “Copy link” keeps the word, the language, Invert and Reverse, and every result can be copied on its own.'
+        'The buttons under the stage are for playing: Shuffle mixes the tiles, Invert flips every color to its opposite, Reverse lines the tiles up backwards, and Start position brings back what you typed. “Copy link” keeps the word, the language, Invert and Reverse, and every result can be copied on its own.'
       ],
       es: [
         'Abre Anagrammaton y escribe arriba una palabra o una frase. En «Diccionario» eliges el idioma de las palabras, que puede ser distinto del de la interfaz. Donde tiene sentido, «Ignorar acentos» hace que á cuente como a. Cada letra aparece en el escenario como una ficha de su propio color.',
