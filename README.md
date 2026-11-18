@@ -77,8 +77,6 @@ The interface words exist in all 14 languages, and since 14 September 2026 so do
 
 *Texts (since 1 November 2026):* every visible text of the workshop, on this page and in the tools, does without dashes as punctuation, in all 14 languages. Ranges like 1–10 stay.
 
-*Counting (since 3 November 2026):* nothing on this page or in the tools counts visits or clicks any more. The `data-count` attributes in the markup are inert, `js/header.js` only acts on them if a counter were loaded, and none is.
-
 *Deliberately absent:* no service worker and no web manifest. The sister projects have both; this page does not, to avoid the cache-version trap on every deploy. So the page is not installable and does not work offline.
 
 *Typeface:* names and headings are set in [Fraunces](https://github.com/undercasetype/Fraunces) (SIL Open Font License 1.1), including the brand and the tool list in the navigation of `werkstatt.html`; running text, buttons and form controls stay in the system font. The font is self-hosted in `assets/fonts/fraunces/` next to its licence, so no font service is contacted. Only the weight axis ships: 36 KB for Latin, plus 33 KB where Polish, Turkish and the like need it. Fraunces has no Cyrillic, Devanagari or CJK letters, so Russian, Hindi, Chinese, Japanese and Korean headings, and translated tool names, stay in the system font.
