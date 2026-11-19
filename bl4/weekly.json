@@ -1,55 +1,24 @@
 {
- "v": 1,
- "week_start": "2026-11-12",
- "week_end": "2026-11-19",
- "reset_utc": "2026-11-19T17:00:00Z",
- "updated": "2026-11-12T18:53:01Z",
- "encore": {
-  "boss": "Pango & Bango",
-  "where": "Ripper Drill Site „Tendercage“ in der Provinz Lopside (Carcadia Burn). Schnellreise zum Makeshift Chalet Safehouse und nach Osten zur Drill Site fahren. Der Big-Encore-Automat steht direkt vor der Arena.",
-  "loot": [
-   "Phantom Flame",
-   "Prince Harming",
-   "Stray"
-  ],
-  "note": "Wochen-Herausforderung am Big-Encore-Automaten von Moxxi vor der Arena (roter Boss-Marker auf der Karte, freigeschaltet nach der Story ab UVH-Rang 1): kostet Eridium, die Bosse haben doppelte HP. Die Dedicated Legendaries fallen dann mit festen 30 % statt 9 % (Pearlescent 1,18 %, Phosphene 1,5 %), unabhängig vom UVH: Phantom Flame (Pistol) von beiden, Prince Harming (SMG) nur von Bango, Stray (Sniper Rifle) nur von Pango. Tipp: Beide haben einen roten Fleischbalken (schwach gegen Incendiary), die Geschütztürme auf dem Rücken haben gelbe Panzerung (schwach gegen Corrosive); zerstör sie zuerst, dann fallen die Fernangriffe weg. Quelle: MentalMars."
- },
- "wildcard": {
-  "mission": "His Vile Sanctum",
-  "mods": [
-   "Irritable",
-   "Centripetal",
-   "Leaking"
-  ],
-  "reward": "Boomslang",
-  "reward_info": "Jakobs-Sniper-Rifle, Legendary",
-  "note": "Die Belohnung ist garantiert, und du kannst die Mission die ganze Woche wiederholen, bis der Roll passt. Start: ECHO-Menü → Karte → Wildcard-Symbol unten links gedrückt halten."
- },
  "black_market": {
-  "nr": "007",
-  "place": "Versteckter Raum vor dem Dahl-Aufzug",
-  "area": "Orbital Shatterfield",
-  "region": "Elpis",
-  "how": "Über den Level-Übergang in Fallen Crown (Carcadia Burn) zum Orbital Shatterfield reisen und zum Ende der Karte laufen, den Aufzug zum Bosskampf aber nicht nehmen. Am Dahl-Aufzug umdrehen, die Plattformen hochklettern und auf der letzten durch das halb offene Rolltor; drinnen steht der Automat.",
+  "nr": "008",
+  "place": "Moxxi’s Lost Bar (verlassene Moxxi-Bar bei Sanctuary)",
+  "area": "Heart of the Mountain",
+  "region": "Terminus Range",
+  "how": "Schnellreise zu Bones of Sanctuary, dann nach Norden an Sanctuary und dem Höhleneingang vorbei und durch die Felsen kriechen; der Automat steht in der verlassenen Moxxi-Bar. Bisher nur von MentalMars bestätigt.",
   "note": "Das Angebot ist bei jedem anders: 2 Legendaries in je 4 Varianten, ein Kauf pro Besuch, danach 30 Minuten Wartezeit."
  },
+ "encore": {
+  "boss": "Callous Harbinger of Annihilating Death (C.H.A.D.)",
+  "where": "Order Bunker „Craven’s Nook“ in der Provinz Heart of the Mountain (Terminus Range). Schnellreise zu Bones of Sanctuary und nach Norden in die Höhle laufen. Der Big-Encore-Automat steht direkt vor der Arena.",
+  "loot": [
+   "Atling Gun",
+   "Hot Slugger",
+   "Kaleidosplode"
+  ],
+  "note": "Wochen-Herausforderung am Big-Encore-Automaten von Moxxi vor der Arena (roter Boss-Marker auf der Karte, freigeschaltet nach der Story ab UVH-Rang 1): kostet Eridium, der Boss hat doppelte HP. Die Dedicated Legendaries fallen dann mit festen 30 % statt 9 % (Pearlescent 1,18 %, Phosphene 1,5 %), unabhängig vom UVH: Atling Gun (Heavy Weapon), Hot Slugger (Shotgun) und Kaleidosplode (Shotgun). Tipp: Erst den Schild mit Shock-Schaden runterholen, dann die Panzerung mit Corrosive. C.H.A.D. feuert Energie-Schrotsalven und elektrifiziert den Boden per Stampfer; die Synthetic Soldiers, die nachspawnen, eignen sich für einen Second Wind. Quelle: MentalMars."
+ },
+ "reset_utc": "2026-11-26T17:00:00Z",
  "shift": [
-  {
-   "c": "S6RJJ-6THZT-BJJTJ-TB3JT-R995J",
-   "r": "5 Golden Keys",
-   "k": "keys",
-   "a": "2026-11-11",
-   "x": "2026-11-17",
-   "n": "schaltet auch Keys in älteren Borderlands-Teilen frei"
-  },
-  {
-   "a": "2026-11-02",
-   "c": "CZKJJ-35RH6-T9K9C-9TJJT-SXRCT",
-   "k": "keys",
-   "n": "schaltet auch Keys in älteren Borderlands-Teilen frei",
-   "r": "20 Golden Keys",
-   "x": "2026-11-16"
-  },
   {
    "a": "2026-09-29",
    "c": "CSKJJ-63XZ6-BSKHK-SBBJJ-RRB9F",
@@ -116,6 +85,13 @@
    "k": "old",
    "r": "1 Golden Key",
    "x": ""
+  },
+  {
+   "c": "3S6B3-56Z5W-CFBJC-JTTBJ-ZW3BW",
+   "r": "4 Waffen-Skins „Troubled Upbringing“, „Tally Them All“, „Merch Line“, „Fresh Spray“",
+   "k": "cosm",
+   "a": "2026-11-16",
+   "x": "2030-12-31"
   },
   {
    "a": "",
@@ -234,7 +210,7 @@
  ],
  "sources": [
   [
-   "Gearbox/MentalMars: Weekly Rotation 12.11.2026",
+   "Gearbox/MentalMars: Weekly Rotation 19.11.2026",
    "https://mentalmars.com/borderlands-4/patch-notes/"
   ],
   [
@@ -246,16 +222,12 @@
    "https://mentalmars.com/borderlands-4/gameplay/moxxis-encore/"
   ],
   [
-   "MentalMars: Pango & Bango",
-   "https://mentalmars.com/bosses-enemies/pango-bango/"
+   "MentalMars: C.H.A.D.",
+   "https://mentalmars.com/bosses-enemies/callous-harbinger-of-annihilating-death/"
   ],
   [
    "MentalMars: Black Market",
    "https://mentalmars.com/borderlands-4/loot/black-market/"
-  ],
-  [
-   "TheBaseDotaku: Black Market",
-   "https://thebasedotaku.com/guides/borderlands-4-maurices-black-market-vending-machine-location-for-this-week/"
   ],
   [
    "MentalMars: SHiFT-Codes",
@@ -269,5 +241,20 @@
    "2K: Update Notes",
    "https://borderlands.2k.com/borderlands-4/update-notes/"
   ]
- ]
+ ],
+ "updated": "2026-11-19T18:48:08Z",
+ "v": 1,
+ "week_end": "2026-11-26",
+ "week_start": "2026-11-19",
+ "wildcard": {
+  "mission": "Old Raymond",
+  "mods": [
+   "Wealthy",
+   "Regenerative",
+   "Quartermaster"
+  ],
+  "reward": "Rainbow Vomit",
+  "reward_info": "Jakobs-Shotgun, Legendary",
+  "note": "Die Belohnung ist garantiert, und du kannst die Mission die ganze Woche wiederholen, bis der Roll passt. Start: ECHO-Menü → Karte → Wildcard-Symbol unten links gedrückt halten."
+ }
 }
